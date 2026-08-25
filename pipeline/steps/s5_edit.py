@@ -23,7 +23,7 @@ from typing import Any
 
 from ..config import ASSETS_DIR, Config
 from ..util import captions as captions_util
-from ..util import ffmpeg, fonts, log
+from ..util import ffmpeg, fonts, log, sfx
 from ..util.sfxbed import SfxEvent, build_bed
 from ..util.timing import Cue, caption_cues
 
@@ -322,7 +322,9 @@ def _mix_audio(cfg: Config, slots: list[dict], timeline: dict[str, Any], workdir
     narration = Path(timeline["narration_path"])
     total = float(timeline["duration"])
 
-    sfx_paths = ffmpeg.ensure_sfx(ASSETS_DIR / "sfx")
+    sfx_paths = sfx.ensure(
+        ASSETS_DIR / "sfx", cfg.get("audio.whoosh_style", "sweep"), ffmpeg.run
+    )
     events = _sfx_events(cfg, slots)
     sfx_track = build_bed(events, sfx_paths, total, workdir / "sfx.wav", workdir / "audio")
 
@@ -375,8 +377,12 @@ def _sfx_events(cfg: Config, slots: list[dict]) -> list[SfxEvent]:
     body_index = 0
     for slot in slots:
         if slot["kind"] == "hook":
-            if hook_sfx and slot["start"] > 0.01:
+            # Solo en los cortes rapidos. Cuando el hook desacelera, un
+            # obturador cada segundo y medio suena a error, no a estilo.
+            if hook_sfx and slot["start"] > 0.01 and slot["duration"] <= 0.8:
                 events.append(SfxEvent(at=slot["start"], name="shutter"))
+            elif body_sfx and slot["start"] > 0.01:
+                events.append(SfxEvent(at=max(0.0, slot["start"] - 0.06), name="whoosh"))
         else:
             body_index += 1
             if body_sfx and body_index % every == 0:

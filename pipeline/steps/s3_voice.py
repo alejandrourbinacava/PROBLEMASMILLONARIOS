@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 from ..config import Config
-from ..providers.genaipro import GenAIPro
+from ..providers.freetts import make as make_tts
 from ..util import ffmpeg, log
 from ..util.timing import align_scenes, parse_cues
 
@@ -24,7 +24,7 @@ from ..util.timing import align_scenes, parse_cues
 def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
     audio_dir = workdir / "audio"
     audio_dir.mkdir(parents=True, exist_ok=True)
-    tts = GenAIPro(cfg)
+    tts = make_tts(cfg)
 
     units = _build_units(cfg, script)
     log.info(f"Sintetizando {len(units)} unidades de audio...")
@@ -120,7 +120,7 @@ def _split_unit(
 
 
 def _synthesize_unit(
-    tts: GenAIPro, unit: dict[str, Any], index: int, audio_dir: Path
+    tts, unit: dict[str, Any], index: int, audio_dir: Path
 ) -> dict[str, Any]:
     text = " ".join(scene["narration"] for scene in unit["scenes"]).strip()
     stem = f"{unit['kind']}_{unit['block_id']:02d}_{index:03d}"

@@ -1,0 +1,1172 @@
+{
+  "outline": {
+    "working_title": "¿Cuánto cuesta comprar y mantener un McDonald's?",
+    "total_figure": "1,2 millones para entrar y 2,2 millones al año para mantenerlo",
+    "comparison": "de cada menú de 10 euros, solo 70 céntimos son tuyos",
+    "blocks": [
+      {
+        "id": 1,
+        "chapter_title": "El billete de entrada",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 243
+      },
+      {
+        "id": 2,
+        "chapter_title": "El local nunca es tuyo",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 228
+      },
+      {
+        "id": 3,
+        "chapter_title": "Alquilar la marca",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 222
+      },
+      {
+        "id": 4,
+        "chapter_title": "Sesenta nóminas",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 242
+      },
+      {
+        "id": 5,
+        "chapter_title": "La factura invisible",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 219
+      },
+      {
+        "id": 6,
+        "chapter_title": "La reforma obligatoria",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 195
+      },
+      {
+        "id": 7,
+        "chapter_title": "Lo que de verdad te llevas",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 215
+      },
+      {
+        "id": 8,
+        "chapter_title": "La cuenta final",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 246
+      }
+    ]
+  },
+  "hook": {
+    "lines": [
+      {
+        "narration": "Un McDonald's cuesta 1,2 millones.",
+        "on_screen": "1.200.000 €"
+      },
+      {
+        "narration": "Y ese es el gasto pequeño.",
+        "on_screen": ""
+      },
+      {
+        "narration": "Le pagas alquiler a McDonald's.",
+        "on_screen": ""
+      },
+      {
+        "narration": "Sube cuanto más vendes.",
+        "on_screen": ""
+      },
+      {
+        "narration": "Firmas veinte años.",
+        "on_screen": "20 AÑOS"
+      },
+      {
+        "narration": "Y de cada menú, te quedan 70 céntimos.",
+        "on_screen": "0,70 €"
+      }
+    ],
+    "visuals": [
+      "mcdonalds restaurant exterior night",
+      "cash counting machine close up",
+      "fast food kitchen busy",
+      "hands signing contract pen",
+      "burger being assembled close up",
+      "city street traffic timelapse",
+      "coins falling slow motion",
+      "drive thru window car",
+      "restaurant crew working uniform",
+      "french fries fryer basket",
+      "empty restaurant chairs morning",
+      "calculator and invoices desk",
+      "delivery truck unloading boxes",
+      "soda cup filling machine",
+      "commercial kitchen stainless steel",
+      "shopping mall food court crowd",
+      "keys handed over close up",
+      "bank building facade",
+      "worker mopping restaurant floor",
+      "digital menu board screens",
+      "burger wrapped paper tray",
+      "night city aerial neon",
+      "person counting euro bills",
+      "restaurant opening door sign"
+    ]
+  },
+  "blocks": [
+    {
+      "id": 1,
+      "chapter_title": "El billete de entrada",
+      "scenes": [
+        {
+          "narration": "Antes de vender una sola hamburguesa, ya has firmado un cheque enorme.",
+          "broll_query": "hands signing contract pen",
+          "on_screen": ""
+        },
+        {
+          "narration": "El canon de entrada son unos cuarenta y cinco mil euros.",
+          "broll_query": "cash stack euro bills",
+          "on_screen": "45.000 €"
+        },
+        {
+          "narration": "Eso solo te da derecho a usar el nombre y el manual.",
+          "broll_query": "mcdonalds logo sign",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ni local, ni cocina, ni una triste patata.",
+          "broll_query": "empty commercial space renovation",
+          "on_screen": ""
+        },
+        {
+          "narration": "La inversión completa ronda el millón doscientos mil euros.",
+          "broll_query": "construction workers building interior",
+          "on_screen": "1,2 M€"
+        },
+        {
+          "narration": "Ahí entra la cocina industrial, el mobiliario y la obra.",
+          "broll_query": "commercial kitchen stainless steel",
+          "on_screen": ""
+        },
+        {
+          "narration": "Solo las freidoras y la plancha se van a ochenta mil.",
+          "broll_query": "deep fryer commercial kitchen",
+          "on_screen": "80.000 €"
+        },
+        {
+          "narration": "El sistema de cajas y pantallas, otros sesenta mil.",
+          "broll_query": "digital menu board screens",
+          "on_screen": "60.000 €"
+        },
+        {
+          "narration": "Y el McAuto, si lo hay, suma doscientos mil más.",
+          "broll_query": "drive thru window car",
+          "on_screen": "200.000 €"
+        },
+        {
+          "narration": "Pero aquí viene la parte que frena a casi todo el mundo.",
+          "broll_query": "person thinking worried desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "McDonald's no acepta que financies el cien por cien.",
+          "broll_query": "bank building facade",
+          "on_screen": ""
+        },
+        {
+          "narration": "Exige que al menos el cuarenta por ciento sea dinero tuyo.",
+          "broll_query": "counting money hands table",
+          "on_screen": "40%"
+        },
+        {
+          "narration": "Dinero limpio, no prestado, no hipotecado.",
+          "broll_query": "empty wallet close up",
+          "on_screen": ""
+        },
+        {
+          "narration": "Son casi quinientos mil euros en efectivo sobre la mesa.",
+          "broll_query": "cash briefcase open",
+          "on_screen": "500.000 €"
+        },
+        {
+          "narration": "Ese filtro no es casual: quieren socios que no puedan rendirse.",
+          "broll_query": "handshake business meeting",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y el dinero ni siquiera es el filtro más duro del proceso.",
+          "broll_query": "job interview office serious",
+          "on_screen": ""
+        },
+        {
+          "narration": "Antes de aceptarte, te hacen trabajar en un restaurante.",
+          "broll_query": "restaurant crew training kitchen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Nueve meses de formación, a jornada completa, sin cobrar nada.",
+          "broll_query": "employee training clipboard",
+          "on_screen": "9 MESES"
+        },
+        {
+          "narration": "Fregando suelos, montando pedidos, cerrando caja de madrugada.",
+          "broll_query": "worker mopping restaurant floor",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si no pasas esos nueve meses, te quedas fuera.",
+          "broll_query": "closed door office rejection",
+          "on_screen": ""
+        },
+        {
+          "narration": "Además exigen dedicación exclusiva al restaurante.",
+          "broll_query": "busy manager restaurant floor",
+          "on_screen": ""
+        },
+        {
+          "narration": "Nada de tener el negocio y dirigirlo desde casa.",
+          "broll_query": "empty home office chair",
+          "on_screen": ""
+        },
+        {
+          "narration": "Muchos venden sus otras empresas para poder entrar.",
+          "broll_query": "for sale sign business",
+          "on_screen": ""
+        },
+        {
+          "narration": "Buscan operadores dentro del local, no inversores de despacho.",
+          "broll_query": "manager talking to staff",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y cuando por fin firmas, descubres lo que has firmado de verdad.",
+          "broll_query": "contract paperwork stack desk",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter_title": "El local nunca es tuyo",
+      "scenes": [
+        {
+          "narration": "Aquí está el secreto peor entendido de toda la empresa.",
+          "broll_query": "mcdonalds restaurant exterior day",
+          "on_screen": ""
+        },
+        {
+          "narration": "McDonald's no gana dinero vendiendo hamburguesas.",
+          "broll_query": "burger being assembled close up",
+          "on_screen": ""
+        },
+        {
+          "narration": "Gana dinero siendo el casero de quien las vende.",
+          "broll_query": "keys handed over close up",
+          "on_screen": ""
+        },
+        {
+          "narration": "La compañía compra o alquila el suelo y el edificio.",
+          "broll_query": "aerial view commercial real estate",
+          "on_screen": ""
+        },
+        {
+          "narration": "Después te lo subarrienda a ti.",
+          "broll_query": "for lease sign building",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y no te cobra un alquiler fijo como un casero normal.",
+          "broll_query": "rental agreement signing",
+          "on_screen": ""
+        },
+        {
+          "narration": "Te cobra un porcentaje de todo lo que factures.",
+          "broll_query": "cash register receipt printing",
+          "on_screen": ""
+        },
+        {
+          "narration": "Entre el diez y el doce por ciento de las ventas.",
+          "broll_query": "percentage graph screen",
+          "on_screen": "10-12%"
+        },
+        {
+          "narration": "Traducido: cuanto mejor te va, más caro te sale el local.",
+          "broll_query": "busy restaurant customers queue",
+          "on_screen": ""
+        },
+        {
+          "narration": "Con dos millones cuatrocientos mil euros de ventas al año...",
+          "broll_query": "crowded fast food restaurant",
+          "on_screen": "2,4 M€"
+        },
+        {
+          "narration": "...el alquiler se lleva unos doscientos setenta mil euros.",
+          "broll_query": "euro bills falling slow motion",
+          "on_screen": "270.000 €"
+        },
+        {
+          "narration": "Veintidós mil euros cada mes, solo por estar ahí.",
+          "broll_query": "calendar pages flipping",
+          "on_screen": "22.000 €/mes"
+        },
+        {
+          "narration": "Y si reformas el local y vendes más, pagas más.",
+          "broll_query": "restaurant renovation workers",
+          "on_screen": ""
+        },
+        {
+          "narration": "Es un alquiler que te castiga por trabajar bien.",
+          "broll_query": "tired worker restaurant counter",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por eso hay quien dice que McDonald's es una inmobiliaria...",
+          "broll_query": "real estate buildings aerial",
+          "on_screen": ""
+        },
+        {
+          "narration": "...que además, casualmente, vende hamburguesas.",
+          "broll_query": "burger and fries tray",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y ese contrato te ata al edificio, no a la marca.",
+          "broll_query": "building blueprint architecture",
+          "on_screen": ""
+        },
+        {
+          "narration": "No puedes mudarte aunque la calle se muera.",
+          "broll_query": "empty street closed shops",
+          "on_screen": ""
+        },
+        {
+          "narration": "No puedes subarrendar ni ceder el local a otro.",
+          "broll_query": "for lease sign window",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si el barrio cambia y pierdes clientes, sigues pagando igual.",
+          "broll_query": "abandoned commercial street",
+          "on_screen": ""
+        },
+        {
+          "narration": "La compañía es uno de los mayores propietarios de suelo del mundo.",
+          "broll_query": "aerial city real estate",
+          "on_screen": ""
+        },
+        {
+          "narration": "Miles de millones en terrenos comprados hace décadas.",
+          "broll_query": "land plot aerial view",
+          "on_screen": ""
+        },
+        {
+          "narration": "Terrenos que se revalorizan solos, año tras año.",
+          "broll_query": "property value graph rising",
+          "on_screen": ""
+        },
+        {
+          "narration": "Esa revalorización es de ellos. Tú solo la pagas.",
+          "broll_query": "landlord keys building",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y todavía no hemos hablado de la marca.",
+          "broll_query": "mcdonalds golden arches sign",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter_title": "Alquilar la marca",
+      "scenes": [
+        {
+          "narration": "Usar los arcos dorados también se paga aparte.",
+          "broll_query": "mcdonalds golden arches sign",
+          "on_screen": ""
+        },
+        {
+          "narration": "El canon de servicio es un cinco por ciento de las ventas.",
+          "broll_query": "percentage symbol graphic",
+          "on_screen": "5%"
+        },
+        {
+          "narration": "Sobre dos millones cuatrocientos mil, son ciento veinte mil euros.",
+          "broll_query": "money counting machine",
+          "on_screen": "120.000 €"
+        },
+        {
+          "narration": "Ese dinero no compra nada físico.",
+          "broll_query": "empty box open",
+          "on_screen": ""
+        },
+        {
+          "narration": "Compra el derecho a seguir llamándote McDonald's un año más.",
+          "broll_query": "restaurant sign at night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y encima está la publicidad, que también sale de tu bolsillo.",
+          "broll_query": "television commercial screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Otro cuatro por ciento largo va al fondo de marketing.",
+          "broll_query": "advertising billboard city",
+          "on_screen": "4%"
+        },
+        {
+          "narration": "Casi cien mil euros al año en anuncios que no eliges tú.",
+          "broll_query": "billboard advertisement street",
+          "on_screen": "100.000 €"
+        },
+        {
+          "narration": "Los decide la central, en Madrid o en Chicago.",
+          "broll_query": "corporate office building glass",
+          "on_screen": ""
+        },
+        {
+          "narration": "Suma royalty y publicidad: doscientos veinte mil euros.",
+          "broll_query": "calculator numbers close up",
+          "on_screen": "220.000 €"
+        },
+        {
+          "narration": "Ahora júntalo con el alquiler del capítulo anterior.",
+          "broll_query": "invoices paperwork desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "Casi medio millón de euros al año...",
+          "broll_query": "stack of euro banknotes",
+          "on_screen": "490.000 €"
+        },
+        {
+          "narration": "...antes de comprar un solo gramo de carne.",
+          "broll_query": "raw beef patties kitchen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y esa carne, claro, tampoco la eliges tú.",
+          "broll_query": "food delivery truck unloading",
+          "on_screen": ""
+        },
+        {
+          "narration": "¿Y qué compras exactamente con ese cinco por ciento?",
+          "broll_query": "question mark neon sign",
+          "on_screen": ""
+        },
+        {
+          "narration": "Compras una cadena de suministro que funciona sola.",
+          "broll_query": "warehouse logistics conveyor",
+          "on_screen": ""
+        },
+        {
+          "narration": "Compras un manual con cada gesto de la cocina cronometrado.",
+          "broll_query": "kitchen timer stopwatch",
+          "on_screen": ""
+        },
+        {
+          "narration": "Compras que la gente entre sin preguntarse si se comerá bien.",
+          "broll_query": "customers entering restaurant",
+          "on_screen": ""
+        },
+        {
+          "narration": "Eso vale dinero. La discusión es cuánto.",
+          "broll_query": "balance scale money",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y desde hace unos años hay un gasto nuevo encima.",
+          "broll_query": "smartphone food delivery app",
+          "on_screen": ""
+        },
+        {
+          "narration": "Las plataformas de reparto se llevan del veinticinco al treinta por ciento.",
+          "broll_query": "delivery rider scooter city",
+          "on_screen": "25-30%"
+        },
+        {
+          "narration": "De cada pedido a domicilio, casi un tercio se va fuera.",
+          "broll_query": "delivery bag food handover",
+          "on_screen": ""
+        },
+        {
+          "narration": "Vendes más volumen y ganas menos por pedido.",
+          "broll_query": "delivery packages stacked",
+          "on_screen": ""
+        },
+        {
+          "narration": "Pero el gasto más grande todavía no ha aparecido.",
+          "broll_query": "restaurant crew working uniform",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter_title": "Sesenta nóminas",
+      "scenes": [
+        {
+          "narration": "Un McDonald's medio necesita entre sesenta y setenta personas.",
+          "broll_query": "restaurant staff team working",
+          "on_screen": "60-70"
+        },
+        {
+          "narration": "No trabajan todos a la vez, pero cobran todos.",
+          "broll_query": "employees schedule board",
+          "on_screen": ""
+        },
+        {
+          "narration": "Turnos partidos, fines de semana, madrugadas y festivos.",
+          "broll_query": "night shift worker restaurant",
+          "on_screen": ""
+        },
+        {
+          "narration": "La nómina se lleva cerca del veintisiete por ciento de las ventas.",
+          "broll_query": "payroll documents calculator",
+          "on_screen": "27%"
+        },
+        {
+          "narration": "Son unos seiscientos cincuenta mil euros al año.",
+          "broll_query": "euro bills fanned out",
+          "on_screen": "650.000 €"
+        },
+        {
+          "narration": "Cincuenta y cuatro mil euros cada mes en sueldos.",
+          "broll_query": "person working cash register",
+          "on_screen": "54.000 €/mes"
+        },
+        {
+          "narration": "Y ese número no lo controlas casi nada.",
+          "broll_query": "worried manager office desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "El convenio marca los salarios y la seguridad social.",
+          "broll_query": "legal documents signing",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si sube el salario mínimo, tú lo absorbes.",
+          "broll_query": "graph rising arrow screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "El precio del menú, en cambio, lo decide la central.",
+          "broll_query": "menu board prices restaurant",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ahí está la trampa del modelo entero.",
+          "broll_query": "chess pieces board strategy",
+          "on_screen": ""
+        },
+        {
+          "narration": "Los costes son tuyos. Los precios son suyos.",
+          "broll_query": "hands tied rope symbolic",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y la rotación de personal ronda el setenta por ciento anual.",
+          "broll_query": "revolving door people",
+          "on_screen": "70%"
+        },
+        {
+          "narration": "Formas gente todo el año para que se vaya en seis meses.",
+          "broll_query": "training new employee kitchen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cada persona que entra y sale cuesta dinero.",
+          "broll_query": "empty uniform hanging locker",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por encima de todos ellos hay tres o cuatro encargados.",
+          "broll_query": "restaurant manager uniform",
+          "on_screen": ""
+        },
+        {
+          "narration": "Esos sí son fijos, y cobran el doble que el resto.",
+          "broll_query": "manager reviewing documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "La seguridad social añade un treinta por ciento sobre cada sueldo.",
+          "broll_query": "payroll spreadsheet screen",
+          "on_screen": "+30%"
+        },
+        {
+          "narration": "Eso ya está dentro de los seiscientos cincuenta mil.",
+          "broll_query": "calculator and payslips",
+          "on_screen": ""
+        },
+        {
+          "narration": "Pero no está el absentismo, ni las bajas, ni las sustituciones.",
+          "broll_query": "empty workstation restaurant",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un sábado con dos bajas te arruina el mejor día de la semana.",
+          "broll_query": "busy queue restaurant counter",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y formar a alguien cuesta unas cuarenta horas pagadas.",
+          "broll_query": "training session employees",
+          "on_screen": "40 h"
+        },
+        {
+          "narration": "Con setenta por ciento de rotación, formas casi una plantilla entera al año.",
+          "broll_query": "revolving door people blur",
+          "on_screen": ""
+        },
+        {
+          "narration": "Es un coste que no aparece en ninguna línea del balance.",
+          "broll_query": "financial report pages",
+          "on_screen": ""
+        },
+        {
+          "narration": "Pero aún queda la factura que nadie enseña.",
+          "broll_query": "electricity meter close up",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter_title": "La factura invisible",
+      "scenes": [
+        {
+          "narration": "Un McDonald's abre dieciocho horas al día, todos los días.",
+          "broll_query": "restaurant open 24 hours sign",
+          "on_screen": "18 h/día"
+        },
+        {
+          "narration": "Las freidoras no se apagan. Las cámaras frigoríficas tampoco.",
+          "broll_query": "industrial refrigerator kitchen",
+          "on_screen": ""
+        },
+        {
+          "narration": "La factura de luz ronda los sesenta mil euros al año.",
+          "broll_query": "electricity meter spinning",
+          "on_screen": "60.000 €"
+        },
+        {
+          "narration": "Cinco mil euros al mes solo en electricidad.",
+          "broll_query": "power lines sunset",
+          "on_screen": "5.000 €/mes"
+        },
+        {
+          "narration": "El agua, la limpieza y los residuos suman veinte mil más.",
+          "broll_query": "cleaning restaurant floor mop",
+          "on_screen": "20.000 €"
+        },
+        {
+          "narration": "Y luego está la comida, que es el gasto mayor de todos.",
+          "broll_query": "food ingredients kitchen prep",
+          "on_screen": ""
+        },
+        {
+          "narration": "Alrededor del treinta por ciento de cada venta.",
+          "broll_query": "burger ingredients close up",
+          "on_screen": "30%"
+        },
+        {
+          "narration": "Setecientos veinte mil euros al año en producto.",
+          "broll_query": "delivery boxes warehouse",
+          "on_screen": "720.000 €"
+        },
+        {
+          "narration": "Con los proveedores impuestos por la central.",
+          "broll_query": "supply truck logistics",
+          "on_screen": ""
+        },
+        {
+          "narration": "No puedes buscar carne más barata aunque la encuentres.",
+          "broll_query": "butcher meat counter",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y lo que no se vende, se tira.",
+          "broll_query": "food waste bin restaurant",
+          "on_screen": ""
+        },
+        {
+          "narration": "Las mermas se comen otro dos por ciento largo.",
+          "broll_query": "trash bags restaurant kitchen",
+          "on_screen": "2%"
+        },
+        {
+          "narration": "Cincuenta mil euros al año a la basura, literalmente.",
+          "broll_query": "garbage truck collecting",
+          "on_screen": "50.000 €"
+        },
+        {
+          "narration": "Todo esto es constante, mes tras mes, sin descanso.",
+          "broll_query": "clock time lapse wall",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y hay gastos que ni te imaginas hasta que los pagas.",
+          "broll_query": "surprised person looking bill",
+          "on_screen": ""
+        },
+        {
+          "narration": "El aceite de las freidoras se cambia cada pocos días.",
+          "broll_query": "cooking oil pouring fryer",
+          "on_screen": ""
+        },
+        {
+          "narration": "Solo eso son más de veinte mil euros al año.",
+          "broll_query": "oil containers kitchen",
+          "on_screen": "20.000 €"
+        },
+        {
+          "narration": "Los envases, las bolsas y los vasos: otros ochenta mil.",
+          "broll_query": "paper cups packaging stack",
+          "on_screen": "80.000 €"
+        },
+        {
+          "narration": "El hielo, los uniformes, los productos de limpieza.",
+          "broll_query": "ice machine commercial",
+          "on_screen": ""
+        },
+        {
+          "narration": "Los contratos de mantenimiento de la maquinaria.",
+          "broll_query": "technician repairing equipment",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cuando se rompe una freidora un viernes, pagas la urgencia.",
+          "broll_query": "repair technician tools kitchen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ninguna de estas partidas es enorme por separado.",
+          "broll_query": "small coins pile",
+          "on_screen": ""
+        },
+        {
+          "narration": "Juntas se comen el beneficio de un mes entero.",
+          "broll_query": "monthly calendar red mark",
+          "on_screen": ""
+        },
+        {
+          "narration": "Pero cada siete años llega un golpe distinto.",
+          "broll_query": "construction site scaffolding",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter_title": "La reforma obligatoria",
+      "scenes": [
+        {
+          "narration": "El contrato incluye una cláusula que casi nadie lee bien.",
+          "broll_query": "reading contract magnifying glass",
+          "on_screen": ""
+        },
+        {
+          "narration": "Estás obligado a reformar el restaurante cada cierto tiempo.",
+          "broll_query": "restaurant interior renovation",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cuando la marca cambia de imagen, tú pagas el cambio.",
+          "broll_query": "interior design blueprint",
+          "on_screen": ""
+        },
+        {
+          "narration": "No es pintar una pared. Es rehacer el local entero.",
+          "broll_query": "demolition interior construction",
+          "on_screen": ""
+        },
+        {
+          "narration": "Mobiliario nuevo, cocina nueva, pantallas nuevas.",
+          "broll_query": "modern restaurant interior new",
+          "on_screen": ""
+        },
+        {
+          "narration": "Entre trescientos mil y quinientos mil euros cada vez.",
+          "broll_query": "money and construction plans",
+          "on_screen": "300-500 mil €"
+        },
+        {
+          "narration": "Y mientras dura la obra, el restaurante cierra.",
+          "broll_query": "closed sign shop window",
+          "on_screen": ""
+        },
+        {
+          "narration": "Semanas sin facturar, pero pagando nóminas y alquiler.",
+          "broll_query": "empty restaurant chairs",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si te niegas, incumples el contrato.",
+          "broll_query": "contract being torn",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y si incumples, puedes perder la licencia entera.",
+          "broll_query": "closed restaurant boarded up",
+          "on_screen": ""
+        },
+        {
+          "narration": "Veinte años dan para dos o tres reformas de estas.",
+          "broll_query": "calendar years passing",
+          "on_screen": "x2 o x3"
+        },
+        {
+          "narration": "Casi un millón de euros extra a lo largo del contrato.",
+          "broll_query": "euro banknotes stack tall",
+          "on_screen": "1 M€"
+        },
+        {
+          "narration": "Nadie te lo cuenta el día que firmas.",
+          "broll_query": "signing contract close up hands",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y al llegar al año veinte, llega la última sorpresa.",
+          "broll_query": "hourglass running out",
+          "on_screen": ""
+        },
+        {
+          "narration": "El contrato no se renueva solo.",
+          "broll_query": "expired document stamp",
+          "on_screen": ""
+        },
+        {
+          "narration": "Hay que negociarlo otra vez, y volver a pagar por entrar.",
+          "broll_query": "negotiation meeting table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Con el local puesto a punto, según sus condiciones.",
+          "broll_query": "renovated restaurant interior",
+          "on_screen": ""
+        },
+        {
+          "narration": "La maquinaria industrial dura entre ocho y diez años.",
+          "broll_query": "commercial kitchen equipment",
+          "on_screen": "8-10 AÑOS"
+        },
+        {
+          "narration": "Así que en veinte años cambias la cocina dos veces enteras.",
+          "broll_query": "kitchen equipment installation",
+          "on_screen": ""
+        },
+        {
+          "narration": "Nada de esto es letra pequeña oculta: está escrito.",
+          "broll_query": "reading contract closeup",
+          "on_screen": ""
+        },
+        {
+          "narration": "Simplemente, nadie lo suma antes de firmar.",
+          "broll_query": "person signing pen paper",
+          "on_screen": ""
+        },
+        {
+          "narration": "Entonces, con todo esto encima, ¿se gana dinero o no?",
+          "broll_query": "person calculating finances",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter_title": "Lo que de verdad te llevas",
+      "scenes": [
+        {
+          "narration": "Vamos a montar la cuenta de un año completo.",
+          "broll_query": "spreadsheet numbers screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ventas: dos millones cuatrocientos mil euros.",
+          "broll_query": "cash register busy restaurant",
+          "on_screen": "2,4 M€"
+        },
+        {
+          "narration": "Producto y mermas: setecientos setenta mil.",
+          "broll_query": "food supplies boxes kitchen",
+          "on_screen": "-770.000 €"
+        },
+        {
+          "narration": "Personal: seiscientos cincuenta mil.",
+          "broll_query": "restaurant employees working",
+          "on_screen": "-650.000 €"
+        },
+        {
+          "narration": "Alquiler a McDonald's: doscientos setenta mil.",
+          "broll_query": "building keys and contract",
+          "on_screen": "-270.000 €"
+        },
+        {
+          "narration": "Royalty y publicidad: doscientos veinte mil.",
+          "broll_query": "advertising campaign screens",
+          "on_screen": "-220.000 €"
+        },
+        {
+          "narration": "Suministros, limpieza y mantenimiento: ciento veinte mil.",
+          "broll_query": "maintenance worker repairing",
+          "on_screen": "-120.000 €"
+        },
+        {
+          "narration": "Seguros, gestoría, licencias e imprevistos: sesenta mil.",
+          "broll_query": "insurance documents desk",
+          "on_screen": "-60.000 €"
+        },
+        {
+          "narration": "Total de gastos: dos millones noventa mil euros.",
+          "broll_query": "calculator total display",
+          "on_screen": "-2,09 M€"
+        },
+        {
+          "narration": "Te quedan trescientos diez mil euros de beneficio operativo.",
+          "broll_query": "profit graph rising",
+          "on_screen": "310.000 €"
+        },
+        {
+          "narration": "Suena bien, hasta que restas la financiación.",
+          "broll_query": "bank loan documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "El préstamo de la inversión se lleva ciento veinte mil al año.",
+          "broll_query": "mortgage payment calculator",
+          "on_screen": "-120.000 €"
+        },
+        {
+          "narration": "Y luego llega Hacienda a por su parte.",
+          "broll_query": "tax forms and pen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Al final del año, limpio, te quedan unos ciento cincuenta mil.",
+          "broll_query": "person counting money desk",
+          "on_screen": "150.000 €"
+        },
+        {
+          "narration": "Sobre dos millones cuatrocientos mil facturados.",
+          "broll_query": "busy restaurant wide shot",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un seis por ciento. Seis céntimos de cada euro.",
+          "broll_query": "single euro coin close up",
+          "on_screen": "6%"
+        },
+        {
+          "narration": "Y ojo, porque esa cuenta es la de un restaurante que va bien.",
+          "broll_query": "busy restaurant success",
+          "on_screen": ""
+        },
+        {
+          "narration": "Uno con dos millones cuatrocientos mil de ventas.",
+          "broll_query": "cash register busy day",
+          "on_screen": ""
+        },
+        {
+          "narration": "Hay locales que facturan un millón y medio.",
+          "broll_query": "quiet restaurant few customers",
+          "on_screen": "1,5 M€"
+        },
+        {
+          "narration": "Con esa facturación, los costes fijos se te comen vivo.",
+          "broll_query": "declining graph red",
+          "on_screen": ""
+        },
+        {
+          "narration": "El alquiler baja, sí, pero la nómina mínima no.",
+          "broll_query": "employee schedule board",
+          "on_screen": ""
+        },
+        {
+          "narration": "Necesitas la misma gente para abrir dieciocho horas.",
+          "broll_query": "restaurant opening morning",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por debajo de dos millones, el margen se acerca a cero.",
+          "broll_query": "zero on calculator",
+          "on_screen": "0%"
+        },
+        {
+          "narration": "Por eso la ubicación no es importante: es todo.",
+          "broll_query": "busy city corner location",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y la ubicación, recordemos, la elige la central.",
+          "broll_query": "corporate decision meeting",
+          "on_screen": ""
+        },
+        {
+          "narration": "De cada menú de diez euros, setenta céntimos son tuyos.",
+          "broll_query": "burger meal tray table",
+          "on_screen": "0,70 €"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter_title": "La cuenta final",
+      "scenes": [
+        {
+          "narration": "Recapitulemos lo que significa comprar un McDonald's.",
+          "broll_query": "mcdonalds restaurant exterior night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Pones un millón doscientos mil euros para empezar.",
+          "broll_query": "cash briefcase money",
+          "on_screen": "1,2 M€"
+        },
+        {
+          "narration": "De los cuales medio millón tiene que ser tuyo de verdad.",
+          "broll_query": "person counting euro bills",
+          "on_screen": "500.000 €"
+        },
+        {
+          "narration": "Mueves dos millones cuatrocientos mil euros al año.",
+          "broll_query": "busy restaurant customers",
+          "on_screen": "2,4 M€"
+        },
+        {
+          "narration": "Gestionas a sesenta y cinco personas.",
+          "broll_query": "restaurant team meeting",
+          "on_screen": "65"
+        },
+        {
+          "narration": "Trabajas dentro de un manual que no has escrito tú.",
+          "broll_query": "instruction manual pages",
+          "on_screen": ""
+        },
+        {
+          "narration": "No eliges proveedores, ni precios, ni publicidad.",
+          "broll_query": "corporate meeting boardroom",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y te llevas ciento cincuenta mil euros al año.",
+          "broll_query": "money envelope cash",
+          "on_screen": "150.000 €"
+        },
+        {
+          "narration": "Recuperar la inversión te lleva unos ocho años.",
+          "broll_query": "calendar planning long term",
+          "on_screen": "8 AÑOS"
+        },
+        {
+          "narration": "De un contrato que dura veinte.",
+          "broll_query": "hourglass sand time",
+          "on_screen": "20 AÑOS"
+        },
+        {
+          "narration": "Los otros doce sí son rentables de verdad.",
+          "broll_query": "successful business owner smiling",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por eso casi nadie vende su McDonald's una vez lo tiene.",
+          "broll_query": "restaurant open sign glowing",
+          "on_screen": ""
+        },
+        {
+          "narration": "Es un negocio lento, seguro y agotador.",
+          "broll_query": "night shift restaurant closing",
+          "on_screen": ""
+        },
+        {
+          "narration": "Es una nómina muy buena, con un millón de euros de aval.",
+          "broll_query": "bank vault door",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ganas lo que gana un directivo, pero el riesgo es tuyo.",
+          "broll_query": "executive office window city",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ese es el problema millonario de los arcos dorados.",
+          "broll_query": "golden arches sign sunset",
+          "on_screen": ""
+        },
+        {
+          "narration": "Compáralo con la alternativa más aburrida del mundo.",
+          "broll_query": "stock market chart screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Coges esos quinientos mil euros y no haces nada.",
+          "broll_query": "money in bank vault",
+          "on_screen": "500.000 €"
+        },
+        {
+          "narration": "Los metes en un fondo indexado y te vas a dormir.",
+          "broll_query": "person sleeping peacefully",
+          "on_screen": ""
+        },
+        {
+          "narration": "Sacarías unos treinta y cinco mil euros al año.",
+          "broll_query": "investment growth chart",
+          "on_screen": "35.000 €"
+        },
+        {
+          "narration": "Sin empleados, sin madrugones, sin freidoras rotas.",
+          "broll_query": "relaxed person beach laptop",
+          "on_screen": ""
+        },
+        {
+          "narration": "El McDonald's te da cuatro veces más...",
+          "broll_query": "restaurant busy successful",
+          "on_screen": "x4"
+        },
+        {
+          "narration": "...a cambio de sesenta horas semanales durante veinte años.",
+          "broll_query": "tired worker late night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y de algo que no aparece en ninguna cuenta anual.",
+          "broll_query": "empty family dinner table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Al final del contrato, además, el negocio vale dinero.",
+          "broll_query": "handshake business sale",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un McDonald's consolidado se traspasa por más de un millón.",
+          "broll_query": "restaurant sold sign",
+          "on_screen": "1 M€"
+        },
+        {
+          "narration": "Ese es el premio real: no el sueldo, el patrimonio.",
+          "broll_query": "house and keys investment",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si te ha servido, suscríbete. Cada semana desmontamos otro.",
+          "broll_query": "subscribe button animation",
+          "on_screen": ""
+        }
+      ]
+    }
+  ]
+}

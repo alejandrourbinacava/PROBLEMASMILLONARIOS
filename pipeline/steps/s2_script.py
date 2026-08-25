@@ -25,7 +25,11 @@ from ..util import log
 def run(cfg: Config, topic: dict[str, Any], workdir: Path) -> dict[str, Any]:
     provider = (cfg.get("script.provider", "anthropic") or "").lower()
     if provider == "manual":
-        return _load_manual(topic)
+        script = _load_manual(topic)
+        # Se copia al directorio de trabajo igual que el generado: es lo que
+        # leen --resume, los diagnósticos y los scripts de previsualización.
+        _save(script, workdir)
+        return script
 
     llm = LLM(cfg)
     target_minutes = float(cfg.get("script.target_minutes", 13))
@@ -68,10 +72,15 @@ def run(cfg: Config, topic: dict[str, Any], workdir: Path) -> dict[str, Any]:
             "o min_blocks en config/channel.yml."
         )
 
+    _save(script, workdir)
+    return script
+
+
+def _save(script: dict[str, Any], workdir: Path) -> None:
+    workdir.mkdir(parents=True, exist_ok=True)
     (workdir / "script.json").write_text(
         json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    return script
 
 
 # ---------------- pasadas ----------------

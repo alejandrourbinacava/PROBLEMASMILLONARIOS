@@ -80,13 +80,24 @@ def _hook_slots(cfg: Config, script: dict[str, Any], timeline: dict[str, Any]) -
     visuals: list[str] = script["hook"]["visuals"] or ["money cash"]
     rng = random.Random(f"hook:{script['outline'].get('working_title', '')}")
 
+    # El troceo rapido solo dura edit.hook.duration_s. Si la narracion del hook
+    # se alarga mas, los cortes van frenando hasta el ritmo del cuerpo: veinte
+    # segundos de obturador cada 0,3 s no enganchan, cansan.
+    fast_window = min(float(cfg.get("edit.hook.duration_s", 9.0)), hook_end)
+    body_pace = float(cfg.get("edit.body.scene_min_s", 3.0))
+
     slots: list[dict] = []
     cursor = 0.0
     index = 0
     while cursor < hook_end - 0.08:
-        # Los cortes se aceleran ligeramente segun avanza el hook
-        progress = cursor / hook_end
-        span = rng.uniform(cut_min, cut_max) * (1.0 - 0.25 * progress)
+        if cursor < fast_window:
+            # Los cortes se aceleran ligeramente segun avanza la fase rapida
+            progress = cursor / max(0.1, fast_window)
+            span = rng.uniform(cut_min, cut_max) * (1.0 - 0.25 * progress)
+        else:
+            # Fase de salida: interpola de cut_max al ritmo normal de escena
+            tail = (cursor - fast_window) / max(0.1, hook_end - fast_window)
+            span = cut_max + (body_pace - cut_max) * min(1.0, tail)
         end = min(hook_end, cursor + span)
         slots.append({
             "kind": "hook",

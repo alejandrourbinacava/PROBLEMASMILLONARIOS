@@ -77,57 +77,5 @@ def concat_copy(segments: list[Path], out_path: Path, workdir: Path) -> None:
     run(["-f", "concat", "-safe", "0", "-i", str(listfile), "-c", "copy", str(out_path)])
 
 
-# --------------------------------------------------------------------------
-# Efectos de sonido generados por síntesis: el repo funciona sin descargar nada.
-# Si dejas un .wav con el mismo nombre en assets/sfx/ se usa el tuyo.
-# --------------------------------------------------------------------------
-
-_SFX_RECIPES: dict[str, tuple[str, str]] = {
-    # nombre: (fuente lavfi, cadena de filtros de audio)
-    "whoosh": (
-        "anoisesrc=d=0.6:c=pink:a=0.9:r=48000",
-        "highpass=f=260,lowpass=f=7000,"
-        "afade=t=in:st=0:d=0.10:curve=exp,"
-        "afade=t=out:st=0.16:d=0.44:curve=exp,"
-        "aecho=0.8:0.7:22:0.25,volume=2.2",
-    ),
-    "shutter": (
-        "anoisesrc=d=0.16:c=white:a=0.9:r=48000",
-        "highpass=f=1400,lowpass=f=11000,"
-        "afade=t=in:st=0:d=0.004,"
-        "afade=t=out:st=0.02:d=0.11:curve=exp,volume=2.6",
-    ),
-    "impact": (
-        "sine=frequency=62:duration=1.1:sample_rate=48000",
-        "afade=t=in:st=0:d=0.005,"
-        "afade=t=out:st=0.06:d=1.0:curve=exp,"
-        "acompressor=threshold=0.1:ratio=6,volume=2.4",
-    ),
-}
-
-
-def ensure_sfx(sfx_dir: Path) -> dict[str, Path]:
-    """Devuelve {nombre: ruta}, sintetizando los que falten."""
-    sfx_dir.mkdir(parents=True, exist_ok=True)
-    paths: dict[str, Path] = {}
-    for name, (source, filters) in _SFX_RECIPES.items():
-        # Prioridad a un archivo aportado por el usuario
-        override = next(
-            (sfx_dir / f"{name}{ext}" for ext in (".wav", ".mp3", ".m4a")
-             if (sfx_dir / f"{name}{ext}").exists() and (sfx_dir / f"{name}{ext}").stat().st_size > 1024),
-            None,
-        )
-        if override is not None:
-            paths[name] = override
-            continue
-        target = sfx_dir / f"{name}.wav"
-        if not target.exists() or target.stat().st_size < 1024:
-            log.info(f"Sintetizando efecto de sonido: {name}.wav")
-            run(["-f", "lavfi", "-i", source, "-af", filters,
-                 "-ac", "2", "-ar", "48000", "-c:a", "pcm_s16le", str(target)])
-        paths[name] = target
-    return paths
-
-
 def db_to_linear(db: float) -> float:
     return float(10.0 ** (db / 20.0))

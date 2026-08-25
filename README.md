@@ -39,14 +39,23 @@ En local, cópialas a un archivo `.env` (mira `.env.example`). El `.env` está e
 
 ### 2. Elegir la voz
 
+Hay dos opciones, y se cambian con `voice.provider` en `config/channel.yml`:
+
+**Gratis, sin clave** (`provider: "edge"`, es lo que viene puesto). Usa el
+servicio de lectura de Microsoft Edge. Voces en español de España:
+`es-ES-AlvaroNeural` (masculina), `es-ES-ElviraNeural` y `es-ES-XimenaNeural`.
+Además devuelve la posición exacta de **cada palabra**, así que la imagen cuadra
+con la voz al milisegundo en vez de por reparto proporcional.
+
+**De pago** (`provider: "genaipro"`), con tu `GENAIPRO_API_KEY`:
+
 ```bash
 pip install -r requirements.txt
 python scripts/list_voices.py --demo 4
 ```
 
-Genera cuatro muestras en `build/_voice_demos/`. Escúchalas, y pega el `voice_id`
-que más te guste en `config/channel.yml` → `voice.voice_id`. **Sin esto el
-pipeline no arranca.**
+Genera cuatro muestras en `build/_voice_demos/`. Escúchalas y pega el `voice_id`
+en `config/channel.yml` → `voice.voice_id`.
 
 ### 3. Permiso de YouTube
 
@@ -76,9 +85,27 @@ y efectos, que suena plano. Fuentes seguras: la **Biblioteca de audio de YouTube
 (Studio → Audio library) o Pixabay Music. El pipeline elige una al azar por vídeo
 y la baja sola cuando entra la voz.
 
-Los efectos de transición (whoosh, obturador, impacto) **se generan solos** por
-síntesis, no hay que descargar nada. Si prefieres los tuyos, deja
-`whoosh.wav`, `shutter.wav` o `impact.wav` en `assets/sfx/` y se usarán esos.
+### 4b. Elegir el sonido de transición
+
+Los efectos **se generan solos** por síntesis, no hay que descargar nada. Hay
+cuatro estilos de whoosh:
+
+```bash
+python scripts/preview_sfx.py
+```
+
+| Estilo | Cómo suena |
+|---|---|
+| `sweep` | Barrido ascendente con cuerpo. El estándar, y el que viene puesto. |
+| `riser` | Sube y corta en seco. Muy agresivo, tipo tráiler. |
+| `swish` | Corto y seco. El menos invasivo, para vídeos con mucho corte. |
+| `sub` | Aire arriba y golpe de grave. El más "de canal grande". |
+
+Escucha los `*_en_contexto.wav`, no los aislados: un whoosh suelto siempre suena
+raro. Cuando elijas, ponlo en `config/channel.yml` → `audio.whoosh_style`.
+
+Si prefieres efectos tuyos, deja `whoosh.wav`, `shutter.wav` o `impact.wav` en
+`assets/sfx/` y se usarán esos en lugar de los sintéticos.
 
 ### 5. Encender la automatización
 
@@ -95,7 +122,13 @@ python -m pipeline.cli --no-upload            # genera el vídeo sin publicarlo
 python -m pipeline.cli --topic "Cuánto cuesta un submarino"
 python -m pipeline.cli --resume               # retoma sin repetir guion ni voz
 python scripts/smoke_render.py                # valida el montaje sin gastar API
+python scripts/preview_sfx.py                 # compara los estilos de transición
+python scripts/preview_hook.py build/<carpeta>  # escucha el hook ya montado
 ```
+
+`preview_hook.py` es el atajo importante para afinar la intro: monta la voz real
+con los obturadores y los whoosh en su sitio exacto, sin renderizar vídeo. Si el
+hook no engancha en audio, no va a enganchar con clips encima.
 
 `--resume` es el importante: si falla el montaje, no vuelve a pagar la síntesis de
 voz. Cada paso deja su JSON en `build/<fecha>_<tema>/` y se relee.
@@ -169,9 +202,12 @@ pipeline/
   cli.py         orquestador con --resume
   steps/         s1 tema · s2 guion · s3 voz · s4 b-roll
                  s5 montaje · s6 miniatura · s7 metadatos · s8 subida
-  providers/     genaipro (voz) · llm · stock (Pexels/Pixabay) · youtube
-  util/          ffmpeg · timing (sincronía) · captions (ASS) · sfxbed · fonts
+  providers/     genaipro y freetts (voz) · llm · stock (Pexels/Pixabay) · youtube
+  util/          ffmpeg · timing (sincronía) · captions (ASS)
+                 sfx (diseño de sonido) · sfxbed (mezcla) · fonts
 scripts/         list_voices · get_youtube_token · fetch_fonts
                  smoke_render · prune_cache
+                 preview_sfx · preview_hook
+config/manual/   guiones escritos a mano (script.provider: manual)
 data/ledger.json temas publicados y clips usados (anti-repetición)
 ```

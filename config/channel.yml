@@ -21,10 +21,17 @@ script:
   min_blocks: 7
   max_blocks: 10
 
-# ---------------- VOZ (GenAIPro Labs) ----------------
+# ---------------- VOZ ----------------
 voice:
+  # genaipro = de pago, con tu API key
+  # edge     = GRATIS, sin clave. Voces es-ES-AlvaroNeural / ElviraNeural /
+  #            XimenaNeural. Además devuelve la posición exacta de cada
+  #            palabra, así que la imagen cuadra al milisegundo.
+  provider: "edge"
   base_url: "https://genaipro.vn/api/v1"
-  voice_id: ""                   # <-- RELLENAR. Usa: python scripts/list_voices.py
+  # Con provider edge: es-ES-AlvaroNeural | es-ES-ElviraNeural | es-ES-XimenaNeural
+  # Con provider genaipro: el id que saques de python scripts/list_voices.py
+  voice_id: "es-ES-AlvaroNeural"
   model_id: "eleven_multilingual_v2"
   speed: 1.05                    # 0.7 - 1.2
   stability: 0.45
@@ -93,6 +100,13 @@ captions:
 
 # ---------------- AUDIO ----------------
 audio:
+  # Estilo del sonido de transición. Escúchalos con:
+  #   python scripts/preview_sfx.py
+  #   sweep  barrido ascendente con cuerpo (el estándar)
+  #   riser  sube y corta en seco, muy agresivo
+  #   swish  corto y seco, el menos invasivo
+  #   sub    aire arriba y golpe de grave, el más 'de canal grande'
+  whoosh_style: "sweep"
   music_volume_db: -22.0         # cama musical de fondo
   duck_db: -12.0                 # cuánto baja la música cuando habla la voz
   sfx_volume_db: -9.0

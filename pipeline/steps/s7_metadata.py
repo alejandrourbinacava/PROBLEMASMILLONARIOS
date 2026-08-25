@@ -136,7 +136,7 @@ def _build_tags(raw_tags: list[str], topic: dict, title: str) -> list[str]:
     seen: set[str] = set()
 
     def push(value: Any) -> None:
-        tag = re.sub(r"[#\"']", "", str(value)).strip().lower()
+        tag = re.sub(r"[#\"'¿?¡!]", "", str(value)).strip().lower()
         tag = re.sub(r"\s+", " ", tag)
         if 2 < len(tag) <= 60 and tag not in seen:
             seen.add(tag)
@@ -144,7 +144,10 @@ def _build_tags(raw_tags: list[str], topic: dict, title: str) -> list[str]:
 
     for tag in raw_tags:
         push(tag)
-    for tag in topic.get("tags_seed", []):
+    # Sin semillas en el YAML (por ejemplo con --topic) se sacan del título:
+    # sin ellas las etiquetas se quedaban a medio camino de los 500 caracteres.
+    seeds = list(topic.get("tags_seed", [])) or _seeds_from_title(title)
+    for tag in seeds:
         push(tag)
     for tag in _GENERIC_TAGS:
         push(tag)
@@ -153,7 +156,7 @@ def _build_tags(raw_tags: list[str], topic: dict, title: str) -> list[str]:
 
     # Variantes long-tail para apurar el limite: 500 caracteres de palabras
     # clave desaprovechados son 500 caracteres de alcance regalados.
-    for variant in _variants(topic, raw_tags):
+    for variant in _variants(seeds, raw_tags):
         push(variant)
 
     selected: list[str] = []
@@ -167,10 +170,10 @@ def _build_tags(raw_tags: list[str], topic: dict, title: str) -> list[str]:
     return selected
 
 
-def _variants(topic: dict, raw_tags: list[str]) -> list[str]:
+def _variants(seeds: list[str], raw_tags: list[str]) -> list[str]:
     """Combina el nucleo del tema con modificadores de busqueda habituales."""
     cores: list[str] = []
-    for seed in list(topic.get("tags_seed", [])) + [str(t) for t in raw_tags[:4]]:
+    for seed in list(seeds) + [str(t) for t in raw_tags[:4]]:
         core = re.sub(r"[^\w\sáéíóúüñ]", "", str(seed)).strip().lower()
         if 2 < len(core) <= 28 and core not in cores:
             cores.append(core)
@@ -181,6 +184,24 @@ def _variants(topic: dict, raw_tags: list[str]) -> list[str]:
         "comprar {}", "{} explicado",
     ]
     return [pattern.format(core) for core in cores[:4] for pattern in patterns]
+
+
+_TITLE_STOPWORDS = {
+    "cuanto", "cuánto", "cuesta", "cuestan", "vale", "valen", "que", "qué",
+    "comprar", "mantener", "tener", "un", "una", "unos", "unas", "el", "la",
+    "los", "las", "de", "del", "al", "en", "por", "para", "con", "y", "o",
+    "es", "son", "su", "sus", "lo", "se", "asi", "así", "todo", "toda",
+}
+
+
+def _seeds_from_title(title: str) -> list[str]:
+    """Palabras con carga semántica del título, para sembrar las etiquetas."""
+    cleaned = re.sub(r"[¿?¡!.,;:()\"']", " ", title.lower())
+    words = [w for w in cleaned.split() if w not in _TITLE_STOPWORDS and len(w) > 2]
+    seeds = list(dict.fromkeys(words))[:3]
+    if len(seeds) > 1:
+        seeds.insert(0, " ".join(seeds[:2]))
+    return seeds
 
 
 _GENERIC_TAGS = [

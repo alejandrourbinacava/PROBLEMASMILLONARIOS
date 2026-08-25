@@ -32,6 +32,9 @@ class Clip:
     height: int
     duration: float
     query: str
+    # Puesto que ocupaba en la respuesta del banco. Los dos bancos devuelven
+    # por relevancia, asi que esta posicion es informacion valiosa.
+    rank: int = 0
     path: Path | None = field(default=None)
 
     @property
@@ -94,10 +97,12 @@ class StockLibrary:
             return None
         fresh = [c for c in usable if c.key not in self._used and c.key not in self._recent]
         pool = fresh or [c for c in usable if c.key not in self._used] or usable
-        # Prioriza resolucion alta pero con algo de azar para que no salga
-        # siempre el mismo clip para la misma consulta.
-        pool.sort(key=lambda c: (-c.width, c.duration))
-        return random.choice(pool[: min(6, len(pool))])
+        # Manda la RELEVANCIA, no la resolucion. Ordenando por ancho se colaban
+        # clips preciosos que no tenian nada que ver con la frase: un lago de
+        # montaña bajo "cada menu te deja setenta centimos". La resolucion solo
+        # desempata entre clips igual de relevantes.
+        pool.sort(key=lambda c: (c.rank, -c.width))
+        return random.choice(pool[: min(4, len(pool))])
 
     # ---------------- Busqueda ----------------
 
@@ -126,11 +131,12 @@ class StockLibrary:
             return []
         response.raise_for_status()
         clips: list[Clip] = []
-        for video in response.json().get("videos", []):
+        for position, video in enumerate(response.json().get("videos", [])):
             best = _best_pexels_file(video.get("video_files", []))
             if best is None:
                 continue
             clips.append(Clip(
+                rank=position,
                 provider="pexels",
                 clip_id=str(video.get("id")),
                 url=best["link"],
@@ -153,7 +159,7 @@ class StockLibrary:
             return []
         response.raise_for_status()
         clips: list[Clip] = []
-        for hit in response.json().get("hits", []):
+        for position, hit in enumerate(response.json().get("hits", [])):
             variants = hit.get("videos") or {}
             best = None
             for name in ("large", "medium", "small"):
@@ -164,6 +170,7 @@ class StockLibrary:
             if best is None:
                 continue
             clips.append(Clip(
+                rank=position,
                 provider="pixabay",
                 clip_id=str(hit.get("id")),
                 url=best["url"],

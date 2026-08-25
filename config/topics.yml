@@ -1,0 +1,47 @@
+# ============================================================
+#  COLA DE TEMAS
+#  El pipeline coge el primer tema con status: pending,
+#  lo marca como done en data/ledger.json y sigue.
+#  Añade los que quieras. Si se vacía, el LLM propone nuevos.
+# ============================================================
+
+topics:
+  - title: "¿Cuánto cuesta comprar y mantener un McDonald's?"
+    angle: "Franquicia: canon de entrada, obras, royalties, personal y margen real"
+    tags_seed: ["mcdonalds", "franquicia", "negocio"]
+
+  - title: "¿Cuánto cuesta tener un equipo de fútbol de Primera División?"
+    angle: "Plantilla, estadio, cantera, fichajes, nóminas y derechos de TV"
+    tags_seed: ["futbol", "equipo", "laliga"]
+
+  - title: "¿Cuánto cuesta mantener un avión privado?"
+    angle: "Compra, hangar, tripulación, combustible, mantenimiento y depreciación"
+    tags_seed: ["avion privado", "jet", "lujo"]
+
+  - title: "¿Cuánto cuesta tener un yate de 50 metros?"
+    angle: "Precio, amarre, tripulación de 12, seguro y la regla del 10% anual"
+    tags_seed: ["yate", "superyate", "millonarios"]
+
+  - title: "¿Cuánto cuesta abrir y mantener un gimnasio?"
+    angle: "Local, maquinaria, licencias, socios necesarios para el break-even"
+    tags_seed: ["gimnasio", "negocio", "emprender"]
+
+  - title: "¿Cuánto cuesta mantener un Bugatti Chiron?"
+    angle: "Precio, seguro, neumáticos de 40.000€, revisión y garaje"
+    tags_seed: ["bugatti", "coches", "superdeportivo"]
+
+  - title: "¿Cuánto cuesta montar un hotel de 5 estrellas?"
+    angle: "Suelo, construcción por habitación, personal, ocupación mínima"
+    tags_seed: ["hotel", "lujo", "inversion"]
+
+  - title: "¿Cuánto cuesta ser jugador de la NBA durante un año?"
+    angle: "Impuestos, agente, séquito, casa, y por qué el 60% quiebra"
+    tags_seed: ["nba", "deporte", "dinero"]
+
+  - title: "¿Cuánto cuesta lanzar un cohete al espacio?"
+    angle: "SpaceX vs competencia: coste por kilo, reutilización y seguro"
+    tags_seed: ["spacex", "cohete", "espacio"]
+
+  - title: "¿Cuánto cuesta mantener el Real Madrid un solo día?"
+    angle: "Desglose diario: nóminas, Bernabéu, luz, césped y amortización"
+    tags_seed: ["real madrid", "futbol", "bernabeu"]

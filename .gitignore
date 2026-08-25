@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+build/
+.cache/
+assets/music/*.mp3
+assets/music/*.wav
+!assets/music/.gitkeep
+client_secret*.json
+token.json

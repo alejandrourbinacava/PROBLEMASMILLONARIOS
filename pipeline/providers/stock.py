@@ -1,0 +1,233 @@
+"""Busqueda y descarga de b-roll en Pexels y Pixabay, con cache en disco.
+
+Ambos bancos permiten uso comercial sin atribucion. Los clips descargados se
+guardan en .cache/clips/ y se reutilizan entre ejecuciones (la cache de GitHub
+Actions la persiste), asi que el coste de red baja mucho tras los primeros videos.
+"""
+from __future__ import annotations
+
+import hashlib
+import json
+import random
+from dataclasses import dataclass, field
+from pathlib import Path
+from typing import Any
+
+import requests
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+from ..config import CACHE_DIR, env
+from ..util import log
+
+_TIMEOUT = 45
+_MIN_WIDTH = 1280
+
+
+@dataclass
+class Clip:
+    provider: str
+    clip_id: str
+    url: str
+    width: int
+    height: int
+    duration: float
+    query: str
+    path: Path | None = field(default=None)
+
+    @property
+    def key(self) -> str:
+        return f"{self.provider}:{self.clip_id}"
+
+
+class StockLibrary:
+    """Agrega los bancos disponibles y evita repetir clips dentro de un video."""
+
+    def __init__(self, *, recent_keys: set[str] | None = None) -> None:
+        self.cache_dir = CACHE_DIR / "clips"
+        self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self._index_path = self.cache_dir / "index.json"
+        self._index: dict[str, dict] = _read_json(self._index_path, {})
+        self._used: set[str] = set()
+        self._recent: set[str] = recent_keys or set()
+        self._search_cache: dict[str, list[Clip]] = {}
+
+        self.pexels_key = env("PEXELS_API_KEY")
+        self.pixabay_key = env("PIXABAY_API_KEY")
+        if not self.pexels_key and not self.pixabay_key:
+            raise RuntimeError(
+                "No hay ninguna clave de banco de video. Define PEXELS_API_KEY "
+                "y/o PIXABAY_API_KEY (ambas son gratuitas)."
+            )
+
+    # ---------------- API publica ----------------
+
+    def acquire(self, query: str, min_duration: float, *, fallback_query: str = "money cash") -> Clip | None:
+        """Devuelve un clip descargado y aun no usado en este video."""
+        for attempt_query in (query, _broaden(query), fallback_query):
+            if not attempt_query:
+                continue
+            candidates = self._search(attempt_query)
+            picked = self._pick(candidates, min_duration)
+            if picked is None:
+                continue
+            path = self._download(picked)
+            if path is None:
+                continue
+            self._used.add(picked.key)
+            picked.path = path
+            return picked
+        log.warn(f"Sin clip para '{query}' (ni con reserva '{fallback_query}')")
+        return None
+
+    def release_all(self) -> list[str]:
+        """Claves usadas en este video, para el registro anti-repeticion."""
+        return sorted(self._used)
+
+    # ---------------- Seleccion ----------------
+
+    def _pick(self, candidates: list[Clip], min_duration: float) -> Clip | None:
+        usable = [c for c in candidates if c.duration >= min_duration and c.width >= _MIN_WIDTH]
+        if not usable:
+            # Un clip corto sirve: al montarlo se ralentiza o se congela el final
+            usable = [c for c in candidates if c.width >= _MIN_WIDTH]
+        if not usable:
+            return None
+        fresh = [c for c in usable if c.key not in self._used and c.key not in self._recent]
+        pool = fresh or [c for c in usable if c.key not in self._used] or usable
+        # Prioriza resolucion alta pero con algo de azar para que no salga
+        # siempre el mismo clip para la misma consulta.
+        pool.sort(key=lambda c: (-c.width, c.duration))
+        return random.choice(pool[: min(6, len(pool))])
+
+    # ---------------- Busqueda ----------------
+
+    def _search(self, query: str) -> list[Clip]:
+        if query in self._search_cache:
+            return self._search_cache[query]
+        results: list[Clip] = []
+        if self.pexels_key:
+            results += self._search_pexels(query)
+        if self.pixabay_key:
+            results += self._search_pixabay(query)
+        self._search_cache[query] = results
+        log.info(f"  b-roll '{query}': {len(results)} candidatos")
+        return results
+
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=2, min=2, max=20))
+    def _search_pexels(self, query: str) -> list[Clip]:
+        response = requests.get(
+            "https://api.pexels.com/videos/search",
+            headers={"Authorization": self.pexels_key},
+            params={"query": query, "orientation": "landscape", "per_page": 15, "size": "medium"},
+            timeout=_TIMEOUT,
+        )
+        if response.status_code == 429:
+            log.warn("Pexels: limite de peticiones alcanzado, se sigue con Pixabay")
+            return []
+        response.raise_for_status()
+        clips: list[Clip] = []
+        for video in response.json().get("videos", []):
+            best = _best_pexels_file(video.get("video_files", []))
+            if best is None:
+                continue
+            clips.append(Clip(
+                provider="pexels",
+                clip_id=str(video.get("id")),
+                url=best["link"],
+                width=int(best.get("width") or 0),
+                height=int(best.get("height") or 0),
+                duration=float(video.get("duration") or 0),
+                query=query,
+            ))
+        return clips
+
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=2, min=2, max=20))
+    def _search_pixabay(self, query: str) -> list[Clip]:
+        response = requests.get(
+            "https://pixabay.com/api/videos/",
+            params={"key": self.pixabay_key, "q": query, "video_type": "film", "per_page": 20},
+            timeout=_TIMEOUT,
+        )
+        if response.status_code == 429:
+            log.warn("Pixabay: limite de peticiones alcanzado")
+            return []
+        response.raise_for_status()
+        clips: list[Clip] = []
+        for hit in response.json().get("hits", []):
+            variants = hit.get("videos") or {}
+            best = None
+            for name in ("large", "medium", "small"):
+                variant = variants.get(name) or {}
+                if variant.get("url") and int(variant.get("width") or 0) >= _MIN_WIDTH:
+                    best = variant
+                    break
+            if best is None:
+                continue
+            clips.append(Clip(
+                provider="pixabay",
+                clip_id=str(hit.get("id")),
+                url=best["url"],
+                width=int(best.get("width") or 0),
+                height=int(best.get("height") or 0),
+                duration=float(hit.get("duration") or 0),
+                query=query,
+            ))
+        return clips
+
+    # ---------------- Descarga ----------------
+
+    def _download(self, clip: Clip) -> Path | None:
+        digest = hashlib.sha1(clip.url.encode("utf-8")).hexdigest()[:10]
+        target = self.cache_dir / f"{clip.provider}_{clip.clip_id}_{digest}.mp4"
+        if target.exists() and target.stat().st_size > 65536:
+            return target
+        try:
+            with requests.get(clip.url, stream=True, timeout=_TIMEOUT) as response:
+                response.raise_for_status()
+                tmp = target.with_suffix(".part")
+                with open(tmp, "wb") as fh:
+                    for chunk in response.iter_content(chunk_size=262144):
+                        fh.write(chunk)
+                tmp.replace(target)
+        except Exception as exc:  # red inestable: se prueba el siguiente candidato
+            log.warn(f"Fallo al descargar {clip.key}: {exc}")
+            return None
+        if target.stat().st_size < 65536:
+            target.unlink(missing_ok=True)
+            return None
+        self._index[clip.key] = {"query": clip.query, "file": target.name}
+        _write_json(self._index_path, self._index)
+        return target
+
+
+def _best_pexels_file(files: list[dict[str, Any]]) -> dict | None:
+    """Prefiere el mp3/mp4 mas grande que no pase de 1080p (4K infla el render)."""
+    usable = [
+        f for f in files
+        if f.get("file_type") == "video/mp4" and int(f.get("width") or 0) >= _MIN_WIDTH
+    ]
+    if not usable:
+        return None
+    within = [f for f in usable if int(f.get("width") or 0) <= 1920]
+    pool = within or usable
+    return max(pool, key=lambda f: int(f.get("width") or 0))
+
+
+def _broaden(query: str) -> str:
+    """Recorta la consulta a sus dos primeras palabras para ampliar resultados."""
+    words = query.split()
+    return " ".join(words[:2]) if len(words) > 2 else ""
+
+
+def _read_json(path: Path, default: Any) -> Any:
+    if not path.exists():
+        return default
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return default
+
+
+def _write_json(path: Path, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")

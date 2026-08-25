@@ -1,0 +1,108 @@
+# ============================================================
+#  PROBLEMAS MILLONARIOS — configuración del canal
+#  Todo lo ajustable vive aquí. No hace falta tocar código.
+# ============================================================
+
+brand:
+  name: "Problemas Millonarios"
+  handle: "@problemasmillonariosoficial"
+  language: "es-ES"
+  # Color de acento para subtítulos, miniatura y remates gráficos
+  accent: "#FFD400"
+  accent_2: "#FF2D55"
+
+# ---------------- GUION ----------------
+script:
+  provider: "anthropic"          # anthropic | openai | manual
+  model: "claude-sonnet-5"       # si provider=openai -> p.ej. gpt-4o
+  target_minutes: 13             # objetivo 10-15
+  words_per_minute: 165          # ritmo de narración en español energético
+  # Bloques temáticos del vídeo (se convierten en capítulos de YouTube)
+  min_blocks: 7
+  max_blocks: 10
+
+# ---------------- VOZ (GenAIPro Labs) ----------------
+voice:
+  base_url: "https://genaipro.vn/api/v1"
+  voice_id: ""                   # <-- RELLENAR. Usa: python scripts/list_voices.py
+  model_id: "eleven_multilingual_v2"
+  speed: 1.05                    # 0.7 - 1.2
+  stability: 0.45
+  similarity: 0.80
+  style: 0.35
+  speaker_boost: true
+  # LUFS objetivo de la narración final
+  loudness_lufs: -15.0
+  # block  = una llamada por capítulo. Prosodia natural, sincronía por subtítulos.
+  # scene  = una llamada por escena. Sincronía perfecta, prosodia algo más plana
+  #          y ~200 llamadas por vídeo. Cambia a "scene" solo si ves desfase.
+  tts_granularity: "block"
+  parallel_requests: 4           # llamadas simultáneas a GenAIPro
+  # Silencio insertado entre capítulos, da respiro y marca el cambio de tema
+  gap_between_blocks_s: 0.35
+
+# ---------------- RITMO DE MONTAJE ----------------
+edit:
+  width: 1920
+  height: 1080
+  fps: 30
+  # Calidad/velocidad. Los planos sueltos se codifican rápido porque se
+  # recodifican una sola vez; la pasada final es la que se ve, así que ahí
+  # merece la pena gastar más tiempo.
+  preset: "veryfast"             # planos intermedios
+  segment_crf: 20
+  master_preset: "medium"        # pasada final
+  master_crf: 19
+  # HOOK: microcortes de dopamina en los primeros segundos
+  hook:
+    enabled: true
+    duration_s: 9.0              # duración total del hook
+    cut_min_s: 0.28              # corte más rápido
+    cut_max_s: 0.55              # corte más lento
+    flash_frames: 1              # fotogramas de flash blanco en el corte
+    shutter_sfx: true            # sonido de obturador de cámara
+    zoom_punch: 0.10             # golpe de zoom en cada corte (0 = off)
+  # CUERPO: escena nueva cada 3-5 s
+  body:
+    scene_min_s: 3.0
+    scene_max_s: 5.0
+    whoosh_sfx: true
+    whoosh_every_n_cuts: 2       # 1 = en todos; 2 = uno sí uno no (menos fatiga)
+    ken_burns: true              # zoom lento continuo en cada clip
+    ken_burns_amount: 0.07       # 7% de zoom a lo largo de la escena
+  grade:
+    enabled: true
+    contrast: 1.06
+    saturation: 1.12
+    vignette: true
+
+# ---------------- SUBTÍTULOS QUEMADOS ----------------
+captions:
+  enabled: true
+  max_chars_per_cue: 22          # 2-4 palabras por cue = estilo TikTok/Milly
+  # Fuente: se descarga a assets/fonts/ con scripts/fetch_fonts.py.
+  # Si falla, cae a la fuente de sistema indicada en font_fallback.
+  font_family: "Anton"
+  font_fallback: "DejaVu Sans"
+  font_size: 96
+  outline: 7
+  shadow: 3
+  margin_bottom: 170
+  uppercase: true
+  highlight_numbers: true        # cifras y € en color acento
+
+# ---------------- AUDIO ----------------
+audio:
+  music_volume_db: -22.0         # cama musical de fondo
+  duck_db: -12.0                 # cuánto baja la música cuando habla la voz
+  sfx_volume_db: -9.0
+
+# ---------------- YOUTUBE ----------------
+youtube:
+  privacy: "private"             # la API no crea borradores reales; privado = tu borrador
+  category_id: "24"              # 24 = Entertainment
+  made_for_kids: false
+  # Se rellenan solos, pero puedes forzar sufijo de marca
+  title_max_chars: 95
+  tags_max_chars: 500
+  default_playlist: ""           # ID de playlist opcional

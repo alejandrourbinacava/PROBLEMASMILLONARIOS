@@ -1,0 +1,58 @@
+name: Comprobación del montaje
+
+# Render de humo con material sintético: valida ffmpeg, fuentes, filtros y
+# sincronía sin gastar un céntimo de API. Corre en cada push que toque el código.
+on:
+  push:
+    paths:
+      - "pipeline/**"
+      - "scripts/**"
+      - "config/channel.yml"
+      - "requirements.txt"
+      - ".github/workflows/test.yml"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core fontconfig
+
+      - name: Instalar dependencias
+        run: pip install --quiet -r requirements.txt
+
+      - name: Descargar fuentes
+        run: python scripts/fetch_fonts.py
+        continue-on-error: true
+
+      - name: Comprobar que todo importa
+        run: |
+          python -m compileall -q pipeline scripts
+          python -c "from pipeline import cli; print('imports OK')"
+
+      - name: Render de humo
+        run: python scripts/smoke_render.py
+
+      - name: Guardar el resultado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: smoke-render
+          path: |
+            build/_smoke/video.mp4
+            build/_smoke/captions.ass
+          retention-days: 3
+          if-no-files-found: warn

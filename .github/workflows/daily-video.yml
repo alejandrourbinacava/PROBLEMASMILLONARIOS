@@ -1,0 +1,133 @@
+name: Vídeo diario
+
+on:
+  schedule:
+    # 05:30 UTC = 07:30 en España (verano) / 06:30 (invierno).
+    # El vídeo queda en privado esperándote a primera hora.
+    - cron: "30 5 * * *"
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Tema concreto (vacío = el siguiente de la cola)"
+        required: false
+        type: string
+      upload:
+        description: "Subir a YouTube como privado"
+        required: false
+        default: true
+        type: boolean
+
+# Necesario para que el job pueda commitear el registro de temas publicados
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-video
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar ffmpeg y fuentes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core fontconfig
+          ffmpeg -version | head -1
+
+      - name: Instalar dependencias de Python
+        run: pip install --quiet -r requirements.txt
+
+      - name: Descargar fuentes del canal
+        run: python scripts/fetch_fonts.py
+        continue-on-error: true
+
+      # Los clips de stock se reutilizan entre vídeos: sin caché habría que
+      # volver a descargar ~2 GB cada mañana.
+      - name: Restaurar caché de clips
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/clips
+          key: broll-${{ github.run_id }}
+          restore-keys: |
+            broll-
+
+      - name: Generar el vídeo
+        env:
+          GENAIPRO_API_KEY: ${{ secrets.GENAIPRO_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          # Las entradas del workflow van por entorno, nunca interpoladas dentro
+          # del comando: un tema con comillas o punto y coma ejecutaria shell.
+          INPUT_TOPIC: ${{ inputs.topic }}
+          INPUT_UPLOAD: ${{ inputs.upload }}
+        run: |
+          ARGS=()
+          if [ -n "$INPUT_TOPIC" ]; then
+            ARGS+=(--topic "$INPUT_TOPIC")
+          fi
+          if [ "$INPUT_UPLOAD" = "false" ]; then
+            ARGS+=(--no-upload)
+          fi
+          python -m pipeline.cli "${ARGS[@]}"
+
+      - name: Podar la caché de clips
+        if: always()
+        run: python scripts/prune_cache.py --max-gb 4
+
+      - name: Guardar caché de clips
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/clips
+          key: broll-${{ github.run_id }}
+
+      - name: Guardar vídeo y miniatura como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_number }}
+          path: |
+            build/**/video.mp4
+            build/**/thumbnail.jpg
+            build/**/metadata.json
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: Guardar los JSON del proceso si algo falla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: diagnostico-${{ github.run_number }}
+          path: |
+            build/**/*.json
+            build/**/captions.ass
+          retention-days: 14
+          if-no-files-found: ignore
+
+      - name: Anotar el vídeo publicado en el repo
+        if: success()
+        run: |
+          git config user.name  "problemas-millonarios-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data config/topics.yml
+          if git diff --staged --quiet; then
+            echo "Sin cambios que registrar"
+          else
+            git commit -m "chore: registro del vídeo del $(date +%Y-%m-%d)"
+            git push
+          fi

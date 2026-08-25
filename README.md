@@ -237,6 +237,32 @@ quieres, se arregla ahí y no en el código.
 
 ---
 
+## Los clips y las marcas registradas
+
+Si el tema es una **marca registrada**, los bancos libres apenas tienen material.
+Medido para McDonald's: de 266 candidatos, 50 son comida rápida y **solo 9
+enseñan la marca**. Pixabay devuelve cero buscando "mcdonalds".
+
+El pipeline lo gestiona así:
+
+1. **Filtra por lo que se ve, no por lo que se buscó.** Pexels y Pixabay dan
+   texto descriptivo de cada clip (Pexels en la URL, Pixabay en `tags`). Sin ese
+   filtro entraban bosques nevados y restaurantes de manteles buscando
+   "fast food restaurant".
+2. **Reserva los clips de marca** (`broll_keywords_primary`) para el hook, los
+   planos con cifra y las aperturas de capítulo, que es donde se mira.
+3. **Rellena con contexto del tema** el resto.
+
+Para llegar al 100% de marca solo hay un camino: **poner clips tuyos** en
+`assets/broll/<slug-del-tema>/`. Se usan antes que nada del stock. Con 25-30
+planos grabados con el móvil (fachada, mostrador, pantallas, bandeja) el vídeo
+pasa a ser de marca casi entero, y valen para siempre.
+
+Para temas que no son marca (yate, jet privado, gimnasio, estadio) esto no pasa:
+el stock va sobrado.
+
+---
+
 ## Si algo falla
 
 | Síntoma | Causa habitual |
@@ -247,6 +273,8 @@ quieres, se arregla ahí y no en el código.
 | Subtítulos con fuente rara | No se descargó Anton: `python scripts/fetch_fonts.py` |
 | Miniatura no se sube | Canal sin verificar por teléfono |
 | Muchos "relleno sintético" en el log | Las `broll_query` del guion no encuentran clips; suele arreglarse afinando `config/prompts/03_block.md` |
+| Los clips no pegan con el tema | Faltan `broll_anchors` / `broll_keywords` en `config/topics.yml` |
+| Un rótulo no aparece | Si lleva `%`, era el bug de `drawtext`; ya se pasa `expansion=none` |
 
 Cuando el workflow falla sube un artefacto `diagnostico-N` con todos los JSON
 intermedios: ahí se ve exactamente en qué paso se torció.

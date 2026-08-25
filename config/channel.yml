@@ -97,7 +97,14 @@ broll:
   # aperturas de capítulo llevan siempre material del tema.
   brand_ratio: 0.70
   brand_cooldown: 12             # planos que deben pasar antes de repetir uno
-  brand_per_query: 10            # cuántos coger de cada búsqueda de anclaje
+  brand_per_query: 9             # cuántos coger de cada búsqueda de anclaje
+  # Qué tiene que verse en el clip para aceptarlo. Vacío = se deducen de
+  # los anclajes. Es el filtro que evita que entre un restaurante de
+  # manteles buscando "fast food restaurant".
+  keywords: []
+  # Términos que solo aparecen si SE VE la marca. Esos clips se reservan
+  # para el hook, los planos con cifra y las aperturas de capítulo.
+  keywords_primary: []
   # Vacío = se leen de topics.yml o del guion. Aquí puedes forzarlos.
   anchors: []
   # Tus propios clips van en assets/broll/<slug-del-tema>/ y en

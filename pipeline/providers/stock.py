@@ -35,6 +35,11 @@ class Clip:
     # Puesto que ocupaba en la respuesta del banco. Los dos bancos devuelven
     # por relevancia, asi que esta posicion es informacion valiosa.
     rank: int = 0
+    # Texto descriptivo del clip: Pexels lo mete en la URL y Pixabay en tags.
+    # Es la unica forma de saber QUE se ve en el clip sin descargarlo.
+    hint: str = ""
+    # 0 = se ve la marca literalmente. 1 = solo contexto del tema.
+    tier: int = 1
     path: Path | None = field(default=None)
 
     @property
@@ -86,7 +91,11 @@ class StockLibrary:
         """Claves usadas en este video, para el registro anti-repeticion."""
         return sorted(self._used)
 
-    def harvest(self, queries: list[str], per_query: int = 8) -> list[Clip]:
+    def harvest(
+        self, queries: list[str], per_query: int = 6,
+        keywords: list[str] | None = None,
+        primary: list[str] | None = None,
+    ) -> list[Clip]:
         """Descarga un fondo de clips del TEMA, no de cada frase suelta.
 
         Los bancos de stock tienen poquísimo material de marca: buscando
@@ -98,7 +107,10 @@ class StockLibrary:
         Así que se cosecha aparte lo poco que hay, cogiendo solo la cabeza de
         cada búsqueda, y el montaje lo reparte por el vídeo.
         """
+        needles = [k.lower().replace("-", " ") for k in (keywords or []) if k.strip()]
+        core = [k.lower().replace("-", " ") for k in (primary or []) if k.strip()]
         pool: list[Clip] = []
+        rejected = 0
         for query in queries:
             candidates = sorted(self._search(query), key=lambda c: (c.rank, -c.width))
             taken = 0
@@ -107,16 +119,32 @@ class StockLibrary:
                     break
                 if clip.key in self._used or clip.width < _MIN_WIDTH:
                     continue
+                # Filtro por lo que SE VE, no por lo que se buscó. Buscando
+                # "fast food restaurant" el banco devuelve tambien restaurantes
+                # de manteles y autopistas; el texto del clip los delata.
+                if needles and not _matches(clip.hint, needles):
+                    rejected += 1
+                    continue
                 path = self._download(clip)
                 if path is None:
                     continue
                 clip.path = path
+                clip.tier = 0 if core and _matches(clip.hint, core) else 1
                 # Se reserva para que acquire() no lo vuelva a repartir por su
                 # cuenta: del fondo de marca decide el montaje, no la busqueda.
                 self._used.add(clip.key)
                 pool.append(clip)
                 taken += 1
-        log.info(f"Fondo de marca: {len(pool)} clips de {len(queries)} búsquedas")
+        exact = sum(1 for clip in pool if clip.tier == 0)
+        log.info(
+            f"Fondo de marca: {len(pool)} clips de {len(queries)} búsquedas"
+            + (f", {rejected} descartados por no verse del tema" if rejected else "")
+        )
+        if core:
+            log.info(
+                f"  de esos, {exact} enseñan la marca literalmente; el resto es "
+                "contexto del tema"
+            )
         return pool
 
     def local_clips(self, directories: list[Path]) -> list[Clip]:
@@ -182,7 +210,9 @@ class StockLibrary:
         response = requests.get(
             "https://api.pexels.com/videos/search",
             headers={"Authorization": self.pexels_key},
-            params={"query": query, "orientation": "landscape", "per_page": 15, "size": "medium"},
+            # 30 en vez de 15: con el filtro por descripcion se descarta mucho,
+            # asi que hace falta mas material del que mirar.
+            params={"query": query, "orientation": "landscape", "per_page": 30, "size": "medium"},
             timeout=_TIMEOUT,
         )
         if response.status_code == 429:
@@ -196,6 +226,7 @@ class StockLibrary:
                 continue
             clips.append(Clip(
                 rank=position,
+                hint=_slug_of(video.get("url", "")),
                 provider="pexels",
                 clip_id=str(video.get("id")),
                 url=best["link"],
@@ -230,6 +261,7 @@ class StockLibrary:
                 continue
             clips.append(Clip(
                 rank=position,
+                hint=str(hit.get("tags") or "").lower(),
                 provider="pixabay",
                 clip_id=str(hit.get("id")),
                 url=best["url"],
@@ -277,6 +309,18 @@ def _best_pexels_file(files: list[dict[str, Any]]) -> dict | None:
     within = [f for f in usable if int(f.get("width") or 0) <= 1920]
     pool = within or usable
     return max(pool, key=lambda f: int(f.get("width") or 0))
+
+
+def _matches(hint: str, needles: list[str]) -> bool:
+    text = hint.replace("-", " ").replace(",", " ")
+    return any(needle in text for needle in needles)
+
+
+def _slug_of(url: str) -> str:
+    """De https://www.pexels.com/video/burger-being-made-12345/ saca las palabras."""
+    tail = url.rstrip("/").split("/")[-1]
+    words = [w for w in tail.split("-") if not w.isdigit()]
+    return " ".join(words).lower()
 
 
 def _broaden(query: str) -> str:

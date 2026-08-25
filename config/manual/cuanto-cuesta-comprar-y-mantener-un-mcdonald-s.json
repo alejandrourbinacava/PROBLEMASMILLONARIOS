@@ -13,6 +13,31 @@
       "fast food crew working",
       "drive thru window"
     ],
+    "broll_keywords": [
+      "mcdonald",
+      "burger",
+      "hamburger",
+      "cheeseburger",
+      "fries",
+      "french fries",
+      "fast food",
+      "fastfood",
+      "drive thru",
+      "drive through",
+      "food court",
+      "takeaway",
+      "take away",
+      "milkshake",
+      "soda cup",
+      "fried chicken",
+      "nuggets"
+    ],
+    "broll_keywords_primary": [
+      "mcdonald",
+      "golden arches",
+      "big mac",
+      "mcauto"
+    ],
     "blocks": [
       {
         "id": 1,

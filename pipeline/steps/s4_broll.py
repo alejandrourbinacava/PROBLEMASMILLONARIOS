@@ -56,7 +56,12 @@ def run(
     anchors = _anchors(cfg, script, topic)
     brand = library.local_clips(_local_dirs(topic))
     if anchors:
-        brand += library.harvest(anchors, per_query=int(cfg.get("broll.brand_per_query", 8)))
+        brand += library.harvest(
+            anchors,
+            per_query=int(cfg.get("broll.brand_per_query", 6)),
+            keywords=_keywords(cfg, script, topic, anchors),
+            primary=_primary_keywords(cfg, script, topic),
+        )
     rotation = _BrandRotation(brand, int(cfg.get("broll.brand_cooldown", 12)))
     ratio = float(cfg.get("broll.brand_ratio", 0.65))
 
@@ -71,7 +76,9 @@ def run(
         )
         clip = None
         if brand and (priority or brand_used < ratio * (index + 1)):
-            clip = rotation.take(index, slot["duration"])
+            # En los planos que más se miran se tira primero de los clips donde
+            # se ve la marca de verdad; los de contexto van al relleno.
+            clip = rotation.take(index, slot["duration"], prefer_tier=0 if priority else 1)
             if clip is not None:
                 brand_used += 1
         if clip is None:
@@ -217,13 +224,17 @@ class _BrandRotation:
         self.cooldown = max(1, cooldown)
         self._last: dict[str, int] = {}
 
-    def take(self, index: int, min_duration: float):
+    def take(self, index: int, min_duration: float, prefer_tier: int = 1):
         if not self.clips:
             return None
-        available = [
-            clip for clip in self.clips
-            if index - self._last.get(clip.key, -10**6) >= self.cooldown
-        ]
+        # Los de marca son poquísimos, así que se les deja repetir antes
+        def ready(clip) -> bool:
+            wait = self.cooldown if clip.tier else max(4, self.cooldown // 2)
+            return index - self._last.get(clip.key, -10**6) >= wait
+
+        available = [c for c in self.clips if c.tier == prefer_tier and ready(c)]
+        if not available:
+            available = [c for c in self.clips if ready(c)]
         if not available:
             return None
         # Primero los que llevan más sin salir; entre esos, los que dan de sí
@@ -247,6 +258,59 @@ def _anchors(cfg: Config, script: dict[str, Any], topic: dict[str, Any]) -> list
         "Sin broll_anchors para este tema: no habrá fondo de clips del sujeto. "
         "Añádelos en config/topics.yml para que el vídeo se vea del tema."
     )
+    return []
+
+
+# Palabras demasiado genericas para decidir si un clip pega con el tema.
+_VAGUE = {
+    "restaurant", "food", "interior", "exterior", "sign", "working", "window",
+    "meal", "view", "city", "people", "modern", "shop", "business", "close",
+    "aerial", "video", "footage", "background", "scene", "shot",
+}
+
+
+def _keywords(
+    cfg: Config, script: dict[str, Any], topic: dict[str, Any], anchors: list[str]
+) -> list[str]:
+    """Qué tiene que verse en el clip para aceptarlo en el fondo del tema.
+
+    Sin esto, buscar "fast food restaurant" trae también restaurantes de
+    manteles largos y pasillos de centro comercial: la búsqueda acierta con las
+    palabras pero no con lo que se ve.
+    """
+    for source in (
+        cfg.get("broll.keywords"),
+        (script.get("outline") or {}).get("broll_keywords"),
+        topic.get("broll_keywords"),
+    ):
+        if source:
+            return [str(item).strip() for item in source if str(item).strip()]
+
+    # Por defecto: los términos propios de los anclajes, sin los genéricos
+    derived: list[str] = []
+    for anchor in anchors:
+        words = anchor.lower().split()
+        for word in words:
+            if len(word) >= 5 and word not in _VAGUE and word not in derived:
+                derived.append(word)
+        for first, second in zip(words, words[1:]):
+            pair = f"{first} {second}"
+            if first not in _VAGUE and pair not in derived:
+                derived.append(pair)
+    return derived
+
+
+def _primary_keywords(
+    cfg: Config, script: dict[str, Any], topic: dict[str, Any]
+) -> list[str]:
+    """Términos que solo aparecen si en el clip SE VE la marca."""
+    for source in (
+        cfg.get("broll.keywords_primary"),
+        (script.get("outline") or {}).get("broll_keywords_primary"),
+        topic.get("broll_keywords_primary"),
+    ):
+        if source:
+            return [str(item).strip() for item in source if str(item).strip()]
     return []
 
 

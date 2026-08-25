@@ -349,6 +349,19 @@ def main() -> int:
                 "burger fast food meal", "fast food crew working",
                 "drive thru window",
             ],
+            # Lo que tiene que VERSE en el clip para entrar en el fondo. El
+            # anclaje acierta con las palabras, esto acierta con la imagen.
+            "broll_keywords": [
+                "mcdonald", "burger", "hamburger", "cheeseburger", "fries",
+                "french fries", "fast food", "fastfood", "drive thru",
+                "drive through", "food court", "takeaway", "take away",
+                "milkshake", "soda cup", "fried chicken", "nuggets",
+            ],
+            # Términos que solo salen si SE VE la marca. Estos clips se reservan
+            # para el hook, las cifras y las aperturas de capítulo.
+            "broll_keywords_primary": [
+                "mcdonald", "golden arches", "big mac", "mcauto",
+            ],
             "blocks": [
                 {"id": b["id"], "chapter_title": b["chapter_title"],
                  "thesis": "", "key_figures": [], "open_loop": "",

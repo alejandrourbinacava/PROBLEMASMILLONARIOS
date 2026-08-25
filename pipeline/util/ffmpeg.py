@@ -36,6 +36,20 @@ def run(args: list[str], *, quiet: bool = True, cwd: Path | None = None) -> None
         raise FFmpegError(f"ffmpeg salió con {proc.returncode}:\n{tail}")
 
 
+def probe_filter(path: str | Path, audio_filter: str) -> str:
+    """Pasa un archivo por un filtro de análisis y devuelve lo que este escribe.
+
+    Filtros como silencedetect o volumedetect no producen audio: informan por
+    stderr. Por eso aquí se devuelve el texto en lugar de escribir un archivo.
+    """
+    proc = subprocess.run(
+        [FFMPEG, "-hide_banner", "-nostdin", "-i", str(path),
+         "-af", audio_filter, "-f", "null", "-"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace",
+    )
+    return proc.stderr or ""
+
+
 def probe(path: str | Path) -> dict:
     proc = subprocess.run(
         [FFPROBE, "-v", "error", "-print_format", "json", "-show_format", "-show_streams", str(path)],

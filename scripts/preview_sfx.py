@@ -85,7 +85,7 @@ def _in_context(name: str, whoosh: Path, shutter: Path, impact: Path, out: Path)
         events.append(SfxEvent(at=cut - 0.06, name="whoosh", gain_db=-8.0))
 
     bed = build_bed(
-        events, {"whoosh": whoosh, "shutter": shutter, "impact": impact},
+        events, {"whoosh:0": whoosh, "shutter": shutter, "impact": impact},
         CONTEXT_LENGTH, out / f"_bed_{name}.wav", out / "_work",
     )
     # Voz de referencia: no es narracion real, solo un tono que ocupe el hueco

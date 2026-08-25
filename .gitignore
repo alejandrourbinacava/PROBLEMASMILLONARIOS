@@ -7,5 +7,7 @@ build/
 assets/music/*.mp3
 assets/music/*.wav
 !assets/music/.gitkeep
+# Transiciones sintetizadas: se regeneran solas
+assets/sfx/whoosh_*.wav
 client_secret*.json
 token.json

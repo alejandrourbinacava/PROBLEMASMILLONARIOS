@@ -56,7 +56,7 @@ def main() -> int:
 
     style = args.style or cfg.get("audio.whoosh_style", "sweep")
     sfx_paths = sfx.ensure(ASSETS_DIR / "sfx", style, ffmpeg.run)
-    events = s5_edit._sfx_events(cfg, slots)
+    events = s5_edit._sfx_events(cfg, slots, sfx_paths)
 
     window = min(args.seconds, float(timeline["duration"]))
     inside = [e for e in events if e.at < window]

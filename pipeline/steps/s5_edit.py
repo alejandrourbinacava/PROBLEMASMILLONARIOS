@@ -325,7 +325,7 @@ def _mix_audio(cfg: Config, slots: list[dict], timeline: dict[str, Any], workdir
     sfx_paths = sfx.ensure(
         ASSETS_DIR / "sfx", cfg.get("audio.whoosh_style", "sweep"), ffmpeg.run
     )
-    events = _sfx_events(cfg, slots)
+    events = _sfx_events(cfg, slots, sfx_paths)
     sfx_track = build_bed(events, sfx_paths, total, workdir / "sfx.wav", workdir / "audio")
 
     music = _pick_music()
@@ -368,28 +368,86 @@ def _mix_audio(cfg: Config, slots: list[dict], timeline: dict[str, Any], workdir
     return out_path
 
 
-def _sfx_events(cfg: Config, slots: list[dict]) -> list[SfxEvent]:
+def _sfx_events(cfg: Config, slots: list[dict], sfx_paths: dict[str, Path]) -> list[SfxEvent]:
     events: list[SfxEvent] = [SfxEvent(at=0.0, name="impact", gain_db=-3.0)]
     every = max(1, int(cfg.get("edit.body.whoosh_every_n_cuts", 2)))
     hook_sfx = bool(cfg.get("edit.hook.shutter_sfx", True))
     body_sfx = bool(cfg.get("edit.body.whoosh_sfx", True))
+    picker = _WhooshPicker(sfx_paths)
+
+    # Marcas donde suena una transicion, para saber cuanto hueco hay hasta la
+    # siguiente y no meter un sonido de dos segundos en un hueco de uno.
+    marks: list[float] = []
+    counter = 0
+    for slot in slots:
+        if slot["kind"] == "hook":
+            if slot["duration"] > 0.8:
+                marks.append(slot["start"])
+        else:
+            counter += 1
+            if counter % every == 0:
+                marks.append(slot["start"])
 
     body_index = 0
     for slot in slots:
         if slot["kind"] == "hook":
-            # Solo en los cortes rapidos. Cuando el hook desacelera, un
-            # obturador cada segundo y medio suena a error, no a estilo.
+            # El obturador solo en los cortes rapidos. Cuando el hook desacelera,
+            # uno cada segundo y medio suena a error, no a estilo.
             if hook_sfx and slot["start"] > 0.01 and slot["duration"] <= 0.8:
                 events.append(SfxEvent(at=slot["start"], name="shutter"))
             elif body_sfx and slot["start"] > 0.01:
-                events.append(SfxEvent(at=max(0.0, slot["start"] - 0.06), name="whoosh"))
+                events.append(_whoosh_event(picker, slot["start"], marks))
         else:
             body_index += 1
             if body_sfx and body_index % every == 0:
-                # Adelanta el golpe unos milisegundos: suena justo antes del corte,
-                # que es como se percibe una transicion de verdad
-                events.append(SfxEvent(at=max(0.0, slot["start"] - 0.06), name="whoosh"))
+                events.append(_whoosh_event(picker, slot["start"], marks))
     return events
+
+
+def _whoosh_event(picker: "_WhooshPicker", cut_at: float, marks: list[float]) -> SfxEvent:
+    """Coloca la transicion justo ANTES del corte: asi se percibe como una
+    transicion y no como un ruido que llega tarde."""
+    gap = next((mark - cut_at for mark in marks if mark > cut_at + 0.05), 4.0)
+    return SfxEvent(at=max(0.0, cut_at - 0.06), name=picker.pick(gap))
+
+
+class _WhooshPicker:
+    """Rota entre las transiciones disponibles evitando repetir seguido y
+    descartando las que no caben en el hueco hasta el siguiente corte."""
+
+    def __init__(self, sfx_paths: dict[str, Path]) -> None:
+        keys = [key for key in sfx_paths if key.startswith("whoosh:")]
+        self.keys = sorted(keys, key=lambda key: int(key.split(":")[1]))
+        self.durations: dict[str, float] = {}
+        for key in self.keys:
+            try:
+                self.durations[key] = ffmpeg.duration(sfx_paths[key])
+            except ffmpeg.FFmpegError:
+                self.durations[key] = 0.6
+        self._cursor = 0
+        self._last: str | None = None
+
+    def pick(self, gap: float) -> str:
+        """Round-robin de verdad: avanza el cursor MAS ALLA del elegido.
+
+        Con un modulo sobre un pool que cambia de tamano segun el hueco, unos
+        sonidos salian treinta veces y otros dos. Recorriendo el anillo desde
+        el cursor y dejandolo detras del elegido, el reparto queda parejo.
+        """
+        if not self.keys:
+            return "whoosh:0"
+        budget = max(0.25, gap * 1.1)
+        total = len(self.keys)
+        for step in range(total):
+            key = self.keys[(self._cursor + step) % total]
+            if self.durations[key] <= budget and key != self._last:
+                self._cursor = (self._cursor + step + 1) % total
+                self._last = key
+                return key
+        # Nada encaja en el hueco: el mas corto, aunque repita
+        key = min(self.keys, key=lambda item: self.durations[item])
+        self._last = key
+        return key
 
 
 def _pick_music() -> Path | None:

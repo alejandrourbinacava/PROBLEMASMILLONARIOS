@@ -85,10 +85,31 @@ y efectos, que suena plano. Fuentes seguras: la **Biblioteca de audio de YouTube
 (Studio → Audio library) o Pixabay Music. El pipeline elige una al azar por vídeo
 y la baja sola cuando entra la voz.
 
-### 4b. Elegir el sonido de transición
+### 4b. El sonido de transición
 
-Los efectos **se generan solos** por síntesis, no hay que descargar nada. Hay
-cuatro estilos de whoosh:
+Hay dos caminos.
+
+**Tus propios efectos** (lo que suena mejor). Descárgalos de donde quieras e
+impórtalos:
+
+```bash
+python scripts/import_sfx.py --reset --whoosh "C:/ruta/Woosh.mp3" "C:/ruta/Otro.mp3" --shutter "C:/ruta/Pop.wav" --impact "C:/ruta/Golpe.mp3"
+```
+
+El importador no se limita a copiar: **recorta el silencio inicial** (si el
+efecto trae dos décimas de silencio delante, colocado sobre el corte suena
+tarde y se pierde la transición), quita la cola muerta, **iguala el nivel** de
+todos al mismo pico y detecta duplicados por contenido.
+
+Los whoosh van a `assets/sfx/whoosh/` y el montaje **los rota** entre cortes,
+eligiendo en cada uno el que quepa en el hueco hasta el siguiente. Repetir el
+mismo golpe doscientas veces canta a plantilla.
+
+> Los efectos deben estar **commiteados en el repo**: GitHub Actions no ve tu
+> carpeta de Descargas, y sin ellos el vídeo diario usaría los sintetizados.
+
+**Sintetizados** (si no quieres buscar nada). Se generan solos, hay cuatro
+estilos:
 
 ```bash
 python scripts/preview_sfx.py
@@ -104,8 +125,8 @@ python scripts/preview_sfx.py
 Escucha los `*_en_contexto.wav`, no los aislados: un whoosh suelto siempre suena
 raro. Cuando elijas, ponlo en `config/channel.yml` → `audio.whoosh_style`.
 
-Si prefieres efectos tuyos, deja `whoosh.wav`, `shutter.wav` o `impact.wav` en
-`assets/sfx/` y se usarán esos en lugar de los sintéticos.
+`audio.whoosh_style` solo se usa si `assets/sfx/whoosh/` está vacío: tus
+efectos siempre tienen prioridad.
 
 ### 5. Encender la automatización
 
@@ -206,7 +227,7 @@ pipeline/
   util/          ffmpeg · timing (sincronía) · captions (ASS)
                  sfx (diseño de sonido) · sfxbed (mezcla) · fonts
 scripts/         list_voices · get_youtube_token · fetch_fonts
-                 smoke_render · prune_cache
+                 smoke_render · prune_cache · import_sfx
                  preview_sfx · preview_hook
 config/manual/   guiones escritos a mano (script.provider: manual)
 data/ledger.json temas publicados y clips usados (anti-repetición)

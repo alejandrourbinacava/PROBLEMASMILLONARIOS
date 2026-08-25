@@ -184,31 +184,73 @@ def build(recipe: Recipe, out_path: Path, runner) -> Path:
     return out_path
 
 
+WHOOSH_POOL_DIR = "whoosh"
+_AUDIO_EXTENSIONS = (".wav", ".mp3", ".m4a", ".ogg", ".flac")
+
+
 def ensure(sfx_dir: Path, whoosh_style: str, runner) -> dict[str, Path]:
-    """Devuelve {nombre: ruta}. Un archivo propio en assets/sfx/ tiene prioridad."""
+    """Devuelve {clave: ruta} para la mezcla.
+
+    Las transiciones se devuelven como whoosh:0, whoosh:1... El montaje las va
+    rotando entre cortes: repetir el mismo golpe doscientas veces se nota
+    enseguida y delata que el vídeo está hecho con plantilla.
+
+    Prioridad para las transiciones:
+      1. assets/sfx/whoosh/  -> banco propio, se rotan todas
+      2. assets/sfx/whoosh.* -> un único archivo propio
+      3. síntesis según audio.whoosh_style
+    """
     sfx_dir.mkdir(parents=True, exist_ok=True)
+    paths: dict[str, Path] = {}
+
+    for index, path in enumerate(_whoosh_sources(sfx_dir, whoosh_style, runner)):
+        paths[f"whoosh:{index}"] = path
+
+    for name, recipe in (("shutter", SHUTTER), ("impact", IMPACT)):
+        override = _user_file(sfx_dir, name)
+        if override is not None:
+            log.info(f"Efecto propio: {override.name}")
+            paths[name] = override
+            continue
+        target = sfx_dir / f"{name}.wav"
+        if not target.exists() or target.stat().st_size < 2048:
+            log.info(f"Sintetizando {target.name}: {recipe.description}")
+            build(recipe, target, runner)
+        paths[name] = target
+    return paths
+
+
+def _whoosh_sources(sfx_dir: Path, whoosh_style: str, runner) -> list[Path]:
+    pool_dir = sfx_dir / WHOOSH_POOL_DIR
+    if pool_dir.is_dir():
+        pool = sorted(
+            path for path in pool_dir.iterdir()
+            if path.suffix.lower() in _AUDIO_EXTENSIONS and path.stat().st_size > 2048
+        )
+        if pool:
+            log.info(
+                f"Banco de transiciones propio: {len(pool)} sonidos "
+                f"({', '.join(p.stem for p in pool[:5])}{'...' if len(pool) > 5 else ''})"
+            )
+            return pool
+
+    single = _user_file(sfx_dir, "whoosh")
+    if single is not None:
+        log.info(f"Transición propia: {single.name}")
+        return [single]
+
     style = whoosh_style if whoosh_style in WHOOSH_STYLES else "sweep"
     if style != whoosh_style:
         log.warn(
             f"audio.whoosh_style '{whoosh_style}' no existe. "
             f"Opciones: {', '.join(WHOOSH_STYLES)}. Se usa 'sweep'."
         )
-
-    wanted = {"whoosh": WHOOSH_STYLES[style], "shutter": SHUTTER, "impact": IMPACT}
-    paths: dict[str, Path] = {}
-    for name, recipe in wanted.items():
-        override = _user_file(sfx_dir, name)
-        if override is not None:
-            log.info(f"Efecto propio: {override.name}")
-            paths[name] = override
-            continue
-        # El estilo va en el nombre: cambiarlo en la config regenera el archivo
-        target = sfx_dir / (f"whoosh_{style}.wav" if name == "whoosh" else f"{name}.wav")
-        if not target.exists() or target.stat().st_size < 2048:
-            log.info(f"Sintetizando {target.name}: {recipe.description}")
-            build(recipe, target, runner)
-        paths[name] = target
-    return paths
+    # El estilo va en el nombre: cambiarlo en la config regenera el archivo
+    target = sfx_dir / f"whoosh_{style}.wav"
+    if not target.exists() or target.stat().st_size < 2048:
+        log.info(f"Sintetizando {target.name}: {WHOOSH_STYLES[style].description}")
+        build(WHOOSH_STYLES[style], target, runner)
+    return [target]
 
 
 def _user_file(sfx_dir: Path, name: str) -> Path | None:

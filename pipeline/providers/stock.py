@@ -17,7 +17,7 @@ import requests
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from ..config import CACHE_DIR, env
-from ..util import log
+from ..util import ffmpeg, log
 
 _TIMEOUT = 45
 _MIN_WIDTH = 1280
@@ -85,6 +85,65 @@ class StockLibrary:
     def release_all(self) -> list[str]:
         """Claves usadas en este video, para el registro anti-repeticion."""
         return sorted(self._used)
+
+    def harvest(self, queries: list[str], per_query: int = 8) -> list[Clip]:
+        """Descarga un fondo de clips del TEMA, no de cada frase suelta.
+
+        Los bancos de stock tienen poquísimo material de marca: buscando
+        "mcdonalds" los primeros resultados son McDonald's de verdad y a partir
+        del quinto ya son calles genéricas. Y añadir la marca a una consulta
+        concreta no sirve de nada: "mcdonalds deep fryer" devuelve exactamente
+        lo mismo que "deep fryer".
+
+        Así que se cosecha aparte lo poco que hay, cogiendo solo la cabeza de
+        cada búsqueda, y el montaje lo reparte por el vídeo.
+        """
+        pool: list[Clip] = []
+        for query in queries:
+            candidates = sorted(self._search(query), key=lambda c: (c.rank, -c.width))
+            taken = 0
+            for clip in candidates:
+                if taken >= per_query:
+                    break
+                if clip.key in self._used or clip.width < _MIN_WIDTH:
+                    continue
+                path = self._download(clip)
+                if path is None:
+                    continue
+                clip.path = path
+                # Se reserva para que acquire() no lo vuelva a repartir por su
+                # cuenta: del fondo de marca decide el montaje, no la busqueda.
+                self._used.add(clip.key)
+                pool.append(clip)
+                taken += 1
+        log.info(f"Fondo de marca: {len(pool)} clips de {len(queries)} búsquedas")
+        return pool
+
+    def local_clips(self, directories: list[Path]) -> list[Clip]:
+        """Clips que has dejado tú. Se usan antes que cualquier cosa del stock."""
+        found: list[Clip] = []
+        for directory in directories:
+            if not directory.is_dir():
+                continue
+            for path in sorted(directory.iterdir()):
+                if path.suffix.lower() not in {".mp4", ".mov", ".m4v", ".webm"}:
+                    continue
+                if path.stat().st_size < 65536:
+                    continue
+                try:
+                    width, height = ffmpeg.video_size(path)
+                    duration = ffmpeg.duration(path)
+                except ffmpeg.FFmpegError as exc:
+                    log.warn(f"{path.name} no es un vídeo legible: {exc}")
+                    continue
+                found.append(Clip(
+                    provider="local", clip_id=path.stem, url=str(path),
+                    width=width, height=height, duration=duration,
+                    query="propio", rank=0, path=path,
+                ))
+        if found:
+            log.info(f"Clips propios: {len(found)} en assets/broll/")
+        return found
 
     # ---------------- Seleccion ----------------
 

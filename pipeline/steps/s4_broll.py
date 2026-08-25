@@ -16,7 +16,7 @@ import random
 from pathlib import Path
 from typing import Any
 
-from ..config import Config
+from ..config import ASSETS_DIR, Config
 from ..providers.stock import StockLibrary
 from ..util import figures as figures_util
 from ..util import log
@@ -28,8 +28,10 @@ def run(
     timeline: dict[str, Any],
     workdir: Path,
     *,
+    topic: dict[str, Any] | None = None,
     recent_clip_keys: set[str] | None = None,
 ) -> dict[str, Any]:
+    topic = topic or {}
     slots = _hook_slots(cfg, script, timeline) + _body_slots(cfg, timeline)
     slots.sort(key=lambda s: s["start"])
     _seal(slots, float(timeline["duration"]))
@@ -46,18 +48,51 @@ def run(
 
     library = StockLibrary(recent_keys=recent_clip_keys)
     fallback = _fallback_query(script)
-    filled = 0
+    _mark_chapter_starts(slots)
+
+    # Fondo de clips DEL TEMA: los propios primero, luego lo poco que tenga el
+    # stock de la marca. Se reparten por el video con rotacion, en lugar de
+    # dejar que cada frase busque por su cuenta y salga un lago de montaña.
+    anchors = _anchors(cfg, script, topic)
+    brand = library.local_clips(_local_dirs(topic))
+    if anchors:
+        brand += library.harvest(anchors, per_query=int(cfg.get("broll.brand_per_query", 8)))
+    rotation = _BrandRotation(brand, int(cfg.get("broll.brand_cooldown", 12)))
+    ratio = float(cfg.get("broll.brand_ratio", 0.65))
+
+    filled = brand_used = 0
     for index, slot in enumerate(slots):
-        clip = library.acquire(slot["query"], slot["duration"], fallback_query=fallback)
+        # El hook, los planos con cifra y las aperturas de capitulo son los que
+        # mas se miran: ahi va si o si material del tema.
+        priority = (
+            slot["kind"] == "hook"
+            or bool(slot.get("labels"))
+            or slot.get("chapter_start", False)
+        )
+        clip = None
+        if brand and (priority or brand_used < ratio * (index + 1)):
+            clip = rotation.take(index, slot["duration"])
+            if clip is not None:
+                brand_used += 1
+        if clip is None:
+            clip = library.acquire(slot["query"], slot["duration"], fallback_query=fallback)
         if clip is None:
             slot["clip"] = None
             continue
         slot["clip"] = str(clip.path)
         slot["clip_key"] = clip.key
         slot["clip_duration"] = clip.duration
+        slot["from_brand"] = clip.key in {c.key for c in brand}
         filled += 1
-        if (index + 1) % 25 == 0:
+        if (index + 1) % 40 == 0:
             log.info(f"  {index + 1}/{len(slots)} planos resueltos")
+
+    if brand:
+        share = brand_used / max(1, len(slots)) * 100
+        log.info(
+            f"Del tema: {brand_used}/{len(slots)} planos ({share:.0f}%), "
+            f"de un fondo de {len(brand)} clips distintos"
+        )
 
     if filled == 0:
         raise RuntimeError("No se pudo descargar ningun clip. Revisa las claves de Pexels/Pixabay.")
@@ -164,6 +199,72 @@ def _body_slots(cfg: Config, timeline: dict[str, Any]) -> list[dict]:
                 "on_screen": segment.get("on_screen", "") if part == 0 else "",
             })
     return slots
+
+
+# ---------------- fondo de clips del tema ----------------
+
+class _BrandRotation:
+    """Reparte un fondo pequeño de clips a lo largo de todo el vídeo.
+
+    De la marca hay poco material: con suerte cuarenta clips para doscientos
+    planos. Repetirlos es inevitable, pero repetirlos SEGUIDOS canta. Por eso
+    cada clip guarda un tiempo de espera antes de poder volver a salir, y
+    siempre se elige el que lleva más rato sin usarse.
+    """
+
+    def __init__(self, clips: list, cooldown: int) -> None:
+        self.clips = list(clips)
+        self.cooldown = max(1, cooldown)
+        self._last: dict[str, int] = {}
+
+    def take(self, index: int, min_duration: float):
+        if not self.clips:
+            return None
+        available = [
+            clip for clip in self.clips
+            if index - self._last.get(clip.key, -10**6) >= self.cooldown
+        ]
+        if not available:
+            return None
+        # Primero los que llevan más sin salir; entre esos, los que dan de sí
+        available.sort(key=lambda c: (self._last.get(c.key, -10**6), -c.duration))
+        long_enough = [c for c in available if c.duration >= min_duration]
+        chosen = (long_enough or available)[0]
+        self._last[chosen.key] = index
+        return chosen
+
+
+def _anchors(cfg: Config, script: dict[str, Any], topic: dict[str, Any]) -> list[str]:
+    """Búsquedas en inglés que describen el SUJETO del vídeo, no cada frase."""
+    for source in (
+        cfg.get("broll.anchors"),
+        (script.get("outline") or {}).get("broll_anchors"),
+        topic.get("broll_anchors"),
+    ):
+        if source:
+            return [str(item).strip() for item in source if str(item).strip()]
+    log.warn(
+        "Sin broll_anchors para este tema: no habrá fondo de clips del sujeto. "
+        "Añádelos en config/topics.yml para que el vídeo se vea del tema."
+    )
+    return []
+
+
+def _local_dirs(topic: dict[str, Any]) -> list[Path]:
+    """assets/broll/<slug>/ para este tema y assets/broll/_comun/ para todos."""
+    root = ASSETS_DIR / "broll"
+    return [root / topic.get("slug", ""), root / "_comun"]
+
+
+def _mark_chapter_starts(slots: list[dict]) -> None:
+    seen: set[Any] = set()
+    for slot in slots:
+        if slot["kind"] == "hook":
+            continue
+        block = slot.get("block_id")
+        if block not in seen:
+            seen.add(block)
+            slot["chapter_start"] = True
 
 
 # ---------------- utilidades ----------------

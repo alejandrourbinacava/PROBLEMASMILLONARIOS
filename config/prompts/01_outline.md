@@ -29,6 +29,12 @@ Devuelve ÚNICAMENTE un objeto JSON válido, sin markdown, sin ```json, con esta
 
 {{
   "working_title": "título de trabajo, claro y con la cifra final si la hay",
+  "broll_anchors": [
+    "6-8 busquedas en INGLES que describan el SUJETO del video, no cada frase.",
+    "Con estas se reune el fondo de imagenes que hace que el video se vea DEL TEMA.",
+    "Ej. para un McDonald's: mcdonalds / mcdonalds restaurant / mcdonalds drive thru /",
+    "fast food restaurant interior / burger fast food meal / fast food crew working"
+  ],
   "total_figure": "la cifra total del vídeo, ej: 47 millones de euros al año",
   "comparison": "la comparación tangible final",
   "blocks": [

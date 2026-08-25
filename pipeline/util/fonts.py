@@ -27,6 +27,20 @@ _SYSTEM_CANDIDATES = [
 ]
 
 
+def resolve_from_config(cfg) -> tuple[Path | None, str]:
+    """La fuente de marca sale de brand.font_family.
+
+    Se admite captions.font_family como respaldo por compatibilidad con la
+    configuración anterior, cuando la fuente vivía en el bloque de subtítulos.
+    """
+    family = cfg.get("brand.font_family") or cfg.get("captions.font_family", "Baloo 2")
+    fallback = (
+        cfg.get("brand.font_fallback")
+        or cfg.get("captions.font_fallback", "DejaVu Sans")
+    )
+    return resolve(family, fallback)
+
+
 def resolve(family: str, fallback_family: str) -> tuple[Path | None, str]:
     """Devuelve (archivo, nombre_de_familia) para la fuente pedida."""
     if FONTS_DIR.exists():

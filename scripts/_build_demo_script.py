@@ -341,6 +341,14 @@ def main() -> int:
             "working_title": TITLE,
             "total_figure": "1,2 millones para entrar y 2,2 millones al año para mantenerlo",
             "comparison": "de cada menú de 10 euros, solo 70 céntimos son tuyos",
+            # Búsquedas del SUJETO. Con estas se cosecha el fondo de clips de
+            # marca que se reparte por todo el vídeo.
+            "broll_anchors": [
+                "mcdonalds", "mcdonalds restaurant", "mcdonalds drive thru",
+                "mcdonalds sign", "fast food restaurant interior",
+                "burger fast food meal", "fast food crew working",
+                "drive thru window",
+            ],
             "blocks": [
                 {"id": b["id"], "chapter_title": b["chapter_title"],
                  "thesis": "", "key_figures": [], "open_loop": "",

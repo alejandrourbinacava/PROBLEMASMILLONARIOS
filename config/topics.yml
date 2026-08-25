@@ -9,6 +9,11 @@ topics:
   - title: "¿Cuánto cuesta comprar y mantener un McDonald's?"
     angle: "Franquicia: canon de entrada, obras, royalties, personal y margen real"
     tags_seed: ["mcdonalds", "franquicia", "negocio"]
+    # Búsquedas del SUJETO en inglés. Con ellas se reúne el fondo de imágenes
+    # que hace que todo el vídeo se vea del tema y no de stock genérico.
+    broll_anchors: ["mcdonalds", "mcdonalds restaurant", "mcdonalds drive thru",
+                    "mcdonalds sign", "fast food restaurant interior",
+                    "burger fast food meal", "fast food crew working"]
 
   - title: "¿Cuánto cuesta tener un equipo de fútbol de Primera División?"
     angle: "Plantilla, estadio, cantera, fichajes, nóminas y derechos de TV"

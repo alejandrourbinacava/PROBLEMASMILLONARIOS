@@ -35,4 +35,8 @@ Solo JSON válido, sin markdown:
 }}
 
 Al leer todas las `narration` seguidas debe sonar como un texto único y fluido,
-no como frases sueltas. `broll_query` siempre concreto y grabable.
+no como frases sueltas. `broll_query` siempre concreto y grabable, y ADEMAS dentro del mundo visual del
+tema. Si el video va de un McDonald's, un plano de cocina es "fast food kitchen"
+y no "chef plating gourmet dish"; una caja es "fast food counter payment" y no
+"boutique cash register". El espectador tiene que sentir que todo el video pasa
+en el mismo sitio.

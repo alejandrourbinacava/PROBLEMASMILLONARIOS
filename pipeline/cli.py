@@ -87,6 +87,7 @@ def _run(cfg: Config, args: argparse.Namespace) -> int:
         workdir / "broll.json", resume,
         lambda: s4_broll.run(
             cfg, script, timeline, workdir,
+            topic=topic,
             recent_clip_keys=s1_topic.recent_clip_keys(ledger),
         ),
     )

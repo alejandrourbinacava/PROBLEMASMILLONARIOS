@@ -110,14 +110,22 @@ def attach(slots: list[dict[str, Any]], cues: list[FigureCue]) -> int:
 
     placed = 0
     for cue in cues:
-        for slot in slots:
+        touched = [
+            slot for slot in slots
+            if float(slot["end"]) > cue.start and float(slot["start"]) < cue.end
+        ]
+        for position, slot in enumerate(touched):
             start, end = float(slot["start"]), float(slot["end"])
-            if end <= cue.start or start >= cue.end:
-                continue
             slot["labels"].append({
                 "text": cue.text,
                 "from": round(max(0.0, cue.start - start), 3),
                 "to": round(min(end, cue.end) - start, 3),
+                # head/tail dicen si en ESTE plano empieza o acaba el rotulo.
+                # Sin esto, el montaje aplicaba la entrada y la salida en cada
+                # plano por separado y un rotulo que cruzaba tres cortes
+                # parpadeaba tres veces.
+                "head": position == 0,
+                "tail": position == len(touched) - 1,
             })
         placed += 1
 

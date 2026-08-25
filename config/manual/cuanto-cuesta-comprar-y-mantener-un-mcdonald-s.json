@@ -3,6 +3,16 @@
     "working_title": "¿Cuánto cuesta comprar y mantener un McDonald's?",
     "total_figure": "1,2 millones para entrar y 2,2 millones al año para mantenerlo",
     "comparison": "de cada menú de 10 euros, solo 70 céntimos son tuyos",
+    "broll_anchors": [
+      "mcdonalds",
+      "mcdonalds restaurant",
+      "mcdonalds drive thru",
+      "mcdonalds sign",
+      "fast food restaurant interior",
+      "burger fast food meal",
+      "fast food crew working",
+      "drive thru window"
+    ],
     "blocks": [
       {
         "id": 1,

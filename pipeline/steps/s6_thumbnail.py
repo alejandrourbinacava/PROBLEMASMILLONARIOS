@@ -24,10 +24,7 @@ def run(
     image = Image.open(frame).convert("RGB").resize((WIDTH, HEIGHT), Image.LANCZOS)
     image = _darken(image)
 
-    font_file, _ = fonts.resolve(
-        cfg.get("captions.font_family", "Anton"),
-        cfg.get("captions.font_fallback", "DejaVu Sans"),
-    )
+    font_file, _ = fonts.resolve_from_config(cfg)
     accent = cfg.get("brand.accent", "#FFD400")
     accent_2 = cfg.get("brand.accent_2", "#FF2D55")
 

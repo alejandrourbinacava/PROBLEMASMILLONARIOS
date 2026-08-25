@@ -37,10 +37,7 @@ def run(
 ) -> Path:
     slots = broll["slots"]
     total = float(timeline["duration"])
-    font_file, font_family = fonts.resolve(
-        cfg.get("captions.font_family", "Anton"),
-        cfg.get("captions.font_fallback", "DejaVu Sans"),
-    )
+    font_file, font_family = fonts.resolve_from_config(cfg)
     font_file = _localize_font(font_file, workdir)
 
     log.step("Montaje 1/4: normalizando planos")
@@ -308,6 +305,10 @@ def _label_filters(
         options = [
             f"textfile={textfile.name}",
             "reload=0",
+            # SIN esto, drawtext trata el texto como plantilla y al toparse con
+            # un "%" lo descarta ENTERO con un aviso que no rompe el render:
+            # todos los porcentajes salian invisibles y el log no decia nada.
+            "expansion=none",
             f"fontsize={_fit_size(text, base_size, int(cfg.get('edit.width', 1920)))}",
             f"fontcolor=0x{accent}",
             f"borderw={int(cfg.get('figures.outline', 12))}",
@@ -318,7 +319,7 @@ def _label_filters(
             "x=(w-text_w)/2",
             "y=(h-text_h)/2",
             f"enable='between(t,{start:.3f},{end:.3f})'",
-            f"alpha='{_pop_alpha(start, end)}'",
+            f"alpha='{_pop_alpha(start, end, bool(label.get('head', True)), bool(label.get('tail', True)))}'",
         ]
         if font_file is not None:
             # Ruta relativa a segdir (el cwd de ffmpeg). Una ruta absoluta de
@@ -341,16 +342,28 @@ def _fit_size(text: str, base: int, frame_width: int) -> int:
     return max(64, min(base, int(usable / estimated)))
 
 
-def _pop_alpha(start: float, end: float) -> str:
-    """Entrada de 80 ms y salida de 150 ms. El golpe visual lo da el sonido,
-    asi que la opacidad solo tiene que evitar el corte seco."""
-    rise = 0.08
-    fall = min(0.15, max(0.05, (end - start) * 0.25))
-    return (
-        f"if(lt(t,{start:.3f}),0,"
-        f"if(lt(t,{start + rise:.3f}),(t-{start:.3f})/{rise},"
-        f"if(lt(t,{end - fall:.3f}),1,max(0,({end:.3f}-t)/{fall:.3f}))))"
-    )
+def _pop_alpha(start: float, end: float, head: bool, tail: bool) -> str:
+    """Opacidad del rotulo dentro de ESTE plano.
+
+    La entrada solo se aplica donde el rotulo empieza de verdad y la salida solo
+    donde acaba. Una cifra que se mantiene tres cortes seguidos es una unica
+    aparicion continua: si cada plano hiciera su propio fundido, la cifra
+    parpadearia en cada corte.
+    """
+    if not head and not tail:
+        return "1"
+    rise = 0.07 if head else 0.0
+    fall = min(0.14, max(0.05, (end - start) * 0.25)) if tail else 0.0
+
+    expression = "1"
+    if fall > 0:
+        expression = f"if(lt(t,{end - fall:.3f}),1,max(0,({end:.3f}-t)/{fall:.3f}))"
+    if rise > 0:
+        expression = (
+            f"if(lt(t,{start:.3f}),0,"
+            f"if(lt(t,{start + rise:.3f}),(t-{start:.3f})/{rise:.3f},{expression}))"
+        )
+    return expression
 
 
 def _localize_font(font_file: Path | None, workdir: Path) -> Path | None:
@@ -427,7 +440,7 @@ def _sfx_events(
     if cfg.get("audio.opening_impact", False):
         events.append(SfxEvent(at=0.0, name="impact", gain_db=-3.0))
     every = max(1, int(cfg.get("edit.body.whoosh_every_n_cuts", 2)))
-    hook_sfx = bool(cfg.get("edit.hook.shutter_sfx", True))
+    hook_mode = str(cfg.get("edit.hook.sfx", "whoosh")).lower()
     body_sfx = bool(cfg.get("edit.body.whoosh_sfx", True))
     picker = _WhooshPicker(sfx_paths)
 
@@ -437,7 +450,7 @@ def _sfx_events(
     counter = 0
     for slot in slots:
         if slot["kind"] == "hook":
-            if slot["duration"] > 0.8:
+            if hook_mode != "none" and slot["start"] > 0.01:
                 marks.append(slot["start"])
         else:
             counter += 1
@@ -447,11 +460,14 @@ def _sfx_events(
     body_index = 0
     for slot in slots:
         if slot["kind"] == "hook":
-            # El obturador solo en los cortes rapidos. Cuando el hook desacelera,
-            # uno cada segundo y medio suena a error, no a estilo.
-            if hook_sfx and slot["start"] > 0.01 and slot["duration"] <= 0.8:
+            # En el troceo rapido suena una transicion en CADA corte: es lo que
+            # da la sensacion de metralleta. Como el hueco es de 0,3 s, el
+            # selector se queda solo con las transiciones cortas.
+            if hook_mode == "none" or slot["start"] <= 0.01:
+                continue
+            if hook_mode == "shutter":
                 events.append(SfxEvent(at=slot["start"], name="shutter"))
-            elif body_sfx and slot["start"] > 0.01:
+            else:
                 events.append(_whoosh_event(picker, slot["start"], marks))
         else:
             body_index += 1

@@ -206,7 +206,9 @@ def ensure(sfx_dir: Path, whoosh_style: str, runner) -> dict[str, Path]:
     for index, path in enumerate(_whoosh_sources(sfx_dir, whoosh_style, runner)):
         paths[f"whoosh:{index}"] = path
 
-    for name, recipe in (("shutter", SHUTTER), ("impact", IMPACT)):
+    # "pop" es el golpe que acompaña a cada cifra en pantalla. Si no hay uno
+    # propio se reaprovecha la receta del obturador, que es igual de seca.
+    for name, recipe in (("shutter", SHUTTER), ("impact", IMPACT), ("pop", SHUTTER)):
         override = _user_file(sfx_dir, name)
         if override is not None:
             log.info(f"Efecto propio: {override.name}")

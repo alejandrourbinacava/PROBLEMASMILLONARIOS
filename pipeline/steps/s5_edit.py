@@ -54,7 +54,7 @@ def run(
     log.endstep()
 
     log.step("Montaje 3/4: mezcla de audio")
-    mixed = _mix_audio(cfg, slots, timeline, workdir)
+    mixed = _mix_audio(cfg, broll, timeline, workdir)
     log.endstep()
 
     log.step("Montaje 4/4: subtitulos y masterizado")
@@ -248,10 +248,7 @@ def _filter_chain(
         flash = int(cfg.get("edit.hook.flash_frames", 1)) / fps
         parts.append(f"fade=t=in:st=0:d={flash:.3f}:color=white")
 
-    label = (slot.get("on_screen") or "").strip()
-    if label:
-        parts.append(_drawtext(cfg, label, duration, font_file, segdir, index))
-
+    parts.extend(_label_filters(cfg, slot, font_file, segdir, index))
     parts += ["setsar=1", "format=yuv420p"]
     return ",".join(parts)
 
@@ -273,33 +270,87 @@ def _zoom_expr(cfg: Config, slot: dict, index: int, frames: int) -> str:
     return f"max(1,{1 + amount:.3f}-{amount:.3f}*on/{frames})"
 
 
-def _drawtext(
-    cfg: Config, label: str, duration: float, font_file: Path | None,
-    segdir: Path, index: int,
-) -> str:
-    """Rotulo grande arriba. El texto va en un archivo aparte para no pelearse
-    con el escapado de comillas y dos puntos dentro del grafo de filtros."""
-    textfile = segdir / f"label_{index:04d}.txt"
-    textfile.write_text(label.upper(), encoding="utf-8")
+def _label_filters(
+    cfg: Config, slot: dict, font_file: Path | None, segdir: Path, index: int
+) -> list[str]:
+    """Rotulos de cifra: centrados, enormes y con entrada rapida.
 
-    accent = cfg.get("brand.accent", "#FFD400").lstrip("#")
-    options = [
-        f"textfile={textfile.name}",
-        "reload=0",
-        "fontsize=104",
-        f"fontcolor=0x{accent}",
-        "borderw=9",
-        "bordercolor=black@0.9",
-        "x=(w-text_w)/2",
-        "y=110",
-        f"alpha='min(1,min(t,{max(0.05, duration - 0.12):.2f}-t)*8)'",
-    ]
-    if font_file is not None:
-        # Ruta relativa a segdir (el cwd de ffmpeg). Una ruta absoluta de Windows
-        # mete dos puntos dentro del grafo de filtros y no hay escapado que valga:
-        # ffmpeg los interpreta como separador de opciones.
-        options.insert(0, f"fontfile=../fonts/{font_file.name}")
-    return "drawtext=" + ":".join(options)
+    Van en el centro de la imagen a proposito. Los subtitulos ocupan la banda
+    baja, asi que el centro es el unico sitio donde una cifra puede ser lo mas
+    grande de la pantalla sin pelearse con nada.
+
+    El texto se pasa en un archivo aparte porque dentro del grafo de filtros hay
+    que escapar comillas, dos puntos y comas, y una cifra como "1.200.000 €" los
+    lleva casi todos.
+    """
+    if not cfg.get("figures.enabled", True):
+        return []
+    labels = slot.get("labels") or []
+    if not labels:
+        return []
+
+    accent = (cfg.get("figures.color") or cfg.get("brand.accent", "#FFD400")).lstrip("#")
+    base_size = int(cfg.get("figures.font_size", 156))
+    filters: list[str] = []
+
+    for position, label in enumerate(labels):
+        text = str(label.get("text", "")).strip().upper()
+        if not text:
+            continue
+        start = max(0.0, float(label.get("from", 0.0)))
+        end = float(label.get("to", 0.0))
+        if end - start < 0.08:
+            continue
+
+        textfile = segdir / f"label_{index:04d}_{position}.txt"
+        textfile.write_text(text, encoding="utf-8")
+
+        options = [
+            f"textfile={textfile.name}",
+            "reload=0",
+            f"fontsize={_fit_size(text, base_size, int(cfg.get('edit.width', 1920)))}",
+            f"fontcolor=0x{accent}",
+            f"borderw={int(cfg.get('figures.outline', 12))}",
+            "bordercolor=black@0.92",
+            "shadowx=0",
+            f"shadowy={int(cfg.get('figures.shadow', 7))}",
+            "shadowcolor=black@0.45",
+            "x=(w-text_w)/2",
+            "y=(h-text_h)/2",
+            f"enable='between(t,{start:.3f},{end:.3f})'",
+            f"alpha='{_pop_alpha(start, end)}'",
+        ]
+        if font_file is not None:
+            # Ruta relativa a segdir (el cwd de ffmpeg). Una ruta absoluta de
+            # Windows mete dos puntos dentro del grafo de filtros y no hay
+            # escapado que valga: ffmpeg los toma como separador de opciones.
+            options.insert(0, f"fontfile=../fonts/{font_file.name}")
+        filters.append("drawtext=" + ":".join(options))
+    return filters
+
+
+def _fit_size(text: str, base: int, frame_width: int) -> int:
+    """Cuerpo de letra maximo que cabe a lo ancho.
+
+    Se estima el ancho en lugar de aplicar una escala por tramos: con una tabla
+    de tramos, "300.000-500.000 €" bajaba a 75 px cuando en realidad cabe de
+    sobra a tamaño completo. Anton avanza unos 0,48 em por caracter.
+    """
+    usable = frame_width * 0.82
+    estimated = max(1, len(text)) * 0.48
+    return max(64, min(base, int(usable / estimated)))
+
+
+def _pop_alpha(start: float, end: float) -> str:
+    """Entrada de 80 ms y salida de 150 ms. El golpe visual lo da el sonido,
+    asi que la opacidad solo tiene que evitar el corte seco."""
+    rise = 0.08
+    fall = min(0.15, max(0.05, (end - start) * 0.25))
+    return (
+        f"if(lt(t,{start:.3f}),0,"
+        f"if(lt(t,{start + rise:.3f}),(t-{start:.3f})/{rise},"
+        f"if(lt(t,{end - fall:.3f}),1,max(0,({end:.3f}-t)/{fall:.3f}))))"
+    )
 
 
 def _localize_font(font_file: Path | None, workdir: Path) -> Path | None:
@@ -318,14 +369,14 @@ def _localize_font(font_file: Path | None, workdir: Path) -> Path | None:
 # 3. Audio
 # ==========================================================================
 
-def _mix_audio(cfg: Config, slots: list[dict], timeline: dict[str, Any], workdir: Path) -> Path:
+def _mix_audio(cfg: Config, broll: dict[str, Any], timeline: dict[str, Any], workdir: Path) -> Path:
     narration = Path(timeline["narration_path"])
     total = float(timeline["duration"])
 
     sfx_paths = sfx.ensure(
         ASSETS_DIR / "sfx", cfg.get("audio.whoosh_style", "sweep"), ffmpeg.run
     )
-    events = _sfx_events(cfg, slots, sfx_paths)
+    events = _sfx_events(cfg, broll["slots"], sfx_paths, broll.get("figures", []))
     sfx_track = build_bed(events, sfx_paths, total, workdir / "sfx.wav", workdir / "audio")
 
     music = _pick_music()
@@ -368,8 +419,13 @@ def _mix_audio(cfg: Config, slots: list[dict], timeline: dict[str, Any], workdir
     return out_path
 
 
-def _sfx_events(cfg: Config, slots: list[dict], sfx_paths: dict[str, Path]) -> list[SfxEvent]:
-    events: list[SfxEvent] = [SfxEvent(at=0.0, name="impact", gain_db=-3.0)]
+def _sfx_events(
+    cfg: Config, slots: list[dict], sfx_paths: dict[str, Path],
+    figures: list[dict] | None = None,
+) -> list[SfxEvent]:
+    events: list[SfxEvent] = []
+    if cfg.get("audio.opening_impact", False):
+        events.append(SfxEvent(at=0.0, name="impact", gain_db=-3.0))
     every = max(1, int(cfg.get("edit.body.whoosh_every_n_cuts", 2)))
     hook_sfx = bool(cfg.get("edit.hook.shutter_sfx", True))
     body_sfx = bool(cfg.get("edit.body.whoosh_sfx", True))
@@ -401,6 +457,15 @@ def _sfx_events(cfg: Config, slots: list[dict], sfx_paths: dict[str, Path]) -> l
             body_index += 1
             if body_sfx and body_index % every == 0:
                 events.append(_whoosh_event(picker, slot["start"], marks))
+
+    # Un golpe seco cada vez que una cifra entra en pantalla. Es el sonido que
+    # el espectador asocia al dato, y funciona tanto en el hook como en el cuerpo.
+    if cfg.get("figures.sound", True):
+        gain = float(cfg.get("figures.sound_db", -6.0))
+        for figure in figures or []:
+            events.append(SfxEvent(at=float(figure["start"]), name="pop", gain_db=gain))
+
+    events.sort(key=lambda event: event.at)
     return events
 
 

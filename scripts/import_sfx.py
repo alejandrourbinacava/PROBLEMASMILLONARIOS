@@ -39,6 +39,7 @@ POOL_DIR = SFX_DIR / "whoosh"
 TARGET_PEAK_DB = -1.5      # pico al que se iguala todo
 SILENCE_FLOOR_DB = -45     # por debajo de esto se considera silencio
 MAX_WHOOSH_S = 2.6         # una transición más larga estorba a la narración
+MAX_POP_S = 0.30           # el golpe de la cifra puede respirar algo más
 MAX_SHUTTER_S = 0.15       # el obturador cae entre cortes de 0,3 s: si dura
                            # más, se solapa con el siguiente y se emborrona
 
@@ -48,12 +49,15 @@ def main() -> int:
     parser.add_argument("--whoosh", nargs="*", default=[], help="Transiciones (se rotan)")
     parser.add_argument("--shutter", default="", help="Golpe corto del hook")
     parser.add_argument("--impact", default="", help="Golpe de apertura")
+    parser.add_argument("--pop", default="", help="Golpe que acompaña a cada cifra")
     parser.add_argument("--reset", action="store_true",
                         help="Vacía el banco de transiciones antes de importar")
     args = parser.parse_args()
 
-    if not args.whoosh and not args.shutter and not args.impact:
-        parser.error("No has indicado ningún archivo. Usa --whoosh / --shutter / --impact")
+    if not any((args.whoosh, args.shutter, args.impact, args.pop)):
+        parser.error(
+            "No has indicado ningún archivo. Usa --whoosh / --shutter / --impact / --pop"
+        )
 
     SFX_DIR.mkdir(parents=True, exist_ok=True)
     if args.reset and POOL_DIR.exists():
@@ -68,6 +72,7 @@ def main() -> int:
     for label, source, limit in (
         ("shutter", args.shutter, MAX_SHUTTER_S),
         ("impact", args.impact, 2.5),
+        ("pop", args.pop, MAX_POP_S),
     ):
         if not source:
             continue
@@ -187,7 +192,7 @@ def _summary() -> None:
             log.info(f"  transición  {path.stem:32s} {ffmpeg.duration(path):.2f}s")
     else:
         log.warn("  sin transiciones propias: se usarán las sintetizadas")
-    for name in ("shutter", "impact"):
+    for name in ("shutter", "impact", "pop"):
         path = SFX_DIR / f"{name}.wav"
         if path.exists():
             log.info(f"  {name:10s}  {'':32s} {ffmpeg.duration(path):.2f}s")

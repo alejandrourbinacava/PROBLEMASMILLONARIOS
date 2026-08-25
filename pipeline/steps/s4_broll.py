@@ -18,6 +18,7 @@ from typing import Any
 
 from ..config import Config
 from ..providers.stock import StockLibrary
+from ..util import figures as figures_util
 from ..util import log
 
 
@@ -32,8 +33,16 @@ def run(
     slots = _hook_slots(cfg, script, timeline) + _body_slots(cfg, timeline)
     slots.sort(key=lambda s: s["start"])
     _seal(slots, float(timeline["duration"]))
-    _place_hook_labels(slots, timeline)
     log.info(f"{len(slots)} planos que cubrir ({timeline['duration'] / 60:.1f} min de video)")
+
+    # Cada cifra que se pronuncia se rotula en pantalla. Los rotulos se cuelgan
+    # de los planos que cruzan, porque cada plano se codifica por separado.
+    cues = figures_util.plan(
+        timeline,
+        hold_s=float(cfg.get("figures.hold_s", 1.7)),
+        min_gap_s=float(cfg.get("figures.min_gap_s", 1.4)),
+    )
+    figures_util.attach(slots, cues)
 
     library = StockLibrary(recent_keys=recent_clip_keys)
     fallback = _fallback_query(script)
@@ -58,7 +67,16 @@ def run(
         log.warn(f"{missing} planos sin clip: se rellenan reutilizando el plano anterior")
         _fill_gaps(slots)
 
-    plan = {"slots": slots, "clip_keys": library.release_all()}
+    plan = {
+        "slots": slots,
+        "clip_keys": library.release_all(),
+        # Los tiempos absolutos los necesita la mezcla para poner el golpe
+        # de sonido justo cuando aparece la cifra.
+        "figures": [
+            {"text": cue.text, "start": round(cue.start, 3), "end": round(cue.end, 3)}
+            for cue in cues
+        ],
+    }
     (workdir / "broll.json").write_text(
         json.dumps(plan, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -162,23 +180,6 @@ def _seal(slots: list[dict], total: float) -> None:
         slot["start"] = round(max(0.0, slot["start"]), 3)
         slot["end"] = round(min(total, slot["end"]), 3)
         slot["duration"] = round(max(0.05, slot["end"] - slot["start"]), 3)
-
-
-def _place_hook_labels(slots: list[dict], timeline: dict[str, Any]) -> None:
-    """Los rotulos del hook van atados a la frase, no al corte de imagen."""
-    hook_slots = [s for s in slots if s["kind"] == "hook"]
-    if not hook_slots:
-        return
-    for segment in timeline["segments"]:
-        label = (segment.get("on_screen") or "").strip()
-        if segment["kind"] != "hook" or not label:
-            continue
-        target = next(
-            (s for s in hook_slots if s["start"] <= segment["start"] < s["end"]), None
-        )
-        if target is not None and not target.get("on_screen"):
-            target["on_screen"] = label
-
 
 
 def _fallback_query(script: dict[str, Any]) -> str:

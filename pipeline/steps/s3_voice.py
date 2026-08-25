@@ -18,7 +18,7 @@ from typing import Any
 from ..config import Config
 from ..providers.freetts import make as make_tts
 from ..util import ffmpeg, log
-from ..util.timing import align_scenes, parse_cues
+from ..util.timing import align_scenes, parse_cues, words_from_cues
 
 
 def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
@@ -42,6 +42,7 @@ def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
     pieces: list[Path] = []
     segments: list[dict[str, Any]] = []
     chapters: list[dict[str, Any]] = []
+    words: list[dict[str, Any]] = []
     cursor = 0.0
 
     for unit, result in zip(units, results):
@@ -61,6 +62,16 @@ def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
                 "start": round(cursor + start, 3),
                 "end": round(cursor + end, 3),
             })
+        # Las palabras con su hora exacta se guardan para los pasos siguientes:
+        # es lo que permite que el rótulo de una cifra aparezca justo cuando se
+        # pronuncia, en lugar de repartido a ojo dentro de la escena.
+        for word in words_from_cues(result["cues"]):
+            words.append({
+                "w": word.word,
+                "t": round(cursor + word.start, 3),
+                "e": round(cursor + word.end, 3),
+            })
+
         pieces.append(result["path"])
         cursor += result["duration"]
         if silence is not None and unit is not units[-1]:
@@ -69,7 +80,10 @@ def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
 
     narration = _concat_and_normalize(cfg, pieces, audio_dir, workdir)
     total = ffmpeg.duration(narration)
-    log.info(f"Narracion lista: {total / 60:.1f} min ({total:.1f} s), {len(segments)} escenas")
+    log.info(
+        f"Narracion lista: {total / 60:.1f} min ({total:.1f} s), "
+        f"{len(segments)} escenas, {len(words)} palabras cronometradas"
+    )
 
     hook_end = max(
         (segment["end"] for segment in segments if segment["kind"] == "hook"), default=0.0
@@ -80,6 +94,7 @@ def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
         "hook_end": hook_end,
         "segments": segments,
         "chapters": chapters,
+        "words": words,
     }
     (workdir / "timeline.json").write_text(
         json.dumps(timeline, ensure_ascii=False, indent=2), encoding="utf-8"

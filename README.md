@@ -93,7 +93,7 @@ Hay dos caminos.
 impórtalos:
 
 ```bash
-python scripts/import_sfx.py --reset --whoosh "C:/ruta/Woosh.mp3" "C:/ruta/Otro.mp3" --shutter "C:/ruta/Pop.wav" --impact "C:/ruta/Golpe.mp3"
+python scripts/import_sfx.py --reset --whoosh "C:/ruta/Woosh.mp3" "C:/ruta/Otro.mp3" --pop "C:/ruta/Pop.wav" --impact "C:/ruta/Golpe.mp3"
 ```
 
 El importador no se limita a copiar: **recorta el silencio inicial** (si el
@@ -104,6 +104,9 @@ todos al mismo pico y detecta duplicados por contenido.
 Los whoosh van a `assets/sfx/whoosh/` y el montaje **los rota** entre cortes,
 eligiendo en cada uno el que quepa en el hueco hasta el siguiente. Repetir el
 mismo golpe doscientas veces canta a plantilla.
+
+`--pop` es el golpe que suena con cada cifra en pantalla, así que tiene que ser
+muy corto y seco. `--shutter` solo se usa si reactivas el efecto del hook.
 
 > Los efectos deben estar **commiteados en el repo**: GitHub Actions no ve tu
 > carpeta de Descargas, y sin ellos el vídeo diario usaría los sintetizados.
@@ -159,14 +162,46 @@ voz. Cada paso deja su JSON en `build/<fecha>_<tema>/` y se relee.
 ## Cómo se consigue el estilo de edición
 
 **Hook (primeros 9 s).** La voz va continua pero la imagen corta cada 0,28-0,55 s,
-acelerando conforme avanza. Cada corte lleva flash blanco de un fotograma, sonido
-de obturador y un golpe de zoom que se asienta. Son dos pistas independientes:
-por eso el guion pide las frases y las imágenes en dos listas separadas.
+acelerando conforme avanza. Cada corte lleva flash blanco de un fotograma y un
+golpe de zoom que se asienta. Son dos pistas independientes: por eso el guion
+pide las frases y las imágenes en dos listas separadas.
+
+El arranque **no lleva efecto de transición**: el sonido lo ponen las cifras.
+Si lo quieres de vuelta, `edit.hook.shutter_sfx: true` y
+`audio.opening_impact: true`.
+
+Pasados esos 9 s los cortes **desaceleran** hasta el ritmo del cuerpo. Un hook
+largo cortando a 0,3 s de principio a fin no engancha, machaca.
 
 **Cuerpo.** Plano nuevo cada 3-5 s, atado a la escena de guion. Si una frase dura
 más de 5 s se parte en dos planos. Zoom lento continuo alternando acercar/alejar,
-whoosh uno de cada dos cortes (en todos cansa), y subtítulos quemados de 2-4
-palabras con las cifras en amarillo de marca.
+transición sonora uno de cada dos cortes (en todos cansa), y subtítulos quemados
+de 2-4 palabras con las cifras en amarillo de marca.
+
+**Las cifras siempre salen en pantalla.** Si la narración dice un número, aparece
+en el centro, enorme, con un golpe de sonido. Es lo que fija el dato y lo que
+permite ver el vídeo sin audio.
+
+Lo difícil es que el guion escribe los números **en letra** ("un millón
+doscientos mil euros"), porque un TTS lee mucho mejor eso que "1.200.000". Así
+que `pipeline/util/numbers.py` parsea numerales españoles y los pasa a dígitos:
+
+| Narración | Rótulo |
+|---|---|
+| un millón doscientos mil euros | `1,2 M€` |
+| cuarenta y cinco mil euros | `45.000 €` |
+| entre el diez y el doce por ciento | `10-12%` |
+| entre sesenta y setenta personas | `60-70 PERSONAS` |
+| dieciocho horas | `18 H` |
+
+Dos trampas del español que están resueltas: la "y" solo une decena con unidad
+("cuarenta y cinco" = 45), nunca decena con decena — "sesenta y setenta" son dos
+números de un rango, y sumarlos daría 130, justo lo contrario de lo que dice la
+frase. Y "un" es a la vez el número uno y un artículo: "un McDonald's" no es una
+cifra, "un millón" sí.
+
+El rótulo aparece en el instante exacto en que se pronuncia el número, no al
+empezar la frase, porque el paso de narración guarda la hora de cada palabra.
 
 **Por qué todos los cortes son secos.** Un fundido encadenado obliga a recodificar
 los 13 minutos enteros. Con cortes secos, cada plano se codifica una vez y se
@@ -186,6 +221,9 @@ Todo vive en **`config/channel.yml`**:
 | Hook más largo o más agresivo | `edit.hook.*` |
 | Menos whoosh | `edit.body.whoosh_every_n_cuts: 3` |
 | Subtítulos más grandes | `captions.font_size` |
+| Cifras más grandes o que duren más | `figures.font_size` / `figures.hold_s` |
+| Quitar el golpe de las cifras | `figures.sound: false` |
+| Quitar los rótulos de cifra | `figures.enabled: false` |
 | Otro color de marca | `brand.accent` |
 | Música más alta | `audio.music_volume_db` |
 | Render más rápido (peor calidad) | `edit.master_preset: veryfast` |
@@ -225,6 +263,7 @@ pipeline/
                  s5 montaje · s6 miniatura · s7 metadatos · s8 subida
   providers/     genaipro y freetts (voz) · llm · stock (Pexels/Pixabay) · youtube
   util/          ffmpeg · timing (sincronía) · captions (ASS)
+                 numbers (numerales ES) · figures (rótulos de cifra)
                  sfx (diseño de sonido) · sfxbed (mezcla) · fonts
 scripts/         list_voices · get_youtube_token · fetch_fonts
                  smoke_render · prune_cache · import_sfx

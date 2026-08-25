@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from pipeline.config import ASSETS_DIR, Config  # noqa: E402
 from pipeline.steps import s4_broll, s5_edit  # noqa: E402
 from pipeline.util import ffmpeg, log, sfx  # noqa: E402
+from pipeline.util import figures as figures_util  # noqa: E402
 from pipeline.util.sfxbed import build_bed  # noqa: E402
 
 
@@ -56,7 +57,16 @@ def main() -> int:
 
     style = args.style or cfg.get("audio.whoosh_style", "sweep")
     sfx_paths = sfx.ensure(ASSETS_DIR / "sfx", style, ffmpeg.run)
-    events = s5_edit._sfx_events(cfg, slots, sfx_paths)
+    cues = figures_util.plan(
+        timeline,
+        hold_s=float(cfg.get("figures.hold_s", 1.7)),
+        min_gap_s=float(cfg.get("figures.min_gap_s", 1.4)),
+    )
+    figures_util.attach(slots, cues)
+    events = s5_edit._sfx_events(
+        cfg, slots, sfx_paths,
+        [{"text": c.text, "start": c.start, "end": c.end} for c in cues],
+    )
 
     window = min(args.seconds, float(timeline["duration"]))
     inside = [e for e in events if e.at < window]

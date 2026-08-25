@@ -67,7 +67,8 @@ edit:
     cut_min_s: 0.28              # corte más rápido
     cut_max_s: 0.55              # corte más lento
     flash_frames: 1              # fotogramas de flash blanco en el corte
-    shutter_sfx: true            # sonido de obturador de cámara
+    shutter_sfx: false           # OFF: el arranque no lleva efecto de transición,
+                                 # el sonido lo ponen las cifras (ver figures.sound)
     zoom_punch: 0.10             # golpe de zoom en cada corte (0 = off)
   # CUERPO: escena nueva cada 3-5 s
   body:
@@ -98,6 +99,21 @@ captions:
   uppercase: true
   highlight_numbers: true        # cifras y € en color acento
 
+# ---------------- RÓTULOS DE CIFRAS ----------------
+# Regla del canal: si se dice un número, sale en pantalla. En el centro, grande
+# y con un golpe de sonido. El detector entiende números escritos en letra
+# ("un millón doscientos mil euros" -> 1,2 M€) y rangos ("entre 60 y 70").
+figures:
+  enabled: true
+  font_size: 156                 # se reduce solo si la cifra es larga
+  outline: 12
+  shadow: 7
+  hold_s: 1.7                    # cuánto aguanta el rótulo en pantalla
+  min_gap_s: 1.4                 # separación mínima entre dos rótulos
+  color: ""                      # vacío = brand.accent
+  sound: true                    # golpe (assets/sfx/pop.wav) en cada cifra
+  sound_db: -6.0
+
 # ---------------- AUDIO ----------------
 audio:
   # Estilo del sonido de transición. Escúchalos con:
@@ -106,7 +122,8 @@ audio:
   #   riser  sube y corta en seco, muy agresivo
   #   swish  corto y seco, el menos invasivo
   #   sub    aire arriba y golpe de grave, el más 'de canal grande'
-  whoosh_style: "sweep"
+  whoosh_style: "sweep"          # solo si assets/sfx/whoosh/ está vacío
+  opening_impact: false          # golpe en el segundo 0 del vídeo
   music_volume_db: -22.0         # cama musical de fondo
   duck_db: -12.0                 # cuánto baja la música cuando habla la voz
   sfx_volume_db: -9.0

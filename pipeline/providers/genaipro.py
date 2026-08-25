@@ -11,7 +11,9 @@ from pathlib import Path
 from typing import Any
 
 import requests
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import (
+    retry, retry_if_exception_type, stop_after_attempt, wait_exponential,
+)
 
 from ..config import Config, env
 from ..util import log
@@ -19,6 +21,7 @@ from ..util import log
 _TIMEOUT = 60
 _POLL_INTERVAL = 3.0
 _POLL_TIMEOUT = 600.0
+_SUBTITLE_TIMEOUT = 90.0
 
 _DONE = {"completed", "complete", "success", "succeeded", "done", "finished"}
 _FAILED = {"failed", "error", "cancelled", "canceled", "rejected"}
@@ -28,9 +31,13 @@ class GenAIProError(RuntimeError):
     pass
 
 
+class _Retryable(GenAIProError):
+    """Fallo pasajero: red, 429 o 5xx. Lo demas no se reintenta."""
+
+
 class GenAIPro:
     def __init__(self, cfg: Config) -> None:
-        self.base_url = cfg.get("voice.base_url", "https://genaipro.vn/api/v1").rstrip("/")
+        self.base_url = cfg.get("voice.base_url", "https://genaipro.io/api/v1").rstrip("/")
         self.cfg = cfg
         self._session = requests.Session()
         self._session.headers.update({
@@ -41,12 +48,24 @@ class GenAIPro:
 
     # ---------------- HTTP ----------------
 
-    @retry(stop=stop_after_attempt(4), wait=wait_exponential(multiplier=2, min=2, max=25))
+    @retry(
+        stop=stop_after_attempt(4),
+        wait=wait_exponential(multiplier=2, min=2, max=25),
+        # Solo se reintenta lo que puede arreglarse esperando. Un 400 o un 401
+        # van a fallar igual las cuatro veces y ademas la excepcion que sale del
+        # reintento no es la nuestra, asi que los catch de arriba no la ven.
+        retry=retry_if_exception_type(_Retryable),
+    )
     def _request(self, method: str, path: str, **kwargs: Any) -> Any:
         url = f"{self.base_url}/{path.lstrip('/')}"
-        response = self._session.request(method, url, timeout=_TIMEOUT, **kwargs)
+        try:
+            response = self._session.request(method, url, timeout=_TIMEOUT, **kwargs)
+        except requests.RequestException as exc:
+            raise _Retryable(f"{method} {url}: {exc}") from exc
         if response.status_code == 404:
             return None
+        if response.status_code == 429 or response.status_code >= 500:
+            raise _Retryable(f"{method} {url} -> {response.status_code}")
         if response.status_code >= 400:
             raise GenAIProError(f"{method} {url} -> {response.status_code}: {response.text[:400]}")
         try:
@@ -84,7 +103,8 @@ class GenAIPro:
             "model_id": cfg.get("voice.model_id", "eleven_multilingual_v2"),
             "speed": float(cfg.get("voice.speed", 1.0)),
             "stability": float(cfg.get("voice.stability", 0.45)),
-            "similarity_boost": float(cfg.get("voice.similarity", 0.8)),
+            # La API lo llama "similarity", no "similarity_boost"
+            "similarity": float(cfg.get("voice.similarity", 0.8)),
             "style": float(cfg.get("voice.style", 0.35)),
             "use_speaker_boost": bool(cfg.get("voice.speaker_boost", True)),
         }
@@ -112,9 +132,10 @@ class GenAIPro:
 
     def _get_task(self, task_id: str) -> dict | None:
         """La consulta de estado difiere entre versiones: se prueban tres formas."""
+        # No hay endpoint por id: se pide la primera pagina del historial, que
+        # viene por fecha descendente, y se busca la tarea ahi.
         attempts = (
             ("GET", f"/labs/task/{task_id}", {}),
-            ("GET", "/labs/task", {"params": {"task_id": task_id}}),
             ("GET", "/labs/task", {"params": {"page": 1, "limit": 50}}),
         )
         for method, path, kwargs in attempts:
@@ -131,11 +152,47 @@ class GenAIPro:
         return None
 
     def fetch_subtitles(self, task_id: str) -> Any:
-        """Subtitulos con marcas de tiempo de la propia tarea. None si no estan."""
+        """Subtitulos con marcas de tiempo. Devuelve el SRT en texto, o None.
+
+        Van en dos pasos: primero se pide generarlos y despues la tarea expone
+        una URL al .srt. Los cues se piden MUY cortos porque no se muestran:
+        solo se usan para saber en que segundo cae cada palabra, y cuanto mas
+        finos son, mas exacta queda la imagen contra la voz.
+        """
         try:
-            return self._request("POST", f"/labs/task/subtitle/{task_id}", json={})
+            self._request("POST", f"/labs/task/subtitle/{task_id}", json={
+                "max_characters_per_line": 12,
+                "max_lines_per_cue": 1,
+                "max_seconds_per_cue": 1,
+            })
         except GenAIProError as exc:
-            log.warn(f"Sin subtitulos de la API para {task_id}: {exc}")
+            # "Task already has subtitle" es lo normal al reintentar: se sigue.
+            if "already has subtitle" not in str(exc).lower():
+                log.warn(f"No se pudieron generar subtitulos de {task_id}: {exc}")
+
+        # El SRT tambien se genera en diferido: justo despues del POST el campo
+        # sigue vacio, asi que hay que esperarlo igual que al audio.
+        url = None
+        deadline = time.time() + _SUBTITLE_TIMEOUT
+        while time.time() < deadline:
+            task = self._get_task(task_id)
+            candidate = _dig(task or {}, "subtitle", "subtitle_url", "srt", "srt_url")
+            if candidate and str(candidate).startswith("http"):
+                url = str(candidate)
+                break
+            time.sleep(_POLL_INTERVAL)
+        if url is None:
+            log.warn(
+                f"Sin subtitulos para {task_id}: la imagen se cuadrara por "
+                "reparto proporcional dentro de cada capitulo."
+            )
+            return None
+        try:
+            response = self._session.get(url, timeout=_TIMEOUT)
+            response.raise_for_status()
+            return response.text
+        except requests.RequestException as exc:
+            log.warn(f"No se pudo descargar el SRT de {task_id}: {exc}")
             return None
 
     def download(self, url: str, out_path: Path) -> Path:

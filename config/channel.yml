@@ -32,11 +32,11 @@ voice:
   # edge     = GRATIS, sin clave. Voces es-ES-AlvaroNeural / ElviraNeural /
   #            XimenaNeural. Además devuelve la posición exacta de cada
   #            palabra, así que la imagen cuadra al milisegundo.
-  provider: "edge"
-  base_url: "https://genaipro.vn/api/v1"
+  provider: "genaipro"
+  base_url: "https://genaipro.io/api/v1"
   # Con provider edge: es-ES-AlvaroNeural | es-ES-ElviraNeural | es-ES-XimenaNeural
   # Con provider genaipro: el id que saques de python scripts/list_voices.py
-  voice_id: "es-ES-AlvaroNeural"
+  voice_id: "RwzBDEn5f6FIgpAjH9YN"
   model_id: "eleven_multilingual_v2"
   speed: 1.05                    # 0.7 - 1.2
   stability: 0.45
@@ -72,7 +72,7 @@ edit:
                                  # los cortes desaceleran solos
     cut_min_s: 0.28              # corte más rápido
     cut_max_s: 0.55              # corte más lento
-    flash_frames: 1              # fotogramas de flash blanco en el corte
+    flash_frames: 0              # flash blanco entre cortes (0 = sin flash)
     # Sonido en cada corte rápido: whoosh (el tuyo) | shutter | none
     sfx: "whoosh"
     zoom_punch: 0.10             # golpe de zoom en cada corte (0 = off)

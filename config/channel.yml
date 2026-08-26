@@ -152,6 +152,19 @@ figures:
   sound: true                    # golpe (assets/sfx/pop.wav) en cada cifra
   sound_db: 3.0                  # el golpe tiene que oírse por encima de la voz
 
+# ---------------- GRÁFICOS GENERADOS ----------------
+# Hay frases que ningún clip puede ilustrar: "el alquiler se lleva el 10-12%",
+# "de cada menú te quedan 70 céntimos". Ahí un plano de archivo es decorado y
+# un gráfico es el contenido. Se dibujan solos con la tipografía del canal.
+graphics:
+  enabled: true
+  # Medido sobre este vídeo: con 0,20 no salta nunca y con 0,75 saltaría en
+  # el 80% de las cifras. En 0,50 quedan 20 candidatos de 98, que con el
+  # tope de abajo dan un gráfico cada 45 segundos.
+  clip_threshold: 0.50           # si el mejor clip no llega a esto, se dibuja
+  max_per_video: 14
+  min_gap_s: 35.0                # separación mínima, o parece un pase de diapositivas
+
 # ---------------- AUDIO ----------------
 audio:
   # Estilo del sonido de transición. Escúchalos con:

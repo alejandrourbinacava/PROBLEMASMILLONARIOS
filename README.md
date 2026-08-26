@@ -255,6 +255,37 @@ quieres, se arregla ahí y no en el código.
 
 ---
 
+## Gráficos generados
+
+Hay frases que **ningún clip puede ilustrar**: *"el alquiler se lleva el 10-12%
+de las ventas"*, *"de cada menú te quedan 70 céntimos"*, *"producto 770.000,
+personal 650.000, alquiler 270.000"*. Cualquier plano de archivo ahí es
+decorado. Un gráfico no: es el contenido.
+
+Cuando el mejor clip disponible no llega a `graphics.clip_threshold` de
+parecido con la frase y la frase lleva una cifra, se dibuja uno:
+
+| Forma | Cuándo |
+|---|---|
+| **Contador** | una cifra suelta; cuenta desde cero |
+| **Barra** | porcentajes; el contador más una barra que se llena |
+| **Cuenta apilada** | líneas escritas como `Concepto: cifra`; la lista crece con las anteriores atenuadas |
+
+El umbral se midió, no se eligió a ojo: sobre los 98 planos con cifra de este
+vídeo, con 0,20 no saltaba nunca y con 0,75 saltaba en el 80%. En 0,50 quedan
+20 candidatos, que con `max_per_video` dan uno cada 45 segundos.
+
+La etiqueta sale del guion. Delante de la cifra si hay algo (*"El canon de
+entrada son…"* → `CANON DE ENTRADA`) y detrás si no (*"Entre el diez y el doce
+por ciento de las ventas"* → `VENTAS`). Para la lista apilada se usan **los dos
+puntos**: es una señal mucho más limpia que adivinar, y sin ella *"Pones un
+millón para empezar"* daba la etiqueta `PONES`, que es un verbo.
+
+Se codifican con los mismos parámetros que un plano de vídeo, así que se pegan
+con el resto sin recodificar y no cuestan tiempo de render extra.
+
+---
+
 ## Contenido vetado
 
 Un canal automático publica cada mañana sin que nadie mire los clips uno a uno.

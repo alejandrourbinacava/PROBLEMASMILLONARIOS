@@ -13,6 +13,7 @@ from __future__ import annotations
 import json
 import math
 import random
+import re
 from pathlib import Path
 from typing import Any
 
@@ -68,8 +69,17 @@ def run(
     rotation = _BrandRotation(brand, int(cfg.get("broll.brand_cooldown", 12)))
     ratio = float(cfg.get("broll.brand_ratio", 0.65))
 
+    chapter_titles = {
+        int(block.get("id") or 0): str(block.get("chapter_title") or "")
+        for block in script.get("blocks", [])
+    }
+    running: dict[int, list[tuple[str, str]]] = {}
+    graphics_made = 0
+    last_graphic_at = -999.0
+
     filled = brand_used = 0
     for index, slot in enumerate(slots):
+        _remember_figure(slot, running)
         # El hook, los planos con cifra y las aperturas de capitulo son los que
         # mas se miran: ahi va si o si material del tema.
         priority = (
@@ -94,6 +104,22 @@ def run(
                 brand_used += 1
         if clip is None:
             clip = library.acquire(slot["query"], slot["duration"], fallback_query=fallback)
+
+        # Si lo mejor que hay no ilustra la frase y la frase lleva una cifra,
+        # se dibuja un grafico. Un plano de archivo que no viene a cuento es
+        # decorado; el grafico ES el dato.
+        fit = relevance(slot.get("query", ""), clip.hint) if clip else 0.0
+        slot["clip_fit"] = round(fit, 3)
+        if _wants_graphic(cfg, slot, fit, graphics_made, last_graphic_at):
+            spec = _graphic_spec(slot, chapter_titles, running)
+            if spec is not None:
+                slot["graphic"] = spec
+                slot["clip"] = None
+                graphics_made += 1
+                last_graphic_at = slot["start"]
+                filled += 1
+                continue
+
         if clip is None:
             slot["clip"] = None
             continue
@@ -105,6 +131,8 @@ def run(
         if (index + 1) % 40 == 0:
             log.info(f"  {index + 1}/{len(slots)} planos resueltos")
 
+    if graphics_made:
+        log.info(f"Gráficos generados: {graphics_made} (frases sin clip que valga)")
     if brand:
         share = brand_used / max(1, len(slots)) * 100
         log.info(
@@ -213,10 +241,100 @@ def _body_slots(cfg: Config, timeline: dict[str, Any]) -> list[dict]:
                 "end": round(part_end, 3),
                 "duration": round(part_end - part_start, 3),
                 "query": segment.get("broll_query") or "money cash close up",
+                "narration": segment.get("narration", ""),
                 # El rotulo solo va en el primer plano de la escena
                 "on_screen": segment.get("on_screen", "") if part == 0 else "",
             })
     return slots
+
+
+# ---------------- graficos generados ----------------
+
+# Las lineas de una cuenta se escriben "Concepto: cifra". Es una senal mucho
+# mas limpia que adivinar el concepto de la frase: sin ella, "Pones un millon
+# para empezar" daba la etiqueta "PONES", que es un verbo, no un concepto.
+_ACCOUNT_LINE = re.compile(r"^\s*([^:.]{3,44}):")
+
+
+def _remember_figure(slot: dict, running: dict[int, list[tuple[str, str]]]) -> None:
+    """Acumula las partidas del capitulo, pero solo las que son cuenta."""
+    match = _ACCOUNT_LINE.match(str(slot.get("narration") or ""))
+    if match is None:
+        return
+    concept = match.group(1).strip().upper()
+    for label in slot.get("labels", []):
+        amount = str(label.get("text") or "").strip()
+        if not label.get("head") or "€" not in amount:
+            continue
+        items = running.setdefault(int(slot.get("block_id") or 0), [])
+        if not items or items[-1] != (concept, amount):
+            items.append((concept, amount))
+
+
+def _wants_graphic(
+    cfg: Config, slot: dict, fit: float, made: int, last_at: float
+) -> bool:
+    if not cfg.get("graphics.enabled", True):
+        return False
+    if slot["kind"] == "hook":
+        return False
+    # Tiene que ser el plano donde la cifra EMPIEZA. Un rotulo se extiende a los
+    # planos siguientes, y ahi la narracion ya esta hablando de otra cosa: salia
+    # una lista de gastos sobre "te hacen trabajar nueve meses".
+    if not any(label.get("head") for label in slot.get("labels", [])):
+        return False
+    if fit >= float(cfg.get("graphics.clip_threshold", 0.2)):
+        return False
+    if made >= int(cfg.get("graphics.max_per_video", 14)):
+        return False
+    # Sin separacion minima el video se convierte en un pase de diapositivas
+    return slot["start"] - last_at >= float(cfg.get("graphics.min_gap_s", 35.0))
+
+
+def _graphic_spec(
+    slot: dict, chapters: dict[int, str], running: dict[int, list[tuple[str, str]]]
+) -> dict[str, Any] | None:
+    label = next(
+        (item for item in slot.get("labels", []) if item.get("head")), None
+    )
+    if label is None:
+        return None
+    display = str(label.get("text") or "").strip()
+    unit = str(label.get("unit") or "plain")
+    value = float(label.get("value") or 0.0)
+    # Una cifra que no dice nada por si sola no merece pantalla completa:
+    # "x2 o x3" o "1 AÑO" quedan raquiticos ocupando el cuadro entero.
+    if not display or " o " in display.lower():
+        return None
+    if unit != "percent" and value < 1000:
+        return None
+    block_id = int(slot.get("block_id") or 0)
+    context = chapters.get(block_id, "")
+    items = running.get(block_id, [])
+    account = _ACCOUNT_LINE.match(str(slot.get("narration") or ""))
+    concept = account.group(1).strip().upper() if account else str(label.get("concept") or "")
+
+    # La lista apilada solo si ESTA frase es una linea de la cuenta, no cada vez
+    # que el capitulo lleve partidas acumuladas: salia el desglose de gastos
+    # debajo de "te hacen trabajar nueve meses".
+    # Se mira el ROTULO, no la unidad detectada: en el capitulo de la cuenta el
+    # guion dice "Personal: seiscientos cincuenta mil" sin la palabra euros, y
+    # esas son precisamente las lineas que hay que apilar.
+    is_line = bool(items) and items[-1] == (concept, display)
+    if is_line and len(items) >= 3:
+        return {
+            "kind": "stack", "context": context,
+            # Mas de siete lineas no caben legibles en pantalla
+            "items": [list(item) for item in items[-7:]],
+        }
+    return {
+        "kind": "bar" if unit == "percent" else "counter",
+        "label": str(label.get("concept") or "").upper(),
+        "display": display,
+        "value": value,
+        "unit": unit,
+        "context": context,
+    }
 
 
 # ---------------- fondo de clips del tema ----------------
@@ -390,6 +508,8 @@ def _fill_gaps(slots: list[dict]) -> None:
     """Los planos sin clip heredan el del vecino mas cercano que si tenga."""
     last: str | None = None
     for slot in slots:
+        if slot.get("graphic"):
+            continue  # ya tiene contenido propio
         if slot.get("clip"):
             last = slot["clip"]
         elif last:
@@ -398,6 +518,6 @@ def _fill_gaps(slots: list[dict]) -> None:
     # Los del principio, si los hay, toman el primero disponible hacia atras
     first = next((s["clip"] for s in slots if s.get("clip")), None)
     for slot in slots:
-        if not slot.get("clip") and first:
+        if not slot.get("clip") and not slot.get("graphic") and first:
             slot["clip"] = first
             slot["reused"] = True

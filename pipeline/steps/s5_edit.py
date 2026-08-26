@@ -23,7 +23,7 @@ from typing import Any
 
 from ..config import ASSETS_DIR, Config
 from ..util import captions as captions_util
-from ..util import ffmpeg, fonts, log, sfx
+from ..util import ffmpeg, fonts, graphics, log, sfx
 from ..util.sfxbed import SfxEvent, build_bed
 from ..util.timing import Cue, caption_cues
 
@@ -102,7 +102,8 @@ def _render_segments(
 
     jobs = [
         (index, slot, frame_counts[index])
-        for index, slot in enumerate(slots) if slot.get("clip")
+        for index, slot in enumerate(slots)
+        if slot.get("clip") or slot.get("graphic")
     ]
     with ThreadPoolExecutor(max_workers=workers) as pool:
         paths = list(pool.map(
@@ -138,6 +139,10 @@ def _render_one(
     cfg: Config, index: int, slot: dict, frames: int, segdir: Path, font_file: Path | None
 ) -> Path:
     fps = int(cfg.get("edit.fps", 30))
+    out_early = segdir / f"seg_{index:04d}.ts"
+    if slot.get("graphic"):
+        return _render_graphic(cfg, slot, frames, fps, segdir, out_early, font_file)
+
     duration = frames / fps
     clip = Path(slot["clip"])
     clip_duration = float(slot.get("clip_duration") or 0.0)
@@ -175,6 +180,49 @@ def _render_one(
                 f"{level}: {str(exc)[:160]}"
             )
     return _filler(cfg, index, frames, fps, segdir, out_path)
+
+
+def _render_graphic(
+    cfg: Config, slot: dict, frames: int, fps: int, segdir: Path,
+    out_path: Path, font_file: Path | None,
+) -> Path:
+    """Dibuja el grafico de datos de este plano.
+
+    Sale con los mismos parametros de codificacion que un plano normal, porque
+    despues se pega con el resto sin recodificar.
+    """
+    spec = slot["graphic"]
+    theme = graphics.Theme(
+        width=int(cfg.get("edit.width", 1920)),
+        height=int(cfg.get("edit.height", 1080)),
+        accent=_rgb(cfg.get("brand.accent", "#FFD400")),
+        font_file=font_file,
+    )
+    try:
+        graphics.render(
+            graphics.GraphicSpec(
+                kind=str(spec.get("kind", "counter")),
+                label=str(spec.get("label", "")),
+                display=str(spec.get("display", "")),
+                value=float(spec.get("value", 0.0)),
+                unit=str(spec.get("unit", "plain")),
+                context=str(spec.get("context", "")),
+                items=[tuple(item) for item in spec.get("items", [])],
+            ),
+            out_path, frames=frames, fps=fps, theme=theme,
+            encode_args=_encode_args(cfg, fps, frames, out_path),
+        )
+        return out_path
+    except Exception as exc:  # noqa: BLE001 - un grafico roto no tumba el video
+        log.warn(f"Grafico fallido, se rellena: {str(exc)[:160]}")
+        return _filler(cfg, 0, frames, fps, segdir, out_path)
+
+
+def _rgb(value: str) -> tuple[int, int, int]:
+    text = str(value).lstrip("#")
+    if len(text) != 6:
+        return (255, 212, 0)
+    return tuple(int(text[i : i + 2], 16) for i in (0, 2, 4))  # type: ignore[return-value]
 
 
 def _encode_args(cfg: Config, fps: int, frames: int, out_path: Path) -> list[str]:
@@ -302,7 +350,7 @@ def _label_filters(
     que escapar comillas, dos puntos y comas, y una cifra como "1.200.000 €" los
     lleva casi todos.
     """
-    if not cfg.get("figures.enabled", True):
+    if not cfg.get("figures.enabled", True) or slot.get("graphic"):
         return []
     labels = slot.get("labels") or []
     if not labels:

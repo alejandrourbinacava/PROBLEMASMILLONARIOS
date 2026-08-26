@@ -10,6 +10,8 @@ import hashlib
 import json
 import random
 import re
+import threading
+import time
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -82,6 +84,11 @@ class StockLibrary:
         self._used: set[str] = set()
         self._recent: set[str] = recent_keys or set()
         self._search_cache: dict[str, list[Clip]] = {}
+        # Pixabay corta a las 100 peticiones por minuto y devuelve 429. Un
+        # video pide unas 150 busquedas, asi que hay que espaciarlas o se
+        # pierde la mitad del banco a mitad de camino.
+        self._pixabay_lock = threading.Lock()
+        self._pixabay_last = 0.0
 
         self.pexels_key = env("PEXELS_API_KEY")
         self.pixabay_key = env("PIXABAY_API_KEY")
@@ -279,6 +286,11 @@ class StockLibrary:
 
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=2, min=2, max=20))
     def _search_pixabay(self, query: str) -> list[Clip]:
+        with self._pixabay_lock:
+            wait = 0.65 - (time.monotonic() - self._pixabay_last)
+            if wait > 0:
+                time.sleep(wait)
+            self._pixabay_last = time.monotonic()
         response = requests.get(
             "https://pixabay.com/api/videos/",
             params={"key": self.pixabay_key, "q": query, "video_type": "film", "per_page": 20},

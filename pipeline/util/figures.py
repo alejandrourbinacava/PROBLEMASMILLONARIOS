@@ -19,7 +19,7 @@ from dataclasses import dataclass
 from typing import Any
 
 from . import log
-from .numbers import find_figures
+from .numbers import _NUMBER_WORDS, find_figures
 
 _WORD_SPLIT = re.compile(r"\S+")
 
@@ -29,6 +29,13 @@ class FigureCue:
     text: str
     start: float
     end: float
+    # Para los gráficos generados hace falta algo más que el texto: el valor
+    # para animar la cuenta, la unidad para el formato y una etiqueta corta que
+    # diga DE QUÉ es la cifra.
+    value: float = 0.0
+    unit: str = "plain"
+    label: str = ""
+    block_id: int = 0
 
 
 def plan(
@@ -50,17 +57,84 @@ def plan(
         # El rótulo escrito a mano en el guion manda sobre el detectado
         manual = (segment.get("on_screen") or "").strip() if include_labels else ""
 
+        block_id = int(segment.get("block_id") or 0)
         if not figures:
             if manual:
-                cues.append(FigureCue(manual, seg_start, seg_start + hold_s))
+                cues.append(FigureCue(
+                    manual, seg_start, seg_start + hold_s, block_id=block_id
+                ))
             continue
 
         for index, figure in enumerate(figures):
             at = _time_of(narration, figure.start, seg_start, seg_end, words)
             text = manual if (index == 0 and manual) else figure.display
-            cues.append(FigureCue(text, at, at + hold_s))
+            cues.append(FigureCue(
+                text, at, at + hold_s,
+                value=figure.value, unit=figure.unit,
+                label=_label_for(narration, figure.start),
+                block_id=block_id,
+            ))
 
     return _clean(cues, min_gap_s)
+
+
+# Palabras que preceden a una cifra sin decir de qué es
+_LEAD_NOISE = {
+    "el", "la", "los", "las", "un", "una", "unos", "unas", "de", "del", "al",
+    "y", "o", "que", "es", "son", "esta", "estan", "son", "hay", "cuesta",
+    "cuestan", "ronda", "rondan", "suma", "suman", "vale", "valen", "sale",
+    "salen", "supone", "suponen", "lleva", "llevan", "se", "te", "me", "por",
+    "con", "en", "a", "casi", "unos", "solo", "sobre", "mas", "más", "otro",
+    "otros", "otra", "otras", "entre", "alrededor", "aproximadamente", "ya",
+    "pero", "eso", "esos", "esta", "este", "ahi", "aqui", "encima", "tambien",
+    "además", "ademas", "asi", "así", "no", "si", "sí", "cerca", "torno",
+    "apenas", "necesita", "necesitan", "paga", "pagas", "pagan", "cobra",
+    "cobran", "gana", "ganan", "deja", "dejan", "queda", "quedan", "tiene",
+    "tienen", "exige", "requiere", "anade", "añade", "medio", "media",
+    # Verbos con los que arranca la narración en segunda persona. Sin esto la
+    # etiqueta salía "PONES" o "MUEVES", que no dicen de qué es la cifra.
+    "pones", "mueves", "gestionas", "trabajas", "ganas", "recuperas", "firmas",
+    "compras", "pagas", "sacas", "metes", "coges", "llevas", "necesitas",
+    "acabas", "empiezas", "abres", "montas", "vendes", "facturas",
+}
+
+# Unidades que acompañan a la cifra: tampoco dicen de qué es
+_UNIT_WORDS = {
+    "por", "ciento", "euros", "euro", "centimos", "céntimos", "años", "año",
+    "anos", "meses", "mes", "dias", "días", "dia", "día", "horas", "hora",
+    "personas", "empleados", "veces", "vez",
+}
+
+
+def _label_for(narration: str, char_index: int) -> str:
+    """Etiqueta corta que dice DE QUÉ es la cifra, sacada de lo que la precede.
+
+    "El canon de entrada son unos cuarenta y cinco mil euros" -> "CANON DE
+    ENTRADA". Se recorta por la derecha porque el sujeto siempre está pegado a
+    la cifra: lo que sobra son artículos y verbos de relleno.
+    """
+    before = re.sub(r"[^\w\sáéíóúüñÁÉÍÓÚÑ]", " ", narration[:char_index])
+    words = before.split()
+    while words and words[-1].lower() in _LEAD_NOISE:
+        words.pop()
+    while words and words[0].lower() in _LEAD_NOISE:
+        words.pop(0)
+    if not words:
+        # "Entre el diez y el doce por ciento de las ventas" no deja nada
+        # delante: lo que da sentido a la cifra esta detras.
+        after = re.sub(r"[^\w\sáéíóúüñÁÉÍÓÚÑ]", " ", narration[char_index:]).split()
+        # Un solo bucle: en "diez y el doce por ciento de las ventas" hay que
+        # ir alternando número, conector y unidad hasta llegar a "ventas".
+        # Con dos bucles seguidos se paraba en el primer conector.
+        while after and (
+            after[0].lower() in _LEAD_NOISE
+            or after[0].lower() in _NUMBER_WORDS
+            or after[0].lower() in _UNIT_WORDS
+        ):
+            after.pop(0)
+        words = after[:3]
+    label = " ".join(words[-4:]).strip()
+    return label.upper()[:34]
 
 
 def _time_of(
@@ -118,6 +192,10 @@ def attach(slots: list[dict[str, Any]], cues: list[FigureCue]) -> int:
             start, end = float(slot["start"]), float(slot["end"])
             slot["labels"].append({
                 "text": cue.text,
+                # El grafico necesita el numero y de que es, no solo el rotulo
+                "value": cue.value,
+                "unit": cue.unit,
+                "concept": cue.label,
                 "from": round(max(0.0, cue.start - start), 3),
                 "to": round(min(end, cue.end) - start, 3),
                 # head/tail dicen si en ESTE plano empieza o acaba el rotulo.

@@ -36,6 +36,33 @@ def run(args: list[str], *, quiet: bool = True, cwd: Path | None = None) -> None
         raise FFmpegError(f"ffmpeg salió con {proc.returncode}:\n{tail}")
 
 
+def run_piped(args: list[str], frames, *, cwd: Path | None = None) -> None:
+    """Ejecuta ffmpeg alimentandolo con fotogramas crudos por la entrada.
+
+    Escribir miles de PNG a disco para luego leerlos es lento y ensucia el
+    directorio de trabajo; por la tuberia no toca disco.
+    """
+    cmd = [FFMPEG, "-hide_banner", "-nostdin", "-y", "-loglevel", "error"] + args
+    proc = subprocess.Popen(
+        cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        cwd=str(cwd) if cwd else None,
+    )
+    try:
+        for frame in frames:
+            proc.stdin.write(frame)
+    except BrokenPipeError:
+        pass
+    finally:
+        if proc.stdin:
+            proc.stdin.close()
+    _, stderr = proc.communicate()
+    if proc.returncode != 0:
+        lines = (stderr or b"").decode("utf-8", "replace").splitlines()[-12:]
+        raise FFmpegError(
+            f"ffmpeg salió con {proc.returncode}:\n" + "\n".join(lines)
+        )
+
+
 def probe_filter(path: str | Path, audio_filter: str) -> str:
     """Pasa un archivo por un filtro de análisis y devuelve lo que este escribe.
 

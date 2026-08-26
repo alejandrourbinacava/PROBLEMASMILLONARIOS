@@ -38,6 +38,10 @@ def main(argv: list[str] | None = None) -> int:
                         help="Reutilizar los pasos ya completados de este mismo video")
     parser.add_argument("--workdir", help="Directorio de trabajo concreto (implica --resume)")
     parser.add_argument("--config", help="Ruta a un channel.yml alternativo")
+    parser.add_argument("--remix", action="store_true",
+                        help="Rehacer solo el audio y el masterizado, sin recodificar "
+                             "los planos. Para cambiar música o efectos de sonido; "
+                             "los rótulos van quemados y necesitan render completo.")
     args = parser.parse_args(argv)
 
     cfg = Config(Path(args.config)) if args.config else Config()
@@ -95,10 +99,16 @@ def _run(cfg: Config, args: argparse.Namespace) -> int:
 
     log.step("Paso 5/8 · Montaje")
     video = workdir / "video.mp4"
-    if resume and video.exists():
+    if resume and video.exists() and not args.remix:
         log.info("Video ya montado, se reutiliza (--resume)")
     else:
-        video = s5_edit.run(cfg, script, timeline, broll, workdir)
+        # Solo --remix reutiliza el master mudo. Con --resume a secas no, porque
+        # los rótulos van quemados en cada plano: cambiar la fuente, el color o
+        # el zoom obliga a recodificarlos, y reutilizarlos daría un vídeo con la
+        # configuración vieja sin avisar.
+        video = s5_edit.run(
+            cfg, script, timeline, broll, workdir, reuse_silent=args.remix,
+        )
     log.endstep()
 
     log.step("Paso 6/8 · Metadatos")

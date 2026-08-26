@@ -11,7 +11,7 @@ brand:
   # Fuente de marca (rótulos y miniatura). Descarga el catálogo con
   # python scripts/fetch_fonts.py y elige: Baloo 2 | Fredoka | Nunito |
   # M PLUS Rounded 1c | Quicksand | Poppins
-  font_family: "Baloo 2"
+  font_family: "Poppins"
   font_fallback: "DejaVu Sans"
   accent: "#FFD400"
   accent_2: "#FF2D55"
@@ -105,6 +105,11 @@ broll:
   # Términos que solo aparecen si SE VE la marca. Esos clips se reservan
   # para el hook, los planos con cifra y las aperturas de capítulo.
   keywords_primary: []
+  # Contenido vetado pase lo que pase. Vacío = lista por defecto
+  # (protestas, guerra, accidentes, funerales...). Un canal automático
+  # publica sin que nadie revise los clips: sin esto, una manifestación
+  # puede acabar debajo de una cifra.
+  blocklist: []
   # Vacío = se leen de topics.yml o del guion. Aquí puedes forzarlos.
   anchors: []
   # Tus propios clips van en assets/broll/<slug-del-tema>/ y en
@@ -139,7 +144,7 @@ figures:
   shadow: 7
   hold_s: 1.7                    # cuánto aguanta el rótulo en pantalla
   min_gap_s: 1.4                 # separación mínima entre dos rótulos
-  color: ""                      # vacío = brand.accent
+  color: "#FFFFFF"               # blanco. Vacío = brand.accent (amarillo)
   sound: true                    # golpe (assets/sfx/pop.wav) en cada cifra
   sound_db: 3.0                  # el golpe tiene que oírse por encima de la voz
 

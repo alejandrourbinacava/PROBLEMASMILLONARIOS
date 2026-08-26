@@ -80,10 +80,22 @@ tres valores `YT_*` para los secrets.
 
 ### 4. Música de fondo
 
-Deja uno o varios `.mp3` en `assets/music/`. Sin música el vídeo sale solo con voz
-y efectos, que suena plano. Fuentes seguras: la **Biblioteca de audio de YouTube**
-(Studio → Audio library) o Pixabay Music. El pipeline elige una al azar por vídeo
-y la baja sola cuando entra la voz.
+```bash
+python scripts/fetch_music.py --keep 5
+```
+
+Descarga camas con licencia **CC0** (dominio público, sin atribución: lo único
+cómodo para monetizar) y las prepara. Una canción no es una cama, así que el
+script les quita el grave por debajo de 80 Hz, **abre un hueco en 2,6 kHz** —que
+es justo donde vive la inteligibilidad de la voz— y las normaliza a −23 LUFS.
+Descarta sola las que tengan demasiado silencio o demasiado rango dinámico.
+
+El pipeline elige una al azar por vídeo y la baja cuando entra la voz. Escucha
+las que queden en `assets/music/` y borra las que no te encajen.
+
+Si prefieres calidad garantizada, la **Biblioteca de audio de YouTube**
+(Studio → Audio library) es la fuente más segura; deja los `.mp3` en esa misma
+carpeta y mandan sobre lo descargado.
 
 ### 4b. El sonido de transición
 
@@ -148,7 +160,13 @@ python -m pipeline.cli --resume               # retoma sin repetir guion ni voz
 python scripts/smoke_render.py                # valida el montaje sin gastar API
 python scripts/preview_sfx.py                 # compara los estilos de transición
 python scripts/preview_hook.py build/<carpeta>  # escucha el hook ya montado
+python scripts/fetch_music.py                 # descarga camas musicales CC0
+python -m pipeline.cli --resume --remix       # rehace SOLO el audio
 ```
+
+`--remix` reutiliza el máster mudo y solo vuelve a mezclar: cambiar música o
+efectos tarda un minuto en vez de recodificar los 220 planos. **No sirve para
+cambiar los rótulos**: van quemados en cada plano y necesitan render completo.
 
 `preview_hook.py` es el atajo importante para afinar la intro: monta la voz real
 con los obturadores y los whoosh en su sitio exacto, sin renderizar vídeo. Si el
@@ -237,6 +255,20 @@ quieres, se arregla ahí y no en el código.
 
 ---
 
+## Contenido vetado
+
+Un canal automático publica cada mañana sin que nadie mire los clips uno a uno.
+En la primera prueba, una de las búsquedas de "mcdonalds" devolvió una
+manifestación con pancartas sobre Gaza — y como los clips de marca tienen
+prioridad en los planos con cifra, salió con **500.000 €** encima.
+
+Por eso `broll.blocklist` veta protestas, guerra, armas, accidentes, funerales y
+hospitales en **toda** selección de clips, no solo en el fondo de marca. El veto
+compara por palabra entera con plurales: por subcadena, `war` casaba dentro de
+"warning" y tiraba clips inofensivos de carteles de aviso.
+
+---
+
 ## Los clips y las marcas registradas
 
 Si el tema es una **marca registrada**, los bancos libres apenas tienen material.
@@ -274,6 +306,7 @@ el stock va sobrado.
 | Miniatura no se sube | Canal sin verificar por teléfono |
 | Muchos "relleno sintético" en el log | Las `broll_query` del guion no encuentran clips; suele arreglarse afinando `config/prompts/03_block.md` |
 | Los clips no pegan con el tema | Faltan `broll_anchors` / `broll_keywords` en `config/topics.yml` |
+| Sale un clip inapropiado | Añade el término a `broll.blocklist` |
 | Un rótulo no aparece | Si lleva `%`, era el bug de `drawtext`; ya se pasa `expansion=none` |
 
 Cuando el workflow falla sube un artefacto `diagnostico-N` con todos los JSON

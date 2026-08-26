@@ -34,21 +34,29 @@ def run(
     timeline: dict[str, Any],
     broll: dict[str, Any],
     workdir: Path,
+    *,
+    reuse_silent: bool = False,
 ) -> Path:
     slots = broll["slots"]
     total = float(timeline["duration"])
     font_file, font_family = fonts.resolve_from_config(cfg)
     font_file = _localize_font(font_file, workdir)
-
-    log.step("Montaje 1/4: normalizando planos")
-    segments = _render_segments(cfg, slots, workdir, font_file)
-    log.endstep()
-
-    log.step("Montaje 2/4: pegando planos")
     silent = workdir / "silent.ts"
-    ffmpeg.concat_copy(segments, silent, workdir / "segments")
-    log.info(f"Video mudo: {ffmpeg.duration(silent):.1f}s (narracion: {total:.1f}s)")
-    log.endstep()
+
+    if reuse_silent and _silent_is_current(silent, workdir, total):
+        log.info(
+            "Master mudo al día: se reutiliza y solo se rehace el audio. "
+            "Cambiar música o efectos no obliga a recodificar los planos."
+        )
+    else:
+        log.step("Montaje 1/4: normalizando planos")
+        segments = _render_segments(cfg, slots, workdir, font_file)
+        log.endstep()
+
+        log.step("Montaje 2/4: pegando planos")
+        ffmpeg.concat_copy(segments, silent, workdir / "segments")
+        log.info(f"Video mudo: {ffmpeg.duration(silent):.1f}s (narracion: {total:.1f}s)")
+        log.endstep()
 
     log.step("Montaje 3/4: mezcla de audio")
     mixed = _mix_audio(cfg, broll, timeline, workdir)
@@ -59,6 +67,20 @@ def run(
     output = _master(cfg, silent, mixed, ass_path, workdir, font_file)
     log.endstep()
     return output
+
+
+def _silent_is_current(silent: Path, workdir: Path, total: float) -> bool:
+    """El master mudo sirve si existe, dura lo que la voz y es posterior al
+    plan de b-roll. Si el plan es mas nuevo, los planos han cambiado."""
+    if not silent.exists():
+        return False
+    plan = workdir / "broll.json"
+    if plan.exists() and plan.stat().st_mtime > silent.stat().st_mtime:
+        return False
+    try:
+        return abs(ffmpeg.duration(silent) - total) < 0.4
+    except ffmpeg.FFmpegError:
+        return False
 
 
 # ==========================================================================

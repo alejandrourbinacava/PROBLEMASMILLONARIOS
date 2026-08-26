@@ -9,6 +9,7 @@ from __future__ import annotations
 import hashlib
 import json
 import random
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
@@ -21,6 +22,18 @@ from ..util import ffmpeg, log
 
 _TIMEOUT = 45
 _MIN_WIDTH = 1280
+
+# Material que NUNCA debe salir en un video de negocios, por muy bien que
+# encaje con la busqueda. Un canal automatico publica sin que nadie mire los
+# clips uno a uno: sin esta lista, una manifestacion o un accidente pueden
+# acabar debajo de una cifra y hundir el video.
+DEFAULT_BLOCKLIST = [
+    "protest", "protester", "demonstration", "riot", "boycott", "picket",
+    "genocide", "refugee", "war", "soldier", "military", "weapon", "gun",
+    "rifle", "bomb", "terror", "police arrest", "arrest",
+    "funeral", "coffin", "grave", "accident", "crash", "injured", "blood",
+    "ambulance", "hospital", "wounded", "corpse", "death",
+]
 
 
 @dataclass
@@ -50,7 +63,14 @@ class Clip:
 class StockLibrary:
     """Agrega los bancos disponibles y evita repetir clips dentro de un video."""
 
-    def __init__(self, *, recent_keys: set[str] | None = None) -> None:
+    def __init__(
+        self, *, recent_keys: set[str] | None = None,
+        blocklist: list[str] | None = None,
+    ) -> None:
+        self.blocklist = [
+            term.lower().replace("-", " ")
+            for term in (DEFAULT_BLOCKLIST if blocklist is None else blocklist)
+        ]
         self.cache_dir = CACHE_DIR / "clips"
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self._index_path = self.cache_dir / "index.json"
@@ -110,7 +130,7 @@ class StockLibrary:
         needles = [k.lower().replace("-", " ") for k in (keywords or []) if k.strip()]
         core = [k.lower().replace("-", " ") for k in (primary or []) if k.strip()]
         pool: list[Clip] = []
-        rejected = 0
+        rejected = vetoed = 0
         for query in queries:
             candidates = sorted(self._search(query), key=lambda c: (c.rank, -c.width))
             taken = 0
@@ -118,6 +138,9 @@ class StockLibrary:
                 if taken >= per_query:
                     break
                 if clip.key in self._used or clip.width < _MIN_WIDTH:
+                    continue
+                if self._blocked(clip):
+                    vetoed += 1
                     continue
                 # Filtro por lo que SE VE, no por lo que se buscó. Buscando
                 # "fast food restaurant" el banco devuelve tambien restaurantes
@@ -135,6 +158,8 @@ class StockLibrary:
                 self._used.add(clip.key)
                 pool.append(clip)
                 taken += 1
+        if vetoed:
+            log.warn(f"{vetoed} clips vetados por contenido no publicable")
         exact = sum(1 for clip in pool if clip.tier == 0)
         log.info(
             f"Fondo de marca: {len(pool)} clips de {len(queries)} búsquedas"
@@ -176,6 +201,7 @@ class StockLibrary:
     # ---------------- Seleccion ----------------
 
     def _pick(self, candidates: list[Clip], min_duration: float) -> Clip | None:
+        candidates = [c for c in candidates if not self._blocked(c)]
         usable = [c for c in candidates if c.duration >= min_duration and c.width >= _MIN_WIDTH]
         if not usable:
             # Un clip corto sirve: al montarlo se ralentiza o se congela el final
@@ -190,6 +216,9 @@ class StockLibrary:
         # desempata entre clips igual de relevantes.
         pool.sort(key=lambda c: (c.rank, -c.width))
         return random.choice(pool[: min(4, len(pool))])
+
+    def _blocked(self, clip: Clip) -> bool:
+        return bool(self.blocklist) and _matches_word(clip.hint, self.blocklist)
 
     # ---------------- Busqueda ----------------
 
@@ -312,8 +341,28 @@ def _best_pexels_file(files: list[dict[str, Any]]) -> dict | None:
 
 
 def _matches(hint: str, needles: list[str]) -> bool:
+    """Coincidencia por subcadena: es lo que se quiere para las palabras clave,
+    donde "mcdonald" tiene que casar con "mcdonalds"."""
     text = hint.replace("-", " ").replace(",", " ")
     return any(needle in text for needle in needles)
+
+
+def _matches_word(hint: str, needles: list[str]) -> bool:
+    """Coincidencia por palabra entera, para el veto.
+
+    Por subcadena, "war" casaba dentro de "warning" y tiraba clips inofensivos
+    de carteles de aviso. En un veto un falso positivo cuesta material bueno.
+    """
+    text = " " + hint.replace("-", " ").replace(",", " ") + " "
+    # Se admiten los plurales y derivados habituales: "protest" tiene que cazar
+    # "protesters", pero "war" no puede cazar "warning".
+    return any(
+        re.search(
+            r"(?<![a-z])" + re.escape(needle) + r"(?:s|es|er|ers|ing|ed)?(?![a-z])",
+            text,
+        )
+        for needle in needles
+    )
 
 
 def _slug_of(url: str) -> str:

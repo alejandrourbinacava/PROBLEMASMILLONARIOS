@@ -46,7 +46,10 @@ def run(
     )
     figures_util.attach(slots, cues)
 
-    library = StockLibrary(recent_keys=recent_clip_keys)
+    library = StockLibrary(
+        recent_keys=recent_clip_keys,
+        blocklist=cfg.get("broll.blocklist") or None,
+    )
     fallback = _fallback_query(script)
     _mark_chapter_starts(slots)
 

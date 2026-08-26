@@ -95,7 +95,7 @@ class StockLibrary:
             if not attempt_query:
                 continue
             candidates = self._search(attempt_query)
-            picked = self._pick(candidates, min_duration)
+            picked = self._pick(candidates, min_duration, query=attempt_query)
             if picked is None:
                 continue
             path = self._download(picked)
@@ -200,7 +200,7 @@ class StockLibrary:
 
     # ---------------- Seleccion ----------------
 
-    def _pick(self, candidates: list[Clip], min_duration: float) -> Clip | None:
+    def _pick(self, candidates: list[Clip], min_duration: float, query: str = "") -> Clip | None:
         candidates = [c for c in candidates if not self._blocked(c)]
         usable = [c for c in candidates if c.duration >= min_duration and c.width >= _MIN_WIDTH]
         if not usable:
@@ -210,12 +210,19 @@ class StockLibrary:
             return None
         fresh = [c for c in usable if c.key not in self._used and c.key not in self._recent]
         pool = fresh or [c for c in usable if c.key not in self._used] or usable
-        # Manda la RELEVANCIA, no la resolucion. Ordenando por ancho se colaban
-        # clips preciosos que no tenian nada que ver con la frase: un lago de
-        # montaña bajo "cada menu te deja setenta centimos". La resolucion solo
-        # desempata entre clips igual de relevantes.
-        pool.sort(key=lambda c: (c.rank, -c.width))
-        return random.choice(pool[: min(4, len(pool))])
+
+        # Primero lo que SE VE en el clip contra lo que dice la frase; el puesto
+        # que le dio el banco solo desempata. Ordenando solo por puesto entraban
+        # clips que casaban una palabra suelta de la consulta y nada mas.
+        scored = sorted(
+            pool, key=lambda c: (-relevance(query, c.hint), c.rank, -c.width)
+        )
+        best = relevance(query, scored[0].hint) if query else 0.0
+        if query and best > 0:
+            # Solo se sortea entre los que empatan arriba, para no bajar de nivel
+            top = [c for c in scored if relevance(query, c.hint) >= best - 0.001]
+            return random.choice(top[: min(4, len(top))])
+        return random.choice(scored[: min(4, len(scored))])
 
     def _blocked(self, clip: Clip) -> bool:
         return bool(self.blocklist) and _matches_word(clip.hint, self.blocklist)
@@ -338,6 +345,32 @@ def _best_pexels_file(files: list[dict[str, Any]]) -> dict | None:
     within = [f for f in usable if int(f.get("width") or 0) <= 1920]
     pool = within or usable
     return max(pool, key=lambda f: int(f.get("width") or 0))
+
+
+# Palabras de las consultas que no dicen nada sobre lo que se ve
+_FILLER = {
+    "a", "an", "the", "of", "in", "on", "at", "and", "with", "up", "close",
+    "shot", "view", "video", "footage", "scene", "background",
+}
+
+
+def relevance(query: str, hint: str) -> float:
+    """Qué parte de lo que pide la frase aparece de verdad en el clip.
+
+    Los bancos ordenan por su propia relevancia, que con consultas de varias
+    palabras es floja: buscando "worker mopping restaurant floor" Pixabay
+    devolvía una fábrica textil porque casaba "worker". Comparando las palabras
+    de la consulta contra la descripción del clip eso se cae solo.
+    """
+    words = {
+        word for word in re.findall(r"[a-z]+", query.lower())
+        if len(word) > 2 and word not in _FILLER
+    }
+    if not words:
+        return 0.0
+    text = " " + hint.replace("-", " ").replace(",", " ").lower() + " "
+    hits = sum(1 for word in words if re.search(r"(?<![a-z])" + word[:6], text))
+    return hits / len(words)
 
 
 def _matches(hint: str, needles: list[str]) -> bool:

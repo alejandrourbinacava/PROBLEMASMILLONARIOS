@@ -17,7 +17,7 @@ from pathlib import Path
 from typing import Any
 
 from ..config import ASSETS_DIR, Config
-from ..providers.stock import StockLibrary
+from ..providers.stock import StockLibrary, relevance
 from ..util import figures as figures_util
 from ..util import log
 
@@ -81,7 +81,15 @@ def run(
         if brand and (priority or brand_used < ratio * (index + 1)):
             # En los planos que más se miran se tira primero de los clips donde
             # se ve la marca de verdad; los de contexto van al relleno.
-            clip = rotation.take(index, slot["duration"], prefer_tier=0 if priority else 1)
+            clip = rotation.take(
+                index, slot["duration"], query=slot.get("query", ""),
+                prefer_tier=0 if priority else 1,
+                # En el hook la imagen va suelta de la frase, así que ahí el
+                # material del tema vale aunque no ilustre nada concreto.
+                min_relevance=0.0 if slot["kind"] == "hook" else float(
+                    cfg.get("broll.min_relevance", 0.34)
+                ),
+            )
             if clip is not None:
                 brand_used += 1
         if clip is None:
@@ -227,7 +235,17 @@ class _BrandRotation:
         self.cooldown = max(1, cooldown)
         self._last: dict[str, int] = {}
 
-    def take(self, index: int, min_duration: float, prefer_tier: int = 1):
+    def take(
+        self, index: int, min_duration: float, query: str = "",
+        prefer_tier: int = 1, min_relevance: float = 0.34,
+    ):
+        """Devuelve un clip del fondo SOLO si además pega con lo que se dice.
+
+        Antes repartía por pura rotación y salía una fachada de McDonald's bajo
+        "fregando suelos y cerrando caja". Tener material del tema no sirve de
+        nada si el plano no ilustra la frase: si nada del fondo puntúa, se
+        devuelve None y el montaje busca un clip para esa frase concreta.
+        """
         if not self.clips:
             return None
         # Los de marca son poquísimos, así que se les deja repetir antes
@@ -235,15 +253,24 @@ class _BrandRotation:
             wait = self.cooldown if clip.tier else max(4, self.cooldown // 2)
             return index - self._last.get(clip.key, -10**6) >= wait
 
-        available = [c for c in self.clips if c.tier == prefer_tier and ready(c)]
-        if not available:
-            available = [c for c in self.clips if ready(c)]
+        available = [c for c in self.clips if ready(c)]
         if not available:
             return None
-        # Primero los que llevan más sin salir; entre esos, los que dan de sí
-        available.sort(key=lambda c: (self._last.get(c.key, -10**6), -c.duration))
-        long_enough = [c for c in available if c.duration >= min_duration]
-        chosen = (long_enough or available)[0]
+
+        def score(clip) -> tuple:
+            fits = 0 if clip.duration >= min_duration else 1
+            # Relevancia primero; entre iguales, el del tier pedido y el que
+            # lleve más tiempo sin salir.
+            return (
+                -relevance(query, clip.hint) if query else 0.0,
+                fits,
+                0 if clip.tier == prefer_tier else 1,
+                self._last.get(clip.key, -10**6),
+            )
+
+        chosen = min(available, key=score)
+        if query and relevance(query, chosen.hint) < min_relevance:
+            return None
         self._last[chosen.key] = index
         return chosen
 

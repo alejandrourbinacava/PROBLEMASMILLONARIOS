@@ -38,13 +38,16 @@ MUSIC_DIR = ASSETS_DIR / "music"
 API = "https://api.openverse.org/v1/audio/"
 HEADERS = {"User-Agent": "problemas-millonarios/1.0"}
 
+# El canal es dinero y negocio con tensión: hace falta pulso, no colchón.
+# Un pad ambiental deja el vídeo muerto entre cifra y cifra.
 QUERIES = [
-    "cinematic music", "ambient music loop", "documentary music",
-    "tension music", "piano ambient", "electronic background",
-    "dark ambient", "atmospheric pad",
+    "corporate business music", "documentary investigation music",
+    "tension underscore beat", "minimal techno loop", "driving electronic beat",
+    "suspense rhythm music", "news broadcast music", "hip hop instrumental beat",
+    "cinematic percussion", "dark synth loop",
 ]
 
-TARGET_LUFS = -23.0        # muy por debajo de la voz (-15 LUFS)
+TARGET_LUFS = -20.0        # nivel de cama. La mezcla solo retoca desde aquí
 MAX_SILENCE_RATIO = 0.25
 MAX_LRA = 14.0             # una cama con más rango sube y baja demasiado
 

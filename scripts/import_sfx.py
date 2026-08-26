@@ -38,7 +38,9 @@ POOL_DIR = SFX_DIR / "whoosh"
 
 TARGET_PEAK_DB = -1.5      # pico al que se iguala todo
 SILENCE_FLOOR_DB = -45     # por debajo de esto se considera silencio
-MAX_WHOOSH_S = 2.6         # una transición más larga estorba a la narración
+# Una transición tiene que MORIR con el corte. Más larga sigue sonando
+# dentro del plano siguiente y se oye como un ruido que no viene a cuento.
+MAX_WHOOSH_S = 1.0
 MAX_POP_S = 0.30           # el golpe de la cifra puede respirar algo más
 MAX_SHUTTER_S = 0.15       # el obturador cae entre cortes de 0,3 s: si dura
                            # más, se solapa con el siguiente y se emborrona

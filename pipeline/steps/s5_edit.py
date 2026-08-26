@@ -464,7 +464,7 @@ def _sfx_events(
     every = max(1, int(cfg.get("edit.body.whoosh_every_n_cuts", 2)))
     hook_mode = str(cfg.get("edit.hook.sfx", "whoosh")).lower()
     body_sfx = bool(cfg.get("edit.body.whoosh_sfx", True))
-    picker = _WhooshPicker(sfx_paths)
+    picker = _WhooshPicker(sfx_paths, float(cfg.get("audio.max_transition_s", 1.2)))
 
     # Marcas donde suena una transicion, para saber cuanto hueco hay hasta la
     # siguiente y no meter un sonido de dos segundos en un hueco de uno.
@@ -518,7 +518,7 @@ class _WhooshPicker:
     """Rota entre las transiciones disponibles evitando repetir seguido y
     descartando las que no caben en el hueco hasta el siguiente corte."""
 
-    def __init__(self, sfx_paths: dict[str, Path]) -> None:
+    def __init__(self, sfx_paths: dict[str, Path], max_length: float = 1.2) -> None:
         keys = [key for key in sfx_paths if key.startswith("whoosh:")]
         self.keys = sorted(keys, key=lambda key: int(key.split(":")[1]))
         self.durations: dict[str, float] = {}
@@ -527,6 +527,17 @@ class _WhooshPicker:
                 self.durations[key] = ffmpeg.duration(sfx_paths[key])
             except ffmpeg.FFmpegError:
                 self.durations[key] = 0.6
+        # Una transición larga sigue sonando dentro del plano ya empezado y se
+        # percibe como un ruido sin motivo. Si todas fueran largas se usa la más
+        # corta, pero se avisa: el problema está en el banco, no aquí.
+        short = [k for k in self.keys if self.durations[k] <= max_length]
+        if len(short) < len(self.keys):
+            descartadas = len(self.keys) - len(short)
+            log.warn(
+                f"{descartadas} transiciones duran más de {max_length:.1f}s y no "
+                "sirven como corte; recórtalas con scripts/import_sfx.py"
+            )
+        self.keys = short or sorted(self.keys, key=lambda k: self.durations[k])[:1]
         self._cursor = 0
         self._last: str | None = None
 

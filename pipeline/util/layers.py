@@ -81,10 +81,16 @@ def _frame(composition: Composition, progress: float) -> Image.Image:
 def _animate(
     layer: Layer, composition: Composition, progress: float
 ) -> Image.Image | None:
-    local = (progress - layer.delay) / max(0.001, layer.duration)
-    if local <= 0:
+    if progress < layer.delay:
         return None
-    entry = _ease(min(1.0, local))
+    # Una entrada de duración casi nula significa "ya está puesta". Sin esto, en
+    # el primer fotograma sale con opacidad cero, y si TODAS las capas empiezan
+    # sin retardo el plano arranca con un fotograma negro: un parpadeo en el
+    # corte, que es justo lo que no puede haber.
+    if layer.duration <= 0.02:
+        entry = 1.0
+    else:
+        entry = _ease(min(1.0, (progress - layer.delay) / layer.duration))
 
     # El empuje de cámara afecta más a lo que está cerca: eso es el parallax
     zoom = 1.0 + composition.push * progress * (0.4 + layer.parallax)
@@ -177,10 +183,44 @@ def silhouette(source: Image.Image, tint: tuple[int, int, int], strength: float 
     return Image.blend(rgba, flat, strength)
 
 
+def free_side(subject: Image.Image) -> float:
+    """Dónde queda hueco para el texto, en fracción de ancho.
+
+    El texto va detrás del sujeto, y si además se le pone encima no se lee: en
+    la primera prueba "EL 2,7%" quedaba reducido a "7%" porque el hombre tapaba
+    el resto. Se mira por qué mitad pesa el sujeto y se manda el texto al otro
+    lado, que es lo que hacen ellos: figura a un lado, palabra al otro.
+    """
+    alpha = subject.convert("RGBA").getchannel("A").resize((64, 36), Image.BILINEAR)
+    pixels = alpha.load()
+    left = sum(pixels[x, y] for y in range(36) for x in range(32))
+    right = sum(pixels[x, y] for y in range(36) for x in range(32, 64))
+    if left + right == 0:
+        return 0.5
+    return 0.68 if left > right else 0.32
+
+
+def is_cutout(image: Image.Image, *, floor: float = 0.005, ceiling: float = 0.82) -> bool:
+    """¿Esto es de verdad un recorte, o el modelo ha devuelto el plano entero?
+
+    rembg falla de dos formas, y las dos en silencio: si el sujeto llena el
+    encuadre no encuentra fondo que quitar y devuelve casi todo opaco, y si no
+    reconoce nada devuelve el lienzo vacío. Se mide qué fracción es opaca.
+
+    El suelo tiene que ser muy bajo. Una silueta lejana de una persona ocupa el
+    1% del encuadre y es de los mejores recortes que salen: lo que hace bonito
+    el plano es precisamente esa figura pequeña a contraluz.
+    """
+    rgba = image.convert("RGBA")
+    small = rgba.getchannel("A").resize((96, 54), Image.BILINEAR)
+    opaque = sum(1 for value in small.getdata() if value > 160) / (96 * 54)
+    return floor <= opaque <= ceiling
+
+
 def skyline(
     source: Image.Image, tint: tuple[int, int, int], *,
-    cut: float = 0.55, softness: float = 0.18,
-) -> Image.Image:
+    cut: float = 0.55, softness: float = 0.18, band: float | None = 0.34,
+) -> Image.Image | None:
     """Recorta un horizonte por luminancia: lo oscuro se queda, el cielo se va.
 
     Una foto de ciudad a contraluz ya trae la silueta hecha; lo único que hay
@@ -190,6 +230,16 @@ def skyline(
 
     `cut` es el brillo a partir del cual se considera cielo y `softness` el
     ancho de la transición, para que el borde no quede recortado con tijeras.
+
+    `band` recorta a una franja alrededor de la línea de tejados. Sin esto, una
+    foto de atardecer con toda la mitad inferior oscura deja una losa negra que
+    se lee como un rectángulo, no como una ciudad: lo que da la silueta es el
+    perfil de arriba, no la masa de abajo.
+
+    Devuelve None cuando la foto no da un perfil de verdad. Esto solo sale bien
+    con un cielo claro detrás; en una foto nocturna el suelo ya es oscuro, el
+    umbral se lo traga entero y lo que queda es un ladrillo negro. En ese caso
+    es mucho mejor quedarse sin capa de horizonte que meter el ladrillo.
     """
     rgba = source.convert("RGBA")
     luma = rgba.convert("L")
@@ -203,7 +253,37 @@ def skyline(
 
     flat = Image.new("RGBA", rgba.size, (*_shade(tint, 0.12), 255))
     flat.putalpha(mask)
+
+    if band:
+        roofline = _roofline(mask)
+        if roofline is None:
+            return None
+        top = max(0, roofline - int(flat.height * 0.04))
+        bottom = min(flat.height, top + int(flat.height * band))
+        flat = flat.crop((0, top, flat.width, bottom))
+
+    # Un perfil de tejados tiene dientes: parte del recuadro es cielo. Si sale
+    # casi todo opaco no hay perfil, hay un bloque.
+    if not _has_profile(flat.getchannel("A")):
+        return None
     return flat
+
+
+def _has_profile(mask: Image.Image, ceiling: float = 0.62) -> bool:
+    small = mask.resize((96, 54), Image.BILINEAR)
+    opaque = sum(1 for value in small.getdata() if value > 150) / (96 * 54)
+    return opaque <= ceiling
+
+
+def _roofline(mask: Image.Image, coverage: float = 0.35) -> int | None:
+    """Primera fila en la que la silueta ya ocupa buena parte del ancho."""
+    small = mask.resize((120, 120), Image.BILINEAR)
+    pixels = small.load()
+    for y in range(120):
+        filled = sum(1 for x in range(120) if pixels[x, y] > 150)
+        if filled / 120 >= coverage:
+            return int(y / 120 * mask.height)
+    return None
 
 
 def graded(source: Image.Image, tint: tuple[int, int, int], amount: float = 0.45,

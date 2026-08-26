@@ -59,6 +59,8 @@ def cutout(clip: Path, at: float, dst: Path) -> Image.Image:
     if _SESSION is None:
         _SESSION = new_session("u2net")
     image = remove(Image.open(still).convert("RGBA"), session=_SESSION)
+    if not L.is_cutout(image):
+        print(f"    AVISO: {clip.name} no da recorte util (el sujeto llena el plano)")
     image.save(dst)
     return image
 
@@ -73,15 +75,28 @@ def still(clip: Path, at: float, dst: Path) -> Image.Image:
     return Image.open(dst).convert("RGBA")
 
 
-def text_layer(text: str, size: int, y: float, colour=(255, 255, 255)) -> Image.Image:
+def text_layer(text: str, size: int, y: float, colour=(255, 255, 255),
+               x: float = 0.5) -> Image.Image:
     from PIL import ImageDraw, ImageFont
 
     image = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     draw = ImageDraw.Draw(image)
     font = ImageFont.truetype(str(FONT), size)
     span = draw.textlength(text, font=font)
-    draw.text(((W - span) / 2, H * y), text, font=font, fill=(*colour, 255))
+    # Se centra en x, pero sin salirse del encuadre
+    left = min(max(40, W * x - span / 2), W - span - 40)
+    draw.text((left, H * y), text, font=font, fill=(*colour, 255))
     return image
+
+
+def _maybe(image, scale: float, anchor_y: float):
+    """Coloca la capa si existe. skyline() devuelve None cuando la foto no da
+    un perfil aprovechable, y entonces la escena va sin horizonte."""
+    return None if image is None else fit(image, scale, anchor_y)
+
+
+def fit(image, scale: float, anchor_y: float):
+    return L.fit_canvas(image, W, H, scale, (0.5, anchor_y))
 
 
 # --------------------------------------------------------------------------
@@ -117,6 +132,7 @@ def vox_annotated(clip: Path, seconds: float, ann: annotate.Annotation, name: st
 
 
 def composed(comp: L.Composition, seconds: float, name: str) -> Path:
+    comp.layers = [layer for layer in comp.layers if layer.image is not None]
     frames = int(seconds * FPS)
     out = OUT / name
     L.render(comp, out, frames=frames, fps=FPS, encode_args=encode(frames, out.name))
@@ -150,15 +166,16 @@ def main() -> None:
     tragaperras = C("pexels_9807879_49e3623999.mp4")
     neon = C("pexels_36147796_c8b4e20f0c.mp4")
     vegas = C("pexels_31869126_ba8a2aa5c0.mp4")
-    manos = C("pexels_35728852_cb23b26767.mp4")
+    mujer = C("pexels_7608145_26072465ae.mp4")
+    ejecutivo = C("pexels_15615496_6a22407099.mp4")
     traje = C("pexels_4512205_2cb059a052.mp4")
     ciudad = C("pixabay_42487_fc2141cc56.mp4")
     lampara = C("pexels_34555902_2c9bd49f6d.mp4")
 
     print(">> recortes")
-    sujeto_manos = cutout(manos, 2.0, OUT / "cut_manos.png")
+    sujeto_mujer = cutout(mujer, 1.2, OUT / "cut_mujer2.png")
+    sujeto_ejec = cutout(ejecutivo, 2.0, OUT / "cut_ejec.png")
     sujeto_traje = cutout(traje, 1.5, OUT / "cut_traje.png")
-    sujeto_fichas = cutout(fichas2, 1.5, OUT / "cut_fichas.png")
     fondo_neon = still(neon, 1.0, OUT / "bg_neon.png")
     fondo_ciudad = still(ciudad, 1.0, OUT / "bg_ciudad.png")
     fondo_vegas = still(vegas, 2.0, OUT / "bg_vegas.png")
@@ -193,20 +210,19 @@ def main() -> None:
     m1 = composed(L.Composition(width=W, height=H, push=0.09, layers=[
         L.Layer(L.backdrop_glow(W, H, (255, 176, 60), centre=(0.5, 0.55), radius=0.72),
                 entrance="scale", delay=0.00, duration=0.45, parallax=0.0),
-        L.Layer(L.fit_canvas(L.skyline(fondo_ciudad, (26, 22, 40), cut=0.52),
-                             W, H, 0.62, (0.5, 0.98)),
+        L.Layer(_maybe(L.skyline(fondo_ciudad, (26, 22, 40), cut=0.52), 0.62, 0.98),
                 entrance="rise", delay=0.10, duration=0.35, parallax=0.25),
-        L.Layer(text_layer("28 M€", 300, 0.30),
+        L.Layer(text_layer("28 M€", 300, 0.30, x=L.free_side(sujeto_mujer)),
                 entrance="scale", delay=0.24, duration=0.30, parallax=0.5),
-        L.Layer(L.graded(L.fit_canvas(sujeto_manos, W, H, 0.95, (0.5, 1.0)),
-                         (255, 150, 60), 0.28, 1.3, 1.2),
+        L.Layer(L.silhouette(L.fit_canvas(sujeto_mujer, W, H, 1.15, (0.62, 1.0)),
+                             (26, 20, 34), 0.88),
                 entrance="slide_left", delay=0.16, duration=0.35, parallax=1.0),
     ]), 4.0, "04_mm_ciudad.ts")
 
     m2 = composed(L.Composition(width=W, height=H, push=0.08, layers=[
         L.Layer(L.graded(fondo_neon, (40, 90, 190), 0.42, 1.2, 1.35),
                 entrance="fade", delay=0.00, duration=0.30, parallax=0.0),
-        L.Layer(text_layer("300 PERSONAS", 170, 0.34),
+        L.Layer(text_layer("300 PERSONAS", 170, 0.34, x=L.free_side(sujeto_traje)),
                 entrance="rise", delay=0.22, duration=0.28, parallax=0.45),
         L.Layer(L.silhouette(L.fit_canvas(sujeto_traje, W, H, 1.45, (0.38, 1.0)),
                              (10, 14, 30), 0.90),
@@ -216,13 +232,12 @@ def main() -> None:
     m3 = composed(L.Composition(width=W, height=H, push=0.10, layers=[
         L.Layer(L.backdrop_glow(W, H, (60, 200, 170), centre=(0.62, 0.44), radius=0.66),
                 entrance="fade", delay=0.00, duration=0.25, parallax=0.0),
-        L.Layer(L.fit_canvas(L.skyline(fondo_vegas, (12, 28, 38), cut=0.46),
-                             W, H, 0.70, (0.5, 0.98)),
+        L.Layer(_maybe(L.skyline(fondo_vegas, (12, 28, 38), cut=0.46), 0.70, 0.98),
                 entrance="wipe_up", delay=0.14, duration=0.30, parallax=0.3),
-        L.Layer(text_layer("EL 2,7%", 260, 0.26),
+        L.Layer(text_layer("EL 2,7%", 260, 0.26, x=L.free_side(sujeto_ejec)),
                 entrance="fall", delay=0.26, duration=0.28, parallax=0.55),
-        L.Layer(L.graded(L.fit_canvas(sujeto_fichas, W, H, 0.80, (0.55, 1.0)),
-                         (255, 210, 120), 0.22, 1.35, 1.25),
+        L.Layer(L.silhouette(L.fit_canvas(sujeto_ejec, W, H, 1.25, (0.58, 1.0)),
+                             (8, 24, 30), 0.90),
                 entrance="rise", delay=0.18, duration=0.32, parallax=1.0),
     ]), 3.6, "06_mm_fichas.ts")
 
@@ -233,10 +248,9 @@ def main() -> None:
     p1 = composed(L.Composition(width=W, height=H, push=0.26, layers=[
         L.Layer(L.graded(fondo_vegas, (30, 60, 150), 0.40, 1.15, 1.3),
                 entrance="fade", delay=0.0, duration=0.01, parallax=0.0),
-        L.Layer(L.fit_canvas(L.skyline(fondo_ciudad, (14, 18, 34), cut=0.52),
-                             W, H, 0.58, (0.5, 0.98)),
+        L.Layer(_maybe(L.skyline(fondo_ciudad, (14, 18, 34), cut=0.52), 0.58, 0.98),
                 entrance="fade", delay=0.0, duration=0.01, parallax=0.45),
-        L.Layer(text_layer("PARALLAX", 190, 0.22, (255, 212, 0)),
+        L.Layer(text_layer("PARALLAX", 190, 0.22, (255, 212, 0), x=L.free_side(sujeto_traje)),
                 entrance="fade", delay=0.0, duration=0.01, parallax=0.75),
         L.Layer(L.silhouette(L.fit_canvas(sujeto_traje, W, H, 1.35, (0.30, 1.0)),
                              (6, 8, 18), 0.95),

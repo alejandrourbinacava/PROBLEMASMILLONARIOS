@@ -33,6 +33,10 @@ DEFAULT_BLOCKLIST = [
     "rifle", "bomb", "terror", "police arrest", "arrest",
     "funeral", "coffin", "grave", "accident", "crash", "injured", "blood",
     "ambulance", "hospital", "wounded", "corpse", "death",
+    # Elementos para montar, no metraje: en los bancos abundan y son basura
+    # si se usan tal cual, porque estan hechos para recortar sobre croma.
+    "green screen", "greenscreen", "chroma", "chromakey", "alpha channel",
+    "subscribe button", "lower third", "overlay", "vfx element", "transition pack",
 ]
 
 
@@ -314,7 +318,9 @@ class StockLibrary:
         digest = hashlib.sha1(clip.url.encode("utf-8")).hexdigest()[:10]
         target = self.cache_dir / f"{clip.provider}_{clip.clip_id}_{digest}.mp4"
         if target.exists() and target.stat().st_size > 65536:
-            return target
+            # También se comprueba lo ya cacheado: si no, un croma descargado
+            # antes de existir esta comprobación seguiría colándose para siempre.
+            return None if self._is_greenscreen(target, clip.key) else target
         try:
             with requests.get(clip.url, stream=True, timeout=_TIMEOUT) as response:
                 response.raise_for_status()
@@ -329,9 +335,41 @@ class StockLibrary:
         if target.stat().st_size < 65536:
             target.unlink(missing_ok=True)
             return None
+        if self._is_greenscreen(target, clip.key):
+            log.warn(f"{clip.key}: es una pantalla de croma, descartado")
+            return None
         self._index[clip.key] = {"query": clip.query, "file": target.name}
         _write_json(self._index_path, self._index)
         return target
+
+    def _is_greenscreen(self, path: Path, key: str) -> bool:
+        """Mira un fotograma y descarta el clip si es croma verde.
+
+        Por el texto no basta: muchos elementos de croma se anuncian como
+        "subscribe animation" sin decir que van sobre verde, y colarlos deja
+        tres segundos de pantalla verde en el video.
+        """
+        cached = self._index.get(key, {}).get("chroma")
+        if cached is not None:
+            return bool(cached)
+        verdict = False
+        try:
+            frame = path.with_suffix(".probe.png")
+            ffmpeg.run([
+                "-ss", "0.5", "-i", str(path), "-frames:v", "1",
+                "-vf", "scale=64:-1", str(frame),
+            ])
+            from PIL import Image, ImageStat
+
+            red, green, blue = ImageStat.Stat(Image.open(frame).convert("RGB")).mean
+            verdict = green > red * 1.6 and green > blue * 1.6 and green > 90
+            frame.unlink(missing_ok=True)
+        except Exception as exc:  # noqa: BLE001 - ante la duda, se acepta el clip
+            log.warn(f"No se pudo comprobar el croma de {key}: {exc}")
+        entry = self._index.setdefault(key, {})
+        entry["chroma"] = verdict
+        _write_json(self._index_path, self._index)
+        return verdict
 
 
 def _best_pexels_file(files: list[dict[str, Any]]) -> dict | None:

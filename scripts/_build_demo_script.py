@@ -213,7 +213,7 @@ BLOCKS = [
             ("Es una nómina muy buena, con un millón de euros de aval.", "bank vault door", ""),
             ("Ganas lo que gana un directivo, pero el riesgo es tuyo.", "executive office window city", ""),
             ("Ese es el problema millonario de los arcos dorados.", "golden arches sign sunset", ""),
-            ("Si te ha servido, suscríbete. Cada semana desmontamos otro.", "subscribe button animation", ""),
+            ("Si te ha servido, suscríbete. Cada semana desmontamos otro.", "mcdonalds restaurant exterior night", ""),
         ],
     },
 ]

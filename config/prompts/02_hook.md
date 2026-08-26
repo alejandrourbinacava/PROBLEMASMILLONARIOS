@@ -27,7 +27,9 @@ En {hook_seconds} segundos de narracion rapida en espanol caben unas
 2. Cada una debe existir de verdad en un banco de video de stock: literal y
    filmable. "aerial view football stadium", "cash counting machine",
    "private jet taking off", "chef cooking restaurant kitchen".
-   Nunca conceptos abstractos como "success" o "financial pressure".
+   Nunca conceptos abstractos como "success" o "financial pressure", ni
+   elementos de interfaz como "subscribe button": en los bancos eso son
+   piezas sobre fondo verde y dejan la pantalla en verde.
 3. Alterna escalas: plano general, detalle, gente, dinero, maquinaria, lujo.
    Que el ojo salte de una cosa a otra muy distinta en cada corte.
 4. Las primeras 5 deben ser las mas espectaculares del video entero.

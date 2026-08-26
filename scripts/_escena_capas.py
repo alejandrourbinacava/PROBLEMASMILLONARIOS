@@ -85,6 +85,25 @@ def texto(cadena: str, size: int, y: float, hueco: tuple[float, float],
     return image
 
 
+def _suelo(alto: int) -> Image.Image:
+    """Franja oscura abajo, para que haya horizonte y las figuras pisen."""
+    from PIL import ImageDraw
+    image = Image.new("RGBA", (W, alto), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(image)
+    inicio = int(alto * 0.74)
+    for y in range(inicio, alto):
+        t = (y - inicio) / max(1, alto - inicio)
+        draw.line([(0, y), (W, y)], fill=(10, 12, 26, int(215 * (t ** 0.55))))
+    return image
+
+
+def _velo(image: Image.Image, opacidad: float) -> Image.Image:
+    """Baja la opacidad de una capa entera."""
+    out = image.convert("RGBA").copy()
+    out.putalpha(out.getchannel("A").point(lambda v: int(v * opacidad)))
+    return out
+
+
 def colocar(cutout: Image.Image, escala: float, anclaje: tuple[float, float]) -> Image.Image:
     """Coloca respetando el tope de aumento del recorte."""
     tope = L.max_scale(cutout, H)
@@ -112,7 +131,7 @@ def main() -> None:
 
     # Tamanos modestos: si un elemento llena el encuadre, tapa a los demas y se
     # pierde la composicion por capas, que es justo lo que se busca.
-    capa_letrero = colocar(puertas, 0.30, (0.80, 0.16))
+    capa_letrero = colocar(puertas, 0.26, (0.78, 0.05))
     capa_seg = colocar(seguridad, 0.50, (0.10, 1.0))
     capa_cliente = colocar(cliente, 0.62, (0.86, 1.0))
 
@@ -120,17 +139,41 @@ def main() -> None:
     hueco = L.free_span([capa_seg, capa_cliente, capa_letrero], W, H)
     print(f"  hueco libre: {hueco[0]:.2f} a {hueco[1]:.2f} del ancho")
 
+    # Una sola paleta para todo: sombra azul noche y luz ambar de sala. Cada
+    # recorte pasa por la misma rampa, asi que la luz con la que se rodo cada
+    # uno deja de notarse y la escena se lee como una sola imagen.
+    SOMBRA = (14, 18, 38)
+    LUZ = (255, 176, 96)
+
+    fondo = L.backdrop_glow(W, H, (255, 150, 70), centre=(0.52, 0.60), radius=0.85)
+    # La MISMA rampa para las dos figuras. Con rampas distintas vuelve el
+    # problema de origen: cada una parece venir de un sitio.
+    seg_d = L.duotone(capa_seg, SOMBRA, LUZ, contrast=1.7)
+    cli_d = L.duotone(capa_cliente, SOMBRA, LUZ, contrast=1.6)
+
     comp = L.Composition(width=W, height=H, push=0.11, layers=[
-        L.Layer(L.graded(interior, (20, 40, 90), 0.55, 1.1, 0.9),
-                entrance="fade", delay=0.00, duration=0.20, parallax=0.0),
-        L.Layer(L.graded(capa_letrero, (255, 190, 210), 0.12, 1.25, 1.4),
+        L.Layer(fondo, entrance="scale", delay=0.00, duration=0.30, parallax=0.0),
+        # El interior del casino se queda, pero teñido y a media opacidad: da
+        # textura y sitio sin traer su propia luz. Un degradado a secas deja la
+        # escena en el limbo, y esto pasa en un casino.
+        L.Layer(_velo(L.duotone(interior, SOMBRA, (210, 150, 120), contrast=1.15), 0.62),
+                entrance="fade", delay=0.02, duration=0.24, parallax=0.12),
+        # El letrero se queda al fondo, no recortado y flotando: pegado arriba
+        # como parte del techo, que es donde esta en un casino.
+        L.Layer(_velo(L.duotone(capa_letrero, SOMBRA, (255, 140, 150), contrast=1.3), 0.80),
                 entrance="fall", delay=0.10, duration=0.30, parallax=0.35),
+        # Una franja de suelo: sin horizonte las figuras siguen flotando por
+        # mucha sombra que se les ponga.
+        L.Layer(_suelo(H), entrance="wipe_up", delay=0.06, duration=0.26, parallax=0.55),
         L.Layer(texto("EL PRIMER CLIENTE", 120, 0.38, hueco),
                 entrance="rise", delay=0.34, duration=0.26, parallax=0.70),
-        L.Layer(L.graded(capa_seg, (40, 70, 140), 0.30, 1.2, 0.95),
-                entrance="slide_right", delay=0.44, duration=0.26, parallax=1.05),
-        L.Layer(L.graded(capa_cliente, (30, 45, 110), 0.24, 1.25, 1.05),
-                entrance="slide_left", delay=0.24, duration=0.32, parallax=1.55),
+        # Las sombras van justo debajo de cada figura, para que pisen suelo
+        L.Layer(L.contact_shadow(capa_seg),
+                entrance="fade", delay=0.44, duration=0.26, parallax=1.05),
+        L.Layer(seg_d, entrance="slide_right", delay=0.44, duration=0.26, parallax=1.05),
+        L.Layer(L.contact_shadow(capa_cliente),
+                entrance="fade", delay=0.24, duration=0.32, parallax=1.55),
+        L.Layer(cli_d, entrance="slide_left", delay=0.24, duration=0.32, parallax=1.55),
     ])
 
     frames = int(4.4 * FPS)

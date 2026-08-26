@@ -202,6 +202,63 @@ def free_side(placed: Image.Image) -> float:
     return 0.70 if left > right else 0.30
 
 
+def duotone(
+    source: Image.Image, dark: tuple[int, int, int], light: tuple[int, int, int],
+    *, contrast: float = 1.5,
+) -> Image.Image:
+    """Reduce un recorte a dos tonos: sombra y luz, nada más.
+
+    Esto es lo que salva una composición hecha con material de archivo. Cuatro
+    recortes de cuatro rodajes traen cuatro luces distintas, y pegados a todo
+    color se ve el collage a la legua: uno iluminado de frente en un estudio,
+    otro con luz de calle, otro de noche. Al pasarlos todos por la misma rampa
+    de dos colores, la luz de origen deja de existir y la escena se lee como una
+    sola imagen.
+    """
+    rgba = source.convert("RGBA")
+    luma = ImageEnhance.Contrast(rgba.convert("L")).enhance(contrast)
+    ramp = []
+    for value in range(256):
+        t = value / 255
+        ramp.extend(int(dark[c] + (light[c] - dark[c]) * t) for c in range(3))
+    tinted = luma.convert("RGB")
+    tinted = Image.merge("RGB", [
+        luma.point([ramp[i * 3 + c] for i in range(256)]) for c in range(3)
+    ])
+    out = tinted.convert("RGBA")
+    out.putalpha(rgba.getchannel("A"))
+    return out
+
+
+def contact_shadow(
+    placed: Image.Image, *, spread: int = 34, opacity: float = 0.55,
+    lift: int = 10,
+) -> Image.Image:
+    """Sombra pegada a los pies de la figura, para que no flote.
+
+    Sin esto los recortes parecen pegatinas sobre el fondo. No hace falta una
+    sombra proyectada correcta: basta una mancha difusa justo debajo para que el
+    ojo dé por hecho que hay suelo.
+    """
+    alpha = placed.convert("RGBA").getchannel("A")
+    box = alpha.getbbox()
+    if not box:
+        return Image.new("RGBA", placed.size, (0, 0, 0, 0))
+
+    # Solo la parte de abajo del sujeto proyecta: es lo que toca el suelo
+    feet = alpha.crop((box[0], max(box[1], box[3] - 90), box[2], box[3]))
+    feet = feet.resize((feet.width, max(8, feet.height // 4)), Image.BILINEAR)
+
+    shadow = Image.new("L", placed.size, 0)
+    shadow.paste(feet, (box[0], box[3] - feet.height + lift))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(spread))
+    shadow = shadow.point(lambda v: int(v * opacity))
+
+    out = Image.new("RGBA", placed.size, (0, 0, 0, 0))
+    out.paste(Image.new("RGBA", placed.size, (0, 0, 0, 255)), (0, 0), shadow)
+    return out
+
+
 def free_span(
     subjects: list[Image.Image], width: int, height: int, *,
     band: tuple[float, float] = (0.28, 0.62), threshold: float = 0.10,

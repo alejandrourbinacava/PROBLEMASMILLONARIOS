@@ -33,19 +33,18 @@ voice:
   #            XimenaNeural. Además devuelve la posición exacta de cada
   #            palabra, así que la imagen cuadra al milisegundo.
   # genaipro | ai33 | edge (gratis)
-  # Mientras la clave de ai33.pro no funcione, edge (gratis) para no gastar
-  provider: "edge"
-  base_url: "https://genaipro.io/api/v1"
-  # Solo para ai33: su contrato exacto está sin confirmar, así que se
-  # ajusta desde aquí sin tocar código cuando la clave responda.
-  tts_path: "/text-to-speech"
-  auth_header: "Authorization"
-  auth_prefix: "Bearer "
+  provider: "ai33"
+  # ai33 -> https://api.ai33.pro/v3   |   genaipro -> https://genaipro.io/api/v1
+  base_url: "https://api.ai33.pro/v3"
+  # Pide el SRT con marcas de tiempo. Cuesta créditos aparte pero es lo
+  # que hace que la imagen cuadre con la palabra en vez de repartir a ojo.
+  transcript: true
   # Con provider edge: es-ES-AlvaroNeural | es-ES-ElviraNeural | es-ES-XimenaNeural
   # Con provider genaipro: el id que saques de python scripts/list_voices.py
   # ai33 (Luca): elevenlabs_XJWCXmejYcvojtfGd3Mk
   # genaipro:    RwzBDEn5f6FIgpAjH9YN
-  voice_id: "es-ES-AlvaroNeural"
+  # edge:        es-ES-AlvaroNeural
+  voice_id: "elevenlabs_XJWCXmejYcvojtfGd3Mk"
   model_id: "eleven_multilingual_v2"
   speed: 1.05                    # 0.7 - 1.2
   stability: 0.45

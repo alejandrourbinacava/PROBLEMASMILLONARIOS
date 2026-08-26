@@ -156,17 +156,54 @@ def backdrop_glow(
             distance = math.hypot((x - cx) * small_h / small_w * (small_w / small_h), y - cy) / limit
             pixels[x, y] = int(255 * max(0.0, 1.0 - distance ** 2.2))
     glow = small.resize((width, height), Image.LANCZOS).filter(ImageFilter.GaussianBlur(14))
-    bright = Image.new("RGBA", (width, height), (*_shade(tint, 1.7), 255))
+    # El centro se aclara hacia el blanco, no multiplicando el color: con un
+    # naranja, multiplicar satura el rojo y el verde a tope y sale un mostaza
+    # verdoso que no se parece en nada al tono de partida.
+    bright = Image.new("RGBA", (width, height), (*_toward_white(tint, 0.42), 255))
     image.paste(bright, (0, 0), glow)
     return image
 
 
 def silhouette(source: Image.Image, tint: tuple[int, int, int], strength: float = 0.86) -> Image.Image:
-    """Convierte un recorte en silueta oscura, como los suyos a contraluz."""
+    """Convierte un RECORTE en silueta oscura, como los suyos a contraluz.
+
+    Espera algo que ya tenga transparencia. Con una foto rectangular entera
+    devuelve un bloque oscuro con forma de rectángulo, que es justo lo que
+    arruina la composición: para un horizonte o una montaña está `skyline`.
+    """
     rgba = source.convert("RGBA")
     flat = Image.new("RGBA", rgba.size, (*_shade(tint, 0.10), 255))
     flat.putalpha(rgba.getchannel("A"))
     return Image.blend(rgba, flat, strength)
+
+
+def skyline(
+    source: Image.Image, tint: tuple[int, int, int], *,
+    cut: float = 0.55, softness: float = 0.18,
+) -> Image.Image:
+    """Recorta un horizonte por luminancia: lo oscuro se queda, el cielo se va.
+
+    Una foto de ciudad a contraluz ya trae la silueta hecha; lo único que hay
+    que hacer es tirar el cielo. Un modelo de segmentación aquí no sirve, porque
+    busca sujetos y un skyline no lo es. Un umbral sobre el brillo sí, y además
+    cuesta milisegundos.
+
+    `cut` es el brillo a partir del cual se considera cielo y `softness` el
+    ancho de la transición, para que el borde no quede recortado con tijeras.
+    """
+    rgba = source.convert("RGBA")
+    luma = rgba.convert("L")
+    low = max(0, int(255 * (cut - softness)))
+    high = min(255, int(255 * (cut + softness)))
+    span = max(1, high - low)
+    # Opaco por debajo de `low`, transparente por encima de `high`
+    mask = luma.point(lambda v: 255 if v <= low else (0 if v >= high else int(255 * (high - v) / span)))
+    if "A" in rgba.getbands():
+        mask = Image.composite(mask, Image.new("L", rgba.size, 0), rgba.getchannel("A"))
+
+    flat = Image.new("RGBA", rgba.size, (*_shade(tint, 0.12), 255))
+    flat.putalpha(mask)
+    return flat
 
 
 def graded(source: Image.Image, tint: tuple[int, int, int], amount: float = 0.45,
@@ -199,3 +236,7 @@ def fit_canvas(source: Image.Image, width: int, height: int, scale: float = 1.0,
 
 def _shade(colour: tuple[int, int, int], factor: float) -> tuple[int, int, int]:
     return tuple(max(0, min(255, int(c * factor))) for c in colour)  # type: ignore[return-value]
+
+
+def _toward_white(colour: tuple[int, int, int], amount: float) -> tuple[int, int, int]:
+    return tuple(int(c + (255 - c) * amount) for c in colour)  # type: ignore[return-value]

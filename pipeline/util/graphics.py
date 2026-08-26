@@ -19,6 +19,7 @@ en cada fotograma multiplicaba por diez el tiempo de render.
 """
 from __future__ import annotations
 
+import random
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -41,13 +42,18 @@ class GraphicSpec:
 
 @dataclass
 class Theme:
+    """Papel cuadriculado, tinta negra y rojo para señalar.
+
+    Es el mismo lenguaje de las miniaturas del canal: fondo con textura en vez
+    de plano, retícula, y un solo color fuerte que dirige la mirada a la cifra.
+    """
     width: int = 1920
     height: int = 1080
-    background: tuple[int, int, int] = (13, 16, 22)
-    grid: tuple[int, int, int] = (26, 31, 40)
-    ink: tuple[int, int, int] = (255, 255, 255)
-    muted: tuple[int, int, int] = (138, 148, 163)
-    accent: tuple[int, int, int] = (255, 212, 0)
+    background: tuple[int, int, int] = (247, 246, 241)
+    grid: tuple[int, int, int] = (203, 213, 224)
+    ink: tuple[int, int, int] = (24, 24, 26)
+    muted: tuple[int, int, int] = (132, 138, 148)
+    accent: tuple[int, int, int] = (214, 40, 40)
     font_file: Path | None = None
 
 
@@ -82,22 +88,48 @@ def render(
 # --------------------------------------------------------------------------
 
 def _background(theme: Theme) -> Image.Image:
+    """Papel milimetrado con grano. Se dibuja UNA vez y se reaprovecha."""
     image = Image.new("RGB", (theme.width, theme.height), theme.background)
     draw = ImageDraw.Draw(image)
-    step = 120
-    for x in range(0, theme.width, step):
-        draw.line([(x, 0), (x, theme.height)], fill=theme.grid)
-    for y in range(0, theme.height, step):
-        draw.line([(0, y), (theme.width, y)], fill=theme.grid)
-    # Viñeta suave por abajo, para que el texto no flote
-    for offset in range(220):
-        shade = int(offset / 220 * 14)
-        y = theme.height - 220 + offset
-        draw.line(
-            [(0, y), (theme.width, y)],
-            fill=tuple(max(0, c - shade) for c in theme.background),
-        )
+    step = 34
+    soft = tuple(
+        int(c + (theme.background[i] - c) * 0.55) for i, c in enumerate(theme.grid)
+    )
+    for index, x in enumerate(range(0, theme.width + step, step)):
+        draw.line([(x, 0), (x, theme.height)], fill=theme.grid if index % 5 == 0 else soft)
+    for index, y in enumerate(range(0, theme.height + step, step)):
+        draw.line([(0, y), (theme.width, y)], fill=theme.grid if index % 5 == 0 else soft)
+
+    # Grano de papel: sin él el fondo se ve digital y plano, que es justo lo
+    # que hay que evitar en este estilo.
+    rng = random.Random(11)
+    for _ in range(9000):
+        x = rng.randrange(theme.width)
+        y = rng.randrange(theme.height)
+        shade = rng.randint(-9, 4)
+        base = image.getpixel((x, y))
+        draw.point((x, y), fill=tuple(max(0, min(255, c + shade)) for c in base))
     return image
+
+
+def _underline(
+    draw: ImageDraw.ImageDraw, x: float, y: float, width: float,
+    theme: Theme, progress: float,
+) -> None:
+    """Trazo rojo con temblor que se dibuja solo, como un rotulador."""
+    if progress <= 0.02 or width <= 0:
+        return
+    rng = random.Random(3)
+    drawn = width * min(1.0, progress)
+    for stroke in range(2):
+        points = []
+        steps = 34
+        for step in range(steps + 1):
+            px = x - 10 + (drawn + 20) * step / steps
+            py = y + stroke * 3 + rng.uniform(-2.4, 2.4)
+            points.append((px, py))
+        if len(points) > 1:
+            draw.line(points, fill=theme.accent, width=8 - stroke * 3, joint="curve")
 
 
 def _frame(
@@ -130,19 +162,22 @@ def _draw_counter(
 
     counted = _ease(min(1.0, max(0.0, (progress - 0.06) / 0.55)))
     text = _format(spec, spec.value * counted)
-    _text(draw, text, (margin, 440), theme, 210, theme.accent)
+    _text(draw, text, (margin, 440), theme, 210, theme.ink)
+
+    # El subrayado rojo se traza solo debajo de la cifra: es el gesto que
+    # dirige la mirada sin necesidad de colorear el número entero.
+    if counted > 0.15:
+        span = draw.textlength(text, font=_font(theme, 210))
+        _underline(draw, margin, 686, span, theme, min(1.0, (counted - 0.15) / 0.6))
 
     if spec.kind == "bar":
         width = theme.width - margin * 2
-        top = 730
-        draw.rounded_rectangle(
-            [margin, top, margin + width, top + 46], radius=23, fill=theme.grid
-        )
+        top = 764
+        draw.rectangle([margin, top, margin + width, top + 44], fill=(233, 232, 226))
+        draw.rectangle([margin, top, margin + width, top + 44], outline=theme.grid, width=2)
         filled = int(width * min(1.0, spec.value / 100.0) * counted)
-        if filled > 46:
-            draw.rounded_rectangle(
-                [margin, top, margin + filled, top + 46], radius=23, fill=theme.accent
-            )
+        if filled > 4:
+            draw.rectangle([margin, top, margin + filled, top + 44], fill=theme.accent)
 
 
 def _draw_stack(
@@ -164,16 +199,14 @@ def _draw_stack(
         if last:
             y += int((1 - entry) * 34)
         colour = theme.ink if last else theme.muted
-        alpha = entry if last else 0.55
+        alpha = entry if last else 0.6
         _text(draw, concept.upper(), (margin, y), theme, 54, colour, alpha=alpha)
         _text(
             draw, amount, (right, y), theme, 58,
             theme.accent if last else theme.muted, alpha=alpha, anchor_right=True,
         )
         if last:
-            draw.rectangle(
-                [margin, y + 76, margin + int(220 * entry), y + 82], fill=theme.accent
-            )
+            _underline(draw, margin, y + 74, 240, theme, entry)
 
 
 # --------------------------------------------------------------------------
@@ -227,7 +260,11 @@ def _format(spec: GraphicSpec, value: float) -> str:
     if "-" in spec.display and spec.unit != "eur":
         return spec.display
     if spec.unit == "percent":
-        return f"{value:.0f}%".replace(".", ",")
+        # Los porcentajes pequeños necesitan el decimal: la ventaja de la casa
+        # es 2,7%, y redondeada a 3% deja de ser el dato que es.
+        if spec.value < 10 and abs(spec.value - round(spec.value)) > 0.05:
+            return f"{value:.1f}%".replace(".", ",")
+        return f"{value:.0f}%"
     if spec.unit == "eur":
         if spec.value >= 10**6:
             millions = value / 10**6

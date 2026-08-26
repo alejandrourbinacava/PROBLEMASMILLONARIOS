@@ -96,12 +96,36 @@ class EdgeTTS:
 
 
 def make(cfg: Config):
-    """Devuelve el cliente de voz segun voice.provider."""
+    """Devuelve el cliente de voz segun voice.provider, con cache delante.
+
+    La cache es lo que evita pagar dos veces el mismo guion al relanzar el
+    pipeline mientras se afina el montaje.
+    """
+    from .ttscache import CachedTTS
+
     provider = (cfg.get("voice.provider", "genaipro") or "genaipro").lower()
     if provider in ("edge", "edge-tts", "free", "gratis"):
         log.info("Voz: edge-tts (gratuita, con marcas de tiempo por palabra)")
-        return EdgeTTS(cfg)
-    from .genaipro import GenAIPro
+        inner = EdgeTTS(cfg)
+    elif provider in ("ai33", "ai33.pro"):
+        from .ai33 import Ai33
 
-    log.info("Voz: GenAIPro Labs")
-    return GenAIPro(cfg)
+        log.info("Voz: ai33.pro")
+        inner = Ai33(cfg)
+    else:
+        from .genaipro import GenAIPro
+
+        log.info("Voz: GenAIPro Labs")
+        inner = GenAIPro(cfg)
+
+    if not cfg.get("voice.cache", True):
+        return inner
+    return CachedTTS(inner, {
+        "provider": provider,
+        "voice": cfg.get("voice.voice_id", ""),
+        "model": cfg.get("voice.model_id", ""),
+        "speed": cfg.get("voice.speed", 1.0),
+        "stability": cfg.get("voice.stability", 0.45),
+        "similarity": cfg.get("voice.similarity", 0.8),
+        "style": cfg.get("voice.style", 0.35),
+    })

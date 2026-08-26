@@ -36,6 +36,9 @@ def run(cfg: Config, script: dict[str, Any], workdir: Path) -> dict[str, Any]:
             list(enumerate(units)),
         ))
 
+    if hasattr(tts, "report"):
+        tts.report()
+
     gap = float(cfg.get("voice.gap_between_blocks_s", 0.35))
     silence = _make_silence(gap, audio_dir) if gap > 0 else None
 

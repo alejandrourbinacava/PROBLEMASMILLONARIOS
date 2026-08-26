@@ -1,0 +1,1297 @@
+{
+  "outline": {
+    "working_title": "Esto es lo que cuesta comprar un casino",
+    "total_figure": "28 millones para comprarlo y 25 al año para mantenerlo",
+    "comparison": "un 11% de margen, diez años para recuperar la compra",
+    "broll_anchors": [
+      "casino",
+      "casino floor",
+      "roulette wheel",
+      "slot machine",
+      "casino chips",
+      "blackjack table",
+      "las vegas casino",
+      "croupier dealer"
+    ],
+    "broll_keywords": [
+      "casino",
+      "roulette",
+      "slot machine",
+      "slots",
+      "chips",
+      "blackjack",
+      "poker",
+      "croupier",
+      "dealer",
+      "gambling",
+      "jackpot",
+      "las vegas",
+      "dice",
+      "playing cards",
+      "betting"
+    ],
+    "broll_keywords_primary": [
+      "casino",
+      "roulette",
+      "slot machine",
+      "blackjack",
+      "jackpot"
+    ],
+    "blocks": [
+      {
+        "id": 1,
+        "chapter_title": "El billete de entrada",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 216
+      },
+      {
+        "id": 2,
+        "chapter_title": "La licencia que no se vende",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 216
+      },
+      {
+        "id": 3,
+        "chapter_title": "Llenar la sala",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 229
+      },
+      {
+        "id": 4,
+        "chapter_title": "El dinero que no es tuyo",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 224
+      },
+      {
+        "id": 5,
+        "chapter_title": "Trescientas personas",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 225
+      },
+      {
+        "id": 6,
+        "chapter_title": "El ojo en el techo",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 237
+      },
+      {
+        "id": 7,
+        "chapter_title": "La ventaja de la casa",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 285
+      },
+      {
+        "id": 8,
+        "chapter_title": "La cuenta final",
+        "thesis": "",
+        "key_figures": [],
+        "open_loop": "",
+        "target_words": 263
+      }
+    ]
+  },
+  "hook": {
+    "lines": [
+      {
+        "narration": "Comprar un casino cuesta 28 millones.",
+        "on_screen": "28 M€"
+      },
+      {
+        "narration": "Y cuatro millones más que no puedes tocar.",
+        "on_screen": ""
+      },
+      {
+        "narration": "La ventaja de la casa es del 2,7%.",
+        "on_screen": "2,7%"
+      },
+      {
+        "narration": "Parece nada. Es todo.",
+        "on_screen": ""
+      },
+      {
+        "narration": "Porque el casino no apuesta contra ti.",
+        "on_screen": ""
+      },
+      {
+        "narration": "Te vende tiempo, y el tiempo siempre gana.",
+        "on_screen": ""
+      }
+    ],
+    "visuals": [
+      "casino roulette wheel spinning",
+      "casino chips stack close up",
+      "slot machine reels spinning",
+      "casino floor wide shot",
+      "playing cards dealt table",
+      "las vegas strip night aerial",
+      "security camera ceiling dome",
+      "cash counting machine close up",
+      "croupier hands chips table",
+      "casino neon sign night",
+      "dice rolling green felt",
+      "people playing slot machines",
+      "poker table players night",
+      "casino entrance doors",
+      "money counting hands euro",
+      "surveillance monitors room",
+      "blackjack table dealer",
+      "casino carpet lights",
+      "empty casino morning",
+      "cocktail served casino bar"
+    ]
+  },
+  "blocks": [
+    {
+      "id": 1,
+      "chapter_title": "El billete de entrada",
+      "scenes": [
+        {
+          "narration": "Un casino no se compra como se compra un bar.",
+          "broll_query": "casino entrance doors night",
+          "on_screen": ""
+        },
+        {
+          "narration": "No compras un local: compras una empresa entera.",
+          "broll_query": "office building glass facade",
+          "on_screen": ""
+        },
+        {
+          "narration": "Con su licencia, su plantilla y sus deudas dentro.",
+          "broll_query": "contract paperwork stack desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un casino mediano en España ronda los veintiocho millones.",
+          "broll_query": "casino floor wide shot",
+          "on_screen": "28 M€"
+        },
+        {
+          "narration": "Ahí entra el edificio, la maquinaria y el permiso.",
+          "broll_query": "casino building exterior",
+          "on_screen": ""
+        },
+        {
+          "narration": "En Las Vegas la escala es otra por completo.",
+          "broll_query": "las vegas strip night aerial",
+          "on_screen": ""
+        },
+        {
+          "narration": "El Mirage se vendió por mil millones de dólares.",
+          "broll_query": "las vegas hotel casino night",
+          "on_screen": "1.000 M$"
+        },
+        {
+          "narration": "Y el Cosmopolitan por cinco mil seiscientos millones.",
+          "broll_query": "luxury hotel tower night",
+          "on_screen": "5.600 M$"
+        },
+        {
+          "narration": "Pero el precio de compra es lo de menos.",
+          "broll_query": "person thinking worried desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "Porque un casino es un negocio que arranca en negativo.",
+          "broll_query": "declining graph red screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Antes de abrir ya has inmovilizado millones que no producen.",
+          "broll_query": "bank vault door closed",
+          "on_screen": ""
+        },
+        {
+          "narration": "Antes de firmar, un equipo revisa la empresa entera.",
+          "broll_query": "auditor reviewing documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cuentas, contratos, expedientes y multas de los últimos años.",
+          "broll_query": "stacked folders archive",
+          "on_screen": ""
+        },
+        {
+          "narration": "Esa revisión sola cuesta doscientos mil euros.",
+          "broll_query": "lawyer office meeting",
+          "on_screen": "200.000 €"
+        },
+        {
+          "narration": "Y sirve para descubrir lo que el vendedor no cuenta.",
+          "broll_query": "person reading contract closely",
+          "on_screen": ""
+        },
+        {
+          "narration": "Porque nadie vende un casino que va bien.",
+          "broll_query": "for sale sign building",
+          "on_screen": ""
+        },
+        {
+          "narration": "Se vende cuando la sala envejece o cambia la ley.",
+          "broll_query": "old casino interior worn",
+          "on_screen": ""
+        },
+        {
+          "narration": "O cuando el dueño no puede pagar la próxima reforma.",
+          "broll_query": "renovation construction interior",
+          "on_screen": ""
+        },
+        {
+          "narration": "El precio se calcula sobre el beneficio, no sobre el ladrillo.",
+          "broll_query": "calculator financial documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Se paga entre seis y ocho veces el beneficio anual.",
+          "broll_query": "profit chart multiplier",
+          "on_screen": "x6-x8"
+        },
+        {
+          "narration": "Si el casino gana tres millones, pides veinte o más.",
+          "broll_query": "money stacks counting",
+          "on_screen": "20 M€"
+        },
+        {
+          "narration": "Y el edificio muchas veces ni siquiera entra en el trato.",
+          "broll_query": "building keys handover",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y hay algo que el dinero por sí solo no compra.",
+          "broll_query": "closed door office",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter_title": "La licencia que no se vende",
+      "scenes": [
+        {
+          "narration": "En España las licencias de casino no están a la venta.",
+          "broll_query": "government building facade",
+          "on_screen": ""
+        },
+        {
+          "narration": "Las concede cada comunidad autónoma y son contadas.",
+          "broll_query": "official documents stamp desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "En algunas regiones no llegan a cinco en total.",
+          "broll_query": "map spain graphic",
+          "on_screen": ""
+        },
+        {
+          "narration": "No puedes pedir una y esperar tu turno.",
+          "broll_query": "waiting room empty chairs",
+          "on_screen": ""
+        },
+        {
+          "narration": "Tienes que comprar la empresa que ya la tiene.",
+          "broll_query": "handshake business meeting",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y eso dispara el precio muy por encima de los activos.",
+          "broll_query": "rising graph arrow screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Estás pagando por un permiso que nadie más puede conseguir.",
+          "broll_query": "key in lock close up",
+          "on_screen": ""
+        },
+        {
+          "narration": "Además el regulador tiene que aprobarte a ti.",
+          "broll_query": "audit documents magnifying glass",
+          "on_screen": ""
+        },
+        {
+          "narration": "Revisan tu patrimonio, tu origen del dinero y tus socios.",
+          "broll_query": "financial audit paperwork",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un solo socio con antecedentes tumba la operación entera.",
+          "broll_query": "rejected stamp document",
+          "on_screen": ""
+        },
+        {
+          "narration": "El proceso puede llevar más de un año.",
+          "broll_query": "calendar pages flipping",
+          "on_screen": "1 AÑO"
+        },
+        {
+          "narration": "Y durante ese año pagas abogados sin ingresar nada.",
+          "broll_query": "lawyer office desk documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "La licencia tampoco es para siempre.",
+          "broll_query": "expiring document stamp",
+          "on_screen": ""
+        },
+        {
+          "narration": "Se renueva cada diez o quince años según la región.",
+          "broll_query": "calendar years planning",
+          "on_screen": "10-15 AÑOS"
+        },
+        {
+          "narration": "Y en cada renovación vuelven a mirarte con lupa.",
+          "broll_query": "magnifying glass documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Hay comunidades que llevan años sin conceder ninguna nueva.",
+          "broll_query": "closed government office",
+          "on_screen": ""
+        },
+        {
+          "narration": "Eso convierte las existentes en un activo escaso.",
+          "broll_query": "rare valuable item spotlight",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y por escaso, carísimo, al margen de lo que gane la sala.",
+          "broll_query": "auction gavel",
+          "on_screen": ""
+        },
+        {
+          "narration": "Tampoco puedes moverla de sitio cuando quieras.",
+          "broll_query": "map location pin",
+          "on_screen": ""
+        },
+        {
+          "narration": "La licencia está atada a un municipio concreto.",
+          "broll_query": "town hall building",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si el barrio se muere, te mueres con él.",
+          "broll_query": "empty street closed shops",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y venderla exige otra vez el visto bueno del regulador.",
+          "broll_query": "official approval stamp",
+          "on_screen": ""
+        },
+        {
+          "narration": "Comprar es difícil, pero salir lo es todavía más.",
+          "broll_query": "locked door chain",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cuando por fin abres, empieza el gasto de verdad.",
+          "broll_query": "casino doors opening",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter_title": "Llenar la sala",
+      "scenes": [
+        {
+          "narration": "Una sala vacía no gana dinero. Hay que llenarla.",
+          "broll_query": "empty casino floor",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un casino mediano monta unas trescientas máquinas.",
+          "broll_query": "row of slot machines",
+          "on_screen": "300"
+        },
+        {
+          "narration": "Cada máquina nueva cuesta unos dieciocho mil euros.",
+          "broll_query": "slot machine close up",
+          "on_screen": "18.000 €"
+        },
+        {
+          "narration": "Solo en máquinas se van cinco millones cuatrocientos mil.",
+          "broll_query": "slot machines row lights",
+          "on_screen": "5,4 M€"
+        },
+        {
+          "narration": "Las mesas son más baratas de lo que parece.",
+          "broll_query": "roulette table green felt",
+          "on_screen": ""
+        },
+        {
+          "narration": "Veinticinco mesas a doce mil euros: trescientos mil.",
+          "broll_query": "blackjack table empty",
+          "on_screen": "300.000 €"
+        },
+        {
+          "narration": "Pero las mesas no se pagan con la mesa.",
+          "broll_query": "croupier hands chips",
+          "on_screen": ""
+        },
+        {
+          "narration": "Se pagan con los cuatro crupieres que necesita cada una.",
+          "broll_query": "croupier dealing cards",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y luego están las fichas, que casi nadie cuenta.",
+          "broll_query": "casino chips stack close up",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un casino guarda más de cien mil fichas.",
+          "broll_query": "chips tray casino",
+          "on_screen": "100.000"
+        },
+        {
+          "narration": "Cada una lleva un chip de radiofrecuencia dentro.",
+          "broll_query": "rfid chip electronics",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cuestan entre dos y tres euros la unidad.",
+          "broll_query": "casino chips close up macro",
+          "on_screen": "2-3 €"
+        },
+        {
+          "narration": "Trescientos mil euros en fichas paradas en un cajón.",
+          "broll_query": "chips organized tray",
+          "on_screen": "300.000 €"
+        },
+        {
+          "narration": "Y las cambias enteras si alguien las falsifica.",
+          "broll_query": "counterfeit detection uv light",
+          "on_screen": ""
+        },
+        {
+          "narration": "Las máquinas además pagan derechos al fabricante.",
+          "broll_query": "slot machine manufacturer logo",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un porcentaje de lo que recaudan, cada mes, para siempre.",
+          "broll_query": "money flowing calculation",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y hay que renovarlas cada cinco o seis años.",
+          "broll_query": "new slot machines delivery",
+          "on_screen": "5-6 AÑOS"
+        },
+        {
+          "narration": "Una máquina vieja deja de atraer y ocupa metros caros.",
+          "broll_query": "old arcade machine dusty",
+          "on_screen": ""
+        },
+        {
+          "narration": "Los botes progresivos son otra deuda escondida.",
+          "broll_query": "jackpot display numbers",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cada moneda jugada engorda un premio que tendrás que pagar.",
+          "broll_query": "coins dropping machine",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ese bote figura en tu balance como obligación pendiente.",
+          "broll_query": "financial liability document",
+          "on_screen": ""
+        },
+        {
+          "narration": "Hasta la moqueta está pensada y cuesta una fortuna.",
+          "broll_query": "patterned casino carpet",
+          "on_screen": ""
+        },
+        {
+          "narration": "Los dibujos marean lo justo para que mires hacia arriba.",
+          "broll_query": "casino carpet pattern close",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y arriba están las luces y las pantallas de premios.",
+          "broll_query": "casino ceiling lights screens",
+          "on_screen": ""
+        },
+        {
+          "narration": "Nada en esa sala está puesto por casualidad.",
+          "broll_query": "casino interior design wide",
+          "on_screen": ""
+        },
+        {
+          "narration": "Con la sala montada llega la partida más rara del balance.",
+          "broll_query": "casino floor busy people",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter_title": "El dinero que no es tuyo",
+      "scenes": [
+        {
+          "narration": "Un casino tiene que poder pagar si ganas.",
+          "broll_query": "cash counting hands euro",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y tiene que poder pagarlo en el momento.",
+          "broll_query": "cashier window casino",
+          "on_screen": ""
+        },
+        {
+          "narration": "Eso obliga a tener millones en efectivo parados.",
+          "broll_query": "bank vault money stacks",
+          "on_screen": ""
+        },
+        {
+          "narration": "Se llama fondo de caja y ronda los cuatro millones.",
+          "broll_query": "cash stacks counted",
+          "on_screen": "4 M€"
+        },
+        {
+          "narration": "Ese dinero no invierte, no renta y no se toca.",
+          "broll_query": "safe deposit box closed",
+          "on_screen": ""
+        },
+        {
+          "narration": "Está ahí solo por si esta noche alguien revienta la banca.",
+          "broll_query": "roulette wheel spinning",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y el regulador comprueba que lo tienes de verdad.",
+          "broll_query": "auditor checking documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si no llegas al mínimo, te cierran la sala.",
+          "broll_query": "closed sign door",
+          "on_screen": ""
+        },
+        {
+          "narration": "Súmale la garantía que exige la comunidad autónoma.",
+          "broll_query": "official seal document",
+          "on_screen": ""
+        },
+        {
+          "narration": "Otro millón inmovilizado antes de abrir la puerta.",
+          "broll_query": "bank building facade",
+          "on_screen": "1 M€"
+        },
+        {
+          "narration": "Cinco millones de euros que existen solo para estar quietos.",
+          "broll_query": "money stack still",
+          "on_screen": "5 M€"
+        },
+        {
+          "narration": "Un banco te diría que eso es capital muerto.",
+          "broll_query": "banker desk meeting",
+          "on_screen": ""
+        },
+        {
+          "narration": "En un casino es el precio de poder abrir.",
+          "broll_query": "casino entrance lights",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cada noche hay que contar todo lo que ha entrado.",
+          "broll_query": "cash counting machine night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Las cajas de las mesas se abren con dos personas presentes.",
+          "broll_query": "two people opening safe",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y siempre delante de una cámara que graba el recuento.",
+          "broll_query": "surveillance camera counting room",
+          "on_screen": ""
+        },
+        {
+          "narration": "El efectivo sale en furgón blindado, no en un coche.",
+          "broll_query": "armored truck security",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ese servicio cuesta unos cien mil euros al año.",
+          "broll_query": "security transport van",
+          "on_screen": "100.000 €"
+        },
+        {
+          "narration": "El seguro de la sala es otro capítulo caro.",
+          "broll_query": "insurance policy documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cubre robo, incendio y responsabilidad civil.",
+          "broll_query": "fire safety equipment",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y ronda los trescientos mil euros anuales.",
+          "broll_query": "insurance contract signing",
+          "on_screen": "300.000 €"
+        },
+        {
+          "narration": "Porque asegurar un edificio lleno de dinero no es barato.",
+          "broll_query": "vault door heavy",
+          "on_screen": ""
+        },
+        {
+          "narration": "Todo esto sigue sin producir ni un euro de ingreso.",
+          "broll_query": "empty cash register",
+          "on_screen": ""
+        },
+        {
+          "narration": "Son costes de existir, no de funcionar.",
+          "broll_query": "building at night lights",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y todavía no ha entrado nadie a trabajar.",
+          "broll_query": "empty casino morning light",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter_title": "Trescientas personas",
+      "scenes": [
+        {
+          "narration": "Un casino mediano emplea a unas trescientas personas.",
+          "broll_query": "casino staff working floor",
+          "on_screen": "300"
+        },
+        {
+          "narration": "Y a diferencia de un restaurante, no puede cerrar.",
+          "broll_query": "24 hours neon sign",
+          "on_screen": ""
+        },
+        {
+          "narration": "Muchas salas abren dieciocho horas al día, todo el año.",
+          "broll_query": "casino floor night busy",
+          "on_screen": "18 h/día"
+        },
+        {
+          "narration": "Cada mesa activa necesita cuatro crupieres al día.",
+          "broll_query": "croupier changing shift",
+          "on_screen": ""
+        },
+        {
+          "narration": "Turnos rotatorios, porque nadie aguanta ocho horas seguidas.",
+          "broll_query": "dealer concentration table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un crupier no puede despistarse ni un segundo.",
+          "broll_query": "hands dealing cards fast",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un error de pago se lo come la casa.",
+          "broll_query": "chips being paid out",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por eso rotan cada veinte minutos y se les vigila.",
+          "broll_query": "casino floor supervisor",
+          "on_screen": ""
+        },
+        {
+          "narration": "A eso súmale seguridad, caja, sala técnica y limpieza.",
+          "broll_query": "security guard casino",
+          "on_screen": ""
+        },
+        {
+          "narration": "La nómina se lleva unos nueve millones al año.",
+          "broll_query": "payroll documents calculator",
+          "on_screen": "9 M€"
+        },
+        {
+          "narration": "Es la partida más grande del casino, con diferencia.",
+          "broll_query": "team of employees working",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y la que no puedes recortar sin cerrar mesas.",
+          "broll_query": "closed table casino",
+          "on_screen": ""
+        },
+        {
+          "narration": "Menos mesas es menos ingreso: la pescadilla de siempre.",
+          "broll_query": "empty tables casino",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un crupier no se contrata: se forma.",
+          "broll_query": "training class casino school",
+          "on_screen": ""
+        },
+        {
+          "narration": "Hacen falta meses para pagar una ruleta sin pensar.",
+          "broll_query": "hands practicing chips",
+          "on_screen": ""
+        },
+        {
+          "narration": "Muchos casinos montan su propia escuela interna.",
+          "broll_query": "classroom training tables",
+          "on_screen": ""
+        },
+        {
+          "narration": "Formar a uno cuesta varios miles de euros.",
+          "broll_query": "student learning cards",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y encima el personal necesita su propia autorización.",
+          "broll_query": "id badge employee",
+          "on_screen": ""
+        },
+        {
+          "narration": "El regulador revisa antecedentes de cada empleado de sala.",
+          "broll_query": "background check documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Uno rechazado es un puesto que se queda sin cubrir.",
+          "broll_query": "empty chair workplace",
+          "on_screen": ""
+        },
+        {
+          "narration": "El turno de noche se paga más caro por ley.",
+          "broll_query": "night shift worker tired",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y la rotación en sala es alta, como en toda la hostelería.",
+          "broll_query": "revolving door people",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cada baja obliga a cerrar una mesa o pagar horas extra.",
+          "broll_query": "closed casino table sign",
+          "on_screen": ""
+        },
+        {
+          "narration": "La plantilla es el músculo y también la hipoteca.",
+          "broll_query": "team working together casino",
+          "on_screen": ""
+        },
+        {
+          "narration": "Pero hay un departamento que no verás en ninguna visita.",
+          "broll_query": "security camera dome ceiling",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter_title": "El ojo en el techo",
+      "scenes": [
+        {
+          "narration": "Sobre tu cabeza hay más de mil cámaras.",
+          "broll_query": "security cameras ceiling row",
+          "on_screen": "1.000"
+        },
+        {
+          "narration": "Cubren cada mesa, cada máquina y cada puerta.",
+          "broll_query": "surveillance monitors wall",
+          "on_screen": ""
+        },
+        {
+          "narration": "No hay un solo metro cuadrado sin grabar.",
+          "broll_query": "casino floor from above",
+          "on_screen": ""
+        },
+        {
+          "narration": "La sala de control funciona las veinticuatro horas.",
+          "broll_query": "control room operators",
+          "on_screen": "24 h"
+        },
+        {
+          "narration": "Con gente entrenada para leer manos, no caras.",
+          "broll_query": "hands on casino table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Montar todo eso cuesta cerca de dos millones.",
+          "broll_query": "server room technology",
+          "on_screen": "2 M€"
+        },
+        {
+          "narration": "Y mantenerlo, medio millón más cada año.",
+          "broll_query": "technician repairing equipment",
+          "on_screen": "500.000 €"
+        },
+        {
+          "narration": "Pero la vigilancia no está ahí solo por los tramposos.",
+          "broll_query": "surveillance screen watching",
+          "on_screen": ""
+        },
+        {
+          "narration": "Está ahí porque un casino mueve efectivo a lo bestia.",
+          "broll_query": "cash bundles counting",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y eso lo convierte en objetivo de blanqueo de capitales.",
+          "broll_query": "financial documents audit",
+          "on_screen": ""
+        },
+        {
+          "narration": "La ley obliga a identificar a quien mueva ciertas cantidades.",
+          "broll_query": "id document scanner",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y a reportar cada operación sospechosa al supervisor.",
+          "broll_query": "compliance report desk",
+          "on_screen": ""
+        },
+        {
+          "narration": "Eso significa un departamento entero de cumplimiento.",
+          "broll_query": "office team meeting documents",
+          "on_screen": ""
+        },
+        {
+          "narration": "Otro millón largo al año en gente que no genera ingresos.",
+          "broll_query": "office workers desks",
+          "on_screen": "1 M€"
+        },
+        {
+          "narration": "Hay un registro de personas que se han autoprohibido jugar.",
+          "broll_query": "database screen list",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si entra una y no la detectas, la multa es tuya.",
+          "broll_query": "fine penalty document",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y las sanciones llegan a cientos de miles de euros.",
+          "broll_query": "legal penalty stamp",
+          "on_screen": "100.000 €+"
+        },
+        {
+          "narration": "Por eso la entrada pide documento a todo el mundo.",
+          "broll_query": "id check entrance",
+          "on_screen": ""
+        },
+        {
+          "narration": "Muchas salas ya cruzan la cara con el registro automáticamente.",
+          "broll_query": "facial recognition screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "El sistema tiene que estar activo en cada puerta.",
+          "broll_query": "entrance turnstile security",
+          "on_screen": ""
+        },
+        {
+          "narration": "A eso súmale las inspecciones sin avisar.",
+          "broll_query": "inspector clipboard visit",
+          "on_screen": ""
+        },
+        {
+          "narration": "Revisan máquinas, porcentajes de pago y libros de caja.",
+          "broll_query": "inspector checking machine",
+          "on_screen": ""
+        },
+        {
+          "narration": "Una máquina fuera de rango se precinta en el acto.",
+          "broll_query": "sealed machine tape",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y con ella se va su ingreso hasta que se arregle.",
+          "broll_query": "out of order sign",
+          "on_screen": ""
+        },
+        {
+          "narration": "Cumplir la ley aquí no es papeleo: es la licencia.",
+          "broll_query": "legal documents official seal",
+          "on_screen": ""
+        },
+        {
+          "narration": "Con todo esto encima, ¿de dónde sale el dinero?",
+          "broll_query": "casino floor busy night",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter_title": "La ventaja de la casa",
+      "scenes": [
+        {
+          "narration": "Aquí está el corazón del negocio, y es pura aritmética.",
+          "broll_query": "roulette wheel close up",
+          "on_screen": ""
+        },
+        {
+          "narration": "La ruleta europea tiene treinta y siete números.",
+          "broll_query": "roulette numbers wheel",
+          "on_screen": "37"
+        },
+        {
+          "narration": "Pero si aciertas, te pagan treinta y seis veces.",
+          "broll_query": "chips placed roulette",
+          "on_screen": "x36"
+        },
+        {
+          "narration": "Esa diferencia es toda la ventaja de la casa.",
+          "broll_query": "roulette ball spinning",
+          "on_screen": ""
+        },
+        {
+          "narration": "Dos coma siete por ciento. Nada más.",
+          "broll_query": "percentage graphic screen",
+          "on_screen": "2,7%"
+        },
+        {
+          "narration": "En el blackjack bien jugado baja al medio por ciento.",
+          "broll_query": "blackjack cards dealt",
+          "on_screen": "0,5%"
+        },
+        {
+          "narration": "En las máquinas sube hasta el ocho o el diez.",
+          "broll_query": "slot machine spinning reels",
+          "on_screen": "8-10%"
+        },
+        {
+          "narration": "Y por eso las máquinas dan el setenta por ciento del ingreso.",
+          "broll_query": "row of slot machines busy",
+          "on_screen": "70%"
+        },
+        {
+          "narration": "No las mesas, que son el escaparate.",
+          "broll_query": "elegant casino table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ahora fíjate en lo que significa ese dos coma siete.",
+          "broll_query": "casino chips being pushed",
+          "on_screen": ""
+        },
+        {
+          "narration": "En una sola jugada casi no existe: puedes ganar tú.",
+          "broll_query": "single roulette spin",
+          "on_screen": ""
+        },
+        {
+          "narration": "En mil jugadas es una certeza matemática.",
+          "broll_query": "many chips on table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por eso el casino no apuesta contra ti.",
+          "broll_query": "croupier watching table",
+          "on_screen": ""
+        },
+        {
+          "narration": "Apuesta a que te quedes el tiempo suficiente.",
+          "broll_query": "clock casino wall",
+          "on_screen": ""
+        },
+        {
+          "narration": "Todo lo demás está diseñado para eso.",
+          "broll_query": "casino interior lights maze",
+          "on_screen": ""
+        },
+        {
+          "narration": "Sin relojes, sin ventanas, sin salidas evidentes.",
+          "broll_query": "casino interior no windows",
+          "on_screen": ""
+        },
+        {
+          "narration": "La bebida gratis, el aparcamiento gratis, el hotel barato.",
+          "broll_query": "cocktail served casino",
+          "on_screen": ""
+        },
+        {
+          "narration": "Nada de eso es generosidad: es alargar tu sesión.",
+          "broll_query": "person playing slots night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Un casino no vende juego. Vende horas.",
+          "broll_query": "casino floor time lapse",
+          "on_screen": ""
+        },
+        {
+          "narration": "La ley fija cuánto tiene que devolver una máquina.",
+          "broll_query": "regulation document gambling",
+          "on_screen": ""
+        },
+        {
+          "narration": "En España el mínimo ronda el ochenta y cinco por ciento.",
+          "broll_query": "percentage display screen",
+          "on_screen": "85%"
+        },
+        {
+          "narration": "Eso significa que de cada cien euros devuelve ochenta y cinco.",
+          "broll_query": "coins returning tray",
+          "on_screen": ""
+        },
+        {
+          "narration": "Los quince restantes son del casino, jugada tras jugada.",
+          "broll_query": "money accumulating stack",
+          "on_screen": "15%"
+        },
+        {
+          "narration": "Y el jugador medio reinvierte lo que gana en la misma máquina.",
+          "broll_query": "person playing slots absorbed",
+          "on_screen": ""
+        },
+        {
+          "narration": "Por eso el porcentaje real que se queda la casa es mayor.",
+          "broll_query": "rising graph money",
+          "on_screen": ""
+        },
+        {
+          "narration": "El blackjack sobrevive porque atrae a otro tipo de cliente.",
+          "broll_query": "blackjack table elegant",
+          "on_screen": ""
+        },
+        {
+          "narration": "Gente que se queda horas y consume mucho más.",
+          "broll_query": "casino bar drinks people",
+          "on_screen": ""
+        },
+        {
+          "narration": "El casino calcula lo que espera ganarte y te devuelve una parte.",
+          "broll_query": "calculator strategy",
+          "on_screen": ""
+        },
+        {
+          "narration": "En bebidas, en hotel, en cenas: se llama pérdida teórica.",
+          "broll_query": "hotel room luxury",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si esperan ganarte mil, invitarte a cien sale rentable.",
+          "broll_query": "cocktail casino service",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y ahora ya podemos montar la cuenta.",
+          "broll_query": "calculator spreadsheet desk",
+          "on_screen": ""
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter_title": "La cuenta final",
+      "scenes": [
+        {
+          "narration": "Vamos a cerrar el año de ese casino mediano.",
+          "broll_query": "spreadsheet numbers screen",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ingreso bruto de juego: veintiocho millones.",
+          "broll_query": "cash register casino",
+          "on_screen": "28 M€"
+        },
+        {
+          "narration": "Personal: nueve millones.",
+          "broll_query": "employees working casino",
+          "on_screen": "-9 M€"
+        },
+        {
+          "narration": "Impuesto del juego: seis millones y medio.",
+          "broll_query": "tax documents official",
+          "on_screen": "-6,5 M€"
+        },
+        {
+          "narration": "Es el mordisco autonómico sobre el margen bruto.",
+          "broll_query": "government building official",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y va del veinte al cincuenta y cinco por ciento según la región.",
+          "broll_query": "map percentage graphic",
+          "on_screen": "20-55%"
+        },
+        {
+          "narration": "Edificio, luz y climatización: dos millones.",
+          "broll_query": "electricity meter building",
+          "on_screen": "-2 M€"
+        },
+        {
+          "narration": "Vigilancia y cumplimiento: tres millones.",
+          "broll_query": "surveillance control room",
+          "on_screen": "-3 M€"
+        },
+        {
+          "narration": "Máquinas, renovación y averías: dos millones.",
+          "broll_query": "technician slot machine repair",
+          "on_screen": "-2 M€"
+        },
+        {
+          "narration": "Bebidas, hotel y promociones: dos millones y medio.",
+          "broll_query": "casino bar drinks",
+          "on_screen": "-2,5 M€"
+        },
+        {
+          "narration": "Total de gastos: veinticinco millones.",
+          "broll_query": "calculator total display",
+          "on_screen": "-25 M€"
+        },
+        {
+          "narration": "Te quedan tres millones de beneficio operativo.",
+          "broll_query": "profit graph rising",
+          "on_screen": "3 M€"
+        },
+        {
+          "narration": "Sobre veintiocho facturados es un once por ciento.",
+          "broll_query": "percentage chart screen",
+          "on_screen": "11%"
+        },
+        {
+          "narration": "Recuperar los veintiocho de compra lleva unos diez años.",
+          "broll_query": "calendar long term planning",
+          "on_screen": "10 AÑOS"
+        },
+        {
+          "narration": "Y todo eso suponiendo que la sala se llene.",
+          "broll_query": "busy casino floor crowd",
+          "on_screen": ""
+        },
+        {
+          "narration": "Porque el casino gana siempre, pero solo si hay gente.",
+          "broll_query": "empty casino chairs",
+          "on_screen": ""
+        },
+        {
+          "narration": "Una sala vacía pierde dinero igual que cualquier negocio.",
+          "broll_query": "empty casino night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Esa es la trampa del que compra pensando que es magia.",
+          "broll_query": "person counting money worried",
+          "on_screen": ""
+        },
+        {
+          "narration": "La ventaja de la casa no crea clientes. Los exprime.",
+          "broll_query": "casino floor people playing",
+          "on_screen": ""
+        },
+        {
+          "narration": "Ese es el problema millonario de comprar un casino.",
+          "broll_query": "casino neon sign night",
+          "on_screen": ""
+        },
+        {
+          "narration": "Compáralo con no hacer absolutamente nada.",
+          "broll_query": "stock market chart calm",
+          "on_screen": ""
+        },
+        {
+          "narration": "Metes esos veintiocho millones en un fondo indexado.",
+          "broll_query": "investment portfolio screen",
+          "on_screen": "28 M€"
+        },
+        {
+          "narration": "Sacarías cerca de dos millones al año sin levantarte.",
+          "broll_query": "investment growth chart",
+          "on_screen": "2 M€"
+        },
+        {
+          "narration": "Sin licencias, sin inspecciones y sin trescientas nóminas.",
+          "broll_query": "relaxed person laptop",
+          "on_screen": ""
+        },
+        {
+          "narration": "El casino te da tres, y con todo el riesgo encima.",
+          "broll_query": "casino floor risk",
+          "on_screen": "3 M€"
+        },
+        {
+          "narration": "Por eso casi ningún casino cambia de manos.",
+          "broll_query": "closed sign gate",
+          "on_screen": ""
+        },
+        {
+          "narration": "Quien tiene la licencia se la queda hasta que revienta.",
+          "broll_query": "old casino sign faded",
+          "on_screen": ""
+        },
+        {
+          "narration": "El verdadero activo nunca fue el edificio.",
+          "broll_query": "building demolition old",
+          "on_screen": ""
+        },
+        {
+          "narration": "Era el permiso para que la aritmética trabaje sola.",
+          "broll_query": "roulette wheel slow motion",
+          "on_screen": ""
+        },
+        {
+          "narration": "Y ese permiso no se compra: se hereda o se paga carísimo.",
+          "broll_query": "handshake formal deal",
+          "on_screen": ""
+        },
+        {
+          "narration": "Lo demás son luces, moqueta y bebida gratis.",
+          "broll_query": "casino lights blur",
+          "on_screen": ""
+        },
+        {
+          "narration": "Si te ha servido, suscríbete. Cada semana desmontamos otro.",
+          "broll_query": "casino entrance night lights",
+          "on_screen": ""
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "title": "Esto es lo que cuesta comprar un casino (la cuenta real)",
+    "description": "🎰 28.000.000 € para comprarlo. 5.000.000 € más que no puedes tocar nunca. Y una ventaja de la casa del 2,7%.\n\nDesglosamos lo que cuesta de verdad un casino: la licencia que no está a la venta, las 300 máquinas, las 100.000 fichas, el fondo de caja inmovilizado, las 300 nóminas y el impuesto autonómico que se lleva hasta el 55% del margen.\n\n🎯 El dato que lo explica todo: un casino no apuesta contra ti. Te vende tiempo. Por eso no hay relojes, ni ventanas, ni salidas evidentes, y la bebida es gratis.\n\n👁️ Y sobre tu cabeza hay más de mil cámaras que no están ahí solo por los tramposos.\n\n🔔 Suscríbete: cada semana desmontamos otro problema millonario.\n\n⏱️ CAPÍTULOS\n{{CHAPTERS}}\n\n📊 Cifras estimadas para España a partir de fuentes públicas del sector del juego. Cantidades redondeadas.\n\n#Casinos #Negocios #Dinero",
+    "tags": [
+      "cuanto cuesta un casino",
+      "comprar un casino",
+      "montar un casino",
+      "negocio del casino",
+      "ventaja de la casa",
+      "como gana dinero un casino",
+      "casinos españa",
+      "licencia de casino",
+      "casino las vegas negocio",
+      "ruleta probabilidades",
+      "maquinas tragaperras negocio",
+      "cuanto gana un casino",
+      "industria del juego",
+      "casino",
+      "apuestas",
+      "modelo de negocio",
+      "gastos ocultos",
+      "economia explicada",
+      "curiosidades de dinero",
+      "rentabilidad de un negocio",
+      "inversion millonaria",
+      "problemas millonarios"
+    ],
+    "thumbnail_text": "ASÍ CUESTA UN CASINO",
+    "thumbnail_figure": "28 M€"
+  }
+}

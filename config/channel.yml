@@ -32,11 +32,20 @@ voice:
   # edge     = GRATIS, sin clave. Voces es-ES-AlvaroNeural / ElviraNeural /
   #            XimenaNeural. Además devuelve la posición exacta de cada
   #            palabra, así que la imagen cuadra al milisegundo.
-  provider: "genaipro"
+  # genaipro | ai33 | edge (gratis)
+  # Mientras la clave de ai33.pro no funcione, edge (gratis) para no gastar
+  provider: "edge"
   base_url: "https://genaipro.io/api/v1"
+  # Solo para ai33: su contrato exacto está sin confirmar, así que se
+  # ajusta desde aquí sin tocar código cuando la clave responda.
+  tts_path: "/text-to-speech"
+  auth_header: "Authorization"
+  auth_prefix: "Bearer "
   # Con provider edge: es-ES-AlvaroNeural | es-ES-ElviraNeural | es-ES-XimenaNeural
   # Con provider genaipro: el id que saques de python scripts/list_voices.py
-  voice_id: "RwzBDEn5f6FIgpAjH9YN"
+  # ai33 (Luca): elevenlabs_XJWCXmejYcvojtfGd3Mk
+  # genaipro:    RwzBDEn5f6FIgpAjH9YN
+  voice_id: "es-ES-AlvaroNeural"
   model_id: "eleven_multilingual_v2"
   speed: 1.05                    # 0.7 - 1.2
   stability: 0.45
@@ -48,6 +57,10 @@ voice:
   # block  = una llamada por capítulo. Prosodia natural, sincronía por subtítulos.
   # scene  = una llamada por escena. Sincronía perfecta, prosodia algo más plana
   #          y ~200 llamadas por vídeo. Cambia a "scene" solo si ves desfase.
+  # Guarda cada audio en .cache/tts/. Relanzar el pipeline con el mismo
+  # guion NO vuelve a sintetizar ni a cobrar. Cambiar la voz o la
+  # entonación sí genera audio nuevo, que es lo correcto.
+  cache: true
   tts_granularity: "block"
   parallel_requests: 4           # llamadas simultáneas a GenAIPro
   # Silencio insertado entre capítulos, da respiro y marca el cambio de tema

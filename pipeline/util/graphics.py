@@ -66,7 +66,12 @@ def render(
     Tiene que salir idéntico en códec y formato, porque después se pega con el
     resto sin recodificar.
     """
-    background = _background(theme)
+    # El fondo se dibuja con holgura para poder desplazarlo dentro del plano.
+    # Ese desplazamiento es el parallax: la retícula corre más despacio que las
+    # cifras, y con eso el gráfico deja de ser un cartel y pasa a tener aire.
+    # Unos pocos píxeles bastan; llevarlo más lejos convierte cada plano en un
+    # efecto y eso es justo lo que no se quiere.
+    background = _background(theme, bleed=_BLEED)
     stream = (
         _frame(spec, theme, background, index / max(1, frames - 1)).tobytes()
         for index in range(frames)
@@ -87,25 +92,30 @@ def render(
 # Dibujo
 # --------------------------------------------------------------------------
 
-def _background(theme: Theme) -> Image.Image:
+_BLEED = 26          # holgura del fondo, en píxeles, para poder desplazarlo
+_DRIFT = 18          # cuánto recorre la retícula en todo el plano
+
+
+def _background(theme: Theme, bleed: int = 0) -> Image.Image:
     """Papel milimetrado con grano. Se dibuja UNA vez y se reaprovecha."""
-    image = Image.new("RGB", (theme.width, theme.height), theme.background)
+    width, height = theme.width + bleed * 2, theme.height + bleed * 2
+    image = Image.new("RGB", (width, height), theme.background)
     draw = ImageDraw.Draw(image)
     step = 34
     soft = tuple(
         int(c + (theme.background[i] - c) * 0.55) for i, c in enumerate(theme.grid)
     )
-    for index, x in enumerate(range(0, theme.width + step, step)):
-        draw.line([(x, 0), (x, theme.height)], fill=theme.grid if index % 5 == 0 else soft)
-    for index, y in enumerate(range(0, theme.height + step, step)):
-        draw.line([(0, y), (theme.width, y)], fill=theme.grid if index % 5 == 0 else soft)
+    for index, x in enumerate(range(0, width + step, step)):
+        draw.line([(x, 0), (x, height)], fill=theme.grid if index % 5 == 0 else soft)
+    for index, y in enumerate(range(0, height + step, step)):
+        draw.line([(0, y), (width, y)], fill=theme.grid if index % 5 == 0 else soft)
 
     # Grano de papel: sin él el fondo se ve digital y plano, que es justo lo
     # que hay que evitar en este estilo.
     rng = random.Random(11)
     for _ in range(9000):
-        x = rng.randrange(theme.width)
-        y = rng.randrange(theme.height)
+        x = rng.randrange(width)
+        y = rng.randrange(height)
         shade = rng.randint(-9, 4)
         base = image.getpixel((x, y))
         draw.point((x, y), fill=tuple(max(0, min(255, c + shade)) for c in base))
@@ -135,7 +145,15 @@ def _underline(
 def _frame(
     spec: GraphicSpec, theme: Theme, background: Image.Image, progress: float
 ) -> Image.Image:
-    image = background.copy()
+    # La reticula recorre unos pocos pixeles a lo largo del plano mientras el
+    # contenido se queda quieto. Esa diferencia de velocidad es la profundidad.
+    if background.width > theme.width:
+        bleed = (background.width - theme.width) // 2
+        dx = int(bleed - _DRIFT * progress)
+        dy = int(bleed - _DRIFT * 0.55 * progress)
+        image = background.crop((dx, dy, dx + theme.width, dy + theme.height))
+    else:
+        image = background.copy()
     draw = ImageDraw.Draw(image)
     margin = 150
 
@@ -145,6 +163,8 @@ def _frame(
 
     if spec.kind == "stack":
         _draw_stack(draw, spec, theme, margin, progress)
+    elif spec.kind == "ledger":
+        _draw_ledger(draw, spec, theme, margin, progress)
     elif spec.kind == "compare":
         _draw_compare(draw, spec, theme, margin, progress)
     elif spec.kind == "card":
@@ -152,6 +172,89 @@ def _frame(
     else:
         _draw_counter(draw, spec, theme, margin, progress)
     return image
+
+
+def _draw_ledger(
+    draw: ImageDraw.ImageDraw, spec: GraphicSpec, theme: Theme,
+    margin: int, progress: float,
+) -> None:
+    """El arco del canal, en un solo plano continuo y sin un corte.
+
+        FACTURACIÓN  ->  se aparta  ->  los COSTES se comen la cifra  ->  BENEFICIO
+
+    Esto es lo de MagnatesMedia: lo que importa no es cada número por separado,
+    es ver cómo el dinero se va yendo partida a partida hasta que queda lo que
+    queda. Y es también la transición que sale de la propia información, porque
+    la cifra de ingresos no se corta: se encoge, se va a un lado y desde ahí
+    preside el desglose.
+
+    `value` es el ingreso y `items` las partidas de gasto con su importe.
+    """
+    ingreso = spec.value
+    partidas = [(nombre, float(str(coste).replace(",", "."))) for nombre, coste in spec.items]
+    columna = theme.width * 0.27          # la cifra vive siempre aquí
+    lista_x = int(theme.width * 0.52)
+
+    # Cuatro tiempos que se solapan: nada aparece de golpe.
+    subida = _ease(min(1.0, progress / 0.16))
+    aparta = _ease(min(1.0, max(0.0, (progress - 0.17) / 0.10)))
+    gasto_hasta = max(0.0, (progress - 0.27) / 0.46)
+    cierre = _ease(min(1.0, max(0.0, (progress - 0.78) / 0.18)))
+
+    # ---- la facturación, que se encoge y sube a su sitio ----
+    size = int(220 - 128 * aparta)
+    cy = 430 - 232 * aparta
+    _centred(draw, "FACTURACIÓN", columna, cy - 54 - 44 * (1 - aparta),
+             theme, int(50 - 12 * aparta), theme.muted, alpha=subida)
+    _centred(draw, _money(ingreso * subida), columna, cy, theme, size,
+             theme.ink, alpha=subida)
+
+    if aparta < 0.05:
+        return
+
+    # ---- las partidas, cayendo una a una ----
+    restante = ingreso
+    alto_linea = 88
+    apagado = 1.0 - 0.82 * cierre         # al final se retiran casi del todo
+    for indice, (nombre, coste) in enumerate(partidas):
+        entrada = _ease(min(1.0, max(0.0, gasto_hasta * len(partidas) - indice)))
+        if entrada <= 0.02:
+            break
+        restante -= coste * entrada
+        y = 306 + indice * alto_linea
+        _text(draw, nombre.upper(), (lista_x, y), theme, 48,
+              theme.muted, alpha=entrada * apagado)
+        _text(draw, f"-{_money(coste)}", (theme.width - margin, y), theme, 52,
+              theme.accent, alpha=entrada * apagado, anchor_right=True)
+
+    if gasto_hasta <= 0.02:
+        return
+
+    # ---- lo que queda ----
+    # No hay una cifra nueva al final: la que va bajando ES el beneficio. Se le
+    # cambia el rótulo y crece. Sacar otro número aquí obligaría a leer dos
+    # veces lo mismo, y ademas se pisaba con la lista.
+    visible = min(1.0, gasto_hasta * 3)
+    etiqueta = spec.label.upper() or "BENEFICIO" if cierre > 0.5 else "QUEDA"
+    cuerpo = int(104 + 116 * cierre)
+    y_cifra = 560 + 52 * cierre
+    _centred(draw, etiqueta, columna, y_cifra - 52, theme,
+             int(40 + 18 * cierre), theme.muted, alpha=visible)
+    texto = _money(max(0.0, restante))
+    _centred(draw, texto, columna, y_cifra, theme, cuerpo, theme.ink, alpha=visible)
+    if cierre > 0.45:
+        span = draw.textlength(texto, font=_font(theme, cuerpo))
+        _underline(draw, columna - span / 2, y_cifra + cuerpo * 1.16, span, theme,
+                   (cierre - 0.45) / 0.55)
+
+
+def _money(value: float) -> str:
+    if value >= 10**6:
+        texto = f"{value / 10**6:.2f}".rstrip("0").rstrip(".").replace(".", ",")
+        return f"{texto} M€"
+    if value >= 1000:
+        return f"{_thousands(value)} €"
+    return f"{value:.0f} €"
 
 
 def _draw_compare(

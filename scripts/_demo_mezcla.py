@@ -42,13 +42,15 @@ def main() -> None:
     etiquetas = []
 
     # La voz manda: se normaliza y todo lo demás se coloca por debajo
+    # asplit porque la voz se usa dos veces: en la mezcla y como disparador
+    # del ducking. Una salida de filtro solo se puede consumir una vez.
     partes.append("[1:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
-                  "loudnorm=I=-15:TP=-1.5:LRA=11[voz]")
+                  "loudnorm=I=-15:TP=-1.5:LRA=11,asplit=2[voz][vozsc]")
 
     # La música entra a un volumen audible y se aparta sola cuando habla la voz
     partes.append(f"[2:a]aformat=sample_fmts=fltp:sample_rates=48000:channel_layouts=stereo,"
                   f"atrim=0:{total:.3f},asetpts=N/SR/TB,volume=-3dB[mus]")
-    partes.append("[mus][voz]sidechaincompress=threshold=0.06:ratio=9:attack=6:release=340[musd]")
+    partes.append("[mus][vozsc]sidechaincompress=threshold=0.06:ratio=9:attack=6:release=340[musd]")
 
     indice = 3
     for marca in marcas:
@@ -76,16 +78,19 @@ def main() -> None:
 
     mezcla = "[voz][musd]" + "".join(f"[{e}]" for e in etiquetas)
     partes.append(
-        f"{mezcla}amix=inputs={2 + len(etiquetas)}:duration=first:normalize=0,"
-        f"alimiter=limit=0.97,atrim=0:{total:.3f}[a]"
+        # duration=longest y apad: manda el video, no la voz. Con duration=first
+        # la mezcla se cortaba donde acaba la narracion y perdia los ultimos
+        # planos, que van solo con musica.
+        f"{mezcla}amix=inputs={2 + len(etiquetas)}:duration=longest:normalize=0,"
+        f"alimiter=limit=0.89,aresample=48000,apad,atrim=0:{total:.3f}[a]"
     )
 
     final = OUT / "prueba_estilos.mp4"
     ffmpeg.run(entradas + [
         "-filter_complex", ";".join(partes),
         "-map", "0:v", "-map", "[a]",
-        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
-        "-movflags", "+faststart", "-shortest", str(final),
+        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
+        "-movflags", "+faststart", str(final),
     ])
     print(f"listo: {final}  {ffmpeg.duration(final):.2f}s")
 

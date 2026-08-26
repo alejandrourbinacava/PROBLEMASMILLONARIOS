@@ -38,6 +38,10 @@ class GraphicSpec:
     unit: str = "plain"
     context: str = ""               # capítulo, arriba en pequeño
     items: list[tuple[str, str]] = field(default_factory=list)  # para "stack"
+    # Momento de cada partida dentro del plano, en fracción de 0 a 1. Sale de
+    # las marcas del SRT: así el gasto aparece cuando se nombra, en vez de a
+    # intervalos iguales que no coinciden con nada de lo que se está diciendo.
+    beats: list[float] = field(default_factory=list)
 
 
 @dataclass
@@ -217,7 +221,11 @@ def _draw_ledger(
     alto_linea = 88
     apagado = 1.0 - 0.82 * cierre         # al final se retiran casi del todo
     for indice, (nombre, coste) in enumerate(partidas):
-        entrada = _ease(min(1.0, max(0.0, gasto_hasta * len(partidas) - indice)))
+        if spec.beats and indice < len(spec.beats):
+            # Cada partida entra en su momento, el que marca el SRT
+            entrada = _ease(min(1.0, max(0.0, (progress - spec.beats[indice]) / 0.06)))
+        else:
+            entrada = _ease(min(1.0, max(0.0, gasto_hasta * len(partidas) - indice)))
         if entrada <= 0.02:
             break
         restante -= coste * entrada

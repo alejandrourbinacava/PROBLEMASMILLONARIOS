@@ -183,21 +183,89 @@ def silhouette(source: Image.Image, tint: tuple[int, int, int], strength: float 
     return Image.blend(rgba, flat, strength)
 
 
-def free_side(subject: Image.Image) -> float:
+def free_side(placed: Image.Image) -> float:
     """Dónde queda hueco para el texto, en fracción de ancho.
 
-    El texto va detrás del sujeto, y si además se le pone encima no se lee: en
-    la primera prueba "EL 2,7%" quedaba reducido a "7%" porque el hombre tapaba
-    el resto. Se mira por qué mitad pesa el sujeto y se manda el texto al otro
-    lado, que es lo que hacen ellos: figura a un lado, palabra al otro.
+    Hay que pasarle la capa YA COLOCADA en el lienzo, no el recorte en bruto.
+    `fit_canvas` mueve al sujeto a donde diga el anclaje, así que medir el
+    recorte original responde a una pregunta distinta de la que importa: en la
+    prueba el texto se mandó a la derecha porque el hombre pesaba a la izquierda
+    del recorte, pero una vez colocado estaba justo donde caía la primera cifra
+    y se la comió.
     """
-    alpha = subject.convert("RGBA").getchannel("A").resize((64, 36), Image.BILINEAR)
+    alpha = placed.convert("RGBA").getchannel("A").resize((64, 36), Image.BILINEAR)
     pixels = alpha.load()
     left = sum(pixels[x, y] for y in range(36) for x in range(32))
     right = sum(pixels[x, y] for y in range(36) for x in range(32, 64))
     if left + right == 0:
         return 0.5
-    return 0.68 if left > right else 0.32
+    return 0.70 if left > right else 0.30
+
+
+def free_span(
+    subjects: list[Image.Image], width: int, height: int, *,
+    band: tuple[float, float] = (0.28, 0.62), threshold: float = 0.10,
+) -> tuple[float, float]:
+    """El tramo horizontal más ancho sin sujetos, a la altura donde irá el texto.
+
+    `free_side` solo decía izquierda o derecha, y con eso el texto seguía
+    chocando: "EL PRIMER CLIENTE" perdía la última palabra detrás de la mochila.
+    Esto mira columna a columna cuánto sujeto hay dentro de la franja vertical
+    del texto y devuelve el hueco más largo, en fracción de ancho.
+
+    Que el texto pase por DETRÁS de una figura es el efecto que se busca; que se
+    coma una palabra entera no. Con el hueco medido se puede además ajustar el
+    cuerpo de letra para que quepa.
+    """
+    columns = 96
+    occupied = [0.0] * columns
+    top, bottom = int(90 * band[0]), max(1, int(90 * band[1]))
+    for subject in subjects:
+        alpha = subject.convert("RGBA").getchannel("A").resize((columns, 90), Image.BILINEAR)
+        pixels = alpha.load()
+        for x in range(columns):
+            hits = sum(1 for y in range(top, bottom) if pixels[x, y] > 120)
+            occupied[x] = max(occupied[x], hits / max(1, bottom - top))
+
+    best = (0, 0)
+    run_start = None
+    for x in range(columns + 1):
+        free = x < columns and occupied[x] <= threshold
+        if free and run_start is None:
+            run_start = x
+        elif not free and run_start is not None:
+            if x - run_start > best[1] - best[0]:
+                best = (run_start, x)
+            run_start = None
+    if best[1] == best[0]:
+        return (0.0, 1.0)
+    return (best[0] / columns, best[1] / columns)
+
+
+def max_scale(cutout: Image.Image, canvas_h: int, limit: float = 1.7) -> float:
+    """Hasta qué altura de lienzo se puede estirar un recorte sin destrozarlo.
+
+    Un recorte sacado de un fotograma trae los píxeles que trae. Si el sujeto
+    ocupa 325 px de alto y se lleva a 1566, son casi cinco aumentos: lo que sale
+    no es una silueta, es una mancha con el borde sucio. Devuelve la fracción de
+    alto de lienzo que respeta el límite de aumento.
+    """
+    box = cutout.convert("RGBA").getchannel("A").getbbox()
+    if not box:
+        return 0.0
+    subject_h = max(1, box[3] - box[1])
+    return (subject_h * limit) / canvas_h
+
+
+def safe_x(span: float, width: int, x: float, max_zoom: float = 1.12) -> float:
+    """Coloca un texto de ancho `span` centrado en `x` sin que se salga.
+
+    El margen tiene que contar con el empuje de cámara: la capa crece durante el
+    plano, y un texto que entraba justo se sale por los lados a mitad de la
+    escena. Eso es lo que cortaba la primera cifra de "300 PERSONAS".
+    """
+    margin = 48 + span * (max_zoom - 1) / 2 + width * (max_zoom - 1) / 2
+    return min(max(margin, width * x - span / 2), max(margin, width - span - margin))
 
 
 def is_cutout(image: Image.Image, *, floor: float = 0.005, ceiling: float = 0.82) -> bool:
@@ -211,10 +279,21 @@ def is_cutout(image: Image.Image, *, floor: float = 0.005, ceiling: float = 0.82
     1% del encuadre y es de los mejores recortes que salen: lo que hace bonito
     el plano es precisamente esa figura pequeña a contraluz.
     """
-    rgba = image.convert("RGBA")
-    small = rgba.getchannel("A").resize((96, 54), Image.BILINEAR)
-    opaque = sum(1 for value in small.getdata() if value > 160) / (96 * 54)
-    return floor <= opaque <= ceiling
+    alpha = image.convert("RGBA").getchannel("A").resize((160, 90), Image.BILINEAR)
+    values = list(alpha.getdata())
+    solid = sum(1 for value in values if value > 230)
+    fuzzy = sum(1 for value in values if 25 < value <= 230)
+    coverage = solid / len(values)
+    if not floor <= coverage <= ceiling:
+        return False
+
+    # Nitidez del borde. Un recorte de verdad es casi todo opaco o casi todo
+    # transparente, con una orla fina entre medias. Cuando el modelo no
+    # reconoce nada (una multitud desenfocada, humo, un fondo sin sujeto)
+    # devuelve una nube a medio camino que parece un recorte hasta que se
+    # compone y se ve que es una mancha. Medido sobre cuatro recortes: los
+    # buenos dan 94-95%, uno regular 71%, y la mancha 5%.
+    return solid / max(1, solid + fuzzy) >= 0.45
 
 
 def skyline(
@@ -302,8 +381,22 @@ def graded(source: Image.Image, tint: tuple[int, int, int], amount: float = 0.45
 
 def fit_canvas(source: Image.Image, width: int, height: int, scale: float = 1.0,
                anchor: tuple[float, float] = (0.5, 1.0)) -> Image.Image:
-    """Coloca un recorte sobre el lienzo, anclado donde toque."""
+    """Coloca un recorte sobre el lienzo, anclado donde toque.
+
+    Se recorta primero a lo que ocupa el sujeto. Un recorte de rembg es un
+    lienzo entero con la figura en algún punto y transparencia alrededor: sin
+    este paso, el anclaje mueve el LIENZO y la figura acaba donde estuviera,
+    no donde se ha pedido. Ese era el motivo de que el texto siguiera saliendo
+    tapado por más que se midiera el hueco: las figuras no estaban donde la
+    composición creía.
+
+    Además `scale` pasa a significar lo que dice — la altura del sujeto como
+    fracción del alto de lienzo — en vez de la altura del lienzo de origen.
+    """
     rgba = source.convert("RGBA")
+    box = rgba.getchannel("A").getbbox()
+    if box:
+        rgba = rgba.crop(box)
     target_h = int(height * scale)
     target_w = max(1, int(rgba.width * target_h / max(1, rgba.height)))
     rgba = rgba.resize((target_w, target_h), Image.LANCZOS)

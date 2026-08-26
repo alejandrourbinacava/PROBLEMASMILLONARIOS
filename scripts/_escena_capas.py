@@ -48,8 +48,18 @@ def recorte(clip: str, at: float, nombre: str) -> Image.Image:
     box = image.getchannel("A").getbbox()
     alto = (box[3] - box[1]) if box else 0
     tope = L.max_scale(image, H)
-    marca = "ok" if L.is_cutout(image) else "RECORTE MALO"
-    print(f"  {nombre:10} sujeto {alto:4}px de alto  ->  tope de escala {tope:.2f}  [{marca}]")
+    fallos = []
+    if not L.is_cutout(image):
+        fallos.append("recorte sucio")
+    if not L.is_complete(image):
+        fallos.append("CORTADO POR EL ENCUADRE")
+    marca = ", ".join(fallos) if fallos else "ok"
+    print(f"  {nombre:10} sujeto {alto:4}px de alto  ->  tope {tope:.2f}  [{marca}]")
+    if fallos:
+        raise SystemExit(
+            f"\n  {nombre} no sirve: {marca}.\n"
+            f"  Busca otro con scripts/_buscar_sujeto.py antes de componer."
+        )
     return image
 
 
@@ -116,9 +126,7 @@ def colocar(cutout: Image.Image, escala: float, anclaje: tuple[float, float]) ->
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     print(">> recortes")
-    cliente = recorte("pexels_3374591_63cab7748b.mp4", 1.5, "cliente")
-    puertas = recorte("pexels_5266998_587353952f.mp4", 1.5, "puertas")
-    gente = recorte("pexels_852107_e70c4cb090.mp4", 2.0, "gente")
+    cliente = Image.open(OUT.parent / "_sujetos/pixabay_45254_97e5d3c506_8.png").convert("RGBA")
     seguridad = recorte("pixabay_199623_cfd4ba6740.mp4", 1.5, "seguridad")
     interior = fondo_plano("pixabay_176993_16ce96aae2.mp4", 2.0, "interior")
 
@@ -126,17 +134,13 @@ def main() -> None:
     # El recorte de la multitud sale rechazado: rembg no encuentra sujeto en un
     # borron. El interior desenfocado del fondo YA hace ese papel, y ademas
     # mejor: la gente del casino se intuye, no se recorta.
-    if not L.is_cutout(gente):
-        print("  gente: descartada, no es un recorte (es una mancha)")
-
     # Tamanos modestos: si un elemento llena el encuadre, tapa a los demas y se
     # pierde la composicion por capas, que es justo lo que se busca.
-    capa_letrero = colocar(puertas, 0.26, (0.78, 0.05))
-    capa_seg = colocar(seguridad, 0.50, (0.10, 1.0))
-    capa_cliente = colocar(cliente, 0.62, (0.86, 1.0))
+    capa_seg = colocar(seguridad, 0.56, (0.12, 1.0))
+    capa_cliente = colocar(cliente, 0.74, (0.84, 1.0))
 
     # El hueco se MIDE sobre las figuras ya colocadas, no se adivina
-    hueco = L.free_span([capa_seg, capa_cliente, capa_letrero], W, H)
+    hueco = L.free_span([capa_seg, capa_cliente], W, H)
     print(f"  hueco libre: {hueco[0]:.2f} a {hueco[1]:.2f} del ancho")
 
     # Una sola paleta para todo: sombra azul noche y luz ambar de sala. Cada
@@ -158,10 +162,6 @@ def main() -> None:
         # escena en el limbo, y esto pasa en un casino.
         L.Layer(_velo(L.duotone(interior, SOMBRA, (210, 150, 120), contrast=1.15), 0.62),
                 entrance="fade", delay=0.02, duration=0.24, parallax=0.12),
-        # El letrero se queda al fondo, no recortado y flotando: pegado arriba
-        # como parte del techo, que es donde esta en un casino.
-        L.Layer(_velo(L.duotone(capa_letrero, SOMBRA, (255, 140, 150), contrast=1.3), 0.80),
-                entrance="fall", delay=0.10, duration=0.30, parallax=0.35),
         # Una franja de suelo: sin horizonte las figuras siguen flotando por
         # mucha sombra que se les ponga.
         L.Layer(_suelo(H), entrance="wipe_up", delay=0.06, duration=0.26, parallax=0.55),

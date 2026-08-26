@@ -202,6 +202,28 @@ def free_side(placed: Image.Image) -> float:
     return 0.70 if left > right else 0.30
 
 
+def is_complete(cutout: Image.Image, *, margin: int = 3) -> bool:
+    """¿Se ve el sujeto entero, o el encuadre original ya lo cortaba?
+
+    Si la silueta llega al borde de arriba, la cabeza está fuera del fotograma
+    de origen y ningún recorte la va a devolver. Compuesto, eso es una persona
+    decapitada en mitad de la escena. Los laterales igual: medio cuerpo.
+
+    El borde de abajo no cuenta: la gente se apoya en el suelo y ahí el corte es
+    natural, incluso deseable.
+    """
+    rgba = cutout.convert("RGBA")
+    box = rgba.getchannel("A").getbbox()
+    if not box:
+        return False
+    left, top, right, _ = box
+    return (
+        top > margin
+        and left > margin
+        and right < rgba.width - margin
+    )
+
+
 def duotone(
     source: Image.Image, dark: tuple[int, int, int], light: tuple[int, int, int],
     *, contrast: float = 1.5,

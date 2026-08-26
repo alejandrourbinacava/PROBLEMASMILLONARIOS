@@ -31,7 +31,7 @@ from . import ffmpeg
 @dataclass
 class GraphicSpec:
     """Todo lo que hace falta para dibujar un gráfico."""
-    kind: str                       # "counter" | "bar" | "stack"
+    kind: str                       # "counter" | "bar" | "stack" | "compare" | "card"
     label: str = ""
     display: str = ""
     value: float = 0.0
@@ -145,9 +145,92 @@ def _frame(
 
     if spec.kind == "stack":
         _draw_stack(draw, spec, theme, margin, progress)
+    elif spec.kind == "compare":
+        _draw_compare(draw, spec, theme, margin, progress)
+    elif spec.kind == "card":
+        _draw_card(draw, spec, theme, margin, progress)
     else:
         _draw_counter(draw, spec, theme, margin, progress)
     return image
+
+
+def _draw_compare(
+    draw: ImageDraw.ImageDraw, spec: GraphicSpec, theme: Theme,
+    margin: int, progress: float,
+) -> None:
+    """Dos cantidades enfrentadas, y la diferencia señalada entre ellas.
+
+    Es el recurso del canal: el argumento casi nunca es una cifra suelta, es la
+    distancia entre dos. "La ruleta tiene 37 casillas y paga 36" no se entiende
+    con un 37 en pantalla; se entiende viendo el 37 al lado del 36 y el hueco
+    marcado en rojo. Por eso la segunda entra DESPUÉS: primero se asienta la
+    referencia y luego llega lo que la contradice.
+    """
+    if len(spec.items) < 2:
+        return
+    (etiqueta_a, valor_a), (etiqueta_b, valor_b) = spec.items[0], spec.items[1]
+    centro_y = 470
+    izquierda = theme.width * 0.28
+    derecha = theme.width * 0.72
+
+    entrada_a = _ease(min(1.0, progress / 0.20))
+    entrada_b = _ease(min(1.0, max(0.0, (progress - 0.26) / 0.22)))
+
+    for x, etiqueta, valor, entrada, resaltar in (
+        (izquierda, etiqueta_a, valor_a, entrada_a, False),
+        (derecha, etiqueta_b, valor_b, entrada_b, True),
+    ):
+        if entrada <= 0.02:
+            continue
+        colour = theme.accent if resaltar else theme.ink
+        _centred(draw, etiqueta.upper(), x, centro_y - 128, theme, 46, theme.muted, alpha=entrada)
+        _centred(draw, valor, x, centro_y - int((1 - entrada) * 26), theme, 220, colour, alpha=entrada)
+
+    # El hueco entre las dos: la diferencia es el dato, no las cifras
+    if progress > 0.54 and spec.label:
+        gap = _ease(min(1.0, (progress - 0.54) / 0.30))
+        y = centro_y + 300
+        x0, x1 = izquierda + 150, derecha - 150
+        ancho = (x1 - x0) * gap
+        draw.line([(x0, y), (x0 + ancho, y)], fill=theme.accent, width=7)
+        for extremo in (x0, x0 + ancho):
+            draw.line([(extremo, y - 22), (extremo, y + 22)], fill=theme.accent, width=7)
+        if gap > 0.7:
+            _centred(draw, spec.label.upper(), theme.width / 2, y + 44, theme, 62,
+                     theme.accent, alpha=(gap - 0.7) / 0.3)
+
+
+def _draw_card(
+    draw: ImageDraw.ImageDraw, spec: GraphicSpec, theme: Theme,
+    margin: int, progress: float,
+) -> None:
+    """Un concepto suelto, a toda pantalla. Para las frases bisagra."""
+    entrada = _ease(min(1.0, progress / 0.22))
+    texto = spec.display or spec.label
+    size = _fit(draw, texto, theme, 190, theme.width - margin * 2)
+    y = 460 + int((1 - entrada) * 30)
+    _centred(draw, texto, theme.width / 2, y, theme, size, theme.ink, alpha=entrada)
+    if entrada > 0.4:
+        span = draw.textlength(texto, font=_font(theme, size))
+        _underline(draw, (theme.width - span) / 2, y + size * 1.18, span, theme,
+                   min(1.0, (entrada - 0.4) / 0.5))
+
+
+def _fit(draw: ImageDraw.ImageDraw, text: str, theme: Theme, size: int, width: int) -> int:
+    while size > 60 and draw.textlength(text, font=_font(theme, size)) > width:
+        size -= 8
+    return size
+
+
+def _centred(
+    draw: ImageDraw.ImageDraw, text: str, cx: float, y: float, theme: Theme,
+    size: int, colour: tuple[int, int, int], *, alpha: float = 1.0,
+) -> None:
+    if not text or alpha <= 0.02:
+        return
+    font = _font(theme, size)
+    _text(draw, text, (int(cx - draw.textlength(text, font=font) / 2), int(y)),
+          theme, size, colour, alpha=alpha)
 
 
 def _draw_counter(

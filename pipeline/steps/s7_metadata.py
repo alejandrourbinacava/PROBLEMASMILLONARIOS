@@ -78,6 +78,11 @@ def _format_chapters(chapters: list[dict[str, Any]]) -> str:
 def _ask_model(
     cfg: Config, topic: dict, script: dict, chapters: list[dict]
 ) -> dict[str, Any]:
+    # Un guion escrito a mano puede traer sus propios metadatos escritos a mano
+    written = script.get("metadata")
+    if isinstance(written, dict) and written:
+        log.info("Metadatos del propio guion (escritos a mano)")
+        return written
     if (cfg.get("script.provider") or "").lower() == "manual":
         return {}
     summary = " ".join(
@@ -146,7 +151,12 @@ def _build_tags(raw_tags: list[str], topic: dict, title: str) -> list[str]:
         push(tag)
     # Sin semillas en el YAML (por ejemplo con --topic) se sacan del título:
     # sin ellas las etiquetas se quedaban a medio camino de los 500 caracteres.
-    seeds = list(topic.get("tags_seed", [])) or _seeds_from_title(title)
+    # Pero si ya vienen etiquetas escritas, mandan esas: trocear el título
+    # metía palabras sueltas sin valor como "cuenta" o "real".
+    seeds = (
+        list(topic.get("tags_seed", []))
+        or (raw_tags[:3] if raw_tags else _seeds_from_title(title))
+    )
     for tag in seeds:
         push(tag)
     for tag in _GENERIC_TAGS:

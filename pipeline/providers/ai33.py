@@ -23,6 +23,7 @@ al final del vídeo se sepa exactamente qué se ha gastado.
 """
 from __future__ import annotations
 
+import json
 import time
 from pathlib import Path
 from typing import Any
@@ -32,12 +33,15 @@ from tenacity import (
     retry, retry_if_exception_type, stop_after_attempt, wait_exponential,
 )
 
-from ..config import Config, env
+from ..config import CACHE_DIR, Config, env
 from ..util import log
 
 _TIMEOUT = 90
 _POLL_INTERVAL = 3.0
-_POLL_TIMEOUT = 900.0
+# Su cola puede tardar mucho más de lo que dura el audio: una narración de 30 s
+# se quedó encolada más de quince minutos. El límite anterior era de 900 s y se
+# rendía antes de tiempo sobre trabajo YA COBRADO.
+_POLL_TIMEOUT = 3600.0
 
 _DONE = {"done", "completed", "complete", "success", "succeeded", "finished"}
 _FAILED = {"failed", "error", "cancelled", "canceled", "rejected"}
@@ -64,6 +68,11 @@ class Ai33:
 
     def synthesize(self, text: str, out_path: Path, *, want_subtitles: bool = True) -> dict:
         task_id = self.create_task(text)
+        # La tarea se cobra en cuanto se crea, así que se apunta ANTES de
+        # esperarla. Si el proceso muere o se agota la espera, el identificador
+        # queda en disco y scripts/_recuperar_tarea.py baja el audio sin volver
+        # a pagarlo.
+        self._remember(task_id, text)
         info = self.wait_for_task(task_id)
         metadata = info.get("metadata") or {}
 
@@ -116,6 +125,20 @@ class Ai33:
                 return data
             time.sleep(_POLL_INTERVAL)
         raise Ai33Error(f"Tarea {task_id} no terminó en {int(_POLL_TIMEOUT)}s")
+
+    def _remember(self, task_id: str, text: str) -> None:
+        """Deja constancia en disco de una tarea ya pagada."""
+        try:
+            path = CACHE_DIR / "ai33_tasks.jsonl"
+            path.parent.mkdir(parents=True, exist_ok=True)
+            with open(path, "a", encoding="utf-8") as handle:
+                handle.write(json.dumps(
+                    {"task_id": task_id, "chars": len(text), "text": text[:90]},
+                    ensure_ascii=False,
+                ) + "\n")
+        except OSError as exc:
+            # No poder anotarlo nunca debe tumbar una síntesis en marcha
+            log.warn(f"No se pudo registrar la tarea {task_id}: {exc}")
 
     def report(self) -> None:
         if self.credits:

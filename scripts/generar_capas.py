@@ -63,6 +63,37 @@ FONDO_BLANCO = (
 )
 
 
+# Por debajo de esto, el recorte por blanco no ha cuajado: el modelo no puso
+# fondo plano y devolvio una escena entera.
+MINIMO_RECORTE = 0.15
+
+
+def recortar_con_modelo(imagen: Image.Image) -> Image.Image | None:
+    """Recurso de reserva: segmentar el sujeto cuando no hay fondo blanco.
+
+    Hace falta porque el modelo no siempre obedece. Medido en esta tanda:
+    01_casino salio con un 32% de blanco y se recorto limpio, pero 08_hombre
+    solo tenia un 4% -hizo una escena completa con el hombre dentro- y quedo un
+    rectangulo opaco tapando el plano entero.
+
+    Para una figura humana rembg va bien, que es justo el caso en el que falla
+    el recorte por blanco: un personaje suelto es lo que el modelo tiende a
+    convertir en escena.
+    """
+    try:
+        from rembg import new_session, remove
+    except ImportError:
+        print("    rembg no esta instalado; no hay recorte de reserva")
+        return None
+    global _SESION
+    if _SESION is None:
+        _SESION = new_session("u2net")
+    return remove(imagen.convert("RGBA"), session=_SESION)
+
+
+_SESION = None
+
+
 def recortar_blanco(imagen: Image.Image) -> Image.Image:
     """Convierte el blanco de fondo en transparencia.
 
@@ -165,8 +196,15 @@ def main() -> None:
         if alfa:
             imagen = recortar_blanco(imagen)
             canal = np.asarray(imagen.getchannel("A"))
-            print(f"  recortado: {(canal < 20).mean() * 100:.0f}% transparente, "
-                  f"{(canal > 235).mean() * 100:.0f}% opaco")
+            fuera = (canal < 20).mean()
+            print(f"  recortado por blanco: {fuera * 100:.0f}% transparente")
+            if fuera < MINIMO_RECORTE:
+                print("    el modelo no puso fondo plano; recorto con el modelo")
+                segmentada = recortar_con_modelo(Image.open(rutas[0]))
+                if segmentada is not None:
+                    imagen = segmentada
+                    canal = np.asarray(imagen.getchannel("A"))
+                    print(f"    -> {(canal < 20).mean() * 100:.0f}% transparente")
         imagen.save(args.out / src)
         print(f"  -> {args.out / src}")
 

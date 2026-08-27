@@ -22,12 +22,16 @@ export const RemotionRoot: React.FC = () => {
         manifest: manifest as Manifest,
         assetDir: 'scene',
         title: undefined,
-        // Dolly-in muy lento: 6 segundos para recorrer 120 unidades. La deriva
-        // vertical es del 2,5% del alto, lo justo para que no parezca una foto.
+        // El movimiento lateral es lo que hace VISIBLE la separacion en capas.
+        // Un dolly puro no vale: con las z de una escena normal, la capa mas
+        // cercana crece un 13,6% y la mas lejana un 7,1%, o sea 6,5 puntos de
+        // diferencia, que el ojo no distingue de un zoom sobre una foto plana.
+        // Desplazando 260 px, la capa de delante recorre 260 y la del fondo
+        // 144: 116 px de diferencia, y ahi si se lee la profundidad.
         startZ: 0,
-        endZ: 120,
-        panX: 0,
-        panY: 0.025,
+        endZ: 90,
+        panX: 260,
+        panY: 0.02,
       }}
     />
   );

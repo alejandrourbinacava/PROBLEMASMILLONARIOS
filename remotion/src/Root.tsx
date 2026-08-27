@@ -6,7 +6,9 @@ import {Demo} from './Demo';
 import {Secuencia, Paso} from './Secuencia';
 import {PruebaMagnates, PasoMagnates} from './PruebaMagnates';
 import {Guion, GuionSpec} from './Guion';
+import {Episodio, EpisodioSpec} from './Episodio';
 import guionCasa from '../public/guion/escenas.json';
+import episodioCasino from '../public/episodio/escenas.json';
 
 // Tres capas por escena, ni una mas: fondo, sujeto y elementos/texto.
 // Las Z se reparten en los rangos utiles: fondo entre -200 y -400, sujeto en 0,
@@ -191,6 +193,23 @@ export const RemotionRoot: React.FC = () => {
           audio: 'prueba/voz.mp3',
         }}
       />
+      <Composition
+        id="Episodio"
+        component={Episodio}
+        durationInFrames={(episodioCasino as unknown as EpisodioSpec).escenas.reduce(
+          (total, escena) => total + escena.duracion,
+          0,
+        )}
+        fps={(episodioCasino as unknown as EpisodioSpec).fps}
+        width={(episodioCasino as unknown as EpisodioSpec).ancho}
+        height={(episodioCasino as unknown as EpisodioSpec).alto}
+        defaultProps={{
+          spec: episodioCasino as unknown as EpisodioSpec,
+          carpeta: 'episodio',
+          audio: 'episodio/voz.mp3',
+        }}
+      />
+
       <Composition
         id="Guion"
         component={Guion}

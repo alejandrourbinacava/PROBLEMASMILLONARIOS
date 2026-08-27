@@ -47,16 +47,45 @@ MARGEN_ILUMINADO = 60.0
 LUMA = np.array([0.2126, 0.7152, 0.0722], dtype=np.float32)
 
 
-def luminancia(ruta: Path, grade: dict | None) -> float:
+def banda_sujeto(ruta: Path, sujeto: dict) -> tuple[float, float]:
+    """Franja horizontal del cuadro que va a ocupar el sujeto, en 0..1.
+
+    El sujeto se coloca por su centro -`posicion_x`- y se escala por su alto,
+    asi que su ancho sale de la proporcion de su propio recorte.
+    """
+    imagen = Image.open(ruta).convert("RGBA")
+    caja = imagen.getchannel("A").point(lambda v: 255 if v > 40 else 0).getbbox()
+    if not caja:
+        return (0.0, 1.0)
+    ancho_px, alto_px = caja[2] - caja[0], caja[3] - caja[1]
+    alto = float(sujeto.get("escala_alto", 0.6))
+    # 16:9 de lienzo: un alto de 0,6 en un sujeto cuadrado ocupa 0,6*9/16 de ancho
+    ancho = alto * (ancho_px / max(alto_px, 1)) * (1080 / 1920)
+    centro = float(sujeto.get("posicion_x", 0.5))
+    return (max(0.0, centro - ancho / 2), min(1.0, centro + ancho / 2))
+
+
+def luminancia(ruta: Path, grade: dict | None,
+               franja: tuple[float, float] | None = None) -> float:
     """Luminancia media de la parte VISIBLE de la capa, con su grade aplicado.
 
     Solo cuentan los pixeles opacos: en un PNG recortado, el 81% transparente
     es aire y promediarlo daria casi cero para cualquier sujeto.
+
+    Con `franja` se mira solo esa parte del ancho, que es donde va a caer el
+    sujeto. Si ahi no hay nada opaco se vuelve a la capa entera, porque una
+    franja vacia no dice nada.
     """
     imagen = Image.open(ruta).convert("RGBA")
     imagen.thumbnail((480, 480))
     a = np.asarray(imagen, dtype=np.float32)
     visible = a[:, :, 3] > 140
+    if franja:
+        recorte = np.zeros_like(visible)
+        i, j = (int(franja[0] * a.shape[1]), int(np.ceil(franja[1] * a.shape[1])))
+        recorte[:, i:max(j, i + 1)] = True
+        if (visible & recorte).sum() > visible.sum() * 0.02:
+            visible = visible & recorte
     if not visible.any():
         return 0.0
 
@@ -87,7 +116,7 @@ def main() -> None:
     faltan = [
         capa["src"]
         for escena in spec["escenas"]
-        for capa in escena["capas"]
+        for capa in escena.get("capas", [])
         if capa.get("src") and not (args.capas / capa["src"]).exists()
     ]
     if faltan:
@@ -104,7 +133,7 @@ def main() -> None:
     # cuerpo previsto, que es donde el rotulo empieza a no leerse de lejos.
     ANCHO_POR_LETRA = 0.52   # em de una tipografia negra en mayusculas
     for escena in spec["escenas"]:
-        for capa in escena["capas"]:
+        for capa in escena.get("capas", []):
             texto = capa.get("texto") or capa.get("contenido")
             if capa.get("src") or not texto:
                 continue
@@ -125,18 +154,24 @@ def main() -> None:
                     print(f"  aviso  {aviso}")
 
     for escena in spec["escenas"]:
-        capas = [c for c in escena["capas"] if c.get("src")]
+        capas = [c for c in escena.get("capas", []) if c.get("src")]
         if not capas:
             continue
         sujetos = [c for c in capas if c.get("principal")]
         if not sujetos:
             continue
-        fondo = min(capas, key=lambda c: c["z"])
-
-        ruta_fondo = args.capas / fondo["src"]
-        if not ruta_fondo.exists():
+        # Contra que se mide: la capa mas LUMINOSA que quede detras del sujeto,
+        # no la mas profunda.
+        #
+        # El guion lo dice explicitamente: "de noche, la fuente luminosa es el
+        # neon del casino, no el cielo". Midiendo contra la mas profunda, las
+        # escenas nocturnas comparaban la silueta con un cielo a brillo 0,28 y
+        # daban dos puntos de separacion, cuando lo que recorta la figura es la
+        # fachada encendida que tiene justo detras.
+        detras = [c for c in capas if not c.get("principal")
+                  and (args.capas / c["src"]).exists()]
+        if not detras:
             continue
-        luz_fondo = luminancia(ruta_fondo, fondo.get("grade"))
 
         for sujeto in sujetos:
             ruta = args.capas / sujeto["src"]
@@ -145,6 +180,16 @@ def main() -> None:
             luz_sujeto = luminancia(ruta, sujeto.get("grade"))
             brillo = float((sujeto.get("grade") or {}).get("brillo", 1.0))
             es_silueta = brillo <= 0.25
+
+            # Se mide la franja donde va a caer el sujeto, no la capa entera.
+            # La fachada de C6_01 es un edificio oscuro con un vano ardiendo:
+            # de media da 22, y con eso el aviso decia que el hombre se funde
+            # con el fondo. Pero el hombre va DELANTE del vano, que es lo que
+            # lo recorta. La media de toda la capa contesta a otra pregunta.
+            franja = banda_sujeto(ruta, sujeto)
+            medidas = [(luminancia(args.capas / c["src"], c.get("grade"), franja), c)
+                       for c in detras]
+            luz_fondo, fondo = max(medidas, key=lambda m: m[0])
 
             # Silueta: hace falta luz DETRAS. Objeto iluminado: tiene que
             # destacar DELANTE. En los dos casos, 100 puntos de separacion.

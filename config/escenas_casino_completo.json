@@ -1,0 +1,2251 @@
+{
+  "proyecto": "precio_de_ser_el_dueno_ep02_casino",
+  "fps": 25,
+  "ancho": 1920,
+  "alto": 1080,
+  "duracion_objetivo_s": 780,
+  "_nota_de_uso": "Mismo esquema que el episodio 01. Aquí se especifican al completo el GANCHO y el CAPÍTULO 1, más los patrones. El resto se genera aplicando los patrones al guion. No inventes tipos ni campos nuevos: si un plano no encaja, para y avisa.",
+  "mezcla_objetivo": {
+    "clip": 0.45,
+    "grafico": 0.3,
+    "capas": 0.25,
+    "regla": "Las escenas de capas son caras. Se reservan para el gancho, la apertura de cada capítulo y las revelaciones de los capítulos 4 y 6."
+  },
+  "paleta_episodio": {
+    "nota": "Este episodio va más oscuro y más frío que el 01. El casino se rueda de noche; McDonald's era amanecer. Sirve para diferenciar episodios de un vistazo.",
+    "dominante": "azul noche con acentos ámbar de neón",
+    "excepcion": "El capítulo 4 (impuestos) va en gris institucional frío, sin ámbar. Es el único bloque sin neón."
+  },
+  "tipografia": {
+    "familia": "Archivo Black",
+    "transform": "uppercase",
+    "tracking": -0.01,
+    "color": "#E8E2D8",
+    "sombra": {
+      "desenfoque": 24,
+      "opacidad": 0.5
+    },
+    "entrada": {
+      "frames": 6,
+      "escala": [
+        1.04,
+        1.0
+      ],
+      "opacidad": [
+        0,
+        1
+      ]
+    }
+  },
+  "grade_global": {
+    "lut": "grade_casino.cube",
+    "negros": 0.03,
+    "vineta": 0.4,
+    "grano": 6
+  },
+  "patrones": {
+    "apertura_capitulo": {
+      "tipo": "capas",
+      "duracion": 110,
+      "preset": "push_lento",
+      "estructura": [
+        "cielo",
+        "decorado",
+        "suelo",
+        "sujeto"
+      ],
+      "regla_contraste": "La capa de fondo debe superar en 100 puntos de luminancia media a la del sujeto. Sujeto a brillo <= 0.12, fondo luminoso a brillo >= 1.20. De noche, la fuente luminosa es el neón del casino, no el cielo.",
+      "sujeto": {
+        "escala_alto": 0.65,
+        "posicion_x": 0.34,
+        "anclaje": "pies"
+      },
+      "texto": {
+        "posicion": "inferior"
+      }
+    },
+    "cifra_impacto": {
+      "tipo": "grafico",
+      "duracion": 75,
+      "variante": "contador",
+      "fondo": "negro casi puro",
+      "regla": "La cifra ocupa el 40% del ancho. Contador de 0 al valor en 40 frames, 35 frames en reposo. Golpe grave en el frame final."
+    },
+    "desglose": {
+      "tipo": "grafico",
+      "duracion": 150,
+      "variante": "lista_apilada",
+      "regla": "Cada concepto entra por separado con su cifra a la derecha. Total al final, parpadea una vez. Máximo 5 conceptos."
+    },
+    "comparativa": {
+      "tipo": "grafico",
+      "duracion": 130,
+      "variante": "barras_enfrentadas",
+      "regla": "Dos o tres valores en barras horizontales que crecen desde la izquierda. Se usa para comparar jurisdicciones o modelos de negocio. Máximo 4 barras."
+    },
+    "textura_real": {
+      "tipo": "clip",
+      "duracion": 90,
+      "regla": "Metraje real, sin texto salvo que el guion lo pida. Corte en seco a los 3-4 segundos."
+    },
+    "documento": {
+      "tipo": "documento",
+      "duracion": 100,
+      "regla": "Página oficial escaneada, push-in lento, la línea relevante se resalta en ámbar al frame 40."
+    },
+    "archivo_historico": {
+      "tipo": "clip",
+      "duracion": 95,
+      "grade": {
+        "saturacion": 0.15,
+        "contraste": 1.35,
+        "tinte": "#c9a227",
+        "tinteFuerza": 0.2
+      },
+      "regla": "Metraje de archivo virado, grano al doble. Reservado a los planos de la Nevada de los años 50."
+    }
+  },
+  "escenas": [
+    {
+      "id": "H01",
+      "bloque": "gancho",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 115,
+      "locucion": "En febrero de dos mil veintiséis, los casinos de Nevada ganaron mil doscientos treinta y seis millones de dólares.",
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "night sky, deep dark blue, slow heavy clouds, no moon, no stars, empty, no aircraft",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "single casino building at night, huge glowing neon marquee, every window lit, three-quarter view, transparent background, no sky, no ground, no other buildings, no cars, no people",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "empty wet asphalt at night reflecting distant neon, transparent background above horizon",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "man from behind, long dark coat, hands in pockets, full body including feet, solid dark silhouette against bright neon, night, plain white background",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ],
+      "texto": {
+        "linea": "Febrero de 2026",
+        "posicion": "inferior",
+        "ancho_max": 0.45,
+        "delante_de": [
+          "H01_cielo",
+          "H01_casino",
+          "H01_asfalto"
+        ],
+        "entrada_frame": 10
+      }
+    },
+    {
+      "id": "H02",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 85,
+      "locucion": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
+      "contenido": {
+        "cifra": 1236196257,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "perdido por los clientes · febrero 2026"
+      },
+      "fondo": "negro",
+      "sonido": "golpe grave en el frame final del contador",
+      "regla_montaje": "El contador sube dígito a dígito hasta la cifra completa. Ver los nueve dígitos llenarse es el efecto."
+    },
+    {
+      "id": "H03",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "Solo el Strip de Las Vegas se quedó seiscientos noventa y seis millones. En veintiocho días.",
+      "contenido": {
+        "cifra": 696285791,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "solo el Strip · 28 días"
+      },
+      "fondo": "negro"
+    },
+    {
+      "id": "H04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "Y ese dinero no depende de si la temporada fue buena. Depende de una fórmula matemática que no falla nunca.",
+      "busqueda": "roulette wheel spinning slow motion · slot machine reels spinning · casino chips stacking · dealer dealing cards",
+      "regla_montaje": "Cuatro subplanos de 24 frames. Ritmo mecánico, repetitivo a propósito: la idea es la máquina, no la emoción."
+    },
+    {
+      "id": "H05",
+      "bloque": "gancho",
+      "tipo": "capas",
+      "duracion": 125,
+      "locucion": "Con un McDonald's, el problema era el dinero. Con un casino, el dinero es la parte fácil.",
+      "luz": "interior de despacho oficial en penumbra, luz fluorescente fria cenital, persianas cerradas",
+      "horizonte": 0.8,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.18
+        ],
+        "y": [
+          0,
+          -8
+        ]
+      },
+      "capas": [
+        {
+          "id": "H05_fondo",
+          "src": "H05_fondo.png",
+          "z": -700,
+          "zoom": [
+            1.0,
+            1.02
+          ],
+          "prompt": "bright backlit venetian blinds, cold white glow, heavy bokeh, no people, no objects",
+          "grade": {
+            "saturacion": 0.25,
+            "brillo": 1.3,
+            "contraste": 1.05,
+            "desenfoque": 7
+          }
+        },
+        {
+          "id": "H05_mesa",
+          "src": "H05_mesa.png",
+          "z": -200,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "grey institutional desk surface, cold overhead fluorescent light, transparent background, empty",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.5,
+            "contraste": 1.25
+          }
+        },
+        {
+          "id": "H05_expediente",
+          "src": "H05_expediente.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.24
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.4,
+          "anclaje": "centro",
+          "sombra": {
+            "angulo": 250,
+            "largo": 0.7,
+            "opacidad": 0.6
+          },
+          "prompt": "thick closed manila investigation file folder tied with string, cold overhead light, plain white background, full object",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.85,
+            "contraste": 1.4
+          }
+        }
+      ],
+      "texto": {
+        "linea": "Hay algo que nunca va a ser tuyo",
+        "posicion": "inferior",
+        "ancho_max": 0.75,
+        "delante_de": [
+          "H05_fondo",
+          "H05_mesa"
+        ],
+        "entrada_frame": 60
+      }
+    },
+    {
+      "id": "H06",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "duracion": 60,
+      "variante": "titulo",
+      "locucion": null,
+      "contenido": {
+        "titulo": "Lo que cuesta de verdad tener un casino"
+      },
+      "sonido": "silencio total, golpe grave con la entrada del título"
+    },
+    {
+      "id": "C1_01",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 100,
+      "locucion": "El primero es lo que imaginas: un resort. Torre de hotel, restaurantes, espectáculo, spa.",
+      "busqueda": "las vegas strip resort aerial night · hotel tower pool deck · casino resort lobby wide",
+      "regla_montaje": "Planos amplios, aéreos, ostentosos. Contraste deliberado con C1_04."
+    },
+    {
+      "id": "C1_02",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 80,
+      "locucion": "Un casino de tres plantas de ese estilo cuesta construirlo entre sesenta y ciento cincuenta millones de dólares.",
+      "contenido": {
+        "cifra": 150000000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "solo la construcción"
+      },
+      "fondo": "negro"
+    },
+    {
+      "id": "C1_03",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "duracion": 110,
+      "variante": "frase_destacada",
+      "locucion": "Y esa cifra es solo el hormigón. No incluye el terreno, ni las licencias, ni una sola máquina.",
+      "contenido": {
+        "linea": "Eso es solo el hormigón"
+      },
+      "regla_montaje": "Texto solo sobre negro. Sin música bajo la frase."
+    },
+    {
+      "id": "C1_04",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "El segundo casino es el que nadie enseña: un edificio de una planta, sala de juego y poco más.",
+      "busqueda": "small roadside casino exterior night · single story gaming hall · truck stop slot machines · rural casino parking lot",
+      "regla_montaje": "Planos pobres, feos, honestos. El contraste con C1_01 es el argumento."
+    },
+    {
+      "id": "C1_05",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 140,
+      "locucion": "Un casino independiente se construye entre diez y cuarenta millones. Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
+      "contenido": {
+        "barras": [
+          {
+            "etiqueta": "Casino independiente",
+            "min": 10000000,
+            "max": 40000000
+          },
+          {
+            "etiqueta": "Casino de 2 plantas",
+            "min": 40000000,
+            "max": 120000000
+          },
+          {
+            "etiqueta": "Resort de 3 plantas",
+            "min": 60000000,
+            "max": 150000000
+          }
+        ],
+        "prefijo": "$"
+      },
+      "regla_montaje": "Las barras crecen en secuencia, 20 frames cada una. La última desborda por la derecha a propósito."
+    },
+    {
+      "id": "C1_06",
+      "bloque": "capitulo_1",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 120,
+      "locucion": "Y aquí está la primera decisión real: en el resort, el juego no es el negocio principal. Es el gancho.",
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.16
+        ],
+        "x": [
+          0,
+          14
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "bright casino gaming floor seen from a distance, glowing slot machine banks, warm neon, heavy bokeh, no people",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.25,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "dark ornate doorway arch framing edges of frame, interior architecture silhouette, transparent center, plain white background",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.36,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "man from behind standing in a doorway, suit, full body including feet, solid dark silhouette against bright interior, plain white background",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ],
+      "texto": {
+        "linea": "El juego es el gancho",
+        "posicion": "inferior",
+        "ancho_max": 0.55,
+        "delante_de": [
+          "C1_06_sala",
+          "C1_06_arco"
+        ],
+        "entrada_frame": 50
+      }
+    },
+    {
+      "id": "C1_07",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "duracion": 130,
+      "variante": "comparativa_modelos",
+      "locucion": "En el casino pequeño, el juego es el negocio. Cien por cien. Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas.",
+      "contenido": {
+        "columnas": [
+          {
+            "titulo": "Resort",
+            "lineas": [
+              "Juego = gancho",
+              "Habitaciones",
+              "Restaurantes",
+              "Espectáculo"
+            ]
+          },
+          {
+            "titulo": "Casino pequeño",
+            "lineas": [
+              "Juego = 100%",
+              "—",
+              "—",
+              "—"
+            ]
+          }
+        ]
+      },
+      "regla_montaje": "Dos columnas que se construyen simultáneamente. Los guiones de la derecha entran con un golpe seco cada uno."
+    },
+    {
+      "id": "C1_08",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "Vamos a seguir el pequeño. Porque es el único que una persona normal podría plantearse.",
+      "busqueda": "empty small casino floor early morning · cleaner vacuuming casino carpet · slot machine attendant alone",
+      "regla_montaje": "Un solo plano largo y quieto. Baja el ritmo antes del capítulo 2."
+    },
+    {
+      "id": "Gx_01a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó."
+    },
+    {
+      "id": "Gx_01b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó."
+    },
+    {
+      "id": "Gx_02",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Depende de una fórmula matemática que no falla nunca."
+    },
+    {
+      "id": "Gx_03",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?"
+    },
+    {
+      "id": "Gx_04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 73,
+      "locucion": "Y aquí es donde este vídeo se separa del anterior."
+    },
+    {
+      "id": "Gx_05",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Porque con un McDonald's, el problema era el dinero."
+    },
+    {
+      "id": "Gx_06a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "Gx_06b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "Gx_06c",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 82,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "Gx_06d",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "C1x_01",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Un edificio de una planta, sala de juego y poco más."
+    },
+    {
+      "id": "C1x_02",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "Sin hotel, sin espectáculo."
+    },
+    {
+      "id": "C1x_03",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 122,
+      "locucion": "Un casino independiente de ese tipo se construye entre diez y cuarenta millones.",
+      "variante": "barras_enfrentadas"
+    },
+    {
+      "id": "C1x_04a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro."
+    },
+    {
+      "id": "C1x_04b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro."
+    },
+    {
+      "id": "C1x_05",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 98,
+      "locucion": "Y aquí está la primera decisión real que casi nadie plantea bien."
+    },
+    {
+      "id": "C1x_06a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "En el resort, el juego no es el negocio principal, es el gancho."
+    },
+    {
+      "id": "C1x_06b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "",
+      "contexto": "En el resort, el juego no es el negocio principal, es el gancho."
+    },
+    {
+      "id": "C1x_07a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 70,
+      "locucion": "El dinero de verdad está en las habitaciones, los restaurantes, las entradas del espectáculo."
+    },
+    {
+      "id": "C1x_07b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 69,
+      "locucion": "",
+      "contexto": "El dinero de verdad está en las habitaciones, los restaurantes, las entradas del espectáculo."
+    },
+    {
+      "id": "C1x_08",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "La sala de juego es lo que te trae a la gente hasta la puerta."
+    },
+    {
+      "id": "C1x_09a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "En el casino pequeño, el juego es el negocio cien por cien."
+    },
+    {
+      "id": "C1x_09b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "",
+      "contexto": "En el casino pequeño, el juego es el negocio cien por cien."
+    },
+    {
+      "id": "C1x_10a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas."
+    },
+    {
+      "id": "C1x_10b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "",
+      "contexto": "Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas."
+    },
+    {
+      "id": "C1x_11a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "Vamos a seguir el pequeño, porque es el único que una persona normal podría plantearse y porque es donde la matemática se ve limpia, sin el ruido de las habitaciones de hotel"
+    },
+    {
+      "id": "C1x_11b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 86,
+      "locucion": "",
+      "contexto": "Vamos a seguir el pequeño, porque es el único que una persona normal podría plantearse y porque es donde la matemática se ve limpia, sin el ruido de las habitaciones de hotel"
+    },
+    {
+      "id": "C1x_11c",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 84,
+      "locucion": "",
+      "contexto": "Vamos a seguir el pequeño, porque es el único que una persona normal podría plantearse y porque es donde la matemática se ve limpia, sin el ruido de las habitaciones de hotel"
+    },
+    {
+      "id": "C2_01",
+      "bloque": "capitulo_2",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 132,
+      "locucion": "Construir un casino cuesta entre trescientos y quinientos cincuenta dólares por pie cuadrado."
+    },
+    {
+      "id": "C2_02a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 74,
+      "locucion": "En ubicaciones prémium, con interiores caros y tecnología puntera, puede pasar de novecientos."
+    },
+    {
+      "id": "C2_02b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 73,
+      "locucion": "",
+      "contexto": "En ubicaciones prémium, con interiores caros y tecnología puntera, puede pasar de novecientos."
+    },
+    {
+      "id": "C2_03a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 52,
+      "locucion": "Para que te hagas una idea, eso es precio de hotel de cinco estrellas."
+    },
+    {
+      "id": "C2_03b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 53,
+      "locucion": "",
+      "contexto": "Para que te hagas una idea, eso es precio de hotel de cinco estrellas."
+    },
+    {
+      "id": "C2_04a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Un casino se construye con los estándares de un resort de lujo, aunque solo tenga máquinas dentro."
+    },
+    {
+      "id": "C2_04b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "",
+      "contexto": "Un casino se construye con los estándares de un resort de lujo, aunque solo tenga máquinas dentro."
+    },
+    {
+      "id": "C2_05",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 84,
+      "locucion": "¿Por qué? Porque el edificio es parte del producto."
+    },
+    {
+      "id": "C2_06a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida."
+    },
+    {
+      "id": "C2_06b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "",
+      "contexto": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida."
+    },
+    {
+      "id": "C2_06c",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "",
+      "contexto": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida."
+    },
+    {
+      "id": "C2_06d",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "",
+      "contexto": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida."
+    },
+    {
+      "id": "C2_07a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "Nada de eso es decoración, es ingeniería de comportamiento y sale cara."
+    },
+    {
+      "id": "C2_07b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "Nada de eso es decoración, es ingeniería de comportamiento y sale cara."
+    },
+    {
+      "id": "C2_08",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 47,
+      "locucion": "Y luego está lo que va dentro."
+    },
+    {
+      "id": "C2_09",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "Las máquinas tragaperras modernas no se compran sin más."
+    },
+    {
+      "id": "C2_10a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Muchas se arriendan al fabricante con una parte de la recaudación incluida en el trato."
+    },
+    {
+      "id": "C2_10b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 63,
+      "locucion": "",
+      "contexto": "Muchas se arriendan al fabricante con una parte de la recaudación incluida en el trato."
+    },
+    {
+      "id": "C2_11",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 76,
+      "locucion": "Las mesas necesitan crupieres formados."
+    },
+    {
+      "id": "C2_12a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "El sistema de vigilancia de un casino es, literalmente, el estándar de seguridad al que se compara todo lo demás."
+    },
+    {
+      "id": "C2_12b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "",
+      "contexto": "El sistema de vigilancia de un casino es, literalmente, el estándar de seguridad al que se compara todo lo demás."
+    },
+    {
+      "id": "C2_13a",
+      "bloque": "capitulo_2",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "Un modelo financiero de resort grande sitúa solo el equipamiento y el mobiliario en más de sesenta millones de dólares.",
+      "variante": "contador"
+    },
+    {
+      "id": "C2_13b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "",
+      "contexto": "Un modelo financiero de resort grande sitúa solo el equipamiento y el mobiliario en más de sesenta millones de dólares."
+    },
+    {
+      "id": "C2_14a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 65,
+      "locucion": "Pero todo esto, por caro que suene, es dinero, y el dinero se consigue."
+    },
+    {
+      "id": "C2_14b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 65,
+      "locucion": "",
+      "contexto": "Pero todo esto, por caro que suene, es dinero, y el dinero se consigue."
+    },
+    {
+      "id": "C2_15",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 42,
+      "locucion": "Lo siguiente no"
+    },
+    {
+      "id": "C3_01",
+      "bloque": "capitulo_3",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 77,
+      "locucion": "Aquí está el malentendido que tiene todo el mundo."
+    },
+    {
+      "id": "C3_02a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 82,
+      "locucion": "La gente cree que una licencia de juego es un papel que se compra, que hay un precio, lo pagas y ya está."
+    },
+    {
+      "id": "C3_02b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "La gente cree que una licencia de juego es un papel que se compra, que hay un precio, lo pagas y ya está."
+    },
+    {
+      "id": "C3_03",
+      "bloque": "capitulo_3",
+      "tipo": "documento",
+      "patron": "documento",
+      "duracion": 104,
+      "locucion": "Vamos a mirar los números oficiales de Nevada, porque son públicos."
+    },
+    {
+      "id": "C3_04a",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
+      "variante": "contador"
+    },
+    {
+      "id": "C3_04b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 87,
+      "locucion": "",
+      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares."
+    },
+    {
+      "id": "C3_04c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 86,
+      "locucion": "",
+      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares."
+    },
+    {
+      "id": "C3_04d",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 87,
+      "locucion": "",
+      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares."
+    },
+    {
+      "id": "C3_05",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 105,
+      "locucion": "Siete mil quinientos dólares para un negocio de cuarenta millones.",
+      "variante": "contador"
+    },
+    {
+      "id": "C3_06a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 53,
+      "locucion": "Parece un chiste, y lo es, porque la tasa no es el coste."
+    },
+    {
+      "id": "C3_06b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 53,
+      "locucion": "",
+      "contexto": "Parece un chiste, y lo es, porque la tasa no es el coste."
+    },
+    {
+      "id": "C3_07a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "El coste es la investigación. Cuando solicitas una licencia de juego, el Nevada Gaming Control Board no evalúa tu plan de negocio, te evalúa a ti, y tú pagas esa investigación."
+    },
+    {
+      "id": "C3_07b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "",
+      "contexto": "El coste es la investigación. Cuando solicitas una licencia de juego, el Nevada Gaming Control Board no evalúa tu plan de negocio, te evalúa a ti, y tú pagas esa investigación."
+    },
+    {
+      "id": "C3_07c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "",
+      "contexto": "El coste es la investigación. Cuando solicitas una licencia de juego, el Nevada Gaming Control Board no evalúa tu plan de negocio, te evalúa a ti, y tú pagas esa investigación."
+    },
+    {
+      "id": "C3_08a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "archivo_historico",
+      "duracion": 77,
+      "locucion": "Empieza en torno a diez mil dólares y puede superar los cincuenta mil, según lo complicada que sea tu vida."
+    },
+    {
+      "id": "C3_08b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "Empieza en torno a diez mil dólares y puede superar los cincuenta mil, según lo complicada que sea tu vida."
+    },
+    {
+      "id": "C3_09",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "¿Y qué investigan? Todo."
+    },
+    {
+      "id": "C3_10a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 94,
+      "locucion": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas."
+    },
+    {
+      "id": "C3_10b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "",
+      "contexto": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas."
+    },
+    {
+      "id": "C3_10c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "",
+      "contexto": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas."
+    },
+    {
+      "id": "C3_10d",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 94,
+      "locucion": "",
+      "contexto": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas."
+    },
+    {
+      "id": "C3_11",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 99,
+      "locucion": "No hay presunción de inocencia. La carga de la prueba es tuya."
+    },
+    {
+      "id": "C3_12",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "Tienes que demostrar que eres apto."
+    },
+    {
+      "id": "C3_13",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 72,
+      "locucion": "Ellos no tienen que demostrar que no lo eres."
+    },
+    {
+      "id": "C3_14",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "El proceso puede llevar más de un año."
+    },
+    {
+      "id": "C3_15",
+      "bloque": "capitulo_3",
+      "tipo": "documento",
+      "patron": "documento",
+      "duracion": 125,
+      "locucion": "Y para las categorías más grandes, las cifras oficiales dejan de ser simbólicas."
+    },
+    {
+      "id": "C3_16a",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "Una licencia de juego interactivo en Nevada cuesta quinientos mil dólares iniciales por dos años y doscientos cincuenta mil anuales después.",
+      "variante": "contador"
+    },
+    {
+      "id": "C3_16b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 66,
+      "locucion": "",
+      "contexto": "Una licencia de juego interactivo en Nevada cuesta quinientos mil dólares iniciales por dos años y doscientos cincuenta mil anuales después."
+    },
+    {
+      "id": "C3_16c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "Una licencia de juego interactivo en Nevada cuesta quinientos mil dólares iniciales por dos años y doscientos cincuenta mil anuales después."
+    },
+    {
+      "id": "C3_17",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 105,
+      "locucion": "La de operador de apuestas deportivas arranca en doscientos cincuenta mil.",
+      "variante": "contador"
+    },
+    {
+      "id": "C3_18",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "Y aun así, ese no es el gasto principal de este capítulo."
+    },
+    {
+      "id": "C3_19a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 76,
+      "locucion": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas"
+    },
+    {
+      "id": "C3_19b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas"
+    },
+    {
+      "id": "C3_19c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas"
+    },
+    {
+      "id": "C3_19d",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "",
+      "contexto": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas"
+    },
+    {
+      "id": "C4_01",
+      "bloque": "capitulo_4",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 89,
+      "locucion": "Supongamos que la consigues. Estás dentro.",
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      }
+    },
+    {
+      "id": "C4_02",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Las máquinas están encendidas."
+    },
+    {
+      "id": "C4_03",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 58,
+      "locucion": "Y entonces conoces a tu socio."
+    },
+    {
+      "id": "C4_04a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "En un casino, el Estado no es un regulador que te cobra impuestos al final del año como a cualquier empresa."
+    },
+    {
+      "id": "C4_04b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "En un casino, el Estado no es un regulador que te cobra impuestos al final del año como a cualquier empresa."
+    },
+    {
+      "id": "C4_05a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie."
+    },
+    {
+      "id": "C4_05b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "",
+      "contexto": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie."
+    },
+    {
+      "id": "C4_05c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "",
+      "contexto": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie."
+    },
+    {
+      "id": "C4_06",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "¿Cuánto?"
+    },
+    {
+      "id": "C4_07a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Depende de dónde pongas el casino y las diferencias son brutales."
+    },
+    {
+      "id": "C4_07b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 51,
+      "locucion": "",
+      "contexto": "Depende de dónde pongas el casino y las diferencias son brutales."
+    },
+    {
+      "id": "C4_08",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 115,
+      "locucion": "En Nevada, el tramo más alto es del 6,75 %.",
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "6,75 %"
+      }
+    },
+    {
+      "id": "C4_09",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Es de los más bajos del país y no es casualidad."
+    },
+    {
+      "id": "C4_10a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "Nevada llegó primero y fijó las reglas cuando nadie más quería este negocio."
+    },
+    {
+      "id": "C4_10b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Nevada llegó primero y fijó las reglas cuando nadie más quería este negocio."
+    },
+    {
+      "id": "C4_11a",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "En Nueva Jersey, son el 8 % sobre los ingresos brutos de casino, el 15 sobre el juego online y el 13 sobre las apuestas deportivas por Internet.",
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "8 %"
+      }
+    },
+    {
+      "id": "C4_11b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "",
+      "contexto": "En Nueva Jersey, son el 8 % sobre los ingresos brutos de casino, el 15 sobre el juego online y el 13 sobre las apuestas deportivas por Internet."
+    },
+    {
+      "id": "C4_11c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "",
+      "contexto": "En Nueva Jersey, son el 8 % sobre los ingresos brutos de casino, el 15 sobre el juego online y el 13 sobre las apuestas deportivas por Internet."
+    },
+    {
+      "id": "C4_12a",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 130,
+      "locucion": "Y en el otro extremo está Maryland, donde el tipo máximo llega al 62,5 %.",
+      "variante": "barras_enfrentadas",
+      "contenido": {
+        "linea": "62,5 %"
+      }
+    },
+    {
+      "id": "C4_12b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "",
+      "contexto": "Y en el otro extremo está Maryland, donde el tipo máximo llega al 62,5 %."
+    },
+    {
+      "id": "C4_13a",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio.",
+      "variante": "contador"
+    },
+    {
+      "id": "C4_13b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "",
+      "contexto": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio."
+    },
+    {
+      "id": "C4_13c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "",
+      "contexto": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio."
+    },
+    {
+      "id": "C4_13d",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "",
+      "contexto": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio."
+    },
+    {
+      "id": "C4_14a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "Esto crea una situación que no existe en casi ningún otro sector."
+    },
+    {
+      "id": "C4_14b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "",
+      "contexto": "Esto crea una situación que no existe en casi ningún otro sector."
+    },
+    {
+      "id": "C4_15a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "La decisión más importante de tu negocio no es el producto, ni el precio, ni la ubicación comercial."
+    },
+    {
+      "id": "C4_15b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "",
+      "contexto": "La decisión más importante de tu negocio no es el producto, ni el precio, ni la ubicación comercial."
+    },
+    {
+      "id": "C4_16",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "Es la jurisdicción."
+    },
+    {
+      "id": "C4_17a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "El mismo casino, el mismo edificio, las mismas máquinas, los mismos clientes en dos estados distintos son dos negocios completamente diferentes."
+    },
+    {
+      "id": "C4_17b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "",
+      "contexto": "El mismo casino, el mismo edificio, las mismas máquinas, los mismos clientes en dos estados distintos son dos negocios completamente diferentes."
+    },
+    {
+      "id": "C4_17c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "",
+      "contexto": "El mismo casino, el mismo edificio, las mismas máquinas, los mismos clientes en dos estados distintos son dos negocios completamente diferentes."
+    },
+    {
+      "id": "C4_18",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 59,
+      "locucion": "Uno funciona, el otro no."
+    },
+    {
+      "id": "C4_19",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "Los operadores serios eligen el Estado antes que el solar"
+    },
+    {
+      "id": "C5_01a",
+      "bloque": "capitulo_5",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 110,
+      "locucion": "Vale, ¿y cuánto se gana? Aquí es donde el casino se separa de cualquier otro negocio que hayamos analizado."
+    },
+    {
+      "id": "C5_01b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "Vale, ¿y cuánto se gana? Aquí es donde el casino se separa de cualquier otro negocio que hayamos analizado."
+    },
+    {
+      "id": "C5_02",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Un restaurante depende de que la comida guste."
+    },
+    {
+      "id": "C5_03",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 75,
+      "locucion": "Una tienda depende de que el producto se venda."
+    },
+    {
+      "id": "C5_04",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 66,
+      "locucion": "Un casino depende de una fórmula."
+    },
+    {
+      "id": "C5_05",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "Cada juego tiene una ventaja matemática fija para la casa."
+    },
+    {
+      "id": "C5_06",
+      "bloque": "capitulo_5",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 106,
+      "locucion": "En la ruleta europea, ese margen es del 2,7 %.",
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "2,7 %"
+      }
+    },
+    {
+      "id": "C5_07a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 52,
+      "locucion": "En las máquinas, lo fija el fabricante y lo aprueba el regulador."
+    },
+    {
+      "id": "C5_07b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 51,
+      "locucion": "",
+      "contexto": "En las máquinas, lo fija el fabricante y lo aprueba el regulador."
+    },
+    {
+      "id": "C5_08",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 89,
+      "locucion": "No es opinión ni suerte, es aritmética verificable."
+    },
+    {
+      "id": "C5_09a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 84,
+      "locucion": "Con suficientes apuestas, la ganancia de la casa deja de ser una probabilidad y se convierte en una previsión."
+    },
+    {
+      "id": "C5_09b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "",
+      "contexto": "Con suficientes apuestas, la ganancia de la casa deja de ser una probabilidad y se convierte en una previsión."
+    },
+    {
+      "id": "C5_10",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "Por eso el sector entero se mide en una sola métrica:"
+    },
+    {
+      "id": "C5_11",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 72,
+      "locucion": "el win, lo que pierden los clientes."
+    },
+    {
+      "id": "C5_12",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 90,
+      "locucion": "Y por eso Nevada lo publica cada mes con precisión de un dólar."
+    },
+    {
+      "id": "C5_13a",
+      "bloque": "capitulo_5",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "En el ejercicio que va de julio de 2025 a febrero de 2026, los casinos de Nevada acumularon diez mil quinientos ochenta y ocho millones de dólares de win.",
+      "variante": "contador"
+    },
+    {
+      "id": "C5_13b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 76,
+      "locucion": "",
+      "contexto": "En el ejercicio que va de julio de 2025 a febrero de 2026, los casinos de Nevada acumularon diez mil quinientos ochenta y ocho millones de dólares de win."
+    },
+    {
+      "id": "C5_13c",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "En el ejercicio que va de julio de 2025 a febrero de 2026, los casinos de Nevada acumularon diez mil quinientos ochenta y ocho millones de dólares de win."
+    },
+    {
+      "id": "C5_14",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 100,
+      "locucion": "Suena a máquina de imprimir dinero y en cierto modo lo es."
+    },
+    {
+      "id": "C5_15",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 69,
+      "locucion": "Pero fíjate en lo que hemos ido apilando encima."
+    },
+    {
+      "id": "C5_16",
+      "bloque": "capitulo_5",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 80,
+      "locucion": "Has puesto entre diez y cuarenta millones en el edificio.",
+      "variante": "barras_enfrentadas"
+    },
+    {
+      "id": "C5_17",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "Has arrendado las máquinas compartiendo recaudación."
+    },
+    {
+      "id": "C5_18a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "Pagas nóminas veinticuatro horas al día, trescientos sesenta y cinco días al año, incluida una plantilla de seguridad y cumplimiento normativo que en cualquier otro negocio no existiría."
+    },
+    {
+      "id": "C5_18b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "",
+      "contexto": "Pagas nóminas veinticuatro horas al día, trescientos sesenta y cinco días al año, incluida una plantilla de seguridad y cumplimiento normativo que en cualquier otro negocio no existiría."
+    },
+    {
+      "id": "C5_18c",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "",
+      "contexto": "Pagas nóminas veinticuatro horas al día, trescientos sesenta y cinco días al año, incluida una plantilla de seguridad y cumplimiento normativo que en cualquier otro negocio no existiría."
+    },
+    {
+      "id": "C5_19",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "Pagas la deuda."
+    },
+    {
+      "id": "C5_20a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Y antes que todo eso, el Estado se lleva su parte de cada dólar."
+    },
+    {
+      "id": "C5_20b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 51,
+      "locucion": "",
+      "contexto": "Y antes que todo eso, el Estado se lleva su parte de cada dólar."
+    },
+    {
+      "id": "C5_21a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 57,
+      "locucion": "La matemática garantiza que ganas dinero, no garantiza que quede algo para ti"
+    },
+    {
+      "id": "C5_21b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 44,
+      "locucion": "",
+      "contexto": "La matemática garantiza que ganas dinero, no garantiza que quede algo para ti"
+    },
+    {
+      "id": "C6_01",
+      "bloque": "capitulo_6",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 116,
+      "locucion": "Y llegamos a lo que hace que este negocio sea distinto a todos los demás."
+    },
+    {
+      "id": "C6_02a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo."
+    },
+    {
+      "id": "C6_02b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo."
+    },
+    {
+      "id": "C6_03a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "En un casino es peor, porque lo que no es tuyo no es el ladrillo, es el permiso para existir."
+    },
+    {
+      "id": "C6_03b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "",
+      "contexto": "En un casino es peor, porque lo que no es tuyo no es el ladrillo, es el permiso para existir."
+    },
+    {
+      "id": "C6_04",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Una licencia de juego no se compra, se concede."
+    },
+    {
+      "id": "C6_05",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Y lo que se concede se puede retirar."
+    },
+    {
+      "id": "C6_06",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 59,
+      "locucion": "Y no se retira solo por hacer trampas."
+    },
+    {
+      "id": "C6_07a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "Se puede perder por un incumplimiento normativo, por un socio que resulta ser inadecuado, por un fallo de control interno, por un cambio en tu situación personal que ya no encaja con lo que aprobaron."
+    },
+    {
+      "id": "C6_07b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 94,
+      "locucion": "",
+      "contexto": "Se puede perder por un incumplimiento normativo, por un socio que resulta ser inadecuado, por un fallo de control interno, por un cambio en tu situación personal que ya no encaja con lo que aprobaron."
+    },
+    {
+      "id": "C6_07c",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "",
+      "contexto": "Se puede perder por un incumplimiento normativo, por un socio que resulta ser inadecuado, por un fallo de control interno, por un cambio en tu situación personal que ya no encaja con lo que aprobaron."
+    },
+    {
+      "id": "C6_08",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "Mientras seas licenciatario, la investigación no termina."
+    },
+    {
+      "id": "C6_09",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 58,
+      "locucion": "Sigue indefinidamente."
+    },
+    {
+      "id": "C6_10a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 64,
+      "locucion": "Tienes que notificar cambios en tu accionariado, en tu financiación, en tu vida."
+    },
+    {
+      "id": "C6_10b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 63,
+      "locucion": "",
+      "contexto": "Tienes que notificar cambios en tu accionariado, en tu financiación, en tu vida."
+    },
+    {
+      "id": "C6_11",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Y hay otro detalle que la mayoría no ve venir."
+    },
+    {
+      "id": "C6_12a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "En muchas jurisdicciones, el número de licencias está limitado por ley."
+    },
+    {
+      "id": "C6_12b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "",
+      "contexto": "En muchas jurisdicciones, el número de licencias está limitado por ley."
+    },
+    {
+      "id": "C6_13",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "No es un mercado abierto donde compites por ser mejor."
+    },
+    {
+      "id": "C6_14a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 60,
+      "locucion": "Es un club cerrado donde el número de sillas lo decide un parlamento."
+    },
+    {
+      "id": "C6_14b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Es un club cerrado donde el número de sillas lo decide un parlamento."
+    },
+    {
+      "id": "C6_15",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "Eso significa dos cosas a la vez:"
+    },
+    {
+      "id": "C6_16a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "que si estás dentro, tu competencia está legalmente contenida y que el valor real de tu empresa no está en el edificio, ni en las máquinas, ni en la marca."
+    },
+    {
+      "id": "C6_16b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "que si estás dentro, tu competencia está legalmente contenida y que el valor real de tu empresa no está en el edificio, ni en las máquinas, ni en la marca."
+    },
+    {
+      "id": "C6_16c",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "que si estás dentro, tu competencia está legalmente contenida y que el valor real de tu empresa no está en el edificio, ni en las máquinas, ni en la marca."
+    },
+    {
+      "id": "C6_17a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Está en un papel que otro te presta, revisa continuamente y puede recuperar."
+    },
+    {
+      "id": "C6_17b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "Está en un papel que otro te presta, revisa continuamente y puede recuperar."
+    },
+    {
+      "id": "C6_18a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 64,
+      "locucion": "Los casinos no venden juego, venden acceso a una escasez que ellos no crearon"
+    },
+    {
+      "id": "C6_18b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "Los casinos no venden juego, venden acceso a una escasez que ellos no crearon"
+    },
+    {
+      "id": "C7_01",
+      "bloque": "capitulo_7",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 77,
+      "locucion": "Entonces, ¿se puede comprar un casino?",
+      "contenido": {
+        "linea": "ENTONCES ¿SE PUEDE COMPRAR UN CASINO?"
+      }
+    },
+    {
+      "id": "C7_02",
+      "bloque": "capitulo_7",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 76,
+      "locucion": "Con diez millones puedes construir el edificio pequeño.",
+      "variante": "contador"
+    },
+    {
+      "id": "C7_03",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "Con cuarenta, uno decente."
+    },
+    {
+      "id": "C7_04a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Con ciento cincuenta, un resort. Pero no es un negocio que se compre con dinero."
+    },
+    {
+      "id": "C7_04b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "Con ciento cincuenta, un resort. Pero no es un negocio que se compre con dinero."
+    },
+    {
+      "id": "C7_05",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "Es un negocio en el que te admiten."
+    },
+    {
+      "id": "C7_06a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Y una vez dentro, tu socio mayoritario es un Estado que se lleva su parte primero."
+    },
+    {
+      "id": "C7_06b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Y una vez dentro, tu socio mayoritario es un Estado que se lleva su parte primero."
+    },
+    {
+      "id": "C7_07a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Tu activo principal es una licencia que no posees y tu ventaja competitiva es que a casi nadie más le dejan hacer lo que tú haces."
+    },
+    {
+      "id": "C7_07b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "",
+      "contexto": "Tu activo principal es una licencia que no posees y tu ventaja competitiva es que a casi nadie más le dejan hacer lo que tú haces."
+    },
+    {
+      "id": "C7_07c",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "",
+      "contexto": "Tu activo principal es una licencia que no posees y tu ventaja competitiva es que a casi nadie más le dejan hacer lo que tú haces."
+    },
+    {
+      "id": "C7_08",
+      "bloque": "capitulo_7",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 92,
+      "locucion": "Con un McDonald's compras un empleo de dos millones de dólares.",
+      "variante": "contador"
+    },
+    {
+      "id": "C7_09",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "Con un casino compras algo más raro:"
+    },
+    {
+      "id": "C7_10a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "el permiso temporal para operar una fórmula matemática que no puede fallar, siempre y cuando sigas cayendo bien a la gente que te lo dio."
+    },
+    {
+      "id": "C7_10b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "",
+      "contexto": "el permiso temporal para operar una fórmula matemática que no puede fallar, siempre y cuando sigas cayendo bien a la gente que te lo dio."
+    }
+  ],
+  "duracion_total": 16236
+}

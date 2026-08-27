@@ -1,0 +1,305 @@
+{
+  "proyecto": "precio_de_ser_el_dueno_ep02_casino",
+  "fps": 25,
+  "ancho": 1920,
+  "alto": 1080,
+  "duracion_objetivo_s": 780,
+
+  "_nota_de_uso": "Mismo esquema que el episodio 01. Aquí se especifican al completo el GANCHO y el CAPÍTULO 1, más los patrones. El resto se genera aplicando los patrones al guion. No inventes tipos ni campos nuevos: si un plano no encaja, para y avisa.",
+
+  "mezcla_objetivo": {
+    "clip": 0.45,
+    "grafico": 0.30,
+    "capas": 0.25,
+    "regla": "Las escenas de capas son caras. Se reservan para el gancho, la apertura de cada capítulo y las revelaciones de los capítulos 4 y 6."
+  },
+
+  "paleta_episodio": {
+    "nota": "Este episodio va más oscuro y más frío que el 01. El casino se rueda de noche; McDonald's era amanecer. Sirve para diferenciar episodios de un vistazo.",
+    "dominante": "azul noche con acentos ámbar de neón",
+    "excepcion": "El capítulo 4 (impuestos) va en gris institucional frío, sin ámbar. Es el único bloque sin neón."
+  },
+
+  "tipografia": {
+    "familia": "Archivo Black",
+    "transform": "uppercase",
+    "tracking": -0.01,
+    "color": "#E8E2D8",
+    "sombra": { "desenfoque": 24, "opacidad": 0.5 },
+    "entrada": { "frames": 6, "escala": [1.04, 1.0], "opacidad": [0, 1] }
+  },
+
+  "grade_global": {
+    "lut": "grade_casino.cube",
+    "negros": 0.03,
+    "vineta": 0.4,
+    "grano": 6
+  },
+
+  "patrones": {
+    "apertura_capitulo": {
+      "tipo": "capas",
+      "duracion": 110,
+      "preset": "push_lento",
+      "estructura": ["cielo", "decorado", "suelo", "sujeto"],
+      "regla_contraste": "La capa de fondo debe superar en 100 puntos de luminancia media a la del sujeto. Sujeto a brillo <= 0.12, fondo luminoso a brillo >= 1.20. De noche, la fuente luminosa es el neón del casino, no el cielo.",
+      "sujeto": { "escala_alto": 0.65, "posicion_x": 0.34, "anclaje": "pies" },
+      "texto": { "posicion": "inferior" }
+    },
+    "cifra_impacto": {
+      "tipo": "grafico",
+      "duracion": 75,
+      "variante": "contador",
+      "fondo": "negro casi puro",
+      "regla": "La cifra ocupa el 40% del ancho. Contador de 0 al valor en 40 frames, 35 frames en reposo. Golpe grave en el frame final."
+    },
+    "desglose": {
+      "tipo": "grafico",
+      "duracion": 150,
+      "variante": "lista_apilada",
+      "regla": "Cada concepto entra por separado con su cifra a la derecha. Total al final, parpadea una vez. Máximo 5 conceptos."
+    },
+    "comparativa": {
+      "tipo": "grafico",
+      "duracion": 130,
+      "variante": "barras_enfrentadas",
+      "regla": "Dos o tres valores en barras horizontales que crecen desde la izquierda. Se usa para comparar jurisdicciones o modelos de negocio. Máximo 4 barras."
+    },
+    "textura_real": {
+      "tipo": "clip",
+      "duracion": 90,
+      "regla": "Metraje real, sin texto salvo que el guion lo pida. Corte en seco a los 3-4 segundos."
+    },
+    "documento": {
+      "tipo": "documento",
+      "duracion": 100,
+      "regla": "Página oficial escaneada, push-in lento, la línea relevante se resalta en ámbar al frame 40."
+    },
+    "archivo_historico": {
+      "tipo": "clip",
+      "duracion": 95,
+      "grade": { "saturacion": 0.15, "contraste": 1.35, "tinte": "#c9a227", "tinteFuerza": 0.2 },
+      "regla": "Metraje de archivo virado, grano al doble. Reservado a los planos de la Nevada de los años 50."
+    }
+  },
+
+  "escenas": [
+    {
+      "id": "H01",
+      "bloque": "gancho",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 115,
+      "locucion": "En febrero de dos mil veintiséis, los casinos de Nevada ganaron mil doscientos treinta y seis millones de dólares.",
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": { "zoom": [1.0, 1.12], "x": [0, -18] },
+      "capas": [
+        { "id": "H01_cielo", "src": "H01_cielo.png", "z": -800, "zoom": [1.0, 1.03], "x": [0, -24],
+          "prompt": "night sky, deep dark blue, slow heavy clouds, no moon, no stars, empty, no aircraft",
+          "grade": { "saturacion": 0.5, "brillo": 0.28, "contraste": 1.15, "tinte": "#101c33", "tinteFuerza": 0.35, "desenfoque": 2 } },
+        { "id": "H01_casino", "src": "H01_casino.png", "z": -320, "zoom": [1.0, 1.09],
+          "prompt": "single casino building at night, huge glowing neon marquee, every window lit, three-quarter view, transparent background, no sky, no ground, no other buildings, no cars, no people",
+          "grade": { "saturacion": 1.2, "brillo": 1.25, "contraste": 1.4 } },
+        { "id": "H01_asfalto", "src": "H01_asfalto.png", "z": -120, "zoom": [1.0, 1.14],
+          "prompt": "empty wet asphalt at night reflecting distant neon, transparent background above horizon",
+          "grade": { "saturacion": 0.75, "brillo": 0.42, "contraste": 1.32 } },
+        { "id": "H01_hombre", "src": "H01_hombre.png", "z": 0, "principal": true,
+          "zoom": [1.0, 1.2], "escala_alto": 0.65, "posicion_x": 0.34, "anclaje": "pies",
+          "sombra": { "angulo": 195, "largo": 1.4, "opacidad": 0.6 },
+          "prompt": "man from behind, long dark coat, hands in pockets, full body including feet, solid dark silhouette against bright neon, night, plain white background",
+          "grade": { "saturacion": 0.35, "brillo": 0.09, "contraste": 1.6 } }
+      ],
+      "texto": { "linea": "Febrero de 2026", "posicion": "inferior", "ancho_max": 0.45,
+                 "delante_de": ["H01_cielo", "H01_casino", "H01_asfalto"], "entrada_frame": 10 }
+    },
+
+    {
+      "id": "H02",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 85,
+      "locucion": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
+      "contenido": { "cifra": 1236196257, "prefijo": "$", "decimales": 0, "pie": "perdido por los clientes · febrero 2026" },
+      "fondo": "negro",
+      "sonido": "golpe grave en el frame final del contador",
+      "regla_montaje": "El contador sube dígito a dígito hasta la cifra completa. Ver los nueve dígitos llenarse es el efecto."
+    },
+
+    {
+      "id": "H03",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "Solo el Strip de Las Vegas se quedó seiscientos noventa y seis millones. En veintiocho días.",
+      "contenido": { "cifra": 696285791, "prefijo": "$", "decimales": 0, "pie": "solo el Strip · 28 días" },
+      "fondo": "negro"
+    },
+
+    {
+      "id": "H04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "Y ese dinero no depende de si la temporada fue buena. Depende de una fórmula matemática que no falla nunca.",
+      "busqueda": "roulette wheel spinning slow motion · slot machine reels spinning · casino chips stacking · dealer dealing cards",
+      "regla_montaje": "Cuatro subplanos de 24 frames. Ritmo mecánico, repetitivo a propósito: la idea es la máquina, no la emoción."
+    },
+
+    {
+      "id": "H05",
+      "bloque": "gancho",
+      "tipo": "capas",
+      "duracion": 125,
+      "locucion": "Con un McDonald's, el problema era el dinero. Con un casino, el dinero es la parte fácil.",
+      "luz": "interior de despacho oficial en penumbra, luz fluorescente fria cenital, persianas cerradas",
+      "horizonte": 0.8,
+      "camara": { "zoom": [1.0, 1.18], "y": [0, -8] },
+      "capas": [
+        { "id": "H05_fondo", "src": "H05_fondo.png", "z": -700, "zoom": [1.0, 1.02],
+          "prompt": "bright backlit venetian blinds, cold white glow, heavy bokeh, no people, no objects",
+          "grade": { "saturacion": 0.25, "brillo": 1.3, "contraste": 1.05, "desenfoque": 7 } },
+        { "id": "H05_mesa", "src": "H05_mesa.png", "z": -200, "zoom": [1.0, 1.09],
+          "prompt": "grey institutional desk surface, cold overhead fluorescent light, transparent background, empty",
+          "grade": { "saturacion": 0.35, "brillo": 0.5, "contraste": 1.25 } },
+        { "id": "H05_expediente", "src": "H05_expediente.png", "z": 0, "principal": true,
+          "zoom": [1.0, 1.24], "escala_alto": 0.55, "posicion_x": 0.4, "anclaje": "centro",
+          "sombra": { "angulo": 250, "largo": 0.7, "opacidad": 0.6 },
+          "prompt": "thick closed manila investigation file folder tied with string, cold overhead light, plain white background, full object",
+          "grade": { "saturacion": 0.7, "brillo": 0.85, "contraste": 1.4 } }
+      ],
+      "texto": { "linea": "Hay algo que nunca va a ser tuyo", "posicion": "inferior", "ancho_max": 0.75,
+                 "delante_de": ["H05_fondo", "H05_mesa"], "entrada_frame": 60 }
+    },
+
+    {
+      "id": "H06",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "duracion": 60,
+      "variante": "titulo",
+      "locucion": null,
+      "contenido": { "titulo": "Lo que cuesta de verdad tener un casino" },
+      "sonido": "silencio total, golpe grave con la entrada del título"
+    },
+
+    {
+      "id": "C1_01",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 100,
+      "locucion": "El primero es lo que imaginas: un resort. Torre de hotel, restaurantes, espectáculo, spa.",
+      "busqueda": "las vegas strip resort aerial night · hotel tower pool deck · casino resort lobby wide",
+      "regla_montaje": "Planos amplios, aéreos, ostentosos. Contraste deliberado con C1_04."
+    },
+
+    {
+      "id": "C1_02",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 80,
+      "locucion": "Un casino de tres plantas de ese estilo cuesta construirlo entre sesenta y ciento cincuenta millones de dólares.",
+      "contenido": { "cifra": 150000000, "prefijo": "$", "decimales": 0, "pie": "solo la construcción" },
+      "fondo": "negro"
+    },
+
+    {
+      "id": "C1_03",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "duracion": 110,
+      "variante": "frase_destacada",
+      "locucion": "Y esa cifra es solo el hormigón. No incluye el terreno, ni las licencias, ni una sola máquina.",
+      "contenido": { "linea": "Eso es solo el hormigón" },
+      "regla_montaje": "Texto solo sobre negro. Sin música bajo la frase."
+    },
+
+    {
+      "id": "C1_04",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "El segundo casino es el que nadie enseña: un edificio de una planta, sala de juego y poco más.",
+      "busqueda": "small roadside casino exterior night · single story gaming hall · truck stop slot machines · rural casino parking lot",
+      "regla_montaje": "Planos pobres, feos, honestos. El contraste con C1_01 es el argumento."
+    },
+
+    {
+      "id": "C1_05",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 140,
+      "locucion": "Un casino independiente se construye entre diez y cuarenta millones. Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
+      "contenido": {
+        "barras": [
+          { "etiqueta": "Casino independiente", "min": 10000000, "max": 40000000 },
+          { "etiqueta": "Casino de 2 plantas", "min": 40000000, "max": 120000000 },
+          { "etiqueta": "Resort de 3 plantas", "min": 60000000, "max": 150000000 }
+        ],
+        "prefijo": "$"
+      },
+      "regla_montaje": "Las barras crecen en secuencia, 20 frames cada una. La última desborda por la derecha a propósito."
+    },
+
+    {
+      "id": "C1_06",
+      "bloque": "capitulo_1",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 120,
+      "locucion": "Y aquí está la primera decisión real: en el resort, el juego no es el negocio principal. Es el gancho.",
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": { "zoom": [1.0, 1.16], "x": [0, 14] },
+      "capas": [
+        { "id": "C1_06_sala", "src": "C1_06_sala.png", "z": -650, "zoom": [1.0, 1.03],
+          "prompt": "bright casino gaming floor seen from a distance, glowing slot machine banks, warm neon, heavy bokeh, no people",
+          "grade": { "saturacion": 1.1, "brillo": 1.25, "contraste": 1.2, "desenfoque": 5 } },
+        { "id": "C1_06_arco", "src": "C1_06_arco.png", "z": -150, "zoom": [1.0, 1.12],
+          "prompt": "dark ornate doorway arch framing edges of frame, interior architecture silhouette, transparent center, plain white background",
+          "grade": { "saturacion": 0.4, "brillo": 0.15, "contraste": 1.5 } },
+        { "id": "C1_06_hombre", "src": "C1_06_hombre.png", "z": 0, "principal": true,
+          "zoom": [1.0, 1.22], "escala_alto": 0.68, "posicion_x": 0.36, "anclaje": "pies",
+          "sombra": { "angulo": 270, "largo": 0.9, "opacidad": 0.55 },
+          "prompt": "man from behind standing in a doorway, suit, full body including feet, solid dark silhouette against bright interior, plain white background",
+          "grade": { "saturacion": 0.3, "brillo": 0.08, "contraste": 1.65 } }
+      ],
+      "texto": { "linea": "El juego es el gancho", "posicion": "inferior", "ancho_max": 0.55,
+                 "delante_de": ["C1_06_sala", "C1_06_arco"], "entrada_frame": 50 }
+    },
+
+    {
+      "id": "C1_07",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "duracion": 130,
+      "variante": "comparativa_modelos",
+      "locucion": "En el casino pequeño, el juego es el negocio. Cien por cien. Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas.",
+      "contenido": {
+        "columnas": [
+          { "titulo": "Resort", "lineas": ["Juego = gancho", "Habitaciones", "Restaurantes", "Espectáculo"] },
+          { "titulo": "Casino pequeño", "lineas": ["Juego = 100%", "—", "—", "—"] }
+        ]
+      },
+      "regla_montaje": "Dos columnas que se construyen simultáneamente. Los guiones de la derecha entran con un golpe seco cada uno."
+    },
+
+    {
+      "id": "C1_08",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "Vamos a seguir el pequeño. Porque es el único que una persona normal podría plantearse.",
+      "busqueda": "empty small casino floor early morning · cleaner vacuuming casino carpet · slot machine attendant alone",
+      "regla_montaje": "Un solo plano largo y quieto. Baja el ritmo antes del capítulo 2."
+    }
+  ]
+}

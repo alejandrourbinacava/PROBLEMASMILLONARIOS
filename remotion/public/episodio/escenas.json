@@ -1,0 +1,3928 @@
+{
+  "proyecto": "precio_de_ser_el_dueno_ep02_casino",
+  "fps": 25,
+  "ancho": 1920,
+  "alto": 1080,
+  "duracion_objetivo_s": 780,
+  "_nota_de_uso": "Mismo esquema que el episodio 01. Aquí se especifican al completo el GANCHO y el CAPÍTULO 1, más los patrones. El resto se genera aplicando los patrones al guion. No inventes tipos ni campos nuevos: si un plano no encaja, para y avisa.",
+  "mezcla_objetivo": {
+    "clip": 0.45,
+    "grafico": 0.3,
+    "capas": 0.25,
+    "regla": "Las escenas de capas son caras. Se reservan para el gancho, la apertura de cada capítulo y las revelaciones de los capítulos 4 y 6."
+  },
+  "paleta_episodio": {
+    "nota": "Este episodio va más oscuro y más frío que el 01. El casino se rueda de noche; McDonald's era amanecer. Sirve para diferenciar episodios de un vistazo.",
+    "dominante": "azul noche con acentos ámbar de neón",
+    "excepcion": "El capítulo 4 (impuestos) va en gris institucional frío, sin ámbar. Es el único bloque sin neón."
+  },
+  "tipografia": {
+    "familia": "Archivo Black",
+    "transform": "uppercase",
+    "tracking": -0.01,
+    "color": "#E8E2D8",
+    "sombra": {
+      "desenfoque": 24,
+      "opacidad": 0.5
+    },
+    "entrada": {
+      "frames": 6,
+      "escala": [
+        1.04,
+        1.0
+      ],
+      "opacidad": [
+        0,
+        1
+      ]
+    }
+  },
+  "grade_global": {
+    "lut": "grade_casino.cube",
+    "negros": 0.03,
+    "vineta": 0.4,
+    "grano": 6
+  },
+  "patrones": {
+    "apertura_capitulo": {
+      "tipo": "capas",
+      "duracion": 110,
+      "preset": "push_lento",
+      "estructura": [
+        "cielo",
+        "decorado",
+        "suelo",
+        "sujeto"
+      ],
+      "regla_contraste": "La capa de fondo debe superar en 100 puntos de luminancia media a la del sujeto. Sujeto a brillo <= 0.12, fondo luminoso a brillo >= 1.20. De noche, la fuente luminosa es el neón del casino, no el cielo.",
+      "sujeto": {
+        "escala_alto": 0.65,
+        "posicion_x": 0.34,
+        "anclaje": "pies"
+      },
+      "texto": {
+        "posicion": "inferior"
+      }
+    },
+    "cifra_impacto": {
+      "tipo": "grafico",
+      "duracion": 75,
+      "variante": "contador",
+      "fondo": "negro casi puro",
+      "regla": "La cifra ocupa el 40% del ancho. Contador de 0 al valor en 40 frames, 35 frames en reposo. Golpe grave en el frame final."
+    },
+    "desglose": {
+      "tipo": "grafico",
+      "duracion": 150,
+      "variante": "lista_apilada",
+      "regla": "Cada concepto entra por separado con su cifra a la derecha. Total al final, parpadea una vez. Máximo 5 conceptos."
+    },
+    "comparativa": {
+      "tipo": "grafico",
+      "duracion": 130,
+      "variante": "barras_enfrentadas",
+      "regla": "Dos o tres valores en barras horizontales que crecen desde la izquierda. Se usa para comparar jurisdicciones o modelos de negocio. Máximo 4 barras."
+    },
+    "textura_real": {
+      "tipo": "clip",
+      "duracion": 90,
+      "regla": "Metraje real, sin texto salvo que el guion lo pida. Corte en seco a los 3-4 segundos."
+    },
+    "documento": {
+      "tipo": "documento",
+      "duracion": 100,
+      "regla": "Página oficial escaneada, push-in lento, la línea relevante se resalta en ámbar al frame 40."
+    },
+    "archivo_historico": {
+      "tipo": "clip",
+      "duracion": 95,
+      "grade": {
+        "saturacion": 0.15,
+        "contraste": 1.35,
+        "tinte": "#c9a227",
+        "tinteFuerza": 0.2
+      },
+      "regla": "Metraje de archivo virado, grano al doble. Reservado a los planos de la Nevada de los años 50."
+    }
+  },
+  "escenas": [
+    {
+      "id": "H01",
+      "bloque": "gancho",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 115,
+      "locucion": "En febrero de dos mil veintiséis, los casinos de Nevada ganaron mil doscientos treinta y seis millones de dólares.",
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ],
+      "texto": {
+        "linea": "Febrero de 2026",
+        "posicion": "inferior",
+        "ancho_max": 0.45,
+        "delante_de": [
+          "H01_cielo",
+          "H01_casino",
+          "H01_asfalto"
+        ],
+        "entrada_frame": 10
+      }
+    },
+    {
+      "id": "H02",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 85,
+      "locucion": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
+      "contenido": {
+        "cifra": 1236196257,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "perdido por los clientes · febrero 2026"
+      },
+      "fondo": "negro",
+      "sonido": "golpe grave en el frame final del contador",
+      "regla_montaje": "El contador sube dígito a dígito hasta la cifra completa. Ver los nueve dígitos llenarse es el efecto."
+    },
+    {
+      "id": "H03",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "Solo el Strip de Las Vegas se quedó seiscientos noventa y seis millones. En veintiocho días.",
+      "contenido": {
+        "cifra": 696285791,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "solo el Strip · 28 días"
+      },
+      "fondo": "negro"
+    },
+    {
+      "id": "H04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "Y ese dinero no depende de si la temporada fue buena. Depende de una fórmula matemática que no falla nunca.",
+      "busqueda": "roulette wheel spinning slow motion · slot machine reels spinning · casino chips stacking · dealer dealing cards",
+      "regla_montaje": "Cuatro subplanos de 24 frames. Ritmo mecánico, repetitivo a propósito: la idea es la máquina, no la emoción.",
+      "clips": [
+        "clips/H04.mp4"
+      ],
+      "credito": "pexels:7608129"
+    },
+    {
+      "id": "H05",
+      "bloque": "gancho",
+      "tipo": "capas",
+      "duracion": 125,
+      "locucion": "Con un McDonald's, el problema era el dinero. Con un casino, el dinero es la parte fácil.",
+      "luz": "interior de despacho oficial en penumbra, luz fluorescente fria cenital, persianas cerradas",
+      "horizonte": 0.8,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.18
+        ],
+        "y": [
+          0,
+          -8
+        ]
+      },
+      "capas": [
+        {
+          "id": "H05_fondo",
+          "src": "H05_fondo.png",
+          "z": -700,
+          "zoom": [
+            1.0,
+            1.02
+          ],
+          "prompt": "Bright backlit venetian blinds, cold white glow, heavy bokeh, the window filling the whole frame, the room quiet and still.",
+          "grade": {
+            "saturacion": 0.25,
+            "brillo": 1.3,
+            "contraste": 1.05,
+            "desenfoque": 7
+          }
+        },
+        {
+          "id": "H05_mesa",
+          "src": "H05_mesa.png",
+          "z": -200,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "grey institutional desk surface, cold overhead fluorescent light, transparent background, empty",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.5,
+            "contraste": 1.25
+          }
+        },
+        {
+          "id": "H05_expediente",
+          "src": "H05_expediente.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.24
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.4,
+          "anclaje": "centro",
+          "sombra": {
+            "angulo": 250,
+            "largo": 0.7,
+            "opacidad": 0.6
+          },
+          "prompt": "thick closed manila investigation file folder tied with string, cold overhead light, plain white background, full object",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.2,
+            "contraste": 1.5
+          }
+        }
+      ],
+      "texto": {
+        "linea": "Hay algo que nunca va a ser tuyo",
+        "posicion": "inferior",
+        "ancho_max": 0.75,
+        "delante_de": [
+          "H05_fondo",
+          "H05_mesa"
+        ],
+        "entrada_frame": 60
+      }
+    },
+    {
+      "id": "H06",
+      "bloque": "gancho",
+      "tipo": "grafico",
+      "duracion": 60,
+      "variante": "titulo",
+      "locucion": null,
+      "contenido": {
+        "titulo": "Lo que cuesta de verdad tener un casino"
+      },
+      "sonido": "silencio total, golpe grave con la entrada del título"
+    },
+    {
+      "id": "C1_01",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 100,
+      "locucion": "El primero es lo que imaginas: un resort. Torre de hotel, restaurantes, espectáculo, spa.",
+      "busqueda": "las vegas strip resort aerial night · hotel tower pool deck · casino resort lobby wide",
+      "regla_montaje": "Planos amplios, aéreos, ostentosos. Contraste deliberado con C1_04.",
+      "clips": [
+        "clips/C1_01.mp4"
+      ],
+      "credito": "pixabay:205875"
+    },
+    {
+      "id": "C1_02",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 80,
+      "locucion": "Un casino de tres plantas de ese estilo cuesta construirlo entre sesenta y ciento cincuenta millones de dólares.",
+      "contenido": {
+        "cifra": 150000000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "solo la construcción"
+      },
+      "fondo": "negro"
+    },
+    {
+      "id": "C1_03",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "duracion": 110,
+      "variante": "frase_destacada",
+      "locucion": "Y esa cifra es solo el hormigón. No incluye el terreno, ni las licencias, ni una sola máquina.",
+      "contenido": {
+        "linea": "Eso es solo el hormigón"
+      },
+      "regla_montaje": "Texto solo sobre negro. Sin música bajo la frase."
+    },
+    {
+      "id": "C1_04",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "El segundo casino es el que nadie enseña: un edificio de una planta, sala de juego y poco más.",
+      "busqueda": "casino exterior night · casino facade neon",
+      "regla_montaje": "Planos pobres, feos, honestos. El contraste con C1_01 es el argumento.",
+      "clips": [
+        "clips/C1_04.mp4"
+      ],
+      "credito": "pexels:36147796"
+    },
+    {
+      "id": "C1_05",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 140,
+      "locucion": "Un casino independiente se construye entre diez y cuarenta millones. Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
+      "contenido": {
+        "barras": [
+          {
+            "etiqueta": "Casino independiente",
+            "min": 10000000,
+            "max": 40000000
+          },
+          {
+            "etiqueta": "Casino de 2 plantas",
+            "min": 40000000,
+            "max": 120000000
+          },
+          {
+            "etiqueta": "Resort de 3 plantas",
+            "min": 60000000,
+            "max": 150000000
+          }
+        ],
+        "prefijo": "$"
+      },
+      "regla_montaje": "Las barras crecen en secuencia, 20 frames cada una. La última desborda por la derecha a propósito."
+    },
+    {
+      "id": "C1_06",
+      "bloque": "capitulo_1",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 120,
+      "locucion": "Y aquí está la primera decisión real: en el resort, el juego no es el negocio principal. Es el gancho.",
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.16
+        ],
+        "x": [
+          0,
+          14
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ],
+      "texto": {
+        "linea": "El juego es el gancho",
+        "posicion": "inferior",
+        "ancho_max": 0.55,
+        "delante_de": [
+          "C1_06_sala",
+          "C1_06_arco"
+        ],
+        "entrada_frame": 50
+      }
+    },
+    {
+      "id": "C1_07",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "duracion": 130,
+      "variante": "comparativa_modelos",
+      "locucion": "En el casino pequeño, el juego es el negocio. Cien por cien. Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas.",
+      "contenido": {
+        "columnas": [
+          {
+            "titulo": "Resort",
+            "lineas": [
+              "Juego = gancho",
+              "Habitaciones",
+              "Restaurantes",
+              "Espectáculo"
+            ]
+          },
+          {
+            "titulo": "Casino pequeño",
+            "lineas": [
+              "Juego = 100%",
+              "—",
+              "—",
+              "—"
+            ]
+          }
+        ]
+      },
+      "regla_montaje": "Dos columnas que se construyen simultáneamente. Los guiones de la derecha entran con un golpe seco cada uno."
+    },
+    {
+      "id": "C1_08",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "Vamos a seguir el pequeño. Porque es el único que una persona normal podría plantearse.",
+      "busqueda": "casino interior night · casino floor machines",
+      "regla_montaje": "Un solo plano largo y quieto. Baja el ritmo antes del capítulo 2.",
+      "clips": [
+        "clips/C1_08.mp4"
+      ],
+      "credito": "pexels:35318525"
+    },
+    {
+      "id": "Gx_01a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
+      "busqueda": "calendar pages flipping close up · desk calendar month",
+      "clips": [
+        "clips/Gx_01a.mp4"
+      ],
+      "credito": "pexels:7557100"
+    },
+    {
+      "id": "Gx_01b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
+      "busqueda": "empty restaurant tables closed business · seasonal shop shutter closed",
+      "clips": [
+        "clips/Gx_01b.mp4"
+      ],
+      "credito": "pexels:12153352"
+    },
+    {
+      "id": "Gx_02",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Depende de una fórmula matemática que no falla nunca.",
+      "busqueda": "roulette wheel casino · roulette table spinning",
+      "clips": [
+        "clips/Gx_02.mp4"
+      ],
+      "credito": "pexels:35728855"
+    },
+    {
+      "id": "Gx_03",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?",
+      "busqueda": "casino neon sign exterior night · las vegas street neon night",
+      "clips": [
+        "clips/Gx_03.mp4"
+      ],
+      "credito": "pexels:36147796"
+    },
+    {
+      "id": "Gx_04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 73,
+      "locucion": "Y aquí es donde este vídeo se separa del anterior.",
+      "busqueda": "fast food restaurant counter customers · burger chain drive through",
+      "clips": [
+        "clips/Gx_04.mp4"
+      ],
+      "credito": "pixabay:176"
+    },
+    {
+      "id": "Gx_05",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Porque con un McDonald's, el problema era el dinero.",
+      "busqueda": "counting cash bills hands · stack of dollar bills close up",
+      "clips": [
+        "clips/Gx_05.mp4"
+      ],
+      "credito": "pexels:34579090"
+    },
+    {
+      "id": "Gx_06a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "construction site building frame crane · concrete pouring construction",
+      "clips": [
+        "clips/Gx_06a.mp4"
+      ],
+      "credito": "pexels:32937881"
+    },
+    {
+      "id": "Gx_06b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "business handshake office meeting · people signing employment contract",
+      "clips": [
+        "clips/Gx_06b.mp4"
+      ],
+      "credito": "pixabay:211204"
+    },
+    {
+      "id": "Gx_06c",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 82,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "slot machines row switched on casino floor",
+      "clips": [
+        "clips/Gx_06c.mp4"
+      ],
+      "credito": "pexels:7608142"
+    },
+    {
+      "id": "Gx_06d",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "no entry sign · padlock chain locked",
+      "clips": [
+        "clips/Gx_06d.mp4"
+      ],
+      "credito": "pexels:3680678"
+    },
+    {
+      "id": "C1x_01",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Un edificio de una planta, sala de juego y poco más.",
+      "busqueda": "casino exterior night · roadside motel night · small building night",
+      "clips": [
+        "clips/C1x_01.mp4"
+      ],
+      "credito": "pexels:29899413"
+    },
+    {
+      "id": "C1x_02",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "Sin hotel, sin espectáculo.",
+      "busqueda": "empty theatre seats · empty auditorium",
+      "clips": [
+        "clips/C1x_02.mp4"
+      ],
+      "credito": "pexels:29732319"
+    },
+    {
+      "id": "C1x_03",
+      "bloque": "capitulo_1",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 122,
+      "locucion": "Un casino independiente de ese tipo se construye entre diez y cuarenta millones.",
+      "variante": "barras_enfrentadas",
+      "contenido": {
+        "barras": [
+          {
+            "etiqueta": "Casino independiente",
+            "min": 10000000,
+            "max": 40000000
+          },
+          {
+            "etiqueta": "Casino de 3 plantas",
+            "min": 60000000,
+            "max": 150000000
+          }
+        ],
+        "prefijo": "$",
+        "pie": "coste de construccion"
+      }
+    },
+    {
+      "id": "C1x_04a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
+      "busqueda": "luxury hotel lobby chandelier marble · five star hotel interior",
+      "clips": [
+        "clips/C1x_04a.mp4"
+      ],
+      "credito": "pexels:34555902"
+    },
+    {
+      "id": "C1x_04b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
+      "busqueda": "warehouse interior empty · industrial hall inside",
+      "clips": [
+        "clips/C1x_04b.mp4"
+      ],
+      "credito": "pexels:4477613"
+    },
+    {
+      "id": "C1x_05",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 98,
+      "locucion": "Y aquí está la primera decisión real que casi nadie plantea bien.",
+      "busqueda": "architect blueprint plans table hands · business plan documents desk",
+      "clips": [
+        "clips/C1x_05.mp4"
+      ],
+      "credito": "pixabay:293084"
+    },
+    {
+      "id": "C1x_06a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "En el resort, el juego no es el negocio principal, es el gancho.",
+      "busqueda": "resort swimming pool aerial palm trees · hotel tower exterior day",
+      "clips": [
+        "clips/C1x_06a.mp4"
+      ],
+      "credito": "pixabay:214928"
+    },
+    {
+      "id": "C1x_06b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "",
+      "contexto": "En el resort, el juego no es el negocio principal, es el gancho.",
+      "busqueda": "casino floor wide shot slot machines people",
+      "clips": [
+        "clips/C1x_06b.mp4"
+      ],
+      "credito": "pexels:7608139"
+    },
+    {
+      "id": "C1x_07a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 70,
+      "locucion": "El dinero de verdad está en las habitaciones, los restaurantes, las entradas del espectáculo.",
+      "busqueda": "hotel room bed housekeeping · restaurant kitchen chef plating",
+      "clips": [
+        "clips/C1x_07a.mp4"
+      ],
+      "credito": "pexels:34402443"
+    },
+    {
+      "id": "C1x_07b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 69,
+      "locucion": "",
+      "contexto": "El dinero de verdad está en las habitaciones, los restaurantes, las entradas del espectáculo.",
+      "busqueda": "concert stage lights crowd show · theatre audience clapping",
+      "clips": [
+        "clips/C1x_07b.mp4"
+      ],
+      "credito": "pixabay:148231"
+    },
+    {
+      "id": "C1x_08",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "La sala de juego es lo que te trae a la gente hasta la puerta.",
+      "busqueda": "people walking into casino entrance revolving door",
+      "clips": [
+        "clips/C1x_08.mp4"
+      ],
+      "credito": "pixabay:3139"
+    },
+    {
+      "id": "C1x_09a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "En el casino pequeño, el juego es el negocio cien por cien.",
+      "busqueda": "slot machines casino · gaming hall machines",
+      "clips": [
+        "clips/C1x_09a.mp4"
+      ],
+      "credito": "pexels:7608131"
+    },
+    {
+      "id": "C1x_09b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "",
+      "contexto": "En el casino pequeño, el juego es el negocio cien por cien.",
+      "busqueda": "slot machine reels spinning close up",
+      "clips": [
+        "clips/C1x_09b.mp4"
+      ],
+      "credito": "pexels:7608144"
+    },
+    {
+      "id": "C1x_10a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas.",
+      "busqueda": "highway interchange aerial · motorway junction",
+      "clips": [
+        "clips/C1x_10a.mp4"
+      ],
+      "credito": "pixabay:248450"
+    },
+    {
+      "id": "C1x_10b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "",
+      "contexto": "Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas.",
+      "busqueda": "spreadsheet numbers · calculator accounting · financial report",
+      "clips": [
+        "clips/C1x_10b.mp4"
+      ],
+      "credito": "pixabay:293084"
+    },
+    {
+      "id": "C1x_11a",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "Vamos a seguir el pequeño, porque es el único que una persona normal podría plantearse y porque es donde la matemática se ve limpia, sin el ruido de las habitaciones de hotel",
+      "busqueda": "empty small casino floor early morning · cleaner vacuuming casino carpet",
+      "clips": [
+        "clips/C1x_11a.mp4"
+      ],
+      "credito": "pexels:7423526"
+    },
+    {
+      "id": "C1x_11b",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 86,
+      "locucion": "",
+      "contexto": "Vamos a seguir el pequeño, porque es el único que una persona normal podría plantearse y porque es donde la matemática se ve limpia, sin el ruido de las habitaciones de hotel",
+      "busqueda": "slot machine attendant alone quiet hall",
+      "clips": [
+        "clips/C1x_11b.mp4"
+      ],
+      "credito": "pexels:7608131"
+    },
+    {
+      "id": "C1x_11c",
+      "bloque": "capitulo_1",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 84,
+      "locucion": "",
+      "contexto": "Vamos a seguir el pequeño, porque es el único que una persona normal podría plantearse y porque es donde la matemática se ve limpia, sin el ruido de las habitaciones de hotel",
+      "busqueda": "chips stacking on felt table close up macro",
+      "clips": [
+        "clips/C1x_11c.mp4"
+      ],
+      "credito": "pexels:7607444"
+    },
+    {
+      "id": "C2_01",
+      "bloque": "capitulo_2",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 132,
+      "locucion": "Construir un casino cuesta entre trescientos y quinientos cincuenta dólares por pie cuadrado.",
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.1
+        ],
+        "x": [
+          0,
+          -22
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ],
+      "texto": {
+        "linea": "El edificio",
+        "posicion": "inferior",
+        "ancho_max": 0.42,
+        "delante_de": [
+          "C2_01_cielo",
+          "C2_01_estructura",
+          "C2_01_suelo"
+        ],
+        "entrada_frame": 12
+      }
+    },
+    {
+      "id": "C2_02a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 74,
+      "locucion": "En ubicaciones prémium, con interiores caros y tecnología puntera, puede pasar de novecientos.",
+      "busqueda": "luxury interior marble finishes construction detail · premium hotel construction",
+      "clips": [
+        "clips/C2_02a.mp4"
+      ],
+      "credito": "pexels:14550454"
+    },
+    {
+      "id": "C2_02b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 73,
+      "locucion": "",
+      "contexto": "En ubicaciones prémium, con interiores caros y tecnología puntera, puede pasar de novecientos.",
+      "busqueda": "led screen wall technology installation · modern interior lighting rig",
+      "clips": [
+        "clips/C2_02b.mp4"
+      ],
+      "credito": "pixabay:6395"
+    },
+    {
+      "id": "C2_03a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 52,
+      "locucion": "Para que te hagas una idea, eso es precio de hotel de cinco estrellas.",
+      "busqueda": "five star hotel lobby luxury interior wide",
+      "clips": [
+        "clips/C2_03a.mp4"
+      ],
+      "credito": "pixabay:3190"
+    },
+    {
+      "id": "C2_03b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 53,
+      "locucion": "",
+      "contexto": "Para que te hagas una idea, eso es precio de hotel de cinco estrellas.",
+      "busqueda": "hotel lobby luxury · luxury interior gold",
+      "clips": [
+        "clips/C2_03b.mp4"
+      ],
+      "credito": "pixabay:1303"
+    },
+    {
+      "id": "C2_04a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Un casino se construye con los estándares de un resort de lujo, aunque solo tenga máquinas dentro.",
+      "busqueda": "casino interior luxury ceiling wide shot",
+      "clips": [
+        "clips/C2_04a.mp4"
+      ],
+      "credito": "pixabay:1629"
+    },
+    {
+      "id": "C2_04b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "",
+      "contexto": "Un casino se construye con los estándares de un resort de lujo, aunque solo tenga máquinas dentro.",
+      "busqueda": "slot machines casino floor · casino machines row",
+      "clips": [
+        "clips/C2_04b.mp4"
+      ],
+      "credito": "pexels:34495727"
+    },
+    {
+      "id": "C2_05",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 84,
+      "locucion": "¿Por qué? Porque el edificio es parte del producto.",
+      "busqueda": "casino interior wide · gaming hall",
+      "clips": [
+        "clips/C2_05.mp4"
+      ],
+      "credito": "pexels:5266812"
+    },
+    {
+      "id": "C2_06a",
+      "bloque": "capitulo_2",
+      "tipo": "grafico",
+      "patron": "desglose",
+      "duracion": 80,
+      "locucion": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida.",
+      "busqueda": "casino carpet · red carpet floor",
+      "variante": "lista_apilada",
+      "contenido": {
+        "conceptos": [
+          {
+            "etiqueta": "Moqueta de dibujos imposibles"
+          },
+          {
+            "etiqueta": "Iluminacion sin ventanas"
+          },
+          {
+            "etiqueta": "Techos bajos sobre las maquinas"
+          },
+          {
+            "etiqueta": "Ni un solo reloj"
+          }
+        ],
+        "pie": "ingenieria de comportamiento"
+      }
+    },
+    {
+      "id": "C2_06b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "",
+      "contexto": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida.",
+      "busqueda": "casino interior crowd · casino hall people night",
+      "clips": [
+        "clips/C2_06b.mp4"
+      ],
+      "credito": "pexels:7607961"
+    },
+    {
+      "id": "C2_06c",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "",
+      "contexto": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida.",
+      "busqueda": "casino floor night · slot machines aisle",
+      "clips": [
+        "clips/C2_06c.mp4"
+      ],
+      "credito": "pexels:5354194"
+    },
+    {
+      "id": "C2_06d",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "",
+      "contexto": "La moqueta de dibujos imposibles, la iluminación sin ventanas, los techos bajos sobre las máquinas y altos sobre las mesas, la ausencia total de relojes, los pasillos que nunca te llevan directo a la salida.",
+      "busqueda": "casino neon interior · casino lights night",
+      "clips": [
+        "clips/C2_06d.mp4"
+      ],
+      "credito": "pexels:11534731"
+    },
+    {
+      "id": "C2_07a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "Nada de eso es decoración, es ingeniería de comportamiento y sale cara.",
+      "busqueda": "people playing slot machines · gambling casino players",
+      "clips": [
+        "clips/C2_07a.mp4"
+      ],
+      "credito": "pexels:7608129"
+    },
+    {
+      "id": "C2_07b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "Nada de eso es decoración, es ingeniería de comportamiento y sale cara.",
+      "busqueda": "money counting machine bills · invoice stack expensive",
+      "clips": [
+        "clips/C2_07b.mp4"
+      ],
+      "credito": "pexels:31593748"
+    },
+    {
+      "id": "C2_08",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 47,
+      "locucion": "Y luego está lo que va dentro.",
+      "busqueda": "warehouse boxes equipment delivery forklift",
+      "clips": [
+        "clips/C2_08.mp4"
+      ],
+      "credito": "pixabay:209883"
+    },
+    {
+      "id": "C2_09",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "Las máquinas tragaperras modernas no se compran sin más.",
+      "busqueda": "slot machine screen · slot machine close up",
+      "clips": [
+        "clips/C2_09.mp4"
+      ],
+      "credito": "pexels:9807885"
+    },
+    {
+      "id": "C2_10a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Muchas se arriendan al fabricante con una parte de la recaudación incluida en el trato.",
+      "busqueda": "contract signing pen paper close up · handshake business deal office",
+      "clips": [
+        "clips/C2_10a.mp4"
+      ],
+      "credito": "pexels:7646698"
+    },
+    {
+      "id": "C2_10b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 63,
+      "locucion": "",
+      "contexto": "Muchas se arriendan al fabricante con una parte de la recaudación incluida en el trato.",
+      "busqueda": "coins falling slot machine payout",
+      "clips": [
+        "clips/C2_10b.mp4"
+      ],
+      "credito": "pexels:34263260"
+    },
+    {
+      "id": "C2_11",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 76,
+      "locucion": "Las mesas necesitan crupieres formados.",
+      "busqueda": "casino dealer dealing cards blackjack table hands",
+      "clips": [
+        "clips/C2_11.mp4"
+      ],
+      "credito": "pexels:6665481"
+    },
+    {
+      "id": "C2_12a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "El sistema de vigilancia de un casino es, literalmente, el estándar de seguridad al que se compara todo lo demás.",
+      "busqueda": "security camera · surveillance camera ceiling",
+      "clips": [
+        "clips/C2_12a.mp4"
+      ],
+      "credito": "pixabay:214736"
+    },
+    {
+      "id": "C2_12b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "",
+      "contexto": "El sistema de vigilancia de un casino es, literalmente, el estándar de seguridad al que se compara todo lo demás.",
+      "busqueda": "security control room monitors wall operator",
+      "clips": [
+        "clips/C2_12b.mp4"
+      ],
+      "credito": "pexels:38779107"
+    },
+    {
+      "id": "C2_13a",
+      "bloque": "capitulo_2",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "Un modelo financiero de resort grande sitúa solo el equipamiento y el mobiliario en más de sesenta millones de dólares.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 60000000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "solo equipamiento y mobiliario"
+      }
+    },
+    {
+      "id": "C2_13b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "",
+      "contexto": "Un modelo financiero de resort grande sitúa solo el equipamiento y el mobiliario en más de sesenta millones de dólares.",
+      "busqueda": "blackjack table casino · casino chairs interior · poker table",
+      "clips": [
+        "clips/C2_13b.mp4"
+      ],
+      "credito": "pexels:35728853"
+    },
+    {
+      "id": "C2_14a",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 65,
+      "locucion": "Pero todo esto, por caro que suene, es dinero, y el dinero se consigue.",
+      "busqueda": "bank loan documents signing · money transfer banking screen",
+      "clips": [
+        "clips/C2_14a.mp4"
+      ],
+      "credito": "pexels:8439245"
+    },
+    {
+      "id": "C2_14b",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 65,
+      "locucion": "",
+      "contexto": "Pero todo esto, por caro que suene, es dinero, y el dinero se consigue.",
+      "busqueda": "investor meeting boardroom table",
+      "clips": [
+        "clips/C2_14b.mp4"
+      ],
+      "credito": "pixabay:1191"
+    },
+    {
+      "id": "C2_15",
+      "bloque": "capitulo_2",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 42,
+      "locucion": "Lo siguiente no",
+      "busqueda": "government building columns exterior · official office door closed",
+      "clips": [
+        "clips/C2_15.mp4"
+      ],
+      "credito": "pexels:2872706"
+    },
+    {
+      "id": "C3_01",
+      "bloque": "capitulo_3",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 77,
+      "locucion": "Aquí está el malentendido que tiene todo el mundo.",
+      "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+      "horizonte": 0.72,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "x": [
+          0,
+          24
+        ]
+      },
+      "capas": [
+        {
+          "id": "C3_01_cielo",
+          "src": "C3_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            28
+          ],
+          "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 1.35,
+            "contraste": 1.05,
+            "tinte": "#d7d9d4",
+            "tinteFuerza": 0.18,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C3_01_edificio",
+          "src": "C3_01_edificio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.62,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C3_01_escalinata",
+          "src": "C3_01_escalinata.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "C3_01_hombre",
+          "src": "C3_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.6,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 160,
+            "largo": 1.4,
+            "opacidad": 0.5
+          },
+          "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ],
+      "texto": {
+        "linea": "La licencia",
+        "posicion": "inferior",
+        "ancho_max": 0.42,
+        "delante_de": [
+          "C3_01_cielo",
+          "C3_01_edificio",
+          "C3_01_escalinata"
+        ],
+        "entrada_frame": 12
+      }
+    },
+    {
+      "id": "C3_02a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 82,
+      "locucion": "La gente cree que una licencia de juego es un papel que se compra, que hay un precio, lo pagas y ya está.",
+      "busqueda": "hand holding official certificate paper · license document close up",
+      "clips": [
+        "clips/C3_02a.mp4"
+      ],
+      "credito": "pexels:9870440"
+    },
+    {
+      "id": "C3_02b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "La gente cree que una licencia de juego es un papel que se compra, que hay un precio, lo pagas y ya está.",
+      "busqueda": "credit card payment terminal · cash register paying",
+      "clips": [
+        "clips/C3_02b.mp4"
+      ],
+      "credito": "pexels:6540557"
+    },
+    {
+      "id": "C3_03",
+      "bloque": "capitulo_3",
+      "tipo": "documento",
+      "patron": "documento",
+      "duracion": 104,
+      "locucion": "Vamos a mirar los números oficiales de Nevada, porque son públicos.",
+      "contenido": {
+        "titulo": "Nevada Gaming Control Board",
+        "lineas": [
+          "Tabla oficial de tasas de licencia"
+        ],
+        "resaltar": 0
+      },
+      "busqueda": "official government document page scan · public records archive"
+    },
+    {
+      "id": "C3_04a",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 75,
+      "locucion": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
+      "variante": "barras_enfrentadas",
+      "contenido": {
+        "barras": [
+          {
+            "etiqueta": "Tasa de solicitud",
+            "min": 7500,
+            "max": 75000
+          }
+        ],
+        "prefijo": "$",
+        "pie": "licencia no restringida, segun la fuente"
+      }
+    },
+    {
+      "id": "C3_04b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 87,
+      "locucion": "",
+      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
+      "busqueda": "slot machines casino floor · casino machines row",
+      "clips": [
+        "clips/C3_04b.mp4"
+      ],
+      "credito": "pexels:7608145"
+    },
+    {
+      "id": "C3_04c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 86,
+      "locucion": "",
+      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
+      "busqueda": "blackjack table empty felt cards",
+      "clips": [
+        "clips/C3_04c.mp4"
+      ],
+      "credito": "pexels:35728856"
+    },
+    {
+      "id": "C3_04d",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 87,
+      "locucion": "",
+      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
+      "busqueda": "application form paper filling pen",
+      "clips": [
+        "clips/C3_04d.mp4"
+      ],
+      "credito": "pexels:7981899"
+    },
+    {
+      "id": "C3_05",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 105,
+      "locucion": "Siete mil quinientos dólares para un negocio de cuarenta millones.",
+      "variante": "comparativa_modelos",
+      "contenido": {
+        "columnas": [
+          {
+            "titulo": "La tasa",
+            "lineas": [
+              "$7.500"
+            ]
+          },
+          {
+            "titulo": "El negocio",
+            "lineas": [
+              "$40.000.000"
+            ]
+          }
+        ],
+        "pie": "la tasa no es el coste"
+      }
+    },
+    {
+      "id": "C3_06a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 53,
+      "locucion": "Parece un chiste, y lo es, porque la tasa no es el coste.",
+      "busqueda": "man laughing disbelief office · person shaking head no",
+      "clips": [
+        "clips/C3_06a.mp4"
+      ],
+      "credito": "pexels:10515022"
+    },
+    {
+      "id": "C3_06b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 53,
+      "locucion": "",
+      "contexto": "Parece un chiste, y lo es, porque la tasa no es el coste.",
+      "busqueda": "stack of paperwork files desk tall",
+      "clips": [
+        "clips/C3_06b.mp4"
+      ],
+      "credito": "pexels:7054942"
+    },
+    {
+      "id": "C3_07a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "El coste es la investigación. Cuando solicitas una licencia de juego, el Nevada Gaming Control Board no evalúa tu plan de negocio, te evalúa a ti, y tú pagas esa investigación.",
+      "busqueda": "investigator examining documents magnifying glass",
+      "clips": [
+        "clips/C3_07a.mp4"
+      ],
+      "credito": "pexels:6657743"
+    },
+    {
+      "id": "C3_07b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "",
+      "contexto": "El coste es la investigación. Cuando solicitas una licencia de juego, el Nevada Gaming Control Board no evalúa tu plan de negocio, te evalúa a ti, y tú pagas esa investigación.",
+      "busqueda": "background check computer screen data · file folders archive shelves",
+      "clips": [
+        "clips/C3_07b.mp4"
+      ],
+      "credito": "pixabay:4941"
+    },
+    {
+      "id": "C3_07c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "",
+      "contexto": "El coste es la investigación. Cuando solicitas una licencia de juego, el Nevada Gaming Control Board no evalúa tu plan de negocio, te evalúa a ti, y tú pagas esa investigación.",
+      "busqueda": "empty meeting room · interrogation room chairs",
+      "clips": [
+        "clips/C3_07c.mp4"
+      ],
+      "credito": "pexels:15014681"
+    },
+    {
+      "id": "C3_08a",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "archivo_historico",
+      "duracion": 77,
+      "locucion": "Empieza en torno a diez mil dólares y puede superar los cincuenta mil, según lo complicada que sea tu vida.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 50000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "coste de la investigacion, desde $10.000"
+      }
+    },
+    {
+      "id": "C3_08b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "Empieza en torno a diez mil dólares y puede superar los cincuenta mil, según lo complicada que sea tu vida.",
+      "busqueda": "invoice bill printing paper · accountant calculator receipts",
+      "clips": [
+        "clips/C3_08b.mp4"
+      ],
+      "credito": "pixabay:46922"
+    },
+    {
+      "id": "C3_09",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "¿Y qué investigan? Todo.",
+      "busqueda": "human eye close up · eye iris macro",
+      "clips": [
+        "clips/C3_09.mp4"
+      ],
+      "credito": "pixabay:141673"
+    },
+    {
+      "id": "C3_10a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 94,
+      "locucion": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas.",
+      "busqueda": "bank statement paper close up numbers",
+      "clips": [
+        "clips/C3_10a.mp4"
+      ],
+      "credito": "pixabay:153458"
+    },
+    {
+      "id": "C3_10b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "",
+      "contexto": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas.",
+      "busqueda": "money transfer tracking screen · following the money graph",
+      "clips": [
+        "clips/C3_10b.mp4"
+      ],
+      "credito": "pixabay:349089"
+    },
+    {
+      "id": "C3_10c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "",
+      "contexto": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas.",
+      "busqueda": "business partners meeting handshake archive",
+      "clips": [
+        "clips/C3_10c.mp4"
+      ],
+      "credito": "pexels:8426057"
+    },
+    {
+      "id": "C3_10d",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 94,
+      "locucion": "",
+      "contexto": "Cada cuenta bancaria que has tenido, el origen de cada dólar que vas a invertir rastreado hasta su fuente, tus socios, tus antiguos socios, tu familia, tus divorcios, tus deudas, tus declaraciones de impuestos de las últimas décadas.",
+      "busqueda": "divorce papers signing · court document stamp",
+      "clips": [
+        "clips/C3_10d.mp4"
+      ],
+      "credito": "pexels:8135672"
+    },
+    {
+      "id": "C3_11",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 99,
+      "locucion": "No hay presunción de inocencia. La carga de la prueba es tuya.",
+      "busqueda": "courtroom empty judge bench · scales of justice statue",
+      "clips": [
+        "clips/C3_11.mp4"
+      ],
+      "credito": "pexels:8061667"
+    },
+    {
+      "id": "C3_12",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "Tienes que demostrar que eres apto.",
+      "busqueda": "man presenting documents to official desk",
+      "clips": [
+        "clips/C3_12.mp4"
+      ],
+      "credito": "pexels:8170487"
+    },
+    {
+      "id": "C3_13",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 72,
+      "locucion": "Ellos no tienen que demostrar que no lo eres.",
+      "busqueda": "rubber stamp · stamp on paper · ink stamp hand",
+      "clips": [
+        "clips/C3_13.mp4"
+      ],
+      "credito": "pixabay:15211"
+    },
+    {
+      "id": "C3_14",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "El proceso puede llevar más de un año.",
+      "busqueda": "calendar year pages flipping fast · clock hands spinning time lapse",
+      "clips": [
+        "clips/C3_14.mp4"
+      ],
+      "credito": "pixabay:181407"
+    },
+    {
+      "id": "C3_15",
+      "bloque": "capitulo_3",
+      "tipo": "documento",
+      "patron": "documento",
+      "duracion": 125,
+      "locucion": "Y para las categorías más grandes, las cifras oficiales dejan de ser simbólicas.",
+      "contenido": {
+        "titulo": "Tasas de licencia — Nevada",
+        "lineas": [
+          "Juego interactivo: $500.000 iniciales",
+          "Renovacion: $250.000 anuales",
+          "Apuestas deportivas: $250.000"
+        ],
+        "resaltar": 0
+      },
+      "busqueda": "official fee schedule document table"
+    },
+    {
+      "id": "C3_16a",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "desglose",
+      "duracion": 75,
+      "locucion": "Una licencia de juego interactivo en Nevada cuesta quinientos mil dólares iniciales por dos años y doscientos cincuenta mil anuales después.",
+      "variante": "lista_apilada",
+      "contenido": {
+        "conceptos": [
+          {
+            "etiqueta": "Licencia interactiva (2 anos)",
+            "valor": 500000
+          },
+          {
+            "etiqueta": "Renovacion anual",
+            "valor": 250000
+          }
+        ],
+        "prefijo": "$",
+        "pie": "Nevada, categorias mayores"
+      }
+    },
+    {
+      "id": "C3_16b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 66,
+      "locucion": "",
+      "contexto": "Una licencia de juego interactivo en Nevada cuesta quinientos mil dólares iniciales por dos años y doscientos cincuenta mil anuales después.",
+      "busqueda": "online gambling app smartphone screen",
+      "clips": [
+        "clips/C3_16b.mp4"
+      ],
+      "credito": "pixabay:3172"
+    },
+    {
+      "id": "C3_16c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "Una licencia de juego interactivo en Nevada cuesta quinientos mil dólares iniciales por dos años y doscientos cincuenta mil anuales después.",
+      "busqueda": "notebook planner desk · agenda pages open",
+      "clips": [
+        "clips/C3_16c.mp4"
+      ],
+      "credito": "pexels:6267390"
+    },
+    {
+      "id": "C3_17",
+      "bloque": "capitulo_3",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 105,
+      "locucion": "La de operador de apuestas deportivas arranca en doscientos cincuenta mil.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 250000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "operador de apuestas deportivas"
+      }
+    },
+    {
+      "id": "C3_18",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 97,
+      "locucion": "Y aun así, ese no es el gasto principal de este capítulo.",
+      "busqueda": "invoice paperwork desk · bills stack paper",
+      "clips": [
+        "clips/C3_18.mp4"
+      ],
+      "credito": "pexels:6146720"
+    },
+    {
+      "id": "C3_19a",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 76,
+      "locucion": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas",
+      "busqueda": "man alone empty office looking down disappointed",
+      "clips": [
+        "clips/C3_19a.mp4"
+      ],
+      "credito": "pixabay:202743"
+    },
+    {
+      "id": "C3_19b",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas",
+      "busqueda": "calendar flipping pages · time passing clock",
+      "clips": [
+        "clips/C3_19b.mp4"
+      ],
+      "credito": "pexels:7055349"
+    },
+    {
+      "id": "C3_19c",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas",
+      "busqueda": "shredding documents paper shredder",
+      "clips": [
+        "clips/C3_19c.mp4"
+      ],
+      "credito": "pexels:11798288"
+    },
+    {
+      "id": "C3_19d",
+      "bloque": "capitulo_3",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "",
+      "contexto": "El gasto principal es que existe una versión de ti que no consigue la licencia, y en esa versión has perdido el año, la investigación, los abogados y todo lo que hayas construido mientras esperabas",
+      "busqueda": "empty wallet hands · closed business sign door",
+      "clips": [
+        "clips/C3_19d.mp4"
+      ],
+      "credito": "pexels:12412380"
+    },
+    {
+      "id": "C4_01",
+      "bloque": "capitulo_4",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 89,
+      "locucion": "Supongamos que la consigues. Estás dentro.",
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -26
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ],
+      "texto": {
+        "linea": "El socio",
+        "posicion": "inferior",
+        "ancho_max": 0.4,
+        "delante_de": [
+          "C4_01_cielo",
+          "C4_01_capitolio",
+          "C4_01_plaza"
+        ],
+        "entrada_frame": 12
+      }
+    },
+    {
+      "id": "C4_02",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Las máquinas están encendidas.",
+      "busqueda": "slot machine lights · casino neon lights",
+      "clips": [
+        "clips/C4_02.mp4"
+      ],
+      "credito": "pixabay:170"
+    },
+    {
+      "id": "C4_03",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 58,
+      "locucion": "Y entonces conoces a tu socio.",
+      "busqueda": "government building columns exterior day · state capitol dome",
+      "clips": [
+        "clips/C4_03.mp4"
+      ],
+      "credito": "pexels:4408071"
+    },
+    {
+      "id": "C4_04a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "En un casino, el Estado no es un regulador que te cobra impuestos al final del año como a cualquier empresa.",
+      "busqueda": "tax forms paperwork desk calculator",
+      "clips": [
+        "clips/C4_04a.mp4"
+      ],
+      "credito": "pexels:6929603"
+    },
+    {
+      "id": "C4_04b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "En un casino, el Estado no es un regulador que te cobra impuestos al final del año como a cualquier empresa.",
+      "busqueda": "warehouse inspection worker · clipboard checking boxes",
+      "clips": [
+        "clips/C4_04b.mp4"
+      ],
+      "credito": "pexels:8987024"
+    },
+    {
+      "id": "C4_05a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie.",
+      "busqueda": "casino cage counting cash chips",
+      "clips": [
+        "clips/C4_05a.mp4"
+      ],
+      "credito": "pexels:5920617"
+    },
+    {
+      "id": "C4_05b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "",
+      "contexto": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie.",
+      "busqueda": "casino chips · poker chips stack",
+      "clips": [
+        "clips/C4_05b.mp4"
+      ],
+      "credito": "pixabay:227109"
+    },
+    {
+      "id": "C4_05c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "",
+      "contexto": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie.",
+      "busqueda": "counting money stacks · cash piles",
+      "clips": [
+        "clips/C4_05c.mp4"
+      ],
+      "credito": "pixabay:50628"
+    },
+    {
+      "id": "C4_06",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "¿Cuánto?",
+      "busqueda": "question mark neon sign · man shrugging unsure",
+      "clips": [
+        "clips/C4_06.mp4"
+      ],
+      "credito": "pexels:6800489"
+    },
+    {
+      "id": "C4_07a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Depende de dónde pongas el casino y las diferencias son brutales.",
+      "busqueda": "map of united states states borders",
+      "clips": [
+        "clips/C4_07a.mp4"
+      ],
+      "credito": "pexels:8499670"
+    },
+    {
+      "id": "C4_07b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 51,
+      "locucion": "",
+      "contexto": "Depende de dónde pongas el casino y las diferencias son brutales.",
+      "busqueda": "road sign state line welcome highway",
+      "clips": [
+        "clips/C4_07b.mp4"
+      ],
+      "credito": "pexels:4324129"
+    },
+    {
+      "id": "C4_08",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 115,
+      "locucion": "En Nevada, el tramo más alto es del 6,75 %.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 6.75,
+        "sufijo": " %",
+        "decimales": 2,
+        "pie": "Nevada · tramo mas alto"
+      }
+    },
+    {
+      "id": "C4_09",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Es de los más bajos del país y no es casualidad.",
+      "busqueda": "las vegas strip aerial night wide",
+      "clips": [
+        "clips/C4_09.mp4"
+      ],
+      "credito": "pexels:36629377"
+    },
+    {
+      "id": "C4_10a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "archivo_historico",
+      "duracion": 61,
+      "locucion": "Nevada llegó primero y fijó las reglas cuando nadie más quería este negocio.",
+      "busqueda": "vintage archive las vegas old footage",
+      "clips": [
+        "clips/C4_10a.mp4"
+      ],
+      "credito": "pexels:26838803"
+    },
+    {
+      "id": "C4_10b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "archivo_historico",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Nevada llegó primero y fijó las reglas cuando nadie más quería este negocio.",
+      "busqueda": "old neon sign desert road vintage",
+      "clips": [
+        "clips/C4_10b.mp4"
+      ],
+      "credito": "pexels:19132923"
+    },
+    {
+      "id": "C4_11a",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "desglose",
+      "duracion": 75,
+      "locucion": "En Nueva Jersey, son el 8 % sobre los ingresos brutos de casino, el 15 sobre el juego online y el 13 sobre las apuestas deportivas por Internet.",
+      "variante": "lista_apilada",
+      "contenido": {
+        "conceptos": [
+          {
+            "etiqueta": "Casino",
+            "valor": 8
+          },
+          {
+            "etiqueta": "Juego online",
+            "valor": 15
+          },
+          {
+            "etiqueta": "Apuestas deportivas",
+            "valor": 13
+          }
+        ],
+        "sufijo": " %",
+        "pie": "Nueva Jersey"
+      }
+    },
+    {
+      "id": "C4_11b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "",
+      "contexto": "En Nueva Jersey, son el 8 % sobre los ingresos brutos de casino, el 15 sobre el juego online y el 13 sobre las apuestas deportivas por Internet.",
+      "busqueda": "atlantic city boardwalk casino exterior",
+      "clips": [
+        "clips/C4_11b.mp4"
+      ],
+      "credito": "pixabay:313948"
+    },
+    {
+      "id": "C4_11c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "",
+      "contexto": "En Nueva Jersey, son el 8 % sobre los ingresos brutos de casino, el 15 sobre el juego online y el 13 sobre las apuestas deportivas por Internet.",
+      "busqueda": "online betting laptop screen odds",
+      "clips": [
+        "clips/C4_11c.mp4"
+      ],
+      "credito": "pixabay:107425"
+    },
+    {
+      "id": "C4_12a",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 130,
+      "locucion": "Y en el otro extremo está Maryland, donde el tipo máximo llega al 62,5 %.",
+      "variante": "barras_enfrentadas",
+      "contenido": {
+        "barras": [
+          {
+            "etiqueta": "Nevada",
+            "valor": 6.75
+          },
+          {
+            "etiqueta": "Nueva Jersey",
+            "valor": 8
+          },
+          {
+            "etiqueta": "Maryland",
+            "valor": 62.5
+          }
+        ],
+        "sufijo": " %",
+        "pie": "tipo maximo sobre la ganancia bruta de juego"
+      }
+    },
+    {
+      "id": "C4_12b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "",
+      "contexto": "Y en el otro extremo está Maryland, donde el tipo máximo llega al 62,5 %.",
+      "busqueda": "atlantic coast city aerial · casino exterior day",
+      "clips": [
+        "clips/C4_12b.mp4"
+      ],
+      "credito": "pexels:32297165"
+    },
+    {
+      "id": "C4_13a",
+      "bloque": "capitulo_4",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 62.5,
+        "sufijo": " %",
+        "decimales": 1,
+        "pie": "Maryland · de cada dolar ganado"
+      }
+    },
+    {
+      "id": "C4_13b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "",
+      "contexto": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio.",
+      "busqueda": "dollar bill torn in half hands",
+      "clips": [
+        "clips/C4_13b.mp4"
+      ],
+      "credito": "pexels:34579100"
+    },
+    {
+      "id": "C4_13c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "",
+      "contexto": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio.",
+      "busqueda": "giving money hands · cash payment hands",
+      "clips": [
+        "clips/C4_13c.mp4"
+      ],
+      "credito": "pixabay:20857"
+    },
+    {
+      "id": "C4_13d",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 91,
+      "locucion": "",
+      "contexto": "62,5. De cada dólar que tu casino le gana a un cliente, más de 60 centavos van al Estado antes de que pagues una sola nómina, una sola factura de luz o un solo dólar de la deuda con la que construiste el edificio.",
+      "busqueda": "power lines electricity · electricity pylon",
+      "clips": [
+        "clips/C4_13d.mp4"
+      ],
+      "credito": "pexels:27844418"
+    },
+    {
+      "id": "C4_14a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "Esto crea una situación que no existe en casi ningún otro sector.",
+      "busqueda": "man worried desk · businessman thinking office",
+      "clips": [
+        "clips/C4_14a.mp4"
+      ],
+      "credito": "pixabay:349094"
+    },
+    {
+      "id": "C4_14b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "",
+      "contexto": "Esto crea una situación que no existe en casi ningún otro sector.",
+      "busqueda": "shop owner counting till small business",
+      "clips": [
+        "clips/C4_14b.mp4"
+      ],
+      "credito": "pixabay:2988"
+    },
+    {
+      "id": "C4_15a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "La decisión más importante de tu negocio no es el producto, ni el precio, ni la ubicación comercial.",
+      "busqueda": "product on shelf retail store · price tag close up",
+      "clips": [
+        "clips/C4_15a.mp4"
+      ],
+      "credito": "pixabay:47601"
+    },
+    {
+      "id": "C4_15b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "",
+      "contexto": "La decisión más importante de tu negocio no es el producto, ni el precio, ni la ubicación comercial.",
+      "busqueda": "commercial street shops location",
+      "clips": [
+        "clips/C4_15b.mp4"
+      ],
+      "credito": "pexels:35764225"
+    },
+    {
+      "id": "C4_16",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "Es la jurisdicción.",
+      "busqueda": "map pin location · pointing at map",
+      "clips": [
+        "clips/C4_16.mp4"
+      ],
+      "credito": "pixabay:29879"
+    },
+    {
+      "id": "C4_17a",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "El mismo casino, el mismo edificio, las mismas máquinas, los mismos clientes en dos estados distintos son dos negocios completamente diferentes.",
+      "busqueda": "identical buildings two side by side",
+      "clips": [
+        "clips/C4_17a.mp4"
+      ],
+      "credito": "pixabay:4544"
+    },
+    {
+      "id": "C4_17b",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "",
+      "contexto": "El mismo casino, el mismo edificio, las mismas máquinas, los mismos clientes en dos estados distintos son dos negocios completamente diferentes.",
+      "busqueda": "slot machines row · casino machines",
+      "clips": [
+        "clips/C4_17b.mp4"
+      ],
+      "credito": "pexels:7608142"
+    },
+    {
+      "id": "C4_17c",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "",
+      "contexto": "El mismo casino, el mismo edificio, las mismas máquinas, los mismos clientes en dos estados distintos son dos negocios completamente diferentes.",
+      "busqueda": "people playing slot machines casino night",
+      "clips": [
+        "clips/C4_17c.mp4"
+      ],
+      "credito": "pexels:7607961"
+    },
+    {
+      "id": "C4_18",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 59,
+      "locucion": "Uno funciona, el otro no.",
+      "busqueda": "green light red light traffic · thumbs up thumbs down",
+      "clips": [
+        "clips/C4_18.mp4"
+      ],
+      "credito": "pixabay:94174"
+    },
+    {
+      "id": "C4_19",
+      "bloque": "capitulo_4",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "Los operadores serios eligen el Estado antes que el solar",
+      "busqueda": "businessman studying map on wall · empty land plot for sale sign",
+      "clips": [
+        "clips/C4_19.mp4"
+      ],
+      "credito": "pexels:7431866"
+    },
+    {
+      "id": "C5_01a",
+      "bloque": "capitulo_5",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 110,
+      "locucion": "Vale, ¿y cuánto se gana? Aquí es donde el casino se separa de cualquier otro negocio que hayamos analizado.",
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.13
+        ],
+        "x": [
+          0,
+          22
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ],
+      "texto": {
+        "linea": "Lo que entra",
+        "posicion": "inferior",
+        "ancho_max": 0.42,
+        "delante_de": [
+          "C5_01a_pared",
+          "C5_01a_maquinas",
+          "C5_01a_moqueta"
+        ],
+        "entrada_frame": 12
+      }
+    },
+    {
+      "id": "C5_01b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "Vale, ¿y cuánto se gana? Aquí es donde el casino se separa de cualquier otro negocio que hayamos analizado.",
+      "busqueda": "casino floor busy people playing wide shot",
+      "clips": [
+        "clips/C5_01b.mp4"
+      ],
+      "credito": "pexels:7607449"
+    },
+    {
+      "id": "C5_02",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Un restaurante depende de que la comida guste.",
+      "busqueda": "chef plating dish restaurant kitchen · customer tasting food restaurant",
+      "clips": [
+        "clips/C5_02.mp4"
+      ],
+      "credito": "pixabay:11657"
+    },
+    {
+      "id": "C5_03",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 75,
+      "locucion": "Una tienda depende de que el producto se venda.",
+      "busqueda": "supermarket aisle · shop shelves products",
+      "clips": [
+        "clips/C5_03.mp4"
+      ],
+      "credito": "pixabay:21117"
+    },
+    {
+      "id": "C5_04",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 66,
+      "locucion": "Un casino depende de una fórmula.",
+      "busqueda": "roulette wheel spinning macro slow motion",
+      "clips": [
+        "clips/C5_04.mp4"
+      ],
+      "credito": "pexels:35728854"
+    },
+    {
+      "id": "C5_05",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "Cada juego tiene una ventaja matemática fija para la casa.",
+      "busqueda": "roulette table numbers layout close up · dice rolling on felt",
+      "clips": [
+        "clips/C5_05.mp4"
+      ],
+      "credito": "pexels:7607943"
+    },
+    {
+      "id": "C5_06",
+      "bloque": "capitulo_5",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 106,
+      "locucion": "En la ruleta europea, ese margen es del 2,7 %.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 2.7,
+        "sufijo": " %",
+        "decimales": 1,
+        "pie": "ruleta europea · ventaja de la casa"
+      }
+    },
+    {
+      "id": "C5_07a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 52,
+      "locucion": "En las máquinas, lo fija el fabricante y lo aprueba el regulador.",
+      "busqueda": "slot machine circuit board technician · machine settings screen",
+      "clips": [
+        "clips/C5_07a.mp4"
+      ],
+      "credito": "pexels:9807885"
+    },
+    {
+      "id": "C5_07b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 51,
+      "locucion": "",
+      "contexto": "En las máquinas, lo fija el fabricante y lo aprueba el regulador.",
+      "busqueda": "inspector checking machine clipboard casino",
+      "clips": [
+        "clips/C5_07b.mp4"
+      ],
+      "credito": "pexels:7480064"
+    },
+    {
+      "id": "C5_08",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 89,
+      "locucion": "No es opinión ni suerte, es aritmética verificable.",
+      "busqueda": "handwritten equations blackboard math · numbers scrolling screen data",
+      "clips": [
+        "clips/C5_08.mp4"
+      ],
+      "credito": "pexels:5266003"
+    },
+    {
+      "id": "C5_09a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 84,
+      "locucion": "Con suficientes apuestas, la ganancia de la casa deja de ser una probabilidad y se convierte en una previsión.",
+      "busqueda": "gambling casino players · casino tables people",
+      "clips": [
+        "clips/C5_09a.mp4"
+      ],
+      "credito": "pixabay:176993"
+    },
+    {
+      "id": "C5_09b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 85,
+      "locucion": "",
+      "contexto": "Con suficientes apuestas, la ganancia de la casa deja de ser una probabilidad y se convierte en una previsión.",
+      "busqueda": "stock chart rising · financial graph growth",
+      "clips": [
+        "clips/C5_09b.mp4"
+      ],
+      "credito": "pixabay:349089"
+    },
+    {
+      "id": "C5_10",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 78,
+      "locucion": "Por eso el sector entero se mide en una sola métrica:",
+      "busqueda": "stock market chart screen · financial data screen",
+      "clips": [
+        "clips/C5_10.mp4"
+      ],
+      "credito": "pexels:38698437"
+    },
+    {
+      "id": "C5_11",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 72,
+      "locucion": "el win, lo que pierden los clientes.",
+      "busqueda": "player losing chips pushed away table · empty chip tray hands",
+      "clips": [
+        "clips/C5_11.mp4"
+      ],
+      "credito": "pexels:7607950"
+    },
+    {
+      "id": "C5_12",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 90,
+      "locucion": "Y por eso Nevada lo publica cada mes con precisión de un dólar.",
+      "busqueda": "financial report printed · statistics document paper",
+      "clips": [
+        "clips/C5_12.mp4"
+      ],
+      "credito": "pixabay:212508"
+    },
+    {
+      "id": "C5_13a",
+      "bloque": "capitulo_5",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 75,
+      "locucion": "En el ejercicio que va de julio de 2025 a febrero de 2026, los casinos de Nevada acumularon diez mil quinientos ochenta y ocho millones de dólares de win.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 10588000000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "win acumulado · Nevada, jul 2025 a feb 2026"
+      }
+    },
+    {
+      "id": "C5_13b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 76,
+      "locucion": "",
+      "contexto": "En el ejercicio que va de julio de 2025 a febrero de 2026, los casinos de Nevada acumularon diez mil quinientos ochenta y ocho millones de dólares de win.",
+      "busqueda": "stacks of cash · counting banknotes",
+      "clips": [
+        "clips/C5_13b.mp4"
+      ],
+      "credito": "pixabay:172894"
+    },
+    {
+      "id": "C5_13c",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "En el ejercicio que va de julio de 2025 a febrero de 2026, los casinos de Nevada acumularon diez mil quinientos ochenta y ocho millones de dólares de win.",
+      "busqueda": "aerial las vegas strip casinos night",
+      "clips": [
+        "clips/C5_13c.mp4"
+      ],
+      "credito": "pexels:36446833"
+    },
+    {
+      "id": "C5_14",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 100,
+      "locucion": "Suena a máquina de imprimir dinero y en cierto modo lo es.",
+      "busqueda": "money printing press bills sheets",
+      "clips": [
+        "clips/C5_14.mp4"
+      ],
+      "credito": "pexels:29975898"
+    },
+    {
+      "id": "C5_15",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 69,
+      "locucion": "Pero fíjate en lo que hemos ido apilando encima.",
+      "busqueda": "stacking blocks tower hands · piling boxes warehouse",
+      "clips": [
+        "clips/C5_15.mp4"
+      ],
+      "credito": "pixabay:19600"
+    },
+    {
+      "id": "C5_16",
+      "bloque": "capitulo_5",
+      "tipo": "grafico",
+      "patron": "comparativa",
+      "duracion": 80,
+      "locucion": "Has puesto entre diez y cuarenta millones en el edificio.",
+      "variante": "barras_enfrentadas",
+      "contenido": {
+        "barras": [
+          {
+            "etiqueta": "Edificio",
+            "min": 10000000,
+            "max": 40000000
+          }
+        ],
+        "prefijo": "$",
+        "pie": "solo la construccion"
+      }
+    },
+    {
+      "id": "C5_17",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 79,
+      "locucion": "Has arrendado las máquinas compartiendo recaudación.",
+      "busqueda": "slot machines row delivery installation · contract signing machines",
+      "clips": [
+        "clips/C5_17.mp4"
+      ],
+      "credito": "pexels:8814718"
+    },
+    {
+      "id": "C5_18a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "Pagas nóminas veinticuatro horas al día, trescientos sesenta y cinco días al año, incluida una plantilla de seguridad y cumplimiento normativo que en cualquier otro negocio no existiría.",
+      "busqueda": "night shift work · casino staff working",
+      "clips": [
+        "clips/C5_18a.mp4"
+      ],
+      "credito": "pixabay:215751"
+    },
+    {
+      "id": "C5_18b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "",
+      "contexto": "Pagas nóminas veinticuatro horas al día, trescientos sesenta y cinco días al año, incluida una plantilla de seguridad y cumplimiento normativo que en cualquier otro negocio no existiría.",
+      "busqueda": "security control room monitors · cctv monitors operator",
+      "clips": [
+        "clips/C5_18b.mp4"
+      ],
+      "credito": "pexels:38779095"
+    },
+    {
+      "id": "C5_18c",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 92,
+      "locucion": "",
+      "contexto": "Pagas nóminas veinticuatro horas al día, trescientos sesenta y cinco días al año, incluida una plantilla de seguridad y cumplimiento normativo que en cualquier otro negocio no existiría.",
+      "busqueda": "compliance officer reviewing documents office",
+      "clips": [
+        "clips/C5_18c.mp4"
+      ],
+      "credito": "pexels:29751526"
+    },
+    {
+      "id": "C5_19",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 45,
+      "locucion": "Pagas la deuda.",
+      "busqueda": "bank loan statement debt papers · mortgage document signing",
+      "clips": [
+        "clips/C5_19.mp4"
+      ],
+      "credito": "pexels:8293014"
+    },
+    {
+      "id": "C5_20a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 50,
+      "locucion": "Y antes que todo eso, el Estado se lleva su parte de cada dólar.",
+      "busqueda": "tax documents · stamping contract",
+      "clips": [
+        "clips/C5_20a.mp4"
+      ],
+      "credito": "pixabay:87146"
+    },
+    {
+      "id": "C5_20b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 51,
+      "locucion": "",
+      "contexto": "Y antes que todo eso, el Estado se lleva su parte de cada dólar.",
+      "busqueda": "tearing money bill · cutting banknote",
+      "clips": [
+        "clips/C5_20b.mp4"
+      ],
+      "credito": "pixabay:153458"
+    },
+    {
+      "id": "C5_21a",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 57,
+      "locucion": "La matemática garantiza que ganas dinero, no garantiza que quede algo para ti",
+      "busqueda": "accounting ledger · bookkeeping numbers",
+      "clips": [
+        "clips/C5_21a.mp4"
+      ],
+      "credito": "pixabay:349091"
+    },
+    {
+      "id": "C5_21b",
+      "bloque": "capitulo_5",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 44,
+      "locucion": "",
+      "contexto": "La matemática garantiza que ganas dinero, no garantiza que quede algo para ti",
+      "busqueda": "man alone counting few bills empty office",
+      "clips": [
+        "clips/C5_21b.mp4"
+      ],
+      "credito": "pixabay:46637"
+    },
+    {
+      "id": "C6_01",
+      "bloque": "capitulo_6",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 116,
+      "locucion": "Y llegamos a lo que hace que este negocio sea distinto a todos los demás.",
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "x": [
+          0,
+          -20
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ],
+      "texto": {
+        "linea": "Nunca fue tuya",
+        "posicion": "inferior",
+        "ancho_max": 0.45,
+        "delante_de": [
+          "C6_01_noche",
+          "C6_01_fachada",
+          "C6_01_acera"
+        ],
+        "entrada_frame": 12
+      }
+    },
+    {
+      "id": "C6_02a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
+      "busqueda": "fast food restaurant franchise exterior sign",
+      "clips": [
+        "clips/C6_02a.mp4"
+      ],
+      "credito": "pexels:6529567"
+    },
+    {
+      "id": "C6_02b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
+      "busqueda": "lease contract document signing close up",
+      "clips": [
+        "clips/C6_02b.mp4"
+      ],
+      "credito": "pexels:8471105"
+    },
+    {
+      "id": "C6_03a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "En un casino es peor, porque lo que no es tuyo no es el ladrillo, es el permiso para existir.",
+      "busqueda": "brick wall building facade close up",
+      "clips": [
+        "clips/C6_03a.mp4"
+      ],
+      "credito": "pixabay:42701"
+    },
+    {
+      "id": "C6_03b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "",
+      "contexto": "En un casino es peor, porque lo que no es tuyo no es el ladrillo, es el permiso para existir.",
+      "busqueda": "official document close · certificate paper hands",
+      "clips": [
+        "clips/C6_03b.mp4"
+      ],
+      "credito": "pixabay:41121"
+    },
+    {
+      "id": "C6_04",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Una licencia de juego no se compra, se concede.",
+      "busqueda": "handing document · giving contract",
+      "clips": [
+        "clips/C6_04.mp4"
+      ],
+      "credito": "pixabay:9037"
+    },
+    {
+      "id": "C6_05",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Y lo que se concede se puede retirar.",
+      "busqueda": "hand taking document back · certificate removed from wall",
+      "clips": [
+        "clips/C6_05.mp4"
+      ],
+      "credito": "pixabay:11254"
+    },
+    {
+      "id": "C6_06",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 59,
+      "locucion": "Y no se retira solo por hacer trampas.",
+      "busqueda": "dealing cards · playing cards dealer",
+      "clips": [
+        "clips/C6_06.mp4"
+      ],
+      "credito": "pixabay:91678"
+    },
+    {
+      "id": "C6_07a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "Se puede perder por un incumplimiento normativo, por un socio que resulta ser inadecuado, por un fallo de control interno, por un cambio en tu situación personal que ya no encaja con lo que aprobaron.",
+      "busqueda": "office archive shelves · filing cabinet documents · folders binders office",
+      "clips": [
+        "clips/C6_07a.mp4"
+      ],
+      "credito": "pixabay:349087"
+    },
+    {
+      "id": "C6_07b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 94,
+      "locucion": "",
+      "contexto": "Se puede perder por un incumplimiento normativo, por un socio que resulta ser inadecuado, por un fallo de control interno, por un cambio en tu situación personal que ya no encaja con lo que aprobaron.",
+      "busqueda": "business partners argument meeting room",
+      "clips": [
+        "clips/C6_07b.mp4"
+      ],
+      "credito": "pixabay:1035"
+    },
+    {
+      "id": "C6_07c",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 93,
+      "locucion": "",
+      "contexto": "Se puede perder por un incumplimiento normativo, por un socio que resulta ser inadecuado, por un fallo de control interno, por un cambio en tu situación personal que ya no encaja con lo que aprobaron.",
+      "busqueda": "parliament · government assembly · politicians voting",
+      "clips": [
+        "clips/C6_07c.mp4"
+      ],
+      "credito": "pixabay:18792"
+    },
+    {
+      "id": "C6_08",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "Mientras seas licenciatario, la investigación no termina.",
+      "busqueda": "camera lens macro · lens aperture close · magnifying glass eye",
+      "clips": [
+        "clips/C6_08.mp4"
+      ],
+      "credito": "pixabay:22055"
+    },
+    {
+      "id": "C6_09",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 58,
+      "locucion": "Sigue indefinidamente.",
+      "busqueda": "clock ticking endless time lapse",
+      "clips": [
+        "clips/C6_09.mp4"
+      ],
+      "credito": "pixabay:15615"
+    },
+    {
+      "id": "C6_10a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 64,
+      "locucion": "Tienes que notificar cambios en tu accionariado, en tu financiación, en tu vida.",
+      "busqueda": "shareholder documents signing table",
+      "clips": [
+        "clips/C6_10a.mp4"
+      ],
+      "credito": "pexels:8439239"
+    },
+    {
+      "id": "C6_10b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 63,
+      "locucion": "",
+      "contexto": "Tienes que notificar cambios en tu accionariado, en tu financiación, en tu vida.",
+      "busqueda": "filling form · signing paperwork",
+      "clips": [
+        "clips/C6_10b.mp4"
+      ],
+      "credito": "pexels:8060739"
+    },
+    {
+      "id": "C6_11",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Y hay otro detalle que la mayoría no ve venir.",
+      "busqueda": "businessman stressed office · man worried thinking",
+      "clips": [
+        "clips/C6_11.mp4"
+      ],
+      "credito": "pixabay:22109"
+    },
+    {
+      "id": "C6_12a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "En muchas jurisdicciones, el número de licencias está limitado por ley.",
+      "busqueda": "law book pages legal text close up",
+      "clips": [
+        "clips/C6_12a.mp4"
+      ],
+      "credito": "pixabay:21941"
+    },
+    {
+      "id": "C6_12b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "",
+      "contexto": "En muchas jurisdicciones, el número de licencias está limitado por ley.",
+      "busqueda": "waiting room people · line of people street",
+      "clips": [
+        "clips/C6_12b.mp4"
+      ],
+      "credito": "pixabay:1057"
+    },
+    {
+      "id": "C6_13",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 80,
+      "locucion": "No es un mercado abierto donde compites por ser mejor.",
+      "busqueda": "busy market street · crowded shopping street",
+      "clips": [
+        "clips/C6_13.mp4"
+      ],
+      "credito": "pixabay:1643"
+    },
+    {
+      "id": "C6_14a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 60,
+      "locucion": "Es un club cerrado donde el número de sillas lo decide un parlamento.",
+      "busqueda": "nightclub entrance night · club entrance door",
+      "clips": [
+        "clips/C6_14a.mp4"
+      ],
+      "credito": "pixabay:15936"
+    },
+    {
+      "id": "C6_14b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Es un club cerrado donde el número de sillas lo decide un parlamento.",
+      "busqueda": "empty chairs row · conference chairs",
+      "clips": [
+        "clips/C6_14b.mp4"
+      ],
+      "credito": "pixabay:94979"
+    },
+    {
+      "id": "C6_15",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 55,
+      "locucion": "Eso significa dos cosas a la vez:",
+      "busqueda": "corridor · hallway doors",
+      "clips": [
+        "clips/C6_15.mp4"
+      ],
+      "credito": "pixabay:846"
+    },
+    {
+      "id": "C6_16a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "que si estás dentro, tu competencia está legalmente contenida y que el valor real de tu empresa no está en el edificio, ni en las máquinas, ni en la marca.",
+      "busqueda": "empty street no competitors shops closed",
+      "clips": [
+        "clips/C6_16a.mp4"
+      ],
+      "credito": "pixabay:63973"
+    },
+    {
+      "id": "C6_16b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "que si estás dentro, tu competencia está legalmente contenida y que el valor real de tu empresa no está en el edificio, ni en las máquinas, ni en la marca.",
+      "busqueda": "office building facade · hotel building exterior day",
+      "clips": [
+        "clips/C6_16b.mp4"
+      ],
+      "credito": "pexels:34556522"
+    },
+    {
+      "id": "C6_16c",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 77,
+      "locucion": "",
+      "contexto": "que si estás dentro, tu competencia está legalmente contenida y que el valor real de tu empresa no está en el edificio, ni en las máquinas, ni en la marca.",
+      "busqueda": "casino slot machines floor · casino machines wide",
+      "clips": [
+        "clips/C6_16c.mp4"
+      ],
+      "credito": "pexels:7608139"
+    },
+    {
+      "id": "C6_17a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Está en un papel que otro te presta, revisa continuamente y puede recuperar.",
+      "busqueda": "reading documents desk · reviewing papers office",
+      "clips": [
+        "clips/C6_17a.mp4"
+      ],
+      "credito": "pexels:7844940"
+    },
+    {
+      "id": "C6_17b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "Está en un papel que otro te presta, revisa continuamente y puede recuperar.",
+      "busqueda": "hand pulling paper away from another hand",
+      "clips": [
+        "clips/C6_17b.mp4"
+      ],
+      "credito": "pexels:4153403"
+    },
+    {
+      "id": "C6_18a",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 64,
+      "locucion": "Los casinos no venden juego, venden acceso a una escasez que ellos no crearon",
+      "busqueda": "casino sign neon night glowing",
+      "clips": [
+        "clips/C6_18a.mp4"
+      ],
+      "credito": "pixabay:175938"
+    },
+    {
+      "id": "C6_18b",
+      "bloque": "capitulo_6",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "",
+      "contexto": "Los casinos no venden juego, venden acceso a una escasez que ellos no crearon",
+      "busqueda": "closed gate locked chain · restricted access sign",
+      "clips": [
+        "clips/C6_18b.mp4"
+      ],
+      "credito": "pixabay:2346"
+    },
+    {
+      "id": "C7_01",
+      "bloque": "capitulo_7",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
+      "duracion": 77,
+      "locucion": "Entonces, ¿se puede comprar un casino?",
+      "contenido": {
+        "linea": "ENTONCES ¿SE PUEDE COMPRAR UN CASINO?"
+      },
+      "luz": "amanecer, cielo palido muy luminoso, el casino apagado en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.1
+        ],
+        "x": [
+          0,
+          26
+        ]
+      },
+      "capas": [
+        {
+          "id": "C7_01_alba",
+          "src": "C7_01_alba.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            30
+          ],
+          "prompt": "Dawn sky, pale cool blue brightening to near white at the horizon, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 1.32,
+            "contraste": 1.08,
+            "tinte": "#c4cdd6",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C7_01_casino",
+          "src": "C7_01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "One low casino building with its signs switched off at dawn, a solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain flat panels. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.52,
+            "contraste": 1.42
+          }
+        },
+        {
+          "id": "C7_01_aparcamiento",
+          "src": "C7_01_aparcamiento.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "An empty asphalt parking lot at dawn with faded painted bays, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.48,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C7_01_hombre",
+          "src": "C7_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.58,
+          "posicion_x": 0.7,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 150,
+            "largo": 1.6,
+            "opacidad": 0.5
+          },
+          "prompt": "One man walking away from behind, long coat, trousers, shoes, mid stride, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ],
+      "texto": {
+        "linea": "El veredicto",
+        "posicion": "inferior",
+        "ancho_max": 0.42,
+        "delante_de": [
+          "C7_01_alba",
+          "C7_01_casino",
+          "C7_01_aparcamiento"
+        ],
+        "entrada_frame": 12
+      }
+    },
+    {
+      "id": "C7_02",
+      "bloque": "capitulo_7",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 76,
+      "locucion": "Con diez millones puedes construir el edificio pequeño.",
+      "variante": "contador",
+      "contenido": {
+        "cifra": 10000000,
+        "prefijo": "$",
+        "decimales": 0,
+        "pie": "el edificio pequeno"
+      }
+    },
+    {
+      "id": "C7_03",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 54,
+      "locucion": "Con cuarenta, uno decente.",
+      "busqueda": "casino exterior night · casino facade",
+      "clips": [
+        "clips/C7_03.mp4"
+      ],
+      "credito": "pexels:29853756"
+    },
+    {
+      "id": "C7_04a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Con ciento cincuenta, un resort. Pero no es un negocio que se compre con dinero.",
+      "busqueda": "las vegas strip aerial night · resort tower night",
+      "clips": [
+        "clips/C7_04a.mp4"
+      ],
+      "credito": "pixabay:205875"
+    },
+    {
+      "id": "C7_04b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "Con ciento cincuenta, un resort. Pero no es un negocio que se compre con dinero.",
+      "busqueda": "money stack table · counting banknotes hands",
+      "clips": [
+        "clips/C7_04b.mp4"
+      ],
+      "credito": "pexels:6266647"
+    },
+    {
+      "id": "C7_05",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 56,
+      "locucion": "Es un negocio en el que te admiten.",
+      "busqueda": "signing contract · contract signature · official seal document · approval handshake",
+      "clips": [
+        "clips/C7_05.mp4"
+      ],
+      "credito": "pexels:7646698"
+    },
+    {
+      "id": "C7_06a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "Y una vez dentro, tu socio mayoritario es un Estado que se lleva su parte primero.",
+      "busqueda": "state capitol building exterior day",
+      "clips": [
+        "clips/C7_06a.mp4"
+      ],
+      "credito": "pixabay:30500"
+    },
+    {
+      "id": "C7_06b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 61,
+      "locucion": "",
+      "contexto": "Y una vez dentro, tu socio mayoritario es un Estado que se lleva su parte primero.",
+      "busqueda": "counting money two stacks · splitting banknotes",
+      "clips": [
+        "clips/C7_06b.mp4"
+      ],
+      "credito": "pixabay:50622"
+    },
+    {
+      "id": "C7_07a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "Tu activo principal es una licencia que no posees y tu ventaja competitiva es que a casi nadie más le dejan hacer lo que tú haces.",
+      "busqueda": "government office interior · official building hallway",
+      "clips": [
+        "clips/C7_07a.mp4"
+      ],
+      "credito": "pixabay:85344"
+    },
+    {
+      "id": "C7_07b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "",
+      "contexto": "Tu activo principal es una licencia que no posees y tu ventaja competitiva es que a casi nadie más le dejan hacer lo que tú haces.",
+      "busqueda": "empty casino · closed casino floor",
+      "clips": [
+        "clips/C7_07b.mp4"
+      ],
+      "credito": "pixabay:132638"
+    },
+    {
+      "id": "C7_07c",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 68,
+      "locucion": "",
+      "contexto": "Tu activo principal es una licencia que no posees y tu ventaja competitiva es que a casi nadie más le dejan hacer lo que tú haces.",
+      "busqueda": "closed door sign private members only",
+      "clips": [
+        "clips/C7_07c.mp4"
+      ],
+      "credito": "pexels:5404704"
+    },
+    {
+      "id": "C7_08",
+      "bloque": "capitulo_7",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
+      "duracion": 92,
+      "locucion": "Con un McDonald's compras un empleo de dos millones de dólares.",
+      "variante": "comparativa_modelos",
+      "contenido": {
+        "columnas": [
+          {
+            "titulo": "McDonald's",
+            "lineas": [
+              "Un empleo",
+              "de $2.000.000"
+            ]
+          },
+          {
+            "titulo": "Casino",
+            "lineas": [
+              "Un permiso",
+              "temporal"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "C7_09",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 67,
+      "locucion": "Con un casino compras algo más raro:",
+      "busqueda": "casino chips close · gambling chips stack",
+      "clips": [
+        "clips/C7_09.mp4"
+      ],
+      "credito": "pexels:6665527"
+    },
+    {
+      "id": "C7_10a",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "el permiso temporal para operar una fórmula matemática que no puede fallar, siempre y cuando sigas cayendo bien a la gente que te lo dio.",
+      "busqueda": "roulette wheel spinning slow motion close up",
+      "clips": [
+        "clips/C7_10a.mp4"
+      ],
+      "credito": "pexels:35728855"
+    },
+    {
+      "id": "C7_10b",
+      "bloque": "capitulo_7",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 95,
+      "locucion": "",
+      "contexto": "el permiso temporal para operar una fórmula matemática que no puede fallar, siempre y cuando sigas cayendo bien a la gente que te lo dio.",
+      "busqueda": "business handshake office · officials meeting handshake",
+      "clips": [
+        "clips/C7_10b.mp4"
+      ],
+      "credito": "pixabay:211204"
+    }
+  ],
+  "duracion_total": 16236
+}

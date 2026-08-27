@@ -1,0 +1,1615 @@
+{
+  "_nota": "Que se ve en cada plano. Escrito a mano contra la locucion, no generado: la regla de EDICION.md es que cada plano represente lo que se esta diciendo, y eso no lo decide una expresion regular. Las busquedas van en ingles porque los bancos de video indexan en ingles; el separador es un punto medio y el buscador prueba las alternativas en orden.",
+  "Gx_01a": {
+    "busqueda": "calendar pages flipping close up · desk calendar month"
+  },
+  "Gx_01b": {
+    "busqueda": "empty restaurant tables closed business · seasonal shop shutter closed"
+  },
+  "Gx_02": {
+    "busqueda": "roulette wheel casino · roulette table spinning"
+  },
+  "Gx_04": {
+    "busqueda": "fast food restaurant counter customers · burger chain drive through"
+  },
+  "Gx_05": {
+    "busqueda": "counting cash bills hands · stack of dollar bills close up"
+  },
+  "Gx_06a": {
+    "busqueda": "construction site building frame crane · concrete pouring construction"
+  },
+  "Gx_06b": {
+    "busqueda": "business handshake office meeting · people signing employment contract"
+  },
+  "Gx_06c": {
+    "busqueda": "slot machines row switched on casino floor"
+  },
+  "Gx_06d": {
+    "busqueda": "no entry sign · padlock chain locked"
+  },
+  "C1x_01": {
+    "busqueda": "casino exterior night · roadside motel night · small building night"
+  },
+  "C1x_02": {
+    "busqueda": "empty theatre seats · empty auditorium"
+  },
+  "C1x_03": {
+    "tipo": "grafico",
+    "variante": "barras_enfrentadas",
+    "patron": "comparativa",
+    "contenido": {
+      "barras": [
+        {
+          "etiqueta": "Casino independiente",
+          "min": 10000000,
+          "max": 40000000
+        },
+        {
+          "etiqueta": "Casino de 3 plantas",
+          "min": 60000000,
+          "max": 150000000
+        }
+      ],
+      "prefijo": "$",
+      "pie": "coste de construccion"
+    }
+  },
+  "C1x_04a": {
+    "busqueda": "luxury hotel lobby chandelier marble · five star hotel interior"
+  },
+  "C1x_04b": {
+    "busqueda": "warehouse interior empty · industrial hall inside"
+  },
+  "C1x_06a": {
+    "busqueda": "resort swimming pool aerial palm trees · hotel tower exterior day"
+  },
+  "C1x_06b": {
+    "busqueda": "casino floor wide shot slot machines people"
+  },
+  "C1x_07a": {
+    "busqueda": "hotel room bed housekeeping · restaurant kitchen chef plating"
+  },
+  "C1x_07b": {
+    "busqueda": "concert stage lights crowd show · theatre audience clapping"
+  },
+  "C1x_09a": {
+    "busqueda": "slot machines casino · gaming hall machines"
+  },
+  "C1x_09b": {
+    "busqueda": "slot machine reels spinning close up"
+  },
+  "C1x_10a": {
+    "busqueda": "highway interchange aerial · motorway junction"
+  },
+  "C1x_10b": {
+    "busqueda": "spreadsheet numbers · calculator accounting · financial report"
+  },
+  "C1x_11a": {
+    "busqueda": "empty small casino floor early morning · cleaner vacuuming casino carpet"
+  },
+  "C1x_11b": {
+    "busqueda": "slot machine attendant alone quiet hall"
+  },
+  "C1x_11c": {
+    "busqueda": "chips stacking on felt table close up macro"
+  },
+  "C2_02a": {
+    "busqueda": "luxury interior marble finishes construction detail · premium hotel construction"
+  },
+  "C2_02b": {
+    "busqueda": "led screen wall technology installation · modern interior lighting rig"
+  },
+  "C2_03a": {
+    "busqueda": "five star hotel lobby luxury interior wide"
+  },
+  "C2_03b": {
+    "busqueda": "hotel lobby luxury · luxury interior gold"
+  },
+  "C2_04a": {
+    "busqueda": "casino interior luxury ceiling wide shot"
+  },
+  "C2_04b": {
+    "busqueda": "slot machines casino floor · casino machines row"
+  },
+  "C2_05": {
+    "busqueda": "casino interior wide · gaming hall"
+  },
+  "C2_06a": {
+    "busqueda": "casino carpet · red carpet floor",
+    "tipo": "grafico",
+    "patron": "desglose",
+    "variante": "lista_apilada",
+    "contenido": {
+      "conceptos": [
+        {
+          "etiqueta": "Moqueta de dibujos imposibles"
+        },
+        {
+          "etiqueta": "Iluminacion sin ventanas"
+        },
+        {
+          "etiqueta": "Techos bajos sobre las maquinas"
+        },
+        {
+          "etiqueta": "Ni un solo reloj"
+        }
+      ],
+      "pie": "ingenieria de comportamiento"
+    }
+  },
+  "C2_06b": {
+    "busqueda": "casino interior crowd · casino hall people night"
+  },
+  "C2_06c": {
+    "busqueda": "casino floor night · slot machines aisle"
+  },
+  "C2_06d": {
+    "busqueda": "casino neon interior · casino lights night"
+  },
+  "C2_07a": {
+    "busqueda": "people playing slot machines · gambling casino players"
+  },
+  "C2_07b": {
+    "busqueda": "money counting machine bills · invoice stack expensive"
+  },
+  "C2_08": {
+    "busqueda": "warehouse boxes equipment delivery forklift"
+  },
+  "C2_10a": {
+    "busqueda": "contract signing pen paper close up · handshake business deal office"
+  },
+  "C2_10b": {
+    "busqueda": "coins falling slot machine payout"
+  },
+  "C2_11": {
+    "busqueda": "casino dealer dealing cards blackjack table hands"
+  },
+  "C2_12a": {
+    "busqueda": "security camera · surveillance camera ceiling"
+  },
+  "C2_12b": {
+    "busqueda": "security control room monitors wall operator"
+  },
+  "C2_13b": {
+    "busqueda": "blackjack table casino · casino chairs interior · poker table"
+  },
+  "C2_14a": {
+    "busqueda": "bank loan documents signing · money transfer banking screen"
+  },
+  "C2_14b": {
+    "busqueda": "investor meeting boardroom table"
+  },
+  "C2_15": {
+    "busqueda": "government building columns exterior · official office door closed"
+  },
+  "C2_13a": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 60000000,
+      "prefijo": "$",
+      "decimales": 0,
+      "pie": "solo equipamiento y mobiliario"
+    }
+  },
+  "C3_02a": {
+    "busqueda": "hand holding official certificate paper · license document close up"
+  },
+  "C3_02b": {
+    "busqueda": "credit card payment terminal · cash register paying"
+  },
+  "C3_03": {
+    "tipo": "documento",
+    "contenido": {
+      "titulo": "Nevada Gaming Control Board",
+      "lineas": [
+        "Tabla oficial de tasas de licencia"
+      ],
+      "resaltar": 0
+    },
+    "busqueda": "official government document page scan · public records archive"
+  },
+  "C3_04a": {
+    "variante": "barras_enfrentadas",
+    "patron": "comparativa",
+    "contenido": {
+      "barras": [
+        {
+          "etiqueta": "Tasa de solicitud",
+          "min": 7500,
+          "max": 75000
+        }
+      ],
+      "prefijo": "$",
+      "pie": "licencia no restringida, segun la fuente"
+    }
+  },
+  "C3_04b": {
+    "busqueda": "slot machines casino floor · casino machines row"
+  },
+  "C3_04c": {
+    "busqueda": "blackjack table empty felt cards"
+  },
+  "C3_04d": {
+    "busqueda": "application form paper filling pen"
+  },
+  "C3_05": {
+    "variante": "comparativa_modelos",
+    "contenido": {
+      "columnas": [
+        {
+          "titulo": "La tasa",
+          "lineas": [
+            "$7.500"
+          ]
+        },
+        {
+          "titulo": "El negocio",
+          "lineas": [
+            "$40.000.000"
+          ]
+        }
+      ],
+      "pie": "la tasa no es el coste"
+    }
+  },
+  "C3_06a": {
+    "busqueda": "man laughing disbelief office · person shaking head no"
+  },
+  "C3_06b": {
+    "busqueda": "stack of paperwork files desk tall"
+  },
+  "C3_07a": {
+    "busqueda": "investigator examining documents magnifying glass"
+  },
+  "C3_07b": {
+    "busqueda": "background check computer screen data · file folders archive shelves"
+  },
+  "C3_07c": {
+    "busqueda": "empty meeting room · interrogation room chairs"
+  },
+  "C3_08a": {
+    "variante": "contador",
+    "tipo": "grafico",
+    "contenido": {
+      "cifra": 50000,
+      "prefijo": "$",
+      "decimales": 0,
+      "pie": "coste de la investigacion, desde $10.000"
+    }
+  },
+  "C3_08b": {
+    "busqueda": "invoice bill printing paper · accountant calculator receipts"
+  },
+  "C3_09": {
+    "busqueda": "human eye close up · eye iris macro"
+  },
+  "C3_10a": {
+    "busqueda": "bank statement paper close up numbers"
+  },
+  "C3_10b": {
+    "busqueda": "money transfer tracking screen · following the money graph"
+  },
+  "C3_10c": {
+    "busqueda": "business partners meeting handshake archive"
+  },
+  "C3_10d": {
+    "busqueda": "divorce papers signing · court document stamp"
+  },
+  "C3_11": {
+    "busqueda": "courtroom empty judge bench · scales of justice statue"
+  },
+  "C3_12": {
+    "busqueda": "man presenting documents to official desk"
+  },
+  "C3_13": {
+    "busqueda": "rubber stamp · stamp on paper · ink stamp hand"
+  },
+  "C3_14": {
+    "busqueda": "calendar year pages flipping fast · clock hands spinning time lapse"
+  },
+  "C3_15": {
+    "tipo": "documento",
+    "contenido": {
+      "titulo": "Tasas de licencia — Nevada",
+      "lineas": [
+        "Juego interactivo: $500.000 iniciales",
+        "Renovacion: $250.000 anuales",
+        "Apuestas deportivas: $250.000"
+      ],
+      "resaltar": 0
+    },
+    "busqueda": "official fee schedule document table"
+  },
+  "C3_16a": {
+    "variante": "lista_apilada",
+    "patron": "desglose",
+    "contenido": {
+      "conceptos": [
+        {
+          "etiqueta": "Licencia interactiva (2 anos)",
+          "valor": 500000
+        },
+        {
+          "etiqueta": "Renovacion anual",
+          "valor": 250000
+        }
+      ],
+      "prefijo": "$",
+      "pie": "Nevada, categorias mayores"
+    }
+  },
+  "C3_16b": {
+    "busqueda": "online gambling app smartphone screen"
+  },
+  "C3_16c": {
+    "busqueda": "notebook planner desk · agenda pages open"
+  },
+  "C3_17": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 250000,
+      "prefijo": "$",
+      "decimales": 0,
+      "pie": "operador de apuestas deportivas"
+    }
+  },
+  "C3_18": {
+    "busqueda": "invoice paperwork desk · bills stack paper"
+  },
+  "C3_19a": {
+    "busqueda": "man alone empty office looking down disappointed"
+  },
+  "C3_19b": {
+    "busqueda": "calendar flipping pages · time passing clock"
+  },
+  "C3_19c": {
+    "busqueda": "shredding documents paper shredder"
+  },
+  "C3_19d": {
+    "busqueda": "empty wallet hands · closed business sign door"
+  },
+  "C4_02": {
+    "busqueda": "slot machine lights · casino neon lights"
+  },
+  "C4_03": {
+    "busqueda": "government building columns exterior day · state capitol dome"
+  },
+  "C4_04a": {
+    "busqueda": "tax forms paperwork desk calculator"
+  },
+  "C4_04b": {
+    "busqueda": "warehouse inspection worker · clipboard checking boxes"
+  },
+  "C4_05a": {
+    "busqueda": "casino cage counting cash chips"
+  },
+  "C4_05b": {
+    "busqueda": "casino chips · poker chips stack"
+  },
+  "C4_05c": {
+    "busqueda": "counting money stacks · cash piles"
+  },
+  "C4_06": {
+    "busqueda": "question mark neon sign · man shrugging unsure"
+  },
+  "C4_07a": {
+    "busqueda": "map of united states states borders"
+  },
+  "C4_07b": {
+    "busqueda": "road sign state line welcome highway"
+  },
+  "C4_08": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 6.75,
+      "sufijo": " %",
+      "decimales": 2,
+      "pie": "Nevada · tramo mas alto"
+    }
+  },
+  "C4_09": {
+    "busqueda": "las vegas strip aerial night wide"
+  },
+  "C4_10a": {
+    "busqueda": "vintage archive las vegas old footage",
+    "patron": "archivo_historico"
+  },
+  "C4_10b": {
+    "busqueda": "old neon sign desert road vintage",
+    "patron": "archivo_historico"
+  },
+  "C4_11a": {
+    "variante": "lista_apilada",
+    "patron": "desglose",
+    "contenido": {
+      "conceptos": [
+        {
+          "etiqueta": "Casino",
+          "valor": 8
+        },
+        {
+          "etiqueta": "Juego online",
+          "valor": 15
+        },
+        {
+          "etiqueta": "Apuestas deportivas",
+          "valor": 13
+        }
+      ],
+      "sufijo": " %",
+      "pie": "Nueva Jersey"
+    }
+  },
+  "C4_11b": {
+    "busqueda": "atlantic city boardwalk casino exterior"
+  },
+  "C4_11c": {
+    "busqueda": "online betting laptop screen odds"
+  },
+  "C4_12a": {
+    "variante": "barras_enfrentadas",
+    "patron": "comparativa",
+    "contenido": {
+      "barras": [
+        {
+          "etiqueta": "Nevada",
+          "valor": 6.75
+        },
+        {
+          "etiqueta": "Nueva Jersey",
+          "valor": 8
+        },
+        {
+          "etiqueta": "Maryland",
+          "valor": 62.5
+        }
+      ],
+      "sufijo": " %",
+      "pie": "tipo maximo sobre la ganancia bruta de juego"
+    }
+  },
+  "C4_12b": {
+    "busqueda": "atlantic coast city aerial · casino exterior day"
+  },
+  "C4_13a": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 62.5,
+      "sufijo": " %",
+      "decimales": 1,
+      "pie": "Maryland · de cada dolar ganado"
+    }
+  },
+  "C4_13b": {
+    "busqueda": "dollar bill torn in half hands"
+  },
+  "C4_13c": {
+    "busqueda": "giving money hands · cash payment hands"
+  },
+  "C4_13d": {
+    "busqueda": "power lines electricity · electricity pylon"
+  },
+  "C4_14a": {
+    "busqueda": "man worried desk · businessman thinking office"
+  },
+  "C4_14b": {
+    "busqueda": "shop owner counting till small business"
+  },
+  "C4_15a": {
+    "busqueda": "product on shelf retail store · price tag close up"
+  },
+  "C4_15b": {
+    "busqueda": "commercial street shops location"
+  },
+  "C4_16": {
+    "busqueda": "map pin location · pointing at map"
+  },
+  "C4_17a": {
+    "busqueda": "identical buildings two side by side"
+  },
+  "C4_17b": {
+    "busqueda": "slot machines row · casino machines"
+  },
+  "C4_17c": {
+    "busqueda": "people playing slot machines casino night"
+  },
+  "C4_18": {
+    "busqueda": "green light red light traffic · thumbs up thumbs down"
+  },
+  "C4_19": {
+    "busqueda": "businessman studying map on wall · empty land plot for sale sign"
+  },
+  "C5_01b": {
+    "busqueda": "casino floor busy people playing wide shot"
+  },
+  "C5_02": {
+    "busqueda": "chef plating dish restaurant kitchen · customer tasting food restaurant"
+  },
+  "C5_03": {
+    "busqueda": "supermarket aisle · shop shelves products"
+  },
+  "C5_04": {
+    "busqueda": "roulette wheel spinning macro slow motion"
+  },
+  "C5_05": {
+    "busqueda": "roulette table numbers layout close up · dice rolling on felt"
+  },
+  "C5_06": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 2.7,
+      "sufijo": " %",
+      "decimales": 1,
+      "pie": "ruleta europea · ventaja de la casa"
+    }
+  },
+  "C5_07a": {
+    "busqueda": "slot machine circuit board technician · machine settings screen"
+  },
+  "C5_07b": {
+    "busqueda": "inspector checking machine clipboard casino"
+  },
+  "C5_08": {
+    "busqueda": "handwritten equations blackboard math · numbers scrolling screen data"
+  },
+  "C5_09a": {
+    "busqueda": "gambling casino players · casino tables people"
+  },
+  "C5_09b": {
+    "busqueda": "stock chart rising · financial graph growth"
+  },
+  "C5_10": {
+    "busqueda": "stock market chart screen · financial data screen"
+  },
+  "C5_11": {
+    "busqueda": "player losing chips pushed away table · empty chip tray hands"
+  },
+  "C5_12": {
+    "busqueda": "financial report printed · statistics document paper"
+  },
+  "C5_13a": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 10588000000,
+      "prefijo": "$",
+      "decimales": 0,
+      "pie": "win acumulado · Nevada, jul 2025 a feb 2026"
+    }
+  },
+  "C5_13b": {
+    "busqueda": "stacks of cash · counting banknotes"
+  },
+  "C5_13c": {
+    "busqueda": "aerial las vegas strip casinos night"
+  },
+  "C5_14": {
+    "busqueda": "money printing press bills sheets"
+  },
+  "C5_15": {
+    "busqueda": "stacking blocks tower hands · piling boxes warehouse"
+  },
+  "C5_16": {
+    "variante": "barras_enfrentadas",
+    "patron": "comparativa",
+    "contenido": {
+      "barras": [
+        {
+          "etiqueta": "Edificio",
+          "min": 10000000,
+          "max": 40000000
+        }
+      ],
+      "prefijo": "$",
+      "pie": "solo la construccion"
+    }
+  },
+  "C5_17": {
+    "busqueda": "slot machines row delivery installation · contract signing machines"
+  },
+  "C5_18a": {
+    "busqueda": "night shift work · casino staff working"
+  },
+  "C5_18b": {
+    "busqueda": "security control room monitors · cctv monitors operator"
+  },
+  "C5_18c": {
+    "busqueda": "compliance officer reviewing documents office"
+  },
+  "C5_19": {
+    "busqueda": "bank loan statement debt papers · mortgage document signing"
+  },
+  "C5_20a": {
+    "busqueda": "tax documents · stamping contract"
+  },
+  "C5_20b": {
+    "busqueda": "tearing money bill · cutting banknote"
+  },
+  "C5_21a": {
+    "busqueda": "accounting ledger · bookkeeping numbers"
+  },
+  "C5_21b": {
+    "busqueda": "man alone counting few bills empty office"
+  },
+  "C6_02a": {
+    "busqueda": "fast food restaurant franchise exterior sign"
+  },
+  "C6_02b": {
+    "busqueda": "lease contract document signing close up"
+  },
+  "C6_03a": {
+    "busqueda": "brick wall building facade close up"
+  },
+  "C6_03b": {
+    "busqueda": "official document close · certificate paper hands"
+  },
+  "C6_04": {
+    "busqueda": "handing document · giving contract"
+  },
+  "C6_05": {
+    "busqueda": "hand taking document back · certificate removed from wall"
+  },
+  "C6_06": {
+    "busqueda": "dealing cards · playing cards dealer"
+  },
+  "C6_07a": {
+    "busqueda": "office archive shelves · filing cabinet documents · folders binders office"
+  },
+  "C6_07b": {
+    "busqueda": "business partners argument meeting room"
+  },
+  "C6_07c": {
+    "busqueda": "parliament · government assembly · politicians voting"
+  },
+  "C6_08": {
+    "busqueda": "camera lens macro · lens aperture close · magnifying glass eye"
+  },
+  "C6_09": {
+    "busqueda": "clock ticking endless time lapse"
+  },
+  "C6_10a": {
+    "busqueda": "shareholder documents signing table"
+  },
+  "C6_10b": {
+    "busqueda": "filling form · signing paperwork"
+  },
+  "C6_11": {
+    "busqueda": "businessman stressed office · man worried thinking"
+  },
+  "C6_12a": {
+    "busqueda": "law book pages legal text close up"
+  },
+  "C6_12b": {
+    "busqueda": "waiting room people · line of people street"
+  },
+  "C6_13": {
+    "busqueda": "busy market street · crowded shopping street"
+  },
+  "C6_14a": {
+    "busqueda": "nightclub entrance night · club entrance door"
+  },
+  "C6_14b": {
+    "busqueda": "empty chairs row · conference chairs"
+  },
+  "C6_15": {
+    "busqueda": "corridor · hallway doors"
+  },
+  "C6_16a": {
+    "busqueda": "empty street no competitors shops closed"
+  },
+  "C6_16b": {
+    "busqueda": "office building facade · hotel building exterior day"
+  },
+  "C6_16c": {
+    "busqueda": "casino slot machines floor · casino machines wide"
+  },
+  "C6_17a": {
+    "busqueda": "reading documents desk · reviewing papers office"
+  },
+  "C6_17b": {
+    "busqueda": "hand pulling paper away from another hand"
+  },
+  "C6_18a": {
+    "busqueda": "casino sign neon night glowing"
+  },
+  "C6_18b": {
+    "busqueda": "closed gate locked chain · restricted access sign"
+  },
+  "C7_02": {
+    "variante": "contador",
+    "contenido": {
+      "cifra": 10000000,
+      "prefijo": "$",
+      "decimales": 0,
+      "pie": "el edificio pequeno"
+    }
+  },
+  "C7_03": {
+    "busqueda": "casino exterior night · casino facade"
+  },
+  "C7_04a": {
+    "busqueda": "las vegas strip aerial night · resort tower night"
+  },
+  "C7_04b": {
+    "busqueda": "money stack table · counting banknotes hands"
+  },
+  "C7_05": {
+    "busqueda": "signing contract · contract signature · official seal document · approval handshake"
+  },
+  "C7_06a": {
+    "busqueda": "state capitol building exterior day"
+  },
+  "C7_06b": {
+    "busqueda": "counting money two stacks · splitting banknotes"
+  },
+  "C7_07a": {
+    "busqueda": "government office interior · official building hallway"
+  },
+  "C7_07b": {
+    "busqueda": "empty casino · closed casino floor"
+  },
+  "C7_07c": {
+    "busqueda": "closed door sign private members only"
+  },
+  "C7_08": {
+    "variante": "comparativa_modelos",
+    "contenido": {
+      "columnas": [
+        {
+          "titulo": "McDonald's",
+          "lineas": [
+            "Un empleo",
+            "de $2.000.000"
+          ]
+        },
+        {
+          "titulo": "Casino",
+          "lineas": [
+            "Un permiso",
+            "temporal"
+          ]
+        }
+      ]
+    }
+  },
+  "C7_09": {
+    "busqueda": "casino chips close · gambling chips stack"
+  },
+  "C7_10a": {
+    "busqueda": "roulette wheel spinning slow motion close up"
+  },
+  "C7_10b": {
+    "busqueda": "business handshake office · officials meeting handshake"
+  },
+  "Gx_03": {
+    "busqueda": "casino neon sign exterior night · las vegas street neon night"
+  },
+  "C1x_05": {
+    "busqueda": "architect blueprint plans table hands · business plan documents desk"
+  },
+  "C1x_08": {
+    "busqueda": "people walking into casino entrance revolving door"
+  },
+  "C2_09": {
+    "busqueda": "slot machine screen · slot machine close up"
+  },
+  "C2_01": {
+    "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+    "horizonte": 0.68,
+    "camara": {
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "x": [
+        0,
+        -22
+      ]
+    },
+    "capas": [
+      {
+        "id": "C2_01_cielo",
+        "src": "C2_01_cielo.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "x": [
+          0,
+          -26
+        ],
+        "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+        "grade": {
+          "saturacion": 0.4,
+          "brillo": 1.3,
+          "contraste": 1.1,
+          "tinte": "#c9c2b4",
+          "tinteFuerza": 0.2,
+          "desenfoque": 2
+        }
+      },
+      {
+        "id": "C2_01_estructura",
+        "src": "C2_01_estructura.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+        "grade": {
+          "saturacion": 0.5,
+          "brillo": 0.5,
+          "contraste": 1.45
+        }
+      },
+      {
+        "id": "C2_01_suelo",
+        "src": "C2_01_suelo.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.13
+        ],
+        "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+        "grade": {
+          "saturacion": 0.55,
+          "brillo": 0.55,
+          "contraste": 1.3
+        }
+      },
+      {
+        "id": "C2_01_obrero",
+        "src": "C2_01_obrero.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.18
+        ],
+        "escala_alto": 0.62,
+        "posicion_x": 0.32,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 200,
+          "largo": 1.3,
+          "opacidad": 0.5
+        },
+        "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.1,
+          "contraste": 1.6
+        }
+      }
+    ],
+    "texto": {
+      "linea": "El edificio",
+      "posicion": "inferior",
+      "ancho_max": 0.42,
+      "delante_de": [
+        "C2_01_cielo",
+        "C2_01_estructura",
+        "C2_01_suelo"
+      ],
+      "entrada_frame": 12
+    }
+  },
+  "C3_01": {
+    "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+    "horizonte": 0.72,
+    "camara": {
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "x": [
+        0,
+        24
+      ]
+    },
+    "capas": [
+      {
+        "id": "C3_01_cielo",
+        "src": "C3_01_cielo.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "x": [
+          0,
+          28
+        ],
+        "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 1.35,
+          "contraste": 1.05,
+          "tinte": "#d7d9d4",
+          "tinteFuerza": 0.18,
+          "desenfoque": 2
+        }
+      },
+      {
+        "id": "C3_01_edificio",
+        "src": "C3_01_edificio.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.09
+        ],
+        "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+        "grade": {
+          "saturacion": 0.35,
+          "brillo": 0.62,
+          "contraste": 1.4
+        }
+      },
+      {
+        "id": "C3_01_escalinata",
+        "src": "C3_01_escalinata.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.4,
+          "brillo": 0.5,
+          "contraste": 1.32
+        }
+      },
+      {
+        "id": "C3_01_hombre",
+        "src": "C3_01_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.2
+        ],
+        "escala_alto": 0.6,
+        "posicion_x": 0.68,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 160,
+          "largo": 1.4,
+          "opacidad": 0.5
+        },
+        "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.1,
+          "contraste": 1.6
+        }
+      }
+    ],
+    "texto": {
+      "linea": "La licencia",
+      "posicion": "inferior",
+      "ancho_max": 0.42,
+      "delante_de": [
+        "C3_01_cielo",
+        "C3_01_edificio",
+        "C3_01_escalinata"
+      ],
+      "entrada_frame": 12
+    }
+  },
+  "C4_01": {
+    "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+    "horizonte": 0.7,
+    "camara": {
+      "zoom": [
+        1.0,
+        1.14
+      ],
+      "x": [
+        0,
+        -26
+      ]
+    },
+    "capas": [
+      {
+        "id": "C4_01_cielo",
+        "src": "C4_01_cielo.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "x": [
+          0,
+          -30
+        ],
+        "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+        "grade": {
+          "saturacion": 0.7,
+          "brillo": 1.28,
+          "contraste": 1.12,
+          "tinte": "#e0a86a",
+          "tinteFuerza": 0.28,
+          "desenfoque": 2
+        }
+      },
+      {
+        "id": "C4_01_capitolio",
+        "src": "C4_01_capitolio.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.09
+        ],
+        "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+        "grade": {
+          "saturacion": 0.4,
+          "brillo": 0.5,
+          "contraste": 1.45
+        }
+      },
+      {
+        "id": "C4_01_plaza",
+        "src": "C4_01_plaza.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+        "grade": {
+          "saturacion": 0.45,
+          "brillo": 0.45,
+          "contraste": 1.3
+        }
+      },
+      {
+        "id": "C4_01_hombre",
+        "src": "C4_01_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.22
+        ],
+        "escala_alto": 0.64,
+        "posicion_x": 0.3,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 205,
+          "largo": 1.5,
+          "opacidad": 0.55
+        },
+        "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.09,
+          "contraste": 1.62
+        }
+      }
+    ],
+    "texto": {
+      "linea": "El socio",
+      "posicion": "inferior",
+      "ancho_max": 0.4,
+      "delante_de": [
+        "C4_01_cielo",
+        "C4_01_capitolio",
+        "C4_01_plaza"
+      ],
+      "entrada_frame": 12
+    }
+  },
+  "C5_01a": {
+    "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+    "horizonte": 0.75,
+    "camara": {
+      "zoom": [
+        1.0,
+        1.13
+      ],
+      "x": [
+        0,
+        22
+      ]
+    },
+    "capas": [
+      {
+        "id": "C5_01a_pared",
+        "src": "C5_01a_pared.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.04
+        ],
+        "x": [
+          0,
+          26
+        ],
+        "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+        "grade": {
+          "saturacion": 1.25,
+          "brillo": 1.3,
+          "contraste": 1.2,
+          "desenfoque": 3
+        }
+      },
+      {
+        "id": "C5_01a_maquinas",
+        "src": "C5_01a_maquinas.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.09
+        ],
+        "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.9,
+          "brillo": 0.55,
+          "contraste": 1.4
+        }
+      },
+      {
+        "id": "C5_01a_moqueta",
+        "src": "C5_01a_moqueta.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.15
+        ],
+        "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+        "grade": {
+          "saturacion": 0.85,
+          "brillo": 0.4,
+          "contraste": 1.35
+        }
+      },
+      {
+        "id": "C5_01a_hombre",
+        "src": "C5_01a_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.2
+        ],
+        "escala_alto": 0.66,
+        "posicion_x": 0.66,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 155,
+          "largo": 1.2,
+          "opacidad": 0.55
+        },
+        "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.1,
+          "contraste": 1.6
+        }
+      }
+    ],
+    "texto": {
+      "linea": "Lo que entra",
+      "posicion": "inferior",
+      "ancho_max": 0.42,
+      "delante_de": [
+        "C5_01a_pared",
+        "C5_01a_maquinas",
+        "C5_01a_moqueta"
+      ],
+      "entrada_frame": 12
+    }
+  },
+  "C6_01": {
+    "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+    "horizonte": 0.73,
+    "camara": {
+      "zoom": [
+        1.0,
+        1.15
+      ],
+      "x": [
+        0,
+        -20
+      ]
+    },
+    "capas": [
+      {
+        "id": "C6_01_noche",
+        "src": "C6_01_noche.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "x": [
+          0,
+          -24
+        ],
+        "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+        "grade": {
+          "saturacion": 0.45,
+          "brillo": 0.3,
+          "contraste": 1.15,
+          "tinte": "#111d31",
+          "tinteFuerza": 0.35,
+          "desenfoque": 2
+        }
+      },
+      {
+        "id": "C6_01_fachada",
+        "src": "C6_01_fachada.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.1
+        ],
+        "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+        "grade": {
+          "saturacion": 1.15,
+          "brillo": 1.35,
+          "contraste": 1.45
+        }
+      },
+      {
+        "id": "C6_01_acera",
+        "src": "C6_01_acera.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.16
+        ],
+        "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+        "grade": {
+          "saturacion": 0.7,
+          "brillo": 0.4,
+          "contraste": 1.35
+        }
+      },
+      {
+        "id": "C6_01_hombre",
+        "src": "C6_01_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.22
+        ],
+        "escala_alto": 0.55,
+        "posicion_x": 0.47,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 195,
+          "largo": 1.5,
+          "opacidad": 0.6
+        },
+        "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.09,
+          "contraste": 1.62
+        }
+      }
+    ],
+    "texto": {
+      "linea": "Nunca fue tuya",
+      "posicion": "inferior",
+      "ancho_max": 0.45,
+      "delante_de": [
+        "C6_01_noche",
+        "C6_01_fachada",
+        "C6_01_acera"
+      ],
+      "entrada_frame": 12
+    }
+  },
+  "C7_01": {
+    "luz": "amanecer, cielo palido muy luminoso, el casino apagado en contraluz",
+    "horizonte": 0.7,
+    "camara": {
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "x": [
+        0,
+        26
+      ]
+    },
+    "capas": [
+      {
+        "id": "C7_01_alba",
+        "src": "C7_01_alba.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "x": [
+          0,
+          30
+        ],
+        "prompt": "Dawn sky, pale cool blue brightening to near white at the horizon, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+        "grade": {
+          "saturacion": 0.45,
+          "brillo": 1.32,
+          "contraste": 1.08,
+          "tinte": "#c4cdd6",
+          "tinteFuerza": 0.2,
+          "desenfoque": 2
+        }
+      },
+      {
+        "id": "C7_01_casino",
+        "src": "C7_01_casino.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.08
+        ],
+        "prompt": "One low casino building with its signs switched off at dawn, a solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain flat panels. Three-quarter view. Plain white background.",
+        "grade": {
+          "saturacion": 0.4,
+          "brillo": 0.52,
+          "contraste": 1.42
+        }
+      },
+      {
+        "id": "C7_01_aparcamiento",
+        "src": "C7_01_aparcamiento.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "prompt": "An empty asphalt parking lot at dawn with faded painted bays, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+        "grade": {
+          "saturacion": 0.45,
+          "brillo": 0.48,
+          "contraste": 1.3
+        }
+      },
+      {
+        "id": "C7_01_hombre",
+        "src": "C7_01_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.18
+        ],
+        "escala_alto": 0.58,
+        "posicion_x": 0.7,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 150,
+          "largo": 1.6,
+          "opacidad": 0.5
+        },
+        "prompt": "One man walking away from behind, long coat, trousers, shoes, mid stride, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.1,
+          "contraste": 1.6
+        }
+      }
+    ],
+    "texto": {
+      "linea": "El veredicto",
+      "posicion": "inferior",
+      "ancho_max": 0.42,
+      "delante_de": [
+        "C7_01_alba",
+        "C7_01_casino",
+        "C7_01_aparcamiento"
+      ],
+      "entrada_frame": 12
+    }
+  },
+  "C1_04": {
+    "busqueda": "casino exterior night · casino facade neon"
+  },
+  "C1_08": {
+    "busqueda": "casino interior night · casino floor machines"
+  },
+  "H01": {
+    "capas": [
+      {
+        "id": "H01_cielo",
+        "src": "H01_cielo.png",
+        "z": -800,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "x": [
+          0,
+          -24
+        ],
+        "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+        "grade": {
+          "saturacion": 0.5,
+          "brillo": 0.28,
+          "contraste": 1.15,
+          "tinte": "#101c33",
+          "tinteFuerza": 0.35,
+          "desenfoque": 2
+        }
+      },
+      {
+        "id": "H01_casino",
+        "src": "H01_casino.png",
+        "z": -320,
+        "zoom": [
+          1.0,
+          1.09
+        ],
+        "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+        "grade": {
+          "saturacion": 1.2,
+          "brillo": 1.25,
+          "contraste": 1.4
+        }
+      },
+      {
+        "id": "H01_asfalto",
+        "src": "H01_asfalto.png",
+        "z": -120,
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.75,
+          "brillo": 0.42,
+          "contraste": 1.32
+        }
+      },
+      {
+        "id": "H01_hombre",
+        "src": "H01_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.2
+        ],
+        "escala_alto": 0.65,
+        "posicion_x": 0.34,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 195,
+          "largo": 1.4,
+          "opacidad": 0.6
+        },
+        "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.35,
+          "brillo": 0.09,
+          "contraste": 1.6
+        }
+      }
+    ]
+  },
+  "H05": {
+    "capas": [
+      {
+        "id": "H05_fondo",
+        "src": "H05_fondo.png",
+        "z": -700,
+        "zoom": [
+          1.0,
+          1.02
+        ],
+        "prompt": "Bright backlit venetian blinds, cold white glow, heavy bokeh, the window filling the whole frame, the room quiet and still.",
+        "grade": {
+          "saturacion": 0.25,
+          "brillo": 1.3,
+          "contraste": 1.05,
+          "desenfoque": 7
+        }
+      },
+      {
+        "id": "H05_mesa",
+        "src": "H05_mesa.png",
+        "z": -200,
+        "zoom": [
+          1.0,
+          1.09
+        ],
+        "prompt": "grey institutional desk surface, cold overhead fluorescent light, transparent background, empty",
+        "grade": {
+          "saturacion": 0.35,
+          "brillo": 0.5,
+          "contraste": 1.25
+        }
+      },
+      {
+        "id": "H05_expediente",
+        "src": "H05_expediente.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.24
+        ],
+        "escala_alto": 0.55,
+        "posicion_x": 0.4,
+        "anclaje": "centro",
+        "sombra": {
+          "angulo": 250,
+          "largo": 0.7,
+          "opacidad": 0.6
+        },
+        "prompt": "thick closed manila investigation file folder tied with string, cold overhead light, plain white background, full object",
+        "grade": {
+          "saturacion": 0.4,
+          "brillo": 0.2,
+          "contraste": 1.5
+        }
+      }
+    ]
+  },
+  "C1_06": {
+    "capas": [
+      {
+        "id": "C1_06_sala",
+        "src": "C1_06_sala.png",
+        "z": -650,
+        "zoom": [
+          1.0,
+          1.03
+        ],
+        "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+        "grade": {
+          "saturacion": 1.1,
+          "brillo": 1.18,
+          "contraste": 1.2,
+          "desenfoque": 5
+        }
+      },
+      {
+        "id": "C1_06_arco",
+        "src": "C1_06_arco.png",
+        "z": -150,
+        "zoom": [
+          1.0,
+          1.12
+        ],
+        "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+        "grade": {
+          "saturacion": 0.4,
+          "brillo": 0.15,
+          "contraste": 1.5
+        }
+      },
+      {
+        "id": "C1_06_hombre",
+        "src": "C1_06_hombre.png",
+        "z": 0,
+        "principal": true,
+        "zoom": [
+          1.0,
+          1.22
+        ],
+        "escala_alto": 0.68,
+        "posicion_x": 0.68,
+        "anclaje": "pies",
+        "sombra": {
+          "angulo": 270,
+          "largo": 0.9,
+          "opacidad": 0.55
+        },
+        "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+        "grade": {
+          "saturacion": 0.3,
+          "brillo": 0.08,
+          "contraste": 1.65
+        }
+      }
+    ]
+  }
+}

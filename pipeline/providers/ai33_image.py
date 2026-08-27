@@ -32,7 +32,32 @@ BASE_IMAGEN = "https://api.ai33.pro/v1i"
 BASE_TAREA = "https://api.ai33.pro/v3"
 _TIMEOUT = 90
 _POLL = 4.0
-_POLL_TIMEOUT = 900.0
+# La cola de ai33 tardo mas de quince minutos en dos de las veinticuatro
+# imagenes del episodio. Esperar mas no cuesta creditos -la tarea ya esta
+# pagada- y evita la ronda de reintentos.
+_POLL_TIMEOUT = 1800.0
+
+# Tareas encargadas y aun no recogidas. Vive en disco porque el reintento suele
+# venir de otra ejecucion del script, no del mismo proceso.
+_DIARIO = Path(".cache") / "ai33_tareas.json"
+
+
+def _clave(prompt: str, modelo: str, resolucion: str, proporcion: str) -> str:
+    import hashlib
+    crudo = "\n".join((prompt, modelo, resolucion, proporcion))
+    return hashlib.sha1(crudo.encode("utf-8")).hexdigest()[:16]
+
+
+def _leer_diario() -> dict[str, str]:
+    try:
+        return json.loads(_DIARIO.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def _escribir_diario(datos: dict[str, str]) -> None:
+    _DIARIO.parent.mkdir(parents=True, exist_ok=True)
+    _DIARIO.write_text(json.dumps(datos, indent=2), encoding="utf-8")
 
 _DONE = {"done", "completed", "complete", "success", "succeeded", "finished"}
 _FAILED = {"failed", "error", "cancelled", "canceled", "rejected"}
@@ -136,18 +161,34 @@ class Ai33Image:
             "generations_count": (None, str(generaciones)),
             "model_parameters": (None, json.dumps(parametros)),
         }
-        r = self._session.post(
-            f"{BASE_IMAGEN}/task/generate-image", files=campos, timeout=_TIMEOUT)
-        if r.status_code >= 400:
-            raise Ai33ImageError(f"{r.status_code}: {r.text[:400]}")
-        payload = r.json()
-        tarea = payload.get("task_id")
-        if not tarea:
-            raise Ai33ImageError(f"Sin task_id: {str(payload)[:300]}")
-        estimado = payload.get("estimated_credits")
-        log.info(f"Imagen encargada ({model_id}, {resolution}): tarea {tarea}, "
-                 f"~{estimado} créditos")
 
+        # La tarea se cobra al ENCARGARLA, no al recogerla. Si la espera agota
+        # el tiempo y quien llama reintenta, se encarga una tarea nueva y se
+        # paga dos veces por la misma imagen: paso con la locucion -456
+        # creditos- y con un cielo -986-. Antes de encargar nada se mira si ya
+        # hay una tarea pagada para este mismo encargo y se recoge esa.
+        clave = _clave(prompt, model_id, resolution, aspect_ratio)
+        pendientes = _leer_diario()
+        tarea = pendientes.get(clave)
+        if tarea:
+            log.info(f"Recogiendo la tarea ya pagada {tarea}")
+        else:
+            r = self._session.post(
+                f"{BASE_IMAGEN}/task/generate-image", files=campos, timeout=_TIMEOUT)
+            if r.status_code >= 400:
+                raise Ai33ImageError(f"{r.status_code}: {r.text[:400]}")
+            payload = r.json()
+            tarea = payload.get("task_id")
+            if not tarea:
+                raise Ai33ImageError(f"Sin task_id: {str(payload)[:300]}")
+            estimado = payload.get("estimated_credits")
+            log.info(f"Imagen encargada ({model_id}, {resolution}): tarea {tarea}, "
+                     f"~{estimado} créditos")
+            pendientes[clave] = tarea
+            _escribir_diario(pendientes)
+
+        # Si la espera falla, la tarea SE QUEDA anotada: el siguiente intento la
+        # recoge en vez de encargarla otra vez.
         datos = self._esperar(tarea)
         self.credits += int(datos.get("credit_cost") or 0)
         imagenes = (datos.get("metadata") or {}).get("result_images") or []
@@ -164,6 +205,13 @@ class Ai33Image:
             self._descargar(url, ruta)
             log.info(f"  {ruta.name}  {imagen.get('width')}x{imagen.get('height')}")
             salida.append(ruta)
+
+        # Solo ahora se da por cerrada. Borrarla al recoger la tarea, antes de
+        # bajar el fichero, deja la imagen pagada y sin anotar: un corte de red
+        # con el CDN -paso con H01_cielo- obligaria a encargarla y pagarla de
+        # nuevo. Mientras el PNG no este en disco, la tarea sigue pendiente.
+        pendientes.pop(clave, None)
+        _escribir_diario(pendientes)
         return salida
 
     def _esperar(self, tarea: str) -> dict:

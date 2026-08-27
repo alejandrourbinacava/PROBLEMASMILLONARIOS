@@ -21,3 +21,14 @@ remotion/out/
 # El LUT es derivado: se regenera con scripts/make_cube.py, y son 900 kB
 # de texto que no aportan nada en el historial.
 assets/*.cube
+
+# Metraje del episodio: son tres gigas de clips de banco y se vuelven a
+# descargar en Actions, que para eso los bancos son gratuitos. Lo que SI se
+# versiona de la carpeta es escenas.json, la locucion y las capas generadas,
+# porque esas cuestan creditos de ai33 y regenerarlas seria pagar dos veces.
+remotion/public/episodio/clips/
+remotion/public/episodio/_bruto/
+# Ficheros de trabajo del episodio
+_*.log
+_*_spec.json
+build/

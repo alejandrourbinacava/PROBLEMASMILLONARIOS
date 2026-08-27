@@ -1,0 +1,128 @@
+name: Episodio largo
+
+# Renderiza un episodio de trece minutos a partir de las escenas ya preparadas.
+#
+# Que trae el repo y que se hace aqui:
+#
+#   Vienen commiteados el JSON de escenas, la locucion y las imagenes de las
+#   escenas por capas. Las imagenes se quedan en el repo a proposito: cuestan
+#   creditos de ai33 y regenerarlas en cada ejecucion seria pagar otra vez por
+#   lo mismo.
+#
+#   El metraje NO viene commiteado. Son ciento setenta y cuatro clips y varios
+#   gigas, y ademas los bancos son gratuitos: sale mas barato volver a
+#   descargarlos aqui, con la cache entre ejecuciones haciendo el trabajo.
+
+on:
+  workflow_dispatch:
+    inputs:
+      episodio:
+        description: Carpeta del episodio dentro de remotion/public
+        type: string
+        default: episodio
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+
+      - name: Instalar ffmpeg y fuentes
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core fontconfig
+
+      - name: Instalar dependencias de Python
+        run: pip install --quiet -r requirements.txt
+
+      # Sin esto el video sale en DejaVu en vez de en Poppins, y no falla: se
+      # ve al revisarlo. Aqui NO lleva continue-on-error, porque un episodio
+      # entero con la tipografia equivocada no sirve para nada.
+      - name: Descargar fuentes del canal
+        run: python scripts/fetch_fonts.py
+
+      - name: Restaurar caché de clips
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/clips
+          key: broll-episodio-${{ github.run_id }}
+          restore-keys: |
+            broll-episodio-
+            broll-
+
+      - name: Conseguir el metraje
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          python scripts/conseguir_metraje.py \
+            --escenas "remotion/public/${{ inputs.episodio }}/escenas.json" \
+            --destino "remotion/public/${{ inputs.episodio }}/clips"
+
+      # Un plano sin metraje sale en negro. Es mejor que se caiga aqui, con la
+      # lista de los que faltan, que descubrirlo viendo el episodio.
+      - name: Comprobar que no falta ningún plano
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          ruta = Path("remotion/public/${{ inputs.episodio }}/escenas.json")
+          escenas = json.loads(ruta.read_text(encoding="utf-8"))["escenas"]
+          faltan = [e["id"] for e in escenas
+                    if e["tipo"] == "clip" and not e.get("clips")]
+          if faltan:
+              sys.exit(f"{len(faltan)} planos sin metraje: {', '.join(faltan)}")
+          print(f"{len(escenas)} escenas, todas con contenido")
+          PY
+
+      - name: Instalar Remotion
+        working-directory: remotion
+        run: npm ci
+
+      - name: Renderizar
+        working-directory: remotion
+        run: |
+          npx remotion render Episodio ../build/episodio.mp4 \
+            --concurrency=2 \
+            --crf=20 \
+            --log=info
+
+      - name: Medir lo que ha salido
+        run: |
+          ls -lh build/episodio.mp4
+          ffprobe -v error -show_entries format=duration,size \
+            -of default=noprint_wrappers=1 build/episodio.mp4
+
+      - name: Podar la caché de clips
+        run: python scripts/prune_cache.py --max-gb 4
+        continue-on-error: true
+
+      - name: Guardar caché de clips
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/clips
+          key: broll-episodio-${{ github.run_id }}
+
+      # Un episodio de trece minutos ocupa varios cientos de mega y la cuota
+      # gratuita de artefactos es de 500 MB en total. Se guarda un solo dia y
+      # hay que descargarlo pronto, o la siguiente ejecucion no cabra.
+      - name: Guardar el episodio
+        uses: actions/upload-artifact@v4
+        with:
+          name: episodio-${{ github.run_number }}
+          path: build/episodio.mp4
+          retention-days: 1
+          compression-level: 0

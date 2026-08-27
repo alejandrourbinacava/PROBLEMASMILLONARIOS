@@ -40,6 +40,14 @@ export type Capa = {
   contador?: Contador;
   anclaje?: string;
   sombra?: {desenfoque?: number; opacidad?: number};
+  /** Altura del sujeto sobre el alto del encuadre. En MagnatesMedia el sujeto
+   *  domina: 0,6-0,7, no el 0,45 que salia al dejarlo en `contain`. */
+  escala_alto?: number;
+  /** Posicion horizontal, en fraccion de ancho. Descentrado -0,3 a 0,4- para
+   *  que el fondo respire por el otro lado. */
+  posicion_x?: number;
+  /** Donde va un rotulo: "inferior" lo baja para que no cruce al sujeto. */
+  posicion?: string;
   z: number;
   principal?: boolean;
   zoom?: number[];
@@ -210,6 +218,11 @@ const CapaImagen: React.FC<{capa: Capa; carpeta: string; avance: number}> = ({
   // y con el de la camara, y sin holgura asomaria el borde del PNG.
   const escala = compensar(capa.z) * zoom * 1.12;
 
+  // Un sujeto con escala_alto se coloca por altura y posicion, no estirado
+  // sobre el encuadre: asi domina el plano y queda descentrado, que es como lo
+  // hacen ellos. Sin estos campos, `contain` lo deja centrado y pequeno.
+  const colocado = capa.escala_alto !== undefined || capa.posicion_x !== undefined;
+
   return (
     <AbsoluteFill
       style={{
@@ -220,14 +233,27 @@ const CapaImagen: React.FC<{capa: Capa; carpeta: string; avance: number}> = ({
     >
       <Img
         src={staticFile(`${carpeta}/${capa.src}`)}
-        style={{
-          width: '100%',
-          height: '100%',
-          // contain para las capas con alfa -un sujeto recortado no se puede
-          // recortar mas- y cover para los fondos, que tienen que cubrir.
-          objectFit: capa.principal ? 'contain' : 'cover',
-          filter: aFiltro(capa.grade),
-        }}
+        style={
+          colocado
+            ? {
+                position: 'absolute',
+                bottom: 0,
+                left: `${(capa.posicion_x ?? 0.5) * 100}%`,
+                height: `${(capa.escala_alto ?? 0.65) * 100}%`,
+                width: 'auto',
+                objectFit: 'contain',
+                transform: 'translateX(-50%)',
+                filter: aFiltro(capa.grade),
+              }
+            : {
+                width: '100%',
+                height: '100%',
+                // contain para las capas con alfa y cover para los fondos,
+                // que tienen que cubrir el encuadre.
+                objectFit: capa.principal ? 'contain' : 'cover',
+                filter: aFiltro(capa.grade),
+              }
+        }
       />
       {/* El tinte va en su propia capa multiplicada encima, no en el filtro:
           CSS no tiene un filtro de tinte y hacerlo con hue-rotate desplaza
@@ -299,8 +325,12 @@ const Rotulo: React.FC<{
     <AbsoluteFill
       style={{
         transform: `translate3d(${x}px, ${y}px, ${capa.z}px) scale(${compensar(capa.z)})`,
-        justifyContent: 'center',
+        // "inferior" baja el rotulo para que no cruce el pecho del sujeto: si
+        // el texto es lo mas brillante y ademas pasa por encima de la figura,
+        // el ojo va al texto y el sujeto deja de existir.
+        justifyContent: capa.posicion === 'inferior' ? 'flex-end' : 'center',
         alignItems: 'center',
+        paddingBottom: capa.posicion === 'inferior' ? '7%' : 0,
       }}
     >
       <div

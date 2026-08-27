@@ -14,7 +14,7 @@
     "familia": "Archivo Black",
     "transform": "uppercase",
     "tracking": -0.01,
-    "color": "#FFFFFF",
+    "color": "#E8E2D8",
     "sombra": {
       "desenfoque": 24,
       "opacidad": 0.5
@@ -65,10 +65,10 @@
             0,
             -22
           ],
-          "prompt": "dramatic layered clouds at dusk, cold blue upper sky, amber band at horizon, low haze, no aircraft, no birds, empty sky, cinematic",
+          "prompt": "bright luminous sky, sun just below the horizon, glowing, the brightest thing in frame, warm light spilling upward, clean gradient, only clouds above the horizon",
           "grade": {
             "saturacion": 0.62,
-            "brillo": 0.82,
+            "brillo": 1.25,
             "contraste": 1.1,
             "tinte": "#2a3a5e",
             "tinteFuerza": 0.22,
@@ -128,9 +128,11 @@
           "prompt": "man from behind, long dark coat, hands in pockets, full body including feet, solid dark silhouette, strong backlit rim light from behind right, dusk, plain white background, no props",
           "grade": {
             "saturacion": 0.45,
-            "brillo": 0.3,
+            "brillo": 0.12,
             "contraste": 1.55
-          }
+          },
+          "escala_alto": 0.65,
+          "posicion_x": 0.34
         },
         {
           "id": "01_rotulo",
@@ -140,7 +142,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {
@@ -237,7 +240,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {
@@ -318,7 +322,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {
@@ -399,7 +404,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {
@@ -489,7 +495,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {
@@ -649,7 +656,7 @@
           "prompt": "large casino building at night, every window lit, glowing marquee, seen in three-quarter view, no people, no cars, transparent background, no sky",
           "grade": {
             "saturacion": 1.15,
-            "brillo": 0.95,
+            "brillo": 1.15,
             "contraste": 1.4
           }
         },
@@ -676,7 +683,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {
@@ -720,10 +728,10 @@
             1.02,
             1.0
           ],
-          "prompt": "reutiliza 01_cielo.png",
+          "prompt": "bright luminous sky, sun just below the horizon, glowing, the brightest thing in frame, warm light spilling upward, clean gradient, only clouds above the horizon",
           "grade": {
             "saturacion": 0.58,
-            "brillo": 0.76,
+            "brillo": 1.25,
             "contraste": 1.12,
             "tinte": "#2a3a5e",
             "tinteFuerza": 0.26,
@@ -783,9 +791,11 @@
           "prompt": "man walking away from camera, long dark coat, full body including feet, solid dark silhouette, strong backlit rim light from behind right, dusk, plain white background",
           "grade": {
             "saturacion": 0.42,
-            "brillo": 0.26,
+            "brillo": 0.12,
             "contraste": 1.6
-          }
+          },
+          "escala_alto": 0.65,
+          "posicion_x": 0.34
         },
         {
           "id": "08_rotulo",
@@ -795,7 +805,8 @@
           "zoom": [
             1.0,
             1.03
-          ]
+          ],
+          "posicion": "inferior"
         }
       ],
       "texto": {

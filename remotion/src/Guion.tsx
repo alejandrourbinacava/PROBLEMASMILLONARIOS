@@ -24,9 +24,22 @@ export type Grade = {
   desenfoque?: number;
 };
 
+export type Contador = {
+  de: number;
+  a: number;
+  decimales?: number;
+  frames?: number;
+};
+
 export type Capa = {
   id: string;
-  src: string;
+  /** null en las capas de texto: no todas las capas son una imagen. */
+  src?: string | null;
+  tipo?: string;
+  contenido?: string;
+  contador?: Contador;
+  anclaje?: string;
+  sombra?: {desenfoque?: number; opacidad?: number};
   z: number;
   principal?: boolean;
   zoom?: number[];
@@ -162,7 +175,10 @@ const Escena: React.FC<{
         }}
       >
         {escena.capas.map((capa) =>
-          capa.texto ? (
+          // Una capa es texto cuando no trae imagen. Mirar solo `texto` dejaba
+          // fuera las de tipo texto_grande, que traen `contenido` y src null, y
+          // el render moria pidiendo un fichero llamado "null".
+          !capa.src ? (
             <Rotulo
               key={capa.id}
               capa={capa}
@@ -229,6 +245,15 @@ const CapaImagen: React.FC<{capa: Capa; carpeta: string; avance: number}> = ({
   );
 };
 
+/** Formatea el valor de un contador con la coma decimal espanola. */
+const cifra = (valor: number, decimales: number, plantilla?: string) => {
+  const numero = valor.toFixed(decimales).replace(".", ",");
+  // Si el contenido trae un sufijo -"2,7%"- se conserva: lo que cuenta es el
+  // numero, no el simbolo que lo acompana.
+  const sufijo = plantilla ? plantilla.replace(/[\d.,]/g, "") : "";
+  return numero + sufijo;
+};
+
 const Rotulo: React.FC<{
   capa: Capa;
   avance: number;
@@ -249,7 +274,26 @@ const Rotulo: React.FC<{
 
   const x = entre(capa.x, avance);
   const y = entre(capa.y, avance);
-  const sombra = tipografia.sombra ?? {desenfoque: 24, opacidad: 0.5};
+  const sombra = {
+    desenfoque: capa.sombra?.desenfoque ?? tipografia.sombra?.desenfoque ?? 24,
+    opacidad: capa.sombra?.opacidad ?? tipografia.sombra?.opacidad ?? 0.5,
+  };
+
+  // Un texto grande ocupa el doble y ademas se acerca durante el plano: es la
+  // cifra la que lleva el peso del argumento, no un rotulo de apoyo.
+  const grande = capa.tipo === "texto_grande";
+  const zoomTexto = entre(capa.zoom, avance, 1);
+
+  let contenido = capa.texto ?? capa.contenido ?? "";
+  if (capa.contador) {
+    const t = interpolate(frame, [0, capa.contador.frames ?? 40], [0, 1], {
+      easing: Easing.out(Easing.cubic),
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
+    const valor = capa.contador.de + (capa.contador.a - capa.contador.de) * t;
+    contenido = cifra(valor, capa.contador.decimales ?? 0, capa.contenido);
+  }
 
   return (
     <AbsoluteFill
@@ -265,17 +309,17 @@ const Rotulo: React.FC<{
           textAlign: 'center',
           fontFamily: `'${tipografia.familia}', Poppins, sans-serif`,
           fontWeight: 900,
-          fontSize: Math.round(ancho * 0.055),
+          fontSize: Math.round(ancho * (grande ? 0.13 : 0.055)),
           lineHeight: 1.04,
           letterSpacing: `${tipografia.tracking ?? 0}em`,
           textTransform: (tipografia.transform as 'uppercase') ?? 'none',
           color: tipografia.color ?? '#fff',
           textShadow: `0 10px ${sombra.desenfoque}px rgba(0,0,0,${sombra.opacidad})`,
           opacity: opacidad,
-          transform: `scale(${escalaTexto})`,
+          transform: `scale(${escalaTexto * zoomTexto})`,
         }}
       >
-        {capa.texto}
+        {contenido}
       </div>
     </AbsoluteFill>
   );

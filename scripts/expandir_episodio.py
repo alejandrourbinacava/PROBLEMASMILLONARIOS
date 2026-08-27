@@ -313,7 +313,19 @@ def main() -> None:
         puestos = sum(e["duracion"] for e in nuevas[primera_nueva:])
         nuevas[-1]["duracion"] += objetivo - puestos
 
-    spec["escenas"] = spec["escenas"] + nuevas
+    # Las nuevas van DENTRO de su bloque, no al final de la lista.
+    #
+    # Anadiendolas al final, el orden salia gancho, capitulo 1, gancho,
+    # capitulo 1, capitulo 2...: las escenas escritas a mano del gancho y del
+    # capitulo 1 iban delante y sus continuaciones detras de todo. La voz suena
+    # seguida, asi que a partir del segundo 57 la imagen contaba una cosa y la
+    # locucion otra. Se ordena por bloque, y dentro de cada bloque se respeta
+    # el orden que traian: lo escrito a mano cubre el principio.
+    orden = {"gancho": 0}
+    for i in range(1, 9):
+        orden[f"capitulo_{i}"] = i
+    juntas = spec["escenas"] + nuevas
+    spec["escenas"] = sorted(juntas, key=lambda e: orden.get(e.get("bloque"), 99))
     total = sum(e["duracion"] for e in spec["escenas"])
     spec["duracion_total"] = total
 

@@ -356,6 +356,90 @@
       "sonido": "silencio total, golpe grave con la entrada del título"
     },
     {
+      "id": "Gx_01a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó."
+    },
+    {
+      "id": "Gx_01b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó."
+    },
+    {
+      "id": "Gx_02",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Depende de una fórmula matemática que no falla nunca."
+    },
+    {
+      "id": "Gx_03",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?"
+    },
+    {
+      "id": "Gx_04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 73,
+      "locucion": "Y aquí es donde este vídeo se separa del anterior."
+    },
+    {
+      "id": "Gx_05",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Porque con un McDonald's, el problema era el dinero."
+    },
+    {
+      "id": "Gx_06a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "Gx_06b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "Gx_06c",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 82,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
+      "id": "Gx_06d",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
+    },
+    {
       "id": "C1_01",
       "bloque": "capitulo_1",
       "tipo": "clip",
@@ -558,90 +642,6 @@
       "locucion": "Vamos a seguir el pequeño. Porque es el único que una persona normal podría plantearse.",
       "busqueda": "empty small casino floor early morning · cleaner vacuuming casino carpet · slot machine attendant alone",
       "regla_montaje": "Un solo plano largo y quieto. Baja el ritmo antes del capítulo 2."
-    },
-    {
-      "id": "Gx_01a",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 62,
-      "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó."
-    },
-    {
-      "id": "Gx_01b",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 62,
-      "locucion": "",
-      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó."
-    },
-    {
-      "id": "Gx_02",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 81,
-      "locucion": "Depende de una fórmula matemática que no falla nunca."
-    },
-    {
-      "id": "Gx_03",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 96,
-      "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?"
-    },
-    {
-      "id": "Gx_04",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 73,
-      "locucion": "Y aquí es donde este vídeo se separa del anterior."
-    },
-    {
-      "id": "Gx_05",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 81,
-      "locucion": "Porque con un McDonald's, el problema era el dinero."
-    },
-    {
-      "id": "Gx_06a",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 83,
-      "locucion": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
-    },
-    {
-      "id": "Gx_06b",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 83,
-      "locucion": "",
-      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
-    },
-    {
-      "id": "Gx_06c",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 82,
-      "locucion": "",
-      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
-    },
-    {
-      "id": "Gx_06d",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 83,
-      "locucion": "",
-      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento"
     },
     {
       "id": "C1x_01",

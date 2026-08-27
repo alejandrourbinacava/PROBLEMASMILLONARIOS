@@ -360,6 +360,140 @@
       "sonido": "silencio total, golpe grave con la entrada del título"
     },
     {
+      "id": "Gx_01a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
+      "busqueda": "calendar pages flipping close up · desk calendar month",
+      "clips": [
+        "clips/Gx_01a.mp4"
+      ],
+      "credito": "pexels:7557100"
+    },
+    {
+      "id": "Gx_01b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 62,
+      "locucion": "",
+      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
+      "busqueda": "empty restaurant tables closed business · seasonal shop shutter closed",
+      "clips": [
+        "clips/Gx_01b.mp4"
+      ],
+      "credito": "pexels:12153352"
+    },
+    {
+      "id": "Gx_02",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Depende de una fórmula matemática que no falla nunca.",
+      "busqueda": "roulette wheel casino · roulette table spinning",
+      "clips": [
+        "clips/Gx_02.mp4"
+      ],
+      "credito": "pexels:35728855"
+    },
+    {
+      "id": "Gx_03",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 96,
+      "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?",
+      "busqueda": "casino neon sign exterior night · las vegas street neon night",
+      "clips": [
+        "clips/Gx_03.mp4"
+      ],
+      "credito": "pexels:36147796"
+    },
+    {
+      "id": "Gx_04",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 73,
+      "locucion": "Y aquí es donde este vídeo se separa del anterior.",
+      "busqueda": "fast food restaurant counter customers · burger chain drive through",
+      "clips": [
+        "clips/Gx_04.mp4"
+      ],
+      "credito": "pixabay:176"
+    },
+    {
+      "id": "Gx_05",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 81,
+      "locucion": "Porque con un McDonald's, el problema era el dinero.",
+      "busqueda": "counting cash bills hands · stack of dollar bills close up",
+      "clips": [
+        "clips/Gx_05.mp4"
+      ],
+      "credito": "pexels:34579090"
+    },
+    {
+      "id": "Gx_06a",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "construction site building frame crane · concrete pouring construction",
+      "clips": [
+        "clips/Gx_06a.mp4"
+      ],
+      "credito": "pexels:32937881"
+    },
+    {
+      "id": "Gx_06b",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "business handshake office meeting · people signing employment contract",
+      "clips": [
+        "clips/Gx_06b.mp4"
+      ],
+      "credito": "pixabay:211204"
+    },
+    {
+      "id": "Gx_06c",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 82,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "slot machines row switched on casino floor",
+      "clips": [
+        "clips/Gx_06c.mp4"
+      ],
+      "credito": "pexels:7608142"
+    },
+    {
+      "id": "Gx_06d",
+      "bloque": "gancho",
+      "tipo": "clip",
+      "patron": "textura_real",
+      "duracion": 83,
+      "locucion": "",
+      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
+      "busqueda": "no entry sign · padlock chain locked",
+      "clips": [
+        "clips/Gx_06d.mp4"
+      ],
+      "credito": "pexels:3680678"
+    },
+    {
       "id": "C1_01",
       "bloque": "capitulo_1",
       "tipo": "clip",
@@ -574,140 +708,6 @@
         "clips/C1_08.mp4"
       ],
       "credito": "pexels:35318525"
-    },
-    {
-      "id": "Gx_01a",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 62,
-      "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
-      "busqueda": "calendar pages flipping close up · desk calendar month",
-      "clips": [
-        "clips/Gx_01a.mp4"
-      ],
-      "credito": "pexels:7557100"
-    },
-    {
-      "id": "Gx_01b",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 62,
-      "locucion": "",
-      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
-      "busqueda": "empty restaurant tables closed business · seasonal shop shutter closed",
-      "clips": [
-        "clips/Gx_01b.mp4"
-      ],
-      "credito": "pexels:12153352"
-    },
-    {
-      "id": "Gx_02",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 81,
-      "locucion": "Depende de una fórmula matemática que no falla nunca.",
-      "busqueda": "roulette wheel casino · roulette table spinning",
-      "clips": [
-        "clips/Gx_02.mp4"
-      ],
-      "credito": "pexels:35728855"
-    },
-    {
-      "id": "Gx_03",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 96,
-      "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?",
-      "busqueda": "casino neon sign exterior night · las vegas street neon night",
-      "clips": [
-        "clips/Gx_03.mp4"
-      ],
-      "credito": "pexels:36147796"
-    },
-    {
-      "id": "Gx_04",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 73,
-      "locucion": "Y aquí es donde este vídeo se separa del anterior.",
-      "busqueda": "fast food restaurant counter customers · burger chain drive through",
-      "clips": [
-        "clips/Gx_04.mp4"
-      ],
-      "credito": "pixabay:176"
-    },
-    {
-      "id": "Gx_05",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 81,
-      "locucion": "Porque con un McDonald's, el problema era el dinero.",
-      "busqueda": "counting cash bills hands · stack of dollar bills close up",
-      "clips": [
-        "clips/Gx_05.mp4"
-      ],
-      "credito": "pexels:34579090"
-    },
-    {
-      "id": "Gx_06a",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 83,
-      "locucion": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
-      "busqueda": "construction site building frame crane · concrete pouring construction",
-      "clips": [
-        "clips/Gx_06a.mp4"
-      ],
-      "credito": "pexels:32937881"
-    },
-    {
-      "id": "Gx_06b",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 83,
-      "locucion": "",
-      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
-      "busqueda": "business handshake office meeting · people signing employment contract",
-      "clips": [
-        "clips/Gx_06b.mp4"
-      ],
-      "credito": "pixabay:211204"
-    },
-    {
-      "id": "Gx_06c",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 82,
-      "locucion": "",
-      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
-      "busqueda": "slot machines row switched on casino floor",
-      "clips": [
-        "clips/Gx_06c.mp4"
-      ],
-      "credito": "pexels:7608142"
-    },
-    {
-      "id": "Gx_06d",
-      "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
-      "duracion": 83,
-      "locucion": "",
-      "contexto": "Con un casino, el dinero es la parte fácil. El problema es que aunque lo pagues todo, aunque construyas el edificio, aunque contrates a la plantilla entera, hay algo que nunca va a ser tuyo y te lo pueden quitar en cualquier momento",
-      "busqueda": "no entry sign · padlock chain locked",
-      "clips": [
-        "clips/Gx_06d.mp4"
-      ],
-      "credito": "pexels:3680678"
     },
     {
       "id": "C1x_01",

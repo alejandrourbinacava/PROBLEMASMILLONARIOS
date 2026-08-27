@@ -248,18 +248,102 @@
       "fondo": "negro"
     },
     {
-      "id": "H04",
+      "id": "H01_v2",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 95,
       "locucion": "Y ese dinero no depende de si la temporada fue buena. Depende de una fórmula matemática que no falla nunca.",
-      "busqueda": "roulette wheel spinning slow motion · slot machine reels spinning · casino chips stacking · dealer dealing cards",
-      "regla_montaje": "Cuatro subplanos de 24 frames. Ritmo mecánico, repetitivo a propósito: la idea es la máquina, no la emoción.",
-      "clips": [
-        "clips/H04.mp4"
-      ],
-      "credito": "pexels:7608129"
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "H05",
@@ -345,7 +429,8 @@
           "H05_mesa"
         ],
         "entrada_frame": 60
-      }
+      },
+      "_set": true
     },
     {
       "id": "H06",
@@ -360,83 +445,424 @@
       "sonido": "silencio total, golpe grave con la entrada del título"
     },
     {
-      "id": "Gx_01a",
+      "id": "H01_v3",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 62,
       "locucion": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
-      "busqueda": "calendar pages flipping close up · desk calendar month",
-      "clips": [
-        "clips/Gx_01a.mp4"
-      ],
-      "credito": "pexels:7557100"
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "Gx_01b",
+      "id": "H01_v4",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 62,
       "locucion": "",
-      "contexto": "En 28 días. Y a diferencia de casi cualquier otro negocio del mundo, ese dinero no depende de si la temporada fue buena, de si el producto gustó o de si el marketing funcionó.",
-      "busqueda": "empty restaurant tables closed business · seasonal shop shutter closed",
-      "clips": [
-        "clips/Gx_01b.mp4"
-      ],
-      "credito": "pexels:12153352"
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "Gx_02",
+      "id": "H01_v5",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 81,
       "locucion": "Depende de una fórmula matemática que no falla nunca.",
-      "busqueda": "roulette wheel casino · roulette table spinning",
-      "clips": [
-        "clips/Gx_02.mp4"
-      ],
-      "credito": "pexels:35728855"
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "Gx_03",
+      "id": "H01_v6",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 96,
       "locucion": "Así que la pregunta se hace sola: ¿cuánto cuesta tener uno?",
-      "busqueda": "casino neon sign exterior night · las vegas street neon night",
-      "clips": [
-        "clips/Gx_03.mp4"
-      ],
-      "credito": "pexels:36147796"
+      "luz": "noche cerrada, el neon del casino es la unica fuente de luz, cielo azul muy oscuro sin luna",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "H01_cielo",
+          "src": "H01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, slow heavy cloud filling the frame, unbroken overcast. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.28,
+            "contraste": 1.15,
+            "tinte": "#101c33",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "H01_casino",
+          "src": "H01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One casino building at night, a huge glowing neon marquee, every window lit, three-quarter view. A solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain glowing panels of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.2,
+            "brillo": 1.25,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "H01_asfalto",
+          "src": "H01_asfalto.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "Wet asphalt road surface seen from a very low angle, dark grey and glossy with shallow puddles, solid and opaque, filling the lower half of the image edge to edge. The entire upper half is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.75,
+            "brillo": 0.42,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "H01_hombre",
+          "src": "H01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.65,
+          "posicion_x": 0.34,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.4,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long dark coat, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.09,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "Gx_04",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 73,
       "locucion": "Y aquí es donde este vídeo se separa del anterior.",
-      "busqueda": "fast food restaurant counter customers · burger chain drive through",
-      "clips": [
-        "clips/Gx_04.mp4"
-      ],
-      "credito": "pixabay:176"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Y aquí es donde este vídeo se separa del anterior"
+      }
     },
     {
       "id": "Gx_05",
       "bloque": "gancho",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 81,
       "locucion": "Porque con un McDonald's, el problema era el dinero.",
-      "busqueda": "counting cash bills hands · stack of dollar bills close up",
-      "clips": [
-        "clips/Gx_05.mp4"
-      ],
-      "credito": "pexels:34579090"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Porque con un McDonald's, el problema era el dinero"
+      }
     },
     {
       "id": "Gx_06a",
@@ -696,44 +1122,239 @@
       "regla_montaje": "Dos columnas que se construyen simultáneamente. Los guiones de la derecha entran con un golpe seco cada uno."
     },
     {
-      "id": "C1_08",
+      "id": "C1_06_v2",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 85,
       "locucion": "Vamos a seguir el pequeño. Porque es el único que una persona normal podría plantearse.",
-      "busqueda": "casino interior night · casino floor machines",
-      "regla_montaje": "Un solo plano largo y quieto. Baja el ritmo antes del capítulo 2.",
-      "clips": [
-        "clips/C1_08.mp4"
-      ],
-      "credito": "pexels:35318525"
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ]
     },
     {
-      "id": "C1x_01",
+      "id": "C1_06_v3",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 50,
       "locucion": "Un edificio de una planta, sala de juego y poco más.",
-      "busqueda": "casino exterior night · roadside motel night · small building night",
-      "clips": [
-        "clips/C1x_01.mp4"
-      ],
-      "credito": "pexels:29899413"
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ]
     },
     {
-      "id": "C1x_02",
+      "id": "C1_06_v4",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 56,
       "locucion": "Sin hotel, sin espectáculo.",
-      "busqueda": "empty theatre seats · empty auditorium",
-      "clips": [
-        "clips/C1x_02.mp4"
-      ],
-      "credito": "pexels:29732319"
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ]
     },
     {
       "id": "C1x_03",
@@ -761,57 +1382,251 @@
       }
     },
     {
-      "id": "C1x_04a",
+      "id": "C1_06_v5",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 61,
       "locucion": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
-      "busqueda": "luxury hotel lobby chandelier marble · five star hotel interior",
-      "clips": [
-        "clips/C1x_04a.mp4"
-      ],
-      "credito": "pexels:34555902"
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ]
     },
     {
-      "id": "C1x_04b",
+      "id": "C1_06_v6",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 61,
       "locucion": "",
-      "contexto": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
-      "busqueda": "warehouse interior empty · industrial hall inside",
-      "clips": [
-        "clips/C1x_04b.mp4"
-      ],
-      "credito": "pexels:4477613"
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ]
     },
     {
-      "id": "C1x_05",
+      "id": "C1_06_v7",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 98,
       "locucion": "Y aquí está la primera decisión real que casi nadie plantea bien.",
-      "busqueda": "architect blueprint plans table hands · business plan documents desk",
-      "clips": [
-        "clips/C1x_05.mp4"
-      ],
-      "credito": "pixabay:293084"
+      "luz": "noche, interior de sala de juego vista desde el vestibulo, neon calido al fondo, primer plano en sombra",
+      "horizonte": 0.78,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C1_06_sala",
+          "src": "C1_06_sala.png",
+          "z": -650,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "prompt": "A bright casino gaming floor seen from a distance, glowing banks of slot machines, warm neon, heavy bokeh, the floor quiet and still.",
+          "grade": {
+            "saturacion": 1.1,
+            "brillo": 1.18,
+            "contraste": 1.2,
+            "desenfoque": 5
+          }
+        },
+        {
+          "id": "C1_06_arco",
+          "src": "C1_06_arco.png",
+          "z": -150,
+          "zoom": [
+            1.0,
+            1.12
+          ],
+          "prompt": "A dark ornate doorway arch framing the edges of the frame, interior architecture as a solid opaque silhouette. Plain white background showing through the opening at the centre.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.15,
+            "contraste": 1.5
+          }
+        },
+        {
+          "id": "C1_06_hombre",
+          "src": "C1_06_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.68,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 270,
+            "largo": 0.9,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit, arms at his sides, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.08,
+            "contraste": 1.65
+          }
+        }
+      ]
     },
     {
       "id": "C1x_06a",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 56,
       "locucion": "En el resort, el juego no es el negocio principal, es el gancho.",
-      "busqueda": "resort swimming pool aerial palm trees · hotel tower exterior day",
-      "clips": [
-        "clips/C1x_06a.mp4"
-      ],
-      "credito": "pixabay:214928"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "En el resort, el juego no es el negocio principal, es el gancho"
+      }
     },
     {
       "id": "C1x_06b",
@@ -870,15 +1685,14 @@
     {
       "id": "C1x_09a",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 55,
       "locucion": "En el casino pequeño, el juego es el negocio cien por cien.",
-      "busqueda": "slot machines casino · gaming hall machines",
-      "clips": [
-        "clips/C1x_09a.mp4"
-      ],
-      "credito": "pexels:7608131"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "En el casino pequeño, el juego es el negocio cien por cien"
+      }
     },
     {
       "id": "C1x_09b",
@@ -897,15 +1711,14 @@
     {
       "id": "C1x_10a",
       "bloque": "capitulo_1",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 78,
       "locucion": "Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas.",
-      "busqueda": "highway interchange aerial · motorway junction",
-      "clips": [
-        "clips/C1x_10a.mp4"
-      ],
-      "credito": "pixabay:248450"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Dos modelos, dos estructuras de coste, dos formas de perder dinero completamente distintas"
+      }
     },
     {
       "id": "C1x_10b",
@@ -1072,98 +1885,612 @@
       }
     },
     {
-      "id": "C2_02a",
+      "id": "C2_01_v2",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 74,
       "locucion": "En ubicaciones prémium, con interiores caros y tecnología puntera, puede pasar de novecientos.",
-      "busqueda": "luxury interior marble finishes construction detail · premium hotel construction",
-      "clips": [
-        "clips/C2_02a.mp4"
-      ],
-      "credito": "pexels:14550454"
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C2_02b",
+      "id": "C2_01_v3",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 73,
       "locucion": "",
-      "contexto": "En ubicaciones prémium, con interiores caros y tecnología puntera, puede pasar de novecientos.",
-      "busqueda": "led screen wall technology installation · modern interior lighting rig",
-      "clips": [
-        "clips/C2_02b.mp4"
-      ],
-      "credito": "pixabay:6395"
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C2_03a",
+      "id": "C2_01_v4",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 52,
       "locucion": "Para que te hagas una idea, eso es precio de hotel de cinco estrellas.",
-      "busqueda": "five star hotel lobby luxury interior wide",
-      "clips": [
-        "clips/C2_03a.mp4"
-      ],
-      "credito": "pixabay:3190"
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C2_03b",
+      "id": "C2_01_v5",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 53,
       "locucion": "",
-      "contexto": "Para que te hagas una idea, eso es precio de hotel de cinco estrellas.",
-      "busqueda": "hotel lobby luxury · luxury interior gold",
-      "clips": [
-        "clips/C2_03b.mp4"
-      ],
-      "credito": "pixabay:1303"
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C2_04a",
+      "id": "C2_01_v6",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 68,
       "locucion": "Un casino se construye con los estándares de un resort de lujo, aunque solo tenga máquinas dentro.",
-      "busqueda": "casino interior luxury ceiling wide shot",
-      "clips": [
-        "clips/C2_04a.mp4"
-      ],
-      "credito": "pixabay:1629"
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C2_04b",
+      "id": "C2_01_v7",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 68,
       "locucion": "",
-      "contexto": "Un casino se construye con los estándares de un resort de lujo, aunque solo tenga máquinas dentro.",
-      "busqueda": "slot machines casino floor · casino machines row",
-      "clips": [
-        "clips/C2_04b.mp4"
-      ],
-      "credito": "pexels:34495727"
+      "luz": "atardecer nublado, cielo palido muy luminoso, la estructura en contraluz",
+      "horizonte": 0.68,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C2_01_cielo",
+          "src": "C2_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -26
+          ],
+          "prompt": "Overcast dusk sky, pale luminous grey filling the whole frame, flat even cloud, soft glow near the horizon. The sky is empty and quiet.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 1.3,
+            "contraste": 1.1,
+            "tinte": "#c9c2b4",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C2_01_estructura",
+          "src": "C2_01_estructura.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "A single unfinished building of exposed steel frame, a solid massive volume with a clean silhouette against what is behind it. Bare girders and concrete decks, matte painted metal, opaque throughout. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.5,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C2_01_suelo",
+          "src": "C2_01_suelo.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.13
+          ],
+          "prompt": "Bare compacted earth of a construction site, dry ruts and gravel, seen from a low angle. Solid opaque ground filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.55,
+            "brillo": 0.55,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C2_01_obrero",
+          "src": "C2_01_obrero.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.62,
+          "posicion_x": 0.32,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 200,
+            "largo": 1.3,
+            "opacidad": 0.5
+          },
+          "prompt": "One construction worker standing from behind, hard hat, work jacket, work trousers, boots, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "C2_05",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 84,
       "locucion": "¿Por qué? Porque el edificio es parte del producto.",
-      "busqueda": "casino interior wide · gaming hall",
-      "clips": [
-        "clips/C2_05.mp4"
-      ],
-      "credito": "pexels:5266812"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "¿Por qué? Porque el edificio es parte del producto"
+      }
     },
     {
       "id": "C2_06a",
@@ -1237,15 +2564,14 @@
     {
       "id": "C2_07a",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 67,
       "locucion": "Nada de eso es decoración, es ingeniería de comportamiento y sale cara.",
-      "busqueda": "people playing slot machines · gambling casino players",
-      "clips": [
-        "clips/C2_07a.mp4"
-      ],
-      "credito": "pexels:7608129"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Nada de eso es decoración, es ingeniería de comportamiento y sale cara"
+      }
     },
     {
       "id": "C2_07b",
@@ -1264,28 +2590,26 @@
     {
       "id": "C2_08",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 47,
       "locucion": "Y luego está lo que va dentro.",
-      "busqueda": "warehouse boxes equipment delivery forklift",
-      "clips": [
-        "clips/C2_08.mp4"
-      ],
-      "credito": "pixabay:209883"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Y luego está lo que va dentro"
+      }
     },
     {
       "id": "C2_09",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 91,
       "locucion": "Las máquinas tragaperras modernas no se compran sin más.",
-      "busqueda": "slot machine screen · slot machine close up",
-      "clips": [
-        "clips/C2_09.mp4"
-      ],
-      "credito": "pexels:9807885"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Las máquinas tragaperras modernas no se compran sin más"
+      }
     },
     {
       "id": "C2_10a",
@@ -1317,15 +2641,14 @@
     {
       "id": "C2_11",
       "bloque": "capitulo_2",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 76,
       "locucion": "Las mesas necesitan crupieres formados.",
-      "busqueda": "casino dealer dealing cards blackjack table hands",
-      "clips": [
-        "clips/C2_11.mp4"
-      ],
-      "credito": "pexels:6665481"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Las mesas necesitan crupieres formados"
+      }
     },
     {
       "id": "C2_12a",
@@ -1533,31 +2856,204 @@
       }
     },
     {
-      "id": "C3_02a",
+      "id": "C3_01_v2",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 82,
       "locucion": "La gente cree que una licencia de juego es un papel que se compra, que hay un precio, lo pagas y ya está.",
-      "busqueda": "hand holding official certificate paper · license document close up",
-      "clips": [
-        "clips/C3_02a.mp4"
-      ],
-      "credito": "pexels:9870440"
+      "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+      "horizonte": 0.72,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C3_01_cielo",
+          "src": "C3_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            28
+          ],
+          "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 1.35,
+            "contraste": 1.05,
+            "tinte": "#d7d9d4",
+            "tinteFuerza": 0.18,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C3_01_edificio",
+          "src": "C3_01_edificio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.62,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C3_01_escalinata",
+          "src": "C3_01_escalinata.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "C3_01_hombre",
+          "src": "C3_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.6,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 160,
+            "largo": 1.4,
+            "opacidad": 0.5
+          },
+          "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C3_02b",
+      "id": "C3_01_v3",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 83,
       "locucion": "",
-      "contexto": "La gente cree que una licencia de juego es un papel que se compra, que hay un precio, lo pagas y ya está.",
-      "busqueda": "credit card payment terminal · cash register paying",
-      "clips": [
-        "clips/C3_02b.mp4"
-      ],
-      "credito": "pexels:6540557"
+      "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+      "horizonte": 0.72,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C3_01_cielo",
+          "src": "C3_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            28
+          ],
+          "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 1.35,
+            "contraste": 1.05,
+            "tinte": "#d7d9d4",
+            "tinteFuerza": 0.18,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C3_01_edificio",
+          "src": "C3_01_edificio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.62,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C3_01_escalinata",
+          "src": "C3_01_escalinata.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "C3_01_hombre",
+          "src": "C3_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.6,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 160,
+            "largo": 1.4,
+            "opacidad": 0.5
+          },
+          "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "C3_03",
@@ -1596,46 +3092,298 @@
       }
     },
     {
-      "id": "C3_04b",
+      "id": "C3_01_v4",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 87,
       "locucion": "",
-      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
-      "busqueda": "slot machines casino floor · casino machines row",
-      "clips": [
-        "clips/C3_04b.mp4"
-      ],
-      "credito": "pexels:7608145"
+      "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+      "horizonte": 0.72,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C3_01_cielo",
+          "src": "C3_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            28
+          ],
+          "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 1.35,
+            "contraste": 1.05,
+            "tinte": "#d7d9d4",
+            "tinteFuerza": 0.18,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C3_01_edificio",
+          "src": "C3_01_edificio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.62,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C3_01_escalinata",
+          "src": "C3_01_escalinata.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "C3_01_hombre",
+          "src": "C3_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.6,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 160,
+            "largo": 1.4,
+            "opacidad": 0.5
+          },
+          "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C3_04c",
+      "id": "C3_01_v5",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 86,
       "locucion": "",
-      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
-      "busqueda": "blackjack table empty felt cards",
-      "clips": [
-        "clips/C3_04c.mp4"
-      ],
-      "credito": "pexels:35728856"
+      "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+      "horizonte": 0.72,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C3_01_cielo",
+          "src": "C3_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            28
+          ],
+          "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 1.35,
+            "contraste": 1.05,
+            "tinte": "#d7d9d4",
+            "tinteFuerza": 0.18,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C3_01_edificio",
+          "src": "C3_01_edificio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.62,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C3_01_escalinata",
+          "src": "C3_01_escalinata.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "C3_01_hombre",
+          "src": "C3_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.6,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 160,
+            "largo": 1.4,
+            "opacidad": 0.5
+          },
+          "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C3_04d",
+      "id": "C3_01_v6",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 87,
       "locucion": "",
-      "contexto": "La solicitud de una licencia no restringida, la de un casino de verdad, con dieciséis o más máquinas o cualquier mesa, tiene una tasa que, según la fuente, va de unos siete mil quinientos a setenta y cinco mil dólares.",
-      "busqueda": "application form paper filling pen",
-      "clips": [
-        "clips/C3_04d.mp4"
-      ],
-      "credito": "pexels:7981899"
+      "luz": "manana fria, cielo blanco muy luminoso, edificio oficial en contraluz",
+      "horizonte": 0.72,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C3_01_cielo",
+          "src": "C3_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            28
+          ],
+          "prompt": "Cold morning sky, near white, very bright and even, a thin band of haze at the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 1.35,
+            "contraste": 1.05,
+            "tinte": "#d7d9d4",
+            "tinteFuerza": 0.18,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C3_01_edificio",
+          "src": "C3_01_edificio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One official government building with a tall colonnade and a wide flight of steps, a solid massive volume of pale stone with unbroken surfaces and a clean silhouette. Matte opaque stone. Three-quarter view from below. Plain white background.",
+          "grade": {
+            "saturacion": 0.35,
+            "brillo": 0.62,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C3_01_escalinata",
+          "src": "C3_01_escalinata.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "A wide flight of shallow stone steps seen straight on from a low angle, receding upward across the full width, solid opaque pale limestone with visible treads. The steps fill the lower third of the image edge to edge. The entire area above them is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.32
+          }
+        },
+        {
+          "id": "C3_01_hombre",
+          "src": "C3_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.6,
+          "posicion_x": 0.68,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 160,
+            "largo": 1.4,
+            "opacidad": 0.5
+          },
+          "prompt": "One man standing from behind, long overcoat, trousers, shoes, a slim briefcase in his right hand, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "C3_05",
@@ -1666,15 +3414,14 @@
     {
       "id": "C3_06a",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 53,
       "locucion": "Parece un chiste, y lo es, porque la tasa no es el coste.",
-      "busqueda": "man laughing disbelief office · person shaking head no",
-      "clips": [
-        "clips/C3_06a.mp4"
-      ],
-      "credito": "pexels:10515022"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Parece un chiste, y lo es, porque la tasa no es el coste"
+      }
     },
     {
       "id": "C3_06b",
@@ -1763,15 +3510,14 @@
     {
       "id": "C3_09",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 55,
       "locucion": "¿Y qué investigan? Todo.",
-      "busqueda": "human eye close up · eye iris macro",
-      "clips": [
-        "clips/C3_09.mp4"
-      ],
-      "credito": "pixabay:141673"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "¿Y qué investigan? Todo"
+      }
     },
     {
       "id": "C3_10a",
@@ -1831,54 +3577,50 @@
     {
       "id": "C3_11",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 99,
       "locucion": "No hay presunción de inocencia. La carga de la prueba es tuya.",
-      "busqueda": "courtroom empty judge bench · scales of justice statue",
-      "clips": [
-        "clips/C3_11.mp4"
-      ],
-      "credito": "pexels:8061667"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "No hay presunción de inocencia. La carga de la prueba es tuya"
+      }
     },
     {
       "id": "C3_12",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 56,
       "locucion": "Tienes que demostrar que eres apto.",
-      "busqueda": "man presenting documents to official desk",
-      "clips": [
-        "clips/C3_12.mp4"
-      ],
-      "credito": "pexels:8170487"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Tienes que demostrar que eres apto"
+      }
     },
     {
       "id": "C3_13",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 72,
       "locucion": "Ellos no tienen que demostrar que no lo eres.",
-      "busqueda": "rubber stamp · stamp on paper · ink stamp hand",
-      "clips": [
-        "clips/C3_13.mp4"
-      ],
-      "credito": "pixabay:15211"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Ellos no tienen que demostrar que no lo eres"
+      }
     },
     {
       "id": "C3_14",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 62,
       "locucion": "El proceso puede llevar más de un año.",
-      "busqueda": "calendar year pages flipping fast · clock hands spinning time lapse",
-      "clips": [
-        "clips/C3_14.mp4"
-      ],
-      "credito": "pixabay:181407"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "El proceso puede llevar más de un año"
+      }
     },
     {
       "id": "C3_15",
@@ -1967,15 +3709,14 @@
     {
       "id": "C3_18",
       "bloque": "capitulo_3",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 97,
       "locucion": "Y aun así, ese no es el gasto principal de este capítulo.",
-      "busqueda": "invoice paperwork desk · bills stack paper",
-      "clips": [
-        "clips/C3_18.mp4"
-      ],
-      "credito": "pexels:6146720"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Y aun así, ese no es el gasto principal de este capítulo"
+      }
     },
     {
       "id": "C3_19a",
@@ -2145,84 +3886,618 @@
       }
     },
     {
-      "id": "C4_02",
+      "id": "C4_01_v2",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 50,
       "locucion": "Las máquinas están encendidas.",
-      "busqueda": "slot machine lights · casino neon lights",
-      "clips": [
-        "clips/C4_02.mp4"
-      ],
-      "credito": "pixabay:170"
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C4_03",
+      "id": "C4_01_v3",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 58,
       "locucion": "Y entonces conoces a tu socio.",
-      "busqueda": "government building columns exterior day · state capitol dome",
-      "clips": [
-        "clips/C4_03.mp4"
-      ],
-      "credito": "pexels:4408071"
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C4_04a",
+      "id": "C4_01_v4",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 77,
       "locucion": "En un casino, el Estado no es un regulador que te cobra impuestos al final del año como a cualquier empresa.",
-      "busqueda": "tax forms paperwork desk calculator",
-      "clips": [
-        "clips/C4_04a.mp4"
-      ],
-      "credito": "pexels:6929603"
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C4_04b",
+      "id": "C4_01_v5",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 77,
       "locucion": "",
-      "contexto": "En un casino, el Estado no es un regulador que te cobra impuestos al final del año como a cualquier empresa.",
-      "busqueda": "warehouse inspection worker · clipboard checking boxes",
-      "clips": [
-        "clips/C4_04b.mp4"
-      ],
-      "credito": "pexels:8987024"
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C4_05a",
+      "id": "C4_01_v6",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 78,
       "locucion": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie.",
-      "busqueda": "casino cage counting cash chips",
-      "clips": [
-        "clips/C4_05a.mp4"
-      ],
-      "credito": "pexels:5920617"
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C4_05b",
+      "id": "C4_01_v7",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 79,
       "locucion": "",
-      "contexto": "El Estado se lleva un porcentaje de tu ganancia bruta de juego, el dinero que se queda la casa después de pagar a los ganadores, todos los meses, antes que nadie.",
-      "busqueda": "casino chips · poker chips stack",
-      "clips": [
-        "clips/C4_05b.mp4"
-      ],
-      "credito": "pixabay:227109"
+      "contenido": {
+        "linea": "SUPONGAMOS QUE LA CONSIGUES ESTÁS DENTRO"
+      },
+      "luz": "ultima luz del dia, cielo ambar muy luminoso, cupula del capitolio en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C4_01_cielo",
+          "src": "C4_01_cielo.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -30
+          ],
+          "prompt": "Late evening sky, warm amber glow low down fading to pale blue above, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 1.28,
+            "contraste": 1.12,
+            "tinte": "#e0a86a",
+            "tinteFuerza": 0.28,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C4_01_capitolio",
+          "src": "C4_01_capitolio.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "One state capitol building with a central dome and a columned portico, a solid massive volume of pale stone with a clean unbroken silhouette. Matte opaque stone. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.5,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C4_01_plaza",
+          "src": "C4_01_plaza.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "A broad empty paved plaza seen from a low angle, solid opaque flagstones filling the lower part of the frame, quiet and empty. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.45,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C4_01_hombre",
+          "src": "C4_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.64,
+          "posicion_x": 0.3,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 205,
+            "largo": 1.5,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, suit jacket, trousers, shoes, arms at his sides, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
       "id": "C4_05c",
@@ -2241,28 +4516,26 @@
     {
       "id": "C4_06",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 45,
       "locucion": "¿Cuánto?",
-      "busqueda": "question mark neon sign · man shrugging unsure",
-      "clips": [
-        "clips/C4_06.mp4"
-      ],
-      "credito": "pexels:6800489"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "¿Cuánto?"
+      }
     },
     {
       "id": "C4_07a",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 50,
       "locucion": "Depende de dónde pongas el casino y las diferencias son brutales.",
-      "busqueda": "map of united states states borders",
-      "clips": [
-        "clips/C4_07a.mp4"
-      ],
-      "credito": "pexels:8499670"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Depende de dónde pongas el casino y las diferencias son brutales"
+      }
     },
     {
       "id": "C4_07b",
@@ -2296,28 +4569,26 @@
     {
       "id": "C4_09",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 83,
       "locucion": "Es de los más bajos del país y no es casualidad.",
-      "busqueda": "las vegas strip aerial night wide",
-      "clips": [
-        "clips/C4_09.mp4"
-      ],
-      "credito": "pexels:36629377"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Es de los más bajos del país y no es casualidad"
+      }
     },
     {
       "id": "C4_10a",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "archivo_historico",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 61,
       "locucion": "Nevada llegó primero y fijó las reglas cuando nadie más quería este negocio.",
-      "busqueda": "vintage archive las vegas old footage",
-      "clips": [
-        "clips/C4_10a.mp4"
-      ],
-      "credito": "pexels:26838803"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Nevada llegó primero y fijó las reglas cuando nadie más quería este negocio"
+      }
     },
     {
       "id": "C4_10b",
@@ -2489,15 +4760,14 @@
     {
       "id": "C4_14a",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 54,
       "locucion": "Esto crea una situación que no existe en casi ningún otro sector.",
-      "busqueda": "man worried desk · businessman thinking office",
-      "clips": [
-        "clips/C4_14a.mp4"
-      ],
-      "credito": "pixabay:349094"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Esto crea una situación que no existe en casi ningún otro sector"
+      }
     },
     {
       "id": "C4_14b",
@@ -2543,15 +4813,14 @@
     {
       "id": "C4_16",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 45,
       "locucion": "Es la jurisdicción.",
-      "busqueda": "map pin location · pointing at map",
-      "clips": [
-        "clips/C4_16.mp4"
-      ],
-      "credito": "pixabay:29879"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Es la jurisdicción"
+      }
     },
     {
       "id": "C4_17a",
@@ -2597,15 +4866,14 @@
     {
       "id": "C4_18",
       "bloque": "capitulo_4",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 59,
       "locucion": "Uno funciona, el otro no.",
-      "busqueda": "green light red light traffic · thumbs up thumbs down",
-      "clips": [
-        "clips/C4_18.mp4"
-      ],
-      "credito": "pixabay:94174"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Uno funciona, el otro no"
+      }
     },
     {
       "id": "C4_19",
@@ -2728,70 +4996,488 @@
       }
     },
     {
-      "id": "C5_01b",
+      "id": "C5_01a_v2",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 62,
       "locucion": "",
-      "contexto": "Vale, ¿y cuánto se gana? Aquí es donde el casino se separa de cualquier otro negocio que hayamos analizado.",
-      "busqueda": "casino floor busy people playing wide shot",
-      "clips": [
-        "clips/C5_01b.mp4"
-      ],
-      "credito": "pexels:7607449"
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C5_02",
+      "id": "C5_01a_v3",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 68,
       "locucion": "Un restaurante depende de que la comida guste.",
-      "busqueda": "chef plating dish restaurant kitchen · customer tasting food restaurant",
-      "clips": [
-        "clips/C5_02.mp4"
-      ],
-      "credito": "pixabay:11657"
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C5_03",
+      "id": "C5_01a_v4",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 75,
       "locucion": "Una tienda depende de que el producto se venda.",
-      "busqueda": "supermarket aisle · shop shelves products",
-      "clips": [
-        "clips/C5_03.mp4"
-      ],
-      "credito": "pixabay:21117"
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C5_04",
+      "id": "C5_01a_v5",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 66,
       "locucion": "Un casino depende de una fórmula.",
-      "busqueda": "roulette wheel spinning macro slow motion",
-      "clips": [
-        "clips/C5_04.mp4"
-      ],
-      "credito": "pexels:35728854"
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C5_05",
+      "id": "C5_01a_v6",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 92,
       "locucion": "Cada juego tiene una ventaja matemática fija para la casa.",
-      "busqueda": "roulette table numbers layout close up · dice rolling on felt",
-      "clips": [
-        "clips/C5_05.mp4"
-      ],
-      "credito": "pexels:7607943"
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "C5_06",
@@ -2809,17 +5495,104 @@
       }
     },
     {
-      "id": "C5_07a",
+      "id": "C5_01a_v7",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 52,
       "locucion": "En las máquinas, lo fija el fabricante y lo aprueba el regulador.",
-      "busqueda": "slot machine circuit board technician · machine settings screen",
-      "clips": [
-        "clips/C5_07a.mp4"
-      ],
-      "credito": "pexels:9807885"
+      "luz": "interior de sala de juego, la pared de maquinas es la unica fuente de luz",
+      "horizonte": 0.75,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C5_01a_pared",
+          "src": "C5_01a_pared.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.04
+          ],
+          "x": [
+            0,
+            26
+          ],
+          "prompt": "A wall of slot machine screens glowing brightly, plain panels of flat saturated colour, warm gold and red, receding into the distance. Even bright light filling the frame.",
+          "grade": {
+            "saturacion": 1.25,
+            "brillo": 1.3,
+            "contraste": 1.2,
+            "desenfoque": 3
+          }
+        },
+        {
+          "id": "C5_01a_maquinas",
+          "src": "C5_01a_maquinas.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.09
+          ],
+          "prompt": "A row of four slot machine cabinets seen at an angle, receding to the right, solid opaque volumes of matte painted metal, their screens plain glowing panels of flat warm colour. The cabinets sit in the lower two thirds of the image. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.9,
+            "brillo": 0.55,
+            "contraste": 1.4
+          }
+        },
+        {
+          "id": "C5_01a_moqueta",
+          "src": "C5_01a_moqueta.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.15
+          ],
+          "prompt": "Patterned casino carpet seen from a low angle, dense swirling figures in deep red and gold, solid opaque floor filling the lower part of the frame. Plain white above.",
+          "grade": {
+            "saturacion": 0.85,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C5_01a_hombre",
+          "src": "C5_01a_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.2
+          ],
+          "escala_alto": 0.66,
+          "posicion_x": 0.66,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 155,
+            "largo": 1.2,
+            "opacidad": 0.55
+          },
+          "prompt": "One man standing from behind, jacket, hands in pockets, trousers, shoes, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "C5_07b",
@@ -2838,15 +5611,14 @@
     {
       "id": "C5_08",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 89,
       "locucion": "No es opinión ni suerte, es aritmética verificable.",
-      "busqueda": "handwritten equations blackboard math · numbers scrolling screen data",
-      "clips": [
-        "clips/C5_08.mp4"
-      ],
-      "credito": "pexels:5266003"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "No es opinión ni suerte, es aritmética verificable"
+      }
     },
     {
       "id": "C5_09a",
@@ -2891,15 +5663,14 @@
     {
       "id": "C5_11",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 72,
       "locucion": "el win, lo que pierden los clientes.",
-      "busqueda": "player losing chips pushed away table · empty chip tray hands",
-      "clips": [
-        "clips/C5_11.mp4"
-      ],
-      "credito": "pexels:7607950"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "el win, lo que pierden los clientes"
+      }
     },
     {
       "id": "C5_12",
@@ -2960,28 +5731,26 @@
     {
       "id": "C5_14",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 100,
       "locucion": "Suena a máquina de imprimir dinero y en cierto modo lo es.",
-      "busqueda": "money printing press bills sheets",
-      "clips": [
-        "clips/C5_14.mp4"
-      ],
-      "credito": "pexels:29975898"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Suena a máquina de imprimir dinero y en cierto modo lo es"
+      }
     },
     {
       "id": "C5_15",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 69,
       "locucion": "Pero fíjate en lo que hemos ido apilando encima.",
-      "busqueda": "stacking blocks tower hands · piling boxes warehouse",
-      "clips": [
-        "clips/C5_15.mp4"
-      ],
-      "credito": "pixabay:19600"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Pero fíjate en lo que hemos ido apilando encima"
+      }
     },
     {
       "id": "C5_16",
@@ -3006,15 +5775,14 @@
     {
       "id": "C5_17",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 79,
       "locucion": "Has arrendado las máquinas compartiendo recaudación.",
-      "busqueda": "slot machines row delivery installation · contract signing machines",
-      "clips": [
-        "clips/C5_17.mp4"
-      ],
-      "credito": "pexels:8814718"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Has arrendado las máquinas compartiendo recaudación"
+      }
     },
     {
       "id": "C5_18a",
@@ -3060,15 +5828,14 @@
     {
       "id": "C5_19",
       "bloque": "capitulo_5",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 45,
       "locucion": "Pagas la deuda.",
-      "busqueda": "bank loan statement debt papers · mortgage document signing",
-      "clips": [
-        "clips/C5_19.mp4"
-      ],
-      "credito": "pexels:8293014"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Pagas la deuda"
+      }
     },
     {
       "id": "C5_20a",
@@ -3234,97 +6001,612 @@
       }
     },
     {
-      "id": "C6_02a",
+      "id": "C6_01_v2",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 67,
       "locucion": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
-      "busqueda": "fast food restaurant franchise exterior sign",
-      "clips": [
-        "clips/C6_02a.mp4"
-      ],
-      "credito": "pexels:6529567"
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C6_02b",
+      "id": "C6_01_v3",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 67,
       "locucion": "",
-      "contexto": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
-      "busqueda": "lease contract document signing close up",
-      "clips": [
-        "clips/C6_02b.mp4"
-      ],
-      "credito": "pexels:8471105"
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C6_03a",
+      "id": "C6_01_v4",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 80,
       "locucion": "En un casino es peor, porque lo que no es tuyo no es el ladrillo, es el permiso para existir.",
-      "busqueda": "brick wall building facade close up",
-      "clips": [
-        "clips/C6_03a.mp4"
-      ],
-      "credito": "pixabay:42701"
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C6_03b",
+      "id": "C6_01_v5",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 81,
       "locucion": "",
-      "contexto": "En un casino es peor, porque lo que no es tuyo no es el ladrillo, es el permiso para existir.",
-      "busqueda": "official document close · certificate paper hands",
-      "clips": [
-        "clips/C6_03b.mp4"
-      ],
-      "credito": "pixabay:41121"
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C6_04",
+      "id": "C6_01_v6",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 83,
       "locucion": "Una licencia de juego no se compra, se concede.",
-      "busqueda": "handing document · giving contract",
-      "clips": [
-        "clips/C6_04.mp4"
-      ],
-      "credito": "pixabay:9037"
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
-      "id": "C6_05",
+      "id": "C6_01_v7",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 68,
       "locucion": "Y lo que se concede se puede retirar.",
-      "busqueda": "hand taking document back · certificate removed from wall",
-      "clips": [
-        "clips/C6_05.mp4"
-      ],
-      "credito": "pixabay:11254"
+      "luz": "noche cerrada, un vano de puerta iluminado es la unica fuente de luz",
+      "horizonte": 0.73,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C6_01_noche",
+          "src": "C6_01_noche.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            -24
+          ],
+          "prompt": "Night sky, deep dark blue, heavy slow cloud, a faint glow of city light along the horizon. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.3,
+            "contraste": 1.15,
+            "tinte": "#111d31",
+            "tinteFuerza": 0.35,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C6_01_fachada",
+          "src": "C6_01_fachada.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.1
+          ],
+          "prompt": "One low casino building at night with a single wide doorway blazing with warm light, the rest of the facade dark. A solid massive volume with a clean silhouette, matte stone and painted metal, the lit doorway a plain glowing panel of flat colour. Plain white background.",
+          "grade": {
+            "saturacion": 1.15,
+            "brillo": 1.35,
+            "contraste": 1.45
+          }
+        },
+        {
+          "id": "C6_01_acera",
+          "src": "C6_01_acera.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.16
+          ],
+          "prompt": "Wet pavement at night reflecting a single warm light, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.7,
+            "brillo": 0.4,
+            "contraste": 1.35
+          }
+        },
+        {
+          "id": "C6_01_hombre",
+          "src": "C6_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.22
+          ],
+          "escala_alto": 0.55,
+          "posicion_x": 0.47,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 195,
+            "largo": 1.5,
+            "opacidad": 0.6
+          },
+          "prompt": "One man standing from behind, long coat, trousers, shoes, holding a single sheet of paper down at his side, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.09,
+            "contraste": 1.62
+          }
+        }
+      ]
     },
     {
       "id": "C6_06",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 59,
       "locucion": "Y no se retira solo por hacer trampas.",
-      "busqueda": "dealing cards · playing cards dealer",
-      "clips": [
-        "clips/C6_06.mp4"
-      ],
-      "credito": "pixabay:91678"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Y no se retira solo por hacer trampas"
+      }
     },
     {
       "id": "C6_07a",
@@ -3370,28 +6652,26 @@
     {
       "id": "C6_08",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 95,
       "locucion": "Mientras seas licenciatario, la investigación no termina.",
-      "busqueda": "camera lens macro · lens aperture close · magnifying glass eye",
-      "clips": [
-        "clips/C6_08.mp4"
-      ],
-      "credito": "pixabay:22055"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Mientras seas licenciatario, la investigación no termina"
+      }
     },
     {
       "id": "C6_09",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 58,
       "locucion": "Sigue indefinidamente.",
-      "busqueda": "clock ticking endless time lapse",
-      "clips": [
-        "clips/C6_09.mp4"
-      ],
-      "credito": "pixabay:15615"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Sigue indefinidamente"
+      }
     },
     {
       "id": "C6_10a",
@@ -3423,28 +6703,26 @@
     {
       "id": "C6_11",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 68,
       "locucion": "Y hay otro detalle que la mayoría no ve venir.",
-      "busqueda": "businessman stressed office · man worried thinking",
-      "clips": [
-        "clips/C6_11.mp4"
-      ],
-      "credito": "pixabay:22109"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "Y hay otro detalle que la mayoría no ve venir"
+      }
     },
     {
       "id": "C6_12a",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 56,
       "locucion": "En muchas jurisdicciones, el número de licencias está limitado por ley.",
-      "busqueda": "law book pages legal text close up",
-      "clips": [
-        "clips/C6_12a.mp4"
-      ],
-      "credito": "pixabay:21941"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "En muchas jurisdicciones, el número de licencias está limitado por ley"
+      }
     },
     {
       "id": "C6_12b",
@@ -3463,15 +6741,14 @@
     {
       "id": "C6_13",
       "bloque": "capitulo_6",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "grafico",
+      "patron": "cifra_impacto",
       "duracion": 80,
       "locucion": "No es un mercado abierto donde compites por ser mejor.",
-      "busqueda": "busy market street · crowded shopping street",
-      "clips": [
-        "clips/C6_13.mp4"
-      ],
-      "credito": "pixabay:1643"
+      "variante": "frase_destacada",
+      "contenido": {
+        "linea": "No es un mercado abierto donde compites por ser mejor"
+      }
     },
     {
       "id": "C6_14a",
@@ -3736,57 +7013,412 @@
       }
     },
     {
-      "id": "C7_03",
+      "id": "C7_01_v2",
       "bloque": "capitulo_7",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 54,
       "locucion": "Con cuarenta, uno decente.",
-      "busqueda": "casino exterior night · casino facade",
-      "clips": [
-        "clips/C7_03.mp4"
-      ],
-      "credito": "pexels:29853756"
+      "contenido": {
+        "linea": "ENTONCES ¿SE PUEDE COMPRAR UN CASINO?"
+      },
+      "luz": "amanecer, cielo palido muy luminoso, el casino apagado en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.08,
+          1.16
+        ],
+        "x": [
+          -70,
+          90
+        ]
+      },
+      "capas": [
+        {
+          "id": "C7_01_alba",
+          "src": "C7_01_alba.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            30
+          ],
+          "prompt": "Dawn sky, pale cool blue brightening to near white at the horizon, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 1.32,
+            "contraste": 1.08,
+            "tinte": "#c4cdd6",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C7_01_casino",
+          "src": "C7_01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "One low casino building with its signs switched off at dawn, a solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain flat panels. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.52,
+            "contraste": 1.42
+          }
+        },
+        {
+          "id": "C7_01_aparcamiento",
+          "src": "C7_01_aparcamiento.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "An empty asphalt parking lot at dawn with faded painted bays, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.48,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C7_01_hombre",
+          "src": "C7_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.58,
+          "posicion_x": 0.7,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 150,
+            "largo": 1.6,
+            "opacidad": 0.5
+          },
+          "prompt": "One man walking away from behind, long coat, trousers, shoes, mid stride, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C7_04a",
+      "id": "C7_01_v3",
       "bloque": "capitulo_7",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 62,
       "locucion": "Con ciento cincuenta, un resort. Pero no es un negocio que se compre con dinero.",
-      "busqueda": "las vegas strip aerial night · resort tower night",
-      "clips": [
-        "clips/C7_04a.mp4"
-      ],
-      "credito": "pixabay:205875"
+      "contenido": {
+        "linea": "ENTONCES ¿SE PUEDE COMPRAR UN CASINO?"
+      },
+      "luz": "amanecer, cielo palido muy luminoso, el casino apagado en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.22,
+          1.3
+        ],
+        "x": [
+          60,
+          -40
+        ],
+        "y": [
+          0,
+          -10
+        ]
+      },
+      "capas": [
+        {
+          "id": "C7_01_alba",
+          "src": "C7_01_alba.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            30
+          ],
+          "prompt": "Dawn sky, pale cool blue brightening to near white at the horizon, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 1.32,
+            "contraste": 1.08,
+            "tinte": "#c4cdd6",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C7_01_casino",
+          "src": "C7_01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "One low casino building with its signs switched off at dawn, a solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain flat panels. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.52,
+            "contraste": 1.42
+          }
+        },
+        {
+          "id": "C7_01_aparcamiento",
+          "src": "C7_01_aparcamiento.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "An empty asphalt parking lot at dawn with faded painted bays, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.48,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C7_01_hombre",
+          "src": "C7_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.58,
+          "posicion_x": 0.7,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 150,
+            "largo": 1.6,
+            "opacidad": 0.5
+          },
+          "prompt": "One man walking away from behind, long coat, trousers, shoes, mid stride, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C7_04b",
+      "id": "C7_01_v4",
       "bloque": "capitulo_7",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 62,
       "locucion": "",
-      "contexto": "Con ciento cincuenta, un resort. Pero no es un negocio que se compre con dinero.",
-      "busqueda": "money stack table · counting banknotes hands",
-      "clips": [
-        "clips/C7_04b.mp4"
-      ],
-      "credito": "pexels:6266647"
+      "contenido": {
+        "linea": "ENTONCES ¿SE PUEDE COMPRAR UN CASINO?"
+      },
+      "luz": "amanecer, cielo palido muy luminoso, el casino apagado en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.26,
+          1.06
+        ],
+        "x": [
+          30,
+          0
+        ]
+      },
+      "capas": [
+        {
+          "id": "C7_01_alba",
+          "src": "C7_01_alba.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            30
+          ],
+          "prompt": "Dawn sky, pale cool blue brightening to near white at the horizon, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 1.32,
+            "contraste": 1.08,
+            "tinte": "#c4cdd6",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C7_01_casino",
+          "src": "C7_01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "One low casino building with its signs switched off at dawn, a solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain flat panels. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.52,
+            "contraste": 1.42
+          }
+        },
+        {
+          "id": "C7_01_aparcamiento",
+          "src": "C7_01_aparcamiento.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "An empty asphalt parking lot at dawn with faded painted bays, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.48,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C7_01_hombre",
+          "src": "C7_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.58,
+          "posicion_x": 0.7,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 150,
+            "largo": 1.6,
+            "opacidad": 0.5
+          },
+          "prompt": "One man walking away from behind, long coat, trousers, shoes, mid stride, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
-      "id": "C7_05",
+      "id": "C7_01_v5",
       "bloque": "capitulo_7",
-      "tipo": "clip",
-      "patron": "textura_real",
+      "tipo": "capas",
+      "patron": "apertura_capitulo",
       "duracion": 56,
       "locucion": "Es un negocio en el que te admiten.",
-      "busqueda": "signing contract · contract signature · official seal document · approval handshake",
-      "clips": [
-        "clips/C7_05.mp4"
-      ],
-      "credito": "pexels:7646698"
+      "contenido": {
+        "linea": "ENTONCES ¿SE PUEDE COMPRAR UN CASINO?"
+      },
+      "luz": "amanecer, cielo palido muy luminoso, el casino apagado en contraluz",
+      "horizonte": 0.7,
+      "camara": {
+        "zoom": [
+          1.0,
+          1.14
+        ],
+        "x": [
+          0,
+          -18
+        ]
+      },
+      "capas": [
+        {
+          "id": "C7_01_alba",
+          "src": "C7_01_alba.png",
+          "z": -800,
+          "zoom": [
+            1.0,
+            1.03
+          ],
+          "x": [
+            0,
+            30
+          ],
+          "prompt": "Dawn sky, pale cool blue brightening to near white at the horizon, smooth gradient, thin flat cloud. The sky holds only cloud and haze.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 1.32,
+            "contraste": 1.08,
+            "tinte": "#c4cdd6",
+            "tinteFuerza": 0.2,
+            "desenfoque": 2
+          }
+        },
+        {
+          "id": "C7_01_casino",
+          "src": "C7_01_casino.png",
+          "z": -320,
+          "zoom": [
+            1.0,
+            1.08
+          ],
+          "prompt": "One low casino building with its signs switched off at dawn, a solid massive volume with unbroken surfaces and a clean silhouette, matte stone and painted metal, sign faces plain flat panels. Three-quarter view. Plain white background.",
+          "grade": {
+            "saturacion": 0.4,
+            "brillo": 0.52,
+            "contraste": 1.42
+          }
+        },
+        {
+          "id": "C7_01_aparcamiento",
+          "src": "C7_01_aparcamiento.png",
+          "z": -120,
+          "zoom": [
+            1.0,
+            1.14
+          ],
+          "prompt": "An empty asphalt parking lot at dawn with faded painted bays, solid opaque ground filling the lower part of the frame, empty and quiet. Plain white above.",
+          "grade": {
+            "saturacion": 0.45,
+            "brillo": 0.48,
+            "contraste": 1.3
+          }
+        },
+        {
+          "id": "C7_01_hombre",
+          "src": "C7_01_hombre.png",
+          "z": 0,
+          "principal": true,
+          "zoom": [
+            1.0,
+            1.18
+          ],
+          "escala_alto": 0.58,
+          "posicion_x": 0.7,
+          "anclaje": "pies",
+          "sombra": {
+            "angulo": 150,
+            "largo": 1.6,
+            "opacidad": 0.5
+          },
+          "prompt": "One man walking away from behind, long coat, trousers, shoes, mid stride, full body from head to feet. The figure is one flat solid black shape with no interior detail. The entire rest of the image is plain pure white, completely empty.",
+          "grade": {
+            "saturacion": 0.3,
+            "brillo": 0.1,
+            "contraste": 1.6
+          }
+        }
+      ]
     },
     {
       "id": "C7_06a",

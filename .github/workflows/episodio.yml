@@ -126,6 +126,13 @@ jobs:
           echo "slug=$SLUG"     >> "$GITHUB_OUTPUT"
           echo "Episodio: $TITULO"
 
+      # La mezcla de tipos es la del documento de escenas -45/30/25- y se
+      # recalcula aqui para que no dependa de que alguien se acuerde de
+      # ejecutarlo en local antes de subir.
+      - name: Ajustar la mezcla al documento
+        run: |
+          python scripts/rebalancear.py             --escenas "remotion/public/${{ inputs.episodio }}/escenas.json"
+
       - name: Instalar Remotion
         working-directory: remotion
         run: npm ci

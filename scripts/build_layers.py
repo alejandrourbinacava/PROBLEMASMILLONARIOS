@@ -357,11 +357,19 @@ def construir(ruta: Path, capas: int, destino: Path, feather: int,
         salida.append({"file": nombre, "depth_mean": round(media, 2), "z": 0.0})
         print(f"  capa {k}: profundidad media {media:.1f}, {con_padding.size[0]}x{con_padding.size[1]}")
 
-    # z interpolado: mas profundidad media = mas cerca = z mas alto
-    medias = [c["depth_mean"] for c in salida]
-    lo, hi = min(medias), max(medias)
-    for capa in salida:
-        t = 0.0 if hi - lo < 1e-6 else (capa["depth_mean"] - lo) / (hi - lo)
+    # Las z se reparten por ORDEN, no por el valor de la profundidad media.
+    #
+    # Interpolar por valor las apelotona: en una escena con cielo, un edificio y
+    # una figura, el cielo esta infinitamente lejos y todo lo demas esta cerca,
+    # asi que las medias salen 32, 166, 198, 213 y las z quedan en -800, -205,
+    # -66 y 0. Tres capas metidas en los ultimos 205 no tienen parallax entre
+    # ellas: solo se separaria el cielo.
+    #
+    # Es el mismo razonamiento que llevo a cortar por percentiles en vez de por
+    # intervalos iguales. Lo que importa aqui no es a que distancia esta cada
+    # plano en metros, es que se muevan a velocidades distinguibles.
+    for indice, capa in enumerate(salida):
+        t = indice / max(1, len(salida) - 1)
         capa["z"] = round(Z_FONDO + (Z_FRENTE - Z_FONDO) * t, 1)
 
     print(f">> total {time.monotonic() - arranque:.1f}s")

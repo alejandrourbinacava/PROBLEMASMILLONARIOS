@@ -11,3 +11,13 @@ assets/music/*.wav
 assets/sfx/whoosh_*.wav
 client_secret*.json
 token.json
+
+# Remotion
+remotion/node_modules/
+remotion/out/
+# Las capas generadas se sobrescriben en cada escena; solo se versionan los
+# marcadores de posicion que hacen que el proyecto arranque.
+
+# El LUT es derivado: se regenera con scripts/make_cube.py, y son 900 kB
+# de texto que no aportan nada en el historial.
+assets/*.cube

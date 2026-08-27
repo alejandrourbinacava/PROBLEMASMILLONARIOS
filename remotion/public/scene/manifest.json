@@ -1,0 +1,27 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "padding": 0.25,
+  "layers": [
+    {
+      "file": "layer_0.png",
+      "depth_mean": 40,
+      "z": -800.0
+    },
+    {
+      "file": "layer_1.png",
+      "depth_mean": 100,
+      "z": -533.3
+    },
+    {
+      "file": "layer_2.png",
+      "depth_mean": 160,
+      "z": -266.7
+    },
+    {
+      "file": "layer_3.png",
+      "depth_mean": 220,
+      "z": 0.0
+    }
+  ]
+}

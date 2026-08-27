@@ -60,6 +60,9 @@ jobs:
           key: broll-${{ github.run_id }}
           restore-keys: |
             broll-
+        # La clave lleva el run_id porque actions/cache no permite sobrescribir
+        # una clave existente. El limite de 10 GB del repo va desalojando las
+        # antiguas por uso, y la poda de mas abajo mantiene cada entrada en 4 GB.
 
       - name: Generar el vídeo
         env:
@@ -96,17 +99,32 @@ jobs:
           path: .cache/clips
           key: broll-${{ github.run_id }}
 
-      - name: Guardar vídeo y miniatura como artefacto
+      # La miniatura y los metadatos pesan unos cientos de kB y sirven para
+      # revisar de un vistazo qué se ha publicado. Esto puede subirse siempre.
+      - name: Guardar miniatura y metadatos
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: video-${{ github.run_number }}
+          name: ficha-${{ github.run_number }}
           path: |
-            build/**/video.mp4
             build/**/thumbnail.jpg
             build/**/metadata.json
           retention-days: 7
           if-no-files-found: warn
+
+      # El vídeo entero son unos 365 MB y el plan gratuito de GitHub da 500 MB
+      # de almacenamiento de artefactos: UN solo vídeo lo llena. Y no tiene
+      # sentido guardarlo, porque su destino es YouTube. Solo se sube cuando la
+      # subida no se ha hecho, que es el único caso en que hace falta
+      # recuperarlo a mano. Dos días de retención, lo justo para bajarlo.
+      - name: Guardar el vídeo solo si no se ha subido a YouTube
+        if: failure() || inputs.upload == 'false'
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_number }}
+          path: build/**/video.mp4
+          retention-days: 2
+          if-no-files-found: ignore
 
       - name: Guardar los JSON del proceso si algo falla
         if: failure()
@@ -116,7 +134,7 @@ jobs:
           path: |
             build/**/*.json
             build/**/captions.ass
-          retention-days: 14
+          retention-days: 7
           if-no-files-found: ignore
 
       - name: Anotar el vídeo publicado en el repo

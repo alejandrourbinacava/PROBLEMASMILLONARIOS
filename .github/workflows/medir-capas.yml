@@ -1,0 +1,125 @@
+name: Medir el coste de las capas 2.5D
+
+# Mide en el runner de GitHub lo que cuesta de verdad separar una imagen en
+# capas y animarla, para saber cuántas escenas caben en un vídeo antes de
+# meterlo en el pipeline diario. Se lanza a mano, no por calendario.
+#
+# El runner de ubuntu-latest son 4 vCPU y 16 GB. Todo va en CPU: no hay GPU en
+# los runners gratuitos, así que estos números son los reales, no una
+# estimación optimista.
+
+on:
+  workflow_dispatch:
+    inputs:
+      modelo:
+        description: "Modelo de profundidad"
+        required: false
+        default: base
+        type: choice
+        options: [small, base, large]
+      capas:
+        description: "Número de capas"
+        required: false
+        default: "4"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: remotion/package-lock.json
+
+      - name: Instalar ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      # Los modelos pesan cientos de MB y bajarlos en cada ejecución come más
+      # minutos que el propio cálculo.
+      - name: Restaurar los modelos
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/huggingface
+            ~/.cache/torch
+          key: modelos-${{ inputs.modelo }}-v1
+
+      - name: Instalar dependencias de imagen
+        run: |
+          pip install --quiet --index-url https://download.pytorch.org/whl/cpu torch
+          pip install --quiet transformers opencv-python-headless \
+                              simple-lama-inpainting "numpy>=2.1" "pillow>=10.4"
+
+      - name: Preparar una imagen de prueba
+        run: |
+          mkdir -p build/medir
+          # Un degradado con formas a distintas distancias sirve para medir
+          # tiempos sin depender de descargar nada de un banco de vídeo.
+          ffmpeg -v error -f lavfi -i "testsrc2=size=2752x1548:duration=1" \
+                 -frames:v 1 build/medir/fuente.png
+          python -c "from PIL import Image; print('fuente:', Image.open('build/medir/fuente.png').size)"
+
+      - name: Separar en capas y cronometrar
+        run: |
+          /usr/bin/time -v python scripts/build_layers.py \
+            build/medir/fuente.png \
+            --layers ${{ inputs.capas }} \
+            --model ${{ inputs.modelo }} \
+            --threads 4 \
+            --out build/medir/out --preview 2>&1 | \
+            grep -E "^>>|^  |Maximum resident|Elapsed" || true
+
+      - name: Instalar Remotion y renderizar
+        run: |
+          mkdir -p remotion/public/scene
+          cp build/medir/out/layer_*.png build/medir/out/manifest.json remotion/public/scene/
+          cd remotion
+          npm ci --silent || npm install --silent
+          npx remotion browser ensure
+          time npx remotion render src/index.ts ParallaxScene out/scene.mp4 \
+               --log=error --concurrency=4
+
+      - name: Aplicar el grade y cronometrar
+        run: |
+          python scripts/make_cube.py --out assets/grade.cube
+          time bash scripts/grade.sh remotion/out/scene.mp4 build/medir/final.mp4 assets/grade.cube
+          ls -lh build/medir/final.mp4 remotion/out/scene.mp4
+
+      - name: Resumen
+        if: always()
+        run: |
+          echo "### Coste de una escena 2.5D" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Modelo: \`${{ inputs.modelo }}\` · capas: ${{ inputs.capas }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Mira los tiempos de cada paso en el log. Con el total por escena" >> $GITHUB_STEP_SUMMARY
+          echo "se calcula cuántas caben en los 180 minutos del vídeo diario." >> $GITHUB_STEP_SUMMARY
+
+      - name: Guardar la prueba
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: capas-${{ github.run_number }}
+          path: |
+            build/medir/out/preview.png
+            build/medir/out/depth.png
+            build/medir/out/manifest.json
+            build/medir/final.mp4
+          retention-days: 3
+          if-no-files-found: warn

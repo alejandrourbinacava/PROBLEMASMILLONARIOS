@@ -15,28 +15,43 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageFilter
 
-MODELO = "depth-anything/Depth-Anything-V2-Large-hf"
-MIN_ANCHO = 3840
+# Large da el mejor mapa, pero en CPU tarda del orden de un minuto por imagen y
+# son 1,3 GB de descarga. Base pesa 400 MB y va unas tres veces mas rapido; para
+# separar en 4 bandas la diferencia de calidad es minima, porque lo que importa
+# es el ORDEN relativo de las profundidades, no su valor exacto.
+MODELOS = {
+    "small": "depth-anything/Depth-Anything-V2-Small-hf",
+    "base": "depth-anything/Depth-Anything-V2-Base-hf",
+    "large": "depth-anything/Depth-Anything-V2-Large-hf",
+}
+MIN_ANCHO = 2750          # lo que exige un dolly de 120 unidades con margen 25%
 PADDING = 0.25
 Z_FONDO, Z_FRENTE = -800.0, 0.0
+# LaMa trabaja nativamente en torno a 1024 px. Pasarle una imagen de 4K no la
+# mejora y multiplica el tiempo por diez, asi que se rellena en pequeno y solo
+# se pega de vuelta la zona reconstruida.
+LADO_RELLENO = 1024
 
 
 # ---------------------------------------------------------------------------
 # 1. Profundidad
 # ---------------------------------------------------------------------------
 
-def mapa_profundidad(image: Image.Image) -> np.ndarray:
+def mapa_profundidad(image: Image.Image, modelo: str, hilos: int) -> np.ndarray:
     """Devuelve la profundidad normalizada a 0-255, del tamaño de la imagen."""
     import torch
     from transformers import pipeline
 
-    estimador = pipeline("depth-estimation", model=MODELO, device=-1)
+    # Sin este limite torch coge todos los nucleos y deja la maquina inservible.
+    torch.set_num_threads(max(1, hilos))
+    estimador = pipeline("depth-estimation", model=MODELOS[modelo], device=-1)
     with torch.no_grad():
         salida = estimador(image)
     profundidad = np.array(salida["depth"], dtype=np.float32)
@@ -109,15 +124,39 @@ class Rellenador:
     def __call__(self, imagen: Image.Image, agujero: Image.Image) -> Image.Image:
         if np.asarray(agujero).max() == 0:
             return imagen
+
+        # Se rellena en pequeño y solo se pega de vuelta lo reconstruido. LaMa
+        # trabaja en torno a 1024 px: darle 4K no mejora el resultado y
+        # multiplica el tiempo por diez. Y como el relleno acaba TAPADO por la
+        # capa de delante salvo en los bordes que se descubren al mover la
+        # cámara, no necesita el detalle del original.
+        original = imagen.convert("RGB")
+        escala = min(1.0, LADO_RELLENO / max(original.size))
+        if escala < 1.0:
+            chico = (int(original.width * escala), int(original.height * escala))
+            pequena = original.resize(chico, Image.LANCZOS)
+            hueco = agujero.convert("L").resize(chico, Image.NEAREST)
+        else:
+            pequena, hueco = original, agujero.convert("L")
+
+        relleno = self._rellenar(pequena, hueco)
+        if escala < 1.0:
+            relleno = relleno.resize(original.size, Image.LANCZOS)
+
+        # Solo se sustituye dentro del agujero: el resto se queda a resolución
+        # completa, sin pasar por el viaje de ida y vuelta.
+        return Image.composite(relleno, original, agujero.convert("L"))
+
+    def _rellenar(self, imagen: Image.Image, agujero: Image.Image) -> Image.Image:
         if self.lama is not None:
             try:
-                return self.lama(imagen.convert("RGB"), agujero.convert("L"))
+                return self.lama(imagen, agujero).convert("RGB")
             except Exception as exc:
-                print(f"    LaMa fallo en esta capa ({exc}); voy con cv2")
+                print(f"    LaMa falló en esta capa ({exc}); voy con cv2")
         import cv2
 
-        origen = cv2.cvtColor(np.array(imagen.convert("RGB")), cv2.COLOR_RGB2BGR)
-        binaria = (np.asarray(agujero.convert("L")) > 127).astype(np.uint8) * 255
+        origen = cv2.cvtColor(np.array(imagen), cv2.COLOR_RGB2BGR)
+        binaria = (np.asarray(agujero) > 127).astype(np.uint8) * 255
         relleno = cv2.inpaint(origen, binaria, 7, cv2.INPAINT_TELEA)
         return Image.fromarray(cv2.cvtColor(relleno, cv2.COLOR_BGR2RGB))
 
@@ -157,15 +196,18 @@ def con_margen(imagen: Image.Image, padding: float) -> Image.Image:
 # ---------------------------------------------------------------------------
 
 def construir(ruta: Path, capas: int, destino: Path, feather: int,
-              preview: bool) -> None:
+              preview: bool, modelo: str, hilos: int) -> None:
     imagen = Image.open(ruta).convert("RGB")
     if imagen.width < MIN_ANCHO:
         print(f"  AVISO: {imagen.width}px de ancho, por debajo de los {MIN_ANCHO} "
               f"recomendados. Al acercar la camara se vera blando.")
     destino.mkdir(parents=True, exist_ok=True)
 
-    print(f">> profundidad ({MODELO})")
-    profundidad = mapa_profundidad(imagen)
+    import time
+    arranque = time.monotonic()
+    print(f">> profundidad ({MODELOS[modelo]}, {hilos} hilos)")
+    profundidad = mapa_profundidad(imagen, modelo, hilos)
+    print(f"   {time.monotonic() - arranque:.1f}s")
     Image.fromarray(profundidad.astype(np.uint8)).save(destino / "depth.png")
 
     limites = cortes_por_percentil(profundidad, capas)
@@ -210,6 +252,7 @@ def construir(ruta: Path, capas: int, destino: Path, feather: int,
         t = 0.0 if hi - lo < 1e-6 else (capa["depth_mean"] - lo) / (hi - lo)
         capa["z"] = round(Z_FONDO + (Z_FRENTE - Z_FONDO) * t, 1)
 
+    print(f">> total {time.monotonic() - arranque:.1f}s")
     manifest = {
         "width": imagen.width, "height": imagen.height,
         "padding": PADDING, "layers": salida,
@@ -255,10 +298,16 @@ def main() -> None:
     parser.add_argument("--feather", type=int, default=4,
                         help="desenfoque de la mascara en px (3-5)")
     parser.add_argument("--preview", action="store_true")
+    parser.add_argument("--model", choices=sorted(MODELOS), default="base",
+                        help="base es el equilibrio bueno; large solo si sobra tiempo")
+    parser.add_argument("--threads", type=int, default=max(1, (os.cpu_count() or 4) // 2),
+                        help="hilos de torch; por defecto la mitad de los nucleos, "
+                             "para no dejar la maquina inservible")
     args = parser.parse_args()
     if args.layers < 2:
         sys.exit("Hacen falta al menos 2 capas")
-    construir(args.imagen, args.layers, args.out, args.feather, args.preview)
+    construir(args.imagen, args.layers, args.out, args.feather, args.preview,
+              args.model, args.threads)
 
 
 if __name__ == "__main__":

@@ -96,6 +96,34 @@ def main() -> None:
             print(f"  - {src}")
         sys.exit(1)
 
+    # Los rotulos: que quepan en el ancho que declaran.
+    #
+    # El motor los encoge hasta caber, asi que un texto demasiado largo no se
+    # corta: se queda diminuto, que en un video es igual de malo y ademas pasa
+    # desapercibido al revisar. Se avisa cuando haria falta bajar de un 70% del
+    # cuerpo previsto, que es donde el rotulo empieza a no leerse de lejos.
+    ANCHO_POR_LETRA = 0.52   # em de una tipografia negra en mayusculas
+    for escena in spec["escenas"]:
+        for capa in escena["capas"]:
+            texto = capa.get("texto") or capa.get("contenido")
+            if capa.get("src") or not texto:
+                continue
+            grande = capa.get("tipo") == "texto_grande"
+            cuerpo = spec["ancho"] * (0.13 if grande else 0.055)
+            linea = max(texto.splitlines() or [texto], key=len)
+            estimado = len(linea) * cuerpo * ANCHO_POR_LETRA
+            limite = spec["ancho"] * float(capa.get("ancho_max", 0.8))
+            if estimado > limite:
+                encoge = limite / estimado
+                aviso = (f"escena {escena['id']}: \"{linea}\" necesita "
+                         f"{estimado / spec['ancho']:.2f} de ancho y tiene "
+                         f"{capa.get('ancho_max', 0.8):.2f}; se encogera al "
+                         f"{encoge * 100:.0f}%")
+                if encoge < 0.70:
+                    problemas.append(aviso + " y quedara ilegible")
+                else:
+                    print(f"  aviso  {aviso}")
+
     for escena in spec["escenas"]:
         capas = [c for c in escena["capas"] if c.get("src")]
         if not capas:

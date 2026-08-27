@@ -405,7 +405,8 @@
             1.0,
             1.03
           ],
-          "posicion": "inferior"
+          "posicion": "inferior",
+          "ancho_max": 0.45
         }
       ],
       "texto": {
@@ -480,7 +481,7 @@
             1.3
           ],
           "anclaje": "centro",
-          "prompt": "the green zero pocket of a roulette wheel isolated, top down view, neutral overhead lighting, plain white background",
+          "prompt": "extreme macro photograph of one single numbered slot on a roulette wheel rim, the slot is bright green with the number 0 in white, it fills the centre of the frame, a polished brass divider on each side, the black and red slots beside it are cut off by the edges of the frame and out of focus, very shallow depth of field, neutral overhead light, no chips, no ball, no hub, no spindle, no full wheel. Isolated on a plain pure white background, nothing else in frame",
           "grade": {
             "saturacion": 1.3,
             "brillo": 1.0,

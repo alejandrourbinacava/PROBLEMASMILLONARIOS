@@ -48,6 +48,10 @@ export type Capa = {
   posicion_x?: number;
   /** Donde va un rotulo: "inferior" lo baja para que no cruce al sujeto. */
   posicion?: string;
+  /** Ancho maximo del rotulo, en fraccion del ancho de composicion. El texto
+   *  se encoge hasta caber: mas vale una letra mas pequena que una palabra
+   *  cortada por el borde. */
+  ancho_max?: number;
   z: number;
   principal?: boolean;
   zoom?: number[];
@@ -310,6 +314,22 @@ const Rotulo: React.FC<{
   const grande = capa.tipo === "texto_grande";
   const zoomTexto = entre(capa.zoom, avance, 1);
 
+  // El cuerpo de letra se reduce hasta que el texto cabe en ancho_max. La
+  // estimacion usa 0,52 em por caracter, que es lo que mide una tipografia
+  // negra en mayusculas; no es exacta, pero se queda del lado seguro y el
+  // maxWidth de abajo remata lo que se escape.
+  const anchoMax = capa.ancho_max ?? 0.8;
+  const cuerpoBase = ancho * (grande ? 0.13 : 0.055);
+  const contenidoTexto = capa.texto ?? capa.contenido ?? "";
+  const lineaMasLarga = contenidoTexto
+    .split("\n")
+    .reduce((a, b) => (a.length > b.length ? a : b), "");
+  const anchoEstimado = lineaMasLarga.length * cuerpoBase * 0.52;
+  const limite = ancho * anchoMax;
+  const cuerpo = anchoEstimado > limite
+    ? Math.max(cuerpoBase * 0.55, cuerpoBase * (limite / anchoEstimado))
+    : cuerpoBase;
+
   let contenido = capa.texto ?? capa.contenido ?? "";
   if (capa.contador) {
     const t = interpolate(frame, [0, capa.contador.frames ?? 40], [0, 1], {
@@ -335,11 +355,11 @@ const Rotulo: React.FC<{
     >
       <div
         style={{
-          maxWidth: '80%',
+          maxWidth: `${anchoMax * 100}%`,
           textAlign: 'center',
           fontFamily: `'${tipografia.familia}', Poppins, sans-serif`,
           fontWeight: 900,
-          fontSize: Math.round(ancho * (grande ? 0.13 : 0.055)),
+          fontSize: Math.round(cuerpo),
           lineHeight: 1.04,
           letterSpacing: `${tipografia.tracking ?? 0}em`,
           textTransform: (tipografia.transform as 'uppercase') ?? 'none',

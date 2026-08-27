@@ -3,8 +3,9 @@ PyYAML==6.0.2
 edge-tts==7.2.8
 python-slugify==8.0.4
 Pillow==10.4.0
-# Recorte del sujeto para la composicion por capas (modelo local, sin API)
-rembg[cpu]==2.0.67
+# Congela las fuentes variables en su peso grueso: libass y drawtext no saben
+# pedir un peso, asi que sin esto los rotulos salen finos.
+fonttools==4.55.3
 anthropic==0.39.0
 openai==1.54.4
 google-api-python-client==2.149.0

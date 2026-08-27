@@ -41,9 +41,11 @@ _FAILED = {"failed", "error", "cancelled", "canceled", "rejected"}
 # fina, transparente o repetida a muchas distancias distintas.
 VETADO = (
     "no railings, no handrails, no bannisters, no fences, no wires, no cables, "
+    "no lattice, no scaffolding, no grilles, no perforated panels, "
     "no glass, no transparency, no reflections, no chandeliers, no thin poles, "
     "no chair legs, no scattered crowds at many distances, no small props, "
-    "no rain, no smoke, no fog, no lens flare, no text, no watermark"
+    "no rain, no lens flare, no text, no watermark, "
+    "not symmetrical, not a frontal flat view, not a poster composition"
 )
 
 
@@ -53,27 +55,49 @@ class Ai33ImageError(RuntimeError):
 
 def prompt_por_capas(
     primer_plano: str, plano_medio: str, fondo: str, *,
-    ambiente: str = "dusk, strong backlight, high contrast rim light",
+    ambiente: str = "dusk, strong backlight, low sun raking across the scene",
 ) -> str:
-    """Construye un prompt que produce una imagen SEPARABLE en planos.
+    """Construye un prompt que produce una imagen con ESPACIO, no con capas.
 
-    Las tres cosas que hay que exigir, y que son justo las que fallaban al usar
-    fotos de banco:
+    La primera version pedia planos separables y salia un poster: fachada
+    frontal, figura de frente, composicion simetrica, todo paralelo al plano de
+    camara. Tenia capas y no tenia profundidad, que no es lo mismo.
 
-      - Pocos planos y bien separados, no una escena continua en fuga.
-      - Siluetas limpias y formas grandes: nada fino que el umbral parta.
-      - Nada transparente: el cristal no tiene profundidad definida y el modelo
-        le asigna la del fondo, la del reflejo o una mezcla de las dos.
+    El parallax funciona porque al mover la camara SE DESCUBRE lo que estaba
+    tapado. Si nada tapa a nada, no hay nada que descubrir y el dolly se ve como
+    un zoom. La prueba: si te movieras dos pasos a la izquierda, ¿verias algo que
+    antes no veias? En un plano frontal, no.
+
+    De ahi las tres exigencias que se anaden a las siluetas limpias:
+
+      - PERSPECTIVA: vista de tres cuartos y algo que se aleje -una calle, una
+        acera, una hilera-. El retroceso es lo que hace que avanzar se sienta
+        como avanzar.
+      - SEPARACION REAL: el sujeto a media distancia del fondo, no pegado a la
+        pared, con suelo visible entre los dos.
+      - OCLUSION: los planos tienen que solaparse y taparse entre si. Eso es
+        justo lo que el movimiento revela.
+
+    Y dos que vienen de mirar lo que fallaba: el cielo necesita materia -un
+    degradado limpio desplazandose no se ve moverse- y la fachada no puede
+    quedar quemada, porque el modelo de profundidad se apoya en el gradiente y
+    en la textura, y ante una superficie sin informacion da profundidad ruidosa
+    justo en la superficie mas grande del encuadre.
     """
     return (
         f"Cinematic wide shot, {ambiente}. "
-        f"The scene is built from exactly three clearly separated depth planes "
-        f"with empty space between them. "
-        f"FOREGROUND: {primer_plano}. "
-        f"MIDDLE GROUND: {plano_medio}. "
-        f"BACKGROUND: {fondo}. "
-        f"Large simple shapes, clean readable silhouettes, minimal fine detail. "
-        f"Each plane is a solid opaque mass with a crisp outline. "
+        f"Strong perspective with real depth: low angle, three-quarter view, "
+        f"a road and pavement receding diagonally into the distance, "
+        f"clear vanishing point. Nothing is parallel to the camera. "
+        f"FOREGROUND, close to camera: {primer_plano}. "
+        f"MIDDLE DISTANCE, clearly further back with visible ground between them: "
+        f"{plano_medio}. "
+        f"FAR BACKGROUND: {fondo}. "
+        f"The planes overlap and partly hide each other, so moving sideways "
+        f"would reveal what is behind them. "
+        f"Large readable silhouettes, each plane a solid opaque mass with a "
+        f"crisp outline. Detailed facade texture, no blown highlights, "
+        f"nothing pure white. Solid sign structure. "
         f"{VETADO}."
     )
 

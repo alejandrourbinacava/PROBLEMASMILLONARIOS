@@ -46,13 +46,18 @@ jobs:
       - name: Render de humo
         run: python scripts/smoke_render.py
 
-      - name: Guardar el resultado
-        if: always()
+      # Solo cuando falla. Un render de humo correcto no hay que mirarlo: ya lo
+      # comprueba el propio script, que verifica resolucion, duracion y
+      # desfase. Subirlo en cada push llenaba el almacenamiento de artefactos
+      # -500 MB en el plan gratuito- y cuando ese cupo se agota, upload-artifact
+      # falla y tumba el job entero aunque todo lo demas haya ido bien.
+      - name: Guardar el resultado si algo falla
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: smoke-render
           path: |
             build/_smoke/video.mp4
             build/_smoke/captions.ass
-          retention-days: 3
-          if-no-files-found: warn
+          retention-days: 2
+          if-no-files-found: ignore

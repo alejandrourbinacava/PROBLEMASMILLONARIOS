@@ -97,13 +97,19 @@ export const ParallaxScene: React.FC<ParallaxSceneProps> = ({
               <Img
                 src={staticFile(`${assetDir}/${layer.file}`)}
                 style={{
+                  // Posición absoluta con top/left, NO márgenes. En CSS un
+                  // margen en porcentaje se resuelve siempre contra el ANCHO
+                  // del contenedor, también el margen superior: en 1920x1080 un
+                  // marginTop del -12,5% daba -240 px en lugar de -135, y el
+                  // margen replicado del PNG entraba en el encuadre. Eso eran
+                  // las franjas de píxeles estirados abajo. En un elemento
+                  // absoluto, `top` en porcentaje sí va contra el alto.
+                  position: 'absolute',
+                  left: `${(-100 * manifest.padding) / 2}%`,
+                  top: `${(-100 * manifest.padding) / 2}%`,
                   width: `${100 * (1 + manifest.padding)}%`,
                   height: `${100 * (1 + manifest.padding)}%`,
                   objectFit: 'cover',
-                  // El margen del PNG se centra sobre el encuadre, para que
-                  // sobre por los cuatro lados cuando la cámara se desplace.
-                  marginLeft: `${(-100 * manifest.padding) / 2}%`,
-                  marginTop: `${(-100 * manifest.padding) / 2}%`,
                 }}
               />
             </AbsoluteFill>

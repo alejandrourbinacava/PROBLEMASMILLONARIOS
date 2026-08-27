@@ -177,18 +177,20 @@ def con_margen(imagen: Image.Image, padding: float) -> Image.Image:
     lienzo = Image.new("RGBA", (ancho + extra_x * 2, alto + extra_y * 2), (0, 0, 0, 0))
     lienzo.paste(rgba, (extra_x, extra_y))
 
-    # Replicado del borde: se estiran las franjas de los cuatro lados
-    izq = rgba.crop((0, 0, 1, alto)).resize((extra_x, alto), Image.NEAREST)
-    der = rgba.crop((ancho - 1, 0, ancho, alto)).resize((extra_x, alto), Image.NEAREST)
-    lienzo.paste(izq, (0, extra_y), izq)
+    # El borde se ESPEJA, no se estira. Estirar una fila de un píxel produce
+    # rayas verticales de colores que cantan en cuanto entran en el encuadre;
+    # el espejo continúa la textura y pasa desapercibido.
+    izq = rgba.crop((0, 0, min(extra_x, ancho), alto)).transpose(Image.FLIP_LEFT_RIGHT)
+    der = rgba.crop((max(0, ancho - extra_x), 0, ancho, alto)).transpose(Image.FLIP_LEFT_RIGHT)
+    lienzo.paste(izq, (extra_x - izq.width, extra_y), izq)
     lienzo.paste(der, (ancho + extra_x, extra_y), der)
 
     completo = lienzo.crop((0, extra_y, lienzo.width, extra_y + alto))
-    arriba = completo.crop((0, 0, completo.width, 1)).resize(
-        (completo.width, extra_y), Image.NEAREST)
-    abajo = completo.crop((0, alto - 1, completo.width, alto)).resize(
-        (completo.width, extra_y), Image.NEAREST)
-    lienzo.paste(arriba, (0, 0), arriba)
+    arriba = completo.crop((0, 0, completo.width, min(extra_y, alto))).transpose(
+        Image.FLIP_TOP_BOTTOM)
+    abajo = completo.crop(
+        (0, max(0, alto - extra_y), completo.width, alto)).transpose(Image.FLIP_TOP_BOTTOM)
+    lienzo.paste(arriba, (0, extra_y - arriba.height), arriba)
     lienzo.paste(abajo, (0, alto + extra_y), abajo)
     return lienzo
 

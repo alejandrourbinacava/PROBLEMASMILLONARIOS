@@ -3,6 +3,51 @@ import {Composition} from 'remotion';
 import {ParallaxScene, Manifest} from './ParallaxScene';
 import {PhotoDrop} from './PhotoDrop';
 import {Demo} from './Demo';
+import {Secuencia, Paso} from './Secuencia';
+import {PruebaMagnates, PasoMagnates} from './PruebaMagnates';
+
+// Tres capas por escena, ni una mas: fondo, sujeto y elementos/texto.
+// Las Z se reparten en los rangos utiles: fondo entre -200 y -400, sujeto en 0,
+// elementos entre 100 y 300. Alternar la profundidad del fondo escena a escena
+// cambia cuanto parallax hay en cada una, y eso da variedad sin tocar nada mas.
+const MAGNATES: PasoMagnates[] = [
+  {hasta: 2.18, capaFondo: 'prueba/calle.jpg', capaSujeto: 'prueba/hombre_sil.png',
+   capaElementos: 'prueba/polvo.png', texto: 'NO APUESTA CONTRA TI',
+   paneo: 'derecha', zFondo: -320, zElementos: 210},
+
+  {hasta: 3.58, capaFondo: 'prueba/noche.jpg', capaSujeto: 'prueba/silueta_sil.png',
+   capaElementos: 'prueba/brasas.png', texto: 'TE VENDE TIEMPO',
+   paneo: 'izquierda', zFondo: -260, zElementos: 170},
+
+  {hasta: 6.36, capaFondo: 'prueba/avenida.jpg', capaElementos: 'prueba/brasas.png',
+   texto: '37 CASILLAS', paneo: 'derecha', zFondo: -380, zElementos: 240},
+
+  {hasta: 9.82, capaFondo: 'prueba/frontal.jpg', capaSujeto: 'prueba/ejecutivo_sil.png',
+   capaElementos: 'prueba/polvo.png', texto: 'TE PAGA 36',
+   paneo: 'izquierda', zFondo: -300, zElementos: 190},
+
+  {hasta: 12.40, capaFondo: 'prueba/calle.jpg', capaSujeto: 'prueba/mujer_sil.png',
+   capaElementos: 'prueba/brasas_densas.png', texto: 'ESA CASILLA ES EL NEGOCIO',
+   paneo: 'derecha', zFondo: -340, zElementos: 220},
+
+  {hasta: 15.94, capaFondo: 'prueba/noche.jpg', capaElementos: 'prueba/brasas.png',
+   texto: 'EL 2,7% DE CADA EURO', paneo: 'izquierda', zFondo: -220, zElementos: 260},
+
+  {hasta: 17.32, capaFondo: 'prueba/avenida.jpg', capaSujeto: 'prueba/hombre_sil.png',
+   capaElementos: 'prueba/polvo.png', texto: 'PARECE POCO',
+   paneo: 'derecha', zFondo: -300, zElementos: 180},
+
+  {hasta: 22.28, capaFondo: 'prueba/frontal.jpg', capaSujeto: 'prueba/silueta_sil.png',
+   capaElementos: 'prueba/brasas.png', texto: '18 HORAS AL DÍA · 365 DÍAS AL AÑO',
+   paneo: 'izquierda', zFondo: -360, zElementos: 200},
+
+  {hasta: 26.90, capaFondo: 'prueba/calle.jpg', capaSujeto: 'prueba/ejecutivo_sil.png',
+   capaElementos: 'prueba/brasas_densas.png', texto: '48 MILLONES AL AÑO',
+   paneo: 'derecha', zFondo: -280, zElementos: 230},
+
+  {hasta: 30.00, capaFondo: 'prueba/noche.jpg', capaElementos: 'prueba/brasas.png',
+   texto: 'PROBLEMAS MILLONARIOS', paneo: 'derecha', zFondo: -400, zElementos: 280},
+];
 
 // El manifest vive en public/ junto a las capas, asi que se carga en el
 // arranque y el Studio lo recoge sin recompilar.
@@ -19,6 +64,50 @@ const FOTO = {
   imagenEscena: 'scene/escena.jpg',
   imagenMadera: 'scene/madera.jpg',
 };
+
+// Las escenas se cortan por las marcas del SRT de la narracion, no cada N
+// segundos: asi el rotulo aparece cuando se dice lo que dice.
+//
+// Cada escena lleva fondo, UN sujeto y texto. Ni una capa mas. Lo que da
+// riqueza no es la cantidad de elementos, es que los pocos que hay se muevan a
+// velocidades distintas y que las escenas entren deslizando.
+const PASOS: Paso[] = [
+  {hasta: 2.18, fondo: 'prueba/calle.jpg', sujeto: 'prueba/hombre.png',
+   texto: 'NO APUESTA CONTRA TI', zoom: 'in', ladoSujeto: 0.76, altoSujeto: 0.62},
+
+  {hasta: 3.58, fondo: 'prueba/noche.jpg', sujeto: 'prueba/silueta.png',
+   texto: 'TE VENDE TIEMPO', zoom: 'out', ladoSujeto: 0.24, altoSujeto: 0.70,
+   entra: 'derecha'},
+
+  {hasta: 6.36, fondo: 'prueba/avenida.jpg', texto: '37 CASILLAS',
+   zoom: 'in', entra: 'derecha'},
+
+  {hasta: 9.82, fondo: 'prueba/frontal.jpg', sujeto: 'prueba/ejecutivo.png',
+   texto: 'TE PAGA 36', zoom: 'out', ladoSujeto: 0.72, altoSujeto: 0.78,
+   entra: 'izquierda'},
+
+  {hasta: 12.40, fondo: 'prueba/calle.jpg', sujeto: 'prueba/mujer.png',
+   texto: 'ESA CASILLA ES EL NEGOCIO', zoom: 'in', ladoSujeto: 0.28,
+   altoSujeto: 0.74, entra: 'derecha'},
+
+  {hasta: 15.94, fondo: 'prueba/noche.jpg', texto: 'EL 2,7% DE CADA EURO',
+   zoom: 'out', entra: 'derecha'},
+
+  {hasta: 17.32, fondo: 'prueba/avenida.jpg', sujeto: 'prueba/hombre.png',
+   texto: 'PARECE POCO', zoom: 'in', ladoSujeto: 0.74, altoSujeto: 0.58,
+   entra: 'izquierda'},
+
+  {hasta: 22.28, fondo: 'prueba/frontal.jpg', sujeto: 'prueba/silueta.png',
+   texto: '18 HORAS AL DÍA · 365 DÍAS AL AÑO', zoom: 'out', ladoSujeto: 0.26,
+   altoSujeto: 0.66, entra: 'derecha'},
+
+  {hasta: 26.90, fondo: 'prueba/calle.jpg', sujeto: 'prueba/ejecutivo.png',
+   texto: '48 MILLONES AL AÑO', zoom: 'in', ladoSujeto: 0.75, altoSujeto: 0.80,
+   entra: 'derecha'},
+
+  {hasta: 30.00, fondo: 'prueba/noche.jpg', texto: 'PROBLEMAS MILLONARIOS',
+   zoom: 'in', entra: 'derecha'},
+];
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -72,6 +161,32 @@ export const RemotionRoot: React.FC = () => {
           ...FOTO,
           duracionTransicion: TRANSICION,
           duracionEscena: ESCENA,
+        }}
+      />
+      <Composition
+        id="Prueba"
+        component={Secuencia}
+        durationInFrames={FPS * 30}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          pasos: PASOS,
+          audio: 'prueba/voz.mp3',
+          transicion: 10,
+        }}
+      />
+
+      <Composition
+        id="PruebaMagnates"
+        component={PruebaMagnates}
+        durationInFrames={FPS * 30}
+        fps={FPS}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          pasos: MAGNATES,
+          audio: 'prueba/voz.mp3',
         }}
       />
     </>

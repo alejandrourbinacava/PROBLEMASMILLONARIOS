@@ -31,8 +31,13 @@ MODELOS = {
     "base": "depth-anything/Depth-Anything-V2-Base-hf",
     "large": "depth-anything/Depth-Anything-V2-Large-hf",
 }
-MIN_ANCHO = 2750          # lo que exige un dolly de 120 unidades con margen 25%
-PADDING = 0.25
+MIN_ANCHO = 2750
+# 40%, no 25%. El margen tiene que cubrir el desplazamiento LATERAL de la
+# camara, que es bastante mayor que el crecimiento de un dolly: con panX de
+# 260 px la capa de delante recorre 260, y con 25% solo hay 240 px de margen
+# por lado. Con 40% hay 384.
+PADDING = 0.40
+PERSPECTIVA = 1000.0      # tiene que coincidir con la de ParallaxScene.tsx
 Z_FONDO, Z_FRENTE = -800.0, 0.0
 # LaMa trabaja nativamente en torno a 1024 px. Pasarle una imagen de 4K no la
 # mejora y multiplica el tiempo por diez, asi que se rellena en pequeno y solo
@@ -88,20 +93,64 @@ def cortes_por_percentil(profundidad: np.ndarray, capas: int) -> list[float]:
 # 2. Mascaras
 # ---------------------------------------------------------------------------
 
-def mascara_banda(
-    profundidad: np.ndarray, bajo: float, alto: float, feather: int
-) -> Image.Image:
-    """Mascara de una banda de profundidad, con el borde suavizado.
+MINIMO_COMPONENTE = 500     # px sueltos por debajo de esto se reasignan
 
-    El desenfoque va sobre la MASCARA, nunca sobre la imagen: si se difumina la
-    imagen se pierde detalle, y lo que hace falta es que el canto del recorte no
-    sea una linea recortada con tijeras, que al mover la camara canta muchisimo.
+
+def mascaras_limpias(
+    profundidad: np.ndarray, limites: list[float], feather: int
+) -> list[Image.Image]:
+    """Las mascaras de todas las bandas, ya limpias de restos.
+
+    Un umbral crudo parte por la mitad todo lo que sea fino y este en diagonal:
+    una barandilla, la pata de una silla, el pasamanos de una escalera. Como esos
+    elementos cruzan varias profundidades, cada banda se queda con trocitos
+    sueltos y aparecen agujeros con forma de barandilla.
+
+    Dos pasadas lo arreglan: un cierre morfologico que cose los cortes finos, y
+    la reasignacion de los fragmentos pequenos a la banda vecina que mas los
+    rodea, en vez de dejarlos flotando en la suya.
     """
-    dentro = ((profundidad > bajo) & (profundidad <= alto)).astype(np.uint8) * 255
-    mascara = Image.fromarray(dentro, mode="L")
-    if feather > 0:
-        mascara = mascara.filter(ImageFilter.GaussianBlur(feather))
-    return mascara
+    import cv2
+
+    capas = len(limites) - 1
+    crudas = [
+        ((profundidad > limites[i]) & (profundidad <= limites[i + 1])).astype(np.uint8)
+        for i in range(capas)
+    ]
+
+    kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
+    etiqueta = np.zeros(profundidad.shape, dtype=np.int16)
+    for i, cruda in enumerate(crudas):
+        cerrada = cv2.morphologyEx(cruda, cv2.MORPH_CLOSE, kernel)
+        etiqueta[cerrada > 0] = i
+
+    # Fragmentos pequenos: se los queda la banda que mas perimetro les toca
+    for i in range(capas):
+        binaria = (etiqueta == i).astype(np.uint8)
+        numero, marcas, stats, _ = cv2.connectedComponentsWithStats(binaria, 8)
+        reasignados = 0
+        for c in range(1, numero):
+            if stats[c, cv2.CC_STAT_AREA] >= MINIMO_COMPONENTE:
+                continue
+            trozo = marcas == c
+            vecino = cv2.dilate(trozo.astype(np.uint8), kernel, iterations=2) > 0
+            fuera = etiqueta[vecino & ~trozo]
+            if fuera.size:
+                etiqueta[trozo] = int(np.bincount(fuera.astype(np.int64)).argmax())
+                reasignados += 1
+        if reasignados:
+            print(f"  banda {i}: {reasignados} fragmentos sueltos reasignados")
+
+    salida = []
+    for i in range(capas):
+        mascara = Image.fromarray(((etiqueta == i).astype(np.uint8) * 255), mode="L")
+        if feather > 0:
+            # El desenfoque va sobre la MASCARA, nunca sobre la imagen: difuminar
+            # la imagen pierde detalle, y lo que hace falta es que el canto no sea
+            # una linea cortada con tijeras.
+            mascara = mascara.filter(ImageFilter.GaussianBlur(feather))
+        salida.append(mascara)
+    return salida
 
 
 # ---------------------------------------------------------------------------
@@ -197,12 +246,38 @@ def con_margen(imagen: Image.Image, padding: float) -> Image.Image:
 
 # ---------------------------------------------------------------------------
 
+def margen_suficiente(padding: float, ancho: int, pan_x: float,
+                      z_fondo: float = Z_FONDO) -> tuple[bool, float, float]:
+    """Comprueba que el margen aguanta el recorrido de camara.
+
+    Una capa se dibuja a (1+padding) del encuadre centrada, asi que sobresale
+    padding/2 por cada lado. Si la camara la desplaza mas que eso, por el otro
+    lado entra el vacio. Mas vale abortar con un mensaje claro que entregar un
+    plano con una banda negra que nadie mira hasta que esta publicado.
+    """
+    disponible = padding / 2 * ancho
+    # La capa mas cercana (z=0) es la que mas recorre: factor de perspectiva 1
+    recorrido = abs(pan_x) * PERSPECTIVA / (PERSPECTIVA - Z_FRENTE)
+    return recorrido <= disponible, disponible, recorrido
+
+
 def construir(ruta: Path, capas: int, destino: Path, feather: int,
-              preview: bool, modelo: str, hilos: int) -> None:
+              preview: bool, modelo: str, hilos: int,
+              debug_holes: bool = False, pan_x: float = 260.0) -> None:
     imagen = Image.open(ruta).convert("RGB")
     if imagen.width < MIN_ANCHO:
         print(f"  AVISO: {imagen.width}px de ancho, por debajo de los {MIN_ANCHO} "
               f"recomendados. Al acercar la camara se vera blando.")
+    vale, disponible, recorrido = margen_suficiente(PADDING, imagen.width, pan_x)
+    if not vale:
+        raise SystemExit(
+            f"\n  El margen no aguanta el movimiento de camara.\n"
+            f"  Con padding {PADDING:.0%} hay {disponible:.0f} px de margen por lado,\n"
+            f"  y un panX de {pan_x:.0f} desplaza la capa de delante {recorrido:.0f} px.\n"
+            f"  Sube PADDING a {2 * recorrido / imagen.width:.2f} o baja panX a "
+            f"{disponible:.0f}."
+        )
+    print(f">> margen: {disponible:.0f} px por lado para un recorrido de {recorrido:.0f} px")
     destino.mkdir(parents=True, exist_ok=True)
 
     import time
@@ -215,29 +290,64 @@ def construir(ruta: Path, capas: int, destino: Path, feather: int,
     limites = cortes_por_percentil(profundidad, capas)
     print(f">> cortes por percentil: {[round(v, 1) for v in limites]}")
 
-    mascaras = [
-        mascara_banda(profundidad, limites[i], limites[i + 1], feather)
-        for i in range(capas)
-    ]
+    mascaras = mascaras_limpias(profundidad, limites, feather)
 
     # De atras hacia delante: para la capa k, el agujero es todo lo que tapan
     # las capas que estan DELANTE de ella. Al ir en este orden, cada relleno se
     # apoya en lo que ya se ha reconstruido antes.
     rellenar = Rellenador()
     salida = []
-    lienzo = imagen
     for k in range(capas):
+        # El agujero que hay que reconstruir es todo lo que las capas de DELANTE
+        # le tapan a esta.
         delante = [np.asarray(m, dtype=np.uint16) for m in mascaras[k + 1:]]
         if delante:
             agujero_arr = np.clip(np.sum(delante, axis=0), 0, 255).astype(np.uint8)
             agujero = Image.fromarray(agujero_arr, mode="L")
-            print(f"  capa {k}: relleno del {float((agujero_arr > 127).mean()) * 100:.0f}% del encuadre")
             lienzo = rellenar(imagen, agujero)
         else:
+            agujero_arr = np.zeros(profundidad.shape, dtype=np.uint8)
             lienzo = imagen
 
+        # La alfa NO es la banda propia: es la banda propia MAS todo lo que
+        # tiene delante. Una capa de fondo tiene que seguir existiendo por
+        # debajo de lo que la tapa, porque es justo eso lo que se descubre
+        # cuando la camara se mueve.
+        #
+        # Poniendo aqui solo la banda propia -que es lo que hacia antes- el
+        # relleno que acaba de calcular LaMa se queda con alfa 0 y se tira a la
+        # basura una linea despues de calcularlo. Eso eran los tendones negros
+        # con forma de barandilla y el hueco negro de la parte de abajo.
+        cobertura = np.clip(
+            np.sum([np.asarray(m, dtype=np.uint16) for m in mascaras[k:]], axis=0),
+            0, 255,
+        ).astype(np.uint8)
+        antes = int((np.asarray(mascaras[k]) < 250).sum())
+        despues = int((cobertura < 250).sum())
+        total = cobertura.size
+        print(f"  capa {k}: reconstruido el {float((agujero_arr > 127).mean()) * 100:4.0f}% "
+              f"| transparente {antes * 100.0 / total:5.1f}% -> {despues * 100.0 / total:5.1f}%")
+
         capa = lienzo.convert("RGBA")
-        capa.putalpha(mascaras[k])
+        capa.putalpha(Image.fromarray(cobertura, mode="L"))
+
+        # La capa del fondo es la plancha de la escena: por debajo no hay nada,
+        # asi que si le queda un solo pixel transparente ahi se vera negro.
+        if k == 0:
+            hueco = float((cobertura < 250).mean())
+            if hueco > 0.005:
+                raise SystemExit(
+                    f"\n  La capa 0 tiene un {hueco * 100:.1f}% transparente y es la "
+                    f"plancha del fondo: eso saldria en negro.\n"
+                    f"  El relleno no ha funcionado. Lanza con --debug-holes para verlo."
+                )
+
+        if debug_holes:
+            # Magenta debajo: cualquier agujero canta a simple vista
+            fondo = Image.new("RGBA", capa.size, (255, 0, 255, 255))
+            fondo.alpha_composite(capa)
+            capa = fondo
+
         con_padding = con_margen(capa, PADDING)
         nombre = f"layer_{k}.png"
         con_padding.save(destino / nombre)
@@ -300,6 +410,10 @@ def main() -> None:
     parser.add_argument("--feather", type=int, default=4,
                         help="desenfoque de la mascara en px (3-5)")
     parser.add_argument("--preview", action="store_true")
+    parser.add_argument("--debug-holes", action="store_true",
+                        help="exporta las capas sobre magenta: los agujeros cantan")
+    parser.add_argument("--pan-x", type=float, default=260.0,
+                        help="recorrido lateral de camara en px, para validar el margen")
     parser.add_argument("--model", choices=sorted(MODELOS), default="base",
                         help="base es el equilibrio bueno; large solo si sobra tiempo")
     parser.add_argument("--threads", type=int, default=max(1, (os.cpu_count() or 4) // 2),
@@ -309,7 +423,7 @@ def main() -> None:
     if args.layers < 2:
         sys.exit("Hacen falta al menos 2 capas")
     construir(args.imagen, args.layers, args.out, args.feather, args.preview,
-              args.model, args.threads)
+              args.model, args.threads, args.debug_holes, args.pan_x)
 
 
 if __name__ == "__main__":

@@ -37,29 +37,28 @@ _POLL_TIMEOUT = 900.0
 _DONE = {"done", "completed", "complete", "success", "succeeded", "finished"}
 _FAILED = {"failed", "error", "cancelled", "canceled", "rejected"}
 
-# Lo que arruina una imagen como material para separar en capas: cualquier cosa
-# fina, transparente o repetida a muchas distancias distintas.
-VETADO = (
-    "no railings, no handrails, no bannisters, no fences, no wires, no cables, "
-    "no lattice, no scaffolding, no grilles, no perforated panels, "
-    "no glass, no transparency, no reflections, no chandeliers, no thin poles, "
-    "no chair legs, no scattered crowds at many distances, no small props, "
-    "no rain, no lens flare, no sun flare, no light streaks, "
-    "no watermark, "
-    "not symmetrical, not a frontal flat view, not a poster composition, "
-    # El modelo mete aviones, pajaros y globos en cuanto ve cielo abierto con
-    # nubes. Son siluetas flotando sin relacion de profundidad con nada, asi que
-    # el separador las manda a una banda cualquiera y quedan pegadas a un plano
-    # que no les corresponde.
-    "no aircraft, no airplanes, no jets, no helicopters, no birds, no balloons, "
-    "no floating objects in the sky, empty sky above the horizon"
+# NINGUNO de los modelos de 4K acepta prompt negativo: supports_negative_prompt
+# viene a false en los seis. Asi que una lista de "no esto, no lo otro" no se
+# interpreta como prohibicion, se le da al modelo como DESCRIPCION. Al escribir
+# "no text anywhere" lo que recibe es un prompt que contiene la palabra "text",
+# y sale un cartel escrito. Paso exactamente eso.
+#
+# Con estos modelos hay que decir lo que SI se quiere. Cada linea de aqui
+# sustituye a una prohibicion que no funcionaba:
+#
+#   no railings, no fences, no wires  ->  volumenes macizos, superficies enteras
+#   no glass, no reflections          ->  todo opaco y mate
+#   no text anywhere                  ->  paneles lisos encendidos
+#   no aircraft, no birds             ->  en el cielo solo hay nubes
+#   no scattered crowds               ->  la calle esta vacia
+QUERIDO = (
+    "Every structure is a solid massive volume with unbroken surfaces and a "
+    "clean silhouette against what is behind it. All materials are opaque, "
+    "matte stone and painted metal. Sign faces are plain glowing panels of "
+    "flat colour. The street is empty and quiet. Above the horizon the sky "
+    "holds only clouds and haze. The light is even, with detail held in both "
+    "the bright facades and the shadows"
 )
-
-# El texto en los carteles sale casi siempre mal escrito -CASSNO en vez de
-# CASINO- y no hay forma de arreglarlo desde el prompt. Sale mas a cuenta pedir
-# un cartel encendido SIN letras y poner el rotulo despues, que ademas es lo que
-# quiere la doctrina: el texto del canal, con su tipografia, en su capa.
-SIN_LETRAS = "the sign is lit but has no readable letters, no text anywhere"
 
 
 class Ai33ImageError(RuntimeError):
@@ -108,10 +107,7 @@ def prompt_por_capas(
         f"FAR BACKGROUND: {fondo}. "
         f"The planes overlap and partly hide each other, so moving sideways "
         f"would reveal what is behind them. "
-        f"Large readable silhouettes, each plane a solid opaque mass with a "
-        f"crisp outline. Detailed facade texture, no blown highlights, "
-        f"nothing pure white. Solid sign structure. {SIN_LETRAS}. "
-        f"{VETADO}."
+        f"{QUERIDO}."
     )
 
 

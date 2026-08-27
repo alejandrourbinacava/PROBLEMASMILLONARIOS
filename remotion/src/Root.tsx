@@ -5,6 +5,8 @@ import {PhotoDrop} from './PhotoDrop';
 import {Demo} from './Demo';
 import {Secuencia, Paso} from './Secuencia';
 import {PruebaMagnates, PasoMagnates} from './PruebaMagnates';
+import {Guion, GuionSpec} from './Guion';
+import guionCasa from '../public/guion/escenas.json';
 
 // Tres capas por escena, ni una mas: fondo, sujeto y elementos/texto.
 // Las Z se reparten en los rangos utiles: fondo entre -200 y -400, sujeto en 0,
@@ -187,6 +189,19 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{
           pasos: MAGNATES,
           audio: 'prueba/voz.mp3',
+        }}
+      />
+      <Composition
+        id="Guion"
+        component={Guion}
+        durationInFrames={(guionCasa as GuionSpec).duracion_total}
+        fps={(guionCasa as GuionSpec).fps}
+        width={(guionCasa as GuionSpec).ancho}
+        height={(guionCasa as GuionSpec).alto}
+        defaultProps={{
+          spec: guionCasa as GuionSpec,
+          carpeta: 'guion',
+          audio: undefined,
         }}
       />
     </>

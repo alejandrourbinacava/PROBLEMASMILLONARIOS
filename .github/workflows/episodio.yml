@@ -20,6 +20,10 @@ on:
         description: Carpeta del episodio dentro de remotion/public
         type: string
         default: episodio
+      guion:
+        description: Guion del que se saca el título del vídeo
+        type: string
+        default: config/guion_casino.md
 
 jobs:
   render:
@@ -110,6 +114,18 @@ jobs:
           print(f"{len(escenas)} escenas, todas con contenido")
           PY
 
+      # El vídeo se llama como el guion. Salía `episodio.mp4` dentro de un
+      # artefacto `episodio-1`, y con varios episodios en marcha eso no
+      # identifica nada sin abrirlos uno por uno.
+      - name: Sacar el título del guion
+        id: titulo
+        run: |
+          TITULO=$(python scripts/titulo_episodio.py "${{ inputs.guion }}")
+          SLUG=$(python scripts/titulo_episodio.py "${{ inputs.guion }}" --slug)
+          echo "titulo=$TITULO" >> "$GITHUB_OUTPUT"
+          echo "slug=$SLUG"     >> "$GITHUB_OUTPUT"
+          echo "Episodio: $TITULO"
+
       - name: Instalar Remotion
         working-directory: remotion
         run: npm ci
@@ -117,16 +133,18 @@ jobs:
       - name: Renderizar
         working-directory: remotion
         run: |
-          npx remotion render Episodio ../build/episodio.mp4 \
+          npx remotion render Episodio \
+            "../build/${{ steps.titulo.outputs.slug }}.mp4" \
             --concurrency=2 \
             --crf=20 \
             --log=info
 
       - name: Medir lo que ha salido
         run: |
-          ls -lh build/episodio.mp4
+          RUTA="build/${{ steps.titulo.outputs.slug }}.mp4"
+          ls -lh "$RUTA"
           ffprobe -v error -show_entries format=duration,size \
-            -of default=noprint_wrappers=1 build/episodio.mp4
+            -of default=noprint_wrappers=1 "$RUTA"
 
       - name: Podar la caché de clips
         run: python scripts/prune_cache.py --max-gb 4
@@ -144,7 +162,7 @@ jobs:
       - name: Guardar el episodio
         uses: actions/upload-artifact@v4
         with:
-          name: episodio-${{ github.run_number }}
-          path: build/episodio.mp4
+          name: ${{ steps.titulo.outputs.slug }}-${{ github.run_number }}
+          path: build/${{ steps.titulo.outputs.slug }}.mp4
           retention-days: 1
           compression-level: 0

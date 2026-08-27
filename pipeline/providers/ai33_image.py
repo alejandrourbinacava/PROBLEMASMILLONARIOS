@@ -44,9 +44,22 @@ VETADO = (
     "no lattice, no scaffolding, no grilles, no perforated panels, "
     "no glass, no transparency, no reflections, no chandeliers, no thin poles, "
     "no chair legs, no scattered crowds at many distances, no small props, "
-    "no rain, no lens flare, no text, no watermark, "
-    "not symmetrical, not a frontal flat view, not a poster composition"
+    "no rain, no lens flare, no sun flare, no light streaks, "
+    "no watermark, "
+    "not symmetrical, not a frontal flat view, not a poster composition, "
+    # El modelo mete aviones, pajaros y globos en cuanto ve cielo abierto con
+    # nubes. Son siluetas flotando sin relacion de profundidad con nada, asi que
+    # el separador las manda a una banda cualquiera y quedan pegadas a un plano
+    # que no les corresponde.
+    "no aircraft, no airplanes, no jets, no helicopters, no birds, no balloons, "
+    "no floating objects in the sky, empty sky above the horizon"
 )
+
+# El texto en los carteles sale casi siempre mal escrito -CASSNO en vez de
+# CASINO- y no hay forma de arreglarlo desde el prompt. Sale mas a cuenta pedir
+# un cartel encendido SIN letras y poner el rotulo despues, que ademas es lo que
+# quiere la doctrina: el texto del canal, con su tipografia, en su capa.
+SIN_LETRAS = "the sign is lit but has no readable letters, no text anywhere"
 
 
 class Ai33ImageError(RuntimeError):
@@ -97,7 +110,7 @@ def prompt_por_capas(
         f"would reveal what is behind them. "
         f"Large readable silhouettes, each plane a solid opaque mass with a "
         f"crisp outline. Detailed facade texture, no blown highlights, "
-        f"nothing pure white. Solid sign structure. "
+        f"nothing pure white. Solid sign structure. {SIN_LETRAS}. "
         f"{VETADO}."
     )
 

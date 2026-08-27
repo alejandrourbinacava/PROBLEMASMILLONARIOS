@@ -63,6 +63,28 @@ jobs:
             broll-episodio-
             broll-
 
+      # Antes de nada, y con un mensaje que se entienda. Sin claves de banco el
+      # paso siguiente muere con un RuntimeError generico a mitad de log, y lo
+      # que hay que hacer -ponerlas en los secretos del repo- no aparece por
+      # ningun sitio.
+      - name: Comprobar que hay claves de banco de vídeo
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+        run: |
+          if [ -z "$PEXELS_API_KEY" ] && [ -z "$PIXABAY_API_KEY" ]; then
+            echo "::error::Faltan PEXELS_API_KEY y PIXABAY_API_KEY en los secretos"
+            echo "El episodio descarga aqui sus 176 clips y sin ninguna de las dos"
+            echo "claves no hay de donde. Las dos son gratuitas:"
+            echo "  Pexels  https://www.pexels.com/api/"
+            echo "  Pixabay https://pixabay.com/api/docs/"
+            echo "Se ponen en Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          [ -n "$PEXELS_API_KEY" ]  && echo "Pexels: clave presente"
+          [ -n "$PIXABAY_API_KEY" ] && echo "Pixabay: clave presente"
+          exit 0
+
       - name: Conseguir el metraje
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}

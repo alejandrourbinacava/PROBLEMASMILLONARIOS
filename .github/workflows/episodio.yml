@@ -55,6 +55,24 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core fontconfig
 
+      # Remotion renderiza dentro de un Chrome sin ventana, y el runner no trae
+      # las librerias que ese Chrome necesita para arrancar. Sin ellas el
+      # navegador muere al abrirse y el render sale con codigo 1 sin decir por
+      # que. Los nombres cambiaron con Ubuntu 24 -libasound2 paso a
+      # libasound2t64-, asi que se prueban los dos y no se corta si falta uno.
+      - name: Instalar lo que necesita el navegador
+        run: |
+          sudo apt-get install -y -qq \
+            libnss3 libdbus-1-3 libgbm1 libxrandr2 libxfixes3 libxcomposite1 \
+            libxdamage1 libpango-1.0-0 libcairo2 libcups2 libxkbcommon0 \
+            libatspi2.0-0 || true
+          for paquete in libasound2t64 libasound2 libatk1.0-0t64 libatk1.0-0 \
+                         libatk-bridge2.0-0t64 libatk-bridge2.0-0; do
+            sudo apt-get install -y -qq "$paquete" 2>/dev/null && \
+              echo "instalado $paquete"
+          done
+          echo "listo"
+
       - name: Instalar dependencias de Python
         run: pip install --quiet -r requirements.txt
 
@@ -143,14 +161,32 @@ jobs:
         working-directory: remotion
         run: npm ci
 
+      - name: Traer el navegador de Remotion
+        working-directory: remotion
+        run: npx remotion browser ensure
+
+      # El error del render se saca como anotacion, no solo al log.
+      #
+      # Los logs de una ejecucion piden autenticacion aunque el repo sea
+      # publico, asi que un fallo aqui se veia como "Process completed with
+      # exit code 1" y nada mas. Las anotaciones si se leen sin credenciales,
+      # de modo que las ultimas lineas del error se emiten como tales.
       - name: Renderizar
         working-directory: remotion
         run: |
-          npx remotion render Episodio \
-            "../build/${{ steps.titulo.outputs.slug }}.mp4" \
-            --concurrency=2 \
-            --crf=20 \
-            --log=info
+          set -o pipefail
+          mkdir -p ../build
+          if ! npx remotion render Episodio \
+                 "../build/${{ steps.titulo.outputs.slug }}.mp4" \
+                 --concurrency=2 \
+                 --crf=20 \
+                 --log=verbose 2>&1 | tee ../build/render.log; then
+            echo "::error::El render ha fallado. Ultimas lineas:"
+            tail -n 30 ../build/render.log | while IFS= read -r linea; do
+              echo "::error::${linea}"
+            done
+            exit 1
+          fi
 
       - name: Medir lo que ha salido
         run: |

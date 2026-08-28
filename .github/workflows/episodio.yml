@@ -146,7 +146,10 @@ jobs:
                     and not (e.get("clips")
                              and (base / e["clips"][0]).exists())]
           if faltan:
-              sys.exit(f"{len(faltan)} planos sin metraje: {', '.join(faltan)}")
+              # Como anotacion, que es lo unico que se lee sin credenciales.
+              print(f"::error::{len(faltan)} planos sin metraje: "
+                    f"{', '.join(faltan)}")
+              sys.exit(1)
           print(f"{len(escenas)} escenas, todas con contenido")
           PY
 

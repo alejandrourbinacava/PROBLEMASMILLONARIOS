@@ -136,6 +136,7 @@ def main() -> None:
     print(f"{len(pendientes)} planos de metraje\n")
 
     fallidos: list[tuple[str, str]] = []
+    flojos: list[tuple[str, str, str]] = []
     for e in pendientes:
         # Se salta solo si el fichero ESTA. Comprobar que el campo esta
         # escrito no vale: el escenas.json del repo ya trae las rutas de
@@ -169,6 +170,20 @@ def main() -> None:
                 continue
             elegido = candidato
             break
+        if not elegido:
+            # Ultimo recurso: se coge el mejor candidato aunque no llegue al
+            # minimo de parecido.
+            #
+            # El filtro es estricto a proposito, pero los bancos no devuelven
+            # siempre lo mismo -y el sorteo entre empatados tampoco-, asi que
+            # un plano que aqui pasa puede no pasar en otra maquina. Dejarlo
+            # vacio tumba el episodio entero por tres o cuatro planos. Es mejor
+            # un plano flojo y una lista de cuales revisar, que ningun video.
+            for consulta in consultas:
+                elegido = banco.acquire(consulta, minimo, fallback_query="")
+                if elegido:
+                    flojos.append((e["id"], consulta, elegido.hint[:40]))
+                    break
         if not elegido:
             fallidos.append((e["id"], e["busqueda"]))
             print(f"  {e['id']:8} SIN CLIP  {e['busqueda'][:60]}")

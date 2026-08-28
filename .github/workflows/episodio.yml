@@ -24,6 +24,12 @@ on:
         description: Guion del que se saca el título del vídeo
         type: string
         default: config/guion_casino.md
+  # Empujar una etiqueta `render-loquesea` tambien lo lanza. Asi no hace falta
+  # entrar a Actions y buscar el boton: se lanza desde la linea de comandos,
+  # que es desde donde se trabaja.
+  push:
+    tags:
+      - "render-*"
 
 jobs:
   render:
@@ -95,8 +101,8 @@ jobs:
           PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
         run: |
           python scripts/conseguir_metraje.py \
-            --escenas "remotion/public/${{ inputs.episodio }}/escenas.json" \
-            --destino "remotion/public/${{ inputs.episodio }}/clips"
+            --escenas "remotion/public/${{ inputs.episodio || 'episodio' }}/escenas.json" \
+            --destino "remotion/public/${{ inputs.episodio || 'episodio' }}/clips"
 
       # Un plano sin metraje sale en negro. Es mejor que se caiga aqui, con la
       # lista de los que faltan, que descubrirlo viendo el episodio.
@@ -105,7 +111,7 @@ jobs:
           python - <<'PY'
           import json, sys
           from pathlib import Path
-          ruta = Path("remotion/public/${{ inputs.episodio }}/escenas.json")
+          ruta = Path("remotion/public/${{ inputs.episodio || 'episodio' }}/escenas.json")
           escenas = json.loads(ruta.read_text(encoding="utf-8"))["escenas"]
           faltan = [e["id"] for e in escenas
                     if e["tipo"] == "clip" and not e.get("clips")]
@@ -120,8 +126,8 @@ jobs:
       - name: Sacar el título del guion
         id: titulo
         run: |
-          TITULO=$(python scripts/titulo_episodio.py "${{ inputs.guion }}")
-          SLUG=$(python scripts/titulo_episodio.py "${{ inputs.guion }}" --slug)
+          TITULO=$(python scripts/titulo_episodio.py "${{ inputs.guion || 'config/guion_casino.md' }}")
+          SLUG=$(python scripts/titulo_episodio.py "${{ inputs.guion || 'config/guion_casino.md' }}" --slug)
           echo "titulo=$TITULO" >> "$GITHUB_OUTPUT"
           echo "slug=$SLUG"     >> "$GITHUB_OUTPUT"
           echo "Episodio: $TITULO"
@@ -131,7 +137,7 @@ jobs:
       # ejecutarlo en local antes de subir.
       - name: Ajustar la mezcla al documento
         run: |
-          python scripts/rebalancear.py             --escenas "remotion/public/${{ inputs.episodio }}/escenas.json"
+          python scripts/rebalancear.py             --escenas "remotion/public/${{ inputs.episodio || 'episodio' }}/escenas.json"
 
       - name: Instalar Remotion
         working-directory: remotion

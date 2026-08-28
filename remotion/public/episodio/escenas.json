@@ -429,8 +429,7 @@
           "H05_mesa"
         ],
         "entrada_frame": 60
-      },
-      "_set": true
+      }
     },
     {
       "id": "H06",

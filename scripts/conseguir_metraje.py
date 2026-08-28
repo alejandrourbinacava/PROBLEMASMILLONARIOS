@@ -137,7 +137,13 @@ def main() -> None:
 
     fallidos: list[tuple[str, str]] = []
     for e in pendientes:
-        if e.get("clips"):
+        # Se salta solo si el fichero ESTA. Comprobar que el campo esta
+        # escrito no vale: el escenas.json del repo ya trae las rutas de
+        # cuando se descargaron en local, pero los clips no se versionan -son
+        # dos gigas y medio- asi que en un runner limpio no hay ninguno. Con
+        # la comprobacion antigua no se descargaba nada y el render moria en
+        # el fotograma 1010 buscando un mp4 que no existia.
+        if e.get("clips") and (args.destino.parent / e["clips"][0]).exists():
             continue
         minimo = (e["duracion"] / fps) * 0.5
         elegido = None

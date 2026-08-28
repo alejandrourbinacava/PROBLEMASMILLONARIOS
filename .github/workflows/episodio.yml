@@ -113,6 +113,15 @@ jobs:
           [ -n "$PIXABAY_API_KEY" ] && echo "Pixabay: clave presente"
           exit 0
 
+      # La mezcla de tipos es la del documento de escenas -45/30/25- y se
+      # recalcula aqui para que no dependa de que alguien se acuerde de
+      # ejecutarlo en local antes de subir. Va ANTES de descargar: asi no se
+      # baja metraje para planos que van a acabar siendo graficos, y la
+      # comprobacion de mas abajo mira el montaje definitivo.
+      - name: Ajustar la mezcla al documento
+        run: |
+          python scripts/rebalancear.py --escenas "remotion/public/${{ inputs.episodio || 'episodio' }}/escenas.json"
+
       - name: Conseguir el metraje
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -131,8 +140,11 @@ jobs:
           from pathlib import Path
           ruta = Path("remotion/public/${{ inputs.episodio || 'episodio' }}/escenas.json")
           escenas = json.loads(ruta.read_text(encoding="utf-8"))["escenas"]
+          base = ruta.parent
           faltan = [e["id"] for e in escenas
-                    if e["tipo"] == "clip" and not e.get("clips")]
+                    if e["tipo"] == "clip"
+                    and not (e.get("clips")
+                             and (base / e["clips"][0]).exists())]
           if faltan:
               sys.exit(f"{len(faltan)} planos sin metraje: {', '.join(faltan)}")
           print(f"{len(escenas)} escenas, todas con contenido")
@@ -149,13 +161,6 @@ jobs:
           echo "titulo=$TITULO" >> "$GITHUB_OUTPUT"
           echo "slug=$SLUG"     >> "$GITHUB_OUTPUT"
           echo "Episodio: $TITULO"
-
-      # La mezcla de tipos es la del documento de escenas -45/30/25- y se
-      # recalcula aqui para que no dependa de que alguien se acuerde de
-      # ejecutarlo en local antes de subir.
-      - name: Ajustar la mezcla al documento
-        run: |
-          python scripts/rebalancear.py             --escenas "remotion/public/${{ inputs.episodio || 'episodio' }}/escenas.json"
 
       - name: Instalar Remotion
         working-directory: remotion

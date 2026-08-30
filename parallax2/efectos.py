@@ -27,6 +27,16 @@ GRADES = {
     "dorado_noche":   ((-8, -2, 26),   (24, 12, -14),   1.14, 1.06, 0.010),
     "frio_institucional": ((-4, 2, 20), (6, 8, 14),     1.10, 0.82, 0.014),
     "verde_dinero":   ((-10, 4, -6),   (18, 20, -6),    1.12, 0.94, 0.008),
+    # Los de arriba estan calibrados para arte generado oscuro. Sobre
+    # metraje con manos y caras dejan la piel verde: la tinta de sombras
+    # mas la de luces empujan el canal verde justo donde vive el tono de
+    # piel. Estos son la version para METRAJE: la tinta va solo a las
+    # luces y flojo, asi que la piel no se mueve.
+    "verde_suave":    ((-4, 0, -2),    (6, 14, -4),     1.08, 0.98, 0.006),
+    "dorado_suave":   ((-4, -1, 12),   (14, 8, -8),     1.08, 1.02, 0.008),
+    "frio_suave":     ((-2, 1, 10),    (4, 6, 10),      1.06, 0.90, 0.010),
+    "rojo_suave":     ((6, -3, -2),    (16, 2, -6),     1.10, 1.00, 0.005),
+    "acero_suave":    ((-3, -1, 8),    (3, 6, 10),      1.08, 0.86, 0.005),
     "rojo_alerta":    ((10, -6, -4),   (26, 4, -10),    1.18, 1.02, 0.006),
     "sepia_archivo":  ((6, 0, -10),    (22, 14, -18),   1.06, 0.62, 0.020),
     "acero":          ((-6, -2, 14),   (4, 10, 18),     1.16, 0.74, 0.006),
@@ -308,9 +318,24 @@ def render_texto(txt, W, H, px=132, color=(255, 255, 255),
         W * 0.09 if ax == "left" else W * 0.91 - ancho)
     y = ay * H - alto / 2
 
+    # Un rotulo sobre metraje real no se lee con una sombra dura: el fondo se
+    # mueve y tiene detalle en todas las frecuencias. Lo que lo separa es un
+    # HALO oscuro y difuso alrededor -el "scrim" de television- y encima la
+    # sombra de siempre. Sobre arte generado sobraba; sobre video no.
+    halo = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    dh = ImageDraw.Draw(halo)
+    xh = x
+    for parte, _ in partes:
+        dh.text((xh, y), parte, font=f, fill=(0, 0, 0, 210))
+        xh += dh.textlength(parte, font=f)
+    halo = halo.filter(ImageFilter.GaussianBlur(px * 0.22))
+    capa = Image.alpha_composite(capa, halo)
+    capa = Image.alpha_composite(capa, halo)      # dos pasadas: mas denso
+    d = ImageDraw.Draw(capa)
+
     for parte, es_ac in partes:
         col = acento if (es_ac and acento) else color
-        d.text((x + 3, y + 4), parte, font=f, fill=(0, 0, 0, 150))   # sombra
+        d.text((x + 3, y + 4), parte, font=f, fill=(0, 0, 0, 170))
         d.text((x, y), parte, font=f, fill=tuple(col) + (255,))
         x += d.textlength(parte, font=f)
     return capa

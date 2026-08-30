@@ -19,7 +19,7 @@ on:
       guion:
         description: Guion a renderizar
         type: string
-        default: proyecto/clips.json
+        default: proyecto/episodio.json
       musica:
         description: Pista de fondo de assets/music
         type: string
@@ -31,7 +31,7 @@ on:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 350
 
     steps:
       - uses: actions/checkout@v4
@@ -48,31 +48,31 @@ jobs:
 
       - name: Comprobar antes de gastar minutos
         working-directory: parallax2
-        run: python validar.py "${{ inputs.guion || 'proyecto/clips.json' }}"
+        run: python validar.py "${{ inputs.guion || 'proyecto/episodio.json' }}"
 
       - name: Hoja de contactos
         working-directory: parallax2
-        run: python previsual.py "${{ inputs.guion || 'proyecto/clips.json' }}"
+        run: python previsual.py "${{ inputs.guion || 'proyecto/episodio.json' }}"
 
       - name: Render
         working-directory: parallax2
         # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no
         # hay nadie trabajando en la maquina.
-        run: python render_par.py "${{ inputs.guion || 'proyecto/clips.json' }}" _crudo.mp4 --procesos 4
+        run: python render_par.py "${{ inputs.guion || 'proyecto/episodio.json' }}" _crudo.mp4 --procesos 4 
 
       - name: Montaje con transiciones
         working-directory: parallax2
-        run: python montar.py "${{ inputs.guion || 'proyecto/clips.json' }}" _montado.mp4 --tmp _escenas
+        run: python montar.py "${{ inputs.guion || 'proyecto/episodio.json' }}" _montado.mp4 --tmp _escenas
 
       - name: Voz
         working-directory: parallax2
-        run: python voz.py "${{ inputs.guion || 'proyecto/clips.json' }}" voz.mp3 --proveedor edge
+        run: python voz.py "${{ inputs.guion || 'proyecto/episodio.json' }}" voz.mp3 --proveedor edge
 
       - name: Sonido
         working-directory: parallax2
         run: |
           python sonido.py _montado.mp4 voz.mp3 salida.mp4 \
-            --guion "${{ inputs.guion || 'proyecto/clips.json' }}" \
+            --guion "${{ inputs.guion || 'proyecto/episodio.json' }}" \
             --musica "${{ inputs.musica || 'space_bar_ambient.mp3' }}"
 
       - name: Copia ligera para el movil

@@ -23,8 +23,12 @@ SOLAPE = 0.45          # segundos de deslizamiento
 # familias -deslizamiento, barrido, apertura y disolvencia- para que el ritmo
 # no sea adivinable. Es una lista prima (7) para que no caiga en fase con los
 # patrones de escena, que van de 2, 3 y 4.
-RUEDA = ["slideleft", "smoothright", "wipeleft", "dissolve",
-         "slideright", "circleopen", "smoothleft"]
+# Fuera los deslizamientos: son el gesto mas obvio y el que mas canta a
+# plantilla. Lo que queda son barridos suaves, aperturas y disolvencias, que
+# es lo que se usa en documental. Siete, numero primo, para que la rueda no
+# caiga en fase con los patrones de escena.
+RUEDA = ["smoothright", "dissolve", "circleopen", "smoothleft",
+         "wipeleft", "fadefast", "smoothup"]
 
 # El corte de capitulo pide otra cosa: un negro corto que separe bloques.
 # Se marca en el JSON con "cierra_bloque": true en la ultima escena del

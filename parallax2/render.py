@@ -12,6 +12,8 @@ import sys, os, json, math, subprocess
 import numpy as np
 from PIL import Image, ImageFilter
 
+SIGNOS = ".,¿¡\"'"
+
 import efectos as FX
 
 # ---------------------------------------------------------------------------
@@ -133,7 +135,9 @@ def retardo_rotulo(esc, ppm=140):
     if txt.get("retardo") is not None:
         return float(txt["retardo"])
     loc = esc.get("texto", "").lower().split()
-    clave = txt["texto"].replace("*", "").split()[0].strip(".,").lower()
+    # se limpian tambien los signos de apertura: con "¿CUANTO" el rotulo
+    # nunca encontraba su palabra en la locucion y caia al retardo por defecto
+    clave = txt["texto"].replace("*", "").split()[0].strip(SIGNOS).lower()
     idx = next((i for i, w in enumerate(loc) if clave in w.strip(".,")), None)
     return round(idx * 60.0 / ppm, 2) if idx is not None else 0.6
 
@@ -396,18 +400,29 @@ def render_escena(esc, cfg, base, ff):
         t = ease(t0 + (t1 - t0) * (f / max(1, n - 1)))
         lienzo = Image.new("RGB", (W, H), (4, 6, 14))
         if fuente is not None:
-            # Ken Burns suave para que el clip no se vea plano al lado del
-            # parallax; el mismo grade y los mismos efectos lo integran.
+            # KEN BURNS DE VERDAD sobre el metraje. Antes era un zoom
+            # centrado del 5% y punto: en un video hecho solo de clips eso se
+            # lee como metraje quieto con un temblor, no como camara. Ahora
+            # el mismo `movimiento` que declara la escena manda tambien aqui
+            # -zoom Y desplazamiento- asi que un clip y un plano compuesto se
+            # mueven igual y el corte entre los dos no canta.
+            #
+            # Se parte SIEMPRE de un margen: para poder desplazar hace falta
+            # tener imagen fuera de cuadro. Por eso la base es 1.14 y el
+            # movimiento se mueve dentro de ese margen.
             cru = next(fuente)
-            zk = 1.0 + 0.05 * mov["k"] * t
-            if abs(zk - 1.0) > 1e-3:
-                im = Image.fromarray(cru.astype(np.uint8))
-                nw, nh = int(W * zk), int(H * zk)
-                im = im.resize((nw, nh), Image.BICUBIC).crop(
-                    ((nw - W) // 2, (nh - H) // 2,
-                     (nw - W) // 2 + W, (nh - H) // 2 + H))
-                cru = np.asarray(im, np.float32)
-            lienzo = Image.fromarray(cru.astype(np.uint8))
+            MARGEN = 1.14
+            RECORRIDO = 0.085          # fraccion del cuadro que recorre
+            zk = MARGEN * (1.0 + 0.09 * mov["k"] * t)
+            nw, nh = int(W * zk), int(H * zk)
+            # centro del recorte, moviendose a lo largo de la escena
+            cx = (nw - W) / 2.0 + mov["dx"] * RECORRIDO * W * (t - 0.5) * 2.0
+            cy = (nh - H) / 2.0 + mov["dy"] * RECORRIDO * H * (t - 0.5)
+            cx = float(np.clip(cx, 0, max(0, nw - W)))
+            cy = float(np.clip(cy, 0, max(0, nh - H)))
+            im = Image.fromarray(cru.astype(np.uint8)).resize((nw, nh), Image.BICUBIC)
+            im = im.crop((int(cx), int(cy), int(cx) + W, int(cy) + H))
+            lienzo = im
 
         for L in capas:
             ue, us = FX.factor_anim(f, n, FPS, DUR_ENTRADA, DUR_SALIDA,

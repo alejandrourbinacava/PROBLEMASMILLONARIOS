@@ -15,6 +15,8 @@ import os, sys, json, argparse, collections
 import numpy as np
 from PIL import Image
 
+SIGNOS = ".,¿¡\"'"
+
 import render as R
 import recortar as RC
 
@@ -159,8 +161,9 @@ def main():
             avisos.append(f'{esc["id"]}: tercer "{mov}" seguido, alterna')
         prev_mov = mov
 
-        comp = esc.get("composicion", "centrado")
-        seguidos_comp = seguidos_comp + 1 if comp == prev_comp else 1
+        # mismo motivo: una escena de clip no tiene capas que encuadrar
+        comp = esc.get("composicion", "centrado") if esc["capas"] else None
+        seguidos_comp = seguidos_comp + 1 if (comp and comp == prev_comp) else 1
         if seguidos_comp == 3:
             avisos.append(f'{esc["id"]}: tercera "{comp}" seguida, alterna')
         prev_comp = comp
@@ -203,7 +206,7 @@ def main():
                               f'con las escenas de parallax')
         t = esc.get("texto_pantalla")
         if t:
-            clave = t["texto"].replace("*", "").split()[0].strip(".,")
+            clave = t["texto"].replace("*", "").split()[0].strip(SIGNOS)
             loc = esc.get("texto", "")
             if loc and clave.lower() not in loc.lower():
                 avisos.append(f'{esc["id"]}: el rotulo dice "{clave}" pero eso '
@@ -233,12 +236,19 @@ def main():
         avisos.append(f'{grades["neutro"]} escenas sin grade de color')
 
     movs = collections.Counter(e.get("movimiento", "push_in") for e in guion["escenas"])
-    comps = collections.Counter(e.get("composicion", "centrado") for e in guion["escenas"])
+    # La composicion coloca CAPAS. En una escena de clip no hay capas que
+    # colocar, asi que contarla ahi daba "centrado en el 100%" en un guion
+    # hecho solo de metraje, que no es un defecto: es que no aplica.
+    con_capas = [e for e in guion["escenas"] if e["capas"]]
+    comps = collections.Counter(e.get("composicion", "centrado") for e in con_capas)
     n = len(guion["escenas"])
     for nom, cnt in (("movimiento", movs), ("composicion", comps)):
+        if not cnt:
+            continue
+        base = n if nom == "movimiento" else len(con_capas)
         top, veces = cnt.most_common(1)[0]
-        if veces > n * 0.4:
-            avisos.append(f'{nom}: "{top}" en el {veces/n:.0%} de las escenas')
+        if veces > base * 0.4:
+            avisos.append(f'{nom}: "{top}" en el {veces/base:.0%} de las escenas')
 
     print(f'{n} escenas · {len(capas)} PNG · {clips} clips de stock · '
           f'{con_texto} con texto · {con_graf} con grafico · '

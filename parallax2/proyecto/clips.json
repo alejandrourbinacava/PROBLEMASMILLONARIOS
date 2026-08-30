@@ -1,0 +1,263 @@
+{
+  "titulo": "Gancho casino - solo clips",
+  "_nota": "Gancho entero con metraje real. Cero imagenes generadas, cero creditos. Lo que hace que no parezca un pase de diapositivas es lo de encima: gradacion por bloque, particulas, Ken Burns con desplazamiento, latigazos, contadores y rotulos cronometrados contra la palabra que los dispara. Un plano por frase se parte en dos o tres para cortar mas.",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "g01a",
+      "texto": "En febrero de dos mil veintiséis, los casinos de Nevada ganaron mil doscientos treinta y seis millones de dólares.",
+      "duracion": 4.0,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock/strip_aereo.mp4",
+      "clip_desde": 0.4,
+      "capas": []
+    },
+    {
+      "id": "g01b",
+      "texto": "En febrero de dos mil veintiséis, los casinos de Nevada ganaron mil doscientos treinta y seis millones de dólares.",
+      "duracion": 4.0,
+      "movimiento": "drift_der",
+      "grade": "dorado_noche",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock/casino_neon.mp4",
+      "clip_desde": 0.6,
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1236,
+        "sufijo": " M$",
+        "pie": "ganancia de los casinos de Nevada, en un mes",
+        "y": 0.22,
+        "entrada": "golpe",
+        "retardo": 0.6
+      },
+      "capas": []
+    },
+    {
+      "id": "g02a",
+      "texto": "Eso no es lo que apostaron los clientes.",
+      "duracion": 3.5,
+      "movimiento": "contra_izq",
+      "grade": "verde_dinero",
+      "efectos": [
+        "billetes"
+      ],
+      "latigo": "izq",
+      "clip": "stock/contando_dolares.mp4",
+      "clip_desde": 0.5,
+      "capas": []
+    },
+    {
+      "id": "g02b",
+      "texto": "Es lo que perdieron.",
+      "duracion": 3.5,
+      "movimiento": "push_in",
+      "grade": "verde_dinero",
+      "efectos": [
+        "humo"
+      ],
+      "texto_pantalla": {
+        "texto": "PERDIERON",
+        "px": 132,
+        "estilo": "golpe"
+      },
+      "clip": "stock/manos_billete.mp4",
+      "clip_desde": 0.8,
+      "capas": []
+    },
+    {
+      "id": "g03a",
+      "texto": "Solo el Strip se llevó la mitad.",
+      "duracion": 4.0,
+      "movimiento": "pull_out",
+      "grade": "dorado_noche",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock/vegas_rotulo.mp4",
+      "clip_desde": 0.5,
+      "capas": []
+    },
+    {
+      "id": "g03b",
+      "texto": "En veintiocho días.",
+      "duracion": 3.5,
+      "movimiento": "drift_izq",
+      "grade": "dorado_noche",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock/calle_neon.mp4",
+      "clip_desde": 1.2,
+      "grafico": {
+        "tipo": "contador",
+        "valor": 696,
+        "sufijo": " M$",
+        "pie": "solo el Strip, veintiocho días",
+        "y": 0.24,
+        "entrada": "golpe",
+        "retardo": 0.5
+      },
+      "capas": []
+    },
+    {
+      "id": "g04a",
+      "texto": "No depende de si la temporada fue buena.",
+      "duracion": 3.5,
+      "movimiento": "estatico",
+      "grade": "frio_institucional",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock/sala_ancha.mp4",
+      "clip_desde": 0.6,
+      "capas": []
+    },
+    {
+      "id": "g04b",
+      "texto": "Ni de si el marketing funcionó.",
+      "duracion": 3.5,
+      "movimiento": "contra_der",
+      "grade": "frio_institucional",
+      "efectos": [
+        "lluvia"
+      ],
+      "latigo": "der",
+      "clip": "stock/entrada_casino.mp4",
+      "clip_desde": 0.8,
+      "capas": []
+    },
+    {
+      "id": "g05a",
+      "texto": "Depende de una fórmula matemática.",
+      "duracion": 3.5,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock/ruleta_gira.mp4",
+      "clip_desde": 0.5,
+      "capas": []
+    },
+    {
+      "id": "g05b",
+      "texto": "Que no falla nunca.",
+      "duracion": 3.5,
+      "movimiento": "subir",
+      "grade": "dorado_noche",
+      "efectos": [
+        "destellos"
+      ],
+      "texto_pantalla": {
+        "texto": "NO FALLA NUNCA",
+        "px": 118,
+        "estilo": "izquierda"
+      },
+      "clip": "stock/ruleta_cenital.mp4",
+      "clip_desde": 0.5,
+      "capas": []
+    },
+    {
+      "id": "g06a",
+      "texto": "Así que la pregunta se hace sola.",
+      "duracion": 3.5,
+      "movimiento": "drift_der",
+      "grade": "dorado_noche",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock/lampara_lobby.mp4",
+      "clip_desde": 0.6,
+      "capas": []
+    },
+    {
+      "id": "g06b",
+      "texto": "Cuánto cuesta tener uno.",
+      "duracion": 3.5,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "efectos": [
+        "brasas"
+      ],
+      "latigo": "izq",
+      "texto_pantalla": {
+        "texto": "¿CUÁNTO CUESTA?",
+        "px": 126,
+        "estilo": "sube"
+      },
+      "clip": "stock/mesa_mujeres.mp4",
+      "clip_desde": 1.0,
+      "capas": []
+    },
+    {
+      "id": "g07a",
+      "texto": "En McDonald's el problema era el dinero.",
+      "duracion": 3.5,
+      "movimiento": "contra_izq",
+      "grade": "verde_dinero",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock/maletin_dinero.mp4",
+      "clip_desde": 0.6,
+      "capas": []
+    },
+    {
+      "id": "g07b",
+      "texto": "Con un casino, el dinero es la parte fácil.",
+      "duracion": 4.0,
+      "movimiento": "pull_out",
+      "grade": "verde_dinero",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock/fichas_apilan.mp4",
+      "clip_desde": 1.0,
+      "capas": []
+    },
+    {
+      "id": "g08a",
+      "texto": "Hay algo que nunca va a ser tuyo.",
+      "duracion": 4.0,
+      "movimiento": "estatico",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "ceniza"
+      ],
+      "texto_pantalla": {
+        "texto": "NUNCA SERÁ TUYO",
+        "px": 120,
+        "estilo": "baja"
+      },
+      "clip": "stock/crupier_fichas.mp4",
+      "clip_desde": 0.8,
+      "capas": []
+    },
+    {
+      "id": "g08b",
+      "texto": "Y te lo pueden quitar en cualquier momento.",
+      "duracion": 4.0,
+      "movimiento": "push_in",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "chispas"
+      ],
+      "cierra_bloque": true,
+      "clip": "stock/botones_maquina.mp4",
+      "clip_desde": 0.6,
+      "capas": []
+    }
+  ]
+}

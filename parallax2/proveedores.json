@@ -1,0 +1,88 @@
+{
+  "por_defecto": "kie",
+  "_nota": [
+    "El proveedor es CONFIGURACION, no una decision del modelo.",
+    "Casi todos los agregadores (kie.ai, aimlapi, api.market, openrouter...)",
+    "exponen un endpoint compatible con OpenAI en /v1/images/generations.",
+    "Si el tuyo lo hace, usa tipo 'openai_compatible' y pon su base_url.",
+    "Precios por imagen 1024x1024, normalizados (pricepertoken.com, ago 2026).",
+    "Verificalos antes de una tanda grande: cambian cada pocas semanas."
+  ],
+  "proveedores": {
+    "agregador": {
+      "tipo": "openai_compatible",
+      "base_url": "https://PON_AQUI_TU_AGREGADOR/v1",
+      "api_key_env": "AGREGADOR_API_KEY",
+      "modelo": "flux-2-dev",
+      "tam": "1536x1024",
+      "precio_img": 0.0084
+    },
+    "nano_banana": {
+      "tipo": "openai_compatible",
+      "base_url": "https://PON_AQUI_TU_AGREGADOR/v1",
+      "api_key_env": "AGREGADOR_API_KEY",
+      "modelo": "nano-banana",
+      "tam": "1536x1024",
+      "precio_img": 0.02
+    },
+    "fal": {
+      "tipo": "fal",
+      "api_key_env": "FAL_KEY",
+      "modelo": "fal-ai/flux/schnell",
+      "precio_img": 0.005
+    },
+    "replicate": {
+      "tipo": "replicate",
+      "api_key_env": "REPLICATE_API_TOKEN",
+      "modelo": "black-forest-labs/flux-schnell",
+      "precio_img": 0.003
+    },
+    "local": {
+      "tipo": "openai_compatible",
+      "base_url": "http://127.0.0.1:8188/v1",
+      "api_key_env": "LOCAL_API_KEY",
+      "modelo": "flux-dev",
+      "tam": "1536x1024",
+      "precio_img": 0.0
+    },
+    "borrador": {
+      "tipo": "openai_compatible",
+      "base_url": "https://PON_AQUI_TU_AGREGADOR/v1",
+      "api_key_env": "AGREGADOR_API_KEY",
+      "modelo": "flux-schnell",
+      "tam": "1536x1024",
+      "precio_img": 0.0005
+    },
+    "gpt_barato": {
+      "tipo": "openai_compatible",
+      "base_url": null,
+      "api_key_env": "OPENAI_API_KEY",
+      "modelo": "gpt-image-1",
+      "tam": "1536x1024",
+      "precio_img": 0.0021
+    },
+    "nano_banana_pro": {
+      "tipo": "openai_compatible",
+      "base_url": "https://PON_AQUI_TU_AGREGADOR/v1",
+      "api_key_env": "AGREGADOR_API_KEY",
+      "modelo": "nano-banana-pro",
+      "tam": "1536x1024",
+      "precio_img": 0.04
+    },
+    "flux2_pro": {
+      "tipo": "fal",
+      "api_key_env": "FAL_KEY",
+      "modelo": "fal-ai/flux-2/pro",
+      "precio_img": 0.015
+    },
+    "kie": {
+      "tipo": "kie",
+      "base_url": "https://api.kie.ai/api/v1",
+      "api_key_env": "KIE_API_KEY",
+      "modelo": "gpt-image-2-text-to-image",
+      "proporcion": "16:9",
+      "resolucion": "2K",
+      "precio_img": 0.03
+    }
+  }
+}

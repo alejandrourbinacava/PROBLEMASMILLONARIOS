@@ -1,0 +1,93 @@
+name: Parallax2
+
+# Renderiza un guion del pipeline de capas EN LA NUBE, no en el ordenador de
+# casa. El render son miles de fotogramas compuestos en Pillow y deja la CPU
+# clavada durante minutos; aqui no molesta a nadie.
+#
+# Que viene commiteado y que no:
+#
+#   Vienen los PNG ya RECORTADOS (parallax2/proyecto/*.png). Cuestan creditos
+#   de kie.ai y regenerarlos en cada ejecucion seria pagar dos veces por lo
+#   mismo. No vienen las crudas: aqui no se recorta nada.
+#
+#   La voz se sintetiza con edge-tts, que es GRATIS. La de pago (ai33) se deja
+#   para el montaje definitivo; una prueba de imagen no tiene por que gastar.
+
+on:
+  workflow_dispatch:
+    inputs:
+      guion:
+        description: Guion a renderizar
+        type: string
+        default: proyecto/nube.json
+      musica:
+        description: Pista de fondo de assets/music
+        type: string
+        default: space_bar_ambient.mp3
+  push:
+    tags:
+      - "parallax-*"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dependencias
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --quiet numpy pillow edge-tts
+
+      - name: Comprobar antes de gastar minutos
+        working-directory: parallax2
+        run: python validar.py "${{ inputs.guion || 'proyecto/nube.json' }}"
+
+      - name: Hoja de contactos
+        working-directory: parallax2
+        run: python previsual.py "${{ inputs.guion || 'proyecto/nube.json' }}"
+
+      - name: Render
+        working-directory: parallax2
+        # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no
+        # hay nadie trabajando en la maquina.
+        run: python render_par.py "${{ inputs.guion || 'proyecto/nube.json' }}" _crudo.mp4 --procesos 4
+
+      - name: Montaje con transiciones
+        working-directory: parallax2
+        run: python montar.py "${{ inputs.guion || 'proyecto/nube.json' }}" _montado.mp4 --tmp _escenas
+
+      - name: Voz
+        working-directory: parallax2
+        run: python voz.py "${{ inputs.guion || 'proyecto/nube.json' }}" voz.mp3 --proveedor edge
+
+      - name: Sonido
+        working-directory: parallax2
+        run: |
+          python sonido.py _montado.mp4 voz.mp3 salida.mp4 \
+            --guion "${{ inputs.guion || 'proyecto/nube.json' }}" \
+            --musica "${{ inputs.musica || 'space_bar_ambient.mp3' }}"
+
+      - name: Copia ligera para el movil
+        working-directory: parallax2
+        run: |
+          ffmpeg -y -v error -i salida.mp4 -vf scale=1280:720 \
+            -c:v libx264 -preset medium -crf 26 -c:a aac -b:a 96k \
+            -movflags +faststart ligero.mp4
+          ls -la salida.mp4 ligero.mp4
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parallax2-video
+          path: |
+            parallax2/salida.mp4
+            parallax2/ligero.mp4
+            parallax2/previsual/*.png
+          retention-days: 14

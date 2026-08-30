@@ -1,0 +1,512 @@
+{
+  "titulo": "Prueba nube 5 capas",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "fotorrealista cinematografico, gran presupuesto, optica de cine, iluminacion motivada por las fuentes que hay en la propia escena, contraste alto, mucha profundidad y detalle, sin texto, sin logotipos",
+  "escenas": [
+    {
+      "id": "n01",
+      "texto": "En febrero de 2026, los casinos de Nevada ganaron 1.236 millones de dólares.",
+      "duracion": 4.0,
+      "movimiento": "push_in",
+      "composicion": "centrado",
+      "grade": "dorado_noche",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_01.png",
+          "prompt": "cielo nocturno del desierto con nubes rotas y estrellas sobre azul marino profundo, con el resplandor de una ciudad en el borde de abajo. visto desde el fondo, con la profundidad de la sala delante",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_fichas_torre.png",
+          "prompt": "torres de fichas de casino apiladas a distintas alturas, vista frontal",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "01_multitud.png",
+          "prompt": "multitud de espaldas en traje de gala, siluetas a contraluz, franja ancha",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ]
+    },
+    {
+      "id": "n02",
+      "texto": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
+      "duracion": 3.5,
+      "movimiento": "contra_der",
+      "composicion": "izquierda",
+      "grade": "dorado_noche",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_01b.png",
+          "prompt": "cielo nocturno del desierto con nubes rotas y estrellas sobre azul marino profundo, con el resplandor de una ciudad en el borde de abajo. visto desde una esquina alta",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_fichas_torre_b.png",
+          "prompt": "torres de fichas de casino apiladas a distintas alturas, vista frontal, visto en angulo de tres cuartos desde un lado",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "01_multitud_b.png",
+          "prompt": "multitud de espaldas en traje de gala, siluetas a contraluz, franja ancha, visto en angulo de tres cuartos desde un lado",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ]
+    },
+    {
+      "id": "n03",
+      "texto": "Solo el Strip de Las Vegas se quedó 696 millones. En veintiocho días.",
+      "duracion": 4.0,
+      "movimiento": "drift_izq",
+      "composicion": "cerca",
+      "grade": "verde_dinero",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_02.png",
+          "prompt": "horizonte de desierto de Nevada de noche, montanas lejanas recortadas, resplandor anaranjado de una ciudad a lo lejos. visto a la altura de la mesa, con el techo fuera de cuadro",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_licencia.png",
+          "prompt": "documento de licencia oficial enmarcado con sello en relieve, vista frontal",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "01_multitud_c.png",
+          "prompt": "multitud de espaldas en traje de gala, siluetas a contraluz, franja ancha, visto en contrapicado corto desde abajo y muy cerca",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1236,
+        "sufijo": " M$",
+        "pie": "en un solo mes",
+        "y": 0.2,
+        "entrada": "golpe",
+        "retardo": 1.1
+      }
+    },
+    {
+      "id": "n04",
+      "texto": "No depende de si la temporada fue buena ni de si el marketing funcionó.",
+      "duracion": 3.5,
+      "movimiento": "pull_out",
+      "composicion": "derecha",
+      "grade": "frio_institucional",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_03.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde el fondo, con la profundidad de la sala delante",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_licencia_b.png",
+          "prompt": "documento de licencia oficial enmarcado con sello en relieve, vista frontal, visto en angulo de tres cuartos desde un lado",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_cordon.png",
+          "prompt": "cordon de terciopelo rojo entre postes dorados, franja ancha",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ]
+    },
+    {
+      "id": "n05",
+      "texto": "Depende de una fórmula matemática que no falla nunca.",
+      "duracion": 4.0,
+      "movimiento": "estatico",
+      "composicion": "alto",
+      "grade": "acero",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_03c.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto a la altura de la mesa, con el techo fuera de cuadro",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_maletin.png",
+          "prompt": "maletin metalico abierto lleno de fajos de billetes",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_fichas.png",
+          "prompt": "fichas de casino desparramadas muy cerca de la camara, desenfocadas",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ]
+    },
+    {
+      "id": "n06",
+      "texto": "Así que la pregunta se hace sola: cuánto cuesta tener uno.",
+      "duracion": 3.5,
+      "movimiento": "contra_izq",
+      "composicion": "diagonal",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_04.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde el centro de la sala",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_maletin_c.png",
+          "prompt": "maletin metalico abierto lleno de fajos de billetes, visto en contrapicado corto desde abajo y muy cerca",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_fichas_b.png",
+          "prompt": "fichas de casino desparramadas muy cerca de la camara, desenfocadas, visto en angulo de tres cuartos desde un lado",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ],
+      "latigo": "izq"
+    },
+    {
+      "id": "n07",
+      "texto": "Con un McDonald's el problema era el dinero. Con un casino el dinero es la parte fácil.",
+      "duracion": 4.0,
+      "movimiento": "drift_der",
+      "composicion": "bajo",
+      "grade": "verde_dinero",
+      "efectos": [
+        "billetes"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_04b.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde un lateral, con la pared cerca a un lado",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_maquinas.png",
+          "prompt": "fila frontal de maquinas tragaperras encendidas, vista recta y simetrica",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_fichas_c.png",
+          "prompt": "fichas de casino desparramadas muy cerca de la camara, desenfocadas, visto en contrapicado corto desde abajo y muy cerca",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ]
+    },
+    {
+      "id": "n08",
+      "texto": "Hay algo que nunca va a ser tuyo. Y te lo pueden quitar en cualquier momento.",
+      "duracion": 3.5,
+      "movimiento": "push_in",
+      "composicion": "lejos",
+      "grade": "dorado_noche",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_04c.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde el fondo, con la profundidad de la sala delante",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_planos.png",
+          "prompt": "maqueta arquitectonica de un edificio sobre soporte junto a planos enrollados",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_manos.png",
+          "prompt": "unicamente dos manos y dos antebrazos con punos de camisa, entrando desde el borde inferior y empujando fichas sobre el tapete. Nada de cabeza, nada de hombros, nada de torso: el encuadre empieza en los codos. Franja ancha",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 696,
+        "sufijo": " M$",
+        "pie": "en un solo mes",
+        "y": 0.2,
+        "entrada": "golpe",
+        "retardo": 1.1
+      }
+    },
+    {
+      "id": "n09",
+      "texto": "Casino no es un negocio. Son dos, y no se parecen en nada.",
+      "duracion": 4.0,
+      "movimiento": "subir",
+      "composicion": "cerca",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_05.png",
+          "prompt": "horizonte de desierto de Nevada de noche, montanas lejanas recortadas, resplandor anaranjado de una ciudad a lo lejos. visto desde una esquina alta",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_planos_b.png",
+          "prompt": "maqueta arquitectonica de un edificio sobre soporte junto a planos enrollados, visto en angulo de tres cuartos desde un lado",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_manos_b.png",
+          "prompt": "unicamente dos manos y dos antebrazos con punos de camisa, entrando desde el borde inferior y empujando fichas sobre el tapete. Nada de cabeza, nada de hombros, nada de torso: el encuadre empieza en los codos. Franja ancha, visto en angulo de tres cuartos desde un lado",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ]
+    },
+    {
+      "id": "n10",
+      "texto": "El primero es lo que imaginas: torre de hotel, restaurantes, espectáculo, spa.",
+      "duracion": 3.5,
+      "movimiento": "contra_der",
+      "composicion": "centrado",
+      "grade": "dorado_noche",
+      "efectos": [
+        "ceniza"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_06.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde un lateral, con la pared cerca a un lado",
+          "entrada": "golpe",
+          "retardo": 0.0
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "escala",
+          "retardo": 0.09
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "rebote",
+          "retardo": 0.18
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_planos_c.png",
+          "prompt": "maqueta arquitectonica de un edificio sobre soporte junto a planos enrollados, visto en contrapicado corto desde abajo y muy cerca",
+          "entrada": "rebote",
+          "retardo": 0.27
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_papeles.png",
+          "prompt": "borde superior de documentos y carpetas apiladas vistos muy de cerca",
+          "entrada": "latigo_der",
+          "retardo": 0.36
+        }
+      ],
+      "cierra_bloque": true
+    }
+  ]
+}

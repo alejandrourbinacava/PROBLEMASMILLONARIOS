@@ -335,19 +335,33 @@ def leer_clip(ruta, W, H, fps, n, recorte=0.0):
     if recorte:
         cmd += ["-ss", str(recorte)]
     cmd += ["-i", ruta, "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+    # El cierre va en un `finally`. Antes estaba al final del cuerpo, y a un
+    # generador que se abandona a medias -que es lo que hace el render: pide
+    # sus n fotogramas y lo deja ahi- ese final no se ejecuta NUNCA. Con
+    # doscientas ocho escenas eso son doscientos ocho ffmpeg vivos
+    # descomprimiendo 1080p a la vez: la maquina se queda sin memoria y matan
+    # el proceso. En local con diez escenas no se notaba.
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE)
     tam = W * H * 3
     ult = None
-    for _ in range(n):
-        b = p.stdout.read(tam)
-        if len(b) < tam:
-            if ult is None:
-                raise SystemExit(f"clip ilegible: {ruta}")
+    try:
+        for _ in range(n):
+            b = p.stdout.read(tam)
+            if len(b) < tam:
+                if ult is None:
+                    raise SystemExit(f"clip ilegible: {ruta}")
+                yield ult
+                continue
+            ult = np.frombuffer(b, np.uint8).reshape(H, W, 3).astype(np.float32)
             yield ult
-            continue
-        ult = np.frombuffer(b, np.uint8).reshape(H, W, 3).astype(np.float32)
-        yield ult
-    p.stdout.close(); p.wait()
+    finally:
+        try:
+            p.stdout.close()
+        except Exception:
+            pass
+        if p.poll() is None:
+            p.kill()
+        p.wait()
 
 
 def render_escena(esc, cfg, base, ff):
@@ -500,6 +514,9 @@ def render_escena(esc, cfg, base, ff):
         if esc.get("_lat_sal") is not None and f >= n - nlat:
             arr = FX.latigo(arr, esc["_lat_sal"], (f - (n - nlat)) / nlat)
         ff.stdin.write(np.clip(arr, 0, 255).astype(np.uint8).tobytes())
+
+    if fuente is not None:
+        fuente.close()          # dispara el finally de leer_clip
 
 
 def main(guion_path, salida):

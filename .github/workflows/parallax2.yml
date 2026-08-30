@@ -50,15 +50,11 @@ jobs:
         working-directory: parallax2
         run: python validar.py "${{ inputs.guion || 'proyecto/episodio.json' }}"
 
-      - name: Hoja de contactos
-        working-directory: parallax2
-        run: python previsual.py "${{ inputs.guion || 'proyecto/episodio.json' }}"
-
       - name: Render
         working-directory: parallax2
         # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no
         # hay nadie trabajando en la maquina.
-        run: python render_par.py "${{ inputs.guion || 'proyecto/episodio.json' }}" _crudo.mp4 --procesos 4 
+        run: python render_par.py "${{ inputs.guion || 'proyecto/episodio.json' }}" _crudo.mp4 --procesos 3
 
       - name: Montaje con transiciones
         working-directory: parallax2
@@ -89,5 +85,4 @@ jobs:
           path: |
             parallax2/salida.mp4
             parallax2/ligero.mp4
-            parallax2/previsual/*.png
           retention-days: 14

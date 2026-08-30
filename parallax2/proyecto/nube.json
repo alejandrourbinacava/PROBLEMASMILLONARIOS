@@ -10,7 +10,7 @@
   "escenas": [
     {
       "id": "n01",
-      "texto": "En febrero de 2026, los casinos de Nevada ganaron 1.236 millones de dólares.",
+      "texto": "En febrero, los casinos de Nevada ganaron esto.",
       "duracion": 4.0,
       "movimiento": "push_in",
       "composicion": "centrado",
@@ -58,7 +58,7 @@
     },
     {
       "id": "n02",
-      "texto": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
+      "texto": "Es lo que perdieron.",
       "duracion": 3.5,
       "movimiento": "contra_der",
       "composicion": "izquierda",
@@ -106,7 +106,7 @@
     },
     {
       "id": "n03",
-      "texto": "Solo el Strip de Las Vegas se quedó 696 millones. En veintiocho días.",
+      "texto": "Mil doscientos millones en un solo mes.",
       "duracion": 4.0,
       "movimiento": "drift_izq",
       "composicion": "cerca",
@@ -159,11 +159,16 @@
         "y": 0.2,
         "entrada": "golpe",
         "retardo": 1.1
+      },
+      "texto_pantalla": {
+        "texto": "1.236 MILLONES",
+        "px": 104,
+        "estilo": "sube"
       }
     },
     {
       "id": "n04",
-      "texto": "No depende de si la temporada fue buena ni de si el marketing funcionó.",
+      "texto": "Y no depende de la temporada.",
       "duracion": 3.5,
       "movimiento": "pull_out",
       "composicion": "derecha",
@@ -211,7 +216,7 @@
     },
     {
       "id": "n05",
-      "texto": "Depende de una fórmula matemática que no falla nunca.",
+      "texto": "Ni de si el marketing funcionó.",
       "duracion": 4.0,
       "movimiento": "estatico",
       "composicion": "alto",
@@ -259,7 +264,7 @@
     },
     {
       "id": "n06",
-      "texto": "Así que la pregunta se hace sola: cuánto cuesta tener uno.",
+      "texto": "Depende de una fórmula que no falla.",
       "duracion": 3.5,
       "movimiento": "contra_izq",
       "composicion": "diagonal",
@@ -308,7 +313,7 @@
     },
     {
       "id": "n07",
-      "texto": "Con un McDonald's el problema era el dinero. Con un casino el dinero es la parte fácil.",
+      "texto": "Así que la pregunta se hace sola.",
       "duracion": 4.0,
       "movimiento": "drift_der",
       "composicion": "bajo",
@@ -356,7 +361,7 @@
     },
     {
       "id": "n08",
-      "texto": "Hay algo que nunca va a ser tuyo. Y te lo pueden quitar en cualquier momento.",
+      "texto": "¿Cuánto cuesta tener uno?",
       "duracion": 3.5,
       "movimiento": "push_in",
       "composicion": "lejos",
@@ -409,11 +414,16 @@
         "y": 0.2,
         "entrada": "golpe",
         "retardo": 1.1
+      },
+      "texto_pantalla": {
+        "texto": "¿CUÁNTO CUESTA?",
+        "px": 112,
+        "estilo": "golpe"
       }
     },
     {
       "id": "n09",
-      "texto": "Casino no es un negocio. Son dos, y no se parecen en nada.",
+      "texto": "El dinero es la parte fácil.",
       "duracion": 4.0,
       "movimiento": "subir",
       "composicion": "cerca",
@@ -461,7 +471,7 @@
     },
     {
       "id": "n10",
-      "texto": "El primero es lo que imaginas: torre de hotel, restaurantes, espectáculo, spa.",
+      "texto": "Hay algo que nunca será tuyo.",
       "duracion": 3.5,
       "movimiento": "contra_der",
       "composicion": "centrado",

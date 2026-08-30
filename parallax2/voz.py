@@ -47,25 +47,42 @@ def duracion(p: Path) -> float:
     return float(r.stdout.strip())
 
 
-def hacer_tts(proveedor, voz, velocidad):
-    """La voz gratis se configura a mano; la de pago sale del Config del repo.
+class VozGratis:
+    """edge-tts directo, sin pasar por el pipeline viejo.
 
-    EdgeTTS no puede leer ese Config: ahi el `voice_id` es uno de ElevenLabs
-    y edge-tts lo rechaza. Por eso cada una trae la suya.
+    Antes esto tiraba de `pipeline.providers.freetts`, y ese modulo importa
+    `pipeline.config` en su cabecera, que a su vez necesita PyYAML y el
+    channel.yml del repo. En la nube reventaba: para sintetizar una frase
+    gratis se estaba arrastrando media configuracion del canal. Son quince
+    lineas; parallax2 se vale solo.
     """
+
+    def __init__(self, voz, velocidad):
+        self.voz = voz
+        # edge-tts quiere la velocidad en porcentaje, no en multiplicador
+        self.rate = f"{'+' if velocidad >= 1 else ''}{int(round((velocidad - 1) * 100))}%"
+
+    def synthesize(self, texto, destino, want_subtitles=False):
+        import asyncio
+        import edge_tts
+
+        async def _stream():
+            com = edge_tts.Communicate(texto, self.voz, rate=self.rate)
+            with open(destino, "wb") as fh:
+                async for trozo in com.stream():
+                    if trozo["type"] == "audio":
+                        fh.write(trozo["data"])
+
+        destino.parent.mkdir(parents=True, exist_ok=True)
+        asyncio.run(_stream())
+        if destino.stat().st_size < 512:
+            raise RuntimeError(f"edge-tts devolvio audio vacio: {texto[:50]}")
+        return {"path": destino}
+
+
+def hacer_tts(proveedor, voz, velocidad):
     if proveedor == "edge":
-        from pipeline.providers.freetts import EdgeTTS
-
-        class _Voz:
-            def __init__(self):
-                self._v = {"voice.voice_id": voz, "voice.speed": velocidad,
-                           "voice.pitch": "+0Hz"}
-
-            def get(self, clave, defecto=None):
-                return self._v.get(clave, defecto)
-
-        return EdgeTTS(_Voz())
-
+        return VozGratis(voz, velocidad)
     from pipeline.config import Config
     from pipeline.providers.ai33 import Ai33
     return Ai33(Config())

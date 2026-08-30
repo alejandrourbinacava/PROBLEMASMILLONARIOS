@@ -44,7 +44,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
-          pip install --quiet numpy pillow edge-tts
+          pip install --quiet numpy pillow edge-tts pyyaml
 
       - name: Comprobar antes de gastar minutos
         working-directory: parallax2

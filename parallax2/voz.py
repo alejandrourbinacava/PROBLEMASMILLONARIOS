@@ -30,6 +30,7 @@ Por defecto va la gratis: afinar el corte son muchas pasadas y pagarlas todas
 no tiene sentido. La de verdad se pide cuando el montaje ya esta.
 """
 import argparse
+import hashlib
 import json
 import subprocess
 import sys
@@ -125,7 +126,12 @@ def main() -> int:
             hueco = inicios[bloques[k + 1][0]] - inicios[i]
         else:
             hueco = total - inicios[i]
-        mp3 = a.tmp / f'{i:03d}_{esc[i]["id"]}.mp3'
+        # La cache se indexa por el TEXTO, no por el numero de escena.
+        # Indexada por escena, cualquier cambio de duracion desplaza los
+        # indices y obliga a resintetizar las ochenta y cinco frases: ocho mil
+        # ochocientos creditos por mover un plano. Por texto, lo unico que se
+        # vuelve a pedir es lo que de verdad ha cambiado de palabras.
+        mp3 = a.tmp / (hashlib.sha1(texto.encode("utf-8")).hexdigest()[:16] + ".mp3")
         if not mp3.exists():
             tts.synthesize(texto, mp3, want_subtitles=False)
         d = duracion(mp3)

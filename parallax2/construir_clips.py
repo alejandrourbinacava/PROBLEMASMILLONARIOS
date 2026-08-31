@@ -73,6 +73,29 @@ MOVS = ["push_in", "drift_der", "pull_out", "contra_izq", "estatico",
         "drift_izq", "contra_der", "subir", "push_in", "bajar"]
 
 TOPE = 4.5          # un plano de metraje aguanta algo mas que uno compuesto
+# Aire entre frase y frase. No basta con el respiro: la transicion solapa
+# 0,45 s, asi que la escena siguiente empieza ANTES de que acabe la actual y
+# ese solape se come el hueco de la voz. Con 0,55 se salian cuarenta y tres
+# frases por decimas. 0,45 de solape mas 0,40 de respiro.
+PAUSA = 0.85
+
+# La duracion de cada idea sale de lo que TARDA EN DECIRSE, medida sobre la
+# locucion ya sintetizada, no de un numero puesto a mano en el guion. Los que
+# habia -siete, ocho, nueve segundos por frase- casi doblaban la voz real:
+# ochenta y cinco frases que suman 7:54 repartidas en catorce minutos de
+# imagen son seis minutos de silencio. Con la voz mandando, la imagen dura lo
+# que dura la narracion.
+DURACIONES = {}
+_d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "duraciones_voz.json")
+if os.path.exists(_d):
+    DURACIONES = json.load(open(_d, encoding="utf-8"))
+
+
+def dura(texto, por_defecto):
+    import hashlib
+    h = hashlib.sha1(texto.encode("utf-8")).hexdigest()[:16]
+    v = DURACIONES.get(h)
+    return round(v + PAUSA, 2) if v else por_defecto
 SEPARACION = 10     # planos minimos antes de repetir un clip
 # Puntos de entrada distintos dentro del mismo clip. Con treinta y nueve
 # clips para doscientos planos, alguno sale veinte veces; lo que hace que no
@@ -146,6 +169,7 @@ def main():
         primera = len(escenas)
         for i, (texto, dur, mov, _capas) in enumerate(beats, 1):
             tema = tema_de(texto)
+            dur = dura(texto, dur)
             # una idea larga se cuenta en varios planos, no en uno largo
             k = max(1, int(math.ceil(dur / TOPE)))
             paso = round(dur / k, 2)

@@ -77,7 +77,7 @@ TOPE = 4.5          # un plano de metraje aguanta algo mas que uno compuesto
 # 0,45 s, asi que la escena siguiente empieza ANTES de que acabe la actual y
 # ese solape se come el hueco de la voz. Con 0,55 se salian cuarenta y tres
 # frases por decimas. 0,45 de solape mas 0,40 de respiro.
-PAUSA = 0.85
+PAUSA = 1.0
 
 # La duracion de cada idea sale de lo que TARDA EN DECIRSE, medida sobre la
 # locucion ya sintetizada, no de un numero puesto a mano en el guion. Los que
@@ -131,26 +131,38 @@ class Reparto:
         for tema, q, f in pool:
             self.por_tema[tema].append(f)
         self.ultimo = {}
+        self.usados = set()
         self.veces = collections.Counter()
 
     def desde(self, f):
-        """Segundo de entrada, distinto en cada uso de ese clip."""
-        return ENTRADAS_CLIP[(self.veces[f] - 1) % len(ENTRADAS_CLIP)]
+        """Cada clip se usa una vez, asi que siempre se entra por el principio."""
+        return 0.3
 
     def toca(self, tema, i):
+        """Un clip se usa UNA vez en todo el episodio. Nunca dos.
+
+        Antes se permitia repetir con diez planos de separacion, y con
+        treinta y nueve clips para doscientos planos alguno salia doce veces.
+        Ahora el pool tiene mas clips que planos, asi que cada uno aparece una
+        sola vez: se gasta primero el tema que pide la frase y, cuando ese
+        tema se agota, se tira del generico. Si se agotara todo -no deberia-
+        se avisa en voz alta en vez de repetir a escondidas.
+        """
         for t in (tema, POR_DEFECTO):
-            libres = [f for f in self.por_tema.get(t, [])
-                      if i - self.ultimo.get(f, -99) >= SEPARACION]
+            libres = [f for f in self.por_tema.get(t, []) if f not in self.usados]
             if libres:
-                f = min(libres, key=lambda x: (self.veces[x], self.ultimo.get(x, -99)))
-                self.ultimo[f] = i
-                self.veces[f] += 1
+                f = libres[0]
+                self.usados.add(f)
                 return f
+        libres = [f for v in self.por_tema.values() for f in v
+                  if f not in self.usados]
+        if libres:
+            f = libres[0]
+            self.usados.add(f)
+            return f
+        print(f"  AVISO: sin clips sin usar en el plano {i}; se repite uno")
         todos = [f for v in self.por_tema.values() for f in v]
-        f = min(todos, key=lambda x: (self.veces[x], self.ultimo.get(x, -99)))
-        self.ultimo[f] = i
-        self.veces[f] += 1
-        return f
+        return todos[i % len(todos)]
 
 
 def main():

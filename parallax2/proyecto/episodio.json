@@ -11,7 +11,7 @@
     {
       "id": "gancho_01",
       "texto": "En febrero de 2026, los casinos de Nevada ganaron 1.236 millones de dólares.",
-      "duracion": 3.48,
+      "duracion": 3.56,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
@@ -33,7 +33,7 @@
     {
       "id": "gancho_01b",
       "texto": "En febrero de 2026, los casinos de Nevada ganaron 1.236 millones de dólares.",
-      "duracion": 3.48,
+      "duracion": 3.56,
       "movimiento": "drift_der",
       "grade": "dorado_suave",
       "efectos": [
@@ -46,7 +46,7 @@
     {
       "id": "gancho_02",
       "texto": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
-      "duracion": 3.37,
+      "duracion": 3.44,
       "movimiento": "pull_out",
       "grade": "dorado_suave",
       "efectos": [
@@ -64,7 +64,7 @@
     {
       "id": "gancho_02b",
       "texto": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
-      "duracion": 3.37,
+      "duracion": 3.44,
       "movimiento": "contra_izq",
       "grade": "dorado_suave",
       "efectos": [
@@ -78,7 +78,7 @@
     {
       "id": "gancho_03",
       "texto": "Solo el Strip de Las Vegas se quedó 696 millones. En veintiocho días.",
-      "duracion": 3.5,
+      "duracion": 3.57,
       "movimiento": "estatico",
       "grade": "dorado_suave",
       "efectos": [
@@ -100,7 +100,7 @@
     {
       "id": "gancho_03b",
       "texto": "Solo el Strip de Las Vegas se quedó 696 millones. En veintiocho días.",
-      "duracion": 3.5,
+      "duracion": 3.57,
       "movimiento": "drift_izq",
       "grade": "dorado_suave",
       "efectos": [
@@ -113,7 +113,7 @@
     {
       "id": "gancho_04",
       "texto": "No depende de si la temporada fue buena ni de si el marketing funcionó.",
-      "duracion": 2.62,
+      "duracion": 2.69,
       "movimiento": "contra_der",
       "grade": "dorado_suave",
       "efectos": [
@@ -131,7 +131,7 @@
     {
       "id": "gancho_04b",
       "texto": "No depende de si la temporada fue buena ni de si el marketing funcionó.",
-      "duracion": 2.62,
+      "duracion": 2.69,
       "movimiento": "subir",
       "grade": "dorado_suave",
       "efectos": [
@@ -144,7 +144,7 @@
     {
       "id": "gancho_05",
       "texto": "Depende de una fórmula matemática que no falla nunca.",
-      "duracion": 2.28,
+      "duracion": 2.35,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
@@ -163,7 +163,7 @@
     {
       "id": "gancho_05b",
       "texto": "Depende de una fórmula matemática que no falla nunca.",
-      "duracion": 2.28,
+      "duracion": 2.35,
       "movimiento": "bajar",
       "grade": "dorado_suave",
       "efectos": [
@@ -176,7 +176,7 @@
     {
       "id": "gancho_06",
       "texto": "Así que la pregunta se hace sola: cuánto cuesta tener uno.",
-      "duracion": 2.37,
+      "duracion": 2.44,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
@@ -189,7 +189,7 @@
     {
       "id": "gancho_06b",
       "texto": "Así que la pregunta se hace sola: cuánto cuesta tener uno.",
-      "duracion": 2.37,
+      "duracion": 2.44,
       "movimiento": "drift_der",
       "grade": "dorado_suave",
       "efectos": [
@@ -202,7 +202,7 @@
     {
       "id": "gancho_07",
       "texto": "Con un McDonald's el problema era el dinero. Con un casino el dinero es la parte fácil.",
-      "duracion": 3.46,
+      "duracion": 3.53,
       "movimiento": "pull_out",
       "grade": "dorado_suave",
       "efectos": [
@@ -215,7 +215,7 @@
     {
       "id": "gancho_07b",
       "texto": "Con un McDonald's el problema era el dinero. Con un casino el dinero es la parte fácil.",
-      "duracion": 3.46,
+      "duracion": 3.53,
       "movimiento": "contra_izq",
       "grade": "dorado_suave",
       "efectos": [
@@ -229,7 +229,7 @@
     {
       "id": "gancho_08",
       "texto": "Hay algo que nunca va a ser tuyo. Y te lo pueden quitar en cualquier momento.",
-      "duracion": 2.94,
+      "duracion": 3.02,
       "movimiento": "estatico",
       "grade": "dorado_suave",
       "efectos": [
@@ -247,7 +247,7 @@
     {
       "id": "gancho_08b",
       "texto": "Hay algo que nunca va a ser tuyo. Y te lo pueden quitar en cualquier momento.",
-      "duracion": 2.94,
+      "duracion": 3.02,
       "movimiento": "drift_izq",
       "grade": "dorado_suave",
       "efectos": [
@@ -261,7 +261,7 @@
     {
       "id": "cap1_dos_casinos_01",
       "texto": "Casino no es un negocio. Son dos, y no se parecen en nada.",
-      "duracion": 2.8,
+      "duracion": 2.88,
       "movimiento": "contra_der",
       "grade": "dorado_suave",
       "efectos": [
@@ -274,20 +274,20 @@
     {
       "id": "cap1_dos_casinos_01b",
       "texto": "Casino no es un negocio. Son dos, y no se parecen en nada.",
-      "duracion": 2.8,
+      "duracion": 2.88,
       "movimiento": "subir",
       "grade": "dorado_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/night_city_aerial_neon_245.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_02",
       "texto": "El primero es lo que imaginas: torre de hotel, restaurantes, espectáculo, spa.",
-      "duracion": 3.79,
+      "duracion": 3.87,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
@@ -300,28 +300,28 @@
     {
       "id": "cap1_dos_casinos_02b",
       "texto": "El primero es lo que imaginas: torre de hotel, restaurantes, espectáculo, spa.",
-      "duracion": 3.79,
+      "duracion": 3.87,
       "movimiento": "bajar",
       "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/luxury_hotel_lobby_chandelier_472.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq"
     },
     {
       "id": "cap1_dos_casinos_03",
       "texto": "Construir uno de tres plantas cuesta entre sesenta y ciento cincuenta millones.",
-      "duracion": 2.87,
+      "duracion": 2.94,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/money_envelope_cash.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/electricity_meter_spinning_351.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "barras",
@@ -345,20 +345,20 @@
     {
       "id": "cap1_dos_casinos_03b",
       "texto": "Construir uno de tres plantas cuesta entre sesenta y ciento cincuenta millones.",
-      "duracion": 2.87,
+      "duracion": 2.94,
       "movimiento": "drift_der",
       "grade": "dorado_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/cash_briefcase_money.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/zero_on_calculator_227.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_04",
       "texto": "Y esa cifra es solo el hormigón. Ni el terreno, ni las licencias, ni una sola máquina.",
-      "duracion": 3.85,
+      "duracion": 3.92,
       "movimiento": "pull_out",
       "grade": "dorado_suave",
       "efectos": [
@@ -376,7 +376,7 @@
     {
       "id": "cap1_dos_casinos_04b",
       "texto": "Y esa cifra es solo el hormigón. Ni el terreno, ni las licencias, ni una sola máquina.",
-      "duracion": 3.85,
+      "duracion": 3.92,
       "movimiento": "contra_izq",
       "grade": "dorado_suave",
       "efectos": [
@@ -395,8 +395,8 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/resort_swimming_pool_aerial_pa_709.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
@@ -409,8 +409,8 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/courtroom_empty_judge_bench_690.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
@@ -422,21 +422,21 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/courtroom_empty_judge_bench_725.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_06",
       "texto": "Un casino independiente de ese tipo se construye entre diez y cuarenta millones.",
-      "duracion": 2.92,
+      "duracion": 3.0,
       "movimiento": "subir",
       "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/cash_stack_euro_bills.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/billboard_advertisement_street_188.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -451,20 +451,20 @@
     {
       "id": "cap1_dos_casinos_06b",
       "texto": "Un casino independiente de ese tipo se construye entre diez y cuarenta millones.",
-      "duracion": 2.92,
+      "duracion": 3.0,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/money_counting_machine.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/euro_bills_falling_slow_motion_28.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_07",
       "texto": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
-      "duracion": 2.8,
+      "duracion": 2.88,
       "movimiento": "bajar",
       "grade": "dorado_suave",
       "efectos": [
@@ -478,7 +478,7 @@
     {
       "id": "cap1_dos_casinos_07b",
       "texto": "Es la diferencia entre montar un hotel de lujo y montar una nave con máquinas dentro.",
-      "duracion": 2.8,
+      "duracion": 2.88,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
@@ -491,193 +491,193 @@
     {
       "id": "cap1_dos_casinos_08",
       "texto": "En el resort, el juego no es el negocio principal. Es el gancho.",
-      "duracion": 2.66,
+      "duracion": 2.73,
       "movimiento": "drift_der",
       "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/luxury_hotel_lobby_chandel.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/five_star_hotel_interior_530.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_08b",
       "texto": "En el resort, el juego no es el negocio principal. Es el gancho.",
-      "duracion": 2.66,
+      "duracion": 2.73,
       "movimiento": "pull_out",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/five_star_hotel_lobby_luxury_i_545.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_09",
       "texto": "El dinero de verdad está en las habitaciones, los restaurantes y las entradas.",
-      "duracion": 3.1,
+      "duracion": 3.18,
       "movimiento": "contra_izq",
       "grade": "dorado_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/counting_cash_bills_hands.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/billboard_advertisement_street_419.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_09b",
       "texto": "El dinero de verdad está en las habitaciones, los restaurantes y las entradas.",
-      "duracion": 3.1,
+      "duracion": 3.18,
       "movimiento": "estatico",
       "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/money_printing_press_bills.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/billboard_advertisement_street_40.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
     {
       "id": "cap1_dos_casinos_10",
       "texto": "En el casino pequeño, el juego es el negocio. Cien por cien.",
-      "duracion": 2.62,
+      "duracion": 2.69,
       "movimiento": "drift_izq",
       "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/courtroom_empty_judge_581.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_10b",
       "texto": "En el casino pequeño, el juego es el negocio. Cien por cien.",
-      "duracion": 2.62,
+      "duracion": 2.69,
       "movimiento": "contra_der",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/resort_swimming_pool_aerial_pa_532.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_11",
       "texto": "Dos modelos, dos estructuras de coste, dos formas distintas de perder dinero.",
-      "duracion": 3.21,
+      "duracion": 3.28,
       "movimiento": "subir",
       "grade": "dorado_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/cash_briefcase_open.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/counting_cash_bills_hands_514.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_11b",
       "texto": "Dos modelos, dos estructuras de coste, dos formas distintas de perder dinero.",
-      "duracion": 3.21,
+      "duracion": 3.28,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/credit_card_payment_termin.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/money_printing_press_bills_she_621.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap1_dos_casinos_12",
       "texto": "Vamos a seguir el pequeño, porque es donde la matemática se ve limpia.",
-      "duracion": 2.81,
+      "duracion": 2.89,
       "movimiento": "bajar",
       "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_roulette_wheel_spin.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/casino_roulette_wheel_spinning_451.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq"
     },
     {
       "id": "cap1_dos_casinos_12b",
       "texto": "Vamos a seguir el pequeño, porque es donde la matemática se ve limpia.",
-      "duracion": 2.81,
+      "duracion": 2.89,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/roulette_ball_bouncing.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/casino_roulette_wheel_spinning_449.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
     },
     {
       "id": "cap2_edificio_01",
       "texto": "Construir un casino cuesta entre trescientos y quinientos cincuenta dólares el pie cuadrado.",
-      "duracion": 3.17,
+      "duracion": 3.25,
       "movimiento": "drift_der",
       "grade": "acero_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/money_envelope_cash.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/cash_briefcase_open_248.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_01b",
       "texto": "Construir un casino cuesta entre trescientos y quinientos cincuenta dólares el pie cuadrado.",
-      "duracion": 3.17,
+      "duracion": 3.25,
       "movimiento": "pull_out",
       "grade": "acero_suave",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock/cash_briefcase_money.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/advertising_billboard_city_187.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_02",
       "texto": "En ubicaciones premium puede pasar de novecientos. Precio de hotel de cinco estrellas.",
-      "duracion": 3.08,
+      "duracion": 3.15,
       "movimiento": "contra_izq",
       "grade": "acero_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/cash_stack_euro_bills.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/calculator_numbers_close_up_377.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_02b",
       "texto": "En ubicaciones premium puede pasar de novecientos. Precio de hotel de cinco estrellas.",
-      "duracion": 3.08,
+      "duracion": 3.15,
       "movimiento": "estatico",
       "grade": "acero_suave",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock/money_counting_machine.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/cash_counting_machine_close_up_241.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
     {
       "id": "cap2_edificio_03",
       "texto": "Porque el edificio es parte del producto.",
-      "duracion": 3.38,
+      "duracion": 3.53,
       "movimiento": "drift_izq",
       "grade": "acero_suave",
       "efectos": [
@@ -690,86 +690,86 @@
     {
       "id": "cap2_edificio_04",
       "texto": "La moqueta de dibujos imposibles. La iluminación sin ventanas.",
-      "duracion": 2.77,
+      "duracion": 2.85,
       "movimiento": "contra_der",
       "grade": "acero_suave",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/graph_rising_arrow_screen_200.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_04b",
       "texto": "La moqueta de dibujos imposibles. La iluminación sin ventanas.",
-      "duracion": 2.77,
+      "duracion": 2.85,
       "movimiento": "subir",
       "grade": "acero_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/night_shift_staff_working_casi_736.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_05",
       "texto": "La ausencia total de relojes. Los pasillos que nunca te llevan directo a la salida.",
-      "duracion": 3.1,
+      "duracion": 3.18,
       "movimiento": "push_in",
       "grade": "acero_suave",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/clock_time_lapse_wall_268.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_05b",
       "texto": "La ausencia total de relojes. Los pasillos que nunca te llevan directo a la salida.",
-      "duracion": 3.1,
+      "duracion": 3.18,
       "movimiento": "bajar",
       "grade": "acero_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/casino_neon_interior_774.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq"
     },
     {
       "id": "cap2_edificio_06",
       "texto": "Nada de eso es decoración. Es ingeniería de comportamiento, y sale cara.",
-      "duracion": 3.09,
+      "duracion": 3.17,
       "movimiento": "push_in",
       "grade": "acero_suave",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/casino_sign_neon_670.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_06b",
       "texto": "Nada de eso es decoración. Es ingeniería de comportamiento, y sale cara.",
-      "duracion": 3.09,
+      "duracion": 3.17,
       "movimiento": "drift_der",
       "grade": "acero_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/las_vegas_casino_night_neo.mp4",
+      "clip": "stock/fluorescent_corridor_interior_769.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_07",
       "texto": "Las tragaperras no se compran sin más: muchas se arriendan con parte de la recaudación.",
-      "duracion": 3.14,
+      "duracion": 3.21,
       "movimiento": "pull_out",
       "grade": "acero_suave",
       "efectos": [
@@ -782,7 +782,7 @@
     {
       "id": "cap2_edificio_07b",
       "texto": "Las tragaperras no se compran sin más: muchas se arriendan con parte de la recaudación.",
-      "duracion": 3.14,
+      "duracion": 3.21,
       "movimiento": "contra_izq",
       "grade": "acero_suave",
       "efectos": [
@@ -795,7 +795,7 @@
     {
       "id": "cap2_edificio_08",
       "texto": "Las mesas necesitan crupieres formados. La vigilancia es el estandar del sector.",
-      "duracion": 3.18,
+      "duracion": 3.25,
       "movimiento": "estatico",
       "grade": "acero_suave",
       "efectos": [
@@ -809,7 +809,7 @@
     {
       "id": "cap2_edificio_08b",
       "texto": "Las mesas necesitan crupieres formados. La vigilancia es el estandar del sector.",
-      "duracion": 3.18,
+      "duracion": 3.25,
       "movimiento": "drift_izq",
       "grade": "acero_suave",
       "efectos": [
@@ -822,14 +822,14 @@
     {
       "id": "cap2_edificio_09",
       "texto": "Solo el equipamiento y el mobiliario superan los sesenta millones de dólares.",
-      "duracion": 2.63,
+      "duracion": 2.71,
       "movimiento": "contra_der",
       "grade": "acero_suave",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock/counting_cash_bills_hands.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/billboard_advertisement_street_428.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -844,67 +844,67 @@
     {
       "id": "cap2_edificio_09b",
       "texto": "Solo el equipamiento y el mobiliario superan los sesenta millones de dólares.",
-      "duracion": 2.63,
+      "duracion": 2.71,
       "movimiento": "subir",
       "grade": "acero_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/money_printing_press_bills.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_10",
       "texto": "Pero todo esto es dinero. Y el dinero se consigue. Lo siguiente, no.",
-      "duracion": 3.19,
+      "duracion": 3.27,
       "movimiento": "push_in",
       "grade": "acero_suave",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock/cash_briefcase_open.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/electricity_meter_close_up_267.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap2_edificio_10b",
       "texto": "Pero todo esto es dinero. Y el dinero se consigue. Lo siguiente, no.",
-      "duracion": 3.19,
+      "duracion": 3.27,
       "movimiento": "bajar",
       "grade": "acero_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/credit_card_payment_termin.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/money_printing_press_622.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
     },
     {
       "id": "cap3_licencia_01",
       "texto": "Aquí está el malentendido que tiene todo el mundo.",
-      "duracion": 4.19,
+      "duracion": 4.34,
       "movimiento": "push_in",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/demolition_interior_constructi_356.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_02",
       "texto": "La gente cree que una licencia de juego es un papel que se compra.",
-      "duracion": 2.25,
+      "duracion": 2.33,
       "movimiento": "drift_der",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/license_document_close_up.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/official_reviewing_application_704.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "LICENCIA",
@@ -915,26 +915,26 @@
     {
       "id": "cap3_licencia_02b",
       "texto": "La gente cree que una licencia de juego es un papel que se compra.",
-      "duracion": 2.25,
+      "duracion": 2.33,
       "movimiento": "pull_out",
       "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/shredding_documents_paper.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_03",
       "texto": "Vamos a mirar los números oficiales de Nevada, porque son públicos.",
-      "duracion": 2.49,
+      "duracion": 2.56,
       "movimiento": "contra_izq",
       "grade": "frio_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/aerial_las_vegas_strip_cas.mp4",
+      "clip": "stock/las_vegas_casino_night_neo.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq"
@@ -942,27 +942,27 @@
     {
       "id": "cap3_licencia_03b",
       "texto": "Vamos a mirar los números oficiales de Nevada, porque son públicos.",
-      "duracion": 2.49,
+      "duracion": 2.56,
       "movimiento": "estatico",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/las_vegas_strip_resort_aer.mp4",
+      "clip": "stock/aerial_las_vegas_strip_cas.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_04",
       "texto": "La licencia no restringida es la de un casino de verdad: dieciséis máquinas o cualquier mesa.",
-      "duracion": 3.65,
+      "duracion": 3.73,
       "movimiento": "drift_izq",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/investigator_examining_documen_574.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "LICENCIA",
@@ -973,27 +973,27 @@
     {
       "id": "cap3_licencia_04b",
       "texto": "La licencia no restringida es la de un casino de verdad: dieciséis máquinas o cualquier mesa.",
-      "duracion": 3.65,
+      "duracion": 3.73,
       "movimiento": "contra_der",
       "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/hands_signing_contract_pen_164.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_05",
       "texto": "La tasa de solicitud va, según la fuente, de siete mil quinientos a setenta y cinco mil dólares.",
-      "duracion": 3.56,
+      "duracion": 3.63,
       "movimiento": "subir",
       "grade": "frio_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/hands_signing_contract_pen_369.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "barras",
@@ -1017,87 +1017,87 @@
     {
       "id": "cap3_licencia_05b",
       "texto": "La tasa de solicitud va, según la fuente, de siete mil quinientos a setenta y cinco mil dólares.",
-      "duracion": 3.56,
+      "duracion": 3.63,
       "movimiento": "push_in",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/file_folders_archive_shelves_575.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
     {
       "id": "cap3_licencia_06",
       "texto": "Siete mil quinientos dólares. Para un negocio de cuarenta millones.",
-      "duracion": 2.6,
+      "duracion": 2.68,
       "movimiento": "bajar",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/money_envelope_cash.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/counting_money_hands_table_328.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_06b",
       "texto": "Siete mil quinientos dólares. Para un negocio de cuarenta millones.",
-      "duracion": 2.6,
+      "duracion": 2.68,
       "movimiento": "push_in",
       "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/cash_briefcase_money.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/dollar_bill_torn_in_half_hands_603.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_07",
       "texto": "Parece un chiste. Y lo es, porque la tasa no es el coste.",
-      "duracion": 2.5,
+      "duracion": 2.58,
       "movimiento": "drift_der",
       "grade": "frio_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/cash_stack_euro_bills.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/credit_card_payment_terminal_570.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_07b",
       "texto": "Parece un chiste. Y lo es, porque la tasa no es el coste.",
-      "duracion": 2.5,
+      "duracion": 2.58,
       "movimiento": "pull_out",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/money_counting_machine.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/euro_banknotes_stack_tall_358.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_08",
       "texto": "El coste es la investigación.",
-      "duracion": 2.97,
+      "duracion": 3.12,
       "movimiento": "contra_izq",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/license_document_close_up.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/legal_documents_signing_348.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq"
     },
     {
       "id": "cap3_licencia_09",
       "texto": "El Nevada Gaming Control Board no evalúa tu plan de negocio. Te evalúa a ti.",
-      "duracion": 3.0,
+      "duracion": 3.08,
       "movimiento": "estatico",
       "grade": "frio_suave",
       "efectos": [
@@ -1110,27 +1110,27 @@
     {
       "id": "cap3_licencia_09b",
       "texto": "El Nevada Gaming Control Board no evalúa tu plan de negocio. Te evalúa a ti.",
-      "duracion": 3.0,
+      "duracion": 3.08,
       "movimiento": "drift_izq",
       "grade": "frio_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_surveillance_monito.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/security_cameras_ceiling_surve_719.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_10",
       "texto": "Empieza en diez mil dólares y puede superar los cincuenta mil.",
-      "duracion": 2.42,
+      "duracion": 2.5,
       "movimiento": "contra_der",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/counting_cash_bills_hands.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/single_euro_coin_close_up_148.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -1145,27 +1145,27 @@
     {
       "id": "cap3_licencia_10b",
       "texto": "Empieza en diez mil dólares y puede superar los cincuenta mil.",
-      "duracion": 2.42,
+      "duracion": 2.5,
       "movimiento": "subir",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/money_printing_press_bills.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/busy_city_corner_location_86.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_11",
       "texto": "Cada cuenta bancaria. El origen de cada dólar. Tus socios. Tu familia. Tus divorcios.",
-      "duracion": 4.11,
+      "duracion": 4.18,
       "movimiento": "push_in",
       "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/delivery_rider_scooter_city_405.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "SOCIO OBLIGATORIO",
@@ -1177,66 +1177,66 @@
     {
       "id": "cap3_licencia_11b",
       "texto": "Cada cuenta bancaria. El origen de cada dólar. Tus socios. Tu familia. Tus divorcios.",
-      "duracion": 4.11,
+      "duracion": 4.18,
       "movimiento": "bajar",
       "grade": "frio_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/city_skyline_sunset_silhouette_479.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_12",
       "texto": "No hay presunción de inocencia. La carga de la prueba es tuya.",
-      "duracion": 2.69,
+      "duracion": 2.76,
       "movimiento": "push_in",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
+      "clip": "stock/casino_neon_lights_763.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_12b",
       "texto": "No hay presunción de inocencia. La carga de la prueba es tuya.",
-      "duracion": 2.69,
+      "duracion": 2.76,
       "movimiento": "drift_der",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/casino_interior_night.mp4",
+      "clip": "stock/night_city_aerial_neon_101.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_13",
       "texto": "El proceso puede llevar más de un año.",
-      "duracion": 3.46,
+      "duracion": 3.61,
       "movimiento": "pull_out",
       "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
+      "clip": "stock/clock_time_lapse_wall_421.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_14",
       "texto": "Una licencia de juego interactivo cuesta quinientos mil iniciales y doscientos cincuenta mil al año.",
-      "duracion": 3.81,
+      "duracion": 3.88,
       "movimiento": "contra_izq",
       "grade": "frio_suave",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/shredding_documents_paper.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/payroll_documents_calculator_196.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -1257,26 +1257,26 @@
     {
       "id": "cap3_licencia_14b",
       "texto": "Una licencia de juego interactivo cuesta quinientos mil iniciales y doscientos cincuenta mil al año.",
-      "duracion": 3.81,
+      "duracion": 3.88,
       "movimiento": "estatico",
       "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/license_document_close_up.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/reading_contract_magnifying_gl_355.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap3_licencia_15",
       "texto": "El gasto principal es la versión de ti que no consigue la licencia.",
-      "duracion": 2.77,
+      "duracion": 2.85,
       "movimiento": "drift_izq",
       "grade": "frio_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/question_mark_neon_sign.mp4",
+      "clip": "stock/official_handing_certificate_o_642.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -1288,13 +1288,13 @@
     {
       "id": "cap3_licencia_15b",
       "texto": "El gasto principal es la versión de ti que no consigue la licencia.",
-      "duracion": 2.77,
+      "duracion": 2.85,
       "movimiento": "contra_der",
       "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/old_neon_sign_desert_road.mp4",
+      "clip": "stock/legal_documents_signing_406.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
@@ -1302,7 +1302,7 @@
     {
       "id": "cap4_socio_01",
       "texto": "Supongamos que la consigues. Estás dentro. Las máquinas están encendidas.",
-      "duracion": 3.26,
+      "duracion": 3.33,
       "movimiento": "subir",
       "grade": "sepia_archivo",
       "efectos": [
@@ -1315,20 +1315,20 @@
     {
       "id": "cap4_socio_01b",
       "texto": "Supongamos que la consigues. Estás dentro. Las máquinas están encendidas.",
-      "duracion": 3.26,
+      "duracion": 3.33,
       "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/slot_machines_row_switched.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/casino_slot_machine_lights_456.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap4_socio_02",
       "texto": "Y entonces conoces a tu socio.",
-      "duracion": 3.15,
+      "duracion": 3.3,
       "movimiento": "bajar",
       "grade": "sepia_archivo",
       "efectos": [
@@ -1346,80 +1346,94 @@
     {
       "id": "cap4_socio_03",
       "texto": "El Estado no te cobra al final del año como a cualquier empresa.",
-      "duracion": 4.38,
+      "duracion": 2.27,
       "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
+      "clip": "stock/handshake_business_meeting_249.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
     {
-      "id": "cap4_socio_04",
-      "texto": "Se lleva un porcentaje de tu ganancia bruta de juego todos los meses. Antes que nadie.",
-      "duracion": 3.26,
+      "id": "cap4_socio_03b",
+      "texto": "El Estado no te cobra al final del año como a cualquier empresa.",
+      "duracion": 2.27,
       "movimiento": "drift_der",
       "grade": "sepia_archivo",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
+      "clip": "stock/corporate_office_building_glas_296.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_socio_04",
+      "texto": "Se lleva un porcentaje de tu ganancia bruta de juego todos los meses. Antes que nadie.",
+      "duracion": 3.33,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock/highway_interchange_aerial_773.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap4_socio_04b",
       "texto": "Se lleva un porcentaje de tu ganancia bruta de juego todos los meses. Antes que nadie.",
-      "duracion": 3.26,
-      "movimiento": "pull_out",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "humo"
-      ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap4_socio_05",
-      "texto": "Cuánto. Depende de donde pongas el casino, y las diferencias son brutales.",
-      "duracion": 3.26,
+      "duracion": 3.33,
       "movimiento": "contra_izq",
       "grade": "sepia_archivo",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/busy_city_corner_location_228.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap4_socio_05b",
+      "id": "cap4_socio_05",
       "texto": "Cuánto. Depende de donde pongas el casino, y las diferencias son brutales.",
-      "duracion": 3.26,
+      "duracion": 3.33,
       "movimiento": "estatico",
       "grade": "sepia_archivo",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/city_skyline_sunset_silhouette_477.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap4_socio_06",
-      "texto": "En Nevada, el tramo más alto es del seis coma setenta y cinco por ciento.",
-      "duracion": 2.65,
+      "id": "cap4_socio_05b",
+      "texto": "Cuánto. Depende de donde pongas el casino, y las diferencias son brutales.",
+      "duracion": 3.33,
       "movimiento": "drift_izq",
       "grade": "sepia_archivo",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/las_vegas_casino_night_neo.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/clock_ticking_endless_651.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap4_socio_06",
+      "texto": "En Nevada, el tramo más alto es del seis coma setenta y cinco por ciento.",
+      "duracion": 2.72,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock/las_vegas_strip_resort_aer.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "anillo",
@@ -1429,86 +1443,85 @@
         "y": 0.48,
         "retardo": 0.6,
         "entrada": "golpe"
-      },
-      "latigo": "izq"
+      }
     },
     {
       "id": "cap4_socio_06b",
       "texto": "En Nevada, el tramo más alto es del seis coma setenta y cinco por ciento.",
-      "duracion": 2.65,
-      "movimiento": "contra_der",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "humo"
-      ],
-      "clip": "stock/aerial_las_vegas_strip_cas.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap4_socio_07",
-      "texto": "No es casualidad: Nevada llego primero y fijo las reglas cuando nadie más queria esto.",
-      "duracion": 3.17,
+      "duracion": 2.72,
       "movimiento": "subir",
       "grade": "sepia_archivo",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/las_vegas_strip_resort_aer.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/question_mark_neon_sign.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap4_socio_07b",
+      "id": "cap4_socio_07",
       "texto": "No es casualidad: Nevada llego primero y fijo las reglas cuando nadie más queria esto.",
-      "duracion": 3.17,
+      "duracion": 3.25,
       "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/question_mark_neon_sign.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/old_neon_sign_desert_road.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap4_socio_08",
-      "texto": "En Nueva Jersey son el ocho, el quince en juego online y el trece en apuestas deportivas.",
-      "duracion": 3.44,
+      "id": "cap4_socio_07b",
+      "texto": "No es casualidad: Nevada llego primero y fijo las reglas cuando nadie más queria esto.",
+      "duracion": 3.25,
       "movimiento": "bajar",
       "grade": "sepia_archivo",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/old_neon_sign.mp4",
+      "clip": "stock/old_neon_sign_600.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap4_socio_08b",
+      "id": "cap4_socio_08",
       "texto": "En Nueva Jersey son el ocho, el quince en juego online y el trece en apuestas deportivas.",
-      "duracion": 3.44,
+      "duracion": 3.52,
       "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/stock_market_chart_screen_94.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
     {
-      "id": "cap4_socio_09",
-      "texto": "Y en el otro extremo esta Maryland, donde el tipo máximo llega al sesenta y dos coma cinco.",
-      "duracion": 4.0,
+      "id": "cap4_socio_08b",
+      "texto": "En Nueva Jersey son el ocho, el quince en juego online y el trece en apuestas deportivas.",
+      "duracion": 3.52,
       "movimiento": "drift_der",
       "grade": "sepia_archivo",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/busy_city_corner_location_299.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_socio_09",
+      "texto": "Y en el otro extremo esta Maryland, donde el tipo máximo llega al sesenta y dos coma cinco.",
+      "duracion": 4.0,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock/atlantic_coast_city_aerial_803.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "anillo",
@@ -1529,39 +1542,39 @@
       "id": "cap4_socio_09b",
       "texto": "Y en el otro extremo esta Maryland, donde el tipo máximo llega al sesenta y dos coma cinco.",
       "duracion": 4.0,
-      "movimiento": "pull_out",
+      "movimiento": "contra_izq",
       "grade": "sepia_archivo",
       "efectos": [
-        "destellos"
+        "fuga_luz"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/question_mark_neon_sign_262.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap4_socio_09c",
       "texto": "Y en el otro extremo esta Maryland, donde el tipo máximo llega al sesenta y dos coma cinco.",
       "duracion": 4.0,
-      "movimiento": "contra_izq",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "fuga_luz"
-      ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 4.6,
-      "capas": []
-    },
-    {
-      "id": "cap4_socio_10",
-      "texto": "Sesenta y dos coma cinco.",
-      "duracion": 2.91,
       "movimiento": "estatico",
       "grade": "sepia_archivo",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/question_mark_neon_sign_404.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_socio_10",
+      "texto": "Sesenta y dos coma cinco.",
+      "duracion": 3.06,
+      "movimiento": "drift_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock/vintage_archive_las_vegas_old_598.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "anillo",
@@ -1576,19 +1589,20 @@
         "y": 0.48,
         "retardo": 0.6,
         "entrada": "golpe"
-      }
+      },
+      "latigo": "izq"
     },
     {
       "id": "cap4_socio_11",
       "texto": "De cada dólar, más de sesenta centavos van al Estado antes de pagar una sola nomina.",
-      "duracion": 3.02,
-      "movimiento": "drift_izq",
+      "duracion": 3.1,
+      "movimiento": "contra_der",
       "grade": "sepia_archivo",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
-      "clip": "stock/executive_office_window_ci.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/empty_home_office_chair_175.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "reparto",
@@ -1598,126 +1612,125 @@
         "etiqueta_b": "tu",
         "retardo": 0.6,
         "entrada": "golpe"
-      },
-      "latigo": "izq"
+      }
     },
     {
       "id": "cap4_socio_11b",
       "texto": "De cada dólar, más de sesenta centavos van al Estado antes de pagar una sola nomina.",
-      "duracion": 3.02,
-      "movimiento": "contra_der",
+      "duracion": 3.1,
+      "movimiento": "subir",
       "grade": "sepia_archivo",
       "efectos": [
-        "destellos"
+        "fuga_luz"
       ],
-      "clip": "stock/casino_slot_machine_lights.mp4",
+      "clip": "stock/corporate_office_building_glas_123.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap4_socio_12",
       "texto": "La decisión más importante de tu negocio no es el producto ni la ubicación. Es la jurisdicción.",
-      "duracion": 3.82,
-      "movimiento": "subir",
+      "duracion": 3.9,
+      "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
-        "fuga_luz"
+        "humo"
       ],
-      "clip": "stock/croupier_hands_casino_tabl.mp4",
+      "clip": "stock/las_vegas_strip_resort_aerial_519.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap4_socio_12b",
       "texto": "La decisión más importante de tu negocio no es el producto ni la ubicación. Es la jurisdicción.",
-      "duracion": 3.82,
-      "movimiento": "push_in",
+      "duracion": 3.9,
+      "movimiento": "bajar",
       "grade": "sepia_archivo",
       "efectos": [
-        "humo"
+        "polvo"
       ],
-      "clip": "stock/playing_cards_dealer_table.mp4",
+      "clip": "stock/las_vegas_strip_aerial_night_w_597.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap4_socio_13",
       "texto": "El mismo casino en dos estados distintos son dos negocios completamente diferentes.",
-      "duracion": 3.13,
-      "movimiento": "bajar",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "polvo"
-      ],
-      "clip": "stock/poker_chips_stack_close_up.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap4_socio_13b",
-      "texto": "El mismo casino en dos estados distintos son dos negocios completamente diferentes.",
-      "duracion": 3.13,
+      "duracion": 3.21,
       "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/casino_interior_gambling_468.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der"
     },
     {
-      "id": "cap4_socio_14",
-      "texto": "Los operadores serios eligen el estado antes que el solar.",
-      "duracion": 2.25,
+      "id": "cap4_socio_13b",
+      "texto": "El mismo casino en dos estados distintos son dos negocios completamente diferentes.",
+      "duracion": 3.21,
       "movimiento": "drift_der",
       "grade": "sepia_archivo",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/online_gambling_app_586.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap4_socio_14b",
+      "id": "cap4_socio_14",
       "texto": "Los operadores serios eligen el estado antes que el solar.",
-      "duracion": 2.25,
+      "duracion": 2.33,
       "movimiento": "pull_out",
       "grade": "sepia_archivo",
       "efectos": [
         "humo"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/man_alone_counting_few_bills_e_738.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_socio_14b",
+      "texto": "Los operadores serios eligen el estado antes que el solar.",
+      "duracion": 2.33,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock/corporate_meeting_boardroom_293.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
     },
     {
       "id": "cap5_ingresos_01",
       "texto": "Vale. Y cuánto se gana.",
-      "duracion": 3.25,
-      "movimiento": "contra_izq",
-      "grade": "verde_suave",
-      "efectos": [
-        "bokeh"
-      ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 1.5,
-      "capas": []
-    },
-    {
-      "id": "cap5_ingresos_02",
-      "texto": "Un restaurante depende de que la comida guste. Un casino depende de una fórmula.",
-      "duracion": 3.27,
+      "duracion": 3.4,
       "movimiento": "estatico",
       "grade": "verde_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/casino_roulette_wheel_spin.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/question_mark_neon_sign_45.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_ingresos_02",
+      "texto": "Un restaurante depende de que la comida guste. Un casino depende de una fórmula.",
+      "duracion": 3.35,
+      "movimiento": "drift_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock/casino_roulette_wheel_spinning_450.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "NO DEPENDE DE NADA",
@@ -1728,46 +1741,46 @@
     {
       "id": "cap5_ingresos_02b",
       "texto": "Un restaurante depende de que la comida guste. Un casino depende de una fórmula.",
-      "duracion": 3.27,
-      "movimiento": "drift_izq",
-      "grade": "verde_suave",
-      "efectos": [
-        "niebla"
-      ],
-      "clip": "stock/roulette_ball_bouncing.mp4",
-      "clip_desde": 4.6,
-      "capas": []
-    },
-    {
-      "id": "cap5_ingresos_03",
-      "texto": "Cada juego tiene una ventaja matemática fija para la casa.",
-      "duracion": 4.25,
+      "duracion": 3.35,
       "movimiento": "contra_der",
       "grade": "verde_suave",
       "efectos": [
         "billetes"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/las_vegas_casino_night_neon_461.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_ingresos_03",
+      "texto": "Cada juego tiene una ventaja matemática fija para la casa.",
+      "duracion": 4.4,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock/aerial_las_vegas_strip_casinos_734.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "LA VENTAJA DE LA CASA",
         "px": 88,
         "estilo": "sube"
       },
-      "latigo": "der"
+      "latigo": "izq"
     },
     {
       "id": "cap5_ingresos_04",
       "texto": "En la ruleta europea ese margen es del dos coma siete por ciento.",
-      "duracion": 2.83,
-      "movimiento": "subir",
+      "duracion": 2.9,
+      "movimiento": "push_in",
       "grade": "verde_suave",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
-      "clip": "stock/casino_cage_counting.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/las_vegas_casino_night_neon_462.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "anillo",
@@ -1782,106 +1795,106 @@
     {
       "id": "cap5_ingresos_04b",
       "texto": "En la ruleta europea ese margen es del dos coma siete por ciento.",
-      "duracion": 2.83,
-      "movimiento": "push_in",
-      "grade": "verde_suave",
-      "efectos": [
-        "destellos"
-      ],
-      "clip": "stock/slot_machines_identical_ro.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap5_ingresos_05",
-      "texto": "En las máquinas lo fija el fabricante y lo aprueba el regulador.",
-      "duracion": 2.58,
+      "duracion": 2.9,
       "movimiento": "bajar",
       "grade": "verde_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/executive_office_window_ci.mp4",
-      "clip_desde": 4.6,
+      "clip": "stock/aerial_las_vegas_strip_casinos_620.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap5_ingresos_05b",
+      "id": "cap5_ingresos_05",
       "texto": "En las máquinas lo fija el fabricante y lo aprueba el regulador.",
-      "duracion": 2.58,
+      "duracion": 2.65,
       "movimiento": "push_in",
       "grade": "verde_suave",
       "efectos": [
         "billetes"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap5_ingresos_06",
-      "texto": "Con suficientes apuestas, la ganancia deja de ser una probabilidad y pasa a ser una previsión.",
-      "duracion": 3.42,
+      "id": "cap5_ingresos_05b",
+      "texto": "En las máquinas lo fija el fabricante y lo aprueba el regulador.",
+      "duracion": 2.65,
       "movimiento": "drift_der",
       "grade": "verde_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 1.5,
-      "capas": [],
-      "latigo": "izq"
+      "clip": "stock/closed_hotel_reception_desk_em_529.mp4",
+      "clip_desde": 0.3,
+      "capas": []
     },
     {
-      "id": "cap5_ingresos_06b",
+      "id": "cap5_ingresos_06",
       "texto": "Con suficientes apuestas, la ganancia deja de ser una probabilidad y pasa a ser una previsión.",
-      "duracion": 3.42,
+      "duracion": 3.49,
       "movimiento": "pull_out",
       "grade": "verde_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 3.6,
-      "capas": []
+      "clip": "stock/question_mark_neon_sign_729.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
     },
     {
-      "id": "cap5_ingresos_07",
-      "texto": "Por eso el sector entero se mide en una sola métrica: el win, lo que pierden los clientes.",
-      "duracion": 3.58,
+      "id": "cap5_ingresos_06b",
+      "texto": "Con suficientes apuestas, la ganancia deja de ser una probabilidad y pasa a ser una previsión.",
+      "duracion": 3.49,
       "movimiento": "contra_izq",
       "grade": "verde_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/old_neon_sign.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap5_ingresos_07b",
+      "id": "cap5_ingresos_07",
       "texto": "Por eso el sector entero se mide en una sola métrica: el win, lo que pierden los clientes.",
-      "duracion": 3.58,
+      "duracion": 3.66,
       "movimiento": "estatico",
       "grade": "verde_suave",
       "efectos": [
         "billetes"
       ],
-      "clip": "stock/casino_entrance_doors.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/queue_people_waiting_line_784.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap5_ingresos_08",
-      "texto": "De julio de 2025 a febrero de 2026, Nevada acumuló diez mil quinientos ochenta y ocho millones.",
-      "duracion": 4.18,
+      "id": "cap5_ingresos_07b",
+      "texto": "Por eso el sector entero se mide en una sola métrica: el win, lo que pierden los clientes.",
+      "duracion": 3.66,
       "movimiento": "drift_izq",
       "grade": "verde_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/cash_briefcase_open.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/casino_hall_people_night_801.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_ingresos_08",
+      "texto": "De julio de 2025 a febrero de 2026, Nevada acumuló diez mil quinientos ochenta y ocho millones.",
+      "duracion": 4.26,
+      "movimiento": "contra_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock/nightclub_entrance_night_786.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -1896,173 +1909,173 @@
     {
       "id": "cap5_ingresos_08b",
       "texto": "De julio de 2025 a febrero de 2026, Nevada acumuló diez mil quinientos ochenta y ocho millones.",
-      "duracion": 4.18,
-      "movimiento": "contra_der",
-      "grade": "verde_suave",
-      "efectos": [
-        "destellos"
-      ],
-      "clip": "stock/credit_card_payment_termin.mp4",
-      "clip_desde": 1.5,
-      "capas": [],
-      "latigo": "der"
-    },
-    {
-      "id": "cap5_ingresos_09",
-      "texto": "Suena a máquina de imprimir dinero. Y en cierto modo lo es.",
-      "duracion": 2.48,
+      "duracion": 4.26,
       "movimiento": "subir",
       "grade": "verde_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/slot_machines_row.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/private_club_door_velvet_rope_659.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap5_ingresos_09",
+      "texto": "Suena a máquina de imprimir dinero. Y en cierto modo lo es.",
+      "duracion": 2.55,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock/low_ceiling_slot_machine_aisle_555.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap5_ingresos_09b",
       "texto": "Suena a máquina de imprimir dinero. Y en cierto modo lo es.",
-      "duracion": 2.48,
-      "movimiento": "push_in",
-      "grade": "verde_suave",
-      "efectos": [
-        "billetes"
-      ],
-      "clip": "stock/man_sitting_slot_machine_c.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap5_ingresos_10",
-      "texto": "Pero fijate en lo que hemos ido apilando encima.",
-      "duracion": 3.62,
+      "duracion": 2.55,
       "movimiento": "bajar",
       "grade": "verde_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/slot_machines_row_527.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap5_ingresos_11",
-      "texto": "Nóminas veinticuatro horas al dia. La deuda. Y antes que todo eso, el Estado.",
-      "duracion": 3.4,
+      "id": "cap5_ingresos_10",
+      "texto": "Pero fijate en lo que hemos ido apilando encima.",
+      "duracion": 3.77,
       "movimiento": "push_in",
       "grade": "verde_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/executive_office_window_ci.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/city_street_traffic_timelapse_165.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap5_ingresos_11b",
+      "id": "cap5_ingresos_11",
       "texto": "Nóminas veinticuatro horas al dia. La deuda. Y antes que todo eso, el Estado.",
-      "duracion": 3.4,
+      "duracion": 3.48,
       "movimiento": "drift_der",
       "grade": "verde_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
-      "clip_desde": 3.6,
-      "capas": [],
-      "latigo": "izq"
+      "clip": "stock/state_capitol_building_676.mp4",
+      "clip_desde": 0.3,
+      "capas": []
     },
     {
-      "id": "cap5_ingresos_12",
-      "texto": "La matemática garantiza que ganas dinero. No garantiza que quede algo para ti.",
-      "duracion": 2.88,
+      "id": "cap5_ingresos_11b",
+      "texto": "Nóminas veinticuatro horas al dia. La deuda. Y antes que todo eso, el Estado.",
+      "duracion": 3.48,
       "movimiento": "pull_out",
       "grade": "verde_suave",
       "efectos": [
         "billetes"
       ],
-      "clip": "stock/casino_roulette_wheel_spin.mp4",
-      "clip_desde": 1.5,
-      "capas": []
+      "clip": "stock/corporate_decision_meeting_229.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
     },
     {
-      "id": "cap5_ingresos_12b",
+      "id": "cap5_ingresos_12",
       "texto": "La matemática garantiza que ganas dinero. No garantiza que quede algo para ti.",
-      "duracion": 2.88,
+      "duracion": 2.96,
       "movimiento": "contra_izq",
       "grade": "verde_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/roulette_ball_bouncing.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/empty_street_closed_shops_31.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_ingresos_12b",
+      "texto": "La matemática garantiza que ganas dinero. No garantiza que quede algo para ti.",
+      "duracion": 2.96,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock/casino_exterior_night_758.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
     },
     {
       "id": "cap6_giro_01",
       "texto": "Y llegamos a lo que hace que este negocio sea distinto a todos los demas.",
-      "duracion": 2.49,
-      "movimiento": "estatico",
-      "grade": "rojo_suave",
-      "efectos": [
-        "lluvia"
-      ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
-      "clip_desde": 3.6,
-      "capas": []
-    },
-    {
-      "id": "cap6_giro_01b",
-      "texto": "Y llegamos a lo que hace que este negocio sea distinto a todos los demas.",
-      "duracion": 2.49,
+      "duracion": 2.56,
       "movimiento": "drift_izq",
       "grade": "rojo_suave",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
+      "clip": "stock/city_street_traffic_timelapse_158.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_giro_01b",
+      "texto": "Y llegamos a lo que hace que este negocio sea distinto a todos los demas.",
+      "duracion": 2.56,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock/person_standing_alone_silhouet_503.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap6_giro_02",
       "texto": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
-      "duracion": 2.9,
-      "movimiento": "contra_der",
-      "grade": "rojo_suave",
-      "efectos": [
-        "brasas"
-      ],
-      "clip": "stock/old_neon_sign.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap6_giro_02b",
-      "texto": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
-      "duracion": 2.9,
+      "duracion": 2.98,
       "movimiento": "subir",
       "grade": "rojo_suave",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock/casino_entrance_doors.mp4",
-      "clip_desde": 4.6,
-      "capas": [],
-      "latigo": "izq"
+      "clip": "stock/bank_building_facade_244.mp4",
+      "clip_desde": 0.3,
+      "capas": []
     },
     {
-      "id": "cap6_giro_03",
-      "texto": "En un casino es peor. Lo que no es tuyo no es el ladrillo. Es el permiso para existir.",
-      "duracion": 3.52,
+      "id": "cap6_giro_02b",
+      "texto": "En McDonald's, el franquiciado descubre al final que el edificio nunca fue suyo.",
+      "duracion": 2.98,
       "movimiento": "push_in",
       "grade": "rojo_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/casino_interior_night.mp4",
+      "clip": "stock/casino_floor_night_771.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap6_giro_03",
+      "texto": "En un casino es peor. Lo que no es tuyo no es el ladrillo. Es el permiso para existir.",
+      "duracion": 3.6,
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock/revolving_door_people_blur_444.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2074,27 +2087,27 @@
     {
       "id": "cap6_giro_03b",
       "texto": "En un casino es peor. Lo que no es tuyo no es el ladrillo. Es el permiso para existir.",
-      "duracion": 3.52,
-      "movimiento": "bajar",
+      "duracion": 3.6,
+      "movimiento": "push_in",
       "grade": "rojo_suave",
       "efectos": [
-        "chispas"
+        "brasas"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
+      "clip": "stock/casino_entrance_doors_484.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap6_giro_04",
       "texto": "Una licencia no se compra. Se concede. Y lo que se concede se puede retirar.",
-      "duracion": 3.21,
-      "movimiento": "push_in",
+      "duracion": 3.28,
+      "movimiento": "drift_der",
       "grade": "rojo_suave",
       "efectos": [
-        "brasas"
+        "ceniza"
       ],
-      "clip": "stock/shredding_documents_paper.mp4",
-      "clip_desde": 1.5,
+      "clip": "stock/shredding_documents_paper_shre_589.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "LICENCIA",
@@ -2105,58 +2118,58 @@
     {
       "id": "cap6_giro_04b",
       "texto": "Una licencia no se compra. Se concede. Y lo que se concede se puede retirar.",
-      "duracion": 3.21,
-      "movimiento": "drift_der",
-      "grade": "rojo_suave",
-      "efectos": [
-        "ceniza"
-      ],
-      "clip": "stock/license_document_close_up.mp4",
-      "clip_desde": 3.6,
-      "capas": []
-    },
-    {
-      "id": "cap6_giro_05",
-      "texto": "No se retira solo por hacer trampas. Basta un socio inadecuado o un fallo de control.",
-      "duracion": 3.35,
+      "duracion": 3.28,
       "movimiento": "pull_out",
       "grade": "rojo_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/security_control_room_moni.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/payroll_documents_calculator_378.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_giro_05",
+      "texto": "No se retira solo por hacer trampas. Basta un socio inadecuado o un fallo de control.",
+      "duracion": 3.42,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock/security_cameras_ceiling_surve_688.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "SOCIO OBLIGATORIO",
         "px": 96,
         "estilo": "derecha"
       },
-      "latigo": "der"
+      "latigo": "izq"
     },
     {
       "id": "cap6_giro_05b",
       "texto": "No se retira solo por hacer trampas. Basta un socio inadecuado o un fallo de control.",
-      "duracion": 3.35,
-      "movimiento": "contra_izq",
-      "grade": "rojo_suave",
-      "efectos": [
-        "chispas"
-      ],
-      "clip": "stock/security_control_room.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cap6_giro_06",
-      "texto": "Mientras seas licenciatario, la investigación no termina. Sigue. Indefinidamente.",
-      "duracion": 3.58,
+      "duracion": 3.42,
       "movimiento": "estatico",
       "grade": "rojo_suave",
       "efectos": [
         "brasas"
       ],
-      "clip": "stock/casino_carpet_pattern.mp4",
+      "clip": "stock/security_guard_monitors_629.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_giro_06",
+      "texto": "Mientras seas licenciatario, la investigación no termina. Sigue. Indefinidamente.",
+      "duracion": 3.66,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock/reading_contract_closeup_217.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2168,27 +2181,27 @@
     {
       "id": "cap6_giro_06b",
       "texto": "Mientras seas licenciatario, la investigación no termina. Sigue. Indefinidamente.",
-      "duracion": 3.58,
-      "movimiento": "drift_izq",
+      "duracion": 3.66,
+      "movimiento": "contra_der",
       "grade": "rojo_suave",
       "efectos": [
-        "ceniza"
+        "lluvia"
       ],
-      "clip": "stock/patterned_casino_carpet_ma.mp4",
+      "clip": "stock/legal_documents_signing_199.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cap6_giro_07",
       "texto": "En muchas jurisdicciones el número de licencias está limitado por ley.",
-      "duracion": 2.83,
-      "movimiento": "contra_der",
+      "duracion": 2.9,
+      "movimiento": "subir",
       "grade": "rojo_suave",
       "efectos": [
-        "lluvia"
+        "chispas"
       ],
-      "clip": "stock/casino_interior_gambling.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/hands_signing_contract_pen_1.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "LICENCIA",
@@ -2199,94 +2212,94 @@
     {
       "id": "cap6_giro_07b",
       "texto": "En muchas jurisdicciones el número de licencias está limitado por ley.",
-      "duracion": 2.83,
-      "movimiento": "subir",
-      "grade": "rojo_suave",
-      "efectos": [
-        "chispas"
-      ],
-      "clip": "stock/old_neon_sign_desert_road.mp4",
-      "clip_desde": 2.6,
-      "capas": [],
-      "latigo": "izq"
-    },
-    {
-      "id": "cap6_giro_08",
-      "texto": "No es un mercado abierto. Es un club cerrado donde las sillas las decide un parlamento.",
-      "duracion": 3.38,
+      "duracion": 2.9,
       "movimiento": "push_in",
       "grade": "rojo_suave",
       "efectos": [
         "brasas"
       ],
-      "clip": "stock/casino_interior_night.mp4",
-      "clip_desde": 2.6,
-      "capas": []
+      "clip": "stock/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
     },
     {
-      "id": "cap6_giro_08b",
+      "id": "cap6_giro_08",
       "texto": "No es un mercado abierto. Es un club cerrado donde las sillas las decide un parlamento.",
-      "duracion": 3.38,
+      "duracion": 3.45,
       "movimiento": "bajar",
       "grade": "rojo_suave",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock/casino_floor_people_playin.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/landlord_keys_building_376.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap6_giro_09",
-      "texto": "Los casinos no venden juego. Venden acceso a una escasez que ellos no crearon.",
-      "duracion": 3.0,
+      "id": "cap6_giro_08b",
+      "texto": "No es un mercado abierto. Es un club cerrado donde las sillas las decide un parlamento.",
+      "duracion": 3.45,
       "movimiento": "push_in",
       "grade": "rojo_suave",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock/low_ceiling_slot_machine_a.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/city_street_traffic_timelapse_102.mp4",
+      "clip_desde": 0.3,
       "capas": []
     },
     {
-      "id": "cap6_giro_09b",
+      "id": "cap6_giro_09",
       "texto": "Los casinos no venden juego. Venden acceso a una escasez que ellos no crearon.",
-      "duracion": 3.0,
+      "duracion": 3.08,
       "movimiento": "drift_der",
       "grade": "rojo_suave",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock/casino_slot_machine_lights.mp4",
-      "clip_desde": 2.6,
+      "clip": "stock/city_street_traffic_timelapse_2.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_giro_09b",
+      "texto": "Los casinos no venden juego. Venden acceso a una escasez que ellos no crearon.",
+      "duracion": 3.08,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock/empty_street_closed_shops_427.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
     },
     {
       "id": "cierre_01",
       "texto": "Entonces, se puede comprar un casino.",
-      "duracion": 3.78,
-      "movimiento": "pull_out",
-      "grade": "dorado_suave",
-      "efectos": [
-        "niebla"
-      ],
-      "clip": "stock/croupier_hands_casino_tabl.mp4",
-      "clip_desde": 2.6,
-      "capas": []
-    },
-    {
-      "id": "cierre_02",
-      "texto": "Con diez millones el edificio pequeño. Con cuarenta, uno decente. Con ciento cincuenta, un resort.",
-      "duracion": 4.24,
+      "duracion": 3.93,
       "movimiento": "contra_izq",
       "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/money_envelope_cash.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/bank_vault_door_414.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Con diez millones el edificio pequeño. Con cuarenta, uno decente. Con ciento cincuenta, un resort.",
+      "duracion": 4.32,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock/empty_street_closed_shops_116.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "barras",
@@ -2314,54 +2327,54 @@
     {
       "id": "cierre_02b",
       "texto": "Con diez millones el edificio pequeño. Con cuarenta, uno decente. Con ciento cincuenta, un resort.",
-      "duracion": 4.24,
-      "movimiento": "estatico",
-      "grade": "dorado_suave",
-      "efectos": [
-        "brasas"
-      ],
-      "clip": "stock/cash_briefcase_money.mp4",
-      "clip_desde": 3.6,
-      "capas": []
-    },
-    {
-      "id": "cierre_03",
-      "texto": "Pero no es un negocio que se compre con dinero. Es un negocio en el que te admiten.",
-      "duracion": 2.92,
+      "duracion": 4.32,
       "movimiento": "drift_izq",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock/cash_stack_euro_bills.mp4",
-      "clip_desde": 3.6,
-      "capas": [],
-      "latigo": "izq"
+      "clip": "stock/empty_street_closed_shops_309.mp4",
+      "clip_desde": 0.3,
+      "capas": []
     },
     {
-      "id": "cierre_03b",
+      "id": "cierre_03",
       "texto": "Pero no es un negocio que se compre con dinero. Es un negocio en el que te admiten.",
-      "duracion": 2.92,
+      "duracion": 3.0,
       "movimiento": "contra_der",
       "grade": "dorado_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/money_counting_machine.mp4",
-      "clip_desde": 3.6,
-      "capas": []
+      "clip": "stock/casino_exterior_night_768.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
     },
     {
-      "id": "cierre_04",
-      "texto": "Tu socio mayoritario es un Estado. Tu activo principal es una licencia que no posees.",
-      "duracion": 3.37,
+      "id": "cierre_03b",
+      "texto": "Pero no es un negocio que se compre con dinero. Es un negocio en el que te admiten.",
+      "duracion": 3.0,
       "movimiento": "subir",
       "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock/shredding_documents_paper.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/city_street_traffic_timelapse_99.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Tu socio mayoritario es un Estado. Tu activo principal es una licencia que no posees.",
+      "duracion": 3.44,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
         "texto": "LICENCIA",
@@ -2372,40 +2385,40 @@
     {
       "id": "cierre_04b",
       "texto": "Tu socio mayoritario es un Estado. Tu activo principal es una licencia que no posees.",
-      "duracion": 3.37,
-      "movimiento": "push_in",
+      "duracion": 3.44,
+      "movimiento": "bajar",
       "grade": "dorado_suave",
       "efectos": [
-        "brasas"
+        "bokeh"
       ],
-      "clip": "stock/license_document_close_up.mp4",
+      "clip": "stock/empty_street_closed_shops_374.mp4",
       "clip_desde": 0.3,
       "capas": []
     },
     {
       "id": "cierre_05",
       "texto": "El permiso temporal para operar una fórmula que no puede fallar. Mientras les sigas cayendo bien.",
-      "duracion": 3.42,
-      "movimiento": "bajar",
-      "grade": "dorado_suave",
-      "efectos": [
-        "bokeh"
-      ],
-      "clip": "stock/casino_roulette_wheel_spin.mp4",
-      "clip_desde": 3.6,
-      "capas": []
-    },
-    {
-      "id": "cierre_05b",
-      "texto": "El permiso temporal para operar una fórmula que no puede fallar. Mientras les sigas cayendo bien.",
-      "duracion": 3.42,
+      "duracion": 3.49,
       "movimiento": "push_in",
       "grade": "dorado_suave",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock/roulette_ball_bouncing.mp4",
-      "clip_desde": 3.6,
+      "clip": "stock/revolving_door_people_132.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "El permiso temporal para operar una fórmula que no puede fallar. Mientras les sigas cayendo bien.",
+      "duracion": 3.49,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock/closed_door_sign_private_membe_681.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true
     }

@@ -81,7 +81,7 @@ def main() -> int:
     p.add_argument("voz", type=Path)
     p.add_argument("salida", type=Path)
     p.add_argument("--guion", type=Path, default=Path("proyecto/guion.json"))
-    p.add_argument("--solape", type=float, default=0.45)
+    p.add_argument("--solape", type=float, default=0.25)
     p.add_argument("--musica", default="space_bar_ambient.mp3")
     p.add_argument("--vol-musica", type=float, default=0.16)
     args = p.parse_args()

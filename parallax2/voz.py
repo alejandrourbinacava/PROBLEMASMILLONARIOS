@@ -93,7 +93,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("guion", type=Path)
     ap.add_argument("salida", type=Path, nargs="?", default=Path("voz.mp3"))
-    ap.add_argument("--solape", type=float, default=0.45)
+    ap.add_argument("--solape", type=float, default=0.25)
     ap.add_argument("--tmp", type=Path, default=Path("_voz"))
     ap.add_argument("--voz", default="es-ES-AlvaroNeural")
     ap.add_argument("--velocidad", type=float, default=1.06)

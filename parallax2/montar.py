@@ -16,7 +16,11 @@ corte. render.py ya anade ese solape a cada clip, asi que cuadra.
 """
 import os, sys, json, argparse, subprocess
 
-SOLAPE = 0.45          # segundos de deslizamiento
+# Se baja de 0,45 a 0,25. Dos motivos: una transicion corta corta mejor -a
+# 0,45 el plano nuevo tarda casi medio segundo en imponerse- y ademas cada
+# transicion se COME su duracion del total. Con ciento sesenta cortes, bajar
+# veinte centesimas devuelve treinta y dos segundos de episodio.
+SOLAPE = 0.25
 
 # Alternar solo entre slideleft y slideright cansa: son el mismo gesto en
 # espejo, y a los veinte cortes el ojo ya lo predice. La rueda mezcla cuatro

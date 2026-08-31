@@ -25,11 +25,6 @@
   "casino_entrance_doors.mp4"
  ],
  [
-  "exterior",
-  "mid size casino building exterior night",
-  "mid_size_casino_building_e.mp4"
- ],
- [
   "sala",
   "casino interior gambling",
   "casino_interior_gambling.mp4"
@@ -41,11 +36,6 @@
  ],
  [
   "sala",
-  "casino interior luxury ceiling wide shot",
-  "casino_interior_luxury_cei.mp4"
- ],
- [
-  "sala",
   "casino floor people playing slot machines night",
   "casino_floor_people_playin.mp4"
  ],
@@ -53,11 +43,6 @@
   "maquinas",
   "slot machines row switched on casino floor",
   "slot_machines_row_switched.mp4"
- ],
- [
-  "maquinas",
-  "slot machines switching on lights casino",
-  "slot_machines_switching_on.mp4"
  ],
  [
   "maquinas",
@@ -80,19 +65,9 @@
   "casino_slot_machine_lights.mp4"
  ],
  [
-  "gente",
-  "many people playing slot machines crowded floor",
-  "many_people_playing_slot_m.mp4"
- ],
- [
   "ruleta",
   "casino roulette wheel spinning",
   "casino_roulette_wheel_spin.mp4"
- ],
- [
-  "ruleta",
-  "roulette wheel spinning slow motion",
-  "roulette_wheel_spinning_sl.mp4"
  ],
  [
   "ruleta",
@@ -165,33 +140,58 @@
   "shredding_documents_paper.mp4"
  ],
  [
-  "papeles",
-  "tax collector official stamp document",
-  "tax_collector_official_sta.mp4"
- ],
- [
-  "oficina",
-  "tax collector official",
-  "tax_collector_official.mp4"
- ],
- [
-  "oficina",
-  "handshake business meeting",
-  "handshake_business_meeting.mp4"
- ],
- [
   "vigilancia",
   "casino surveillance monitor watching",
   "casino_surveillance_monito.mp4"
  ],
  [
-  "vigilancia",
-  "security camera ceiling dome",
-  "security_camera_ceiling_do.mp4"
+  "sala",
+  "casino carpet pattern",
+  "casino_carpet_pattern.mp4"
  ],
  [
-  "gente",
-  "night shift staff working casino floor",
-  "night_shift_staff_working.mp4"
+  "sala",
+  "patterned casino carpet macro detail",
+  "patterned_casino_carpet_ma.mp4"
+ ],
+ [
+  "maquinas",
+  "low ceiling slot machine aisle",
+  "low_ceiling_slot_machine_a.mp4"
+ ],
+ [
+  "vigilancia",
+  "security control room monitors wall operator",
+  "security_control_room_moni.mp4"
+ ],
+ [
+  "vigilancia",
+  "security control room",
+  "security_control_room.mp4"
+ ],
+ [
+  "dinero",
+  "credit card payment terminal",
+  "credit_card_payment_termin.mp4"
+ ],
+ [
+  "fichas",
+  "casino cage counting",
+  "casino_cage_counting.mp4"
+ ],
+ [
+  "vegas",
+  "old neon sign desert road vintage",
+  "old_neon_sign_desert_road.mp4"
+ ],
+ [
+  "exterior",
+  "old neon sign",
+  "old_neon_sign.mp4"
+ ],
+ [
+  "oficina",
+  "executive office window city",
+  "executive_office_window_ci.mp4"
  ]
 ]

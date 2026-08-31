@@ -60,9 +60,18 @@ jobs:
         working-directory: parallax2
         run: python montar.py "${{ inputs.guion || 'proyecto/episodio.json' }}" _montado.mp4 --tmp _escenas
 
+      # Si la locucion viene commiteada, se usa esa: es la voz del canal y
+      # cuesta creditos de ai33, asi que no se vuelve a pedir en cada render.
+      # Solo se sintetiza aqui -gratis, con edge-tts- cuando no hay ninguna.
       - name: Voz
         working-directory: parallax2
-        run: python voz.py "${{ inputs.guion || 'proyecto/episodio.json' }}" voz.mp3 --proveedor edge
+        run: |
+          if [ -f voz.mp3 ]; then
+            echo "usando la locucion commiteada:"
+            ffprobe -v error -show_entries format=duration -of csv=p=0 voz.mp3
+          else
+            python voz.py "${{ inputs.guion || 'proyecto/episodio.json' }}" voz.mp3 --proveedor edge
+          fi
 
       - name: Sonido
         working-directory: parallax2

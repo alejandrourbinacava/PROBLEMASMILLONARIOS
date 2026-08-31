@@ -41,6 +41,14 @@ CIERRE_BLOQUE = "fadeblack"
 # ojo no distingue de un corte, y deja el grafo entero homogeneo.
 DUR_CORTE = 0.04
 
+# Cuantos clips entran en una sola llamada a ffmpeg. Un episodio son
+# doscientos ocho, y encadenarlos en un unico filter_complex abre doscientos
+# ocho decodificadores a la vez: la maquina se queda sin memoria y matan el
+# proceso despues de ochenta minutos de render ya hechos. Se monta por
+# bloques y se pegan sin recodificar.
+POR_BLOQUE = 24
+FUNDE = 0.4          # fundido a negro en la juntura entre bloques
+
 
 def linea_de_tiempo(guion, solape=SOLAPE):
     """Instante en que empieza cada escena en el video ya montado.
@@ -82,11 +90,37 @@ def dur(path):
     return float(r.stdout.strip())
 
 
+def bloque(clips, trans, solape, salida):
+    """Encadena un grupo de clips con sus transiciones, en una sola pasada."""
+    entradas, filtro, prev, reloj = [], [], "[0:v]", dur(clips[0])
+    for i in range(1, len(clips)):
+        t = trans[i - 1]
+        seco = t == "corte"
+        salto = DUR_CORTE if seco else solape
+        offset = reloj - salto
+        etiqueta = f"[v{i}]"
+        filtro.append(f"{prev}[{i}:v]xfade="
+                      f"transition={'fade' if seco else t}:"
+                      f"duration={salto}:offset={offset:.3f}{etiqueta}")
+        reloj = offset + dur(clips[i])
+        prev = etiqueta
+    for c in clips:
+        entradas += ["-i", c]
+    cmd = ["ffmpeg", "-y", "-v", "error"] + entradas
+    if filtro:
+        cmd += ["-filter_complex", ";".join(filtro), "-map", prev]
+    cmd += ["-c:v", "libx264", "-preset", "medium", "-crf", "18",
+            "-pix_fmt", "yuv420p", salida]
+    subprocess.run(cmd, check=True)
+    return reloj
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("guion"); ap.add_argument("salida", nargs="?", default="salida.mp4")
     ap.add_argument("--tmp", default="_escenas")
     ap.add_argument("--solape", type=float, default=SOLAPE)
+    ap.add_argument("--bloque", type=int, default=POR_BLOQUE)
     a = ap.parse_args()
 
     # preparar() es quien pone "corte" dentro de los hilos y en los
@@ -94,7 +128,7 @@ def main():
     # panoramica continua y se cargaria el efecto.
     import render as R
     guion = R.preparar(json.load(open(a.guion, encoding="utf-8")))
-    _, trans, _ = linea_de_tiempo(guion, a.solape)
+    _, trans, total = linea_de_tiempo(guion, a.solape)
     clips = []
     for i, esc in enumerate(guion["escenas"]):
         ruta = os.path.join(a.tmp, f'{i:03d}_{esc["id"]}.mp4')
@@ -107,32 +141,33 @@ def main():
                         "-c", "copy", a.salida], check=True)
         return
 
-    entradas, filtro, prev, reloj = [], [], "[0:v]", dur(clips[0])
-    for i in range(1, len(clips)):
-        t = trans[i - 1]
-        seco = t == "corte"
-        salto = DUR_CORTE if seco else a.solape
-        offset = reloj - salto
-        etiqueta = f"[v{i}]"
-        filtro.append(f"{prev}[{i}:v]xfade="
-                      f"transition={'fade' if seco else t}:"
-                      f"duration={salto}:offset={offset:.3f}{etiqueta}")
-        reloj = offset + dur(clips[i])
-        prev = etiqueta
-
-    for c in clips:
-        entradas += ["-i", c]
-
-    cmd = (["ffmpeg", "-y", "-v", "error"] + entradas +
-           ["-filter_complex", ";".join(filtro), "-map", prev,
-            "-c:v", "libx264", "-preset", "medium", "-crf", "18",
-            "-pix_fmt", "yuv420p", "-movflags", "+faststart", a.salida])
     import collections as _c
-    reparto = _c.Counter(trans[:len(clips)-1])
+    reparto = _c.Counter(trans[:len(clips) - 1])
     print(f"{len(clips)} clips · {len(clips)-1} transiciones · "
-          f"{int(reloj//60)}:{reloj%60:04.1f}")
+          f"{int(total//60)}:{total%60:04.1f}")
     print("  " + " · ".join(f"{k} x{v}" for k, v in reparto.most_common()))
-    subprocess.run(cmd, check=True)
+
+    # --- por bloques: la juntura entre bloques es un corte seco ---
+    cortes = list(range(0, len(clips), a.bloque))
+    if len(clips) - cortes[-1] < 2:          # un bloque de uno no se puede
+        cortes.pop()
+    partes = []
+    for k, ini in enumerate(cortes):
+        fin = cortes[k + 1] if k + 1 < len(cortes) else len(clips)
+        parte = os.path.join(a.tmp, f"_bloque_{k:02d}.mp4")
+        # la transicion QUE CRUZA la juntura se pierde: se sustituye por el
+        # corte seco que la linea de tiempo ya cuenta ahi
+        bloque(clips[ini:fin], trans[ini:fin - 1], a.solape, parte)
+        partes.append(parte)
+        print(f"  bloque {k+1}/{len(cortes)}: clips {ini}-{fin-1}", flush=True)
+
+    lista = os.path.join(a.tmp, "_bloques.txt")
+    with open(lista, "w") as f:
+        for p in partes:
+            f.write("file '" + os.path.abspath(p) + "'" + chr(10))
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0",
+                    "-i", lista, "-c", "copy", "-movflags", "+faststart",
+                    a.salida], check=True)
     print("OK ->", a.salida)
 
 

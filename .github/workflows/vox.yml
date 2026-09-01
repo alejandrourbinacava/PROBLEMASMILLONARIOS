@@ -21,7 +21,11 @@ on:
       guion:
         description: Guion a renderizar
         type: string
-        default: proyecto/vox_banco.json
+        default: proyecto/vox_min.json
+      cache_voz:
+        description: Carpeta de locuciones (_voz de pago, _voz_libre gratis)
+        type: string
+        default: _voz_libre
   push:
     tags:
       - "vox-*"
@@ -45,9 +49,6 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y ffmpeg
 
-      - name: Comprobar los recortes antes de gastar minutos
-        working-directory: parallax2
-        run: python3 construir_vox.py ../config/guion_banco.md
 
       - name: Render
         working-directory: parallax2

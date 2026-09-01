@@ -312,6 +312,12 @@ def pintar(esc, t, cfg, fondo, cache, pal):
                 vox.barras(im, [tuple(x) for x in g["items"]], pal, u=u,
                            y0=g.get("y", 0.30), destacado=g.get("destacar"),
                            sufijo=g.get("sufijo", "%"))
+            elif g["tipo"] == "reparto":
+                vox_mg.reparto(im, pal, valor=g.get("valor", 100),
+                               etiqueta_a=g.get("etiqueta_a", ""),
+                               etiqueta_b=g.get("etiqueta_b", ""),
+                               parte=g.get("parte", 0.5), u=u,
+                               y=g.get("y", 0.30))
             elif g["tipo"] == "anillo":
                 vox_mg.anillo(im, g["valor"], pal, u=u, pie=g.get("pie", ""),
                               sufijo=g.get("sufijo", "%"),
@@ -344,6 +350,8 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         if u > 0:
             vox_mg.ticker(im, tk["texto"], pal, u=u)
 
+    if esc.get("banda"):
+        vox_mg.banda(im, pal, u=min(1.0, max(0.0, (t - 0.06) / 0.5)))
     if esc.get("etiqueta"):
         # la etiqueta y el ticker viven los dos abajo a la izquierda: si
         # coinciden, la etiqueta sube. Se pisaban y no se leia ninguna.

@@ -140,3 +140,51 @@ def deriva(t, dur, indice=0):
             lado * 0.018 * p,
             -0.012 * p,
             1.0 + 0.018 * p)
+
+
+def reparto(im, pal, valor=100, etiqueta_a="", etiqueta_b="", u=1.0,
+            y=0.30, alto=96, parte=None):
+    """
+    Una barra partida: cuanto se lleva cada uno. La parte de la izquierda
+    crece y la de la derecha es lo que queda.
+
+    Es el grafico del episodio: casi todo el dinero es de los clientes y una
+    astilla es del banco. Con dos barras sueltas no se ve; partiendo UNA
+    barra, si.
+    """
+    W, H = im.size
+    x0, ancho = int(W * 0.12), int(W * 0.76)
+    yy = int(H * y)
+    d = ImageDraw.Draw(im)
+    frac = (parte if parte is not None else 0.5) * _suave(u)
+    d.rectangle([x0, yy, x0 + ancho, yy + alto], fill=pal["suave"])
+    d.rectangle([x0, yy, x0 + int(ancho * frac), yy + alto], fill=pal["apoyo"])
+    fo = vox.f(40, regular=True)
+    if etiqueta_a:
+        d.text((x0, yy + alto + 16), etiqueta_a, font=fo, fill=pal["tinta"])
+    if etiqueta_b:
+        an = d.textlength(etiqueta_b, font=fo)
+        d.text((x0 + ancho - an, yy + alto + 16), etiqueta_b, font=fo,
+               fill=pal["tinta"])
+    return im
+
+
+def banda(im, pal, u=1.0, y=0.70, alto=14):
+    """Franja de color que se descubre de izquierda a derecha. Separa el
+    bloque de tipografia de la imagen sin dibujar una caja."""
+    W, H = im.size
+    d = ImageDraw.Draw(im)
+    yy = int(H * y)
+    d.rectangle([0, yy, int(W * _suave(u)), yy + alto], fill=pal["acento"])
+    return im
+
+
+def tachado(im, caja, pal, u=1.0, grosor=12):
+    """Raya que tacha algo. Se traza de un lado al otro."""
+    W, H = im.size
+    x0, y0, x1, y1 = caja[0]*W, caja[1]*H, caja[2]*W, caja[3]*H
+    d = ImageDraw.Draw(im)
+    s = _suave(u)
+    d.line([(x0, y0), (x0 + (x1-x0)*s, y0 + (y1-y0)*s)],
+           fill=pal["apoyo"], width=grosor)
+    return im

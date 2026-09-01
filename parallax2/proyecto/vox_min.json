@@ -1,0 +1,237 @@
+{
+ "titulo": "prueba VOX 1 min",
+ "paleta": "vox",
+ "lienzo": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 25,
+  "ppm": 140
+ },
+ "escenas": [
+  {
+   "id": "gancho_01",
+   "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "duracion": 3.5,
+   "capas": [],
+   "transicion": "corte",
+   "muda": false,
+   "grafico": {
+    "tipo": "cifra",
+    "valor": 3.22,
+    "decimales": 2,
+    "sufijo": "$",
+    "pie": "por cada 100 $ prestados",
+    "y": 0.28
+   },
+   "banda": true,
+   "etiqueta": "GANCHO"
+  },
+  {
+   "id": "gancho_01a",
+   "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "duracion": 3.5,
+   "capas": [],
+   "transicion": "corte",
+   "muda": true
+  },
+  {
+   "id": "gancho_02",
+   "texto": "Tres coma veintidos. Ese es el margen.",
+   "duracion": 4.0,
+   "capas": [],
+   "transicion": "corte",
+   "muda": false,
+   "texto_pantalla": {
+    "lineas": [
+     "Tres coma",
+     "*veintidos*"
+    ],
+    "px": 92,
+    "y": 0.09
+   }
+  },
+  {
+   "id": "gancho_03",
+   "texto": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_cola.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "muda": false,
+   "banda": true,
+   "etiqueta": "GANCHO"
+  },
+  {
+   "id": "gancho_03a",
+   "texto": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_cola.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "muda": true
+  },
+  {
+   "id": "gancho_04",
+   "texto": "Suena a poco.",
+   "duracion": 3.0,
+   "capas": [],
+   "transicion": "corte",
+   "muda": false,
+   "texto_pantalla": {
+    "lineas": [
+     "Suena a *poco*."
+    ],
+    "px": 92,
+    "y": 0.09
+   }
+  },
+  {
+   "id": "gancho_05",
+   "texto": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_cola.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "muda": false,
+   "banda": true,
+   "etiqueta": "GANCHO"
+  },
+  {
+   "id": "gancho_05a",
+   "texto": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_cola.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "muda": true
+  },
+  {
+   "id": "gancho_06",
+   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "duracion": 3.5,
+   "capas": [],
+   "transicion": "corte",
+   "muda": false,
+   "grafico": {
+    "tipo": "reparto",
+    "valor": 100,
+    "etiqueta_a": "tu dinero",
+    "etiqueta_b": "suyo",
+    "parte": 0.9,
+    "y": 0.3
+   }
+  },
+  {
+   "id": "gancho_06a",
+   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "duracion": 3.5,
+   "capas": [],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "muda": true,
+   "banda": true,
+   "etiqueta": "GANCHO"
+  },
+  {
+   "id": "gancho_07",
+   "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_manos.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "p_papeles.png",
+   "muda": false
+  },
+  {
+   "id": "gancho_07a",
+   "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_manos.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "p_papeles.png",
+   "muda": true
+  },
+  {
+   "id": "gancho_08",
+   "texto": "Ese es el negocio entero. Todo lo demas es decoracion.",
+   "duracion": 5.0,
+   "capas": [],
+   "transicion": "corte",
+   "muda": false,
+   "texto_pantalla": {
+    "lineas": [
+     "Todo lo demas",
+     "es *decoracion*."
+    ],
+    "px": 92,
+    "y": 0.09
+   },
+   "banda": true,
+   "etiqueta": "GANCHO"
+  },
+  {
+   "id": "gancho_09",
+   "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "duracion": 5.0,
+   "capas": [
+    {
+     "archivo": "s_cajero.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "muda": false
+  },
+  {
+   "id": "gancho_10",
+   "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
+   "duracion": 5.0,
+   "capas": [
+    {
+     "archivo": "s_cajero.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "p_papeles_b.png",
+   "muda": false
+  },
+  {
+   "id": "cap1_dos_bancos_01",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
+   "duracion": 4.0,
+   "capas": [
+    {
+     "archivo": "s_cajero.png"
+    }
+   ],
+   "transicion": "corte",
+   "frente": "p_cordon.png",
+   "muda": false,
+   "banda": true,
+   "etiqueta": "CAP1"
+  }
+ ]
+}

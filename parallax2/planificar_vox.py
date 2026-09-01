@@ -47,11 +47,16 @@ IMPONE = ("no la pones tu", "no lo decides", "te evaluan", "obliga", "exige",
           "interviene", "minimo", "tiene que", "hay que", "norma")
 LLEGA = ("coge", "entra", "llega", "recibe", "deposita", "presta", "solicita",
          "paga", "cobra", "abre")
-# Raices, no palabras enteras. Con la palabra completa "depositas" no casaba
-# con "deposito" y no se activaba un solo efecto en todo el episodio.
-FUEGO = ("pierd", "perdid", "quiebra", "desaparec", "se vend", "arde",
-         "no existe", "sin liquidez", "susto", "golpe", "cierran", "ruina")
-AGUA = ("deposit", "liquid", "flujo", "corriente", "colchon")
+# El efecto solo entra si la frase habla LITERALMENTE de fuego o de agua.
+#
+# Antes bastaba con que dijera "depositas" para que saliera oleaje, porque
+# "deposit" casaba con la raiz de "deposito" y yo habia metido el deposito
+# en la familia del agua. Un deposito bancario no es agua: es una
+# coincidencia de letras, y en pantalla se ve exactamente como lo que es,
+# un mar puesto ahi sin venir a cuento. Una metafora que hay que explicar
+# no es una metafora.
+FUEGO = ("arde", "ardiendo", "quema", "quemando", "llamas", "fuego", "incendio")
+AGUA = ("agua", "mar", "marea", "ola", "olas", "inundac", "hundir", "naufrag")
 
 # Fuera la banda lateral y el bloque de esquina: eran una raya naranja y un
 # cuadrado de color puestos para llegar a la cuenta de elementos, y no
@@ -189,10 +194,19 @@ def es_remate(texto):
 
 
 def efecto_de(texto):
-    t = norm(texto)
-    if any(k in t for k in FUEGO):
+    """
+    Palabras ENTERAS, no trozos.
+
+    Buscando "mar" dentro del texto, el oleaje saltaba con la palabra
+    MARGEN, que sale en medio episodio. Igual "ola" dentro de "sola" y
+    "arde" dentro de "guarde". Nueve planos de veintiuno acabaron con mar
+    de fondo por una coincidencia de letras, y en pantalla se ve
+    exactamente como lo que es: agua puesta sin venir a cuento.
+    """
+    pal = set(re.findall(r"[a-z]+", norm(texto)))
+    if pal & set(FUEGO):
         return "fuego"
-    if any(k in t for k in AGUA):
+    if pal & set(AGUA):
         return "agua"
     return None
 

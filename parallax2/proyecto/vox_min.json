@@ -75,20 +75,16 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/m_plantilla.png",
      "entrada": "pop"
     },
     {
      "archivo": "meta/f_libro.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_servidor.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "oficina",
-   "frente": "meta/f_mostrador.png",
+   "frente": "meta/f_oficina.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 3.22,
@@ -108,24 +104,25 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/m_plantilla.png",
      "entrada": "lateral"
     },
     {
      "archivo": "meta/f_servidor.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_recibos.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "oficina",
-   "frente": "meta/f_mostrador.png",
+   "frente": "meta/f_oficina.png",
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_04",
@@ -134,24 +131,25 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/m_plantilla.png",
      "entrada": "lateral"
     },
     {
      "archivo": "meta/f_recibos.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_expediente.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "oficina",
-   "frente": "meta/f_mostrador.png",
+   "frente": "meta/f_oficina.png",
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_05",
@@ -212,7 +210,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "pop"
     },
     {
@@ -238,7 +236,7 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "pop"
     },
     {
@@ -268,22 +266,21 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_hucha.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "lateral"
     }
    ],
    "tipo_escena": "boveda",
-   "frente": "meta/f_libro.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": false,
-   "formas": [],
-   "efecto": "agua",
-   "frente_vivo": true
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_10",
@@ -296,22 +293,21 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_candado.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "lateral"
     }
    ],
    "tipo_escena": "boveda",
-   "frente": "meta/f_libro.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": [],
-   "efecto": "agua",
-   "frente_vivo": true
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_11",
@@ -324,22 +320,21 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_maletin.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_monedas.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     }
    ],
    "tipo_escena": "boveda",
-   "frente": "meta/f_libro.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": false,
-   "formas": [],
-   "efecto": "agua",
-   "frente_vivo": true
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_12",
@@ -400,7 +395,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/m_banquero.png",
      "entrada": "pop"
     },
     {
@@ -433,7 +428,7 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/m_banquero.png",
      "entrada": "pop"
     },
     {
@@ -459,11 +454,11 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/m_inspector.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "sube"
     },
     {
@@ -485,7 +480,7 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/m_inspector.png",
      "entrada": "pop"
     },
     {
@@ -511,7 +506,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_oficina.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     },
     {
@@ -528,9 +523,7 @@
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": false,
-   "formas": [],
-   "efecto": "fuego",
-   "frente_vivo": true
+   "formas": []
   },
   {
    "id": "gancho_19",
@@ -539,7 +532,7 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_oficina.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "sube"
     },
     {
@@ -556,9 +549,7 @@
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": [],
-   "efecto": "fuego",
-   "frente_vivo": true
+   "formas": []
   },
   {
    "id": "gancho_20",
@@ -567,7 +558,7 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_oficina.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     },
     {
@@ -584,9 +575,7 @@
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": false,
-   "formas": [],
-   "efecto": "fuego",
-   "frente_vivo": true
+   "formas": []
   }
  ]
 }

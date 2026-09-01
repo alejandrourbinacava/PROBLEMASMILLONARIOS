@@ -162,7 +162,7 @@ def apaisada(nombre):
     return b and (b[2] - b[0]) / (b[3] - b[1]) >= PROP_FRENTE
 
 
-def repartir(escenas):
+def repartir(escenas, a_mano=None):
     ultima = collections.defaultdict(lambda: -99)
     def existe(k):
         return os.path.exists(os.path.join(AQUI, "proyecto", "meta", k + ".png"))
@@ -206,7 +206,13 @@ def repartir(escenas):
         # demas construyen el sitio y no se eligen por el texto.
         mejor_me = puntuar(t, BIBLIOTECA[me[0]][1], pen(me[0])) if me else -9
         mejor_fr = puntuar(t, BIBLIOTECA[fr[0]][1], pen(fr[0])) if fr else -9
-        sujeto = fr[0] if (fr and mejor_fr > mejor_me) else (me[0] if me else fr[0])
+        # Manda lo que el storyboard emparejo a mano. La puntuacion por
+        # palabras solo se usa cuando no hay nada asignado.
+        puestas = [x for x in (a_mano or {}).get(id(e), []) if existe(x)]
+        if puestas:
+            sujeto = puestas[0]
+        else:
+            sujeto = fr[0] if (fr and mejor_fr > mejor_me) else (me[0] if me else fr[0])
         # Una frase, un sujeto. Los planos que reparten la misma locucion
         # mantienen la pieza que manda y cambian el encuadre y los laterales:
         # si tambien cambia el sujeto, el segundo plano habla de otra cosa.
@@ -226,11 +232,15 @@ def repartir(escenas):
 
         # Dos laterales DISTINTOS. Con `lat[i]` y `lat[i+2]` sobre una lista
         # de dos salia el mismo arbol repetido a los dos lados.
-        lat = [x for x in cfg["laterales"] if existe(x) and x != sujeto]
-        elegidos = [sujeto]
-        for d in (0, 1):
-            if len(lat) > d:
-                elegidos.append(lat[(i + d) % len(lat)])
+        # Primero lo asignado a mano, y solo si falta se completa con la
+        # escenografia del sitio. Rellenar antes de mirar lo asignado es lo
+        # que metia iconos a lo que salga.
+        elegidos = [sujeto] + [x for x in puestas[1:] if x != sujeto][:2]
+        lat = [x for x in cfg["laterales"] if existe(x) and x not in elegidos]
+        d = 0
+        while len(elegidos) < 3 and d < len(lat):
+            elegidos.append(lat[(i + d) % len(lat)])
+            d += 1
         if cfg["cielo"]:
             cie = [x for x in CIELO if existe(x)]
             if cie:
@@ -238,11 +248,60 @@ def repartir(escenas):
         ultima[sujeto] = i
         # El frente es el SUELO: la acera y la calzada, apoyadas en la linea
         # de tierra. Todo lo demas se planta encima.
-        suelo = cfg["suelo"]
+        # si el storyboard puso una estructura ancha, esa es el suelo
+        anchas = [x for x in puestas if existe(x) and apaisada(x)]
+        suelo = anchas[-1] if anchas and anchas[-1] != sujeto else cfg["suelo"]
         e["frente"] = (f"meta/{suelo}.png" if suelo and existe(suelo)
                        else "meta/" + fr[0] + ".png")
+        # Una pieza no puede estar a la vez de capa y de suelo: salia el
+        # mismo banco dos veces en el mismo plano.
+        raiz = e["frente"][5:-4]
+        elegidos = [k for k in elegidos if k != raiz] or elegidos[:1]
         e["capas"] = [{"archivo": "meta/" + k + ".png"} for k in elegidos]
     return escenas
+
+
+def emparejado_a_mano(storyboard):
+    """
+    Lo que el storyboard asigna A MANO a cada frase.
+
+    Puntuar palabras para elegir las piezas no produce sentido: produce
+    ruido con pinta de sentido. El storyboard ya empareja noventa y dos
+    frases con sus piezas -"coge lo que tu depositas" con la hucha y la
+    pareja firmando- y eso lo decidio alguien leyendo. Sustituirlo por un
+    buscador de coincidencias fue ir a peor.
+
+    Aqui se recupera ese emparejamiento y el automatismo se queda solo con
+    lo que si sabe hacer: colocar, medir tiempos y montar el sitio.
+    """
+    g = json.load(io.open(storyboard, encoding="utf-8"))
+    por_frase = {}
+    for e in g["escenas"]:
+        piezas = [c["archivo"][:-4] for c in e["capas"]
+                  if c.get("tipo_capa") == "imagen" and c.get("rol") != "fondo"]
+        if piezas:
+            por_frase.setdefault(norm(e["texto"]), []).extend(piezas)
+    return por_frase
+
+
+def busca(frase, por_frase, minimo=4):
+    """
+    El storyboard TROCEA las frases del guion, asi que cada trozo suyo esta
+    contenido en una frase mia. Comparar desde la primera palabra fallaba:
+    mi frase empieza "tres coma veintidos, ese es el margen" y el trozo
+    suyo empieza "y con ese margen se pagan las oficinas", que es la
+    segunda mitad de la misma.
+
+    Se buscan todos los trozos contenidos en la frase y se juntan sus
+    piezas: si el guion parte una frase en dos ideas, la escena tiene las
+    piezas de las dos.
+    """
+    n = " " + norm(frase) + " "
+    fuera = []
+    for k, v in por_frase.items():
+        if len(k.split()) >= minimo and " " + k + " " in n:
+            fuera.extend(v)
+    return list(dict.fromkeys(fuera))
 
 
 def desde_markdown(md, duraciones, segundos, pausa=1.0):
@@ -296,7 +355,11 @@ def main():
     if a.desde_md:
         dur = json.load(io.open(os.path.join(AQUI, a.duraciones), encoding="utf-8"))
         escenas, t = desde_markdown(os.path.join(AQUI, a.md), dur, a.segundos)
-        repartir(escenas)
+        pf = emparejado_a_mano(os.path.join(AQUI, "..", "..", "_f22", "guion.json"))
+        a_mano = {id(e): busca(e["texto"], pf) for e in escenas}
+        n_con = sum(1 for v in a_mano.values() if v)
+        print(f'{n_con}/{len(escenas)} planos con piezas emparejadas a mano')
+        repartir(escenas, a_mano)
         PL.planificar(escenas)
         guion = {"titulo": "prueba VOX - voz de pago", "paleta": "vox",
                  "fondo_imagen": FONDO,

@@ -75,7 +75,9 @@ FPS_ANIM = 12
 COLOCACION = {
     1: [(0.50, 0.46, 0.250)],
     2: [(0.33, 0.44, 0.185), (0.70, 0.50, 0.125)],
-    3: [(0.24, 0.42, 0.120), (0.53, 0.50, 0.145), (0.80, 0.40, 0.085)],
+    3: [(0.21, 0.41, 0.115), (0.51, 0.49, 0.140), (0.81, 0.38, 0.090)],
+    4: [(0.16, 0.40, 0.082), (0.40, 0.48, 0.100), (0.64, 0.42, 0.088),
+        (0.87, 0.35, 0.062)],
 }
 # El frente se apoya en el borde de abajo y se pasa de ancho a proposito:
 # tiene que salirse por los lados para que no se lea como una foto pegada.
@@ -241,7 +243,7 @@ def preparar(guion, base):
 
 
 def sujetos(esc):
-    return [c for c in esc.get("capas", []) if c.get("rol", "medio") != "frente"][:3]
+    return [c for c in esc.get("capas", []) if c.get("rol", "medio") != "frente"][:4]
 
 
 def geometria_frente(esc, cache, W, H):
@@ -251,12 +253,15 @@ def geometria_frente(esc, cache, W, H):
     if not f:
         return None
     p = cache[("frente", f)]
+    # El frente SIEMPRE abarca el ancho. Antes, si salia mas alto que el
+    # tope, lo encogia: un mostrador de proporcion 2,23 quedaba al 58% del
+    # encuadre, centrado, sin tapar a nadie, y los recortes volvian a
+    # aparecer cortados por una linea recta. Lo correcto es lo que hace un
+    # primer plano de verdad: ocupa todo el ancho y se sale por abajo.
     ancho = int(W * FRENTE_ANCHO)
     alto = int(p.size[1] * ancho / p.size[0])
-    if alto > H * FRENTE_ALTO_MAX:
-        alto = int(H * FRENTE_ALTO_MAX)
-        ancho = int(p.size[0] * alto / p.size[1])
-    return p, ancho, alto, H - alto
+    visible = min(alto, int(H * FRENTE_ALTO_MAX))
+    return p, ancho, alto, H - visible
 
 
 def pintar(esc, t, cfg, fondo, cache, pal):
@@ -319,8 +324,12 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         ancho = int(ancho * esc_f); alto = int(alto * esc_f)
         q = p.resize((max(2, ancho), max(2, alto)), Image.LANCZOS)
         vai = vox_mg.ondula(t) * H if esc.get("frente_vivo") else 0.0
+        # y0 lo calcula geometria_frente: es donde tiene que quedar el BORDE
+        # DE ARRIBA para que se vea solo la franja que toca. Usando
+        # H - alto se pegaba la pieza entera y el mostrador tapaba el
+        # encuadre de arriba abajo.
         im.paste(q, (int((W - ancho) / 2 + _dx * ancho),
-                     int(H - alto + _dy * alto + vai)), q)
+                     int(y0 + _dy * (H - y0) + vai)), q)
 
     # El efecto animado va DESPUES del frente: el agua es la superficie y
     # tapa lo que esta dentro de ella; la llama arde delante. Y en bucle,
@@ -459,7 +468,17 @@ def main():
     pal = vox.PALETAS.get(guion.get("paleta", "vox"), vox.PALETAS["vox"])
     FPS = cfg["fps"]
 
-    fondo = vox.papel(cfg["w"], cfg["h"], pal).convert("RGB")
+    # Si el guion trae un fondo de imagen -el papel que genero Meta- se usa
+    # ese. El `vox.papel` dibujado sirve, pero una textura de verdad tiene
+    # grano y veladuras que no salen de un algoritmo de tres lineas.
+    fi = guion.get("fondo_imagen")
+    ruta_fondo = os.path.join(base, fi) if fi else None
+    if ruta_fondo and os.path.exists(ruta_fondo):
+        fondo = Image.open(ruta_fondo).convert("RGB").resize(
+            (cfg["w"], cfg["h"]), Image.LANCZOS)
+        print("fondo:", fi, file=sys.stderr)
+    else:
+        fondo = vox.papel(cfg["w"], cfg["h"], pal).convert("RGB")
     cache = preparar(guion, base)
     print(f"{len(cache)} recortes en semitono - fondo bloqueado", file=sys.stderr)
 

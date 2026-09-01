@@ -11,8 +11,8 @@ como muestras y sumarlos en un array es instantaneo y no tiene limite.
 
 Cuatro sonidos, cada uno atado a algo que pasa en pantalla:
 
-    whoosh   en cada corte de plano. Cuatro variantes que rotan, porque el
-             mismo whoosh doscientas veces se convierte en un tic.
+    papel    en cada corte de plano. Cuatro variantes que rotan, porque el
+             mismo golpe doscientas veces se convierte en un tic.
     golpe    cuando entra una cifra o un anillo: el dato tiene que pesar.
     barrido  cuando crecen unas barras o un reparto.
     pop      cuando aparece un rotulo o una etiqueta.
@@ -38,19 +38,28 @@ def _sobre(n, ataque=0.004, caida=0.25):
     return e
 
 
-def whoosh(dur=0.34, corte=2600, semilla=0):
+def papel(dur=0.13, semilla=0):
+    """
+    Golpe de papel: una hoja que se pasa, no una rafaga de viento.
+
+    El whoosh que habia antes era un barrido de ruido, el sonido de
+    transicion de plantilla que lleva todo YouTube. Aqui el video es un
+    collage de recortes sobre papel, y lo que suena cuando cambia el plano
+    tiene que ser eso: papel. Sale de un estallido de ruido corto, filtrado
+    en agudos, con un golpe grave debajo que le da peso.
+    """
     n = int(SR * dur)
     r = np.random.default_rng(semilla)
     x = r.normal(0, 1, n).astype(np.float32)
-    # barrido de filtro hecho a mano: la frecuencia sube durante el sonido,
-    # que es lo que se lee como movimiento y no como ruido
-    y = np.zeros(n, np.float32)
-    z = 0.0
+    # paso alto de un polo: quita el grave del ruido y deja el roce
+    y = np.zeros(n, np.float32); z = 0.0
     for i in range(n):
-        k = 0.02 + 0.30 * (i / n)
-        z += k * (x[i] - z)
-        y[i] = z
-    y *= _sobre(n, 0.02, 0.30)
+        z += 0.35 * (x[i] - z)
+        y[i] = x[i] - z
+    y *= _sobre(n, 0.001, 0.05)
+    # cuerpo grave, corto, para que el corte tenga peso y no solo siseo
+    t = np.arange(n, dtype=np.float32) / SR
+    y += 0.55 * np.sin(2 * np.pi * 78 * t) * _sobre(n, 0.001, 0.035)
     return y / (np.abs(y).max() + 1e-9)
 
 
@@ -84,7 +93,7 @@ def main():
 
     total = sum(e["duracion"] for e in guion["escenas"])
     cama = np.zeros(int(SR * (total + 1.5)), np.float32)
-    WH = [whoosh(semilla=s) for s in range(4)]
+    WH = [papel(semilla=s) for s in range(4)]
     GO, PO, BA = golpe(), pop(), barrido_fx()
 
     def meter(x, seg, vol):
@@ -96,9 +105,9 @@ def main():
     t = 0.0
     eventos = 0
     for k, e in enumerate(guion["escenas"]):
-        # el whoosh entra UN POCO ANTES del corte: si cae justo encima se
-        # oye como un golpe seco y no como un movimiento
-        meter(WH[k % 4], max(0.0, t - 0.07), 0.32)
+        # el papel entra justo EN el corte: es un golpe, no un movimiento,
+        # y adelantandolo se oye desligado de lo que pasa en pantalla
+        meter(WH[k % 4], max(0.0, t - 0.015), 0.40)
         eventos += 1
         g = e.get("grafico")
         if g:

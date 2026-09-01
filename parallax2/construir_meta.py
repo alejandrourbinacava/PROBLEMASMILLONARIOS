@@ -38,30 +38,30 @@ MEDIOS_POR_PLANO = 3        # con el fondo y la estructura, cinco capas
 # Cada pieza con las palabras por las que entra. No es una etiqueta: es lo
 # que decide si esa imagen tiene algo que ver con lo que se esta diciendo.
 BIBLIOTECA = {
- "m_banquero":  ("medio", "banquero ejecutivo dueno banco negocio accionista socio"),
- "m_inspector": ("medio", "regulador supervision norma evalua licencia inspector auditoria control"),
- "m_fundador":  ("medio", "emprendedor montar abrir capital fundador solicitud plan"),
- "m_consultor": ("medio", "consultor sistema informatico plan negocio tecnologia migrar"),
- "m_familia":   ("medio", "cliente depositas pareja hipoteca deposito firma contrato"),
- "m_cola":      ("medio", "cola gente clientes espera fila plantilla empleados nominas"),
- "f_oficina":   ("frente", "oficina sucursal abrir puertas fachada tienda barrio"),
- "f_regulador": ("frente", "regulador institucion licencia ficha estado concede autorizacion"),
- "f_boveda":    ("frente", "boveda capital custodia acorazada reserva colchon"),
- "f_hucha":     ("frente", "deposito ahorro dinero guardar depositas"),
- "f_libro":     ("frente", "hoja calculo contabilidad balance prestado libro columnas"),
- "f_servidor":  ("frente", "sistema informatico servidor tecnologia nube cuenta migrar"),
- "f_torre":     ("frente", "rascacielos grandes volumen nueva york corporativo"),
- "f_balanza":   ("frente", "margen diferencia compara desequilibrio proporcion tres veces"),
- "f_cerrado":   ("frente", "cierran desaparecen quiebra venden lunes cerrado"),
- "f_maletin":   ("frente", "dinero capital millones maletin abogados"),
- "f_monedas":   ("frente", "monedas cifras coste gasto pilas cuesta"),
- "f_mostrador": ("frente", "mostrador cajero tienda ventanilla puesto"),
- "f_recibos":   ("frente", "gastos nominas facturas recibos alquiler mantenimiento"),
- "f_candado":   ("frente", "no puedes tocar bloqueado retirar quieto permiso"),
- "f_cinta":     ("frente", "medir ratio porcentaje minimo apalancamiento coeficiente"),
- "f_engranaje": ("frente", "maquinaria funciona sistema engranaje cumplimiento"),
- "f_escudo":    ("frente", "seguro garantia proteccion depositos fondo escudo"),
- "f_expediente":("frente", "solicitud expediente documentos papeles requisito carpeta"),
+ "m_banquero":  ("medio", "banquero ejecutivo dueno duenos accionista socio traje responsable enhorabuena consigues"),
+ "m_inspector": ("medio", "regulador supervision supervisado norma normas evalua evaluan licencia inspector auditoria auditorias controles vigilado condiciones exigen"),
+ "m_fundador":  ("medio", "emprendedor montar montarlo abrir abres capital fundador solicitud restaurante invertido inversion"),
+ "m_consultor": ("medio", "consultor consultores sistema sistemas informatico tecnologia tecnologico migrando migrar nube"),
+ "m_familia":   ("medio", "cliente clientes depositas deposita pareja hipoteca hipotecas deposito depositos firma contrato"),
+ "m_cola":      ("medio", "cola gente clientes espera esperando fila plantilla empleados nominas contratado"),
+ "f_oficina":   ("frente", "banco bancos oficina oficinas sucursal abrir abres puertas fachada tienda barrio piensas"),
+ "f_regulador": ("frente", "regulador reguladores institucion licencia ficha concede autorizacion solicitud bancaria interviene"),
+ "f_boveda":    ("frente", "boveda capital custodia acorazada reserva colchon guardado balance absorber"),
+ "f_hucha":     ("frente", "deposito depositos depositas ahorro guardar custodias"),
+ "f_libro":     ("frente", "hoja calculo contabilidad balance prestado prestados libro columnas"),
+ "f_servidor":  ("frente", "sistema sistemas informatico servidor servidores tecnologia nube migrando"),
+ "f_torre":     ("frente", "rascacielos volumen nueva york corporativo metropolitana"),
+ "f_balanza":   ("frente", "margen diferencia compara comparacion desequilibrio proporcion"),
+ "f_cerrado":   ("frente", "cierran cierra desaparecen quiebra venden vende lunes cerrado viernes"),
+ "f_maletin":   ("frente", "dinero millones maletin abogados llevan doscientos"),
+ "f_monedas":   ("frente", "monedas cifra cifras coste costes gasto gastos pilas cuesta cuanto dolares"),
+ "f_mostrador": ("frente", "mostrador cajero ventanilla automatico atiende cartel interes"),
+ "f_recibos":   ("frente", "gastos nominas facturas recibos alquiler mantenimiento seguridad pagan"),
+ "f_candado":   ("frente", "tocarlo tocar bloqueado retirar permiso simbolica no puedes"),
+ "f_cinta":     ("frente", "medir ratio porcentaje minimo apalancamiento coeficiente ponderados riesgo capitalizado"),
+ "f_engranaje": ("frente", "maquinaria funciona funcionando engranaje cumplimiento cumplir decoracion"),
+ "f_escudo":    ("frente", "seguro garantia proteccion escudo siete anos"),
+ "f_expediente":("frente", "solicitud expediente documentos papeles requisito carpeta reembolsables tasa presuncion prueba"),
 }
 FONDO = "meta/f_papel.png"
 
@@ -73,14 +73,27 @@ def norm(t):
 
 def puntuar(texto, palabras, penalizacion):
     """
-    Cuantas de sus palabras aparecen, menos lo reciente que sea su ultimo uso.
+    Cuantas de sus palabras aparecen, con MAS peso si salen al principio.
 
-    Sin la penalizacion el reparto colapsa: el banquero casa con casi todo y
-    sale en catorce planos seguidos. Con ella, cuando dos piezas empatan
-    gana la que lleva mas tiempo sin salir.
+    El sujeto de una frase en castellano va casi siempre en las primeras
+    palabras. "Un BANCO medio de Estados Unidos gana tres coma veintidos
+    dolares al ano por cada cien que tiene PRESTADOS": contando hits a
+    secas, el libro de contabilidad -que casa con "prestados"- empataba con
+    la oficina bancaria, y mandaba el libro. De lo que habla la frase es de
+    un banco, y eso es lo que tiene que resaltar.
+
+    La penalizacion por uso reciente evita el otro colapso: sin ella el
+    banquero, que casa con casi todo, sale en catorce planos seguidos.
     """
     t = norm(texto)
-    return sum(1 for w in palabras.split() if w in t) - penalizacion
+    cabeza = " ".join(t.split()[:6])
+    p = 0.0
+    for w in palabras.split():
+        if w in cabeza:
+            p += 2.2
+        elif w in t:
+            p += 1.0
+    return p - penalizacion
 
 
 PROP_FRENTE = 1.35
@@ -131,7 +144,18 @@ def repartir(escenas):
         me = sorted((k for k in medios),
                     key=lambda k: -puntuar(t, BIBLIOTECA[k][1], pen(k)))
 
+        # La capa que MANDA tiene que tener algo que ver con la frase. Si
+        # la mejor de las personas no casa ni una palabra, manda el objeto
+        # que si casa: en "un banco medio de Estados Unidos gana..." lo que
+        # tiene que resaltar es el banco, no un candado puesto de relleno.
+        mejor_me = puntuar(t, BIBLIOTECA[me[0]][1], pen(me[0])) if me else -9
+        mejor_fr = puntuar(t, BIBLIOTECA[fr[0]][1], pen(fr[0])) if fr else -9
         elegidos = me[:MEDIOS_POR_PLANO]
+        if mejor_fr > mejor_me and len(fr) > 1:
+            # el que mas casa pasa a dominar y la estructura la pone el
+            # siguiente apaisado
+            elegidos = [fr[0]] + me[:MEDIOS_POR_PLANO - 1]
+            fr = fr[1:]
         # el segundo y tercer medio pueden ser objetos: un plano con tres
         # personas y nada mas se lee como una foto de grupo, no como una
         # escena. Se rellena con estructuras sobrantes en semitono.
@@ -177,8 +201,6 @@ def desde_markdown(md, duraciones, segundos, pausa=1.0):
             for j in range(k):
                 e = {"id": f"{cap}_{len(escenas):02d}", "texto": texto,
                      "duracion": paso, "muda": j > 0, "capas": []}
-                if j == 0 and cap in ("gancho", "cap1"):
-                    e["etiqueta"] = cap.upper()
                 escenas.append(e)
             total += d
     return escenas, total

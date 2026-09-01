@@ -16,7 +16,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_banquero.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "lateral"
     },
     {
@@ -24,20 +24,20 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/m_banquero.png",
      "entrada": "lateral"
     }
    ],
-   "etiqueta": "GANCHO",
    "frente": "meta/f_libro.png",
    "grafico": {
-    "tipo": "reparto",
+    "tipo": "cifra",
     "valor": 3.22,
     "sufijo": "",
     "decimales": 2,
     "palabra": "Un"
    },
    "entrada_frente": "sube",
+   "composicion": "dominante_izq",
    "barrido": false,
    "formas": []
   },
@@ -48,20 +48,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/m_cola.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_regulador.png",
+   "frente": "meta/f_mostrador.png",
    "entrada_frente": "sube",
+   "composicion": "triangulo",
    "barrido": false,
    "formas": []
   },
@@ -72,20 +73,19 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_servidor.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_cola.png",
+     "archivo": "meta/m_consultor.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/f_balanza.png",
      "entrada": "pop"
     }
    ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_oficina.png",
+   "frente": "meta/f_cinta.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 3.22,
@@ -94,6 +94,7 @@
     "palabra": "Tres"
    },
    "entrada_frente": "sube",
+   "composicion": "escalera",
    "barrido": false,
    "formas": []
   },
@@ -104,20 +105,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/m_familia.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_engranaje.png",
+   "frente": "meta/f_oficina.png",
    "entrada_frente": "sube",
+   "composicion": "centro_fuerte",
    "barrido": false,
    "formas": []
   },
@@ -128,20 +130,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_balanza.png",
-     "entrada": "lateral"
-    },
-    {
      "archivo": "meta/m_banquero.png",
      "entrada": "lateral"
     },
     {
      "archivo": "meta/f_candado.png",
      "entrada": "lateral"
+    },
+    {
+     "archivo": "meta/f_boveda.png",
+     "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_monedas.png",
+   "frente": "meta/f_regulador.png",
    "entrada_frente": "sube",
+   "composicion": "abierto",
    "barrido": false,
    "formas": []
   },
@@ -156,17 +159,17 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/m_inspector.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_boveda.png",
+     "archivo": "meta/f_torre.png",
      "entrada": "pop"
     }
    ],
-   "etiqueta": "GANCHO",
    "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
+   "composicion": "dominante_izq",
    "barrido": true,
    "formas": []
   },
@@ -177,11 +180,11 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_torre.png",
+     "archivo": "meta/m_cola.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_familia.png",
+     "archivo": "meta/f_cerrado.png",
      "entrada": "lateral"
     },
     {
@@ -189,8 +192,9 @@
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_mostrador.png",
+   "frente": "meta/f_engranaje.png",
    "entrada_frente": "sube",
+   "composicion": "triangulo",
    "barrido": true,
    "formas": []
   },
@@ -205,17 +209,17 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/m_fundador.png",
      "entrada": "pop"
     }
    ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_expediente.png",
+   "frente": "meta/f_oficina.png",
    "entrada_frente": "sube",
+   "composicion": "escalera",
    "barrido": false,
    "formas": []
   },
@@ -226,20 +230,21 @@
    "muda": true,
    "capas": [
     {
+     "archivo": "meta/f_mostrador.png",
+     "entrada": "pop"
+    },
+    {
      "archivo": "meta/m_banquero.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_candado.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_cinta.png",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
+   "composicion": "centro_fuerte",
    "barrido": false,
    "formas": []
   },
@@ -250,7 +255,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/m_familia.png",
      "entrada": "lateral"
     },
     {
@@ -258,13 +263,13 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/f_servidor.png",
      "entrada": "lateral"
     }
    ],
-   "etiqueta": "GANCHO",
    "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
+   "composicion": "abierto",
    "barrido": false,
    "formas": [],
    "efecto": "agua",
@@ -281,16 +286,17 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/m_consultor.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/m_cola.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_oficina.png",
+   "frente": "meta/f_engranaje.png",
    "entrada_frente": "sube",
+   "composicion": "dominante_izq",
    "barrido": false,
    "formas": [],
    "efecto": "agua",
@@ -303,11 +309,11 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/m_familia.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     },
     {
@@ -315,8 +321,9 @@
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_monedas.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
+   "composicion": "triangulo",
    "barrido": false,
    "formas": [],
    "efecto": "agua",
@@ -329,7 +336,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "pop"
     },
     {
@@ -337,13 +344,13 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_cola.png",
+     "archivo": "meta/m_fundador.png",
      "entrada": "pop"
     }
    ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_engranaje.png",
+   "frente": "meta/f_cinta.png",
    "entrada_frente": "sube",
+   "composicion": "escalera",
    "barrido": true,
    "formas": []
   },
@@ -354,20 +361,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_boveda.png",
-     "entrada": "sube"
-    },
-    {
      "archivo": "meta/f_torre.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/f_cerrado.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/f_escudo.png",
      "entrada": "sube"
     }
    ],
-   "frente": "meta/f_mostrador.png",
+   "frente": "meta/f_regulador.png",
    "entrada_frente": "sube",
+   "composicion": "centro_fuerte",
    "barrido": true,
    "formas": []
   },
@@ -378,7 +386,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
@@ -386,12 +394,11 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "pop"
     }
    ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_expediente.png",
+   "frente": "meta/f_oficina.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 2,
@@ -400,6 +407,7 @@
     "palabra": "Y"
    },
    "entrada_frente": "sube",
+   "composicion": "abierto",
    "barrido": true,
    "formas": []
   },
@@ -410,20 +418,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/f_mostrador.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/m_cola.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/m_familia.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_cinta.png",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
+   "composicion": "dominante_izq",
    "barrido": true,
    "formas": []
   },
@@ -434,11 +443,11 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/m_inspector.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "sube"
     },
     {
@@ -446,9 +455,9 @@
      "entrada": "sube"
     }
    ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_hucha.png",
+   "frente": "meta/f_expediente.png",
    "entrada_frente": "sube",
+   "composicion": "triangulo",
    "barrido": false,
    "formas": []
   },
@@ -459,20 +468,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_familia.png",
+     "archivo": "meta/f_regulador.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_servidor.png",
      "entrada": "pop"
     },
     {
      "archivo": "meta/m_consultor.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/m_cola.png",
-     "entrada": "pop"
     }
    ],
-   "frente": "meta/f_regulador.png",
+   "frente": "meta/f_engranaje.png",
    "entrada_frente": "sube",
+   "composicion": "escalera",
    "barrido": false,
    "formas": []
   },
@@ -483,21 +493,21 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_banquero.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "pop"
     },
     {
      "archivo": "meta/f_cerrado.png",
      "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_maletin.png",
+     "entrada": "pop"
     }
    ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_oficina.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
+   "composicion": "centro_fuerte",
    "barrido": false,
    "formas": [],
    "efecto": "fuego",
@@ -510,20 +520,21 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/m_fundador.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/m_banquero.png",
      "entrada": "sube"
     }
    ],
    "frente": "meta/f_monedas.png",
    "entrada_frente": "sube",
+   "composicion": "abierto",
    "barrido": false,
    "formas": [],
    "efecto": "fuego",
@@ -536,11 +547,11 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_boveda.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "pop"
     },
     {
@@ -548,8 +559,9 @@
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_hucha.png",
+   "frente": "meta/f_cinta.png",
    "entrada_frente": "sube",
+   "composicion": "dominante_izq",
    "barrido": false,
    "formas": [],
    "efecto": "fuego",

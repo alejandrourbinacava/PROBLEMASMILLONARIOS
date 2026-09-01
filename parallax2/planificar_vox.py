@@ -53,8 +53,11 @@ FUEGO = ("pierd", "perdid", "quiebra", "desaparec", "se vend", "arde",
          "no existe", "sin liquidez", "susto", "golpe", "cierran", "ruina")
 AGUA = ("deposit", "liquid", "flujo", "corriente", "colchon")
 
-MUEBLES = ("banda_inferior", "numero_escena", "banda_lateral",
-           "bloque_esquina", "pie_fuente")
+# Fuera la banda lateral y el bloque de esquina: eran una raya naranja y un
+# cuadrado de color puestos para llegar a la cuenta de elementos, y no
+# dicen nada. Con cinco capas de imagen por plano ya no hacen falta de
+# relleno. Queda lo que informa.
+MUEBLES = ("banda_inferior", "pie_fuente")
 
 
 def norm(t):
@@ -202,7 +205,7 @@ def cuenta(e, formas=None):
 
 
 def planificar(escenas):
-    ents, maquinas, avisos = [], 0, []
+    ents, maquinas, avisos, comps = [], 0, [], []
     for i, e in enumerate(escenas):
         texto = e.get("texto", "")
 
@@ -222,6 +225,12 @@ def planificar(escenas):
         # coma veintidos por cada cien"- es un reparto.
         if g:
             n, _ = cifras(texto)
+            # Un reparto sin etiquetas es una barra de color sin decir que
+            # reparte: sale una raya roja y gris en mitad de la pantalla y
+            # no se entiende nada. Si no hay como nombrar las dos partes,
+            # el dato se cuenta como cifra, que si se lee solo.
+            if g == "reparto":
+                g = "cifra"
             e["grafico"] = {"tipo": g, "valor": n[0],
                             "sufijo": "%" if g == "anillo" else "",
                             "decimales": 2 if n[0] != int(n[0]) else 0,
@@ -243,6 +252,17 @@ def planificar(escenas):
                 maquinas += 1
             else:
                 tp["entrada"] = ent
+
+        # La composicion no se repite nunca dos veces seguidas, y cuando hay
+        # rotulo -que se dibuja a la izquierda- la capa que manda se va a la
+        # derecha para no pelearse con el texto.
+        import render_vox as RV
+        ultima = comps[-1] if comps else None
+        libres = [c for c in RV.ORDEN if c != ultima]
+        if e.get("texto_pantalla"):
+            libres = [c for c in libres if not c.endswith("_izq")] or libres
+        e["composicion"] = libres[len(comps) % len(libres)]
+        comps.append(e["composicion"])
 
         e["barrido"] = any(k in norm(texto) for k in GIRO)
 

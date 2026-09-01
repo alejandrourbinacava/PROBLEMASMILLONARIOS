@@ -10,7 +10,10 @@ pero no produce un montaje: produce un ciclo. Un montaje real alterna
 ESCALA (ancho / medio / cerca) y LADO (izquierda / centro / derecha), y
 cuando una idea se parte en varios planos, los planos se acercan.
 """
-import json, argparse, collections
+import json, argparse, collections, os
+from PIL import Image
+
+import render as R
 
 # ---------------------------------------------------------------------------
 # TIPOS DE ESCENA. Que las 225 sean fondo + sujeto + primer plano es lo que
@@ -24,6 +27,8 @@ import json, argparse, collections
 #   rotulo   una frase sola sobre el fondo. Para los remates.
 #   clip     metraje de stock.
 # ---------------------------------------------------------------------------
+AMPLIACION_MAX = 1.35
+
 TIPOS = ["pleno", "detalle", "silueta", "grafico", "rotulo"]
 
 # Ritmo de estructura. El pleno es el suelo; los demas entran a intervalos
@@ -132,7 +137,7 @@ def elegir(candidatos, evitar, historial, n=2):
     return candidatos[0]
 
 
-def planificar(escenas):
+def planificar(escenas, anchos=None):
     por_escala = collections.defaultdict(list)
     for nom, (esc, lado) in COMPOS.items():
         por_escala[esc].append(nom)
@@ -193,6 +198,16 @@ def planificar(escenas):
                 or [c for c in por_escala[escala] if COMPOS[c][1] != (h_lado[-1] if h_lado else "")] \
                 or por_escala[escala]
         cands.sort(key=lambda c: c in h_comp[-4:])
+        if anchos:
+            # Descarta los encuadres que pedirian mas resolucion de la que
+            # hay. Vale mas un plano abierto y nitido que uno cerrado y
+            # blando: la ampliacion no se ve como "mas cerca", se ve como
+            # una imagen mala.
+            caben = [c for c in cands if cabe(c, e, anchos)]
+            if caben:
+                cands = caben
+            else:
+                cambios["sin_resolucion"] += 1
         comp = elegir(cands, [], h_comp, 2)
         lado = COMPOS[comp][1]
 
@@ -240,13 +255,47 @@ def informe(escenas):
     print(f"  centrado en el {100*lados['C']//n}% de las escenas")
 
 
+def ancho_fuente(base, escenas):
+    """Ancho en pixeles de cada PNG, para no pedirle mas de lo que da."""
+    anchos = {}
+    for e in escenas:
+        for c in e.get("capas", []):
+            a = c["archivo"]
+            if a in anchos:
+                continue
+            r = os.path.join(base, a)
+            try:
+                anchos[a] = Image.open(r).size[0]
+            except Exception:
+                anchos[a] = None
+    return anchos
+
+
+def cabe(comp, e, anchos, W=1920):
+    """La composicion no debe ampliar ninguna capa mas de AMPLIACION_MAX."""
+    for c in e.get("capas", []):
+        src = anchos.get(c["archivo"])
+        if not src:
+            continue
+        base = R.PRESETS_ROL[c["rol"]]["ancho"]
+        esc = R.PRESETS_COMP.get(comp, {}).get(c["rol"], (0, 0, 1.0))[2]
+        esc *= R.PRESETS_CLASE.get(c.get("clase", "arquitectura"), {}).get("escala", 1.0)
+        if base * esc * W > src * AMPLIACION_MAX:
+            return False
+    return True
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("guion")
     a = ap.parse_args()
     g = json.load(open(a.guion, encoding="utf-8"))
     print("ANTES"); informe(g["escenas"])
-    planificar(g["escenas"])
+    base = os.path.dirname(os.path.abspath(a.guion))
+    anchos = ancho_fuente(base, g["escenas"])
+    hay = sum(1 for v in anchos.values() if v)
+    print(f"{hay}/{len(anchos)} PNG medidos en disco para el guardian de resolucion")
+    planificar(g["escenas"], anchos)
     print("\nDESPUES"); informe(g["escenas"])
     json.dump(g, open(a.guion, "w", encoding="utf-8"),
               ensure_ascii=False, indent=2)

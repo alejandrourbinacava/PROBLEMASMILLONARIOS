@@ -135,6 +135,21 @@ PRESETS_MOV = {
     "bajar":      dict(k= 0.7,  dx= 0.0, dy= 1.5, contra=False),
 }
 
+# QUE ES la capa, no a que distancia esta. El rol dice lo segundo; la clase
+# corrige lo primero. Con una sola geometria para todo salian edificios
+# colgando del cielo y mesas a la altura de un tejado: un edificio se ancla
+# arriba y ocupa el ancho, un mueble va apoyado abajo y mas pequeno, y un
+# documento flota centrado y aun mas pequeno.
+PRESETS_CLASE = {
+    "arquitectura": dict(),                                   # el patron base
+    "mueble":    dict(dy= 0.30, escala=0.80, ancla="bottom_frac"),
+    "objeto":    dict(dy= 0.20, escala=0.52, ancla="centro_frac"),
+    "documento": dict(dy= 0.16, escala=0.46, ancla="centro_frac"),
+    "persona":   dict(dy= 0.10, escala=0.85, ancla="bottom_frac"),
+    "alto":      dict(dy=-0.12, escala=0.55, ancla="top_frac"),  # camaras, techos
+    "cielo":     dict(),
+}
+
 LOOK = dict(bloom=0.38, bloom_th=168, bloom_r=26,
             vineta=0.30, grano=3.0, flicker=0.012, aberracion=1.2)
 
@@ -295,10 +310,16 @@ def profundidad_de_campo(im, preset, ajuste):
     return rgb
 
 
-def cargar(path, W, H, rol, ajuste, comp="centrado"):
+def cargar(path, W, H, rol, ajuste, comp="centrado", clase="arquitectura"):
     p = dict(PRESETS_ROL[rol])
+    cl = PRESETS_CLASE.get(clase, {})
     cdx, cdy, cesc = PRESETS_COMP.get(comp, {}).get(rol, (0.0, 0.0, 1.0))
-    p["ancho"] *= cesc
+    p["ancho"] *= cesc * cl.get("escala", 1.0)
+    cdy += cl.get("dy", 0.0)
+    if cl.get("ancla") == "centro_frac":
+        p["ancla"] = ("center", 0.50)
+    elif cl.get("ancla") == "bottom_frac":
+        p["ancla"] = ("bottom", 0.96)
     p.update(ajuste or {})
     im = Image.open(path)
     im = im.convert("RGBA") if im.mode != "RGBA" else im
@@ -403,7 +424,8 @@ def render_escena(esc, cfg, base, ff):
     capas = []
     for c in ([] if clip else esc["capas"]):
         ruta = c["archivo"] if os.path.isabs(c["archivo"]) else os.path.join(base, c["archivo"])
-        L = cargar(ruta, W, H, c["rol"], c.get("ajuste"), comp)
+        L = cargar(ruta, W, H, c["rol"], c.get("ajuste"), comp,
+                   c.get("clase", "arquitectura"))
         L["entrada"] = c.get("entrada", ENTRADA_ROL.get(c["rol"], "golpe"))
         L["salida"] = c.get("salida", "ninguna")
         L["retardo"] = c.get("retardo", len(capas) * ESCALON)

@@ -1,0 +1,447 @@
+{
+  "titulo": "Prueba nube 5 capas",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "fotorrealista cinematografico, gran presupuesto, optica de cine, iluminacion motivada por las fuentes que hay en la propia escena, contraste alto, mucha profundidad y detalle, sin texto, sin logotipos",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "En febrero, los casinos de Nevada ganaron esto.",
+      "duracion": 4.0,
+      "movimiento": "drift_der",
+      "composicion": "lejos_izq",
+      "grade": "dorado_noche",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_01.png",
+          "prompt": "cielo nocturno del desierto con nubes rotas y estrellas sobre azul marino profundo, con el resplandor de una ciudad en el borde de abajo. visto desde el fondo, con la profundidad de la sala delante",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "golpe",
+          "retardo": 0.09,
+          "clase": "arquitectura"
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "golpe",
+          "retardo": 0.18,
+          "clase": "persona"
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_fichas_torre.png",
+          "prompt": "torres de fichas de casino apiladas a distintas alturas, vista frontal",
+          "entrada": "golpe",
+          "retardo": 0.27,
+          "clase": "mueble"
+        },
+        {
+          "rol": "frente",
+          "archivo": "01_multitud.png",
+          "prompt": "multitud de espaldas en traje de gala, siluetas a contraluz, franja ancha",
+          "entrada": "golpe",
+          "retardo": 0.36,
+          "clase": "persona"
+        }
+      ],
+      "tipo": "pleno"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Es lo que perdieron.",
+      "duracion": 3.5,
+      "movimiento": "drift_izq",
+      "composicion": "cerca_der",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "latigo_izq",
+          "retardo": 0.0,
+          "clase": "arquitectura"
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "latigo_izq",
+          "retardo": 0.09,
+          "clase": "persona"
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_fichas_torre_b.png",
+          "prompt": "torres de fichas de casino apiladas a distintas alturas, vista frontal, visto en angulo de tres cuartos desde un lado",
+          "entrada": "latigo_izq",
+          "retardo": 0.18,
+          "clase": "mueble"
+        },
+        {
+          "rol": "frente",
+          "archivo": "01_multitud_b.png",
+          "prompt": "multitud de espaldas en traje de gala, siluetas a contraluz, franja ancha, visto en angulo de tres cuartos desde un lado",
+          "entrada": "latigo_izq",
+          "retardo": 0.27,
+          "clase": "persona"
+        }
+      ],
+      "tipo": "detalle"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Mil doscientos millones en un solo mes.",
+      "duracion": 4.0,
+      "movimiento": "push_in",
+      "composicion": "lejos",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_02.png",
+          "prompt": "horizonte de desierto de Nevada de noche, montanas lejanas recortadas, resplandor anaranjado de una ciudad a lo lejos. visto a la altura de la mesa, con el techo fuera de cuadro",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        }
+      ],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1236,
+        "sufijo": " M$",
+        "pie": "en un solo mes",
+        "y": 0.2,
+        "entrada": "golpe",
+        "retardo": 1.1
+      },
+      "texto_pantalla": {
+        "texto": "1.236 MILLONES",
+        "px": 104,
+        "estilo": "sube"
+      },
+      "tipo": "grafico"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Y no depende de la temporada.",
+      "duracion": 3.5,
+      "movimiento": "contra_izq",
+      "composicion": "derecha",
+      "grade": "dorado_noche",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_03.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde el fondo, con la profundidad de la sala delante",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "golpe",
+          "retardo": 0.09,
+          "clase": "arquitectura"
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "golpe",
+          "retardo": 0.18,
+          "clase": "persona"
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_licencia_b.png",
+          "prompt": "documento de licencia oficial enmarcado con sello en relieve, vista frontal, visto en angulo de tres cuartos desde un lado",
+          "entrada": "golpe",
+          "retardo": 0.27,
+          "clase": "documento"
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_cordon.png",
+          "prompt": "cordon de terciopelo rojo entre postes dorados, franja ancha",
+          "entrada": "golpe",
+          "retardo": 0.36,
+          "clase": "objeto"
+        }
+      ],
+      "tipo": "pleno"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Ni de si el marketing funcionó.",
+      "duracion": 4.0,
+      "movimiento": "drift_der",
+      "composicion": "lejos_izq",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_03c.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto a la altura de la mesa, con el techo fuera de cuadro",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "NI DE SI EL MARKETING FUNCIONÓ",
+        "px": 108,
+        "y": 0.5,
+        "acento": [
+          255,
+          196,
+          90
+        ],
+        "estilo": "golpe"
+      }
+    },
+    {
+      "id": "cap1_dos_casinos_01",
+      "texto": "Depende de una fórmula que no falla.",
+      "duracion": 3.5,
+      "movimiento": "push_in",
+      "composicion": "alto",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_04.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde el centro de la sala",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos2.png",
+          "prompt": "manzana de edificios bajos en SEGUNDO PLANO, oscuros y sin detalle, apenas siluetas contra la noche, alineadas de un extremo al otro",
+          "entrada": "desplome",
+          "retardo": 0.09,
+          "clase": "arquitectura"
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_jugador.png",
+          "prompt": "hombre de esmoquin de pie de perfil junto a una mesa de juego, de cuerpo entero, con una copa en la mano",
+          "entrada": "desplome",
+          "retardo": 0.18,
+          "clase": "persona"
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_maletin_c.png",
+          "prompt": "maletin metalico abierto lleno de fajos de billetes, visto en contrapicado corto desde abajo y muy cerca",
+          "entrada": "desplome",
+          "retardo": 0.27,
+          "clase": "objeto"
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_fichas_b.png",
+          "prompt": "fichas de casino desparramadas muy cerca de la camara, desenfocadas, visto en angulo de tres cuartos desde un lado",
+          "entrada": "desplome",
+          "retardo": 0.36,
+          "clase": "objeto"
+        }
+      ],
+      "latigo": "izq",
+      "tipo": "pleno"
+    },
+    {
+      "id": "cap1_dos_casinos_02",
+      "texto": "Así que la pregunta se hace sola.",
+      "duracion": 4.0,
+      "movimiento": "contra_der",
+      "composicion": "izquierda",
+      "grade": "dorado_noche",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_04b.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde un lateral, con la pared cerca a un lado",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "golpe",
+          "retardo": 0.09,
+          "clase": "arquitectura"
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "golpe",
+          "retardo": 0.18,
+          "clase": "persona"
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_maquinas.png",
+          "prompt": "fila frontal de maquinas tragaperras encendidas, vista recta y simetrica",
+          "entrada": "golpe",
+          "retardo": 0.27,
+          "clase": "mueble"
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_fichas_c.png",
+          "prompt": "fichas de casino desparramadas muy cerca de la camara, desenfocadas, visto en contrapicado corto desde abajo y muy cerca",
+          "entrada": "golpe",
+          "retardo": 0.36,
+          "clase": "objeto"
+        }
+      ],
+      "tipo": "pleno"
+    },
+    {
+      "id": "cap1_dos_casinos_03",
+      "texto": "¿Cuánto cuesta tener uno?",
+      "duracion": 3.5,
+      "movimiento": "drift_izq",
+      "composicion": "lejos_der",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_04c.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde el fondo, con la profundidad de la sala delante",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        }
+      ],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 696,
+        "sufijo": " M$",
+        "pie": "en un solo mes",
+        "y": 0.2,
+        "entrada": "golpe",
+        "retardo": 1.1
+      },
+      "texto_pantalla": {
+        "texto": "¿CUÁNTO CUESTA?",
+        "px": 112,
+        "estilo": "golpe"
+      },
+      "tipo": "grafico"
+    },
+    {
+      "id": "cap1_dos_casinos_04",
+      "texto": "El dinero es la parte fácil.",
+      "duracion": 4.0,
+      "movimiento": "push_in",
+      "composicion": "lejos",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_05.png",
+          "prompt": "horizonte de desierto de Nevada de noche, montanas lejanas recortadas, resplandor anaranjado de una ciudad a lo lejos. visto desde una esquina alta",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        },
+        {
+          "rol": "horizonte",
+          "archivo": "h_vecinos.png",
+          "prompt": "fila continua de edificios de ciudad en SEGUNDO PLANO, en penumbra y casi en silueta, poco detalle, ventanas apenas insinuadas, todos de altura parecida, alineados de un extremo al otro sin perspectiva",
+          "entrada": "desplome",
+          "retardo": 0.09,
+          "clase": "arquitectura"
+        },
+        {
+          "rol": "figura",
+          "archivo": "f_crupier.png",
+          "prompt": "crupier de casino de pie detras de una mesa de juego, chaleco negro, camisa blanca y pajarita, de cuerpo entero y visto de frente",
+          "entrada": "desplome",
+          "retardo": 0.18,
+          "clase": "persona"
+        },
+        {
+          "rol": "suelo",
+          "archivo": "m_planos_b.png",
+          "prompt": "maqueta arquitectonica de un edificio sobre soporte junto a planos enrollados, visto en angulo de tres cuartos desde un lado",
+          "entrada": "desplome",
+          "retardo": 0.27,
+          "clase": "objeto"
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_manos_b.png",
+          "prompt": "unicamente dos manos y dos antebrazos con punos de camisa, entrando desde el borde inferior y empujando fichas sobre el tapete. Nada de cabeza, nada de hombros, nada de torso: el encuadre empieza en los codos. Franja ancha, visto en angulo de tres cuartos desde un lado",
+          "entrada": "desplome",
+          "retardo": 0.36,
+          "clase": "objeto"
+        }
+      ],
+      "tipo": "pleno"
+    },
+    {
+      "id": "cap1_dos_casinos_05",
+      "texto": "Hay algo que nunca será tuyo.",
+      "duracion": 3.5,
+      "movimiento": "contra_izq",
+      "composicion": "alto_der",
+      "grade": "dorado_noche",
+      "efectos": [
+        "ceniza"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "fondo_cap1_dos_casinos_06.png",
+          "prompt": "interior de un edificio en construccion, vigas de acero vistas, andamios, plasticos y focos de obra encendidos. Se ve el suelo de hormigon y el fondo de la nave. visto desde un lateral, con la pared cerca a un lado",
+          "entrada": "escala",
+          "retardo": 0.0,
+          "clase": "cielo"
+        },
+        {
+          "rol": "frente",
+          "archivo": "p_papeles.png",
+          "prompt": "borde superior de documentos y carpetas apiladas vistos muy de cerca",
+          "entrada": "golpe",
+          "retardo": 0.09,
+          "clase": "objeto"
+        }
+      ],
+      "cierra_bloque": true,
+      "tipo": "silueta"
+    }
+  ]
+}

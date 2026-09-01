@@ -4,7 +4,8 @@
   "lienzo": {
     "w": 1920,
     "h": 1080,
-    "fps": 25
+    "fps": 25,
+    "ppm": 140
   },
   "escenas": [
     {
@@ -17,10 +18,15 @@
         "valor": 3.22,
         "sufijo": "%",
         "decimales": 2,
+        "palabra": "tres",
         "pie": "de margen al año por cada 100 dólares prestados",
         "y": 0.3
       },
-      "etiqueta": "LO QUE CUESTA UN BANCO"
+      "etiqueta": "LO QUE CUESTA UN BANCO",
+      "ticker": {
+        "texto": "Reserva Federal de San Luis · 1T 2026",
+        "retardo": 1.6
+      }
     },
     {
       "id": "gancho_02",
@@ -34,7 +40,18 @@
           "archivo": "s_calculadora.png"
         }
       ],
-      "frente": "p_canto_mesa.png"
+      "frente": "p_canto_mesa.png",
+      "marcas": [
+        {
+          "caja": [
+            0.16,
+            0.3,
+            0.52,
+            0.6
+          ],
+          "palabra": "margen"
+        }
+      ]
     },
     {
       "id": "gancho_03",
@@ -51,7 +68,8 @@
           "del *mundo*."
         ],
         "px": 88,
-        "y": 0.09
+        "y": 0.09,
+        "palabra": "cola"
       },
       "frente": "p_cordon.png"
     },
@@ -70,9 +88,23 @@
           "con *su* dinero."
         ],
         "px": 92,
-        "y": 0.09
+        "y": 0.09,
+        "palabra": "gana"
       },
-      "frente": "p_papeles.png"
+      "frente": "p_papeles.png",
+      "flechas": [
+        {
+          "desde": [
+            0.2,
+            0.34
+          ],
+          "hasta": [
+            0.44,
+            0.52
+          ],
+          "palabra": "tuyo"
+        }
+      ]
     },
     {
       "id": "gancho_05",
@@ -88,6 +120,7 @@
         "y": 0.13,
         "sufijo": "%",
         "destacar": "presta a",
+        "palabra": "presta",
         "items": [
           [
             "paga por los depósitos",
@@ -110,8 +143,25 @@
           "archivo": "s_boveda.png"
         }
       ],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 3.22,
+        "sufijo": "%",
+        "palabra": "cuesta",
+        "centro": [
+          0.82,
+          0.24
+        ],
+        "radio": 0.105,
+        "decimales": 2,
+        "pie": ""
+      },
       "frente": "h_vecinos.png",
-      "etiqueta": "CAPÍTULO 1"
+      "etiqueta": "CAPÍTULO 1",
+      "ticker": {
+        "texto": "Capital inicial: 27–50 millones de dólares",
+        "palabra": "cuanto"
+      }
     },
     {
       "id": "gancho_07",
@@ -128,9 +178,11 @@
           "*como los otros*."
         ],
         "px": 88,
-        "y": 0.09
+        "y": 0.09,
+        "palabra": "separa"
       },
-      "frente": "p_valla.png"
+      "frente": "p_valla.png",
+      "barrido": true
     },
     {
       "id": "gancho_08",
@@ -144,8 +196,10 @@
           "Banco: el *dinero*."
         ],
         "px": 82,
-        "y": 0.2
-      }
+        "y": 0.18,
+        "retardo": 0.25
+      },
+      "barrido": true
     },
     {
       "id": "gancho_09",
@@ -162,7 +216,8 @@
           "*no es tuyo*."
         ],
         "px": 104,
-        "y": 0.09
+        "y": 0.09,
+        "palabra": "tuyo"
       },
       "frente": "p_manos_b.png"
     }

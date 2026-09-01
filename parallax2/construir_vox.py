@@ -72,21 +72,47 @@ FRENTES = [
 # Casi la mitad de las escenas son SOLO CODIGO: tipografia y datos, sin
 # ninguna imagen generada. Es lo que mas baja el coste y el riesgo, mucho
 # mas que cambiar de proveedor.
+# Casi la mitad de las escenas son SOLO CODIGO: tipografia y datos, sin
+# ninguna imagen generada. Es lo que mas baja el coste y el riesgo.
+#
+# `palabra` es la clave: el elemento entra cuando la VOZ dice esa palabra,
+# no a un tiempo fijo. Antes todo aparecia a los 0,30 s dijera lo que
+# dijera la locucion, y un dato nombrado en la septima palabra salia cinco
+# palabras antes de mencionarlo.
 GRAFICOS = {
     0: {"tipo": "cifra", "valor": 3.22, "sufijo": "%", "decimales": 2,
+        "palabra": "tres",
         "pie": "de margen al año por cada 100 dólares prestados", "y": 0.30},
     4: {"tipo": "barras", "y": 0.13, "sufijo": "%", "destacar": "presta a",
+        "palabra": "presta",
         "items": [["paga por los depósitos", 0.6], ["presta a", 6.51]]},
+    5: {"tipo": "anillo", "valor": 3.22, "sufijo": "%", "palabra": "cuesta",
+        "centro": [0.82, 0.24], "radio": 0.105, "decimales": 2, "pie": ""},
 }
 ROTULOS = {
-    2: {"lineas": ["La cola más larga", "del *mundo*."], "px": 88, "y": 0.09},
-    3: {"lineas": ["No gana dinero", "con *su* dinero."], "px": 92, "y": 0.09},
-    6: {"lineas": ["Este no es", "*como los otros*."], "px": 88, "y": 0.09},
+    2: {"lineas": ["La cola más larga", "del *mundo*."], "px": 88, "y": 0.09,
+        "palabra": "cola"},
+    3: {"lineas": ["No gana dinero", "con *su* dinero."], "px": 92, "y": 0.09,
+        "palabra": "gana"},
+    6: {"lineas": ["Este no es", "*como los otros*."], "px": 88, "y": 0.09,
+        "palabra": "separa"},
     7: {"lineas": ["McDonald's: el *suelo*.", "Casino: la *licencia*.",
-                   "Banco: el *dinero*."], "px": 82, "y": 0.20},
-    8: {"lineas": ["El dinero", "*no es tuyo*."], "px": 104, "y": 0.09},
+                   "Banco: el *dinero*."], "px": 82, "y": 0.18, "retardo": 0.25},
+    8: {"lineas": ["El dinero", "*no es tuyo*."], "px": 104, "y": 0.09,
+        "palabra": "tuyo"},
 }
 ETIQUETAS = {0: "LO QUE CUESTA UN BANCO", 5: "CAPÍTULO 1"}
+
+# El circulo de rotulador dirige la mirada; la flecha ata dos cosas.
+MARCAS = {1: [{"caja": [0.16, 0.30, 0.52, 0.60], "palabra": "margen"}]}
+FLECHAS = {3: [{"desde": [0.20, 0.34], "hasta": [0.44, 0.52], "palabra": "tuyo"}]}
+TICKERS = {
+    0: {"texto": "Reserva Federal de San Luis · 1T 2026", "retardo": 1.6},
+    5: {"texto": "Capital inicial: 27–50 millones de dólares", "palabra": "cuanto"},
+}
+# El bloque de color que cruza la pantalla es el corte. No en todas: si va
+# en cada escena deja de marcar nada.
+BARRIDOS = {6, 7}
 
 
 def main():
@@ -116,10 +142,19 @@ def main():
             e["frente"] = FRENTES[i]
         if i in ETIQUETAS:
             e["etiqueta"] = ETIQUETAS[i]
+        if i in MARCAS:
+            e["marcas"] = MARCAS[i]
+        if i in FLECHAS:
+            e["flechas"] = FLECHAS[i]
+        if i in TICKERS:
+            e["ticker"] = TICKERS[i]
+        if i in BARRIDOS:
+            e["barrido"] = True
         escenas.append(e)
 
     guion = {"titulo": "prueba VOX - banco", "paleta": "vox",
-             "lienzo": {"w": 1920, "h": 1080, "fps": 25}, "escenas": escenas}
+             "lienzo": {"w": 1920, "h": 1080, "fps": 25, "ppm": 140},
+             "escenas": escenas}
     with open(os.path.join(AQUI, a.salida), "w", encoding="utf-8") as f:
         json.dump(guion, f, ensure_ascii=False, indent=2)
 

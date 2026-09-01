@@ -53,6 +53,7 @@ from PIL import Image, ImageFilter
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import vox
+import vox_mg
 
 DUR_ENTRADA = 0.42
 ESCALON = 0.11
@@ -142,7 +143,33 @@ def frente(ruta):
     return im
 
 
-def tarjeta(ruta, giro):
+SIGNOS = ".,¿¡\"'—:;"
+
+
+def retardo(texto, palabra, ppm=140):
+    """
+    Cuando se DICE esa palabra, en segundos desde el inicio de la escena.
+
+    Los graficos entraban a los 0,30 s fijos, dijera la voz lo que dijera.
+    Con una locucion de nueve palabras, un dato que se menciona en la
+    septima aparecia cinco palabras antes de nombrarlo, y eso se lee como
+    descuadre aunque no se sepa por que.
+    """
+    pal = [w.strip(SIGNOS).lower() for w in (texto or "").split()]
+    try:
+        i = pal.index(palabra.strip(SIGNOS).lower())
+    except ValueError:
+        return 0.30
+    return max(0.15, i * 60.0 / ppm)
+
+
+# Tres versiones del trazo con el desplazamiento un poco distinto. Se
+# alternan a 12 por segundo y el borde rojo "hierve", como una animacion
+# dibujada a mano. Cuesta memoria una vez y nada por fotograma.
+HERVIDO = [(-16, 10, 9), (-13, 13, 10), (-18, 8, 9)]
+
+
+def tarjeta(ruta, giro, variante=0):
     """
     Deja el recorte listo: semitono, trazo rojo, marco blanco y sombra.
     Se hace una vez por archivo, nunca por fotograma.
@@ -150,7 +177,8 @@ def tarjeta(ruta, giro):
     im = Image.open(ruta).convert("RGBA")
     if im.size[0] > 1500:
         im = im.resize((1500, int(im.size[1] * 1500 / im.size[0])), Image.LANCZOS)
-    im = vox.trazo(vox.semitono(normalizar(im)))
+    dx, dy, gr = HERVIDO[variante % len(HERVIDO)]
+    im = vox.trazo(vox.semitono(normalizar(im)), dx=dx, dy=dy, grosor=gr)
 
     w, h = im.size
     if MARCO:
@@ -182,7 +210,8 @@ def preparar(guion, base):
         for k, c in enumerate(sujetos(esc)):
             clave = (c["archivo"], GIROS[k % len(GIROS)])
             if clave not in cache:
-                cache[clave] = tarjeta(_ruta(c["archivo"], base), clave[1])
+                cache[clave] = [tarjeta(_ruta(c["archivo"], base), clave[1], v)
+                                for v in range(len(HERVIDO))]
         f = esc.get("frente")
         if f and ("frente", f) not in cache:
             cache[("frente", f)] = frente(_ruta(f, base))
@@ -214,6 +243,8 @@ def pintar(esc, t, cfg, fondo, cache, pal):
     im = fondo.copy()
     geo = geometria_frente(esc, cache, W, H)
 
+    dur = esc.get("duracion", 4)
+    esc_s, ddx, ddy, esc_f = vox_mg.deriva(t, dur, esc.get("_n", 0))
     capas = sujetos(esc)
     for k, c in enumerate(capas):
         cx, cy, area = COLOCACION.get(len(capas), COLOCACION[3])[k]
@@ -231,9 +262,11 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         s = spring(max(0.0, min(1.0, (t - ESCALON * k) / DUR_ENTRADA)))
         if s <= 0.001:
             continue
-        pieza = cache[(c["archivo"], GIROS[k % len(GIROS)])]
+        # el hervido alterna las tres variantes al ritmo del stutter
+        variantes = cache[(c["archivo"], GIROS[k % len(GIROS)])]
+        pieza = variantes[int(t * FPS_ANIM) % len(variantes)]
         pw, ph = pieza.size
-        ancho = math.sqrt(area * W * H * pw / ph) * (0.88 + 0.12 * s)
+        ancho = math.sqrt(area * W * H * pw / ph) * (0.88 + 0.12 * s) * esc_s
         ancho = min(ancho, W * ANCHO_MAX, H * ALTO_MAX * pw / ph)
         ancho = max(2, int(ancho))
         alto = max(2, int(ph * ancho / pw))
@@ -246,33 +279,81 @@ def pintar(esc, t, cfg, fondo, cache, pal):
             y = geo[3] + int(geo[2] * SOLAPE_FRENTE) - alto
         else:
             y = int(cy * H - alto / 2)
-        im.paste(p, (int(cx * W - ancho / 2), y + int((1 - s) * H * 0.09)), p)
+        im.paste(p, (int((cx + ddx) * W - ancho / 2),
+                     y + int((1 - s) * H * 0.09) + int(ddy * H)), p)
 
     # el frente va DESPUES de los sujetos: los tapa por abajo, que es
     # justo para lo que esta
     if geo:
         p, ancho, alto, y0 = geo
         s = spring(min(1.0, max(0.0, t / (DUR_ENTRADA * 1.4))))
+        # el frente deriva MENOS que los sujetos: ahi esta la profundidad,
+        # y no en desenfocar nada
+        ancho = int(ancho * esc_f); alto = int(alto * esc_f)
         q = p.resize((max(2, ancho), max(2, alto)), Image.LANCZOS)
-        im.paste(q, (int((W - ancho) / 2), int(y0 + (1 - s) * alto * 0.35)), q)
+        im.paste(q, (int((W - ancho) / 2),
+                     int(H - alto + (1 - s) * alto * 0.35)), q)
 
-    u = min(1.0, max(0.0, (t - 0.30) / 0.55))
-    if u > 0:
-        g = esc.get("grafico")
-        if g and g["tipo"] == "barras":
-            vox.barras(im, [tuple(x) for x in g["items"]], pal, u=u,
-                       y0=g.get("y", 0.30), destacado=g.get("destacar"),
-                       sufijo=g.get("sufijo", "%"))
-        elif g:
-            vox.cifra(im, g["valor"], pal, sufijo=g.get("sufijo", ""),
-                      pie=g.get("pie", ""), u=u, y=g.get("y", 0.28),
-                      decimales=g.get("decimales", 0))
-        t_p = esc.get("texto_pantalla")
-        if t_p:
+    ppm = cfg.get("ppm", 140)
+
+    def avance(elem, def_ret=0.30, dura=0.55):
+        """Cuanto lleva dibujado este elemento. Si trae `palabra`, entra
+        cuando la voz la dice, no a un tiempo fijo."""
+        r = elem.get("retardo")
+        if r is None:
+            r = retardo(esc.get("texto", ""), elem["palabra"], ppm)                 if elem.get("palabra") else def_ret
+        return min(1.0, max(0.0, (t - r) / dura))
+
+    g = esc.get("grafico")
+    if g:
+        u = avance(g)
+        if u > 0:
+            if g["tipo"] == "barras":
+                vox.barras(im, [tuple(x) for x in g["items"]], pal, u=u,
+                           y0=g.get("y", 0.30), destacado=g.get("destacar"),
+                           sufijo=g.get("sufijo", "%"))
+            elif g["tipo"] == "anillo":
+                vox_mg.anillo(im, g["valor"], pal, u=u, pie=g.get("pie", ""),
+                              sufijo=g.get("sufijo", "%"),
+                              centro=g.get("centro", (0.50, 0.42)),
+                              radio=g.get("radio", 0.15),
+                              decimales=g.get("decimales", 0))
+            else:
+                vox.cifra(im, g["valor"], pal, sufijo=g.get("sufijo", ""),
+                          pie=g.get("pie", ""), u=u, y=g.get("y", 0.28),
+                          decimales=g.get("decimales", 0))
+
+    t_p = esc.get("texto_pantalla")
+    if t_p:
+        u = avance(t_p)
+        if u > 0:
             vox.titular(im, t_p["lineas"], pal, px=t_p.get("px", 96),
                         y0=H * t_p.get("y", 0.10), u=u)
+
+    for m in esc.get("marcas", []):
+        u = avance(m, 0.9, 0.8)
+        if u > 0:
+            vox_mg.marca(im, m["caja"], pal, u=u)
+    for fl in esc.get("flechas", []):
+        u = avance(fl, 1.1, 0.55)
+        if u > 0:
+            vox_mg.flecha(im, fl["desde"], fl["hasta"], pal, u=u)
+    if esc.get("ticker"):
+        tk = esc["ticker"]
+        u = avance(tk, 1.4, 0.5)
+        if u > 0:
+            vox_mg.ticker(im, tk["texto"], pal, u=u)
+
     if esc.get("etiqueta"):
-        vox.etiqueta(im, esc["etiqueta"], pal, (int(W * 0.055), int(H * 0.885)))
+        # la etiqueta y el ticker viven los dos abajo a la izquierda: si
+        # coinciden, la etiqueta sube. Se pisaban y no se leia ninguna.
+        y = 0.055 if esc.get("ticker") else 0.885
+        vox.etiqueta(im, esc["etiqueta"], pal, (int(W * 0.055), int(H * y)))
+
+    # el barrido va EL ULTIMO: es el corte, tapa la escena entera
+    if esc.get("barrido"):
+        vox_mg.barrido(im, min(1.0, t / 0.42), pal,
+                       "izq" if esc.get("_n", 0) % 2 == 0 else "der")
     return im
 
 
@@ -296,7 +377,8 @@ def main():
         "-pix_fmt", "yuv420p", "-movflags", "+faststart", salida
     ], stdin=subprocess.PIPE)
     try:
-        for esc in guion["escenas"]:
+        for idx, esc in enumerate(guion["escenas"]):
+            esc["_n"] = idx
             n = max(1, int(FPS * esc.get("duracion", 4)))
             print(f'  {esc["id"]} {esc.get("duracion",4)}s', file=sys.stderr)
             ult, cuadro = -1, None

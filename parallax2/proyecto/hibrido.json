@@ -1,0 +1,339 @@
+{
+  "titulo": "Prueba ritmo hibrido",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+      "duracion": 3.88,
+      "movimiento": "drift_der",
+      "grade": "dorado_noche",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "banco/b_fondo_banco.png",
+          "clase": "cielo",
+          "lugar": "interior_oficina",
+          "prompt": "interior de oficina bancaria",
+          "entrada": "escala",
+          "retardo": 0.0
+        }
+      ],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 3.22,
+        "sufijo": "%",
+        "pie": "lo que gana un banco por cada 100 prestados",
+        "y": 0.42,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      },
+      "tipo": "grafico",
+      "composicion": "lejos_izq"
+    },
+    {
+      "id": "gancho_01b",
+      "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+      "duracion": 3.88,
+      "movimiento": "drift_izq",
+      "grade": "dorado_noche",
+      "clip": "stock_banco/counting_money_hands_table_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "tipo": "clip",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 3.74,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "banco/b_fondo_banco.png",
+          "clase": "cielo",
+          "lugar": "interior_oficina",
+          "prompt": "interior de oficina bancaria",
+          "entrada": "escala",
+          "retardo": 0.0
+        },
+        {
+          "rol": "medio",
+          "archivo": "banco/b_boveda.png",
+          "clase": "arquitectura",
+          "lugar": "interior_oficina",
+          "prompt": "camara acorazada",
+          "entrada": "desplome",
+          "retardo": 0.09
+        },
+        {
+          "rol": "suelo",
+          "archivo": "banco/b_billetes.png",
+          "clase": "objeto",
+          "lugar": "interior_oficina",
+          "prompt": "fajo de billetes",
+          "entrada": "desplome",
+          "retardo": 0.18
+        }
+      ],
+      "tipo": "pleno",
+      "composicion": "cerca"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 3.74,
+      "movimiento": "contra_izq",
+      "grade": "dorado_noche",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "tipo": "clip",
+      "composicion": "esquina"
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 3.74,
+      "movimiento": "drift_der",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "banco/b_fondo_banco.png",
+          "clase": "cielo",
+          "lugar": "interior_oficina",
+          "prompt": "interior de oficina bancaria",
+          "entrada": "escala",
+          "retardo": 0.0
+        }
+      ],
+      "tipo": "grafico",
+      "composicion": "lejos_izq"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+      "duracion": 3.94,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "clip": "stock_banco/revolving_door_people_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "tipo": "clip",
+      "composicion": "lejos"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+      "duracion": 3.94,
+      "movimiento": "contra_der",
+      "grade": "dorado_noche",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/revolving_door_people_blur_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "tipo": "clip",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+      "duracion": 2.76,
+      "movimiento": "drift_izq",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "suelo",
+          "archivo": "banco/b_billetes.png",
+          "clase": "objeto",
+          "lugar": "interior_oficina",
+          "prompt": "fajo de billetes",
+          "entrada": "latigo_izq",
+          "retardo": 0.0
+        },
+        {
+          "rol": "figura",
+          "archivo": "banco/b_mostrador.png",
+          "clase": "persona",
+          "lugar": "interior_oficina",
+          "prompt": "empleada de banco",
+          "entrada": "latigo_izq",
+          "retardo": 0.09
+        }
+      ],
+      "tipo": "detalle",
+      "composicion": "cerca_der"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+      "duracion": 2.76,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "clip": "stock_banco/euro_bills_falling_slow_moti_28.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "tipo": "clip",
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 3.56,
+      "movimiento": "contra_izq",
+      "grade": "dorado_noche",
+      "efectos": [
+        "ceniza"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "banco/b_fondo_banco.png",
+          "clase": "cielo",
+          "lugar": "interior_oficina",
+          "prompt": "interior de oficina bancaria",
+          "entrada": "escala",
+          "retardo": 0.0
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "ESE ES EL NEGOCIO ENTERO",
+        "px": 108,
+        "y": 0.5,
+        "acento": [
+          255,
+          196,
+          90
+        ],
+        "estilo": "golpe"
+      },
+      "composicion": "lejos_der"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 3.56,
+      "movimiento": "drift_der",
+      "grade": "dorado_noche",
+      "clip": "stock_banco/job_interview_office_serious_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "tipo": "clip",
+      "composicion": "diagonal"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 3.56,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "clip": "stock_banco/negotiation_meeting_table_72.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "tipo": "clip",
+      "composicion": "cerca"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+      "duracion": 5.13,
+      "movimiento": "contra_der",
+      "grade": "dorado_noche",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/money_counting_machine_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "tipo": "clip",
+      "composicion": "cerca_izq"
+    },
+    {
+      "id": "gancho_07",
+      "texto": "Y aquí es donde este vídeo se separa de los dos anteriores.",
+      "duracion": 4.76,
+      "movimiento": "drift_izq",
+      "grade": "dorado_noche",
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "tipo": "clip",
+      "composicion": "alto_der"
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+      "duracion": 3.27,
+      "movimiento": "push_in",
+      "grade": "dorado_noche",
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "banco/b_fondo_banco.png",
+          "clase": "cielo",
+          "lugar": "interior_oficina",
+          "prompt": "interior de oficina bancaria",
+          "entrada": "escala",
+          "retardo": 0.0
+        },
+        {
+          "rol": "medio",
+          "archivo": "banco/b_boveda.png",
+          "clase": "arquitectura",
+          "lugar": "interior_oficina",
+          "prompt": "camara acorazada",
+          "entrada": "desplome",
+          "retardo": 0.09
+        },
+        {
+          "rol": "suelo",
+          "archivo": "banco/b_billetes.png",
+          "clase": "objeto",
+          "lugar": "interior_oficina",
+          "prompt": "fajo de billetes",
+          "entrada": "desplome",
+          "retardo": 0.18
+        }
+      ],
+      "tipo": "pleno",
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08b",
+      "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+      "duracion": 3.27,
+      "movimiento": "contra_izq",
+      "grade": "dorado_noche",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "clip",
+      "composicion": "derecha"
+    }
+  ]
+}

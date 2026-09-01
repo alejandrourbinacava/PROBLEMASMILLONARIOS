@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-09-01T15:35:29",
+  "estilo": "fotografia real de banco",
+  "proveedor": "pexels",
+  "modelo": "fotografia de archivo",
+  "tam": "2600px",
+  "archivos": [
+    "b_billetes.png",
+    "b_boveda.png",
+    "b_fondo_banco.png",
+    "b_hombre.png",
+    "b_manos_docs.png",
+    "b_mostrador.png"
+  ]
+}

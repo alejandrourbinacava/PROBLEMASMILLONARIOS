@@ -40,6 +40,8 @@ RITMO_TIPO = ["pleno", "detalle", "pleno", "silueta", "pleno", "rotulo",
 # Mezcla para trabajar con clips de stock como columna vertebral y reservar
 # las capas para los planos que lo merecen. Los clips salen gratis y no se
 # repiten; la biblioteca de capas cuesta dinero y hay que generarla entera.
+HIBRIDO = False
+
 RITMO_HIBRIDO = ["clip", "clip", "pleno", "clip", "grafico", "clip",
                  "clip", "detalle", "clip", "rotulo", "clip", "clip"]
 
@@ -53,10 +55,25 @@ def frase_corta(texto, tope=34):
 
 
 def aplicar_tipo(e, tipo):
-    """Reestructura las capas de la escena segun su tipo."""
+    """Reestructura las capas de la escena segun su tipo.
+
+    En el ritmo hibrido una escena llega con las DOS cosas -un clip de
+    stock y una composicion por capas- y es el tipo el que decide cual se
+    usa. Sin quitar la que sobra, el motor ve el clip y las capas no se
+    pintan nunca: el ritmo hibrido no llegaba a conmutar.
+    """
     capas = e.get("capas", [])
     por_rol = {c["rol"]: c for c in capas}
     e["tipo"] = tipo
+
+    if tipo == "clip":
+        if e.get("clip"):
+            e["capas"] = []          # manda el metraje
+            return e
+        tipo = e["tipo"] = "pleno"   # no habia clip: se cae a capas
+    elif e.get("clip") and capas:
+        e.pop("clip", None)          # manda la composicion
+        e.pop("clip_desde", None)
 
     if tipo == "detalle" and len(capas) >= 2:
         e["capas"] = [c for c in capas if c["rol"] != "fondo"] or capas
@@ -162,14 +179,25 @@ def planificar(escenas, anchos=None):
             paso_beat, beat_ant = 0, beat
 
         # --- tipo de escena ---
-        if e.get("clip"):
+        # En modo hibrido la escena llega con clip Y capas, y es el RITMO
+        # quien decide cual se usa. Sin esto, la sola presencia del clip
+        # forzaba el tipo y el ritmo hibrido no se aplicaba nunca: salian
+        # dieciseis planos de metraje de dieciseis.
+        if e.get("clip") and not (HIBRIDO and e.get("capas")):
             tipo = "clip"
         elif e.get("grafico"):
             tipo = "grafico"                      # el dato manda
         else:
             tipo = RITMO_TIPO[i % len(RITMO_TIPO)]
-            if tipo != "pleno" and tipo_ant != "pleno":
-                tipo = "pleno"                    # nunca dos seguidos
+            # Nunca dos registros especiales seguidos: un detalle o una
+            # silueta valen porque rompen, y dos seguidos dejan de romper.
+            # En hibrido el CLIP no es un registro especial: es el suelo,
+            # igual que el pleno. Sin esta excepcion, el segundo clip de
+            # cada pareja se convertia en capas y de nueve de cada doce
+            # quedaban cinco de dieciseis.
+            suelo = ("pleno", "clip") if HIBRIDO else ("pleno",)
+            if tipo not in suelo and tipo_ant not in suelo:
+                tipo = "clip" if HIBRIDO and e.get("clip") else "pleno"
             if tipo == "detalle" and len(e.get("capas", [])) < 2:
                 tipo = "pleno"
             if tipo == "silueta" and len(e.get("capas", [])) < 3:
@@ -246,14 +274,17 @@ def planificar(escenas, anchos=None):
 
 
 def informe(escenas):
+    # Un guion de puro metraje no trae composicion: ahi no hay capas que
+    # encuadrar, asi que se cuenta como "sin composicion" en vez de reventar.
     seguidas = sum(1 for a, b in zip(escenas, escenas[1:])
-                   if a["composicion"] == b["composicion"])
+                   if a.get("composicion") and
+                   a.get("composicion") == b.get("composicion"))
     mismo_lado = sum(1 for a, b in zip(escenas, escenas[1:])
-                     if COMPOS[a["composicion"]][1] == COMPOS[b["composicion"]][1])
+                     if COMPOS[a.get("composicion") or "centrado"][1] == COMPOS[b.get("composicion") or "centrado"][1])
     tipos = collections.Counter(e.get("tipo", "pleno") for e in escenas)
     print(f"  tipos    {dict(tipos)}")
-    esc = collections.Counter(COMPOS[e["composicion"]][0] for e in escenas)
-    lados = collections.Counter(COMPOS[e["composicion"]][1] for e in escenas)
+    esc = collections.Counter(COMPOS[e.get("composicion") or "centrado"][0] for e in escenas)
+    lados = collections.Counter(COMPOS[e.get("composicion") or "centrado"][1] for e in escenas)
     n = len(escenas)
     print(f"  composiciones repetidas seguidas: {seguidas}")
     print(f"  mismo lado dos veces seguidas:    {mismo_lado} de {n-1}")
@@ -306,6 +337,7 @@ def main():
     print(f"{hay}/{len(anchos)} PNG medidos en disco para el guardian de resolucion")
     if a.hibrido:
         globals()["RITMO_TIPO"] = RITMO_HIBRIDO
+        globals()["HIBRIDO"] = True
     planificar(g["escenas"], anchos)
     print("\nDESPUES"); informe(g["escenas"])
     json.dump(g, open(a.guion, "w", encoding="utf-8"),

@@ -27,17 +27,33 @@ def main():
     # Un plano marcado `muda` repite la frase del anterior: la locucion suena
     # una vez y el plano hereda solo su hueco de tiempo. Sin esto, partir una
     # frase en dos planos la haria sonar dos veces.
-    trozos, faltan = [], []
-    for esc in guion["escenas"]:
-        if esc.get("muda"):
-            trozos.append((None, esc["duracion"]))
+    # Una frase suena a lo largo de TODOS sus planos, no solo del primero.
+    #
+    # Aqui estaba el silencio. Al trocear una frase de diez segundos en tres
+    # planos de tres y pico, la locucion se recortaba a la duracion del
+    # PRIMER plano y los otros dos quedaban mudos: siete segundos sin voz en
+    # mitad del episodio. El plano se parte para que cambie la imagen, no
+    # para partir la frase.
+    escenas = guion["escenas"]
+    trozos, faltan, i = [], [], 0
+    while i < len(escenas):
+        e = escenas[i]
+        if e.get("muda"):        # muda suelta, sin frase delante
+            trozos.append((None, e["duracion"]))
+            i += 1
             continue
-        h = hashlib.sha1(esc["texto"].encode("utf-8")).hexdigest()[:16]
+        grupo = e["duracion"]
+        j = i + 1
+        while j < len(escenas) and escenas[j].get("muda"):
+            grupo += escenas[j]["duracion"]
+            j += 1
+        h = hashlib.sha1(e["texto"].encode("utf-8")).hexdigest()[:16]
         r = os.path.join(cache, h + ".mp3")
         if not os.path.exists(r):
-            faltan.append(esc["id"])
-            continue
-        trozos.append((r, esc["duracion"]))
+            faltan.append(e["id"])
+        else:
+            trozos.append((r, round(grupo, 3)))
+        i = j
     if faltan:
         print("SIN VOZ EN CACHE:", ", ".join(faltan), file=sys.stderr)
         return 1

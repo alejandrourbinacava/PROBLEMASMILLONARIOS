@@ -20,15 +20,16 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_banquero.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_libro.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 3.22,
@@ -37,7 +38,7 @@
     "palabra": "Un"
    },
    "entrada_frente": "sube",
-   "composicion": "dominante_izq",
+   "composicion": "calle_izq",
    "barrido": false,
    "formas": []
   },
@@ -48,21 +49,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_monedas.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_cola.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_mostrador.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "triangulo",
+   "composicion": "plaza",
    "barrido": false,
    "formas": []
   },
@@ -73,19 +75,20 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_servidor.png",
-     "entrada": "pop"
-    },
-    {
      "archivo": "meta/m_consultor.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/f_libro.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_servidor.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_cinta.png",
+   "tipo_escena": "oficina",
+   "frente": "meta/f_mostrador.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 3.22,
@@ -94,7 +97,7 @@
     "palabra": "Tres"
    },
    "entrada_frente": "sube",
-   "composicion": "escalera",
+   "composicion": "avenida",
    "barrido": false,
    "formas": []
   },
@@ -105,21 +108,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/m_consultor.png",
+     "entrada": "lateral"
+    },
+    {
+     "archivo": "meta/f_servidor.png",
      "entrada": "lateral"
     },
     {
      "archivo": "meta/f_recibos.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/m_familia.png",
-     "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_oficina.png",
+   "tipo_escena": "oficina",
+   "frente": "meta/f_mostrador.png",
    "entrada_frente": "sube",
-   "composicion": "centro_fuerte",
+   "composicion": "calle_izq",
    "barrido": false,
    "formas": []
   },
@@ -130,21 +134,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_banquero.png",
+     "archivo": "meta/m_consultor.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_boveda.png",
+     "archivo": "meta/f_expediente.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_regulador.png",
+   "tipo_escena": "oficina",
+   "frente": "meta/f_mostrador.png",
    "entrada_frente": "sube",
-   "composicion": "abierto",
+   "composicion": "plaza",
    "barrido": false,
    "formas": []
   },
@@ -159,17 +164,18 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_torre.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_hucha.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "dominante_izq",
+   "composicion": "avenida",
    "barrido": true,
    "formas": []
   },
@@ -184,17 +190,18 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_engranaje.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "triangulo",
+   "composicion": "calle_izq",
    "barrido": true,
    "formas": []
   },
@@ -209,17 +216,18 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_oficina.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "escalera",
+   "composicion": "plaza",
    "barrido": false,
    "formas": []
   },
@@ -230,21 +238,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_mostrador.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_banquero.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_libro.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "centro_fuerte",
+   "composicion": "avenida",
    "barrido": false,
    "formas": []
   },
@@ -259,17 +268,18 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/f_hucha.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_hucha.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "abierto",
+   "composicion": "calle_izq",
    "barrido": false,
    "formas": [],
    "efecto": "agua",
@@ -286,17 +296,18 @@
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_cola.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_engranaje.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "dominante_izq",
+   "composicion": "plaza",
    "barrido": false,
    "formas": [],
    "efecto": "agua",
@@ -313,17 +324,18 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_boveda.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_hucha.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "triangulo",
+   "composicion": "avenida",
    "barrido": false,
    "formas": [],
    "efecto": "agua",
@@ -344,13 +356,14 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_cinta.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "escalera",
+   "composicion": "calle_izq",
    "barrido": true,
    "formas": []
   },
@@ -361,21 +374,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_torre.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "sube"
     }
    ],
-   "frente": "meta/f_regulador.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "centro_fuerte",
+   "composicion": "plaza",
    "barrido": true,
    "formas": []
   },
@@ -386,19 +400,20 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_balanza.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_banquero.png",
+     "archivo": "meta/f_hucha.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_oficina.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 2,
@@ -407,7 +422,7 @@
     "palabra": "Y"
    },
    "entrada_frente": "sube",
-   "composicion": "abierto",
+   "composicion": "avenida",
    "barrido": true,
    "formas": []
   },
@@ -418,21 +433,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_mostrador.png",
+     "archivo": "meta/f_balanza.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_cola.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_familia.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     }
    ],
+   "tipo_escena": "boveda",
    "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "dominante_izq",
+   "composicion": "calle_izq",
    "barrido": true,
    "formas": []
   },
@@ -443,7 +459,7 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "sube"
     },
     {
@@ -451,13 +467,14 @@
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "sube"
     }
    ],
-   "frente": "meta/f_expediente.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "triangulo",
+   "composicion": "plaza",
    "barrido": false,
    "formas": []
   },
@@ -468,21 +485,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_regulador.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/f_monedas.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_consultor.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_engranaje.png",
+   "tipo_escena": "boveda",
+   "frente": "meta/f_libro.png",
    "entrada_frente": "sube",
-   "composicion": "escalera",
+   "composicion": "avenida",
    "barrido": false,
    "formas": []
   },
@@ -497,17 +515,18 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_hucha.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "centro_fuerte",
+   "composicion": "calle_izq",
    "barrido": false,
    "formas": [],
    "efecto": "fuego",
@@ -520,21 +539,22 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/f_oficina.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_boveda.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/m_banquero.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "sube"
     }
    ],
-   "frente": "meta/f_monedas.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "abierto",
+   "composicion": "plaza",
    "barrido": false,
    "formas": [],
    "efecto": "fuego",
@@ -551,17 +571,18 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/e_arbol.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_torre.png",
+     "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_cinta.png",
+   "tipo_escena": "calle",
+   "frente": "meta/e_suelo.png",
    "entrada_frente": "sube",
-   "composicion": "dominante_izq",
+   "composicion": "avenida",
    "barrido": false,
    "formas": [],
    "efecto": "fuego",

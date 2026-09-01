@@ -65,6 +65,51 @@ BIBLIOTECA = {
 }
 FONDO = "meta/f_papel.png"
 
+# TIPOS DE ESCENA. La frase decide DONDE pasa, y el sitio decide que piezas
+# lo construyen.
+#
+# La calle con arboles era un ejemplo, no la regla. Poner acera y arbolado en
+# los veintiun planos es el mismo error de antes con otra cara: piezas por
+# poner. Una frase sobre nominas y expedientes no pasa en una calle, pasa en
+# una oficina, y ahi lo que sostiene la escena es un mostrador y carpetas.
+#
+#   suelo     la pieza ancha sobre la que se apoya todo. None = no hay sitio
+#             fisico, la frase es abstracta y el dato manda.
+#   laterales lo que acompana. No se elige por el texto: construye el sitio.
+#   cielo     si el encuadre tiene aire arriba donde quepa una nube.
+TIPOS = {
+ "calle": {
+   "palabras": "banco bancos oficina sucursal fachada calle ciudad puertas "
+               "cola gente esperando entrar abrir abres barrio piensas tienda",
+   "suelo": "e_suelo",
+   "laterales": ("e_arbol", "e_arbol_alto", "e_farola", "e_seto", "e_banco"),
+   "cielo": True},
+ "oficina": {
+   "palabras": "nominas nomina gastos alquiler mantenimiento seguridad "
+               "empleados plantilla personal cumplimiento auditoria papeles "
+               "expediente solicitud documentos sistemas informatico",
+   "suelo": "f_mostrador",
+   "laterales": ("f_recibos", "f_expediente", "f_libro", "f_servidor"),
+   "cielo": False},
+ "boveda": {
+   "palabras": "capital custodia boveda colchon tocarlo tocar quieto balance "
+               "reserva millones dinero deposito depositos guardar prestado",
+   "suelo": "f_libro",
+   "laterales": ("f_candado", "f_maletin", "f_monedas", "f_boveda", "f_hucha"),
+   "cielo": False},
+ "institucion": {
+   "palabras": "regulador supervision licencia ficha concede autorizacion "
+               "norma normas evalua condiciones vigilado seguro garantia "
+               "interviene retirar permiso",
+   "suelo": "e_suelo",
+   "laterales": ("f_escudo", "f_cinta", "f_engranaje", "e_farola"),
+   "cielo": True},
+}
+ORDEN_TIPOS = list(TIPOS)
+
+# Las nubes solo entran donde el encuadre tiene aire arriba.
+CIELO = ("e_nube", "e_nubes")
+
 
 def norm(t):
     t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode()
@@ -119,8 +164,14 @@ def apaisada(nombre):
 
 def repartir(escenas):
     ultima = collections.defaultdict(lambda: -99)
-    disponibles = {k for k in BIBLIOTECA
-                   if os.path.exists(os.path.join(AQUI, "proyecto", "meta", k + ".png"))}
+    def existe(k):
+        return os.path.exists(os.path.join(AQUI, "proyecto", "meta", k + ".png"))
+
+    disponibles = {k for k in BIBLIOTECA if existe(k)}
+    for k, v in TIPOS.items():
+        n = sum(1 for x in v["laterales"] if existe(x))
+        if n < 2:
+            print(f'AVISO: al tipo "{k}" solo le quedan {n} piezas de escenografia')
     # Hacen falta las DOS condiciones. Solo por forma, la fila de ocho
     # personas -2,80 de proporcion- pasaba a ser la estructura que tapa a
     # los demas, y una hilera de gente no es un edificio. Solo por etiqueta,
@@ -132,6 +183,7 @@ def repartir(escenas):
     print(f'{len(frentes)} piezas apaisadas valen de estructura, '
           f'{len(medios)} van detras de objeto')
 
+    sujeto_frase = None
     for i, e in enumerate(escenas):
         t = e.get("texto", "")
 
@@ -150,23 +202,46 @@ def repartir(escenas):
         # tiene que resaltar es el banco, no un candado puesto de relleno.
         mejor_me = puntuar(t, BIBLIOTECA[me[0]][1], pen(me[0])) if me else -9
         mejor_fr = puntuar(t, BIBLIOTECA[fr[0]][1], pen(fr[0])) if fr else -9
-        elegidos = me[:MEDIOS_POR_PLANO]
-        if mejor_fr > mejor_me and len(fr) > 1:
-            # el que mas casa pasa a dominar y la estructura la pone el
-            # siguiente apaisado
-            elegidos = [fr[0]] + me[:MEDIOS_POR_PLANO - 1]
-            fr = fr[1:]
-        # el segundo y tercer medio pueden ser objetos: un plano con tres
-        # personas y nada mas se lee como una foto de grupo, no como una
-        # escena. Se rellena con estructuras sobrantes en semitono.
-        sobra = [k for k in fr[1:] if k not in elegidos]
-        while len(elegidos) < MEDIOS_POR_PLANO and sobra:
-            elegidos.append(sobra.pop(0))
+        # La capa que MANDA tiene que tener algo que ver con la frase; las
+        # demas construyen el sitio y no se eligen por el texto.
+        mejor_me = puntuar(t, BIBLIOTECA[me[0]][1], pen(me[0])) if me else -9
+        mejor_fr = puntuar(t, BIBLIOTECA[fr[0]][1], pen(fr[0])) if fr else -9
+        sujeto = fr[0] if (fr and mejor_fr > mejor_me) else (me[0] if me else fr[0])
+        # Una frase, un sujeto. Los planos que reparten la misma locucion
+        # mantienen la pieza que manda y cambian el encuadre y los laterales:
+        # si tambien cambia el sujeto, el segundo plano habla de otra cosa.
+        # Asi salia un candado presidiendo una calle en mitad de una frase
+        # sobre bancos.
+        if e.get("muda") and sujeto_frase:
+            sujeto = sujeto_frase
+        else:
+            sujeto_frase = sujeto
 
-        e["frente"] = "meta/" + fr[0] + ".png"
+        tipo = max(ORDEN_TIPOS,
+                   key=lambda k: puntuar(t, TIPOS[k]["palabras"], 0.0))
+        if puntuar(t, TIPOS[tipo]["palabras"], 0.0) <= 0:
+            tipo = "boveda"          # sin pistas, el sitio neutro del tema
+        cfg = TIPOS[tipo]
+        e["tipo_escena"] = tipo
+
+        # Dos laterales DISTINTOS. Con `lat[i]` y `lat[i+2]` sobre una lista
+        # de dos salia el mismo arbol repetido a los dos lados.
+        lat = [x for x in cfg["laterales"] if existe(x) and x != sujeto]
+        elegidos = [sujeto]
+        for d in (0, 1):
+            if len(lat) > d:
+                elegidos.append(lat[(i + d) % len(lat)])
+        if cfg["cielo"]:
+            cie = [x for x in CIELO if existe(x)]
+            if cie:
+                elegidos.append(cie[i % len(cie)])
+        ultima[sujeto] = i
+        # El frente es el SUELO: la acera y la calzada, apoyadas en la linea
+        # de tierra. Todo lo demas se planta encima.
+        suelo = cfg["suelo"]
+        e["frente"] = (f"meta/{suelo}.png" if suelo and existe(suelo)
+                       else "meta/" + fr[0] + ".png")
         e["capas"] = [{"archivo": "meta/" + k + ".png"} for k in elegidos]
-        for k in elegidos + [fr[0]]:
-            ultima[k] = i
     return escenas
 
 

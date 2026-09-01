@@ -72,35 +72,47 @@ FPS_ANIM = 12
 # Las areas NO son iguales entre si dentro de una escena, y eso es
 # deliberado: dos tarjetas del mismo tamano leen como una plantilla. Una
 # manda y la otra acompana.
-# COMPOSICIONES: (centro x, cuanto se hunde en el frente, area)
+# ESCENOGRAFIA: una escena, no tres recortes sueltos.
 #
-# Tres cosas que la tabla anterior no hacia y por eso todos los planos se
-# leian iguales:
+# Lo que fallaba: se elegian tres piezas por afinidad con el texto y se
+# repartian por la pantalla. Salia gente en el aire con una puerta al lado y
+# un escudo detras. Ninguna relacion entre ellas, ningun sitio.
 #
-#   HAY UNA CAPA QUE MANDA. La dominante ocupa entre tres y cuatro veces
-#   el area de las que acompanan. Con tres recortes del mismo tamano no hay
-#   donde mirar: el ojo los recorre y no se queda en ninguno.
+# Una escena tiene un SUELO, y todo lo que se apoya en el suelo comparte esa
+# linea. Encima del suelo va el sujeto, y a los lados lo que acompana -un
+# arbol, una farola- mas pequeno y mas bajo, porque esta mas lejos. Arriba
+# queda el cielo, y ahi solo caben nubes. Es la logica de un decorado, y sin
+# ella no hay escena: hay un collage.
 #
-#   CADA UNA SE HUNDE LO SUYO en el frente. Antes todas se anclaban al
-#   mismo borde y salian alineadas en fila, amontonadas abajo. Hundiendo
-#   mas las de acompanamiento, quedan detras y mas bajas, y eso separa los
-#   planos sin mover la camara.
-#
-#   Y HAY VARIAS. El planificador rota entre ellas y no repite ninguna dos
-#   veces seguidas, asi que dos planos consecutivos nunca comparten
-#   encuadre aunque compartan piezas.
-COMPOSICIONES = {
- "dominante_izq": [(0.29, 0.30, 0.235), (0.64, 0.52, 0.078), (0.86, 0.62, 0.052)],
- "dominante_der": [(0.71, 0.30, 0.235), (0.36, 0.52, 0.078), (0.14, 0.62, 0.052)],
- "triangulo":     [(0.50, 0.26, 0.215), (0.19, 0.58, 0.072), (0.81, 0.58, 0.068)],
- "escalera":      [(0.22, 0.58, 0.090), (0.50, 0.40, 0.200), (0.79, 0.24, 0.070)],
- "centro_fuerte": [(0.50, 0.28, 0.260), (0.13, 0.56, 0.055), (0.87, 0.52, 0.050)],
- "abierto":       [(0.25, 0.36, 0.170), (0.58, 0.56, 0.075), (0.84, 0.30, 0.110)],
-}
-ORDEN = list(COMPOSICIONES)
+# Cada hueco dice DONDE va y QUE clase de pieza admite:
+#   (centro x, apoyo, area, clase)
+# `apoyo` es la fraccion de pantalla donde queda el PIE de la pieza. Todo lo
+# que va sobre el suelo comparte apoyo, y por eso se lee como el mismo sitio.
+LINEA_SUELO = 0.74
 
-# Con una o dos capas se usan las primeras posiciones de la composicion,
-# que ya traen la jerarquia puesta.
+ESCENOGRAFIA = {
+ "calle_izq": [
+   (0.31, LINEA_SUELO, 0.215, "sujeto"),
+   (0.66, LINEA_SUELO, 0.070, "lateral"),
+   (0.85, LINEA_SUELO, 0.052, "lateral"),
+   (0.72, 0.26,        0.045, "cielo")],
+ "calle_der": [
+   (0.69, LINEA_SUELO, 0.215, "sujeto"),
+   (0.34, LINEA_SUELO, 0.070, "lateral"),
+   (0.15, LINEA_SUELO, 0.052, "lateral"),
+   (0.26, 0.26,        0.045, "cielo")],
+ "plaza": [
+   (0.50, LINEA_SUELO, 0.230, "sujeto"),
+   (0.17, LINEA_SUELO, 0.062, "lateral"),
+   (0.83, LINEA_SUELO, 0.058, "lateral"),
+   (0.33, 0.24,        0.040, "cielo")],
+ "avenida": [
+   (0.40, LINEA_SUELO, 0.190, "sujeto"),
+   (0.74, LINEA_SUELO, 0.085, "lateral"),
+   (0.14, LINEA_SUELO, 0.048, "lateral"),
+   (0.80, 0.22,        0.048, "cielo")],
+}
+ORDEN = list(ESCENOGRAFIA)
 # El frente se apoya en el borde de abajo y se pasa de ancho a proposito:
 # tiene que salirse por los lados para que no se lea como una foto pegada.
 FRENTE_ANCHO = 1.12
@@ -296,8 +308,8 @@ def pintar(esc, t, cfg, fondo, cache, pal):
     esc_s, ddx, ddy, esc_f = vox_mg.deriva(t, dur, esc.get("_n", 0))
     capas = sujetos(esc)
     for k, c in enumerate(capas):
-        comp = COMPOSICIONES.get(esc.get("composicion"), COMPOSICIONES["triangulo"])
-        cx, hunde, area = comp[k % len(comp)]
+        comp = ESCENOGRAFIA.get(esc.get("composicion"), ESCENOGRAFIA["plaza"])
+        cx, apoyo, area, clase = comp[k % len(comp)]
         if esc.get("texto_pantalla") or esc.get("grafico"):
             # el rotulo y el grafico se dibujan encima, asi que el sujeto
             # les cede sitio: se hunde mas en el frente y encoge. Antes esto
@@ -306,8 +318,8 @@ def pintar(esc, t, cfg, fondo, cache, pal):
             # el dato se dibuja ENCIMA, asi que el sujeto le deja la franja
             # de arriba: se hunde mas y encoge. Con 0,14 el 3,22 caia sobre
             # la fachada y no se leia ninguno de los dos.
-            hunde += 0.22
-            area *= 0.74
+            apoyo += 0.04
+            area *= 0.76
         u_e = (t - c.get("retardo", ESCALON * k)) / DUR_ENTRADA
         esc_e, dxe, dye, alfa = vox_mg.entrada(c.get("entrada", "pop"), u_e)
         s = spring(max(0.0, min(1.0, u_e)))
@@ -323,17 +335,10 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         if alfa < 0.995:
             p.putalpha(p.getchannel("A").point(
                 lambda v, m=alfa: int(v * m)))
-        if geo:
-            # Cada capa se hunde LO SUYO en el frente: con un solape igual
-            # para todas salian alineadas en fila. Pero el hundimiento se
-            # limita a lo que deje mas de la mitad de la pieza por encima
-            # del borde del frente. Sin el tope, una estructura alta se
-            # tragaba enteras a las capas de acompanamiento y el plano se
-            # quedaba con un solo recorte a la vista.
-            hundido = min(int(geo[2] * hunde), int(alto * 0.45))
-            y = geo[3] + hundido - alto
-        else:
-            y = int(H * (0.30 + hunde * 0.5) - alto / 2)
+        # El PIE de la pieza cae en la linea de apoyo. Todo lo que se apoya
+        # en el suelo comparte esa linea y por eso se lee como el mismo
+        # sitio; lo que va en el cielo tiene la suya propia, arriba.
+        y = int(H * apoyo) - alto
         # dx y dy de la entrada van en fracciones de la PIEZA, no de la
         # pantalla: si fueran de pantalla, una capa pequena apenas se
         # moveria y una grande se saldria del encuadre.

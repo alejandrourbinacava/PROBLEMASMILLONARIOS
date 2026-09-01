@@ -1,0 +1,2404 @@
+{
+  "titulo": "Lo que cuesta tener un banco",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+      "duracion": 3.88,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 3.22,
+        "sufijo": "%",
+        "pie": "lo que gana un banco por cada 100 prestados",
+        "y": 0.42,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "gancho_01b",
+      "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+      "duracion": 3.88,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/counting_money_hands_table_17.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 3.74,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/percentage_symbol_graphic_37.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 3.74,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/graph_rising_arrow_screen_53.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+      "duracion": 3.94,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/revolving_door_people_54.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+      "duracion": 3.94,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/revolving_door_people_blur_57.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+      "duracion": 2.76,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+      "duracion": 2.76,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/euro_bills_falling_slow_moti_28.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 3.56,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 3.56,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_20.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 3.56,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/negotiation_meeting_table_72.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+      "duracion": 5.13,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_counting_machine_38.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_07",
+      "texto": "Y aquí es donde este vídeo se separa de los dos anteriores.",
+      "duracion": 4.76,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+      "duracion": 3.27,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_1.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_08b",
+      "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+      "duracion": 3.27,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_09",
+      "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+      "duracion": 3.96,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "NO ES TUYO",
+        "px": 132,
+        "estilo": "golpe"
+      }
+    },
+    {
+      "id": "gancho_09b",
+      "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+      "duracion": 3.96,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/stack_of_euro_banknotes_44.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "gancho_09c",
+      "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+      "duracion": 3.96,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/balance_scale_money_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Cuando piensas en un banco, piensas en una oficina.",
+      "duracion": 4.32,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/bank_building_facade_5.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_02",
+      "texto": "Un mostrador, una cola, un cajero automático en la fachada, un cartel con el tipo de interés de las hipotecas.",
+      "duracion": 4.18,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_02b",
+      "texto": "Un mostrador, una cola, un cajero automático en la fachada, un cartel con el tipo de interés de las hipotecas.",
+      "duracion": 4.18,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/electricity_meter_spinning_59.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_03",
+      "texto": "Eso no es el banco. Eso es la tienda del banco.",
+      "duracion": 4.84,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/bank_building_facade_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "El banco de verdad es una hoja de cálculo. A un lado, lo que la gente ha depositado. Al otro, lo que el banco ha prestado. Y en medio, un margen muy fino que tiene que dar de comer a todo lo demás.",
+      "duracion": 4.78,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/clock_time_lapse_wall_60.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "El banco de verdad es una hoja de cálculo. A un lado, lo que la gente ha depositado. Al otro, lo que el banco ha prestado. Y en medio, un margen muy fino que tiene que dar de comer a todo lo demás.",
+      "duracion": 4.78,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/calculator_total_display_77.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "El banco de verdad es una hoja de cálculo. A un lado, lo que la gente ha depositado. Al otro, lo que el banco ha prestado. Y en medio, un margen muy fino que tiene que dar de comer a todo lo demás.",
+      "duracion": 4.78,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Esa hoja tiene una regla que lo gobierna todo: no puedes prestar todo lo que te han dejado. Ni de lejos.",
+      "duracion": 4.08,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "Esa hoja tiene una regla que lo gobierna todo: no puedes prestar todo lo que te han dejado. Ni de lejos.",
+      "duracion": 4.08,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_and_construction_plans_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Y esa regla no la pones tú.",
+      "duracion": 3.4,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_90.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_07",
+      "texto": "Abrir una oficina nueva cuesta unos tres millones y medio de dólares. Tarda cuatro años en devolver lo invertido.",
+      "duracion": 4.26,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/euro_banknotes_stack_tall_69.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 3.5,
+        "sufijo": " M$",
+        "dec": 1,
+        "pie": "abrir una oficina nueva",
+        "y": 0.3,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap1_07b",
+      "texto": "Abrir una oficina nueva cuesta unos tres millones y medio de dólares. Tarda cuatro años en devolver lo invertido.",
+      "duracion": 4.26,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/cash_register_busy_day_83.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_08",
+      "texto": "Mantenerla abierta cuesta unos cuatrocientos mil dólares al año, entre nóminas, alquiler, seguridad y mantenimiento. Y las oficinas son solo el quince por ciento de los gastos de un banco.",
+      "duracion": 4.33,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 400000,
+        "sufijo": " $",
+        "pie": "mantenerla abierta, cada ano",
+        "y": 0.3,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap1_08b",
+      "texto": "Mantenerla abierta cuesta unos cuatrocientos mil dólares al año, entre nóminas, alquiler, seguridad y mantenimiento. Y las oficinas son solo el quince por ciento de los gastos de un banco.",
+      "duracion": 4.33,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/money_envelope_cash_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap1_08c",
+      "texto": "Mantenerla abierta cuesta unos cuatrocientos mil dólares al año, entre nóminas, alquiler, seguridad y mantenimiento. Y las oficinas son solo el quince por ciento de los gastos de un banco.",
+      "duracion": 4.33,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_107.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_09",
+      "texto": "O sea: lo que tú ves cuando piensas en un banco es la parte más barata del banco.",
+      "duracion": 3.08,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_09b",
+      "texto": "O sea: lo que tú ves cuando piensas en un banco es la parte más barata del banco.",
+      "duracion": 3.08,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap1_10",
+      "texto": "Vamos a la cara.",
+      "duracion": 2.44,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Para abrir un banco nuevo en Estados Unidos hace falta capital inicial. Y no es una cifra simbólica.",
+      "duracion": 3.75,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Para abrir un banco nuevo en Estados Unidos hace falta capital inicial. Y no es una cifra simbólica.",
+      "duracion": 3.75,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/clock_time_lapse_wall_134.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_02",
+      "texto": "En dos mil veintiséis, los reguladores esperan entre veintisiete y cincuenta millones de dólares.",
+      "duracion": 3.36,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/euro_bills_falling_slow_moti_113.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "barras",
+        "y": 0.5,
+        "sufijo": " M$",
+        "dec": 0,
+        "items": [
+          [
+            "Minimo tipico",
+            27
+          ],
+          [
+            "Nueva York",
+            50
+          ]
+        ],
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "En dos mil veintiséis, los reguladores esperan entre veintisiete y cincuenta millones de dólares.",
+      "duracion": 3.36,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "En algunos estados basta con diez o quince millones si el modelo de negocio es pequeño y sencillo. En el área metropolitana de Nueva York, la cifra empieza en cincuenta y sube.",
+      "duracion": 4.09,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/balance_scale_money_126.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "En algunos estados basta con diez o quince millones si el modelo de negocio es pequeño y sencillo. En el área metropolitana de Nueva York, la cifra empieza en cincuenta y sube.",
+      "duracion": 4.09,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/money_and_construction_plans_137.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_03c",
+      "texto": "En algunos estados basta con diez o quince millones si el modelo de negocio es pequeño y sencillo. En el área metropolitana de Nueva York, la cifra empieza en cincuenta y sube.",
+      "duracion": 4.09,
+      "movimiento": "contra_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/euro_banknotes_stack_tall_139.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Y ahora la parte que casi nadie entiende.",
+      "duracion": 3.51,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_109.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Ese dinero no es para gastarlo. No es para comprar el edificio, ni los ordenadores, ni pagar sueldos.",
+      "duracion": 3.96,
+      "movimiento": "drift_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/single_euro_coin_close_up_148.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Ese dinero no es para gastarlo. No es para comprar el edificio, ni los ordenadores, ni pagar sueldos.",
+      "duracion": 3.96,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_06",
+      "texto": "Ese dinero es un colchón. Está ahí para absorber pérdidas si los préstamos salen mal. Se queda quieto, en el balance, demostrando que el banco aguanta un golpe.",
+      "duracion": 3.77,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/person_counting_euro_bills_162.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "NO SE PUEDE TOCAR",
+        "px": 98,
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "Ese dinero es un colchón. Está ahí para absorber pérdidas si los préstamos salen mal. Se queda quieto, en el balance, demostrando que el banco aguanta un golpe.",
+      "duracion": 3.77,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/cash_counting_machine_close_163.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_06c",
+      "texto": "Ese dinero es un colchón. Está ahí para absorber pérdidas si los préstamos salen mal. Se queda quieto, en el balance, demostrando que el banco aguanta un golpe.",
+      "duracion": 3.77,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/counting_money_hands_table_171.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_07",
+      "texto": "Es como si para abrir un restaurante te pidieran treinta millones y te dijeran: no los toques, son para cuando las cosas vayan mal.",
+      "duracion": 4.39,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_172.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "Es como si para abrir un restaurante te pidieran treinta millones y te dijeran: no los toques, son para cuando las cosas vayan mal.",
+      "duracion": 4.39,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/money_counting_machine_186.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_08",
+      "texto": "Y hay más. El capital no es una cifra fija: es un porcentaje de lo que prestas. Cuanto más prestas, más capital tienes que tener.",
+      "duracion": 5.07,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/investment_growth_chart_155.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_08b",
+      "texto": "Y hay más. El capital no es una cifra fija: es un porcentaje de lo que prestas. Cuanto más prestas, más capital tienes que tener.",
+      "duracion": 5.07,
+      "movimiento": "contra_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/percentage_graph_screen_179.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_09",
+      "texto": "El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. Para considerarte bien capitalizado, la ratio de apalancamiento tiene que estar en el cinco por ciento.",
+      "duracion": 4.76,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_09b",
+      "texto": "El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. Para considerarte bien capitalizado, la ratio de apalancamiento tiene que estar en el cinco por ciento.",
+      "duracion": 4.76,
+      "movimiento": "drift_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/graph_rising_arrow_screen_200.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap2_09c",
+      "texto": "El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. Para considerarte bien capitalizado, la ratio de apalancamiento tiene que estar en el cinco por ciento.",
+      "duracion": 4.76,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_205.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_10",
+      "texto": "En la práctica, la mayoría de los bancos estadounidenses van entre el ocho y el once por ciento. Muy por encima del mínimo.",
+      "duracion": 4.42,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/closed_door_office_rejection_110.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_10b",
+      "texto": "En la práctica, la mayoría de los bancos estadounidenses van entre el ocho y el once por ciento. Muy por encima del mínimo.",
+      "duracion": 4.42,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_11",
+      "texto": "¿Por qué? Porque el que está justo en el mínimo es el que no sobrevive al primer susto.",
+      "duracion": 3.27,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/negotiation_meeting_table_141.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap2_11b",
+      "texto": "¿Por qué? Porque el que está justo en el mínimo es el que no sobrevive al primer susto.",
+      "duracion": 3.27,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Con el capital reunido, empieza lo difícil.",
+      "duracion": 4.03,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Un banco necesita una ficha bancaria. Y una ficha bancaria no se compra: se concede.",
+      "duracion": 3.69,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Un banco necesita una ficha bancaria. Y una ficha bancaria no se compra: se concede.",
+      "duracion": 3.69,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_03",
+      "texto": "La solicitud al fondo de garantía de depósitos cuesta cinco mil dólares. No reembolsables.",
+      "duracion": 3.45,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/contract_paperwork_stack_des_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5000,
+        "sufijo": " $",
+        "pie": "tasa de solicitud, no reembolsable",
+        "y": 0.3,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "La solicitud al fondo de garantía de depósitos cuesta cinco mil dólares. No reembolsables.",
+      "duracion": 3.45,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/building_blueprint_architect_30.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_04",
+      "texto": "Cinco mil dólares. Para un negocio de treinta millones.",
+      "duracion": 5.13,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/advertising_billboard_city_187.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Parece un chiste, y lo es, porque la tasa no es el coste. El coste es todo lo que hay que poner encima de la tasa.",
+      "duracion": 4.37,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_188.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_05b",
+      "texto": "Parece un chiste, y lo es, porque la tasa no es el coste. El coste es todo lo que hay que poner encima de la tasa.",
+      "duracion": 4.37,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_06",
+      "texto": "Solo los abogados que preparan la solicitud y montan el sistema de cumplimiento se llevan doscientos mil dólares o más.",
+      "duracion": 3.98,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 200000,
+        "sufijo": " $",
+        "pie": "solo los abogados de la solicitud",
+        "y": 0.3,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "Solo los abogados que preparan la solicitud y montan el sistema de cumplimiento se llevan doscientos mil dólares o más.",
+      "duracion": 3.98,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_07",
+      "texto": "Los consultores que escriben el plan de negocio, otros ciento cincuenta mil.",
+      "duracion": 2.94,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 150000,
+        "sufijo": " $",
+        "pie": "los consultores del plan de negocio",
+        "y": 0.3,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap3_07b",
+      "texto": "Los consultores que escriben el plan de negocio, otros ciento cincuenta mil.",
+      "duracion": 2.94,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/person_thinking_worried_desk_169.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_08",
+      "texto": "Y eso es antes de tener un solo cliente.",
+      "duracion": 3.59,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_09",
+      "texto": "Desde agosto de dos mil veintiséis, el regulador estadounidense concede una autorización condicionada en ciento veinte días si cumples los requisitos. Antes el proceso se alargaba mucho más de un año.",
+      "duracion": 4.62,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap3_09b",
+      "texto": "Desde agosto de dos mil veintiséis, el regulador estadounidense concede una autorización condicionada en ciento veinte días si cumples los requisitos. Antes el proceso se alargaba mucho más de un año.",
+      "duracion": 4.62,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/empty_home_office_chair_175.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_09c",
+      "texto": "Desde agosto de dos mil veintiséis, el regulador estadounidense concede una autorización condicionada en ciento veinte días si cumples los requisitos. Antes el proceso se alargaba mucho más de un año.",
+      "duracion": 4.62,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_189.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_10",
+      "texto": "Pero condicionada quiere decir condicionada.",
+      "duracion": 4.58,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_11",
+      "texto": "Un banco nuevo entra automáticamente en un periodo de supervisión reforzada de tres años. Durante ese tiempo, los controles internos y las auditorías independientes tienen que estar montados desde el primer día.",
+      "duracion": 4.29,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "TRES ANOS VIGILADO",
+        "px": 100,
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap3_11b",
+      "texto": "Un banco nuevo entra automáticamente en un periodo de supervisión reforzada de tres años. Durante ese tiempo, los controles internos y las auditorías independientes tienen que estar montados desde el primer día.",
+      "duracion": 4.29,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/person_thinking_worried_desk_247.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap3_11c",
+      "texto": "Un banco nuevo entra automáticamente en un periodo de supervisión reforzada de tres años. Durante ese tiempo, los controles internos y las auditorías independientes tienen que estar montados desde el primer día.",
+      "duracion": 4.29,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_12",
+      "texto": "Y las condiciones del seguro de depósitos siguen encima durante siete años.",
+      "duracion": 2.93,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/euro_bills_fanned_out_197.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "SIETE ANOS",
+        "px": 124,
+        "estilo": "baja"
+      }
+    },
+    {
+      "id": "cap3_12b",
+      "texto": "Y las condiciones del seguro de depósitos siguen encima durante siete años.",
+      "duracion": 2.93,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/small_coins_pile_209.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_13",
+      "texto": "Siete años vigilado. Con la licencia puesta a prueba todo el tiempo.",
+      "duracion": 2.87,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_13b",
+      "texto": "Siete años vigilado. Con la licencia puesta a prueba todo el tiempo.",
+      "duracion": 2.87,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_70.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap3_14",
+      "texto": "Y ahora la pregunta incómoda: ¿qué evalúan exactamente en esa solicitud?",
+      "duracion": 2.93,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_73.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_14b",
+      "texto": "Y ahora la pregunta incómoda: ¿qué evalúan exactamente en esa solicitud?",
+      "duracion": 2.93,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_15",
+      "texto": "No evalúan solo tu plan de negocio. Te evalúan a ti.",
+      "duracion": 4.76,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_261.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_16",
+      "texto": "De dónde sale cada dólar que has puesto. Quiénes son tus socios. Qué has hecho antes. Con quién has hecho negocios.",
+      "duracion": 4.26,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/worried_manager_office_desk_264.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_16b",
+      "texto": "De dónde sale cada dólar que has puesto. Quiénes son tus socios. Qué has hecho antes. Con quién has hecho negocios.",
+      "duracion": 4.26,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/negotiation_meeting_table_275.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap3_17",
+      "texto": "No hay presunción de inocencia. La carga de la prueba es tuya.",
+      "duracion": 2.76,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap3_17b",
+      "texto": "No hay presunción de inocencia. La carga de la prueba es tuya.",
+      "duracion": 2.76,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Supongamos que la consigues. Estás dentro. Abres las puertas.",
+      "duracion": 2.92,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Supongamos que la consigues. Estás dentro. Abres las puertas.",
+      "duracion": 2.92,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_02",
+      "texto": "Enhorabuena: acabas de meter a un socio en tu negocio que no ha puesto un dólar y que no se va a ir nunca.",
+      "duracion": 3.77,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_02b",
+      "texto": "Enhorabuena: acabas de meter a un socio en tu negocio que no ha puesto un dólar y que no se va a ir nunca.",
+      "duracion": 3.77,
+      "movimiento": "drift_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/executive_office_window_city_294.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "El regulador no cobra un porcentaje de tus beneficios como haría un socio normal. Cobra de otra forma: en trabajo que tienes que hacer y que no produce nada.",
+      "duracion": 4.0,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/declining_graph_red_226.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_04",
+      "texto": "En los bancos pequeños, el cumplimiento normativo se lleva el ocho coma siete por ciento de todos los gastos que no son intereses.",
+      "duracion": 4.08,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_104.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "barras",
+        "y": 0.5,
+        "sufijo": "%",
+        "dec": 1,
+        "items": [
+          [
+            "Banco pequeno",
+            8.7
+          ],
+          [
+            "Banco grande",
+            2.9
+          ]
+        ],
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "En los bancos pequeños, el cumplimiento normativo se lleva el ocho coma siete por ciento de todos los gastos que no son intereses.",
+      "duracion": 4.08,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/building_blueprint_architect_115.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_05",
+      "texto": "En los grandes, el dos coma nueve.",
+      "duracion": 3.51,
+      "movimiento": "bajar",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_06",
+      "texto": "Léelo otra vez. El banco pequeño paga, en proporción, tres veces más que el grande por cumplir exactamente las mismas normas.",
+      "duracion": 4.83,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/euro_banknotes_stack_tall_215.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "TRES VECES MAS",
+        "px": 112,
+        "estilo": "escala"
+      }
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "Léelo otra vez. El banco pequeño paga, en proporción, tres veces más que el grande por cumplir exactamente las mismas normas.",
+      "duracion": 4.83,
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_07",
+      "texto": "En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto en nóminas de un banco pequeño se va en cumplimiento. En los grandes, entre el cinco y medio y el nueve y medio.",
+      "duracion": 4.56,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/expired_document_stamp_140.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_07b",
+      "texto": "En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto en nóminas de un banco pequeño se va en cumplimiento. En los grandes, entre el cinco y medio y el nueve y medio.",
+      "duracion": 4.56,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_07c",
+      "texto": "En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto en nóminas de un banco pequeño se va en cumplimiento. En los grandes, entre el cinco y medio y el nueve y medio.",
+      "duracion": 4.56,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_08",
+      "texto": "Y en los bancos por debajo de mil millones en activos, solo la normativa contra el blanqueo de capitales se come entre el quince y el veinte por ciento del presupuesto operativo.",
+      "duracion": 3.54,
+      "movimiento": "drift_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_164.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap4_08b",
+      "texto": "Y en los bancos por debajo de mil millones en activos, solo la normativa contra el blanqueo de capitales se come entre el quince y el veinte por ciento del presupuesto operativo.",
+      "duracion": 3.54,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/contract_paperwork_stack_des_176.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_08c",
+      "texto": "Y en los bancos por debajo de mil millones en activos, solo la normativa contra el blanqueo de capitales se come entre el quince y el veinte por ciento del presupuesto operativo.",
+      "duracion": 3.54,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_09",
+      "texto": "Esa es la trampa del negocio bancario, y es puramente matemática.",
+      "duracion": 2.69,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_296.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_09b",
+      "texto": "Esa es la trampa del negocio bancario, y es puramente matemática.",
+      "duracion": 2.69,
+      "movimiento": "bajar",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/handshake_business_sale_300.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_10",
+      "texto": "Las normas son fijas. Los costes de cumplirlas también. Así que cuanto más pequeño eres, más pesan.",
+      "duracion": 3.92,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_301.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap4_10b",
+      "texto": "Las normas son fijas. Los costes de cumplirlas también. Así que cuanto más pequeño eres, más pesan.",
+      "duracion": 3.92,
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/negotiation_meeting_table_312.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_11",
+      "texto": "No es que el regulador tenga manía a los bancos pequeños. Es que el coste de cumplir no baja cuando tú eres pequeño. Es el mismo, y lo pagas con menos ingresos.",
+      "duracion": 3.56,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_11b",
+      "texto": "No es que el regulador tenga manía a los bancos pequeños. Es que el coste de cumplir no baja cuando tú eres pequeño. Es el mismo, y lo pagas con menos ingresos.",
+      "duracion": 3.56,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_211.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_11c",
+      "texto": "No es que el regulador tenga manía a los bancos pequeños. Es que el coste de cumplir no baja cuando tú eres pequeño. Es el mismo, y lo pagas con menos ingresos.",
+      "duracion": 3.56,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap4_12",
+      "texto": "Por eso los bancos pequeños desaparecen. No los cierran: se venden, porque el único modo de que esos costes cuadren es tener más volumen.",
+      "duracion": 5.1,
+      "movimiento": "drift_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap4_12b",
+      "texto": "Por eso los bancos pequeños desaparecen. No los cierran: se venden, porque el único modo de que esos costes cuadren es tener más volumen.",
+      "duracion": 5.1,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Vamos a los números buenos, porque los hay.",
+      "duracion": 4.0,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/building_blueprint_architect_253.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_02",
+      "texto": "El margen de intermediación medio de la banca estadounidense está en el tres coma veintidós por ciento.",
+      "duracion": 3.48,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_02b",
+      "texto": "El margen de intermediación medio de la banca estadounidense está en el tres coma veintidós por ciento.",
+      "duracion": 3.48,
+      "movimiento": "bajar",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_267.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_03",
+      "texto": "El rendimiento medio de los préstamos, en el seis coma cincuenta y uno por ciento. Llegó a tocar el siete coma trece a finales de dos mil veinticuatro y lleva bajando desde entonces.",
+      "duracion": 3.7,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/clock_time_lapse_wall_268.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 6.51,
+        "sufijo": "%",
+        "pie": "rendimiento medio de los prestamos",
+        "y": 0.42,
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "El rendimiento medio de los préstamos, en el seis coma cincuenta y uno por ciento. Llegó a tocar el siete coma trece a finales de dos mil veinticuatro y lleva bajando desde entonces.",
+      "duracion": 3.7,
+      "movimiento": "drift_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/investment_growth_chart_285.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "El rendimiento medio de los préstamos, en el seis coma cincuenta y uno por ciento. Llegó a tocar el siete coma trece a finales de dos mil veinticuatro y lleva bajando desde entonces.",
+      "duracion": 3.7,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_311.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_04",
+      "texto": "La diferencia entre lo que cobras por prestar y lo que pagas por los depósitos: ahí está todo el negocio.",
+      "duracion": 3.81,
+      "movimiento": "contra_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/single_euro_coin_close_up_224.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "La diferencia entre lo que cobras por prestar y lo que pagas por los depósitos: ahí está todo el negocio.",
+      "duracion": 3.81,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_05",
+      "texto": "Y a esa cuenta hay que restarle la maquinaria.",
+      "duracion": 4.21,
+      "movimiento": "drift_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Un sistema informático central para un banco pequeño cuesta entre doscientos setenta y cinco mil y ochocientos mil dólares.",
+      "duracion": 3.98,
+      "movimiento": "contra_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "barras",
+        "y": 0.5,
+        "sufijo": " k$",
+        "dec": 0,
+        "items": [
+          [
+            "Sistema basico",
+            275
+          ],
+          [
+            "Sistema completo",
+            800
+          ]
+        ],
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Un sistema informático central para un banco pequeño cuesta entre doscientos setenta y cinco mil y ochocientos mil dólares.",
+      "duracion": 3.98,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_07",
+      "texto": "Mantener cada cuenta en un sistema antiguo cuesta entre cuarenta y ochenta dólares al año. En uno moderno en la nube, entre cuatro y quince.",
+      "duracion": 4.83,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/person_counting_euro_bills_246.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "barras",
+        "y": 0.5,
+        "sufijo": " $",
+        "dec": 0,
+        "items": [
+          [
+            "Sistema antiguo",
+            60
+          ],
+          [
+            "En la nube",
+            10
+          ]
+        ],
+        "retardo": 0.7,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap5_07b",
+      "texto": "Mantener cada cuenta en un sistema antiguo cuesta entre cuarenta y ochenta dólares al año. En uno moderno en la nube, entre cuatro y quince.",
+      "duracion": 4.83,
+      "movimiento": "bajar",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_248.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_08",
+      "texto": "Esa diferencia, multiplicada por cien mil cuentas, es la diferencia entre ganar dinero y no ganarlo.",
+      "duracion": 3.81,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_counting_machine_258.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap5_08b",
+      "texto": "Esa diferencia, multiplicada por cien mil cuentas, es la diferencia entre ganar dinero y no ganarlo.",
+      "duracion": 3.81,
+      "movimiento": "drift_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/advertising_billboard_city_259.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_09",
+      "texto": "Y por eso los bancos se pasan siete años y cientos de millones migrando sistemas que funcionan. No es capricho tecnológico: es que el coste por cuenta decide si el margen del tres coma veintidós da o no da.",
+      "duracion": 5.08,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/stock_market_chart_screen_315.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_09b",
+      "texto": "Y por eso los bancos se pasan siete años y cientos de millones migrando sistemas que funcionan. No es capricho tecnológico: es que el coste por cuenta decide si el margen del tres coma veintidós da o no da.",
+      "duracion": 5.08,
+      "movimiento": "contra_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap5_09c",
+      "texto": "Y por eso los bancos se pasan siete años y cientos de millones migrando sistemas que funcionan. No es capricho tecnológico: es que el coste por cuenta decide si el margen del tres coma veintidós da o no da.",
+      "duracion": 5.08,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Y ahora la parte que cambia todo lo anterior.",
+      "duracion": 3.74,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_02",
+      "texto": "Has puesto treinta millones. Has conseguido la licencia. Has montado los sistemas, has contratado a la plantilla, has abierto las oficinas.",
+      "duracion": 5.03,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "Has puesto treinta millones. Has conseguido la licencia. Has montado los sistemas, has contratado a la plantilla, has abierto las oficinas.",
+      "duracion": 5.03,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_03",
+      "texto": "Nada de eso te hace dueño del dinero que mueves.",
+      "duracion": 4.13,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_260.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "Los depósitos son de los clientes. Tú los custodias. Puedes prestarlos, y de ahí sacas el margen, pero no son tuyos ni un segundo.",
+      "duracion": 3.49,
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "Los depósitos son de los clientes. Tú los custodias. Puedes prestarlos, y de ahí sacas el margen, pero no son tuyos ni un segundo.",
+      "duracion": 3.49,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "Los depósitos son de los clientes. Tú los custodias. Puedes prestarlos, y de ahí sacas el margen, pero no son tuyos ni un segundo.",
+      "duracion": 3.49,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_05",
+      "texto": "Y el porcentaje que puedes prestar tampoco lo decides tú. Lo decide un ratio de capital que escribió otro.",
+      "duracion": 4.17,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "Y el porcentaje que puedes prestar tampoco lo decides tú. Lo decide un ratio de capital que escribió otro.",
+      "duracion": 4.17,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/city_street_traffic_timelaps_99.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Así que lo que de verdad tienes es un permiso para usar dinero ajeno dentro de unos límites que no controlas.",
+      "duracion": 3.42,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/surprised_person_looking_bil_269.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_06b",
+      "texto": "Así que lo que de verdad tienes es un permiso para usar dinero ajeno dentro de unos límites que no controlas.",
+      "duracion": 3.42,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/euro_banknotes_stack_tall_273.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_07",
+      "texto": "Y ese permiso se puede retirar.",
+      "duracion": 3.25,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_08",
+      "texto": "Cuando un banco se queda sin liquidez, el regulador no negocia. Interviene un viernes por la tarde, y el lunes por la mañana el banco ya tiene otro dueño o ya no existe.",
+      "duracion": 4.13,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/city_street_traffic_timelaps_102.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "NO NEGOCIA",
+        "px": 126,
+        "estilo": "izquierda"
+      }
+    },
+    {
+      "id": "cap6_08b",
+      "texto": "Cuando un banco se queda sin liquidez, el regulador no negocia. Interviene un viernes por la tarde, y el lunes por la mañana el banco ya tiene otro dueño o ya no existe.",
+      "duracion": 4.13,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cap6_08c",
+      "texto": "Cuando un banco se queda sin liquidez, el regulador no negocia. Interviene un viernes por la tarde, y el lunes por la mañana el banco ya tiene otro dueño o ya no existe.",
+      "duracion": 4.13,
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_09",
+      "texto": "No hay concurso de acreedores. No hay meses de tribunales. Un fin de semana.",
+      "duracion": 3.28,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/bank_building_facade_161.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "UN FIN DE SEMANA",
+        "px": 104,
+        "estilo": "golpe"
+      }
+    },
+    {
+      "id": "cap6_09b",
+      "texto": "No hay concurso de acreedores. No hay meses de tribunales. Un fin de semana.",
+      "duracion": 3.28,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/bank_building_facade_170.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_10",
+      "texto": "Cuarenta años de trabajo pueden terminar en cuarenta y ocho horas, y sin que nadie haya cometido un delito.",
+      "duracion": 3.71,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/landlord_keys_building_184.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cap6_10b",
+      "texto": "Cuarenta años de trabajo pueden terminar en cuarenta y ocho horas, y sin que nadie haya cometido un delito.",
+      "duracion": 3.71,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/bank_building_facade_244.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Entonces, ¿cuánto cuesta tener un banco?",
+      "duracion": 3.8,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/person_counting_money_desk_279.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Entre veintisiete y cincuenta millones de capital que no puedes tocar. Trescientos cincuenta mil en abogados y consultores antes de abrir. Tres millones y medio por cada oficina. Casi un millón en sistemas.",
+      "duracion": 4.41,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/for_lease_sign_building_252.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "Entre veintisiete y cincuenta millones de capital que no puedes tocar. Trescientos cincuenta mil en abogados y consultores antes de abrir. Tres millones y medio por cada oficina. Casi un millón en sistemas.",
+      "duracion": 4.41,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_02c",
+      "texto": "Entre veintisiete y cincuenta millones de capital que no puedes tocar. Trescientos cincuenta mil en abogados y consultores antes de abrir. Tres millones y medio por cada oficina. Casi un millón en sistemas.",
+      "duracion": 4.41,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "Y después, para siempre: un ocho coma siete por ciento de tus gastos dedicado a demostrar que cumples.",
+      "duracion": 3.94,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/single_euro_coin_close_up_280.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "Y después, para siempre: un ocho coma siete por ciento de tus gastos dedicado a demostrar que cumples.",
+      "duracion": 3.94,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_money_283.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_04",
+      "texto": "A cambio, tres coma veintidós dólares al año por cada cien prestados.",
+      "duracion": 2.73,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/surprised_person_looking_bil_304.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_04b",
+      "texto": "A cambio, tres coma veintidós dólares al año por cada cien prestados.",
+      "duracion": 2.73,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/bank_building_facade_316.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_05",
+      "texto": "El negocio funciona. Lleva funcionando siglos. Pero funciona solo si aceptas la condición.",
+      "duracion": 3.77,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/revolving_door_people_blur_133.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der"
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "El negocio funciona. Lleva funcionando siglos. Pero funciona solo si aceptas la condición.",
+      "duracion": 3.77,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/delivery_rider_scooter_city_195.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_06",
+      "texto": "Y la condición es esta: en un banco tú no eres el dueño del dinero. Eres el responsable del dinero de otros.",
+      "duracion": 4.43,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/revolving_door_people_201.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_06b",
+      "texto": "Y la condición es esta: en un banco tú no eres el dueño del dinero. Eres el responsable del dinero de otros.",
+      "duracion": 4.43,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/revolving_door_people_blur_204.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_07",
+      "texto": "Es el negocio más rentable del mundo montado sobre la cosa que menos te pertenece.",
+      "duracion": 3.0,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/revolving_door_people_265.mp4",
+      "clip_desde": 0.3,
+      "capas": []
+    },
+    {
+      "id": "cierre_07b",
+      "texto": "Es el negocio más rentable del mundo montado sobre la cosa que menos te pertenece.",
+      "duracion": 3.0,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/bank_vault_door_284.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true
+    }
+  ]
+}

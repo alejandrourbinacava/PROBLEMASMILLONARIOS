@@ -47,6 +47,61 @@ toca. Tú eliges un `rol` de esta lista cerrada y ya:
 Si crees que necesitas un valor distinto, lo pones en `ajuste` y lo dices
 en voz alta para que lo revise un humano. No lo hagas por costumbre.
 
+## Coherencia de lugar: no se mezclan sitios
+
+Cada capa lleva `lugar` (exterior, interior_juego, interior_oficina,
+interior_boveda, abstracto) y `clase` (arquitectura, mueble, objeto,
+persona, alto).
+
+**Todas las capas de una escena tienen que compartir lugar.** Una fachada
+de casino con un primer plano de manos de crupier es imposible: son dos
+sitios distintos. `construir_guion.py` aborta si lo detecta. Solo las capas
+`abstracto` (mapas, balanzas, gráficas) valen en cualquier sitio.
+
+Y la **clase** corrige la geometría: el rol dice a qué distancia está la
+capa, la clase dice qué es. Un edificio se ancla arriba y ocupa el ancho;
+una ruleta es un `mueble` y va apoyada abajo al 80%; un documento es un
+`objeto` y flota centrado al 52%. Con una sola geometría para todo salen
+edificios colgando del cielo y mesas a la altura de un tejado.
+
+## La biblioteca se genera ENTERA, de una vez
+
+Lo que hace que las capas de una escena peguen entre sí no es el
+planificador: es que se generaran en la misma tanda, con el mismo `estilo`,
+el mismo modelo y el mismo tamaño. Una biblioteca acumulada a lo largo de
+varias sesiones tiene luces distintas en cada capa y **no hay forma de
+arreglarlo después**.
+
+```bash
+python3 generar.py proyecto/guion.json --lote --proveedor fal_2k
+```
+
+`--lote` se niega a arrancar si encuentra PNG de tandas anteriores sin
+manifiesto, y al terminar escribe `crudas/lote.json` con el estilo, el
+modelo y el tamaño usados. `validar.py` compara ese manifiesto con el
+guion: si el estilo no coincide, es GRAVE.
+
+Cambiar el `estilo` de un episodio obliga a regenerar la biblioteca
+entera. No se parchea una capa suelta.
+
+## Resolución: 1536 px no basta
+
+Los encuadres cerrados amplían mucho. Lo que hace falta de fuente:
+
+| rol | ancho mínimo del PNG |
+|---|---|
+| `frente` | **2400 px** |
+| `medio` | 2000 px |
+| `fondo` | 1900 px |
+
+`gpt-image-1` solo llega a 1536 px, y de ahí venían los PNG blandos.
+Genera a 2K con Flux en fal o Seedream, o pasa las crudas por un escalador
+antes de `recortar.py`.
+
+`planificar.py` mide los PNG en disco y **descarta los encuadres que
+pedirían más resolución de la que hay**, así que con imágenes pequeñas el
+vídeo saldrá más abierto pero nítido, en vez de cerrado y blando.
+
 ## Profundidad de campo
 
 Cada rol tiene su desenfoque y su atenuación, en `PRESETS_ROL`:
@@ -59,7 +114,7 @@ Cada rol tiene su desenfoque y su atenuación, en `PRESETS_ROL`:
 | `frente` | 2,6 px | 22% |
 | `frente_bajo` | 6 px | 34% |
 
-Tres roles más, que este pipeline añadió y la tabla de arriba no recoge:
+Tres roles más que este pipeline añadió y la tabla de arriba no recoge:
 `horizonte` (7 px, 22%) — el plano sobre el que se apoya el sujeto, edificios
 vecinos o mesa; `figura` (1,2 px, 8%) — una persona de pie dentro de la
 escena; y `suelo` (0 px, 0%) — un objeto apoyado, que **también es sujeto** y

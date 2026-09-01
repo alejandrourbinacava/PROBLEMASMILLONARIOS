@@ -19,7 +19,7 @@ on:
       guion:
         description: Guion a renderizar
         type: string
-        default: proyecto/nube_clase.json
+        default: proyecto/banco.json
       musica:
         description: Pista de fondo de assets/music
         type: string
@@ -48,17 +48,17 @@ jobs:
 
       - name: Comprobar antes de gastar minutos
         working-directory: parallax2
-        run: python validar.py "${{ inputs.guion || 'proyecto/nube_clase.json' }}"
+        run: python validar.py "${{ inputs.guion || 'proyecto/banco.json' }}"
 
       - name: Render
         working-directory: parallax2
         # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no
         # hay nadie trabajando en la maquina.
-        run: python render_par.py "${{ inputs.guion || 'proyecto/nube_clase.json' }}" _crudo.mp4 --procesos 3
+        run: python render_par.py "${{ inputs.guion || 'proyecto/banco.json' }}" _crudo.mp4 --procesos 3
 
       - name: Montaje con transiciones
         working-directory: parallax2
-        run: python montar.py "${{ inputs.guion || 'proyecto/nube_clase.json' }}" _montado.mp4 --tmp _escenas
+        run: python montar.py "${{ inputs.guion || 'proyecto/banco.json' }}" _montado.mp4 --tmp _escenas
 
       # Si la locucion viene commiteada, se usa esa: es la voz del canal y
       # cuesta creditos de ai33, asi que no se vuelve a pedir en cada render.
@@ -70,14 +70,14 @@ jobs:
             echo "usando la locucion commiteada:"
             ffprobe -v error -show_entries format=duration -of csv=p=0 voz.mp3
           else
-            python voz.py "${{ inputs.guion || 'proyecto/nube_clase.json' }}" voz.mp3 --proveedor edge
+            python voz.py "${{ inputs.guion || 'proyecto/banco.json' }}" voz.mp3 --proveedor edge
           fi
 
       - name: Sonido
         working-directory: parallax2
         run: |
           python sonido.py _montado.mp4 voz.mp3 salida.mp4 \
-            --guion "${{ inputs.guion || 'proyecto/nube_clase.json' }}" \
+            --guion "${{ inputs.guion || 'proyecto/banco.json' }}" \
             --musica "${{ inputs.musica || 'space_bar_ambient.mp3' }}"
 
       - name: Copia ligera para el movil

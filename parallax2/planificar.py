@@ -37,6 +37,13 @@ RITMO_TIPO = ["pleno", "detalle", "pleno", "silueta", "pleno", "rotulo",
               "pleno", "detalle", "pleno", "silueta", "detalle", "pleno"]
 
 
+# Mezcla para trabajar con clips de stock como columna vertebral y reservar
+# las capas para los planos que lo merecen. Los clips salen gratis y no se
+# repiten; la biblioteca de capas cuesta dinero y hay que generarla entera.
+RITMO_HIBRIDO = ["clip", "clip", "pleno", "clip", "grafico", "clip",
+                 "clip", "detalle", "clip", "rotulo", "clip", "clip"]
+
+
 def frase_corta(texto, tope=34):
     """La clausula mas corta de la locucion, para los rotulos."""
     trozos = [t.strip(" .,") for t in texto.replace(";", ".").split(".") if t.strip()]
@@ -288,6 +295,8 @@ def cabe(comp, e, anchos, W=1920):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("guion")
+    ap.add_argument("--hibrido", action="store_true",
+                    help="clips como columna vertebral, capas solo donde lo merecen")
     a = ap.parse_args()
     g = json.load(open(a.guion, encoding="utf-8"))
     print("ANTES"); informe(g["escenas"])
@@ -295,6 +304,8 @@ def main():
     anchos = ancho_fuente(base, g["escenas"])
     hay = sum(1 for v in anchos.values() if v)
     print(f"{hay}/{len(anchos)} PNG medidos en disco para el guardian de resolucion")
+    if a.hibrido:
+        globals()["RITMO_TIPO"] = RITMO_HIBRIDO
     planificar(g["escenas"], anchos)
     print("\nDESPUES"); informe(g["escenas"])
     json.dump(g, open(a.guion, "w", encoding="utf-8"),

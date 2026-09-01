@@ -27,8 +27,14 @@ import os
 import re
 import unicodedata
 
-POOL = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                   "pool_clips.json"), encoding="utf-8"))
+AQUI = os.path.dirname(os.path.abspath(__file__))
+
+
+def cargar_pool(nombre="pool_clips.json"):
+    return json.load(open(os.path.join(AQUI, nombre), encoding="utf-8"))
+
+
+POOL = cargar_pool()
 
 # Que tema pide cada frase. Se mira en ESTE orden: gana el primero que
 # aparezca, de lo mas concreto a lo mas general, porque una frase que habla de
@@ -54,7 +60,29 @@ TEMAS = [
     ("gente",      ("gente", "cliente", "clientes", "multitud", "publico", "jugador",
                     "jugadores", "empleado", "empleados", "plantilla")),
 ]
-POR_DEFECTO = "sala"
+# El casino y el banco no hablan de lo mismo, asi que cada episodio trae su
+# tabla. Se elige con --temas.
+TEMAS_BANCO = [
+    ("boveda",   ("boveda", "acorazada", "caja fuerte", "reserva", "custodia")),
+    ("papeles",  ("licencia", "ficha", "solicitud", "documento", "expediente",
+                  "contrato", "firma", "auditoria", "norma", "normativa",
+                  "cumplimiento", "blanqueo", "papel", "requisito")),
+    ("graficos", ("margen", "porcentaje", "ratio", "coeficiente", "por ciento",
+                  "rendimiento", "tipo", "capital", "apalancamiento")),
+    ("oficina",  ("regulador", "supervision", "socio", "junta", "consejo",
+                  "abogado", "consultor", "plan de negocio", "accionista",
+                  "reunion", "evalua")),
+    ("dinero",   ("dinero", "millones", "dolares", "deposito", "depositos",
+                  "prestar", "prestamo", "prestamos", "coste", "cuesta",
+                  "beneficio", "ingresos", "nomina", "nominas", "gasto",
+                  "gastos", "tasa", "cobra", "paga")),
+    ("edificio", ("oficina", "oficinas", "sucursal", "edificio", "abrir",
+                  "puertas", "banco")),
+    ("gente",    ("cliente", "clientes", "gente", "cola", "plantilla",
+                  "empleado", "empleados")),
+    ("calle",    ("ciudad", "calle", "mercado", "sector")),
+]
+POR_DEFECTO = "oficina"
 
 # Grades SUAVES: los normales estan calibrados para arte generado oscuro y
 # sobre metraje con manos y caras dejan la piel verde.

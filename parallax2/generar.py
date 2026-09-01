@@ -153,6 +153,8 @@ def main():
     ap.add_argument("--proveedor", default=None)
     ap.add_argument("--salida", default="crudas")
     ap.add_argument("--solo", nargs="*")
+    ap.add_argument("--lote", action="store_true",
+                    help="genera la biblioteca ENTERA de una vez y deja manifiesto; se niega a mezclar tandas viejas")
     ap.add_argument("--estimar", action="store_true",
                     help="cuenta imagenes y coste sin llamar a nada")
     a = ap.parse_args()
@@ -185,6 +187,22 @@ def main():
     os.makedirs(crudas, exist_ok=True)
 
     hechas = fallos = 0
+    generadas = []
+    # La biblioteca tiene que salir de UNA tanda. Lo que hace que las capas
+    # de una escena peguen entre si no es como se planifiquen: es que se
+    # generaran con el mismo estilo, el mismo modelo y el mismo tamano. Una
+    # biblioteca acumulada a lo largo de varias sesiones tiene una luz
+    # distinta en cada capa y no hay forma de arreglarlo despues.
+    manifiesto = os.path.join(crudas, "lote.json")
+    if a.lote:
+        sueltas = [k for k in capas if os.path.exists(os.path.join(crudas, k))]
+        if sueltas and not os.path.exists(manifiesto):
+            raise SystemExit(
+                f"Hay {len(sueltas)} PNG de tandas anteriores en {a.salida}/ "
+                f"sin manifiesto. Una biblioteca mezclada no comparte luz ni "
+                f"estilo, y por eso las capas no pegan entre si. Borra la "
+                f"carpeta y relanza con --lote.")
+
     print(f'{len(capas)} imagenes · {nombre} · {p["modelo"]}')
     for arch, capa in capas.items():
         if a.solo and arch not in a.solo:
@@ -196,6 +214,7 @@ def main():
         print(f'  [{hechas}] {arch} ({capa["rol"]})', flush=True)
         try:
             fn(prompt_de(capa, guion.get("estilo", "")), destino, p)
+            generadas.append(arch)
         except Exception as e:
             print(f"    FALLO: {type(e).__name__}: {str(e)[:200]}")
             fallos += 1
@@ -203,6 +222,19 @@ def main():
                 print("  SIN CREDITOS. Lo generado hasta aqui vale, y al "
                       "recargar se sigue por donde iba.")
                 break
+
+
+    if a.lote:
+        import datetime
+        json.dump({
+            "fecha": datetime.datetime.now().isoformat(timespec="seconds"),
+            "estilo": guion.get("estilo", ""),
+            "proveedor": nombre, "modelo": p["modelo"],
+            "tam": p.get("tam") or p.get("resolucion", "?"),
+            "archivos": sorted(set(generadas) | {k for k in capas
+                        if os.path.exists(os.path.join(crudas, k))}),
+        }, open(manifiesto, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print("manifiesto -> " + manifiesto)
 
 
 if __name__ == "__main__":

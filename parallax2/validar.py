@@ -83,6 +83,24 @@ def main():
 
     avisos, graves = [], []
 
+    # La biblioteca tiene que venir de UNA tanda con un solo estilo. Si el
+    # manifiesto dice otro estilo del que pide el guion, las capas se
+    # generaron con otra luz y no van a pegar entre si por mucho que se
+    # planifiquen bien.
+    manif = os.path.join(base, "crudas", "lote.json")
+    if os.path.exists(manif):
+        m = json.load(open(manif, encoding="utf-8"))
+        if m.get("estilo", "") != guion.get("estilo", ""):
+            graves.append(
+                "la biblioteca se genero con otro estilo. Cambiar el "
+                "estilo obliga a regenerar la biblioteca entera: "
+                "lote=" + m.get("estilo", "")[:50] + " / "
+                "guion=" + guion.get("estilo", "")[:50])
+    elif any(c["archivo"] for e in guion["escenas"] for c in e["capas"]):
+        avisos.append("la biblioteca no tiene manifiesto: no se puede saber si "
+                      "todas las capas salieron de la misma tanda. Regenera "
+                      "con `generar.py --lote`")
+
     # --- por archivo ---
     capas = {}
     for esc in guion["escenas"]:

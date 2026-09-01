@@ -92,25 +92,21 @@ LINEA_SUELO = 0.74
 
 ESCENOGRAFIA = {
  "calle_izq": [
-   (0.31, LINEA_SUELO, 0.215, "sujeto"),
-   (0.66, LINEA_SUELO, 0.070, "lateral"),
-   (0.85, LINEA_SUELO, 0.052, "lateral"),
-   (0.72, 0.26,        0.045, "cielo")],
+   (0.36, LINEA_SUELO, 0.470, "sujeto"),
+   (0.79, LINEA_SUELO, 0.090, "lateral"),
+   (0.70, 0.24,        0.045, "cielo")],
  "calle_der": [
-   (0.69, LINEA_SUELO, 0.215, "sujeto"),
-   (0.34, LINEA_SUELO, 0.070, "lateral"),
-   (0.15, LINEA_SUELO, 0.052, "lateral"),
-   (0.26, 0.26,        0.045, "cielo")],
+   (0.64, LINEA_SUELO, 0.470, "sujeto"),
+   (0.21, LINEA_SUELO, 0.090, "lateral"),
+   (0.28, 0.24,        0.045, "cielo")],
  "plaza": [
-   (0.50, LINEA_SUELO, 0.230, "sujeto"),
-   (0.17, LINEA_SUELO, 0.062, "lateral"),
-   (0.83, LINEA_SUELO, 0.058, "lateral"),
-   (0.33, 0.24,        0.040, "cielo")],
+   (0.50, LINEA_SUELO, 0.520, "sujeto"),
+   (0.86, LINEA_SUELO, 0.070, "lateral"),
+   (0.16, 0.26,        0.040, "cielo")],
  "avenida": [
-   (0.40, LINEA_SUELO, 0.190, "sujeto"),
-   (0.74, LINEA_SUELO, 0.085, "lateral"),
-   (0.14, LINEA_SUELO, 0.048, "lateral"),
-   (0.80, 0.22,        0.048, "cielo")],
+   (0.42, LINEA_SUELO, 0.430, "sujeto"),
+   (0.80, LINEA_SUELO, 0.105, "lateral"),
+   (0.82, 0.22,        0.048, "cielo")],
 }
 ORDEN = list(ESCENOGRAFIA)
 # El frente se apoya en el borde de abajo y se pasa de ancho a proposito:
@@ -122,7 +118,7 @@ FRENTE_ALTO_MAX = 0.46
 # vez de estar detras de ella, y se ve exactamente igual de mal que las
 # capas colgando del aire del pipeline anterior.
 SOLAPE_FRENTE = 0.38
-ANCHO_MAX, ALTO_MAX = 0.46, 0.78     # ninguna tarjeta se come el encuadre
+ANCHO_MAX, ALTO_MAX = 0.58, 0.62     # ninguna tarjeta se come el encuadre
 BAJADA_TEXTO = 0.12                  # si hay rotulo, las tarjetas ceden sitio
 GIROS = [-2.0, 1.5, -1.0]
 
@@ -174,6 +170,13 @@ def frente(ruta):
     profundidad de campo.
     """
     im = Image.open(ruta).convert("RGBA")
+    # A su contenido real. El PNG viene a 2048x1152 con la acera ocupando
+    # solo la franja de abajo; pegando el lienzo entero, el borde de arriba
+    # de la imagen no es el borde de la acera y los sujetos quedaban
+    # flotando un tercio de pantalla por encima del suelo.
+    b = im.getbbox()
+    if b:
+        im = im.crop(b)
     if im.size[0] > 2200:
         im = im.resize((2200, int(im.size[1] * 2200 / im.size[0])), Image.LANCZOS)
     return im
@@ -207,7 +210,13 @@ def retardo(texto, palabra, ppm=140):
 # dibujado, se lee como ruido de compresion, y ademas compite con el unico
 # movimiento que si queremos, que es la deriva continua. El dinamismo sale
 # de que la camara no pare, no de que el contorno tiemble.
-TRAZO = (-16, 10, 9)
+# Grueso y naranja, no una linea roja fina.
+#
+# En el material de referencia el contorno desplazado es una MANCHA de
+# color de veinticinco pixeles, no un filo. Con nueve px se lee como un
+# borde mal recortado; con veinticinco se lee como una decision.
+TRAZO = (-22, 16, 26)
+COLOR_TRAZO = (236, 98, 34)
 
 
 def tarjeta(ruta, giro):
@@ -216,10 +225,14 @@ def tarjeta(ruta, giro):
     Se hace una vez por archivo, nunca por fotograma.
     """
     im = Image.open(ruta).convert("RGBA")
+    b = im.getbbox()          # mismo motivo: el area util, no el lienzo
+    if b:
+        im = im.crop(b)
     if im.size[0] > 1500:
         im = im.resize((1500, int(im.size[1] * 1500 / im.size[0])), Image.LANCZOS)
     dx, dy, gr = TRAZO
-    im = vox.trazo(vox.semitono(normalizar(im)), dx=dx, dy=dy, grosor=gr)
+    im = vox.trazo(vox.semitono(normalizar(im)), color=COLOR_TRAZO,
+                   dx=dx, dy=dy, grosor=gr)
 
     w, h = im.size
     if MARCO:
@@ -335,10 +348,14 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         if alfa < 0.995:
             p.putalpha(p.getchannel("A").point(
                 lambda v, m=alfa: int(v * m)))
-        # El PIE de la pieza cae en la linea de apoyo. Todo lo que se apoya
-        # en el suelo comparte esa linea y por eso se lee como el mismo
-        # sitio; lo que va en el cielo tiene la suya propia, arriba.
-        y = int(H * apoyo) - alto
+        # El PIE cae en la linea de tierra REAL, que es el borde de arriba
+        # del suelo, no una constante. Con la constante el sujeto flotaba
+        # sobre la acera en vez de pisarla.
+        if clase == "cielo" or not geo:
+            y = int(H * apoyo) - alto
+        else:
+            y = geo[3] + int(geo[2] * 0.10) - alto
+        y = max(y, int(H * 0.02))       # nada se sale por arriba
         # dx y dy de la entrada van en fracciones de la PIEZA, no de la
         # pantalla: si fueran de pantalla, una capa pequena apenas se
         # moveria y una grande se saldria del encuadre.
@@ -414,10 +431,14 @@ def pintar(esc, t, cfg, fondo, cache, pal):
                               radio=g.get("radio", 0.15),
                               decimales=g.get("decimales", 0))
             else:
-                vox.cifra(im, g["valor"], pal, sufijo=g.get("sufijo", ""),
-                          pie=g.get("pie", ""), u=u, y=g.get("y", 0.07),
-                          px=g.get("px", 210),
-                          decimales=g.get("decimales", 0))
+                # el bloque va al lado vacio: si la composicion manda a la
+                # izquierda, el dato se coloca a la derecha y al reves
+                izq = "izq" in (esc.get("composicion") or "")
+                vox_mg.bloque_cifra(im, g["valor"], pal,
+                                    sufijo=g.get("sufijo", ""),
+                                    pie=g.get("pie", ""), u=u,
+                                    xy=(0.66 if izq else 0.09, 0.13),
+                                    decimales=g.get("decimales", 0))
 
     t_p = esc.get("texto_pantalla")
     if t_p:

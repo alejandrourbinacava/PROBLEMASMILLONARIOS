@@ -241,10 +241,13 @@ def repartir(escenas, a_mano=None):
         while len(elegidos) < 3 and d < len(lat):
             elegidos.append(lat[(i + d) % len(lat)])
             d += 1
-        if cfg["cielo"]:
-            cie = [x for x in CIELO if existe(x)]
-            if cie:
-                elegidos.append(cie[i % len(cie)])
+        # El hueco del cielo solo se llena con una NUBE. Sin nubes
+        # generadas, el tercer elemento caia ahi de todos modos y salia un
+        # arbol flotando por encima del encuadre, cortado por el borde.
+        cie = [x for x in CIELO if existe(x)] if cfg["cielo"] else []
+        elegidos = elegidos[:2]
+        if cie:
+            elegidos.append(cie[i % len(cie)])
         ultima[sujeto] = i
         # El frente es el SUELO: la acera y la calzada, apoyadas en la linea
         # de tierra. Todo lo demas se planta encima.

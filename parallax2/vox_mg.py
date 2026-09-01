@@ -393,3 +393,31 @@ def ondula(t, amplitud=0.012, periodo=3.4):
     baja unos pocos pixeles y el ojo lo lee como movimiento propio.
     """
     return math.sin(2 * math.pi * t / periodo) * amplitud
+
+
+def bloque_cifra(im, valor, pal, sufijo="", pie="", u=1.0, xy=(0.62, 0.16),
+                 px=190, decimales=0):
+    """
+    El dato como un BLOQUE, no como un numero flotando en medio.
+
+    En el material de referencia la cifra nunca esta suelta ni centrada: es
+    una unidad compuesta -marca de color, numero grande, pie en versalitas-
+    puesta en la parte vacia del encuadre. Centrado, el numero se cruza con
+    los recortes y no se lee ni el uno ni el otro.
+    """
+    W, H = im.size
+    x, y = xy[0] * W, xy[1] * H
+    d = ImageDraw.Draw(im)
+    s = _suave(u)
+    t = f"{valor*s:,.{decimales}f}".replace(",", "@").replace(".", ",").replace("@", ".")
+    t += sufijo
+    fo = vox.f(px)
+    an = d.textlength(t, font=fo)
+    # marca de color a la izquierda, del alto del numero
+    d.rectangle([x - px * 0.42, y + px * 0.10, x - px * 0.16, y + px * 0.92],
+                fill=pal["apoyo"])
+    d.text((x, y), t, font=fo, fill=pal["tinta"])
+    if pie:
+        fp = vox.f(int(px * 0.22))
+        d.text((x, y + px * 1.02), pie.upper(), font=fp, fill=pal["tinta"])
+    return im

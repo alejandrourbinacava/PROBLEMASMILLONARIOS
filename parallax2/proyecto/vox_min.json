@@ -22,10 +22,6 @@
     {
      "archivo": "meta/e_arbol.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/e_arbol_alto.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "calle",
@@ -55,10 +51,6 @@
     {
      "archivo": "meta/e_arbol_alto.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/e_arbol.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "calle",
@@ -66,7 +58,12 @@
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_02",
@@ -76,10 +73,6 @@
    "capas": [
     {
      "archivo": "meta/m_plantilla.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_libro.png",
      "entrada": "pop"
     }
    ],
@@ -95,7 +88,12 @@
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_03",
@@ -105,10 +103,6 @@
    "capas": [
     {
      "archivo": "meta/m_plantilla.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_servidor.png",
      "entrada": "lateral"
     }
    ],
@@ -121,6 +115,11 @@
     {
      "forma": "banda_inferior",
      "retardo_def": 0.06
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.11,
+     "texto": "Reserva Federal de San Luis"
     }
    ]
   },
@@ -133,10 +132,6 @@
     {
      "archivo": "meta/m_plantilla.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_recibos.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "oficina",
@@ -148,6 +143,11 @@
     {
      "forma": "banda_inferior",
      "retardo_def": 0.06
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.11,
+     "texto": "Reserva Federal de San Luis"
     }
    ]
   },
@@ -164,10 +164,6 @@
     {
      "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/e_arbol.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "calle",
@@ -175,7 +171,12 @@
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": true,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_06",
@@ -190,10 +191,6 @@
     {
      "archivo": "meta/e_arbol.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/e_arbol_alto.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "calle",
@@ -201,7 +198,12 @@
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": true,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_07",
@@ -216,10 +218,6 @@
     {
      "archivo": "meta/e_arbol_alto.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/e_arbol.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "calle",
@@ -227,7 +225,12 @@
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_08",
@@ -242,10 +245,6 @@
     {
      "archivo": "meta/e_arbol.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/e_arbol_alto.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "calle",
@@ -253,7 +252,12 @@
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_09",
@@ -263,10 +267,6 @@
    "capas": [
     {
      "archivo": "meta/m_familia.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_maletin.png",
      "entrada": "lateral"
     }
    ],
@@ -279,6 +279,11 @@
     {
      "forma": "banda_inferior",
      "retardo_def": 0.06
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.11,
+     "texto": "Reserva Federal de San Luis"
     }
    ]
   },
@@ -291,10 +296,6 @@
     {
      "archivo": "meta/m_familia.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_monedas.png",
-     "entrada": "lateral"
     }
    ],
    "tipo_escena": "boveda",
@@ -306,6 +307,11 @@
     {
      "forma": "banda_inferior",
      "retardo_def": 0.06
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.11,
+     "texto": "Reserva Federal de San Luis"
     }
    ]
   },
@@ -318,10 +324,6 @@
     {
      "archivo": "meta/m_familia.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_boveda.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "boveda",
@@ -333,6 +335,11 @@
     {
      "forma": "banda_inferior",
      "retardo_def": 0.06
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.11,
+     "texto": "Reserva Federal de San Luis"
     }
    ]
   },
@@ -349,10 +356,6 @@
     {
      "archivo": "meta/f_candado.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_maletin.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "boveda",
@@ -360,7 +363,12 @@
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": true,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_13",
@@ -375,10 +383,6 @@
     {
      "archivo": "meta/f_maletin.png",
      "entrada": "sube"
-    },
-    {
-     "archivo": "meta/f_boveda.png",
-     "entrada": "sube"
     }
    ],
    "tipo_escena": "boveda",
@@ -386,7 +390,12 @@
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": true,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_14",
@@ -395,15 +404,11 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_banquero.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_hucha.png",
-     "entrada": "pop"
-    },
-    {
      "archivo": "meta/f_candado.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     }
    ],
@@ -428,15 +433,11 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_banquero.png",
-     "entrada": "pop"
-    },
-    {
      "archivo": "meta/f_candado.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_hucha.png",
      "entrada": "pop"
     }
    ],
@@ -445,7 +446,12 @@
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": true,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_16",
@@ -454,15 +460,11 @@
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_inspector.png",
-     "entrada": "sube"
-    },
-    {
      "archivo": "meta/f_maletin.png",
      "entrada": "sube"
     },
     {
-     "archivo": "meta/f_monedas.png",
+     "archivo": "meta/f_candado.png",
      "entrada": "sube"
     }
    ],
@@ -471,7 +473,12 @@
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_17",
@@ -480,15 +487,11 @@
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
      "archivo": "meta/f_monedas.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     }
    ],
@@ -497,7 +500,12 @@
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_18",
@@ -512,10 +520,6 @@
     {
      "archivo": "meta/e_arbol.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/e_arbol_alto.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "calle",
@@ -523,7 +527,12 @@
    "entrada_frente": "sube",
    "composicion": "calle_izq",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_19",
@@ -538,10 +547,6 @@
     {
      "archivo": "meta/e_arbol_alto.png",
      "entrada": "sube"
-    },
-    {
-     "archivo": "meta/e_arbol.png",
-     "entrada": "sube"
     }
    ],
    "tipo_escena": "calle",
@@ -549,7 +554,12 @@
    "entrada_frente": "sube",
    "composicion": "plaza",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   },
   {
    "id": "gancho_20",
@@ -564,10 +574,6 @@
     {
      "archivo": "meta/e_arbol.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/e_arbol_alto.png",
-     "entrada": "pop"
     }
    ],
    "tipo_escena": "calle",
@@ -575,7 +581,12 @@
    "entrada_frente": "sube",
    "composicion": "avenida",
    "barrido": false,
-   "formas": []
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.06
+    }
+   ]
   }
  ]
 }

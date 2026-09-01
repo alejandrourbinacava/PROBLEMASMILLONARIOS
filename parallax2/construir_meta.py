@@ -19,6 +19,8 @@ el banquero sale en catorce planos seguidos: es el que mas palabras casa.
 """
 import argparse
 import collections
+import hashlib
+import math
 import io
 import json
 import os
@@ -144,14 +146,74 @@ def repartir(escenas):
     return escenas
 
 
+def desde_markdown(md, duraciones, segundos, pausa=1.0):
+    """
+    Trocea la IMAGEN, no la voz.
+
+    El storyboard parte las frases en trozos cortos, y eso obliga a
+    sintetizar de nuevo: la voz de pago va cacheada por hash del texto, asi
+    que un trozo es una locucion nueva aunque salga de una frase ya pagada.
+    De las 199 frases del storyboard solo 21 encajaban con lo pagado: unos
+    14.500 creditos por volver a decir lo mismo.
+
+    Aqui la frase se locuta ENTERA, con su audio ya comprado, y lo que se
+    parte es lo que se ve: una frase de diez segundos son tres planos de
+    poco mas de tres. El primero lleva la voz y los otros heredan su hueco.
+    Coste: cero.
+    """
+    caps = leer_guion.leer(md)
+    escenas, total = [], 0.0
+    for cap, _titulo, frases in caps:
+        for texto in frases:
+            if total >= segundos:
+                return escenas, total
+            h = hashlib.sha1(texto.encode("utf-8")).hexdigest()[:16]
+            d = duraciones.get(h)
+            if d is None:
+                continue
+            d = d + pausa
+            k = max(1, math.ceil(d / PL.TOPE))
+            paso = round(d / k, 2)
+            for j in range(k):
+                e = {"id": f"{cap}_{len(escenas):02d}", "texto": texto,
+                     "duracion": paso, "muda": j > 0, "capas": []}
+                if j == 0 and cap in ("gancho", "cap1"):
+                    e["etiqueta"] = cap.upper()
+                escenas.append(e)
+            total += d
+    return escenas, total
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("guion")
+    ap.add_argument("guion", nargs="?")
     ap.add_argument("--md", default="../config/guion_banco.md")
+    ap.add_argument("--desde-md", action="store_true",
+                    help="trocea las frases del Markdown, con la voz ya pagada")
+    ap.add_argument("--duraciones", default="duraciones_voz.json")
     ap.add_argument("--segundos", type=float, default=62.0)
     ap.add_argument("--salida", default="proyecto/vox_min.json")
     a = ap.parse_args()
+
+    if a.desde_md:
+        dur = json.load(io.open(os.path.join(AQUI, a.duraciones), encoding="utf-8"))
+        escenas, t = desde_markdown(os.path.join(AQUI, a.md), dur, a.segundos)
+        repartir(escenas)
+        PL.planificar(escenas)
+        guion = {"titulo": "prueba VOX - voz de pago", "paleta": "vox",
+                 "fondo_imagen": FONDO,
+                 "lienzo": {"w": 1920, "h": 1080, "fps": 25, "ppm": 140},
+                 "escenas": escenas}
+        json.dump(guion, io.open(os.path.join(AQUI, a.salida), "w", encoding="utf-8"),
+                  ensure_ascii=False, indent=1)
+        caps = [1 + len(e["capas"]) + bool(e.get("frente")) for e in escenas]
+        mudas = sum(1 for e in escenas if e["muda"])
+        print(f'{len(escenas)} planos - {t:.1f}s - '
+              f'{len(escenas) - mudas} locuciones YA PAGADAS, {mudas} planos mudos')
+        print(f'capas de IMAGEN por plano: min {min(caps)}, max {max(caps)}')
+        print("->", a.salida)
+        return
 
     src = json.load(io.open(a.guion, encoding="utf-8"))
     tildes = {norm(f): f for _k, _t, fr in

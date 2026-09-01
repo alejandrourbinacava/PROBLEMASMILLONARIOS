@@ -1,5 +1,5 @@
 {
- "titulo": "prueba VOX con biblioteca de Meta",
+ "titulo": "prueba VOX - voz de pago",
  "paleta": "vox",
  "fondo_imagen": "meta/f_papel.png",
  "lienzo": {
@@ -10,11 +10,15 @@
  },
  "escenas": [
   {
-   "id": "gancho_01",
+   "id": "gancho_00",
    "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
-   "duracion": 3.5,
+   "duracion": 3.88,
    "muda": false,
    "capas": [
+    {
+     "archivo": "meta/m_banquero.png",
+     "entrada": "lateral"
+    },
     {
      "archivo": "meta/f_candado.png",
      "entrada": "lateral"
@@ -22,14 +26,10 @@
     {
      "archivo": "meta/f_balanza.png",
      "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/m_banquero.png",
-     "entrada": "lateral"
     }
    ],
    "etiqueta": "GANCHO",
-   "frente": "meta/f_regulador.png",
+   "frente": "meta/f_libro.png",
    "grafico": {
     "tipo": "reparto",
     "valor": 3.22,
@@ -42,58 +42,50 @@
    "formas": []
   },
   {
-   "id": "gancho_01a",
+   "id": "gancho_01",
    "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
-   "duracion": 3.5,
+   "duracion": 3.88,
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_recibos.png",
+     "archivo": "meta/f_escudo.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_torre.png",
+     "archivo": "meta/f_servidor.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_cerrado.png",
+     "archivo": "meta/m_consultor.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_libro.png",
+   "frente": "meta/f_regulador.png",
    "entrada_frente": "sube",
    "barrido": false,
    "formas": []
   },
   {
    "id": "gancho_02",
-   "texto": "Tres coma veintidos. Ese es el margen.",
-   "duracion": 4.0,
+   "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 3.74,
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_escudo.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_fundador.png",
+     "archivo": "meta/m_cola.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_boveda.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "pop"
     }
    ],
-   "texto_pantalla": {
-    "lineas": [
-     "Tres coma",
-     "*veintidos*"
-    ],
-    "px": 88,
-    "y": 0.08,
-    "entrada": "maquina"
-   },
-   "frente": "meta/f_engranaje.png",
+   "etiqueta": "GANCHO",
+   "frente": "meta/f_oficina.png",
    "grafico": {
     "tipo": "cifra",
     "valor": 3.22,
@@ -107,80 +99,47 @@
   },
   {
    "id": "gancho_03",
-   "texto": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas.",
-   "duracion": 4.0,
-   "muda": false,
-   "capas": [
-    {
-     "archivo": "meta/m_cola.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_maletin.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/m_consultor.png",
-     "entrada": "lateral"
-    }
-   ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_oficina.png",
-   "entrada_frente": "sube",
-   "barrido": false,
-   "formas": []
-  },
-  {
-   "id": "gancho_03a",
-   "texto": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas.",
-   "duracion": 4.0,
+   "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 3.74,
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/m_inspector.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/m_fundador.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_balanza.png",
+     "archivo": "meta/f_cerrado.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_expediente.png",
+   "frente": "meta/f_engranaje.png",
    "entrada_frente": "sube",
    "barrido": false,
    "formas": []
   },
   {
    "id": "gancho_04",
-   "texto": "Suena a poco.",
-   "duracion": 3.0,
-   "muda": false,
+   "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 3.74,
+   "muda": true,
    "capas": [
     {
-     "archivo": "meta/m_inspector.png",
-     "entrada": "pop"
+     "archivo": "meta/f_balanza.png",
+     "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_familia.png",
-     "entrada": "pop"
+     "archivo": "meta/m_banquero.png",
+     "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_recibos.png",
-     "entrada": "pop"
+     "archivo": "meta/f_candado.png",
+     "entrada": "lateral"
     }
    ],
-   "texto_pantalla": {
-    "lineas": [
-     "Suena a *poco*."
-    ],
-    "px": 88,
-    "y": 0.08,
-    "entrada": "pop"
-   },
    "frente": "meta/f_monedas.png",
    "entrada_frente": "sube",
    "barrido": false,
@@ -188,65 +147,90 @@
   },
   {
    "id": "gancho_05",
-   "texto": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar.",
-   "duracion": 4.0,
+   "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 3.94,
    "muda": false,
    "capas": [
     {
      "archivo": "meta/m_cola.png",
-     "entrada": "lateral"
+     "entrada": "pop"
     },
     {
-     "archivo": "meta/m_banquero.png",
-     "entrada": "lateral"
+     "archivo": "meta/m_consultor.png",
+     "entrada": "pop"
     },
     {
-     "archivo": "meta/f_torre.png",
-     "entrada": "lateral"
+     "archivo": "meta/f_boveda.png",
+     "entrada": "pop"
     }
    ],
    "etiqueta": "GANCHO",
-   "frente": "meta/f_mostrador.png",
-   "entrada_frente": "sube",
-   "barrido": true,
-   "formas": []
-  },
-  {
-   "id": "gancho_05a",
-   "texto": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar.",
-   "duracion": 4.0,
-   "muda": true,
-   "capas": [
-    {
-     "archivo": "meta/m_consultor.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_cerrado.png",
-     "entrada": "lateral"
-    },
-    {
-     "archivo": "meta/f_escudo.png",
-     "entrada": "lateral"
-    }
-   ],
-   "frente": "meta/f_regulador.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
    "barrido": true,
    "formas": []
   },
   {
    "id": "gancho_06",
+   "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 3.94,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/f_torre.png",
+     "entrada": "lateral"
+    },
+    {
+     "archivo": "meta/m_familia.png",
+     "entrada": "lateral"
+    },
+    {
+     "archivo": "meta/f_escudo.png",
+     "entrada": "lateral"
+    }
+   ],
+   "frente": "meta/f_mostrador.png",
+   "entrada_frente": "sube",
+   "barrido": true,
+   "formas": []
+  },
+  {
+   "id": "gancho_07",
    "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
-   "duracion": 3.5,
+   "duracion": 2.76,
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_candado.png",
+     "archivo": "meta/f_maletin.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/f_servidor.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/m_inspector.png",
+     "entrada": "pop"
+    }
+   ],
+   "etiqueta": "GANCHO",
+   "frente": "meta/f_expediente.png",
+   "entrada_frente": "sube",
+   "barrido": false,
+   "formas": []
+  },
+  {
+   "id": "gancho_08",
+   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "duracion": 2.76,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/m_banquero.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_candado.png",
      "entrada": "pop"
     },
     {
@@ -254,56 +238,32 @@
      "entrada": "pop"
     }
    ],
-   "frente": "meta/f_hucha.png",
+   "frente": "meta/f_cinta.png",
    "entrada_frente": "sube",
    "barrido": false,
    "formas": []
   },
   {
-   "id": "gancho_06a",
-   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
-   "duracion": 3.5,
-   "muda": true,
-   "capas": [
-    {
-     "archivo": "meta/f_boveda.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_recibos.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_balanza.png",
-     "entrada": "pop"
-    }
-   ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_engranaje.png",
-   "entrada_frente": "sube",
-   "barrido": false,
-   "formas": []
-  },
-  {
-   "id": "gancho_07",
-   "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
-   "duracion": 4.0,
+   "id": "gancho_09",
+   "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 3.56,
    "muda": false,
    "capas": [
     {
-     "archivo": "meta/m_familia.png",
+     "archivo": "meta/m_consultor.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/f_torre.png",
+     "archivo": "meta/f_balanza.png",
      "entrada": "lateral"
     },
     {
-     "archivo": "meta/m_cola.png",
+     "archivo": "meta/f_recibos.png",
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_oficina.png",
+   "etiqueta": "GANCHO",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
    "barrido": false,
    "formas": [],
@@ -311,13 +271,13 @@
    "frente_vivo": true
   },
   {
-   "id": "gancho_07a",
-   "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
-   "duracion": 4.0,
+   "id": "gancho_10",
+   "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 3.56,
    "muda": true,
    "capas": [
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/m_familia.png",
      "entrada": "lateral"
     },
     {
@@ -329,7 +289,7 @@
      "entrada": "lateral"
     }
    ],
-   "frente": "meta/f_expediente.png",
+   "frente": "meta/f_oficina.png",
    "entrada_frente": "sube",
    "barrido": false,
    "formas": [],
@@ -337,13 +297,169 @@
    "frente_vivo": true
   },
   {
-   "id": "gancho_08",
-   "texto": "Ese es el negocio entero. Todo lo demas es decoracion.",
-   "duracion": 2.5,
+   "id": "gancho_11",
+   "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 3.56,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/f_servidor.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_maletin.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/m_inspector.png",
+     "entrada": "pop"
+    }
+   ],
+   "frente": "meta/f_monedas.png",
+   "entrada_frente": "sube",
+   "barrido": false,
+   "formas": [],
+   "efecto": "agua",
+   "frente_vivo": true
+  },
+  {
+   "id": "gancho_12",
+   "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "duracion": 2.56,
    "muda": false,
    "capas": [
     {
+     "archivo": "meta/m_fundador.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_candado.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/m_cola.png",
+     "entrada": "pop"
+    }
+   ],
+   "etiqueta": "GANCHO",
+   "frente": "meta/f_engranaje.png",
+   "entrada_frente": "sube",
+   "barrido": true,
+   "formas": []
+  },
+  {
+   "id": "gancho_13",
+   "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "duracion": 2.56,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/f_boveda.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/f_torre.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/m_consultor.png",
+     "entrada": "sube"
+    }
+   ],
+   "frente": "meta/f_mostrador.png",
+   "entrada_frente": "sube",
+   "barrido": true,
+   "formas": []
+  },
+  {
+   "id": "gancho_14",
+   "texto": "Y aquí es donde este vídeo se separa de los dos anteriores.",
+   "duracion": 2.38,
+   "muda": false,
+   "capas": [
+    {
+     "archivo": "meta/f_escudo.png",
+     "entrada": "pop"
+    },
+    {
      "archivo": "meta/m_banquero.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_cerrado.png",
+     "entrada": "pop"
+    }
+   ],
+   "etiqueta": "GANCHO",
+   "frente": "meta/f_expediente.png",
+   "grafico": {
+    "tipo": "cifra",
+    "valor": 2,
+    "sufijo": "",
+    "decimales": 0,
+    "palabra": "Y"
+   },
+   "entrada_frente": "sube",
+   "barrido": true,
+   "formas": []
+  },
+  {
+   "id": "gancho_15",
+   "texto": "Y aquí es donde este vídeo se separa de los dos anteriores.",
+   "duracion": 2.38,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/f_servidor.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/f_maletin.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/m_inspector.png",
+     "entrada": "pop"
+    }
+   ],
+   "frente": "meta/f_cinta.png",
+   "entrada_frente": "sube",
+   "barrido": true,
+   "formas": []
+  },
+  {
+   "id": "gancho_16",
+   "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+   "duracion": 3.27,
+   "muda": false,
+   "capas": [
+    {
+     "archivo": "meta/f_candado.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/f_recibos.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/f_balanza.png",
+     "entrada": "sube"
+    }
+   ],
+   "etiqueta": "GANCHO",
+   "frente": "meta/f_hucha.png",
+   "entrada_frente": "sube",
+   "barrido": false,
+   "formas": []
+  },
+  {
+   "id": "gancho_17",
+   "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+   "duracion": 3.27,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/m_familia.png",
      "entrada": "pop"
     },
     {
@@ -351,158 +467,80 @@
      "entrada": "pop"
     },
     {
-     "archivo": "meta/m_inspector.png",
+     "archivo": "meta/m_cola.png",
      "entrada": "pop"
-    }
-   ],
-   "texto_pantalla": {
-    "lineas": [
-     "Todo lo demas",
-     "es *decoracion*."
-    ],
-    "px": 88,
-    "y": 0.08,
-    "entrada": "pop"
-   },
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_monedas.png",
-   "entrada_frente": "sube",
-   "barrido": false,
-   "formas": []
-  },
-  {
-   "id": "gancho_08b",
-   "texto": "Ese es el negocio entero. Todo lo demas es decoracion.",
-   "duracion": 2.5,
-   "muda": true,
-   "capas": [
-    {
-     "archivo": "meta/f_recibos.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/m_fundador.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_boveda.png",
-     "entrada": "pop"
-    }
-   ],
-   "etiqueta": "GANCHO",
-   "frente": "meta/f_mostrador.png",
-   "entrada_frente": "sube",
-   "barrido": false,
-   "formas": []
-  },
-  {
-   "id": "gancho_09",
-   "texto": "Asi que la pregunta se hace sola: cuanto cuesta montar uno.",
-   "duracion": 2.5,
-   "muda": false,
-   "capas": [
-    {
-     "archivo": "meta/f_candado.png",
-     "entrada": "sube"
-    },
-    {
-     "archivo": "meta/f_torre.png",
-     "entrada": "sube"
-    },
-    {
-     "archivo": "meta/f_balanza.png",
-     "entrada": "sube"
     }
    ],
    "frente": "meta/f_regulador.png",
    "entrada_frente": "sube",
-   "barrido": true,
+   "barrido": false,
    "formas": []
   },
   {
-   "id": "gancho_09b",
-   "texto": "Asi que la pregunta se hace sola: cuanto cuesta montar uno.",
-   "duracion": 2.5,
-   "muda": true,
+   "id": "gancho_18",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+   "duracion": 3.96,
+   "muda": false,
    "capas": [
     {
-     "archivo": "meta/f_maletin.png",
+     "archivo": "meta/m_banquero.png",
+     "entrada": "pop"
+    },
+    {
+     "archivo": "meta/m_fundador.png",
      "entrada": "pop"
     },
     {
      "archivo": "meta/f_cerrado.png",
      "entrada": "pop"
-    },
-    {
-     "archivo": "meta/f_escudo.png",
-     "entrada": "pop"
     }
    ],
-   "frente": "meta/f_hucha.png",
-   "entrada_frente": "sube",
-   "barrido": true,
-   "formas": []
-  },
-  {
-   "id": "gancho_10",
-   "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
-   "duracion": 2.5,
-   "muda": false,
-   "capas": [
-    {
-     "archivo": "meta/m_inspector.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/m_cola.png",
-     "entrada": "pop"
-    },
-    {
-     "archivo": "meta/m_banquero.png",
-     "entrada": "pop"
-    }
-   ],
-   "frente": "meta/f_engranaje.png",
-   "entrada_frente": "sube",
-   "barrido": false,
-   "formas": []
-  },
-  {
-   "id": "gancho_10b",
-   "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
-   "duracion": 2.5,
-   "muda": true,
-   "capas": [
-    {
-     "archivo": "meta/m_familia.png",
-     "entrada": "sube"
-    },
-    {
-     "archivo": "meta/f_recibos.png",
-     "entrada": "sube"
-    },
-    {
-     "archivo": "meta/m_fundador.png",
-     "entrada": "sube"
-    }
-   ],
+   "etiqueta": "GANCHO",
    "frente": "meta/f_oficina.png",
    "entrada_frente": "sube",
    "barrido": false,
-   "formas": []
+   "formas": [],
+   "efecto": "fuego",
+   "frente_vivo": true
   },
   {
-   "id": "cap1_dos_bancos_01",
-   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
-   "duracion": 4.0,
-   "muda": false,
+   "id": "gancho_19",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+   "duracion": 3.96,
+   "muda": true,
+   "capas": [
+    {
+     "archivo": "meta/f_maletin.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/f_escudo.png",
+     "entrada": "sube"
+    },
+    {
+     "archivo": "meta/f_servidor.png",
+     "entrada": "sube"
+    }
+   ],
+   "frente": "meta/f_monedas.png",
+   "entrada_frente": "sube",
+   "barrido": false,
+   "formas": [],
+   "efecto": "fuego",
+   "frente_vivo": true
+  },
+  {
+   "id": "gancho_20",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+   "duracion": 3.96,
+   "muda": true,
    "capas": [
     {
      "archivo": "meta/f_candado.png",
      "entrada": "pop"
     },
     {
-     "archivo": "meta/f_servidor.png",
+     "archivo": "meta/f_boveda.png",
      "entrada": "pop"
     },
     {
@@ -510,11 +548,12 @@
      "entrada": "pop"
     }
    ],
-   "etiqueta": "CAP1",
-   "frente": "meta/f_expediente.png",
+   "frente": "meta/f_hucha.png",
    "entrada_frente": "sube",
    "barrido": false,
-   "formas": []
+   "formas": [],
+   "efecto": "fuego",
+   "frente_vivo": true
   }
  ]
 }

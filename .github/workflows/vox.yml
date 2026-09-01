@@ -25,7 +25,7 @@ on:
       cache_voz:
         description: Carpeta de locuciones (_voz de pago, _voz_libre gratis)
         type: string
-        default: _voz_libre
+        default: _voz
   push:
     tags:
       - "vox-*"
@@ -57,7 +57,7 @@ jobs:
       - name: Voz desde el cache
         working-directory: parallax2
         run: |
-          python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}"             voz_vox.mp3 "${{ inputs.cache_voz || '_voz_libre' }}"
+          python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}"             voz_vox.mp3 "${{ inputs.cache_voz || '_voz' }}"
 
       - name: Efectos de transicion
         working-directory: parallax2

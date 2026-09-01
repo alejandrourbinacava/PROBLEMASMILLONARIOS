@@ -1,0 +1,70 @@
+name: Vox
+
+# Prueba del estilo VOX: fondo bloqueado y collage de papel en semitono.
+#
+# Aqui no se genera NADA. Ni una imagen ni un segundo de voz:
+#
+#   Los recortes son los que ya estaban en proyecto/, la biblioteca acumulada
+#   entre sesiones. Es justo lo que se esta poniendo a prueba: si el semitono
+#   hace que material de tandas distintas pegue entre si, esa biblioteca vale
+#   tal cual y no hay que regenerar nada.
+#
+#   La voz sale de parallax2/_voz, el cache por hash del texto. Esas nueve
+#   frases ya se pagaron cuando se locuto el episodio del banco; mientras el
+#   texto no cambie, el hash es el mismo y no se vuelve a gastar.
+#
+# O sea: esta ejecucion cuesta cero creditos y cero CPU de casa.
+
+on:
+  workflow_dispatch:
+    inputs:
+      guion:
+        description: Guion a renderizar
+        type: string
+        default: proyecto/vox_banco.json
+  push:
+    tags:
+      - "vox-*"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install pillow numpy
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+
+      - name: Comprobar los recortes antes de gastar minutos
+        working-directory: parallax2
+        run: python3 construir_vox.py ../config/guion_banco.md
+
+      - name: Render
+        working-directory: parallax2
+        run: python3 render_vox.py "${{ inputs.guion || 'proyecto/vox_banco.json' }}" vox_mudo.mp4
+
+      - name: Voz desde el cache
+        working-directory: parallax2
+        run: python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_banco.json' }}" voz_vox.mp3
+
+      - name: Juntar
+        working-directory: parallax2
+        run: |
+          ffmpeg -y -v error -i vox_mudo.mp4 -i voz_vox.mp3 \
+            -c:v copy -c:a aac -b:a 192k -shortest prueba_vox.mp4
+          ffprobe -v error -show_entries format=duration -of csv=p=0 prueba_vox.mp4
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: prueba-vox
+          path: parallax2/prueba_vox.mp4

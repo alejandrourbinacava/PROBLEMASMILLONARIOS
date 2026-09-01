@@ -1,0 +1,140 @@
+{
+  "titulo": "prueba VOX - banco",
+  "paleta": "vox",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25
+  },
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+      "duracion": 7.32,
+      "capas": [],
+      "grafico": {
+        "tipo": "cifra",
+        "valor": 3.22,
+        "sufijo": "%",
+        "decimales": 2,
+        "pie": "de margen al año por cada 100 dólares prestados",
+        "y": 0.3
+      },
+      "etiqueta": "LO QUE CUESTA UN BANCO"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+      "duracion": 10.76,
+      "capas": [
+        {
+          "archivo": "banco/b_boveda.png"
+        },
+        {
+          "archivo": "m_fichas_torre.png"
+        }
+      ]
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+      "duracion": 7.42,
+      "capas": [
+        {
+          "archivo": "banco/b_mostrador.png"
+        },
+        {
+          "archivo": "m_maletin.png"
+        }
+      ]
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+      "duracion": 5.07,
+      "capas": [
+        {
+          "archivo": "banco/b_billetes.png"
+        }
+      ],
+      "texto_pantalla": {
+        "lineas": [
+          "No gana dinero",
+          "con *su* dinero."
+        ],
+        "px": 92,
+        "y": 0.09
+      }
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+      "duracion": 10.22,
+      "capas": [
+        {
+          "archivo": "m_maletin_b.png"
+        },
+        {
+          "archivo": "m_planos_b.png"
+        }
+      ]
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+      "duracion": 4.68,
+      "capas": [
+        {
+          "archivo": "m_fichas_torre_b.png"
+        },
+        {
+          "archivo": "banco/b_fondo_banco.png"
+        }
+      ]
+    },
+    {
+      "id": "gancho_07",
+      "texto": "Y aquí es donde este vídeo se separa de los dos anteriores.",
+      "duracion": 4.31,
+      "capas": [
+        {
+          "archivo": "m_resort.png"
+        },
+        {
+          "archivo": "m_planos_c.png"
+        }
+      ]
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+      "duracion": 6.09,
+      "capas": [
+        {
+          "archivo": "m_maletin_c.png"
+        },
+        {
+          "archivo": "m_resort_b.png"
+        }
+      ]
+    },
+    {
+      "id": "gancho_09",
+      "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+      "duracion": 11.42,
+      "capas": [
+        {
+          "archivo": "m_resort_c.png"
+        }
+      ],
+      "texto_pantalla": {
+        "lineas": [
+          "El dinero",
+          "*no es tuyo*."
+        ],
+        "px": 104,
+        "y": 0.09
+      }
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Composition} from 'remotion';
+import {Fuego, Agua} from './Efectos';
 import {ParallaxScene, Manifest} from './ParallaxScene';
 import {PhotoDrop} from './PhotoDrop';
 import {Demo} from './Demo';
@@ -7,8 +8,16 @@ import {Secuencia, Paso} from './Secuencia';
 import {PruebaMagnates, PasoMagnates} from './PruebaMagnates';
 import {Guion, GuionSpec} from './Guion';
 import {Episodio, EpisodioSpec} from './Episodio';
+import {EscenaA, EscenaASpec} from './EscenaA';
+import {EscenaPlan, Plan} from './EscenaPlan';
+import {Entrada} from './Entrada';
+import {Gancho} from './Gancho';
+import {Contador} from './Contador';
+import {GanchoV2} from './GanchoV2';
 import guionCasa from '../public/guion/escenas.json';
 import episodioCasino from '../public/episodio/escenas.json';
+import escenaA from '../../config/escena_A.json';
+import planEscena from '../public/plan/plan.json';
 
 // Tres capas por escena, ni una mas: fondo, sujeto y elementos/texto.
 // Las Z se reparten en los rangos utiles: fondo entre -200 y -400, sujeto en 0,
@@ -194,6 +203,69 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
       <Composition
+        id="GanchoV2"
+        component={GanchoV2}
+        durationInFrames={1341}
+        fps={25}
+        width={1920}
+        height={1080}
+      />
+
+      <Composition
+        id="G2Contador"
+        component={Contador}
+        durationInFrames={100}
+        fps={25}
+        width={1920}
+        height={1080}
+        defaultProps={{duracion: 100}}
+      />
+
+      <Composition
+        id="Gancho"
+        component={Gancho}
+        durationInFrames={760}
+        fps={25}
+        width={1920}
+        height={1080}
+      />
+
+      <Composition
+        id="Entrada"
+        component={Entrada}
+        durationInFrames={250}
+        fps={25}
+        width={1920}
+        height={1080}
+      />
+
+      <Composition
+        id="EscenaPlan"
+        component={EscenaPlan}
+        durationInFrames={(planEscena as unknown as Plan).duracion_frames}
+        fps={25}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          plan: planEscena as unknown as Plan,
+          carpeta: 'plan',
+        }}
+      />
+
+      <Composition
+        id="EscenaA"
+        component={EscenaA}
+        durationInFrames={(escenaA as unknown as EscenaASpec).duracion_frames}
+        fps={(escenaA as unknown as EscenaASpec).fps}
+        width={(escenaA as unknown as EscenaASpec).ancho}
+        height={(escenaA as unknown as EscenaASpec).alto}
+        defaultProps={{
+          spec: escenaA as unknown as EscenaASpec,
+          carpeta: 'escenaA',
+        }}
+      />
+
+      <Composition
         id="Episodio"
         component={Episodio}
         durationInFrames={(episodioCasino as unknown as EpisodioSpec).escenas.reduce(
@@ -222,6 +294,22 @@ export const RemotionRoot: React.FC = () => {
           carpeta: 'guion',
           audio: undefined,
         }}
+      />
+      <Composition
+        id="Fuego"
+        component={Fuego}
+        durationInFrames={48}
+        fps={24}
+        width={400}
+        height={520}
+      />
+      <Composition
+        id="Agua"
+        component={Agua}
+        durationInFrames={60}
+        fps={24}
+        width={1920}
+        height={400}
       />
     </>
   );

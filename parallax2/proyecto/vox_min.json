@@ -16,15 +16,24 @@
    "transicion": "corte",
    "muda": false,
    "grafico": {
-    "tipo": "cifra",
+    "tipo": "reparto",
     "valor": 3.22,
+    "sufijo": "",
     "decimales": 2,
-    "sufijo": "$",
-    "pie": "por cada 100 $ prestados",
-    "y": 0.28
+    "palabra": "Un"
    },
-   "banda": true,
-   "etiqueta": "GANCHO"
+   "etiqueta": "GANCHO",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    },
+    {
+     "forma": "circulo_rotulador",
+     "retardo_def": 0.18
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_01a",
@@ -32,7 +41,28 @@
    "duracion": 3.5,
    "capas": [],
    "transicion": "corte",
-   "muda": true
+   "muda": true,
+   "formas": [
+    {
+     "forma": "banda_lateral",
+     "retardo_def": 0.12,
+     "lado": "der"
+    },
+    {
+     "forma": "corchete",
+     "retardo_def": 0.18
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.24,
+     "texto": "GANCHO"
+    },
+    {
+     "forma": "rejilla",
+     "retardo_def": 0.3
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_02",
@@ -47,8 +77,34 @@
      "*veintidos*"
     ],
     "px": 92,
-    "y": 0.09
-   }
+    "y": 0.09,
+    "entrada": "maquina"
+   },
+   "formas": [
+    {
+     "forma": "bloque_esquina",
+     "retardo_def": 0.12,
+     "esquina": "si"
+    },
+    {
+     "forma": "bocadillo",
+     "retardo_def": 0.18
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.24,
+     "texto": "GANCHO",
+     "n": 3
+    }
+   ],
+   "grafico": {
+    "tipo": "cifra",
+    "valor": 3.22,
+    "sufijo": "",
+    "decimales": 2,
+    "palabra": "Tres"
+   },
+   "barrido": false
   },
   {
    "id": "gancho_03",
@@ -56,14 +112,23 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_cola.png"
+     "archivo": "s_cola.png",
+     "entrada": "lateral",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "h_vecinos.png",
+   "entrada_frente": "sube",
    "muda": false,
-   "banda": true,
-   "etiqueta": "GANCHO"
+   "etiqueta": "GANCHO",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_03a",
@@ -71,12 +136,28 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_cola.png"
+     "archivo": "s_cola.png",
+     "entrada": "lateral",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "h_vecinos.png",
-   "muda": true
+   "entrada_frente": "sube",
+   "muda": true,
+   "formas": [
+    {
+     "forma": "banda_lateral",
+     "retardo_def": 0.12,
+     "lado": "der"
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.36,
+     "texto": "GANCHO"
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_04",
@@ -90,8 +171,27 @@
      "Suena a *poco*."
     ],
     "px": 92,
-    "y": 0.09
-   }
+    "y": 0.09,
+    "entrada": "pop"
+   },
+   "formas": [
+    {
+     "forma": "bloque_esquina",
+     "retardo_def": 0.12,
+     "esquina": "si"
+    },
+    {
+     "forma": "flecha",
+     "retardo_def": 0.18
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.24,
+     "texto": "GANCHO",
+     "n": 6
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_05",
@@ -99,14 +199,27 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_cola.png"
+     "archivo": "s_cola.png",
+     "entrada": "lateral",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "h_vecinos.png",
+   "entrada_frente": "sube",
    "muda": false,
-   "banda": true,
-   "etiqueta": "GANCHO"
+   "etiqueta": "GANCHO",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    },
+    {
+     "forma": "bocadillo",
+     "retardo_def": 0.3
+    }
+   ],
+   "barrido": true
   },
   {
    "id": "gancho_05a",
@@ -114,12 +227,28 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_cola.png"
+     "archivo": "s_cola.png",
+     "entrada": "lateral",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "h_vecinos.png",
-   "muda": true
+   "entrada_frente": "sube",
+   "muda": true,
+   "formas": [
+    {
+     "forma": "banda_lateral",
+     "retardo_def": 0.12,
+     "lado": "der"
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.36,
+     "texto": "GANCHO"
+    }
+   ],
+   "barrido": true
   },
   {
    "id": "gancho_06",
@@ -128,14 +257,28 @@
    "capas": [],
    "transicion": "corte",
    "muda": false,
-   "grafico": {
-    "tipo": "reparto",
-    "valor": 100,
-    "etiqueta_a": "tu dinero",
-    "etiqueta_b": "suyo",
-    "parte": 0.9,
-    "y": 0.3
-   }
+   "formas": [
+    {
+     "forma": "bloque_esquina",
+     "retardo_def": 0.12,
+     "esquina": "si"
+    },
+    {
+     "forma": "corchete",
+     "retardo_def": 0.18
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.24,
+     "texto": "GANCHO",
+     "n": 9
+    },
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.21
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_06a",
@@ -144,9 +287,21 @@
    "capas": [],
    "transicion": "corte",
    "frente": "h_vecinos.png",
+   "entrada_frente": "sube",
    "muda": true,
-   "banda": true,
-   "etiqueta": "GANCHO"
+   "etiqueta": "GANCHO",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.11,
+     "n": 10
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_07",
@@ -154,12 +309,30 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_manos.png"
+     "archivo": "s_manos.png",
+     "entrada": "lateral",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "p_papeles.png",
-   "muda": false
+   "entrada_frente": "sube",
+   "frente_vivo": true,
+   "muda": false,
+   "formas": [
+    {
+     "forma": "banda_lateral",
+     "retardo_def": 0.12,
+     "lado": "der"
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.36,
+     "texto": "GANCHO"
+    }
+   ],
+   "barrido": false,
+   "efecto": "agua"
   },
   {
    "id": "gancho_07a",
@@ -167,17 +340,36 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_manos.png"
+     "archivo": "s_manos.png",
+     "entrada": "lateral",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "p_papeles.png",
-   "muda": true
+   "entrada_frente": "sube",
+   "frente_vivo": true,
+   "muda": true,
+   "formas": [
+    {
+     "forma": "bloque_esquina",
+     "retardo_def": 0.12,
+     "esquina": "si"
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.36,
+     "texto": "GANCHO",
+     "n": 12
+    }
+   ],
+   "barrido": false,
+   "efecto": "agua"
   },
   {
    "id": "gancho_08",
    "texto": "Ese es el negocio entero. Todo lo demas es decoracion.",
-   "duracion": 5.0,
+   "duracion": 2.5,
    "capas": [],
    "transicion": "corte",
    "muda": false,
@@ -187,36 +379,179 @@
      "es *decoracion*."
     ],
     "px": 92,
-    "y": 0.09
+    "y": 0.09,
+    "entrada": "pop"
    },
-   "banda": true,
-   "etiqueta": "GANCHO"
+   "etiqueta": "GANCHO",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    },
+    {
+     "forma": "flecha",
+     "retardo_def": 0.18
+    }
+   ],
+   "barrido": false
+  },
+  {
+   "id": "gancho_08b",
+   "texto": "Ese es el negocio entero. Todo lo demas es decoracion.",
+   "duracion": 2.5,
+   "capas": [],
+   "transicion": "corte",
+   "muda": true,
+   "etiqueta": "GANCHO",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    },
+    {
+     "forma": "flecha",
+     "retardo_def": 0.18
+    },
+    {
+     "forma": "corchete",
+     "retardo_def": 0.12
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "gancho_09",
    "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
-   "duracion": 5.0,
+   "duracion": 2.5,
    "capas": [
     {
-     "archivo": "s_cajero.png"
+     "archivo": "s_cajero.png",
+     "entrada": "sube",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "h_vecinos.png",
-   "muda": false
+   "entrada_frente": "sube",
+   "muda": false,
+   "formas": [
+    {
+     "forma": "banda_lateral",
+     "retardo_def": 0.12,
+     "lado": "der"
+    },
+    {
+     "forma": "bocadillo",
+     "retardo_def": 0.3
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.36,
+     "texto": "GANCHO"
+    }
+   ],
+   "barrido": true
+  },
+  {
+   "id": "gancho_09b",
+   "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "duracion": 2.5,
+   "capas": [
+    {
+     "archivo": "s_cajero.png",
+     "entrada": "pop",
+     "retardo": 0.12
+    }
+   ],
+   "transicion": "corte",
+   "frente": "h_vecinos.png",
+   "entrada_frente": "sube",
+   "muda": true,
+   "formas": [
+    {
+     "forma": "banda_lateral",
+     "retardo_def": 0.12,
+     "lado": "der"
+    },
+    {
+     "forma": "bocadillo",
+     "retardo_def": 0.3
+    },
+    {
+     "forma": "pie_fuente",
+     "retardo_def": 0.36,
+     "texto": "GANCHO"
+    },
+    {
+     "forma": "asterisco",
+     "retardo_def": 0.12
+    }
+   ],
+   "barrido": true
   },
   {
    "id": "gancho_10",
    "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
-   "duracion": 5.0,
+   "duracion": 2.5,
    "capas": [
     {
-     "archivo": "s_cajero.png"
+     "archivo": "s_cajero.png",
+     "entrada": "pop",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "p_papeles_b.png",
-   "muda": false
+   "entrada_frente": "sube",
+   "muda": false,
+   "formas": [
+    {
+     "forma": "bloque_esquina",
+     "retardo_def": 0.12,
+     "esquina": "si"
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.36,
+     "texto": "GANCHO",
+     "n": 17
+    }
+   ],
+   "barrido": false
+  },
+  {
+   "id": "gancho_10b",
+   "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
+   "duracion": 2.5,
+   "capas": [
+    {
+     "archivo": "s_cajero.png",
+     "entrada": "sube",
+     "retardo": 0.12
+    }
+   ],
+   "transicion": "corte",
+   "frente": "p_papeles_b.png",
+   "entrada_frente": "sube",
+   "muda": true,
+   "formas": [
+    {
+     "forma": "bloque_esquina",
+     "retardo_def": 0.12,
+     "esquina": "si"
+    },
+    {
+     "forma": "numero_escena",
+     "retardo_def": 0.36,
+     "texto": "GANCHO",
+     "n": 17
+    },
+    {
+     "forma": "rejilla",
+     "retardo_def": 0.1
+    }
+   ],
+   "barrido": false
   },
   {
    "id": "cap1_dos_bancos_01",
@@ -224,14 +559,27 @@
    "duracion": 4.0,
    "capas": [
     {
-     "archivo": "s_cajero.png"
+     "archivo": "s_cajero.png",
+     "entrada": "pop",
+     "retardo": 0.12
     }
    ],
    "transicion": "corte",
    "frente": "p_cordon.png",
+   "entrada_frente": "sube",
    "muda": false,
-   "banda": true,
-   "etiqueta": "CAP1"
+   "etiqueta": "CAP1",
+   "formas": [
+    {
+     "forma": "banda_inferior",
+     "retardo_def": 0.12
+    },
+    {
+     "forma": "asterisco",
+     "retardo_def": 0.3
+    }
+   ],
+   "barrido": false
   }
  ]
 }

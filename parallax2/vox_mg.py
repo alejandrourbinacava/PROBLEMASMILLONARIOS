@@ -188,3 +188,208 @@ def tachado(im, caja, pal, u=1.0, grosor=12):
     d.line([(x0, y0), (x0 + (x1-x0)*s, y0 + (y1-y0)*s)],
            fill=pal["apoyo"], width=grosor)
     return im
+
+
+# ---------------------------------------------------------------------------
+# MOBILIARIO DE PANTALLA
+# Lo que hace que una escena tenga cinco o seis elementos y no dos. No son
+# adorno: son lo que llena el encuadre en este estilo, y sin ellos el plano
+# se lee como una foto con un titulo encima. Todos cuestan codigo, cero
+# imagenes generadas.
+# ---------------------------------------------------------------------------
+
+def banda_lateral(im, pal, u=1.0, lado="izq", ancho=18):
+    """Franja vertical pegada a un borde. Crece de abajo arriba."""
+    W, H = im.size
+    d = ImageDraw.Draw(im)
+    alto = int(H * _suave(u))
+    x = 0 if lado == "izq" else W - ancho
+    d.rectangle([x, H - alto, x + ancho, H], fill=pal["apoyo"])
+    return im
+
+
+def bloque_esquina(im, pal, u=1.0, esquina="sd", lado=0.10):
+    """Bloque macizo en una esquina. Ancla la composicion y tapa el vacio
+    que dejan los recortes cuando no llegan al borde."""
+    W, H = im.size
+    s = int(min(W, H) * lado * _suave(u))
+    if s < 2:
+        return im
+    d = ImageDraw.Draw(im)
+    x = W - s if esquina[1] == "d" else 0
+    y = 0 if esquina[0] == "s" else H - s
+    d.rectangle([x, y, x + s, y + s], fill=pal["acento"])
+    return im
+
+
+def numero_escena(im, n, pal, u=1.0, px=34):
+    """El numero del plano, arriba a la derecha. Es de las cosas que mas
+    dicen 'esto es un reportaje' y cuesta tres lineas."""
+    W, H = im.size
+    d = ImageDraw.Draw(im)
+    fo = vox.f(px)
+    t = f"{n:02d}"
+    an = d.textlength(t, font=fo)
+    a = int(255 * _suave(u))
+    d.text((W - an - px * 1.2, px * 0.9), t, font=fo, fill=pal["tinta"] + (a,)
+           if len(pal["tinta"]) == 4 else pal["tinta"])
+    return im
+
+
+def pie_fuente(im, texto, pal, u=1.0, px=28):
+    """Credito de la fuente, abajo a la derecha, pequeno. Es lo que separa
+    un dato de una opinion."""
+    W, H = im.size
+    d = ImageDraw.Draw(im)
+    fo = vox.f(px, regular=True)
+    an = d.textlength(texto, font=fo)
+    x = W - an - px * 1.6
+    y = H - px * 2.6 + (1 - _suave(u)) * px
+    d.text((x, y), texto, font=fo, fill=pal["tinta"])
+    d.rectangle([x - px * 0.5, y + px * 0.1, x - px * 0.28, y + px * 1.1],
+                fill=pal["apoyo"])
+    return im
+
+
+def asterisco(im, xy, pal, u=1.0, r=30, grosor=8):
+    """Asterisco dibujado a mano: tres trazos que salen del centro."""
+    W, H = im.size
+    cx, cy = xy[0] * W, xy[1] * H
+    d = ImageDraw.Draw(im)
+    s = _suave(u)
+    for k in range(3):
+        a = math.radians(30 + k * 60)
+        dx, dy = math.cos(a) * r * s, math.sin(a) * r * s
+        d.line([(cx - dx, cy - dy), (cx + dx, cy + dy)],
+               fill=pal["apoyo"], width=grosor)
+    return im
+
+
+def corchete(im, caja, pal, u=1.0, grosor=9, brazo=0.22):
+    """Dos corchetes que encierran una zona. Acota sin tapar, que es lo que
+    hace falta cuando el circulo taparia la cara del sujeto."""
+    x0, y0, x1, y1 = [c * s for c, s in zip(caja, [im.size[0], im.size[1]] * 2)]
+    d = ImageDraw.Draw(im)
+    s = _suave(u)
+    b = (y1 - y0) * brazo * s
+    h = (y1 - y0) * s / 2
+    for x, sig in ((x0, 1), (x1, -1)):
+        d.line([(x, y0 + (y1-y0)/2 - h), (x, y0 + (y1-y0)/2 + h)],
+               fill=pal["tinta"], width=grosor)
+        d.line([(x, y0 + (y1-y0)/2 - h), (x + sig*b, y0 + (y1-y0)/2 - h)],
+               fill=pal["tinta"], width=grosor)
+        d.line([(x, y0 + (y1-y0)/2 + h), (x + sig*b, y0 + (y1-y0)/2 + h)],
+               fill=pal["tinta"], width=grosor)
+    return im
+
+
+def bocadillo(im, xy, texto, pal, u=1.0, px=44):
+    """Bocadillo de comic con rabo. Sale del sujeto y dice una frase corta."""
+    W, H = im.size
+    d = ImageDraw.Draw(im)
+    fo = vox.f(px)
+    an = d.textlength(texto, font=fo)
+    an_c, al = an + px * 1.1, px * 2.0
+    x, y = xy[0] * W, xy[1] * H
+    s = _suave(u)
+    if s < 0.05:
+        return im
+    caja = [x, y, x + an_c * s, y + al * s]
+    d.rounded_rectangle(caja, px * 0.42, fill=pal["fondo"],
+                        outline=pal["tinta"], width=6)
+    if s > 0.6:
+        d.polygon([(x + an_c * 0.22, y + al), (x + an_c * 0.36, y + al),
+                   (x + an_c * 0.20, y + al + px * 0.6)],
+                  fill=pal["fondo"], outline=pal["tinta"])
+        d.text((x + px * 0.55, y + px * 0.42), texto, font=fo, fill=pal["tinta"])
+    return im
+
+
+def rejilla(im, pal, u=1.0, paso=96, grosor=2):
+    """Rejilla tecnica de fondo. Solo en escenas de datos: dice 'esto se
+    mide' sin escribirlo."""
+    W, H = im.size
+    capa = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(capa)
+    col = tuple(pal["tinta"]) + (int(38 * _suave(u)),)
+    for x in range(0, W, paso):
+        d.line([(x, 0), (x, H)], fill=col, width=grosor)
+    for y in range(0, H, paso):
+        d.line([(0, y), (W, y)], fill=col, width=grosor)
+    im.paste(capa, (0, 0), capa)
+    return im
+
+
+# ---------------------------------------------------------------------------
+# ENTRADAS
+# El storyboard le pone a CADA capa su tipo de entrada y yo aplicaba el mismo
+# muelle a todas. Ahi se perdia la mitad del movimiento: si las seis capas de
+# una escena entran igual, se leen como una sola imagen apareciendo.
+# ---------------------------------------------------------------------------
+
+def entrada(tipo, u):
+    """
+    Devuelve (escala, dx, dy, alfa) para el avance `u` de 0 a 1.
+
+    dx y dy van en fracciones de la propia pieza, no de la pantalla: una
+    capa pequena tiene que recorrer poco y una grande mucho, o la pequena
+    parece que no se mueve.
+    """
+    u = 0.0 if u < 0 else (1.0 if u > 1 else u)
+    if u >= 1:
+        return 1.0, 0.0, 0.0, 1.0
+    s = _suave(u)
+    if tipo == "sube":                       # entra desde debajo del borde
+        return 1.0, 0.0, (1 - s) * 0.85, min(1.0, u * 2.2)
+    if tipo == "cae":                        # cae desde arriba y asienta
+        reb = 1 - math.exp(-6.0 * u) * math.cos(2.6 * math.pi * u)
+        return 1.0, 0.0, -(1 - reb) * 0.70, min(1.0, u * 2.6)
+    if tipo in ("lateral", "lateral_izq"):
+        return 1.0, -(1 - s) * 1.10, 0.0, min(1.0, u * 2.4)
+    if tipo == "lateral_der":
+        return 1.0, (1 - s) * 1.10, 0.0, min(1.0, u * 2.4)
+    if tipo == "barrido":                    # crece en horizontal
+        return 1.0, 0.0, 0.0, min(1.0, u * 3.0)
+    # `pop` es la de por defecto: escala desde 0,72 y rebasa el reposo
+    reb = 1 - math.exp(-6.5 * u) * math.cos(1.7 * math.pi * u)
+    return 0.72 + 0.28 * reb + (reb - 1) * 0.06, 0.0, 0.0, min(1.0, u * 2.0)
+
+
+def maquina(im, lineas, pal, px=96, y0=None, u=1.0, cursor=True):
+    """
+    Texto a maquina de escribir: aparece letra a letra, con cursor.
+
+    No es un capricho: en el video de referencia los remates entran asi y el
+    efecto es que la frase se esta escribiendo AHORA, no que estaba puesta.
+    Cambia como se lee la misma frase.
+    """
+    d = ImageDraw.Draw(im)
+    W, H = im.size
+    fo = vox.f(px)
+    total = sum(len(l) for l in lineas)
+    n = int(total * u)
+    y = y0 if y0 is not None else H * 0.34
+    puesto = 0
+    for ln in lineas:
+        if puesto >= n:
+            break
+        trozo = ln[:max(0, n - puesto)]
+        limpio = trozo.replace("*", "")
+        d.text((W * 0.08, y), limpio, font=fo, fill=pal["tinta"])
+        if cursor and puesto + len(ln) > n:
+            an = d.textlength(limpio, font=fo)
+            d.rectangle([W * 0.08 + an + px * 0.06, y + px * 0.12,
+                         W * 0.08 + an + px * 0.16, y + px * 0.92],
+                        fill=pal["apoyo"])
+        puesto += len(ln)
+        y += px * 1.16
+    return im
+
+
+def ondula(t, amplitud=0.012, periodo=3.4):
+    """
+    Vaiven lento en vertical. Para el frente que tiene que parecer vivo -el
+    agua, una llama, una multitud- sin ser un video: la capa entera sube y
+    baja unos pocos pixeles y el ojo lo lee como movimiento propio.
+    """
+    return math.sin(2 * math.pi * t / periodo) * amplitud

@@ -163,13 +163,18 @@ def retardo(texto, palabra, ppm=140):
     return max(0.15, i * 60.0 / ppm)
 
 
-# Tres versiones del trazo con el desplazamiento un poco distinto. Se
-# alternan a 12 por segundo y el borde rojo "hierve", como una animacion
-# dibujada a mano. Cuesta memoria una vez y nada por fotograma.
-HERVIDO = [(-16, 10, 9), (-13, 13, 10), (-18, 8, 9)]
+# UN solo trazo, quieto.
+#
+# Llegue a alternar tres versiones a 12 por segundo para que el borde rojo
+# "hirviera" como una animacion dibujada a mano. En un objeto pasa; en una
+# cara no. El contorno vibrando alrededor de unos ojos no se lee como
+# dibujado, se lee como ruido de compresion, y ademas compite con el unico
+# movimiento que si queremos, que es la deriva continua. El dinamismo sale
+# de que la camara no pare, no de que el contorno tiemble.
+TRAZO = (-16, 10, 9)
 
 
-def tarjeta(ruta, giro, variante=0):
+def tarjeta(ruta, giro):
     """
     Deja el recorte listo: semitono, trazo rojo, marco blanco y sombra.
     Se hace una vez por archivo, nunca por fotograma.
@@ -177,7 +182,7 @@ def tarjeta(ruta, giro, variante=0):
     im = Image.open(ruta).convert("RGBA")
     if im.size[0] > 1500:
         im = im.resize((1500, int(im.size[1] * 1500 / im.size[0])), Image.LANCZOS)
-    dx, dy, gr = HERVIDO[variante % len(HERVIDO)]
+    dx, dy, gr = TRAZO
     im = vox.trazo(vox.semitono(normalizar(im)), dx=dx, dy=dy, grosor=gr)
 
     w, h = im.size
@@ -200,6 +205,24 @@ def tarjeta(ruta, giro, variante=0):
     return fuera
 
 
+# Los efectos animados con alfa vienen de Remotion, en secuencia de PNG.
+# Meta AI solo hace imagenes fijas, asi que el agua y el fuego -que en el
+# material de referencia son video con canal alfa- se calculan: turbulencia
+# para la llama y senos superpuestos para el oleaje. Ni un credito de video.
+FX_FPS = 24
+_fx_cache = {}
+
+
+def cargar_efecto(nombre):
+    if nombre in _fx_cache:
+        return _fx_cache[nombre]
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "efectos")
+    fs = sorted(f for f in os.listdir(d) if f.startswith(nombre + "-"))
+    _fx_cache[nombre] = [Image.open(os.path.join(d, f)).convert("RGBA")
+                         for f in fs]
+    return _fx_cache[nombre]
+
+
 def _ruta(a, base):
     return a if os.path.isabs(a) else os.path.join(base, a)
 
@@ -210,8 +233,7 @@ def preparar(guion, base):
         for k, c in enumerate(sujetos(esc)):
             clave = (c["archivo"], GIROS[k % len(GIROS)])
             if clave not in cache:
-                cache[clave] = [tarjeta(_ruta(c["archivo"], base), clave[1], v)
-                                for v in range(len(HERVIDO))]
+                cache[clave] = tarjeta(_ruta(c["archivo"], base), clave[1])
         f = esc.get("frente")
         if f and ("frente", f) not in cache:
             cache[("frente", f)] = frente(_ruta(f, base))
@@ -259,40 +281,65 @@ def pintar(esc, t, cfg, fondo, cache, pal):
             # suben y crecen para ocuparlo
             cy -= 0.05
             area *= 1.30
-        s = spring(max(0.0, min(1.0, (t - ESCALON * k) / DUR_ENTRADA)))
-        if s <= 0.001:
+        u_e = (t - c.get("retardo", ESCALON * k)) / DUR_ENTRADA
+        esc_e, dxe, dye, alfa = vox_mg.entrada(c.get("entrada", "pop"), u_e)
+        s = spring(max(0.0, min(1.0, u_e)))
+        if alfa <= 0.004:
             continue
-        # el hervido alterna las tres variantes al ritmo del stutter
-        variantes = cache[(c["archivo"], GIROS[k % len(GIROS)])]
-        pieza = variantes[int(t * FPS_ANIM) % len(variantes)]
+        pieza = cache[(c["archivo"], GIROS[k % len(GIROS)])]
         pw, ph = pieza.size
-        ancho = math.sqrt(area * W * H * pw / ph) * (0.88 + 0.12 * s) * esc_s
+        ancho = math.sqrt(area * W * H * pw / ph) * esc_e * esc_s
         ancho = min(ancho, W * ANCHO_MAX, H * ALTO_MAX * pw / ph)
         ancho = max(2, int(ancho))
         alto = max(2, int(ph * ancho / pw))
         p = pieza.resize((ancho, alto), Image.LANCZOS)
-        if s < 0.995:                      # entra desde abajo y asienta
+        if alfa < 0.995:
             p.putalpha(p.getchannel("A").point(
-                lambda v, m=min(1.0, s * 1.5): int(v * m)))
+                lambda v, m=alfa: int(v * m)))
         if geo:
             # el pie del sujeto cae DENTRO del frente, no encima
             y = geo[3] + int(geo[2] * SOLAPE_FRENTE) - alto
         else:
             y = int(cy * H - alto / 2)
-        im.paste(p, (int((cx + ddx) * W - ancho / 2),
-                     y + int((1 - s) * H * 0.09) + int(ddy * H)), p)
+        # dx y dy de la entrada van en fracciones de la PIEZA, no de la
+        # pantalla: si fueran de pantalla, una capa pequena apenas se
+        # moveria y una grande se saldria del encuadre.
+        im.paste(p, (int((cx + ddx) * W - ancho / 2 + dxe * ancho),
+                     y + int(dye * alto) + int(ddy * H)), p)
 
     # el frente va DESPUES de los sujetos: los tapa por abajo, que es
     # justo para lo que esta
     if geo:
         p, ancho, alto, y0 = geo
-        s = spring(min(1.0, max(0.0, t / (DUR_ENTRADA * 1.4))))
+        _e, _dx, _dy, _al = vox_mg.entrada(esc.get("entrada_frente", "sube"),
+                                           t / (DUR_ENTRADA * 1.4))
+        s = 1.0 - _dy
         # el frente deriva MENOS que los sujetos: ahi esta la profundidad,
         # y no en desenfocar nada
         ancho = int(ancho * esc_f); alto = int(alto * esc_f)
         q = p.resize((max(2, ancho), max(2, alto)), Image.LANCZOS)
-        im.paste(q, (int((W - ancho) / 2),
-                     int(H - alto + (1 - s) * alto * 0.35)), q)
+        vai = vox_mg.ondula(t) * H if esc.get("frente_vivo") else 0.0
+        im.paste(q, (int((W - ancho) / 2 + _dx * ancho),
+                     int(H - alto + _dy * alto + vai)), q)
+
+    # El efecto animado va DESPUES del frente: el agua es la superficie y
+    # tapa lo que esta dentro de ella; la llama arde delante. Y en bucle,
+    # que para eso se genero cerrado.
+    fx = esc.get("efecto")
+    if fx:
+        cuadros = cargar_efecto(fx)
+        if cuadros:
+            q = cuadros[int(t * FX_FPS) % len(cuadros)]
+            if fx == "agua":
+                an = int(W * 1.02)
+                al = int(q.size[1] * an / q.size[0])
+                r = q.resize((an, al), Image.LANCZOS)
+                im.paste(r, (int(-W * 0.01), H - al), r)
+            else:
+                al = int(H * 0.44)
+                an = int(q.size[0] * al / q.size[1])
+                r = q.resize((an, al), Image.LANCZOS)
+                im.paste(r, (int(W * 0.66), H - al - int(H * 0.06)), r)
 
     ppm = cfg.get("ppm", 140)
 
@@ -333,8 +380,12 @@ def pintar(esc, t, cfg, fondo, cache, pal):
     if t_p:
         u = avance(t_p)
         if u > 0:
-            vox.titular(im, t_p["lineas"], pal, px=t_p.get("px", 96),
-                        y0=H * t_p.get("y", 0.10), u=u)
+            if t_p.get("entrada") == "maquina":
+                vox_mg.maquina(im, t_p["lineas"], pal, px=t_p.get("px", 96),
+                               y0=H * t_p.get("y", 0.10), u=u)
+            else:
+                vox.titular(im, t_p["lineas"], pal, px=t_p.get("px", 96),
+                            y0=H * t_p.get("y", 0.10), u=u)
 
     for m in esc.get("marcas", []):
         u = avance(m, 0.9, 0.8)
@@ -350,8 +401,42 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         if u > 0:
             vox_mg.ticker(im, tk["texto"], pal, u=u)
 
-    if esc.get("banda"):
-        vox_mg.banda(im, pal, u=min(1.0, max(0.0, (t - 0.06) / 0.5)))
+    # --- mobiliario de pantalla ---------------------------------------
+    # Es lo que hace que la escena tenga cinco o seis elementos. Sin esto el
+    # plano se lee como una foto con un titulo encima, que es justo lo que
+    # pasaba: el storyboard pedia 5-7 capas y salian 2.
+    for f in esc.get("formas", []):
+        u = avance(f, f.get("retardo_def", 0.10), 0.5)
+        if u <= 0:
+            continue
+        n = f["forma"]
+        if n == "banda_inferior":
+            vox_mg.banda(im, pal, u=u, y=f.get("y", 0.70))
+        elif n == "banda_lateral":
+            vox_mg.banda_lateral(im, pal, u=u, lado=f.get("lado", "izq"))
+        elif n == "bloque_esquina":
+            vox_mg.bloque_esquina(im, pal, u=u, esquina=f.get("esquina", "sd"))
+        elif n == "numero_escena":
+            vox_mg.numero_escena(im, f.get("n", esc.get("_n", 0) + 1), pal, u=u)
+        elif n == "pie_fuente":
+            vox_mg.pie_fuente(im, f.get("texto", ""), pal, u=u)
+        elif n == "asterisco":
+            vox_mg.asterisco(im, f.get("xy", (0.86, 0.24)), pal, u=u)
+        elif n == "corchete":
+            vox_mg.corchete(im, f.get("caja", [0.18, 0.34, 0.52, 0.66]), pal, u=u)
+        elif n == "bocadillo":
+            vox_mg.bocadillo(im, f.get("xy", (0.58, 0.20)), f.get("texto", ""),
+                             pal, u=u)
+        elif n == "rejilla":
+            vox_mg.rejilla(im, pal, u=u)
+        elif n == "circulo_rotulador":
+            vox_mg.marca(im, f.get("caja", [0.20, 0.32, 0.56, 0.66]), pal, u=u)
+        elif n == "tachado":
+            vox_mg.tachado(im, f.get("caja", [0.18, 0.46, 0.54, 0.40]), pal, u=u)
+        elif n == "flecha":
+            vox_mg.flecha(im, f.get("desde", [0.18, 0.30]),
+                          f.get("hasta", [0.42, 0.50]), pal, u=u)
+
     if esc.get("etiqueta"):
         # la etiqueta y el ticker viven los dos abajo a la izquierda: si
         # coinciden, la etiqueta sube. Se pisaban y no se leia ninguna.

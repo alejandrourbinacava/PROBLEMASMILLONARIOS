@@ -45,6 +45,25 @@ def recortar(im, umbral=238, suavizado=1.2):
     return out, fondo.mean()
 
 
+def toca_borde(im, umbral=238, tolerancia=0.02):
+    """
+    Que fraccion del sujeto toca cada borde del encuadre.
+
+    Un recorte que llega al borde no se puede componer: al colocarlo en la
+    escena se ve la linea recta del corte, y ninguna capa de encima lo tapa.
+    Pasa cuando el generador elige formato vertical para un retrato y encaja
+    al sujeto contra los lados; en la primera tanda el ejecutivo salio con
+    los brazos cortados y el inspector tocando los cuatro lados.
+
+    El borde de ABAJO no cuenta: en este estilo el frente tapa al sujeto de
+    cintura para abajo, asi que ahi el corte no se ve.
+    """
+    a = np.asarray(im.convert("RGB"), np.uint8).min(2)
+    return {"arriba": float((a[0] < umbral).mean()),
+            "izquierda": float((a[:, 0] < umbral).mean()),
+            "derecha": float((a[:, -1] < umbral).mean())}
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -56,6 +75,13 @@ def main():
     a = ap.parse_args()
 
     im = Image.open(a.entrada)
+    bordes = {k: v for k, v in toca_borde(im).items() if v > 0.02}
+    if bordes:
+        print(f"{a.entrada}: el sujeto toca " +
+              ", ".join(f"{k} ({v*100:.0f}%)" for k, v in bordes.items()) +
+              ". Al componerla se vera la linea recta del corte; hay que "
+              "regenerarla en horizontal y con aire alrededor.", file=sys.stderr)
+        return 2
     out, frac = recortar(im, a.umbral)
     if frac < a.minimo:
         print(f"{a.entrada}: solo {frac*100:.0f}% de fondo blanco alcanzable "

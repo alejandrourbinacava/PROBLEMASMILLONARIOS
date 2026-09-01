@@ -26,65 +26,67 @@ sys.path.insert(0, AQUI)
 import leer_guion
 
 PAUSA = 0.55
-PROP_MIN, PROP_MAX = 0.60, 2.30
+# El limite bajo era 0,60 cuando los recortes iban en tarjeta con marco
+# blanco. Ya no: van de sujeto detras del frente, y un objeto vertical
+# -un cajero automatico, una columna, una persona de pie- se sostiene
+# perfectamente porque el tope de alto lo frena. Lo apaisado si sigue
+# fuera: eso son franjas de primer plano, no sujetos.
+PROP_MIN, PROP_MAX = 0.42, 2.30
 BORDE_MAX = 9.0
 
 # El reparto es a mano y esta bien que lo sea: son diez planos. Lo que no se
 # hace a mano nunca es la geometria, y aqui no hay ni una coordenada.
 RECORTES = [
-    [],                                                   # el dato manda solo
-    ["banco/b_boveda.png", "m_fichas_torre.png"],
-    ["banco/b_mostrador.png", "m_maletin.png"],
-    ["banco/b_billetes.png"],                             # lleva rotulo
-    ["m_maletin_b.png", "m_planos_b.png"],
-    ["m_fichas_torre_b.png", "banco/b_fondo_banco.png"],
-    ["m_resort.png", "m_planos_c.png"],
-    ["m_maletin_c.png", "m_resort_b.png"],
-    ["m_resort_c.png"],                                   # lleva rotulo
+    [],                                        # solo la cifra
+    ["s_fajo.png", "s_calculadora.png"],
+    ["s_cola.png"],
+    ["s_cajero.png"],
+    ["s_manos.png"],
+    ["s_boveda.png"],
+    ["s_columnas.png"],
+    [],                                        # solo tipografia
+    ["s_atm.png"],
 ]
 
-# La ESTRUCTURA del primer plano. Son justo las capas que el reparto de
-# tarjetas rechaza por apaisadas: `p_*` y `h_*` se generaron como franjas de
-# primer plano, con proporciones de 3,3 a 7,9. De tarjeta no valen ninguna;
-# de frente son exactamente lo que hace falta, porque tienen que abarcar toda
-# la base del encuadre. Van a color, sin semitono y sin trazo.
+# Fuera de la tanda de Meta, y por lo que se ve en el fotograma:
+#   s_licencia salio con el sello y la firma pero el cuerpo del documento EN
+#   BLANCO, el mismo fallo que los dos certificados de la biblioteca vieja.
+#   Hay que pedirle texto denso, no "documento oficial".
+
+# La ESTRUCTURA del primer plano, a color y apoyada en la base. Son las
+# capas que el reparto de tarjetas rechaza por apaisadas: se generaron como
+# franjas de primer plano, con proporciones de 3,3 a 7,9, y de frente son
+# exactamente lo que hace falta.
 FRENTES = [
-    None,                        # la cifra manda sola
+    None,
     "p_canto_mesa.png",
     "p_cordon.png",
     "p_papeles.png",
-    "p_manos.png",
+    "p_papeles_b.png",
     "h_vecinos.png",
     "p_valla.png",
-    "p_papeles_b.png",
+    None,
     "p_manos_b.png",
 ]
 
-# Fuera de la lista de TARJETAS, y no por casualidad:
-#   b_manos_docs, m_estructura, m_planos y las dos figuras del casino tienen
-#   el borde picado y el trazo rojo se les convierte en ruido;
-#   m_licencia y m_licencia_b son certificados que salieron EN BLANCO, y eso
-#   no lo arregla ningun filtro, lo vi mirando el fotograma;
-#   b_hombre es un tipo con chaleco gesticulando, que no es un banquero.
-# Las tres cosas son fallos del PNG, no del estilo.
-
-# Ni una capa `p_*`. No es que esten mal cortadas: es que se generaron como
-# franjas de primer plano para el parallax, con proporciones de 3,5 a 4,8. De
-# tarjeta de collage no sirven ninguna, y no hay filtro que lo arregle; puesta
-# a este tamano, `p_papeles` es una astilla. El guardia de abajo las rechaza
-# sola para que no vuelvan a colarse.
-
-# Cifras del guion que merecen pantalla. La voz sola las desperdicia.
-# Cuando hay cifra, la cifra ocupa la pantalla y no lleva tarjetas: si no,
-# el numero cae encima de los recortes y el pie de la cifra los cruza.
+# Casi la mitad de las escenas son SOLO CODIGO: tipografia y datos, sin
+# ninguna imagen generada. Es lo que mas baja el coste y el riesgo, mucho
+# mas que cambiar de proveedor.
 GRAFICOS = {
     0: {"tipo": "cifra", "valor": 3.22, "sufijo": "%", "decimales": 2,
         "pie": "de margen al año por cada 100 dólares prestados", "y": 0.30},
+    4: {"tipo": "barras", "y": 0.13, "sufijo": "%", "destacar": "presta a",
+        "items": [["paga por los depósitos", 0.6], ["presta a", 6.51]]},
 }
 ROTULOS = {
+    2: {"lineas": ["La cola más larga", "del *mundo*."], "px": 88, "y": 0.09},
     3: {"lineas": ["No gana dinero", "con *su* dinero."], "px": 92, "y": 0.09},
+    6: {"lineas": ["Este no es", "*como los otros*."], "px": 88, "y": 0.09},
+    7: {"lineas": ["McDonald's: el *suelo*.", "Casino: la *licencia*.",
+                   "Banco: el *dinero*."], "px": 82, "y": 0.20},
     8: {"lineas": ["El dinero", "*no es tuyo*."], "px": 104, "y": 0.09},
 }
+ETIQUETAS = {0: "LO QUE CUESTA UN BANCO", 5: "CAPÍTULO 1"}
 
 
 def main():
@@ -112,8 +114,8 @@ def main():
             e["texto_pantalla"] = ROTULOS[i]
         if FRENTES[i]:
             e["frente"] = FRENTES[i]
-        if i == 0:
-            e["etiqueta"] = "LO QUE CUESTA UN BANCO"
+        if i in ETIQUETAS:
+            e["etiqueta"] = ETIQUETAS[i]
         escenas.append(e)
 
     guion = {"titulo": "prueba VOX - banco", "paleta": "vox",

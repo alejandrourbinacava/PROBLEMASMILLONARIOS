@@ -217,7 +217,10 @@ def pintar(esc, t, cfg, fondo, cache, pal):
     capas = sujetos(esc)
     for k, c in enumerate(capas):
         cx, cy, area = COLOCACION.get(len(capas), COLOCACION[3])[k]
-        if esc.get("texto_pantalla"):
+        if esc.get("texto_pantalla") or esc.get("grafico"):
+            # el grafico se dibuja encima del sujeto, asi que el sujeto
+            # tiene que cederle sitio: si no, las etiquetas de las barras
+            # caen sobre el recorte y no hay quien las lea
             cy += BAJADA_TEXTO
             area *= 0.78
         else:

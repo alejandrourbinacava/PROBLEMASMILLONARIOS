@@ -28,10 +28,10 @@
       "duracion": 10.76,
       "capas": [
         {
-          "archivo": "banco/b_boveda.png"
+          "archivo": "s_fajo.png"
         },
         {
-          "archivo": "m_fichas_torre.png"
+          "archivo": "s_calculadora.png"
         }
       ],
       "frente": "p_canto_mesa.png"
@@ -42,12 +42,17 @@
       "duracion": 7.42,
       "capas": [
         {
-          "archivo": "banco/b_mostrador.png"
-        },
-        {
-          "archivo": "m_maletin.png"
+          "archivo": "s_cola.png"
         }
       ],
+      "texto_pantalla": {
+        "lineas": [
+          "La cola más larga",
+          "del *mundo*."
+        ],
+        "px": 88,
+        "y": 0.09
+      },
       "frente": "p_cordon.png"
     },
     {
@@ -56,7 +61,7 @@
       "duracion": 5.07,
       "capas": [
         {
-          "archivo": "banco/b_billetes.png"
+          "archivo": "s_cajero.png"
         }
       ],
       "texto_pantalla": {
@@ -75,13 +80,26 @@
       "duracion": 10.22,
       "capas": [
         {
-          "archivo": "m_maletin_b.png"
-        },
-        {
-          "archivo": "m_planos_b.png"
+          "archivo": "s_manos.png"
         }
       ],
-      "frente": "p_manos.png"
+      "grafico": {
+        "tipo": "barras",
+        "y": 0.13,
+        "sufijo": "%",
+        "destacar": "presta a",
+        "items": [
+          [
+            "paga por los depósitos",
+            0.6
+          ],
+          [
+            "presta a",
+            6.51
+          ]
+        ]
+      },
+      "frente": "p_papeles_b.png"
     },
     {
       "id": "gancho_06",
@@ -89,13 +107,11 @@
       "duracion": 4.68,
       "capas": [
         {
-          "archivo": "m_fichas_torre_b.png"
-        },
-        {
-          "archivo": "banco/b_fondo_banco.png"
+          "archivo": "s_boveda.png"
         }
       ],
-      "frente": "h_vecinos.png"
+      "frente": "h_vecinos.png",
+      "etiqueta": "CAPÍTULO 1"
     },
     {
       "id": "gancho_07",
@@ -103,27 +119,33 @@
       "duracion": 4.31,
       "capas": [
         {
-          "archivo": "m_resort.png"
-        },
-        {
-          "archivo": "m_planos_c.png"
+          "archivo": "s_columnas.png"
         }
       ],
+      "texto_pantalla": {
+        "lineas": [
+          "Este no es",
+          "*como los otros*."
+        ],
+        "px": 88,
+        "y": 0.09
+      },
       "frente": "p_valla.png"
     },
     {
       "id": "gancho_08",
       "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
       "duracion": 6.09,
-      "capas": [
-        {
-          "archivo": "m_maletin_c.png"
-        },
-        {
-          "archivo": "m_resort_b.png"
-        }
-      ],
-      "frente": "p_papeles_b.png"
+      "capas": [],
+      "texto_pantalla": {
+        "lineas": [
+          "McDonald's: el *suelo*.",
+          "Casino: la *licencia*.",
+          "Banco: el *dinero*."
+        ],
+        "px": 82,
+        "y": 0.2
+      }
     },
     {
       "id": "gancho_09",
@@ -131,7 +153,7 @@
       "duracion": 11.42,
       "capas": [
         {
-          "archivo": "m_resort_c.png"
+          "archivo": "s_atm.png"
         }
       ],
       "texto_pantalla": {

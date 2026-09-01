@@ -52,17 +52,22 @@ jobs:
 
       - name: Render
         working-directory: parallax2
-        run: python3 render_vox.py "${{ inputs.guion || 'proyecto/vox_banco.json' }}" vox_mudo.mp4
+        run: python3 render_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}" vox_mudo.mp4
 
       - name: Voz desde el cache
         working-directory: parallax2
-        run: python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_banco.json' }}" voz_vox.mp3
+        run: |
+          python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}"             voz_vox.mp3 "${{ inputs.cache_voz || '_voz_libre' }}"
+
+      - name: Efectos de transicion
+        working-directory: parallax2
+        run: |
+          python3 sonido_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}"             voz_vox.mp3 sonido_vox.mp3
 
       - name: Juntar
         working-directory: parallax2
         run: |
-          ffmpeg -y -v error -i vox_mudo.mp4 -i voz_vox.mp3 \
-            -c:v copy -c:a aac -b:a 192k -shortest prueba_vox.mp4
+          ffmpeg -y -v error -i vox_mudo.mp4 -i sonido_vox.mp3             -c:v copy -c:a aac -b:a 192k -shortest prueba_vox.mp4
           ffprobe -v error -show_entries format=duration -of csv=p=0 prueba_vox.mp4
 
       - uses: actions/upload-artifact@v4

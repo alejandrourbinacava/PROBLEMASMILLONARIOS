@@ -54,22 +54,70 @@ Cada rol tiene su desenfoque y su atenuación, en `PRESETS_ROL`:
 | rol | desenfoque | oscurecido |
 |---|---|---|
 | `fondo` | 11 px | 30% |
-| `horizonte` | 7 px | 22% |
 | `medio_lejos` | 4 px | 12% |
-| `figura` | 1,2 px | 8% |
 | `medio` | **0 (nítido)** | 0% |
-| `suelo` | **0 (nítido)** | 0% |
 | `frente` | 2,6 px | 22% |
 | `frente_bajo` | 6 px | 34% |
 
-Solo el sujeto —`medio` y `suelo`— va nítido. El fondo desenfocado y bajado
-de luz es lo que hace que el sujeto destaque, y separa las capas más que
-cualquier movimiento de cámara: el ojo calcula la distancia por foco antes
-que por paralaje. El primer plano lleva un desenfoque leve porque está
-demasiado cerca del objetivo.
+Tres roles más, que este pipeline añadió y la tabla de arriba no recoge:
+`horizonte` (7 px, 22%) — el plano sobre el que se apoya el sujeto, edificios
+vecinos o mesa; `figura` (1,2 px, 8%) — una persona de pie dentro de la
+escena; y `suelo` (0 px, 0%) — un objeto apoyado, que **también es sujeto** y
+por eso va nítido.
 
-Se puede pisar por capa con `"desenfoque"` y `"oscurecer"` dentro de
-`ajuste`, pero rara vez hace falta.
+Solo el sujeto —`medio` y `suelo`— va nítido. El fondo desenfocado y bajado de
+luz es lo que hace que el sujeto destaque, y separa las capas más que
+cualquier movimiento de cámara. El primer plano lleva un desenfoque leve
+porque está demasiado cerca del objetivo.
+
+Se puede pisar por capa con `"desenfoque"` y `"oscurecer"` en el JSON,
+pero rara vez hace falta.
+
+## El montaje no se rota, se planifica
+
+`planificar.py` reparte composición, movimiento, entrada, efecto y grade
+sobre un `guion.json` ya construido. **No lo hagas a mano y no uses una
+rotación módulo N**: eso garantiza que dos escenas seguidas no sean
+iguales, pero produce un ciclo mecánico, no un montaje.
+
+Primero decide el **tipo de escena**, que es lo que evita que las 225 se
+lean igual por mucho que cambie el encuadre:
+
+| tipo | capas | para qué |
+|---|---|---|
+| `pleno` | fondo + sujeto + primer plano | el plano de referencia |
+| `detalle` | sujeto + primer plano, sin fondo | acercarse, poca profundidad |
+| `silueta` | fondo + primer plano, sin sujeto | respirar entre dos ideas |
+| `grafico` | solo fondo, el dato ocupa la pantalla | cifras |
+| `rotulo` | solo fondo, una frase sola | remates de capítulo |
+| `clip` | metraje de stock | cuando hay material real |
+
+Nunca dos escenas seguidas del mismo tipo distinto de `pleno`: si se
+encadenan, dejan de ser un cambio de registro. Los `rotulo` caen siempre en
+el último plano de cada capítulo, con la cláusula más corta de la locución.
+
+Las demás reglas:
+
+- **Escala** — alterna ancho / medio / cerca siguiendo una respiración por
+  capítulo. Cuando una idea se parte en varios planos, los planos **se
+  acercan** (ancho → medio → cerca): eso se lee como intención, no como un
+  salto suelto.
+- **Lado** — ciclo I → D → C → D → I → C, y nunca el mismo lado dos veces
+  seguidas. El centro es un descanso, no el valor por defecto. Si más de un
+  tercio de las escenas cae centrada, el vídeo vuelve a leerse como una
+  sola composición repetida.
+- **Movimiento** — acorde al lado. Si el sujeto cae a la izquierda, la
+  cámara deriva a la derecha: deja aire delante del sujeto en vez de
+  comérselo.
+- **Entrada y efecto** — nunca los dos últimos usados. Los efectos solo en
+  una de cada tres escenas.
+- **Grade** — uno por capítulo, no por escena.
+
+```bash
+python3 construir_guion.py
+python3 planificar.py proyecto/guion.json
+python3 previsual.py  proyecto/guion.json
+```
 
 ## Cada escena tiene que ser distinta
 

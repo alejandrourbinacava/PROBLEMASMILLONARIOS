@@ -66,21 +66,58 @@ PRESETS_ROL = {
 # del que sale, pero con menos desplazamiento vertical: lo que se apoya no se
 # puede subir sin despegarlo de la superficie.
 PRESETS_COMP = {
+    # Cada composicion declara, por rol, (dx en fracciones de W, dy en
+    # fracciones de H, escala). Las variantes _izq y _der de cada escala
+    # existen para que la alternancia de LADO tenga con que trabajar: sin
+    # ellas todo acaba centrado por mucho que cambie la escala.
+    #
+    # `suelo` sigue a `medio` -tambien es sujeto- pero con menos
+    # desplazamiento vertical: lo que se apoya no se puede subir sin
+    # despegarlo. `horizonte` y `figura` viven detras del sujeto, asi que
+    # se mueven poco, como el fondo.
     "centrado":  {},
-    "izquierda": {"medio": (-0.17, 0.02, 0.80), "frente": ( 0.09, 0.00, 1.06),
-                  "fondo": ( 0.04, 0.00, 1.00), "suelo": (-0.19, 0.00, 0.86), "horizonte": ( 0.03, 0.00, 1.00), "figura": (-0.20, 0.00, 0.94)},
-    "derecha":   {"medio": ( 0.17, 0.02, 0.80), "frente": (-0.09, 0.00, 1.06),
-                  "fondo": (-0.04, 0.00, 1.00), "suelo": ( 0.19, 0.00, 0.86), "horizonte": (-0.03, 0.00, 1.00), "figura": ( 0.20, 0.00, 0.94)},
-    "alto":      {"medio": ( 0.00,-0.08, 0.70), "frente": ( 0.00, 0.11, 1.12),
-                  "fondo": ( 0.00,-0.03, 1.00), "suelo": ( 0.00,-0.04, 0.78), "horizonte": ( 0.00,-0.02, 0.96), "figura": ( 0.00,-0.03, 0.86)},
-    "bajo":      {"medio": ( 0.00, 0.14, 0.98), "frente": ( 0.00, 0.17, 1.16),
-                  "fondo": ( 0.00, 0.04, 1.00), "suelo": ( 0.00, 0.03, 1.10), "horizonte": ( 0.00, 0.03, 1.04), "figura": ( 0.00, 0.02, 1.08)},
-    "cerca":     {"medio": ( 0.00, 0.04, 1.38), "frente": ( 0.00, 0.13, 1.28),
-                  "fondo": ( 0.00, 0.00, 1.06), "suelo": ( 0.00, 0.02, 1.46), "horizonte": ( 0.00, 0.02, 1.14), "figura": ( 0.00, 0.02, 1.30)},
-    "lejos":     {"medio": ( 0.00,-0.05, 0.54), "frente": ( 0.00, 0.07, 1.04),
-                  "fondo": ( 0.00, 0.00, 1.00), "suelo": ( 0.00,-0.02, 0.62), "horizonte": ( 0.00,-0.01, 0.92), "figura": ( 0.00,-0.02, 0.70)},
-    "diagonal":  {"medio": (-0.11,-0.05, 0.86), "frente": ( 0.13, 0.09, 1.18),
-                  "fondo": ( 0.05, 0.00, 1.00), "suelo": (-0.13,-0.02, 0.92), "horizonte": ( 0.04, 0.00, 1.02), "figura": (-0.15,-0.02, 0.98)},
+    "izquierda":  {"medio": (-0.26, 0.03, 0.62), "frente": (0.14, 0.0, 1.08),
+                 "fondo": (0.07, 0.0, 1.0), "suelo": (-0.273, 0.013, 0.589),
+                 "horizonte": (0.056, 0.0, 1.0), "figura": (-0.221, 0.01, 0.829)},
+    "derecha":    {"medio": (0.26, 0.03, 0.62), "frente": (-0.14, 0.0, 1.08),
+                 "fondo": (-0.07, 0.0, 1.0), "suelo": (0.273, 0.013, 0.589),
+                 "horizonte": (-0.056, 0.0, 1.0), "figura": (0.221, 0.01, 0.829)},
+    "alto":       {"medio": (0.0, -0.13, 0.58), "frente": (0.0, 0.14, 1.14),
+                 "fondo": (0.0, -0.05, 1.0), "suelo": (0.0, -0.059, 0.551),
+                 "horizonte": (0.0, -0.03, 1.0), "figura": (0.0, -0.045, 0.811)},
+    "bajo":       {"medio": (0.0, 0.2, 1.02), "frente": (0.0, 0.22, 1.2),
+                 "fondo": (0.0, 0.06, 1.0), "suelo": (0.0, 0.09, 0.969),
+                 "horizonte": (0.0, 0.036, 1.0), "figura": (0.0, 0.07, 1.009)},
+    "cerca":      {"medio": (0.06, 0.08, 1.62), "frente": (-0.05, 0.16, 1.34),
+                 "fondo": (0.0, 0.0, 1.1), "suelo": (0.063, 0.036, 1.539),
+                 "horizonte": (0.0, 0.0, 1.06), "figura": (0.051, 0.028, 1.279)},
+    "lejos":      {"medio": (0.0, -0.07, 0.44), "frente": (0.0, 0.05, 1.02),
+                 "fondo": (0.0, 0.0, 1.0), "suelo": (0.0, -0.032, 0.418),
+                 "horizonte": (0.0, 0.0, 1.0), "figura": (0.0, -0.025, 0.748)},
+    "diagonal":   {"medio": (-0.19, -0.08, 0.72), "frente": (0.18, 0.11, 1.22),
+                 "fondo": (0.08, 0.0, 1.0), "suelo": (-0.2, -0.036, 0.684),
+                 "horizonte": (0.064, 0.0, 1.0), "figura": (-0.162, -0.028, 0.874)},
+    "esquina":    {"medio": (0.22, -0.11, 0.56), "frente": (-0.16, 0.13, 1.16),
+                 "fondo": (-0.06, 0.0, 1.0), "suelo": (0.231, -0.05, 0.532),
+                 "horizonte": (-0.048, 0.0, 1.0), "figura": (0.187, -0.038, 0.802)},
+    "cerca_izq":  {"medio": (-0.2, 0.09, 1.55), "frente": (0.12, 0.16, 1.32),
+                 "fondo": (0.05, 0.0, 1.1), "suelo": (-0.21, 0.041, 1.472),
+                 "horizonte": (0.04, 0.0, 1.06), "figura": (-0.17, 0.032, 1.248)},
+    "cerca_der":  {"medio": (0.2, 0.09, 1.55), "frente": (-0.12, 0.16, 1.32),
+                 "fondo": (-0.05, 0.0, 1.1), "suelo": (0.21, 0.041, 1.472),
+                 "horizonte": (-0.04, 0.0, 1.06), "figura": (0.17, 0.032, 1.248)},
+    "lejos_izq":  {"medio": (-0.24, -0.06, 0.42), "frente": (0.1, 0.05, 1.04),
+                 "fondo": (0.06, 0.0, 1.0), "suelo": (-0.252, -0.027, 0.399),
+                 "horizonte": (0.048, 0.0, 1.0), "figura": (-0.204, -0.021, 0.739)},
+    "lejos_der":  {"medio": (0.24, -0.06, 0.42), "frente": (-0.1, 0.05, 1.04),
+                 "fondo": (-0.06, 0.0, 1.0), "suelo": (0.252, -0.027, 0.399),
+                 "horizonte": (-0.048, 0.0, 1.0), "figura": (0.204, -0.021, 0.739)},
+    "alto_der":   {"medio": (0.21, -0.14, 0.55), "frente": (-0.13, 0.14, 1.14),
+                 "fondo": (-0.05, -0.04, 1.0), "suelo": (0.221, -0.063, 0.522),
+                 "horizonte": (-0.04, -0.024, 1.0), "figura": (0.178, -0.049, 0.797)},
+    "bajo_izq":   {"medio": (-0.23, 0.19, 0.9), "frente": (0.15, 0.21, 1.2),
+                 "fondo": (0.06, 0.05, 1.0), "suelo": (-0.242, 0.086, 0.855),
+                 "horizonte": (0.048, 0.03, 1.0), "figura": (-0.196, 0.066, 0.955)},
 }
 
 # MOVIMIENTO. "contra_*" mueve fondo y frente en sentidos OPUESTOS: es el

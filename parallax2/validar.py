@@ -195,7 +195,12 @@ def main():
                           f'Anade una capa "horizonte" (edificios vecinos si es '
                           f'un edificio, mesa si es un objeto) o quedara '
                           f'colgando del aire')
-        if not esc.get("clip") and len(esc["capas"]) < 2:
+        # Una sola capa es un fallo... salvo cuando es el punto de la escena.
+        # `planificar.py` reduce a proposito los tipos `grafico` y `rotulo`
+        # al fondo: en uno manda el dato y en otro la frase, y meter capas
+        # detras de un numero a pantalla completa solo estorba.
+        suelta = esc.get("tipo") in ("grafico", "rotulo", "clip")
+        if not esc.get("clip") and not suelta and len(esc["capas"]) < 2:
             graves.append(f'{esc["id"]}: solo {len(esc["capas"])} capa, no hay parallax')
         if esc.get("clip"):
             r = esc["clip"] if os.path.isabs(esc["clip"]) else os.path.join(base, esc["clip"])

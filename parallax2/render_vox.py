@@ -23,6 +23,21 @@ decisiones de fondo son las contrarias a las que tomamos alli:
   recorte mediocre en algo que parece intencional. Los halos de rembg y el
   croma mal quitado dejan de importar porque nadie mira el borde real.
 
+El orden de capas va INVERTIDO respecto al parallax, y esa es la parte que
+mas cambia el resultado:
+
+  MEDIO son los SUJETOS, en semitono y con el trazo rojo. Van arriba.
+  FRENTE es la ESTRUCTURA —el edificio, la mesa, los papeles—, va A COLOR,
+  apoyada en el borde de abajo y abarcando todo el ancho, y TAPA a los
+  sujetos de cintura para abajo.
+
+Eso resuelve dos cosas que llevabamos arrastrando. No hacen falta cuerpos
+enteros, porque la estructura tapa el resto: se acabo el hombre decapitado.
+Y el borde de abajo del recorte, que es siempre el peor, queda oculto.
+
+La jerarquia la da el COLOR, no el desenfoque: el medio en blanco y negro y
+el frente a todo color. Aqui no hay profundidad de campo, todo va nitido.
+
 Todo el movimiento va a 12 imagenes por segundo sobre 25 (`vox.stutter`).
 El tiron es parte del estilo, y ademas deja el render en menos de la mitad
 de calculo: solo se dibuja uno de cada dos fotogramas.
@@ -41,8 +56,8 @@ import vox
 
 DUR_ENTRADA = 0.42
 ESCALON = 0.11
-MARCO = 18
-SOMBRA = 30
+MARCO = 0            # sin marco de papel: un rectangulo blanco no se deja
+SOMBRA = 0           # tapar de forma creible por la estructura del frente
 FPS_ANIM = 12
 
 # Donde cae cada recorte segun cuantos haya en la escena, en fracciones de
@@ -57,13 +72,22 @@ FPS_ANIM = 12
 # deliberado: dos tarjetas del mismo tamano leen como una plantilla. Una
 # manda y la otra acompana.
 COLOCACION = {
-    1: [(0.50, 0.54, 0.250)],
-    2: [(0.31, 0.52, 0.185), (0.73, 0.60, 0.115)],
-    3: [(0.24, 0.49, 0.120), (0.54, 0.62, 0.145), (0.81, 0.45, 0.080)],
+    1: [(0.50, 0.46, 0.250)],
+    2: [(0.33, 0.44, 0.185), (0.70, 0.50, 0.125)],
+    3: [(0.24, 0.42, 0.120), (0.53, 0.50, 0.145), (0.80, 0.40, 0.085)],
 }
+# El frente se apoya en el borde de abajo y se pasa de ancho a proposito:
+# tiene que salirse por los lados para que no se lea como una foto pegada.
+FRENTE_ANCHO = 1.12
+FRENTE_ALTO_MAX = 0.46
+# Cuanto se meten los sujetos DENTRO del frente. Es el punto entero de esta
+# estructura: si no se solapan, los recortes flotan sobre la estructura en
+# vez de estar detras de ella, y se ve exactamente igual de mal que las
+# capas colgando del aire del pipeline anterior.
+SOLAPE_FRENTE = 0.38
 ANCHO_MAX, ALTO_MAX = 0.46, 0.78     # ninguna tarjeta se come el encuadre
 BAJADA_TEXTO = 0.12                  # si hay rotulo, las tarjetas ceden sitio
-GIROS = [-3.5, 2.5, -1.5]
+GIROS = [-2.0, 1.5, -1.0]
 
 
 def spring(u, rebote=1.7):
@@ -103,6 +127,21 @@ def normalizar(im, bajo=2.0, alto=98.0):
     return Image.fromarray(np.dstack([rgb, a[..., 3]]).astype(np.uint8), "RGBA")
 
 
+def frente(ruta):
+    """
+    La estructura del primer plano: A COLOR y sin trazo.
+
+    Va a color a proposito. La jerarquia de este estilo la da el contraste
+    de color entre capas —sujetos en blanco y negro, estructura a color— y
+    no el desenfoque, asi que aqui no se toca ni el semitono ni la
+    profundidad de campo.
+    """
+    im = Image.open(ruta).convert("RGBA")
+    if im.size[0] > 2200:
+        im = im.resize((2200, int(im.size[1] * 2200 / im.size[0])), Image.LANCZOS)
+    return im
+
+
 def tarjeta(ruta, giro):
     """
     Deja el recorte listo: semitono, trazo rojo, marco blanco y sombra.
@@ -114,11 +153,16 @@ def tarjeta(ruta, giro):
     im = vox.trazo(vox.semitono(normalizar(im)))
 
     w, h = im.size
-    lienzo = Image.new("RGBA", (w + MARCO * 2, h + MARCO * 2), (255, 255, 255, 255))
-    lienzo.paste(im, (MARCO, MARCO), im)
+    if MARCO:
+        lienzo = Image.new("RGBA", (w + MARCO*2, h + MARCO*2), (255, 255, 255, 255))
+        lienzo.paste(im, (MARCO, MARCO), im)
+    else:
+        lienzo = im
     if giro:
         lienzo = lienzo.rotate(giro, expand=True, resample=Image.BICUBIC)
 
+    if not SOMBRA:
+        return lienzo
     sw, sh = lienzo.size
     fuera = Image.new("RGBA", (sw + SOMBRA * 3, sh + SOMBRA * 3), (0, 0, 0, 0))
     fuera.paste(Image.new("RGBA", lienzo.size, (0, 0, 0, 92)),
@@ -128,26 +172,50 @@ def tarjeta(ruta, giro):
     return fuera
 
 
+def _ruta(a, base):
+    return a if os.path.isabs(a) else os.path.join(base, a)
+
+
 def preparar(guion, base):
     cache = {}
     for esc in guion["escenas"]:
-        for k, c in enumerate(esc.get("capas", [])[:3]):
+        for k, c in enumerate(sujetos(esc)):
             clave = (c["archivo"], GIROS[k % len(GIROS)])
-            if clave in cache:
-                continue
-            a = c["archivo"]
-            cache[clave] = tarjeta(a if os.path.isabs(a) else os.path.join(base, a),
-                                   clave[1])
+            if clave not in cache:
+                cache[clave] = tarjeta(_ruta(c["archivo"], base), clave[1])
+        f = esc.get("frente")
+        if f and ("frente", f) not in cache:
+            cache[("frente", f)] = frente(_ruta(f, base))
     return cache
+
+
+def sujetos(esc):
+    return [c for c in esc.get("capas", []) if c.get("rol", "medio") != "frente"][:3]
+
+
+def geometria_frente(esc, cache, W, H):
+    """Tamano y sitio del frente. Se calcula ANTES de pintar nada porque los
+    sujetos se colocan respecto a su borde de arriba."""
+    f = esc.get("frente")
+    if not f:
+        return None
+    p = cache[("frente", f)]
+    ancho = int(W * FRENTE_ANCHO)
+    alto = int(p.size[1] * ancho / p.size[0])
+    if alto > H * FRENTE_ALTO_MAX:
+        alto = int(H * FRENTE_ALTO_MAX)
+        ancho = int(p.size[0] * alto / p.size[1])
+    return p, ancho, alto, H - alto
 
 
 def pintar(esc, t, cfg, fondo, cache, pal):
     """Un fotograma en el segundo `t` de la escena."""
     W, H = cfg["w"], cfg["h"]
     im = fondo.copy()
+    geo = geometria_frente(esc, cache, W, H)
 
-    for k, c in enumerate(esc.get("capas", [])[:3]):
-        capas = esc["capas"][:3]
+    capas = sujetos(esc)
+    for k, c in enumerate(capas):
         cx, cy, area = COLOCACION.get(len(capas), COLOCACION[3])[k]
         if esc.get("texto_pantalla"):
             cy += BAJADA_TEXTO
@@ -170,8 +238,20 @@ def pintar(esc, t, cfg, fondo, cache, pal):
         if s < 0.995:                      # entra desde abajo y asienta
             p.putalpha(p.getchannel("A").point(
                 lambda v, m=min(1.0, s * 1.5): int(v * m)))
-        im.paste(p, (int(cx * W - ancho / 2),
-                     int(cy * H - alto / 2) + int((1 - s) * H * 0.09)), p)
+        if geo:
+            # el pie del sujeto cae DENTRO del frente, no encima
+            y = geo[3] + int(geo[2] * SOLAPE_FRENTE) - alto
+        else:
+            y = int(cy * H - alto / 2)
+        im.paste(p, (int(cx * W - ancho / 2), y + int((1 - s) * H * 0.09)), p)
+
+    # el frente va DESPUES de los sujetos: los tapa por abajo, que es
+    # justo para lo que esta
+    if geo:
+        p, ancho, alto, y0 = geo
+        s = spring(min(1.0, max(0.0, t / (DUR_ENTRADA * 1.4))))
+        q = p.resize((max(2, ancho), max(2, alto)), Image.LANCZOS)
+        im.paste(q, (int((W - ancho) / 2), int(y0 + (1 - s) * alto * 0.35)), q)
 
     u = min(1.0, max(0.0, (t - 0.30) / 0.55))
     if u > 0:

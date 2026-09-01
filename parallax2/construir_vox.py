@@ -43,7 +43,24 @@ RECORTES = [
     ["m_resort_c.png"],                                   # lleva rotulo
 ]
 
-# Fuera de la lista, y no por casualidad:
+# La ESTRUCTURA del primer plano. Son justo las capas que el reparto de
+# tarjetas rechaza por apaisadas: `p_*` y `h_*` se generaron como franjas de
+# primer plano, con proporciones de 3,3 a 7,9. De tarjeta no valen ninguna;
+# de frente son exactamente lo que hace falta, porque tienen que abarcar toda
+# la base del encuadre. Van a color, sin semitono y sin trazo.
+FRENTES = [
+    None,                        # la cifra manda sola
+    "p_canto_mesa.png",
+    "p_cordon.png",
+    "p_papeles.png",
+    "p_manos.png",
+    "h_vecinos.png",
+    "p_valla.png",
+    "p_papeles_b.png",
+    "p_manos_b.png",
+]
+
+# Fuera de la lista de TARJETAS, y no por casualidad:
 #   b_manos_docs, m_estructura, m_planos y las dos figuras del casino tienen
 #   el borde picado y el trazo rojo se les convierte en ruido;
 #   m_licencia y m_licencia_b son certificados que salieron EN BLANCO, y eso
@@ -93,6 +110,8 @@ def main():
             e["grafico"] = GRAFICOS[i]
         if i in ROTULOS:
             e["texto_pantalla"] = ROTULOS[i]
+        if FRENTES[i]:
+            e["frente"] = FRENTES[i]
         if i == 0:
             e["etiqueta"] = "LO QUE CUESTA UN BANCO"
         escenas.append(e)
@@ -105,6 +124,7 @@ def main():
     import numpy as np
     from PIL import Image
     usados = [x["archivo"] for e in escenas for x in e["capas"]]
+    frentes = [e["frente"] for e in escenas if e.get("frente")]
     faltan, astillas = [], []
     for x in sorted(set(usados)):
         r = os.path.join(AQUI, "proyecto", x)
@@ -133,6 +153,7 @@ def main():
 
     print(f"{len(escenas)} planos - {total:.1f}s")
     print(f"{len(set(usados))} recortes distintos de {len(usados)} usos")
+    print(f"{len(set(frentes))} frentes distintos de {len(frentes)} usos")
     if faltan:
         print("NO ESTAN:", ", ".join(faltan))
     if astillas:

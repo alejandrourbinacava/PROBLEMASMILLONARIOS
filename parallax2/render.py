@@ -27,31 +27,31 @@ import efectos as FX
 # valores estan juntos, el ojo no separa las capas y parece una foto con
 # zoom. Aqui el frente se mueve casi 5 veces mas que el fondo.
 PRESETS_ROL = {
-    "fondo":       dict(ancho=1.22, ancla=("center", 0.44), dz=0.035, zy=0.50, prof=0.0),
-    "medio_lejos": dict(ancho=0.62, ancla=("top",    0.22), dz=0.055, zy=0.58, prof=0.3),
-    "medio":       dict(ancho=0.85, ancla=("top",    0.11), dz=0.075, zy=0.59, prof=0.5),
+    "fondo":       dict(ancho=1.22, ancla=("center", 0.44), dz=0.035, zy=0.50, blur=11.0, oscurecer=0.3, prof=0.0),
+    "medio_lejos": dict(ancho=0.62, ancla=("top",    0.22), dz=0.055, zy=0.58, blur=4.0, oscurecer=0.12, prof=0.3),
+    "medio":       dict(ancho=0.85, ancla=("top",    0.11), dz=0.075, zy=0.59, blur=0.0, oscurecer=0.0, prof=0.5),
     # Un objeto suelto -una mesa, una ruleta, una maqueta- no cuelga del aire:
     # se apoya. `medio` ancla por arriba y escala al 85% del ancho, que va bien
     # para una fachada que llena el cuadro pero deja flotando cualquier cosa
     # que deberia estar sobre una superficie. Este rol ancla por ABAJO, un poco
     # por encima del borde inferior, y escala menos.
-    "suelo":       dict(ancho=0.58, ancla=("bottom", 0.92), dz=0.090, zy=0.95, prof=0.6),
+    "suelo":       dict(ancho=0.58, ancla=("bottom", 0.92), dz=0.090, zy=0.95, blur=0.0, oscurecer=0.0, prof=0.6),
     # El PLANO SOBRE EL QUE SE APOYA el sujeto. Un edificio recortado sobre un
     # cielo cuelga del aire, y una ruleta sobre un fondo abstracto flota: no
     # es que esten mal colocados, es que falta el suelo. Para un edificio ese
     # suelo son los edificios vecinos; para un objeto, la mesa. Va detras del
     # sujeto y delante del fondo, ancho y anclado al borde de abajo, y se
     # mueve poco mas que el fondo porque esta casi igual de lejos.
-    "horizonte":   dict(ancho=1.35, ancla=("bottom", 1.00), dz=0.055, zy=0.86, prof=0.25),
+    "horizonte":   dict(ancho=1.35, ancla=("bottom", 1.00), dz=0.055, zy=0.86, blur=7.0, oscurecer=0.22, prof=0.25),
     # UNA PERSONA DE PIE dentro de la escena: el crupier detras de la mesa,
     # un jugador al lado. No cabe en ningun rol de los otros. "medio" y
     # "medio_lejos" escalan al 85% y al 62% del ancho, y como el ancho se
     # aplica a la capa YA recortada, una figura estrecha y alta reventaba el
     # cuadro. Esta ancla por abajo, sobre el mismo suelo que el sujeto, y
     # ocupa lo que ocupa una persona.
-    "figura":      dict(ancho=0.30, ancla=("bottom", 0.88), dz=0.072, zy=0.92, prof=0.45),
-    "frente":      dict(ancho=1.24, ancla=("top",    0.64), dz=0.170, zy=1.00, prof=1.0),
-    "frente_bajo": dict(ancho=1.40, ancla=("top",    0.82), dz=0.210, zy=1.00, prof=1.0),
+    "figura":      dict(ancho=0.30, ancla=("bottom", 0.88), dz=0.072, zy=0.92, blur=1.2, oscurecer=0.08, prof=0.45),
+    "frente":      dict(ancho=1.24, ancla=("top",    0.64), dz=0.170, zy=1.00, blur=2.6, oscurecer=0.22, prof=1.0),
+    "frente_bajo": dict(ancho=1.40, ancla=("top",    0.82), dz=0.210, zy=1.00, blur=6.0, oscurecer=0.34, prof=1.0),
 }
 
 # COMPOSICION: donde cae el peso del encuadre. Es lo que evita que las 85
@@ -231,46 +231,31 @@ def preparar(guion):
     return guion
 
 
-# PERSPECTIVA AEREA. Lo que hay lejos se ve mas apagado, mas plano y menos
-# saturado que lo que hay cerca: es como funciona el aire y es como el ojo
-# calcula la distancia. Sin esto, un fondo generado a todo detalle -una sala
-# de juego con sus arañas y cien personas- tiene MAS informacion que el
-# sujeto, y el sujeto desaparece dentro de su propio decorado.
+# PROFUNDIDAD DE CAMPO
 #
-# No se arregla pidiendo fondos peores. Se arregla aqui, al componer, que es
-# donde se decide quien manda en el cuadro. Cada rol ya declara su
-# profundidad en PRESETS_ROL, asi que la curva sale sola y vale para las 225
-# escenas sin tocar ni un prompt.
-# Subido despues de ver que con 0,46 el fondo seguia ganando. Un fondo
-# ACOMPANA: tiene que quedarse detras, apagado y sin detalle que competir.
-# El sujeto es lo unico que va a plena luz, a plena saturacion y nitido.
-AEREA = dict(brillo=0.60, satura=0.58, plano=0.46, difumina=4.2)
-
-
-def separar_por_profundidad(im, prof):
-    """Apaga, aplana y desatura la capa segun lo lejos que este."""
-    p = float(np.clip(prof, 0.0, 1.0))
-    lejos = 1.0 - p
-    if lejos < 0.02:
+# Solo el sujeto va nitido. El fondo desenfocado y bajado de luz es lo que
+# hace que el sujeto destaque, y separa las capas MAS que cualquier
+# movimiento de camara: el ojo calcula la distancia por foco antes que por
+# paralaje.
+#
+# Antes esto se derivaba de la profundidad del rol con una curva unica. Ahora
+# cada rol declara su desenfoque y su atenuacion en PRESETS_ROL: es mas
+# explicito y permite afinar un rol sin mover los demas. Se puede pisar por
+# capa con "desenfoque" y "oscurecer" dentro de `ajuste`, pero rara vez hace
+# falta.
+def profundidad_de_campo(im, preset, ajuste):
+    blur = float(ajuste.get("desenfoque", preset.get("blur", 0.0)))
+    osc = float(ajuste.get("oscurecer", preset.get("oscurecer", 0.0)))
+    if blur <= 0.2 and osc <= 0.001:
         return im
     r, g, b, a = im.split()
-    arr = np.dstack([np.asarray(c, np.float32) for c in (r, g, b)])
-
-    # menos contraste: se acerca al gris medio en vez de oscurecerse a saco,
-    # que es lo que de verdad hace que algo se "vaya" al fondo
-    arr = 128.0 + (arr - 128.0) * (1.0 - AEREA["plano"] * lejos)
-    # menos saturacion
-    gris = arr @ np.array([0.2126, 0.7152, 0.0722], np.float32)
-    arr = gris[..., None] + (arr - gris[..., None]) * (1.0 - AEREA["satura"] * lejos)
-    # y mas apagado
-    arr *= (1.0 - AEREA["brillo"] * lejos)
-
-    fuera = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8), "RGB")
-    radio = AEREA["difumina"] * lejos
-    if radio > 0.3:
-        fuera = fuera.filter(ImageFilter.GaussianBlur(radio))
-    fuera.putalpha(a)
-    return fuera
+    rgb = Image.merge("RGB", (r, g, b))
+    if blur > 0.2:
+        rgb = rgb.filter(ImageFilter.GaussianBlur(blur))
+    if osc > 0.001:
+        rgb = rgb.point(lambda v, k=1.0 - osc: int(v * k))
+    rgb.putalpha(a)
+    return rgb
 
 
 def cargar(path, W, H, rol, ajuste, comp="centrado"):
@@ -296,8 +281,9 @@ def cargar(path, W, H, rol, ajuste, comp="centrado"):
         print(f"  aviso: {os.path.basename(path)} se amplia x{bw/ow:.1f}, "
               f"generalo mas grande", file=sys.stderr)
     im = im.resize((bw, bh), Image.LANCZOS)
-    # se aplica UNA vez al cargar, no en cada fotograma: son 19.500 fotogramas
-    im = separar_por_profundidad(im, p.get("prof", 0.5))
+    # PROFUNDIDAD DE CAMPO. Se aplica UNA vez al cargar, no en cada fotograma:
+    # son casi veinte mil fotogramas por episodio.
+    im = profundidad_de_campo(im, p, ajuste or {})
 
     modo, frac = p["ancla"]
     x = (W - bw) / 2.0 + (cdx + p.get("dx", 0.0)) * W

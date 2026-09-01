@@ -47,6 +47,30 @@ toca. Tú eliges un `rol` de esta lista cerrada y ya:
 Si crees que necesitas un valor distinto, lo pones en `ajuste` y lo dices
 en voz alta para que lo revise un humano. No lo hagas por costumbre.
 
+## Profundidad de campo
+
+Cada rol tiene su desenfoque y su atenuación, en `PRESETS_ROL`:
+
+| rol | desenfoque | oscurecido |
+|---|---|---|
+| `fondo` | 11 px | 30% |
+| `horizonte` | 7 px | 22% |
+| `medio_lejos` | 4 px | 12% |
+| `figura` | 1,2 px | 8% |
+| `medio` | **0 (nítido)** | 0% |
+| `suelo` | **0 (nítido)** | 0% |
+| `frente` | 2,6 px | 22% |
+| `frente_bajo` | 6 px | 34% |
+
+Solo el sujeto —`medio` y `suelo`— va nítido. El fondo desenfocado y bajado
+de luz es lo que hace que el sujeto destaque, y separa las capas más que
+cualquier movimiento de cámara: el ojo calcula la distancia por foco antes
+que por paralaje. El primer plano lleva un desenfoque leve porque está
+demasiado cerca del objetivo.
+
+Se puede pisar por capa con `"desenfoque"` y `"oscurecer"` dentro de
+`ajuste`, pero rara vez hace falta.
+
 ## Cada escena tiene que ser distinta
 
 Tres campos independientes lo garantizan. Ninguno puede repetirse tres

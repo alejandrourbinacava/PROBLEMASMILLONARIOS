@@ -521,6 +521,48 @@ def pintar_estados(esc, t, cfg, fondo, cache, pal):
     return im
 
 
+def _caja_px(caja, W, H):
+    """La caja en fracciones, como (x0, y0, x1, y1)."""
+    w = caja.get("w", 0.2); h = caja.get("h", w * W / H)
+    x, y = caja.get("x", 0.5), caja.get("y", 0.5)
+    if caja.get("anclaje") == "abajo":
+        return (x - w / 2, y - h, x + w / 2, y)
+    if caja.get("anclaje") == "arriba_izq":
+        return (x, y, x + w, y + h)
+    return (x - w / 2, y - h / 2, x + w / 2, y + h / 2)
+
+
+def _solapa(a, b):
+    return not (a[2] < b[0] or b[2] < a[0] or a[3] < b[1] or b[3] < a[1])
+
+
+MARCAS = ("corchete", "asterisco", "tachado", "circulo_rotulador", "flecha",
+          "subrayado")
+
+
+def anota_algo(c, esc, W, H):
+    """
+    Si esta marca tiene algo debajo que anotar.
+
+    Un corchete encierra ALGO, un tachado tacha ALGO, un circulo rodea
+    ALGO. Cuando su caja no toca ninguna capa con contenido, en pantalla
+    salen dos corchetes flotando en mitad del papel sin nada dentro. Pasaba
+    en cinco de once planos: el guion los coloca a y=0,82 y la frase acaba
+    en 0,73.
+    """
+    mia = _caja_px(c.get("caja") or {}, W, H)
+    for o in esc.get("capas", []):
+        if o is c or not o.get("caja"):
+            continue
+        if o.get("forma") in MARCAS or o.get("forma") in ("vineta", "rejilla"):
+            continue
+        if not (o.get("archivo") or o.get("forma")):
+            continue
+        if _solapa(mia, _caja_px(o["caja"], W, H)):
+            return True
+    return False
+
+
 def _forma(im, c, esc, t, pal, W, H):
     """Una marca o pieza de mobiliario, en su caja."""
     caja = c.get("caja") or {}
@@ -528,6 +570,8 @@ def _forma(im, c, esc, t, pal, W, H):
     if u <= 0:
         return
     f = c.get("forma")
+    if f in MARCAS and not anota_algo(c, esc, W, H):
+        return
     cx, cy = caja.get("x", 0.5), caja.get("y", 0.5)
     cw = caja.get("w", 0.3) / 2
     ch = caja.get("h", caja.get("w", 0.3) * W / H) / 2
@@ -547,12 +591,13 @@ def _forma(im, c, esc, t, pal, W, H):
         return
     g = esc.get("grafico") or {}
     if f == "contador" and g:
-        izq = cx < 0.45
+        # en SU caja, no en una posicion que puse yo a ojo
+        px = int(H * caja.get("px_rel", 0.16))
         vox_mg.bloque_cifra(im, g.get("valor", 0), pal,
                             sufijo=g.get("sufijo", ""), pie=g.get("pie", ""),
-                            u=u, xy=(0.62 if izq else 0.09, max(0.06, cy - 0.16)),
-                            px=int(H * caja.get("px_rel", 0.16)),
-                            decimales=g.get("dec", 0))
+                            u=u, xy=(max(0.06, cx - caja.get("w", 0.5) / 2 + 0.03),
+                                     cy - (px * 0.6) / H),
+                            px=px, decimales=g.get("dec", 0))
         return
     if f == "barras" and g:
         vox.barras(im, [tuple(x) for x in g.get("items", [])], pal, u=u,

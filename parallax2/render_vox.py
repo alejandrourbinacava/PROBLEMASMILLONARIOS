@@ -412,6 +412,11 @@ def disposicion(esc, t):
     else:
         u = 0.0
 
+    # `visibles` dice que capas estan en pantalla en ese estado, incluidas
+    # las de codigo, que no aparecen en `elementos` porque no se mueven.
+    vis_a = set(a.get("visibles") or [x["ref"] for x in a["elementos"]])
+    vis_b = set(b.get("visibles") or []) if b else vis_a
+
     ahora = {x["ref"]: x for x in a["elementos"]}
     luego = {x["ref"]: x for x in (b["elementos"] if b else [])}
     fuera = []
@@ -430,6 +435,35 @@ def disposicion(esc, t):
             caja, fase = cb, u
         if fase > 0.004:
             fuera.append((ref, caja, fase, txt))
+
+    # Las capas de codigo no traen caja en `elementos` -no se mueven-, asi
+    # que salen solo de `visibles`. Sin esto desaparecen todas: los
+    # titulares, las marcas y la etiqueta de capitulo.
+    for ref in dict.fromkeys(list(vis_a) + list(vis_b)):
+        if any(x[0] == ref for x in fuera):
+            continue
+        if ref in vis_a and ref in vis_b:
+            fase = 1.0
+        elif ref in vis_a:
+            fase = 1.0 - u
+        else:
+            fase = u
+        if fase > 0.004:
+            fuera.append((ref, None, fase, None))
+
+    # La DERIVA es el movimiento continuo de la escena: la camara no para
+    # entre estado y estado. Sin ella los elementos se quedan clavados y
+    # vuelve el pase de diapositivas, solo que con menos cortes.
+    d = a.get("deriva") or {}
+    if d:
+        p = (t - a["t"]) / max(0.5, (b["t"] - a["t"]) if b else 1.0)
+        p = min(1.0, max(0.0, p))
+        for k, (ref, caja, fase, txt) in enumerate(fuera):
+            if caja:
+                c2 = dict(caja)
+                c2["x"] = c2.get("x", 0.5) + d.get("dx", 0) * p
+                c2["y"] = c2.get("y", 0.5) + d.get("dy", 0) * p
+                fuera[k] = (ref, c2, fase, txt)
     return fuera
 
 
@@ -438,13 +472,29 @@ def pintar_estados(esc, t, cfg, fondo, cache, pal):
     W, H = cfg["w"], cfg["h"]
     im = fondo.copy()
     disp = disposicion(esc, t)
-    porref = {c.get("clave") or ("@titular" if c.get("rol") == "titular" else None): c
-              for c in esc.get("capas", [])}
+    # El guion referencia las capas por su INDICE -l0, l1...- ademas de por
+    # clave. Las dos formas conviven porque el storyboard cambio de una a
+    # otra, y aceptar solo una deja media coreografia sin dibujar.
+    capas = esc.get("capas", [])
+    # por el `ref` que guardo al montar, no por la posicion en la lista
+    porref = {c["ref"]: c for c in capas if c.get("ref")}
+    for i, c in enumerate(capas):
+        porref.setdefault(f"l{i}", c)
+    for c in capas:
+        if c.get("clave"):
+            porref[c["clave"]] = c
+        if c.get("rol") == "titular":
+            porref.setdefault("@titular", c)
 
     for ref, caja, fase, txt in disp:
         c = porref.get(ref)
         if c is None:
-            c = {"rol": "titular", "forma": "frase"}
+            continue
+        caja = caja or c.get("caja") or {}
+        if c.get("tipo_capa") == "codigo" or (not c.get("archivo") and c.get("forma")
+                                              and c.get("rol") != "titular"):
+            _forma(im, c, esc, t, pal, W, H)
+            continue
         if c.get("archivo"):
             pieza = cache[(c["archivo"], c["rol"])]
             x, y, an, al = coloca(caja, pieza.size[0], pieza.size[1], W, H)
@@ -463,11 +513,6 @@ def pintar_estados(esc, t, cfg, fondo, cache, pal):
             vox.titular(im, lineas, pal, px=px,
                         y0=H * caja.get("y", 0.3) - alto / 2, u=fase)
 
-    # el mobiliario que no participa de la coreografia se dibuja siempre
-    for c in esc.get("capas", []):
-        if c.get("tipo_capa") != "codigo" or c.get("rol") == "titular":
-            continue
-        _forma(im, c, esc, t, pal, W, H)
     return im
 
 

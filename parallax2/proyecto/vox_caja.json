@@ -16,81 +16,78 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "@dato",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
         "y": 0.4,
         "w": 0.76,
         "h": 0.26,
         "anclaje": "centro",
-        "px_rel": 0.2
+        "px_rel": 0.2,
+        "lineas": 1,
+        "max_chars": 12
        }
       }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     },
     {
-     "t": 2.33,
-     "entra": "@titular",
+     "t": 3.5,
+     "entra": "l2",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1",
+      "l2"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
         "y": 0.4,
         "w": 0.76,
         "h": 0.26,
         "anclaje": "centro",
-        "px_rel": 0.2
+        "px_rel": 0.2,
+        "lineas": 1,
+        "max_chars": 12
        }
       },
       {
-       "ref": "@titular",
+       "ref": "l2",
        "caja": {
         "x": 0.5,
         "y": 0.66,
         "w": 0.72,
         "h": 0.14,
         "anclaje": "centro",
-        "px_rel": 0.075
+        "px_rel": 0.06,
+        "lineas": 3,
+        "max_chars": 62
        },
-       "texto": "Un banco medio de Estados Unidos gana tres coma"
+       "texto": "Un banco medio de Estados"
       }
-     ]
-    },
-    {
-     "t": 4.67,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.547,
-        "h": 0.187,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
-        "w": 0.72,
-        "h": 0.14,
-        "anclaje": "centro",
-        "px_rel": 0.075
-       },
-       "texto": "Un banco medio de Estados Unidos gana tres coma veintidos dolares al ano por cada cien que tiene prestados."
-      }
-     ]
+     ],
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Un banco medio de Estados Unidos gana tres coma veintidos dolares al ano por cada cien que tiene prestados.",
@@ -100,9 +97,11 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "grafico",
      "forma": "contador",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.4,
@@ -117,9 +116,11 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
      "rol": "titular",
      "forma": "frase",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.66,
@@ -135,9 +136,11 @@
      "texto": "Un banco medio de Estados Unidos gana tres coma veintidós"
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "corchete",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.82,
@@ -149,9 +152,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "etiqueta_capitulo",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -181,81 +186,34 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "@dato",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l2",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      }
-     ]
-    },
-    {
-     "t": 1.33,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
+        "y": 0.42,
         "w": 0.72,
-        "h": 0.14,
+        "h": 0.24,
         "anclaje": "centro",
-        "px_rel": 0.075
-       },
-       "texto": "Tres coma veintidos."
-      }
-     ]
-    },
-    {
-     "t": 2.67,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.547,
-        "h": 0.187,
-        "anclaje": "centro",
-        "px_rel": 0.2
+        "px_rel": 0.09,
+        "lineas": 2,
+        "max_chars": 38
        }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
-        "w": 0.72,
-        "h": 0.14,
-        "anclaje": "centro",
-        "px_rel": 0.075
-       },
-       "texto": "Tres coma veintidos. Ese es el margen."
       }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Tres coma veintidos. Ese es el margen.",
@@ -265,9 +223,11 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "titular",
      "forma": "frase_destacada",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.42,
@@ -283,9 +243,11 @@
      "texto": "Tres coma *veintidós*"
     },
     {
+     "ref": "l2",
      "rol": "marca",
      "forma": "corchete",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.82,
@@ -297,9 +259,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l3",
      "rol": "ancla",
      "forma": "pie_fuente",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -311,9 +275,11 @@
      "texto": "GANCHO"
     },
     {
+     "ref": "l4",
      "rol": "acabado",
      "forma": "vineta",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.5,
@@ -342,11 +308,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "oficina",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "oficina",
+       "ref": "l1",
        "caja": {
         "x": 0.2,
         "y": 0.94,
@@ -355,162 +327,40 @@
         "anclaje": "abajo",
         "encaje": "contener"
        }
-      }
-     ]
-    },
-    {
-     "t": 1.6,
-     "entra": null,
-     "gesto": "asienta",
-     "elementos": [
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.2,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 3.2,
-     "entra": "plantilla",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.065,
-        "y": 0.94,
-        "w": 0.173,
-        "h": 0.245,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "plantilla",
-       "caja": {
-        "x": 0.5,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 4.8,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.065,
-        "y": 0.94,
-        "w": 0.173,
-        "h": 0.245,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "plantilla",
-       "caja": {
-        "x": 0.5,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.2,
-        "w": 0.6,
-        "anclaje": "centro"
-       },
-       "texto": "Y con ese margen se pagan las oficinas,"
-      }
-     ]
-    },
-    {
-     "t": 6.4,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.065,
-        "y": 0.94,
-        "w": 0.173,
-        "h": 0.245,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "plantilla",
-       "caja": {
-        "x": 0.5,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.2,
-        "w": 0.6,
-        "anclaje": "centro"
-       },
-       "texto": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas."
-      }
-     ]
-    },
-    {
-     "t": 6.88,
-     "entra": null,
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "plantilla",
-       "caja": {
-        "x": 0.5,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.2,
-        "w": 0.6,
-        "anclaje": "centro"
-       },
-       "texto": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas."
       }
      ],
-     "sale": "oficina"
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
+    },
+    {
+     "t": 4.0,
+     "entra": null,
+     "gesto": "asienta",
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.2,
+        "y": 0.94,
+        "w": 0.24,
+        "h": 0.34,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ],
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas.",
@@ -520,6 +370,7 @@
    "muda": true,
    "capas": [
     {
+     "ref": "l1",
      "rol": "frente",
      "archivo": "meta/f_oficina.png",
      "clave": "oficina",
@@ -536,6 +387,7 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
      "rol": "medio",
      "archivo": "meta/m_plantilla.png",
      "clave": "plantilla",
@@ -552,9 +404,11 @@
      "retardo": 0.24
     },
     {
+     "ref": "l3",
      "rol": "ancla",
      "forma": "numero_escena",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -566,9 +420,11 @@
      "texto": "GANCHO"
     },
     {
+     "ref": "l4",
      "rol": "acabado",
      "forma": "vineta",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.5,
@@ -588,50 +444,34 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "@dato",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l2",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      }
-     ]
-    },
-    {
-     "t": 1.5,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
+        "y": 0.42,
         "w": 0.72,
-        "h": 0.14,
+        "h": 0.24,
         "anclaje": "centro",
-        "px_rel": 0.075
+        "px_rel": 0.09,
+        "lineas": 2,
+        "max_chars": 38
        }
       }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Suena a poco.",
@@ -641,9 +481,11 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "titular",
      "forma": "frase_destacada",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.42,
@@ -659,9 +501,11 @@
      "texto": "Suena a *poco*."
     },
     {
+     "ref": "l2",
      "rol": "marca",
      "forma": "asterisco",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.82,
@@ -673,9 +517,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l3",
      "rol": "ancla",
      "forma": "etiqueta_capitulo",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -687,9 +533,11 @@
      "texto": "GANCHO"
     },
     {
+     "ref": "l4",
      "rol": "acabado",
      "forma": "vineta",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.5,
@@ -717,11 +565,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "cola",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "cola",
+       "ref": "l1",
        "caja": {
         "x": 0.62,
         "y": 0.86,
@@ -730,165 +584,40 @@
         "anclaje": "abajo",
         "encaje": "contener"
        }
-      }
-     ]
-    },
-    {
-     "t": 1.6,
-     "entra": null,
-     "gesto": "asienta",
-     "elementos": [
-      {
-       "ref": "cola",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 3.2,
-     "entra": "oficina",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "cola",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 4.8,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "cola",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.22,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Y sin embargo, no hay ningun negocio con"
-      }
-     ]
-    },
-    {
-     "t": 6.4,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "cola",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar."
-      }
-     ]
-    },
-    {
-     "t": 6.88,
-     "entra": null,
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar."
       }
      ],
-     "sale": "cola"
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
+    },
+    {
+     "t": 4.0,
+     "entra": null,
+     "gesto": "asienta",
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.62,
+        "y": 0.86,
+        "w": 0.36,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ],
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar.",
@@ -898,6 +627,7 @@
    "muda": true,
    "capas": [
     {
+     "ref": "l1",
      "rol": "medio",
      "archivo": "meta/m_cola.png",
      "clave": "cola",
@@ -914,6 +644,7 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
      "rol": "frente",
      "archivo": "meta/f_oficina.png",
      "clave": "oficina",
@@ -930,9 +661,11 @@
      "retardo": 0.24
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "circulo_rotulador",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.22,
       "y": 0.62,
@@ -944,9 +677,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "pie_fuente",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -967,81 +702,78 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "@dato",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
         "y": 0.4,
         "w": 0.76,
         "h": 0.26,
         "anclaje": "centro",
-        "px_rel": 0.2
+        "px_rel": 0.2,
+        "lineas": 1,
+        "max_chars": 12
        }
       }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     },
     {
-     "t": 2.33,
-     "entra": "@titular",
+     "t": 3.5,
+     "entra": "l2",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1",
+      "l2"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
         "y": 0.4,
         "w": 0.76,
         "h": 0.26,
         "anclaje": "centro",
-        "px_rel": 0.2
+        "px_rel": 0.2,
+        "lineas": 1,
+        "max_chars": 12
        }
       },
       {
-       "ref": "@titular",
+       "ref": "l2",
        "caja": {
         "x": 0.5,
         "y": 0.66,
         "w": 0.72,
         "h": 0.14,
         "anclaje": "centro",
-        "px_rel": 0.075
+        "px_rel": 0.06,
+        "lineas": 3,
+        "max_chars": 62
        },
-       "texto": "Porque un banco no gana dinero con"
+       "texto": "Porque un banco no"
       }
-     ]
-    },
-    {
-     "t": 4.67,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.547,
-        "h": 0.187,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
-        "w": 0.72,
-        "h": 0.14,
-        "anclaje": "centro",
-        "px_rel": 0.075
-       },
-       "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo."
-      }
-     ]
+     ],
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
@@ -1051,9 +783,11 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "grafico",
      "forma": "reparto",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.4,
@@ -1068,9 +802,11 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
      "rol": "titular",
      "forma": "frase",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.66,
@@ -1086,9 +822,11 @@
      "texto": "Porque un banco no gana dinero con su dinero."
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "flecha",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.82,
@@ -1100,9 +838,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "numero_escena",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -1131,11 +871,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "familia",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "familia",
+       "ref": "l1",
        "caja": {
         "x": 0.62,
         "y": 0.86,
@@ -1144,165 +890,40 @@
         "anclaje": "abajo",
         "encaje": "contener"
        }
-      }
-     ]
-    },
-    {
-     "t": 1.6,
-     "entra": null,
-     "gesto": "asienta",
-     "elementos": [
-      {
-       "ref": "familia",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 3.2,
-     "entra": "hucha",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "familia",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "hucha",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 4.8,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "familia",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "hucha",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.22,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Coge lo que tu depositas, se lo presta"
-      }
-     ]
-    },
-    {
-     "t": 6.4,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "familia",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "hucha",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia."
-      }
-     ]
-    },
-    {
-     "t": 6.88,
-     "entra": null,
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "hucha",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia."
       }
      ],
-     "sale": "familia"
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
+    },
+    {
+     "t": 4.0,
+     "entra": null,
+     "gesto": "asienta",
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.62,
+        "y": 0.86,
+        "w": 0.36,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ],
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
@@ -1312,6 +933,7 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "medio",
      "archivo": "meta/m_familia.png",
      "clave": "familia",
@@ -1328,6 +950,7 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
      "rol": "frente",
      "archivo": "meta/f_hucha.png",
      "clave": "hucha",
@@ -1344,9 +967,11 @@
      "retardo": 0.24
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "subrayado",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.22,
       "y": 0.62,
@@ -1358,9 +983,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "etiqueta_capitulo",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -1381,81 +1008,34 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "@dato",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l2",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "@dato",
+       "ref": "l1",
        "caja": {
         "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      }
-     ]
-    },
-    {
-     "t": 1.67,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
+        "y": 0.42,
         "w": 0.72,
-        "h": 0.14,
+        "h": 0.24,
         "anclaje": "centro",
-        "px_rel": 0.075
-       },
-       "texto": "Ese es el negocio entero."
-      }
-     ]
-    },
-    {
-     "t": 3.33,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "@dato",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.547,
-        "h": 0.187,
-        "anclaje": "centro",
-        "px_rel": 0.2
+        "px_rel": 0.09,
+        "lineas": 2,
+        "max_chars": 38
        }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
-        "w": 0.72,
-        "h": 0.14,
-        "anclaje": "centro",
-        "px_rel": 0.075
-       },
-       "texto": "Ese es el negocio entero. Todo lo demas es decoracion."
       }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Ese es el negocio entero. Todo lo demas es decoracion.",
@@ -1465,9 +1045,11 @@
    "muda": true,
    "capas": [
     {
+     "ref": "l1",
      "rol": "titular",
      "forma": "frase_destacada",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.42,
@@ -1483,9 +1065,11 @@
      "texto": "Todo lo demás es *decoración*."
     },
     {
+     "ref": "l2",
      "rol": "marca",
      "forma": "subrayado",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.82,
@@ -1497,9 +1081,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l3",
      "rol": "ancla",
      "forma": "pie_fuente",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -1511,9 +1097,11 @@
      "texto": "GANCHO"
     },
     {
+     "ref": "l4",
      "rol": "acabado",
      "forma": "vineta",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
       "y": 0.5,
@@ -1542,11 +1130,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "fundador",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "fundador",
+       "ref": "l1",
        "caja": {
         "x": 0.62,
         "y": 0.86,
@@ -1556,44 +1150,37 @@
         "encaje": "contener"
        }
       }
-     ]
-    },
-    {
-     "t": 1.25,
-     "entra": null,
-     "gesto": "asienta",
-     "elementos": [
-      {
-       "ref": "fundador",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     },
     {
      "t": 2.5,
-     "entra": "oficina",
+     "entra": "l2",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1",
+      "l2"
+     ],
      "elementos": [
       {
-       "ref": "fundador",
+       "ref": "l1",
        "caja": {
-        "x": 0.674,
+        "x": 0.62,
         "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
+        "w": 0.36,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
-       "ref": "oficina",
+       "ref": "l2",
        "caja": {
         "x": 0.56,
         "y": 1.02,
@@ -1603,75 +1190,11 @@
         "encaje": "contener"
        }
       }
-     ]
-    },
-    {
-     "t": 3.75,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "fundador",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       }
-      }
-     ]
-    },
-    {
-     "t": 4.3,
-     "entra": null,
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "oficina",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       }
-      }
      ],
-     "sale": "fundador"
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Asi que la pregunta se hace sola: cuanto cuesta montar uno.",
@@ -1681,6 +1204,7 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "medio",
      "archivo": "meta/m_fundador.png",
      "clave": "fundador",
@@ -1697,6 +1221,7 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
      "rol": "frente",
      "archivo": "meta/f_oficina.png",
      "clave": "oficina",
@@ -1713,9 +1238,11 @@
      "retardo": 0.24
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "tachado",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.22,
       "y": 0.62,
@@ -1727,9 +1254,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "numero_escena",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -1750,11 +1279,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "banquero",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "banquero",
+       "ref": "l1",
        "caja": {
         "x": 0.62,
         "y": 0.86,
@@ -1764,44 +1299,37 @@
         "encaje": "contener"
        }
       }
-     ]
-    },
-    {
-     "t": 1.25,
-     "entra": null,
-     "gesto": "asienta",
-     "elementos": [
-      {
-       "ref": "banquero",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
+     ],
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
     },
     {
      "t": 2.5,
-     "entra": "llaves",
+     "entra": "l2",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1",
+      "l2"
+     ],
      "elementos": [
       {
-       "ref": "banquero",
+       "ref": "l1",
        "caja": {
-        "x": 0.674,
+        "x": 0.62,
         "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
+        "w": 0.36,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
-       "ref": "llaves",
+       "ref": "l2",
        "caja": {
         "x": 0.56,
         "y": 1.02,
@@ -1811,75 +1339,11 @@
         "encaje": "contener"
        }
       }
-     ]
-    },
-    {
-     "t": 3.75,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "banquero",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "llaves",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       }
-      }
-     ]
-    },
-    {
-     "t": 4.3,
-     "entra": null,
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "llaves",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       }
-      }
      ],
-     "sale": "banquero"
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Con un McDonald's era el dinero. Con un casino, la licencia.",
@@ -1889,6 +1353,7 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l1",
      "rol": "medio",
      "archivo": "meta/m_banquero.png",
      "clave": "banquero",
@@ -1905,9 +1370,11 @@
      "retardo": 0.12
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "asterisco",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.22,
       "y": 0.62,
@@ -1919,9 +1386,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "etiqueta_capitulo",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,
@@ -1942,11 +1411,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "cajero",
+     "entra": "l1",
      "gesto": null,
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
      "elementos": [
       {
-       "ref": "cajero",
+       "ref": "l1",
        "caja": {
         "x": 0.62,
         "y": 0.86,
@@ -1955,165 +1430,40 @@
         "anclaje": "abajo",
         "encaje": "contener"
        }
-      }
-     ]
-    },
-    {
-     "t": 1.6,
-     "entra": null,
-     "gesto": "asienta",
-     "elementos": [
-      {
-       "ref": "cajero",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 3.2,
-     "entra": "boveda",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "cajero",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "boveda",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 4.8,
-     "entra": "@titular",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "cajero",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "boveda",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.22,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Con un banco, el problema es que el dinero con"
-      }
-     ]
-    },
-    {
-     "t": 6.4,
-     "entra": "@titular_2",
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "cajero",
-       "caja": {
-        "x": 0.674,
-        "y": 0.86,
-        "w": 0.259,
-        "h": 0.504,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "boveda",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido."
-      }
-     ]
-    },
-    {
-     "t": 6.88,
-     "entra": null,
-     "gesto": null,
-     "elementos": [
-      {
-       "ref": "boveda",
-       "caja": {
-        "x": 0.533,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "@titular",
-       "caja": {
-        "x": 0.346,
-        "y": 0.3,
-        "w": 0.34,
-        "h": 0.3,
-        "anclaje": "centro"
-       },
-       "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido."
       }
      ],
-     "sale": "cajero"
+     "deriva": {
+      "dx": -0.01,
+      "dy": -0.004
+     }
+    },
+    {
+     "t": 4.0,
+     "entra": null,
+     "gesto": "asienta",
+     "visibles": [
+      "l0",
+      "l3",
+      "l4",
+      "l1"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.62,
+        "y": 0.86,
+        "w": 0.36,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ],
+     "deriva": {
+      "dx": 0.01,
+      "dy": -0.004
+     }
     }
    ],
    "frase": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
@@ -2123,6 +1473,7 @@
    "muda": false,
    "capas": [
     {
+     "ref": "l2",
      "rol": "frente",
      "archivo": "meta/f_boveda.png",
      "clave": "boveda",
@@ -2139,9 +1490,11 @@
      "retardo": 0.24
     },
     {
+     "ref": "l3",
      "rol": "marca",
      "forma": "bocadillo",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.22,
       "y": 0.62,
@@ -2153,9 +1506,11 @@
      "retardo": 0.5
     },
     {
+     "ref": "l4",
      "rol": "ancla",
      "forma": "pie_fuente",
      "clave": null,
+     "tipo_capa": "codigo",
      "caja": {
       "x": 0.06,
       "y": 0.06,

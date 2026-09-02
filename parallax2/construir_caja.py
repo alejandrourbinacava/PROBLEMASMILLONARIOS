@@ -130,8 +130,12 @@ def main():
         # la locucion es la FRASE ENTERA del guion, no el trozo
         voz = frase_de(e["texto"], frases) or texto
 
+        # El guion referencia las capas por su INDICE ORIGINAL -l0, l1...- y
+        # yo quito la de fondo al montar. Sin guardar el indice de origen,
+        # todo queda corrido una posicion y la coreografia mueve la capa
+        # equivocada: la sucursal donde tenia que ir la plantilla.
         capas, imgs = [], 0
-        for c in e["capas"]:
+        for idx, c in enumerate(e["capas"]):
             if c.get("tipo_capa") == "imagen":
                 arch = c["archivo"]
                 if c.get("rol") == "fondo":
@@ -144,14 +148,17 @@ def main():
                 # estados. Sin ella los elementos de la coreografia no
                 # encuentran su imagen y caen todos a la rama de texto: dos
                 # titulares y ninguna foto.
-                capas.append({"rol": c["rol"], "archivo": "meta/" + arch,
+                capas.append({"ref": f"l{idx}",
+                              "rol": c["rol"], "archivo": "meta/" + arch,
                               "clave": c.get("clave"),
                               "tratamiento": c.get("tratamiento"),
                               "caja": c["caja"], "entrada": c.get("entrada", "pop"),
                               "retardo": c.get("retardo", 0.1)})
             else:
-                d = {"rol": c.get("rol"), "forma": c.get("forma"),
+                d = {"ref": f"l{idx}",
+                     "rol": c.get("rol"), "forma": c.get("forma"),
                      "clave": c.get("clave"),
+                     "tipo_capa": "codigo",
                      "caja": c.get("caja"), "entrada": c.get("entrada", "pop"),
                      "retardo": c.get("retardo", 0.1)}
                 if c.get("texto"):

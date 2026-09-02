@@ -13,84 +13,8 @@
    "id": "gancho_01",
    "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
    "voz": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2,
-        "lineas": 1,
-        "max_chars": 12
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 3.5,
-     "entra": "l2",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1",
-      "l2"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2,
-        "lineas": 1,
-        "max_chars": 12
-       }
-      },
-      {
-       "ref": "l2",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
-        "w": 0.72,
-        "h": 0.14,
-        "anclaje": "centro",
-        "px_rel": 0.06,
-        "lineas": 3,
-        "max_chars": 62
-       },
-       "texto": "Un banco medio de Estados"
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
-   "frase": "Un banco medio de Estados Unidos gana tres coma veintidos dolares al ano por cada cien que tiene prestados.",
+   "estados": null,
+   "frase": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
    "duracion": 7.32,
    "arquetipo": "dato_pleno",
    "simetria": "centrada",
@@ -133,7 +57,7 @@
      },
      "entrada": "sube",
      "retardo": 0.24,
-     "texto": "Un banco medio de Estados Unidos gana tres coma veintidós"
+     "texto": "Un banco medio de Estados"
     },
     {
      "ref": "l3",
@@ -183,40 +107,8 @@
    "id": "gancho_02",
    "texto": "Tres coma veintidós. Ese es el margen.",
    "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l2",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.42,
-        "w": 0.72,
-        "h": 0.24,
-        "anclaje": "centro",
-        "px_rel": 0.09,
-        "lineas": 2,
-        "max_chars": 38
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    }
-   ],
-   "frase": "Tres coma veintidos. Ese es el margen.",
+   "estados": null,
+   "frase": "Tres coma veintidós. Ese es el margen.",
    "duracion": 3.59,
    "arquetipo": "dato_pleno",
    "simetria": "centrada",
@@ -305,65 +197,8 @@
    "id": "gancho_03",
    "texto": "Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
    "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.2,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 4.0,
-     "entra": null,
-     "gesto": "asienta",
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.2,
-        "y": 0.94,
-        "w": 0.24,
-        "h": 0.34,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
-   "frase": "Y con ese margen se pagan las oficinas, las nominas, los sistemas, los abogados y los accionistas.",
+   "estados": null,
+   "frase": "Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
    "duracion": 7.17,
    "arquetipo": "cadena",
    "simetria": "rejilla",
@@ -441,39 +276,7 @@
    "id": "gancho_04",
    "texto": "Suena a poco.",
    "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l2",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.42,
-        "w": 0.72,
-        "h": 0.24,
-        "anclaje": "centro",
-        "px_rel": 0.09,
-        "lineas": 2,
-        "max_chars": 38
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    }
-   ],
+   "estados": null,
    "frase": "Suena a poco.",
    "duracion": 2.02,
    "arquetipo": "dato_pleno",
@@ -560,67 +363,10 @@
   },
   {
    "id": "gancho_05",
-   "texto": "Y sin embargo, no hay ningún negocio con una cola más larga de gente esperando para entrar.",
+   "texto": "Y sin embargo, no hay ningún negocio con una cola mas larga de gente esperando para entrar.",
    "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 4.0,
-     "entra": null,
-     "gesto": "asienta",
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
-   "frase": "Y sin embargo, no hay ningun negocio con una cola mas larga de gente esperando para entrar.",
+   "estados": null,
+   "frase": "Y sin embargo, no hay ningún negocio con una cola mas larga de gente esperando para entrar.",
    "duracion": 5.4,
    "arquetipo": "detras",
    "simetria": "centrada",
@@ -699,83 +445,7 @@
    "id": "gancho_06",
    "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
    "voz": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2,
-        "lineas": 1,
-        "max_chars": 12
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 3.5,
-     "entra": "l2",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1",
-      "l2"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.4,
-        "w": 0.76,
-        "h": 0.26,
-        "anclaje": "centro",
-        "px_rel": 0.2,
-        "lineas": 1,
-        "max_chars": 12
-       }
-      },
-      {
-       "ref": "l2",
-       "caja": {
-        "x": 0.5,
-        "y": 0.66,
-        "w": 0.72,
-        "h": 0.14,
-        "anclaje": "centro",
-        "px_rel": 0.06,
-        "lineas": 3,
-        "max_chars": 62
-       },
-       "texto": "Porque un banco no"
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
+   "estados": null,
    "frase": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
    "duracion": 5.07,
    "arquetipo": "dato_pleno",
@@ -819,7 +489,7 @@
      },
      "entrada": "sube",
      "retardo": 0.24,
-     "texto": "Porque un banco no gana dinero con su dinero."
+     "texto": "Porque un banco no"
     },
     {
      "ref": "l3",
@@ -866,66 +536,9 @@
   },
   {
    "id": "gancho_07",
-   "texto": "Coge lo qué tú depositas, se lo presta a otro más caro, y se queda la diferencia.",
+   "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
    "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 4.0,
-     "entra": null,
-     "gesto": "asienta",
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
+   "estados": null,
    "frase": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
    "duracion": 6.29,
    "arquetipo": "detras",
@@ -1005,40 +618,8 @@
    "id": "gancho_08",
    "texto": "Ese es el negocio entero. Todo lo demás es decoración.",
    "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l2",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.42,
-        "w": 0.72,
-        "h": 0.24,
-        "anclaje": "centro",
-        "px_rel": 0.09,
-        "lineas": 2,
-        "max_chars": 38
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    }
-   ],
-   "frase": "Ese es el negocio entero. Todo lo demas es decoracion.",
+   "estados": null,
+   "frase": "Ese es el negocio entero. Todo lo demás es decoración.",
    "duracion": 3.93,
    "arquetipo": "dato_pleno",
    "simetria": "centrada",
@@ -1127,77 +708,8 @@
    "id": "gancho_09",
    "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
    "voz": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 2.5,
-     "entra": "l2",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1",
-      "l2"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l2",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
-   "frase": "Asi que la pregunta se hace sola: cuanto cuesta montar uno.",
+   "estados": null,
+   "frase": "Así que la pregunta se hace sola: cuanto cuesta montar uno.",
    "duracion": 4.68,
    "arquetipo": "detras",
    "simetria": "centrada",
@@ -1276,76 +788,7 @@
    "id": "gancho_10",
    "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
    "voz": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 2.5,
-     "entra": "l2",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1",
-      "l2"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l2",
-       "caja": {
-        "x": 0.56,
-        "y": 1.02,
-        "w": 0.64,
-        "h": 0.4,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
+   "estados": null,
    "frase": "Con un McDonald's era el dinero. Con un casino, la licencia.",
    "duracion": 6.09,
    "arquetipo": "detras",
@@ -1406,66 +849,9 @@
   },
   {
    "id": "cap1_dos_bancos_01",
-   "texto": "Con un banco, el problema es qué el dinero con el qué trabajas no es tuyo. Nunca lo ha sido.",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
    "voz": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
-   "estados": [
-    {
-     "t": 0.0,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": -0.01,
-      "dy": -0.004
-     }
-    },
-    {
-     "t": 4.0,
-     "entra": null,
-     "gesto": "asienta",
-     "visibles": [
-      "l0",
-      "l3",
-      "l4",
-      "l1"
-     ],
-     "elementos": [
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.62,
-        "y": 0.86,
-        "w": 0.36,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ],
-     "deriva": {
-      "dx": 0.01,
-      "dy": -0.004
-     }
-    }
-   ],
+   "estados": null,
    "frase": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
    "duracion": 11.42,
    "arquetipo": "detras",

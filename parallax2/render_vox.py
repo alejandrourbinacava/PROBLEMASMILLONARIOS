@@ -471,7 +471,12 @@ def pintar_estados(esc, t, cfg, fondo, cache, pal):
     """Dibuja una escena que tiene coreografia de estados."""
     W, H = cfg["w"], cfg["h"]
     im = fondo.copy()
+    # Sin coreografia se dibujan todas las capas en su caja: hay escenas del
+    # storyboard que no traen estados y sin esto reventaba el render.
     disp = disposicion(esc, t)
+    if disp is None:
+        disp = [(c.get("ref") or f"l{i}", c.get("caja"), 1.0, c.get("texto"))
+                for i, c in enumerate(esc.get("capas", []))]
     # El guion referencia las capas por su INDICE -l0, l1...- ademas de por
     # clave. Las dos formas conviven porque el storyboard cambio de una a
     # otra, y aceptar solo una deja media coreografia sin dibujar.
@@ -526,14 +531,59 @@ def _forma(im, c, esc, t, pal, W, H):
     cx, cy = caja.get("x", 0.5), caja.get("y", 0.5)
     cw = caja.get("w", 0.3) / 2
     ch = caja.get("h", caja.get("w", 0.3) * W / H) / 2
+    # --- texto y datos ---------------------------------------------------
+    # Aqui estaba el hueco: `_forma` no dibujaba ni las frases ni los
+    # graficos, asi que los planos `dato_pleno` -que por diseno no llevan
+    # imagen, solo tipografia y dato- salian en blanco. Cinco de once.
+    if f in ("frase", "frase_destacada", "titular"):
+        # `frase` es el rotulo que el guion escribio para ese plano; el
+        # `texto` es la locucion entera. Cayendo al texto, el rotulo se
+        # cortaba a media palabra: "Un banco medio de Estados".
+        txt = c.get("texto") or esc.get("frase") or esc.get("texto", "")
+        lineas = _lineas(txt, caja.get("max_chars", 62), caja.get("lineas", 3))
+        px = int(H * caja.get("px_rel", 0.06))
+        alto = px * 1.16 * len(lineas)
+        vox.titular(im, lineas, pal, px=px, y0=H * cy - alto / 2, u=u)
+        return
+    g = esc.get("grafico") or {}
+    if f == "contador" and g:
+        izq = cx < 0.45
+        vox_mg.bloque_cifra(im, g.get("valor", 0), pal,
+                            sufijo=g.get("sufijo", ""), pie=g.get("pie", ""),
+                            u=u, xy=(0.62 if izq else 0.09, max(0.06, cy - 0.16)),
+                            px=int(H * caja.get("px_rel", 0.16)),
+                            decimales=g.get("dec", 0))
+        return
+    if f == "barras" and g:
+        vox.barras(im, [tuple(x) for x in g.get("items", [])], pal, u=u,
+                   y0=cy, destacado=g.get("destacar"),
+                   sufijo=g.get("sufijo", "%"))
+        return
+    if f == "anillo" and g:
+        vox_mg.anillo(im, g.get("valor", 0), pal, u=u, centro=(cx, cy),
+                      radio=caja.get("w", 0.3) / 2,
+                      sufijo=g.get("sufijo", "%"),
+                      decimales=g.get("dec", 0), pie=g.get("pie", ""))
+        return
+    if f == "reparto" and g:
+        vox_mg.reparto(im, pal, valor=g.get("valor", 100),
+                       etiqueta_a=g.get("etiqueta_a", ""),
+                       etiqueta_b=g.get("etiqueta_b", ""),
+                       parte=g.get("parte", 0.9), u=u, y=cy)
+        return
+
+    # La etiqueta de capitulo NO se dibuja. Escribir "GANCHO" en pantalla es
+    # una nota de produccion, no algo que el espectador tenga que leer: en
+    # el material de referencia no aparece por ningun lado.
     if f == "etiqueta_capitulo":
-        vox.etiqueta(im, c.get("texto", ""), pal, (int(W * cx), int(H * cy)))
-    elif f == "numero_escena":
+        return
+    if f == "numero_escena":
         vox_mg.numero_escena(im, esc.get("_n", 0) + 1, pal, u=u)
-    elif f == "pie_fuente":
+        return
+    if f == "pie_fuente":
         vox_mg.pie_fuente(im, c.get("texto", "Reserva Federal de San Luis"),
                           pal, u=u)
-    elif f == "circulo_rotulador":
+    if f == "circulo_rotulador":
         vox_mg.marca(im, [cx - cw, cy - ch, cx + cw, cy + ch], pal, u=u)
     elif f == "corchete":
         vox_mg.corchete(im, [cx - cw, cy - ch, cx + cw, cy + ch], pal, u=u)
@@ -611,7 +661,7 @@ def pintar_caja(esc, t, cfg, fondo, cache, pal):
             vox.etiqueta(im, c.get("texto", ""), pal, (int(W * cx), int(H * cy)))
         elif f == "numero_escena":
             vox_mg.numero_escena(im, esc.get("_n", 0) + 1, pal, u=u)
-        elif f == "pie_fuente":
+        if f == "pie_fuente":
             vox_mg.pie_fuente(im, c.get("texto", "Reserva Federal de San Luis"),
                               pal, u=u)
         # Las marcas usan el ANCHO Y ALTO DE SU CAJA, no un desplazamiento
@@ -651,9 +701,16 @@ def _lineas(texto, max_chars=62, max_lineas=3):
     medias en pantalla. Un rotulo es una idea corta, no un parrafo.
     """
     if len(texto) > max_chars:
+        # primero por clausula, y si no cabe, por PALABRA COMPLETA. Cortando
+        # a pelo en el caracter 62 salia "Un banco medio de Estados", la
+        # frase amputada a mitad de palabra.
         corte = min([i for i in (texto.find(","), texto.find(". "),
                                  texto.find(":")) if i > 18] or [max_chars])
-        texto = texto[:min(corte, max_chars)].strip(" ,.:;")
+        corte = min(corte, max_chars)
+        if corte < len(texto) and texto[corte:corte + 1].strip():
+            corte = texto.rfind(" ", 0, corte + 1)
+            corte = corte if corte > 18 else max_chars
+        texto = texto[:corte].strip(" ,.:;")
     pal, out, act = texto.split(), [], ""
     tope = max(14, max_chars // max_lineas)
     for w in pal:

@@ -419,7 +419,9 @@ def bloque_cifra(im, valor, pal, sufijo="", pie="", u=1.0, xy=(0.62, 0.16),
     d.text((x, y), t, font=fo, fill=pal["tinta"])
     if pie:
         fp = vox.f(int(px * 0.22))
-        d.text((x, y + px * 1.02), pie.upper(), font=fp, fill=pal["tinta"])
+        # por debajo del numero de verdad: con 1,02 el pie se metia en el
+        # trazo inferior de la cifra y no se leia ninguno de los dos
+        d.text((x, y + px * 1.24), pie.upper(), font=fp, fill=pal["tinta"])
     return im
 
 

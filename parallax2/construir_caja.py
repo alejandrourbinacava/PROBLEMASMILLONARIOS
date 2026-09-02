@@ -64,10 +64,22 @@ def mapa_tildes(frases):
     return m
 
 
+# Palabras que existen CON y SIN tilde y significan cosas distintas. El mapa
+# se construye de todo el guion, asi que si en alguna frase sale "que" con
+# tilde, todas las demas lo heredan: salia "por cada cien QUE tiene
+# prestados" convertido en "QUE". Estas no se tocan nunca.
+AMBIGUAS = {"que", "el", "si", "mas", "tu", "mi", "se", "de", "te", "aun",
+            "solo", "esta", "este", "aquel", "como", "cuando", "donde",
+            "cual", "quien", "cuanto", "porque"}
+
+
 def acentuar(texto, m):
     def rep(x):
         w = x.group(0)
-        b = m.get(norm(w))
+        k = norm(w)
+        if k in AMBIGUAS:
+            return w
+        b = m.get(k)
         if not b:
             return w
         return b.capitalize() if w[0].isupper() else b
@@ -169,7 +181,10 @@ def main():
         # aparta y sale cada elemento dentro del plano
         est = e.get("estados")
         n = {"id": e["id"], "texto": texto, "voz": voz,
-             "estados": est, "frase": e.get("frase"),
+             "estados": est,
+             # `frase` viene sin tildes como todo lo suyo, y esta es la que
+             # se DIBUJA en pantalla: sin acentuarla sale "nominas"
+             "frase": acentuar(e.get("frase") or "", mapa) or None,
              "duracion": e["duracion"],
              "arquetipo": e.get("arquetipo"), "simetria": e.get("simetria"),
              "muda": norm(voz) in visto, "capas": capas, "imagenes": imgs}

@@ -371,6 +371,139 @@ def coloca(caja, pw, ph, W, H):
     return x, y, ancho, alto
 
 
+DUR_MOV = 0.55        # lo que tarda un elemento en recolocarse
+
+
+def _interp(a, b, u):
+    return a + (b - a) * u
+
+
+def disposicion(esc, t):
+    """
+    Que hay en pantalla en el segundo `t`, y donde.
+
+    Aqui esta el cambio de modelo. Antes una escena era una disposicion fija
+    con una animacion de entrada, y el dinamismo salia de CORTAR cada cuatro
+    segundos: un pase de diapositivas. Ahora la escena es un escenario
+    continuo donde los elementos entran, se apartan para hacer sitio al
+    siguiente, encogen y salen, todo dentro del mismo plano. Once escenas
+    largas con cuatrocientos setenta y nueve momentos, en vez de doscientas
+    cortas.
+
+    Cada `estado` lista TODOS los elementos visibles con su caja en ese
+    instante, asi que dibujar es: buscar los dos estados que rodean a `t` e
+    interpolar. Lo que estaba y ya no esta, sale; lo que no estaba, entra.
+
+    Devuelve [(ref, caja, fase)] donde `fase` va de 0 a 1: sirve de avance
+    de entrada para lo que acaba de aparecer y de salida para lo que se va.
+    """
+    est = esc.get("estados") or []
+    if not est:
+        return None
+    i = 0
+    for k, e in enumerate(est):
+        if e["t"] <= t:
+            i = k
+    a = est[i]
+    b = est[i + 1] if i + 1 < len(est) else None
+    # avance del movimiento hacia el estado siguiente
+    if b and b["t"] > a["t"]:
+        u = min(1.0, max(0.0, (t - b["t"] + DUR_MOV) / DUR_MOV))
+    else:
+        u = 0.0
+
+    ahora = {x["ref"]: x for x in a["elementos"]}
+    luego = {x["ref"]: x for x in (b["elementos"] if b else [])}
+    fuera = []
+    for ref in dict.fromkeys(list(ahora) + list(luego)):
+        ca = (ahora.get(ref) or {}).get("caja")
+        cb = (luego.get(ref) or {}).get("caja")
+        txt = (ahora.get(ref) or luego.get(ref) or {}).get("texto")
+        if ca and cb:                       # sigue, quiza moviendose
+            caja = {k: (_interp(ca[k], cb.get(k, ca[k]), u)
+                        if isinstance(ca[k], (int, float)) else ca[k])
+                    for k in ca}
+            fase = 1.0
+        elif ca:                            # se va: sale durante el tramo
+            caja, fase = ca, 1.0 - u
+        else:                               # entra
+            caja, fase = cb, u
+        if fase > 0.004:
+            fuera.append((ref, caja, fase, txt))
+    return fuera
+
+
+def pintar_estados(esc, t, cfg, fondo, cache, pal):
+    """Dibuja una escena que tiene coreografia de estados."""
+    W, H = cfg["w"], cfg["h"]
+    im = fondo.copy()
+    disp = disposicion(esc, t)
+    porref = {c.get("clave") or ("@titular" if c.get("rol") == "titular" else None): c
+              for c in esc.get("capas", [])}
+
+    for ref, caja, fase, txt in disp:
+        c = porref.get(ref)
+        if c is None:
+            c = {"rol": "titular", "forma": "frase"}
+        if c.get("archivo"):
+            pieza = cache[(c["archivo"], c["rol"])]
+            x, y, an, al = coloca(caja, pieza.size[0], pieza.size[1], W, H)
+            e_, dx, dy, alfa = vox_mg.entrada(c.get("entrada", "pop"), fase)
+            an = max(2, int(an * e_)); al = max(2, int(al * e_))
+            q = pieza.resize((an, al), Image.LANCZOS)
+            if alfa < 0.995:
+                q.putalpha(q.getchannel("A").point(lambda v, m=alfa: int(v * m)))
+            im.paste(q, (int(x + dx * an), int(y + dy * al)), q)
+        else:
+            lineas = _lineas(txt or c.get("texto") or esc.get("frase")
+                             or esc.get("texto", ""),
+                             caja.get("max_chars", 62), caja.get("lineas", 3))
+            px = int(H * caja.get("px_rel", 0.06))
+            alto = px * 1.16 * len(lineas)
+            vox.titular(im, lineas, pal, px=px,
+                        y0=H * caja.get("y", 0.3) - alto / 2, u=fase)
+
+    # el mobiliario que no participa de la coreografia se dibuja siempre
+    for c in esc.get("capas", []):
+        if c.get("tipo_capa") != "codigo" or c.get("rol") == "titular":
+            continue
+        _forma(im, c, esc, t, pal, W, H)
+    return im
+
+
+def _forma(im, c, esc, t, pal, W, H):
+    """Una marca o pieza de mobiliario, en su caja."""
+    caja = c.get("caja") or {}
+    u = min(1.0, max(0.0, (t - c.get("retardo", 0.1)) / 0.55))
+    if u <= 0:
+        return
+    f = c.get("forma")
+    cx, cy = caja.get("x", 0.5), caja.get("y", 0.5)
+    cw = caja.get("w", 0.3) / 2
+    ch = caja.get("h", caja.get("w", 0.3) * W / H) / 2
+    if f == "etiqueta_capitulo":
+        vox.etiqueta(im, c.get("texto", ""), pal, (int(W * cx), int(H * cy)))
+    elif f == "numero_escena":
+        vox_mg.numero_escena(im, esc.get("_n", 0) + 1, pal, u=u)
+    elif f == "pie_fuente":
+        vox_mg.pie_fuente(im, c.get("texto", "Reserva Federal de San Luis"),
+                          pal, u=u)
+    elif f == "circulo_rotulador":
+        vox_mg.marca(im, [cx - cw, cy - ch, cx + cw, cy + ch], pal, u=u)
+    elif f == "corchete":
+        vox_mg.corchete(im, [cx - cw, cy - ch, cx + cw, cy + ch], pal, u=u)
+    elif f == "tachado":
+        vox_mg.tachado(im, [cx - cw, cy + ch * .15, cx + cw, cy - ch * .15], pal, u=u)
+    elif f == "asterisco":
+        vox_mg.asterisco(im, (cx, cy), pal, u=u, r=int(min(cw * W, ch * H)))
+    elif f == "flecha":
+        vox_mg.flecha(im, (cx - cw, cy - ch), (cx + cw, cy + ch), pal, u=u)
+    elif f == "subrayado":
+        vox_mg.banda(im, pal, u=u, y=cy)
+    elif f == "bocadillo":
+        vox_mg.bocadillo(im, (cx, cy), c.get("texto", ""), pal, u=u)
+
+
 def pintar_caja(esc, t, cfg, fondo, cache, pal):
     """
     Dibuja obedeciendo las cajas del storyboard.
@@ -731,7 +864,8 @@ def main():
             for i in range(n):
                 j = vox.stutter(i, FPS_ANIM, FPS)
                 if j != ult:               # solo se dibuja a 12 por segundo
-                    dibuja = pintar_caja if por_caja else pintar
+                    dibuja = (pintar_estados if esc.get("estados")
+                              else (pintar_caja if por_caja else pintar))
                     cuadro = np.asarray(dibuja(esc, j / FPS, cfg, fondo, cache,
                                                pal).convert("RGB"), np.uint8).tobytes()
                     ult = j

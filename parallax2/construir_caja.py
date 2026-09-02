@@ -140,18 +140,29 @@ def main():
                     faltan[arch] += 1
                     continue
                 imgs += 1
+                # `clave` es lo que ata la capa con su `ref` en los
+                # estados. Sin ella los elementos de la coreografia no
+                # encuentran su imagen y caen todos a la rama de texto: dos
+                # titulares y ninguna foto.
                 capas.append({"rol": c["rol"], "archivo": "meta/" + arch,
+                              "clave": c.get("clave"),
+                              "tratamiento": c.get("tratamiento"),
                               "caja": c["caja"], "entrada": c.get("entrada", "pop"),
                               "retardo": c.get("retardo", 0.1)})
             else:
                 d = {"rol": c.get("rol"), "forma": c.get("forma"),
+                     "clave": c.get("clave"),
                      "caja": c.get("caja"), "entrada": c.get("entrada", "pop"),
                      "retardo": c.get("retardo", 0.1)}
                 if c.get("texto"):
                     d["texto"] = acentuar(c["texto"], mapa)
                 capas.append(d)
 
+        # la coreografia va tal cual: es lo que dice cuando entra, se
+        # aparta y sale cada elemento dentro del plano
+        est = e.get("estados")
         n = {"id": e["id"], "texto": texto, "voz": voz,
+             "estados": est, "frase": e.get("frase"),
              "duracion": e["duracion"],
              "arquetipo": e.get("arquetipo"), "simetria": e.get("simetria"),
              "muda": norm(voz) in visto, "capas": capas, "imagenes": imgs}
@@ -185,7 +196,7 @@ def main():
     t = sum(e["duracion"] for e in escenas)
 
     guion = {"titulo": "prueba VOX por cajas", "paleta": "vox",
-             "fondo_imagen": "meta/f_papel.png",
+             "fondo_imagen": "meta/f_papel_rejilla.png",
              "lienzo": {"w": 1920, "h": 1080, "fps": 25, "ppm": 140},
              "escenas": escenas}
     json.dump(guion, io.open(os.path.join(AQUI, a.salida), "w", encoding="utf-8"),

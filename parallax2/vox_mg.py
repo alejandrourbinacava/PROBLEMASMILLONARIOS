@@ -421,3 +421,51 @@ def bloque_cifra(im, valor, pal, sufijo="", pie="", u=1.0, xy=(0.62, 0.16),
         fp = vox.f(int(px * 0.22))
         d.text((x, y + px * 1.02), pie.upper(), font=fp, fill=pal["tinta"])
     return im
+
+
+def fondo_rejilla(W, H, celda=108, base=(228, 227, 224), linea=(243, 243, 240),
+                  grosor=2, grano=3.0, veladura=1.5, semilla=11):
+    """
+    El fondo del video de referencia: papel gris claro con rejilla tenue.
+
+    Se calcula, no se genera con IA. Un fondo asi es tres cosas -un tono
+    plano, una rejilla y grano- y las tres salen mejor de una formula: sale
+    a cualquier resolucion, no cuesta una generacion, y sobre todo NO TIENE
+    CONTENIDO. Pedido a un modelo acaba con manchas, una esquina mas oscura
+    o una textura que se reconoce al repetirse doscientas veces.
+
+    Tres detalles que lo separan de un cuadriculado de hoja de calculo:
+
+      La linea es MAS CLARA que el fondo, no mas oscura. Es una marca de
+      agua en el papel, no una cuadricula impresa encima.
+
+      Va desenfocada medio pixel. Una linea de un pixel exacto se lee como
+      interfaz; difuminada se lee como impresa.
+
+      Y el tono no es plano: lleva una veladura muy suave de baja
+      frecuencia, que es lo que hace que parezca papel y no un relleno.
+    """
+    r = np.random.default_rng(semilla)
+    a = np.zeros((H, W, 3), np.float32) + np.array(base, np.float32)
+
+    # veladura de baja frecuencia: manchas anchas y suavisimas
+    # MUY suave: con desviacion 5,5 salian manchas que se ven, y el fondo
+    # de referencia es casi uniforme. Lo que tiene que notarse es el grano
+    # fino, no el nublado.
+    ch, cw = max(2, H // 160), max(2, W // 160)
+    manchas = r.normal(0, veladura, (ch, cw)).astype(np.float32)
+    manchas = np.asarray(Image.fromarray(manchas, "F").resize((W, H), Image.BICUBIC))
+    a += manchas[..., None]
+
+    # rejilla, en su propia capa para poder desenfocarla
+    rej = np.zeros((H, W), np.float32)
+    for x in range(0, W + celda, celda):
+        rej[:, max(0, x - grosor // 2):x + grosor - grosor // 2] = 1.0
+    for y in range(0, H + celda, celda):
+        rej[max(0, y - grosor // 2):y + grosor - grosor // 2, :] = 1.0
+    rej = np.asarray(Image.fromarray((rej * 255).astype(np.uint8))
+                     .filter(ImageFilter.GaussianBlur(0.9)), np.float32) / 255.0
+    a += rej[..., None] * (np.array(linea, np.float32) - np.array(base, np.float32))
+
+    a += r.normal(0, grano, (H, W, 1))          # grano de papel
+    return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8), "RGB")

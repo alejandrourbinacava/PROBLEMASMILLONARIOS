@@ -13,7 +13,177 @@
    "id": "gancho_01",
    "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
    "voz": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l99",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.22,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.45,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.44,
+        "w": 0.4,
+        "h": 0.16,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.15
+       }
+      }
+     ]
+    },
+    {
+     "t": 3.67,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.44,
+        "w": 0.4,
+        "h": 0.16,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.15
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.072,
+        "lineas": 3,
+        "max_chars": 64
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
    "duracion": 7.32,
    "arquetipo": "dato_pleno",
@@ -105,7 +275,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_izq",
      "retardo": 0.35
     },
     {
@@ -114,8 +284,6 @@
      "archivo": "meta/f_monedas.png",
      "clave": "f_monedas",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -123,7 +291,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2,
@@ -141,7 +310,119 @@
    "id": "gancho_02",
    "texto": "Tres coma veintidós. Ese es el margen.",
    "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l99",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.3,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 0.93,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.87,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.072,
+        "lineas": 3,
+        "max_chars": 64
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Tres coma veintidós. Ese es el margen.",
    "duracion": 3.59,
    "arquetipo": "dato_pleno",
@@ -165,7 +446,7 @@
       "lineas": 3,
       "max_chars": 64
      },
-     "entrada": "sube",
+     "entrada": "maquina",
      "retardo": 0.12,
      "texto": "Tres coma *veintidós*"
     },
@@ -230,7 +511,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_izq",
      "retardo": 0.35
     },
     {
@@ -239,8 +520,6 @@
      "archivo": "meta/f_oficina.png",
      "clave": "f_oficina",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -248,7 +527,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "sube"
     }
    ],
    "imagenes": 2,
@@ -266,7 +546,66 @@
    "id": "gancho_03",
    "texto": "Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
    "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.8,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
    "duracion": 7.17,
    "arquetipo": "cadena",
@@ -287,7 +626,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "pop",
+     "entrada": "sube",
      "retardo": 0.12
     },
     {
@@ -304,7 +643,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_der",
      "retardo": 0.24
     },
     {
@@ -345,7 +684,119 @@
    "id": "gancho_04",
    "texto": "Suena a poco.",
    "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l99",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.3,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 0.7,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.4,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.072,
+        "lineas": 3,
+        "max_chars": 64
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Suena a poco.",
    "duracion": 2.02,
    "arquetipo": "dato_pleno",
@@ -369,7 +820,7 @@
       "lineas": 3,
       "max_chars": 64
      },
-     "entrada": "sube",
+     "entrada": "maquina",
      "retardo": 0.12,
      "texto": "Suena a *poco*."
     },
@@ -443,8 +894,6 @@
      "archivo": "meta/f_libro.png",
      "clave": "f_libro",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -452,7 +901,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2,
@@ -469,7 +919,66 @@
    "id": "gancho_05",
    "texto": "Y sin embargo, no hay ningún negocio con una cola mas larga de gente esperando para entrar.",
    "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.8,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Y sin embargo, no hay ningún negocio con una cola mas larga de gente esperando para entrar.",
    "duracion": 5.4,
    "arquetipo": "detras",
@@ -490,7 +999,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral",
+     "entrada": "lateral_izq",
      "retardo": 0.12
     },
     {
@@ -549,7 +1058,177 @@
    "id": "gancho_06",
    "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
    "voz": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l99",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.3,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.22,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.45,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.44,
+        "w": 0.4,
+        "h": 0.16,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.15
+       }
+      }
+     ]
+    },
+    {
+     "t": 3.67,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.44,
+        "w": 0.4,
+        "h": 0.16,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.15
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.072,
+        "lineas": 3,
+        "max_chars": 64
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
    "duracion": 5.07,
    "arquetipo": "dato_pleno",
@@ -641,7 +1320,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_izq",
      "retardo": 0.35
     },
     {
@@ -650,8 +1329,6 @@
      "archivo": "meta/f_boveda.png",
      "clave": "f_boveda",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -659,7 +1336,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "sube"
     }
    ],
    "imagenes": 2,
@@ -676,7 +1354,66 @@
    "id": "gancho_07",
    "texto": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
    "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.8,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Coge lo que tu depositas, se lo presta a otro mas caro, y se queda la diferencia.",
    "duracion": 6.29,
    "arquetipo": "detras",
@@ -697,7 +1434,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "pop",
+     "entrada": "lateral_izq",
      "retardo": 0.12
     },
     {
@@ -714,7 +1451,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_der",
      "retardo": 0.24
     },
     {
@@ -756,7 +1493,119 @@
    "id": "gancho_08",
    "texto": "Ese es el negocio entero. Todo lo demás es decoración.",
    "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l99",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.3,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.17,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.33,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l98",
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.072,
+        "lineas": 3,
+        "max_chars": 64
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Ese es el negocio entero. Todo lo demás es decoración.",
    "duracion": 3.93,
    "arquetipo": "dato_pleno",
@@ -845,17 +1694,15 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_izq",
      "retardo": 0.35
     },
     {
      "ref": "l98",
      "rol": "medio",
-     "archivo": "meta/f_monedas.png",
-     "clave": "f_monedas",
+     "archivo": "meta/f_billetes.png",
+     "clave": "f_billetes",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -863,7 +1710,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2,
@@ -881,7 +1729,66 @@
    "id": "gancho_09",
    "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
    "voz": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.75,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Así que la pregunta se hace sola: cuanto cuesta montar uno.",
    "duracion": 4.68,
    "arquetipo": "detras",
@@ -902,7 +1809,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "pop",
+     "entrada": "lateral_izq",
      "retardo": 0.12
     },
     {
@@ -961,7 +1868,66 @@
    "id": "gancho_10",
    "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
    "voz": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.3,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.75,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l98",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Con un McDonald's era el dinero. Con un casino, la licencia.",
    "duracion": 6.09,
    "arquetipo": "detras",
@@ -982,7 +1948,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "pop",
+     "entrada": "lateral_izq",
      "retardo": 0.12
     },
     {
@@ -1023,8 +1989,6 @@
      "archivo": "meta/f_billetes.png",
      "clave": "f_billetes",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -1032,7 +1996,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2
@@ -1041,7 +2006,66 @@
    "id": "cap1_dos_bancos_01",
    "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
    "voz": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
-   "estados": null,
+   "estados": [
+    {
+     "t": 0.0,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.8,
+     "entra": "l98",
+     "gesto": null,
+     "visibles": [
+      "l2",
+      "l98",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l98",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    }
+   ],
    "frase": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido.",
    "duracion": 11.42,
    "arquetipo": "detras",
@@ -1103,8 +2127,6 @@
      "archivo": "meta/f_billetes.png",
      "clave": "f_billetes",
      "tipo_capa": "imagen",
-     "entrada": "sube",
-     "retardo": 0.45,
      "caja": {
       "x": 0.77,
       "y": 0.93,
@@ -1112,7 +2134,8 @@
       "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
-     }
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2

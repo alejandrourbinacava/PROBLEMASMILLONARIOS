@@ -90,9 +90,26 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
+    },
+    {
+     "ref": "l99",
+     "rol": "medio",
+     "archivo": "meta/f_billetes.png",
+     "clave": "f_billetes",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.74,
+      "y": 0.97,
+      "w": 0.4,
+      "h": 0.44,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "sube",
+     "retardo": 0.35
     }
    ],
-   "imagenes": 0,
+   "imagenes": 1,
    "grafico": {
     "tipo": "contador",
     "valor": 3.22,
@@ -180,9 +197,26 @@
      },
      "entrada": "ninguna",
      "retardo": 0.0
+    },
+    {
+     "ref": "l99",
+     "rol": "medio",
+     "archivo": "meta/f_billetes.png",
+     "clave": "f_billetes",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.74,
+      "y": 0.97,
+      "w": 0.4,
+      "h": 0.44,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "sube",
+     "retardo": 0.35
     }
    ],
-   "imagenes": 0,
+   "imagenes": 1,
    "grafico": {
     "tipo": "frase_destacada",
     "lineas": [
@@ -349,9 +383,26 @@
      },
      "entrada": "ninguna",
      "retardo": 0.0
+    },
+    {
+     "ref": "l99",
+     "rol": "medio",
+     "archivo": "meta/f_oficina.png",
+     "clave": "f_oficina",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.74,
+      "y": 0.97,
+      "w": 0.4,
+      "h": 0.44,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "sube",
+     "retardo": 0.35
     }
    ],
-   "imagenes": 0,
+   "imagenes": 1,
    "grafico": {
     "tipo": "frase_destacada",
     "lineas": [
@@ -522,9 +573,26 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
+    },
+    {
+     "ref": "l99",
+     "rol": "medio",
+     "archivo": "meta/f_billetes.png",
+     "clave": "f_billetes",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.74,
+      "y": 0.97,
+      "w": 0.4,
+      "h": 0.44,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "sube",
+     "retardo": 0.35
     }
    ],
-   "imagenes": 0,
+   "imagenes": 1,
    "grafico": {
     "tipo": "reparto",
     "valor": 100,
@@ -691,9 +759,26 @@
      },
      "entrada": "ninguna",
      "retardo": 0.0
+    },
+    {
+     "ref": "l99",
+     "rol": "medio",
+     "archivo": "meta/m_cola.png",
+     "clave": "m_cola",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.74,
+      "y": 0.97,
+      "w": 0.4,
+      "h": 0.44,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "sube",
+     "retardo": 0.35
     }
    ],
-   "imagenes": 0,
+   "imagenes": 1,
    "grafico": {
     "tipo": "frase_destacada",
     "lineas": [

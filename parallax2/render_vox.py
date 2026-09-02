@@ -554,6 +554,10 @@ def anota_algo(c, esc, W, H):
     for o in esc.get("capas", []):
         if o is c or not o.get("caja"):
             continue
+        # la imagen que anado yo para que el plano no quede vacio no cuenta:
+        # la marca se coloco para la composicion original, no para ella
+        if o.get("ref") == "l99":
+            continue
         if o.get("forma") in MARCAS or o.get("forma") in ("vineta", "rejilla"):
             continue
         if not (o.get("archivo") or o.get("forma")):

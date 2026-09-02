@@ -194,6 +194,83 @@ def main():
         escenas.append(n)
         t += e["duracion"]
 
+    # NINGUN plano se queda sin imagen.
+    #
+    # En el material de referencia no hay un solo fotograma de texto pelado:
+    # el "$116 por barril" lleva el petrolero, el "$39 billones" lleva
+    # obrero, mapa y soldado, y hasta el remate a maquina de escribir lleva
+    # el billete ardiendo. Los planos `dato_pleno` del storyboard vienen sin
+    # imagen y salian cinco de once en blanco.
+    #
+    # Se les mete UNA pieza, elegida por lo que dice la frase, colocada
+    # abajo y al lado contrario del dato: asi el numero cae en el hueco
+    # vacio y no encima del sujeto, que es como se compone en la referencia.
+    PALABRAS = {
+        "f_billetes": "dolares dinero billetes gana margen prestados cien",
+        "f_monedas": "cifra cifras coste cuesta millones gasto",
+        "f_hucha": "deposito depositas ahorro guardar",
+        "f_libro": "hoja calculo balance contabilidad prestado",
+        "f_boveda": "capital custodia colchon reserva boveda",
+        "f_oficina": "banco oficina sucursal fachada tienda puertas",
+        "f_regulador": "regulador licencia norma autorizacion institucion",
+        "f_balanza": "diferencia compara proporcion veces desequilibrio",
+        "f_candado": "tocar bloqueado permiso quieto simbolica",
+        "f_recibos": "gastos nominas facturas alquiler mantenimiento",
+        "f_cerrado": "cierran desaparecen quiebra venden viernes lunes",
+        "m_cola": "cola gente clientes esperando fila negocio",
+    }
+
+    def pieza_para(texto):
+        t = norm(texto)
+        mejor, punt = None, 0
+        for k, pal in PALABRAS.items():
+            if not existe(k + ".png"):
+                continue
+            n = sum(1 for w in pal.split() if w in t)
+            if n > punt:
+                mejor, punt = k, n
+        return mejor
+
+    usadas = collections.Counter()
+    for e in escenas:
+        if e["imagenes"]:
+            continue
+        # Si la frase no casa con nada -"Suena a poco." no tiene ni un
+        # sustantivo- se recurre a la pieza del episodio: el banco. Vale mas
+        # una fachada de banco que un plano en blanco.
+        k = pieza_para(e["texto"]) or ("f_oficina" if existe("f_oficina.png")
+                                       else None)
+        if not k:
+            continue
+        # el dato manda el lado: si esta a la izquierda, la imagen va a la
+        # derecha, y al reves
+        # El lado se mide por donde EMPIEZA el bloque de texto, no por el
+        # centro de su caja: el rotulo y la cifra se dibujan alineados a la
+        # izquierda dentro de ella, asi que una caja centrada en 0,5 pinta
+        # de hecho en el tercio izquierdo. Con el centro, la imagen se iba
+        # al mismo lado que el texto y la mitad derecha quedaba vacia.
+        datos = [c["caja"].get("x", 0.5) - c["caja"].get("w", 0.5) / 2
+                 for c in e["capas"]
+                 if c.get("forma") in ("contador", "frase", "frase_destacada",
+                                       "titular", "barras", "anillo", "reparto")]
+        izq = (sum(datos) / len(datos)) < 0.42 if datos else True
+        e["capas"].append({
+            "ref": "l99", "rol": "medio", "archivo": "meta/" + k + ".png",
+            "clave": k, "tipo_capa": "imagen",
+            "caja": {"x": 0.74 if izq else 0.26, "y": 0.97,
+                     "w": 0.40, "h": 0.44, "anclaje": "abajo",
+                     "encaje": "contener"},
+            "entrada": "sube", "retardo": 0.35})
+        e["imagenes"] = 1
+        usadas[k] += 1
+        for st in (e.get("estados") or []):
+            st.setdefault("visibles", [x["ref"] for x in st["elementos"]])
+            if "l99" not in st["visibles"]:
+                st["visibles"].append("l99")
+    if usadas:
+        print(f'{sum(usadas.values())} planos de solo texto reciben imagen:',
+              ", ".join(f"{k}({v})" for k, v in usadas.most_common()))
+
     # Cada grupo de planos dura lo que dura SU locucion.
     #
     # El storyboard reparte segundos con su propio modelo, y esos segundos no

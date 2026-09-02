@@ -19,25 +19,46 @@
    "muda": false,
    "capas": [
     {
-     "rol": "titular",
+     "rol": "grafico",
      "forma": "contador",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
+      "y": 0.4,
       "w": 0.76,
+      "h": 0.26,
       "anclaje": "centro",
-      "px_rel": 0.16
+      "px_rel": 0.2,
+      "lineas": 1,
+      "max_chars": 12
      },
-     "entrada": "sube",
+     "entrada": "pop",
      "retardo": 0.12
     },
     {
-     "rol": "marca",
-     "forma": "subrayado",
+     "rol": "titular",
+     "forma": "frase",
      "caja": {
       "x": 0.5,
-      "y": 0.62,
-      "w": 0.5,
+      "y": 0.66,
+      "w": 0.72,
+      "h": 0.14,
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
+     },
+     "entrada": "sube",
+     "retardo": 0.24,
+     "texto": "Un banco medio de Estados Unidos gana tres coma veintidós"
+    },
+    {
+     "rol": "marca",
+     "forma": "corchete",
+     "caja": {
+      "x": 0.5,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.06,
       "anclaje": "centro"
      },
      "entrada": "trazo",
@@ -55,18 +76,6 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
-    },
-    {
-     "rol": "acabado",
-     "forma": "vineta",
-     "caja": {
-      "x": 0.5,
-      "y": 0.5,
-      "w": 1.0,
-      "anclaje": "centro"
-     },
-     "entrada": "ninguna",
-     "retardo": 0.0
     }
    ],
    "imagenes": 0,
@@ -94,21 +103,26 @@
      "forma": "frase",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
-      "w": 0.76,
+      "y": 0.66,
+      "w": 0.72,
+      "h": 0.14,
       "anclaje": "centro",
-      "px_rel": 0.16
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
      },
      "entrada": "sube",
-     "retardo": 0.12
+     "retardo": 0.12,
+     "texto": "qué tiene prestados."
     },
     {
      "rol": "marca",
      "forma": "corchete",
      "caja": {
       "x": 0.5,
-      "y": 0.62,
-      "w": 0.5,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.06,
       "anclaje": "centro"
      },
      "entrada": "trazo",
@@ -152,25 +166,46 @@
    "muda": false,
    "capas": [
     {
-     "rol": "titular",
+     "rol": "grafico",
      "forma": "titular",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
+      "y": 0.4,
       "w": 0.76,
+      "h": 0.26,
       "anclaje": "centro",
-      "px_rel": 0.16
+      "px_rel": 0.2,
+      "lineas": 1,
+      "max_chars": 12
      },
-     "entrada": "sube",
+     "entrada": "pop",
      "retardo": 0.12
     },
     {
-     "rol": "marca",
-     "forma": "tachado",
+     "rol": "titular",
+     "forma": "frase",
      "caja": {
       "x": 0.5,
-      "y": 0.62,
-      "w": 0.5,
+      "y": 0.66,
+      "w": 0.72,
+      "h": 0.14,
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
+     },
+     "entrada": "sube",
+     "retardo": 0.24,
+     "texto": "Tres coma veintidós. Ese es el margen."
+    },
+    {
+     "rol": "marca",
+     "forma": "asterisco",
+     "caja": {
+      "x": 0.5,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.06,
       "anclaje": "centro"
      },
      "entrada": "trazo",
@@ -188,18 +223,6 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
-    },
-    {
-     "rol": "acabado",
-     "forma": "vineta",
-     "caja": {
-      "x": 0.5,
-      "y": 0.5,
-      "w": 1.0,
-      "anclaje": "centro"
-     },
-     "entrada": "ninguna",
-     "retardo": 0.0
     }
    ],
    "imagenes": 0,
@@ -253,10 +276,14 @@
       "x": 0.5,
       "y": 0.2,
       "w": 0.6,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
      },
      "entrada": "sube",
-     "retardo": 0.36
+     "retardo": 0.36,
+     "texto": "Y con ese margen se pagan las oficinas"
     },
     {
      "rol": "ancla",
@@ -302,10 +329,14 @@
       "x": 0.5,
       "y": 0.24,
       "w": 0.6,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
      },
      "entrada": "sube",
-     "retardo": 0.24
+     "retardo": 0.24,
+     "texto": "las nóminas los sistemas los abogados y los accionistas."
     },
     {
      "rol": "marca",
@@ -345,25 +376,46 @@
    "muda": false,
    "capas": [
     {
-     "rol": "titular",
+     "rol": "grafico",
      "forma": "titular",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
+      "y": 0.4,
       "w": 0.76,
+      "h": 0.26,
       "anclaje": "centro",
-      "px_rel": 0.16
+      "px_rel": 0.2,
+      "lineas": 1,
+      "max_chars": 12
      },
-     "entrada": "sube",
+     "entrada": "pop",
      "retardo": 0.12
     },
     {
-     "rol": "marca",
-     "forma": "circulo_rotulador",
+     "rol": "titular",
+     "forma": "frase",
      "caja": {
       "x": 0.5,
-      "y": 0.62,
-      "w": 0.5,
+      "y": 0.66,
+      "w": 0.72,
+      "h": 0.14,
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
+     },
+     "entrada": "sube",
+     "retardo": 0.24,
+     "texto": "Suena a poco."
+    },
+    {
+     "rol": "marca",
+     "forma": "flecha",
+     "caja": {
+      "x": 0.5,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.06,
       "anclaje": "centro"
      },
      "entrada": "trazo",
@@ -381,18 +433,6 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
-    },
-    {
-     "rol": "acabado",
-     "forma": "vineta",
-     "caja": {
-      "x": 0.5,
-      "y": 0.5,
-      "w": 1.0,
-      "anclaje": "centro"
-     },
-     "entrada": "ninguna",
-     "retardo": 0.0
     }
    ],
    "imagenes": 0,
@@ -446,10 +486,14 @@
       "x": 0.78,
       "y": 0.2,
       "w": 0.34,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.04,
+      "lineas": 4,
+      "max_chars": 70
      },
      "entrada": "sube",
-     "retardo": 0.36
+     "retardo": 0.36,
+     "texto": "Y sin embargo"
     },
     {
      "rol": "marca",
@@ -507,10 +551,14 @@
       "x": 0.5,
       "y": 0.24,
       "w": 0.6,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
      },
      "entrada": "sube",
-     "retardo": 0.24
+     "retardo": 0.24,
+     "texto": "no hay ningún negocio con una cola más larga de gente"
     },
     {
      "rol": "marca",
@@ -550,25 +598,46 @@
    "muda": false,
    "capas": [
     {
-     "rol": "titular",
+     "rol": "grafico",
      "forma": "reparto",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
+      "y": 0.4,
       "w": 0.76,
+      "h": 0.26,
       "anclaje": "centro",
-      "px_rel": 0.16
+      "px_rel": 0.2,
+      "lineas": 1,
+      "max_chars": 12
      },
-     "entrada": "sube",
+     "entrada": "pop",
      "retardo": 0.12
     },
     {
-     "rol": "marca",
-     "forma": "corchete",
+     "rol": "titular",
+     "forma": "frase",
      "caja": {
       "x": 0.5,
-      "y": 0.62,
-      "w": 0.5,
+      "y": 0.66,
+      "w": 0.72,
+      "h": 0.14,
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
+     },
+     "entrada": "sube",
+     "retardo": 0.24,
+     "texto": "Porque un banco no gana dinero con su dinero."
+    },
+    {
+     "rol": "marca",
+     "forma": "tachado",
+     "caja": {
+      "x": 0.5,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.06,
       "anclaje": "centro"
      },
      "entrada": "trazo",
@@ -586,18 +655,6 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
-    },
-    {
-     "rol": "acabado",
-     "forma": "vineta",
-     "caja": {
-      "x": 0.5,
-      "y": 0.5,
-      "w": 1.0,
-      "anclaje": "centro"
-     },
-     "entrada": "ninguna",
-     "retardo": 0.0
     }
    ],
    "imagenes": 0,
@@ -639,10 +696,14 @@
       "x": 0.78,
       "y": 0.2,
       "w": 0.34,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.04,
+      "lineas": 4,
+      "max_chars": 70
      },
      "entrada": "sube",
-     "retardo": 0.24
+     "retardo": 0.24,
+     "texto": "Lo gana con el tuyo."
     },
     {
      "rol": "marca",
@@ -713,10 +774,14 @@
       "x": 0.78,
       "y": 0.2,
       "w": 0.34,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.04,
+      "lineas": 4,
+      "max_chars": 70
      },
      "entrada": "sube",
-     "retardo": 0.36
+     "retardo": 0.36,
+     "texto": "Coge lo qué tú depositas se lo presta a otro más caro"
     },
     {
      "rol": "marca",
@@ -774,10 +839,14 @@
       "x": 0.5,
       "y": 0.24,
       "w": 0.6,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
      },
      "entrada": "sube",
-     "retardo": 0.24
+     "retardo": 0.24,
+     "texto": "y se queda la diferencia."
     },
     {
      "rol": "marca",
@@ -817,25 +886,46 @@
    "muda": true,
    "capas": [
     {
-     "rol": "titular",
+     "rol": "grafico",
      "forma": "titular",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
+      "y": 0.4,
       "w": 0.76,
+      "h": 0.26,
       "anclaje": "centro",
-      "px_rel": 0.16
+      "px_rel": 0.2,
+      "lineas": 1,
+      "max_chars": 12
      },
-     "entrada": "sube",
+     "entrada": "pop",
      "retardo": 0.12
     },
     {
-     "rol": "marca",
-     "forma": "circulo_rotulador",
+     "rol": "titular",
+     "forma": "frase",
      "caja": {
       "x": 0.5,
-      "y": 0.62,
-      "w": 0.5,
+      "y": 0.66,
+      "w": 0.72,
+      "h": 0.14,
+      "anclaje": "centro",
+      "px_rel": 0.06,
+      "lineas": 3,
+      "max_chars": 62
+     },
+     "entrada": "sube",
+     "retardo": 0.24,
+     "texto": "Ese es el negocio entero. Todo lo demás es decoración."
+    },
+    {
+     "rol": "marca",
+     "forma": "flecha",
+     "caja": {
+      "x": 0.5,
+      "y": 0.82,
+      "w": 0.24,
+      "h": 0.06,
       "anclaje": "centro"
      },
      "entrada": "trazo",
@@ -853,18 +943,6 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
-    },
-    {
-     "rol": "acabado",
-     "forma": "vineta",
-     "caja": {
-      "x": 0.5,
-      "y": 0.5,
-      "w": 1.0,
-      "anclaje": "centro"
-     },
-     "entrada": "ninguna",
-     "retardo": 0.0
     }
    ],
    "imagenes": 0,
@@ -919,10 +997,14 @@
       "x": 0.78,
       "y": 0.2,
       "w": 0.34,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.04,
+      "lineas": 4,
+      "max_chars": 70
      },
      "entrada": "sube",
-     "retardo": 0.36
+     "retardo": 0.36,
+     "texto": "Así qué la pregunta se hace sola: cuánto cuesta montar uno."
     },
     {
      "rol": "marca",
@@ -980,10 +1062,14 @@
       "x": 0.78,
       "y": 0.2,
       "w": 0.34,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.04,
+      "lineas": 4,
+      "max_chars": 70
      },
      "entrada": "sube",
-     "retardo": 0.36
+     "retardo": 0.36,
+     "texto": "Con un McDonald's era el dinero. Con un casino, la licencia."
     },
     {
      "rol": "marca",
@@ -1042,10 +1128,14 @@
       "x": 0.78,
       "y": 0.2,
       "w": 0.34,
-      "anclaje": "centro"
+      "anclaje": "centro",
+      "px_rel": 0.04,
+      "lineas": 4,
+      "max_chars": 70
      },
      "entrada": "sube",
-     "retardo": 0.36
+     "retardo": 0.36,
+     "texto": "Con un banco"
     },
     {
      "rol": "marca",

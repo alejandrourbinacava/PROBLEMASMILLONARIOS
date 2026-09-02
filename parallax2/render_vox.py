@@ -286,8 +286,15 @@ def preparar_cajas(guion, base):
             if not a or (a, c["rol"]) in cache:
                 continue
             r = _ruta(a, base)
-            cache[(a, c["rol"])] = (tarjeta(r, 0) if c["rol"] == "medio"
-                                    else frente(r))
+            # TODO va en semitono con el borde de color, tambien el frente.
+            #
+            # Lo tenia a color para que el contraste entre el sujeto en
+            # blanco y negro y la estructura a color hiciera de jerarquia.
+            # Pero mientras las estructuras fueron dibujos vectoriales, "a
+            # color" significaba libro de colorear. Con fotos de origen, el
+            # semitono si tiene medios tonos que tramar y el plano entero se
+            # lee como un recorte de periodico, que es el estilo.
+            cache[(a, c["rol"])] = tarjeta(r, 0)
     return cache
 
 

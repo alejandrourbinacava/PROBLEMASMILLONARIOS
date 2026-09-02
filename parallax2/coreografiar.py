@@ -73,9 +73,14 @@ def coreografiar(e, i, dur):
     if not (imgs or txts or dats):
         return 0
 
-    # ORDEN: primero las imagenes -el sitio-, despues el dato, y el texto al
-    # final. El texto es la conclusion, no el titulo.
-    secuencia = imgs + dats + txts
+    # ORDEN: la primera imagen abre, el TEXTO entra enseguida -porque es lo
+    # que la voz esta diciendo en ese momento- y las demas imagenes y el
+    # dato lo acompanan despues.
+    #
+    # Lo tenia al reves: el texto el ultimo, al 70% del plano. En un plano
+    # de cinco segundos eso son tres segundos y medio despues de que la voz
+    # haya dicho la frase, y se lee como un subtitulo que llega tarde.
+    secuencia = ([imgs[0]] if imgs else []) + txts + imgs[1:] + dats
     fijas = [c for c in e["capas"] if c not in secuencia]
 
     # el remate corto se escribe a maquina, y solo el
@@ -89,7 +94,8 @@ def coreografiar(e, i, dur):
     # los momentos se reparten en el 70% del plano: el ultimo elemento entra
     # con tiempo de sobra para leerse antes del corte
     n = len(secuencia)
-    paso = (dur * 0.70) / max(1, n)
+    # y el reparto se aprieta al principio: todo dentro de la primera mitad
+    paso = (dur * 0.45) / max(1, n)
     estados = []
     for k in range(n):
         vistos = secuencia[:k + 1]
@@ -108,8 +114,11 @@ def coreografiar(e, i, dur):
             else:
                 caja = c.get("caja") or {}
             if c in txts:
-                caja = dict(caja, px_rel=0.105 if not n_img else 0.072,
-                            lineas=3, max_chars=46 if not n_img else 64)
+                # max_chars alto: con 64 se cortaba "Un banco medio de
+                # Estados" y se quedaba sin "Unidos". Vale mas una linea
+                # mas que una frase amputada.
+                caja = dict(caja, px_rel=0.098 if not n_img else 0.062,
+                            lineas=4, max_chars=76 if not n_img else 92)
             elif c in dats:
                 caja = dict(caja, px_rel=0.15)
             cajas[id(c)] = caja

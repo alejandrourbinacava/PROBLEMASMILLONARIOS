@@ -115,6 +115,58 @@ def frase_de(texto, frases):
     return mejor if punt >= 0.7 else None
 
 
+# Las palabras por las que entra cada pieza. Es lo unico que ata una imagen
+# con lo que se esta diciendo, y la REGLA DE ORO es que tenga que ver.
+PALABRAS_PIEZA = {
+ "f_billetes": "dolares dinero billetes gana margen prestados cien fajo",
+ "f_monedas": "cifra cifras coste cuesta millones gasto monedas",
+ "f_moneda": "poco pequeno minimo apenas suena",
+ "f_hucha": "deposito depositas ahorro guardar hucha",
+ "f_libro": "hoja calculo balance contabilidad prestado libro",
+ "f_boveda": "capital custodia colchon reserva boveda acorazada",
+ "f_oficina": "banco oficina sucursal fachada tienda puertas",
+ "f_regulador": "regulador licencia norma autorizacion institucion",
+ "f_balanza": "diferencia compara proporcion veces desequilibrio margen",
+ "f_candado": "tocar bloqueado permiso quieto simbolica",
+ "f_recibos": "gastos nominas facturas alquiler mantenimiento",
+ "f_cerrado": "cierran desaparecen quiebra venden viernes lunes",
+ "f_maletin": "maletin abogados millones capital",
+ "f_mostrador": "mostrador cajero ventanilla",
+ "f_servidor": "sistemas informatico servidor tecnologia",
+ "f_torre": "rascacielos grandes volumen corporativo",
+ "f_expediente": "solicitud expediente documentos papeles carpeta",
+ "f_escudo": "seguro garantia proteccion",
+ "f_engranaje": "maquinaria funciona cumplimiento engranaje",
+ "f_cinta": "medir ratio porcentaje minimo apalancamiento",
+ "f_hamburguesa": "mcdonalds hamburguesa restaurante comida",
+ "f_fichas": "casino licencia fichas juego apuesta",
+ "f_moldura": "decoracion adorno ornamento",
+ "f_atm": "cajero automatico fachada",
+ "f_llaves": "llaves permiso acceso dueno",
+ "f_terminal": "ordenador sistema antiguo terminal",
+ "f_cheque": "cheque pago documento",
+ "f_calendario": "anos plazo tiempo tarda",
+ "f_grieta": "grieta susto quiebra riesgo",
+ "f_semaforo": "condicion requisito permiso senal",
+ "f_obra": "abrir montar construir obra nueva",
+ "f_paraguas": "colchon absorber perdidas proteger",
+ "f_vaso": "poco medio parte lleno",
+ "f_pesa": "peso pesan carga",
+ "f_tarta": "reparto porcentaje parte porcion",
+ "f_regla": "medir minimo ratio norma",
+ "m_banquero": "banquero ejecutivo dueno accionista socio",
+ "m_inspector": "regulador inspector supervision auditoria evalua",
+ "m_fundador": "emprendedor montar abrir fundador",
+ "m_consultor": "consultor sistemas plan tecnologia",
+ "m_familia": "cliente clientes depositas pareja hipoteca firma",
+ "m_cola": "cola gente clientes esperando fila negocio",
+ "m_plantilla": "plantilla empleados nominas personal equipo",
+ "m_abogados": "abogados solicitud legal",
+ "m_guardia": "seguridad guardia vigilado",
+ "m_cajero": "cajero cajera ventanilla atiende",
+}
+
+
 def existe(nombre):
     return os.path.exists(os.path.join(META, nombre))
 
@@ -207,7 +259,8 @@ def main():
     # Se les mete UNA pieza, elegida por lo que dice la frase, colocada
     # abajo y al lado contrario del dato: asi el numero cae en el hueco
     # vacio y no encima del sujeto, que es como se compone en la referencia.
-    PALABRAS = {
+    PALABRAS = PALABRAS_PIEZA
+    _viejo = {
         "f_billetes": "dolares dinero billetes gana margen prestados cien",
         "f_monedas": "cifra cifras coste cuesta millones gasto",
         "f_hucha": "deposito depositas ahorro guardar",
@@ -285,26 +338,75 @@ def main():
     # Como la composicion de cada momento se recalcula para los elementos
     # que hay EN ESE MOMENTO, el apartarse sale solo: nadie escribe "y ahora
     # el obrero se va a x=0,23", lo dice la composicion de dos.
-    # Antes de coreografiar: una sola pieza estrecha no llena el cuadro por
-    # mucho sitio que se le de -unas llaves se ajustan por alto y dejan el
-    # 13% de cobertura-, asi que los planos de una imagen reciben una
-    # segunda, distinta, y pasan a la composicion de dos que flanquean.
+    # NINGUNA PIEZA SE REPITE EN TODO EL VIDEO.
+    #
+    # No "no se repite dentro de la escena": no se repite nunca. Con 57
+    # piezas en la biblioteca y 11 planos de dos imagenes hacen falta 22, asi
+    # que sobra de largo y repetir es pura pereza del reparto.
+    #
+    # Se hace en dos pasadas. Primero se respeta lo que el guion asigno a
+    # mano, apuntando cada pieza como gastada. Despues se rellena hasta dos
+    # imagenes por plano, y ahi solo se puede coger de lo que queda libre.
+    todas = sorted(x[:-4] for x in os.listdir(META)
+                   if x.endswith(".png") and not x.startswith("f_papel"))
+    gastadas = set()
+
+    for e in escenas:
+        for c in list(e["capas"]):
+            arch = c.get("archivo")     # `a` es el namespace de argumentos
+            if not arch:
+                continue
+            k = arch[5:-4]
+            if k in gastadas:
+                e["capas"].remove(c)      # repetida: fuera, se rellena luego
+            else:
+                gastadas.add(k)
+
+    def libre_para(texto, i):
+        """La pieza sin usar que mas casa con la frase; si ninguna casa, la
+        siguiente libre por orden, que al menos no repite."""
+        t = norm(texto)
+        mejor, punt = None, 0
+        for k in todas:
+            if k in gastadas:
+                continue
+            pal = PALABRAS.get(k, k[2:].replace("_", " "))
+            n = sum(1 for w in pal.split() if len(w) > 3 and w in t)
+            if n > punt:
+                mejor, punt = k, n
+        if mejor:
+            return mejor
+        # Sin coincidencia de palabra, la que mas LLENA el cuadro. Cogiendo
+        # "la siguiente libre" salian llaves y grietas -piezas estrechas que
+        # se ajustan por alto- y la cobertura bajaba del 29 al 23%.
+        from PIL import Image
+        libres = [k for k in todas if k not in gastadas]
+        if not libres:
+            return None
+        def llena(k):
+            im = Image.open(os.path.join(META, k + ".png")).convert("RGBA")
+            b = im.getbbox()
+            if not b:
+                return 0
+            an, al = b[2] - b[0], b[3] - b[1]
+            return min(an / al, 1.9) * al       # ancho util, con tope
+        return max(libres, key=llena)
+
     for i, e in enumerate(escenas):
-        imgs = [c for c in e["capas"] if c.get("archivo")]
-        if len(imgs) != 1:
-            continue
-        ya = {c["archivo"] for c in imgs}
-        k = pieza_para(e["texto"])
-        alt = [x for x in ("f_billetes", "f_monedas", "f_oficina", "m_cola",
-                           "f_libro", "f_recibos", "f_boveda", "f_balanza")
-               if existe(x + ".png") and "meta/" + x + ".png" not in ya]
-        k2 = (k if k and "meta/" + k + ".png" not in ya
-              else (alt[i % len(alt)] if alt else None))
-        if k2:
-            e["capas"].append({"ref": "l98", "rol": "medio",
-                               "archivo": "meta/" + k2 + ".png", "clave": k2,
+        while len([c for c in e["capas"] if c.get("archivo")]) < 2:
+            k = libre_para(e["texto"], i)
+            if not k:
+                break
+            gastadas.add(k)
+            e["capas"].append({"ref": f"l9{len(e['capas'])}", "rol": "medio",
+                               "archivo": "meta/" + k + ".png", "clave": k,
                                "tipo_capa": "imagen", "caja": {}})
-            e["imagenes"] = 2
+        e["imagenes"] = len([c for c in e["capas"] if c.get("archivo")])
+
+    usadas = [c["archivo"] for e in escenas for c in e["capas"] if c.get("archivo")]
+    rep = [k for k, v in collections.Counter(usadas).items() if v > 1]
+    print(f'{len(usadas)} imagenes, {len(set(usadas))} distintas'
+          + (f' - REPETIDAS: {rep}' if rep else ' - ninguna repetida'))
 
     for i, e in enumerate(escenas):
         CO.coreografiar(e, i, e["duracion"])

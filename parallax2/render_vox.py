@@ -621,7 +621,16 @@ def _forma(im, c, esc, t, pal, W, H):
                       sufijo=g.get("sufijo", "%"),
                       decimales=g.get("dec", 0), pie=g.get("pie", ""))
         return
-    if f == "reparto" and g:
+    # El reparto y el subrayado se retiran.
+    #
+    # El reparto salia como una barra roja con "tu dinero" al lado, sin
+    # animacion y sin que se entendiera que reparte. Una barra partida solo
+    # se lee si las dos partes estan nombradas y la proporcion significa
+    # algo; si no, es una mancha de color. Y el subrayado era una linea
+    # amarilla cruzando el plano sin nada debajo.
+    if f in ("reparto", "subrayado"):
+        return
+    if False and f == "reparto" and g:
         vox_mg.reparto(im, pal, valor=g.get("valor", 100),
                        etiqueta_a=g.get("etiqueta_a", ""),
                        etiqueta_b=g.get("etiqueta_b", ""),

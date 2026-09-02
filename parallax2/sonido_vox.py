@@ -107,15 +107,15 @@ def main():
     for k, e in enumerate(guion["escenas"]):
         # el papel entra justo EN el corte: es un golpe, no un movimiento,
         # y adelantandolo se oye desligado de lo que pasa en pantalla
-        meter(WH[k % 4], max(0.0, t - 0.015), 0.40)
+        meter(WH[k % 4], max(0.0, t - 0.015), 0.62)
         eventos += 1
         g = e.get("grafico")
         if g:
             r = g.get("retardo", 0.30) or 0.30
             if g["tipo"] in ("barras", "reparto"):
-                meter(BA, t + r, 0.26)
+                meter(BA, t + r, 0.40)
             else:
-                meter(GO, t + r, 0.42)
+                meter(GO, t + r, 0.58)
             eventos += 1
         if e.get("texto_pantalla"):
             meter(PO, t + 0.32, 0.30)

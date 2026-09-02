@@ -38,96 +38,11 @@
      ]
     },
     {
-     "t": 1.22,
-     "entra": "l98",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 2.45,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l1",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.44,
-        "w": 0.4,
-        "h": 0.16,
-        "anclaje": "centro",
-        "encaje": "contener",
-        "px_rel": 0.15
-       }
-      }
-     ]
-    },
-    {
-     "t": 3.67,
+     "t": 0.79,
      "entra": "l2",
      "gesto": null,
      "visibles": [
       "l99",
-      "l98",
-      "l1",
       "l2",
       "l3",
       "l4"
@@ -136,35 +51,51 @@
       {
        "ref": "l99",
        "caja": {
-        "x": 0.23,
+        "x": 0.3,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
-       "ref": "l98",
+       "ref": "l2",
        "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.44,
-        "w": 0.4,
-        "h": 0.16,
+        "x": 0.74,
+        "y": 0.42,
+        "w": 0.46,
+        "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
-        "px_rel": 0.15
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.57,
+     "entra": "l95",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l2",
+      "l95",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
        }
       },
       {
@@ -176,9 +107,83 @@
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
-        "px_rel": 0.072,
-        "lineas": 3,
-        "max_chars": 64
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.36,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l2",
+      "l95",
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.44,
+        "w": 0.4,
+        "h": 0.16,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.15
        }
       }
      ]
@@ -221,9 +226,9 @@
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
-      "px_rel": 0.072,
-      "lineas": 3,
-      "max_chars": 64
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
      "entrada": "sube",
      "retardo": 0.24,
@@ -279,10 +284,10 @@
      "retardo": 0.35
     },
     {
-     "ref": "l98",
+     "ref": "l95",
      "rol": "medio",
-     "archivo": "meta/f_monedas.png",
-     "clave": "f_monedas",
+     "archivo": "meta/e_banco.png",
+     "clave": "e_banco",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.77,
@@ -292,7 +297,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der"
+     "entrada": "lateral_izq"
     }
    ],
    "imagenes": 2,
@@ -313,17 +318,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "l99",
+     "entra": "l94",
      "gesto": null,
      "visibles": [
-      "l99",
+      "l94",
       "l2",
       "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l99",
+       "ref": "l94",
        "caja": {
         "x": 0.3,
         "y": 0.93,
@@ -336,48 +341,11 @@
      ]
     },
     {
-     "t": 0.93,
-     "entra": "l98",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l2",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 1.87,
+     "t": 0.6,
      "entra": "l1",
      "gesto": null,
      "visibles": [
-      "l99",
-      "l98",
+      "l94",
       "l1",
       "l2",
       "l3",
@@ -385,23 +353,52 @@
      ],
      "elementos": [
       {
-       "ref": "l99",
+       "ref": "l94",
        "caja": {
-        "x": 0.23,
+        "x": 0.7,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
-       "ref": "l98",
+       "ref": "l1",
        "caja": {
-        "x": 0.77,
+        "x": 0.26,
+        "y": 0.42,
+        "w": 0.46,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.2,
+     "entra": "l95",
+     "gesto": null,
+     "visibles": [
+      "l94",
+      "l1",
+      "l95",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l94",
+       "caja": {
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.42,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -415,9 +412,20 @@
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
-        "px_rel": 0.072,
-        "lineas": 3,
-        "max_chars": 64
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
        }
       }
      ]
@@ -442,9 +450,9 @@
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
-      "px_rel": 0.072,
-      "lineas": 3,
-      "max_chars": 64
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
      "entrada": "maquina",
      "retardo": 0.12,
@@ -498,10 +506,10 @@
      "retardo": 0.0
     },
     {
-     "ref": "l99",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/f_billetes.png",
-     "clave": "f_billetes",
+     "archivo": "meta/f_balanza.png",
+     "clave": "f_balanza",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.23,
@@ -511,14 +519,13 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_izq",
-     "retardo": 0.35
+     "entrada": "lateral_izq"
     },
     {
-     "ref": "l98",
+     "ref": "l95",
      "rol": "medio",
-     "archivo": "meta/f_oficina.png",
-     "clave": "f_oficina",
+     "archivo": "meta/f_sello.png",
+     "clave": "f_sello",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.77,
@@ -528,7 +535,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube"
+     "entrada": "lateral_izq"
     }
    ],
    "imagenes": 2,
@@ -571,7 +578,7 @@
      ]
     },
     {
-     "t": 2.8,
+     "t": 1.8,
      "entra": "l2",
      "gesto": null,
      "visibles": [
@@ -710,48 +717,11 @@
      ]
     },
     {
-     "t": 0.7,
-     "entra": "l98",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l2",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 1.4,
+     "t": 0.45,
      "entra": "l1",
      "gesto": null,
      "visibles": [
       "l99",
-      "l98",
       "l1",
       "l2",
       "l3",
@@ -761,21 +731,50 @@
       {
        "ref": "l99",
        "caja": {
-        "x": 0.23,
+        "x": 0.7,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
-       "ref": "l98",
+       "ref": "l1",
        "caja": {
-        "x": 0.77,
+        "x": 0.26,
+        "y": 0.42,
+        "w": 0.46,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 0.9,
+     "entra": "l95",
+     "gesto": null,
+     "visibles": [
+      "l99",
+      "l1",
+      "l95",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l99",
+       "caja": {
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.42,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -789,9 +788,20 @@
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
-        "px_rel": 0.072,
-        "lineas": 3,
-        "max_chars": 64
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
        }
       }
      ]
@@ -816,9 +826,9 @@
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
-      "px_rel": 0.072,
-      "lineas": 3,
-      "max_chars": 64
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
      "entrada": "maquina",
      "retardo": 0.12,
@@ -874,8 +884,8 @@
     {
      "ref": "l99",
      "rol": "medio",
-     "archivo": "meta/f_oficina.png",
-     "clave": "f_oficina",
+     "archivo": "meta/f_vaso.png",
+     "clave": "f_vaso",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.23,
@@ -885,11 +895,11 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube",
+     "entrada": "lateral_izq",
      "retardo": 0.35
     },
     {
-     "ref": "l98",
+     "ref": "l95",
      "rol": "medio",
      "archivo": "meta/f_libro.png",
      "clave": "f_libro",
@@ -902,7 +912,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der"
+     "entrada": "lateral_izq"
     }
    ],
    "imagenes": 2,
@@ -944,12 +954,12 @@
      ]
     },
     {
-     "t": 2.8,
-     "entra": "l2",
+     "t": 1.8,
+     "entra": "l93",
      "gesto": null,
      "visibles": [
       "l1",
-      "l2",
+      "l93",
       "l3",
       "l4"
      ],
@@ -966,7 +976,7 @@
        }
       },
       {
-       "ref": "l2",
+       "ref": "l93",
        "caja": {
         "x": 0.77,
         "y": 0.93,
@@ -1003,23 +1013,6 @@
      "retardo": 0.12
     },
     {
-     "ref": "l2",
-     "rol": "frente",
-     "archivo": "meta/f_oficina.png",
-     "clave": "oficina",
-     "tratamiento": "color_recorte",
-     "caja": {
-      "x": 0.77,
-      "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
-      "anclaje": "abajo",
-      "encaje": "contener"
-     },
-     "entrada": "sube",
-     "retardo": 0.24
-    },
-    {
      "ref": "l3",
      "rol": "marca",
      "forma": "circulo_rotulador",
@@ -1050,6 +1043,22 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
+    },
+    {
+     "ref": "l93",
+     "rol": "medio",
+     "archivo": "meta/f_regla.png",
+     "clave": "f_regla",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2
@@ -1061,16 +1070,16 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "l99",
+     "entra": "l94",
      "gesto": null,
      "visibles": [
-      "l99",
+      "l94",
       "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l99",
+       "ref": "l94",
        "caja": {
         "x": 0.3,
         "y": 0.93,
@@ -1083,103 +1092,57 @@
      ]
     },
     {
-     "t": 1.22,
-     "entra": "l98",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 2.45,
-     "entra": "l1",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l1",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.44,
-        "w": 0.4,
-        "h": 0.16,
-        "anclaje": "centro",
-        "encaje": "contener",
-        "px_rel": 0.15
-       }
-      }
-     ]
-    },
-    {
-     "t": 3.67,
+     "t": 0.79,
      "entra": "l2",
      "gesto": null,
      "visibles": [
-      "l99",
-      "l98",
-      "l1",
+      "l94",
       "l2",
       "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l99",
+       "ref": "l94",
+       "caja": {
+        "x": 0.7,
+        "y": 0.93,
+        "w": 0.58,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.26,
+        "y": 0.42,
+        "w": 0.46,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.57,
+     "entra": "l95",
+     "gesto": null,
+     "visibles": [
+      "l94",
+      "l2",
+      "l95",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l94",
        "caja": {
         "x": 0.23,
         "y": 0.93,
@@ -1187,29 +1150,6 @@
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l1",
-       "caja": {
-        "x": 0.5,
-        "y": 0.44,
-        "w": 0.4,
-        "h": 0.16,
-        "anclaje": "centro",
-        "encaje": "contener",
-        "px_rel": 0.15
        }
       },
       {
@@ -1221,9 +1161,83 @@
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
-        "px_rel": 0.072,
-        "lineas": 3,
-        "max_chars": 64
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      }
+     ]
+    },
+    {
+     "t": 2.36,
+     "entra": "l1",
+     "gesto": null,
+     "visibles": [
+      "l94",
+      "l2",
+      "l95",
+      "l1",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l94",
+       "caja": {
+        "x": 0.23,
+        "y": 0.93,
+        "w": 0.42,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.5,
+        "y": 0.2,
+        "w": 0.52,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.5,
+        "y": 0.44,
+        "w": 0.4,
+        "h": 0.16,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.15
        }
       }
      ]
@@ -1266,9 +1280,9 @@
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
-      "px_rel": 0.072,
-      "lineas": 3,
-      "max_chars": 64
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
      "entrada": "sube",
      "retardo": 0.24,
@@ -1307,10 +1321,10 @@
      "texto": "GANCHO"
     },
     {
-     "ref": "l99",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/f_billetes.png",
-     "clave": "f_billetes",
+     "archivo": "meta/f_monedas.png",
+     "clave": "f_monedas",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.23,
@@ -1320,14 +1334,13 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_izq",
-     "retardo": 0.35
+     "entrada": "lateral_izq"
     },
     {
-     "ref": "l98",
+     "ref": "l95",
      "rol": "medio",
-     "archivo": "meta/f_boveda.png",
-     "clave": "f_boveda",
+     "archivo": "meta/f_pesa.png",
+     "clave": "f_pesa",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.77,
@@ -1337,7 +1350,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube"
+     "entrada": "lateral_izq"
     }
    ],
    "imagenes": 2,
@@ -1379,7 +1392,7 @@
      ]
     },
     {
-     "t": 2.8,
+     "t": 1.8,
      "entra": "l2",
      "gesto": null,
      "visibles": [
@@ -1496,17 +1509,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "l99",
+     "entra": "l94",
      "gesto": null,
      "visibles": [
-      "l99",
+      "l94",
       "l2",
       "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l99",
+       "ref": "l94",
        "caja": {
         "x": 0.3,
         "y": 0.93,
@@ -1519,48 +1532,11 @@
      ]
     },
     {
-     "t": 1.17,
-     "entra": "l98",
-     "gesto": null,
-     "visibles": [
-      "l99",
-      "l98",
-      "l2",
-      "l3",
-      "l4"
-     ],
-     "elementos": [
-      {
-       "ref": "l99",
-       "caja": {
-        "x": 0.23,
-        "y": 0.93,
-        "w": 0.42,
-        "h": 0.7,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      },
-      {
-       "ref": "l98",
-       "caja": {
-        "x": 0.77,
-        "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
-        "anclaje": "abajo",
-        "encaje": "contener"
-       }
-      }
-     ]
-    },
-    {
-     "t": 2.33,
+     "t": 0.75,
      "entra": "l1",
      "gesto": null,
      "visibles": [
-      "l99",
-      "l98",
+      "l94",
       "l1",
       "l2",
       "l3",
@@ -1568,23 +1544,52 @@
      ],
      "elementos": [
       {
-       "ref": "l99",
+       "ref": "l94",
        "caja": {
-        "x": 0.23,
+        "x": 0.7,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
-       "ref": "l98",
+       "ref": "l1",
        "caja": {
-        "x": 0.77,
+        "x": 0.26,
+        "y": 0.42,
+        "w": 0.46,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.5,
+     "entra": "l95",
+     "gesto": null,
+     "visibles": [
+      "l94",
+      "l1",
+      "l95",
+      "l2",
+      "l3",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l94",
+       "caja": {
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.42,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1598,9 +1603,20 @@
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
-        "px_rel": 0.072,
-        "lineas": 3,
-        "max_chars": 64
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
+       "ref": "l95",
+       "caja": {
+        "x": 0.77,
+        "y": 0.93,
+        "w": 0.4,
+        "h": 0.644,
+        "anclaje": "abajo",
+        "encaje": "contener"
        }
       }
      ]
@@ -1625,9 +1641,9 @@
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
-      "px_rel": 0.072,
-      "lineas": 3,
-      "max_chars": 64
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
      "entrada": "sube",
      "retardo": 0.12,
@@ -1681,10 +1697,10 @@
      "retardo": 0.0
     },
     {
-     "ref": "l99",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/m_cola.png",
-     "clave": "m_cola",
+     "archivo": "meta/f_obra.png",
+     "clave": "f_obra",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.23,
@@ -1694,14 +1710,13 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_izq",
-     "retardo": 0.35
+     "entrada": "sube"
     },
     {
-     "ref": "l98",
+     "ref": "l95",
      "rol": "medio",
-     "archivo": "meta/f_billetes.png",
-     "clave": "f_billetes",
+     "archivo": "meta/f_mostrador.png",
+     "clave": "f_mostrador",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.77,
@@ -1711,7 +1726,7 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der"
+     "entrada": "sube"
     }
    ],
    "imagenes": 2,
@@ -1754,12 +1769,12 @@
      ]
     },
     {
-     "t": 1.75,
-     "entra": "l2",
+     "t": 1.12,
+     "entra": "l93",
      "gesto": null,
      "visibles": [
       "l1",
-      "l2",
+      "l93",
       "l3",
       "l4"
      ],
@@ -1776,7 +1791,7 @@
        }
       },
       {
-       "ref": "l2",
+       "ref": "l93",
        "caja": {
         "x": 0.77,
         "y": 0.93,
@@ -1813,23 +1828,6 @@
      "retardo": 0.12
     },
     {
-     "ref": "l2",
-     "rol": "frente",
-     "archivo": "meta/f_oficina.png",
-     "clave": "oficina",
-     "tratamiento": "color_recorte",
-     "caja": {
-      "x": 0.77,
-      "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
-      "anclaje": "abajo",
-      "encaje": "contener"
-     },
-     "entrada": "sube",
-     "retardo": 0.24
-    },
-    {
      "ref": "l3",
      "rol": "marca",
      "forma": "tachado",
@@ -1860,6 +1858,22 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
+    },
+    {
+     "ref": "l93",
+     "rol": "medio",
+     "archivo": "meta/f_expediente.png",
+     "clave": "f_expediente",
+     "tipo_capa": "imagen",
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2
@@ -1893,12 +1907,12 @@
      ]
     },
     {
-     "t": 1.75,
-     "entra": "l98",
+     "t": 1.12,
+     "entra": "l2",
      "gesto": null,
      "visibles": [
       "l1",
-      "l98",
+      "l2",
       "l3",
       "l4"
      ],
@@ -1915,7 +1929,7 @@
        }
       },
       {
-       "ref": "l98",
+       "ref": "l2",
        "caja": {
         "x": 0.77,
         "y": 0.93,
@@ -1952,6 +1966,23 @@
      "retardo": 0.12
     },
     {
+     "ref": "l2",
+     "rol": "frente",
+     "archivo": "meta/f_llaves.png",
+     "clave": "llaves",
+     "tratamiento": "color_recorte",
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     },
+     "entrada": "lateral_der",
+     "retardo": 0.24
+    },
+    {
      "ref": "l3",
      "rol": "marca",
      "forma": "asterisco",
@@ -1982,22 +2013,6 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
-    },
-    {
-     "ref": "l98",
-     "rol": "medio",
-     "archivo": "meta/f_billetes.png",
-     "clave": "f_billetes",
-     "tipo_capa": "imagen",
-     "caja": {
-      "x": 0.77,
-      "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
-      "anclaje": "abajo",
-      "encaje": "contener"
-     },
-     "entrada": "lateral_der"
     }
    ],
    "imagenes": 2
@@ -2031,12 +2046,12 @@
      ]
     },
     {
-     "t": 2.8,
-     "entra": "l98",
+     "t": 1.8,
+     "entra": "l93",
      "gesto": null,
      "visibles": [
       "l2",
-      "l98",
+      "l93",
       "l3",
       "l4"
      ],
@@ -2053,7 +2068,7 @@
        }
       },
       {
-       "ref": "l98",
+       "ref": "l93",
        "caja": {
         "x": 0.77,
         "y": 0.93,
@@ -2122,10 +2137,10 @@
      "texto": "CAP1"
     },
     {
-     "ref": "l98",
+     "ref": "l93",
      "rol": "medio",
-     "archivo": "meta/f_billetes.png",
-     "clave": "f_billetes",
+     "archivo": "meta/m_consultor.png",
+     "clave": "m_consultor",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.77,

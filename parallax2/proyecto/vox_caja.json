@@ -1,0 +1,1079 @@
+{
+ "titulo": "prueba VOX por cajas",
+ "paleta": "vox",
+ "fondo_imagen": "meta/f_papel.png",
+ "lienzo": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 25,
+  "ppm": 140
+ },
+ "escenas": [
+  {
+   "id": "gancho_01",
+   "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "voz": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "duracion": 3.66,
+   "arquetipo": "dato_pleno",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "titular",
+     "forma": "contador",
+     "caja": {
+      "x": 0.5,
+      "y": 0.42,
+      "w": 0.76,
+      "anclaje": "centro",
+      "px_rel": 0.16
+     },
+     "entrada": "sube",
+     "retardo": 0.12
+    },
+    {
+     "rol": "marca",
+     "forma": "subrayado",
+     "caja": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.5,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "etiqueta_capitulo",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    },
+    {
+     "rol": "acabado",
+     "forma": "vineta",
+     "caja": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.0,
+      "anclaje": "centro"
+     },
+     "entrada": "ninguna",
+     "retardo": 0.0
+    }
+   ],
+   "imagenes": 0,
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.22,
+    "dec": 2,
+    "sufijo": "$",
+    "pie": "por cada 100 $ prestados",
+    "entrada": "pop",
+    "retardo": null
+   }
+  },
+  {
+   "id": "gancho_01a",
+   "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "voz": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "duracion": 3.66,
+   "arquetipo": "dato_pleno",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.5,
+      "y": 0.42,
+      "w": 0.76,
+      "anclaje": "centro",
+      "px_rel": 0.16
+     },
+     "entrada": "sube",
+     "retardo": 0.12
+    },
+    {
+     "rol": "marca",
+     "forma": "corchete",
+     "caja": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.5,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "pie_fuente",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    },
+    {
+     "rol": "acabado",
+     "forma": "vineta",
+     "caja": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.0,
+      "anclaje": "centro"
+     },
+     "entrada": "ninguna",
+     "retardo": 0.0
+    }
+   ],
+   "imagenes": 0
+  },
+  {
+   "id": "gancho_02",
+   "texto": "Tres coma veintidós. Ese es el margen.",
+   "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 3.59,
+   "arquetipo": "dato_pleno",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "titular",
+     "forma": "titular",
+     "caja": {
+      "x": 0.5,
+      "y": 0.42,
+      "w": 0.76,
+      "anclaje": "centro",
+      "px_rel": 0.16
+     },
+     "entrada": "sube",
+     "retardo": 0.12
+    },
+    {
+     "rol": "marca",
+     "forma": "tachado",
+     "caja": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.5,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "numero_escena",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    },
+    {
+     "rol": "acabado",
+     "forma": "vineta",
+     "caja": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.0,
+      "anclaje": "centro"
+     },
+     "entrada": "ninguna",
+     "retardo": 0.0
+    }
+   ],
+   "imagenes": 0,
+   "grafico": {
+    "tipo": "titular",
+    "lineas": [
+     "Tres coma",
+     "*veintidos*"
+    ],
+    "entrada": "pop",
+    "retardo": null
+   }
+  },
+  {
+   "id": "gancho_03",
+   "texto": "Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 3.59,
+   "arquetipo": "cadena",
+   "simetria": "rejilla",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "frente",
+     "archivo": "meta/f_oficina.png",
+     "caja": {
+      "x": 0.2,
+      "y": 0.94,
+      "h": 0.34,
+      "anclaje": "abajo"
+     },
+     "entrada": "pop",
+     "retardo": 0.12
+    },
+    {
+     "rol": "medio",
+     "archivo": "meta/m_plantilla.png",
+     "caja": {
+      "x": 0.5,
+      "y": 0.94,
+      "h": 0.34,
+      "anclaje": "abajo"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.5,
+      "y": 0.2,
+      "w": 0.6,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.36
+    },
+    {
+     "rol": "ancla",
+     "forma": "etiqueta_capitulo",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 2
+  },
+  {
+   "id": "gancho_03a",
+   "texto": "Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "voz": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 3.59,
+   "arquetipo": "unico",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "frente",
+     "archivo": "meta/f_oficina.png",
+     "caja": {
+      "x": 0.5,
+      "y": 0.96,
+      "h": 0.56,
+      "anclaje": "abajo"
+     },
+     "entrada": "pop",
+     "retardo": 0.12
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.5,
+      "y": 0.24,
+      "w": 0.6,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "marca",
+     "forma": "circulo_rotulador",
+     "caja": {
+      "x": 0.8,
+      "y": 0.4,
+      "w": 0.16,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "pie_fuente",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 1
+  },
+  {
+   "id": "gancho_04",
+   "texto": "Suena a poco.",
+   "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 2.02,
+   "arquetipo": "dato_pleno",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "titular",
+     "forma": "titular",
+     "caja": {
+      "x": 0.5,
+      "y": 0.42,
+      "w": 0.76,
+      "anclaje": "centro",
+      "px_rel": 0.16
+     },
+     "entrada": "sube",
+     "retardo": 0.12
+    },
+    {
+     "rol": "marca",
+     "forma": "circulo_rotulador",
+     "caja": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.5,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "numero_escena",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    },
+    {
+     "rol": "acabado",
+     "forma": "vineta",
+     "caja": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.0,
+      "anclaje": "centro"
+     },
+     "entrada": "ninguna",
+     "retardo": 0.0
+    }
+   ],
+   "imagenes": 0,
+   "grafico": {
+    "tipo": "titular",
+    "lineas": [
+     "Suena a *poco*."
+    ],
+    "entrada": "pop",
+    "retardo": null
+   }
+  },
+  {
+   "id": "gancho_05",
+   "texto": "Y sin embargo, no hay ningún negocio con una cola más larga de gente esperando para entrar.",
+   "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 2.7,
+   "arquetipo": "detras",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "medio",
+     "archivo": "meta/m_cola.png",
+     "caja": {
+      "x": 0.54,
+      "y": 0.86,
+      "h": 0.74,
+      "anclaje": "abajo"
+     },
+     "entrada": "lateral",
+     "retardo": 0.12
+    },
+    {
+     "rol": "frente",
+     "archivo": "meta/f_oficina.png",
+     "caja": {
+      "x": 0.46,
+      "y": 1.02,
+      "w": 0.76,
+      "h": 0.42,
+      "anclaje": "abajo"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.78,
+      "y": 0.2,
+      "w": 0.34,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.36
+    },
+    {
+     "rol": "marca",
+     "forma": "corchete",
+     "caja": {
+      "x": 0.22,
+      "y": 0.13,
+      "w": 0.2,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "etiqueta_capitulo",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 2
+  },
+  {
+   "id": "gancho_05a",
+   "texto": "Y sin embargo, no hay ningún negocio con una cola más larga de gente esperando para entrar.",
+   "voz": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 2.7,
+   "arquetipo": "unico",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "frente",
+     "archivo": "meta/f_oficina.png",
+     "caja": {
+      "x": 0.5,
+      "y": 0.96,
+      "h": 0.56,
+      "anclaje": "abajo"
+     },
+     "entrada": "cae",
+     "retardo": 0.12
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.5,
+      "y": 0.24,
+      "w": 0.6,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "marca",
+     "forma": "corchete",
+     "caja": {
+      "x": 0.8,
+      "y": 0.4,
+      "w": 0.16,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "pie_fuente",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 1
+  },
+  {
+   "id": "gancho_06",
+   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "voz": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "duracion": 2.53,
+   "arquetipo": "dato_pleno",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "titular",
+     "forma": "reparto",
+     "caja": {
+      "x": 0.5,
+      "y": 0.42,
+      "w": 0.76,
+      "anclaje": "centro",
+      "px_rel": 0.16
+     },
+     "entrada": "sube",
+     "retardo": 0.12
+    },
+    {
+     "rol": "marca",
+     "forma": "corchete",
+     "caja": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.5,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "numero_escena",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    },
+    {
+     "rol": "acabado",
+     "forma": "vineta",
+     "caja": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.0,
+      "anclaje": "centro"
+     },
+     "entrada": "ninguna",
+     "retardo": 0.0
+    }
+   ],
+   "imagenes": 0,
+   "grafico": {
+    "tipo": "reparto",
+    "valor": 100,
+    "etiqueta_a": "tu dinero",
+    "etiqueta_b": "suyo",
+    "entrada": "pop",
+    "retardo": null
+   }
+  },
+  {
+   "id": "gancho_06a",
+   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "voz": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "duracion": 2.53,
+   "arquetipo": "detras",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "frente",
+     "archivo": "meta/f_oficina.png",
+     "caja": {
+      "x": 0.46,
+      "y": 1.02,
+      "w": 0.76,
+      "h": 0.42,
+      "anclaje": "abajo"
+     },
+     "entrada": "lateral",
+     "retardo": 0.12
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.78,
+      "y": 0.2,
+      "w": 0.34,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "marca",
+     "forma": "asterisco",
+     "caja": {
+      "x": 0.22,
+      "y": 0.13,
+      "w": 0.2,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "etiqueta_capitulo",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 1
+  },
+  {
+   "id": "gancho_07",
+   "texto": "Coge lo qué tú depositas, se lo presta a otro más caro, y se queda la diferencia.",
+   "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 3.14,
+   "arquetipo": "detras",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "medio",
+     "archivo": "meta/m_familia.png",
+     "caja": {
+      "x": 0.54,
+      "y": 0.86,
+      "h": 0.74,
+      "anclaje": "abajo"
+     },
+     "entrada": "pop",
+     "retardo": 0.12
+    },
+    {
+     "rol": "frente",
+     "archivo": "meta/f_hucha.png",
+     "caja": {
+      "x": 0.46,
+      "y": 1.02,
+      "w": 0.76,
+      "h": 0.42,
+      "anclaje": "abajo"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.78,
+      "y": 0.2,
+      "w": 0.34,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.36
+    },
+    {
+     "rol": "marca",
+     "forma": "circulo_rotulador",
+     "caja": {
+      "x": 0.22,
+      "y": 0.13,
+      "w": 0.2,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "pie_fuente",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 2
+  },
+  {
+   "id": "gancho_07a",
+   "texto": "Coge lo qué tú depositas, se lo presta a otro más caro, y se queda la diferencia.",
+   "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 3.14,
+   "arquetipo": "unico",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "frente",
+     "archivo": "meta/f_hucha.png",
+     "caja": {
+      "x": 0.5,
+      "y": 0.96,
+      "h": 0.56,
+      "anclaje": "abajo"
+     },
+     "entrada": "pop",
+     "retardo": 0.12
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.5,
+      "y": 0.24,
+      "w": 0.6,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "marca",
+     "forma": "circulo_rotulador",
+     "caja": {
+      "x": 0.8,
+      "y": 0.4,
+      "w": 0.16,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "numero_escena",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 1
+  },
+  {
+   "id": "gancho_08",
+   "texto": "Ese es el negocio entero. Todo lo demás es decoración.",
+   "voz": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 3.93,
+   "arquetipo": "dato_pleno",
+   "simetria": "centrada",
+   "muda": true,
+   "capas": [
+    {
+     "rol": "titular",
+     "forma": "titular",
+     "caja": {
+      "x": 0.5,
+      "y": 0.42,
+      "w": 0.76,
+      "anclaje": "centro",
+      "px_rel": 0.16
+     },
+     "entrada": "sube",
+     "retardo": 0.12
+    },
+    {
+     "rol": "marca",
+     "forma": "circulo_rotulador",
+     "caja": {
+      "x": 0.5,
+      "y": 0.62,
+      "w": 0.5,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "etiqueta_capitulo",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    },
+    {
+     "rol": "acabado",
+     "forma": "vineta",
+     "caja": {
+      "x": 0.5,
+      "y": 0.5,
+      "w": 1.0,
+      "anclaje": "centro"
+     },
+     "entrada": "ninguna",
+     "retardo": 0.0
+    }
+   ],
+   "imagenes": 0,
+   "grafico": {
+    "tipo": "titular",
+    "lineas": [
+     "Todo lo demas",
+     "es *decoracion*."
+    ],
+    "entrada": "pop",
+    "retardo": null
+   }
+  },
+  {
+   "id": "gancho_09",
+   "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "voz": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "duracion": 4.68,
+   "arquetipo": "detras",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "medio",
+     "archivo": "meta/m_fundador.png",
+     "caja": {
+      "x": 0.54,
+      "y": 0.86,
+      "h": 0.74,
+      "anclaje": "abajo"
+     },
+     "entrada": "pop",
+     "retardo": 0.12
+    },
+    {
+     "rol": "frente",
+     "archivo": "meta/f_oficina.png",
+     "caja": {
+      "x": 0.46,
+      "y": 1.02,
+      "w": 0.76,
+      "h": 0.42,
+      "anclaje": "abajo"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.78,
+      "y": 0.2,
+      "w": 0.34,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.36
+    },
+    {
+     "rol": "marca",
+     "forma": "corchete",
+     "caja": {
+      "x": 0.22,
+      "y": 0.13,
+      "w": 0.2,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "pie_fuente",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 2
+  },
+  {
+   "id": "gancho_10",
+   "texto": "Con un McDonald's era el dinero. Con un casino, la licencia.",
+   "voz": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+   "duracion": 6.09,
+   "arquetipo": "detras",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "medio",
+     "archivo": "meta/m_banquero.png",
+     "caja": {
+      "x": 0.54,
+      "y": 0.86,
+      "h": 0.74,
+      "anclaje": "abajo"
+     },
+     "entrada": "pop",
+     "retardo": 0.12
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.78,
+      "y": 0.2,
+      "w": 0.34,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.36
+    },
+    {
+     "rol": "marca",
+     "forma": "tachado",
+     "caja": {
+      "x": 0.22,
+      "y": 0.13,
+      "w": 0.2,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "numero_escena",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "GANCHO"
+    }
+   ],
+   "imagenes": 1
+  },
+  {
+   "id": "cap1_dos_bancos_01",
+   "texto": "Con un banco, el problema es qué el dinero con el qué trabajas no es tuyo. Nunca lo ha sido.",
+   "voz": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+   "duracion": 11.42,
+   "arquetipo": "detras",
+   "simetria": "centrada",
+   "muda": false,
+   "capas": [
+    {
+     "rol": "frente",
+     "archivo": "meta/f_boveda.png",
+     "caja": {
+      "x": 0.46,
+      "y": 1.02,
+      "w": 0.76,
+      "h": 0.42,
+      "anclaje": "abajo"
+     },
+     "entrada": "sube",
+     "retardo": 0.24
+    },
+    {
+     "rol": "titular",
+     "forma": "frase",
+     "caja": {
+      "x": 0.78,
+      "y": 0.2,
+      "w": 0.34,
+      "anclaje": "centro"
+     },
+     "entrada": "sube",
+     "retardo": 0.36
+    },
+    {
+     "rol": "marca",
+     "forma": "asterisco",
+     "caja": {
+      "x": 0.22,
+      "y": 0.13,
+      "w": 0.2,
+      "anclaje": "centro"
+     },
+     "entrada": "trazo",
+     "retardo": 0.5
+    },
+    {
+     "rol": "ancla",
+     "forma": "etiqueta_capitulo",
+     "caja": {
+      "x": 0.06,
+      "y": 0.06,
+      "w": 0.16,
+      "anclaje": "arriba_izq"
+     },
+     "entrada": "fundido",
+     "retardo": 0.04,
+     "texto": "CAP1"
+    }
+   ],
+   "imagenes": 1
+  }
+ ]
+}

@@ -276,6 +276,21 @@ def _ruta(a, base):
     return a if os.path.isabs(a) else os.path.join(base, a)
 
 
+def preparar_cajas(guion, base):
+    """Cada pieza segun su rol: el medio en semitono con trazo, el frente a
+    color intacto. Ese contraste ES la jerarquia del estilo."""
+    cache = {}
+    for esc in guion["escenas"]:
+        for c in esc.get("capas", []):
+            a = c.get("archivo")
+            if not a or (a, c["rol"]) in cache:
+                continue
+            r = _ruta(a, base)
+            cache[(a, c["rol"])] = (tarjeta(r, 0) if c["rol"] == "medio"
+                                    else frente(r))
+    return cache
+
+
 def preparar(guion, base):
     cache = {}
     for esc in guion["escenas"]:
@@ -309,6 +324,141 @@ def geometria_frente(esc, cache, W, H):
     alto = int(p.size[1] * ancho / p.size[0])
     visible = min(alto, int(H * FRENTE_ALTO_MAX))
     return p, ancho, alto, H - visible
+
+
+def coloca(caja, pw, ph, W, H):
+    """
+    Traduce la caja del storyboard a pixeles.
+
+    `h` es la altura en fraccion de pantalla y el ancho sale de la
+    proporcion de la pieza, no al reves: asi dos piezas con la misma `h`
+    pesan lo mismo aunque una sea apaisada y la otra vertical. `x` es el
+    centro horizontal y `anclaje` dice a que se refiere la `y`.
+    """
+    alto = int(H * caja.get("h", 0.3))
+    ancho = max(2, int(pw * alto / ph))
+    if caja.get("w"):                    # si manda el ancho, manda el ancho
+        ancho = int(W * caja["w"])
+        alto = max(2, int(ph * ancho / pw))
+    x = int(caja.get("x", 0.5) * W - ancho / 2)
+    y = int(caja.get("y", 0.5) * H)
+    anc = caja.get("anclaje", "centro")
+    if anc == "abajo":
+        y -= alto
+    elif anc == "centro":
+        y -= alto // 2
+    elif anc == "arriba_izq":
+        x = int(caja.get("x", 0.5) * W)
+    return x, y, ancho, alto
+
+
+def pintar_caja(esc, t, cfg, fondo, cache, pal):
+    """
+    Dibuja obedeciendo las cajas del storyboard.
+
+    Es el camino corto: donde va cada cosa ya viene escrito, asi que aqui no
+    se decide composicion, ni jerarquia, ni linea de tierra. Solo se
+    respeta el orden de las capas -que es el orden de dibujo- y se aplica a
+    cada una el tratamiento de su rol: semitono y trazo para el medio, color
+    intacto para el frente.
+    """
+    W, H = cfg["w"], cfg["h"]
+    im = fondo.copy()
+    ppm = cfg.get("ppm", 140)
+
+    for k, c in enumerate(esc.get("capas", [])):
+        caja = c.get("caja") or {}
+        u_e = (t - c.get("retardo", 0.1)) / DUR_ENTRADA
+        esc_e, dxe, dye, alfa = vox_mg.entrada(c.get("entrada", "pop"), u_e)
+        if alfa <= 0.004:
+            continue
+
+        if c.get("archivo"):
+            pieza = cache[(c["archivo"], c["rol"])]
+            x, y, an, al = coloca(caja, pieza.size[0], pieza.size[1], W, H)
+            an = max(2, int(an * esc_e)); al = max(2, int(al * esc_e))
+            q = pieza.resize((an, al), Image.LANCZOS)
+            if alfa < 0.995:
+                q.putalpha(q.getchannel("A").point(lambda v, m=alfa: int(v * m)))
+            im.paste(q, (int(x + dxe * an), int(y + dye * al)), q)
+            continue
+
+        # --- capas de codigo ---
+        u = min(1.0, max(0.0, (t - c.get("retardo", 0.1)) / 0.55))
+        if u <= 0:
+            continue
+        f = c.get("forma")
+        cx, cy = caja.get("x", 0.5), caja.get("y", 0.5)
+        if f in ("frase", "titular"):
+            lineas = _lineas(c.get("texto") or esc.get("texto", ""), caja)
+            px = int(H * caja.get("px_rel", 0.075))
+            vox.titular(im, lineas, pal, px=px, y0=H * cy - px * 0.6, u=u)
+        elif f == "contador" and esc.get("grafico"):
+            g = esc["grafico"]
+            vox_mg.bloque_cifra(im, g.get("valor", 0), pal,
+                                sufijo=g.get("sufijo", ""), pie=g.get("pie", ""),
+                                u=u, xy=(0.09, max(0.06, cy - 0.16)),
+                                px=int(H * caja.get("px_rel", 0.16)),
+                                decimales=g.get("dec", 0))
+        elif f == "barras" and esc.get("grafico"):
+            vox.barras(im, [tuple(x) for x in esc["grafico"].get("items", [])],
+                       pal, u=u, y0=cy, sufijo=esc["grafico"].get("sufijo", "%"))
+        elif f == "anillo" and esc.get("grafico"):
+            vox_mg.anillo(im, esc["grafico"].get("valor", 0), pal, u=u,
+                          centro=(cx, cy), radio=0.15,
+                          sufijo=esc["grafico"].get("sufijo", "%"))
+        elif f == "etiqueta_capitulo":
+            vox.etiqueta(im, c.get("texto", ""), pal, (int(W * cx), int(H * cy)))
+        elif f == "numero_escena":
+            vox_mg.numero_escena(im, esc.get("_n", 0) + 1, pal, u=u)
+        elif f == "pie_fuente":
+            vox_mg.pie_fuente(im, c.get("texto", "Reserva Federal de San Luis"),
+                              pal, u=u)
+        elif f == "circulo_rotulador":
+            vox_mg.marca(im, [cx - 0.16, cy - 0.16, cx + 0.16, cy + 0.16], pal, u=u)
+        elif f == "corchete":
+            vox_mg.corchete(im, [cx - 0.20, cy - 0.14, cx + 0.20, cy + 0.14], pal, u=u)
+        elif f == "tachado":
+            vox_mg.tachado(im, [cx - 0.18, cy, cx + 0.18, cy - 0.03], pal, u=u)
+        elif f == "asterisco":
+            vox_mg.asterisco(im, (cx, cy), pal, u=u)
+        elif f == "flecha":
+            vox_mg.flecha(im, (cx - 0.12, cy - 0.10), (cx + 0.10, cy + 0.08),
+                          pal, u=u)
+        elif f == "bocadillo":
+            vox_mg.bocadillo(im, (cx, cy), c.get("texto", ""), pal, u=u)
+        elif f == "rejilla":
+            vox_mg.rejilla(im, pal, u=u)
+        elif f == "subrayado":
+            vox_mg.banda(im, pal, u=u, y=cy)
+    return im
+
+
+def _lineas(texto, caja, por_linea=34):
+    """
+    Parte la frase en lineas que quepan en su caja.
+
+    Y antes la RECORTA a su primera clausula. La capa `frase` del storyboard
+    no trae texto propio, asi que cae la locucion entera; con tres lineas de
+    tope, "las oficinas, las nominas, los sistemas, los abogados y los
+    accionistas" se quedaba en "los abogados y los" y la frase moria a
+    medias en pantalla. Un rotulo es una idea corta, no un parrafo.
+    """
+    corte = min([i for i in (texto.find(","), texto.find(". "), texto.find(":"))
+                 if i > 18] or [len(texto)])
+    texto = texto[:corte].strip(" ,.:;")
+    if len(texto) > 76:
+        texto = texto[:76].rsplit(" ", 1)[0]
+    pal, out, act = texto.split(), [], ""
+    tope = max(14, int(por_linea * caja.get("w", 0.6) / 0.6))
+    for w in pal:
+        if len(act) + len(w) + 1 > tope:
+            out.append(act); act = w
+        else:
+            act = (act + " " + w).strip()
+    if act:
+        out.append(act)
+    return out[:3]
 
 
 def pintar(esc, t, cfg, fondo, cache, pal):
@@ -526,6 +676,8 @@ def main():
     # Si el guion trae un fondo de imagen -el papel que genero Meta- se usa
     # ese. El `vox.papel` dibujado sirve, pero una textura de verdad tiene
     # grano y veladuras que no salen de un algoritmo de tres lineas.
+    por_caja = any(c.get("caja") for e in guion["escenas"]
+                   for c in e.get("capas", []))
     fi = guion.get("fondo_imagen")
     ruta_fondo = os.path.join(base, fi) if fi else None
     if ruta_fondo and os.path.exists(ruta_fondo):
@@ -534,7 +686,7 @@ def main():
         print("fondo:", fi, file=sys.stderr)
     else:
         fondo = vox.papel(cfg["w"], cfg["h"], pal).convert("RGB")
-    cache = preparar(guion, base)
+    cache = preparar_cajas(guion, base) if por_caja else preparar(guion, base)
     print(f"{len(cache)} recortes en semitono - fondo bloqueado", file=sys.stderr)
 
     ff = subprocess.Popen([
@@ -552,7 +704,8 @@ def main():
             for i in range(n):
                 j = vox.stutter(i, FPS_ANIM, FPS)
                 if j != ult:               # solo se dibuja a 12 por segundo
-                    cuadro = np.asarray(pintar(esc, j / FPS, cfg, fondo, cache,
+                    dibuja = pintar_caja if por_caja else pintar
+                    cuadro = np.asarray(dibuja(esc, j / FPS, cfg, fondo, cache,
                                                pal).convert("RGB"), np.uint8).tobytes()
                     ult = j
                 ff.stdin.write(cuadro)

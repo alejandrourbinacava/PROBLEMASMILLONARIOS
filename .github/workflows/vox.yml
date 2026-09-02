@@ -21,7 +21,7 @@ on:
       guion:
         description: Guion a renderizar
         type: string
-        default: proyecto/vox_min.json
+        default: proyecto/vox_caja.json
       cache_voz:
         description: Carpeta de locuciones (_voz de pago, _voz_libre gratis)
         type: string
@@ -52,17 +52,17 @@ jobs:
 
       - name: Render
         working-directory: parallax2
-        run: python3 render_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}" vox_mudo.mp4
+        run: python3 render_vox.py "${{ inputs.guion || 'proyecto/vox_caja.json' }}" vox_mudo.mp4
 
       - name: Voz desde el cache
         working-directory: parallax2
         run: |
-          python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}"             voz_vox.mp3 "${{ inputs.cache_voz || '_voz' }}"
+          python3 pista_vox.py "${{ inputs.guion || 'proyecto/vox_caja.json' }}"             voz_vox.mp3 "${{ inputs.cache_voz || '_voz' }}"
 
       - name: Efectos de transicion
         working-directory: parallax2
         run: |
-          python3 sonido_vox.py "${{ inputs.guion || 'proyecto/vox_min.json' }}"             voz_vox.mp3 sonido_vox.mp3
+          python3 sonido_vox.py "${{ inputs.guion || 'proyecto/vox_caja.json' }}"             voz_vox.mp3 sonido_vox.mp3
 
       - name: Juntar
         working-directory: parallax2

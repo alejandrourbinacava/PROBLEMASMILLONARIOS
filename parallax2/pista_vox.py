@@ -47,7 +47,8 @@ def main():
         while j < len(escenas) and escenas[j].get("muda"):
             grupo += escenas[j]["duracion"]
             j += 1
-        h = hashlib.sha1(e["texto"].encode("utf-8")).hexdigest()[:16]
+        # `voz` es la frase entera del guion; `texto` puede ser un trozo
+        h = hashlib.sha1(e.get("voz", e["texto"]).encode("utf-8")).hexdigest()[:16]
         r = os.path.join(cache, h + ".mp3")
         if not os.path.exists(r):
             faltan.append(e["id"])

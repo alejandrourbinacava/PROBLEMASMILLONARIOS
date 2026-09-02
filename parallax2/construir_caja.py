@@ -37,6 +37,7 @@ import unicodedata
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
+import componer as CP
 import leer_guion
 
 META = os.path.join(AQUI, "proyecto", "meta")
@@ -270,6 +271,67 @@ def main():
     if usadas:
         print(f'{sum(usadas.values())} planos de solo texto reciben imagen:',
               ", ".join(f"{k}({v})" for k, v in usadas.most_common()))
+
+    # LA COMPOSICION SE RECALCULA AQUI, no se hereda del storyboard.
+    #
+    # El revisor midio la prueba anterior: 32 de 32 muestras por debajo del
+    # 22% de cobertura, con 7-17% cuando la referencia va del 27 al 47.
+    # Las cajas del storyboard son de 0,24 de ancho y dejan el plano vacio,
+    # y obedecer bien una caja mala da un plano malo. Se conserva QUE pieza
+    # va en cada escena -eso lo decidio alguien leyendo- y se rehace DONDE.
+    for i, e in enumerate(escenas):
+        imgs = [c for c in e["capas"] if c.get("archivo")]
+        # UNA sola pieza estrecha no llena el cuadro por mucho que se le de
+        # sitio: unas llaves o una grieta se ajustan por alto y dejan el 13%
+        # de cobertura. Se le pone una segunda, distinta, y pasa a la
+        # composicion de dos que flanquean. Es lo que hace la referencia:
+        # petrolero, barril y texto, nunca un objeto solo en el vacio.
+        if len(imgs) == 1:
+            ya = {c["archivo"] for c in imgs}
+            k = pieza_para(e["texto"])
+            alt = [x for x in ("f_billetes", "f_monedas", "f_oficina", "m_cola",
+                               "f_libro", "f_recibos", "f_boveda")
+                   if existe(x + ".png") and "meta/" + x + ".png" not in ya]
+            k2 = (k if k and "meta/" + k + ".png" not in ya else
+                  (alt[i % len(alt)] if alt else None))
+            if k2:
+                nueva = {"ref": "l98", "rol": "medio",
+                         "archivo": "meta/" + k2 + ".png", "clave": k2,
+                         "tipo_capa": "imagen", "entrada": "sube",
+                         "retardo": 0.45, "caja": {}}
+                e["capas"].append(nueva)
+                imgs.append(nueva)
+                e["imagenes"] = len(imgs)
+                for st in (e.get("estados") or []):
+                    st.setdefault("visibles", [x["ref"] for x in st["elementos"]])
+                    if "l98" not in st["visibles"]:
+                        st["visibles"].append("l98")
+        txts = [c for c in e["capas"]
+                if c.get("forma") in ("frase", "frase_destacada", "titular")]
+        dats = [c for c in e["capas"]
+                if c.get("forma") in ("contador", "barras", "anillo", "reparto")]
+        h = CP.componer(len(imgs), bool(txts), bool(dats), i)
+        for c, caja in zip(imgs, h["imagenes"]):
+            c["caja"] = caja
+        for c in imgs[len(h["imagenes"]):]:
+            c["caja"] = h["imagenes"][-1]
+        if h["texto"]:
+            for c in txts:
+                # sin imagen que compita, la tipografia manda y va grande
+                grande = not imgs
+                c["caja"] = dict(h["texto"],
+                                 px_rel=0.105 if grande else 0.072,
+                                 lineas=3, max_chars=46 if grande else 64)
+        if h["dato"]:
+            for c in dats:
+                c["caja"] = dict(h["dato"], px_rel=0.15)
+        # y los estados usan esas cajas, no las suyas
+        for st in (e.get("estados") or []):
+            porref = {c.get("ref"): c for c in e["capas"]}
+            for el in st.get("elementos", []):
+                c = porref.get(el["ref"])
+                if c and c.get("caja"):
+                    el["caja"] = c["caja"]
 
     # Cada grupo de planos dura lo que dura SU locucion.
     #

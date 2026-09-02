@@ -119,14 +119,18 @@ def subrayado(d, texto, xy, px, pal, u=1.0, alto=0.42):
     return an
 
 
-def titular(im, lineas, pal, px=118, y0=None, u=1.0, resaltar=None):
+def titular(im, lineas, pal, px=118, y0=None, u=1.0, resaltar=None,
+            x0=None):
     d = ImageDraw.Draw(im)
     W, H = im.size
     y = y0 if y0 is not None else H * 0.30
     for i, ln in enumerate(lineas):
         ui = np.clip((u - i * 0.16) / 0.6, 0, 1)
         dy = (1 - _suave(ui)) * 34
-        x = W * 0.08
+        # el bloque empieza donde diga su caja. Estaba clavado en 0,08
+        # del ancho, asi que todos los textos salian pegados a la
+        # izquierda daba igual donde se les colocara.
+        x = W * (0.08 if x0 is None else x0)
         for pal_txt in ln.split(" "):
             marcado = pal_txt.startswith("*")
             limpio = pal_txt.replace("*", "")

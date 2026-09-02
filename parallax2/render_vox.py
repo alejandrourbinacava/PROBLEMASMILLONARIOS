@@ -491,7 +491,13 @@ def pintar_estados(esc, t, cfg, fondo, cache, pal):
         if c.get("rol") == "titular":
             porref.setdefault("@titular", c)
 
-    for ref, caja, fase, txt in disp:
+    # Las imagenes primero y la tipografia despues. Al ir en el orden de
+    # las capas, un titular declarado antes que su imagen quedaba TAPADO por
+    # ella: se veia "Su" y el resto detras de la fachada.
+    def orden(x):
+        c = porref.get(x[0]) or {}
+        return 0 if c.get("archivo") else 1
+    for ref, caja, fase, txt in sorted(disp, key=orden):
         c = porref.get(ref)
         if c is None:
             continue
@@ -591,7 +597,8 @@ def _forma(im, c, esc, t, pal, W, H):
         lineas = _lineas(txt, caja.get("max_chars", 62), caja.get("lineas", 3))
         px = int(H * caja.get("px_rel", 0.06))
         alto = px * 1.16 * len(lineas)
-        vox.titular(im, lineas, pal, px=px, y0=H * cy - alto / 2, u=u)
+        vox.titular(im, lineas, pal, px=px, y0=H * cy - alto / 2, u=u,
+                    x0=cx - caja.get("w", 0.5) / 2)
         return
     g = esc.get("grafico") or {}
     if f == "contador" and g:

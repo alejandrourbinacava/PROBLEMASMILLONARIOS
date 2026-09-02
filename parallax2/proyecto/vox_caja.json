@@ -28,13 +28,12 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.4,
-      "w": 0.76,
-      "h": 0.26,
+      "y": 0.44,
+      "w": 0.4,
+      "h": 0.16,
       "anclaje": "centro",
-      "px_rel": 0.2,
-      "lineas": 1,
-      "max_chars": 12
+      "encaje": "contener",
+      "px_rel": 0.15
      },
      "entrada": "pop",
      "retardo": 0.12
@@ -47,13 +46,14 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.66,
-      "w": 0.72,
-      "h": 0.14,
+      "y": 0.2,
+      "w": 0.52,
+      "h": 0.2,
       "anclaje": "centro",
-      "px_rel": 0.06,
+      "encaje": "contener",
+      "px_rel": 0.072,
       "lineas": 3,
-      "max_chars": 62
+      "max_chars": 64
      },
      "entrada": "sube",
      "retardo": 0.24,
@@ -98,18 +98,35 @@
      "clave": "f_billetes",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.74,
-      "y": 0.97,
-      "w": 0.4,
-      "h": 0.44,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
      "entrada": "sube",
      "retardo": 0.35
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_monedas.png",
+     "clave": "f_monedas",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1,
+   "imagenes": 2,
    "grafico": {
     "tipo": "contador",
     "valor": 3.22,
@@ -139,13 +156,14 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
-      "w": 0.72,
-      "h": 0.24,
+      "y": 0.2,
+      "w": 0.52,
+      "h": 0.2,
       "anclaje": "centro",
-      "px_rel": 0.09,
-      "lineas": 2,
-      "max_chars": 38
+      "encaje": "contener",
+      "px_rel": 0.072,
+      "lineas": 3,
+      "max_chars": 64
      },
      "entrada": "sube",
      "retardo": 0.12,
@@ -205,18 +223,35 @@
      "clave": "f_billetes",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.74,
-      "y": 0.97,
-      "w": 0.4,
-      "h": 0.44,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
      "entrada": "sube",
      "retardo": 0.35
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_oficina.png",
+     "clave": "f_oficina",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1,
+   "imagenes": 2,
    "grafico": {
     "tipo": "frase_destacada",
     "lineas": [
@@ -245,10 +280,10 @@
      "clave": "oficina",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.2,
-      "y": 0.94,
-      "w": 0.24,
-      "h": 0.34,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -262,10 +297,10 @@
      "clave": "plantilla",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.5,
-      "y": 0.94,
-      "w": 0.24,
-      "h": 0.34,
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -325,13 +360,14 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
-      "w": 0.72,
-      "h": 0.24,
+      "y": 0.2,
+      "w": 0.52,
+      "h": 0.2,
       "anclaje": "centro",
-      "px_rel": 0.09,
-      "lineas": 2,
-      "max_chars": 38
+      "encaje": "contener",
+      "px_rel": 0.072,
+      "lineas": 3,
+      "max_chars": 64
      },
      "entrada": "sube",
      "retardo": 0.12,
@@ -391,18 +427,35 @@
      "clave": "f_oficina",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.74,
-      "y": 0.97,
-      "w": 0.4,
-      "h": 0.44,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
      "entrada": "sube",
      "retardo": 0.35
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_libro.png",
+     "clave": "f_libro",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1,
+   "imagenes": 2,
    "grafico": {
     "tipo": "frase_destacada",
     "lineas": [
@@ -430,9 +483,9 @@
      "clave": "cola",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.62,
-      "y": 0.86,
-      "w": 0.36,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -447,10 +500,10 @@
      "clave": "oficina",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.56,
-      "y": 1.02,
-      "w": 0.64,
-      "h": 0.4,
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -511,13 +564,12 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.4,
-      "w": 0.76,
-      "h": 0.26,
+      "y": 0.44,
+      "w": 0.4,
+      "h": 0.16,
       "anclaje": "centro",
-      "px_rel": 0.2,
-      "lineas": 1,
-      "max_chars": 12
+      "encaje": "contener",
+      "px_rel": 0.15
      },
      "entrada": "pop",
      "retardo": 0.12
@@ -530,13 +582,14 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.66,
-      "w": 0.72,
-      "h": 0.14,
+      "y": 0.2,
+      "w": 0.52,
+      "h": 0.2,
       "anclaje": "centro",
-      "px_rel": 0.06,
+      "encaje": "contener",
+      "px_rel": 0.072,
       "lineas": 3,
-      "max_chars": 62
+      "max_chars": 64
      },
      "entrada": "sube",
      "retardo": 0.24,
@@ -581,18 +634,35 @@
      "clave": "f_billetes",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.74,
-      "y": 0.97,
-      "w": 0.4,
-      "h": 0.44,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
      "entrada": "sube",
      "retardo": 0.35
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_boveda.png",
+     "clave": "f_boveda",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1,
+   "imagenes": 2,
    "grafico": {
     "tipo": "reparto",
     "valor": 100,
@@ -620,9 +690,9 @@
      "clave": "familia",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.62,
-      "y": 0.86,
-      "w": 0.36,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -637,10 +707,10 @@
      "clave": "hucha",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.56,
-      "y": 1.02,
-      "w": 0.64,
-      "h": 0.4,
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -701,13 +771,14 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.42,
-      "w": 0.72,
-      "h": 0.24,
+      "y": 0.2,
+      "w": 0.52,
+      "h": 0.2,
       "anclaje": "centro",
-      "px_rel": 0.09,
-      "lineas": 2,
-      "max_chars": 38
+      "encaje": "contener",
+      "px_rel": 0.072,
+      "lineas": 3,
+      "max_chars": 64
      },
      "entrada": "sube",
      "retardo": 0.12,
@@ -767,18 +838,35 @@
      "clave": "m_cola",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.74,
-      "y": 0.97,
-      "w": 0.4,
-      "h": 0.44,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
      "entrada": "sube",
      "retardo": 0.35
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_monedas.png",
+     "clave": "f_monedas",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1,
+   "imagenes": 2,
    "grafico": {
     "tipo": "frase_destacada",
     "lineas": [
@@ -807,9 +895,9 @@
      "clave": "fundador",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.62,
-      "y": 0.86,
-      "w": 0.36,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -824,10 +912,10 @@
      "clave": "oficina",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.56,
-      "y": 1.02,
-      "w": 0.64,
-      "h": 0.4,
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -887,9 +975,9 @@
      "clave": "banquero",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.62,
-      "y": 0.86,
-      "w": 0.36,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -928,9 +1016,26 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "GANCHO"
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_billetes.png",
+     "clave": "f_billetes",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1
+   "imagenes": 2
   },
   {
    "id": "cap1_dos_bancos_01",
@@ -950,10 +1055,10 @@
      "clave": "boveda",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.56,
-      "y": 1.02,
-      "w": 0.64,
-      "h": 0.4,
+      "x": 0.23,
+      "y": 0.93,
+      "w": 0.42,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -991,9 +1096,26 @@
      "entrada": "fundido",
      "retardo": 0.04,
      "texto": "CAP1"
+    },
+    {
+     "ref": "l98",
+     "rol": "medio",
+     "archivo": "meta/f_billetes.png",
+     "clave": "f_billetes",
+     "tipo_capa": "imagen",
+     "entrada": "sube",
+     "retardo": 0.45,
+     "caja": {
+      "x": 0.77,
+      "y": 0.93,
+      "w": 0.4,
+      "h": 0.644,
+      "anclaje": "abajo",
+      "encaje": "contener"
+     }
     }
    ],
-   "imagenes": 1
+   "imagenes": 2
   }
  ]
 }

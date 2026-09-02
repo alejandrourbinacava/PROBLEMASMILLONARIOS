@@ -335,18 +335,30 @@ def geometria_frente(esc, cache, W, H):
 
 def coloca(caja, pw, ph, W, H):
     """
-    Traduce la caja del storyboard a pixeles.
+    Traduce la caja del storyboard a pixeles, respetando `encaje`.
 
-    `h` es la altura en fraccion de pantalla y el ancho sale de la
-    proporcion de la pieza, no al reves: asi dos piezas con la misma `h`
-    pesan lo mismo aunque una sea apaisada y la otra vertical. `x` es el
-    centro horizontal y `anclaje` dice a que se refiere la `y`.
+    La caja da ANCHO Y ALTO, y `encaje` dice que hacer cuando la proporcion
+    de la pieza no coincide con la del hueco:
+
+      contener  la pieza cabe entera dentro del hueco. Es lo que hay que
+                hacer casi siempre, y lo que arregla la hucha comiendose la
+                pantalla: apaisada y colocada solo por altura, acababa
+                midiendo el 90% del cuadro.
+      cubrir    la pieza llena el hueco y lo que sobra se sale. Solo para
+                fondos y suelos, donde el hueco tiene que quedar tapado.
+
+    Yo tenia el ancho pisando al alto -si venia `w`, ignoraba `h`-, que es
+    justo el fallo contrario y da el mismo resultado.
     """
-    alto = int(H * caja.get("h", 0.3))
-    ancho = max(2, int(pw * alto / ph))
-    if caja.get("w"):                    # si manda el ancho, manda el ancho
-        ancho = int(W * caja["w"])
-        alto = max(2, int(ph * ancho / pw))
+    hw = W * caja.get("w", 0.3)
+    hh = H * caja.get("h", caja.get("w", 0.3) * W / H)
+    k = pw / ph
+    if caja.get("encaje") == "cubrir":
+        ancho, alto = (hw, hw / k) if hw / k >= hh else (hh * k, hh)
+    else:
+        ancho, alto = (hw, hw / k) if hw / k <= hh else (hh * k, hh)
+    ancho, alto = max(2, int(ancho)), max(2, int(alto))
+
     x = int(caja.get("x", 0.5) * W - ancho / 2)
     y = int(caja.get("y", 0.5) * H)
     anc = caja.get("anclaje", "centro")
@@ -396,10 +408,13 @@ def pintar_caja(esc, t, cfg, fondo, cache, pal):
             continue
         f = c.get("forma")
         cx, cy = caja.get("x", 0.5), caja.get("y", 0.5)
-        if f in ("frase", "titular"):
-            lineas = _lineas(c.get("texto") or esc.get("texto", ""), caja)
-            px = int(H * caja.get("px_rel", 0.075))
-            vox.titular(im, lineas, pal, px=px, y0=H * cy - px * 0.6, u=u)
+        if f in ("frase", "titular", "frase_destacada"):
+            # el tamano, el numero de lineas y el recorte los manda la caja
+            lineas = _lineas(c.get("texto") or esc.get("texto", ""),
+                             caja.get("max_chars", 62), caja.get("lineas", 3))
+            px = int(H * caja.get("px_rel", 0.06))
+            alto = px * 1.16 * len(lineas)
+            vox.titular(im, lineas, pal, px=px, y0=H * cy - alto / 2, u=u)
         elif f == "contador" and esc.get("grafico"):
             g = esc["grafico"]
             vox_mg.bloque_cifra(im, g.get("valor", 0), pal,
@@ -421,17 +436,23 @@ def pintar_caja(esc, t, cfg, fondo, cache, pal):
         elif f == "pie_fuente":
             vox_mg.pie_fuente(im, c.get("texto", "Reserva Federal de San Luis"),
                               pal, u=u)
-        elif f == "circulo_rotulador":
-            vox_mg.marca(im, [cx - 0.16, cy - 0.16, cx + 0.16, cy + 0.16], pal, u=u)
+        # Las marcas usan el ANCHO Y ALTO DE SU CAJA, no un desplazamiento
+        # fijo. Con valores fijos, el tachado se dibujaba en mitad del papel
+        # sin tachar nada y el circulo rodeaba aire: la caja dice sobre que
+        # va la marca, y yo la estaba ignorando.
+        cw = caja.get("w", 0.3) / 2
+        ch = caja.get("h", caja.get("w", 0.3) * W / H) / 2
+        if f == "circulo_rotulador":
+            vox_mg.marca(im, [cx - cw, cy - ch, cx + cw, cy + ch], pal, u=u)
         elif f == "corchete":
-            vox_mg.corchete(im, [cx - 0.20, cy - 0.14, cx + 0.20, cy + 0.14], pal, u=u)
+            vox_mg.corchete(im, [cx - cw, cy - ch, cx + cw, cy + ch], pal, u=u)
         elif f == "tachado":
-            vox_mg.tachado(im, [cx - 0.18, cy, cx + 0.18, cy - 0.03], pal, u=u)
+            vox_mg.tachado(im, [cx - cw, cy + ch * 0.15, cx + cw, cy - ch * 0.15],
+                           pal, u=u)
         elif f == "asterisco":
-            vox_mg.asterisco(im, (cx, cy), pal, u=u)
+            vox_mg.asterisco(im, (cx, cy), pal, u=u, r=int(min(cw * W, ch * H)))
         elif f == "flecha":
-            vox_mg.flecha(im, (cx - 0.12, cy - 0.10), (cx + 0.10, cy + 0.08),
-                          pal, u=u)
+            vox_mg.flecha(im, (cx - cw, cy - ch), (cx + cw, cy + ch), pal, u=u)
         elif f == "bocadillo":
             vox_mg.bocadillo(im, (cx, cy), c.get("texto", ""), pal, u=u)
         elif f == "rejilla":
@@ -441,7 +462,7 @@ def pintar_caja(esc, t, cfg, fondo, cache, pal):
     return im
 
 
-def _lineas(texto, caja, por_linea=34):
+def _lineas(texto, max_chars=62, max_lineas=3):
     """
     Parte la frase en lineas que quepan en su caja.
 
@@ -451,13 +472,12 @@ def _lineas(texto, caja, por_linea=34):
     accionistas" se quedaba en "los abogados y los" y la frase moria a
     medias en pantalla. Un rotulo es una idea corta, no un parrafo.
     """
-    corte = min([i for i in (texto.find(","), texto.find(". "), texto.find(":"))
-                 if i > 18] or [len(texto)])
-    texto = texto[:corte].strip(" ,.:;")
-    if len(texto) > 76:
-        texto = texto[:76].rsplit(" ", 1)[0]
+    if len(texto) > max_chars:
+        corte = min([i for i in (texto.find(","), texto.find(". "),
+                                 texto.find(":")) if i > 18] or [max_chars])
+        texto = texto[:min(corte, max_chars)].strip(" ,.:;")
     pal, out, act = texto.split(), [], ""
-    tope = max(14, int(por_linea * caja.get("w", 0.6) / 0.6))
+    tope = max(14, max_chars // max_lineas)
     for w in pal:
         if len(act) + len(w) + 1 > tope:
             out.append(act); act = w
@@ -465,7 +485,7 @@ def _lineas(texto, caja, por_linea=34):
             act = (act + " " + w).strip()
     if act:
         out.append(act)
-    return out[:3]
+    return out[:max_lineas]
 
 
 def pintar(esc, t, cfg, fondo, cache, pal):

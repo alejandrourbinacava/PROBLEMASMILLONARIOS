@@ -14,6 +14,9 @@ on:
     tags:
       - "ilustracion-*"
 
+permissions:
+  contents: write
+
 jobs:
   dibujar:
     runs-on: ubuntu-latest
@@ -56,6 +59,17 @@ jobs:
         run: |
           ls -l ilustracion/salida/
           test -s ilustracion/salida/c_blender.png
+
+      # El PNG se devuelve AL REPO, no solo como artefacto. Un artefacto pide
+      # credenciales para bajarlo; un fichero en una rama se lee con una URL.
+      - name: Devolver la imagen al repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B ilustraciones
+          git add -f ilustracion/salida/*.png
+          git commit -m "Ilustracion generada en la nube" || exit 0
+          git push -f origin ilustraciones
 
       - uses: actions/upload-artifact@v4
         with:

@@ -72,13 +72,11 @@ def caja(nombre, pos, escala, mat):
     o.name = nombre
     o.scale = escala
     o.data.materials.append(mat)
-    bpy.ops.object.shade_smooth_by_angle() if hasattr(
-        bpy.ops.object, "shade_smooth_by_angle") else None
     return o
 
 
 def moneda(nombre, pos, radio, alto, mat):
-    bpy.ops.mesh.primitive_cylinder_add(vertices=64, radius=radio,
+    bpy.ops.mesh.primitive_cylinder_add(vertices=128, radius=radio,
                                         depth=alto, location=pos)
     o = bpy.context.object
     o.name = nombre
@@ -89,11 +87,11 @@ def moneda(nombre, pos, radio, alto, mat):
     return o
 
 
-def pila(prefijo, x, n, mat, radio=1.15, alto=0.17, sep=0.015):
+def pila(prefijo, x, y, n, mat, radio=1.15, alto=0.17, sep=0.015):
     """Una torre de monedas. Cada una gira un poco: apiladas a mano."""
     for i in range(n):
         z = 0.16 + alto / 2 + i * (alto + sep)
-        o = moneda(f"{prefijo}_{i}", (x, 0.0, z), radio, alto, mat)
+        o = moneda(f"{prefijo}_{i}", (x, y, z), radio, alto, mat)
         o.rotation_euler[2] = math.radians(i * 11.0)
         o.location[0] += math.sin(i * 1.7) * 0.035
         o.location[1] += math.cos(i * 2.1) * 0.035
@@ -120,7 +118,7 @@ def montar():
     m_papel = material("papel", PAPEL, rugosidad=0.62)
     m_frio = material("depositos", FRIO, rugosidad=0.35, metal=0.25)
     m_rojo = material("prestamos", ROJO, rugosidad=0.38, metal=0.15)
-    m_margen = material("margen", AMBAR, rugosidad=0.2, emision=9.0)
+    m_margen = material("margen", AMBAR, rugosidad=0.2, emision=3.2)
     m_suelo = material("suelo", NOCHE, rugosidad=0.85)
 
     # el suelo, para que la hoja no flote en negro
@@ -128,31 +126,36 @@ def montar():
     bpy.context.object.data.materials.append(m_suelo)
 
     # LA HOJA DE CALCULO: una losa de papel
-    hoja = caja("hoja", (0, 0, 0.08), (5.6, 3.6, 0.08), m_papel)
+    hoja = caja("hoja", (0, 0, 0.08), (5.4, 5.4, 0.08), m_papel)
     bpy.ops.object.modifier_add(type="BEVEL")
     hoja.modifiers["Bevel"].width = 0.03
     hoja.modifiers["Bevel"].segments = 3
 
-    # las dos columnas
-    pila("deposito", -2.45, 9, m_frio)
-    pila("prestamo", 2.45, 7, m_rojo)
+    # Las dos columnas van en la diagonal CONTRARIA a la de la camara. En la
+    # misma se tapan la una a la otra: en isometrico esa es la profundidad.
+    D = 2.6
+    pila("deposito", -D, D, 9, m_frio)
+    pila("prestamo", D, -D, 6, m_rojo)
 
-    # EL MARGEN: finisimo, y es lo unico que emite luz propia
-    caja("margen", (0, 0, 0.95), (0.045, 3.05, 0.78), m_margen)
+    # EL MARGEN. La frase dice "muy fino", asi que fino de verdad: una lamina
+    # baja entre las dos pilas. Antes era un muro de 0,78 de alto emitiendo a
+    # 9 y se comia la escena entera -de ahi que todo saliera naranja-.
+    caja("margen", (0, 0, 0.44), (0.78, 0.05, 0.28), m_margen)
 
-    # un par de laminas mas bajas, para que la hoja no quede vacia en medio
-    for i, y in enumerate((-2.1, 2.1)):
-        caja(f"renglon_{i}", (0, y, 0.19), (4.4, 0.045, 0.02), m_frio)
+    # dos renglones impresos, en la diagonal de la camara para que se lean
+    for i, s in enumerate((-1, 1)):
+        caja(f"renglon_{i}", (s * 1.9, s * 1.9, 0.17), (3.4, 0.035, 0.015),
+             m_frio)
 
-    luz("clave", (6.5, -7.0, 9.0), 2600, 7.0, (1.0, 0.95, 0.88))
-    luz("relleno", (-8.0, -4.0, 4.5), 700, 9.0, (0.72, 0.80, 1.0))
-    luz("contra", (-3.0, 8.0, 5.0), 1400, 6.0, (1.0, 0.72, 0.45))
+    luz("clave", (6.5, -7.0, 9.0), 5200, 7.0, (1.0, 0.95, 0.88))
+    luz("relleno", (-8.0, -4.0, 4.5), 1700, 9.0, (0.72, 0.80, 1.0))
+    luz("contra", (-3.0, 8.0, 5.0), 2400, 6.0, (1.0, 0.72, 0.45))
 
     # camara ortografica: el isometrico de verdad, sin fuga de perspectiva
     bpy.ops.object.camera_add(location=(11.0, -11.0, 9.2))
     cam = bpy.context.object
     cam.data.type = "ORTHO"
-    cam.data.ortho_scale = 13.5
+    cam.data.ortho_scale = 15.5
     cam.rotation_euler = (math.radians(58.0), 0.0, math.radians(45.0))
     bpy.context.scene.camera = cam
 

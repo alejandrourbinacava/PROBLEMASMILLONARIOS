@@ -34,7 +34,7 @@ def srgb(r, g, b, a=1.0):
 
 AMBAR = srgb(255, 176, 60)
 ROJO = srgb(232, 86, 64)
-PAPEL = srgb(238, 233, 224)
+PAPEL = srgb(198, 192, 180)
 FRIO = srgb(122, 146, 178)
 NOCHE = srgb(9, 13, 24)
 
@@ -132,14 +132,14 @@ def montar():
     bpy.context.object.data.materials.append(m_suelo)
 
     # LA HOJA DE CALCULO: una losa de papel
-    hoja = caja("hoja", (0, 0, 0.08), (5.4, 5.4, 0.08), m_papel)
+    hoja = caja("hoja", (0, 0, 0.08), (3.9, 3.9, 0.08), m_papel)
     bpy.ops.object.modifier_add(type="BEVEL")
     hoja.modifiers["Bevel"].width = 0.03
     hoja.modifiers["Bevel"].segments = 3
 
     # Las dos columnas van en la diagonal CONTRARIA a la de la camara. En la
     # misma se tapan la una a la otra: en isometrico esa es la profundidad.
-    D = 2.6
+    D = 1.95
     pila("deposito", -D, D, 9, m_frio)
     pila("prestamo", D, -D, 6, m_rojo)
 
@@ -150,18 +150,18 @@ def montar():
 
     # dos renglones impresos, en la diagonal de la camara para que se lean
     for i, s in enumerate((-1, 1)):
-        caja(f"renglon_{i}", (s * 1.9, s * 1.9, 0.17), (3.4, 0.035, 0.015),
+        caja(f"renglon_{i}", (s * 1.45, s * 1.45, 0.17), (2.5, 0.03, 0.014),
              m_frio)
 
-    luz("clave", (6.5, -7.0, 9.0), 9000, 7.0, (1.0, 0.95, 0.88))
-    luz("relleno", (-8.0, -4.0, 4.5), 2600, 9.0, (0.72, 0.80, 1.0))
-    luz("contra", (-3.0, 8.0, 5.0), 4500, 6.0, (1.0, 0.72, 0.45))
+    luz("clave", (6.5, -7.0, 9.0), 1500, 7.0, (1.0, 0.95, 0.88))
+    luz("relleno", (-8.0, -4.0, 4.5), 420, 9.0, (0.72, 0.80, 1.0))
+    luz("contra", (-3.0, 8.0, 5.0), 750, 6.0, (1.0, 0.72, 0.45))
 
     # camara ortografica: el isometrico de verdad, sin fuga de perspectiva
     bpy.ops.object.camera_add(location=(11.0, -11.0, 9.2))
     cam = bpy.context.object
     cam.data.type = "ORTHO"
-    cam.data.ortho_scale = 15.5
+    cam.data.ortho_scale = 11.5
     cam.rotation_euler = (math.radians(58.0), 0.0, math.radians(45.0))
     bpy.context.scene.camera = cam
 

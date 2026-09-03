@@ -60,9 +60,9 @@
       {
        "ref": "l2",
        "caja": {
-        "x": 0.74,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -87,9 +87,9 @@
       {
        "ref": "l99",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -100,8 +100,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -137,10 +137,10 @@
       {
        "ref": "l99",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
-        "h": 0.7,
+        "w": 0.42,
+        "h": 0.55,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -148,10 +148,10 @@
       {
        "ref": "l2",
        "caja": {
-        "x": 0.5,
+        "x": 0.74,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.42,
+        "h": 0.17,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -165,7 +165,7 @@
         "x": 0.76,
         "y": 0.93,
         "w": 0.44,
-        "h": 0.7,
+        "h": 0.55,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -173,10 +173,10 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.5,
-        "y": 0.44,
+        "x": 0.28,
+        "y": 0.17,
         "w": 0.4,
-        "h": 0.16,
+        "h": 0.17,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.15
@@ -198,10 +198,10 @@
      "clave": null,
      "tipo_capa": "codigo",
      "caja": {
-      "x": 0.5,
-      "y": 0.44,
+      "x": 0.28,
+      "y": 0.17,
       "w": 0.4,
-      "h": 0.16,
+      "h": 0.17,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.15
@@ -216,10 +216,10 @@
      "clave": null,
      "tipo_capa": "codigo",
      "caja": {
-      "x": 0.5,
+      "x": 0.74,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.42,
+      "h": 0.17,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -253,10 +253,10 @@
      "clave": "f_billetes",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
-      "h": 0.7,
+      "w": 0.42,
+      "h": 0.55,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -273,7 +273,7 @@
       "x": 0.76,
       "y": 0.93,
       "w": 0.44,
-      "h": 0.7,
+      "h": 0.55,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -344,9 +344,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.26,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -372,9 +372,9 @@
       {
        "ref": "l93",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -385,8 +385,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -397,9 +397,9 @@
       {
        "ref": "l94",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -423,8 +423,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -473,9 +473,9 @@
      "clave": "f_balanza",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -489,9 +489,9 @@
      "clave": "f_mostrador",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -561,9 +561,9 @@
       {
        "ref": "l83",
        "caja": {
-        "x": 0.74,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -588,9 +588,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -601,8 +601,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -637,9 +637,9 @@
      "clave": "oficina",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -688,8 +688,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -755,9 +755,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.26,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -783,9 +783,9 @@
       {
        "ref": "l99",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -796,8 +796,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -808,9 +808,9 @@
       {
        "ref": "l94",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -834,8 +834,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -884,9 +884,9 @@
      "clave": "f_vaso",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -901,9 +901,9 @@
      "clave": "f_maletin",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -972,9 +972,9 @@
       {
        "ref": "l83",
        "caja": {
-        "x": 0.74,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -999,9 +999,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1012,8 +1012,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -1024,9 +1024,9 @@
       {
        "ref": "l93",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1048,9 +1048,9 @@
      "clave": "cola",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1083,8 +1083,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -1101,9 +1101,9 @@
      "clave": "f_torre",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1164,9 +1164,9 @@
       {
        "ref": "l2",
        "caja": {
-        "x": 0.26,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1191,9 +1191,9 @@
       {
        "ref": "l93",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1204,8 +1204,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -1216,9 +1216,9 @@
       {
        "ref": "l94",
        "caja": {
-        "x": 0.75,
+        "x": 0.76,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.44,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1241,10 +1241,10 @@
       {
        "ref": "l93",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
-        "h": 0.7,
+        "w": 0.42,
+        "h": 0.55,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1254,8 +1254,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.17,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -1266,10 +1266,10 @@
       {
        "ref": "l94",
        "caja": {
-        "x": 0.75,
+        "x": 0.76,
         "y": 0.93,
-        "w": 0.46,
-        "h": 0.7,
+        "w": 0.44,
+        "h": 0.55,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1277,10 +1277,10 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.5,
-        "y": 0.44,
+        "x": 0.72,
+        "y": 0.17,
         "w": 0.4,
-        "h": 0.16,
+        "h": 0.17,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.15
@@ -1302,10 +1302,10 @@
      "clave": null,
      "tipo_capa": "codigo",
      "caja": {
-      "x": 0.5,
-      "y": 0.44,
+      "x": 0.72,
+      "y": 0.17,
       "w": 0.4,
-      "h": 0.16,
+      "h": 0.17,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.15
@@ -1322,8 +1322,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.17,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -1357,10 +1357,10 @@
      "clave": "f_libro",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
-      "h": 0.7,
+      "w": 0.42,
+      "h": 0.55,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -1373,10 +1373,10 @@
      "clave": "f_atm",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.76,
       "y": 0.93,
-      "w": 0.46,
-      "h": 0.7,
+      "w": 0.44,
+      "h": 0.55,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -1444,9 +1444,9 @@
       {
        "ref": "l83",
        "caja": {
-        "x": 0.74,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1471,9 +1471,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1484,8 +1484,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -1496,9 +1496,9 @@
       {
        "ref": "l2",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1520,9 +1520,9 @@
      "clave": "familia",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1537,9 +1537,9 @@
      "clave": "hucha",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1572,8 +1572,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -1639,9 +1639,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.26,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1680,8 +1680,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -1692,9 +1692,9 @@
       {
        "ref": "l94",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1718,8 +1718,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -1784,9 +1784,9 @@
      "clave": "f_monedas",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1856,9 +1856,9 @@
       {
        "ref": "l83",
        "caja": {
-        "x": 0.74,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1883,9 +1883,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1896,8 +1896,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -1908,9 +1908,9 @@
       {
        "ref": "l93",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1932,9 +1932,9 @@
      "clave": "fundador",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1967,8 +1967,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -1985,9 +1985,9 @@
      "clave": "f_obra",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -2048,9 +2048,9 @@
       {
        "ref": "l83",
        "caja": {
-        "x": 0.26,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -2075,9 +2075,9 @@
       {
        "ref": "l1",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -2088,8 +2088,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -2100,9 +2100,9 @@
       {
        "ref": "l2",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -2124,9 +2124,9 @@
      "clave": "banquero",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -2141,9 +2141,9 @@
      "clave": "llaves",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -2176,8 +2176,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -2241,9 +2241,9 @@
       {
        "ref": "l82",
        "caja": {
-        "x": 0.74,
+        "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
+        "w": 0.66,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -2268,9 +2268,9 @@
       {
        "ref": "l2",
        "caja": {
-        "x": 0.25,
+        "x": 0.23,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -2281,8 +2281,8 @@
        "caja": {
         "x": 0.5,
         "y": 0.17,
-        "w": 0.72,
-        "h": 0.2,
+        "w": 0.66,
+        "h": 0.19,
         "anclaje": "centro",
         "encaje": "contener",
         "px_rel": 0.062,
@@ -2293,9 +2293,9 @@
       {
        "ref": "l93",
        "caja": {
-        "x": 0.75,
+        "x": 0.77,
         "y": 0.93,
-        "w": 0.46,
+        "w": 0.42,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -2317,9 +2317,9 @@
      "clave": "boveda",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.25,
+      "x": 0.23,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -2352,8 +2352,8 @@
      "caja": {
       "x": 0.5,
       "y": 0.17,
-      "w": 0.72,
-      "h": 0.2,
+      "w": 0.66,
+      "h": 0.19,
       "anclaje": "centro",
       "encaje": "contener",
       "px_rel": 0.062,
@@ -2370,9 +2370,9 @@
      "clave": "m_abogados",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.75,
+      "x": 0.77,
       "y": 0.93,
-      "w": 0.46,
+      "w": 0.42,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"

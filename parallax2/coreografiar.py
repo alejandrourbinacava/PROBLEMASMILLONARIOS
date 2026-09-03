@@ -141,6 +141,15 @@ def coreografiar(e, i, dur):
         n_img = sum(1 for c in vistos if c.get("archivo"))
         h = CP.componer(n_img, any(c in txts for c in vistos),
                         any(c in dats for c in vistos), i + k)
+        # El ancho maximo de cada hueco sale de la DISTANCIA A SU VECINO, no
+        # de una constante. Con un tope fijo, una pieza apaisada se ensanchaba
+        # hasta meterse encima de la de al lado: el fajo de billetes y la
+        # bandera acababan superpuestos.
+        centros = [c["x"] for c in h["imagenes"]]
+        topes = []
+        for a in centros:
+            hueco = min([abs(a - b) for b in centros if b != a] or [2.0])
+            topes.append(min(hueco * 0.94, 2 * min(a - 0.02, 0.98 - a)))
         cajas, j = {}, 0
         for c in vistos:
             if c.get("archivo"):
@@ -148,7 +157,7 @@ def coreografiar(e, i, dur):
                 # el area que le toca: sola manda, acompanada reparte
                 caja = ensancha(caja, c["archivo"],
                                 h_min=0.46 if n_img > 1 else 0.56,
-                                w_max=0.64 if n_img == 1 else 0.50)
+                                w_max=topes[min(j, len(topes) - 1)])
                 j += 1
             elif c in dats and h["dato"]:
                 caja = h["dato"]
@@ -166,7 +175,11 @@ def coreografiar(e, i, dur):
                     b1 = otra["x"] - otra.get("w", .4) / 2
                     b2 = otra["x"] + otra.get("w", .4) / 2
                     if a1 < b2 and b1 < a2:
-                        caja = dict(caja, y=0.17, w=0.72,
+                        # y se RECENTRA al ensanchar: dejando la x de antes,
+                        # una caja de 0,72 centrada en 0,32 empieza en -0,04
+                        # y el titular salia cortado por el borde izquierdo
+                        # ("ue un banco no gana").
+                        caja = dict(caja, x=0.5, y=0.17, w=0.66,
                                     anclaje="centro")
                         break
             else:

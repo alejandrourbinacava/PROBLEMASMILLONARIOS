@@ -81,15 +81,36 @@ def componer(n_img, hay_texto, hay_dato, i=0):
             fuera["texto"] = _caja(xt, 0.42, 0.46, 0.30, "centro")
         return fuera
 
+    if n_img == 2 and hay_dato:
+        # CON DATO NO SE FLANQUEA. La cifra arrastra un pie -"por cada 100 $
+        # prestados"- mas ancho que su caja, y centrada entre dos imagenes
+        # se metia por debajo de la bandera. Con dato, la tipografia se
+        # queda un lado entero y las dos imagenes ocupan el otro.
+        # Las dos imagenes siguen flanqueando -es lo que llena el cuadro-,
+        # pero bajan el techo para dejar libre la banda de arriba, y la cifra
+        # y el titular se reparten esa banda uno a cada lado. Amontonarlos en
+        # media pantalla dejaba las dos imagenes en 0,23 de ancho y la
+        # cobertura caia al 12%.
+        fuera["imagenes"] = [_caja(0.23, PIE, 0.42, 0.55),
+                             _caja(0.77, PIE, 0.44, 0.55)]
+        xd, xt = (0.72, 0.26) if izq else (0.28, 0.74)
+        fuera["dato"] = _caja(xd, 0.17, 0.40, 0.17, "centro")
+        if hay_texto:
+            fuera["texto"] = _caja(xt, 0.17, 0.42, 0.17, "centro")
+        return fuera
+
     if n_img == 2:
         # dos imagenes flanqueando, el texto arriba y centrado: es la
         # composicion del obrero y el soldado con el titular en medio
         fuera["imagenes"] = [_caja(0.23, PIE, 0.42, ALTO_MANDA),
                              _caja(0.77, PIE, 0.44, ALTO_MANDA)]
         if hay_texto:
-            fuera["texto"] = _caja(0.5, 0.20, 0.52, 0.20, "centro")
-        if hay_dato:
-            fuera["dato"] = _caja(0.5, 0.44, 0.40, 0.16, "centro")
+            # El titular NO se queda siempre arriba a la izquierda. Se dibuja
+            # desde el borde izquierdo de su caja, asi que centrarla en 0,5
+            # lo dejaba siempre en el mismo sitio y los planos se leian todos
+            # igual. Con la caja a un lado u otro, cambia de verdad.
+            fuera["texto"] = _caja(0.32 if izq else 0.68, 0.19, 0.50, 0.19,
+                                   "centro")
         return fuera
 
     # tres o mas: una manda en el centro y dos acompanan a los lados

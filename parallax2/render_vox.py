@@ -613,7 +613,7 @@ def _forma(im, c, esc, t, pal, W, H):
         px = int(H * caja.get("px_rel", 0.06))
         alto = px * 1.16 * len(lineas)
         vox.titular(im, lineas, pal, px=px, y0=H * cy - alto / 2, u=u,
-                    x0=cx - caja.get("w", 0.5) / 2)
+                    x0=max(0.05, min(cx - caja.get("w", 0.5) / 2, 0.62)))
         return
     g = esc.get("grafico") or {}
     if f == "contador" and g:

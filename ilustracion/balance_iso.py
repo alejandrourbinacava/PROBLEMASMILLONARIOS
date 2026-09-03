@@ -161,7 +161,11 @@ def montar():
     bpy.ops.object.camera_add(location=(11.0, -11.0, 9.2))
     cam = bpy.context.object
     cam.data.type = "ORTHO"
-    cam.data.ortho_scale = 11.5
+    cam.data.ortho_scale = 13.6
+    # La camara mira al origen, pero el peso de la escena esta por encima:
+    # la pila de depositos sube casi dos unidades. Sin este desplazamiento
+    # se corta por arriba y sobra hoja vacia por abajo.
+    cam.data.shift_y = 0.115
     cam.rotation_euler = (math.radians(58.0), 0.0, math.radians(45.0))
     bpy.context.scene.camera = cam
 

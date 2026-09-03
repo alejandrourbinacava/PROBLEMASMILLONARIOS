@@ -1054,8 +1054,9 @@
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
-        "tipo": "reparto",
+        "tipo": "contador",
         "valor": 200000.0,
+        "dec": 0,
         "sufijo": " $",
         "color": [
           255,
@@ -1064,7 +1065,7 @@
         ],
         "pie": "o más",
         "y": 0.34,
-        "retardo": 0.6,
+        "retardo": 0.55,
         "entrada": "latigo_der"
       }
     },
@@ -1463,18 +1464,17 @@
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
-        "tipo": "anillo",
+        "tipo": "reparto",
         "valor": 8.7,
-        "dec": 1,
-        "sufijo": "%",
-        "color": [
-          232,
-          86,
-          64
+        "color_a": [
+          255,
+          176,
+          60
         ],
-        "pie": "todos los gastos que no son intereses",
+        "etiqueta_a": "todos los gastos que no so",
+        "etiqueta_b": "el resto",
         "y": 0.34,
-        "retardo": 0.55,
+        "retardo": 0.6,
         "entrada": "latigo_der"
       }
     },
@@ -1533,25 +1533,31 @@
       "capas": [],
       "grafico": {
         "tipo": "barras",
-        "series": [
-          {
-            "etiqueta": "banco pequeño",
-            "valor": 3.0
-          },
-          {
-            "etiqueta": "banco grande",
-            "valor": 1.0
-          }
+        "items": [
+          [
+            "banco pequeño",
+            3.0
+          ],
+          [
+            "banco grande",
+            1.0
+          ]
         ],
-        "destacar": 0,
+        "destacar": {
+          "banco pequeño": [
+            232,
+            86,
+            64
+          ]
+        },
         "sufijo": "x",
+        "dec": 1,
         "y": 0.26,
         "color": [
-          232,
-          86,
-          64
+          255,
+          176,
+          60
         ],
-        "pie": "más que el grande por cumplir exactame",
         "retardo": 0.6,
         "entrada": "rebote"
       }

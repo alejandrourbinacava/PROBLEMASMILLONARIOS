@@ -50,6 +50,14 @@ jobs:
         working-directory: parallax2
         run: python validar.py "${{ inputs.guion || 'proyecto/episodio_banco.json' }}"
 
+      # Dibuja cada grafico y cada rotulo antes de componer nada. `validar.py`
+      # comprueba que HAYA grafico, no que se pueda dibujar: por eso un campo
+      # mal escrito -"series" donde el motor espera "items"- paso limpio y
+      # reviento el render a los 42 minutos con los 130 planos ya compuestos.
+      - name: Que los graficos se puedan dibujar
+        working-directory: parallax2
+        run: python comprobar_mg.py "${{ inputs.guion || 'proyecto/episodio_banco.json' }}"
+
       - name: Render
         working-directory: parallax2
         # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no

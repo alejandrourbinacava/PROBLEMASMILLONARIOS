@@ -319,32 +319,39 @@ def main():
             visto.add(clave)
             val, suf, dec, pal = c
             n = norm(texto)
-            if suf == "%":
+            if suf == "%" and ("de cada" in n or "se lleva" in n):
+                tipo = "reparto"       # el reparto SOLO admite un porcentaje:
+                                       # el motor hace valor/100 y una cifra en
+                                       # dolares se salia de la barra
+            elif suf == "%":
                 tipo = "anillo"
             elif "veces" in n and ("mas" in n or "menos" in n):
                 tipo = "barras"
-            elif "de cada" in n or "se lleva" in n:
-                tipo = "reparto"
             else:
                 tipo = "contador"
 
             v, d = formato(val, dec, suf)
             if tipo == "barras":
-                # la comparacion necesita las dos patas, no una cifra suelta
+                # `items` son PARES (nombre, valor) y `destacar` es un dicho
+                # de nombre a color. Me lo invente como "series" y una
+                # posicion, y el render reviento con KeyError a los 42
+                # minutos, con los 130 planos ya compuestos.
                 e["grafico"] = {
                     "tipo": "barras",
-                    "series": [{"etiqueta": "banco pequeño", "valor": float(v)},
-                               {"etiqueta": "banco grande", "valor": 1.0}],
-                    "destacar": 0, "sufijo": suf or "x",
+                    "items": [["banco pequeño", float(v)],
+                              ["banco grande", 1.0]],
+                    "destacar": {"banco pequeño": list(ROJO)},
+                    "sufijo": suf or "x", "dec": 1,
                     "y": ALTURAS[i % len(ALTURAS)],
-                    "color": list(ROJO), "pie": pie_de(texto, pal),
+                    "color": list(ACENTO),
                     "retardo": 0.6, "entrada": ENTRADAS[i % len(ENTRADAS)],
                 }
             elif tipo == "reparto":
                 e["grafico"] = {
                     "tipo": "reparto", "valor": float(v),
-                    "sufijo": suf or "%", "color": list(ACENTO),
-                    "pie": pie_de(texto, pal),
+                    "color_a": list(ACENTO),
+                    "etiqueta_a": pie_de(texto, pal)[:26],
+                    "etiqueta_b": "el resto",
                     "y": ALTURAS[i % len(ALTURAS)],
                     "retardo": 0.6, "entrada": ENTRADAS[i % len(ENTRADAS)],
                 }

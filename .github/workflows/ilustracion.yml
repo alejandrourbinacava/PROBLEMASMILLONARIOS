@@ -1,0 +1,65 @@
+name: Ilustracion
+
+# Una imagen fija en Blender, no un video. Se lanza con una etiqueta:
+#     git tag ilustracion-01 && git push origin ilustracion-01
+# Igual que vox-* y parallax-*, para no gastar la CPU de casa.
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: Script de Blender dentro de ilustracion/
+        default: balance_iso.py
+  push:
+    tags:
+      - "ilustracion-*"
+
+jobs:
+  dibujar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      # El runner no trae Blender. La descarga oficial es mas predecible que
+      # apt, que segun la imagen del runner da una version u otra.
+      - name: Blender
+        run: |
+          set -e
+          V=4.2.5
+          URL="https://download.blender.org/release/Blender4.2/blender-${V}-linux-x64.tar.xz"
+          if curl -fsSL --retry 3 -o blender.tar.xz "$URL"; then
+            mkdir -p /opt/blender
+            tar -xJf blender.tar.xz -C /opt/blender --strip-components=1
+            echo "/opt/blender" >> $GITHUB_PATH
+          else
+            echo "::warning::No se pudo bajar Blender $V, tiro de apt"
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq blender
+          fi
+
+      - name: Version
+        run: blender --version
+
+      - name: Dibujar
+        run: |
+          set -o pipefail
+          if ! blender -b -noaudio \
+                 -P "ilustracion/${{ inputs.script || 'balance_iso.py' }}" \
+                 2>&1 | tee blender.log; then
+            echo "::error::Blender ha fallado. Ultimas lineas:"
+            tail -n 30 blender.log
+            exit 1
+          fi
+
+      - name: Que haya salido algo
+        run: |
+          ls -l ilustracion/salida/
+          test -s ilustracion/salida/c_blender.png
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ilustracion
+          path: |
+            ilustracion/salida/*.png
+            blender.log

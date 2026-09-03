@@ -70,6 +70,17 @@ jobs:
           ffmpeg -y -v error -i vox_mudo.mp4 -i sonido_vox.mp3             -c:v copy -c:a aac -b:a 192k -shortest prueba_vox.mp4
           ffprobe -v error -show_entries format=duration -of csv=p=0 prueba_vox.mp4
 
+      - name: Revision automatica
+        working-directory: parallax2
+        continue-on-error: true
+        run: |
+          python3 revisar.py prueba_vox.mp4             --guion "${{ inputs.guion || 'proyecto/vox_caja.json' }}" | tee revision.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: revision-vox
+          path: parallax2/revision.txt
+
       - uses: actions/upload-artifact@v4
         with:
           name: prueba-vox

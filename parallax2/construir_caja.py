@@ -75,6 +75,37 @@ AMBIGUAS = {"que", "el", "si", "mas", "tu", "mi", "se", "de", "te", "aun",
             "cual", "quien", "cuanto", "porque"}
 
 
+COLGANTES = {"de", "del", "y", "o", "que", "al", "a", "por", "en", "con",
+             "para", "la", "el", "los", "las", "un", "una", "su", "sus",
+             "se", "lo", "es", "no", "ni", "como", "sin", "sobre"}
+
+
+def titular_de(frase, limite=36):
+    """
+    El trozo de la frase que va en pantalla, cortado por palabra.
+
+    Corta antes en la coma si la hay -es donde la frase respira- y nunca
+    termina en preposicion ni articulo: "Un banco medio de" se lee como una
+    frase amputada, "Un banco medio de Estados Unidos" no.
+    """
+    frase = (frase or "").strip().rstrip(".:;")
+    # primero por punto -es otra frase-, luego por coma -ahi respira-, y
+    # solo si ninguna de las dos cabe, por numero de caracteres
+    for sep in (".", ",", ":"):
+        corte = frase.split(sep)[0].strip()
+        if 8 <= len(corte) <= limite:
+            frase = corte
+            break
+    fuera = []
+    for w in frase.split():
+        if fuera and len(" ".join(fuera + [w])) > limite:
+            break
+        fuera.append(w)
+    while fuera and fuera[-1].lower().strip(".,") in COLGANTES:
+        fuera.pop()
+    return (" ".join(fuera) or frase[:limite]).rstrip(".,:;")
+
+
 def acentuar(texto, m):
     def rep(x):
         w = x.group(0)
@@ -126,6 +157,7 @@ PALABRAS_PIEZA = {
  "f_boveda": "capital custodia colchon reserva boveda acorazada",
  "f_oficina": "banco oficina sucursal fachada tienda puertas",
  "f_regulador": "regulador licencia norma autorizacion institucion",
+ "f_bandera": "estados unidos americano pais nacional bandera eeuu",
  "f_balanza": "diferencia compara proporcion veces desequilibrio margen",
  "f_candado": "tocar bloqueado permiso quieto simbolica",
  "f_recibos": "gastos nominas facturas alquiler mantenimiento",
@@ -221,15 +253,39 @@ def main():
                               "caja": c["caja"], "entrada": c.get("entrada", "pop"),
                               "retardo": c.get("retardo", 0.1)})
             else:
+                # Las capas `ancla` escriben el ID DEL CAPITULO en pantalla:
+                # salia "GANCHO" de rotulo de esquina y "CAP1" de pie de
+                # fuente. Un pie de fuente que cita el nombre interno del
+                # capitulo no informa de nada.
+                if c.get("rol") == "ancla" or c.get("forma") in (
+                        "etiqueta_capitulo", "numero_escena", "pie_fuente"):
+                    continue
                 d = {"ref": f"l{idx}",
                      "rol": c.get("rol"), "forma": c.get("forma"),
                      "clave": c.get("clave"),
                      "tipo_capa": "codigo",
                      "caja": c.get("caja"), "entrada": c.get("entrada", "pop"),
                      "retardo": c.get("retardo", 0.1)}
-                if c.get("texto"):
+                if c.get("forma") in ("frase", "frase_destacada", "titular"):
+                    # El titular venia YA CORTADO del guion de origen: decia
+                    # "Un banco medio de Estados" y se quedaba sin "Unidos".
+                    # Lo rehago de la frase entera, cortando por palabra.
+                    d["texto"] = acentuar(titular_de(e.get("frase") or texto),
+                                          mapa)
+                elif c.get("texto"):
                     d["texto"] = acentuar(c["texto"], mapa)
                 capas.append(d)
+
+        # UN PLANO SIN TEXTO deja la mitad de arriba muerta: el revisor
+        # marcaba "arriba vacia" en los cinco planos mudos, y ademas esto es
+        # un explicativo, asi que en cada plano tiene que entrar algo escrito.
+        if not any(c.get("forma") in ("frase", "frase_destacada", "titular")
+                   for c in capas):
+            capas.append({"ref": f"l8{len(capas)}", "rol": "titular",
+                          "forma": "frase", "tipo_capa": "codigo",
+                          "texto": acentuar(titular_de(e.get("frase") or texto),
+                                            mapa),
+                          "caja": None, "entrada": "sube", "retardo": 0.1})
 
         # la coreografia va tal cual: es lo que dice cuando entra, se
         # aparta y sale cada elemento dentro del plano
@@ -268,6 +324,7 @@ def main():
         "f_boveda": "capital custodia colchon reserva boveda",
         "f_oficina": "banco oficina sucursal fachada tienda puertas",
         "f_regulador": "regulador licencia norma autorizacion institucion",
+ "f_bandera": "estados unidos americano pais nacional bandera eeuu",
         "f_balanza": "diferencia compara proporcion veces desequilibrio",
         "f_candado": "tocar bloqueado permiso quieto simbolica",
         "f_recibos": "gastos nominas facturas alquiler mantenimiento",
@@ -347,8 +404,24 @@ def main():
     # Se hace en dos pasadas. Primero se respeta lo que el guion asigno a
     # mano, apuntando cada pieza como gastada. Despues se rellena hasta dos
     # imagenes por plano, y ahi solo se puede coger de lo que queda libre.
-    todas = sorted(x[:-4] for x in os.listdir(META)
-                   if x.endswith(".png") and not x.startswith("f_papel"))
+    # SOLO piezas del tema, y solo las que tienen palabras declaradas.
+    #
+    # El reparto a ciegas metia un banco de PARQUE en "un banco de Estados
+    # Unidos", una pesa de gimnasio hablando de bancos y una escuadra de
+    # dibujo en una frase sin nada que medir. Venian de la escenografia de
+    # calle que se abandono -arbol, farola, seto, banco, nube- y de coger
+    # "la que mas llena" cuando ninguna casaba.
+    #
+    # Si ninguna pieza casa con la frase, se coge de una lista corta de
+    # seguras del tema. Nunca una pesa.
+    # Nunca de relleno: no dicen nada de un banco y ya han salido en
+    # pantalla en su peor momento -la pesa de gimnasio hablando de bancos,
+    # la escuadra de dibujo en una frase sin nada que medir-. Solo entran si
+    # la frase las nombra literalmente.
+    VETADAS = {"f_pesa", "f_regla", "f_paraguas", "f_semaforo", "f_tarta",
+               "f_hamburguesa", "f_engranaje", "f_nube", "f_cinta"}
+    todas = sorted(k for k in PALABRAS_PIEZA
+                   if existe(k + ".png") and k not in VETADAS)
     gastadas = set()
 
     for e in escenas:
@@ -376,21 +449,19 @@ def main():
                 mejor, punt = k, n
         if mejor:
             return mejor
-        # Sin coincidencia de palabra, la que mas LLENA el cuadro. Cogiendo
-        # "la siguiente libre" salian llaves y grietas -piezas estrechas que
-        # se ajustan por alto- y la cobertura bajaba del 29 al 23%.
-        from PIL import Image
-        libres = [k for k in todas if k not in gastadas]
+        # Sin coincidencia, una de las SEGURAS del tema. Nunca "la que mas
+        # llena", que es como salio la escuadra de dibujo.
+        seguras = ("f_billetes", "f_oficina", "f_boveda", "f_monedas",
+                   "f_mostrador", "f_libro", "m_banquero", "m_cola",
+                   "m_plantilla", "f_expediente", "f_maletin", "m_cajero",
+                   "f_atm", "f_torre", "m_fundador", "f_hucha")
+        libres = [k for k in seguras if k in todas and k not in gastadas]
         if not libres:
-            return None
-        def llena(k):
-            im = Image.open(os.path.join(META, k + ".png")).convert("RGBA")
-            b = im.getbbox()
-            if not b:
-                return 0
-            an, al = b[2] - b[0], b[3] - b[1]
-            return min(an / al, 1.9) * al       # ancho util, con tope
-        return max(libres, key=llena)
+            # Agotadas las seguras, cualquier pieza DEL TEMA sin usar antes
+            # que dejar el plano con una sola imagen: el ultimo se quedaba
+            # once segundos con la boveda sola en pantalla.
+            libres = [k for k in todas if k not in gastadas]
+        return libres[i % len(libres)] if libres else None
 
     for i, e in enumerate(escenas):
         while len([c for c in e["capas"] if c.get("archivo")]) < 2:

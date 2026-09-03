@@ -510,6 +510,16 @@ def pintar_estados(esc, t, cfg, fondo, cache, pal):
             pieza = cache[(c["archivo"], c["rol"])]
             x, y, an, al = coloca(caja, pieza.size[0], pieza.size[1], W, H)
             e_, dx, dy, alfa = vox_mg.entrada(c.get("entrada", "pop"), fase)
+            # CADA PIEZA SIGUE MOVIENDOSE cuando ya ha entrado, y cada una a
+            # su ritmo. Sin esto, entraban los dos o tres elementos en el
+            # primer segundo y el plano se quedaba clavado siete segundos.
+            # Velocidades distintas por elemento: si todas derivan igual, se
+            # lee como un zoom del conjunto y no como cosas vivas.
+            k = abs(hash(ref)) % 5
+            vel = 0.022 + 0.008 * k
+            e_ *= 1.0 + vel * min(1.0, t / max(0.1, esc.get("duracion", 4)))
+            dx += (0.010 + 0.004 * k) * (1 if k % 2 else -1) * (t / 10.0)
+            dy -= 0.006 * (t / 10.0)
             an = max(2, int(an * e_)); al = max(2, int(al * e_))
             q = pieza.resize((an, al), Image.LANCZOS)
             if alfa < 0.995:
@@ -563,6 +573,11 @@ def anota_algo(c, esc, W, H):
         # la imagen que anado yo para que el plano no quede vacio no cuenta:
         # la marca se coloco para la composicion original, no para ella
         if o.get("ref") == "l99":
+            continue
+        # Una marca NUNCA se dibuja sobre una imagen: el tachado salia como
+        # una linea naranja cruzando la cara del hombre de la izquierda. Se
+        # tacha un dato o una palabra, no una persona.
+        if o.get("archivo"):
             continue
         if o.get("forma") in MARCAS or o.get("forma") in ("vineta", "rejilla"):
             continue
@@ -661,7 +676,9 @@ def _forma(im, c, esc, t, pal, W, H):
     elif f == "subrayado":
         vox_mg.banda(im, pal, u=u, y=cy)
     elif f == "bocadillo":
-        vox_mg.bocadillo(im, (cx, cy), c.get("texto", ""), pal, u=u)
+        # un bocadillo vacio es un globo de comic sin nada dentro
+        if c.get("texto"):
+            vox_mg.bocadillo(im, (cx, cy), c["texto"], pal, u=u)
 
 
 def pintar_caja(esc, t, cfg, fondo, cache, pal):

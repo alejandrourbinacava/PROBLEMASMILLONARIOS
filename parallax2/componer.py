@@ -85,7 +85,7 @@ def componer(n_img, hay_texto, hay_dato, i=0):
         # dos imagenes flanqueando, el texto arriba y centrado: es la
         # composicion del obrero y el soldado con el titular en medio
         fuera["imagenes"] = [_caja(0.23, PIE, 0.42, ALTO_MANDA),
-                             _caja(0.77, PIE, 0.40, ALTO_MANDA * 0.92)]
+                             _caja(0.77, PIE, 0.44, ALTO_MANDA)]
         if hay_texto:
             fuera["texto"] = _caja(0.5, 0.20, 0.52, 0.20, "centro")
         if hay_dato:

@@ -20,14 +20,13 @@
      "gesto": null,
      "visibles": [
       "l99",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -38,20 +37,19 @@
      ]
     },
     {
-     "t": 0.79,
+     "t": 0.56,
      "entra": "l2",
      "gesto": null,
      "visibles": [
       "l99",
       "l2",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.3,
+        "x": 0.31,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -63,8 +61,8 @@
        "ref": "l2",
        "caja": {
         "x": 0.74,
-        "y": 0.42,
-        "w": 0.46,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -76,23 +74,22 @@
      ]
     },
     {
-     "t": 1.57,
-     "entra": "l95",
+     "t": 1.12,
+     "entra": "l94",
      "gesto": null,
      "visibles": [
       "l99",
       "l2",
-      "l95",
-      "l3",
-      "l4"
+      "l94",
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.23,
+        "x": 0.25,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.46,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -102,8 +99,8 @@
        "ref": "l2",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -113,12 +110,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.76,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.44,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -126,24 +123,23 @@
      ]
     },
     {
-     "t": 2.36,
+     "t": 1.68,
      "entra": "l1",
      "gesto": null,
      "visibles": [
       "l99",
       "l2",
-      "l95",
+      "l94",
       "l1",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.23,
+        "x": 0.25,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.46,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -153,8 +149,8 @@
        "ref": "l2",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -164,12 +160,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.76,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.44,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -221,8 +217,8 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.2,
-      "w": 0.52,
+      "y": 0.17,
+      "w": 0.72,
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
@@ -232,7 +228,7 @@
      },
      "entrada": "sube",
      "retardo": 0.24,
-     "texto": "Un banco medio de Estados"
+     "texto": "Un banco medio de Estados Unidos"
     },
     {
      "ref": "l3",
@@ -251,31 +247,15 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "etiqueta_capitulo",
-     "clave": null,
-     "tipo_capa": "codigo",
-     "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
-     },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
-    },
-    {
      "ref": "l99",
      "rol": "medio",
      "archivo": "meta/f_billetes.png",
      "clave": "f_billetes",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -284,16 +264,16 @@
      "retardo": 0.35
     },
     {
-     "ref": "l95",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/e_banco.png",
-     "clave": "e_banco",
+     "archivo": "meta/f_bandera.png",
+     "clave": "f_bandera",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.76,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.44,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -318,19 +298,18 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "l94",
+     "entra": "l93",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.3,
+        "x": 0.31,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -341,21 +320,20 @@
      ]
     },
     {
-     "t": 0.6,
+     "t": 0.43,
      "entra": "l1",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l1",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -367,8 +345,8 @@
        "ref": "l1",
        "caja": {
         "x": 0.26,
-        "y": 0.42,
-        "w": 0.46,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -380,24 +358,23 @@
      ]
     },
     {
-     "t": 1.2,
-     "entra": "l95",
+     "t": 0.85,
+     "entra": "l94",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l1",
-      "l95",
+      "l94",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.23,
+        "x": 0.25,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.46,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -407,8 +384,8 @@
        "ref": "l1",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -418,12 +395,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -445,8 +422,8 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.2,
-      "w": 0.52,
+      "y": 0.17,
+      "w": 0.72,
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
@@ -456,7 +433,7 @@
      },
      "entrada": "maquina",
      "retardo": 0.12,
-     "texto": "Tres coma *veintidós*"
+     "texto": "Tres coma veintidós"
     },
     {
      "ref": "l2",
@@ -475,22 +452,6 @@
      "retardo": 0.5
     },
     {
-     "ref": "l3",
-     "rol": "ancla",
-     "forma": "pie_fuente",
-     "clave": null,
-     "tipo_capa": "codigo",
-     "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
-     },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
-    },
-    {
      "ref": "l4",
      "rol": "acabado",
      "forma": "vineta",
@@ -506,15 +467,15 @@
      "retardo": 0.0
     },
     {
-     "ref": "l94",
+     "ref": "l93",
      "rol": "medio",
      "archivo": "meta/f_balanza.png",
      "clave": "f_balanza",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -522,20 +483,20 @@
      "entrada": "lateral_izq"
     },
     {
-     "ref": "l95",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/f_sello.png",
-     "clave": "f_sello",
+     "archivo": "meta/f_mostrador.png",
+     "clave": "f_mostrador",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_izq"
+     "entrada": "sube"
     }
    ],
    "imagenes": 2,
@@ -560,14 +521,13 @@
      "gesto": null,
      "visibles": [
       "l1",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -578,34 +538,85 @@
      ]
     },
     {
-     "t": 1.8,
-     "entra": "l2",
+     "t": 0.85,
+     "entra": "l83",
      "gesto": null,
      "visibles": [
       "l1",
-      "l2",
-      "l3",
+      "l83",
       "l4"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.23,
+        "x": 0.31,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
+       "ref": "l83",
+       "caja": {
+        "x": 0.74,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.71,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l83",
+      "l2",
+      "l4"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.25,
+        "y": 0.93,
+        "w": 0.46,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l83",
+       "caja": {
+        "x": 0.5,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
        "ref": "l2",
        "caja": {
-        "x": 0.77,
+        "x": 0.76,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.44,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -626,9 +637,9 @@
      "clave": "oficina",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -643,31 +654,15 @@
      "clave": "plantilla",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.77,
+      "x": 0.76,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.44,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der",
+     "entrada": "lateral_izq",
      "retardo": 0.24
-    },
-    {
-     "ref": "l3",
-     "rol": "ancla",
-     "forma": "numero_escena",
-     "clave": null,
-     "tipo_capa": "codigo",
-     "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
-     },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
     },
     {
      "ref": "l4",
@@ -683,6 +678,26 @@
      },
      "entrada": "ninguna",
      "retardo": 0.0
+    },
+    {
+     "ref": "l83",
+     "rol": "titular",
+     "forma": "frase",
+     "tipo_capa": "codigo",
+     "texto": "Y con ese margen se pagan",
+     "caja": {
+      "x": 0.5,
+      "y": 0.17,
+      "w": 0.72,
+      "h": 0.2,
+      "anclaje": "centro",
+      "encaje": "contener",
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
+     },
+     "entrada": "sube",
+     "retardo": 0.1
     }
    ],
    "imagenes": 2
@@ -699,14 +714,13 @@
      "visibles": [
       "l99",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.3,
+        "x": 0.31,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -717,21 +731,20 @@
      ]
     },
     {
-     "t": 0.45,
+     "t": 0.32,
      "entra": "l1",
      "gesto": null,
      "visibles": [
       "l99",
       "l1",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -743,8 +756,8 @@
        "ref": "l1",
        "caja": {
         "x": 0.26,
-        "y": 0.42,
-        "w": 0.46,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -756,24 +769,23 @@
      ]
     },
     {
-     "t": 0.9,
-     "entra": "l95",
+     "t": 0.64,
+     "entra": "l94",
      "gesto": null,
      "visibles": [
       "l99",
       "l1",
-      "l95",
+      "l94",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
        "ref": "l99",
        "caja": {
-        "x": 0.23,
+        "x": 0.25,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.46,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -783,8 +795,8 @@
        "ref": "l1",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -794,12 +806,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -821,8 +833,8 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.2,
-      "w": 0.52,
+      "y": 0.17,
+      "w": 0.72,
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
@@ -832,7 +844,7 @@
      },
      "entrada": "maquina",
      "retardo": 0.12,
-     "texto": "Suena a *poco*."
+     "texto": "Suena a poco"
     },
     {
      "ref": "l2",
@@ -849,22 +861,6 @@
      },
      "entrada": "trazo",
      "retardo": 0.5
-    },
-    {
-     "ref": "l3",
-     "rol": "ancla",
-     "forma": "etiqueta_capitulo",
-     "clave": null,
-     "tipo_capa": "codigo",
-     "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
-     },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
     },
     {
      "ref": "l4",
@@ -888,9 +884,9 @@
      "clave": "f_vaso",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -899,16 +895,16 @@
      "retardo": 0.35
     },
     {
-     "ref": "l95",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/f_libro.png",
-     "clave": "f_libro",
+     "archivo": "meta/f_maletin.png",
+     "clave": "f_maletin",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -936,14 +932,13 @@
      "gesto": null,
      "visibles": [
       "l1",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -954,34 +949,85 @@
      ]
     },
     {
-     "t": 1.8,
-     "entra": "l93",
+     "t": 0.85,
+     "entra": "l83",
      "gesto": null,
      "visibles": [
       "l1",
-      "l93",
-      "l3",
-      "l4"
+      "l83",
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.23,
+        "x": 0.31,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
+       "ref": "l83",
+       "caja": {
+        "x": 0.74,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.71,
+     "entra": "l93",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l83",
+      "l93",
+      "l3"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.25,
+        "y": 0.93,
+        "w": 0.46,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l83",
+       "caja": {
+        "x": 0.5,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
        "ref": "l93",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1002,9 +1048,9 @@
      "clave": "cola",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1029,36 +1075,40 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "pie_fuente",
-     "clave": null,
+     "ref": "l83",
+     "rol": "titular",
+     "forma": "frase",
      "tipo_capa": "codigo",
+     "texto": "Y sin embargo",
      "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
+      "x": 0.5,
+      "y": 0.17,
+      "w": 0.72,
+      "h": 0.2,
+      "anclaje": "centro",
+      "encaje": "contener",
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
+     "entrada": "sube",
+     "retardo": 0.1
     },
     {
      "ref": "l93",
      "rol": "medio",
-     "archivo": "meta/f_regla.png",
-     "clave": "f_regla",
+     "archivo": "meta/f_torre.png",
+     "clave": "f_torre",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der"
+     "entrada": "sube"
     }
    ],
    "imagenes": 2
@@ -1070,18 +1120,17 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "l94",
+     "entra": "l93",
      "gesto": null,
      "visibles": [
-      "l94",
-      "l3",
-      "l4"
+      "l93",
+      "l3"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.3,
+        "x": 0.31,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1092,20 +1141,19 @@
      ]
     },
     {
-     "t": 0.79,
+     "t": 0.56,
      "entra": "l2",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l2",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1117,8 +1165,8 @@
        "ref": "l2",
        "caja": {
         "x": 0.26,
-        "y": 0.42,
-        "w": 0.46,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1130,23 +1178,22 @@
      ]
     },
     {
-     "t": 1.57,
-     "entra": "l95",
+     "t": 1.12,
+     "entra": "l94",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l2",
-      "l95",
-      "l3",
-      "l4"
+      "l94",
+      "l3"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.23,
+        "x": 0.25,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.46,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1156,8 +1203,8 @@
        "ref": "l2",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1167,12 +1214,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1180,24 +1227,23 @@
      ]
     },
     {
-     "t": 2.36,
+     "t": 1.68,
      "entra": "l1",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l2",
-      "l95",
+      "l94",
       "l1",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.23,
+        "x": 0.25,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.46,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
@@ -1207,8 +1253,8 @@
        "ref": "l2",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1218,12 +1264,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1275,8 +1321,8 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.2,
-      "w": 0.52,
+      "y": 0.17,
+      "w": 0.72,
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
@@ -1286,7 +1332,7 @@
      },
      "entrada": "sube",
      "retardo": 0.24,
-     "texto": "Porque un banco no"
+     "texto": "Porque un banco no gana dinero"
     },
     {
      "ref": "l3",
@@ -1305,31 +1351,15 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "numero_escena",
-     "clave": null,
-     "tipo_capa": "codigo",
-     "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
-     },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
-    },
-    {
-     "ref": "l94",
+     "ref": "l93",
      "rol": "medio",
-     "archivo": "meta/f_monedas.png",
-     "clave": "f_monedas",
+     "archivo": "meta/f_libro.png",
+     "clave": "f_libro",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1337,16 +1367,16 @@
      "entrada": "lateral_izq"
     },
     {
-     "ref": "l95",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/f_pesa.png",
-     "clave": "f_pesa",
+     "archivo": "meta/f_atm.png",
+     "clave": "f_atm",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
@@ -1374,14 +1404,13 @@
      "gesto": null,
      "visibles": [
       "l1",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1392,34 +1421,85 @@
      ]
     },
     {
-     "t": 1.8,
-     "entra": "l2",
+     "t": 0.85,
+     "entra": "l83",
      "gesto": null,
      "visibles": [
       "l1",
-      "l2",
-      "l3",
-      "l4"
+      "l83",
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.23,
+        "x": 0.31,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
+       "ref": "l83",
+       "caja": {
+        "x": 0.74,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.71,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l83",
+      "l2",
+      "l3"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.25,
+        "y": 0.93,
+        "w": 0.46,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l83",
+       "caja": {
+        "x": 0.5,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
        "ref": "l2",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1440,9 +1520,9 @@
      "clave": "familia",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1457,14 +1537,14 @@
      "clave": "hucha",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der",
+     "entrada": "lateral_izq",
      "retardo": 0.24
     },
     {
@@ -1484,20 +1564,24 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "etiqueta_capitulo",
-     "clave": null,
+     "ref": "l83",
+     "rol": "titular",
+     "forma": "frase",
      "tipo_capa": "codigo",
+     "texto": "Coge lo que tu depositas",
      "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
+      "x": 0.5,
+      "y": 0.17,
+      "w": 0.72,
+      "h": 0.2,
+      "anclaje": "centro",
+      "encaje": "contener",
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
+     "entrada": "sube",
+     "retardo": 0.1
     }
    ],
    "imagenes": 2
@@ -1509,19 +1593,18 @@
    "estados": [
     {
      "t": 0.0,
-     "entra": "l94",
+     "entra": "l93",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.3,
+        "x": 0.31,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1532,21 +1615,20 @@
      ]
     },
     {
-     "t": 0.75,
+     "t": 0.53,
      "entra": "l1",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l1",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1558,8 +1640,8 @@
        "ref": "l1",
        "caja": {
         "x": 0.26,
-        "y": 0.42,
-        "w": 0.46,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.3,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1571,20 +1653,19 @@
      ]
     },
     {
-     "t": 1.5,
-     "entra": "l95",
+     "t": 1.07,
+     "entra": "l94",
      "gesto": null,
      "visibles": [
-      "l94",
+      "l93",
       "l1",
-      "l95",
+      "l94",
       "l2",
-      "l3",
       "l4"
      ],
      "elementos": [
       {
-       "ref": "l94",
+       "ref": "l93",
        "caja": {
         "x": 0.23,
         "y": 0.93,
@@ -1598,8 +1679,8 @@
        "ref": "l1",
        "caja": {
         "x": 0.5,
-        "y": 0.2,
-        "w": 0.52,
+        "y": 0.17,
+        "w": 0.72,
         "h": 0.2,
         "anclaje": "centro",
         "encaje": "contener",
@@ -1609,12 +1690,12 @@
        }
       },
       {
-       "ref": "l95",
+       "ref": "l94",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1636,8 +1717,8 @@
      "tipo_capa": "codigo",
      "caja": {
       "x": 0.5,
-      "y": 0.2,
-      "w": 0.52,
+      "y": 0.17,
+      "w": 0.72,
       "h": 0.2,
       "anclaje": "centro",
       "encaje": "contener",
@@ -1647,7 +1728,7 @@
      },
      "entrada": "sube",
      "retardo": 0.12,
-     "texto": "Todo lo demás es *decoración*."
+     "texto": "Ese es el negocio entero"
     },
     {
      "ref": "l2",
@@ -1666,22 +1747,6 @@
      "retardo": 0.5
     },
     {
-     "ref": "l3",
-     "rol": "ancla",
-     "forma": "pie_fuente",
-     "clave": null,
-     "tipo_capa": "codigo",
-     "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
-     },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
-    },
-    {
      "ref": "l4",
      "rol": "acabado",
      "forma": "vineta",
@@ -1697,10 +1762,10 @@
      "retardo": 0.0
     },
     {
-     "ref": "l94",
+     "ref": "l93",
      "rol": "medio",
-     "archivo": "meta/f_obra.png",
-     "clave": "f_obra",
+     "archivo": "meta/f_expediente.png",
+     "clave": "f_expediente",
      "tipo_capa": "imagen",
      "caja": {
       "x": 0.23,
@@ -1710,23 +1775,23 @@
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube"
+     "entrada": "lateral_izq"
     },
     {
-     "ref": "l95",
+     "ref": "l94",
      "rol": "medio",
-     "archivo": "meta/f_mostrador.png",
-     "clave": "f_mostrador",
+     "archivo": "meta/f_monedas.png",
+     "clave": "f_monedas",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "sube"
+     "entrada": "lateral_izq"
     }
    ],
    "imagenes": 2,
@@ -1751,14 +1816,13 @@
      "gesto": null,
      "visibles": [
       "l1",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1769,34 +1833,85 @@
      ]
     },
     {
-     "t": 1.12,
-     "entra": "l93",
+     "t": 0.53,
+     "entra": "l83",
      "gesto": null,
      "visibles": [
       "l1",
-      "l93",
-      "l3",
-      "l4"
+      "l83",
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.23,
+        "x": 0.31,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
+       "ref": "l83",
+       "caja": {
+        "x": 0.74,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.07,
+     "entra": "l93",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l83",
+      "l93",
+      "l3"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.25,
+        "y": 0.93,
+        "w": 0.46,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l83",
+       "caja": {
+        "x": 0.5,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
        "ref": "l93",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1817,9 +1932,9 @@
      "clave": "fundador",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1844,36 +1959,40 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "numero_escena",
-     "clave": null,
+     "ref": "l83",
+     "rol": "titular",
+     "forma": "frase",
      "tipo_capa": "codigo",
+     "texto": "Así que la pregunta se hace sola",
      "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
+      "x": 0.5,
+      "y": 0.17,
+      "w": 0.72,
+      "h": 0.2,
+      "anclaje": "centro",
+      "encaje": "contener",
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
+     "entrada": "sube",
+     "retardo": 0.1
     },
     {
      "ref": "l93",
      "rol": "medio",
-     "archivo": "meta/f_expediente.png",
-     "clave": "f_expediente",
+     "archivo": "meta/f_obra.png",
+     "clave": "f_obra",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der"
+     "entrada": "sube"
     }
    ],
    "imagenes": 2
@@ -1889,14 +2008,13 @@
      "gesto": null,
      "visibles": [
       "l1",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.3,
+        "x": 0.31,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -1907,34 +2025,85 @@
      ]
     },
     {
-     "t": 1.12,
-     "entra": "l2",
+     "t": 0.53,
+     "entra": "l83",
      "gesto": null,
      "visibles": [
       "l1",
-      "l2",
-      "l3",
-      "l4"
+      "l83",
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l1",
        "caja": {
-        "x": 0.23,
+        "x": 0.69,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
+       "ref": "l83",
+       "caja": {
+        "x": 0.26,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.07,
+     "entra": "l2",
+     "gesto": null,
+     "visibles": [
+      "l1",
+      "l83",
+      "l2",
+      "l3"
+     ],
+     "elementos": [
+      {
+       "ref": "l1",
+       "caja": {
+        "x": 0.25,
+        "y": 0.93,
+        "w": 0.46,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l83",
+       "caja": {
+        "x": 0.5,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
        "ref": "l2",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -1955,9 +2124,9 @@
      "clave": "banquero",
      "tratamiento": "semitono+trazo",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -1972,14 +2141,14 @@
      "clave": "llaves",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der",
+     "entrada": "lateral_izq",
      "retardo": 0.24
     },
     {
@@ -1999,20 +2168,24 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "etiqueta_capitulo",
-     "clave": null,
+     "ref": "l83",
+     "rol": "titular",
+     "forma": "frase",
      "tipo_capa": "codigo",
+     "texto": "Con un McDonald's era el dinero",
      "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
+      "x": 0.5,
+      "y": 0.17,
+      "w": 0.72,
+      "h": 0.2,
+      "anclaje": "centro",
+      "encaje": "contener",
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "GANCHO"
+     "entrada": "sube",
+     "retardo": 0.1
     }
    ],
    "imagenes": 2
@@ -2028,14 +2201,13 @@
      "gesto": null,
      "visibles": [
       "l2",
-      "l3",
-      "l4"
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l2",
        "caja": {
-        "x": 0.7,
+        "x": 0.69,
         "y": 0.93,
         "w": 0.58,
         "h": 0.7,
@@ -2046,34 +2218,85 @@
      ]
     },
     {
-     "t": 1.8,
-     "entra": "l93",
+     "t": 0.85,
+     "entra": "l82",
      "gesto": null,
      "visibles": [
       "l2",
-      "l93",
-      "l3",
-      "l4"
+      "l82",
+      "l3"
      ],
      "elementos": [
       {
        "ref": "l2",
        "caja": {
-        "x": 0.23,
+        "x": 0.31,
         "y": 0.93,
-        "w": 0.42,
+        "w": 0.58,
         "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
       },
       {
+       "ref": "l82",
+       "caja": {
+        "x": 0.74,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.3,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      }
+     ]
+    },
+    {
+     "t": 1.71,
+     "entra": "l93",
+     "gesto": null,
+     "visibles": [
+      "l2",
+      "l82",
+      "l93",
+      "l3"
+     ],
+     "elementos": [
+      {
+       "ref": "l2",
+       "caja": {
+        "x": 0.25,
+        "y": 0.93,
+        "w": 0.46,
+        "h": 0.7,
+        "anclaje": "abajo",
+        "encaje": "contener"
+       }
+      },
+      {
+       "ref": "l82",
+       "caja": {
+        "x": 0.5,
+        "y": 0.17,
+        "w": 0.72,
+        "h": 0.2,
+        "anclaje": "centro",
+        "encaje": "contener",
+        "px_rel": 0.062,
+        "lineas": 4,
+        "max_chars": 92
+       }
+      },
+      {
        "ref": "l93",
        "caja": {
-        "x": 0.77,
+        "x": 0.75,
         "y": 0.93,
-        "w": 0.4,
-        "h": 0.644,
+        "w": 0.46,
+        "h": 0.7,
         "anclaje": "abajo",
         "encaje": "contener"
        }
@@ -2094,9 +2317,9 @@
      "clave": "boveda",
      "tratamiento": "color_recorte",
      "caja": {
-      "x": 0.23,
+      "x": 0.25,
       "y": 0.93,
-      "w": 0.42,
+      "w": 0.46,
       "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
@@ -2121,36 +2344,40 @@
      "retardo": 0.5
     },
     {
-     "ref": "l4",
-     "rol": "ancla",
-     "forma": "pie_fuente",
-     "clave": null,
+     "ref": "l82",
+     "rol": "titular",
+     "forma": "frase",
      "tipo_capa": "codigo",
+     "texto": "Con un banco",
      "caja": {
-      "x": 0.06,
-      "y": 0.06,
-      "w": 0.16,
-      "anclaje": "arriba_izq"
+      "x": 0.5,
+      "y": 0.17,
+      "w": 0.72,
+      "h": 0.2,
+      "anclaje": "centro",
+      "encaje": "contener",
+      "px_rel": 0.062,
+      "lineas": 4,
+      "max_chars": 92
      },
-     "entrada": "fundido",
-     "retardo": 0.04,
-     "texto": "CAP1"
+     "entrada": "sube",
+     "retardo": 0.1
     },
     {
      "ref": "l93",
      "rol": "medio",
-     "archivo": "meta/m_consultor.png",
-     "clave": "m_consultor",
+     "archivo": "meta/m_abogados.png",
+     "clave": "m_abogados",
      "tipo_capa": "imagen",
      "caja": {
-      "x": 0.77,
+      "x": 0.75,
       "y": 0.93,
-      "w": 0.4,
-      "h": 0.644,
+      "w": 0.46,
+      "h": 0.7,
       "anclaje": "abajo",
       "encaje": "contener"
      },
-     "entrada": "lateral_der"
+     "entrada": "lateral_izq"
     }
    ],
    "imagenes": 2

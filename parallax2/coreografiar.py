@@ -28,7 +28,46 @@ como un descuadre.
 import re
 import unicodedata
 
+import os
+
 import componer as CP
+
+BASE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "proyecto")
+_tam = {}
+
+
+def _aspecto(arch):
+    """Ancho/alto del PNG. PIL lee la cabecera, no descomprime la imagen."""
+    if arch not in _tam:
+        try:
+            from PIL import Image
+            with Image.open(os.path.join(BASE, arch)) as im:
+                _tam[arch] = im.size[0] / im.size[1]
+        except Exception:
+            _tam[arch] = 1.0
+    return _tam[arch]
+
+
+def ensancha(caja, arch, h_min, w_max, alto=1080, ancho=1920):
+    """
+    Ensancha la caja cuando la pieza es apaisada. Nunca la encoge.
+
+    Con `contener` manda el lado que primero topa. Una fila de gente de
+    1521x550 metida en una caja de 0,42 de ancho entra por el ancho y se
+    queda en el 27% del alto del cuadro: el revisor lo marcaba VACIO y a la
+    vista es una tira de gente pegada al suelo. Fijar el AREA en vez del
+    ancho lo empeoro -paso de 3 fallos a 33-, porque encogia todo lo demas.
+    Esto solo toca el caso malo: si la pieza acaba mas baja de `h_min`, se
+    le da el ancho que necesita, hasta el tope que deja el hueco de al lado.
+    """
+    r = _aspecto(arch) * alto / ancho          # ancho/alto en fraccion de cuadro
+    w, h = caja.get("w", 0.42), caja.get("h", 0.70)
+    if min(h, w / r) < h_min:
+        w = min(w_max, h_min * r)
+    # y la caja no se sale del cuadro: con w=0,50 centrada en 0,23 el grupo
+    # de gente quedaba cortado por el borde izquierdo.
+    x = min(max(caja.get("x", 0.5), w / 2 + 0.02), 0.98 - w / 2)
+    return dict(caja, w=round(w, 3), x=round(x, 3))
 
 REMATE = 9          # palabras: por debajo, la frase es un remate
 
@@ -95,7 +134,7 @@ def coreografiar(e, i, dur):
     # con tiempo de sobra para leerse antes del corte
     n = len(secuencia)
     # y el reparto se aprieta al principio: todo dentro de la primera mitad
-    paso = (dur * 0.45) / max(1, n)
+    paso = (dur * 0.32) / max(1, n)
     estados = []
     for k in range(n):
         vistos = secuencia[:k + 1]
@@ -106,11 +145,30 @@ def coreografiar(e, i, dur):
         for c in vistos:
             if c.get("archivo"):
                 caja = h["imagenes"][min(j, len(h["imagenes"]) - 1)]
+                # el area que le toca: sola manda, acompanada reparte
+                caja = ensancha(caja, c["archivo"],
+                                h_min=0.46 if n_img > 1 else 0.56,
+                                w_max=0.64 if n_img == 1 else 0.50)
                 j += 1
             elif c in dats and h["dato"]:
                 caja = h["dato"]
             elif h["texto"]:
                 caja = h["texto"]
+                # Si el bloque de texto se cruza con alguna imagen ya
+                # colocada, se va al lado libre. Salia el rotulo encima del
+                # vaso porque la composicion de una imagen pone el texto al
+                # lado contrario, pero con dos ya no hay lado contrario.
+                for otra in cajas.values():
+                    if not otra.get("h"):
+                        continue
+                    a1 = caja["x"] - caja.get("w", .4) / 2
+                    a2 = caja["x"] + caja.get("w", .4) / 2
+                    b1 = otra["x"] - otra.get("w", .4) / 2
+                    b2 = otra["x"] + otra.get("w", .4) / 2
+                    if a1 < b2 and b1 < a2:
+                        caja = dict(caja, y=0.17, w=0.72,
+                                    anclaje="centro")
+                        break
             else:
                 caja = c.get("caja") or {}
             if c in txts:

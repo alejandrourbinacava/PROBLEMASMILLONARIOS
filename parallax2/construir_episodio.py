@@ -57,10 +57,11 @@ CLIMA = {
 }
 
 
-def dura(texto, duraciones, por_defecto=4.0):
+def dura(texto, duraciones, por_defecto=4.0, pausa=None):
     h = hashlib.sha1(texto.encode("utf-8")).hexdigest()[:16]
     v = duraciones.get(h)
-    return round(v + PAUSA, 2) if v else por_defecto
+    p = PAUSA if pausa is None else pausa
+    return round(v + p, 2) if v else por_defecto
 
 
 def main():
@@ -68,6 +69,14 @@ def main():
     ap.add_argument("md")
     ap.add_argument("--pool", default="pool_clips.json")
     ap.add_argument("--duraciones", default="duraciones_voz.json")
+    # El respiro entre frases es el de la locucion REAL, no una constante.
+    # Con 1,0 s por frase el video salia 46 s mas largo que la voz y todo lo
+    # que entra a tiempo -rotulos y contadores- se iba desplazando.
+    ap.add_argument("--pausa", type=float, default=None)
+    # Cuanto aguanta un plano antes de partirse. Sube cuando el pool
+    # revisado da menos clips que planos: vale mas un plano de siete
+    # segundos con metraje que se mueve solo que repetir un clip.
+    ap.add_argument("--tope", type=float, default=None)
     ap.add_argument("--salida", default="proyecto/episodio.json")
     ap.add_argument("--titulo", default="")
     ap.add_argument("--temas", choices=["casino", "banco"], default="banco")
@@ -84,8 +93,8 @@ def main():
         grade, paleta = CLIMA.get(cap, ("dorado_suave", ["polvo"]))
         primera = len(escenas)
         for i, texto in enumerate(frases, 1):
-            d = dura(texto, duraciones)
-            k = max(1, int(math.ceil(d / TOPE)))
+            d = dura(texto, duraciones, pausa=a.pausa)
+            k = max(1, int(math.ceil(d / (a.tope or TOPE))))
             paso = round(d / k, 2)
             tema = CC.tema_de(texto)
             for j in range(k):

@@ -105,10 +105,16 @@ def luz(nombre, pos, energia, tam, color=(1, 1, 1)):
     o = bpy.data.objects.new(nombre, d)
     bpy.context.collection.objects.link(o)
     o.location = pos
-    # que apunte al origen
+
+    # Apuntar al origen. Una luz de area emite por su -Z local, asi que hay
+    # que resolver que rotacion lleva (0,0,-1) hasta la direccion d. Sale
+    #     rx = acos(-dz/L)      rz = atan2(-dx, dy)
+    # y NO acos(dz/L) con atan2(dy,dx), que es lo que habia: eso las dejaba
+    # apuntando justo al lado contrario. Con el emisor fuerte no se noto
+    # -iluminaba el solo-, y al bajarlo la escena se quedo negra.
     dx, dy, dz = -pos[0], -pos[1], -pos[2]
-    o.rotation_euler = (math.acos(dz / math.sqrt(dx*dx + dy*dy + dz*dz)),
-                        0.0, math.atan2(dy, dx) + math.pi / 2)
+    L = math.sqrt(dx * dx + dy * dy + dz * dz)
+    o.rotation_euler = (math.acos(-dz / L), 0.0, math.atan2(-dx, dy))
     return o
 
 
@@ -147,9 +153,9 @@ def montar():
         caja(f"renglon_{i}", (s * 1.9, s * 1.9, 0.17), (3.4, 0.035, 0.015),
              m_frio)
 
-    luz("clave", (6.5, -7.0, 9.0), 5200, 7.0, (1.0, 0.95, 0.88))
-    luz("relleno", (-8.0, -4.0, 4.5), 1700, 9.0, (0.72, 0.80, 1.0))
-    luz("contra", (-3.0, 8.0, 5.0), 2400, 6.0, (1.0, 0.72, 0.45))
+    luz("clave", (6.5, -7.0, 9.0), 9000, 7.0, (1.0, 0.95, 0.88))
+    luz("relleno", (-8.0, -4.0, 4.5), 2600, 9.0, (0.72, 0.80, 1.0))
+    luz("contra", (-3.0, 8.0, 5.0), 4500, 6.0, (1.0, 0.72, 0.45))
 
     # camara ortografica: el isometrico de verdad, sin fuga de perspectiva
     bpy.ops.object.camera_add(location=(11.0, -11.0, 9.2))
@@ -165,7 +171,7 @@ def montar():
         bpy.context.scene.world = mundo
     mundo.use_nodes = True
     mundo.node_tree.nodes["Background"].inputs[0].default_value = NOCHE
-    mundo.node_tree.nodes["Background"].inputs[1].default_value = 1.0
+    mundo.node_tree.nodes["Background"].inputs[1].default_value = 0.30
 
 
 def renderizar():
@@ -178,10 +184,17 @@ def renderizar():
     e.render.resolution_y = H
     e.render.resolution_percentage = 100
     e.render.image_settings.file_format = "PNG"
-    e.render.filepath = SALIDA
+    e.view_settings.view_transform = "AgX"
     os.makedirs(os.path.dirname(SALIDA), exist_ok=True)
-    bpy.ops.render.render(write_still=True)
-    print(f"escrito {SALIDA}.png")
+
+    # Una horquilla, no una apuesta. Calcular la exposicion de cabeza es
+    # adivinar; tres renders de una escena tan simple cuestan lo mismo que
+    # equivocarse una vez, y de la horquilla se elige mirando.
+    for ev, sufijo in ((-1.2, "_oscuro"), (0.0, ""), (1.2, "_claro")):
+        e.view_settings.exposure = ev
+        e.render.filepath = SALIDA + sufijo
+        bpy.ops.render.render(write_still=True)
+        print(f"escrito {SALIDA}{sufijo}.png  (EV {ev:+.1f})")
 
 
 if __name__ == "__main__":

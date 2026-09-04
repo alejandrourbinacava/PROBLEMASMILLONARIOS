@@ -29,6 +29,9 @@ on:
       - "parallax-*"
       - "gancho-*"
 
+permissions:
+  contents: write
+
 jobs:
   render:
     runs-on: ubuntu-latest
@@ -108,6 +111,19 @@ jobs:
             -c:v libx264 -preset medium -crf 26 -c:a aac -b:a 96k \
             -movflags +faststart ligero.mp4
           ls -la salida.mp4 ligero.mp4
+
+      # La copia ligera vuelve al repo. Un artefacto pide credenciales para
+      # bajarlo; un fichero en una rama se lee con una URL y ya.
+      - name: Devolver la copia ligera al repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p ilustracion/salida
+          cp parallax2/ligero.mp4 "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
+          git checkout -B ilustraciones
+          git add -f -- ilustracion/salida
+          git commit -m "Montaje ${GITHUB_REF_NAME}" || exit 0
+          git push -f origin ilustraciones
 
       - uses: actions/upload-artifact@v4
         with:

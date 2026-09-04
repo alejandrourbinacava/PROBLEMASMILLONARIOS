@@ -60,9 +60,10 @@ jobs:
 
       - name: Que compile antes de gastar minutos
         working-directory: remotion
-        run: npx tsc --noEmit src/motion.tsx src/HojaCalculo.tsx src/fuentes.tsx \
-               --jsx react-jsx --esModuleInterop --skipLibCheck \
-               --moduleResolution bundler --module esnext --target es2020
+        # Una sola linea A PROPOSITO. Con `\` de continuacion dentro de
+        # un escalar plano, YAML pliega las lineas y los backslashes
+        # llegan a tsc como argumentos: intenta compilar un fichero "\".
+        run: npx tsc --noEmit -p .
 
       - name: Traer el navegador
         working-directory: remotion

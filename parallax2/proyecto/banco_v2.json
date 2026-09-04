@@ -38,6 +38,17 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "No una *acción* de un banco",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "composicion": "derecha"
   },
   {
@@ -52,17 +63,6 @@
    "clip": "stock_banco/bank_building_facade_16.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "No una *acción* de un banco",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -97,6 +97,8 @@
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -128,6 +130,7 @@
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "izquierda"
   },
   {
@@ -323,6 +326,8 @@
    "latigo": "der",
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -361,6 +366,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
+   "_lat_ent": 1.0,
    "composicion": "izquierda"
   },
   {
@@ -415,6 +421,17 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "No es para *gastarlo*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "composicion": "centrado"
   },
   {
@@ -445,17 +462,6 @@
    "clip": "stock_banco/handshake_business_sale_286.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "No es para *gastarlo*",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "izquierda"
@@ -490,6 +496,8 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -506,6 +514,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "izquierda"
   },
   {
@@ -586,6 +595,8 @@
    "latigo": "der",
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -617,6 +628,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "centrado"
   },
   {
@@ -708,6 +720,8 @@
    "latigo": "izq",
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -724,6 +738,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "izquierda"
   },
   {
@@ -815,6 +830,8 @@
    "latigo": "der",
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -846,6 +863,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "derecha"
   },
   {
@@ -917,6 +935,17 @@
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Hay cientos de bancos *comunitarios*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "composicion": "izquierda"
   },
   {
@@ -931,17 +960,6 @@
    "clip": "stock_banco/bank_building_facade_244.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Hay cientos de bancos *comunitarios*",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "composicion": "derecha"
@@ -976,6 +994,8 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -992,6 +1012,7 @@
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "derecha"
   },
   {
@@ -1039,6 +1060,17 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Compara. Fundar: treinta *millones*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "composicion": "centrado"
   },
   {
@@ -1053,17 +1085,6 @@
    "clip": "stock_banco/cash_briefcase_open_107.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Compara. Fundar: treinta *millones*",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "composicion": "izquierda"
@@ -1083,6 +1104,8 @@
    "latigo": "izq",
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -1114,6 +1137,7 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "centrado"
   },
   {
@@ -1161,6 +1185,17 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "En Europa la *entrada* es todavía",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "composicion": "izquierda"
   },
   {
@@ -1175,17 +1210,6 @@
    "clip": "stock_banco/profit_graph_rising_221.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "En Europa la *entrada* es todavía",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -1205,6 +1229,8 @@
    "latigo": "der",
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -1243,6 +1269,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "_lat_ent": 1.0,
    "composicion": "derecha"
   },
   {
@@ -1430,6 +1457,8 @@
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -1446,6 +1475,7 @@
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "centrado"
   },
   {
@@ -1586,6 +1616,19 @@
    "latigo": "izq",
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "*Léelo* otra vez",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "composicion": "derecha"
   },
   {
@@ -1600,19 +1643,9 @@
    "clip": "stock_banco/money_counting_machine_122.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "*Léelo* otra vez",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "centrado"
   },
   {
@@ -1736,6 +1769,17 @@
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Un *cliente* tiene diez mil dólares",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "composicion": "izquierda"
   },
   {
@@ -1751,19 +1795,10 @@
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
-   "texto_pantalla": {
-    "texto": "Un *cliente* tiene diez mil dólares",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -1780,6 +1815,7 @@
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "centrado"
   },
   {
@@ -1842,6 +1878,17 @@
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Esa *diferencia* tiene nombre",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "composicion": "izquierda"
   },
   {
@@ -1873,19 +1920,10 @@
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
-   "texto_pantalla": {
-    "texto": "Esa *diferencia* tiene nombre",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -1917,6 +1955,7 @@
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "derecha"
   },
   {
@@ -2143,6 +2182,8 @@
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -2159,6 +2200,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "derecha"
   },
   {
@@ -2314,6 +2356,8 @@
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -2330,6 +2374,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "derecha"
   },
   {
@@ -2361,6 +2406,17 @@
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "A ese *ritmo*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "composicion": "izquierda"
   },
   {
@@ -2375,17 +2431,6 @@
    "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "A ese *ritmo*",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -2481,6 +2526,8 @@
    "latigo": "der",
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -2519,6 +2566,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
+   "_lat_ent": 1.0,
    "composicion": "derecha"
   },
   {
@@ -2590,6 +2638,17 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Abres las *puertas*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "composicion": "izquierda"
   },
   {
@@ -2604,17 +2663,6 @@
    "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Abres las *puertas*",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "derecha"
@@ -2650,6 +2698,8 @@
    "latigo": "der",
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -2680,6 +2730,18 @@
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "En los bancos *pequeños*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "composicion": "izquierda"
   },
   {
@@ -2694,17 +2756,6 @@
    "clip": "stock_banco/insurance_documents_desk_76.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "En los bancos *pequeños*",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -2801,6 +2852,19 @@
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "En *personal* es todavía más claro",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "composicion": "centrado"
   },
   {
@@ -2817,6 +2881,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "derecha"
   },
   {
@@ -2831,17 +2896,6 @@
    "clip": "stock_banco/busy_city_corner_location_299.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "En *personal* es todavía más claro",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "izquierda"
@@ -2975,6 +3029,8 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -3014,6 +3070,9 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
+   "_lat_ent": 1.0,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -3030,6 +3089,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "izquierda"
   },
   {
@@ -3120,17 +3180,6 @@
    "clip": "stock_banco/cash_briefcase_money_283.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Por eso los bancos *pequeños*",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "derecha"
@@ -3321,6 +3370,8 @@
    "latigo": "izq",
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -3337,6 +3388,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "derecha"
   },
   {
@@ -3368,6 +3420,17 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Es el *fraude* de dentro",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "composicion": "izquierda"
   },
   {
@@ -3382,17 +3445,6 @@
    "clip": "stock_banco/manager_reviewing_documents_266.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Es el *fraude* de dentro",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -3450,6 +3502,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -3481,6 +3535,18 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "En dos mil diez",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "composicion": "centrado"
   },
   {
@@ -3495,17 +3561,6 @@
    "clip": "stock_banco/insurance_documents_desk_219.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "En dos mil diez",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "derecha"
@@ -3540,6 +3595,17 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "El *circuito* era simple",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "composicion": "centrado"
   },
   {
@@ -3555,19 +3621,10 @@
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
-   "texto_pantalla": {
-    "texto": "El *circuito* era simple",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -3584,6 +3641,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "derecha"
   },
   {
@@ -3694,6 +3752,8 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -3725,6 +3785,18 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "SVB daba *servicio* a la mitad",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "composicion": "izquierda"
   },
   {
@@ -3739,17 +3811,6 @@
    "clip": "stock_banco/money_counting_machine_258.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "SVB daba *servicio* a la mitad",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "derecha"
@@ -3784,6 +3845,17 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Antes, una fuga de *depósitos* era",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "composicion": "derecha"
   },
   {
@@ -3799,19 +3871,10 @@
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
-   "texto_pantalla": {
-    "texto": "Antes, una fuga de *depósitos* era",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -3843,6 +3906,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "centrado"
   },
   {
@@ -3875,6 +3939,17 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "¿Por qué se cayó? *Porque* el banco",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "composicion": "derecha"
   },
   {
@@ -3889,17 +3964,6 @@
    "clip": "stock_banco/worried_manager_office_desk_264.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "¿Por qué se cayó? *Porque* el banco",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -3919,6 +3983,8 @@
    "latigo": "der",
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "derecha"
   },
   {
@@ -3950,6 +4016,18 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "Tres *reglas*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "composicion": "izquierda"
   },
   {
@@ -3981,17 +4059,6 @@
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
-   "texto_pantalla": {
-    "texto": "Tres *reglas*",
-    "px": 132,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "izquierda"
@@ -4145,6 +4212,8 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -4161,6 +4230,7 @@
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
    "composicion": "izquierda"
   },
   {
@@ -4177,6 +4247,17 @@
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Y el *porcentaje* que puedes prestar",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "composicion": "derecha"
   },
   {
@@ -4191,17 +4272,6 @@
    "clip": "stock_banco/corporate_decision_meeting_229.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Y el *porcentaje* que puedes prestar",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -4237,6 +4307,8 @@
    "latigo": "der",
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -4264,6 +4336,7 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "centrado"
   },
   {
@@ -4397,6 +4470,17 @@
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Hacia el *quinto* año tienes unos",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "composicion": "izquierda"
   },
   {
@@ -4430,6 +4514,8 @@
    "latigo": "der",
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "composicion": "izquierda"
   },
   {
@@ -4444,19 +4530,9 @@
    "clip": "stock_banco/cash_briefcase_money_88.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Hacia el *quinto* año tienes unos",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
    "composicion": "derecha"
   },
   {
@@ -4567,6 +4643,8 @@
    "latigo": "izq",
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
    "composicion": "centrado"
   },
   {
@@ -4605,6 +4683,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
+   "_lat_ent": -1.0,
    "composicion": "izquierda"
   },
   {

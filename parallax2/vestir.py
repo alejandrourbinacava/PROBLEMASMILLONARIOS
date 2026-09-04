@@ -283,6 +283,33 @@ def main():
             n_tar += 1
             fuera.append(esc)
 
+    # Un rotulo cuya palabra no se dice en SU plano se muda al hermano donde
+    # si se dice. Sin esto se quedaba sin cronometrar, y el render lo
+    # descarta: 22 de los 64 rotulos del episodio desaparecian en silencio.
+    import render as R
+    g["escenas"] = fuera
+    R.preparar(g)
+    n_mudados = n_caidos = 0
+    for e in fuera:
+        if not e.get("texto_pantalla") or R.retardo_rotulo(e) is not None:
+            continue
+        hermanos = [o for o in fuera
+                    if o.get("texto") == e.get("texto") and o is not e
+                    and not o.get("texto_pantalla")]
+        for h in hermanos:
+            h["texto_pantalla"] = e["texto_pantalla"]
+            if R.retardo_rotulo(h) is not None:
+                del e["texto_pantalla"]
+                n_mudados += 1
+                break
+            del h["texto_pantalla"]
+        else:
+            del e["texto_pantalla"]
+            n_caidos += 1
+    for e in fuera:
+        for k in ("_tramo", "_trozo_frase", "_sangrado", "hilo_t"):
+            e.pop(k, None)
+
     # La composicion se reparte sobre la lista FINAL. Repartirla sobre la de
     # entrada descuadra el ciclo en cuanto una tarjeta se parte en dos.
     for k, e in enumerate(fuera):
@@ -298,6 +325,7 @@ def main():
     print(f"  clips por palabra   : {n_clip}")
     print(f"  tarjetas            : {n_tar}  ({n_part} partidas por largas)")
     print(f"  duotonos por capitulo: {duo_i + 1} capitulos")
+    print(f"  rotulos mudados a su plano: {n_mudados} | caidos: {n_caidos}")
     print(f"escrito {destino}")
     return 0
 

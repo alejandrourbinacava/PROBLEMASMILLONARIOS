@@ -493,7 +493,16 @@ def render_escena(esc, cfg, base, ff):
     graf = esc.get("grafico")
     txt = esc.get("texto_pantalla")
     if txt and txt.get("retardo") is None:
-        txt["retardo"] = retardo_rotulo(esc, cfg.get("ppm", 140))
+        # `retardo_rotulo` devuelve None cuando la palabra que dispara el
+        # rotulo no se dice en ESTE plano -pasa cuando una frase se cuenta en
+        # varios y el rotulo pertenece a otro trozo-. Un rotulo sin momento
+        # no se dibuja: dibujarlo al principio es ponerlo a destiempo, y
+        # multiplicar None por los fps es lo que reventaba el render entero.
+        r_txt = retardo_rotulo(esc, cfg.get("ppm", 140))
+        if r_txt is None:
+            txt = None
+        else:
+            txt["retardo"] = r_txt
     capa_txt = FX.render_texto(
         txt["texto"], W, H,
         px=txt.get("px", 132),

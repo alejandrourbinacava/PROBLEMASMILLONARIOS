@@ -28,6 +28,7 @@ on:
     tags:
       - "parallax-*"
       - "gancho-*"
+      - "v2-*"
 
 permissions:
   contents: write
@@ -47,6 +48,8 @@ jobs:
         run: |
           if [[ "${GITHUB_REF_NAME}" == gancho-* ]]; then
             echo "guion=proyecto/prueba_gancho.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == v2-* ]]; then
+            echo "guion=proyecto/banco_v2.json" >> "$GITHUB_OUTPUT"
           else
             echo "guion=${{ inputs.guion || 'proyecto/episodio_banco.json' }}" >> "$GITHUB_OUTPUT"
           fi

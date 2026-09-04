@@ -61,6 +61,43 @@ def gradar(arr, nombre):
     return np.clip(x, 0, 1) * 255.0
 
 
+# Duotonos del canal. Un clip de stock se reconoce como stock por su color:
+# viene de una libreria y trae la luz que trajo. El duotono lo lleva entero a
+# dos tintas -las del canal- y a partir de ahi todo el metraje del episodio
+# parece de la misma pieza, aunque venga de doce sitios distintos. Es la
+# diferencia entre "clip de banco de imagenes" y "plano del canal".
+#
+# La fuerza importa: al 100% deja de leerse como metraje y parece un filtro.
+# Entre 0,45 y 0,7 se nota el color y se sigue viendo lo que pasa.
+DUOTONOS = {
+    "duo_ambar": ((10, 16, 30),   (255, 205, 140)),
+    "duo_frio":  ((8, 14, 28),    (196, 216, 240)),
+    "duo_rojo":  ((16, 10, 18),   (255, 176, 150)),
+    "duo_papel": ((12, 14, 22),   (237, 231, 218)),
+    "duo_verde": ((8, 16, 18),    (176, 226, 196)),
+}
+
+
+def duotono(arr, nombre, fuerza=0.6):
+    """Lleva la imagen a dos tintas: la sombra y la alta del canal.
+
+    Se mezcla con el original en vez de sustituirlo, porque un duotono puro
+    borra las caras y los objetos dejan de reconocerse. `fuerza` es cuanto
+    manda el duotono sobre el color real.
+    """
+    if not nombre or nombre not in DUOTONOS:
+        return arr
+    som, alt = (np.array(c, np.float32) for c in DUOTONOS[nombre])
+    x = arr / 255.0
+    # luminancia perceptual, no la media: con la media el rojo y el azul
+    # acaban en el mismo gris y el duotono aplana la imagen
+    lum = (x @ np.array([0.2126, 0.7152, 0.0722], np.float32))[..., None]
+    # un poco de curva: sube las medias para que no quede todo en la sombra
+    lum = np.clip(lum, 0, 1) ** 0.85
+    duo = som + (alt - som) * lum
+    return np.clip(arr * (1.0 - fuerza) + duo * fuerza, 0, 255)
+
+
 # ---------------------------------------------------------------------------
 # EFECTOS DE PANTALLA (particulas y overlays)
 # ---------------------------------------------------------------------------

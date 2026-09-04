@@ -1,0 +1,4743 @@
+{
+ "titulo": "Lo que cuesta de verdad tener un banco",
+ "lienzo": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 25,
+  "ppm": 140
+ },
+ "estilo": "metraje real",
+ "escenas": [
+  {
+   "id": "gancho_01",
+   "texto": "Quieres comprar un banco.",
+   "duracion": 2.24,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/handshake_business_meeting_295.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_02",
+   "texto": "No una acción de un banco. El banco entero. Con su cartel, su bóveda y su licencia para hacer una cosa que ninguna otra empresa del país puede hacer: crear dinero de la nada.",
+   "duracion": 5.79,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/bank_building_facade_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_02b",
+   "texto": "No una acción de un banco. El banco entero. Con su cartel, su bóveda y su licencia para hacer una cosa que ninguna otra empresa del país puede hacer: crear dinero de la nada.",
+   "duracion": 5.79,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/bank_building_facade_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "No una *acción* de un banco",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_03",
+   "texto": "Lo primero que vas a descubrir es que necesitas veintisiete millones de dólares que no vas a poder tocar nunca.",
+   "duracion": 6.76,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 27.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares que no vas a poder tocar nunca",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_04",
+   "texto": "Lo segundo es que hay una forma de saltarse dos años de espera, y te la cuento en el minuto seis.",
+   "duracion": 6.36,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/clock_time_lapse_wall_60.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 2.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "espera",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_05",
+   "texto": "Y lo tercero, al final: cuánto se gana de verdad haciendo esto. La cifra es mucho más baja de lo que crees, y el negocio sigue siendo uno de los mejores del mundo. Vas a entender por qué.",
+   "duracion": 3.04,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y lo tercero, al *final*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_05x",
+   "texto": "Y lo tercero, al final: cuánto se gana de verdad haciendo esto. La cifra es mucho más baja de lo que crees, y el negocio sigue siendo uno de los mejores del mundo. Vas a entender por qué.",
+   "duracion": 3.04,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_05x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "de lo que *crees*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_05b",
+   "texto": "Y lo tercero, al final: cuánto se gana de verdad haciendo esto. La cifra es mucho más baja de lo que crees, y el negocio sigue siendo uno de los mejores del mundo. Vas a entender por qué.",
+   "duracion": 6.08,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_01",
+   "texto": "Empecemos por lo caro.",
+   "duracion": 2.21,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "*Empecemos* por lo caro",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_02",
+   "texto": "Para abrir un banco nuevo en Estados Unidos necesitas capital inicial. En dos mil veintiséis, los reguladores esperan entre veintisiete y cincuenta millones de dólares, según el estado y según lo competido que esté el mercado local. En una ciudad grande, más.",
+   "duracion": 5.4,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/cash_briefcase_open_248.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 50.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_02b",
+   "texto": "Para abrir un banco nuevo en Estados Unidos necesitas capital inicial. En dos mil veintiséis, los reguladores esperan entre veintisiete y cincuenta millones de dólares, según el estado y según lo competido que esté el mercado local. En una ciudad grande, más.",
+   "duracion": 5.4,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/bank_vault_door_284.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_02c",
+   "texto": "Para abrir un banco nuevo en Estados Unidos necesitas capital inicial. En dos mil veintiséis, los reguladores esperan entre veintisiete y cincuenta millones de dólares, según el estado y según lo competido que esté el mercado local. En una ciudad grande, más.",
+   "duracion": 5.4,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_03",
+   "texto": "Y aquí está la primera trampa, porque casi nadie entiende qué es ese dinero.",
+   "duracion": 2.7,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y aquí está la primera *trampa*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_03x",
+   "texto": "Y aquí está la primera trampa, porque casi nadie entiende qué es ese dinero.",
+   "duracion": 2.7,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "casi nadie *entiende* qué es ese",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_04",
+   "texto": "No es para gastarlo. No compras el edificio con él. No compras los ordenadores. No pagas nóminas. Ese dinero es un colchón: está ahí para absorber pérdidas si los préstamos salen mal. Lo pones, y se queda quieto.",
+   "duracion": 5.06,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/handshake_business_meeting_19.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_04b",
+   "texto": "No es para gastarlo. No compras el edificio con él. No compras los ordenadores. No pagas nóminas. Ese dinero es un colchón: está ahí para absorber pérdidas si los préstamos salen mal. Lo pones, y se queda quieto.",
+   "duracion": 5.06,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/handshake_business_meeting_249.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_04c",
+   "texto": "No es para gastarlo. No compras el edificio con él. No compras los ordenadores. No pagas nóminas. Ese dinero es un colchón: está ahí para absorber pérdidas si los préstamos salen mal. Lo pones, y se queda quieto.",
+   "duracion": 5.06,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/handshake_business_sale_286.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "No es para *gastarlo*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_05",
+   "texto": "Es como si para abrir un restaurante te pidieran treinta millones y te dijeran: no los toques, son por si acaso.",
+   "duracion": 3.98,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/person_working_cash_register_50.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 30.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "te dijeran: no los toques",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_05b",
+   "texto": "Es como si para abrir un restaurante te pidieran treinta millones y te dijeran: no los toques, son por si acaso.",
+   "duracion": 3.98,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/money_and_construction_plans_67.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_06",
+   "texto": "Y hay más. El capital no es una cifra fija. Es un porcentaje de lo que prestas. Cuanto más prestas, más capital tienes que tener. El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. En la práctica, la mayoría de los bancos estadounidenses van entre el ocho y el once.",
+   "duracion": 5.69,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/investment_growth_chart_155.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 4.5,
+    "dec": 1,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "los activos ponderados por riesgo",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_06b",
+   "texto": "Y hay más. El capital no es una cifra fija. Es un porcentaje de lo que prestas. Cuanto más prestas, más capital tienes que tener. El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. En la práctica, la mayoría de los bancos estadounidenses van entre el ocho y el once.",
+   "duracion": 5.69,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/investment_growth_chart_285.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_06c",
+   "texto": "Y hay más. El capital no es una cifra fija. Es un porcentaje de lo que prestas. Cuanto más prestas, más capital tienes que tener. El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. En la práctica, la mayoría de los bancos estadounidenses van entre el ocho y el once.",
+   "duracion": 5.69,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/stock_market_chart_screen_315.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_06d",
+   "texto": "Y hay más. El capital no es una cifra fija. Es un porcentaje de lo que prestas. Cuanto más prestas, más capital tienes que tener. El mínimo regulatorio del capital de máxima calidad es el cuatro coma cinco por ciento de los activos ponderados por riesgo. En la práctica, la mayoría de los bancos estadounidenses van entre el ocho y el once.",
+   "duracion": 5.69,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_07",
+   "texto": "¿Por qué se pasan del mínimo? Porque el que está justo en el mínimo es el que no sobrevive al primer susto. Y en el capítulo seis vas a ver exactamente lo rápido que llega ese susto.",
+   "duracion": 5.4,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/person_thinking_worried_desk_169.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 6.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "s vas a ver exactamente lo rápido que",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_07b",
+   "texto": "¿Por qué se pasan del mínimo? Porque el que está justo en el mínimo es el que no sobrevive al primer susto. Y en el capítulo seis vas a ver exactamente lo rápido que llega ese susto.",
+   "duracion": 5.4,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/person_thinking_worried_desk_247.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_08",
+   "texto": "Con el capital apartado, empieza el papeleo.",
+   "duracion": 3.75,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Con el capital *apartado*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_09",
+   "texto": "Doscientos mil dólares en abogados para preparar la solicitud. Otros trescientos mil en consultores y estudio de mercado. Y la solicitud en sí es un documento de entre ochocientas y mil quinientas páginas describiendo cada aspecto de tu banco futuro: a quién vas a prestar, cuánto, con qué sistemas, con qué personal y qué haces el día que se tuerza.",
+   "duracion": 6.96,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/legal_documents_signing_52.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 200000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "abogados para preparar la solicitud",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_09b",
+   "texto": "Doscientos mil dólares en abogados para preparar la solicitud. Otros trescientos mil en consultores y estudio de mercado. Y la solicitud en sí es un documento de entre ochocientas y mil quinientas páginas describiendo cada aspecto de tu banco futuro: a quién vas a prestar, cuánto, con qué sistemas, con qué personal y qué haces el día que se tuerza.",
+   "duracion": 6.96,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_09c",
+   "texto": "Doscientos mil dólares en abogados para preparar la solicitud. Otros trescientos mil en consultores y estudio de mercado. Y la solicitud en sí es un documento de entre ochocientas y mil quinientas páginas describiendo cada aspecto de tu banco futuro: a quién vas a prestar, cuánto, con qué sistemas, con qué personal y qué haces el día que se tuerza.",
+   "duracion": 6.96,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/legal_documents_signing_199.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_10",
+   "texto": "El regulador se lo va a leer entero. Tarda entre dieciocho y veinticuatro meses.",
+   "duracion": 5.71,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 24.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "meses",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_11",
+   "texto": "Y aquí viene lo incómodo: no evalúan solo tu plan de negocio. Te evalúan a ti. De dónde sale cada dólar que has puesto. Quiénes son tus socios. Qué has hecho antes. Con quién. No hay presunción de inocencia; la carga de la prueba es tuya.",
+   "duracion": 5.68,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/job_interview_office_serious_20.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Y aquí viene lo *incómodo*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_11b",
+   "texto": "Y aquí viene lo incómodo: no evalúan solo tu plan de negocio. Te evalúan a ti. De dónde sale cada dólar que has puesto. Quiénes son tus socios. Qué has hecho antes. Con quién. No hay presunción de inocencia; la carga de la prueba es tuya.",
+   "duracion": 5.68,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/job_interview_office_serious_109.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_11c",
+   "texto": "Y aquí viene lo incómodo: no evalúan solo tu plan de negocio. Te evalúan a ti. De dónde sale cada dólar que has puesto. Quiénes son tus socios. Qué has hecho antes. Con quién. No hay presunción de inocencia; la carga de la prueba es tuya.",
+   "duracion": 5.68,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/job_interview_office_serious_174.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_12",
+   "texto": "Dos años esperando. Treinta millones parados. Y ni un solo cliente.",
+   "duracion": 5.79,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/clock_time_lapse_wall_268.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 2.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "esperando",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_13",
+   "texto": "Ahora sí: el atajo.",
+   "duracion": 2.76,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_13.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "*Ahora* sí",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_01",
+   "texto": "No tienes que fundar un banco. Puedes comprar uno.",
+   "duracion": 3.96,
+   "movimiento": "contra_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/handshake_business_sale_300.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_02",
+   "texto": "Hay cientos de bancos comunitarios pequeños en Estados Unidos cuyos dueños se están jubilando y no tienen quien siga. Y esos bancos se venden.",
+   "duracion": 4.55,
+   "movimiento": "estatico",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/bank_building_facade_170.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_02b",
+   "texto": "Hay cientos de bancos comunitarios pequeños en Estados Unidos cuyos dueños se están jubilando y no tienen quien siga. Y esos bancos se venden.",
+   "duracion": 4.55,
+   "movimiento": "drift_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/bank_building_facade_244.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Hay cientos de bancos *comunitarios*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_03",
+   "texto": "El precio se calcula sobre el valor contable: un banco comunitario pequeño suele cambiar de manos por una a una coma cinco veces lo que valen sus libros. Un banco con doscientos o trescientos millones en activos te sale por unos cuarenta millones.",
+   "duracion": 4.93,
+   "movimiento": "contra_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/bank_building_facade_316.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1.5,
+    "dec": 1,
+    "sufijo": "x",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "lo que valen sus libros",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_03b",
+   "texto": "El precio se calcula sobre el valor contable: un banco comunitario pequeño suele cambiar de manos por una a una coma cinco veces lo que valen sus libros. Un banco con doscientos o trescientos millones en activos te sale por unos cuarenta millones.",
+   "duracion": 4.93,
+   "movimiento": "subir",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/bank_building_facade_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_03c",
+   "texto": "El precio se calcula sobre el valor contable: un banco comunitario pequeño suele cambiar de manos por una a una coma cinco veces lo que valen sus libros. Un banco con doscientos o trescientos millones en activos te sale por unos cuarenta millones.",
+   "duracion": 4.93,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/bank_building_facade_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_04",
+   "texto": "Compara. Fundar: treinta millones, dos años de espera, cero clientes. Comprar: cuarenta millones, y desde el primer día tienes licencia, oficinas, personal formado y — lo único que de verdad no se puede fabricar — clientes que ya te han dejado su dinero.",
+   "duracion": 6.64,
+   "movimiento": "bajar",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/contract_paperwork_stack_des_23.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 30.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "espera",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_04b",
+   "texto": "Compara. Fundar: treinta millones, dos años de espera, cero clientes. Comprar: cuarenta millones, y desde el primer día tienes licencia, oficinas, personal formado y — lo único que de verdad no se puede fabricar — clientes que ya te han dejado su dinero.",
+   "duracion": 6.64,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/cash_briefcase_open_107.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Compara. Fundar: treinta *millones*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_04c",
+   "texto": "Compara. Fundar: treinta millones, dos años de espera, cero clientes. Comprar: cuarenta millones, y desde el primer día tienes licencia, oficinas, personal formado y — lo único que de verdad no se puede fabricar — clientes que ya te han dejado su dinero.",
+   "duracion": 6.64,
+   "movimiento": "drift_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/contract_paperwork_stack_des_176.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_05",
+   "texto": "Diez millones más, dos años menos, y un negocio que ya funciona. Por eso casi nadie funda bancos. Se compran.",
+   "duracion": 4.39,
+   "movimiento": "pull_out",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/money_counting_machine_122.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 2.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "menos",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_05b",
+   "texto": "Diez millones más, dos años menos, y un negocio que ya funciona. Por eso casi nadie funda bancos. Se compran.",
+   "duracion": 4.39,
+   "movimiento": "contra_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/money_and_construction_plans_137.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_06",
+   "texto": "En Europa la entrada es todavía más barata. Hay licencias bancarias especializadas por cinco o diez millones de euros de capital regulatorio, y esa es exactamente la razón de que casi todas las fintech europeas nacieran allí antes de expandirse a ningún otro sitio.",
+   "duracion": 5.27,
+   "movimiento": "estatico",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/graph_rising_arrow_screen_200.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros de capital regulatorio",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_06b",
+   "texto": "En Europa la entrada es todavía más barata. Hay licencias bancarias especializadas por cinco o diez millones de euros de capital regulatorio, y esa es exactamente la razón de que casi todas las fintech europeas nacieran allí antes de expandirse a ningún otro sitio.",
+   "duracion": 5.27,
+   "movimiento": "drift_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/profit_graph_rising_221.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "En Europa la *entrada* es todavía",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_06c",
+   "texto": "En Europa la entrada es todavía más barata. Hay licencias bancarias especializadas por cinco o diez millones de euros de capital regulatorio, y esa es exactamente la razón de que casi todas las fintech europeas nacieran allí antes de expandirse a ningún otro sitio.",
+   "duracion": 5.27,
+   "movimiento": "contra_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/declining_graph_red_226.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_07",
+   "texto": "Así que ya tienes banco. Enhorabuena.",
+   "duracion": 3.2,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Así que ya tienes *banco*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_08",
+   "texto": "Y ahora la pregunta que llevas cinco minutos esperando: ¿de dónde sale el dinero?",
+   "duracion": 5.48,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/single_euro_coin_close_up_148.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "grafico": {
+    "tipo": "contador",
+    "valor": 5.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "minutos esperando: ¿de dónde sale el d",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_01",
+   "texto": "Cuando tú ingresas mil dólares en tu cuenta, el banco no los mete en una caja fuerte.",
+   "duracion": 5.61,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/calculator_total_display_77.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "tu cuenta",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_02",
+   "texto": "Durante décadas estuvo obligado a guardar una parte. En marzo de dos mil veinte, la Reserva Federal eliminó ese requisito. El coeficiente formal de reservas es cero.",
+   "duracion": 2.77,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Durante décadas *estuvo*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_02x",
+   "texto": "Durante décadas estuvo obligado a guardar una parte. En marzo de dos mil veinte, la Reserva Federal eliminó ese requisito. El coeficiente formal de reservas es cero.",
+   "duracion": 2.77,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "la Reserva Federal *eliminó* ese",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_02b",
+   "texto": "Durante décadas estuvo obligado a guardar una parte. En marzo de dos mil veinte, la Reserva Federal eliminó ese requisito. El coeficiente formal de reservas es cero.",
+   "duracion": 5.54,
+   "movimiento": "drift_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_03",
+   "texto": "Eso no significa que un banco pueda hacer lo que quiera: siguen encima las reglas de capital y de liquidez que acabamos de ver. Pero sí significa una cosa concreta: tus mil dólares no están esperándote en ningún cajón.",
+   "duracion": 6.74,
+   "movimiento": "pull_out",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/zero_on_calculator_227.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "no están esperándote en ningún cajón",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_03b",
+   "texto": "Eso no significa que un banco pueda hacer lo que quiera: siguen encima las reglas de capital y de liquidez que acabamos de ver. Pero sí significa una cosa concreta: tus mil dólares no están esperándote en ningún cajón.",
+   "duracion": 6.74,
+   "movimiento": "contra_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/electricity_meter_close_up_267.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_04",
+   "texto": "Y cuando el banco presta ese dinero, tampoco lo saca de un cajón.",
+   "duracion": 2.21,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y cuando el banco *presta* ese",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_04x",
+   "texto": "Y cuando el banco presta ese dinero, tampoco lo saca de un cajón.",
+   "duracion": 2.22,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "dinero, *tampoco* lo saca",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_05",
+   "texto": "Tu vecino pide una hipoteca de doscientos mil. El banco no va al almacén a buscar doscientos mil dólares. Escribe doscientos mil en la cuenta de tu vecino. Ese dinero no existía un segundo antes.",
+   "duracion": 6.24,
+   "movimiento": "drift_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/money_and_construction_plans_67.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 200000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "El banco no va al almacén a buscar dos",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_05b",
+   "texto": "Tu vecino pide una hipoteca de doscientos mil. El banco no va al almacén a buscar doscientos mil dólares. Escribe doscientos mil en la cuenta de tu vecino. Ese dinero no existía un segundo antes.",
+   "duracion": 6.24,
+   "movimiento": "contra_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_06",
+   "texto": "Léelo otra vez, porque es el negocio entero: un banco con licencia crea el dinero que presta, y después cobra intereses por un dinero que ha creado él. Cuando el préstamo se devuelve, ese dinero desaparece. Los intereses no.",
+   "duracion": 5.38,
+   "movimiento": "subir",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/money_counting_machine_38.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_06b",
+   "texto": "Léelo otra vez, porque es el negocio entero: un banco con licencia crea el dinero que presta, y después cobra intereses por un dinero que ha creado él. Cuando el préstamo se devuelve, ese dinero desaparece. Los intereses no.",
+   "duracion": 5.38,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_banco/money_counting_machine_122.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "*Léelo* otra vez",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_06c",
+   "texto": "Léelo otra vez, porque es el negocio entero: un banco con licencia crea el dinero que presta, y después cobra intereses por un dinero que ha creado él. Cuando el préstamo se devuelve, ese dinero desaparece. Los intereses no.",
+   "duracion": 5.38,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/money_counting_machine_186.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_07",
+   "texto": "Vamos a los números de verdad, con tu banco.",
+   "duracion": 1.73,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Vamos a los *números*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_07x",
+   "texto": "Vamos a los números de verdad, con tu banco.",
+   "duracion": 1.73,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "de verdad, con tu *banco*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_08",
+   "texto": "Un cliente tiene diez mil dólares en su cuenta de ahorro. Tú le pagas el cero coma cinco por ciento: cincuenta dólares al año. Coges esos mismos diez mil y los prestas dentro de una hipoteca al siete por ciento. El que la pide te da setecientos dólares al año.",
+   "duracion": 5.33,
+   "movimiento": "drift_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/money_envelope_cash_91.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 0.5,
+    "dec": 1,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": ": cincuenta dólares al año",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_08b",
+   "texto": "Un cliente tiene diez mil dólares en su cuenta de ahorro. Tú le pagas el cero coma cinco por ciento: cincuenta dólares al año. Coges esos mismos diez mil y los prestas dentro de una hipoteca al siete por ciento. El que la pide te da setecientos dólares al año.",
+   "duracion": 5.33,
+   "movimiento": "pull_out",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_banco/money_envelope_cash_233.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "Un *cliente* tiene diez mil dólares",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_08c",
+   "texto": "Un cliente tiene diez mil dólares en su cuenta de ahorro. Tú le pagas el cero coma cinco por ciento: cincuenta dólares al año. Coges esos mismos diez mil y los prestas dentro de una hipoteca al siete por ciento. El que la pide te da setecientos dólares al año.",
+   "duracion": 5.33,
+   "movimiento": "contra_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/cash_briefcase_money_283.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_09",
+   "texto": "Él cincuenta. Tú seiscientos cincuenta.",
+   "duracion": 4.2,
+   "movimiento": "estatico",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 650.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "Tú seiscientos cincuenta",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_10",
+   "texto": "Esa diferencia tiene nombre: margen de intermediación. Y no es una excepción, es el negocio. El margen medio de la banca estadounidense está en el tres coma veintidós por ciento; el rendimiento medio de los préstamos, en el seis coma cincuenta y uno.",
+   "duracion": 5.42,
+   "movimiento": "drift_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/percentage_graph_screen_179.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 3.22,
+    "dec": 2,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "; el rendimiento medio de los préstamo",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_10b",
+   "texto": "Esa diferencia tiene nombre: margen de intermediación. Y no es una excepción, es el negocio. El margen medio de la banca estadounidense está en el tres coma veintidós por ciento; el rendimiento medio de los préstamos, en el seis coma cincuenta y uno.",
+   "duracion": 5.42,
+   "movimiento": "contra_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_banco/graph_rising_arrow_screen_200.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_10c",
+   "texto": "Esa diferencia tiene nombre: margen de intermediación. Y no es una excepción, es el negocio. El margen medio de la banca estadounidense está en el tres coma veintidós por ciento; el rendimiento medio de los préstamos, en el seis coma cincuenta y uno.",
+   "duracion": 5.42,
+   "movimiento": "subir",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/profit_graph_rising_221.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Esa *diferencia* tiene nombre",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_11",
+   "texto": "Tres coma veintidós dólares al año por cada cien prestados. Suena a miseria. Multiplícalo por cien mil cuentas y es la diferencia entre ganar dinero y no ganarlo.",
+   "duracion": 5.54,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/money_and_construction_plans_137.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.22,
+    "dec": 2,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "año por cada cien prestados",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_11b",
+   "texto": "Tres coma veintidós dólares al año por cada cien prestados. Suena a miseria. Multiplícalo por cien mil cuentas y es la diferencia entre ganar dinero y no ganarlo.",
+   "duracion": 5.54,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/balance_scale_money_194.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_12",
+   "texto": "Pero el margen es solo la mitad del negocio. La otra mitad no está en las hipotecas.",
+   "duracion": 3.22,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_12.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Pero el *margen* es solo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_12x",
+   "texto": "Pero el margen es solo la mitad del negocio. La otra mitad no está en las hipotecas.",
+   "duracion": 3.22,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_12x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "negocio. La otra *mitad* no está",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_01",
+   "texto": "Está en la tarjeta de crédito.",
+   "duracion": 2.58,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Está en la tarjeta de *crédito*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_02",
+   "texto": "Los estadounidenses deben alrededor de un billón doscientos mil millones de dólares en tarjetas de crédito. El tipo medio de esas deudas ronda el veintiuno por ciento.",
+   "duracion": 5.52,
+   "movimiento": "pull_out",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 200000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares en tarjetas de crédito",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_02b",
+   "texto": "Los estadounidenses deben alrededor de un billón doscientos mil millones de dólares en tarjetas de crédito. El tipo medio de esas deudas ronda el veintiuno por ciento.",
+   "duracion": 5.52,
+   "movimiento": "contra_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/cash_briefcase_open_248.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_03",
+   "texto": "Para que lo sitúes: el tipo de referencia de la Reserva Federal está por debajo del cuatro. Los bancos cobran a sus clientes más de cinco veces lo que a ellos les cuesta conseguir ese mismo dinero.",
+   "duracion": 6.43,
+   "movimiento": "estatico",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/worried_manager_office_desk_264.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "barras",
+    "items": [
+     [
+      "banco pequeño",
+      5.0
+     ],
+     [
+      "banco grande",
+      1.0
+     ]
+    ],
+    "destacar": {
+     "banco pequeño": [
+      232,
+      86,
+      64
+     ]
+    },
+    "sufijo": "x",
+    "dec": 1,
+    "y": 0.34,
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "retardo": 0.6,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_03b",
+   "texto": "Para que lo sitúes: el tipo de referencia de la Reserva Federal está por debajo del cuatro. Los bancos cobran a sus clientes más de cinco veces lo que a ellos les cuesta conseguir ese mismo dinero.",
+   "duracion": 6.43,
+   "movimiento": "drift_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_banco/negotiation_meeting_table_275.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_04",
+   "texto": "Y ahora mira cómo funciona por dentro, porque es más agresivo de lo que parece.",
+   "duracion": 2.52,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y ahora mira cómo *funciona*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_04x",
+   "texto": "Y ahora mira cómo funciona por dentro, porque es más agresivo de lo que parece.",
+   "duracion": 2.51,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "porque es más *agresivo* de lo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_05",
+   "texto": "Tu cliente arrastra cinco mil dólares en la tarjeta. Cada mes le dices que el pago mínimo son unos cien dólares. Suena razonable, suena manejable.",
+   "duracion": 4.63,
+   "movimiento": "subir",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/euro_banknotes_stack_tall_215.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 5000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "la tarjeta",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_05b",
+   "texto": "Tu cliente arrastra cinco mil dólares en la tarjeta. Cada mes le dices que el pago mínimo son unos cien dólares. Suena razonable, suena manejable.",
+   "duracion": 4.63,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/person_counting_money_desk_223.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_06",
+   "texto": "Al veintiuno por ciento, de esos cien dólares unos noventa se van en intereses. Solo diez bajan la deuda.",
+   "duracion": 3.73,
+   "movimiento": "bajar",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_banco/single_euro_coin_close_up_224.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 100.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "to",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_06b",
+   "texto": "Al veintiuno por ciento, de esos cien dólares unos noventa se van en intereses. Solo diez bajan la deuda.",
+   "duracion": 3.73,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/money_envelope_cash_233.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_07",
+   "texto": "A ese ritmo, los cinco mil tardan unos diez años en pagarse, y por el camino tu cliente te ha dado alrededor de siete mil dólares en intereses sobre los cinco mil originales.",
+   "duracion": 5.35,
+   "movimiento": "drift_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/cash_counting_machine_close_241.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 7000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "tardan unos diez años en pagarse",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_07b",
+   "texto": "A ese ritmo, los cinco mil tardan unos diez años en pagarse, y por el camino tu cliente te ha dado alrededor de siete mil dólares en intereses sobre los cinco mil originales.",
+   "duracion": 5.35,
+   "movimiento": "pull_out",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "A ese *ritmo*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_08",
+   "texto": "Esto funciona porque casi nadie paga el saldo entero cada mes. Aproximada- mente la mitad de los estadounidenses con tarjeta arrastra saldo de un mes al siguiente.",
+   "duracion": 2.48,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Esto funciona *porque* casi",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_08x",
+   "texto": "Esto funciona porque casi nadie paga el saldo entero cada mes. Aproximada- mente la mitad de los estadounidenses con tarjeta arrastra saldo de un mes al siguiente.",
+   "duracion": 2.47,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "la *mitad*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_08b",
+   "texto": "Esto funciona porque casi nadie paga el saldo entero cada mes. Aproximada- mente la mitad de los estadounidenses con tarjeta arrastra saldo de un mes al siguiente.",
+   "duracion": 4.95,
+   "movimiento": "estatico",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_banco/cash_briefcase_open_248.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_09",
+   "texto": "Y aquí está la frase que resume el negocio bancario mejor que ninguna otra:",
+   "duracion": 2.38,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_09.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y aquí está la *frase*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_09x",
+   "texto": "Y aquí está la frase que resume el negocio bancario mejor que ninguna otra:",
+   "duracion": 2.39,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_09x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "negocio bancario *mejor*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_10",
+   "texto": "Ya tienes el ingreso. Ahora toca el socio que no invitaste.",
+   "duracion": 4.61,
+   "movimiento": "contra_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/negotiation_meeting_table_72.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_01",
+   "texto": "Abres las puertas. Enhorabuena: acabas de meter en tu negocio a un socio que no ha puesto un dólar y que no se puede echar.",
+   "duracion": 4.22,
+   "movimiento": "subir",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/negotiation_meeting_table_141.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_01b",
+   "texto": "Abres las puertas. Enhorabuena: acabas de meter en tu negocio a un socio que no ha puesto un dólar y que no se puede echar.",
+   "duracion": 4.22,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Abres las *puertas*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_02",
+   "texto": "El regulador no cobra un porcentaje de tus beneficios, como haría un socio normal. Cobra en algo peor: cobra en gasto fijo.",
+   "duracion": 4.34,
+   "movimiento": "bajar",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/cash_counting_machine_close_163.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_02b",
+   "texto": "El regulador no cobra un porcentaje de tus beneficios, como haría un socio normal. Cobra en algo peor: cobra en gasto fijo.",
+   "duracion": 4.34,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/person_counting_money_desk_223.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_03",
+   "texto": "En los bancos pequeños, el cumplimiento normativo se lleva el ocho coma siete por ciento de los gastos operativos. En los grandes, el dos coma nueve.",
+   "duracion": 4.61,
+   "movimiento": "drift_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "reparto",
+    "valor": 8.7,
+    "color_a": [
+     255,
+     176,
+     60
+    ],
+    "etiqueta_a": "los gastos operativos",
+    "etiqueta_b": "el resto",
+    "y": 0.62,
+    "retardo": 0.6,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_03b",
+   "texto": "En los bancos pequeños, el cumplimiento normativo se lleva el ocho coma siete por ciento de los gastos operativos. En los grandes, el dos coma nueve.",
+   "duracion": 4.61,
+   "movimiento": "pull_out",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_banco/insurance_documents_desk_76.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "En los bancos *pequeños*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_04",
+   "texto": "Léelo otra vez. El banco pequeño paga, en proporción, tres veces más que el grande por obedecer exactamente las mismas normas.",
+   "duracion": 4.63,
+   "movimiento": "contra_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/reading_contract_closeup_142.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "barras",
+    "items": [
+     [
+      "banco pequeño",
+      3.0
+     ],
+     [
+      "banco grande",
+      1.0
+     ]
+    ],
+    "destacar": {
+     "banco pequeño": [
+      232,
+      86,
+      64
+     ]
+    },
+    "sufijo": "x",
+    "dec": 1,
+    "y": 0.68,
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "retardo": 0.6,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_04b",
+   "texto": "Léelo otra vez. El banco pequeño paga, en proporción, tres veces más que el grande por obedecer exactamente las mismas normas.",
+   "duracion": 4.63,
+   "movimiento": "estatico",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/reading_contract_closeup_217.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_05",
+   "texto": "En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto se va en gente cuyo trabajo es demostrarle al regulador que estás cumpliendo. No en captar clientes. No en prestar. En demostrar.",
+   "duracion": 5.06,
+   "movimiento": "drift_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/busy_city_corner_location_86.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 15.5,
+    "dec": 1,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "gasto se va en gente cuyo trabajo es d",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_05b",
+   "texto": "En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto se va en gente cuyo trabajo es demostrarle al regulador que estás cumpliendo. No en captar clientes. No en prestar. En demostrar.",
+   "duracion": 5.06,
+   "movimiento": "contra_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_banco/busy_city_corner_location_151.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_05c",
+   "texto": "En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto se va en gente cuyo trabajo es demostrarle al regulador que estás cumpliendo. No en captar clientes. No en prestar. En demostrar.",
+   "duracion": 5.06,
+   "movimiento": "subir",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/busy_city_corner_location_299.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "En *personal* es todavía más claro",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_06",
+   "texto": "Y esa trampa es puramente matemática. Las normas son fijas. El coste de cumplirlas también. Así que cuanto más pequeño eres, más pesa.",
+   "duracion": 2.54,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y esa trampa es *puramente*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_06x",
+   "texto": "Y esa trampa es puramente matemática. Las normas son fijas. El coste de cumplirlas también. Así que cuanto más pequeño eres, más pesa.",
+   "duracion": 2.53,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "coste de cumplirlas *también*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_06b",
+   "texto": "Y esa trampa es puramente matemática. Las normas son fijas. El coste de cumplirlas también. Así que cuanto más pequeño eres, más pesa.",
+   "duracion": 5.07,
+   "movimiento": "bajar",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/euro_banknotes_stack_tall_273.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_07",
+   "texto": "No es que el regulador tenga manía a los bancos pequeños. Es que el coste de cumplir no baja cuando tú bajas.",
+   "duracion": 1.85,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "No es que el regulador *tenga*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_07x",
+   "texto": "No es que el regulador tenga manía a los bancos pequeños. Es que el coste de cumplir no baja cuando tú bajas.",
+   "duracion": 1.86,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "*pequeños*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_07b",
+   "texto": "No es que el regulador tenga manía a los bancos pequeños. Es que el coste de cumplir no baja cuando tú bajas.",
+   "duracion": 3.71,
+   "movimiento": "drift_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_08",
+   "texto": "Por eso los bancos pequeños desaparecen. No los cierran: se venden. Porque el único modo de que ese coste fijo deje de doler es repartirlo entre más clientes.",
+   "duracion": 2.75,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Por eso los bancos *pequeños*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_08x",
+   "texto": "Por eso los bancos pequeños desaparecen. No los cierran: se venden. Porque el único modo de que ese coste fijo deje de doler es repartirlo entre más clientes.",
+   "duracion": 2.75,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "único modo de que ese *coste*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_08b",
+   "texto": "Por eso los bancos pequeños desaparecen. No los cierran: se venden. Porque el único modo de que ese coste fijo deje de doler es repartirlo entre más clientes.",
+   "duracion": 5.5,
+   "movimiento": "contra_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/cash_briefcase_money_283.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Por eso los bancos *pequeños*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_09",
+   "texto": "Ahora bien, todo esto asume que tu banco sigue existiendo. Y hay tres formas de que deje de existir. Ninguna es la que estás pensando.",
+   "duracion": 4.66,
+   "movimiento": "estatico",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "formas de que deje de existir",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_09b",
+   "texto": "Ahora bien, todo esto asume que tu banco sigue existiendo. Y hay tres formas de que deje de existir. Ninguna es la que estás pensando.",
+   "duracion": 4.66,
+   "movimiento": "drift_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_01",
+   "texto": "El atraco. En Estados Unidos se denuncian más de mil atracos a bancos al año, pero han caído alrededor de un ochenta por ciento en dos décadas, y el botín medio ronda los cinco mil dólares. Muy lejos de los millones del cine.",
+   "duracion": 6.92,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/surprised_person_looking_bil_304.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 5000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "atracos a bancos al año",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_01b",
+   "texto": "El atraco. En Estados Unidos se denuncian más de mil atracos a bancos al año, pero han caído alrededor de un ochenta por ciento en dos décadas, y el botín medio ronda los cinco mil dólares. Muy lejos de los millones del cine.",
+   "duracion": 6.92,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/busy_city_corner_location_151.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_02",
+   "texto": "Y no es tu problema, porque no lo pagas tú: lo cubre una póliza obligatoria de robo. Por eso al cajero se le entrena para entregar lo que haya en el cajón sin oponer la menor resistencia. El dinero está asegurado. Él no.",
+   "duracion": 2.34,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y no es tu *problema*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_02x",
+   "texto": "Y no es tu problema, porque no lo pagas tú: lo cubre una póliza obligatoria de robo. Por eso al cajero se le entrena para entregar lo que haya en el cajón sin oponer la menor resistencia. El dinero está asegurado. Él no.",
+   "duracion": 2.34,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "entrena para *entregar* lo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_02b",
+   "texto": "Y no es tu problema, porque no lo pagas tú: lo cubre una póliza obligatoria de robo. Por eso al cajero se le entrena para entregar lo que haya en el cajón sin oponer la menor resistencia. El dinero está asegurado. Él no.",
+   "duracion": 4.68,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/reading_contract_closeup_142.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_02c",
+   "texto": "Y no es tu problema, porque no lo pagas tú: lo cubre una póliza obligatoria de robo. Por eso al cajero se le entrena para entregar lo que haya en el cajón sin oponer la menor resistencia. El dinero está asegurado. Él no.",
+   "duracion": 4.68,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_03",
+   "texto": "Es el fraude de dentro. El director que concede una hipoteca a nombre de su mujer. El cajero que lleva años sacando cien dólares del cajón. El informático con acceso a los sistemas. No hay alarma que suene: son personas con permiso para estar ahí.",
+   "duracion": 5.06,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 100.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "cajón",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_03b",
+   "texto": "Es el fraude de dentro. El director que concede una hipoteca a nombre de su mujer. El cajero que lleva años sacando cien dólares del cajón. El informático con acceso a los sistemas. No hay alarma que suene: son personas con permiso para estar ahí.",
+   "duracion": 5.06,
+   "movimiento": "pull_out",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Es el *fraude* de dentro",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_03c",
+   "texto": "Es el fraude de dentro. El director que concede una hipoteca a nombre de su mujer. El cajero que lleva años sacando cien dólares del cajón. El informático con acceso a los sistemas. No hay alarma que suene: son personas con permiso para estar ahí.",
+   "duracion": 5.06,
+   "movimiento": "contra_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_04",
+   "texto": "Y hay un escalón más arriba de eso.",
+   "duracion": 2.94,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y hay un escalón más *arriba*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_05",
+   "texto": "En dos mil diez, Wachovia — el cuarto banco de Estados Unidos en aquel momento — reconoció ante un tribunal federal que sus controles contra el blanqueo habían fallado. Por sus sistemas habían pasado transferencias de casas de cambio mexicanas por valor de trescientos setenta y ocho mil cuatrocientos millones de dólares.",
+   "duracion": 6.41,
+   "movimiento": "drift_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/reading_contract_closeup_217.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 8400.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "es de dólares",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_05b",
+   "texto": "En dos mil diez, Wachovia — el cuarto banco de Estados Unidos en aquel momento — reconoció ante un tribunal federal que sus controles contra el blanqueo habían fallado. Por sus sistemas habían pasado transferencias de casas de cambio mexicanas por valor de trescientos setenta y ocho mil cuatrocientos millones de dólares.",
+   "duracion": 6.41,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/insurance_documents_desk_219.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "En dos mil diez",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_05c",
+   "texto": "En dos mil diez, Wachovia — el cuarto banco de Estados Unidos en aquel momento — reconoció ante un tribunal federal que sus controles contra el blanqueo habían fallado. Por sus sistemas habían pasado transferencias de casas de cambio mexicanas por valor de trescientos setenta y ocho mil cuatrocientos millones de dólares.",
+   "duracion": 6.41,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/building_blueprint_architect_253.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_06",
+   "texto": "El circuito era simple. El dinero de la droga volvía a México en efectivo, se ingresaba en casas de cambio, y desde allí se enviaba a cuentas en Miami disfrazado de remesas de trabajadores mandando el sueldo a casa. Wachovia cobraba comisión en cada transferencia y no marcó ni una sola como sospechosa.",
+   "duracion": 6.27,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_06b",
+   "texto": "El circuito era simple. El dinero de la droga volvía a México en efectivo, se ingresaba en casas de cambio, y desde allí se enviaba a cuentas en Miami disfrazado de remesas de trabajadores mandando el sueldo a casa. Wachovia cobraba comisión en cada transferencia y no marcó ni una sola como sospechosa.",
+   "duracion": 6.27,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "El *circuito* era simple",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_06c",
+   "texto": "El circuito era simple. El dinero de la droga volvía a México en efectivo, se ingresaba en casas de cambio, y desde allí se enviaba a cuentas en Miami disfrazado de remesas de trabajadores mandando el sueldo a casa. Wachovia cobraba comisión en cada transferencia y no marcó ni una sola como sospechosa.",
+   "duracion": 6.27,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/zero_on_calculator_227.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_07",
+   "texto": "La multa fueron ciento sesenta millones de dólares. Ningún empleado pisó la cárcel.",
+   "duracion": 5.58,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 160.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_08",
+   "texto": "El ocho de marzo de dos mil veintitrés, Silicon Valley Bank —el decimosexto banco del país, con doscientos diez mil millones en activos— anunció que necesitaba capital urgentemente.",
+   "duracion": 5.82,
+   "movimiento": "pull_out",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 210000.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "s en activos— anunció que necesitaba c",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_08b",
+   "texto": "El ocho de marzo de dos mil veintitrés, Silicon Valley Bank —el decimosexto banco del país, con doscientos diez mil millones en activos— anunció que necesitaba capital urgentemente.",
+   "duracion": 5.82,
+   "movimiento": "contra_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/advertising_billboard_city_187.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_09",
+   "texto": "Cuarenta horas después no existía.",
+   "duracion": 3.26,
+   "movimiento": "estatico",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 40.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "horas después no existía",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_10",
+   "texto": "SVB daba servicio a la mitad de las startups financiadas con capital riesgo de Estados Unidos. En cuanto la noticia empezó a circular por los chats privados de los fundadores, los depositantes empezaron a sacar su dinero. En un solo día se intentaron retirar cuarenta y dos mil millones de dólares.",
+   "duracion": 5.78,
+   "movimiento": "drift_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/cash_counting_machine_close_241.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 42000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_10b",
+   "texto": "SVB daba servicio a la mitad de las startups financiadas con capital riesgo de Estados Unidos. En cuanto la noticia empezó a circular por los chats privados de los fundadores, los depositantes empezaron a sacar su dinero. En un solo día se intentaron retirar cuarenta y dos mil millones de dólares.",
+   "duracion": 5.78,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/money_counting_machine_258.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "SVB daba *servicio* a la mitad",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_10c",
+   "texto": "SVB daba servicio a la mitad de las startups financiadas con capital riesgo de Estados Unidos. En cuanto la noticia empezó a circular por los chats privados de los fundadores, los depositantes empezaron a sacar su dinero. En un solo día se intentaron retirar cuarenta y dos mil millones de dólares.",
+   "duracion": 5.78,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/person_counting_money_desk_279.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_11",
+   "texto": "Antes, una fuga de depósitos era una cola en la puerta, y esa cola le daba al banco unas horas para reaccionar. Ahora ocurre entera en la pantalla de un móvil, y esas horas ya no existen.",
+   "duracion": 6.39,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/revolving_door_people_54.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_11b",
+   "texto": "Antes, una fuga de depósitos era una cola en la puerta, y esa cola le daba al banco unas horas para reaccionar. Ahora ocurre entera en la pantalla de un móvil, y esas horas ya no existen.",
+   "duracion": 6.39,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/revolving_door_people_blur_57.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Antes, una fuga de *depósitos* era",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_12",
+   "texto": "Ah, y un detalle. El consejero delegado del banco vendió acciones suyas por unos tres coma seis millones de dólares menos de dos semanas antes del derrumbe. Casualidad.",
+   "duracion": 6.01,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/corporate_meeting_boardroom_90.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.6,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares menos de dos semanas antes del",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_12b",
+   "texto": "Ah, y un detalle. El consejero delegado del banco vendió acciones suyas por unos tres coma seis millones de dólares menos de dos semanas antes del derrumbe. Casualidad.",
+   "duracion": 6.01,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_13",
+   "texto": "¿Por qué se cayó? Porque el banco tenía el dinero de sus clientes metido en bonos del Estado a largo plazo. Cuando los tipos subieron, esos bonos perdieron valor. Y cuando los clientes vinieron a por su dinero, hubo que venderlos con una pérdida enorme. Eso encendió el pánico.",
+   "duracion": 5.76,
+   "movimiento": "pull_out",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/declining_graph_red_226.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_13b",
+   "texto": "¿Por qué se cayó? Porque el banco tenía el dinero de sus clientes metido en bonos del Estado a largo plazo. Cuando los tipos subieron, esos bonos perdieron valor. Y cuando los clientes vinieron a por su dinero, hubo que venderlos con una pérdida enorme. Eso encendió el pánico.",
+   "duracion": 5.76,
+   "movimiento": "contra_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/worried_manager_office_desk_264.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "¿Por qué se cayó? *Porque* el banco",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_13c",
+   "texto": "¿Por qué se cayó? Porque el banco tenía el dinero de sus clientes metido en bonos del Estado a largo plazo. Cuando los tipos subieron, esos bonos perdieron valor. Y cuando los clientes vinieron a por su dinero, hubo que venderlos con una pérdida enorme. Eso encendió el pánico.",
+   "duracion": 5.76,
+   "movimiento": "estatico",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_banco/bank_vault_door_284.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_14",
+   "texto": "Tres reglas, entonces, para que tu banco dure más de cuarenta horas. Reparte tus depositantes: SVB murió porque el ochenta y nueve por ciento de sus clientes eran del mismo sector y se conocían entre ellos. Vigila dónde aparcas el dinero de tus clientes. Y vigila a quién le prestas.",
+   "duracion": 6.18,
+   "movimiento": "drift_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_banco/revolving_door_people_201.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 89.0,
+    "dec": 0,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "sus clientes eran del mismo sector y s",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_14b",
+   "texto": "Tres reglas, entonces, para que tu banco dure más de cuarenta horas. Reparte tus depositantes: SVB murió porque el ochenta y nueve por ciento de sus clientes eran del mismo sector y se conocían entre ellos. Vigila dónde aparcas el dinero de tus clientes. Y vigila a quién le prestas.",
+   "duracion": 6.18,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/revolving_door_people_blur_204.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_14c",
+   "texto": "Tres reglas, entonces, para que tu banco dure más de cuarenta horas. Reparte tus depositantes: SVB murió porque el ochenta y nueve por ciento de sus clientes eran del mismo sector y se conocían entre ellos. Vigila dónde aparcas el dinero de tus clientes. Y vigila a quién le prestas.",
+   "duracion": 6.18,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_banco/revolving_door_people_265.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Tres *reglas*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_01",
+   "texto": "Has puesto treinta millones. Has conseguido la licencia. Has montado los sistemas y has contratado a la gente.",
+   "duracion": 3.51,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 30.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "Has conseguido la licencia",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_01b",
+   "texto": "Has puesto treinta millones. Has conseguido la licencia. Has montado los sistemas y has contratado a la gente.",
+   "duracion": 3.51,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_02",
+   "texto": "Nada de eso te hace dueño del dinero que mueves.",
+   "duracion": 1.79,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Nada de eso te hace",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_02x",
+   "texto": "Nada de eso te hace dueño del dinero que mueves.",
+   "duracion": 1.8,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "dueño del dinero que *mueves*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_03",
+   "texto": "Los depósitos son de los clientes. Tú los custodias. Puedes prestarlos, y de ahí sacas el margen, pero no son tuyos ni un segundo.",
+   "duracion": 4.97,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/insurance_documents_desk_219.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Los *depósitos* son de los clientes",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_03b",
+   "texto": "Los depósitos son de los clientes. Tú los custodias. Puedes prestarlos, y de ahí sacas el margen, pero no son tuyos ni un segundo.",
+   "duracion": 4.97,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/investment_growth_chart_155.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_04",
+   "texto": "Y el porcentaje que puedes prestar tampoco lo decides tú: lo decide un ratio de capital que escribió otro.",
+   "duracion": 3.51,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_04b",
+   "texto": "Y el porcentaje que puedes prestar tampoco lo decides tú: lo decide un ratio de capital que escribió otro.",
+   "duracion": 3.51,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Y el *porcentaje* que puedes prestar",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_05",
+   "texto": "Así que lo que de verdad tienes no es un banco. Es un permiso para usar dinero ajeno dentro de unos límites que no pones tú.",
+   "duracion": 4.22,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/signing_contract_close_up_ha_70.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_05b",
+   "texto": "Así que lo que de verdad tienes no es un banco. Es un permiso para usar dinero ajeno dentro de unos límites que no pones tú.",
+   "duracion": 4.22,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/contract_being_torn_214.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_06",
+   "texto": "Y ese permiso se puede retirar. Cuando un banco se queda sin liquidez, el regulador no negocia: interviene un viernes por la tarde y el lunes el cartel de la puerta es otro. No hay concurso de acreedores. No hay meses de tribunales. Un fin de semana.",
+   "duracion": 5.52,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/reading_contract_closeup_276.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Y ese *permiso* se puede retirar",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_06b",
+   "texto": "Y ese permiso se puede retirar. Cuando un banco se queda sin liquidez, el regulador no negocia: interviene un viernes por la tarde y el lunes el cartel de la puerta es otro. No hay concurso de acreedores. No hay meses de tribunales. Un fin de semana.",
+   "duracion": 5.52,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_06c",
+   "texto": "Y ese permiso se puede retirar. Cuando un banco se queda sin liquidez, el regulador no negocia: interviene un viernes por la tarde y el lunes el cartel de la puerta es otro. No hay concurso de acreedores. No hay meses de tribunales. Un fin de semana.",
+   "duracion": 5.52,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/legal_documents_signing_52.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_07",
+   "texto": "Cuarenta años de trabajo pueden terminar en cuarenta y ocho horas.",
+   "duracion": 4.33,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/legal_documents_signing_52.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "grafico": {
+    "tipo": "contador",
+    "valor": 40.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "trabajo pueden terminar en cuarenta y",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_01",
+   "texto": "Entonces, ¿cuánto se gana?",
+   "duracion": 3.07,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Entonces, ¿*cuánto* se gana?",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_02",
+   "texto": "Hacia el quinto año tienes unos trescientos cincuenta millones en activos. Con ese margen del tres coma veintidós, son unos once millones al año de margen financiero, más un par de millones de comisiones y tarjetas. Quitando personal, oficinas, tecnología y al socio que no invitaste, te quedan alrededor de cuatro millones al año.",
+   "duracion": 5.31,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/person_working_cash_register_50.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.22,
+    "dec": 2,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "son unos once millones al año de marge",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_02b",
+   "texto": "Hacia el quinto año tienes unos trescientos cincuenta millones en activos. Con ese margen del tres coma veintidós, son unos once millones al año de margen financiero, más un par de millones de comisiones y tarjetas. Quitando personal, oficinas, tecnología y al socio que no invitaste, te quedan alrededor de cuatro millones al año.",
+   "duracion": 5.31,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/cash_register_busy_day_149.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_02c",
+   "texto": "Hacia el quinto año tienes unos trescientos cincuenta millones en activos. Con ese margen del tres coma veintidós, son unos once millones al año de margen financiero, más un par de millones de comisiones y tarjetas. Quitando personal, oficinas, tecnología y al socio que no invitaste, te quedan alrededor de cuatro millones al año.",
+   "duracion": 5.31,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/cash_briefcase_open_18.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_02d",
+   "texto": "Hacia el quinto año tienes unos trescientos cincuenta millones en activos. Con ese margen del tres coma veintidós, son unos once millones al año de margen financiero, más un par de millones de comisiones y tarjetas. Quitando personal, oficinas, tecnología y al socio que no invitaste, te quedan alrededor de cuatro millones al año.",
+   "duracion": 5.31,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/cash_briefcase_money_88.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Hacia el *quinto* año tienes unos",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_03",
+   "texto": "Y la parte que nadie cuenta: la mayoría de los bancos pequeños estadounidenses no crecen mucho más allá de ahí. Lo montas, lo llevas diez años, se lo vendes a uno grande y sales con unas cuatro veces lo que metiste.",
+   "duracion": 6.74,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/reading_contract_closeup_142.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "barras",
+    "items": [
+     [
+      "banco pequeño",
+      10.0
+     ],
+     [
+      "banco grande",
+      1.0
+     ]
+    ],
+    "destacar": {
+     "banco pequeño": [
+      232,
+      86,
+      64
+     ]
+    },
+    "sufijo": " años",
+    "dec": 1,
+    "y": 0.62,
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "retardo": 0.6,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_03b",
+   "texto": "Y la parte que nadie cuenta: la mayoría de los bancos pequeños estadounidenses no crecen mucho más allá de ahí. Lo montas, lo llevas diez años, se lo vendes a uno grande y sales con unas cuatro veces lo que metiste.",
+   "duracion": 6.74,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_04",
+   "texto": "Cuatro millones o cuatrocientos. La diferencia no está en saber más de banca. Está en cuántos clientes tienes entre los que repartir un coste fijo que no baja nunca.",
+   "duracion": 5.52,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_banco/contract_paperwork_stack_des_176.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 4.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "o cuatrocientos",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_04b",
+   "texto": "Cuatro millones o cuatrocientos. La diferencia no está en saber más de banca. Está en cuántos clientes tienes entre los que repartir un coste fijo que no baja nunca.",
+   "duracion": 5.52,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_05",
+   "texto": "Y esa es la condición del negocio: en un banco tú no eres el dueño del dinero. Eres el responsable de él.",
+   "duracion": 1.91,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y esa es la *condición*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_05x",
+   "texto": "Y esa es la condición del negocio: en un banco tú no eres el dueño del dinero. Eres el responsable de él.",
+   "duracion": 1.91,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_05x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "no eres el dueño del *dinero*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_05b",
+   "texto": "Y esa es la condición del negocio: en un banco tú no eres el dueño del dinero. Eres el responsable de él.",
+   "duracion": 3.82,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/contract_being_torn_214.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_06",
+   "texto": "Es el negocio más rentable del mundo montado sobre la única cosa que no te pertenece.",
+   "duracion": 3.05,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Es el negocio más *rentable*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_06x",
+   "texto": "Es el negocio más rentable del mundo montado sobre la única cosa que no te pertenece.",
+   "duracion": 3.05,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "montado sobre la *única* cosa",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  }
+ ]
+}

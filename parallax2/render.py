@@ -567,6 +567,12 @@ def render_escena(esc, cfg, base, ff):
 
         arr = np.asarray(lienzo).astype(np.float32)
         arr = FX.gradar(arr, grade)
+        # El duotono va DESPUES del grade: el grade corrige la luz del clip y
+        # el duotono le pone el color del canal. Al reves, el grade estaria
+        # corrigiendo un color que ya no es el del metraje.
+        duo = esc.get("duotono")
+        if duo:
+            arr = FX.duotono(arr, duo, float(esc.get("duotono_fuerza", 0.6)))
         if LOOK["flicker"]:
             arr *= 1 + LOOK["flicker"] * math.sin(f*.9) * math.sin(f*.31 + 1.2)
         if LOOK["bloom"]:

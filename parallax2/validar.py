@@ -187,7 +187,11 @@ def main():
         prev_comp = comp
 
         d = esc.get("duracion", 4)
-        if d > 4.5 and not esc.get("clip"):
+        # El techo de 4s es para planos compuestos: una idea larga se cuenta
+        # en tres planos, no en uno con mas zoom. Un `rotulo` o un `grafico`
+        # no se puede trocear igual -dura lo que dura su frase o su cifra- y
+        # partirlo por la mitad deja media frase en pantalla.
+        if d > 4.5 and not esc.get("clip")                    and esc.get("tipo") not in ("rotulo", "grafico"):
             graves.append(f'{esc["id"]}: {d}s. El techo son 4s: el dinamismo '
                           f'sale de cortar mas, no de mover mas la camara')
         elif d < 2.0:

@@ -77,14 +77,33 @@ def linea_de_tiempo(guion, solape=SOLAPE):
         else:
             trans.append(RUEDA[i % len(RUEDA)])
 
-    inicios = [0.0]
-    reloj = esc[0].get("duracion", 4)
-    for i in range(1, len(esc)):
-        salto = DUR_CORTE if trans[i - 1] == "corte" else solape
-        arranque = reloj - salto
-        inicios.append(arranque)
-        reloj = arranque + esc[i].get("duracion", 4)
-    return inicios, trans, reloj
+    # Cada escena empieza a verse cuando acaba la anterior: ni un segundo
+    # mas ni uno menos. Antes el reloj avanzaba `duracion - solape`, o sea
+    # que cada corte se comia 0,22 s del montaje. Con 129 cortes eso son
+    # VEINTIOCHO SEGUNDOS, y como sonido.py tumba la voz entera desde el
+    # cero sin estirarla, la imagen se iba adelantando hasta perderse la
+    # ultima frase del episodio. El tiempo que se come la transicion se
+    # compensa donde toca: render.py alarga cada clip por su `sangrado`.
+    inicios, reloj = [0.0], 0.0
+    for i in range(len(esc) - 1):
+        reloj += esc[i].get("duracion", 4)
+        inicios.append(reloj)
+    return inicios, trans, reloj + esc[-1].get("duracion", 4)
+
+
+def sangrados(guion, solape=SOLAPE):
+    """Segundos de mas que hay que renderizar en cada escena.
+
+    Una transicion consume tiempo del clip que ENTRA. Si el clip mide justo
+    su duracion, el solape se lo quita al montaje. Asi que cada clip se
+    renderiza mas largo por el salto de la transicion que lo precede; el
+    primero no precede nada y va exacto.
+    """
+    _, trans, _ = linea_de_tiempo(guion, solape)
+    fuera = [0.0]
+    for i in range(1, len(guion["escenas"])):
+        fuera.append(DUR_CORTE if trans[i - 1] == "corte" else solape)
+    return fuera
 
 
 def dur(path):

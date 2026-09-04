@@ -1,0 +1,436 @@
+{
+ "titulo": "Lo que cuesta de verdad tener un banco",
+ "lienzo": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 25,
+  "ppm": 140
+ },
+ "estilo": "metraje real",
+ "escenas": [
+  {
+   "id": "gancho_01",
+   "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "duracion": 3.62,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/money_and_construction_plans_137.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.22,
+    "dec": 2,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "año por cada cien que tiene prestados",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_01b",
+   "texto": "Un banco medio de Estados Unidos gana tres coma veintidós dólares al año por cada cien que tiene prestados.",
+   "duracion": 3.62,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/money_counting_machine_186.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "composicion": "derecha",
+   "texto_pantalla": {
+    "texto": "por cada *cien* prestados",
+    "px": 96,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.55
+   }
+  },
+  {
+   "id": "gancho_02",
+   "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 5.33,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/investment_growth_chart_155.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.22,
+    "dec": 2,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "Ese es el margen",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_02b",
+   "texto": "Tres coma veintidós. Ese es el margen. Y con ese margen se pagan las oficinas, las nóminas, los sistemas, los abogados y los accionistas.",
+   "duracion": 5.33,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/investment_growth_chart_285.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "composicion": "derecha",
+   "texto_pantalla": {
+    "texto": "las oficinas, las *nóminas*",
+    "px": 96,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.55
+   }
+  },
+  {
+   "id": "gancho_03",
+   "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 3.67,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/revolving_door_people_54.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "*Suena* a poco",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_03b",
+   "texto": "Suena a poco. Y sin embargo, no hay ningún negocio en el mundo con una cola más larga de gente esperando para entrar.",
+   "duracion": 3.67,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/revolving_door_people_blur_57.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_04",
+   "texto": "Porque un banco no gana dinero con su dinero. Lo gana con el tuyo.",
+   "duracion": 4.98,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_banco/money_counting_machine_38.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "composicion": "izquierda",
+   "texto_pantalla": {
+    "texto": "Lo gana con el *tuyo*",
+    "px": 96,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.55
+   }
+  },
+  {
+   "id": "gancho_05",
+   "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 5.07,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Coge el *tuyo*",
+    "px": 118,
+    "y": 0.46,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.32
+   },
+   "composicion": "derecha",
+   "tipo": "rotulo"
+  },
+  {
+   "id": "gancho_05b",
+   "texto": "Coge lo que tú depositas, se lo presta a otro más caro, y se queda la diferencia. Ese es el negocio entero. Todo lo demás es decoración.",
+   "duracion": 5.07,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_05b.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "composicion": "centrado",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y se queda la *diferencia*",
+    "px": 118,
+    "y": 0.46,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.32
+   }
+  },
+  {
+   "id": "gancho_06",
+   "texto": "Así que la pregunta se hace sola: ¿cuánto cuesta montar uno?",
+   "duracion": 4.59,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "composicion": "derecha",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "¿Cuánto cuesta *montar uno*?",
+    "px": 118,
+    "y": 0.46,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.32
+   }
+  },
+  {
+   "id": "gancho_07",
+   "texto": "Y aquí es donde este vídeo se separa de los dos anteriores.",
+   "duracion": 4.22,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Aquí cambia *todo*",
+    "px": 118,
+    "y": 0.46,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.32
+   },
+   "composicion": "izquierda",
+   "tipo": "rotulo"
+  },
+  {
+   "id": "gancho_08",
+   "texto": "Con un McDonald's, el problema era el dinero. Con un casino, era la licencia.",
+   "duracion": 6.0,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "composicion": "centrado",
+   "texto_pantalla": {
+    "texto": "el problema era la *licencia*",
+    "px": 96,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.55
+   }
+  },
+  {
+   "id": "gancho_09",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+   "duracion": 5.67,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_banco/bank_vault_door_284.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "composicion": "izquierda",
+   "texto_pantalla": {
+    "texto": "el dinero *no es tuyo*",
+    "px": 96,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.55
+   }
+  },
+  {
+   "id": "gancho_09b",
+   "texto": "Con un banco, el problema es que el dinero con el que trabajas no es tuyo. Nunca lo ha sido. Y hay alguien que puede quitarte las llaves un viernes por la tarde y no abrir el lunes.",
+   "duracion": 5.67,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_banco/landlord_keys_building_184.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Con un *banco*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  }
+ ]
+}

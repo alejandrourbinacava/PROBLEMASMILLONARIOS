@@ -200,6 +200,9 @@ DUR_LATIGO = 0.22        # segundos de barrido a cada lado del corte
 def preparar(guion):
     """Anota las escenas con lo que solo se sabe mirando a las vecinas.
 
+    SANGRADO. Lo que la transicion siguiente se va a comer de este clip. Sin
+    el, el montaje sale mas corto que la locucion y la voz se descuadra.
+
     Dos cosas que una escena no puede calcular sola:
 
     HILO. Varias escenas seguidas que cuentan la misma idea comparten el
@@ -219,6 +222,10 @@ def preparar(guion):
     Ninguna de las dos cosas la escribe el guion en numeros: el guion dice
     "estas tres van hiladas", y el reparto sale de aqui.
     """
+    import montar as _M
+    for e, s in zip(guion["escenas"], _M.sangrados(guion)):
+        e["_sangrado"] = s
+
     esc = guion["escenas"]
     for e in esc:
         e["_tramo"] = (0.0, 1.0)
@@ -410,7 +417,9 @@ def leer_clip(ruta, W, H, fps, n, recorte=0.0):
 
 def render_escena(esc, cfg, base, ff):
     W, H, FPS = cfg["w"], cfg["h"], cfg["fps"]
-    n = int(FPS * esc.get("duracion", 8))
+    # El sangrado es lo que la transicion se lleva por delante. Se renderiza
+    # de mas para que, despues del xfade, el plano dure lo que dice el guion.
+    n = int(FPS * (esc.get("duracion", 8) + esc.get("_sangrado", 0.0)))
     mov = PRESETS_MOV[esc.get("movimiento", "push_in")]
     comp = esc.get("composicion", "centrado")
 

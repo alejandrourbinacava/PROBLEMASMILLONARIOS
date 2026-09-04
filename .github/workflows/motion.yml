@@ -105,7 +105,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B ilustraciones
-          git add -f ilustracion/salida/*.mp4 ilustracion/salida/*.png
+          # La carpeta entera, no comodines: un `*.png` que no casa con
+          # nada no se expande y git lo recibe literal -fatal, codigo 128-.
+          git add -f -- ilustracion/salida
           git commit -m "Motion renderizado en la nube" || exit 0
           git push -f origin ilustraciones
 

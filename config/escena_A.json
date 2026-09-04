@@ -1,0 +1,163 @@
+{
+  "_INSTRUCCIONES": "Esta es UNA escena, completa y literal. Todos los valores están puestos. NO elijas nada, NO generes variantes, NO consultes ningún catálogo, NO inventes campos. Construye exactamente esto. Si algo no se puede hacer, PARA y dime qué. No lo aproximes.",
+  "escena": "A",
+  "fps": 25,
+  "ancho": 1920,
+  "alto": 1080,
+  "duracion_frames": 150,
+  "locucion": "Mucha gente entra en un casino pensando que puede ganarle.",
+  "IMAGENES_A_GENERAR": [
+    {
+      "archivo": "A_fondo.png",
+      "prompt": "interior of a large casino at night, rows of glowing slot machines receding into the distance, warm amber and red neon, no people, wide shot, photorealistic, 4K",
+      "recortar_fondo": false,
+      "nota": "Imagen completa. NO pasar por rembg. Se usa tal cual."
+    },
+    {
+      "archivo": "A_ruleta.png",
+      "prompt": "roulette wheel on a green felt table, seen from eye level at a slight angle, the table surface visible below it, isolated on pure white background, full object, large white margin on all sides",
+      "recortar_fondo": true,
+      "nota": "Pasar por rembg. Debe quedar entre el 10% y el 40% de alfa opaco.",
+      "es_persona": false
+    },
+    {
+      "archivo": "A_hombre.png",
+      "prompt": "full body photograph of a man from head to shoes, entire figure visible and centered, small in the frame with large empty white margin above his head and below his feet, standing, dark suit, seen from behind at a slight angle, isolated on pure white background, nothing cropped, nothing touching the edges of the image",
+      "recortar_fondo": true,
+      "nota": "Pasar por rembg. Si le faltan los pies, ampliar el lienzo hacia abajo con relleno generativo antes de recortar.",
+      "es_persona": true
+    }
+  ],
+  "CAPAS": [
+    {
+      "orden": 1,
+      "archivo": "A_fondo.png",
+      "escala": 1.35,
+      "centro_x": 960,
+      "centro_y": 540,
+      "desenfoque_px": 5,
+      "grade": {
+        "brillo": 0.7,
+        "saturacion": 0.85,
+        "contraste": 1.15,
+        "opacidad": 0.9
+      },
+      "movimiento": {
+        "x_inicio": 0,
+        "x_fin": -40,
+        "frame_inicio": 0,
+        "frame_fin": 90
+      }
+    },
+    {
+      "orden": 2,
+      "archivo": "A_ruleta.png",
+      "alto_px": 300,
+      "centro_x": 1350,
+      "centro_y": 880,
+      "desenfoque_px": 3,
+      "grade": {
+        "brillo": 0.9,
+        "saturacion": 1.0,
+        "contraste": 1.25,
+        "opacidad": 1.0
+      },
+      "movimiento": {
+        "x_inicio": 0,
+        "x_fin": -90,
+        "frame_inicio": 0,
+        "frame_fin": 90
+      }
+    },
+    {
+      "orden": 3,
+      "archivo": "A_hombre.png",
+      "alto_px": 900,
+      "centro_x": 520,
+      "centro_y": 640,
+      "desenfoque_px": 0,
+      "grade": {
+        "brillo": 0.75,
+        "saturacion": 0.9,
+        "contraste": 1.45,
+        "opacidad": 1.0
+      },
+      "sombra_suelo": {
+        "ancho_px": 260,
+        "alto_px": 40,
+        "opacidad": 0.5,
+        "desenfoque_px": 30
+      },
+      "movimiento": {
+        "x_inicio": 0,
+        "x_fin": -160,
+        "frame_inicio": 0,
+        "frame_fin": 90
+      }
+    }
+  ],
+  "_NOTA_MOVIMIENTO": "Las tres capas se mueven a la izquierda a velocidades distintas: fondo -40px, ruleta -90px, hombre -160px. Esa diferencia ES el efecto de profundidad. Si las tres se movieran igual, no habría efecto.",
+  "LENTE": {
+    "_que_es": "Un óvalo de color muy desenfocado encima de todo, en modo screen. Es lo que hace que las tres imágenes parezcan de la misma escena.",
+    "color": "#8A5A2B",
+    "ancho_px": 2600,
+    "alto_px": 1700,
+    "centro_x": 1750,
+    "centro_y": 400,
+    "desenfoque_px": 300,
+    "blend": "screen",
+    "opacidad": 0.18
+  },
+  "TEXTO": {
+    "linea": "CREEN QUE PUEDEN GANARLE",
+    "fuente": "Archivo Black",
+    "tamano_px": 96,
+    "color": "#E8E2D8",
+    "centro_x": 1380,
+    "centro_y": 300,
+    "ancho_max_px": 900,
+    "sombra": {
+      "desenfoque_px": 24,
+      "opacidad": 0.55
+    },
+    "entrada": {
+      "frame_inicio": 60,
+      "frame_fin": 72,
+      "x_desde": 1680,
+      "x_hasta": 1380,
+      "opacidad_desde": 0,
+      "opacidad_hasta": 1
+    },
+    "_nota": "El texto entra por la derecha mientras las capas se van a la izquierda."
+  },
+  "ACABADO": {
+    "vineta": 0.35,
+    "grano": 6,
+    "negros": 0.04
+  },
+  "SALIDA": {
+    "_que_es": "A partir del frame 120, TODO el conjunto (las 3 capas + lente + texto) se desliza a la izquierda y sale de cuadro. Por la derecha entra la escena siguiente.",
+    "frame_inicio": 120,
+    "frame_fin": 150,
+    "conjunto_x_desde": 0,
+    "conjunto_x_hasta": -1920,
+    "siguiente_escena_x_desde": 1920,
+    "siguiente_escena_x_hasta": 0
+  },
+  "CURVAS": {
+    "_regla_unica": "Todos los movimientos usan la misma curva: cubic-bezier(0.33, 0, 0.15, 1). Arranque rápido, llegada suave. No uses spring. No uses linear."
+  },
+  "VALIDAR_ANTES_DE_RENDERIZAR": [
+    "Los 3 PNG existen y ninguno está vacío. Imprime el % de alfa opaco de cada uno.",
+    "A_fondo.png tiene 100% de alfa opaco (no se recortó).",
+    "A_ruleta.png y A_hombre.png tienen entre 10% y 40% de alfa opaco.",
+    "Cada PNG mide al menos 2560px de ancho antes de escalarlo.",
+    "El texto en pantalla es exactamente 'CREEN QUE PUEDEN GANARLE'. Ninguna otra palabra o número aparece en el vídeo.",
+    "La luminancia media del frame 50 está entre 45 y 110.",
+    "Si algo de esto falla, NO exportes el vídeo. Dime qué falló."
+  ],
+  "ENTREGAR": [
+    "1. Un PNG del frame 50 (imagen fija). Esto primero.",
+    "2. Solo si el frame 50 está aprobado: el MP4 de 150 frames."
+  ]
+}

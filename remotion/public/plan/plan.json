@@ -1,0 +1,65 @@
+{
+  "locucion": "Eso no es lo que apostaron los clientes. Eso es lo que perdieron. En un mes.",
+  "duracion_frames": 150,
+  "tipo": "wide_to_subject",
+  "por_que": "De lo general a la persona.",
+  "revela": "Quien es el protagonista de lo que se cuenta.",
+  "camara": {
+    "push": [
+      1.0,
+      1.5
+    ],
+    "lateral": [
+      40,
+      -40
+    ],
+    "frames": 120
+  },
+  "capas": [
+    {
+      "papel": "far_background",
+      "z": 1000,
+      "parallax": 0.05,
+      "recortar": false,
+      "recorrido_px": -13,
+      "encargo": "techo y arquitectura lejana de el entorno de la frase, imagen completa",
+      "origen": "generada"
+    },
+    {
+      "papel": "background",
+      "z": 700,
+      "parallax": 0.15,
+      "recortar": false,
+      "recorrido_px": -39,
+      "encargo": "entorno de el entorno de la frase, plano general, imagen completa",
+      "origen": "generada"
+    },
+    {
+      "papel": "midground",
+      "z": 450,
+      "parallax": 0.35,
+      "recortar": true,
+      "recorrido_px": -91,
+      "encargo": "elementos intermedios de el entorno de la frase -mesas, maquinas, gente- recortados",
+      "origen": "banco"
+    },
+    {
+      "papel": "subject",
+      "z": 250,
+      "parallax": 0.6,
+      "recortar": true,
+      "recorrido_px": -156,
+      "encargo": "la persona o el objeto del que habla la frase, recortado",
+      "origen": "banco"
+    },
+    {
+      "papel": "foreground",
+      "z": 50,
+      "parallax": 1.0,
+      "recortar": true,
+      "recorrido_px": -260,
+      "encargo": "algo que roce la camara en el entorno de la frase -fichas, borde de mesa, humo, luces- recortado",
+      "origen": "banco"
+    }
+  ]
+}

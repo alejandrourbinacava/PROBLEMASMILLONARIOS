@@ -81,7 +81,18 @@ jobs:
         working-directory: parallax2
         # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no
         # hay nadie trabajando en la maquina.
-        run: python render_par.py "${{ steps.g.outputs.guion }}" _crudo.mp4 --procesos 3
+        run: |
+          set -o pipefail
+          # Los logs de una ejecucion piden credenciales aunque el repo sea
+          # publico. Sin esto, un plano que revienta se ve como "exit code 1"
+          # y nada mas: hay que reproducirlo a ciegas.
+          if ! python render_par.py "${{ steps.g.outputs.guion }}" _crudo.mp4                  --procesos 3 2>&1 | tee ../render.log; then
+            echo "::error::El render ha fallado. Ultimas lineas:"
+            tail -n 40 ../render.log | while IFS= read -r linea; do
+              echo "::error::${linea}"
+            done
+            exit 1
+          fi
 
       - name: Montaje con transiciones
         working-directory: parallax2

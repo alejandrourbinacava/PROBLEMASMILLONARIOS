@@ -60,7 +60,9 @@ jobs:
 
       - name: Que compile antes de gastar minutos
         working-directory: remotion
-        run: npx tsc --noEmit -p .
+        run: npx tsc --noEmit src/motion.tsx src/HojaCalculo.tsx src/fuentes.tsx \
+               --jsx react-jsx --esModuleInterop --skipLibCheck \
+               --moduleResolution bundler --module esnext --target es2020
 
       - name: Traer el navegador
         working-directory: remotion
@@ -74,7 +76,7 @@ jobs:
           set -o pipefail
           mkdir -p ../ilustracion/salida
           NOMBRE="${{ inputs.composicion || 'HojaCalculo' }}"
-          if ! npx remotion render "$NOMBRE" \
+          if ! npx remotion render src/motion.tsx "$NOMBRE" \
                  "../ilustracion/salida/${NOMBRE}.mp4" \
                  --concurrency=2 --crf=18 --log=verbose 2>&1 | tee ../render.log; then
             echo "::error::El render ha fallado. Ultimas lineas:"

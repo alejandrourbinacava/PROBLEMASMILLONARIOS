@@ -14,6 +14,7 @@ import {Entrada} from './Entrada';
 import {Gancho} from './Gancho';
 import {Contador} from './Contador';
 import {GanchoV2} from './GanchoV2';
+import {HojaCalculo} from './HojaCalculo';
 import guionCasa from '../public/guion/escenas.json';
 import episodioCasino from '../public/episodio/escenas.json';
 import escenaA from '../../config/escena_A.json';
@@ -310,6 +311,14 @@ export const RemotionRoot: React.FC = () => {
         fps={24}
         width={1920}
         height={400}
+      />
+      <Composition
+        id="HojaCalculo"
+        component={HojaCalculo}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
       />
     </>
   );

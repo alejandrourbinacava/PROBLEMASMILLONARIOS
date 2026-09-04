@@ -170,6 +170,13 @@ def ease(t):
     return t * t * (3 - 2 * t)
 
 
+# Articulos, preposiciones y conjunciones: aparecen en cualquier frase, asi
+# que como disparador no dicen nada.
+VACIAS_ROTULO = {"el", "la", "los", "las", "un", "una", "unos", "unas", "de",
+                 "del", "por", "con", "para", "que", "y", "o", "en", "al",
+                 "lo", "se", "su", "sus", "es", "son", "esa", "ese", "esta"}
+
+
 def retardo_rotulo(esc, ppm=140):
     """Segundo, dentro de la escena, en que debe entrar el rotulo.
 
@@ -187,11 +194,35 @@ def retardo_rotulo(esc, ppm=140):
     if txt.get("retardo") is not None:
         return float(txt["retardo"])
     loc = esc.get("texto", "").lower().split()
-    # se limpian tambien los signos de apertura: con "¿CUANTO" el rotulo
-    # nunca encontraba su palabra en la locucion y caia al retardo por defecto
-    clave = txt["texto"].replace("*", "").split()[0].strip(SIGNOS).lower()
+    # La palabra que dispara NO es la primera del rotulo si esa es vacia.
+    # Con "las oficinas, las nominas" se enganchaba al primer "las" de la
+    # locucion, que suele estar al principio y no es el momento: entraba a
+    # destiempo. Se busca la primera palabra con contenido.
+    #
+    # Se limpian tambien los signos de apertura: con "¿CUANTO" el rotulo
+    # nunca encontraba su palabra y caia al retardo por defecto.
+    palabras = [w.strip(SIGNOS).lower()
+                for w in txt["texto"].replace("*", "").split()]
+    clave = next((w for w in palabras if w not in VACIAS_ROTULO and len(w) > 2),
+                 palabras[0] if palabras else "")
     idx = next((i for i, w in enumerate(loc) if clave in w.strip(".,")), None)
-    return round(idx * 60.0 / ppm, 2) if idx is not None else 0.6
+    if idx is None:
+        return 0.6
+    segundo = idx * 60.0 / ppm
+
+    # Una frase larga se cuenta en varios planos, y CADA UNO guarda la frase
+    # entera en `texto`. Sin descontar lo que ya se dijo en los planos
+    # anteriores, un rotulo del segundo plano pedia entrar en el segundo 6,43
+    # de un plano que dura 3,62: no aparecia nunca.
+    j, k = esc.get("_trozo_frase", (0, 1))
+    d = esc.get("duracion", 4)
+    segundo -= j * d
+    if k > 1 and not (-0.35 <= segundo <= d):
+        # su palabra no se dice en ESTE plano
+        return None
+    # Nunca a cero: el texto entra DESPUES de que el ojo haya leido la
+    # imagen, aunque su palabra sea la primera que se dice.
+    return max(0.35, min(round(segundo, 2), max(0.35, d - 0.6)))
 
 
 DUR_LATIGO = 0.22        # segundos de barrido a cada lado del corte
@@ -225,6 +256,20 @@ def preparar(guion):
     import montar as _M
     for e, s in zip(guion["escenas"], _M.sangrados(guion)):
         e["_sangrado"] = s
+
+    # TROZO DE FRASE. Cual de los planos de su frase es este. Ojo con el
+    # nombre: `_tramo` ya existe y es el trozo del recorrido de CAMARA
+    # dentro de un hilo. Son dos cosas distintas y pisarlo rompe el
+    # movimiento continuo entre planos. Una frase de doce
+    # segundos se cuenta en tres planos y los tres guardan la frase entera,
+    # asi que sin esto el cronometro del rotulo cuenta contra la frase
+    # completa y pide entrar despues de que el plano haya terminado.
+    grupos = {}
+    for e in guion["escenas"]:
+        grupos.setdefault(e.get("texto", ""), []).append(e)
+    for hermanos in grupos.values():
+        for j, e in enumerate(hermanos):
+            e["_trozo_frase"] = (j, len(hermanos))
 
     esc = guion["escenas"]
     for e in esc:

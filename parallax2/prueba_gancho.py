@@ -49,15 +49,22 @@ TARJETAS = {
     "gancho_07":  "Aquí cambia *todo*",
 }
 
-# Refuerzo visual donde hoy no hay nada. La primera palabra tiene que
-# aparecer literal en la locucion de esa escena: el render busca ahi cuando
-# entra el rotulo, y si no la encuentra lo mete al principio de golpe.
+# Refuerzo visual donde hoy no hay nada.
+#
+# NINGUNO LLEVA `retardo`. El render cronometra el rotulo contra la PALABRA
+# que lo dispara: busca la primera palabra del rotulo dentro de la locucion
+# y la convierte a segundos al ritmo del guion. Poner el retardo a mano
+# -que es lo que hice en la primera prueba- hace entrar todos los rotulos a
+# la vez, a los 0,55 s, y ninguno cae donde se dice.
+#
+# Para que funcione, la primera palabra del rotulo TIENE que aparecer
+# literal en la locucion de esa escena.
 ROTULOS = {
-    "gancho_01b": "por cada *cien* prestados",
-    "gancho_02b": "las oficinas, las *nóminas*",
-    "gancho_04":  "Lo gana con el *tuyo*",
-    "gancho_08":  "el problema era la *licencia*",
-    "gancho_09":  "el dinero *no es tuyo*",
+    "gancho_01b": "*cien* prestados",
+    "gancho_02b": "oficinas y *nóminas*",
+    "gancho_04":  "gana con el *tuyo*",
+    "gancho_08":  "*licencia*",
+    "gancho_09":  "nunca ha sido *tuyo*",
 }
 
 
@@ -120,7 +127,10 @@ def main():
             e["texto_pantalla"] = {
                 "texto": TARJETAS[e["id"]], "px": 118, "y": 0.46,
                 "acento": AMBAR, "color": PAPEL,
-                "estilo": "sube", "retardo": 0.32,
+                # La tarjeta SI lleva retardo fijo, y es la excepcion: aqui
+                # el texto no acompana a una imagen, el texto ES el plano.
+                # Espera lo justo a que asiente el fondo y entra.
+                "estilo": "sube", "retardo": 0.30,
             }
             e["efectos"] = []
             n_tarjeta += 1
@@ -134,11 +144,41 @@ def main():
             e["texto_pantalla"] = {
                 "texto": ROTULOS[e["id"]], "px": 96, "y": 0.30,
                 "acento": AMBAR, "color": PAPEL,
-                "estilo": "sube", "retardo": 0.55,
+                "estilo": "sube",
             }
             n_rotulo += 1
 
     g["escenas"] = escenas
+
+    # Un rotulo cuya palabra no se dice en SU plano se muda al plano hermano
+    # donde si se dice. Antes se quedaba sin cronometrar y entraba al
+    # retardo por defecto, o sea a destiempo y sin que nada lo delatara.
+    import render as R
+    R.preparar(g)
+    for e in escenas:
+        if not e.get("texto_pantalla") or R.retardo_rotulo(e) is not None:
+            continue
+        hermanos = [o for o in escenas
+                    if o.get("texto") == e.get("texto") and o is not e]
+        movido = False
+        for h in hermanos:
+            if h.get("texto_pantalla"):
+                continue
+            h["texto_pantalla"] = e["texto_pantalla"]
+            if R.retardo_rotulo(h) is not None:
+                del e["texto_pantalla"]
+                movido = True
+                break
+            del h["texto_pantalla"]
+        if not movido:
+            # mejor sin rotulo que con uno a destiempo
+            del e["texto_pantalla"]
+    for e in escenas:
+        e.pop("_tramo", None)
+        e.pop("_trozo_frase", None)
+        e.pop("_sangrado", None)
+        e.pop("hilo_t", None)
+
     destino = os.path.join(PROY, "prueba_gancho.json")
     json.dump(g, io.open(destino, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)

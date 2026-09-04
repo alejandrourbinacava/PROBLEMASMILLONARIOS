@@ -38,6 +38,7 @@ import sys
 import wave
 from pathlib import Path
 
+import hashlib
 import numpy as np
 
 RAIZ = Path(__file__).resolve().parents[1]
@@ -82,7 +83,8 @@ def main() -> int:
     p.add_argument("salida", type=Path)
     p.add_argument("--guion", type=Path, default=Path("proyecto/guion.json"))
     p.add_argument("--solape", type=float, default=0.25)
-    p.add_argument("--musica", default="space_bar_ambient.mp3")
+    p.add_argument("--musica", default="auto",
+                   help='"auto" elige una pista distinta segun el guion')
     p.add_argument("--vol-musica", type=float, default=0.16)
     args = p.parse_args()
 
@@ -97,39 +99,69 @@ def main() -> int:
 
     cache = {}
 
-    def sonido(rel):
-        if rel not in cache:
-            cache[rel] = leer_wav(SFX / rel)
-        return cache[rel]
+    def sonido(rel, tono=1.0):
+        """El wav, opcionalmente reafinado.
+
+        Cuatro whooshes en ochenta cortes se reconocen enseguida y el oido
+        deja de oirlos como transiciones: los oye como un bucle. Reafinar
+        cada uno un poco los vuelve a hacer distintos sin mas ficheros.
+        Resamplear cambia tono y duracion a la vez, que es exactamente lo
+        que hace un editor cuando reutiliza un golpe.
+        """
+        clave = (rel, round(tono, 3))
+        if clave not in cache:
+            a = leer_wav(SFX / rel)
+            if abs(tono - 1.0) > 1e-3:
+                n = max(1, int(len(a) / tono))
+                idx = np.linspace(0, len(a) - 1, n)
+                a = np.stack([np.interp(idx, np.arange(len(a)), a[:, c])
+                              for c in range(a.shape[1])], axis=1).astype(np.float32)
+            cache[clave] = a
+        return cache[clave]
 
     # --- eventos ---
-    eventos = []          # (segundo, wav, volumen)
+    eventos = []          # (segundo, wav, volumen, tono)
+    # Doce tonos distintos sobre cuatro ficheros son cuarenta y ocho golpes
+    # que no se repiten hasta muy tarde. La serie no es aleatoria: sube y
+    # baja, para que una tanda de cortes tenga direccion.
+    TONOS = [1.00, 1.09, 0.94, 1.16, 0.88, 1.05, 0.97, 1.12, 0.91, 1.03]
     for i in range(1, len(esc)):
         t = max(0.0, inicios[i] - ADELANTO)
         if esc[i].get("_lat_ent") is not None:
-            eventos.append((t, GOLPE_LATIGO, VOL["latigo"]))
+            eventos.append((t, GOLPE_LATIGO, VOL["latigo"], 1.0))
         elif trans[i - 1] == M.CIERRE_BLOQUE:
-            eventos.append((t, GOLPE_BLOQUE, VOL["bloque"]))
+            eventos.append((t, GOLPE_BLOQUE, VOL["bloque"], 0.92))
         else:
-            eventos.append((t, GOLPES[i % len(GOLPES)], VOL["corte"]))
+            eventos.append((t, GOLPES[i % len(GOLPES)], VOL["corte"],
+                            TONOS[i % len(TONOS)]))
+
+        # Un rotulo a pantalla completa -una tarjeta- no es un corte mas: es
+        # un cambio de registro, y pide su propio sonido, mas grave y
+        # adelantado. Es lo que separa un montaje con ritmo de uno con
+        # golpes iguales cada cuatro segundos.
+        if esc[i].get("tipo") == "rotulo":
+            eventos.append((max(0.0, inicios[i] - 0.28), GOLPE_LATIGO,
+                            VOL["bloque"], 0.78))
 
     cifras = rotulos = 0
     for i, e in enumerate(esc):
         g = e.get("grafico")
         if g:
             eventos.append((inicios[i] + float(g.get("retardo", 0.25)),
-                            "impact.wav", VOL["cifra"]))
+                            "impact.wav", VOL["cifra"], 1.0))
             cifras += 1
         r = R.retardo_rotulo(e, ppm)
         if r is not None:
-            eventos.append((inicios[i] + r, "pop.wav", VOL["rotulo"]))
+            # el pop del rotulo tambien varia: si no, cada texto suena igual
+            eventos.append((inicios[i] + r, "pop.wav", VOL["rotulo"],
+                            0.9 + 0.06 * (i % 5)))
             rotulos += 1
 
     # --- pista de efectos ---
     largo = int((total + 3.0) * SR)
     pista = np.zeros((largo, 2), np.float32)
-    for seg, rel, vol in eventos:
-        a = sonido(rel) * vol
+    for seg, rel, vol, tono in eventos:
+        a = sonido(rel, tono) * vol
         k = int(seg * SR)
         fin = min(largo, k + len(a))
         if fin > k:
@@ -145,6 +177,20 @@ def main() -> int:
     print(f"{len(esc)} escenas · {len(esc)-1} golpes de corte · "
           f"{cifras} impactos de cifra · {rotulos} pops de rotulo")
     print(f"musica: {args.musica} en bucle a {args.vol_musica:.0%}")
+
+    # "auto": una pista distinta por episodio, elegida por el nombre del
+    # guion. Todos los episodios con la misma cama de fondo se reconocen como
+    # el mismo video antes de que hable nadie, y eso aplana el canal entero.
+    # Deterministico a proposito: el mismo episodio suena siempre igual, asi
+    # que un re-render no cambia la musica a mitad de correcciones.
+    if args.musica == "auto":
+        pistas = sorted(p.name for p in MUSICA.glob("*.mp3"))
+        if not pistas:
+            sys.exit(f"no hay musica en {MUSICA}")
+        semilla = hashlib.sha1(args.guion.stem.encode("utf-8")).hexdigest()
+        elegida = pistas[int(semilla, 16) % len(pistas)]
+        print(f"musica automatica para «{args.guion.stem}»: {elegida}")
+        args.musica = elegida
 
     mus = MUSICA / args.musica
     if not mus.exists():

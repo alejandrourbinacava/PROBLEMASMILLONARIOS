@@ -23,7 +23,7 @@ on:
       musica:
         description: Pista de fondo de assets/music
         type: string
-        default: space_bar_ambient.mp3
+        default: auto
   push:
     tags:
       - "parallax-*"
@@ -102,7 +102,7 @@ jobs:
         run: |
           python sonido.py _montado.mp4 voz.mp3 salida.mp4 \
             --guion "${{ steps.g.outputs.guion }}" \
-            --musica "${{ inputs.musica || 'space_bar_ambient.mp3' }}"
+            --musica "${{ inputs.musica || 'auto' }}"
 
       - name: Copia ligera para el movil
         working-directory: parallax2

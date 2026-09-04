@@ -51,7 +51,7 @@
    "capas": [],
    "composicion": "derecha",
    "texto_pantalla": {
-    "texto": "por cada *cien* prestados",
+    "texto": "*cien* prestados",
     "px": 96,
     "y": 0.3,
     "acento": [
@@ -64,8 +64,7 @@
      231,
      218
     ],
-    "estilo": "sube",
-    "retardo": 0.55
+    "estilo": "sube"
    }
   },
   {
@@ -112,7 +111,7 @@
    "latigo": "izq",
    "composicion": "derecha",
    "texto_pantalla": {
-    "texto": "las oficinas, las *nóminas*",
+    "texto": "oficinas y *nóminas*",
     "px": 96,
     "y": 0.3,
     "acento": [
@@ -125,9 +124,10 @@
      231,
      218
     ],
-    "estilo": "sube",
-    "retardo": 0.55
-   }
+    "estilo": "sube"
+   },
+   "_lat_sal": -1.0,
+   "transicion": "corte"
   },
   {
    "id": "gancho_03",
@@ -152,7 +152,8 @@
     ],
     "estilo": "sube"
    },
-   "composicion": "izquierda"
+   "composicion": "izquierda",
+   "_lat_ent": -1.0
   },
   {
    "id": "gancho_03b",
@@ -182,7 +183,7 @@
    "capas": [],
    "composicion": "izquierda",
    "texto_pantalla": {
-    "texto": "Lo gana con el *tuyo*",
+    "texto": "gana con el *tuyo*",
     "px": 96,
     "y": 0.3,
     "acento": [
@@ -195,8 +196,7 @@
      231,
      218
     ],
-    "estilo": "sube",
-    "retardo": 0.55
+    "estilo": "sube"
    }
   },
   {
@@ -230,7 +230,7 @@
      218
     ],
     "estilo": "sube",
-    "retardo": 0.32
+    "retardo": 0.3
    },
    "composicion": "derecha",
    "tipo": "rotulo"
@@ -269,8 +269,10 @@
      218
     ],
     "estilo": "sube",
-    "retardo": 0.32
-   }
+    "retardo": 0.3
+   },
+   "_lat_sal": 1.0,
+   "transicion": "corte"
   },
   {
    "id": "gancho_06",
@@ -305,8 +307,9 @@
      218
     ],
     "estilo": "sube",
-    "retardo": 0.32
-   }
+    "retardo": 0.3
+   },
+   "_lat_ent": 1.0
   },
   {
    "id": "gancho_07",
@@ -339,7 +342,7 @@
      218
     ],
     "estilo": "sube",
-    "retardo": 0.32
+    "retardo": 0.3
    },
    "composicion": "izquierda",
    "tipo": "rotulo"
@@ -358,7 +361,7 @@
    "capas": [],
    "composicion": "centrado",
    "texto_pantalla": {
-    "texto": "el problema era la *licencia*",
+    "texto": "*licencia*",
     "px": 96,
     "y": 0.3,
     "acento": [
@@ -371,8 +374,7 @@
      231,
      218
     ],
-    "estilo": "sube",
-    "retardo": 0.55
+    "estilo": "sube"
    }
   },
   {
@@ -389,21 +391,15 @@
    "capas": [],
    "composicion": "izquierda",
    "texto_pantalla": {
-    "texto": "el dinero *no es tuyo*",
-    "px": 96,
+    "texto": "Con un *banco*",
+    "px": 132,
     "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.55
+    "estilo": "izquierda"
    }
   },
   {
@@ -419,17 +415,6 @@
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
-   "texto_pantalla": {
-    "texto": "Con un *banco*",
-    "px": 132,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "composicion": "derecha"
   }
  ]

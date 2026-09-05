@@ -1179,7 +1179,7 @@
      60
     ],
     "pie": "euros de capital regulatorio",
-    "y": 0.34,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "latigo_der"
    },
@@ -1188,7 +1188,7 @@
    "texto_pantalla": {
     "texto": "En Europa la *entrada* es todavía",
     "px": 108,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -1763,7 +1763,7 @@
      64
     ],
     "pie": ": cincuenta dólares al año",
-    "y": 0.62,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "desplome"
    },
@@ -1772,7 +1772,7 @@
    "texto_pantalla": {
     "texto": "Un *cliente* tiene diez mil dólares",
     "px": 108,
-    "y": 0.68,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -1872,7 +1872,7 @@
      64
     ],
     "pie": "; el rendimiento medio de los préstamo",
-    "y": 0.3,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
    },
@@ -1881,7 +1881,7 @@
    "texto_pantalla": {
     "texto": "Esa *diferencia* tiene nombre",
     "px": 108,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -2400,7 +2400,7 @@
      60
     ],
     "pie": "tardan unos diez años en pagarse",
-    "y": 0.62,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "desplome"
    },
@@ -2409,7 +2409,7 @@
    "texto_pantalla": {
     "texto": "A ese *ritmo*",
     "px": 132,
-    "y": 0.68,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -2724,7 +2724,7 @@
     ],
     "etiqueta_a": "los gastos operativos",
     "etiqueta_b": "el resto",
-    "y": 0.62,
+    "y": 0.33,
     "retardo": 0.6,
     "entrada": "desplome"
    },
@@ -2734,7 +2734,7 @@
    "texto_pantalla": {
     "texto": "En los bancos *pequeños*",
     "px": 108,
-    "y": 0.68,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -2846,7 +2846,7 @@
      64
     ],
     "pie": "gasto se va en gente cuyo trabajo es d",
-    "y": 0.3,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
    },
@@ -2857,7 +2857,7 @@
    "texto_pantalla": {
     "texto": "En *personal* es todavía más claro",
     "px": 108,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -3414,7 +3414,7 @@
      60
     ],
     "pie": "cajón",
-    "y": 0.62,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "desplome"
    },
@@ -3423,7 +3423,7 @@
    "texto_pantalla": {
     "texto": "Es el *fraude* de dentro",
     "px": 108,
-    "y": 0.68,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -4010,7 +4010,7 @@
      64
     ],
     "pie": "sus clientes eran del mismo sector y s",
-    "y": 0.3,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
    },
@@ -4020,7 +4020,7 @@
    "texto_pantalla": {
     "texto": "Tres *reglas*",
     "px": 132,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,
@@ -4464,7 +4464,7 @@
      60
     ],
     "pie": "son unos once millones al año de marge",
-    "y": 0.26,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "rebote"
    },
@@ -4473,7 +4473,7 @@
    "texto_pantalla": {
     "texto": "Hacia el *quinto* año tienes unos",
     "px": 108,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,

@@ -310,6 +310,24 @@ def main():
         for k in ("_tramo", "_trozo_frase", "_sangrado", "hilo_t"):
             e.pop(k, None)
 
+    # Grafico y rotulo en el mismo plano tienen que ir en bandas distintas.
+    # `motion_banco` coloca cada uno sin saber del otro, y en nueve planos de
+    # doce coincidian -tres de ellos en la MISMA altura-: el anillo rojo salia
+    # cruzando la palabra. El dato manda y se queda arriba; el rotulo baja.
+    SEPARACION = 0.30
+    n_separados = 0
+    for e in fuera:
+        gr, tp = e.get("grafico"), e.get("texto_pantalla")
+        if not gr or not tp:
+            continue
+        yg = float(gr.get("y", 0.48))
+        yt = float(tp.get("y", 0.5))
+        if abs(yg - yt) >= SEPARACION:
+            continue
+        gr["y"] = 0.33
+        tp["y"] = 0.74
+        n_separados += 1
+
     # La composicion se reparte sobre la lista FINAL. Repartirla sobre la de
     # entrada descuadra el ciclo en cuanto una tarjeta se parte en dos.
     for k, e in enumerate(fuera):
@@ -326,6 +344,7 @@ def main():
     print(f"  tarjetas            : {n_tar}  ({n_part} partidas por largas)")
     print(f"  duotonos por capitulo: {duo_i + 1} capitulos")
     print(f"  rotulos mudados a su plano: {n_mudados} | caidos: {n_caidos}")
+    print(f"  grafico y rotulo separados: {n_separados}")
     print(f"escrito {destino}")
     return 0
 

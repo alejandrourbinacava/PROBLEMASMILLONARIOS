@@ -128,21 +128,29 @@ jobs:
 
       # La copia ligera vuelve al repo. Un artefacto pide credenciales para
       # bajarlo; un fichero en una rama se lee con una URL y ya.
-      - name: Devolver la copia ligera al repo
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mkdir -p ilustracion/salida
-          cp parallax2/ligero.mp4 "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
-          git checkout -B ilustraciones
-          git add -f -- ilustracion/salida
-          git commit -m "Montaje ${GITHUB_REF_NAME}" || exit 0
-          git push -f origin ilustraciones
-
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: parallax2-video
           path: |
             parallax2/salida.mp4
             parallax2/ligero.mp4
           retention-days: 14
+
+      # Al repo va una copia de revision, NO la ligera: GitHub rechaza
+      # ficheros de mas de 100 MB en un push y la ligera de un episodio de
+      # catorce minutos ronda los 110. Para ver el detalle esta el artefacto.
+      - name: Copia de revision para el repo
+        continue-on-error: true
+        run: |
+          set -e
+          mkdir -p ilustracion/salida
+          ffmpeg -y -v error -i parallax2/salida.mp4 -vf scale=640:-2             -c:v libx264 -preset veryfast -b:v 320k -maxrate 420k             -bufsize 800k -c:a aac -b:a 56k -movflags +faststart             "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
+          ls -l "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B ilustraciones
+          git add -f -- ilustracion/salida
+          git commit -m "Montaje ${GITHUB_REF_NAME}" || exit 0
+          git push -f origin ilustraciones
+

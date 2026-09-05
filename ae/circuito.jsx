@@ -24,14 +24,16 @@ var ROJO = [0.910, 0.337, 0.251];       // #E85640
 var PAPEL = [0.929, 0.906, 0.855];      // #EDE7DA
 var GRIS = [0.353, 0.408, 0.494];
 
+// El ancho de cada caja lo pide su texto. Con un ancho fijo de 250,
+// "CASA DE CAMBIO" se salia por los dos lados.
 var NODOS = [
-  {t: "EFECTIVO",        p: "el dinero de la droga",    x: 300},
-  {t: "CASA DE CAMBIO",  p: "México",                   x: 760},
-  {t: "MIAMI",           p: "disfrazado de remesas",    x: 1220},
-  {t: "ACTIVOS",         p: "aviones, inmuebles",       x: 1680}
+  {t: "EFECTIVO",       p: "el dinero de la droga",  x: 285,  w: 300},
+  {t: "CASA DE CAMBIO", p: "en México",              x: 730,  w: 400},
+  {t: "MIAMI",          p: "disfrazado de remesas",  x: 1190, w: 300},
+  {t: "ACTIVOS",        p: "aviones, inmuebles",     x: 1635, w: 300}
 ];
 
-var Y = 520;                 // linea del circuito
+var Y = 430;                 // linea del circuito
 var ENTRA = 0.55;            // cada nodo entra con este retardo
 
 // ------------------------------------------------------------- utilidades
@@ -45,7 +47,7 @@ function texto(comp, cadena, x, y, tam, color, negrita) {
   doc.fillColor = color;
   doc.applyFill = true;
   doc.applyStroke = false;
-  doc.font = negrita ? "Arial-BoldMT" : "ArialMT";
+  doc.font = negrita ? "Arial-Black" : "ArialMT";
   doc.justification = ParagraphJustification.CENTER_JUSTIFY;
   capa.property("Source Text").setValue(doc);
   capa.property("Transform").property("Position").setValue([x, y]);
@@ -152,13 +154,13 @@ function construir() {
   fondo.moveToEnd();
 
   // rotulo de arriba
-  var titulo = texto(comp, "EL CIRCUITO", W / 2, 150, 34, AMBAR, true);
+  var titulo = texto(comp, "EL CIRCUITO DEL DINERO", W / 2, 190, 36, AMBAR, true);
   titulo.property("Source Text").value.tracking = 400;
   entrar(titulo, 0.15, 26);
 
   // las flechas van DEBAJO de los nodos: se dibujan antes de que caiga la caja
   for (var i = 0; i < NODOS.length - 1; i++) {
-    flecha(comp, NODOS[i].x + 130, NODOS[i + 1].x - 130, Y, GRIS,
+    flecha(comp, NODOS[i].x + NODOS[i].w / 2 + 12, NODOS[i + 1].x - NODOS[i + 1].w / 2 - 12, Y, GRIS,
            0.5 + i * ENTRA + 0.30);
   }
 
@@ -166,16 +168,16 @@ function construir() {
   for (var j = 0; j < NODOS.length; j++) {
     var n = NODOS[j];
     var t0 = 0.5 + j * ENTRA;
-    var c = caja(comp, n.x, Y, 250, 118, (j === 3) ? ROJO : AMBAR, 3);
+    var c = caja(comp, n.x, Y, n.w, 108, (j === 3) ? ROJO : AMBAR, 3);
     entrar(c, t0, 40);
-    var tt = texto(comp, n.t, n.x, Y + 4, 30, PAPEL, true);
+    var tt = texto(comp, n.t, n.x, Y + 8, 27, PAPEL, true);
     entrar(tt, t0 + 0.06, 40);
-    var tp = texto(comp, n.p, n.x, Y + 108, 22, GRIS, false);
+    var tp = texto(comp, n.p, n.x, Y + 104, 23, GRIS, false);
     entrar(tp, t0 + 0.12, 30);
   }
 
   // la cifra. Cuenta sola con una expresion: no hay que poner keyframes.
-  var cifra = texto(comp, "0", W / 2, 830, 96, PAPEL, true);
+  var cifra = texto(comp, "0", W / 2, 720, 112, PAPEL, true);
   cifra.property("Source Text").expression =
     "t = linear(time, 3.0, 5.4, 0, 378400);\r" +
     "n = Math.round(t);\r" +
@@ -185,15 +187,15 @@ function construir() {
     "  if (i > 0 && (s.length - i) % 3 == 0) out += '.';\r" +
     "  out += s.charAt(i);\r" +
     "}\r" +
-    "out + '  millones de dolares';";
+    "out + '  millones de d\u00F3lares';";
   entrar(cifra, 2.9, 34);
 
   var pie = texto(comp, "Wachovia, 2010 · acuerdo con el Departamento de Justicia",
-                  W / 2, 900, 24, GRIS, false);
+                  W / 2, 790, 25, GRIS, false);
   entrar(pie, 5.4, 22);
 
   var multa = texto(comp, "MULTA: 160 MILLONES · CERO DETENIDOS",
-                    W / 2, 975, 30, ROJO, true);
+                    W / 2, 880, 34, ROJO, true);
   entrar(multa, 6.3, 26);
 
   app.endUndoGroup();

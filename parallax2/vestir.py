@@ -57,8 +57,11 @@ DUOS = ["duo_frio", "duo_ambar", "duo_papel", "duo_rojo", "duo_verde"]
 # fijo. Se alternan para que dos tarjetas seguidas no respiren igual.
 POLVILLO = ["polvo", "destellos", "niebla", "bokeh"]
 
-COLGANTES = {"de", "del", "la", "el", "los", "las", "un", "una", "y", "o",
-             "que", "en", "con", "por", "para", "a", "al", "su", "es", "no"}
+# La lista vive en motion_banco y se importa: tener aqui una copia mas corta
+# es lo que dejaba rotulos colgando -"casi nadie entiende que es ese"- porque
+# a esta le faltaban "ese", "lo" y los verbos de apoyo. Una sola fuente.
+import motion_banco as _MB
+COLGANTES = _MB.COLGANTES | _MB.VERBOS
 
 
 def titular(frase, limite=30):

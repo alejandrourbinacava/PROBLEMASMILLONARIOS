@@ -388,7 +388,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "casi nadie *entiende* qué es ese",
+    "texto": "casi nadie *entiende* qué",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -621,7 +621,7 @@
      176,
      60
     ],
-    "pie": "s vas a ver exactamente lo rápido que",
+    "pie": "s vas a ver exactamente lo rápido",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -1130,7 +1130,7 @@
      176,
      60
     ],
-    "pie": "menos",
+    "pie": "Diez millones más, dos años",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -1295,7 +1295,7 @@
      176,
      60
     ],
-    "pie": "minutos esperando: ¿de dónde sale el d",
+    "pie": "minutos esperando: ¿de dónde",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -1392,7 +1392,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "la Reserva Federal *eliminó* ese",
+    "texto": "la Reserva Federal *eliminó*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1497,7 +1497,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y cuando el banco *presta* ese",
+    "texto": "Y cuando el *banco*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1576,7 +1576,7 @@
      176,
      60
     ],
-    "pie": "El banco no va al almacén a buscar dos",
+    "pie": "El banco no va al almacén a buscar",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -1871,7 +1871,7 @@
      86,
      64
     ],
-    "pie": "; el rendimiento medio de los préstamo",
+    "pie": "; el rendimiento medio",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -2260,7 +2260,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "porque es más *agresivo* de lo",
+    "texto": "porque es más *agresivo*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2845,7 +2845,7 @@
      86,
      64
     ],
-    "pie": "gasto se va en gente cuyo trabajo es d",
+    "pie": "gasto se va en gente cuyo trabajo",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -3336,7 +3336,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "entrena para *entregar* lo",
+    "texto": "entrena para *entregar*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -3697,7 +3697,7 @@
      176,
      60
     ],
-    "pie": "s en activos— anunció que necesitaba c",
+    "pie": "s en activos— anunció que necesitaba",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -3899,7 +3899,7 @@
      176,
      60
     ],
-    "pie": "dólares menos de dos semanas antes del",
+    "pie": "dólares menos de dos semanas antes",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -4009,7 +4009,7 @@
      86,
      64
     ],
-    "pie": "sus clientes eran del mismo sector y s",
+    "pie": "sus clientes eran del mismo sector",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -4394,7 +4394,7 @@
      176,
      60
     ],
-    "pie": "trabajo pueden terminar en cuarenta y",
+    "pie": "trabajo pueden terminar en cuarenta",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -4463,7 +4463,7 @@
      176,
      60
     ],
-    "pie": "son unos once millones al año de marge",
+    "pie": "son unos once millones al año",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -4471,8 +4471,8 @@
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "texto_pantalla": {
-    "texto": "Hacia el *quinto* año tienes unos",
-    "px": 108,
+    "texto": "Hacia el *quinto* año",
+    "px": 132,
     "y": 0.74,
     "acento": [
      255,

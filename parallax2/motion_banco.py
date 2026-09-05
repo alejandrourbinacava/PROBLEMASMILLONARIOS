@@ -241,12 +241,43 @@ def pie_de(texto, pal):
             if m:
                 cola = cola[m.end():]
                 break
-    return cola[:38].strip() or t[:38]
+    return recorta(cola, 38) or recorta(t, 38)
+
+
+def recorta(frase, limite):
+    """Corta por palabra y no deja nada colgando.
+
+    Antes era `frase[:38]`, un corte por caracteres: en el cierre salio
+    "son unos once millones al ano de marge", partido dentro de "margen".
+    Un pie cortado a media palabra se lee como un error de programa, que es
+    exactamente lo que era.
+    """
+    frase = (frase or "").strip()
+    fuera = []
+    for w in frase.split():
+        if fuera and len(" ".join(fuera + [w])) > limite:
+            break
+        fuera.append(w)
+    while fuera and fuera[-1].lower().strip(".,:;") in COLGANTES | VERBOS:
+        fuera.pop()
+    return " ".join(fuera).rstrip(".,:;")
 
 
 COLGANTES = {"de", "del", "y", "o", "que", "al", "a", "por", "en", "con",
-             "para", "la", "el", "los", "las", "un", "una", "su", "sus",
-             "se", "lo", "es", "no", "ni", "como", "sin", "sobre"}
+             "para", "la", "el", "los", "las", "un", "una", "unos", "unas",
+             "su", "sus", "se", "lo", "es", "no", "ni", "como", "sin",
+             "sobre", "cada", "otro", "otra", "otros", "otras", "tan",
+             "mismo", "misma", "este", "esta", "estos", "estas", "ese",
+             "esa", "muy", "mas", "menos", "entre", "hasta", "desde"}
+
+# Un rotulo que acaba en verbo tambien cuelga: "Hacia el quinto ano TIENES"
+# pide un complemento que no esta. Se recorta hasta la ultima palabra que
+# aguante sola.
+VERBOS = {"tienes", "tiene", "tienen", "hay", "son", "eres", "esta", "estan",
+          "va", "van", "sale", "salen", "pone", "pones", "pagas", "paga",
+          "cobras", "cobra", "cuesta", "cuestan", "puedes", "puede", "deja",
+          "dejas", "necesitas", "necesita", "queda", "quedan", "lleva",
+          "llevan", "gana", "ganas", "presta", "prestas"}
 
 
 def rotulo_de(frase, limite=TOPE_ROTULO):
@@ -262,7 +293,7 @@ def rotulo_de(frase, limite=TOPE_ROTULO):
         if fuera and len(" ".join(fuera + [w])) > limite:
             break
         fuera.append(w)
-    while fuera and fuera[-1].lower().strip(".,") in COLGANTES:
+    while fuera and fuera[-1].lower().strip(".,") in COLGANTES | VERBOS:
         fuera.pop()
     return " ".join(fuera).rstrip(".,:;")
 

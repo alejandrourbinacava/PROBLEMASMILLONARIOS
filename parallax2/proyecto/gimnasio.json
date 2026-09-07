@@ -1,0 +1,4216 @@
+{
+ "titulo": "Esto cuesta montar y mantener un gimnasio",
+ "lienzo": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 25,
+  "ppm": 140
+ },
+ "estilo": "metraje real",
+ "escenas": [
+  {
+   "id": "gancho_01",
+   "texto": "Si todos los socios de tu gimnasio aparecieran el mismo día a la misma hora, no cabrían por la puerta.",
+   "duracion": 6.47,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/door_opening_closing_entrance_83.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_02",
+   "texto": "Y eso no es un fallo del negocio. Es el negocio.",
+   "duracion": 2.31,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "eso no es un *fallo*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_02x",
+   "texto": "Y eso no es un fallo del negocio. Es el negocio.",
+   "duracion": 2.3,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "del *negocio*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_03",
+   "texto": "Solo alrededor de uno de cada cinco socios va tres veces por semana o más. Dos de cada tres apenas usan su abono. Y algunos no van nunca, y siguen pagando.",
+   "duracion": 5.86,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/membership_card_scan_reader_23.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "barras",
+    "items": [
+     [
+      "banco pequeño",
+      3.0
+     ],
+     [
+      "banco grande",
+      1.0
+     ]
+    ],
+    "destacar": {
+     "banco pequeño": [
+      232,
+      86,
+      64
+     ]
+    },
+    "sufijo": "x",
+    "dec": 1,
+    "y": 0.26,
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "retardo": 0.6,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_03b",
+   "texto": "Solo alrededor de uno de cada cinco socios va tres veces por semana o más. Dos de cada tres apenas usan su abono. Y algunos no van nunca, y siguen pagando.",
+   "duracion": 5.86,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/weight_room_dumbbells_racks_2.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_04",
+   "texto": "Un gimnasio no vende ejercicio. Vende la intención de hacer ejercicio, cobrada por meses.",
+   "duracion": 6.76,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/sale_discount_sign_shop_68.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_05",
+   "texto": "Así que la pregunta se hace sola: si el producto es no usarlo, ¿cuánto cuesta montar la máquina de venderlo? Te lo cuento entero, y al final te doy la cifra de lo que se gana.",
+   "duracion": 5.52,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/weight_machine_close_up_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "que la *pregunta* se hace sola",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_05b",
+   "texto": "Así que la pregunta se hace sola: si el producto es no usarlo, ¿cuánto cuesta montar la máquina de venderlo? Te lo cuento entero, y al final te doy la cifra de lo que se gana.",
+   "duracion": 5.52,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/vending_machine_drinks_73.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_01",
+   "texto": "Cuando piensas en montar un gimnasio piensas en máquinas.",
+   "duracion": 4.12,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/technician_repairing_equipment_80.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_02",
+   "texto": "Las máquinas son la parte fácil. Se compran, se financian, se alquilan incluso. Lo que de verdad estás comprando es otra cosa: metros cuadrados con un contrato encima.",
+   "duracion": 5.79,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/hands_signing_contract_pen_49.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Las *máquinas* son la parte fácil",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_02b",
+   "texto": "Las máquinas son la parte fácil. Se compran, se financian, se alquilan incluso. Lo que de verdad estás comprando es otra cosa: metros cuadrados con un contrato encima.",
+   "duracion": 5.79,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/worn_used_equipment_detail_82.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_03",
+   "texto": "Un gimnasio es un local grande, y grande de verdad. Una cadena como Planet Fitness pide entre dieciocho mil y veinticinco mil pies cuadrados de superficie continua. Eso son entre mil setecientos y dos mil trescientos metros cuadrados. En una sola planta, sin columnas en medio, con altura, con salida de emergencia y con aparcamiento.",
+   "duracion": 6.69,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/empty_commercial_space_retail_57.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 25000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "pies cuadrados de superficie continua",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_03b",
+   "texto": "Un gimnasio es un local grande, y grande de verdad. Una cadena como Planet Fitness pide entre dieciocho mil y veinticinco mil pies cuadrados de superficie continua. Eso son entre mil setecientos y dos mil trescientos metros cuadrados. En una sola planta, sin columnas en medio, con altura, con salida de emergencia y con aparcamiento.",
+   "duracion": 6.69,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/storefront_for_rent_sign_58.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_03c",
+   "texto": "Un gimnasio es un local grande, y grande de verdad. Una cadena como Planet Fitness pide entre dieciocho mil y veinticinco mil pies cuadrados de superficie continua. Eso son entre mil setecientos y dos mil trescientos metros cuadrados. En una sola planta, sin columnas en medio, con altura, con salida de emergencia y con aparcamiento.",
+   "duracion": 6.69,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/treadmill_running_gym_9.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_04",
+   "texto": "Ese local no existe en cualquier esquina. Y cuando existe, cuesta.",
+   "duracion": 2.37,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Ese local no *existe*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_04x",
+   "texto": "Ese local no existe en cualquier esquina. Y cuando existe, cuesta.",
+   "duracion": 2.37,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "cuando *existe*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_05",
+   "texto": "Y aquí está la primera trampa del negocio: el alquiler no baja en agosto.",
+   "duracion": 5.68,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/summer_beach_empty_street_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_06",
+   "texto": "Tu suelo cuesta lo mismo el catorce de enero, con la sala llena, que el veinte de agosto, con cuatro personas dentro. Las máquinas se amortizan igual. La luz de una sala de dos mil metros con aire acondicionado se paga igual. El monitor de sala cobra igual.",
+   "duracion": 5.46,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/gym_machines_row_equipment_4.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 20.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "agosto",
+    "y": 0.33,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "con la sala *llena*",
+    "px": 132,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_06b",
+   "texto": "Tu suelo cuesta lo mismo el catorce de enero, con la sala llena, que el veinte de agosto, con cuatro personas dentro. Las máquinas se amortizan igual. La luz de una sala de dos mil metros con aire acondicionado se paga igual. El monitor de sala cobra igual.",
+   "duracion": 5.46,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/rubber_gym_flooring_25.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_06c",
+   "texto": "Tu suelo cuesta lo mismo el catorce de enero, con la sala llena, que el veinte de agosto, con cuatro personas dentro. Las máquinas se amortizan igual. La luz de una sala de dos mil metros con aire acondicionado se paga igual. El monitor de sala cobra igual.",
+   "duracion": 5.46,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/gym_interior_equipment_wide_0.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_07",
+   "texto": "Y no es solo el alquiler. Un gimnasio tiene una obra por dentro que la gente no ve.",
+   "duracion": 5.5,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/construction_interior_renovation_59.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_08",
+   "texto": "Necesitas suelo técnico que aguante que se te caiga una mancuerna de cincuenta kilos sin agrietarse ni despertar al vecino de abajo. Necesitas vestuarios con duchas, y eso es fontanería de verdad y agua caliente para decenas de personas a la vez. Necesitas ventilación capaz de renovar el aire de una sala llena de gente sudando, que no es lo mismo que climatizar una oficina.",
+   "duracion": 5.81,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/shower_room_tiles_water_19.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 50.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "kilos sin agrietarse ni despertar",
+    "y": 0.33,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Necesitas *vestuarios* con duchas",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_08b",
+   "texto": "Necesitas suelo técnico que aguante que se te caiga una mancuerna de cincuenta kilos sin agrietarse ni despertar al vecino de abajo. Necesitas vestuarios con duchas, y eso es fontanería de verdad y agua caliente para decenas de personas a la vez. Necesitas ventilación capaz de renovar el aire de una sala llena de gente sudando, que no es lo mismo que climatizar una oficina.",
+   "duracion": 5.81,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/man_lifting_dumbbell_8.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_08c",
+   "texto": "Necesitas suelo técnico que aguante que se te caiga una mancuerna de cincuenta kilos sin agrietarse ni despertar al vecino de abajo. Necesitas vestuarios con duchas, y eso es fontanería de verdad y agua caliente para decenas de personas a la vez. Necesitas ventilación capaz de renovar el aire de una sala llena de gente sudando, que no es lo mismo que climatizar una oficina.",
+   "duracion": 5.81,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/air_conditioning_vent_ceiling_26.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_08d",
+   "texto": "Necesitas suelo técnico que aguante que se te caiga una mancuerna de cincuenta kilos sin agrietarse ni despertar al vecino de abajo. Necesitas vestuarios con duchas, y eso es fontanería de verdad y agua caliente para decenas de personas a la vez. Necesitas ventilación capaz de renovar el aire de una sala llena de gente sudando, que no es lo mismo que climatizar una oficina.",
+   "duracion": 5.81,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/sweat_towel_workout_33.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_09",
+   "texto": "Y necesitas el hierro. Una sala equipada de cardio y musculatura se cuenta en cientos de miles, y no es una compra que se haga una vez: las cintas de correr se rompen, los cables se sustituyen, la tapicería se raja y hay que reponerla cada pocos años porque un gimnasio con la máquina rota puesta con un cartel de \"fuera de servicio\" pierde socios.",
+   "duracion": 5.51,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/dumbbells_rack_close_up_6.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "no es una compra que se haga una vez",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "*necesitas* el hierro",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_09b",
+   "texto": "Y necesitas el hierro. Una sala equipada de cardio y musculatura se cuenta en cientos de miles, y no es una compra que se haga una vez: las cintas de correr se rompen, los cables se sustituyen, la tapicería se raja y hay que reponerla cada pocos años porque un gimnasio con la máquina rota puesta con un cartel de \"fuera de servicio\" pierde socios.",
+   "duracion": 5.51,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/woman_working_out_gym_12.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_09c",
+   "texto": "Y necesitas el hierro. Una sala equipada de cardio y musculatura se cuenta en cientos de miles, y no es una compra que se haga una vez: las cintas de correr se rompen, los cables se sustituyen, la tapicería se raja y hay que reponerla cada pocos años porque un gimnasio con la máquina rota puesta con un cartel de \"fuera de servicio\" pierde socios.",
+   "duracion": 5.51,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/gym_locker_room_18.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_09d",
+   "texto": "Y necesitas el hierro. Una sala equipada de cardio y musculatura se cuenta en cientos de miles, y no es una compra que se haga una vez: las cintas de correr se rompen, los cables se sustituyen, la tapicería se raja y hay que reponerla cada pocos años porque un gimnasio con la máquina rota puesta con un cartel de \"fuera de servicio\" pierde socios.",
+   "duracion": 5.51,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/gym_reception_desk_staff_21.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_10",
+   "texto": "Tienes un coste fijo enorme y un ingreso que depende de que la gente siga pagando por algo que no está usando.",
+   "duracion": 3.23,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_10.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Tienes un coste fijo *enorme*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_10x",
+   "texto": "Tienes un coste fijo enorme y un ingreso que depende de que la gente siga pagando por algo que no está usando.",
+   "duracion": 3.24,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_10x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "de que la gente siga *pagando*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_11",
+   "texto": "Todo el negocio va de esa tensión.",
+   "duracion": 2.92,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_11.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Todo el *negocio*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_01",
+   "texto": "Vamos a los números de verdad, y hay dos ligas muy distintas.",
+   "duracion": 2.15,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Vamos a los *números*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_01x",
+   "texto": "Vamos a los números de verdad, y hay dos ligas muy distintas.",
+   "duracion": 2.15,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "hay dos ligas muy *distintas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_02",
+   "texto": "Planet Fitness juega en otra división. La inversión inicial va de un millón doscientos ochenta mil a cinco millones trescientos ochenta y seis mil dólares. El canon de entrada son cuarenta mil, que suena barato al lado del resto. ¿Y por qué tanta diferencia? Por el local: esos dos mil metros de los que hablábamos tienen un alquiler anual que puede ir de doscientos cincuenta mil a setecientos mil dólares.",
+   "duracion": 5.93,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_gimnasio/commercial_lease_contract_signing_48.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 700000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "l dólares",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_02b",
+   "texto": "Planet Fitness juega en otra división. La inversión inicial va de un millón doscientos ochenta mil a cinco millones trescientos ochenta y seis mil dólares. El canon de entrada son cuarenta mil, que suena barato al lado del resto. ¿Y por qué tanta diferencia? Por el local: esos dos mil metros de los que hablábamos tienen un alquiler anual que puede ir de doscientos cincuenta mil a setecientos mil dólares.",
+   "duracion": 5.93,
+   "movimiento": "drift_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/investment_growth_chart_rising_51.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_02c",
+   "texto": "Planet Fitness juega en otra división. La inversión inicial va de un millón doscientos ochenta mil a cinco millones trescientos ochenta y seis mil dólares. El canon de entrada son cuarenta mil, que suena barato al lado del resto. ¿Y por qué tanta diferencia? Por el local: esos dos mil metros de los que hablábamos tienen un alquiler anual que puede ir de doscientos cincuenta mil a setecientos mil dólares.",
+   "duracion": 5.93,
+   "movimiento": "pull_out",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/franchise_business_storefront_56.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "que suena *barato* al lado del resto",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_02d",
+   "texto": "Planet Fitness juega en otra división. La inversión inicial va de un millón doscientos ochenta mil a cinco millones trescientos ochenta y seis mil dólares. El canon de entrada son cuarenta mil, que suena barato al lado del resto. ¿Y por qué tanta diferencia? Por el local: esos dos mil metros de los que hablábamos tienen un alquiler anual que puede ir de doscientos cincuenta mil a setecientos mil dólares.",
+   "duracion": 5.93,
+   "movimiento": "contra_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/queue_waiting_line_people_30.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_03",
+   "texto": "Léelo otra vez, porque esa proporción es la que explica el sector entero: facturas casi el doble de lo que has invertido, y lo facturas todos los años.",
+   "duracion": 5.73,
+   "movimiento": "estatico",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_gimnasio/clock_ticking_time_78.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "*Léelo* otra vez",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_03b",
+   "texto": "Léelo otra vez, porque esa proporción es la que explica el sector entero: facturas casi el doble de lo que has invertido, y lo facturas todos los años.",
+   "duracion": 5.73,
+   "movimiento": "drift_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/plant_growing_time_lapse_86.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_04",
+   "texto": "Y si eso es cierto, la pregunta obvia es por qué no lo hace todo el mundo. La respuesta está en el capítulo cinco, y tiene que ver con lo rápido que se te va la gente.",
+   "duracion": 5.22,
+   "movimiento": "contra_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/row_of_treadmills_empty_10.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 5.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "tiene que ver con lo rápido que se te",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_04b",
+   "texto": "Y si eso es cierto, la pregunta obvia es por qué no lo hace todo el mundo. La respuesta está en el capítulo cinco, y tiene que ver con lo rápido que se te va la gente.",
+   "duracion": 5.22,
+   "movimiento": "subir",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/person_motivated_training_hard_34.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_01",
+   "texto": "Ahora la parte incómoda, que es la que sostiene la cuenta.",
+   "duracion": 2.17,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Ahora la parte *incómoda*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_01x",
+   "texto": "Ahora la parte incómoda, que es la que sostiene la cuenta.",
+   "duracion": 2.18,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "es la que sostiene la *cuenta*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_02",
+   "texto": "Un gimnasio vende más abonos de los que su sala puede aguantar. No es un engaño: es la única forma de que los números salgan.",
+   "duracion": 4.39,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/empty_fitness_room_quiet_37.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_02b",
+   "texto": "Un gimnasio vende más abonos de los que su sala puede aguantar. No es un engaño: es la única forma de que los números salgan.",
+   "duracion": 4.39,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/barbell_weight_plates_loading_7.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "No es un *engaño*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_03",
+   "texto": "Piénsalo con una sala normal. Puede tener sitio para doscientas o trescientas personas a la vez. Pero puede tener dos mil, tres mil, cuatro mil socios.",
+   "duracion": 5.18,
+   "movimiento": "drift_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/weight_scale_measuring_75.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 9000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "tres mil",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_03b",
+   "texto": "Piénsalo con una sala normal. Puede tener sitio para doscientas o trescientas personas a la vez. Pero puede tener dos mil, tres mil, cuatro mil socios.",
+   "duracion": 5.18,
+   "movimiento": "pull_out",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/weight_machine_close_up_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_04",
+   "texto": "Funciona porque la asistencia es una fracción muy pequeña del abono. Dos de cada tres socios no van con regularidad. Y de los que van, no van todos a la misma hora.",
+   "duracion": 5.54,
+   "movimiento": "contra_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/summer_beach_empty_street_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "socios no van con regularidad",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_04b",
+   "texto": "Funciona porque la asistencia es una fracción muy pequeña del abono. Dos de cada tres socios no van con regularidad. Y de los que van, no van todos a la misma hora.",
+   "duracion": 5.54,
+   "movimiento": "estatico",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/monthly_subscription_payment_phone_41.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_05",
+   "texto": "Hagamos la cuenta con números redondos, para que se vea.",
+   "duracion": 2.1,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Hagamos la *cuenta*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_05x",
+   "texto": "Hagamos la cuenta con números redondos, para que se vea.",
+   "duracion": 2.1,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_05x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "números *redondos*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_06",
+   "texto": "Pon tres mil socios a veinte euros al mes. Son sesenta mil euros al mes, setecientos veinte mil al año.",
+   "duracion": 3.54,
+   "movimiento": "contra_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/person_paying_card_reader_43.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 720000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "año",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_06b",
+   "texto": "Pon tres mil socios a veinte euros al mes. Son sesenta mil euros al mes, setecientos veinte mil al año.",
+   "duracion": 3.54,
+   "movimiento": "subir",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/invoices_bills_paperwork_desk_46.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_07",
+   "texto": "Ahora pon que de esos tres mil solo mil van con algo de regularidad, y que se reparten entre las catorce horas que abres, de lunes a domingo. En hora punta tienes doscientas personas dentro. Y en hora punta es cuando la gente se queja de que hay que hacer cola para el banco de pesas.",
+   "duracion": 5.96,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/lockers_row_keys_20.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "solo mil van con algo de regularidad",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_07b",
+   "texto": "Ahora pon que de esos tres mil solo mil van con algo de regularidad, y que se reparten entre las catorce horas que abres, de lunes a domingo. En hora punta tienes doscientas personas dentro. Y en hora punta es cuando la gente se queja de que hay que hacer cola para el banco de pesas.",
+   "duracion": 5.96,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/crowd_people_walking_street_87.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "de lunes a *domingo*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_07c",
+   "texto": "Ahora pon que de esos tres mil solo mil van con algo de regularidad, y que se reparten entre las catorce horas que abres, de lunes a domingo. En hora punta tienes doscientas personas dentro. Y en hora punta es cuando la gente se queja de que hay que hacer cola para el banco de pesas.",
+   "duracion": 5.96,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/weight_room_dumbbells_racks_2.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_08",
+   "texto": "Con esos mismos tres mil socios, si de repente la mitad decidiera ir tres veces por semana, tu gimnasio sería físicamente inviable. No cabrían. Tendrías que ampliar la sala, comprar más máquinas y contratar más gente — con exactamente el mismo ingreso.",
+   "duracion": 5.73,
+   "movimiento": "drift_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/gym_floor_people_training_3.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "barras",
+    "items": [
+     [
+      "banco pequeño",
+      3.0
+     ],
+     [
+      "banco grande",
+      1.0
+     ]
+    ],
+    "destacar": {
+     "banco pequeño": [
+      232,
+      86,
+      64
+     ]
+    },
+    "sufijo": "x",
+    "dec": 1,
+    "y": 0.62,
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "retardo": 0.6,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "Con esos *mismos* tres mil socios",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_08b",
+   "texto": "Con esos mismos tres mil socios, si de repente la mitad decidiera ir tres veces por semana, tu gimnasio sería físicamente inviable. No cabrían. Tendrías que ampliar la sala, comprar más máquinas y contratar más gente — con exactamente el mismo ingreso.",
+   "duracion": 5.73,
+   "movimiento": "pull_out",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/busy_gym_crowded_people_28.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_08c",
+   "texto": "Con esos mismos tres mil socios, si de repente la mitad decidiera ir tres veces por semana, tu gimnasio sería físicamente inviable. No cabrían. Tendrías que ampliar la sala, comprar más máquinas y contratar más gente — con exactamente el mismo ingreso.",
+   "duracion": 5.73,
+   "movimiento": "contra_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/people_entering_gym_door_29.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_09",
+   "texto": "El gimnasio hace exactamente el mismo cálculo que hace una aerolínea con el overbooking, o un banco con tu dinero: sabe que no vais a venir todos a la vez, y vende contando con eso.",
+   "duracion": 5.27,
+   "movimiento": "estatico",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/bank_building_facade_50.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_09b",
+   "texto": "El gimnasio hace exactamente el mismo cálculo que hace una aerolínea con el overbooking, o un banco con tu dinero: sabe que no vais a venir todos a la vez, y vende contando con eso.",
+   "duracion": 5.27,
+   "movimiento": "drift_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/sale_discount_sign_shop_68.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_10",
+   "texto": "Con una diferencia importante, y es la que hace que este negocio sea especial.",
+   "duracion": 2.71,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_10.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "Con una diferencia *importante*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_10x",
+   "texto": "Con una diferencia importante, y es la que hace que este negocio sea especial.",
+   "duracion": 2.71,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_10x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "que hace que este *negocio* sea",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_ent": 1.0,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_11",
+   "texto": "Al banco le cuesta dinero que le pidas tu depósito. A la aerolínea le cuesta dinero que aparezcas. Al gimnasio le cuesta dinero que vayas. Gastas agua caliente, desgastas la máquina, ocupas un sitio, necesitas más monitores y más limpieza.",
+   "duracion": 5.13,
+   "movimiento": "subir",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/coins_stack_money_45.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_11b",
+   "texto": "Al banco le cuesta dinero que le pidas tu depósito. A la aerolínea le cuesta dinero que aparezcas. Al gimnasio le cuesta dinero que vayas. Gastas agua caliente, desgastas la máquina, ocupas un sitio, necesitas más monitores y más limpieza.",
+   "duracion": 5.13,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/led_lights_ceiling_interior_27.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_11c",
+   "texto": "Al banco le cuesta dinero que le pidas tu depósito. A la aerolínea le cuesta dinero que aparezcas. Al gimnasio le cuesta dinero que vayas. Gastas agua caliente, desgastas la máquina, ocupas un sitio, necesitas más monitores y más limpieza.",
+   "duracion": 5.13,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/calculator_expenses_receipts_47.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Gastas agua *caliente*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_12",
+   "texto": "Tu mejor cliente es el que paga y no aparece. Y tú, como dueño, no puedes decirlo en voz alta ni puedes montar el negocio de otra forma.",
+   "duracion": 2.48,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_12.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "como *dueño*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_12x",
+   "texto": "Tu mejor cliente es el que paga y no aparece. Y tú, como dueño, no puedes decirlo en voz alta ni puedes montar el negocio de otra forma.",
+   "duracion": 2.49,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_12x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "puedes *decirlo* en voz alta",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_12b",
+   "texto": "Tu mejor cliente es el que paga y no aparece. Y tú, como dueño, no puedes decirlo en voz alta ni puedes montar el negocio de otra forma.",
+   "duracion": 4.97,
+   "movimiento": "drift_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/workers_building_interior_walls_60.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_01",
+   "texto": "Hay un mes que decide el año entero.",
+   "duracion": 2.73,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Hay un mes que *decide* el año",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_02",
+   "texto": "En enero entra una avalancha de gente. Propósitos de año nuevo, la ropa que aprieta, la foto de las fiestas. Es el mes de más altas del año, con diferencia.",
+   "duracion": 5.74,
+   "movimiento": "contra_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/new_year_resolution_calendar_38.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_02b",
+   "texto": "En enero entra una avalancha de gente. Propósitos de año nuevo, la ropa que aprieta, la foto de las fiestas. Es el mes de más altas del año, con diferencia.",
+   "duracion": 5.74,
+   "movimiento": "estatico",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/calendar_days_passing_39.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_03",
+   "texto": "Y es también el mes en que más gente se va: la rotación estacional llega a picos en torno al cuarenta por ciento en enero.",
+   "duracion": 3.67,
+   "movimiento": "drift_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/turnstile_access_card_entry_22.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 40.0,
+    "dec": 0,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "enero",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "es *también* el mes",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_03b",
+   "texto": "Y es también el mes en que más gente se va: la rotación estacional llega a picos en torno al cuarenta por ciento en enero.",
+   "duracion": 3.67,
+   "movimiento": "contra_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/person_giving_up_quitting_35.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_04",
+   "texto": "Es decir: enero te trae la mitad de tu clientela nueva y te confirma que la del año pasado ya no está.",
+   "duracion": 3.5,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Es *decir*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_04x",
+   "texto": "Es decir: enero te trae la mitad de tu clientela nueva y te confirma que la del año pasado ya no está.",
+   "duracion": 3.49,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "nueva y te *confirma*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_05",
+   "texto": "Por eso los gimnasios low cost hacen lo que hacen. Cuota de entrada de cuatro con noventa y nueve las primeras semanas. Matrícula regalada. Meses gratis. Están comprando el hábito, porque saben que el que aguanta el primer mes se queda muchos meses.",
+   "duracion": 5.07,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/monthly_subscription_payment_phone_41.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 99.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "las primeras semanas",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_05b",
+   "texto": "Por eso los gimnasios low cost hacen lo que hacen. Cuota de entrada de cuatro con noventa y nueve las primeras semanas. Matrícula regalada. Meses gratis. Están comprando el hábito, porque saben que el que aguanta el primer mes se queda muchos meses.",
+   "duracion": 5.07,
+   "movimiento": "bajar",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/credit_card_payment_terminal_42.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "*Matrícula* regalada",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_05c",
+   "texto": "Por eso los gimnasios low cost hacen lo que hacen. Cuota de entrada de cuatro con noventa y nueve las primeras semanas. Matrícula regalada. Meses gratis. Están comprando el hábito, porque saben que el que aguanta el primer mes se queda muchos meses.",
+   "duracion": 5.07,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/person_paying_card_reader_43.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_06",
+   "texto": "Y saben también el reverso: el socio que en su primer mes apenas aparece está prácticamente perdido. La inmensa mayoría de esos se dan de baja antes de medio año.",
+   "duracion": 5.99,
+   "movimiento": "drift_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_gimnasio/person_cancelling_phone_app_66.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_06b",
+   "texto": "Y saben también el reverso: el socio que en su primer mes apenas aparece está prácticamente perdido. La inmensa mayoría de esos se dan de baja antes de medio año.",
+   "duracion": 5.99,
+   "movimiento": "pull_out",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_gimnasio/protein_supplements_shaker_72.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_07",
+   "texto": "Ese primer mes no es marketing. Es el negocio decidiéndose.",
+   "duracion": 2.23,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Ese *primer* mes",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_07x",
+   "texto": "Ese primer mes no es marketing. Es el negocio decidiéndose.",
+   "duracion": 2.23,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "*marketing*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_01",
+   "texto": "Y aquí llega el número que hunde a los gimnasios que no lo entienden.",
+   "duracion": 2.08,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "aquí llega el *número*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_01x",
+   "texto": "Y aquí llega el número que hunde a los gimnasios que no lo entienden.",
+   "duracion": 2.09,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "a los *gimnasios*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_02",
+   "texto": "Ocho meses y medio. Eso significa que, si no haces nada, cada año tienes que volver a llenar un tercio de tu gimnasio solo para quedarte igual.",
+   "duracion": 4.84,
+   "movimiento": "drift_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/weight_scale_measuring_75.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 8.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "meses y medio",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_02b",
+   "texto": "Ocho meses y medio. Eso significa que, si no haces nada, cada año tienes que volver a llenar un tercio de tu gimnasio solo para quedarte igual.",
+   "duracion": 4.84,
+   "movimiento": "contra_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_gimnasio/measuring_tape_body_fitness_76.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_03",
+   "texto": "No para crecer. Para quedarte igual.",
+   "duracion": 1.72,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "No para *crecer*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_03x",
+   "texto": "No para crecer. Para quedarte igual.",
+   "duracion": 1.72,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Para quedarte *igual*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_ent": -1.0,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_04",
+   "texto": "Y captar a un socio nuevo cuesta dinero: publicidad, promoción, la matrícula que regalas, el mes que no cobras. Retener al que ya tienes no cuesta casi nada en comparación.",
+   "duracion": 6.17,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/person_motivated_training_hard_34.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_04b",
+   "texto": "Y captar a un socio nuevo cuesta dinero: publicidad, promoción, la matrícula que regalas, el mes que no cobras. Retener al que ya tienes no cuesta casi nada en comparación.",
+   "duracion": 6.17,
+   "movimiento": "bajar",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/advertising_billboard_street_67.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_05",
+   "texto": "Por eso el trabajo de verdad de un gimnasio no está en la sala. Está en el mes uno: llamar al que no ha venido, meterlo en una clase, ponerle un plan, hacer que conozca a alguien allí dentro. Los gimnasios que hacen eso bien retienen mucho más, y los que no lo hacen viven en una rueda de captar y perder que no para nunca.",
+   "duracion": 6.95,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_gimnasio/spinning_bike_class_gym_11.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Está en el mes uno",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_05b",
+   "texto": "Por eso el trabajo de verdad de un gimnasio no está en la sala. Está en el mes uno: llamar al que no ha venido, meterlo en una clase, ponerle un plan, hacer que conozca a alguien allí dentro. Los gimnasios que hacen eso bien retienen mucho más, y los que no lo hacen viven en una rueda de captar y perder que no para nunca.",
+   "duracion": 6.95,
+   "movimiento": "drift_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/gym_mirror_reflection_training_24.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_05c",
+   "texto": "Por eso el trabajo de verdad de un gimnasio no está en la sala. Está en el mes uno: llamar al que no ha venido, meterlo en una clase, ponerle un plan, hacer que conozca a alguien allí dentro. Los gimnasios que hacen eso bien retienen mucho más, y los que no lo hacen viven en una rueda de captar y perder que no para nunca.",
+   "duracion": 6.95,
+   "movimiento": "pull_out",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/exhausted_person_sweating_gym_31.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_06",
+   "texto": "Un gimnasio no se muere por no tener clientes. Se muere por tener siempre los mismos meses de vida por cliente.",
+   "duracion": 6.96,
+   "movimiento": "contra_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/empty_gym_no_people_36.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Un *gimnasio* no se muere",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_01",
+   "texto": "Con la cuota sola, las cuentas de un gimnasio son ajustadas. El margen bueno está en lo que vendes encima de la cuota.",
+   "duracion": 4.08,
+   "movimiento": "estatico",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_gimnasio/bar_chart_business_data_53.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_01b",
+   "texto": "Con la cuota sola, las cuentas de un gimnasio son ajustadas. El margen bueno está en lo que vendes encima de la cuota.",
+   "duracion": 4.08,
+   "movimiento": "drift_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/profit_financial_success_chart_54.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_02",
+   "texto": "El entrenador personal. Las clases dirigidas de pago. La nutrición, la fisioterapia, los suplementos, la taquilla, la máquina de bebidas.",
+   "duracion": 5.33,
+   "movimiento": "contra_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/declining_graph_red_arrow_52.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "El *entrenador* personal",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_02b",
+   "texto": "El entrenador personal. Las clases dirigidas de pago. La nutrición, la fisioterapia, los suplementos, la taquilla, la máquina de bebidas.",
+   "duracion": 5.33,
+   "movimiento": "subir",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/group_fitness_class_instructor_14.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_03",
+   "texto": "Y ahí hay una asimetría preciosa para el dueño: ese extra lo compra justo el socio que sí viene. El que no aparece te paga veinte euros y ya. El que viene cuatro veces por semana te paga veinte, más el entrenador, más las clases, más la bebida de después.",
+   "duracion": 5.88,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_gimnasio/yoga_class_studio_people_15.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "barras",
+    "items": [
+     [
+      "banco pequeño",
+      4.0
+     ],
+     [
+      "banco grande",
+      1.0
+     ]
+    ],
+    "destacar": {
+     "banco pequeño": [
+      232,
+      86,
+      64
+     ]
+    },
+    "sufijo": "x",
+    "dec": 1,
+    "y": 0.68,
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "retardo": 0.6,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_03b",
+   "texto": "Y ahí hay una asimetría preciosa para el dueño: ese extra lo compra justo el socio que sí viene. El que no aparece te paga veinte euros y ya. El que viene cuatro veces por semana te paga veinte, más el entrenador, más las clases, más la bebida de después.",
+   "duracion": 5.88,
+   "movimiento": "bajar",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/personal_trainer_coaching_client_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_03c",
+   "texto": "Y ahí hay una asimetría preciosa para el dueño: ese extra lo compra justo el socio que sí viene. El que no aparece te paga veinte euros y ya. El que viene cuatro veces por semana te paga veinte, más el entrenador, más las clases, más la bebida de después.",
+   "duracion": 5.88,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/trainer_showing_exercise_form_17.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "más el *entrenador*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_04",
+   "texto": "O sea que el negocio tiene dos clientes buenos por motivos opuestos: el que no viene nunca, porque no te cuesta nada; y el que viene siempre, porque te compra todo lo demás.",
+   "duracion": 5.5,
+   "movimiento": "drift_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/business_meeting_discussion_table_62.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_04b",
+   "texto": "O sea que el negocio tiene dos clientes buenos por motivos opuestos: el que no viene nunca, porque no te cuesta nada; y el que viene siempre, porque te compra todo lo demás.",
+   "duracion": 5.5,
+   "movimiento": "pull_out",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_gimnasio/franchise_business_storefront_56.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_05",
+   "texto": "El malo es el de en medio. El que viene lo justo para gastarte agua caliente y desgastar la máquina, no compra nada extra, y a los siete meses se da de baja.",
+   "duracion": 4.91,
+   "movimiento": "contra_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/broken_machine_repair_tools_79.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 7.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "meses se da de baja",
+    "y": 0.33,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "El malo es el de en *medio*",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_05b",
+   "texto": "El malo es el de en medio. El que viene lo justo para gastarte agua caliente y desgastar la máquina, no compra nada extra, y a los siete meses se da de baja.",
+   "duracion": 4.91,
+   "movimiento": "estatico",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/vending_machine_drinks_73.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_01",
+   "texto": "Con todo lo anterior en la cabeza, ya se entiende por qué el mercado español acabó donde acabó.",
+   "duracion": 2.81,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Con todo lo *anterior*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_01x",
+   "texto": "Con todo lo anterior en la cabeza, ya se entiende por qué el mercado español acabó donde acabó.",
+   "duracion": 2.8,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "entiende por qué el *mercado*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_02",
+   "texto": "Si tu ingreso depende de tener muchísimos socios que apenas vienen, entonces el precio tiene que ser lo bastante bajo como para que no duela dejarlo puesto.",
+   "duracion": 2.25,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*entonces*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_02x",
+   "texto": "Si tu ingreso depende de tener muchísimos socios que apenas vienen, entonces el precio tiene que ser lo bastante bajo como para que no duela dejarlo puesto.",
+   "duracion": 2.26,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "el *precio* tiene que ser",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_02b",
+   "texto": "Si tu ingreso depende de tener muchísimos socios que apenas vienen, entonces el precio tiene que ser lo bastante bajo como para que no duela dejarlo puesto.",
+   "duracion": 4.51,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_gimnasio/treadmill_running_gym_9.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_03",
+   "texto": "Ahí está la clave de la cuota de veinte euros. No es que sea barato hacer ejercicio. Es que veinte euros al mes es la cantidad exacta que mucha gente no se molesta en cancelar.",
+   "duracion": 5.47,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/smartphone_app_scrolling_hands_65.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 20.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_03b",
+   "texto": "Ahí está la clave de la cuota de veinte euros. No es que sea barato hacer ejercicio. Es que veinte euros al mes es la cantidad exacta que mucha gente no se molesta en cancelar.",
+   "duracion": 5.47,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_gimnasio/queue_waiting_line_people_30.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_04",
+   "texto": "Y el mercado se llenó. En España hay del orden de treinta y seis marcas de gimnasio en franquicia y más de trescientos treinta centros franquiciados, con Altafit, McFit y Basic-Fit entre las que reparten la cabeza.",
+   "duracion": 6.82,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_gimnasio/woman_working_out_gym_12.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 330.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "centros franquiciados",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_04b",
+   "texto": "Y el mercado se llenó. En España hay del orden de treinta y seis marcas de gimnasio en franquicia y más de trescientos treinta centros franquiciados, con Altafit, McFit y Basic-Fit entre las que reparten la cabeza.",
+   "duracion": 6.82,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_gimnasio/man_doing_bench_press_13.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_05",
+   "texto": "Las cuotas quedaron ancladas ahí abajo: en el entorno de veinte a veinticinco euros al mes en las tarifas básicas, y ofertas de entrada por debajo de cinco euros las primeras semanas.",
+   "duracion": 5.29,
+   "movimiento": "pull_out",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_gimnasio/plumbing_pipes_installation_61.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 25.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros al mes en las tarifas básicas",
+    "y": 0.33,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Las cuotas *quedaron* ancladas ahí",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_05b",
+   "texto": "Las cuotas quedaron ancladas ahí abajo: en el entorno de veinte a veinticinco euros al mes en las tarifas básicas, y ofertas de entrada por debajo de cinco euros las primeras semanas.",
+   "duracion": 5.29,
+   "movimiento": "contra_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_gimnasio/small_office_desk_laptop_63.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_06",
+   "texto": "Eso deja al gimnasio de barrio, el de toda la vida, en una posición imposible: no puede competir en precio porque no tiene volumen, y no puede competir en volumen porque no tiene local.",
+   "duracion": 2.91,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Eso deja al gimnasio de *barrio*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_06x",
+   "texto": "Eso deja al gimnasio de barrio, el de toda la vida, en una posición imposible: no puede competir en precio porque no tiene volumen, y no puede competir en volumen porque no tiene local.",
+   "duracion": 2.91,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "competir en precio *porque*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_06b",
+   "texto": "Eso deja al gimnasio de barrio, el de toda la vida, en una posición imposible: no puede competir en precio porque no tiene volumen, y no puede competir en volumen porque no tiene local.",
+   "duracion": 5.82,
+   "movimiento": "drift_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_gimnasio/two_shops_side_by_side_street_69.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_07",
+   "texto": "O eres muy grande y muy barato, o eres muy pequeño y muy caro. En medio no hay sitio.",
+   "duracion": 3.18,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "eres muy grande y muy *barato*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_07x",
+   "texto": "O eres muy grande y muy barato, o eres muy pequeño y muy caro. En medio no hay sitio.",
+   "duracion": 3.18,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "muy *pequeño* y muy caro",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_01",
+   "texto": "Has firmado el alquiler a diez años. Has puesto las máquinas. Has contratado al equipo.",
+   "duracion": 6.18,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/shower_room_tiles_water_19.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "Has firmado el alquiler",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_02",
+   "texto": "Y el cliente por el que has pagado todo eso se va con un clic, desde el móvil, sin dar explicaciones y sin coste.",
+   "duracion": 3.88,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/percentage_symbol_screen_graphic_55.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_02b",
+   "texto": "Y el cliente por el que has pagado todo eso se va con un clic, desde el móvil, sin dar explicaciones y sin coste.",
+   "duracion": 3.88,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/laptop_screen_data_dashboard_64.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_03",
+   "texto": "Ahí está la asimetría de este negocio, y es brutal. Tus compromisos son largos: el arrendamiento, la financiación de los equipos, los contratos del personal. El compromiso de tu cliente dura treinta días.",
+   "duracion": 4.79,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/turnstile_access_card_entry_22.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 30.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "días",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_03b",
+   "texto": "Ahí está la asimetría de este negocio, y es brutal. Tus compromisos son largos: el arrendamiento, la financiación de los equipos, los contratos del personal. El compromiso de tu cliente dura treinta días.",
+   "duracion": 4.79,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/membership_card_scan_reader_23.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_03c",
+   "texto": "Ahí está la asimetría de este negocio, y es brutal. Tus compromisos son largos: el arrendamiento, la financiación de los equipos, los contratos del personal. El compromiso de tu cliente dura treinta días.",
+   "duracion": 4.79,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/gym_mirror_reflection_training_24.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_04",
+   "texto": "Lo que de verdad tienes no es una cartera de socios. Tienes un local caro lleno de hierro que se deprecia, y una lista de gente que puede irse este mes.",
+   "duracion": 2.35,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Tienes un *local* caro",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_04x",
+   "texto": "Lo que de verdad tienes no es una cartera de socios. Tienes un local caro lleno de hierro que se deprecia, y una lista de gente que puede irse este mes.",
+   "duracion": 2.36,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "lleno de *hierro*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_04b",
+   "texto": "Lo que de verdad tienes no es una cartera de socios. Tienes un local caro lleno de hierro que se deprecia, y una lista de gente que puede irse este mes.",
+   "duracion": 4.71,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_gimnasio/air_conditioning_vent_ceiling_26.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_01",
+   "texto": "Entonces, ¿cuánto cuesta tener un gimnasio?",
+   "duracion": 1.9,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*Entonces*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_01x",
+   "texto": "Entonces, ¿cuánto cuesta tener un gimnasio?",
+   "duracion": 1.9,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "cuesta tener un *gimnasio*?",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_02",
+   "texto": "En España, del orden de ciento cuarenta y seis mil euros de inversión media por centro en franquicia, para una facturación media en el entorno de los doscientos sesenta y cinco mil al año. En Estados Unidos, entre cuatrocientos sesenta mil y novecientos mil dólares en el formato pequeño, y hasta más de cinco millones en el grande.",
+   "duracion": 6.87,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/busy_gym_crowded_people_28.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 900000.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "el formato pequeño",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_02b",
+   "texto": "En España, del orden de ciento cuarenta y seis mil euros de inversión media por centro en franquicia, para una facturación media en el entorno de los doscientos sesenta y cinco mil al año. En Estados Unidos, entre cuatrocientos sesenta mil y novecientos mil dólares en el formato pequeño, y hasta más de cinco millones en el grande.",
+   "duracion": 6.87,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/people_entering_gym_door_29.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_02c",
+   "texto": "En España, del orden de ciento cuarenta y seis mil euros de inversión media por centro en franquicia, para una facturación media en el entorno de los doscientos sesenta y cinco mil al año. En Estados Unidos, entre cuatrocientos sesenta mil y novecientos mil dólares en el formato pequeño, y hasta más de cinco millones en el grande.",
+   "duracion": 6.87,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_gimnasio/city_street_shops_aerial_70.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_03",
+   "texto": "Y después, todos los meses, lo mismo: alquiler, luz, personal, mantenimiento y reposición de máquinas. Un suelo de gasto que no se mueve.",
+   "duracion": 3.02,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*después*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_03x",
+   "texto": "Y después, todos los meses, lo mismo: alquiler, luz, personal, mantenimiento y reposición de máquinas. Un suelo de gasto que no se mueve.",
+   "duracion": 3.02,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "mantenimiento y *reposición*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_03b",
+   "texto": "Y después, todos los meses, lo mismo: alquiler, luz, personal, mantenimiento y reposición de máquinas. Un suelo de gasto que no se mueve.",
+   "duracion": 6.04,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/tired_athlete_resting_bench_32.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_04",
+   "texto": "Contra eso tienes un ingreso que depende de dos cosas que no controlas del todo: cuánta gente se apunta en enero, y cuánta sigue pagando en junio.",
+   "duracion": 2.23,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Contra eso tienes un *ingreso*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_04x",
+   "texto": "Contra eso tienes un ingreso que depende de dos cosas que no controlas del todo: cuánta gente se apunta en enero, y cuánta sigue pagando en junio.",
+   "duracion": 2.22,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "del todo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_04b",
+   "texto": "Contra eso tienes un ingreso que depende de dos cosas que no controlas del todo: cuánta gente se apunta en enero, y cuánta sigue pagando en junio.",
+   "duracion": 4.45,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_gimnasio/person_motivated_training_hard_34.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_05",
+   "texto": "Y hay una tercera que sí controlas, y es la única palanca de verdad que tienes: cuántos meses aguanta cada socio. Si consigues que tu media pase de ocho meses a doce, has subido tus ingresos un cincuenta por ciento sin captar a nadie nuevo, sin bajar el precio y sin comprar una máquina más.",
+   "duracion": 5.91,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/person_giving_up_quitting_35.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 51.0,
+    "dec": 0,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "sin captar a nadie nuevo",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "hay una tercera que sí *controlas*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_05b",
+   "texto": "Y hay una tercera que sí controlas, y es la única palanca de verdad que tienes: cuántos meses aguanta cada socio. Si consigues que tu media pase de ocho meses a doce, has subido tus ingresos un cincuenta por ciento sin captar a nadie nuevo, sin bajar el precio y sin comprar una máquina más.",
+   "duracion": 5.91,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/empty_gym_no_people_36.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_05c",
+   "texto": "Y hay una tercera que sí controlas, y es la única palanca de verdad que tienes: cuántos meses aguanta cada socio. Si consigues que tu media pase de ocho meses a doce, has subido tus ingresos un cincuenta por ciento sin captar a nadie nuevo, sin bajar el precio y sin comprar una máquina más.",
+   "duracion": 5.91,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_gimnasio/empty_fitness_room_quiet_37.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_06",
+   "texto": "Ningún otro botón de este negocio mueve tanto.",
+   "duracion": 1.81,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Ningún otro *botón*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_06x",
+   "texto": "Ningún otro botón de este negocio mueve tanto.",
+   "duracion": 1.81,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "este negocio mueve *tanto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_07",
+   "texto": "El negocio no es el gimnasio. El gimnasio es el escenario. El negocio es la diferencia entre lo que la gente cree que va a hacer y lo que acaba haciendo — y tú cobras esa diferencia todos los meses.",
+   "duracion": 6.64,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_gimnasio/modern_fitness_center_interior_1.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "El negocio no es el *gimnasio*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_07b",
+   "texto": "El negocio no es el gimnasio. El gimnasio es el escenario. El negocio es la diferencia entre lo que la gente cree que va a hacer y lo que acaba haciendo — y tú cobras esa diferencia todos los meses.",
+   "duracion": 6.64,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_gimnasio/measuring_tape_body_fitness_76.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_08",
+   "texto": "Ese es el precio de ser el dueño de un gimnasio: montas un sitio para que la gente vaya, y ganas dinero cuando no va.",
+   "duracion": 1.93,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Ese es el *precio* de ser",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_08x",
+   "texto": "Ese es el precio de ser el dueño de un gimnasio: montas un sitio para que la gente vaya, y ganas dinero cuando no va.",
+   "duracion": 1.93,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "ganas dinero *cuando*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_08b",
+   "texto": "Ese es el precio de ser el dueño de un gimnasio: montas un sitio para que la gente vaya, y ganas dinero cuando no va.",
+   "duracion": 3.86,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_gimnasio/credit_card_payment_terminal_42.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  }
+ ]
+}

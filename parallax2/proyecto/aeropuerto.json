@@ -1,0 +1,5523 @@
+{
+ "titulo": "La economía de comprar y mantener un aeropuerto",
+ "lienzo": {
+  "w": 1920,
+  "h": 1080,
+  "fps": 25,
+  "ppm": 140
+ },
+ "estilo": "metraje real",
+ "escenas": [
+  {
+   "id": "gancho_01",
+   "texto": "En julio de dos mil quince se subastó un aeropuerto entero en España. Llegó una sola puja: diez mil euros.",
+   "duracion": 3.95,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/traveler_pulling_suitcase_airport_11.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "quince se subastó un aeropuerto entero",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_01b",
+   "texto": "En julio de dos mil quince se subastó un aeropuerto entero en España. Llegó una sola puja: diez mil euros.",
+   "duracion": 3.95,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_02",
+   "texto": "Diez mil euros. Lo que cuesta un coche de segunda mano. Por un aeropuerto con torre de control, terminal y una de las pistas más largas de Europa.",
+   "duracion": 4.91,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_02b",
+   "texto": "Diez mil euros. Lo que cuesta un coche de segunda mano. Por un aeropuerto con torre de control, terminal y una de las pistas más largas de Europa.",
+   "duracion": 4.91,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_03",
+   "texto": "Y como era la única oferta, ganó.",
+   "duracion": 1.61,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y como era",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_03x",
+   "texto": "Y como era la única oferta, ganó.",
+   "duracion": 1.62,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_gancho_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "única *oferta*, ganó",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_04",
+   "texto": "Ese aeropuerto había costado más de mil millones construirlo. El precio mínimo que se le calculaba eran cuarenta millones. Se lo llevó alguien por diez mil.",
+   "duracion": 4.95,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1000.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "construirlo",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "gancho_04b",
+   "texto": "Ese aeropuerto había costado más de mil millones construirlo. El precio mínimo que se le calculaba eran cuarenta millones. Se lo llevó alguien por diez mil.",
+   "duracion": 4.95,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/queue_line_airport_check_in_20.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "gancho_05",
+   "texto": "Así que la pregunta se hace sola: si un aeropuerto se puede comprar por el precio de un piso, ¿por qué no lo hace todo el mundo? La respuesta está en lo que pasa el día después, y te la cuento entera.",
+   "duracion": 6.18,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/airport_departure_board_flights_22.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Así que la *pregunta* se hace sola",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "gancho_05b",
+   "texto": "Así que la pregunta se hace sola: si un aeropuerto se puede comprar por el precio de un piso, ¿por qué no lo hace todo el mundo? La respuesta está en lo que pasa el día después, y te la cuento entera.",
+   "duracion": 6.18,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_01",
+   "texto": "Cuando piensas en ser dueño de un aeropuerto piensas en aviones.",
+   "duracion": 2.25,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Cuando piensas en ser *dueño*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_01x",
+   "texto": "Cuando piensas en ser dueño de un aeropuerto piensas en aviones.",
+   "duracion": 2.26,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "un aeropuerto *piensas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_02",
+   "texto": "Quítate esa idea ya. Los aviones no son tuyos. Las aerolíneas no son tuyas. Los pilotos, las azafatas, el combustible que se quema en tu pista: nada de eso te pertenece ni te paga nómina.",
+   "duracion": 6.45,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "*Quítate* esa idea ya",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_02b",
+   "texto": "Quítate esa idea ya. Los aviones no son tuyos. Las aerolíneas no son tuyas. Los pilotos, las azafatas, el combustible que se quema en tu pista: nada de eso te pertenece ni te paga nómina.",
+   "duracion": 6.45,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/aircraft_refueling_fuel_truck_28.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_03",
+   "texto": "Lo que compras es otra cosa mucho más aburrida y mucho más rentable: eres el casero.",
+   "duracion": 3.34,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Lo que *compras* es otra cosa",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_03x",
+   "texto": "Lo que compras es otra cosa mucho más aburrida y mucho más rentable: eres el casero.",
+   "duracion": 3.34,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "aburrida y mucho más *rentable*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": 1.0,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_04",
+   "texto": "Tienes un terreno enorme con una pista encima, y alquilas el derecho a usarlo. A las aerolíneas les cobras por aterrizar. A las tiendas les cobras por vender. A los coches les cobras por aparcar. A las empresas de handling les cobras por trabajar allí.",
+   "duracion": 5.24,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/parking_garage_cars_rows_13.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "Tienes un *terreno* enorme",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_04b",
+   "texto": "Tienes un terreno enorme con una pista encima, y alquilas el derecho a usarlo. A las aerolíneas les cobras por aterrizar. A las tiendas les cobras por vender. A los coches les cobras por aparcar. A las empresas de handling les cobras por trabajar allí.",
+   "duracion": 5.24,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/cargo_plane_loading_freight_26.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_04c",
+   "texto": "Tienes un terreno enorme con una pista encima, y alquilas el derecho a usarlo. A las aerolíneas les cobras por aterrizar. A las tiendas les cobras por vender. A los coches les cobras por aparcar. A las empresas de handling les cobras por trabajar allí.",
+   "duracion": 5.24,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/air_freight_warehouse_pallets_27.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_05",
+   "texto": "Tu producto no es volar. Tu producto es el metro cuadrado y el minuto de pista.",
+   "duracion": 2.81,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Tu producto no es *volar*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_05x",
+   "texto": "Tu producto no es volar. Tu producto es el metro cuadrado y el minuto de pista.",
+   "duracion": 2.82,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_05x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "es el metro *cuadrado*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_06",
+   "texto": "Y ese producto tiene una particularidad que lo cambia todo: está encendido aunque no venga nadie.",
+   "duracion": 3.35,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Y ese *producto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_06x",
+   "texto": "Y ese producto tiene una particularidad que lo cambia todo: está encendido aunque no venga nadie.",
+   "duracion": 3.35,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "*cambia* todo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_ent": -1.0,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_07",
+   "texto": "Un aeropuerto no se puede cerrar por la tarde. Tiene un servicio de bomberos propio, obligatorio, con dotación mínima aunque aterrice un solo avión al día. Tiene control de seguridad con personal y máquinas. Tiene señalización y balizas que hay que mantener certificadas. Tiene que retirar nieve y hielo en invierno, y repintar y reasfaltar la pista cada pocos años.",
+   "duracion": 5.29,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "texto_pantalla": {
+    "texto": "Un *aeropuerto* no se puede cerrar",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_07b",
+   "texto": "Un aeropuerto no se puede cerrar por la tarde. Tiene un servicio de bomberos propio, obligatorio, con dotación mínima aunque aterrice un solo avión al día. Tiene control de seguridad con personal y máquinas. Tiene señalización y balizas que hay que mantener certificadas. Tiene que retirar nieve y hielo en invierno, y repintar y reasfaltar la pista cada pocos años.",
+   "duracion": 5.29,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_07c",
+   "texto": "Un aeropuerto no se puede cerrar por la tarde. Tiene un servicio de bomberos propio, obligatorio, con dotación mínima aunque aterrice un solo avión al día. Tiene control de seguridad con personal y máquinas. Tiene señalización y balizas que hay que mantener certificadas. Tiene que retirar nieve y hielo en invierno, y repintar y reasfaltar la pista cada pocos años.",
+   "duracion": 5.29,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_07d",
+   "texto": "Un aeropuerto no se puede cerrar por la tarde. Tiene un servicio de bomberos propio, obligatorio, con dotación mínima aunque aterrice un solo avión al día. Tiene control de seguridad con personal y máquinas. Tiene señalización y balizas que hay que mantener certificadas. Tiene que retirar nieve y hielo en invierno, y repintar y reasfaltar la pista cada pocos años.",
+   "duracion": 5.29,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/traveler_pulling_suitcase_airport_11.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_08",
+   "texto": "Nada de eso baja cuando bajan los pasajeros. Es exactamente el mismo dinero con cien vuelos que con dos.",
+   "duracion": 3.51,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 100.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "vuelos que con dos",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_08b",
+   "texto": "Nada de eso baja cuando bajan los pasajeros. Es exactamente el mismo dinero con cien vuelos que con dos.",
+   "duracion": 3.51,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_09",
+   "texto": "Y ahí está la primera cosa que casi nadie sabe. Un aeropuerto no gana su dinero donde tú crees.",
+   "duracion": 3.26,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_09.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Y ahí está la *primera* cosa",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_09x",
+   "texto": "Y ahí está la primera cosa que casi nadie sabe. Un aeropuerto no gana su dinero donde tú crees.",
+   "duracion": 3.26,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_09x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "sabe. Un *aeropuerto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_01",
+   "texto": "Antes de los ingresos, la factura.",
+   "duracion": 2.92,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Antes de los *ingresos*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_02",
+   "texto": "Un aeropuerto grande no se compra con ahorros. Cuando el grupo español Ferrovial y sus socios se hicieron con la empresa dueña de Heathrow, la operación se movió en el entorno de los diez mil millones de libras.",
+   "duracion": 6.11,
+   "movimiento": "contra_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/business_meeting_boardroom_41.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10000.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "libras",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_02b",
+   "texto": "Un aeropuerto grande no se compra con ahorros. Cuando el grupo español Ferrovial y sus socios se hicieron con la empresa dueña de Heathrow, la operación se movió en el entorno de los diez mil millones de libras.",
+   "duracion": 6.11,
+   "movimiento": "subir",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_03",
+   "texto": "Y no es un caso aislado. Londres Stansted, que es el tercero de Londres y no el primero, cambió de manos por mil quinientos millones de libras. Y cuando el Estado español vendió el cuarenta y nueve por ciento de AENA, que gestiona toda la red de aeropuertos del país, la operación se valoró en el entorno de los dos mil quinientos millones de euros.",
+   "duracion": 6.68,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/stack_of_banknotes_37.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 49.0,
+    "dec": 0,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "AENA",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "Y no es un caso *aislado*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_03b",
+   "texto": "Y no es un caso aislado. Londres Stansted, que es el tercero de Londres y no el primero, cambió de manos por mil quinientos millones de libras. Y cuando el Estado español vendió el cuarenta y nueve por ciento de AENA, que gestiona toda la red de aeropuertos del país, la operación se valoró en el entorno de los dos mil quinientos millones de euros.",
+   "duracion": 6.68,
+   "movimiento": "bajar",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_03c",
+   "texto": "Y no es un caso aislado. Londres Stansted, que es el tercero de Londres y no el primero, cambió de manos por mil quinientos millones de libras. Y cuando el Estado español vendió el cuarenta y nueve por ciento de AENA, que gestiona toda la red de aeropuertos del país, la operación se valoró en el entorno de los dos mil quinientos millones de euros.",
+   "duracion": 6.68,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_04",
+   "texto": "Miles de millones. Eso no lo compra una persona: lo compran fondos de pensiones, fondos soberanos y grupos de infraestructuras. De hecho, en Heathrow ha ido entrando exactamente ese tipo de dinero: fondos franceses y saudíes.",
+   "duracion": 5.66,
+   "movimiento": "drift_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/aircraft_maintenance_hangar_29.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "Eso no lo compra una persona",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Miles de *millones*",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_04b",
+   "texto": "Miles de millones. Eso no lo compra una persona: lo compran fondos de pensiones, fondos soberanos y grupos de infraestructuras. De hecho, en Heathrow ha ido entrando exactamente ese tipo de dinero: fondos franceses y saudíes.",
+   "duracion": 5.66,
+   "movimiento": "pull_out",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_04c",
+   "texto": "Miles de millones. Eso no lo compra una persona: lo compran fondos de pensiones, fondos soberanos y grupos de infraestructuras. De hecho, en Heathrow ha ido entrando exactamente ese tipo de dinero: fondos franceses y saudíes.",
+   "duracion": 5.66,
+   "movimiento": "contra_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_05",
+   "texto": "¿Y por qué les gusta tanto un negocio con costes fijos tan brutales? Por tres razones que no tiene casi ningún otro sector.",
+   "duracion": 3.92,
+   "movimiento": "estatico",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "s razones que no tiene casi ningún",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_05b",
+   "texto": "¿Y por qué les gusta tanto un negocio con costes fijos tan brutales? Por tres razones que no tiene casi ningún otro sector.",
+   "duracion": 3.92,
+   "movimiento": "drift_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_06",
+   "texto": "La primera: no hay competencia real. Nadie va a construir otro aeropuerto al lado del tuyo. La barrera de entrada no es el dinero, es el permiso y el suelo, y de eso no hay.",
+   "duracion": 3.02,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "La *primera*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_06x",
+   "texto": "La primera: no hay competencia real. Nadie va a construir otro aeropuerto al lado del tuyo. La barrera de entrada no es el dinero, es el permiso y el suelo, y de eso no hay.",
+   "duracion": 3.01,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "tuyo. La barrera de *entrada*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_06b",
+   "texto": "La primera: no hay competencia real. Nadie va a construir otro aeropuerto al lado del tuyo. La barrera de entrada no es el dinero, es el permiso y el suelo, y de eso no hay.",
+   "duracion": 6.03,
+   "movimiento": "subir",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_07",
+   "texto": "La segunda: la demanda es previsible. La gente vuela cada año un poco más, y eso se puede meter en una hoja de cálculo a treinta años.",
+   "duracion": 4.79,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/financial_chart_graph_screen_38.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 30.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "La segunda: la demanda es previsible",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_07b",
+   "texto": "La segunda: la demanda es previsible. La gente vuela cada año un poco más, y eso se puede meter en una hoja de cálculo a treinta años.",
+   "duracion": 4.79,
+   "movimiento": "bajar",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/stock_market_data_screen_39.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_08",
+   "texto": "Y la tercera: en muchos sitios las tasas están reguladas y ligadas a la inflación. Es decir, tus ingresos suben solos cuando suben los precios. Para un fondo de pensiones que tiene que pagar pensiones dentro de treinta años, eso es exactamente lo que busca.",
+   "duracion": 5.4,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 30.0,
+    "dec": 0,
+    "sufijo": " años",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "Y la tercera: en muchos sitios",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Y la *tercera*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_08b",
+   "texto": "Y la tercera: en muchos sitios las tasas están reguladas y ligadas a la inflación. Es decir, tus ingresos suben solos cuando suben los precios. Para un fondo de pensiones que tiene que pagar pensiones dentro de treinta años, eso es exactamente lo que busca.",
+   "duracion": 5.4,
+   "movimiento": "drift_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/business_meeting_boardroom_41.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_08c",
+   "texto": "Y la tercera: en muchos sitios las tasas están reguladas y ligadas a la inflación. Es decir, tus ingresos suben solos cuando suben los precios. Para un fondo de pensiones que tiene que pagar pensiones dentro de treinta años, eso es exactamente lo que busca.",
+   "duracion": 5.4,
+   "movimiento": "pull_out",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_09",
+   "texto": "Un aeropuerto no es un negocio emocionante. Es un bono con hormigón.",
+   "duracion": 2.58,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_09.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Un aeropuerto no es un *negocio*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_09x",
+   "texto": "Un aeropuerto no es un negocio emocionante. Es un bono con hormigón.",
+   "duracion": 2.58,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_09x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*emocionante*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_10",
+   "texto": "Y aquí viene el giro, porque hay otra puerta.",
+   "duracion": 1.85,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_10.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y aquí *viene* el giro",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_10x",
+   "texto": "Y aquí viene el giro, porque hay otra puerta.",
+   "duracion": 1.85,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_10x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "porque hay otra *puerta*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_11",
+   "texto": "Los aeropuertos que fracasan se venden a precio de saldo. Ciudad Real costó más de mil millones y se adjudicó por cincuenta y seis. Eso es cinco céntimos por cada euro invertido.",
+   "duracion": 6.32,
+   "movimiento": "drift_izq",
+   "grade": "acero_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1000.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "se adjudicó por cincuenta y seis",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Los *aeropuertos* que fracasan",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_11b",
+   "texto": "Los aeropuertos que fracasan se venden a precio de saldo. Ciudad Real costó más de mil millones y se adjudicó por cincuenta y seis. Eso es cinco céntimos por cada euro invertido.",
+   "duracion": 6.32,
+   "movimiento": "contra_der",
+   "grade": "acero_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_12",
+   "texto": "Así que sí: hay una forma barata de tener un aeropuerto. Es comprar uno que ya ha muerto. En el capítulo seis vas a ver por qué murió, y por qué comprarlo barato no es lo mismo que comprarlo bien.",
+   "duracion": 6.28,
+   "movimiento": "subir",
+   "grade": "acero_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 6.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "vas a ver por qué murió",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap2_12b",
+   "texto": "Así que sí: hay una forma barata de tener un aeropuerto. Es comprar uno que ya ha muerto. En el capítulo seis vas a ver por qué murió, y por qué comprarlo barato no es lo mismo que comprarlo bien.",
+   "duracion": 6.28,
+   "movimiento": "push_in",
+   "grade": "acero_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_01",
+   "texto": "Los ingresos de un aeropuerto se parten en dos mitades con nombre propio.",
+   "duracion": 2.5,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Los ingresos de un *aeropuerto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_01x",
+   "texto": "Los ingresos de un aeropuerto se parten en dos mitades con nombre propio.",
+   "duracion": 2.51,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "parten en dos *mitades*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_02",
+   "texto": "La primera se llama aeronáutica. Es lo que le cobras a los aviones: tasas de aterrizaje, tasas por pasajero, estacionamiento de aeronaves. Es lo que todo el mundo imagina cuando piensa en un aeropuerto.",
+   "duracion": 3.25,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "La primera se *llama*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_02x",
+   "texto": "La primera se llama aeronáutica. Es lo que le cobras a los aviones: tasas de aterrizaje, tasas por pasajero, estacionamiento de aeronaves. Es lo que todo el mundo imagina cuando piensa en un aeropuerto.",
+   "duracion": 3.25,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "*pasajero*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_02b",
+   "texto": "La primera se llama aeronáutica. Es lo que le cobras a los aviones: tasas de aterrizaje, tasas por pasajero, estacionamiento de aeronaves. Es lo que todo el mundo imagina cuando piensa en un aeropuerto.",
+   "duracion": 6.5,
+   "movimiento": "drift_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_03",
+   "texto": "La segunda se llama no aeronáutica, y es todo lo demás: las tiendas, los restaurantes, el aparcamiento, la publicidad, el alquiler de oficinas y locales.",
+   "duracion": 5.61,
+   "movimiento": "pull_out",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/car_park_barrier_ticket_14.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "La segunda se llama no *aeronáutica*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_03b",
+   "texto": "La segunda se llama no aeronáutica, y es todo lo demás: las tiendas, los restaurantes, el aparcamiento, la publicidad, el alquiler de oficinas y locales.",
+   "duracion": 5.61,
+   "movimiento": "contra_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/parking_garage_cars_rows_13.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_04",
+   "texto": "Ahora la cifra que cambia cómo vas a mirar un aeropuerto para siempre.",
+   "duracion": 2.21,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Ahora la cifra que *cambia* cómo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_04x",
+   "texto": "Ahora la cifra que cambia cómo vas a mirar un aeropuerto para siempre.",
+   "duracion": 2.22,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "a mirar un *aeropuerto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_05",
+   "texto": "Léelo otra vez. Cuatro de cada diez euros que entran en un aeropuerto no vienen de los aviones. Vienen de la gente esperando.",
+   "duracion": 4.29,
+   "movimiento": "drift_izq",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros que entran en un aeropuerto",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_05b",
+   "texto": "Léelo otra vez. Cuatro de cada diez euros que entran en un aeropuerto no vienen de los aviones. Vienen de la gente esperando.",
+   "duracion": 4.29,
+   "movimiento": "contra_der",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_06",
+   "texto": "Y esto no es un detalle contable: es la estrategia. Los aeropuertos empujan sus ingresos comerciales precisamente para depender menos de lo que les pagan las aerolíneas, que es la parte que peor pueden controlar.",
+   "duracion": 3.34,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Y esto no es un *detalle*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_06x",
+   "texto": "Y esto no es un detalle contable: es la estrategia. Los aeropuertos empujan sus ingresos comerciales precisamente para depender menos de lo que les pagan las aerolíneas, que es la parte que peor pueden controlar.",
+   "duracion": 3.34,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "precisamente para *depender*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_ent": -1.0,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_06b",
+   "texto": "Y esto no es un detalle contable: es la estrategia. Los aeropuertos empujan sus ingresos comerciales precisamente para depender menos de lo que les pagan las aerolíneas, que es la parte que peor pueden controlar.",
+   "duracion": 6.68,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/air_traffic_controller_radar_8.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_07",
+   "texto": "Porque la aerolínea negocia. La aerolínea amenaza con irse a otro aeropuerto. La aerolínea tiene poder.",
+   "duracion": 3.88,
+   "movimiento": "bajar",
+   "grade": "frio_suave",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/airplane_taking_off_2.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Porque la *aerolínea* negocia",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap3_07b",
+   "texto": "Porque la aerolínea negocia. La aerolínea amenaza con irse a otro aeropuerto. La aerolínea tiene poder.",
+   "duracion": 3.88,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_08",
+   "texto": "El señor que lleva dos horas de espera con la maleta y sed, no.",
+   "duracion": 2.11,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "El señor que lleva dos *horas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap3_08x",
+   "texto": "El señor que lleva dos horas de espera con la maleta y sed, no.",
+   "duracion": 2.11,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "de espera con la *maleta* y sed",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_01",
+   "texto": "Vamos a bajar un nivel más, porque dentro de esa mitad comercial hay una pieza que se lleva la palma.",
+   "duracion": 3.26,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Vamos a bajar un *nivel* más",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_01x",
+   "texto": "Vamos a bajar un nivel más, porque dentro de esa mitad comercial hay una pieza que se lleva la palma.",
+   "duracion": 3.26,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "mitad comercial hay una *pieza*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_02",
+   "texto": "En Norteamérica, el aparcamiento es el cuarenta y tres por ciento de todos los ingresos comerciales de un aeropuerto.",
+   "duracion": 6.81,
+   "movimiento": "contra_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/parking_garage_cars_rows_13.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "anillo",
+    "valor": 43.0,
+    "dec": 0,
+    "sufijo": "%",
+    "color": [
+     232,
+     86,
+     64
+    ],
+    "pie": "todos los ingresos comerciales",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_03",
+   "texto": "No la tienda del duty free. No los restaurantes. El aparcamiento.",
+   "duracion": 2.87,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "No la *tienda* del duty free",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_03x",
+   "texto": "No la tienda del duty free. No los restaurantes. El aparcamiento.",
+   "duracion": 2.87,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "los *restaurantes*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_04",
+   "texto": "Piensa en lo que significa. Un asfalto pintado con rayas blancas, al aire libre, sin personal, sin inventario, sin caducidad y sin devoluciones, es la mayor fuente de ingresos no aeronáuticos del continente.",
+   "duracion": 2.42,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Piensa en lo que *significa*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_04x",
+   "texto": "Piensa en lo que significa. Un asfalto pintado con rayas blancas, al aire libre, sin personal, sin inventario, sin caducidad y sin devoluciones, es la mayor fuente de ingresos no aeronáuticos del continente.",
+   "duracion": 2.43,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*inventario*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_04b",
+   "texto": "Piensa en lo que significa. Un asfalto pintado con rayas blancas, al aire libre, sin personal, sin inventario, sin caducidad y sin devoluciones, es la mayor fuente de ingresos no aeronáuticos del continente.",
+   "duracion": 4.85,
+   "movimiento": "contra_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_04c",
+   "texto": "Piensa en lo que significa. Un asfalto pintado con rayas blancas, al aire libre, sin personal, sin inventario, sin caducidad y sin devoluciones, es la mayor fuente de ingresos no aeronáuticos del continente.",
+   "duracion": 4.85,
+   "movimiento": "subir",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/airport_cafe_passengers_eating_17.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_05",
+   "texto": "En Europa el reparto cambia: aquí manda el comercio, con algo más de una cuarta parte, apoyado además por el alquiler de suelo e inmuebles. Y en Asia-Pacífico y Oriente Medio el comercio se dispara hasta casi el cuarenta.",
+   "duracion": 4.86,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 40.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "En Europa el reparto cambia: aquí",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_05b",
+   "texto": "En Europa el reparto cambia: aquí manda el comercio, con algo más de una cuarta parte, apoyado además por el alquiler de suelo e inmuebles. Y en Asia-Pacífico y Oriente Medio el comercio se dispara hasta casi el cuarenta.",
+   "duracion": 4.86,
+   "movimiento": "bajar",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_05c",
+   "texto": "En Europa el reparto cambia: aquí manda el comercio, con algo más de una cuarta parte, apoyado además por el alquiler de suelo e inmuebles. Y en Asia-Pacífico y Oriente Medio el comercio se dispara hasta casi el cuarenta.",
+   "duracion": 4.86,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/queue_line_airport_check_in_20.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_06",
+   "texto": "Pero el patrón de fondo es el mismo en los tres sitios: el negocio está en el pasajero parado, no en el avión moviéndose.",
+   "duracion": 3.9,
+   "movimiento": "drift_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "sitios: el negocio está en el pasajero",
+    "y": 0.33,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "Pero el *patrón* de fondo",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_06b",
+   "texto": "Pero el patrón de fondo es el mismo en los tres sitios: el negocio está en el pasajero parado, no en el avión moviéndose.",
+   "duracion": 3.9,
+   "movimiento": "pull_out",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/airport_departure_board_flights_22.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_07",
+   "texto": "Por eso los aeropuertos modernos te hacen caminar por delante de las tiendas para llegar a tu puerta. No es mala señalización. Es el plano de un centro comercial que resulta que tiene pista.",
+   "duracion": 2.85,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Por eso los *aeropuertos*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_07x",
+   "texto": "Por eso los aeropuertos modernos te hacen caminar por delante de las tiendas para llegar a tu puerta. No es mala señalización. Es el plano de un centro comercial que resulta que tiene pista.",
+   "duracion": 2.84,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*puerta*. No es mala",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_07b",
+   "texto": "Por eso los aeropuertos modernos te hacen caminar por delante de las tiendas para llegar a tu puerta. No es mala señalización. Es el plano de un centro comercial que resulta que tiene pista.",
+   "duracion": 5.69,
+   "movimiento": "estatico",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_08",
+   "texto": "Y con esto ya tienes el negocio entero en la cabeza. Ahora la parte que no controlas.",
+   "duracion": 2.88,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Y con esto ya",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_08x",
+   "texto": "Y con esto ya tienes el negocio entero en la cabeza. Ahora la parte que no controlas.",
+   "duracion": 2.88,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "la *cabeza*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_01",
+   "texto": "Y ahora la vuelta de tuerca, que es lo más contraintuitivo de todo el negocio.",
+   "duracion": 2.63,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y ahora la vuelta de *tuerca*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_01x",
+   "texto": "Y ahora la vuelta de tuerca, que es lo más contraintuitivo de todo el negocio.",
+   "duracion": 2.64,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "más *contraintuitivo* de todo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_02",
+   "texto": "Tú crees que la aerolínea le paga al aeropuerto. Y en los grandes, sí.",
+   "duracion": 2.33,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Tú crees que la *aerolínea* le",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_02x",
+   "texto": "Tú crees que la aerolínea le paga al aeropuerto. Y en los grandes, sí.",
+   "duracion": 2.34,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "al *aeropuerto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_03",
+   "texto": "En los pequeños pasa justo lo contrario.",
+   "duracion": 1.61,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "En los *pequeños*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_03x",
+   "texto": "En los pequeños pasa justo lo contrario.",
+   "duracion": 1.62,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "pasa justo lo *contrario*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_04",
+   "texto": "Un aeropuerto regional con la terminal vacía tiene un problema enorme: sin vuelos no hay pasajeros, sin pasajeros no hay tiendas ni aparcamiento, y sin eso no hay ingresos comerciales, que ya hemos visto que son casi la mitad del negocio.",
+   "duracion": 5.37,
+   "movimiento": "bajar",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "Un *aeropuerto* regional",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_04b",
+   "texto": "Un aeropuerto regional con la terminal vacía tiene un problema enorme: sin vuelos no hay pasajeros, sin pasajeros no hay tiendas ni aparcamiento, y sin eso no hay ingresos comerciales, que ya hemos visto que son casi la mitad del negocio.",
+   "duracion": 5.37,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_04c",
+   "texto": "Un aeropuerto regional con la terminal vacía tiene un problema enorme: sin vuelos no hay pasajeros, sin pasajeros no hay tiendas ni aparcamiento, y sin eso no hay ingresos comerciales, que ya hemos visto que son casi la mitad del negocio.",
+   "duracion": 5.37,
+   "movimiento": "drift_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_05",
+   "texto": "Así que hace lo único que puede hacer. Le paga a la aerolínea para que venga. A veces perdonando las tasas los primeros años. A veces con acuerdos de promoción y marketing por cada ruta nueva. A veces directamente con dinero público de la región, que quiere turistas.",
+   "duracion": 5.92,
+   "movimiento": "pull_out",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Así que hace lo *único*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_05b",
+   "texto": "Así que hace lo único que puede hacer. Le paga a la aerolínea para que venga. A veces perdonando las tasas los primeros años. A veces con acuerdos de promoción y marketing por cada ruta nueva. A veces directamente con dinero público de la región, que quiere turistas.",
+   "duracion": 5.92,
+   "movimiento": "contra_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/tourists_travel_vacation_49.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_05c",
+   "texto": "Así que hace lo único que puede hacer. Le paga a la aerolínea para que venga. A veces perdonando las tasas los primeros años. A veces con acuerdos de promoción y marketing por cada ruta nueva. A veces directamente con dinero público de la región, que quiere turistas.",
+   "duracion": 5.92,
+   "movimiento": "estatico",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "humo"
+   ],
+   "clip": "stock_aeropuerto/aircraft_refueling_fuel_truck_28.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_06",
+   "texto": "Piénsalo un segundo: hay aeropuertos que pierden dinero con cada avión que aterriza, y aun así lo quieren, porque lo que buscan no es la tasa de aterrizaje. Buscan a los ciento ochenta pasajeros que van a aparcar, comer y comprar.",
+   "duracion": 4.95,
+   "movimiento": "drift_izq",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 180.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "pasajeros que van a aparcar",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_06b",
+   "texto": "Piénsalo un segundo: hay aeropuertos que pierden dinero con cada avión que aterriza, y aun así lo quieren, porque lo que buscan no es la tasa de aterrizaje. Buscan a los ciento ochenta pasajeros que van a aparcar, comer y comprar.",
+   "duracion": 4.95,
+   "movimiento": "contra_der",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/money_counting_cash_euros_36.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_06c",
+   "texto": "Piénsalo un segundo: hay aeropuertos que pierden dinero con cada avión que aterriza, y aun así lo quieren, porque lo que buscan no es la tasa de aterrizaje. Buscan a los ciento ochenta pasajeros que van a aparcar, comer y comprar.",
+   "duracion": 4.95,
+   "movimiento": "subir",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "fuga_luz"
+   ],
+   "clip": "stock_aeropuerto/stack_of_banknotes_37.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_07",
+   "texto": "El avión es el cebo. El pasajero es el negocio.",
+   "duracion": 2.46,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "El *avión* es el cebo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_07x",
+   "texto": "El avión es el cebo. El pasajero es el negocio.",
+   "duracion": 2.47,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "El pasajero es el *negocio*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap4_08",
+   "texto": "Y por eso, cuando esa aerolínea decide que la subvención ya no le compensa y se va, el aeropuerto entero se cae de golpe. Que es lo que vas a ver en dos minutos.",
+   "duracion": 2.71,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y por eso",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_08x",
+   "texto": "Y por eso, cuando esa aerolínea decide que la subvención ya no le compensa y se va, el aeropuerto entero se cae de golpe. Que es lo que vas a ver en dos minutos.",
+   "duracion": 2.71,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "va, el aeropuerto *entero*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_08b",
+   "texto": "Y por eso, cuando esa aerolínea decide que la subvención ya no le compensa y se va, el aeropuerto entero se cae de golpe. Que es lo que vas a ver en dos minutos.",
+   "duracion": 5.42,
+   "movimiento": "push_in",
+   "grade": "sepia_archivo",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_01",
+   "texto": "Hay un activo dentro de un aeropuerto que ni siquiera es un edificio. Es un permiso para usar la pista a una hora concreta. Se llama slot.",
+   "duracion": 5.01,
+   "movimiento": "drift_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/empty_building_abandoned_34.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "Hay un *activo* dentro",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_01b",
+   "texto": "Hay un activo dentro de un aeropuerto que ni siquiera es un edificio. Es un permiso para usar la pista a una hora concreta. Se llama slot.",
+   "duracion": 5.01,
+   "movimiento": "pull_out",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_02",
+   "texto": "Y algunos valen una fortuna.",
+   "duracion": 2.86,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Y algunos valen una *fortuna*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_03",
+   "texto": "Kenya Airways vendió un slot de llegada a primera hora de la mañana en Heathrow por alrededor de setenta millones de dólares. Un solo permiso, una sola franja horaria. Antes de eso, American Airlines había pagado unos sesenta millones a la escandinava SAS por otro.",
+   "duracion": 5.67,
+   "movimiento": "estatico",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/courthouse_legal_documents_44.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 70.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares",
+    "y": 0.33,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "Kenya *Airways* vendió un slot",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_03b",
+   "texto": "Kenya Airways vendió un slot de llegada a primera hora de la mañana en Heathrow por alrededor de setenta millones de dólares. Un solo permiso, una sola franja horaria. Antes de eso, American Airlines había pagado unos sesenta millones a la escandinava SAS por otro.",
+   "duracion": 5.67,
+   "movimiento": "drift_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_03c",
+   "texto": "Kenya Airways vendió un slot de llegada a primera hora de la mañana en Heathrow por alrededor de setenta millones de dólares. Un solo permiso, una sola franja horaria. Antes de eso, American Airlines había pagado unos sesenta millones a la escandinava SAS por otro.",
+   "duracion": 5.67,
+   "movimiento": "contra_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_04",
+   "texto": "Setenta millones de dólares por el derecho a aterrizar a una hora determinada. No por un avión. No por una terminal. Por un hueco en un horario.",
+   "duracion": 5.54,
+   "movimiento": "subir",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 70.0,
+    "dec": 0,
+    "sufijo": " $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "dólares por el derecho a aterrizar",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_04b",
+   "texto": "Setenta millones de dólares por el derecho a aterrizar a una hora determinada. No por un avión. No por una terminal. Por un hueco en un horario.",
+   "duracion": 5.54,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_05",
+   "texto": "Eso te dice dos cosas.",
+   "duracion": 2.39,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Eso te dice dos *cosas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_06",
+   "texto": "La primera es lo escaso que es el espacio en un aeropuerto que de verdad funciona. La segunda, y es más incómoda: ese valor no lo has creado tú. Lo crea que millones de personas quieran ir a Londres. Tú solo tienes el sitio donde aterrizan.",
+   "duracion": 5.25,
+   "movimiento": "push_in",
+   "grade": "verde_suave",
+   "efectos": [
+    "billetes"
+   ],
+   "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "personas quieran ir a Londres",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_06b",
+   "texto": "La primera es lo escaso que es el espacio en un aeropuerto que de verdad funciona. La segunda, y es más incómoda: ese valor no lo has creado tú. Lo crea que millones de personas quieran ir a Londres. Tú solo tienes el sitio donde aterrizan.",
+   "duracion": 5.25,
+   "movimiento": "drift_der",
+   "grade": "verde_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_06c",
+   "texto": "La primera es lo escaso que es el espacio en un aeropuerto que de verdad funciona. La segunda, y es más incómoda: ese valor no lo has creado tú. Lo crea que millones de personas quieran ir a Londres. Tú solo tienes el sitio donde aterrizan.",
+   "duracion": 5.25,
+   "movimiento": "pull_out",
+   "grade": "verde_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airplane_taking_off_2.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_07",
+   "texto": "Y si dejan de querer ir, ese slot no vale setenta millones. No vale nada.",
+   "duracion": 5.66,
+   "movimiento": "contra_izq",
+   "grade": "verde_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 70.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "No vale nada",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_08",
+   "texto": "Que es exactamente lo que pasó en el capítulo siguiente.",
+   "duracion": 1.93,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "Que es *exactamente*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap5_08x",
+   "texto": "Que es exactamente lo que pasó en el capítulo siguiente.",
+   "duracion": 1.93,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "pasó en el capítulo *siguiente*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_01",
+   "texto": "Vamos con Ciudad Real, porque es el caso de estudio más claro que existe.",
+   "duracion": 2.57,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Vamos con *Ciudad* Real",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_01x",
+   "texto": "Vamos con Ciudad Real, porque es el caso de estudio más claro que existe.",
+   "duracion": 2.57,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "caso de estudio más *claro*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_02",
+   "texto": "La previsión era de tres millones de pasajeros al año.",
+   "duracion": 3.96,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 3.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "pasajeros al año",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_03",
+   "texto": "Desde diciembre de dos mil ocho hasta el cierre, pasaron por allí algo más de cien mil personas en total. No al año: en toda su vida.",
+   "duracion": 4.19,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/air_traffic_control_tower_7.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 100000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "ocho hasta el cierre",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_03b",
+   "texto": "Desde diciembre de dos mil ocho hasta el cierre, pasaron por allí algo más de cien mil personas en total. No al año: en toda su vida.",
+   "duracion": 4.19,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/air_traffic_controller_radar_8.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_04",
+   "texto": "En junio de dos mil diez entró en concurso de acreedores con una deuda en torno a los trescientos millones. El último vuelo comercial salió a finales de dos mil once.",
+   "duracion": 5.48,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/airport_baggage_claim_carousel_9.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 300.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "El último vuelo comercial salió",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "texto_pantalla": {
+    "texto": "En *junio* de dos mil diez entró",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_04b",
+   "texto": "En junio de dos mil diez entró en concurso de acreedores con una deuda en torno a los trescientos millones. El último vuelo comercial salió a finales de dos mil once.",
+   "duracion": 5.48,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/suitcase_luggage_conveyor_10.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_05",
+   "texto": "Y entonces empezó el vía crucis de venderlo. En diciembre de dos mil trece se puso a la venta por cien millones. No apareció nadie.",
+   "duracion": 4.32,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/traveler_pulling_suitcase_airport_11.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "No apareció nadie",
+    "y": 0.62,
+    "retardo": 0.55,
+    "entrada": "desplome"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_05b",
+   "texto": "Y entonces empezó el vía crucis de venderlo. En diciembre de dos mil trece se puso a la venta por cien millones. No apareció nadie.",
+   "duracion": 4.32,
+   "movimiento": "pull_out",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_06",
+   "texto": "En julio de dos mil quince llegó la puja de diez mil euros del principio de este vídeo. La presentó un apoderado que decía representar a un grupo de inversores chinos, y ganó la subasta por ser la única.",
+   "duracion": 5.99,
+   "movimiento": "contra_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/auction_gavel_43.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10000.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "quince llegó la puja de diez mil euros",
+    "y": 0.68,
+    "retardo": 0.55,
+    "entrada": "latigo_izq"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_06b",
+   "texto": "En julio de dos mil quince llegó la puja de diez mil euros del principio de este vídeo. La presentó un apoderado que decía representar a un grupo de inversores chinos, y ganó la subasta por ser la única.",
+   "duracion": 5.99,
+   "movimiento": "estatico",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/car_park_barrier_ticket_14.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_07",
+   "texto": "Pero esa venta no llegó a buen puerto. Cinco meses después, un juez la anuló: el comprador no acreditó tener el dinero, y de aquellos inversores chinos nunca apareció el rastro.",
+   "duracion": 6.25,
+   "movimiento": "drift_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/courthouse_legal_documents_44.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 5.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "meses después",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "Pero esa *venta* no llegó a buen",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_07b",
+   "texto": "Pero esa venta no llegó a buen puerto. Cinco meses después, un juez la anuló: el comprador no acreditó tener el dinero, y de aquellos inversores chinos nunca apareció el rastro.",
+   "duracion": 6.25,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_08",
+   "texto": "Finalmente, en dos mil dieciséis, el aeropuerto se adjudicó por cincuenta y seis coma dos millones de euros.",
+   "duracion": 3.77,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/airport_cafe_passengers_eating_17.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 56.2,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_08b",
+   "texto": "Finalmente, en dos mil dieciséis, el aeropuerto se adjudicó por cincuenta y seis coma dos millones de euros.",
+   "duracion": 3.77,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_09",
+   "texto": "De más de mil millones a cincuenta y seis.",
+   "duracion": 3.12,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1000.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "cincuenta y seis",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_10",
+   "texto": "¿Y por qué murió? No por la pista. La pista estaba perfecta, era de las más largas de Europa. Podía recibir los aviones más grandes del mundo. Murió porque nadie tenía una razón para aterrizar allí.",
+   "duracion": 6.61,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "¿Y por qué *murió?* No por la pista",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_10b",
+   "texto": "¿Y por qué murió? No por la pista. La pista estaba perfecta, era de las más largas de Europa. Podía recibir los aviones más grandes del mundo. Murió porque nadie tenía una razón para aterrizar allí.",
+   "duracion": 6.61,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_11",
+   "texto": "Estaba a doscientos kilómetros de Madrid, que ya tiene un aeropuerto enorme. No había una ciudad grande al lado que llenara los vuelos. No había una industria que moviera carga. No había turismo de playa.",
+   "duracion": 6.39,
+   "movimiento": "pull_out",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/airport_departure_board_flights_22.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 200.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "kilómetros de Madrid",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_11b",
+   "texto": "Estaba a doscientos kilómetros de Madrid, que ya tiene un aeropuerto enorme. No había una ciudad grande al lado que llenara los vuelos. No había una industria que moviera carga. No había turismo de playa.",
+   "duracion": 6.39,
+   "movimiento": "contra_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_12",
+   "texto": "Se construyó la oferta entera antes de comprobar que existiera la demanda. Y cuando la aerolínea que operaba allí hizo sus números y se fue, no había ninguna otra esperando para ocupar su sitio.",
+   "duracion": 2.96,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_12.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Se construyó la oferta *entera*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_12x",
+   "texto": "Se construyó la oferta entera antes de comprobar que existiera la demanda. Y cuando la aerolínea que operaba allí hizo sus números y se fue, no había ninguna otra esperando para ocupar su sitio.",
+   "duracion": 2.96,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_12x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "que *operaba* allí hizo",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_12b",
+   "texto": "Se construyó la oferta entera antes de comprobar que existiera la demanda. Y cuando la aerolínea que operaba allí hizo sus números y se fue, no había ninguna otra esperando para ocupar su sitio.",
+   "duracion": 5.92,
+   "movimiento": "drift_izq",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_13",
+   "texto": "Un aeropuerto sin vuelos no es un aeropuerto a medio gas: es un edificio con facturas. Los bomberos siguen cobrando. El control sigue cobrando. El asfalto se sigue agrietando.",
+   "duracion": 6.18,
+   "movimiento": "contra_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "lluvia"
+   ],
+   "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_13b",
+   "texto": "Un aeropuerto sin vuelos no es un aeropuerto a medio gas: es un edificio con facturas. Los bomberos siguen cobrando. El control sigue cobrando. El asfalto se sigue agrietando.",
+   "duracion": 6.18,
+   "movimiento": "subir",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_14",
+   "texto": "Un aeropuerto no lo llenan las obras. Lo llenan las aerolíneas. Y las aerolíneas van donde hay pasajeros, no donde hay hormigón.",
+   "duracion": 4.32,
+   "movimiento": "push_in",
+   "grade": "rojo_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "Un *aeropuerto* no lo llenan",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_14b",
+   "texto": "Un aeropuerto no lo llenan las obras. Lo llenan las aerolíneas. Y las aerolíneas van donde hay pasajeros, no donde hay hormigón.",
+   "duracion": 4.32,
+   "movimiento": "bajar",
+   "grade": "rojo_suave",
+   "efectos": [
+    "ceniza"
+   ],
+   "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap6_15",
+   "texto": "Aquí está la lección, y sirve para cualquier negocio de esta serie: puedes construir la infraestructura entera y no tener el negocio.",
+   "duracion": 2.12,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_15.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Aquí está la *lección*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap6_15x",
+   "texto": "Aquí está la lección, y sirve para cualquier negocio de esta serie: puedes construir la infraestructura entera y no tener el negocio.",
+   "duracion": 2.13,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_15x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "serie: puedes *construir*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_15b",
+   "texto": "Aquí está la lección, y sirve para cualquier negocio de esta serie: puedes construir la infraestructura entera y no tener el negocio.",
+   "duracion": 4.25,
+   "movimiento": "drift_der",
+   "grade": "rojo_suave",
+   "efectos": [
+    "chispas"
+   ],
+   "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_01",
+   "texto": "Has comprado el terreno. Has pagado la terminal. Mantienes la pista, los bomberos, el control, la seguridad, el deshielo, el asfalto.",
+   "duracion": 2.55,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Has comprado el *terreno*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_01x",
+   "texto": "Has comprado el terreno. Has pagado la terminal. Mantienes la pista, los bomberos, el control, la seguridad, el deshielo, el asfalto.",
+   "duracion": 2.55,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "pista, los *bomberos*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_01b",
+   "texto": "Has comprado el terreno. Has pagado la terminal. Mantienes la pista, los bomberos, el control, la seguridad, el deshielo, el asfalto.",
+   "duracion": 5.1,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_02",
+   "texto": "Nada de eso decide si entra un solo euro.",
+   "duracion": 1.7,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Nada de eso *decide*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_02x",
+   "texto": "Nada de eso decide si entra un solo euro.",
+   "duracion": 1.69,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "si *entra* un solo euro",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_03",
+   "texto": "Quien lo decide es una aerolínea, en una reunión en la que tú no estás, comparando tus tasas con las del aeropuerto de al lado. Si el de al lado le hace mejor precio, se va. Y tu pista de cuatro kilómetros se queda exactamente igual de larga y exactamente igual de vacía.",
+   "duracion": 5.86,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 4.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "kilómetros se queda exactamente igual",
+    "y": 0.3,
+    "retardo": 0.55,
+    "entrada": "golpe"
+   },
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_03b",
+   "texto": "Quien lo decide es una aerolínea, en una reunión en la que tú no estás, comparando tus tasas con las del aeropuerto de al lado. Si el de al lado le hace mejor precio, se va. Y tu pista de cuatro kilómetros se queda exactamente igual de larga y exactamente igual de vacía.",
+   "duracion": 5.86,
+   "movimiento": "contra_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/money_counting_cash_euros_36.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_03c",
+   "texto": "Quien lo decide es una aerolínea, en una reunión en la que tú no estás, comparando tus tasas con las del aeropuerto de al lado. Si el de al lado le hace mejor precio, se va. Y tu pista de cuatro kilómetros se queda exactamente igual de larga y exactamente igual de vacía.",
+   "duracion": 5.86,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/stack_of_banknotes_37.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_04",
+   "texto": "Tus costes son fijos. Tus ingresos dependen de la decisión de otro.",
+   "duracion": 2.57,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Tus costes son *fijos*. Tus",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap7_04x",
+   "texto": "Tus costes son fijos. Tus ingresos dependen de la decisión de otro.",
+   "duracion": 2.57,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "ingresos *dependen*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_05",
+   "texto": "Así que lo que de verdad tienes no es un aeropuerto. Tienes un centro comercial con una pista, y el tráfico de clientes lo pone alguien que no trabaja para ti.",
+   "duracion": 2.48,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_05.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Así que lo que de *verdad*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_05x",
+   "texto": "Así que lo que de verdad tienes no es un aeropuerto. Tienes un centro comercial con una pista, y el tráfico de clientes lo pone alguien que no trabaja para ti.",
+   "duracion": 2.47,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_05x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "comercial con una *pista*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap7_05b",
+   "texto": "Así que lo que de verdad tienes no es un aeropuerto. Tienes un centro comercial con una pista, y el tráfico de clientes lo pone alguien que no trabaja para ti.",
+   "duracion": 4.95,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "polvo"
+   ],
+   "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "cierra_bloque": true,
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_01",
+   "texto": "Entonces, ¿cuánto cuesta tener un aeropuerto?",
+   "duracion": 1.86,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Entonces, ¿*cuánto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_01x",
+   "texto": "Entonces, ¿cuánto cuesta tener un aeropuerto?",
+   "duracion": 1.87,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "cuesta tener un *aeropuerto*?",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_02",
+   "texto": "Si compras uno grande y vivo, miles de millones, y no vas a competir con fondos soberanos. Si compras uno muerto, decenas de millones, y compras justo lo que no vale: el hormigón sin el motivo.",
+   "duracion": 6.59,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "grafico": {
+    "tipo": "contador",
+    "valor": 1.0,
+    "dec": 0,
+    "sufijo": " M $",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "no vas a competir con fondos soberanos",
+    "y": 0.26,
+    "retardo": 0.55,
+    "entrada": "rebote"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_02b",
+   "texto": "Si compras uno grande y vivo, miles de millones, y no vas a competir con fondos soberanos. Si compras uno muerto, decenas de millones, y compras justo lo que no vale: el hormigón sin el motivo.",
+   "duracion": 6.59,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_03",
+   "texto": "Y si consigues que funcione, el dinero no lo vas a ganar donde crees. Casi cuatro de cada diez euros van a salir de las tiendas, los alquileres y, sobre todo, del aparcamiento.",
+   "duracion": 6.05,
+   "movimiento": "estatico",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/courthouse_legal_documents_44.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "der",
+   "grafico": {
+    "tipo": "contador",
+    "valor": 10.0,
+    "dec": 0,
+    "sufijo": "",
+    "color": [
+     255,
+     176,
+     60
+    ],
+    "pie": "euros van a salir de las tiendas",
+    "y": 0.34,
+    "retardo": 0.55,
+    "entrada": "latigo_der"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_03b",
+   "texto": "Y si consigues que funcione, el dinero no lo vas a ganar donde crees. Casi cuatro de cada diez euros van a salir de las tiendas, los alquileres y, sobre todo, del aparcamiento.",
+   "duracion": 6.05,
+   "movimiento": "drift_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_04",
+   "texto": "Y los costes que no se van nunca: bomberos, seguridad, control, mantenimiento de pista. La cifra exacta depende del tamaño, pero la forma de la cuenta es siempre la misma: un suelo de gasto que no baja, contra unos ingresos que dependen de que otro decida aterrizar.",
+   "duracion": 2.98,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Y los *costes*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_04x",
+   "texto": "Y los costes que no se van nunca: bomberos, seguridad, control, mantenimiento de pista. La cifra exacta depende del tamaño, pero la forma de la cuenta es siempre la misma: un suelo de gasto que no baja, contra unos ingresos que dependen de que otro decida aterrizar.",
+   "duracion": 2.97,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "forma de la cuenta es *siempre*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_04b",
+   "texto": "Y los costes que no se van nunca: bomberos, seguridad, control, mantenimiento de pista. La cifra exacta depende del tamaño, pero la forma de la cuenta es siempre la misma: un suelo de gasto que no baja, contra unos ingresos que dependen de que otro decida aterrizar.",
+   "duracion": 5.95,
+   "movimiento": "subir",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_04c",
+   "texto": "Y los costes que no se van nunca: bomberos, seguridad, control, mantenimiento de pista. La cifra exacta depende del tamaño, pero la forma de la cuenta es siempre la misma: un suelo de gasto que no baja, contra unos ingresos que dependen de que otro decida aterrizar.",
+   "duracion": 5.95,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_05",
+   "texto": "Por eso los que ganan dinero son los aeropuertos con mucho tráfico, y por eso los medianos viven al filo. En un aeropuerto lleno, cada pasajero de más es casi todo beneficio, porque el coste ya estaba pagado. En uno vacío, cada pasajero de menos duele el doble por la misma razón.",
+   "duracion": 6.07,
+   "movimiento": "bajar",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airport_cafe_passengers_eating_17.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "Por eso los que ganan *dinero*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_05b",
+   "texto": "Por eso los que ganan dinero son los aeropuertos con mucho tráfico, y por eso los medianos viven al filo. En un aeropuerto lleno, cada pasajero de más es casi todo beneficio, porque el coste ya estaba pagado. En uno vacío, cada pasajero de menos duele el doble por la misma razón.",
+   "duracion": 6.07,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
+   "efectos": [
+    "brasas"
+   ],
+   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": -1.0,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_05c",
+   "texto": "Por eso los que ganan dinero son los aeropuertos con mucho tráfico, y por eso los medianos viven al filo. En un aeropuerto lleno, cada pasajero de más es casi todo beneficio, porque el coste ya estaba pagado. En uno vacío, cada pasajero de menos duele el doble por la misma razón.",
+   "duracion": 6.07,
+   "movimiento": "drift_der",
+   "grade": "dorado_suave",
+   "efectos": [
+    "bokeh"
+   ],
+   "clip": "stock_aeropuerto/airport_baggage_claim_carousel_9.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_06",
+   "texto": "El negocio no son los aviones. Los aviones son de otro. El negocio es el rato que la gente pasa esperándolos.",
+   "duracion": 4.07,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
+   "efectos": [
+    "niebla"
+   ],
+   "clip": "stock_aeropuerto/aircraft_maintenance_hangar_29.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "texto_pantalla": {
+    "texto": "El *negocio* no son los aviones",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cierre_06b",
+   "texto": "El negocio no son los aviones. Los aviones son de otro. El negocio es el rato que la gente pasa esperándolos.",
+   "duracion": 4.07,
+   "movimiento": "contra_izq",
+   "grade": "dorado_suave",
+   "efectos": [
+    "destellos"
+   ],
+   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cierre_07",
+   "texto": "Ese es el precio de ser el dueño de un aeropuerto: pagas por la pista y cobras por la espera.",
+   "duracion": 3.21,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Ese es el *precio* de ser",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_07x",
+   "texto": "Ese es el precio de ser el dueño de un aeropuerto: pagas por la pista y cobras por la espera.",
+   "duracion": 3.21,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*aeropuerto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  }
+ ]
+}

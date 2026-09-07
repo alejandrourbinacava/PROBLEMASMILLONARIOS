@@ -29,6 +29,8 @@ on:
       - "parallax-*"
       - "gancho-*"
       - "v2-*"
+      - "gim-*"
+      - "aero-*"
 
 permissions:
   contents: write
@@ -50,6 +52,10 @@ jobs:
             echo "guion=proyecto/prueba_gancho.json" >> "$GITHUB_OUTPUT"
           elif [[ "${GITHUB_REF_NAME}" == v2-* ]]; then
             echo "guion=proyecto/banco_v2.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == gim-* ]]; then
+            echo "guion=proyecto/gimnasio.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == aero-* ]]; then
+            echo "guion=proyecto/aeropuerto.json" >> "$GITHUB_OUTPUT"
           else
             echo "guion=${{ inputs.guion || 'proyecto/episodio_banco.json' }}" >> "$GITHUB_OUTPUT"
           fi

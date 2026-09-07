@@ -199,6 +199,31 @@ LEXICO = {
     "tasas": ["invoices", "calculator"],
     "slot": ["clock", "time"], "horario": ["clock", "time"],
 
+    # Faltaban por singular/plural y por no estar. Frases como "No la TIENDA
+    # del duty free. No los RESTAURANTES. El aparcamiento" tenian los tres
+    # clips en el pool y se quedaban sin emparejar por esto.
+    "tienda": ["shop", "shopping", "retail"],
+    "tiendas": ["shop", "shopping", "retail"],
+    "comercial": ["shopping", "retail", "mall"],
+    "comercio": ["shopping", "retail"],
+    "restaurante": ["cafe", "coffee", "eating"],
+    "restaurantes": ["cafe", "coffee", "eating"],
+    "maleta": ["suitcase", "luggage"],
+    "espera": ["waiting", "queue"], "esperando": ["waiting", "queue"],
+    "esperan": ["waiting"], "esperar": ["waiting"],
+    "mantenimiento": ["maintenance", "engineer"],
+    "control": ["tower", "controller"],
+    "ingresos": ["chart", "graph", "profit"],
+    "ingreso": ["chart", "profit"],
+    "factura": ["invoices"], "facturas": ["invoices"],
+    "coste": ["invoices", "calculator"],
+    "cifra": ["chart", "screen"], "cifras": ["chart", "screen"],
+    "euro": ["euro", "banknotes"], "euros": ["euro", "banknotes"],
+    "duty": ["shop", "retail"],
+    "infraestructura": ["construction", "crane"],
+    "negocio": ["business", "corporate"],
+    "aviones": ["airplane", "aircraft"],
+
     # --- vocabulario del episodio del gimnasio.
     "gimnasio": ["gym", "fitness"], "gimnasios": ["gym", "fitness"],
     "sala": ["gym", "weight", "room"],

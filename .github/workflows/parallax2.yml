@@ -48,6 +48,15 @@ jobs:
       - name: Elegir guion
         id: g
         run: |
+          # La VOZ va emparejada al guion. Antes habia un solo voz.mp3
+          # que se sobrescribia con cada episodio, y aero-02 salio
+          # renderizado con la locucion del gimnasio.
+          case "${GITHUB_REF_NAME}" in
+            v2-*)    echo "voz=voz_v2.mp3"   >> "$GITHUB_OUTPUT" ;;
+            aero-*)  echo "voz=voz_aero.mp3" >> "$GITHUB_OUTPUT" ;;
+            gim-*)   echo "voz=voz_gim.mp3"  >> "$GITHUB_OUTPUT" ;;
+            *)       echo "voz=voz.mp3"      >> "$GITHUB_OUTPUT" ;;
+          esac
           if [[ "${GITHUB_REF_NAME}" == gancho-* ]]; then
             echo "guion=proyecto/prueba_gancho.json" >> "$GITHUB_OUTPUT"
           elif [[ "${GITHUB_REF_NAME}" == v2-* ]]; then
@@ -110,17 +119,22 @@ jobs:
       - name: Voz
         working-directory: parallax2
         run: |
-          if [ -f voz.mp3 ]; then
-            echo "usando la locucion commiteada:"
-            ffprobe -v error -show_entries format=duration -of csv=p=0 voz.mp3
+          V="${{ steps.g.outputs.voz }}"
+          if [ -f "$V" ]; then
+            echo "locucion commiteada: $V"
           else
-            python voz.py "${{ steps.g.outputs.guion }}" voz.mp3 --proveedor edge
+            python voz.py "${{ steps.g.outputs.guion }}" "$V" --proveedor edge
           fi
+          # La pista tiene que durar lo que el video. Si no, es que se
+          # monto contra el guion PROVISIONAL -cuatro segundos por plano-
+          # y las frases se pisan unas a otras. Eso sonaba como dos voces
+          # a la vez y no lo detectaba nada.
+          python comprobar_voz.py "${{ steps.g.outputs.guion }}" "$V"
 
       - name: Sonido
         working-directory: parallax2
         run: |
-          python sonido.py _montado.mp4 voz.mp3 salida.mp4 \
+          python sonido.py _montado.mp4 "${{ steps.g.outputs.voz }}" salida.mp4 \
             --guion "${{ steps.g.outputs.guion }}" \
             --musica "${{ inputs.musica || 'auto' }}"
 

@@ -222,11 +222,26 @@ def pie_de(texto, pal):
     """El renglon pequeño debajo de la cifra: de que es ese numero."""
     t = re.sub(r"\s+", " ", (texto or "").strip())
     n = norm(t)
-    p = norm(pal).split()[-1]
-    k = n.find(p)
+
+    # Se busca la FRASE ENTERA del numero, no su ultima palabra.
+    #
+    # Con la ultima palabra sola, en "se denuncian mas de MIL atracos a bancos
+    # al ano... y el botin medio ronda los cinco MIL dolares" el numero
+    # elegido era 5.000 pero el buscador encontraba el primer "mil", que es
+    # de otro dato. En pantalla salia "5.000 $ / atracos a bancos al ano":
+    # la cifra de una frase con el pie de otra. Un dato falso, no un fallo
+    # estetico.
+    frase = norm(pal) if isinstance(pal, str) else norm(" ".join(pal))
+    k = n.find(frase)
+    if k >= 0:
+        fin = k + len(frase)
+    else:
+        p = frase.split()[-1] if frase.split() else ""
+        k = n.find(p) if p else -1
+        fin = k + len(p) if k >= 0 else -1
     if k < 0:
-        return t[:40]
-    cola = t[k + len(p):].strip(" ,.;:")
+        return recorta(t, 38)
+    cola = t[fin:].strip(" ,.;:")
     cola = cola.split(".")[0].split(",")[0]
     # La unidad ya sale pegada a la cifra: repetirla en el pie da
     # "3,22 $ / dolares al ano por cada cien". Fuera de la cabeza del pie.
@@ -241,7 +256,23 @@ def pie_de(texto, pal):
             if m:
                 cola = cola[m.end():]
                 break
-    return recorta(cola, 38) or recorta(t, 38)
+    fuera = recorta(cola, 38)
+    if fuera:
+        return fuera
+
+    # Detras del numero no queda nada util -"...ronda los cinco mil DOLARES."
+    # se queda en vacio al quitar la unidad-. Entonces el pie esta DELANTE:
+    # "el botin medio ronda los" -> "el botin medio". Antes se caia al
+    # principio de la frase entera y salia "El atraco. En Estados Unidos"
+    # debajo de una cifra de dolares.
+    antes = t[:k].strip(" ,.;:")
+    antes = antes.split(".")[-1].split(",")[-1].strip()
+    fuera = recorta(antes, 38)
+    if fuera:
+        return fuera
+
+    # Mejor sin pie que con uno que no es de esta cifra.
+    return ""
 
 
 def recorta(frase, limite):
@@ -253,12 +284,19 @@ def recorta(frase, limite):
     exactamente lo que era.
     """
     frase = (frase or "").strip()
+    # La cabeza tambien: un pie que empieza por "y" o "pero" se lee como si
+    # viniera de otra frase, que es justo lo que queremos evitar.
+    CABEZA = {"y", "o", "pero", "que", "porque", "asi", "aunque", "sino"}
+    palabras = frase.split()
+    while palabras and _pelada(palabras[0]) in CABEZA:
+        palabras.pop(0)
+    frase = " ".join(palabras)
     fuera = []
     for w in frase.split():
         if fuera and len(" ".join(fuera + [w])) > limite:
             break
         fuera.append(w)
-    while fuera and fuera[-1].lower().strip(".,:;") in COLGANTES | VERBOS:
+    while fuera and _pelada(fuera[-1]) in COLGANTES | VERBOS:
         fuera.pop()
     return " ".join(fuera).rstrip(".,:;")
 
@@ -277,25 +315,62 @@ VERBOS = {"tienes", "tiene", "tienen", "hay", "son", "eres", "esta", "estan",
           "va", "van", "sale", "salen", "pone", "pones", "pagas", "paga",
           "cobras", "cobra", "cuesta", "cuestan", "puedes", "puede", "deja",
           "dejas", "necesitas", "necesita", "queda", "quedan", "lleva",
-          "llevan", "gana", "ganas", "presta", "prestas"}
+          "llevan", "gana", "ganas", "presta", "prestas", "ronda", "rondan",
+          "funciona", "funcionan", "depende", "dependen", "cubre", "cubren",
+          "empieza", "empiezan", "termina", "terminan", "cambia", "cambian",
+          "casi", "tambien", "todavia", "apenas", "solo", "incluso",
+          "siempre", "nunca", "ya", "aun", "quiza", "sino"}
 
 
 def rotulo_de(frase, limite=TOPE_ROTULO):
-    """El trozo de frase que va en pantalla, cortado por palabra."""
+    """El trozo de frase que va en pantalla.
+
+    Se busca una CLAUSULA entera que quepa, no los primeros N caracteres.
+    Cortar por longitud daba "Esto funciona porque casi" y "coste de
+    cumplirlas tambien": veintiocho de sesenta y tres rotulos eran trozos a
+    media oracion que no se sostienen solos. Vale mas un rotulo de tres
+    palabras que se entienda que uno de ocho que no.
+    """
     frase = (frase or "").strip().rstrip(".:;")
-    for sep in (".", ",", ":"):
-        corte = frase.split(sep)[0].strip()
-        if 8 <= len(corte) <= limite:
-            frase = corte
-            break
+
+    # todas las clausulas, en orden, y se coge la primera que quepa entera
+    trozos = [x.strip() for x in re.split(r"[.;:,]", frase) if x.strip()]
+    for x in trozos:
+        if 8 <= len(x) <= limite:
+            return _limpia_rotulo(x)
+
+    # ninguna cabe entera: se corta la primera, pero por palabra
+    frase = trozos[0] if trozos else frase
     fuera = []
     for w in frase.split():
         if fuera and len(" ".join(fuera + [w])) > limite:
             break
         fuera.append(w)
-    while fuera and fuera[-1].lower().strip(".,") in COLGANTES | VERBOS:
+    while fuera and _pelada(fuera[-1]) in COLGANTES | VERBOS:
         fuera.pop()
-    return " ".join(fuera).rstrip(".,:;")
+    return _limpia_rotulo(" ".join(fuera))
+
+
+def _pelada(w):
+    """La palabra sin tildes ni puntuacion.
+
+    Las listas COLGANTES y VERBOS estan escritas sin tildes, pero el texto
+    llega con ellas. Comparar en crudo dejaba pasar "todavia", "tambien" y
+    "quiza" SIEMPRE, porque en el guion van bien escritas: en pantalla salio
+    "En Europa la entrada es todavia" y el recorte no lo vio.
+    """
+    return norm(w).strip(".,:;¿?¡!").lower()
+
+
+def _limpia_rotulo(txt):
+    """Quita lo que cuelga por los dos extremos."""
+    CABEZA = {"y", "o", "pero", "porque", "asi", "aunque", "sino"}
+    p = txt.split()
+    while p and _pelada(p[0]) in CABEZA:
+        p.pop(0)
+    while p and _pelada(p[-1]) in COLGANTES | VERBOS:
+        p.pop()
+    return " ".join(p).rstrip(".,:;")
 
 
 def resalta(txt):

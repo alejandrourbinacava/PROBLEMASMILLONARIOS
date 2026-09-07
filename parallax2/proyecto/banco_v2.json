@@ -90,7 +90,7 @@
      176,
      60
     ],
-    "pie": "dólares que no vas a poder tocar nunca",
+    "pie": "dólares que no vas a poder tocar",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -153,7 +153,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Y lo tercero, al *final*",
+    "texto": "lo *tercero*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -349,7 +349,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y aquí está la primera *trampa*",
+    "texto": "aquí está la primera *trampa*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -388,7 +388,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "casi nadie *entiende* qué",
+    "texto": "casi nadie *entiende*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -785,7 +785,7 @@
    "clip_desde": 0.3,
    "capas": [],
    "texto_pantalla": {
-    "texto": "Y aquí viene lo *incómodo*",
+    "texto": "aquí viene lo *incómodo*",
     "px": 108,
     "y": 0.68,
     "acento": [
@@ -885,6 +885,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "*Ahora* sí",
     "px": 112,
@@ -902,7 +903,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "composicion": "izquierda"
   },
   {
@@ -935,17 +935,6 @@
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Hay cientos de bancos *comunitarios*",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "composicion": "izquierda"
   },
   {
@@ -960,6 +949,17 @@
    "clip": "stock_banco/bank_building_facade_244.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "esos *bancos* se venden",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "composicion": "derecha"
@@ -1061,8 +1061,8 @@
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "texto_pantalla": {
-    "texto": "Compara. Fundar: treinta *millones*",
-    "px": 108,
+    "texto": "treinta *millones*",
+    "px": 132,
     "y": 0.68,
     "acento": [
      255,
@@ -1130,7 +1130,7 @@
      176,
      60
     ],
-    "pie": "Diez millones más, dos años",
+    "pie": "Diez millones",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -1186,8 +1186,8 @@
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "texto_pantalla": {
-    "texto": "En Europa la *entrada* es todavía",
-    "px": 108,
+    "texto": "En Europa la *entrada*",
+    "px": 132,
     "y": 0.74,
     "acento": [
      255,
@@ -1253,7 +1253,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Así que ya tienes *banco*",
+    "texto": "que ya tienes *banco*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1354,7 +1354,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Durante décadas *estuvo*",
+    "texto": "En marzo de dos mil *veinte*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1497,7 +1497,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y cuando el *banco*",
+    "texto": "cuando el *banco*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1535,7 +1535,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "dinero, *tampoco* lo saca",
+    "texto": "tampoco lo saca de un *cajón*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1640,7 +1640,7 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_banco/money_counting_machine_122.mp4",
+   "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -1722,7 +1722,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "de verdad, con tu *banco*",
+    "texto": "de *verdad*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -1763,23 +1763,12 @@
      64
     ],
     "pie": ": cincuenta dólares al año",
-    "y": 0.33,
+    "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Un *cliente* tiene diez mil dólares",
-    "px": 108,
-    "y": 0.74,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "composicion": "izquierda"
   },
   {
@@ -1795,6 +1784,17 @@
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
+   "texto_pantalla": {
+    "texto": "*cincuenta* dólares al año",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
@@ -1840,7 +1840,7 @@
      176,
      60
     ],
-    "pie": "Tú seiscientos cincuenta",
+    "pie": "Tú",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -1995,7 +1995,7 @@
    "cierra_bloque": true,
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Pero el *margen* es solo",
+    "texto": "el *margen*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2034,7 +2034,7 @@
    "cierra_bloque": true,
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "negocio. La otra *mitad* no está",
+    "texto": "*negocio*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2222,7 +2222,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y ahora mira cómo *funciona*",
+    "texto": "*ahora* mira",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2260,7 +2260,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "porque es más *agresivo*",
+    "texto": "es más *agresivo*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2369,7 +2369,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_banco/money_envelope_cash_233.mp4",
+   "clip": "stock_banco/building_blueprint_architect_30.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
@@ -2399,7 +2399,7 @@
      176,
      60
     ],
-    "pie": "tardan unos diez años en pagarse",
+    "pie": "intereses sobre los cinco mil",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -2455,7 +2455,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Esto funciona *porque* casi",
+    "texto": "Aproximada- *mente*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2520,7 +2520,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_banco/cash_briefcase_open_248.mp4",
+   "clip": "stock_banco/aerial_city_real_estate_33.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2549,7 +2549,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y aquí está la *frase*",
+    "texto": "aquí está la *frase*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2692,7 +2692,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_banco/person_counting_money_desk_223.mp4",
+   "clip": "stock_banco/electricity_meter_close_up_58.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2920,7 +2920,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Y esa trampa es *puramente*",
+    "texto": "Las normas son *fijas*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2958,7 +2958,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "coste de cumplirlas *también*",
+    "texto": "coste de *cumplirlas*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -3112,7 +3112,7 @@
    ],
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Por eso los bancos *pequeños*",
+    "texto": "No los *cierran*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -3254,7 +3254,7 @@
      176,
      60
     ],
-    "pie": "atracos a bancos al año",
+    "pie": "el botín medio",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -3272,7 +3272,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_banco/busy_city_corner_location_151.mp4",
+   "clip": "stock_banco/executive_office_window_city_93.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -3298,7 +3298,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y no es tu *problema*",
+    "texto": "no es tu *problema*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -3336,7 +3336,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "entrena para *entregar*",
+    "texto": "El dinero está *asegurado*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -3364,7 +3364,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/reading_contract_closeup_142.mp4",
+   "clip": "stock_banco/city_street_traffic_timelaps_99.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3486,7 +3486,7 @@
    "latigo": "der",
    "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Y hay un escalón más *arriba*",
+    "texto": "hay un escalón más *arriba*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -3840,22 +3840,11 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_banco/revolving_door_people_54.mp4",
+   "clip": "stock_banco/revolving_door_people_blur_204.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Antes, una fuga de *depósitos* era",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "composicion": "derecha"
   },
   {
@@ -3867,7 +3856,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/revolving_door_people_blur_57.mp4",
+   "clip": "stock_banco/revolving_door_people_265.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3939,17 +3928,6 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "¿Por qué se cayó? *Porque* el banco",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "composicion": "derecha"
   },
   {
@@ -3964,6 +3942,17 @@
    "clip": "stock_banco/worried_manager_office_desk_264.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "Cuando los tipos *subieron*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -3996,7 +3985,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_banco/revolving_door_people_201.mp4",
+   "clip": "stock_banco/revolving_door_people_54.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -4039,7 +4028,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_banco/revolving_door_people_blur_204.mp4",
+   "clip": "stock_banco/revolving_door_people_blur_57.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -4055,7 +4044,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/revolving_door_people_265.mp4",
+   "clip": "stock_banco/revolving_door_people_201.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
@@ -4072,7 +4061,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
+   "clip": "stock_banco/building_blueprint_architect_115.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -4248,7 +4237,7 @@
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "texto_pantalla": {
-    "texto": "Y el *porcentaje* que puedes prestar",
+    "texto": "el *porcentaje* que puedes prestar",
     "px": 108,
     "y": 0.68,
     "acento": [
@@ -4324,7 +4313,7 @@
    "clip_desde": 0.3,
    "capas": [],
    "texto_pantalla": {
-    "texto": "Y ese *permiso* se puede retirar",
+    "texto": "ese *permiso* se puede retirar",
     "px": 108,
     "y": 0.3,
     "acento": [
@@ -4380,7 +4369,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/legal_documents_signing_52.mp4",
+   "clip": "stock_banco/corporate_office_building_gl_123.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
@@ -4421,8 +4410,9 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Entonces, ¿*cuánto* se gana?",
+    "texto": "*Entonces*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -4438,7 +4428,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "composicion": "derecha"
   },
   {
@@ -4464,23 +4453,12 @@
      60
     ],
     "pie": "son unos once millones al año",
-    "y": 0.33,
+    "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Hacia el *quinto* año",
-    "px": 132,
-    "y": 0.74,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "composicion": "izquierda"
   },
   {
@@ -4516,6 +4494,17 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
+   "texto_pantalla": {
+    "texto": "*Quitando* personal",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "composicion": "izquierda"
   },
   {
@@ -4619,7 +4608,7 @@
      176,
      60
     ],
-    "pie": "o cuatrocientos",
+    "pie": "cuatrocientos",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -4666,7 +4655,7 @@
     }
    ],
    "texto_pantalla": {
-    "texto": "Y esa es la *condición*",
+    "texto": "en un *banco* tú",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -4733,7 +4722,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_banco/contract_being_torn_214.mp4",
+   "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",

@@ -47,6 +47,12 @@ PAPEL = [237, 231, 218]
 ROJO = [232, 86, 64]
 
 TOPE_TARJETA = 3.2       # segundos. Por encima, se parte.
+
+# Planos minimos entre dos usos del mismo clip. A doce se colaban
+# repeticiones a catorce planos -y una a UNO- que el ojo pilla enseguida:
+# el mismo plano dos veces en veinte segundos se lee como que se ha acabado
+# el material, aunque el resto del episodio este bien.
+DISTANCIA = 25
 FUERZA_DUO = 0.55
 
 # Un duotono por capitulo. Cambiar de tinta al cambiar de capitulo marca el
@@ -65,21 +71,16 @@ COLGANTES = _MB.COLGANTES | _MB.VERBOS
 
 
 def titular(frase, limite=30):
-    """La parte de la frase que el ojo lee en dos segundos."""
-    frase = (frase or "").strip().rstrip(".:;")
-    for sep in (":", ";", ".", ","):
-        corte = frase.split(sep)[0].strip()
-        if 8 <= len(corte) <= limite:
-            frase = corte
-            break
-    fuera = []
-    for w in frase.split():
-        if fuera and len(" ".join(fuera + [w])) > limite:
-            break
-        fuera.append(w)
-    while fuera and fuera[-1].lower().strip(".,") in COLGANTES:
-        fuera.pop()
-    return (" ".join(fuera) or frase[:limite]).rstrip(".,:;")
+    """El trozo de frase que va en la tarjeta.
+
+    Delega en `motion_banco.rotulo_de`, que busca una CLAUSULA entera en vez
+    de cortar por longitud. Tener aqui una copia con otra logica es lo que
+    dejaba veinticinco rotulos empezando a media oracion -"Y lo tercero, al
+    final", "de lo que crees"- despues de haber arreglado el otro lado.
+    Es el mismo fallo que ya paso con la lista de palabras colgantes: dos
+    fuentes para la misma decision.
+    """
+    return _MB.rotulo_de(frase, limite)
 
 
 def acentua(txt):
@@ -209,7 +210,7 @@ def main():
                 # nada libre: se repite el que lleve mas planos sin salir
                 lejano = min(candidatos.get(frase, [None]),
                              key=lambda r: ultimo_uso.get(r, -999))
-                if lejano is not None and j - ultimo_uso.get(lejano, -999) > 12:
+                if lejano is not None and j - ultimo_uso.get(lejano, -999) > DISTANCIA:
                     puesto[j] = lejano
                     ultimo_uso[lejano] = j
 
@@ -313,6 +314,21 @@ def main():
         for k in ("_tramo", "_trozo_frase", "_sangrado", "hilo_t"):
             e.pop(k, None)
 
+    # Repeticiones demasiado juntas. `construir_episodio` reparte con un tope
+    # de usos pero sin mirar la distancia, asi que un clip podia salir dos
+    # veces con un solo plano de por medio.
+    libres = [r[2] for r in pool if r[2] not in {e.get("clip") for e in fuera}]
+    visto, n_alejados = {}, 0
+    for i, e in enumerate(fuera):
+        c = e.get("clip")
+        if not c:
+            continue
+        if c in visto and i - visto[c] < DISTANCIA and libres:
+            e["clip"] = libres.pop(0)
+            n_alejados += 1
+            c = e["clip"]
+        visto[c] = i
+
     # Grafico y rotulo en el mismo plano tienen que ir en bandas distintas.
     # `motion_banco` coloca cada uno sin saber del otro, y en nueve planos de
     # doce coincidian -tres de ellos en la MISMA altura-: el anillo rojo salia
@@ -348,6 +364,7 @@ def main():
     print(f"  duotonos por capitulo: {duo_i + 1} capitulos")
     print(f"  rotulos mudados a su plano: {n_mudados} | caidos: {n_caidos}")
     print(f"  grafico y rotulo separados: {n_separados}")
+    print(f"  repeticiones demasiado juntas corregidas: {n_alejados}")
     print(f"escrito {destino}")
     return 0
 

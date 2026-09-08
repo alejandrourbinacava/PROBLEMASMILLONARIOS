@@ -17,7 +17,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+   "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -30,7 +30,7 @@
      176,
      60
     ],
-    "pie": "euros",
+    "pie": "Llegó sola puja",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -48,7 +48,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/airport_baggage_claim_carousel_9.mp4",
+   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -77,7 +77,7 @@
      176,
      60
     ],
-    "pie": "euros",
+    "pie": "",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -191,14 +191,14 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/traveler_pulling_suitcase_airport_11.mp4",
+   "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 1000.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
@@ -222,7 +222,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/airport_departure_board_flights_22.mp4",
+   "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -238,7 +238,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+   "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -265,7 +265,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
+   "clip": "stock_aeropuerto/airport_arrivals_greeting_89.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
@@ -276,18 +276,78 @@
   {
    "id": "cap1_01",
    "texto": "Cuando piensas en ser dueño de un aeropuerto piensas en aviones.",
-   "duracion": 4.51,
-   "movimiento": "bajar",
-   "grade": "dorado_suave",
+   "duracion": 2.25,
+   "movimiento": "drift_der",
+   "grade": "neutro",
    "efectos": [
-    "humo"
+    "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_ambar",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Cuando piensas en ser *dueño*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
    "composicion": "izquierda"
+  },
+  {
+   "id": "cap1_01x",
+   "texto": "Cuando piensas en ser dueño de un aeropuerto piensas en aviones.",
+   "duracion": 2.26,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "un aeropuerto *piensas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
   },
   {
    "id": "cap1_02",
@@ -298,7 +358,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+   "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -314,7 +374,7 @@
     ],
     "estilo": "escala"
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_02b",
@@ -325,12 +385,12 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/aircraft_refueling_fuel_truck_28.mp4",
+   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_03",
@@ -371,7 +431,7 @@
    },
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_03x",
@@ -413,7 +473,7 @@
    "_lat_ent": 1.0,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_04",
@@ -441,7 +501,7 @@
     ],
     "estilo": "derecha"
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_04b",
@@ -452,12 +512,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/cargo_plane_loading_freight_26.mp4",
+   "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_04c",
@@ -468,12 +528,12 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
+   "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_05",
@@ -511,7 +571,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_05x",
@@ -549,7 +609,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_06",
@@ -590,7 +650,7 @@
    "tipo": "rotulo",
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_06x",
@@ -632,7 +692,7 @@
    "_lat_ent": -1.0,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_07",
@@ -649,7 +709,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_07b",
@@ -676,7 +736,7 @@
     ],
     "estilo": "sube"
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_07c",
@@ -692,7 +752,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_07d",
@@ -708,7 +768,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_08",
@@ -719,7 +779,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -733,7 +793,7 @@
      176,
      60
     ],
-    "pie": "vuelos que con dos",
+    "pie": "vuelos",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -742,7 +802,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_08b",
@@ -753,40 +813,90 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
+   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_09",
    "texto": "Y ahí está la primera cosa que casi nadie sabe. Un aeropuerto no gana su dinero donde tú crees.",
-   "duracion": 6.52,
-   "movimiento": "estatico",
-   "grade": "dorado_suave",
+   "duracion": 3.26,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
-    "bokeh"
+    "polvo"
    ],
-   "clip": "stock_aeropuerto/plane_fuselage_close_up_53.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_09.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
    "cierra_bloque": true,
    "texto_pantalla": {
     "texto": "ahí está la *primera* cosa",
-    "px": 108,
-    "y": 0.68,
+    "px": 112,
+    "y": 0.47,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "sube"
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
    },
-   "duotono": "duo_ambar",
-   "duotono_fuerza": 0.55,
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_09x",
+   "texto": "Y ahí está la primera cosa que casi nadie sabe. Un aeropuerto no gana su dinero donde tú crees.",
+   "duracion": 3.26,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_09x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "sabe",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
    "composicion": "izquierda"
   },
   {
@@ -825,7 +935,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_02",
@@ -836,14 +946,14 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/airport_arrivals_greeting_89.mp4",
+   "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 10000.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
@@ -856,7 +966,7 @@
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap2_02b",
@@ -867,7 +977,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+   "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
@@ -883,7 +993,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/stack_of_banknotes_37.mp4",
+   "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -917,7 +1027,7 @@
     ],
     "estilo": "izquierda"
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_03b",
@@ -928,13 +1038,13 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/airport_baggage_claim_carousel_9.mp4",
+   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap2_03c",
@@ -945,7 +1055,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+   "clip": "stock_aeropuerto/boarding_pass_ticket_scan_69.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
@@ -955,42 +1065,76 @@
   {
    "id": "cap2_04",
    "texto": "Miles de millones. Eso no lo compra una persona: lo compran fondos de pensiones, fondos soberanos y grupos de infraestructuras. De hecho, en Heathrow ha ido entrando exactamente ese tipo de dinero: fondos franceses y saudíes.",
-   "duracion": 5.66,
+   "duracion": 2.83,
    "movimiento": "drift_der",
-   "grade": "acero_suave",
+   "grade": "neutro",
    "efectos": [
-    "humo"
+    "bokeh"
    ],
-   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "grafico": {
-    "tipo": "contador",
-    "valor": 1.0,
-    "dec": 0,
-    "sufijo": " M $",
-    "color": [
-     255,
-     176,
-     60
-    ],
-    "pie": "Eso no lo compra una persona",
-    "y": 0.62,
-    "retardo": 0.55,
-    "entrada": "desplome"
-   },
-   "duotono": "duo_papel",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Miles de *millones*",
-    "px": 132,
-    "y": 0.3,
+    "px": 112,
+    "y": 0.47,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap2_04x",
+   "texto": "Miles de millones. Eso no lo compra una persona: lo compran fondos de pensiones, fondos soberanos y grupos de infraestructuras. De hecho, en Heathrow ha ido entrando exactamente ese tipo de dinero: fondos franceses y saudíes.",
+   "duracion": 2.83,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*infraestructuras*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
    },
    "composicion": "centrado"
   },
@@ -1003,12 +1147,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
+   "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_04c",
@@ -1019,7 +1163,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/shopping_mall_interior_people_65.mp4",
+   "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -1027,7 +1171,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_05",
@@ -1038,7 +1182,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/airport_cafe_passengers_eating_17.mp4",
+   "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1051,7 +1195,7 @@
      176,
      60
     ],
-    "pie": "s razones que no tiene casi ningún",
+    "pie": "razones",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -1070,12 +1214,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/coffee_shop_counter_service_66.mp4",
+   "clip": "stock_aeropuerto/airport_construction_runway_works_72.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_06",
@@ -1089,20 +1233,20 @@
    "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "duotono": "duo_papel",
-   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "La *primera*",
     "px": 132,
-    "y": 0.3,
+    "y": 0.68,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "estilo": "sube"
    },
-   "composicion": "izquierda"
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
   },
   {
    "id": "cap2_06b",
@@ -1113,7 +1257,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
+   "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
@@ -1143,7 +1287,7 @@
      176,
      60
     ],
-    "pie": "eso se puede meter en una hoja",
+    "pie": "hoja de cálculo",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -1152,7 +1296,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_07b",
@@ -1169,7 +1313,7 @@
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_08",
@@ -1180,7 +1324,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/queue_line_airport_check_in_20.mp4",
+   "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1193,8 +1337,8 @@
      176,
      60
     ],
-    "pie": "Para un fondo de pensiones",
-    "y": 0.3,
+    "pie": "pagar pensiones dentro",
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
    },
@@ -1203,13 +1347,13 @@
    "texto_pantalla": {
     "texto": "la *tercera*",
     "px": 132,
-    "y": 0.68,
+    "y": 0.74,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "derecha"
+    "estilo": "izquierda"
    },
    "composicion": "centrado"
   },
@@ -1222,12 +1366,12 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
+   "clip": "stock_aeropuerto/derelict_building_broken_windows_75.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_08c",
@@ -1238,12 +1382,12 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/shipping_containers_logistics_70.mp4",
+   "clip": "stock_aeropuerto/stock_market_data_screen_39.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_09",
@@ -1276,10 +1420,21 @@
    "clip": "stock_aeropuerto/boarding_pass_ticket_scan_69.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "aquí *viene* el giro",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_11",
@@ -1297,31 +1452,20 @@
     "tipo": "contador",
     "valor": 1000.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "se adjudicó por cincuenta y seis",
+    "pie": "Ciudad Real costó",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Los *aeropuertos* que fracasan",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_11b",
@@ -1348,7 +1492,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
+   "clip": "stock_aeropuerto/business_people_walking_office_82.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1361,14 +1505,14 @@
      176,
      60
     ],
-    "pie": "vas a ver por qué murió",
+    "pie": "capítulo",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_12b",
@@ -1379,13 +1523,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+   "clip": "stock_aeropuerto/auction_gavel_43.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_01",
@@ -1405,7 +1549,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Los ingresos de un *aeropuerto*",
     "px": 112,
@@ -1423,6 +1566,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "tipo": "rotulo",
    "composicion": "centrado"
   },
   {
@@ -1443,7 +1587,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "parten en dos *mitades*",
     "px": 112,
@@ -1461,7 +1604,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "composicion": "derecha"
   },
   {
    "id": "cap3_02",
@@ -1481,6 +1625,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "tasas de *aterrizaje*",
     "px": 112,
@@ -1498,8 +1643,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_02x",
@@ -1519,6 +1663,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "*pasajero*",
     "px": 112,
@@ -1536,7 +1681,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "composicion": "centrado"
   },
   {
@@ -1548,42 +1692,95 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/air_freight_warehouse_pallets_27.mp4",
+   "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_03",
    "texto": "La segunda se llama no aeronáutica, y es todo lo demás: las tiendas, los restaurantes, el aparcamiento, la publicidad, el alquiler de oficinas y locales.",
-   "duracion": 5.61,
-   "movimiento": "pull_out",
-   "grade": "frio_suave",
+   "duracion": 2.81,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
    "latigo": "der",
-   "duotono": "duo_rojo",
-   "duotono_fuerza": 0.55,
-   "_lat_sal": 1.0,
-   "transicion": "corte",
    "texto_pantalla": {
-    "texto": "La segunda se llama no *aeronáutica*",
-    "px": 108,
-    "y": 0.3,
+    "texto": "es todo lo *demás*",
+    "px": 112,
+    "y": 0.47,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap3_03x",
+   "texto": "La segunda se llama no aeronáutica, y es todo lo demás: las tiendas, los restaurantes, el aparcamiento, la publicidad, el alquiler de oficinas y locales.",
+   "duracion": 2.8,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap3_03x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "der",
+   "texto_pantalla": {
+    "texto": "*restaurantes*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "_lat_ent": 1.0,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
+   "composicion": "centrado"
   },
   {
    "id": "cap3_03b",
@@ -1594,13 +1791,13 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_aeropuerto/car_park_barrier_ticket_14.mp4",
+   "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_04",
@@ -1631,23 +1828,33 @@
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
-    "tipo": "contador",
-    "valor": 10.0,
-    "dec": 0,
-    "sufijo": "",
-    "color": [
+    "tipo": "reparto",
+    "valor": 40.0,
+    "color_a": [
      255,
      176,
      60
     ],
-    "pie": "euros que entran en un aeropuerto",
+    "etiqueta_a": "euros",
+    "etiqueta_b": "el resto",
     "y": 0.3,
-    "retardo": 0.55,
+    "retardo": 0.6,
     "entrada": "golpe"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "texto_pantalla": {
+    "texto": "*Léelo* otra vez",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "centrado"
   },
   {
    "id": "cap3_05b",
@@ -1658,12 +1865,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/engineer_inspecting_machinery_71.mp4",
+   "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_06",
@@ -1684,6 +1891,7 @@
     }
    ],
    "latigo": "izq",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "es la *estrategia*",
     "px": 112,
@@ -1701,7 +1909,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_sal": -1.0,
    "transicion": "corte",
    "composicion": "derecha"
@@ -1725,6 +1932,7 @@
     }
    ],
    "latigo": "izq",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "precisamente para *depender*",
     "px": 112,
@@ -1742,11 +1950,10 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_ent": -1.0,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_06b",
@@ -1757,13 +1964,13 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_aeropuerto/asphalt_paving_road_works_73.mp4",
+   "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_07",
@@ -1774,22 +1981,22 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/airplane_taking_off_2.mp4",
+   "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "duotono": "duo_rojo",
-   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "la *aerolínea* negocia",
     "px": 132,
-    "y": 0.68,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "sube"
+    "estilo": "escala"
    },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
    "composicion": "izquierda"
   },
   {
@@ -1801,12 +2008,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_08",
@@ -1823,7 +2030,7 @@
    "cierra_bloque": true,
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_01",
@@ -1843,7 +2050,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Vamos a bajar un *nivel*",
     "px": 112,
@@ -1861,6 +2067,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "tipo": "rotulo",
    "composicion": "derecha"
   },
   {
@@ -1881,7 +2088,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "mitad comercial hay una *pieza*",
     "px": 112,
@@ -1899,7 +2105,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "composicion": "centrado"
   },
   {
    "id": "cap4_02",
@@ -1910,7 +2117,7 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
+   "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1923,14 +2130,14 @@
      86,
      64
     ],
-    "pie": "todos los ingresos comerciales",
+    "pie": "todos los ingresos",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_03",
@@ -1941,20 +2148,9 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/coffee_shop_counter_service_66.mp4",
+   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "No la *tienda* del duty free",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "composicion": "izquierda"
@@ -1998,7 +2194,7 @@
    },
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_04x",
@@ -2040,7 +2236,7 @@
    "_lat_ent": -1.0,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_04b",
@@ -2051,7 +2247,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/financial_chart_graph_screen_38.mp4",
+   "clip": "stock_aeropuerto/executives_discussing_table_81.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
@@ -2068,12 +2264,12 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_aeropuerto/coins_falling_slow_motion_77.mp4",
+   "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_05",
@@ -2084,7 +2280,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/shopping_mall_interior_people_65.mp4",
+   "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -2097,14 +2293,25 @@
      176,
      60
     ],
-    "pie": "en Asia-Pacífico y Oriente Medio",
-    "y": 0.68,
+    "pie": "comercio",
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "En Europa el *reparto*",
+    "px": 132,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap4_05b",
@@ -2115,7 +2322,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
+   "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
@@ -2131,7 +2338,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+   "clip": "stock_aeropuerto/runway_markings_asphalt_51.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2139,7 +2346,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_06",
@@ -2150,7 +2357,7 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
+   "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -2163,7 +2370,7 @@
      176,
      60
     ],
-    "pie": "sitios: el negocio está en el pasajero",
+    "pie": "sitios",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -2171,7 +2378,7 @@
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_06b",
@@ -2182,7 +2389,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/business_meeting_boardroom_41.mp4",
+   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
@@ -2192,18 +2399,78 @@
   {
    "id": "cap4_07",
    "texto": "Por eso los aeropuertos modernos te hacen caminar por delante de las tiendas para llegar a tu puerta. No es mala señalización. Es el plano de un centro comercial que resulta que tiene pista.",
-   "duracion": 5.69,
-   "movimiento": "contra_izq",
-   "grade": "sepia_archivo",
+   "duracion": 2.85,
+   "movimiento": "drift_der",
+   "grade": "neutro",
    "efectos": [
-    "polvo"
+    "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_verde",
-   "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Por eso los *aeropuertos*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap4_07x",
+   "texto": "Por eso los aeropuertos modernos te hacen caminar por delante de las tiendas para llegar a tu puerta. No es mala señalización. Es el plano de un centro comercial que resulta que tiene pista.",
+   "duracion": 2.84,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "No es mala *señalización*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap4_07b",
@@ -2214,12 +2481,12 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
+   "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_08",
@@ -2240,6 +2507,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "con esto",
     "px": 112,
@@ -2257,8 +2525,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_08x",
@@ -2279,6 +2546,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "la *cabeza*",
     "px": 112,
@@ -2296,8 +2564,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_01",
@@ -2335,7 +2602,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_01x",
@@ -2373,7 +2640,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_02",
@@ -2393,7 +2660,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Tú crees que la *aerolínea* le",
     "px": 112,
@@ -2411,7 +2677,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "composicion": "derecha"
   },
   {
    "id": "cap4_02x",
@@ -2431,46 +2698,8 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "al *aeropuerto*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "centrado"
-  },
-  {
-   "id": "cap4_03",
-   "texto": "En los pequeños pasa justo lo contrario.",
-   "duracion": 1.61,
-   "movimiento": "drift_izq",
-   "grade": "neutro",
-   "efectos": [
-    "niebla"
-   ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cap4_03.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "texto_pantalla": {
-    "texto": "En los *pequeños*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2490,6 +2719,44 @@
    "composicion": "izquierda"
   },
   {
+   "id": "cap4_03",
+   "texto": "En los pequeños pasa justo lo contrario.",
+   "duracion": 1.61,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_03.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "En los *pequeños*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
    "id": "cap4_03x",
    "texto": "En los pequeños pasa justo lo contrario.",
    "duracion": 1.62,
@@ -2507,6 +2774,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "pasa justo lo *contrario*",
     "px": 112,
@@ -2524,8 +2792,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_04",
@@ -2547,15 +2814,15 @@
    "texto_pantalla": {
     "texto": "sin vuelos no hay *pasajeros*",
     "px": 108,
-    "y": 0.3,
+    "y": 0.68,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "estilo": "sube"
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_04b",
@@ -2572,7 +2839,7 @@
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_04c",
@@ -2588,7 +2855,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_05",
@@ -2604,7 +2871,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_05b",
@@ -2620,7 +2887,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_05c",
@@ -2631,7 +2898,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_aeropuerto/flight_routes_map_animation_88.mp4",
+   "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2639,7 +2906,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_06",
@@ -2650,7 +2917,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/clock_ticking_close_up_87.mp4",
+   "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -2663,15 +2930,26 @@
      176,
      60
     ],
-    "pie": "pasajeros que van a aparcar",
-    "y": 0.3,
+    "pie": "pasajeros",
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "*Piénsalo* un segundo",
+    "px": 132,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap4_06b",
@@ -2682,12 +2960,12 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/executives_discussing_table_81.mp4",
+   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_06c",
@@ -2698,12 +2976,12 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_aeropuerto/judge_gavel_court_84.mp4",
+   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_07",
@@ -2723,6 +3001,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "El *avión* es el cebo",
     "px": 112,
@@ -2740,8 +3019,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_07x",
@@ -2761,6 +3039,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "El pasajero es el *negocio*",
     "px": 112,
@@ -2778,24 +3057,87 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_08",
    "texto": "Y por eso, cuando esa aerolínea decide que la subvención ya no le compensa y se va, el aeropuerto entero se cae de golpe. Que es lo que vas a ver en dos minutos.",
-   "duracion": 5.42,
-   "movimiento": "bajar",
-   "grade": "sepia_archivo",
+   "duracion": 2.71,
+   "movimiento": "drift_der",
+   "grade": "neutro",
    "efectos": [
-    "polvo"
+    "destellos"
    ],
-   "clip": "stock_aeropuerto/declining_graph_red_arrow_78.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
    "latigo": "izq",
-   "duotono": "duo_verde",
-   "duotono_fuerza": 0.55,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "por eso",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_sal": -1.0,
+   "transicion": "corte",
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap4_08x",
+   "texto": "Y por eso, cuando esa aerolínea decide que la subvención ya no le compensa y se va, el aeropuerto entero se cae de golpe. Que es lo que vas a ver en dos minutos.",
+   "duracion": 2.71,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "niebla"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_08x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "latigo": "izq",
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "por eso",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "_lat_ent": -1.0,
    "_lat_sal": -1.0,
    "transicion": "corte",
    "composicion": "derecha"
@@ -2809,7 +3151,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/traveler_pulling_suitcase_airport_11.mp4",
+   "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
@@ -2868,7 +3210,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "algunos valen una *fortuna*",
     "px": 112,
@@ -2886,6 +3227,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "tipo": "rotulo",
    "composicion": "centrado"
   },
   {
@@ -2897,7 +3239,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/airplane_taking_off_2.mp4",
+   "clip": "stock_aeropuerto/boarding_pass_ticket_scan_69.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2905,13 +3247,13 @@
     "tipo": "contador",
     "valor": 70.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares",
+    "pie": "mañana en Heathrow",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -2931,20 +3273,9 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/jet_engine_turbine_54.mp4",
+   "clip": "stock_aeropuerto/air_freight_warehouse_pallets_27.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "Un solo *permiso*",
-    "px": 132,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
@@ -2959,7 +3290,7 @@
    "efectos": [
     "billetes"
    ],
-   "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+   "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -2975,20 +3306,20 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+   "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 70.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares por el derecho a aterrizar",
+    "pie": "",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -3006,9 +3337,20 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+   "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "No por un *avión*",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "izquierda"
@@ -3032,6 +3374,7 @@
     }
    ],
    "latigo": "izq",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Eso te dice dos *cosas*",
     "px": 112,
@@ -3049,7 +3392,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_sal": -1.0,
    "transicion": "corte",
    "composicion": "centrado"
@@ -3057,34 +3399,79 @@
   {
    "id": "cap5_06",
    "texto": "La primera es lo escaso que es el espacio en un aeropuerto que de verdad funciona. La segunda, y es más incómoda: ese valor no lo has creado tú. Lo crea que millones de personas quieran ir a Londres. Tú solo tienes el sitio donde aterrizan.",
-   "duracion": 5.25,
-   "movimiento": "push_in",
-   "grade": "verde_suave",
+   "duracion": 2.62,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
-    "billetes"
+    "polvo"
    ],
-   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "grafico": {
-    "tipo": "contador",
-    "valor": 1.0,
-    "dec": 0,
-    "sufijo": " M $",
-    "color": [
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_06.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "La *segunda*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
      255,
      176,
      60
     ],
-    "pie": "personas quieran ir a Londres",
-    "y": 0.3,
-    "retardo": 0.55,
-    "entrada": "golpe"
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
    },
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
    "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_06x",
+   "texto": "La primera es lo escaso que es el espacio en un aeropuerto que de verdad funciona. La segunda, y es más incómoda: ese valor no lo has creado tú. Lo crea que millones de personas quieran ir a Londres. Tú solo tienes el sitio donde aterrizan.",
+   "duracion": 2.63,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_06x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "valor no lo has *creado* tú",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap5_06b",
@@ -3095,12 +3482,12 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
+   "clip": "stock_aeropuerto/asphalt_paving_road_works_73.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_06c",
@@ -3111,12 +3498,12 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
+   "clip": "stock_aeropuerto/empty_building_abandoned_34.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_07",
@@ -3127,27 +3514,27 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
+   "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 70.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "No vale nada",
+    "pie": "slot",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_08",
@@ -3168,6 +3555,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Que es *exactamente*",
     "px": 112,
@@ -3185,8 +3573,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_08x",
@@ -3207,6 +3594,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "pasó en el capítulo *siguiente*",
     "px": 112,
@@ -3224,8 +3612,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_01",
@@ -3239,9 +3626,20 @@
    "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "Vamos con *Ciudad* Real",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_02",
@@ -3252,14 +3650,14 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_aeropuerto/air_traffic_controller_radar_8.mp4",
+   "clip": "stock_aeropuerto/money_counting_cash_euros_36.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 3.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
@@ -3272,7 +3670,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_03",
@@ -3283,7 +3681,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_aeropuerto/airport_baggage_claim_carousel_9.mp4",
+   "clip": "stock_aeropuerto/euro_banknotes_counting_hands_76.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -3303,7 +3701,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_03b",
@@ -3314,7 +3712,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_aeropuerto/suitcase_luggage_conveyor_10.mp4",
+   "clip": "stock_aeropuerto/coins_falling_slow_motion_77.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -3322,7 +3720,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_04",
@@ -3333,20 +3731,20 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
+   "clip": "stock_aeropuerto/stock_market_data_screen_39.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 300.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "El último vuelo comercial salió",
+    "pie": "acreedores con deuda",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -3354,18 +3752,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "texto_pantalla": {
-    "texto": "En *junio* de dos mil diez entró",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_04b",
@@ -3376,12 +3763,12 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_aeropuerto/traveler_pulling_suitcase_airport_11.mp4",
+   "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_05",
@@ -3392,27 +3779,27 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
+   "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
-    "valor": 1.0,
+    "valor": 100.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "No apareció nadie",
+    "pie": "venta",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_05b",
@@ -3423,12 +3810,12 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
+   "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_06",
@@ -3453,7 +3840,7 @@
      176,
      60
     ],
-    "pie": "euros del principio de este vídeo",
+    "pie": "principio",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -3462,7 +3849,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_06b",
@@ -3473,13 +3860,13 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_aeropuerto/auction_bidding_hands_raised_83.mp4",
+   "clip": "stock_aeropuerto/judge_gavel_court_84.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_07",
@@ -3510,18 +3897,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Cinco meses *después*",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "sube"
-   },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_07b",
@@ -3532,12 +3908,12 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
+   "clip": "stock_aeropuerto/courthouse_legal_documents_44.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_08",
@@ -3548,27 +3924,38 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
+   "clip": "stock_aeropuerto/judge_gavel_court_84.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 56.2,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M €",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "euros",
+    "pie": "aeropuerto",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "texto_pantalla": {
+    "texto": "Finalmente",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap6_08b",
@@ -3579,7 +3966,7 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_aeropuerto/airport_shopping_retail_16.mp4",
+   "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -3587,7 +3974,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_09",
@@ -3598,20 +3985,20 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_aeropuerto/shopping_mall_interior_people_65.mp4",
+   "clip": "stock_aeropuerto/madrid_spain_city_aerial_85.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 1000.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "cincuenta y seis",
+    "pie": "",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -3619,7 +4006,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_10",
@@ -3635,18 +4022,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "por qué *murió?* No por la pista",
-    "px": 108,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_10b",
@@ -3662,7 +4038,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_11",
@@ -3687,13 +4063,24 @@
      60
     ],
     "pie": "kilómetros de Madrid",
-    "y": 0.26,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "que ya tiene un *aeropuerto* enorme",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_11b",
@@ -3704,7 +4091,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
+   "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3712,7 +4099,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_12",
@@ -3751,7 +4138,7 @@
     "retardo": 0.26
    },
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_12x",
@@ -3789,7 +4176,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_12b",
@@ -3800,12 +4187,12 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_aeropuerto/family_travelers_airport_59.mp4",
+   "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_13",
@@ -3819,9 +4206,20 @@
    "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "es un *edificio* con facturas",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_13b",
@@ -3837,7 +4235,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_14",
@@ -3852,22 +4250,22 @@
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
+   "duotono": "duo_ambar",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "texto_pantalla": {
     "texto": "Lo llenan las *aerolíneas*",
     "px": 108,
-    "y": 0.68,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "sube"
+    "estilo": "izquierda"
    },
-   "duotono": "duo_ambar",
-   "duotono_fuerza": 0.55,
-   "_lat_sal": 1.0,
-   "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_14b",
@@ -3884,7 +4282,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_15",
@@ -3900,18 +4298,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Aquí está la *lección*",
-    "px": 132,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_15b",
@@ -3922,28 +4309,88 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_aeropuerto/business_meeting_boardroom_41.mp4",
+   "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap7_01",
    "texto": "Has comprado el terreno. Has pagado la terminal. Mantienes la pista, los bomberos, el control, la seguridad, el deshielo, el asfalto.",
-   "duracion": 5.1,
-   "movimiento": "pull_out",
-   "grade": "dorado_suave",
+   "duracion": 2.55,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/control_tower_night_57.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_papel",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "Has comprado el *terreno*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap7_01x",
+   "texto": "Has comprado el terreno. Has pagado la terminal. Mantienes la pista, los bomberos, el control, la seguridad, el deshielo, el asfalto.",
+   "duracion": 2.55,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap7_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "texto_pantalla": {
+    "texto": "los *bomberos*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "tipo": "rotulo",
    "composicion": "izquierda"
   },
   {
@@ -3955,12 +4402,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/security_camera_surveillance_68.mp4",
+   "clip": "stock_aeropuerto/executives_discussing_table_81.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap7_02",
@@ -3980,6 +4427,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Nada de eso *decide*",
     "px": 112,
@@ -3997,8 +4445,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap7_02x",
@@ -4018,6 +4465,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "si *entra* un solo euro",
     "px": 112,
@@ -4035,7 +4483,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "composicion": "derecha"
   },
   {
@@ -4047,7 +4494,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
+   "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -4061,7 +4508,7 @@
      176,
      60
     ],
-    "pie": "kilómetros se queda exactamente igual",
+    "pie": "kilómetros",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -4070,7 +4517,18 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "Quien lo decide es una *aerolínea*",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "izquierda"
   },
   {
    "id": "cap7_03b",
@@ -4081,13 +4539,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/empty_road_countryside_86.mp4",
+   "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap7_03c",
@@ -4098,7 +4556,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/airport_departure_board_flights_22.mp4",
+   "clip": "stock_aeropuerto/empty_road_countryside_86.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
@@ -4123,6 +4581,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Tus costes son *fijos*",
     "px": 112,
@@ -4140,8 +4599,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap7_04x",
@@ -4161,6 +4619,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "*ingresos*",
     "px": 112,
@@ -4178,8 +4637,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap7_05",
@@ -4199,7 +4657,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Tienes un *centro*",
     "px": 112,
@@ -4217,6 +4674,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "tipo": "rotulo",
    "composicion": "derecha"
   },
   {
@@ -4237,7 +4695,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "comercial con una *pista*",
     "px": 112,
@@ -4255,7 +4712,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "tipo": "rotulo",
+   "composicion": "izquierda"
   },
   {
    "id": "cap7_05b",
@@ -4266,13 +4724,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_aeropuerto/aircraft_maintenance_hangar_29.mp4",
+   "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_01",
@@ -4348,7 +4806,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_02",
@@ -4362,24 +4820,20 @@
    "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "grafico": {
-    "tipo": "contador",
-    "valor": 1.0,
-    "dec": 0,
-    "sufijo": " M $",
-    "color": [
+   "texto_pantalla": {
+    "texto": "Si *compras* uno grande y vivo",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
      255,
      176,
      60
     ],
-    "pie": "no vas a competir con fondos soberanos",
-    "y": 0.26,
-    "retardo": 0.55,
-    "entrada": "rebote"
+    "estilo": "derecha"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_02b",
@@ -4390,7 +4844,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/stack_of_banknotes_37.mp4",
+   "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -4406,30 +4860,29 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
+   "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
    "grafico": {
-    "tipo": "contador",
-    "valor": 10.0,
-    "dec": 0,
-    "sufijo": "",
-    "color": [
+    "tipo": "reparto",
+    "valor": 40.0,
+    "color_a": [
      255,
      176,
      60
     ],
-    "pie": "euros van a salir de las tiendas",
+    "etiqueta_a": "euros",
+    "etiqueta_b": "el resto",
     "y": 0.34,
-    "retardo": 0.55,
+    "retardo": 0.6,
     "entrada": "latigo_der"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cierre_03b",
@@ -4440,13 +4893,13 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_construction_runway_works_72.mp4",
+   "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_04",
@@ -4457,7 +4910,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_aeropuerto/financial_chart_graph_screen_38.mp4",
+   "clip": "stock_aeropuerto/engineer_inspecting_machinery_71.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "texto_pantalla": {
@@ -4484,12 +4937,12 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
+   "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_04c",
@@ -4500,12 +4953,12 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_aeropuerto/aircraft_maintenance_hangar_29.mp4",
+   "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_05",
@@ -4516,7 +4969,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_aeropuerto/airport_cafe_passengers_eating_17.mp4",
+   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -4546,13 +4999,13 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
+   "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cierre_05c",
@@ -4563,12 +5016,12 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_aeropuerto/family_travelers_airport_59.mp4",
+   "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_06",
@@ -4611,24 +5064,85 @@
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_07",
    "texto": "Ese es el precio de ser el dueño de un aeropuerto: pagas por la pista y cobras por la espera.",
-   "duracion": 6.42,
-   "movimiento": "estatico",
-   "grade": "dorado_suave",
+   "duracion": 3.21,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
-    "brasas"
+    "niebla"
    ],
-   "clip": "stock_aeropuerto/queue_line_airport_check_in_20.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_07.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
    "cierra_bloque": true,
-   "duotono": "duo_rojo",
-   "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Ese es el *precio* de ser",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cierre_07x",
+   "texto": "Ese es el precio de ser el dueño de un aeropuerto: pagas por la pista y cobras por la espera.",
+   "duracion": 3.21,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cierre_07x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*aeropuerto*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
   }
  ]
 }

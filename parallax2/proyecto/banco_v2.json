@@ -84,13 +84,13 @@
     "tipo": "contador",
     "valor": 27.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares que no vas a poder tocar",
+    "pie": "",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -136,78 +136,18 @@
   {
    "id": "gancho_05",
    "texto": "Y lo tercero, al final: cuánto se gana de verdad haciendo esto. La cifra es mucho más baja de lo que crees, y el negocio sigue siendo uno de los mejores del mundo. Vas a entender por qué.",
-   "duracion": 3.04,
-   "movimiento": "drift_der",
-   "grade": "neutro",
-   "efectos": [
-    "destellos"
-   ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_gancho_05.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "lo *tercero*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "centrado"
-  },
-  {
-   "id": "gancho_05x",
-   "texto": "Y lo tercero, al final: cuánto se gana de verdad haciendo esto. La cifra es mucho más baja de lo que crees, y el negocio sigue siendo uno de los mejores del mundo. Vas a entender por qué.",
-   "duracion": 3.04,
+   "duracion": 6.08,
    "movimiento": "drift_izq",
-   "grade": "neutro",
+   "grade": "dorado_suave",
    "efectos": [
-    "niebla"
+    "bokeh"
    ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_gancho_05x.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "de lo que *crees*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "izquierda"
+   "clip": "stock_banco/handshake_business_sale_300.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
   },
   {
    "id": "gancho_05b",
@@ -218,13 +158,13 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+   "clip": "stock_banco/corporate_office_building_gl_123.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_01",
@@ -262,7 +202,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_02",
@@ -280,20 +220,20 @@
     "tipo": "contador",
     "valor": 50.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares",
+    "pie": "esperan",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_02b",
@@ -309,7 +249,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_02c",
@@ -320,7 +260,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+   "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -328,7 +268,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_03",
@@ -367,7 +307,7 @@
    },
    "tipo": "rotulo",
    "_lat_ent": 1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_03x",
@@ -405,7 +345,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_04",
@@ -432,7 +372,7 @@
     ],
     "estilo": "derecha"
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_04b",
@@ -448,7 +388,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_04c",
@@ -464,7 +404,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_05",
@@ -483,13 +423,13 @@
     "tipo": "contador",
     "valor": 30.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "te dijeran: no los toques",
+    "pie": "te dijeran",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -498,7 +438,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_05b",
@@ -515,7 +455,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_06",
@@ -539,14 +479,14 @@
      86,
      64
     ],
-    "pie": "los activos ponderados por riesgo",
+    "pie": "los activos ponderados",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_06b",
@@ -562,7 +502,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_06c",
@@ -578,7 +518,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_06d",
@@ -589,7 +529,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+   "clip": "stock_banco/percentage_graph_screen_179.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -597,7 +537,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_07",
@@ -621,7 +561,7 @@
      176,
      60
     ],
-    "pie": "s vas a ver exactamente lo rápido",
+    "pie": "capítulo",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -629,7 +569,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_07b",
@@ -645,7 +585,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_08",
@@ -672,7 +612,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_09",
@@ -696,14 +636,14 @@
      176,
      60
     ],
-    "pie": "abogados para preparar la solicitud",
+    "pie": "abogados para preparar",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_09b",
@@ -722,7 +662,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_09c",
@@ -739,7 +679,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_10",
@@ -770,7 +710,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_11",
@@ -797,7 +737,7 @@
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_11b",
@@ -813,7 +753,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_11c",
@@ -832,7 +772,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_12",
@@ -864,7 +804,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_13",
@@ -903,22 +843,82 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_01",
    "texto": "No tienes que fundar un banco. Puedes comprar uno.",
-   "duracion": 3.96,
-   "movimiento": "contra_izq",
-   "grade": "acero_suave",
+   "duracion": 1.98,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "No tienes que *fundar*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap2_01x",
+   "texto": "No tienes que fundar un banco. Puedes comprar uno.",
+   "duracion": 1.98,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_banco/handshake_business_sale_300.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_papel",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap2_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Puedes *comprar* uno",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
    "composicion": "centrado"
   },
   {
@@ -981,13 +981,13 @@
     "tipo": "contador",
     "valor": 1.5,
     "dec": 1,
-    "sufijo": "x",
+    "sufijo": "",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "lo que valen sus libros",
+    "pie": "cambiar de manos",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -1045,7 +1045,7 @@
    "capas": [],
    "grafico": {
     "tipo": "contador",
-    "valor": 30.0,
+    "valor": 2.0,
     "dec": 0,
     "sufijo": " años",
     "color": [
@@ -1117,7 +1117,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/money_counting_machine_122.mp4",
+   "clip": "stock_banco/corporate_office_building_gl_189.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1130,7 +1130,7 @@
      176,
      60
     ],
-    "pie": "Diez millones",
+    "pie": "",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -1149,7 +1149,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_banco/money_and_construction_plans_137.mp4",
+   "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
@@ -1172,13 +1172,13 @@
     "tipo": "contador",
     "valor": 10.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M €",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "euros de capital regulatorio",
+    "pie": "capital regulatorio",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -1295,7 +1295,7 @@
      176,
      60
     ],
-    "pie": "minutos esperando: ¿de dónde",
+    "pie": "minutos esperando",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -1313,7 +1313,7 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_banco/calculator_total_display_77.mp4",
+   "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1326,7 +1326,7 @@
      176,
      60
     ],
-    "pie": "tu cuenta",
+    "pie": "ingresas",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -1450,7 +1450,7 @@
      176,
      60
     ],
-    "pie": "no están esperándote en ningún cajón",
+    "pie": "cosa concreta: tus",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -1576,7 +1576,7 @@
      176,
      60
     ],
-    "pie": "El banco no va al almacén a buscar",
+    "pie": "vecino pide hipoteca",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -1640,7 +1640,7 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+   "clip": "stock_banco/money_counting_machine_122.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -1762,7 +1762,7 @@
      86,
      64
     ],
-    "pie": ": cincuenta dólares al año",
+    "pie": "",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -1827,7 +1827,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+   "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1840,7 +1840,7 @@
      176,
      60
     ],
-    "pie": "Tú",
+    "pie": "",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -1858,7 +1858,7 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_banco/percentage_graph_screen_179.mp4",
+   "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1871,7 +1871,7 @@
      86,
      64
     ],
-    "pie": "; el rendimiento medio",
+    "pie": "banca estadounidense",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -1900,7 +1900,7 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_banco/graph_rising_arrow_screen_200.mp4",
+   "clip": "stock_banco/building_blueprint_architect_30.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -1916,7 +1916,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_banco/profit_graph_rising_221.mp4",
+   "clip": "stock_banco/aerial_city_real_estate_33.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -1948,7 +1948,7 @@
      176,
      60
     ],
-    "pie": "año por cada cien prestados",
+    "pie": "",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -1977,80 +1977,19 @@
   {
    "id": "cap3_12",
    "texto": "Pero el margen es solo la mitad del negocio. La otra mitad no está en las hipotecas.",
-   "duracion": 3.22,
-   "movimiento": "drift_izq",
-   "grade": "neutro",
+   "duracion": 6.44,
+   "movimiento": "push_in",
+   "grade": "frio_suave",
    "efectos": [
-    "niebla"
+    "fuga_luz"
    ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cap3_12.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
+   "clip": "stock_banco/corporate_office_building_gl_261.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
    "cierra_bloque": true,
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "el *margen*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
    "composicion": "derecha"
-  },
-  {
-   "id": "cap3_12x",
-   "texto": "Pero el margen es solo la mitad del negocio. La otra mitad no está en las hipotecas.",
-   "duracion": 3.22,
-   "movimiento": "drift_der",
-   "grade": "neutro",
-   "efectos": [
-    "bokeh"
-   ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cap3_12x.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "cierra_bloque": true,
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "*negocio*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "izquierda"
   },
   {
    "id": "cap4_01",
@@ -2088,7 +2027,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_02",
@@ -2104,22 +2043,22 @@
    "capas": [],
    "grafico": {
     "tipo": "contador",
-    "valor": 200000.0,
-    "dec": 0,
-    "sufijo": " $",
+    "valor": 1.2,
+    "dec": 1,
+    "sufijo": " B $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares en tarjetas de crédito",
+    "pie": "tarjetas de crédito",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_02b",
@@ -2135,7 +2074,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_03",
@@ -2151,40 +2090,25 @@
    "capas": [],
    "latigo": "der",
    "grafico": {
-    "tipo": "barras",
-    "items": [
-     [
-      "banco pequeño",
-      5.0
-     ],
-     [
-      "banco grande",
-      1.0
-     ]
-    ],
-    "destacar": {
-     "banco pequeño": [
-      232,
-      86,
-      64
-     ]
-    },
-    "sufijo": "x",
-    "dec": 1,
-    "y": 0.34,
+    "tipo": "contador",
+    "valor": 5.0,
+    "dec": 0,
+    "sufijo": "",
     "color": [
      255,
      176,
      60
     ],
-    "retardo": 0.6,
+    "pie": "sus clientes",
+    "y": 0.34,
+    "retardo": 0.55,
     "entrada": "latigo_der"
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_03b",
@@ -2201,7 +2125,7 @@
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_04",
@@ -2239,7 +2163,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_04x",
@@ -2277,7 +2201,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_05",
@@ -2308,7 +2232,7 @@
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_05b",
@@ -2324,7 +2248,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_06",
@@ -2349,7 +2273,7 @@
      176,
      60
     ],
-    "pie": "to",
+    "pie": "",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -2358,7 +2282,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_06b",
@@ -2369,13 +2293,13 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_banco/building_blueprint_architect_30.mp4",
+   "clip": "stock_banco/electricity_meter_close_up_58.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_07",
@@ -2399,7 +2323,7 @@
      176,
      60
     ],
-    "pie": "intereses sobre los cinco mil",
+    "pie": "intereses",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -2417,7 +2341,7 @@
     ],
     "estilo": "derecha"
    },
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_07b",
@@ -2433,7 +2357,7 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_08",
@@ -2471,7 +2395,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_08x",
@@ -2509,7 +2433,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_08b",
@@ -2520,7 +2444,7 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+   "clip": "stock_banco/negotiation_meeting_table_72.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2528,51 +2452,40 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_09",
    "texto": "Y aquí está la frase que resume el negocio bancario mejor que ninguna otra:",
-   "duracion": 2.38,
-   "movimiento": "drift_der",
-   "grade": "neutro",
+   "duracion": 4.77,
+   "movimiento": "drift_izq",
+   "grade": "sepia_archivo",
    "efectos": [
-    "destellos"
+    "polvo"
    ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cap4_09.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
+   "clip": "stock_banco/corporate_decision_meeting_282.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
    "texto_pantalla": {
-    "texto": "aquí está la *frase*",
-    "px": 112,
-    "y": 0.47,
+    "texto": "aquí está la frase que *resume*",
+    "px": 108,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
+    "estilo": "izquierda"
    },
-   "tipo": "rotulo",
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
-   "id": "cap4_09x",
-   "texto": "Y aquí está la frase que resume el negocio bancario mejor que ninguna otra:",
-   "duracion": 2.39,
+   "id": "cap4_10",
+   "texto": "Ya tienes el ingreso. Ahora toca el socio que no invitaste.",
+   "duracion": 2.31,
    "movimiento": "drift_izq",
    "grade": "neutro",
    "efectos": [
@@ -2581,14 +2494,16 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_09x.png",
+     "archivo": "tarjeta_cap4_10.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
     }
    ],
+   "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "negocio bancario *mejor*",
+    "texto": "Ya tienes el *ingreso*",
     "px": 112,
     "y": 0.47,
     "acento": [
@@ -2604,25 +2519,46 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
-   "id": "cap4_10",
+   "id": "cap4_10x",
    "texto": "Ya tienes el ingreso. Ahora toca el socio que no invitaste.",
-   "duracion": 4.61,
-   "movimiento": "contra_der",
-   "grade": "sepia_archivo",
+   "duracion": 2.3,
+   "movimiento": "drift_der",
+   "grade": "neutro",
    "efectos": [
-    "destellos"
+    "bokeh"
    ],
-   "clip": "stock_banco/negotiation_meeting_table_72.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap4_10x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
    "cierra_bloque": true,
-   "duotono": "duo_verde",
-   "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "toca el socio que no *invitaste*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_01",
@@ -2633,7 +2569,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_banco/negotiation_meeting_table_141.mp4",
+   "clip": "stock_banco/revolving_door_people_54.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -2649,7 +2585,7 @@
     ],
     "estilo": "sube"
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_01b",
@@ -2660,12 +2596,12 @@
    "efectos": [
     "billetes"
    ],
-   "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+   "clip": "stock_banco/revolving_door_people_blur_57.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_02",
@@ -2681,7 +2617,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_02b",
@@ -2692,7 +2628,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+   "clip": "stock_banco/executive_office_window_city_93.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2700,7 +2636,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_03",
@@ -2742,7 +2678,7 @@
     ],
     "estilo": "sube"
    },
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_03b",
@@ -2758,7 +2694,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_04",
@@ -2776,16 +2712,16 @@
     "tipo": "barras",
     "items": [
      [
-      "banco pequeño",
+      "El banco pequeño",
       3.0
      ],
      [
-      "banco grande",
+      "el grande",
       1.0
      ]
     ],
     "destacar": {
-     "banco pequeño": [
+     "El banco pequeño": [
       232,
       86,
       64
@@ -2804,7 +2740,7 @@
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_04b",
@@ -2820,7 +2756,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_05",
@@ -2845,7 +2781,7 @@
      86,
      64
     ],
-    "pie": "gasto se va en gente cuyo trabajo",
+    "pie": "gasto",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -2865,7 +2801,7 @@
     ],
     "estilo": "izquierda"
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_05b",
@@ -2882,7 +2818,7 @@
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_05c",
@@ -2898,7 +2834,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_06",
@@ -2936,7 +2872,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_06x",
@@ -2974,7 +2910,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_06b",
@@ -2990,7 +2926,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_07",
@@ -3031,7 +2967,7 @@
    "tipo": "rotulo",
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_07x",
@@ -3073,7 +3009,7 @@
    "_lat_ent": 1.0,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_07b",
@@ -3090,7 +3026,7 @@
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_08",
@@ -3128,7 +3064,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_08x",
@@ -3166,7 +3102,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_08b",
@@ -3182,7 +3118,7 @@
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_09",
@@ -3206,14 +3142,14 @@
      176,
      60
     ],
-    "pie": "formas de que deje de existir",
+    "pie": "formas",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_09b",
@@ -3230,7 +3166,7 @@
    "cierra_bloque": true,
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_01",
@@ -3254,14 +3190,14 @@
      176,
      60
     ],
-    "pie": "el botín medio",
+    "pie": "botín medio",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_01b",
@@ -3272,12 +3208,12 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_banco/executive_office_window_city_93.mp4",
+   "clip": "stock_banco/city_street_traffic_timelaps_99.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_02",
@@ -3315,7 +3251,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_02x",
@@ -3353,7 +3289,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_02b",
@@ -3364,7 +3300,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/city_street_traffic_timelaps_99.mp4",
+   "clip": "stock_banco/building_blueprint_architect_115.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3372,7 +3308,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_02c",
@@ -3389,7 +3325,7 @@
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_03",
@@ -3431,7 +3367,7 @@
     ],
     "estilo": "sube"
    },
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_03b",
@@ -3447,7 +3383,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_03c",
@@ -3463,7 +3399,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_04",
@@ -3504,7 +3440,7 @@
    },
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_05",
@@ -3520,15 +3456,15 @@
    "capas": [],
    "grafico": {
     "tipo": "contador",
-    "valor": 8400.0,
+    "valor": 378400.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "es de dólares",
+    "pie": "mexicanas por valor",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -3547,7 +3483,7 @@
     ],
     "estilo": "sube"
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_05b",
@@ -3563,7 +3499,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_05c",
@@ -3579,7 +3515,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_06",
@@ -3590,7 +3526,7 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+   "clip": "stock_banco/calculator_total_display_77.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -3606,7 +3542,7 @@
     ],
     "estilo": "escala"
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_06b",
@@ -3617,7 +3553,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+   "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3625,7 +3561,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_06c",
@@ -3636,13 +3572,13 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_banco/zero_on_calculator_227.mp4",
+   "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_07",
@@ -3660,20 +3596,20 @@
     "tipo": "contador",
     "valor": 160.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares",
+    "pie": "multa",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_08",
@@ -3691,20 +3627,20 @@
     "tipo": "contador",
     "valor": 210000.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "s en activos— anunció que necesitaba",
+    "pie": "activos— anunció",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_08b",
@@ -3720,7 +3656,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_09",
@@ -3745,7 +3681,7 @@
      176,
      60
     ],
-    "pie": "horas después no existía",
+    "pie": "horas después",
     "y": 0.34,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -3754,7 +3690,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_10",
@@ -3772,13 +3708,13 @@
     "tipo": "contador",
     "valor": 42000.0,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares",
+    "pie": "intentaron retirar",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -3797,7 +3733,7 @@
     ],
     "estilo": "derecha"
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_10b",
@@ -3813,7 +3749,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_10c",
@@ -3829,22 +3765,82 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_11",
    "texto": "Antes, una fuga de depósitos era una cola en la puerta, y esa cola le daba al banco unas horas para reaccionar. Ahora ocurre entera en la pantalla de un móvil, y esas horas ya no existen.",
-   "duracion": 6.39,
-   "movimiento": "push_in",
-   "grade": "rojo_suave",
+   "duracion": 3.19,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
-    "brasas"
+    "polvo"
    ],
-   "clip": "stock_banco/revolving_door_people_blur_204.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_ambar",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_11.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*Antes*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap6_11x",
+   "texto": "Antes, una fuga de depósitos era una cola en la puerta, y esa cola le daba al banco unas horas para reaccionar. Ahora ocurre entera en la pantalla de un móvil, y esas horas ya no existen.",
+   "duracion": 3.2,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap6_11x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "horas para *reaccionar*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
    "composicion": "derecha"
   },
   {
@@ -3856,10 +3852,21 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/revolving_door_people_265.mp4",
+   "clip": "stock_banco/for_lease_sign_building_252.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
+   "texto_pantalla": {
+    "texto": "esas horas ya no *existen*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
@@ -3882,13 +3889,13 @@
     "tipo": "contador",
     "valor": 3.6,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "dólares menos de dos semanas antes",
+    "pie": "vendió acciones suyas",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -3923,7 +3930,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_banco/declining_graph_red_226.mp4",
+   "clip": "stock_banco/worried_manager_office_desk_264.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -3939,7 +3946,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/worried_manager_office_desk_264.mp4",
+   "clip": "stock_banco/bank_vault_door_284.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "texto_pantalla": {
@@ -3966,7 +3973,7 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_banco/bank_vault_door_284.mp4",
+   "clip": "stock_banco/investment_growth_chart_155.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -3985,7 +3992,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_banco/revolving_door_people_54.mp4",
+   "clip": "stock_banco/revolving_door_people_201.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -3998,7 +4005,7 @@
      86,
      64
     ],
-    "pie": "sus clientes eran del mismo sector",
+    "pie": "sus clientes",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -4028,7 +4035,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_banco/revolving_door_people_blur_57.mp4",
+   "clip": "stock_banco/revolving_door_people_blur_204.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -4044,7 +4051,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_banco/revolving_door_people_201.mp4",
+   "clip": "stock_banco/revolving_door_people_265.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
@@ -4061,20 +4068,20 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/building_blueprint_architect_115.mp4",
+   "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
     "tipo": "contador",
     "valor": 30.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "Has conseguido la licencia",
+    "pie": "Has puesto",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -4214,7 +4221,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/investment_growth_chart_155.mp4",
+   "clip": "stock_banco/investment_growth_chart_285.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
@@ -4369,7 +4376,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+   "clip": "stock_banco/negotiation_meeting_table_141.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
@@ -4383,7 +4390,7 @@
      176,
      60
     ],
-    "pie": "trabajo pueden terminar en cuarenta",
+    "pie": "trabajo",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -4452,7 +4459,7 @@
      176,
      60
     ],
-    "pie": "son unos once millones al año",
+    "pie": "margen",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -4533,37 +4540,22 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_banco/reading_contract_closeup_142.mp4",
+   "clip": "stock_banco/zero_on_calculator_227.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
-    "tipo": "barras",
-    "items": [
-     [
-      "banco pequeño",
-      10.0
-     ],
-     [
-      "banco grande",
-      1.0
-     ]
-    ],
-    "destacar": {
-     "banco pequeño": [
-      232,
-      86,
-      64
-     ]
-    },
+    "tipo": "contador",
+    "valor": 10.0,
+    "dec": 0,
     "sufijo": " años",
-    "dec": 1,
-    "y": 0.62,
     "color": [
      255,
      176,
      60
     ],
-    "retardo": 0.6,
+    "pie": "llevas",
+    "y": 0.62,
+    "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_rojo",
@@ -4579,7 +4571,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+   "clip": "stock_banco/handshake_business_meeting_295.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -4602,13 +4594,13 @@
     "tipo": "contador",
     "valor": 4.0,
     "dec": 0,
-    "sufijo": " M $",
+    "sufijo": " M",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "cuatrocientos",
+    "pie": "",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -4639,79 +4631,30 @@
   {
    "id": "cierre_05",
    "texto": "Y esa es la condición del negocio: en un banco tú no eres el dueño del dinero. Eres el responsable de él.",
-   "duracion": 1.91,
-   "movimiento": "drift_izq",
-   "grade": "neutro",
+   "duracion": 3.82,
+   "movimiento": "push_in",
+   "grade": "dorado_suave",
    "efectos": [
-    "polvo"
+    "niebla"
    ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cierre_05.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
+   "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
    "texto_pantalla": {
-    "texto": "en un *banco* tú",
-    "px": 112,
-    "y": 0.47,
+    "texto": "esa es la *condición* del negocio",
+    "px": 108,
+    "y": 0.68,
     "acento": [
      255,
      176,
      60
     ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
+    "estilo": "sube"
    },
-   "tipo": "rotulo",
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
    "composicion": "izquierda"
-  },
-  {
-   "id": "cierre_05x",
-   "texto": "Y esa es la condición del negocio: en un banco tú no eres el dueño del dinero. Eres el responsable de él.",
-   "duracion": 1.91,
-   "movimiento": "drift_der",
-   "grade": "neutro",
-   "efectos": [
-    "destellos"
-   ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cierre_05x.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "texto_pantalla": {
-    "texto": "no eres el dueño del *dinero*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "tipo": "rotulo",
-   "composicion": "derecha"
   },
   {
    "id": "cierre_05b",
@@ -4722,90 +4665,29 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
+   "clip": "stock_banco/corporate_office_building_gl_296.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_06",
    "texto": "Es el negocio más rentable del mundo montado sobre la única cosa que no te pertenece.",
-   "duracion": 3.05,
-   "movimiento": "drift_izq",
-   "grade": "neutro",
+   "duracion": 6.1,
+   "movimiento": "pull_out",
+   "grade": "dorado_suave",
    "efectos": [
-    "niebla"
+    "brasas"
    ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cierre_06.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
+   "clip": "stock_banco/corporate_office_building_gl_301.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
    "cierra_bloque": true,
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "Es el negocio más *rentable*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "derecha"
-  },
-  {
-   "id": "cierre_06x",
-   "texto": "Es el negocio más rentable del mundo montado sobre la única cosa que no te pertenece.",
-   "duracion": 3.05,
-   "movimiento": "drift_der",
-   "grade": "neutro",
-   "efectos": [
-    "bokeh"
-   ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_cierre_06x.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "cierra_bloque": true,
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "montado sobre la *única* cosa",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "izquierda"
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
   }
  ]
 }

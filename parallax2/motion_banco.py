@@ -49,8 +49,13 @@ UNI = {
     "quinientos": 500, "seiscientos": 600, "setecientos": 700,
     "ochocientos": 800, "novecientos": 900,
 }
+BORDE = "\\b"
 MIL = {"mil", "miles"}
 MILLON = {"millon", "millones"}
+# Billon español: un millon de millones. "Un billon doscientos mil
+# millones en tarjetas de credito" salia como 200.000 M, seis veces
+# menos de lo que dice la voz.
+BILLON = {"billon", "billones"}
 # Palabras que continuan un numero sin ser numero: "treinta Y cinco".
 PUENTE = {"y", "coma"}
 
@@ -69,7 +74,10 @@ def _tramo(pal, con_largo=False):
     corto, el que llama saltaba tambien "treinta millones" y la cifra
     gorda de la frase se perdia.
     """
-    total = act = 0
+    # `hecho` guarda las escalas YA cerradas y `total` la que se esta
+    # sumando. Antes MILLON PISABA el total en vez de acumular, y por eso
+    # "un billon doscientos mil millones" perdia el billon.
+    hecho = total = act = 0
     visto = False
     usadas = 0
     for k, w in enumerate(pal):
@@ -82,21 +90,31 @@ def _tramo(pal, con_largo=False):
             act = 0
             visto = True
         elif w in MILLON:
-            total = ((total + act) or 1) * 1000000
-            act = 0
+            hecho += ((total + act) or 1) * 1000000
+            total = act = 0
+            visto = True
+        elif w in BILLON:
+            hecho += ((total + act) or 1) * 1000000000000
+            total = act = 0
             visto = True
         elif w == "y":
             # La "y" solo une decena con unidad -"treinta y cinco"-. En
             # "entre veinte y treinta millones" son DOS cifras, y sumarlas
             # daba cincuenta millones, que no lo dice nadie.
             sig = pal[k + 1] if k + 1 < len(pal) else ""
-            if not (20 <= act <= 90 and act % 10 == 0
+            # Mira SOLO la decena, no el acumulado. Con act entero,
+            # "cinco millones trescientos ochenta y seis mil" rompia en la
+            # "y" -380 no esta entre 20 y 90- y la frase daba dos cifras:
+            # 5.000.380 y "seis mil dolares". En pantalla, 6.000 $ para un
+            # dato que la voz pone en cinco millones y pico.
+            dec_act = act % 100
+            if not (20 <= dec_act <= 90 and dec_act % 10 == 0
                     and UNI.get(sig, 99) < 10):
                 break
         else:
             break
         usadas = k + 1
-    val = (total + act) if visto else None
+    val = (hecho + total + act) if visto else None
     return (val, usadas) if con_largo else val
 
 
@@ -106,12 +124,21 @@ def cifras(texto):
 
     Devuelve [(valor, sufijo, decimales, palabras)] en orden de aparicion.
     """
-    pal = re.findall(r"[a-z]+", norm(texto))
+    pal = []
+    for trozo in re.split(r"[.,;:]", norm(texto)):
+        pal += re.findall(r"[a-z]+", trozo) + ["|"]
     # "por ciento" es la UNIDAD, no el numero cien. Sin colapsarlo, "tres
     # coma veintidos por ciento" devolvia 100 y el anillo salia al 100%.
     j, unido = 0, []
     while j < len(pal):
-        if pal[j] == "por" and j + 1 < len(pal) and pal[j + 1] in ("ciento", "cien"):
+        # OJO: solo "por ciento", y solo cuando detras no hay una magnitud.
+        # Colapsar tambien "por cien" se comia el numero en "se puso a la
+        # venta POR CIEN millones": quedaba un "millones" suelto, que vale
+        # 1.000.000 por el `or 1` de _tramo, y en pantalla salia "1 M $"
+        # donde la voz decia cien millones. Una cifra falsa, no un adorno.
+        sig2 = pal[j + 2] if j + 2 < len(pal) else ""
+        if (pal[j] == "por" and j + 1 < len(pal) and pal[j + 1] == "ciento"
+                and sig2 not in UNI and sig2 not in MIL and sig2 not in MILLON):
             unido.append("porciento")
             j += 2
         else:
@@ -121,12 +148,14 @@ def cifras(texto):
     fuera = []
     i = 0
     while i < len(pal):
-        if pal[i] not in UNI and pal[i] not in MIL and pal[i] not in MILLON:
+        if (pal[i] not in UNI and pal[i] not in MIL
+                and pal[i] not in MILLON and pal[i] not in BILLON):
             i += 1
             continue
         j = i
         while j < len(pal) and (pal[j] in UNI or pal[j] in MIL
-                                or pal[j] in MILLON or pal[j] in PUENTE):
+                                or pal[j] in MILLON or pal[j] in BILLON
+                                or pal[j] in PUENTE):
             j += 1
         trozo = pal[i:j]
         while trozo and trozo[-1] in PUENTE:      # no acaba en "y" ni "coma"
@@ -153,6 +182,8 @@ def cifras(texto):
                     mult *= 1000
                 elif w in MILLON:
                     mult *= 1000000
+                elif w in BILLON:
+                    mult *= 1000000000000
             if ent is None or dec is None:
                 i = j
                 continue
@@ -179,7 +210,7 @@ def cifras(texto):
             suf = " $"
         elif cola.startswith("anos") or cola.startswith("ano"):
             suf = " años"
-        elif cola.startswith("veces"):
+        elif re.match(r"veces (mas|menos)" + BORDE, cola):
             suf = "x"
         else:
             suf = ""
@@ -204,6 +235,16 @@ def interesante(lista, texto):
         if pal in ("un", "uno", "una") and dec == 0:
             continue                       # "un ano", "un dolar": sigue siendo
                                            # el articulo, aunque lleve unidad
+        # "millones de personas", "miles de millones": la voz NO dice cuantos.
+        # _tramo rellena con un 1 para poder seguir sumando, y ese 1 acababa
+        # en pantalla como "1 M $" debajo de una frase que no da ninguna
+        # cifra. Sin cantidad delante no hay contador.
+        if pal.split()[0] in MILLON or pal.split()[0] == "miles":
+            continue
+        if re.search(r"" + BORDE + re.escape(pal) + BORDE +
+                     r" de (enero|febrero|marzo|abril|mayo|junio|julio|"
+                     r"agosto|septiembre|octubre|noviembre|diciembre)" + BORDE, n):
+            continue                       # "el veinte de agosto" es fecha
         if 1900 < val < 2100 and not suf:
             if "en dos mil" not in n and "desde" not in n:
                 continue                   # un año suelto no es una magnitud
@@ -218,10 +259,50 @@ def interesante(lista, texto):
     return max(fuera, key=lambda x: (bool(x[1]), x[2] > 0, x[0]))
 
 
+def barras_de(texto, pal):
+    """Los dos nombres de una comparacion "A ... N veces mas que B".
+
+    Estaban escritos a mano -"banco pequeno" contra "banco grande"-, del
+    episodio para el que se escribio esto. En el del gimnasio salio una
+    grafica comparando dos bancos que nadie habia nombrado. Devuelve None
+    cuando la frase no nombra los dos lados, y entonces no hay barras.
+    """
+    t = re.sub(r"\s+", " ", (texto or "").strip())
+    n = norm_pos(t)
+    m = re.search(r"\bque\b", n[n.find(norm(pal)):]) if norm(pal) in n else None
+    if not m:
+        return None
+    corte = n.find(norm(pal)) + m.end()
+    b = _sintagma(t[corte:])
+    m2 = re.search(r"\b" + re.escape(norm(pal)) + r"\b", n)
+    # El sujeto ABRE la clausula -"El banco pequeno paga, en proporcion,
+    # tres veces mas"-, asi que se lee desde el principio, no desde el final:
+    # cortando por la ultima coma quedaba "en proporcion".
+    a = _sintagma(re.split(r"[.;:]", t[:m2.start()])[-1]) if m2 else ""
+    if not a or not b or len(a) > 26 or len(b) > 26:
+        return None
+    return a, b
+
+
+def norm_pos(s):
+    """Como norm(), pero SIN mover las posiciones.
+
+    norm() borra los caracteres que no tienen equivalente ascii, y "¿" es
+    uno: en "¿Y por que...? Por tres razones" el indice del numero salia
+    una posicion adelantado sobre el texto original y el pie era
+    "s razones". Aqui cada caracter que se cae deja un hueco.
+    """
+    fuera = []
+    for ch in s:
+        d = unicodedata.normalize("NFKD", ch).encode("ascii", "ignore").decode()
+        fuera.append(d[0].lower() if d else "\x00")
+    return "".join(fuera)
+
+
 def pie_de(texto, pal):
     """El renglon pequeño debajo de la cifra: de que es ese numero."""
     t = re.sub(r"\s+", " ", (texto or "").strip())
-    n = norm(t)
+    n = norm_pos(t)          # misma longitud que t: los indices valen para t
 
     # Se busca la FRASE ENTERA del numero, no su ultima palabra.
     #
@@ -232,31 +313,32 @@ def pie_de(texto, pal):
     # la cifra de una frase con el pie de otra. Un dato falso, no un fallo
     # estetico.
     frase = norm(pal) if isinstance(pal, str) else norm(" ".join(pal))
-    k = n.find(frase)
-    if k >= 0:
-        fin = k + len(frase)
-    else:
+    m = re.search(r"\b" + re.escape(frase) + r"\b", n) if frase else None
+    if not m:
         p = frase.split()[-1] if frase.split() else ""
-        k = n.find(p) if p else -1
-        fin = k + len(p) if k >= 0 else -1
+        m = re.search(r"\b" + re.escape(p) + r"\b", n) if p else None
+    k, fin = (m.start(), m.end()) if m else (-1, -1)
     if k < 0:
         return recorta(t, 38)
-    cola = t[fin:].strip(" ,.;:")
-    cola = cola.split(".")[0].split(",")[0]
+    # Solo el primer trozo. Saltar al siguiente cuando el primero esta vacio
+    # es cruzar el punto: "trescientos millones. El ultimo vuelo comercial"
+    # ponia debajo de la cifra el pie de la frase de al lado.
+    cola = re.split(r"[.,;:]", t[fin:])[0].strip()
     # La unidad ya sale pegada a la cifra: repetirla en el pie da
     # "3,22 $ / dolares al ano por cada cien". Fuera de la cabeza del pie.
     # Se compara sobre el texto SIN TILDES, porque un patron con "o" acentuada
     # depende de como se haya guardado este fichero y fallaba en silencio.
-    UNIDADES = ("por ciento", "dolares", "dolar", "anos", "ano", "veces",
+    UNIDADES = ("por ciento", "dolares", "dolar", "euros", "euro",
+                "anos", "ano", "veces",
                 "millones", "mil")
     ENLACES = ("de", "del", "al", "a", "en", "y", "que")
-    for grupo in (UNIDADES, ENLACES):
+    for grupo in (UNIDADES, ENLACES, UNIDADES, ENLACES):
         for u in grupo:
             m = re.match(r"(?i)" + u + r"\b[ ,]*", norm(cola))
             if m:
                 cola = cola[m.end():]
                 break
-    fuera = recorta(cola, 38)
+    fuera = recorta(_sintagma(cola), 38)
     if fuera:
         return fuera
 
@@ -267,12 +349,81 @@ def pie_de(texto, pal):
     # debajo de una cifra de dolares.
     antes = t[:k].strip(" ,.;:")
     antes = antes.split(".")[-1].split(",")[-1].strip()
-    fuera = recorta(antes, 38)
+    fuera = recorta(_cierre(antes), 38)
     if fuera:
         return fuera
 
     # Mejor sin pie que con uno que no es de esta cifra.
     return ""
+
+
+# El pie es la ETIQUETA de la cifra -"pasajeros al ano"-, no lo que sigue
+# diciendo la frase. Cogiendo la clausula entera salian pies como
+# "personas quieran ir a Londres" debajo de un contador, o "No vale nada"
+# debajo de setenta millones: frases sueltas que, leidas bajo un numero,
+# afirman algo que nadie ha dicho.
+CORTES = {
+    "que", "y", "o", "pero", "porque", "si", "cuando", "donde", "aunque",
+    "no", "ni", "ya", "asi", "sino", "mientras", "se", "lo", "le", "les",
+    "es", "son", "era", "eran", "esta", "estan", "fue", "fueron", "sera",
+    "seran", "tiene", "tienen", "hay", "va", "van", "vas", "voy", "puede",
+    "pueden", "esto", "eso", "esa", "ese", "este", "tu", "yo",
+}
+ARTICULOS = {"el", "la", "los", "las", "un", "una", "unos", "unas", "lo",
+             "esos", "esas", "estos", "estas", "aquel", "aquellos"}
+PREPOS = {"de", "del", "al", "a", "en", "con", "por", "para", "sobre",
+          "desde", "hasta", "entre"}
+# Muletillas de aproximacion: solas no dicen nada -"70 M / Heathrow por
+# alrededor"-, asi que se caen igual que las preposiciones.
+VAGAS = {"alrededor", "torno", "cerca", "unos", "unas", "casi", "mas",
+         "menos", "aproximadamente", "algo", "practicamente"}
+
+
+def _pela(w):
+    return norm(w).strip(".,;:()¿?!").lower()
+
+
+def _sintagma(cola):
+    """Las tres primeras palabras utiles DETRAS de la cifra."""
+    fuera, preps = [], 0
+    for w in cola.split():
+        p = _pela(w)
+        if p in CORTES:
+            break
+        if p in PREPOS:
+            preps += 1
+            if preps > 1 or not fuera:
+                break
+        elif p in UNI or p in MIL or p in MILLON:
+            break                     # "1.000 M / cincuenta" no es un pie
+        fuera.append(w)
+        if len(fuera) >= 3:
+            break
+    while fuera and _pela(fuera[-1]) in PREPOS | ARTICULOS | VAGAS:
+        fuera.pop()
+    return " ".join(fuera).strip(" ,.;:")
+
+
+def _cierre(antes):
+    """Las tres ultimas palabras utiles DELANTE de la cifra.
+
+    Para "se puso a la venta por cien millones", donde detras del numero no
+    queda nada: el pie es "la venta", no la frase siguiente.
+    """
+    pal = antes.split()
+    while pal and _pela(pal[-1]) in PREPOS | ARTICULOS | VAGAS:
+        pal.pop()
+    pal = [w for w in pal
+           if _pela(w) not in UNI and _pela(w) not in MIL
+           and _pela(w) not in MILLON and _pela(w) not in BILLON]        # "700.000 $ / doscientos mil"
+    pal = pal[-3:]
+    while pal and _pela(pal[0]) in PREPOS | CORTES | ARTICULOS:
+        pal.pop(0)
+    for k, w in enumerate(pal):
+        if _pela(w) in CORTES:
+            pal = pal[:k]             # "ese slot no vale" -> "slot"
+            break
+    return " ".join(pal).strip(" ,.;:")
 
 
 def recorta(frase, limite):
@@ -385,9 +536,68 @@ def resalta(txt):
     return " ".join(pal)
 
 
+def m_pal(n, palabra):
+    """Lo que se cuenta -"euros", "vuelos"-, para que pie_de lo encuentre."""
+    return palabra if palabra and palabra in n else "de cada"
+
+
+def de_cada(texto):
+    """"cuatro de cada diez euros" -> (40.0, "euros").
+
+    Sin esto la cifra que ganaba era el DENOMINADOR -manda la mayor- y en
+    pantalla salia un contador a "10" con el pie "cuatro". El dato del
+    episodio es justo el contrario: cuatro de cada diez.
+    """
+    n = norm(texto)
+    m = re.search(r"([a-z]+(?: y [a-z]+)?) de cada ([a-z]+(?: y [a-z]+)?)"
+                  r"(?: ([a-z]+))?", n)
+    if not m:
+        return None
+    arr = _tramo(m.group(1).split())
+    aba = _tramo(m.group(2).split())
+    if not arr or not aba or arr >= aba:
+        return None
+    return round(arr * 100.0 / aba, 1), (m.group(3) or "")
+
+
+def millones(val, suf, texto, pal):
+    """El sufijo de la cifra, con la M cuando `formato` ha dividido."""
+    if val < 1000000:
+        return suf
+    if suf.strip() in ("%", "x"):
+        return suf                      # un porcentaje no se cuenta en millones
+    escala = " B" if val >= 1000000000000 else " M"
+    if not suf:
+        return escala + moneda(texto, pal)
+    return escala + suf
+
+
+def moneda(texto, pal):
+    """La 'M' de millones, y la divisa SOLO si la frase la dice.
+
+    Antes cualquier cifra de siete digitos salia con " M $". Pero
+    "tres millones de pasajeros al ano" no son dolares, y el guion de este
+    canal habla en euros: poner el simbolo del dolar debajo de una cifra en
+    euros es inventarse el dato igual que inventarse el numero.
+    """
+    n = norm(texto)
+    k = n.find(norm(pal))
+    cerca = n[max(0, k - 40):k + len(pal) + 40] if k >= 0 else n
+    if "dolar" in cerca:
+        return " $"
+    if "euro" in cerca:
+        return " €"
+    return ""
+
+
 def formato(val, dec, suf):
     if dec:
         return round(val, dec), dec
+    # Un billon en millones son siete cifras en pantalla -"1.200.000 M"-
+    # y no se lee. En billones son dos: "1,2 B", que ademas es lo que dice
+    # la voz.
+    if val >= 1000000000000:
+        return round(val / 1000000000000, 1), 1
     if val >= 1000000:
         return round(val / 1000000, 1 if val % 1000000 else 0), 0
     return int(val), 0
@@ -425,13 +635,18 @@ def main():
             visto.add(clave)
             val, suf, dec, pal = c
             n = norm(texto)
+            prop = de_cada(texto)
+            contado = ""
+            if prop and suf != "%":
+                contado = prop[1]
+                val, suf, dec, pal = prop[0], "%", 0, m_pal(n, prop[1])
             if suf == "%" and ("de cada" in n or "se lleva" in n):
                 tipo = "reparto"       # el reparto SOLO admite un porcentaje:
                                        # el motor hace valor/100 y una cifra en
                                        # dolares se salia de la barra
             elif suf == "%":
                 tipo = "anillo"
-            elif "veces" in n and ("mas" in n or "menos" in n):
+            elif re.search(r"veces (mas|menos)\b", n) and barras_de(texto, pal):
                 tipo = "barras"
             else:
                 tipo = "contador"
@@ -442,11 +657,11 @@ def main():
                 # de nombre a color. Me lo invente como "series" y una
                 # posicion, y el render reviento con KeyError a los 42
                 # minutos, con los 130 planos ya compuestos.
+                a_, b_ = barras_de(texto, pal)
                 e["grafico"] = {
                     "tipo": "barras",
-                    "items": [["banco pequeño", float(v)],
-                              ["banco grande", 1.0]],
-                    "destacar": {"banco pequeño": list(ROJO)},
+                    "items": [[a_, float(v)], [b_, 1.0]],
+                    "destacar": {a_: list(ROJO)},
                     "sufijo": suf or "x", "dec": 1,
                     "y": ALTURAS[i % len(ALTURAS)],
                     "color": list(ACENTO),
@@ -456,7 +671,7 @@ def main():
                 e["grafico"] = {
                     "tipo": "reparto", "valor": float(v),
                     "color_a": list(ACENTO),
-                    "etiqueta_a": pie_de(texto, pal)[:26],
+                    "etiqueta_a": (contado or pie_de(texto, pal))[:26],
                     "etiqueta_b": "el resto",
                     "y": ALTURAS[i % len(ALTURAS)],
                     "retardo": 0.6, "entrada": ENTRADAS[i % len(ENTRADAS)],
@@ -464,7 +679,7 @@ def main():
             else:
                 e["grafico"] = {
                     "tipo": tipo, "valor": float(v), "dec": d,
-                    "sufijo": (" M $" if val >= 1000000 and not suf else suf),
+                    "sufijo": millones(val, suf, texto, pal),
                     "color": list(ACENTO if tipo == "contador" else ROJO),
                     "pie": pie_de(texto, pal),
                     "y": ALTURAS[i % len(ALTURAS)],

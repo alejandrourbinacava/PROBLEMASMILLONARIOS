@@ -27,78 +27,18 @@
   {
    "id": "gancho_02",
    "texto": "Y eso no es un fallo del negocio. Es el negocio.",
-   "duracion": 2.31,
+   "duracion": 4.61,
    "movimiento": "drift_der",
-   "grade": "neutro",
+   "grade": "dorado_suave",
    "efectos": [
-    "destellos"
+    "bokeh"
    ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_gancho_02.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "eso no es un *fallo*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
+   "clip": "stock_gimnasio/business_meeting_discussion_table_62.mp4",
+   "clip_desde": 0.3,
+   "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
    "composicion": "derecha"
-  },
-  {
-   "id": "gancho_02x",
-   "texto": "Y eso no es un fallo del negocio. Es el negocio.",
-   "duracion": 2.3,
-   "movimiento": "drift_izq",
-   "grade": "neutro",
-   "efectos": [
-    "niebla"
-   ],
-   "capas": [
-    {
-     "rol": "fondo",
-     "archivo": "tarjeta_gancho_02x.png",
-     "clase": "abstracto",
-     "entrada": "escala",
-     "prompt": "tarjeta del canal"
-    }
-   ],
-   "tipo": "rotulo",
-   "texto_pantalla": {
-    "texto": "del *negocio*",
-    "px": 112,
-    "y": 0.47,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "color": [
-     237,
-     231,
-     218
-    ],
-    "estilo": "sube",
-    "retardo": 0.26
-   },
-   "composicion": "centrado"
   },
   {
    "id": "gancho_03",
@@ -109,42 +49,26 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/membership_card_scan_reader_23.mp4",
+   "clip": "stock_gimnasio/gym_interior_equipment_wide_0.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
-    "tipo": "barras",
-    "items": [
-     [
-      "banco pequeño",
-      3.0
-     ],
-     [
-      "banco grande",
-      1.0
-     ]
-    ],
-    "destacar": {
-     "banco pequeño": [
-      232,
-      86,
-      64
-     ]
-    },
-    "sufijo": "x",
-    "dec": 1,
-    "y": 0.26,
-    "color": [
+    "tipo": "reparto",
+    "valor": 20.0,
+    "color_a": [
      255,
      176,
      60
     ],
+    "etiqueta_a": "socios",
+    "etiqueta_b": "el resto",
+    "y": 0.26,
     "retardo": 0.6,
     "entrada": "rebote"
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "gancho_03b",
@@ -155,7 +79,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/weight_room_dumbbells_racks_2.mp4",
+   "clip": "stock_gimnasio/modern_fitness_center_interior_1.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -163,7 +87,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "gancho_04",
@@ -180,7 +104,7 @@
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "gancho_05",
@@ -191,7 +115,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/weight_machine_close_up_5.mp4",
+   "clip": "stock_gimnasio/vending_machine_drinks_73.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -207,7 +131,7 @@
     ],
     "estilo": "derecha"
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "gancho_05b",
@@ -218,56 +142,165 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/vending_machine_drinks_73.mp4",
+   "clip": "stock_gimnasio/coins_stack_money_45.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_01",
    "texto": "Cuando piensas en montar un gimnasio piensas en máquinas.",
-   "duracion": 4.12,
-   "movimiento": "subir",
-   "grade": "dorado_suave",
-   "efectos": [
-    "destellos"
-   ],
-   "clip": "stock_gimnasio/technician_repairing_equipment_80.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_ambar",
-   "duotono_fuerza": 0.55,
-   "composicion": "centrado"
-  },
-  {
-   "id": "cap1_02",
-   "texto": "Las máquinas son la parte fácil. Se compran, se financian, se alquilan incluso. Lo que de verdad estás comprando es otra cosa: metros cuadrados con un contrato encima.",
-   "duracion": 5.79,
-   "movimiento": "push_in",
-   "grade": "dorado_suave",
+   "duracion": 2.06,
+   "movimiento": "drift_der",
+   "grade": "neutro",
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/hands_signing_contract_pen_49.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_ambar",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Las *máquinas* son la parte fácil",
-    "px": 108,
-    "y": 0.3,
+    "texto": "Cuando piensas en *montar*",
+    "px": 112,
+    "y": 0.47,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
    },
    "composicion": "derecha"
+  },
+  {
+   "id": "cap1_01x",
+   "texto": "Cuando piensas en montar un gimnasio piensas en máquinas.",
+   "duracion": 2.06,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "gimnasio piensas en *máquinas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
+  },
+  {
+   "id": "cap1_02",
+   "texto": "Las máquinas son la parte fácil. Se compran, se financian, se alquilan incluso. Lo que de verdad estás comprando es otra cosa: metros cuadrados con un contrato encima.",
+   "duracion": 2.9,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_02.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "Se *compran*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap1_02x",
+   "texto": "Las máquinas son la parte fácil. Se compran, se financian, se alquilan incluso. Lo que de verdad estás comprando es otra cosa: metros cuadrados con un contrato encima.",
+   "duracion": 2.89,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "destellos"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap1_02x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "que de verdad estás *comprando*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_02b",
@@ -278,12 +311,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/worn_used_equipment_detail_82.mp4",
+   "clip": "stock_gimnasio/dumbbells_rack_close_up_6.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_03",
@@ -294,7 +327,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/empty_commercial_space_retail_57.mp4",
+   "clip": "stock_gimnasio/barbell_weight_plates_loading_7.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -308,7 +341,7 @@
      176,
      60
     ],
-    "pie": "pies cuadrados de superficie continua",
+    "pie": "pies cuadrados",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -317,7 +350,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_03b",
@@ -328,13 +361,13 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/storefront_for_rent_sign_58.mp4",
+   "clip": "stock_gimnasio/dumbbells_gym_floor_8.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_03c",
@@ -350,7 +383,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_04",
@@ -388,7 +421,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_04x",
@@ -426,7 +459,7 @@
     "retardo": 0.26
    },
    "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_05",
@@ -442,7 +475,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_06",
@@ -459,7 +492,7 @@
    "latigo": "izq",
    "grafico": {
     "tipo": "contador",
-    "valor": 20.0,
+    "valor": 4.0,
     "dec": 0,
     "sufijo": "",
     "color": [
@@ -467,7 +500,7 @@
      176,
      60
     ],
-    "pie": "agosto",
+    "pie": "personas dentro",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
@@ -487,7 +520,7 @@
     ],
     "estilo": "izquierda"
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_06b",
@@ -498,13 +531,13 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/rubber_gym_flooring_25.mp4",
+   "clip": "stock_gimnasio/man_doing_bench_press_13.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_06c",
@@ -515,12 +548,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/gym_interior_equipment_wide_0.mp4",
+   "clip": "stock_gimnasio/lockers_row_keys_20.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_07",
@@ -531,12 +564,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/construction_interior_renovation_59.mp4",
+   "clip": "stock_gimnasio/cement_mixer_construction_60.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_08",
@@ -547,7 +580,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/shower_room_tiles_water_19.mp4",
+   "clip": "stock_gimnasio/air_conditioning_vent_ceiling_26.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -560,7 +593,7 @@
      176,
      60
     ],
-    "pie": "kilos sin agrietarse ni despertar",
+    "pie": "kilos sin agrietarse",
     "y": 0.33,
     "retardo": 0.55,
     "entrada": "latigo_der"
@@ -578,7 +611,7 @@
     ],
     "estilo": "izquierda"
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_08b",
@@ -589,7 +622,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/man_lifting_dumbbell_8.mp4",
+   "clip": "stock_gimnasio/sweat_towel_workout_33.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -597,7 +630,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_08c",
@@ -608,13 +641,13 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/air_conditioning_vent_ceiling_26.mp4",
+   "clip": "stock_gimnasio/man_working_laptop_office_51.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_08d",
@@ -625,12 +658,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/sweat_towel_workout_33.mp4",
+   "clip": "stock_gimnasio/small_office_desk_laptop_63.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_09",
@@ -641,38 +674,23 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/dumbbells_rack_close_up_6.mp4",
+   "clip": "stock_gimnasio/cleaning_staff_wiping_surfaces_81.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "grafico": {
-    "tipo": "contador",
-    "valor": 1000.0,
-    "dec": 0,
-    "sufijo": "",
-    "color": [
-     255,
-     176,
-     60
-    ],
-    "pie": "no es una compra que se haga una vez",
-    "y": 0.68,
-    "retardo": 0.55,
-    "entrada": "latigo_izq"
-   },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "*necesitas* el hierro",
     "px": 132,
-    "y": 0.3,
+    "y": 0.68,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "estilo": "sube"
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_09b",
@@ -688,7 +706,7 @@
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap1_09c",
@@ -707,7 +725,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_09d",
@@ -718,13 +736,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/gym_reception_desk_staff_21.mp4",
+   "clip": "stock_gimnasio/gym_rack_interior_59.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap1_10",
@@ -744,7 +762,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Tienes un coste fijo *enorme*",
     "px": 112,
@@ -762,7 +779,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "tipo": "rotulo",
+   "composicion": "izquierda"
   },
   {
    "id": "cap1_10x",
@@ -782,7 +800,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "de que la gente siga *pagando*",
     "px": 112,
@@ -800,7 +817,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "composicion": "derecha"
   },
   {
    "id": "cap1_11",
@@ -821,6 +839,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Todo el *negocio*",
     "px": 112,
@@ -838,8 +857,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap2_01",
@@ -877,7 +895,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_01x",
@@ -915,7 +933,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_02",
@@ -931,22 +949,22 @@
    "capas": [],
    "grafico": {
     "tipo": "contador",
-    "valor": 700000.0,
+    "valor": 5.4,
     "dec": 0,
-    "sufijo": " $",
+    "sufijo": " M $",
     "color": [
      255,
      176,
      60
     ],
-    "pie": "l dólares",
+    "pie": "inicial",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap2_02b",
@@ -957,12 +975,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/investment_growth_chart_rising_51.mp4",
+   "clip": "stock_gimnasio/closed_sign_shop_shutter_85.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_02c",
@@ -973,26 +991,26 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/franchise_business_storefront_56.mp4",
+   "clip": "stock_gimnasio/monthly_subscription_payment_phone_41.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "_lat_sal": 1.0,
+   "transicion": "corte",
    "texto_pantalla": {
     "texto": "que suena *barato* al lado del resto",
     "px": 108,
-    "y": 0.68,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "sube"
+    "estilo": "escala"
    },
-   "duotono": "duo_papel",
-   "duotono_fuerza": 0.55,
-   "_lat_sal": 1.0,
-   "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap2_02d",
@@ -1003,13 +1021,13 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/queue_waiting_line_people_30.mp4",
+   "clip": "stock_gimnasio/credit_card_payment_terminal_42.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap2_03",
@@ -1023,20 +1041,20 @@
    "clip": "stock_gimnasio/clock_ticking_time_78.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "duotono": "duo_papel",
-   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "*Léelo* otra vez",
     "px": 132,
-    "y": 0.3,
+    "y": 0.68,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "escala"
+    "estilo": "derecha"
    },
-   "composicion": "centrado"
+   "duotono": "duo_papel",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
   },
   {
    "id": "cap2_03b",
@@ -1052,7 +1070,7 @@
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap2_04",
@@ -1063,7 +1081,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/row_of_treadmills_empty_10.mp4",
+   "clip": "stock_gimnasio/commercial_lease_contract_signing_48.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1076,14 +1094,14 @@
      176,
      60
     ],
-    "pie": "tiene que ver con lo rápido que se te",
+    "pie": "capítulo",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap2_04b",
@@ -1094,13 +1112,13 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/person_motivated_training_hard_34.mp4",
+   "clip": "stock_gimnasio/bank_building_facade_50.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_01",
@@ -1120,7 +1138,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Ahora la parte *incómoda*",
     "px": 112,
@@ -1138,7 +1155,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "composicion": "derecha"
   },
   {
    "id": "cap3_01x",
@@ -1158,7 +1176,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "es la que sostiene la *cuenta*",
     "px": 112,
@@ -1176,7 +1193,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "tipo": "rotulo",
+   "composicion": "centrado"
   },
   {
    "id": "cap3_02",
@@ -1187,12 +1205,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/empty_fitness_room_quiet_37.mp4",
+   "clip": "stock_gimnasio/barbell_weight_plates_loading_7.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_02b",
@@ -1203,23 +1221,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/barbell_weight_plates_loading_7.mp4",
+   "clip": "stock_gimnasio/weight_scale_measuring_75.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "No es un *engaño*",
-    "px": 132,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_03",
@@ -1230,13 +1237,13 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_gimnasio/weight_scale_measuring_75.mp4",
+   "clip": "stock_gimnasio/smartphone_app_scrolling_hands_65.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
    "grafico": {
     "tipo": "contador",
-    "valor": 9000.0,
+    "valor": 4000.0,
     "dec": 0,
     "sufijo": "",
     "color": [
@@ -1244,8 +1251,8 @@
      176,
      60
     ],
-    "pie": "tres mil",
-    "y": 0.62,
+    "pie": "socios",
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "desplome"
    },
@@ -1253,7 +1260,18 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "texto_pantalla": {
+    "texto": "*Piénsalo* con una sala normal",
+    "px": 108,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
+   "composicion": "centrado"
   },
   {
    "id": "cap3_03b",
@@ -1264,13 +1282,13 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_gimnasio/weight_machine_close_up_5.mp4",
+   "clip": "stock_gimnasio/person_cancelling_phone_app_66.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_04",
@@ -1281,27 +1299,26 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/summer_beach_empty_street_40.mp4",
+   "clip": "stock_gimnasio/neighborhood_rooftops_aerial_67.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
-    "tipo": "contador",
-    "valor": 3.0,
-    "dec": 0,
-    "sufijo": "",
-    "color": [
+    "tipo": "reparto",
+    "valor": 66.0,
+    "color_a": [
      255,
      176,
      60
     ],
-    "pie": "socios no van con regularidad",
+    "etiqueta_a": "socios",
+    "etiqueta_b": "el resto",
     "y": 0.68,
-    "retardo": 0.55,
+    "retardo": 0.6,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_04b",
@@ -1312,12 +1329,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/monthly_subscription_payment_phone_41.mp4",
+   "clip": "stock_gimnasio/neighborhood_street_buildings_71.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_05",
@@ -1355,7 +1372,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_05x",
@@ -1393,7 +1410,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_06",
@@ -1404,7 +1421,7 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_gimnasio/person_paying_card_reader_43.mp4",
+   "clip": "stock_gimnasio/two_shops_side_by_side_street_69.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -1418,7 +1435,7 @@
      176,
      60
     ],
-    "pie": "año",
+    "pie": "euros al mes",
     "y": 0.62,
     "retardo": 0.55,
     "entrada": "desplome"
@@ -1427,7 +1444,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_06b",
@@ -1438,13 +1455,24 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/invoices_bills_paperwork_desk_46.mp4",
+   "clip": "stock_gimnasio/city_street_shops_aerial_70.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "Son *sesenta* mil euros al mes",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_07",
@@ -1455,7 +1483,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/lockers_row_keys_20.mp4",
+   "clip": "stock_gimnasio/queue_waiting_line_people_30.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -1468,14 +1496,14 @@
      176,
      60
     ],
-    "pie": "solo mil van con algo de regularidad",
+    "pie": "Ahora pon",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_07b",
@@ -1489,20 +1517,9 @@
    "clip": "stock_gimnasio/crowd_people_walking_street_87.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "de lunes a *domingo*",
-    "px": 132,
-    "y": 0.3,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "izquierda"
-   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_07c",
@@ -1513,12 +1530,12 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_gimnasio/weight_room_dumbbells_racks_2.mp4",
+   "clip": "stock_gimnasio/dumbbells_rack_close_up_6.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_08",
@@ -1534,33 +1551,18 @@
    "capas": [],
    "latigo": "izq",
    "grafico": {
-    "tipo": "barras",
-    "items": [
-     [
-      "banco pequeño",
-      3.0
-     ],
-     [
-      "banco grande",
-      1.0
-     ]
-    ],
-    "destacar": {
-     "banco pequeño": [
-      232,
-      86,
-      64
-     ]
-    },
-    "sufijo": "x",
-    "dec": 1,
-    "y": 0.62,
+    "tipo": "contador",
+    "valor": 3000.0,
+    "dec": 0,
+    "sufijo": "",
     "color": [
      255,
      176,
      60
     ],
-    "retardo": 0.6,
+    "pie": "socios",
+    "y": 0.33,
+    "retardo": 0.55,
     "entrada": "desplome"
    },
    "duotono": "duo_rojo",
@@ -1570,15 +1572,15 @@
    "texto_pantalla": {
     "texto": "Con esos *mismos* tres mil socios",
     "px": 108,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "estilo": "sube"
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_08b",
@@ -1589,13 +1591,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/busy_gym_crowded_people_28.mp4",
+   "clip": "stock_gimnasio/empty_gym_no_people_36.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_08c",
@@ -1606,12 +1608,12 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_gimnasio/people_entering_gym_door_29.mp4",
+   "clip": "stock_gimnasio/business_meeting_discussion_table_62.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_09",
@@ -1627,7 +1629,7 @@
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_09b",
@@ -1641,9 +1643,20 @@
    "clip": "stock_gimnasio/sale_discount_sign_shop_68.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "un banco con tu *dinero*",
+    "px": 108,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "escala"
+   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_10",
@@ -1664,6 +1677,7 @@
     }
    ],
    "latigo": "der",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Con una diferencia *importante*",
     "px": 112,
@@ -1681,10 +1695,9 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_10x",
@@ -1705,6 +1718,7 @@
     }
    ],
    "latigo": "der",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "que hace que este *negocio* sea",
     "px": 112,
@@ -1722,11 +1736,10 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_ent": 1.0,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_11",
@@ -1743,7 +1756,7 @@
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_11b",
@@ -1754,12 +1767,12 @@
    "efectos": [
     "fuga_luz"
    ],
-   "clip": "stock_gimnasio/led_lights_ceiling_interior_27.mp4",
+   "clip": "stock_gimnasio/invoices_bills_paperwork_desk_46.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap3_11c",
@@ -1770,23 +1783,23 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/calculator_expenses_receipts_47.mp4",
+   "clip": "stock_gimnasio/hands_counting_banknotes_47.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "Gastas agua *caliente*",
     "px": 132,
-    "y": 0.3,
+    "y": 0.68,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "escala"
+    "estilo": "derecha"
    },
-   "duotono": "duo_rojo",
-   "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_12",
@@ -1824,7 +1837,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap3_12x",
@@ -1862,7 +1875,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap3_12b",
@@ -1873,13 +1886,13 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_gimnasio/workers_building_interior_walls_60.mp4",
+   "clip": "stock_gimnasio/gym_rack_interior_59.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_01",
@@ -1899,6 +1912,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Hay un mes que *decide* el año",
     "px": 112,
@@ -1916,8 +1930,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_02",
@@ -1933,7 +1946,18 @@
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "*Propósitos* de año nuevo",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_02b",
@@ -1944,12 +1968,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/calendar_days_passing_39.mp4",
+   "clip": "stock_gimnasio/dumbbells_rack_close_up_6.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_03",
@@ -1960,7 +1984,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/turnstile_access_card_entry_22.mp4",
+   "clip": "stock_gimnasio/person_giving_up_quitting_35.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -1983,18 +2007,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "texto_pantalla": {
-    "texto": "es *también* el mes",
-    "px": 132,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_03b",
@@ -2005,13 +2018,13 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/person_giving_up_quitting_35.mp4",
+   "clip": "stock_gimnasio/dumbbells_gym_floor_8.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap4_04",
@@ -2049,7 +2062,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_04x",
@@ -2087,7 +2100,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_05",
@@ -2118,7 +2131,7 @@
    },
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_05b",
@@ -2132,20 +2145,20 @@
    "clip": "stock_gimnasio/credit_card_payment_terminal_42.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "duotono": "duo_verde",
-   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "*Matrícula* regalada",
     "px": 132,
-    "y": 0.68,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "derecha"
+    "estilo": "izquierda"
    },
-   "composicion": "izquierda"
+   "duotono": "duo_verde",
+   "duotono_fuerza": 0.55,
+   "composicion": "derecha"
   },
   {
    "id": "cap4_05c",
@@ -2164,7 +2177,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_06",
@@ -2181,7 +2194,18 @@
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "saben *también* el reverso",
+    "px": 108,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap4_06b",
@@ -2192,12 +2216,12 @@
    "efectos": [
     "humo"
    ],
-   "clip": "stock_gimnasio/protein_supplements_shaker_72.mp4",
+   "clip": "stock_gimnasio/group_fitness_class_instructor_14.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_verde",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap4_07",
@@ -2218,6 +2242,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Ese *primer* mes",
     "px": 112,
@@ -2235,8 +2260,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap4_07x",
@@ -2257,6 +2281,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "*marketing*",
     "px": 112,
@@ -2274,8 +2299,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_01",
@@ -2313,7 +2337,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_01x",
@@ -2351,7 +2375,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_02",
@@ -2362,7 +2386,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/weight_scale_measuring_75.mp4",
+   "clip": "stock_gimnasio/trainer_showing_exercise_form_17.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -2375,14 +2399,25 @@
      176,
      60
     ],
-    "pie": "meses y medio",
+    "pie": "meses",
     "y": 0.3,
     "retardo": 0.55,
     "entrada": "golpe"
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "texto_pantalla": {
+    "texto": "Ocho *meses* y medio",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "sube"
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap5_02b",
@@ -2393,12 +2428,12 @@
    "efectos": [
     "billetes"
    ],
-   "clip": "stock_gimnasio/measuring_tape_body_fitness_76.mp4",
+   "clip": "stock_gimnasio/gym_locker_room_18.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_03",
@@ -2419,6 +2454,7 @@
     }
    ],
    "latigo": "izq",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "No para *crecer*",
     "px": 112,
@@ -2436,10 +2472,9 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_03x",
@@ -2460,6 +2495,7 @@
     }
    ],
    "latigo": "izq",
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Para quedarte *igual*",
     "px": 112,
@@ -2477,28 +2513,87 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "_lat_ent": -1.0,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_04",
    "texto": "Y captar a un socio nuevo cuesta dinero: publicidad, promoción, la matrícula que regalas, el mes que no cobras. Retener al que ya tienes no cuesta casi nada en comparación.",
-   "duracion": 6.17,
-   "movimiento": "push_in",
-   "grade": "verde_suave",
+   "duracion": 3.08,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
    "efectos": [
-    "destellos"
+    "niebla"
    ],
-   "clip": "stock_gimnasio/person_motivated_training_hard_34.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*publicidad*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_04x",
+   "texto": "Y captar a un socio nuevo cuesta dinero: publicidad, promoción, la matrícula que regalas, el mes que no cobras. Retener al que ya tienes no cuesta casi nada en comparación.",
+   "duracion": 3.09,
+   "movimiento": "drift_der",
+   "grade": "neutro",
+   "efectos": [
+    "bokeh"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "el mes",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
   },
   {
    "id": "cap5_04b",
@@ -2509,7 +2604,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/advertising_billboard_street_67.mp4",
+   "clip": "stock_gimnasio/led_lights_ceiling_interior_27.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -2528,6 +2623,8 @@
    "clip": "stock_gimnasio/spinning_bike_class_gym_11.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "Está en el mes uno",
     "px": 132,
@@ -2537,11 +2634,9 @@
      176,
      60
     ],
-    "estilo": "sube"
+    "estilo": "derecha"
    },
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_05b",
@@ -2552,12 +2647,12 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/gym_mirror_reflection_training_24.mp4",
+   "clip": "stock_gimnasio/group_fitness_class_instructor_14.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap5_05c",
@@ -2568,7 +2663,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/exhausted_person_sweating_gym_31.mp4",
+   "clip": "stock_gimnasio/modern_fitness_center_interior_1.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2587,41 +2682,90 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/empty_gym_no_people_36.mp4",
+   "clip": "stock_gimnasio/yoga_class_studio_people_15.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
+   "_lat_ent": 1.0,
+   "composicion": "derecha"
+  },
+  {
+   "id": "cap5_01",
+   "texto": "Con la cuota sola, las cuentas de un gimnasio son ajustadas. El margen bueno está en lo que vendes encima de la cuota.",
+   "duracion": 2.04,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_01.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
    "texto_pantalla": {
-    "texto": "Un *gimnasio* no se muere",
-    "px": 108,
-    "y": 0.3,
+    "texto": "Con la *cuota* sola",
+    "px": 112,
+    "y": 0.47,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "escala"
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
    },
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
-   "_lat_ent": 1.0,
    "composicion": "centrado"
   },
   {
-   "id": "cap5_01",
+   "id": "cap5_01x",
    "texto": "Con la cuota sola, las cuentas de un gimnasio son ajustadas. El margen bueno está en lo que vendes encima de la cuota.",
-   "duracion": 4.08,
-   "movimiento": "estatico",
-   "grade": "verde_suave",
+   "duracion": 2.04,
+   "movimiento": "drift_der",
+   "grade": "neutro",
    "efectos": [
-    "billetes"
+    "destellos"
    ],
-   "clip": "stock_gimnasio/bar_chart_business_data_53.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_01x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "*ajustadas*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "derecha"
   },
   {
    "id": "cap5_01b",
@@ -2632,12 +2776,12 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/profit_financial_success_chart_54.mp4",
+   "clip": "stock_gimnasio/summer_beach_empty_street_40.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_02",
@@ -2648,20 +2792,9 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/declining_graph_red_arrow_52.mp4",
+   "clip": "stock_gimnasio/protein_supplements_shaker_72.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "texto_pantalla": {
-    "texto": "El *entrenador* personal",
-    "px": 108,
-    "y": 0.68,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "composicion": "centrado"
@@ -2675,7 +2808,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/group_fitness_class_instructor_14.mp4",
+   "clip": "stock_gimnasio/personal_trainer_coaching_client_16.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -2683,7 +2816,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": -1.0,
    "transicion": "corte",
-   "composicion": "derecha"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_03",
@@ -2694,43 +2827,28 @@
    "efectos": [
     "billetes"
    ],
-   "clip": "stock_gimnasio/yoga_class_studio_people_15.mp4",
+   "clip": "stock_gimnasio/trainer_showing_exercise_form_17.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
-    "tipo": "barras",
-    "items": [
-     [
-      "banco pequeño",
-      4.0
-     ],
-     [
-      "banco grande",
-      1.0
-     ]
-    ],
-    "destacar": {
-     "banco pequeño": [
-      232,
-      86,
-      64
-     ]
-    },
-    "sufijo": "x",
-    "dec": 1,
-    "y": 0.68,
+    "tipo": "contador",
+    "valor": 20.0,
+    "dec": 0,
+    "sufijo": "",
     "color": [
      255,
      176,
      60
     ],
-    "retardo": 0.6,
+    "pie": "aparece te",
+    "y": 0.68,
+    "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_03b",
@@ -2741,7 +2859,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/personal_trainer_coaching_client_16.mp4",
+   "clip": "stock_gimnasio/queue_waiting_line_people_30.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_frio",
@@ -2757,39 +2875,99 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/trainer_showing_exercise_form_17.mp4",
+   "clip": "stock_gimnasio/crowd_people_walking_street_87.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "duotono": "duo_frio",
+   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "más el *entrenador*",
     "px": 132,
-    "y": 0.68,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "derecha"
+    "estilo": "izquierda"
    },
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "derecha"
   },
   {
    "id": "cap5_04",
    "texto": "O sea que el negocio tiene dos clientes buenos por motivos opuestos: el que no viene nunca, porque no te cuesta nada; y el que viene siempre, porque te compra todo lo demás.",
-   "duracion": 5.5,
+   "duracion": 2.75,
    "movimiento": "drift_der",
-   "grade": "verde_suave",
+   "grade": "neutro",
    "efectos": [
-    "niebla"
+    "bokeh"
    ],
-   "clip": "stock_gimnasio/business_meeting_discussion_table_62.mp4",
-   "clip_desde": 0.3,
-   "capas": [],
-   "duotono": "duo_frio",
-   "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_04.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "el que no *viene*",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "izquierda"
+  },
+  {
+   "id": "cap5_04x",
+   "texto": "O sea que el negocio tiene dos clientes buenos por motivos opuestos: el que no viene nunca, porque no te cuesta nada; y el que viene siempre, porque te compra todo lo demás.",
+   "duracion": 2.75,
+   "movimiento": "drift_izq",
+   "grade": "neutro",
+   "efectos": [
+    "polvo"
+   ],
+   "capas": [
+    {
+     "rol": "fondo",
+     "archivo": "tarjeta_cap5_04x.png",
+     "clase": "abstracto",
+     "entrada": "escala",
+     "prompt": "tarjeta del canal"
+    }
+   ],
+   "tipo": "rotulo",
+   "texto_pantalla": {
+    "texto": "no te cuesta nada",
+    "px": 112,
+    "y": 0.47,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "color": [
+     237,
+     231,
+     218
+    ],
+    "estilo": "sube",
+    "retardo": 0.26
+   },
+   "composicion": "centrado"
   },
   {
    "id": "cap5_04b",
@@ -2800,7 +2978,7 @@
    "efectos": [
     "billetes"
    ],
-   "clip": "stock_gimnasio/franchise_business_storefront_56.mp4",
+   "clip": "stock_gimnasio/invoices_bills_paperwork_desk_46.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -2808,7 +2986,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap5_05",
@@ -2819,7 +2997,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/broken_machine_repair_tools_79.mp4",
+   "clip": "stock_gimnasio/commercial_lease_contract_signing_48.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -2832,25 +3010,14 @@
      176,
      60
     ],
-    "pie": "meses se da de baja",
-    "y": 0.33,
+    "pie": "meses",
+    "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "texto_pantalla": {
-    "texto": "El malo es el de en *medio*",
-    "px": 108,
-    "y": 0.74,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "derecha"
-   },
    "composicion": "derecha"
   },
   {
@@ -2862,13 +3029,13 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/vending_machine_drinks_73.mp4",
+   "clip": "stock_gimnasio/bank_building_facade_50.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_frio",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_01",
@@ -2906,7 +3073,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_01x",
@@ -2964,7 +3131,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "*entonces*",
     "px": 112,
@@ -2982,7 +3148,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "tipo": "rotulo",
+   "composicion": "centrado"
   },
   {
    "id": "cap6_02x",
@@ -3002,7 +3169,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "el *precio* tiene que ser",
     "px": 112,
@@ -3020,7 +3186,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "tipo": "rotulo",
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_02b",
@@ -3031,7 +3198,7 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_gimnasio/treadmill_running_gym_9.mp4",
+   "clip": "stock_gimnasio/cement_mixer_construction_60.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
@@ -3061,7 +3228,7 @@
      176,
      60
     ],
-    "pie": "euros",
+    "pie": "cuota",
     "y": 0.68,
     "retardo": 0.55,
     "entrada": "latigo_izq"
@@ -3070,7 +3237,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_03b",
@@ -3081,13 +3248,13 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_gimnasio/queue_waiting_line_people_30.mp4",
+   "clip": "stock_gimnasio/gym_floor_people_training_3.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_04",
@@ -3098,7 +3265,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_gimnasio/woman_working_out_gym_12.mp4",
+   "clip": "stock_gimnasio/smartphone_app_scrolling_hands_65.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -3112,12 +3279,23 @@
      60
     ],
     "pie": "centros franquiciados",
-    "y": 0.3,
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "golpe"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
+   "texto_pantalla": {
+    "texto": "el *mercado* se llenó",
+    "px": 132,
+    "y": 0.74,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "composicion": "izquierda"
   },
   {
@@ -3129,12 +3307,12 @@
    "efectos": [
     "ceniza"
    ],
-   "clip": "stock_gimnasio/man_doing_bench_press_13.mp4",
+   "clip": "stock_gimnasio/person_cancelling_phone_app_66.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_05",
@@ -3145,7 +3323,7 @@
    "efectos": [
     "lluvia"
    ],
-   "clip": "stock_gimnasio/plumbing_pipes_installation_61.mp4",
+   "clip": "stock_gimnasio/neighborhood_rooftops_aerial_67.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -3158,25 +3336,14 @@
      176,
      60
     ],
-    "pie": "euros al mes en las tarifas básicas",
-    "y": 0.33,
+    "pie": "mes",
+    "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
    },
    "duotono": "duo_ambar",
    "duotono_fuerza": 0.55,
-   "texto_pantalla": {
-    "texto": "Las cuotas *quedaron* ancladas ahí",
-    "px": 108,
-    "y": 0.74,
-    "acento": [
-     255,
-     176,
-     60
-    ],
-    "estilo": "escala"
-   },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap6_05b",
@@ -3187,7 +3354,7 @@
    "efectos": [
     "chispas"
    ],
-   "clip": "stock_gimnasio/small_office_desk_laptop_63.mp4",
+   "clip": "stock_gimnasio/neighborhood_street_buildings_71.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3234,7 +3401,7 @@
     "retardo": 0.26
    },
    "_lat_ent": -1.0,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_06x",
@@ -3272,7 +3439,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap6_06b",
@@ -3309,6 +3476,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "eres muy grande y muy *barato*",
     "px": 112,
@@ -3326,8 +3494,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap6_07x",
@@ -3348,6 +3515,7 @@
     }
    ],
    "cierra_bloque": true,
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "muy *pequeño* y muy caro",
     "px": 112,
@@ -3365,8 +3533,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap7_01",
@@ -3377,7 +3544,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/shower_room_tiles_water_19.mp4",
+   "clip": "stock_gimnasio/protein_supplements_shaker_72.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -3390,7 +3557,7 @@
      176,
      60
     ],
-    "pie": "Has firmado el alquiler",
+    "pie": "firmado el alquiler",
     "y": 0.26,
     "retardo": 0.55,
     "entrada": "rebote"
@@ -3408,12 +3575,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/percentage_symbol_screen_graphic_55.mp4",
+   "clip": "stock_gimnasio/laptop_screen_data_dashboard_64.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cap7_02b",
@@ -3424,12 +3591,23 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/laptop_screen_data_dashboard_64.mp4",
+   "clip": "stock_gimnasio/empty_gym_no_people_36.mp4",
    "clip_desde": 0.3,
    "capas": [],
+   "texto_pantalla": {
+    "texto": "*desde* el móvil",
+    "px": 132,
+    "y": 0.3,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "izquierda"
+   },
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cap7_03",
@@ -3440,7 +3618,7 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/turnstile_access_card_entry_22.mp4",
+   "clip": "stock_gimnasio/measuring_tape_body_fitness_76.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -3474,13 +3652,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/membership_card_scan_reader_23.mp4",
+   "clip": "stock_gimnasio/healthy_food_meal_prep_77.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
    "_lat_ent": 1.0,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cap7_03c",
@@ -3491,12 +3669,12 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/gym_mirror_reflection_training_24.mp4",
+   "clip": "stock_gimnasio/clock_ticking_time_78.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cap7_04",
@@ -3516,7 +3694,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Tienes un *local* caro",
     "px": 112,
@@ -3534,6 +3711,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
+   "tipo": "rotulo",
    "composicion": "derecha"
   },
   {
@@ -3554,7 +3732,6 @@
      "prompt": "tarjeta del canal"
     }
    ],
-   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "lleno de *hierro*",
     "px": 112,
@@ -3572,7 +3749,8 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "izquierda"
+   "tipo": "rotulo",
+   "composicion": "centrado"
   },
   {
    "id": "cap7_04b",
@@ -3583,13 +3761,13 @@
    "efectos": [
     "polvo"
    ],
-   "clip": "stock_gimnasio/air_conditioning_vent_ceiling_26.mp4",
+   "clip": "stock_gimnasio/door_opening_closing_entrance_83.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
    "duotono": "duo_papel",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_01",
@@ -3665,7 +3843,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_02",
@@ -3676,7 +3854,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/busy_gym_crowded_people_28.mp4",
+   "clip": "stock_gimnasio/plant_growing_time_lapse_86.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "grafico": {
@@ -3696,7 +3874,7 @@
    },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cierre_02b",
@@ -3707,7 +3885,7 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/people_entering_gym_door_29.mp4",
+   "clip": "stock_gimnasio/crowd_people_walking_street_87.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -3723,7 +3901,7 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_gimnasio/city_street_shops_aerial_70.mp4",
+   "clip": "stock_gimnasio/gym_interior_equipment_wide_0.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -3731,7 +3909,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_03",
@@ -3770,7 +3948,7 @@
     "retardo": 0.26
    },
    "_lat_ent": 1.0,
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_03x",
@@ -3819,12 +3997,12 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/tired_athlete_resting_bench_32.mp4",
+   "clip": "stock_gimnasio/gym_rack_interior_59.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_04",
@@ -3844,6 +4022,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "Contra eso tienes un *ingreso*",
     "px": 112,
@@ -3861,8 +4040,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cierre_04x",
@@ -3882,6 +4060,7 @@
      "prompt": "tarjeta del canal"
     }
    ],
+   "tipo": "rotulo",
    "texto_pantalla": {
     "texto": "del todo",
     "px": 112,
@@ -3899,7 +4078,6 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "tipo": "rotulo",
    "composicion": "derecha"
   },
   {
@@ -3911,12 +4089,12 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_gimnasio/person_motivated_training_hard_34.mp4",
+   "clip": "stock_gimnasio/gym_machines_row_equipment_4.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "izquierda"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_05",
@@ -3927,7 +4105,7 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/person_giving_up_quitting_35.mp4",
+   "clip": "stock_gimnasio/dumbbells_rack_close_up_6.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "izq",
@@ -3941,8 +4119,8 @@
      86,
      64
     ],
-    "pie": "sin captar a nadie nuevo",
-    "y": 0.68,
+    "pie": "sin captar",
+    "y": 0.33,
     "retardo": 0.55,
     "entrada": "latigo_izq"
    },
@@ -3953,15 +4131,15 @@
    "texto_pantalla": {
     "texto": "hay una tercera que sí *controlas*",
     "px": 108,
-    "y": 0.3,
+    "y": 0.74,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "izquierda"
+    "estilo": "sube"
    },
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_05b",
@@ -3972,7 +4150,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/empty_gym_no_people_36.mp4",
+   "clip": "stock_gimnasio/barbell_weight_plates_loading_7.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
@@ -3989,12 +4167,12 @@
    "efectos": [
     "destellos"
    ],
-   "clip": "stock_gimnasio/empty_fitness_room_quiet_37.mp4",
+   "clip": "stock_gimnasio/dumbbells_gym_floor_8.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_06",
@@ -4032,7 +4210,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "centrado"
+   "composicion": "izquierda"
   },
   {
    "id": "cierre_06x",
@@ -4081,23 +4259,23 @@
    "efectos": [
     "bokeh"
    ],
-   "clip": "stock_gimnasio/modern_fitness_center_interior_1.mp4",
+   "clip": "stock_gimnasio/measuring_tape_body_fitness_76.mp4",
    "clip_desde": 0.3,
    "capas": [],
-   "duotono": "duo_rojo",
-   "duotono_fuerza": 0.55,
    "texto_pantalla": {
     "texto": "El negocio no es el *gimnasio*",
     "px": 108,
-    "y": 0.68,
+    "y": 0.3,
     "acento": [
      255,
      176,
      60
     ],
-    "estilo": "sube"
+    "estilo": "escala"
    },
-   "composicion": "izquierda"
+   "duotono": "duo_rojo",
+   "duotono_fuerza": 0.55,
+   "composicion": "centrado"
   },
   {
    "id": "cierre_07b",
@@ -4108,7 +4286,7 @@
    "efectos": [
     "niebla"
    ],
-   "clip": "stock_gimnasio/measuring_tape_body_fitness_76.mp4",
+   "clip": "stock_gimnasio/gym_machines_row_equipment_4.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "latigo": "der",
@@ -4116,7 +4294,7 @@
    "duotono_fuerza": 0.55,
    "_lat_sal": 1.0,
    "transicion": "corte",
-   "composicion": "centrado"
+   "composicion": "derecha"
   },
   {
    "id": "cierre_08",
@@ -4193,7 +4371,7 @@
     "estilo": "sube",
     "retardo": 0.26
    },
-   "composicion": "derecha"
+   "composicion": "centrado"
   },
   {
    "id": "cierre_08b",
@@ -4204,13 +4382,24 @@
    "efectos": [
     "brasas"
    ],
-   "clip": "stock_gimnasio/credit_card_payment_terminal_42.mp4",
+   "clip": "stock_gimnasio/man_training_punching_bag_31.mp4",
    "clip_desde": 0.3,
    "capas": [],
    "cierra_bloque": true,
+   "texto_pantalla": {
+    "texto": "ganas *dinero* cuando",
+    "px": 132,
+    "y": 0.68,
+    "acento": [
+     255,
+     176,
+     60
+    ],
+    "estilo": "derecha"
+   },
    "duotono": "duo_rojo",
    "duotono_fuerza": 0.55,
-   "composicion": "centrado"
+   "composicion": "izquierda"
   }
  ]
 }

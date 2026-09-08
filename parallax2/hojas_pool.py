@@ -47,15 +47,26 @@ def main():
             subprocess.run(["ffmpeg", "-v", "error", "-ss", "1.2", "-i", ruta,
                             "-frames:v", "1", "-vf", f"scale={ANCHO}:-1",
                             "-q:v", "4", thumb, "-y"], check=False)
-        if not os.path.exists(thumb):
-            continue
-        im = Image.open(thumb).convert("RGB")
+        # Si el clip no da fotograma NO se salta: se mete un hueco negro.
+        # Saltarlo corre una casilla todas las miniaturas siguientes, y
+        # entonces la hoja miente: yo lei una percha de ropa donde habia
+        # un mostrador, y quite del pool los clips equivocados.
+        if os.path.exists(thumb):
+            im = Image.open(thumb).convert("RGB")
+        else:
+            im = None
+        miniaturas.append((i, im))
+
+    w, h = next(im.size for _, im in miniaturas if im is not None)
+    for k, (i, im) in enumerate(miniaturas):
+        if im is None:
+            im = Image.new("RGB", (w, h), (60, 0, 0))
+        elif im.size != (w, h):
+            im = im.resize((w, h))
         d = ImageDraw.Draw(im)
         d.rectangle([0, 0, 78, 40], fill=(0, 0, 0))
         d.text((6, 2), str(i), fill=(255, 220, 0), font=fo)
-        miniaturas.append(im)
-
-    w, h = miniaturas[0].size
+        miniaturas[k] = im
     for k in range(0, len(miniaturas), POR_HOJA):
         trozo = miniaturas[k:k + POR_HOJA]
         filas = (len(trozo) + COLS - 1) // COLS

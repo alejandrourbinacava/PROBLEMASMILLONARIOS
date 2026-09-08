@@ -157,6 +157,25 @@ jobs:
             parallax2/ligero.mp4
           retention-days: 14
 
+      # El artefacto pide iniciar sesion para bajarlo, asi que el video que
+      # SE SUBE al canal se quedaba a un login de distancia y habia que
+      # pedirlo a mano cada vez. Una release de un repo publico se descarga
+      # con una URL directa, y admite hasta 2 GB -en una rama, 100 MB-.
+      - name: Publicar el video descargable
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          cp parallax2/ligero.mp4 "${GITHUB_REF_NAME}-720p.mp4"
+          gh release create "${GITHUB_REF_NAME}" \
+            --title "${GITHUB_REF_NAME}" \
+            --notes "Render de ${GITHUB_REF_NAME}. El 720p es el que se sube." \
+            "${GITHUB_REF_NAME}-720p.mp4" \
+          || gh release upload "${GITHUB_REF_NAME}" \
+               "${GITHUB_REF_NAME}-720p.mp4" --clobber
+          gh release view "${GITHUB_REF_NAME}"
+
       # Al repo va una copia de revision, NO la ligera: GitHub rechaza
       # ficheros de mas de 100 MB en un push y la ligera de un episodio de
       # catorce minutos ronda los 110. Para ver el detalle esta el artefacto.

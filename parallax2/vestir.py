@@ -46,6 +46,7 @@ AMBAR = [255, 176, 60]
 PAPEL = [237, 231, 218]
 ROJO = [232, 86, 64]
 
+EPISODIO = "ep"
 TOPE_TARJETA = 3.2       # segundos. Por encima, se parte.
 
 # Planos minimos entre dos usos del mismo clip. A doce se colaban
@@ -151,6 +152,9 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
 
     import emparejar as EMP
+
+    global EPISODIO
+    EPISODIO = os.path.splitext(os.path.basename(a.salida))[0]
 
     g = json.load(io.open(os.path.join(AQUI, a.guion), encoding="utf-8"))
     pool = json.load(io.open(os.path.join(AQUI, a.pool), encoding="utf-8"))
@@ -267,7 +271,7 @@ def main():
             n_part += 1
 
         for k, (esc, txt) in enumerate(partes):
-            arch = f"tarjeta_{esc['id']}.png"
+            arch = f"tarjeta_{EPISODIO}_{esc['id']}.png"
             fantasma = (txt.split() or [""])[-1].strip("*.,:;").upper()[:9]
             fondo_tarjeta(os.path.join(PROY, arch), i + k, fantasma)
             esc.pop("clip", None)

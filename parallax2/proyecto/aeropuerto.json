@@ -117,7 +117,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_gancho_03.png",
+     "archivo": "tarjeta_aeropuerto_gancho_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -156,7 +156,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_gancho_03x.png",
+     "archivo": "tarjeta_aeropuerto_gancho_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -285,7 +285,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_01.png",
+     "archivo": "tarjeta_aeropuerto_cap1_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -323,7 +323,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_01x.png",
+     "archivo": "tarjeta_aeropuerto_cap1_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -404,7 +404,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_03.png",
+     "archivo": "tarjeta_aeropuerto_cap1_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -445,7 +445,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_03x.png",
+     "archivo": "tarjeta_aeropuerto_cap1_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -547,7 +547,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_05.png",
+     "archivo": "tarjeta_aeropuerto_cap1_05.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -585,7 +585,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_05x.png",
+     "archivo": "tarjeta_aeropuerto_cap1_05x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -623,7 +623,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_06.png",
+     "archivo": "tarjeta_aeropuerto_cap1_06.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -664,7 +664,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_06x.png",
+     "archivo": "tarjeta_aeropuerto_cap1_06x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -833,7 +833,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_09.png",
+     "archivo": "tarjeta_aeropuerto_cap1_09.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -872,7 +872,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_09x.png",
+     "archivo": "tarjeta_aeropuerto_cap1_09x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -911,7 +911,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_01.png",
+     "archivo": "tarjeta_aeropuerto_cap2_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1074,7 +1074,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_04.png",
+     "archivo": "tarjeta_aeropuerto_cap2_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1112,7 +1112,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_04x.png",
+     "archivo": "tarjeta_aeropuerto_cap2_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1543,7 +1543,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_01.png",
+     "archivo": "tarjeta_aeropuerto_cap3_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1581,7 +1581,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_01x.png",
+     "archivo": "tarjeta_aeropuerto_cap3_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1619,7 +1619,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_02.png",
+     "archivo": "tarjeta_aeropuerto_cap3_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1657,7 +1657,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_02x.png",
+     "archivo": "tarjeta_aeropuerto_cap3_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1711,7 +1711,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_03.png",
+     "archivo": "tarjeta_aeropuerto_cap3_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1752,7 +1752,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_03x.png",
+     "archivo": "tarjeta_aeropuerto_cap3_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1884,7 +1884,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_06.png",
+     "archivo": "tarjeta_aeropuerto_cap3_06.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1925,7 +1925,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_06x.png",
+     "archivo": "tarjeta_aeropuerto_cap3_06x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2044,7 +2044,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_01.png",
+     "archivo": "tarjeta_aeropuerto_cap4_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2082,7 +2082,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_01x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2167,7 +2167,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_04.png",
+     "archivo": "tarjeta_aeropuerto_cap4_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2208,7 +2208,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_04x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2408,7 +2408,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_07.png",
+     "archivo": "tarjeta_aeropuerto_cap4_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2446,7 +2446,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_07x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2500,7 +2500,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_08.png",
+     "archivo": "tarjeta_aeropuerto_cap4_08.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2539,7 +2539,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_08x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_08x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2578,7 +2578,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_01.png",
+     "archivo": "tarjeta_aeropuerto_cap4_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2616,7 +2616,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_01x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2654,7 +2654,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_02.png",
+     "archivo": "tarjeta_aeropuerto_cap4_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2692,7 +2692,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_02x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2730,7 +2730,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_03.png",
+     "archivo": "tarjeta_aeropuerto_cap4_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2768,7 +2768,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_03x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2995,7 +2995,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_07.png",
+     "archivo": "tarjeta_aeropuerto_cap4_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3033,7 +3033,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_07x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3071,7 +3071,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_08.png",
+     "archivo": "tarjeta_aeropuerto_cap4_08.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3112,7 +3112,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_08x.png",
+     "archivo": "tarjeta_aeropuerto_cap4_08x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3204,7 +3204,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_02.png",
+     "archivo": "tarjeta_aeropuerto_cap5_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3367,7 +3367,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_05.png",
+     "archivo": "tarjeta_aeropuerto_cap5_05.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3408,7 +3408,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_06.png",
+     "archivo": "tarjeta_aeropuerto_cap5_06.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3447,7 +3447,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_06x.png",
+     "archivo": "tarjeta_aeropuerto_cap5_06x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3548,7 +3548,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_08.png",
+     "archivo": "tarjeta_aeropuerto_cap5_08.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3587,7 +3587,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_08x.png",
+     "archivo": "tarjeta_aeropuerto_cap5_08x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4113,7 +4113,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_12.png",
+     "archivo": "tarjeta_aeropuerto_cap6_12.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4152,7 +4152,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_12x.png",
+     "archivo": "tarjeta_aeropuerto_cap6_12x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4329,7 +4329,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_01.png",
+     "archivo": "tarjeta_aeropuerto_cap7_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4367,7 +4367,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_01x.png",
+     "archivo": "tarjeta_aeropuerto_cap7_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4421,7 +4421,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_02.png",
+     "archivo": "tarjeta_aeropuerto_cap7_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4459,7 +4459,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_02x.png",
+     "archivo": "tarjeta_aeropuerto_cap7_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4575,7 +4575,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_04.png",
+     "archivo": "tarjeta_aeropuerto_cap7_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4613,7 +4613,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_04x.png",
+     "archivo": "tarjeta_aeropuerto_cap7_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4651,7 +4651,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_05.png",
+     "archivo": "tarjeta_aeropuerto_cap7_05.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4689,7 +4689,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_05x.png",
+     "archivo": "tarjeta_aeropuerto_cap7_05x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4744,7 +4744,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_01.png",
+     "archivo": "tarjeta_aeropuerto_cierre_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4782,7 +4782,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_01x.png",
+     "archivo": "tarjeta_aeropuerto_cierre_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -5078,7 +5078,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_07.png",
+     "archivo": "tarjeta_aeropuerto_cierre_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -5117,7 +5117,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_07x.png",
+     "archivo": "tarjeta_aeropuerto_cierre_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"

@@ -162,7 +162,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_01.png",
+     "archivo": "tarjeta_gimnasio_cap1_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -200,7 +200,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_01x.png",
+     "archivo": "tarjeta_gimnasio_cap1_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -238,7 +238,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_02.png",
+     "archivo": "tarjeta_gimnasio_cap1_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -276,7 +276,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_02x.png",
+     "archivo": "tarjeta_gimnasio_cap1_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -397,7 +397,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_04.png",
+     "archivo": "tarjeta_gimnasio_cap1_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -435,7 +435,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_04x.png",
+     "archivo": "tarjeta_gimnasio_cap1_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -756,7 +756,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_10.png",
+     "archivo": "tarjeta_gimnasio_cap1_10.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -794,7 +794,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_10x.png",
+     "archivo": "tarjeta_gimnasio_cap1_10x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -832,7 +832,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_11.png",
+     "archivo": "tarjeta_gimnasio_cap1_11.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -871,7 +871,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_01.png",
+     "archivo": "tarjeta_gimnasio_cap2_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -909,7 +909,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_01x.png",
+     "archivo": "tarjeta_gimnasio_cap2_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1132,7 +1132,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_01.png",
+     "archivo": "tarjeta_gimnasio_cap3_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1170,7 +1170,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_01x.png",
+     "archivo": "tarjeta_gimnasio_cap3_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1348,7 +1348,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_05.png",
+     "archivo": "tarjeta_gimnasio_cap3_05.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1386,7 +1386,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_05x.png",
+     "archivo": "tarjeta_gimnasio_cap3_05x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1670,7 +1670,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_10.png",
+     "archivo": "tarjeta_gimnasio_cap3_10.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1711,7 +1711,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_10x.png",
+     "archivo": "tarjeta_gimnasio_cap3_10x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1813,7 +1813,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_12.png",
+     "archivo": "tarjeta_gimnasio_cap3_12.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1851,7 +1851,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_12x.png",
+     "archivo": "tarjeta_gimnasio_cap3_12x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1906,7 +1906,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_01.png",
+     "archivo": "tarjeta_gimnasio_cap4_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2038,7 +2038,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_04.png",
+     "archivo": "tarjeta_gimnasio_cap4_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2076,7 +2076,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_04x.png",
+     "archivo": "tarjeta_gimnasio_cap4_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2235,7 +2235,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_07.png",
+     "archivo": "tarjeta_gimnasio_cap4_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2274,7 +2274,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_07x.png",
+     "archivo": "tarjeta_gimnasio_cap4_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2313,7 +2313,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_01.png",
+     "archivo": "tarjeta_gimnasio_cap5_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2351,7 +2351,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_01x.png",
+     "archivo": "tarjeta_gimnasio_cap5_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2447,7 +2447,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_03.png",
+     "archivo": "tarjeta_gimnasio_cap5_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2488,7 +2488,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_03x.png",
+     "archivo": "tarjeta_gimnasio_cap5_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2530,7 +2530,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_04.png",
+     "archivo": "tarjeta_gimnasio_cap5_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2569,7 +2569,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_04x.png",
+     "archivo": "tarjeta_gimnasio_cap5_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2703,7 +2703,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_01.png",
+     "archivo": "tarjeta_gimnasio_cap5_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2741,7 +2741,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_01x.png",
+     "archivo": "tarjeta_gimnasio_cap5_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2905,7 +2905,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_04.png",
+     "archivo": "tarjeta_gimnasio_cap5_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2943,7 +2943,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_04x.png",
+     "archivo": "tarjeta_gimnasio_cap5_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3049,7 +3049,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_01.png",
+     "archivo": "tarjeta_gimnasio_cap6_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3087,7 +3087,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_01x.png",
+     "archivo": "tarjeta_gimnasio_cap6_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3125,7 +3125,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_02.png",
+     "archivo": "tarjeta_gimnasio_cap6_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3163,7 +3163,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_02x.png",
+     "archivo": "tarjeta_gimnasio_cap6_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3376,7 +3376,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_06.png",
+     "archivo": "tarjeta_gimnasio_cap6_06.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3415,7 +3415,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_06x.png",
+     "archivo": "tarjeta_gimnasio_cap6_06x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3469,7 +3469,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_07.png",
+     "archivo": "tarjeta_gimnasio_cap6_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3508,7 +3508,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_07x.png",
+     "archivo": "tarjeta_gimnasio_cap6_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3688,7 +3688,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_04.png",
+     "archivo": "tarjeta_gimnasio_cap7_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3726,7 +3726,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_04x.png",
+     "archivo": "tarjeta_gimnasio_cap7_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3781,7 +3781,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_01.png",
+     "archivo": "tarjeta_gimnasio_cierre_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3819,7 +3819,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_01x.png",
+     "archivo": "tarjeta_gimnasio_cierre_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3923,7 +3923,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_03.png",
+     "archivo": "tarjeta_gimnasio_cierre_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3962,7 +3962,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_03x.png",
+     "archivo": "tarjeta_gimnasio_cierre_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4016,7 +4016,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_04.png",
+     "archivo": "tarjeta_gimnasio_cierre_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4054,7 +4054,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_04x.png",
+     "archivo": "tarjeta_gimnasio_cierre_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4186,7 +4186,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_06.png",
+     "archivo": "tarjeta_gimnasio_cierre_06.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4224,7 +4224,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_06x.png",
+     "archivo": "tarjeta_gimnasio_cierre_06x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4308,7 +4308,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_08.png",
+     "archivo": "tarjeta_gimnasio_cierre_08.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4347,7 +4347,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_08x.png",
+     "archivo": "tarjeta_gimnasio_cierre_08x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"

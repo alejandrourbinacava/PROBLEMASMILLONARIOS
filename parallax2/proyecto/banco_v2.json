@@ -178,7 +178,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_01.png",
+     "archivo": "tarjeta_banco_v2_cap1_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -282,7 +282,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_03.png",
+     "archivo": "tarjeta_banco_v2_cap1_03.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -321,7 +321,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_03x.png",
+     "archivo": "tarjeta_banco_v2_cap1_03x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -818,7 +818,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap1_13.png",
+     "archivo": "tarjeta_banco_v2_cap1_13.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -857,7 +857,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_01.png",
+     "archivo": "tarjeta_banco_v2_cap2_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -895,7 +895,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_01x.png",
+     "archivo": "tarjeta_banco_v2_cap2_01x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1245,7 +1245,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap2_07.png",
+     "archivo": "tarjeta_banco_v2_cap2_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1347,7 +1347,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_02.png",
+     "archivo": "tarjeta_banco_v2_cap3_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1385,7 +1385,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_02x.png",
+     "archivo": "tarjeta_banco_v2_cap3_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1490,7 +1490,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_04.png",
+     "archivo": "tarjeta_banco_v2_cap3_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1528,7 +1528,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_04x.png",
+     "archivo": "tarjeta_banco_v2_cap3_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1676,7 +1676,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_07.png",
+     "archivo": "tarjeta_banco_v2_cap3_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -1714,7 +1714,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap3_07x.png",
+     "archivo": "tarjeta_banco_v2_cap3_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2003,7 +2003,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_01.png",
+     "archivo": "tarjeta_banco_v2_cap4_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2139,7 +2139,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_04.png",
+     "archivo": "tarjeta_banco_v2_cap4_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2177,7 +2177,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_04x.png",
+     "archivo": "tarjeta_banco_v2_cap4_04x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2371,7 +2371,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_08.png",
+     "archivo": "tarjeta_banco_v2_cap4_08.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2409,7 +2409,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_08x.png",
+     "archivo": "tarjeta_banco_v2_cap4_08x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2494,7 +2494,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_10.png",
+     "archivo": "tarjeta_banco_v2_cap4_10.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2533,7 +2533,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap4_10x.png",
+     "archivo": "tarjeta_banco_v2_cap4_10x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2848,7 +2848,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_06.png",
+     "archivo": "tarjeta_banco_v2_cap5_06.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2886,7 +2886,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_06x.png",
+     "archivo": "tarjeta_banco_v2_cap5_06x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2940,7 +2940,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_07.png",
+     "archivo": "tarjeta_banco_v2_cap5_07.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -2981,7 +2981,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_07x.png",
+     "archivo": "tarjeta_banco_v2_cap5_07x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3040,7 +3040,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_08.png",
+     "archivo": "tarjeta_banco_v2_cap5_08.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3078,7 +3078,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap5_08x.png",
+     "archivo": "tarjeta_banco_v2_cap5_08x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3227,7 +3227,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_02.png",
+     "archivo": "tarjeta_banco_v2_cap6_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3265,7 +3265,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_02x.png",
+     "archivo": "tarjeta_banco_v2_cap6_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3413,7 +3413,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_04.png",
+     "archivo": "tarjeta_banco_v2_cap6_04.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3779,7 +3779,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_11.png",
+     "archivo": "tarjeta_banco_v2_cap6_11.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -3817,7 +3817,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap6_11x.png",
+     "archivo": "tarjeta_banco_v2_cap6_11x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4118,7 +4118,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_02.png",
+     "archivo": "tarjeta_banco_v2_cap7_02.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4156,7 +4156,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cap7_02x.png",
+     "archivo": "tarjeta_banco_v2_cap7_02x.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"
@@ -4411,7 +4411,7 @@
    "capas": [
     {
      "rol": "fondo",
-     "archivo": "tarjeta_cierre_01.png",
+     "archivo": "tarjeta_banco_v2_cierre_01.png",
      "clase": "abstracto",
      "entrada": "escala",
      "prompt": "tarjeta del canal"

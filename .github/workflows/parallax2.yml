@@ -92,6 +92,14 @@ jobs:
         working-directory: parallax2
         run: python comprobar_mg.py "${{ steps.g.outputs.guion }}"
 
+      # Que los ficheros que cita el guion esten EN EL CHECKOUT. Commitee
+      # tres guiones sin las tarjetas que les dibujo vestir.py y los seis
+      # renders de ese dia murieron con FileNotFoundError a los cincuenta y
+      # siete minutos, con medio video ya compuesto. Esto tarda dos segundos.
+      - name: Que esten todas las capas
+        working-directory: parallax2
+        run: python comprobar_ficheros.py "${{ steps.g.outputs.guion }}"
+
       - name: Render
         working-directory: parallax2
         # Los runners de GitHub traen 4 nucleos; se usan todos porque aqui no

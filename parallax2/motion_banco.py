@@ -599,7 +599,13 @@ def formato(val, dec, suf):
     if val >= 1000000000000:
         return round(val / 1000000000000, 1), 1
     if val >= 1000000:
-        return round(val / 1000000, 1 if val % 1000000 else 0), 0
+        # Los decimales que se redondean hay que DECLARARLOS. Devolvia
+        # siempre 0 y el motor dibujaba la cifra sin decimales: "tres coma
+        # seis millones de dolares" salia como "4 M $" y los "cincuenta y
+        # seis coma dos" de Ciudad Real como "56 M €". El numero correcto
+        # estaba en el guion; se perdia al pintarlo.
+        d = 1 if val % 1000000 else 0
+        return round(val / 1000000, d), d
     return int(val), 0
 
 

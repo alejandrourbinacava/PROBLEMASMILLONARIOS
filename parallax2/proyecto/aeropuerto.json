@@ -3930,7 +3930,7 @@
    "grafico": {
     "tipo": "contador",
     "valor": 56.2,
-    "dec": 0,
+    "dec": 1,
     "sufijo": " M €",
     "color": [
      255,

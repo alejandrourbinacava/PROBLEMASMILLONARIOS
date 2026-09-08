@@ -169,8 +169,34 @@ jobs:
           ls -l "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -B ilustraciones
-          git add -f -- ilustracion/salida
-          git commit -m "Montaje ${GITHUB_REF_NAME}" || exit 0
-          git push -f origin ilustraciones
+
+          # NADA de `checkout -B` + `push -f`. Eso crea la rama desde cero y
+          # la pisa entera: con tres renders en paralelo, el ultimo en
+          # terminar borro los videos de los otros dos y solo quedo uno.
+          # Se parte de lo que YA hay en la rama y se anade encima.
+          V="$(mktemp -d)/${GITHUB_REF_NAME}.mp4"
+          mv "ilustracion/salida/${GITHUB_REF_NAME}.mp4" "$V"
+
+          for intento in 1 2 3 4 5; do
+            git fetch origin ilustraciones || true
+            if git rev-parse --verify origin/ilustraciones >/dev/null 2>&1; then
+              git checkout -B ilustraciones origin/ilustraciones
+            else
+              git checkout -B ilustraciones
+            fi
+            mkdir -p ilustracion/salida
+            cp "$V" "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
+            git add -f -- "ilustracion/salida/${GITHUB_REF_NAME}.mp4"
+            git commit -m "Montaje ${GITHUB_REF_NAME}" || true
+            # sin -f: si otro render ha empujado mientras tanto, esto falla
+            # a proposito y se vuelve a intentar sobre lo suyo.
+            if git push origin ilustraciones; then
+              echo "guardado en la rama al intento $intento"
+              exit 0
+            fi
+            echo "otro render empujo antes; reintento $intento"
+            sleep $((intento * 5))
+          done
+          echo "::warning::No se pudo guardar en la rama. El video esta en el artefacto."
+          exit 0
 

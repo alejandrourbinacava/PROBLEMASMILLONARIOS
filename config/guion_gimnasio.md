@@ -57,7 +57,7 @@ Planet Fitness juega en otra división. La inversión inicial va de un millón d
 
 **Liga española.** Aquí la cosa es mucho más asequible, y por eso el mercado está como está. En las franquicias de gimnasio en España la inversión media por centro ronda los ciento cuarenta y seis mil euros, con una facturación media en el entorno de los doscientos sesenta y cinco mil al año.
 
-Léelo otra vez, porque esa proporción es la que explica el sector entero: **facturas casi el doble de lo que has invertido, y lo facturas todos los años.**
+Quédate con esa proporción, porque explica el sector entero: **facturas casi el doble de lo que has invertido, y lo facturas todos los años.**
 
 Y si eso es cierto, la pregunta obvia es por qué no lo hace todo el mundo. La respuesta está en el capítulo cinco, y tiene que ver con lo rápido que se te va la gente.
 

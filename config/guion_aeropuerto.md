@@ -83,7 +83,7 @@ Ahora la cifra que cambia cómo vas a mirar un aeropuerto para siempre.
 
 **Esa segunda mitad, la que no tiene nada que ver con volar, es casi el cuarenta por ciento de los ingresos totales.**
 
-Léelo otra vez. Cuatro de cada diez euros que entran en un aeropuerto **no** vienen de los aviones. Vienen de la gente esperando.
+Esa frase es el vídeo entero. Cuatro de cada diez euros que entran en un aeropuerto **no** vienen de los aviones. Vienen de la gente esperando.
 
 Y esto no es un detalle contable: es la estrategia. Los aeropuertos empujan sus ingresos comerciales precisamente para depender menos de lo que les pagan las aerolíneas, que es la parte que peor pueden controlar.
 

@@ -103,7 +103,7 @@ Y cuando el banco presta ese dinero, tampoco lo saca de un cajón.
 
 Tu vecino pide una hipoteca de doscientos mil. El banco no va al almacén a buscar doscientos mil dólares. Escribe doscientos mil en la cuenta de tu vecino. Ese dinero no existía un segundo antes.
 
-Léelo otra vez, porque es el negocio entero: **un banco con licencia crea el dinero que presta, y después cobra intereses por un dinero que ha creado él.** Cuando el préstamo se devuelve, ese dinero desaparece. Los intereses no.
+Para el vídeo y vuelve cinco segundos atrás, porque es el negocio entero: **un banco con licencia crea el dinero que presta, y después cobra intereses por un dinero que ha creado él.** Cuando el préstamo se devuelve, ese dinero desaparece. Los intereses no.
 
 Vamos a los números de verdad, con tu banco.
 
@@ -153,7 +153,7 @@ El regulador no cobra un porcentaje de tus beneficios, como haría un socio norm
 
 En los bancos pequeños, el cumplimiento normativo se lleva el ocho coma siete por ciento de los gastos operativos. En los grandes, el dos coma nueve.
 
-Léelo otra vez. El banco pequeño paga, en proporción, tres veces más que el grande por obedecer exactamente las mismas normas.
+Escucha bien ese dato. El banco pequeño paga, en proporción, tres veces más que el grande por obedecer exactamente las mismas normas.
 
 En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto se va en gente cuyo trabajo es demostrarle al regulador que estás cumpliendo. No en captar clientes. No en prestar. En demostrar.
 

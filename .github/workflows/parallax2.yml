@@ -175,13 +175,27 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -e
+          # A la release va el MASTER. Subi aqui la copia ligera y los tres
+          # episodios se entregaron a 720p: ligero.mp4 es para verlo en el
+          # movil, no para publicarlo. El master es 1920x1080 y una release
+          # admite hasta 2 GB, asi que cabe entero y sin recomprimir.
+          cp parallax2/salida.mp4 "${GITHUB_REF_NAME}-1080p.mp4"
           cp parallax2/ligero.mp4 "${GITHUB_REF_NAME}-720p.mp4"
+
+          ALTO=$(ffprobe -v error -select_streams v:0 \
+                   -show_entries stream=height -of csv=p=0 \
+                   "${GITHUB_REF_NAME}-1080p.mp4")
+          if [ "$ALTO" -lt 1080 ]; then
+            echo "::error::El master mide ${ALTO}p, no 1080p."
+            exit 1
+          fi
+
           gh release create "${GITHUB_REF_NAME}" \
             --title "${GITHUB_REF_NAME}" \
-            --notes "Render de ${GITHUB_REF_NAME}. El 720p es el que se sube." \
-            "${GITHUB_REF_NAME}-720p.mp4" \
+            --notes "Render de ${GITHUB_REF_NAME}. Sube el 1080p; el 720p es para verlo rapido." \
+            "${GITHUB_REF_NAME}-1080p.mp4" "${GITHUB_REF_NAME}-720p.mp4" \
           || gh release upload "${GITHUB_REF_NAME}" \
-               "${GITHUB_REF_NAME}-720p.mp4" --clobber
+               "${GITHUB_REF_NAME}-1080p.mp4" "${GITHUB_REF_NAME}-720p.mp4" --clobber
           gh release view "${GITHUB_REF_NAME}"
 
       # Al repo va una copia de revision, NO la ligera: GitHub rechaza

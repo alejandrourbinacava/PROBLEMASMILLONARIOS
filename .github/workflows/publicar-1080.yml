@@ -1,0 +1,75 @@
+name: Publicar 1080p
+
+# Sube el MASTER en 1080p a la release de una etiqueta ya renderizada.
+#
+# El workflow de render deja dos ficheros: salida.mp4, que es el master a
+# 1920x1080, y ligero.mp4, que es una copia a 1280x720 para verlo en el
+# movil. En la release yo subi la ligera, asi que los tres episodios se
+# entregaron a 720p.
+#
+# Volver a renderizar son cincuenta y siete minutos por episodio, y no hace
+# falta: el master sigue dentro del artefacto de la tirada, que se guarda
+# catorce dias. Esto lo baja de ahi y lo sube a la release. Dos minutos.
+#
+# Se dispara empujando una etiqueta `pub-<etiqueta>`:
+#
+#     git tag pub-v2-13 && git push origin pub-v2-13
+#
+# porque una etiqueta es lo unico que se puede lanzar sin credenciales.
+
+on:
+  push:
+    tags:
+      - "pub-*"
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Bajar el master del artefacto y subirlo a la release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          ORIGEN="${GITHUB_REF_NAME#pub-}"
+          echo "etiqueta de origen: $ORIGEN"
+
+          # La tirada correcta es la del workflow Parallax2 sobre ESA
+          # etiqueta y que termino bien. Filtrar solo por rama devuelve
+          # tambien la comprobacion del montaje, que no sube artefactos.
+          RUN=$(gh run list --workflow Parallax2 --branch "$ORIGEN" \
+                  --status success --limit 1 --json databaseId \
+                  --jq '.[0].databaseId')
+          if [ -z "$RUN" ] || [ "$RUN" = "null" ]; then
+            echo "::error::No hay ninguna tirada correcta de Parallax2 para $ORIGEN. Si han pasado mas de catorce dias el artefacto ya no existe y hay que volver a renderizar."
+            exit 1
+          fi
+          echo "tirada $RUN"
+
+          gh run download "$RUN" --name parallax2-video --dir _art
+          ls -la _art
+
+          if [ ! -f _art/salida.mp4 ]; then
+            echo "::error::El artefacto de la tirada $RUN no trae salida.mp4."
+            exit 1
+          fi
+
+          # Que sea 1080 de verdad, no la ligera renombrada.
+          ALTO=$(ffprobe -v error -select_streams v:0 \
+                   -show_entries stream=height -of csv=p=0 _art/salida.mp4)
+          echo "alto del master: $ALTO"
+          if [ "$ALTO" -lt 1080 ]; then
+            echo "::error::El master mide ${ALTO}p, no 1080p."
+            exit 1
+          fi
+
+          mv _art/salida.mp4 "${ORIGEN}-1080p.mp4"
+          gh release upload "$ORIGEN" "${ORIGEN}-1080p.mp4" --clobber
+          echo "subido ${ORIGEN}-1080p.mp4 a la release $ORIGEN"
+          gh release view "$ORIGEN"

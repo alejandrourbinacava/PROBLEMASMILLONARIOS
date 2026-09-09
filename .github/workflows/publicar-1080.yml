@@ -32,6 +32,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # El runner no trae ffmpeg. Sin esto el ffprobe que comprueba que el
+      # master mide 1080 muere con "command not found" -exit 127- y el paso
+      # entero se cae despues de haber bajado el artefacto.
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
       - name: Bajar el master del artefacto y subirlo a la release
         env:
           GH_TOKEN: ${{ github.token }}

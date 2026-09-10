@@ -1,0 +1,91 @@
+[
+  {
+    "_nota": "El grafico central del episodio. Los 74,60 no son una cifra suelta: son una SUMA, y el detector automatico solo sabria poner un contador de 74,60 que no explica de donde sale.",
+    "donde": "la cifra que importa son setenta y cuatro euros con sesenta",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "apilada",
+      "items": [["billete", 50.60], ["extras", 24.00]],
+      "colores": {"billete": [255, 196, 90], "extras": [255, 110, 86]},
+      "total": "74,60 € por pasajero",
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.5,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "La misma barra, ahora partida por donde duele. Repetir la FORMA con otro contenido es lo que hace que se entienda sin explicarla.",
+    "donde": "sesenta y tres euros con setenta y seis de coste",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "apilada",
+      "items": [["coste", 63.76], ["se lo queda", 10.84]],
+      "colores": {"coste": [120, 130, 150], "se lo queda": [255, 196, 90]},
+      "total": "de cada 74,60 €",
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.5,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "Charleroi. La flecha va del aeropuerto a la aerolinea, que es justo al reves de lo que cualquiera supone. Es un plano sin metraje posible: no existe un clip de stock de esto.",
+    "donde": "el aeropuerto no le cobro por operar",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "flecha",
+      "a": "AEROPUERTO",
+      "b": "AEROLÍNEA",
+      "etiqueta": "paga por que aterrice",
+      "color": [255, 110, 86],
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 1.6,
+      "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "189 cuadraditos son 189 asientos. Un anillo con un porcentaje aqui seria abstracto justo en el capitulo que va de contar unidades.",
+    "donde": "esos ultimos nueve asientos",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "rejilla",
+      "total": 189,
+      "marcados": 9,
+      "cols": 21,
+      "pie": "los 9 últimos asientos son casi beneficio puro",
+      "color_marca": [255, 196, 90],
+      "y": 0.46,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "El recorte es una lista de ciudades. En un rotulo es una lista; en un mapa que se va apagando es el episodio entero en una imagen.",
+    "donde": "asturias se queda sin ninguno",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "mapa",
+      "puntos": [
+        ["Asturias", -6.03, 43.56, true],
+        ["Santander", -3.82, 43.43, true],
+        ["Santiago", -8.41, 42.90, true],
+        ["Vigo", -8.63, 42.23, true],
+        ["Zaragoza", -1.04, 41.66, true],
+        ["Madrid", -3.57, 40.49, false],
+        ["Barcelona", 2.08, 41.30, false]
+      ],
+      "color": [255, 196, 90],
+      "y": 0.52,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "fundido"
+    }
+  }
+]

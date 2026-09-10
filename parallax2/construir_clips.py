@@ -82,6 +82,46 @@ TEMAS_BANCO = [
                   "empleado", "empleados")),
     ("calle",    ("ciudad", "calle", "mercado", "sector")),
 ]
+# La aerolinea tampoco habla de lo mismo que el banco. Con TEMAS_BANCO,
+# "cabina", "asiento", "tripulacion" y "pista" no existian, y el reparto de
+# metraje caia entero en "oficina", que es el cajon de sastre: catorce
+# minutos de gente con traje para un episodio que va de aviones.
+TEMAS_AEROLINEA = [
+    ("cabina",     ("asiento", "asientos", "cabina", "fila", "filas", "pasillo",
+                    "ventanilla", "bandeja", "cinturon")),
+    ("vuelo",      ("avion", "aviones", "vuelo", "vuelos", "volar", "vuela",
+                    "despegar", "despega", "despegue", "aterrizar", "aterriza",
+                    "aterrizaje", "ruta", "rutas", "boeing", "flota")),
+    ("pista",      ("pista", "pistas", "terminal", "aeropuerto", "aeropuertos",
+                    "hangar", "base", "bases", "slot", "asfalto")),
+    ("tripulacion", ("piloto", "pilotos", "tripulacion", "tripulaciones",
+                     "azafata", "personal", "plantilla", "mecanico",
+                     "formacion", "contratar")),
+    ("pasajeros",  ("pasajero", "pasajeros", "cliente", "clientes", "cola",
+                    "embarque", "embarcar", "embarca", "gente", "turista",
+                    "turistas", "viajero", "viajeros")),
+    ("maleta",     ("maleta", "maletas", "equipaje", "equipajes", "facturar",
+                    "cabina grande", "bulto")),
+    ("dinero",     ("euro", "euros", "millones", "millon", "dinero", "beneficio",
+                    "beneficios", "ingresos", "ingresa", "ingresan", "margen",
+                    "coste", "costes", "cuesta", "precio", "billete", "tarifa",
+                    "tasa", "tasas", "cobra", "cobrar", "paga", "pagar",
+                    "pagaba", "centimos", "caja", "factura", "descuento")),
+    ("queroseno",  ("combustible", "queroseno", "fuel", "repostar", "petroleo",
+                    "guerra")),
+    ("fabrica",    ("fabrica", "fabrican", "seattle", "entrega", "entregando",
+                    "pedido", "pedidos", "encargo", "encargar", "comprar",
+                    "compro", "amortizacion", "depreciacion", "balance")),
+    ("despacho",   ("comision", "europea", "tribunal", "recurso", "recurrio",
+                    "ilegal", "legal", "estado", "gobierno", "region",
+                    "aena", "monopolio", "acuerdo", "negociar", "firma",
+                    "directivo", "directivos", "empresa", "compania")),
+    ("mapa",       ("asturias", "santiago", "vigo", "zaragoza", "santander",
+                    "espana", "provincia", "ciudad", "italia", "marruecos",
+                    "croacia", "suecia", "hungria", "europa", "belgica",
+                    "charleroi", "bruselas", "valonia", "irlandes")),
+]
+
 POR_DEFECTO = "oficina"
 
 # Grades SUAVES: los normales estan calibrados para arte generado oscuro y

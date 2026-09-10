@@ -410,6 +410,36 @@ PALETA = {
     "surco":   (255, 255, 255, 38),
 }
 
+# Contorno muy simplificado de la Espana peninsular, en (longitud, latitud).
+# No pretende ser cartografia: pretende que se reconozca de un vistazo a
+# 1920 de ancho y durante cuatro segundos. Portugal queda fuera a proposito,
+# que es lo que hace la silueta reconocible.
+ESPANA = [
+    # cornisa cantabrica, de Finisterre a Irun
+    (-9.30, 43.05), (-8.90, 43.38), (-8.20, 43.66), (-7.30, 43.78),
+    (-6.50, 43.66), (-5.80, 43.63), (-4.80, 43.50), (-4.00, 43.48),
+    (-3.20, 43.47), (-2.50, 43.45), (-1.95, 43.38), (-1.75, 43.32),
+    # Pirineos
+    (-1.30, 43.05), (-0.70, 42.87), (0.20, 42.72), (0.70, 42.72),
+    (1.45, 42.60), (1.95, 42.45), (2.65, 42.35), (3.20, 42.32),
+    # Mediterraneo, de Cap de Creus a Tarifa
+    (3.10, 41.90), (2.20, 41.40), (1.20, 41.10), (0.85, 40.72),
+    (0.20, 40.10), (0.00, 39.85), (-0.25, 39.45), (-0.20, 38.90),
+    (-0.50, 38.35), (-0.75, 37.85), (-0.95, 37.58), (-1.65, 37.35),
+    (-1.95, 36.83), (-2.60, 36.72), (-3.60, 36.72), (-4.42, 36.72),
+    (-5.15, 36.42), (-5.36, 36.15),
+    # golfo de Cadiz
+    (-5.60, 36.20), (-6.05, 36.35), (-6.35, 36.65), (-6.90, 37.20),
+    (-7.40, 37.18),
+    # raya de Portugal, subiendo
+    (-7.45, 37.55), (-7.30, 38.00), (-7.05, 38.20), (-7.10, 38.80),
+    (-6.95, 39.10), (-7.35, 39.48), (-7.55, 39.68), (-7.00, 40.25),
+    (-6.85, 41.03), (-6.20, 41.58), (-6.55, 41.88), (-7.15, 41.95),
+    (-8.20, 41.90), (-8.65, 42.05),
+    # rias baixas
+    (-8.85, 42.30), (-8.75, 42.60), (-9.05, 42.75), (-8.85, 42.95),
+]
+
 
 def _fmt(v, dec=0, mil="."):
     e = f"{v:,.{dec}f}".replace(",", "\x00").replace(".", ",").replace("\x00", mil)
@@ -519,6 +549,207 @@ def grafico(spec, W, H, u, ancla=0.5):
         fv = _fuente(60)
         t = _fmt(spec["valor"] * e, spec.get("dec", 1)) + "%"
         d.text((x0 + 20, cy - 30), t, font=fv, fill=(12, 14, 20, 255))
+
+    elif tipo == "apilada":
+        # Una sola barra partida en tramos, cada uno con su nombre y su
+        # cifra. Es el grafico que faltaba: el contador dice UNA cifra, y
+        # hay frases que son un DESGLOSE -"cincuenta de billete mas
+        # veinticuatro de extras"-. Con un contador esa frase se cuenta a
+        # medias, y con dos contadores seguidos se cuenta dos veces.
+        items = spec["items"]                      # [(nombre, valor), ...]
+        suma = sum(v for _, v in items) or 1
+        ancho, alto = int(W * 0.72), 104
+        x0 = (W - ancho) // 2
+        f = _fuente(38)
+        fv = _fuente(52)
+        ftot = _fuente(64)
+        _panel(d, [x0 - 34, cy - alto - 104, x0 + ancho + 34, cy + alto + 44])
+        d.rounded_rectangle([x0, cy - alto // 2, x0 + ancho, cy + alto // 2], 14,
+                            fill=(255, 255, 255, 34))
+        # Cada tramo entra despues del anterior: asi el ojo lee la SUMA y no
+        # el resultado. Si entraran a la vez seria una barra de colores.
+        cursor = 0.0
+        for i, (nom, v) in enumerate(items):
+            ui = float(np.clip((u - i * 0.26) / 0.55, 0, 1))
+            largo = ancho * (v / suma) * _suave(ui)
+            xa = x0 + int(cursor)
+            xb = xa + int(largo)
+            col = tuple(spec.get("colores", {}).get(
+                nom, ac if i == 0 else PALETA["aviso"]))
+            if xb - xa > 3:
+                d.rounded_rectangle([xa, cy - alto // 2, xb, cy + alto // 2],
+                                    14 if i in (0, len(items) - 1) else 4,
+                                    fill=col + (240,))
+            if ui > 0.35:
+                op = int(255 * min(1.0, (ui - 0.35) / 0.4))
+                et = _fmt(v, spec.get("dec", 2)) + spec.get("sufijo", "")
+                anc = d.textlength(et, font=fv)
+                cx_t = xa + (xb - xa) / 2.0
+                # Si el tramo es estrecho la cifra no cabe dentro y se saca
+                # debajo con una guia. Metida a la fuerza se solapaba con la
+                # del tramo vecino y quedaban dos numeros encima del otro.
+                if anc + 52 < xb - xa:
+                    d.text((cx_t - anc / 2, cy - 26), et, font=fv,
+                           fill=(10, 12, 18, op))
+                else:
+                    d.line([cx_t, cy + alto // 2, cx_t, cy + alto // 2 + 26],
+                           fill=col + (op,), width=3)
+                    d.text((cx_t - anc / 2, cy + alto // 2 + 30), et, font=fv,
+                           fill=col + (op,))
+                an = d.textlength(nom, font=f)
+                d.text((cx_t - an / 2, cy - alto // 2 - 52), nom, font=f,
+                       fill=PALETA["hueso"] + (int(op * 0.9),))
+            cursor += ancho * (v / suma)
+        if spec.get("total"):
+            tt = spec["total"]
+            d.text(((W - d.textlength(tt, font=ftot)) / 2, cy - alto - 90),
+                   tt, font=ftot, fill=PALETA["hueso"] + (245,))
+
+    elif tipo == "rejilla":
+        # Cuenta de unidades: 189 asientos, 9 marcados. Un porcentaje
+        # dibujado como anillo es abstracto; 189 cuadraditos son 189
+        # asientos y se entienden sin leer la cifra.
+        total = int(spec.get("total", 100))
+        marcados = int(spec.get("marcados", 0))
+        cols = int(spec.get("cols", 21))
+        filas = (total + cols - 1) // cols
+        lado = int(min(W * 0.62 / cols, H * 0.42 / filas))
+        hueco = max(3, lado // 7)
+        paso = lado + hueco
+        gx = (W - (cols * paso - hueco)) // 2
+        gy = cy - (filas * paso - hueco) // 2
+        base = tuple(spec.get("color_base", (255, 255, 255)))
+        marca = tuple(spec.get("color_marca", PALETA["aviso"]))
+        for k in range(total):
+            fi, co = divmod(k, cols)
+            x = gx + co * paso
+            y = gy + fi * paso
+            # Las celdas normales aparecen en ola; las marcadas esperan al
+            # final, que es donde esta el argumento de la frase.
+            if k >= total - marcados:
+                uk = float(np.clip((u - 0.62) / 0.3, 0, 1))
+                col, op = marca, int(255 * uk)
+            else:
+                uk = float(np.clip((u - 0.55 * (k / float(max(1, total)))) / 0.3,
+                                   0, 1))
+                col, op = base, int(96 * uk)
+            if op <= 2:
+                continue
+            d.rounded_rectangle([x, y, x + lado, y + lado],
+                                max(2, lado // 5), fill=col + (op,))
+        if spec.get("pie"):
+            fp = _fuente(48)
+            yy = gy + filas * paso + 30
+            d.text(((W - d.textlength(spec["pie"], font=fp)) / 2, yy),
+                   spec["pie"], font=fp, fill=PALETA["hueso"] + (225,))
+
+    elif tipo == "flecha":
+        # Quien le paga a quien. Dos cajas y una flecha que viaja. El
+        # capitulo de Charleroi es exactamente esto y no hay clip de stock
+        # que lo cuente: lo unico que hay que ver es que la flecha va al
+        # reves de como todo el mundo cree.
+        f = _fuente(46)
+        fe = _fuente(40)
+        cajas = [spec.get("a", ""), spec.get("b", "")]
+        anchos = [max(300, int(d.textlength(c, font=f)) + 76) for c in cajas]
+        alto = 108
+        sep = int(W * 0.20)
+        xa = (W - (anchos[0] + sep + anchos[1])) // 2
+        xb = xa + anchos[0] + sep
+        for cx0, an, nom in ((xa, anchos[0], cajas[0]),
+                             (xb, anchos[1], cajas[1])):
+            d.rounded_rectangle([cx0, cy - alto // 2, cx0 + an, cy + alto // 2],
+                                16, fill=(8, 12, 22, 210),
+                                outline=PALETA["hueso"] + (150,), width=3)
+            d.text((cx0 + (an - d.textlength(nom, font=f)) / 2, cy - 30), nom,
+                   font=f, fill=PALETA["hueso"] + (250,))
+        ix, fx = xa + anchos[0] + 18, xb - 18
+        if spec.get("invertida"):
+            ix, fx = fx, ix
+        pos = ix + (fx - ix) * _suave(u)
+        d.line([ix, cy, pos, cy], fill=ac + (255,), width=9)
+        s = 1 if fx > ix else -1
+        d.polygon([(pos + s * 30, cy), (pos - s * 12, cy - 24),
+                   (pos - s * 12, cy + 24)], fill=ac + (255,))
+        if spec.get("etiqueta") and u > 0.55:
+            op = int(255 * min(1.0, (u - 0.55) / 0.35))
+            et = spec["etiqueta"]
+            d.text(((W - d.textlength(et, font=fe)) / 2, cy - alto - 30), et,
+                   font=fe, fill=ac + (op,))
+
+    elif tipo == "mapa":
+        # Silueta de la Espana peninsular con los aeropuertos encendiendose
+        # y apagandose. Un capitulo que es una lista de ciudades, contado
+        # con rotulos, es una lista; contado sobre un mapa, es una imagen.
+        pts = spec.get("contorno") or ESPANA
+        lons = [q[0] for q in pts]
+        lats = [q[1] for q in pts]
+        # equirectangular con correccion por latitud, o Espana sale gorda
+        kx = math.cos(math.radians(sum(lats) / len(lats)))
+        w_g = (max(lons) - min(lons)) * kx
+        h_g = max(lats) - min(lats)
+        escala = min(W * 0.62 / w_g, H * 0.70 / h_g)
+        cx = int(spec.get("x", 0.5) * W)
+        lon_c = (min(lons) + max(lons)) / 2.0
+        lat_c = (min(lats) + max(lats)) / 2.0
+
+        def proyecta(lon, lat):
+            return (cx + (lon - lon_c) * kx * escala,
+                    cy - (lat - lat_c) * escala)
+
+        d.polygon([proyecta(*q) for q in pts], fill=(255, 255, 255, 26),
+                  outline=PALETA["hueso"] + (120,))
+        fp = _fuente(34)
+        # Asturias y Santander estan a 180 km, y en pantalla el nombre de
+        # una acababa justo encima del circulo de la otra. Se reservan
+        # PRIMERO todos los circulos -si solo se guardan los textos ya
+        # escritos, el nombre de Asturias no sabe que Santander va a poner
+        # un punto ahi- y luego cada nombre baja hasta encontrar hueco.
+        ocupadas = []
+        for m in spec.get("puntos", []):
+            px, py = proyecta(m[1], m[2])
+            ocupadas.append((px - 22, py - 22, px + 22, py + 22))
+
+        def hueco(x, y, ancho, alto=40):
+            for _ in range(6):
+                caja = (x, y, x + ancho, y + alto)
+                if not any(caja[0] < o[2] and o[0] < caja[2]
+                           and caja[1] < o[3] and o[1] < caja[3]
+                           for o in ocupadas):
+                    ocupadas.append(caja)
+                    return y
+                y += alto + 4
+            ocupadas.append((x, y, x + ancho, y + alto))
+            return y
+
+        for i, m in enumerate(spec.get("puntos", [])):
+            nom, lon, lat = m[0], m[1], m[2]
+            off = bool(m[3]) if len(m) > 3 else False
+            x, y = proyecta(lon, lat)
+            ui = float(np.clip((u - 0.12 * i) / 0.45, 0, 1))
+            if ui <= 0.01:
+                continue
+            if off:
+                # Se apaga: del color de acento al gris, y el halo se
+                # contrae. Un punto que solo cambia de color no se lee a
+                # esta escala; uno que ademas encoge, si.
+                col = tuple(int(a + (b - a) * _suave(ui))
+                            for a, b in zip(ac, (120, 120, 128)))
+                r = int(15 - 6 * _suave(ui))
+                halo = int(38 * (1 - _suave(ui)))
+                op = int(240 * (1 - 0.55 * _suave(ui)))
+            else:
+                col, r, halo, op = ac, 13, 30, int(240 * ui)
+            if halo > 2:
+                d.ellipse([x - r - halo, y - r - halo,
+                           x + r + halo, y + r + halo], fill=col + (46,))
+            d.ellipse([x - r, y - r, x + r, y + r], fill=col + (255,))
+            ex = x + r + 12
+            ey = hueco(ex, y - 20, d.textlength(nom, font=fp))
+            if ey != y - 20:                 # ha bajado: una guia hasta el punto
+                d.line([x + r + 4, y, ex - 4, ey + 18],
+                       fill=PALETA["hueso"] + (int(op * 0.5),), width=2)
+            d.text((ex, ey), nom, font=fp, fill=PALETA["hueso"] + (op,))
 
     return capa
 

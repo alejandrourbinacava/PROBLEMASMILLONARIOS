@@ -28,6 +28,12 @@ N = 4
 DELIBERADO = (
     "dueño", "duracion objetivo", "locucion", "ritmo", "ppm", "hilo conductor",
     "el precio de ser el dueño", "mcdonald", "casino", "episodio de la serie",
+    # El titulo de la serie se parte en grupos de cuatro palabras -"ese es
+    # el precio", "es el precio de", "el precio de ser"- y ninguno contiene
+    # la cadena entera, asi que la firma del canal salia marcada como
+    # plantilla en todos los episodios. Es una coletilla a proposito, como
+    # el cierre de un programa de television.
+    "precio de ser", "es el precio", "ese es el",
 )
 
 

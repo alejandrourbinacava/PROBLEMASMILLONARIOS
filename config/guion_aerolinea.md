@@ -58,7 +58,7 @@ Y ahora viene la resta que descoloca a todo el mundo. De esos setenta y cuatro e
 
 Diez euros con ochenta y cuatro.
 
-Diez con ochenta y cuatro. La aerolínea más rentable de Europa gana contigo menos de lo que te cobra por facturar una maleta.
+Diez euros con ochenta y cuatro. La aerolínea más rentable de Europa gana contigo menos de lo que te cobra por facturar una maleta.
 
 Esa cifra ya te dice cómo funciona el negocio de verdad. Cuando tu beneficio por cliente es de diez euros, no te puedes permitir que suba nada. Ni el combustible, ni la tripulación, ni las tasas.
 
@@ -128,7 +128,9 @@ Esa es la apuesta de fondo de toda la empresa: si eres dueño de tus aviones y l
 
 Vamos a meternos dentro de un vuelo concreto, porque la aritmética de esto es preciosa y casi nadie la cuenta.
 
-Un Boeing setecientos treinta y siete de Ryanair lleva ciento ochenta y nueve asientos.
+Un Boeing setecientos treinta y siete de Ryanair va configurado al máximo.
+
+Ciento ochenta y nueve asientos.
 
 Cuando el avión ya está pagado, la tripulación ya está contratada y el vuelo va a salir de todas formas, el coste ya está gastado casi entero. Despegar con ciento ochenta pasajeros o con ciento ochenta y nueve cuesta prácticamente lo mismo.
 
@@ -156,7 +158,7 @@ Sumemos ahora lo que cuesta tener esto en marcha durante un año.
 
 Quince mil quinientos cuarenta millones de euros entraron por la puerta.
 
-Y salieron trece mil doscientos ochenta.
+Y salieron trece mil doscientos ochenta millones.
 
 Ese dinero se va, más o menos por este orden, en combustible, en tripulaciones, en tasas de aeropuerto y de navegación aérea, en mantenimiento, y en la amortización de seiscientos aviones que envejecen tanto si vuelan como si están parados.
 

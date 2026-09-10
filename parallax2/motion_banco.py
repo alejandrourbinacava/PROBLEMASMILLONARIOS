@@ -136,11 +136,33 @@ def cifras(texto):
         # venta POR CIEN millones": quedaba un "millones" suelto, que vale
         # 1.000.000 por el `or 1` de _tramo, y en pantalla salia "1 M $"
         # donde la voz decia cien millones. Una cifra falsa, no un adorno.
+        sig = pal[j + 1] if j + 1 < len(pal) else ""
         sig2 = pal[j + 2] if j + 2 < len(pal) else ""
-        if (pal[j] == "por" and j + 1 < len(pal) and pal[j + 1] == "ciento"
+        if (pal[j] == "por" and sig == "ciento"
                 and sig2 not in UNI and sig2 not in MIL and sig2 not in MILLON):
             unido.append("porciento")
             j += 2
+
+        # "diez euros CON ochenta y cuatro" son 10,84, no 84. En castellano
+        # los centimos se dicen asi y el detector se quedaba con la segunda
+        # mitad: la cifra que sostiene el episodio de la aerolinea -diez
+        # euros con ochenta y cuatro de beneficio por pasajero- salia en
+        # pantalla como "84". Tres veces en el mismo guion.
+        #
+        # Se colapsa a "coma", que el tramo ya sabe leer. Solo cuando detras
+        # viene un numero: "cuarenta euros con los que pagar" no es decimal.
+        elif (pal[j] in ("euros", "euro", "dolares", "dolar", "centimos")
+                and sig == "con" and sig2 in UNI):
+            unido.append("coma")
+            j += 2
+
+        # "sube UN seis coma seis por ciento": ese "un" es un articulo, no un
+        # uno. _tramo sumaba 1 + 6 y ponia 7,6% donde la voz dice 6,6%.
+        # Delante de una magnitud si es numero -"un millon", "un billon"-,
+        # asi que solo se tira cuando lo que sigue es una cifra suelta.
+        elif pal[j] in ("un", "una", "uno") and sig in UNI:
+            j += 1
+
         else:
             unido.append(pal[j])
             j += 1
@@ -173,7 +195,14 @@ def cifras(texto):
             # "dos coma seis millones" daba 60002 en vez de 2.600.000.
             resto = trozo[k + 1:]
             d = 0
-            while d < len(resto) and resto[d] in UNI:
+            # La "y" tambien va dentro de los decimales: "ochenta Y cuatro".
+            # Cortando en la "y", "diez euros con ochenta y cuatro" daba
+            # 10,8 en vez de 10,84, o sea cuatro centimos de menos en la
+            # cifra que sostiene el episodio.
+            while d < len(resto) and (
+                    resto[d] in UNI
+                    or (resto[d] == "y" and d + 1 < len(resto)
+                        and resto[d + 1] in UNI)):
                 d += 1
             dec = _tramo(resto[:d])
             mult = 1

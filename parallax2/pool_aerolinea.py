@@ -100,6 +100,33 @@ BUSQUEDAS = [
     ("aeropuerto_peq", "empty airport gate no passengers"),
     ("cierre",         "closed sign shutter empty"),
     ("marcharse",      "airplane taking off sunset departure"),
+
+    # --- segunda tanda ---------------------------------------------------
+    # Doce de los cuarenta y ocho primeros no eran lo que decia su nombre y
+    # se fueron. Estas consultas rescatan los conceptos que quedaron sin
+    # metraje, con la palabra cambiada donde el buscador se despistaba:
+    #
+    #   "jet engine turbine blades" devolvia AEROGENERADORES, porque
+    #   "turbine" a secas es un molino de viento en cualquier banco de
+    #   stock. Con "turbofan" y "nacelle" ya no hay ambiguedad.
+    #
+    #   "european court justice building" devolvia una valla. Los juzgados
+    #   se indexan como "courtroom" y "courthouse", no como "court".
+    ("motor",          "turbofan engine aircraft wing nacelle"),
+    ("motor",          "jet engine spinning airplane close"),
+    ("fabrica",        "boeing aircraft production facility"),
+    ("fabrica",        "aerospace engineers assembling fuselage"),
+    ("tribunal",       "courtroom interior judge bench empty"),
+    ("tribunal",       "courthouse columns facade steps"),
+    ("repostaje",      "fuel truck tarmac aircraft ground"),
+    ("tripulacion",    "flight crew pilots walking terminal"),
+    ("tripulacion",    "cabin crew uniform boarding aircraft"),
+    ("remolque",       "ground crew working aircraft tarmac"),
+    ("carrito",        "drinks service cabin airplane crew"),
+    ("equipaje_mano",  "overhead locker luggage airplane passenger"),
+    ("cierre",         "closed shutter shop empty street"),
+    ("cierre",         "abandoned terminal empty chairs"),
+    ("despacho",       "boardroom empty table city window"),
 ]
 
 
@@ -110,6 +137,12 @@ def main():
                     help="cuenta lo que se pediria y no descarga")
     ap.add_argument("--dur", type=float, default=4.0,
                     help="duracion minima util de un clip")
+    # Para bajar solo la segunda tanda sin volver a pedir las 48 primeras,
+    # que ya estan revisadas y podadas a mano.
+    ap.add_argument("--desde", type=int, default=0,
+                    help="empieza en esta consulta (0 = todas)")
+    ap.add_argument("--anadir", action="store_true",
+                    help="suma al pool revisado en vez de escribirlo entero")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -130,6 +163,8 @@ def main():
     nuevos, fallos = [], []
 
     for i, (etiqueta, consulta) in enumerate(BUSQUEDAS):
+        if i < a.desde:
+            continue
         try:
             # `fallback_query` desactivado a proposito: si no hay clip de
             # cabina, mejor que falte a que salga un mostrador. La regla de
@@ -147,8 +182,12 @@ def main():
         nuevos.append([etiqueta, consulta, f"stock_aerolinea/{nombre}"])
         print(f"  {len(nuevos):3d}. {etiqueta:<14} {consulta}")
 
+    if a.anadir:
+        rev = AQUI / "pool_aerolinea_revisado.json"
+        base = json.load(io.open(rev, encoding="utf-8"))
     pool = base + nuevos
-    salida = AQUI / "pool_aerolinea.json"
+    salida = AQUI / ("pool_aerolinea_revisado.json" if a.anadir
+                     else "pool_aerolinea.json")
     json.dump(pool, io.open(salida, "w", encoding="utf-8"),
               ensure_ascii=False, indent=1)
     print(f"\n{len(base)} heredados + {len(nuevos)} nuevos = {len(pool)} clips")

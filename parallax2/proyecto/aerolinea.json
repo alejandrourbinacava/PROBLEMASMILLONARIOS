@@ -1,0 +1,5894 @@
+{
+  "titulo": "Sesenta y ocho centimos",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Un aeropuerto español se ha quedado sin todos sus vuelos de Ryanair.",
+      "duracion": 2.13,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_01b",
+      "texto": "Un aeropuerto español se ha quedado sin todos sus vuelos de Ryanair.",
+      "duracion": 3.18,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "No una ruta. No una temporada baja. Todos.",
+      "duracion": 2.2,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "No una ruta",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "No una ruta. No una temporada baja. Todos.",
+      "duracion": 3.27,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Y el motivo cabe en una moneda: sesenta y ocho céntimos por pasajero.",
+      "duracion": 1.69,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 68.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos por pasajero",
+        "y": 0.34,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "el *motivo* cabe en una moneda",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "Y el motivo cabe en una moneda: sesenta y ocho céntimos por pasajero.",
+      "duracion": 2.06,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/coins_falling_slow_motion_77.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "Y el motivo cabe en una moneda: sesenta y ocho céntimos por pasajero.",
+      "duracion": 2.5,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/passengers_boarding_stairs_plane_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Sesenta y ocho céntimos. Menos de lo que cuesta un café en la propia terminal.",
+      "duracion": 1.63,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 68.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Sesenta y ocho céntimos. Menos de lo que cuesta un café en la propia terminal.",
+      "duracion": 1.99,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Sesenta y ocho céntimos. Menos de lo que cuesta un café en la propia terminal.",
+      "duracion": 2.42,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Aena sube sus tasas un seis coma seis por ciento, que son sesenta y ocho céntimos más por cada persona que embarca, y la aerolínea más grande de Europa responde retirando un millón doscientos mil asientos de la España regional.",
+      "duracion": 2.33,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 6.6,
+        "dec": 1,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "sube sus tasas",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Aena sube sus *tasas* un seis coma",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Aena sube sus tasas un seis coma seis por ciento, que son sesenta y ocho céntimos más por cada persona que embarca, y la aerolínea más grande de Europa responde retirando un millón doscientos mil asientos de la España regional.",
+      "duracion": 2.85,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Aena sube sus tasas un seis coma seis por ciento, que son sesenta y ocho céntimos más por cada persona que embarca, y la aerolínea más grande de Europa responde retirando un millón doscientos mil asientos de la España regional.",
+      "duracion": 2.85,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05d",
+      "texto": "Aena sube sus tasas un seis coma seis por ciento, que son sesenta y ocho céntimos más por cada persona que embarca, y la aerolínea más grande de Europa responde retirando un millón doscientos mil asientos de la España regional.",
+      "duracion": 2.85,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05e",
+      "texto": "Aena sube sus tasas un seis coma seis por ciento, que son sesenta y ocho céntimos más por cada persona que embarca, y la aerolínea más grande de Europa responde retirando un millón doscientos mil asientos de la España regional.",
+      "duracion": 3.47,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Asturias entera. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Santander, treinta y ocho.",
+      "duracion": 2.43,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 45.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "Zaragoza",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Asturias* entera",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "Asturias entera. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Santander, treinta y ocho.",
+      "duracion": 2.96,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06c",
+      "texto": "Asturias entera. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Santander, treinta y ocho.",
+      "duracion": 2.96,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/air_freight_warehouse_pallets_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06d",
+      "texto": "Asturias entera. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Santander, treinta y ocho.",
+      "duracion": 3.62,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07",
+      "texto": "Apunta ese número, porque vuelve al final: sesenta y ocho céntimos.",
+      "duracion": 2.34,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/money_counting_cash_euros_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 68.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.34,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_07b",
+      "texto": "Apunta ese número, porque vuelve al final: sesenta y ocho céntimos.",
+      "duracion": 3.47,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/euro_banknotes_counting_hands_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Esto va de una empresa que el año pasado ganó dos mil doscientos sesenta millones de euros y que se marcha de una provincia entera por menos de lo que cuesta un chicle.",
+      "duracion": 2.04,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/press_conference_microphones_podium_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2260.0,
+        "dec": 0,
+        "sufijo": " M €",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "año pasado ganó",
+        "y": 0.62,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Esto va de una *empresa* que el año",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_08b",
+      "texto": "Esto va de una empresa que el año pasado ganó dos mil doscientos sesenta millones de euros y que se marcha de una provincia entera por menos de lo que cuesta un chicle.",
+      "duracion": 2.49,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/signing_agreement_two_parties_table_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_08c",
+      "texto": "Esto va de una empresa que el año pasado ganó dos mil doscientos sesenta millones de euros y que se marcha de una provincia entera por menos de lo que cuesta un chicle.",
+      "duracion": 2.49,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/commercial_airliner_flying_sky_clouds_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08d",
+      "texto": "Esto va de una empresa que el año pasado ganó dos mil doscientos sesenta millones de euros y que se marcha de una provincia entera por menos de lo que cuesta un chicle.",
+      "duracion": 3.02,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_09",
+      "texto": "Y cuando entiendas por qué, vas a entender algo que no es solo de Ryanair.",
+      "duracion": 2.27,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_09.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "cuando *entiendas*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_09b",
+      "texto": "Y cuando entiendas por qué, vas a entender algo que no es solo de Ryanair.",
+      "duracion": 3.38,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/suitcase_luggage_conveyor_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_10",
+      "texto": "La aerolínea es dueña de sus aviones, de sus pilotos y de su marca. Pero no es dueña de lo único que decide que un avión despegue de un sitio y no de otro.",
+      "duracion": 2.13,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_10b",
+      "texto": "La aerolínea es dueña de sus aviones, de sus pilotos y de su marca. Pero no es dueña de lo único que decide que un avión despegue de un sitio y no de otro.",
+      "duracion": 2.59,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "de sus *pilotos* y de su marca",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_10c",
+      "texto": "La aerolínea es dueña de sus aviones, de sus pilotos y de su marca. Pero no es dueña de lo único que decide que un avión despegue de un sitio y no de otro.",
+      "duracion": 2.59,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_10d",
+      "texto": "La aerolínea es dueña de sus aviones, de sus pilotos y de su marca. Pero no es dueña de lo único que decide que un avión despegue de un sitio y no de otro.",
+      "duracion": 3.17,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Empecemos por lo que pagas tú.",
+      "duracion": 3.06,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap1_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*Empecemos* por lo que pagas tú",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "En su último ejercicio Ryanair movió doscientos ocho millones de pasajeros. El billete medio costó unos cincuenta euros.",
+      "duracion": 3.59,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/passengers_boarding_stairs_tarmac_backpacks_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 208.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "pasajeros",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "En su último *ejercicio* Ryanair",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02b",
+      "texto": "En su último ejercicio Ryanair movió doscientos ocho millones de pasajeros. El billete medio costó unos cincuenta euros.",
+      "duracion": 5.33,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "Pero el precio del billete no es la cifra que importa. La cifra que importa son setenta y cuatro euros con sesenta, que es lo que acaba entrando en la caja por cada pasajero.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "billete",
+            50.6
+          ],
+          [
+            "extras",
+            24.0
+          ]
+        ],
+        "colores": {
+          "billete": [
+            255,
+            196,
+            90
+          ],
+          "extras": [
+            255,
+            110,
+            86
+          ]
+        },
+        "total": "74,60 € por pasajero",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.49,
+        "duracion": 2.16,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "Pero el precio del billete no es la cifra que importa. La cifra que importa son setenta y cuatro euros con sesenta, que es lo que acaba entrando en la caja por cada pasajero.",
+      "duracion": 3.53,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/stock_market_data_screen_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "Pero el precio del billete no es la cifra que importa. La cifra que importa son setenta y cuatro euros con sesenta, que es lo que acaba entrando en la caja por cada pasajero.",
+      "duracion": 4.31,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "La diferencia son veinticuatro euros que no viajan dentro del precio del vuelo: la maleta, el asiento, el embarque prioritario, el bocadillo, el seguro, el coche de alquiler que te ofrecen tres pantallas después de pagar.",
+      "duracion": 2.87,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/suitcase_luggage_conveyor_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "diferencia",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "La diferencia son veinticuatro euros que no viajan dentro del precio del vuelo: la maleta, el asiento, el embarque prioritario, el bocadillo, el seguro, el coche de alquiler que te ofrecen tres pantallas después de pagar.",
+      "duracion": 3.5,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "La diferencia son veinticuatro euros que no viajan dentro del precio del vuelo: la maleta, el asiento, el embarque prioritario, el bocadillo, el seguro, el coche de alquiler que te ofrecen tres pantallas después de pagar.",
+      "duracion": 3.5,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/boarding_pass_ticket_scan_69.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04d",
+      "texto": "La diferencia son veinticuatro euros que no viajan dentro del precio del vuelo: la maleta, el asiento, el embarque prioritario, el bocadillo, el seguro, el coche de alquiler que te ofrecen tres pantallas después de pagar.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/passengers_boarding_stairs_plane_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Casi cinco mil millones de euros al año en cosas que no son volar. Un tercio de todo lo que entra en la empresa.",
+      "duracion": 3.26,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5000.0,
+        "dec": 0,
+        "sufijo": " M €",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "año en cosas",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Casi cinco mil *millones* de euros",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "Casi cinco mil millones de euros al año en cosas que no son volar. Un tercio de todo lo que entra en la empresa.",
+      "duracion": 4.85,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Y conviene entender cómo se cobran esos veinticuatro euros, porque no es un recargo: es un diseño.",
+      "duracion": 7.56,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.68,
+        "retardo": 0.55,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_07",
+      "texto": "El billete que ves anunciado te lleva a ti y a nada más. Ni la maleta de cabina grande, ni el sitio donde te sientas, ni el orden en que subes al avión.",
+      "duracion": 2.81,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap1_07.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ni la maleta de cabina *grande*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_07b",
+      "texto": "El billete que ves anunciado te lleva a ti y a nada más. Ni la maleta de cabina grande, ni el sitio donde te sientas, ni el orden en que subes al avión.",
+      "duracion": 3.42,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Ni la *maleta* de cabina grande",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_07c",
+      "texto": "El billete que ves anunciado te lleva a ti y a nada más. Ni la maleta de cabina grande, ni el sitio donde te sientas, ni el orden en que subes al avión.",
+      "duracion": 4.17,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/asphalt_paving_road_works_73.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_08",
+      "texto": "Cada una de esas tres cosas era gratis hace veinte años y hoy es una línea de facturación. No las inventaron para molestarte: las inventaron porque el billete solo no da.",
+      "duracion": 3.17,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 20.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "hoy",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_08b",
+      "texto": "Cada una de esas tres cosas era gratis hace veinte años y hoy es una línea de facturación. No las inventaron para molestarte: las inventaron porque el billete solo no da.",
+      "duracion": 3.86,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_08c",
+      "texto": "Cada una de esas tres cosas era gratis hace veinte años y hoy es una línea de facturación. No las inventaron para molestarte: las inventaron porque el billete solo no da.",
+      "duracion": 4.71,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/clock_ticking_close_up_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_09",
+      "texto": "Y ahora viene la resta que descoloca a todo el mundo. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la compañía limpio?",
+      "duracion": 2.59,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/derelict_building_broken_windows_75.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 74.6,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "euros",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*ahora* viene la resta",
+        "px": 132,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_09b",
+      "texto": "Y ahora viene la resta que descoloca a todo el mundo. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la compañía limpio?",
+      "duracion": 3.16,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/stock_market_data_screen_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_09c",
+      "texto": "Y ahora viene la resta que descoloca a todo el mundo. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la compañía limpio?",
+      "duracion": 3.87,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_10",
+      "texto": "Diez euros con ochenta y cuatro.",
+      "duracion": 3.17,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.84,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "euros",
+        "y": 0.68,
+        "retardo": 0.55,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_11",
+      "texto": "Diez euros con ochenta y cuatro. La aerolínea más rentable de Europa gana contigo menos de lo que te cobra por facturar una maleta.",
+      "duracion": 2.51,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.84,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "euros",
+        "y": 0.34,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Diez euros con *ochenta* y cuatro",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_11b",
+      "texto": "Diez euros con ochenta y cuatro. La aerolínea más rentable de Europa gana contigo menos de lo que te cobra por facturar una maleta.",
+      "duracion": 3.06,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_11c",
+      "texto": "Diez euros con ochenta y cuatro. La aerolínea más rentable de Europa gana contigo menos de lo que te cobra por facturar una maleta.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_12",
+      "texto": "Esa cifra ya te dice cómo funciona el negocio de verdad. Cuando tu beneficio por cliente es de diez euros, no te puedes permitir que suba nada. Ni el combustible, ni la tripulación, ni las tasas.",
+      "duracion": 3.41,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/business_people_walking_office_82.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "cliente",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_12b",
+      "texto": "Esa cifra ya te dice cómo funciona el negocio de verdad. Cuando tu beneficio por cliente es de diez euros, no te puedes permitir que suba nada. Ni el combustible, ni la tripulación, ni las tasas.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_12c",
+      "texto": "Esa cifra ya te dice cómo funciona el negocio de verdad. Cuando tu beneficio por cliente es de diez euros, no te puedes permitir que suba nada. Ni el combustible, ni la tripulación, ni las tasas.",
+      "duracion": 5.08,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_13",
+      "texto": "Ni sesenta y ocho céntimos.",
+      "duracion": 3.06,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/judge_gavel_court_84.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 68.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_14",
+      "texto": "Y antes de seguir, quiero que te quede clara una resta. Setenta y cuatro con sesenta entran. Diez con ochenta y cuatro se quedan.",
+      "duracion": 2.56,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 84.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "antes de *seguir*",
+        "px": 132,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_14b",
+      "texto": "Y antes de seguir, quiero que te quede clara una resta. Setenta y cuatro con sesenta entran. Diez con ochenta y cuatro se quedan.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/madrid_spain_city_aerial_85.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_14c",
+      "texto": "Y antes de seguir, quiero que te quede clara una resta. Setenta y cuatro con sesenta entran. Diez con ochenta y cuatro se quedan.",
+      "duracion": 3.81,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_15",
+      "texto": "Entre medias hay sesenta y tres euros con setenta y seis de coste por cada persona que se sienta en ese avión. Eso es lo que vamos a desmontar.",
+      "duracion": 2.69,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "coste",
+            63.76
+          ],
+          [
+            "se lo queda",
+            10.84
+          ]
+        ],
+        "colores": {
+          "coste": [
+            120,
+            130,
+            150
+          ],
+          "se lo queda": [
+            255,
+            196,
+            90
+          ]
+        },
+        "total": "de cada 74,60 €",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.45,
+        "duracion": 1.99,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_15b",
+      "texto": "Entre medias hay sesenta y tres euros con setenta y seis de coste por cada persona que se sienta en ese avión. Eso es lo que vamos a desmontar.",
+      "duracion": 3.28,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/empty_road_countryside_86.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_15c",
+      "texto": "Entre medias hay sesenta y tres euros con setenta y seis de coste por cada persona que se sienta en ese avión. Eso es lo que vamos a desmontar.",
+      "duracion": 3.99,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "texto_pantalla": {
+        "texto": "Eso es lo que vamos a *desmontar*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Para entender la respuesta hay que retroceder veinticinco años, hasta un aeropuerto belga del que probablemente no habías oído hablar.",
+      "duracion": 3.89,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 25.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "retroceder",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Para entender la respuesta hay que retroceder veinticinco años, hasta un aeropuerto belga del que probablemente no habías oído hablar.",
+      "duracion": 5.78,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "Charleroi. Una pista en mitad de la nada, a una hora de Bruselas, propiedad de la región de Valonia.",
+      "duracion": 3.15,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/runway_markings_asphalt_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "Charleroi. Una pista en mitad de la nada, a una hora de Bruselas, propiedad de la región de Valonia.",
+      "duracion": 4.69,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airport_construction_runway_works_72.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "Y un irlandés de cuarenta años con una idea que entonces sonaba a broma: que no tenía por qué ser la aerolínea la que pagara por aterrizar.",
+      "duracion": 3.77,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 40.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "irlandés",
+        "y": 0.62,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "Y un irlandés de cuarenta años con una idea que entonces sonaba a broma: que no tenía por qué ser la aerolínea la que pagara por aterrizar.",
+      "duracion": 5.62,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Michael O'Leary se sentó con la región valona y salió de allí con esto. Las tasas de aterrizaje, a mitad de precio. La asistencia en tierra, un euro por pasajero, cuando la tarifa normal del aeropuerto era diez veces esa.",
+      "duracion": 4.02,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "aeropuerto",
+        "y": 0.68,
+        "retardo": 0.55,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "Michael O'Leary se sentó con la región valona y salió de allí con esto. Las tasas de aterrizaje, a mitad de precio. La asistencia en tierra, un euro por pasajero, cuando la tarifa normal del aeropuerto era diez veces esa.",
+      "duracion": 4.91,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Las tasas de *aterrizaje*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_04c",
+      "texto": "Michael O'Leary se sentó con la región valona y salió de allí con esto. Las tasas de aterrizaje, a mitad de precio. La asistencia en tierra, un euro por pasajero, cuando la tarifa normal del aeropuerto era diez veces esa.",
+      "duracion": 5.99,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/people_waiting_airport_seats_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Y además: aportaciones para el hotel de las tripulaciones, para la formación de los pilotos, para contratar al personal de la base.",
+      "duracion": 3.59,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_05.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*además*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Y además: aportaciones para el hotel de las tripulaciones, para la formación de los pilotos, para contratar al personal de la base.",
+      "duracion": 5.35,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_06",
+      "texto": "Fíjate en lo que acaba de pasar ahí. El aeropuerto no le cobró por operar. Le pagó parte de los gastos de instalarse.",
+      "duracion": 3.42,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "flecha",
+        "a": "AEROPUERTO",
+        "b": "AEROLÍNEA",
+        "etiqueta": "paga por que aterrice",
+        "color": [
+          255,
+          110,
+          86
+        ],
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "Fíjate en lo que acaba de pasar ahí. El aeropuerto no le cobró por operar. Le pagó parte de los gastos de instalarse.",
+      "duracion": 5.08,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07",
+      "texto": "La Comisión Europea miró aquello en dos mil cuatro y dijo lo que parecía evidente: esto son ayudas de Estado y es ilegal.",
+      "duracion": 3.61,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/pilot_cockpit_controls_flying_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2004.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "dijo",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "La Comisión Europea miró aquello en dos mil cuatro y dijo lo que parecía evidente: esto son ayudas de Estado y es ilegal.",
+      "duracion": 5.36,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/pilots_preflight_checklist_cockpit_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_08",
+      "texto": "Ryanair recurrió. Y en dos mil ocho el tribunal europeo anuló la decisión de la Comisión.",
+      "duracion": 6.93,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/courthouse_legal_documents_44.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2008.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "el tribunal europeo",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_09",
+      "texto": "O sea: legal.",
+      "duracion": 2.91,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_09.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "sea",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_10",
+      "texto": "Ese día no ganó un pleito una aerolínea. Ese día quedó inaugurado un modelo que hoy usa media Europa y que se resume en una frase incómoda: hay aeropuertos que pagan por tener aviones.",
+      "duracion": 3.36,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Ese día no ganó un *pleito*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_10b",
+      "texto": "Ese día no ganó un pleito una aerolínea. Ese día quedó inaugurado un modelo que hoy usa media Europa y que se resume en una frase incómoda: hay aeropuertos que pagan por tener aviones.",
+      "duracion": 4.1,
+      "movimiento": "drift_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_10c",
+      "texto": "Ese día no ganó un pleito una aerolínea. Ese día quedó inaugurado un modelo que hoy usa media Europa y que se resume en una frase incómoda: hay aeropuertos que pagan por tener aviones.",
+      "duracion": 5.01,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airport_arrivals_greeting_89.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_11",
+      "texto": "Y si alguien te paga por ir, también puede dejar de pagarte.",
+      "duracion": 2.34,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "si *alguien* te paga por ir",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_11x",
+      "texto": "Y si alguien te paga por ir, también puede dejar de pagarte.",
+      "duracion": 2.34,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_11x.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "también puede dejar de *pagarte*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_12",
+      "texto": "Porque lo de Charleroi no se quedó en Charleroi. En los años siguientes la Comisión revisó acuerdos parecidos en Alemania, en Italia, en Suecia, y en todos concluyó lo mismo: si al aeropuerto le sale rentable, no es una ayuda ilegal.",
+      "duracion": 3.39,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/aerial_view_planes_parked_airport_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_12b",
+      "texto": "Porque lo de Charleroi no se quedó en Charleroi. En los años siguientes la Comisión revisó acuerdos parecidos en Alemania, en Italia, en Suecia, y en todos concluyó lo mismo: si al aeropuerto le sale rentable, no es una ayuda ilegal.",
+      "duracion": 4.13,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/small_regional_airport_terminal_44.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_12c",
+      "texto": "Porque lo de Charleroi no se quedó en Charleroi. En los años siguientes la Comisión revisó acuerdos parecidos en Alemania, en Italia, en Suecia, y en todos concluyó lo mismo: si al aeropuerto le sale rentable, no es una ayuda ilegal.",
+      "duracion": 4.13,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aerolinea/travellers_walking_suitcases_terminal_shops_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_12d",
+      "texto": "Porque lo de Charleroi no se quedó en Charleroi. En los años siguientes la Comisión revisó acuerdos parecidos en Alemania, en Italia, en Suecia, y en todos concluyó lo mismo: si al aeropuerto le sale rentable, no es una ayuda ilegal.",
+      "duracion": 5.05,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aerolinea/abandoned_terminal_empty_chairs_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_13",
+      "texto": "Así que decenas de aeropuertos pequeños de media Europa aprendieron la lección. Un aeropuerto vacío no vale nada. Un aeropuerto con dos millones de pasajeros al año mueve hoteles, taxis, alquiler de coches y turismo.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/empty_airport_gate_no_passengers_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "pasajeros al año",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Un *aeropuerto* vacío no vale nada",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_13b",
+      "texto": "Así que decenas de aeropuertos pequeños de media Europa aprendieron la lección. Un aeropuerto vacío no vale nada. Un aeropuerto con dos millones de pasajeros al año mueve hoteles, taxis, alquiler de coches y turismo.",
+      "duracion": 3.74,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_13c",
+      "texto": "Así que decenas de aeropuertos pequeños de media Europa aprendieron la lección. Un aeropuerto vacío no vale nada. Un aeropuerto con dos millones de pasajeros al año mueve hoteles, taxis, alquiler de coches y turismo.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_13d",
+      "texto": "Así que decenas de aeropuertos pequeños de media Europa aprendieron la lección. Un aeropuerto vacío no vale nada. Un aeropuerto con dos millones de pasajeros al año mueve hoteles, taxis, alquiler de coches y turismo.",
+      "duracion": 4.56,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_14",
+      "texto": "Y sale a cuenta pagar por llenarlo. Ese cálculo, hecho por cientos de ayuntamientos y gobiernos regionales a la vez, es lo que construyó el mapa de vuelos baratos de Europa tal y como lo conoces.",
+      "duracion": 3.35,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "sale a cuenta pagar por *llenarlo*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_14b",
+      "texto": "Y sale a cuenta pagar por llenarlo. Ese cálculo, hecho por cientos de ayuntamientos y gobiernos regionales a la vez, es lo que construyó el mapa de vuelos baratos de Europa tal y como lo conoces.",
+      "duracion": 4.09,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_14c",
+      "texto": "Y sale a cuenta pagar por llenarlo. Ese cálculo, hecho por cientos de ayuntamientos y gobiernos regionales a la vez, es lo que construyó el mapa de vuelos baratos de Europa tal y como lo conoces.",
+      "duracion": 4.98,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Aquí viene la parte que rompe el tópico.",
+      "duracion": 3.4,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Aquí viene la parte que *rompe*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Casi todas las aerolíneas de bajo coste alquilan sus aviones. Es la jugada obvia: no inmovilizas capital, no cargas con la depreciación, devuelves el aparato y te marchas.",
+      "duracion": 3.37,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_02.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Es la jugada *obvia*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Casi todas las aerolíneas de bajo coste alquilan sus aviones. Es la jugada obvia: no inmovilizas capital, no cargas con la depreciación, devuelves el aparato y te marchas.",
+      "duracion": 4.11,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/green_coast_northern_spain_cliffs_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Es la *jugada* obvia",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02c",
+      "texto": "Casi todas las aerolíneas de bajo coste alquilan sus aviones. Es la jugada obvia: no inmovilizas capital, no cargas con la depreciación, devuelves el aparato y te marchas.",
+      "duracion": 5.01,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/galicia_coast_atlantic_spain_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "Ryanair hace justo lo contrario. La mayor parte de su flota es suya. Comprada, pagada y metida en su balance.",
+      "duracion": 3.89,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_03.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*Comprada*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "Ryanair hace justo lo contrario. La mayor parte de su flota es suya. Comprada, pagada y metida en su balance.",
+      "duracion": 5.78,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/small_regional_airport_terminal_44.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "Más de seiscientos Boeing setecientos treinta y siete, prácticamente todos del mismo modelo, con la misma cabina, las mismas piezas y el mismo entrenamiento para todos los pilotos.",
+      "duracion": 3.29,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/empty_airport_gate_no_passengers_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 737.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "Más de Boeing",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "Más de seiscientos Boeing setecientos treinta y siete, prácticamente todos del mismo modelo, con la misma cabina, las mismas piezas y el mismo entrenamiento para todos los pilotos.",
+      "duracion": 4.02,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "con la misma *cabina*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_04c",
+      "texto": "Más de seiscientos Boeing setecientos treinta y siete, prácticamente todos del mismo modelo, con la misma cabina, las mismas piezas y el mismo entrenamiento para todos los pilotos.",
+      "duracion": 4.9,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Eso no es tacañería. Es la ventaja entera. Un mecánico que solo conoce un avión es más rápido. Un almacén que solo guarda una pieza es más barato. Un piloto vale para cualquier vuelo de la compañía.",
+      "duracion": 3.69,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_05.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Eso no es *tacañería*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_05b",
+      "texto": "Eso no es tacañería. Es la ventaja entera. Un mecánico que solo conoce un avión es más rápido. Un almacén que solo guarda una pieza es más barato. Un piloto vale para cualquier vuelo de la compañía.",
+      "duracion": 4.5,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/courthouse_columns_facade_steps_53.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05c",
+      "texto": "Eso no es tacañería. Es la ventaja entera. Un mecánico que solo conoce un avión es más rápido. Un almacén que solo guarda una pieza es más barato. Un piloto vale para cualquier vuelo de la compañía.",
+      "duracion": 5.48,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06",
+      "texto": "Así que si la ruta se cae, el avión no se queda parado en Asturias. Se levanta y aterriza en Milán el martes siguiente.",
+      "duracion": 3.37,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "que si la ruta se cae",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "Así que si la ruta se cae, el avión no se queda parado en Asturias. Se levanta y aterriza en Milán el martes siguiente.",
+      "duracion": 5.02,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_07",
+      "texto": "Ahí está la asimetría, y es toda la historia. El aeropuerto no se puede mudar. La provincia no se puede mudar. El avión sí.",
+      "duracion": 2.98,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_07.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ahí está la *asimetría*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_07b",
+      "texto": "Ahí está la asimetría, y es toda la historia. El aeropuerto no se puede mudar. La provincia no se puede mudar. El avión sí.",
+      "duracion": 3.63,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/abandoned_terminal_empty_chairs_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_07c",
+      "texto": "Ahí está la asimetría, y es toda la historia. El aeropuerto no se puede mudar. La provincia no se puede mudar. El avión sí.",
+      "duracion": 4.42,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_08",
+      "texto": "Y ahora la grieta, porque también hay algo que no controlan. Los aviones nuevos los fabrica Boeing, y Boeing lleva años entregando tarde.",
+      "duracion": 3.91,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_08.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "ahora la *grieta*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_08b",
+      "texto": "Y ahora la grieta, porque también hay algo que no controlan. Los aviones nuevos los fabrica Boeing, y Boeing lleva años entregando tarde.",
+      "duracion": 5.81,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_09",
+      "texto": "La compañía más obsesionada con el control de Europa depende, para crecer, de una fábrica en Seattle donde no manda ni uno solo de sus directivos.",
+      "duracion": 3.97,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aeropuerto/air_traffic_control_tower_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_09b",
+      "texto": "La compañía más obsesionada con el control de Europa depende, para crecer, de una fábrica en Seattle donde no manda ni uno solo de sus directivos.",
+      "duracion": 5.91,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_10",
+      "texto": "Y comprar aviones tiene un precio que marea. Un Boeing de este tipo ronda, en tarifa de catálogo, los cien millones de dólares, aunque nadie paga esa cifra: los pedidos grandes se cierran con descuentos enormes que ninguna de las dos partes publica.",
+      "duracion": 3.31,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 100.0,
+        "dec": 0,
+        "sufijo": " M $",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_10b",
+      "texto": "Y comprar aviones tiene un precio que marea. Un Boeing de este tipo ronda, en tarifa de catálogo, los cien millones de dólares, aunque nadie paga esa cifra: los pedidos grandes se cierran con descuentos enormes que ninguna de las dos partes publica.",
+      "duracion": 4.04,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Un *Boeing* de este tipo",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_10c",
+      "texto": "Y comprar aviones tiene un precio que marea. Un Boeing de este tipo ronda, en tarifa de catálogo, los cien millones de dólares, aunque nadie paga esa cifra: los pedidos grandes se cierran con descuentos enormes que ninguna de las dos partes publica.",
+      "duracion": 4.04,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_10d",
+      "texto": "Y comprar aviones tiene un precio que marea. Un Boeing de este tipo ronda, en tarifa de catálogo, los cien millones de dólares, aunque nadie paga esa cifra: los pedidos grandes se cierran con descuentos enormes que ninguna de las dos partes publica.",
+      "duracion": 4.92,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_11",
+      "texto": "Ryanair es famosa precisamente por eso, por comprar cuando nadie compra. Encargó aviones justo después del once de septiembre y justo después de la pandemia, con el sector hundido y las fábricas desesperadas.",
+      "duracion": 3.76,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "por *comprar* cuando nadie compra",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_11b",
+      "texto": "Ryanair es famosa precisamente por eso, por comprar cuando nadie compra. Encargó aviones justo después del once de septiembre y justo después de la pandemia, con el sector hundido y las fábricas desesperadas.",
+      "duracion": 4.58,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_11c",
+      "texto": "Ryanair es famosa precisamente por eso, por comprar cuando nadie compra. Encargó aviones justo después del once de septiembre y justo después de la pandemia, con el sector hundido y las fábricas desesperadas.",
+      "duracion": 5.59,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_12",
+      "texto": "Esa es la apuesta de fondo de toda la empresa: si eres dueño de tus aviones y los compraste baratos, tu coste por asiento es más bajo que el de cualquiera para siempre.",
+      "duracion": 2.88,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_12.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Esa es la apuesta de *fondo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_12b",
+      "texto": "Esa es la apuesta de fondo de toda la empresa: si eres dueño de tus aviones y los compraste baratos, tu coste por asiento es más bajo que el de cualquiera para siempre.",
+      "duracion": 3.52,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/air_traffic_control_tower_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_12c",
+      "texto": "Esa es la apuesta de fondo de toda la empresa: si eres dueño de tus aviones y los compraste baratos, tu coste por asiento es más bajo que el de cualquiera para siempre.",
+      "duracion": 4.29,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aeropuerto/suitcase_luggage_conveyor_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Vamos a meternos dentro de un vuelo concreto, porque la aritmética de esto es preciosa y casi nadie la cuenta.",
+      "duracion": 3.11,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Vamos a meternos *dentro*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Vamos a meternos dentro de un vuelo concreto, porque la aritmética de esto es preciosa y casi nadie la cuenta.",
+      "duracion": 4.63,
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "Un Boeing setecientos treinta y siete de Ryanair va configurado al máximo.",
+      "duracion": 6.07,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 737.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "Ryanair",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "Ciento ochenta y nueve asientos.",
+      "duracion": 3.43,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/parking_garage_cars_rows_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 189.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "asientos",
+        "y": 0.68,
+        "retardo": 0.55,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "Cuando el avión ya está pagado, la tripulación ya está contratada y el vuelo va a salir de todas formas, el coste ya está gastado casi entero. Despegar con ciento ochenta pasajeros o con ciento ochenta y nueve cuesta prácticamente lo mismo.",
+      "duracion": 3.24,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 189.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "pasajeros",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "*Cuando* el avión ya está pagado",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "Cuando el avión ya está pagado, la tripulación ya está contratada y el vuelo va a salir de todas formas, el coste ya está gastado casi entero. Despegar con ciento ochenta pasajeros o con ciento ochenta y nueve cuesta prácticamente lo mismo.",
+      "duracion": 3.95,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_04c",
+      "texto": "Cuando el avión ya está pagado, la tripulación ya está contratada y el vuelo va a salir de todas formas, el coste ya está gastado casi entero. Despegar con ciento ochenta pasajeros o con ciento ochenta y nueve cuesta prácticamente lo mismo.",
+      "duracion": 3.95,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04d",
+      "texto": "Cuando el avión ya está pagado, la tripulación ya está contratada y el vuelo va a salir de todas formas, el coste ya está gastado casi entero. Despegar con ciento ochenta pasajeros o con ciento ochenta y nueve cuesta prácticamente lo mismo.",
+      "duracion": 4.8,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/hand_taking_bread_snack_close_up_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "Lo que significa que esos últimos nueve asientos son casi beneficio puro. Da igual que los vendas a diecinueve euros con noventa y nueve.",
+      "duracion": 2.5,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/people_waiting_airport_seats_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "rejilla",
+        "total": 189,
+        "marcados": 9,
+        "cols": 21,
+        "pie": "los 9 últimos asientos son casi beneficio puro",
+        "color_marca": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.46,
+        "retardo": 0.32,
+        "duracion": 1.93,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "Lo que significa que esos últimos nueve asientos son casi beneficio puro. Da igual que los vendas a diecinueve euros con noventa y nueve.",
+      "duracion": 3.05,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/travellers_walking_suitcases_terminal_shops_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "Lo que significa que esos últimos nueve asientos son casi beneficio puro. Da igual que los vendas a diecinueve euros con noventa y nueve.",
+      "duracion": 3.73,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_06",
+      "texto": "Por eso existen los billetes que parecen imposibles. No son un error ni un truco de escaparate: son la última fila de un avión que iba a despegar de todas formas.",
+      "duracion": 2.98,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Por eso existen los *billetes*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "Por eso existen los billetes que parecen imposibles. No son un error ni un truco de escaparate: son la última fila de un avión que iba a despegar de todas formas.",
+      "duracion": 3.64,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06c",
+      "texto": "Por eso existen los billetes que parecen imposibles. No son un error ni un truco de escaparate: son la última fila de un avión que iba a despegar de todas formas.",
+      "duracion": 4.44,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_07",
+      "texto": "Pero esa misma matemática funciona al revés, y ahí es implacable.",
+      "duracion": 2.32,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_07.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "ahí es *implacable*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_07b",
+      "texto": "Pero esa misma matemática funciona al revés, y ahí es implacable.",
+      "duracion": 3.46,
+      "movimiento": "drift_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/boarding_pass_ticket_scan_69.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_08",
+      "texto": "Si el avión sale medio vacío, no pierdes la mitad. Pierdes casi todo, porque el coste ya lo habías pagado entero.",
+      "duracion": 3.49,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/empty_building_abandoned_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Si el *avión* sale medio vacío",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_08b",
+      "texto": "Si el avión sale medio vacío, no pierdes la mitad. Pierdes casi todo, porque el coste ya lo habías pagado entero.",
+      "duracion": 5.19,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_09",
+      "texto": "Por eso el número que de verdad vigila una aerolínea no es el precio del billete. Es qué porcentaje de asientos van ocupados, y Ryanair lo mantiene por encima del noventa por ciento año tras año, que es una cifra que el resto del sector mira con envidia.",
+      "duracion": 3.22,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 90.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "tras año",
+        "y": 0.68,
+        "retardo": 0.55,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Por eso el *número* que de verdad",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_09b",
+      "texto": "Por eso el número que de verdad vigila una aerolínea no es el precio del billete. Es qué porcentaje de asientos van ocupados, y Ryanair lo mantiene por encima del noventa por ciento año tras año, que es una cifra que el resto del sector mira con envidia.",
+      "duracion": 3.92,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_09c",
+      "texto": "Por eso el número que de verdad vigila una aerolínea no es el precio del billete. Es qué porcentaje de asientos van ocupados, y Ryanair lo mantiene por encima del noventa por ciento año tras año, que es una cifra que el resto del sector mira con envidia.",
+      "duracion": 3.92,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airport_construction_runway_works_72.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_09d",
+      "texto": "Por eso el número que de verdad vigila una aerolínea no es el precio del billete. Es qué porcentaje de asientos van ocupados, y Ryanair lo mantiene por encima del noventa por ciento año tras año, que es una cifra que el resto del sector mira con envidia.",
+      "duracion": 4.78,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_10",
+      "texto": "Quédate con esto, porque explica el vídeo entero: un avión lleno de billetes baratos gana dinero, y un avión medio vacío de billetes caros lo pierde.",
+      "duracion": 3.04,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Quédate* con esto",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_10b",
+      "texto": "Quédate con esto, porque explica el vídeo entero: un avión lleno de billetes baratos gana dinero, y un avión medio vacío de billetes caros lo pierde.",
+      "duracion": 3.71,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_10c",
+      "texto": "Quédate con esto, porque explica el vídeo entero: un avión lleno de billetes baratos gana dinero, y un avión medio vacío de billetes caros lo pierde.",
+      "duracion": 4.52,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/empty_road_countryside_86.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_11",
+      "texto": "Y hay una segunda variable que casi nadie mira: cuántas horas al día está ese avión en el aire.",
+      "duracion": 2.73,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "hay una segunda *variable*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_11b",
+      "texto": "Y hay una segunda variable que casi nadie mira: cuántas horas al día está ese avión en el aire.",
+      "duracion": 4.07,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aeropuerto/derelict_building_broken_windows_75.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_12",
+      "texto": "Un avión parado en la pista cuesta exactamente lo mismo que uno volando. La amortización corre, el seguro corre, la financiación corre.",
+      "duracion": 2.75,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_12.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "La amortización *corre*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_12b",
+      "texto": "Un avión parado en la pista cuesta exactamente lo mismo que uno volando. La amortización corre, el seguro corre, la financiación corre.",
+      "duracion": 3.36,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/euro_banknotes_counting_hands_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_12c",
+      "texto": "Un avión parado en la pista cuesta exactamente lo mismo que uno volando. La amortización corre, el seguro corre, la financiación corre.",
+      "duracion": 4.09,
+      "movimiento": "bajar",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aeropuerto/coins_falling_slow_motion_77.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_13",
+      "texto": "Por eso Ryanair descarga, limpia, embarca y despega en menos de media hora, mientras una aerolínea tradicional se toma el doble o el triple. No es prisa: cada rotación extra al día es un vuelo entero de ingresos sobre el mismo avión pagado.",
+      "duracion": 3.3,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Por eso Ryanair *descarga*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_13b",
+      "texto": "Por eso Ryanair descarga, limpia, embarca y despega en menos de media hora, mientras una aerolínea tradicional se toma el doble o el triple. No es prisa: cada rotación extra al día es un vuelo entero de ingresos sobre el mismo avión pagado.",
+      "duracion": 4.03,
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_13c",
+      "texto": "Por eso Ryanair descarga, limpia, embarca y despega en menos de media hora, mientras una aerolínea tradicional se toma el doble o el triple. No es prisa: cada rotación extra al día es un vuelo entero de ingresos sobre el mismo avión pagado.",
+      "duracion": 4.03,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_13d",
+      "texto": "Por eso Ryanair descarga, limpia, embarca y despega en menos de media hora, mientras una aerolínea tradicional se toma el doble o el triple. No es prisa: cada rotación extra al día es un vuelo entero de ingresos sobre el mismo avión pagado.",
+      "duracion": 4.92,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Sumemos ahora lo que cuesta tener esto en marcha durante un año.",
+      "duracion": 2.44,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap5_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Sumemos *ahora*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_01x",
+      "texto": "Sumemos ahora lo que cuesta tener esto en marcha durante un año.",
+      "duracion": 2.43,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap5_01x.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "tener esto en marcha *durante*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "Quince mil quinientos cuarenta millones de euros entraron por la puerta.",
+      "duracion": 5.65,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/business_people_walking_office_82.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 15540.0,
+        "dec": 0,
+        "sufijo": " M €",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "entraron",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "Y salieron trece mil doscientos ochenta millones.",
+      "duracion": 4.34,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/auction_gavel_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 13280.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "salieron",
+        "y": 0.62,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_04",
+      "texto": "Ese dinero se va, más o menos por este orden, en combustible, en tripulaciones, en tasas de aeropuerto y de navegación aérea, en mantenimiento, y en la amortización de seiscientos aviones que envejecen tanto si vuelan como si están parados.",
+      "duracion": 3.52,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 600.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "aviones",
+        "y": 0.33,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Ese *dinero*",
+        "px": 132,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "Ese dinero se va, más o menos por este orden, en combustible, en tripulaciones, en tasas de aeropuerto y de navegación aérea, en mantenimiento, y en la amortización de seiscientos aviones que envejecen tanto si vuelan como si están parados.",
+      "duracion": 4.29,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_aeropuerto/engineer_inspecting_machinery_71.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_04c",
+      "texto": "Ese dinero se va, más o menos por este orden, en combustible, en tripulaciones, en tasas de aeropuerto y de navegación aérea, en mantenimiento, y en la amortización de seiscientos aviones que envejecen tanto si vuelan como si están parados.",
+      "duracion": 4.29,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/oil_refinery_fuel_storage_tanks_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_04d",
+      "texto": "Ese dinero se va, más o menos por este orden, en combustible, en tripulaciones, en tasas de aeropuerto y de navegación aérea, en mantenimiento, y en la amortización de seiscientos aviones que envejecen tanto si vuelan como si están parados.",
+      "duracion": 5.23,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/fuel_gauge_industrial_pipes_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "El combustible es el que manda, y es justo el que no controlas. Una guerra a cuatro mil kilómetros te cambia la cuenta de resultados.",
+      "duracion": 3.91,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 4000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "kilómetros te",
+        "y": 0.62,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "El combustible es el que manda, y es justo el que no controlas. Una guerra a cuatro mil kilómetros te cambia la cuenta de resultados.",
+      "duracion": 5.81,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Por eso las grandes aerolíneas compran el queroseno con años de antelación y a precio cerrado. Media aerolínea es, en la práctica, una mesa de operaciones financieras con aviones enganchados detrás.",
+      "duracion": 3.54,
+      "movimiento": "contra_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Por eso las grandes aerolíneas compran el queroseno con años de antelación y a precio cerrado. Media aerolínea es, en la práctica, una mesa de operaciones financieras con aviones enganchados detrás.",
+      "duracion": 4.32,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Media *aerolínea*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_06c",
+      "texto": "Por eso las grandes aerolíneas compran el queroseno con años de antelación y a precio cerrado. Media aerolínea es, en la práctica, una mesa de operaciones financieras con aviones enganchados detrás.",
+      "duracion": 5.26,
+      "movimiento": "drift_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/hand_luggage_cabin_bag_airplane_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_07",
+      "texto": "Y de todo ese engranaje, al final del año, sobran dos mil doscientos sesenta millones.",
+      "duracion": 6.88,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2260.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "sobran",
+        "y": 0.62,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_08",
+      "texto": "Suena enorme. Divídelo entre doscientos ocho millones de pasajeros y vuelves a los diez euros con ochenta y cuatro por persona.",
+      "duracion": 3.65,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/tourists_travel_vacation_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.84,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "euros",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Suena *enorme*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_08b",
+      "texto": "Suena enorme. Divídelo entre doscientos ocho millones de pasajeros y vuelves a los diez euros con ochenta y cuatro por persona.",
+      "duracion": 5.42,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/airport_arrivals_greeting_89.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_09",
+      "texto": "Ese es el margen sobre el que se decide si tu ciudad tiene vuelos.",
+      "duracion": 4.81,
+      "movimiento": "bajar",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_10",
+      "texto": "Y fíjate en la proporción, porque es lo que hace frágil a un gigante. De cada cien euros que entran, más de ochenta y cinco vuelven a salir el mismo año.",
+      "duracion": 2.83,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 100.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "entran",
+        "y": 0.3,
+        "retardo": 0.55,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "fíjate en la *proporción*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_10b",
+      "texto": "Y fíjate en la proporción, porque es lo que hace frágil a un gigante. De cada cien euros que entran, más de ochenta y cinco vuelven a salir el mismo año.",
+      "duracion": 3.45,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_10c",
+      "texto": "Y fíjate en la proporción, porque es lo que hace frágil a un gigante. De cada cien euros que entran, más de ochenta y cinco vuelven a salir el mismo año.",
+      "duracion": 4.2,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_11",
+      "texto": "No hay colchón. Un negocio así no soporta una mala decisión, ni un invierno malo, ni una subida de tasas.",
+      "duracion": 3.28,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap5_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "No hay *colchón*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_11b",
+      "texto": "No hay colchón. Un negocio así no soporta una mala decisión, ni un invierno malo, ni una subida de tasas.",
+      "duracion": 4.88,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_aeropuerto/executives_discussing_table_81.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Volvemos a España, y ahora ya tienes todas las piezas encima de la mesa.",
+      "duracion": 2.27,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Volvemos a *España*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_01b",
+      "texto": "Volvemos a España, y ahora ya tienes todas las piezas encima de la mesa.",
+      "duracion": 3.38,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "Aena aprueba una subida de tasas del seis coma seis por ciento. Sesenta y ocho céntimos más por pasajero.",
+      "duracion": 3.36,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 6.6,
+        "dec": 1,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "subida de tasas",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "Aena aprueba una subida de tasas del seis coma seis por ciento. Sesenta y ocho céntimos más por pasajero.",
+      "duracion": 5.01,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "Sobre un margen de diez euros con ochenta y cuatro, sesenta y ocho céntimos son más del seis por ciento del beneficio que deja cada persona que embarca. Y en un aeropuerto regional, donde el avión va menos lleno, el golpe es todavía mayor.",
+      "duracion": 3.01,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 6.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "beneficio",
+        "y": 0.34,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "Sobre un margen de diez euros con ochenta y cuatro, sesenta y ocho céntimos son más del seis por ciento del beneficio que deja cada persona que embarca. Y en un aeropuerto regional, donde el avión va menos lleno, el golpe es todavía mayor.",
+      "duracion": 3.67,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_03c",
+      "texto": "Sobre un margen de diez euros con ochenta y cuatro, sesenta y ocho céntimos son más del seis por ciento del beneficio que deja cada persona que embarca. Y en un aeropuerto regional, donde el avión va menos lleno, el golpe es todavía mayor.",
+      "duracion": 3.67,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03d",
+      "texto": "Sobre un margen de diez euros con ochenta y cuatro, sesenta y ocho céntimos son más del seis por ciento del beneficio que deja cada persona que embarca. Y en un aeropuerto regional, donde el avión va menos lleno, el golpe es todavía mayor.",
+      "duracion": 4.47,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "en un *aeropuerto* regional",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "La aerolínea hace entonces exactamente lo que su modelo la obliga a hacer: coge los aviones y los lleva a donde el asiento le sale más barato. Italia, Marruecos, Croacia, Suecia, Hungría.",
+      "duracion": 2.75,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "La aerolínea hace entonces exactamente lo que su modelo la obliga a hacer: coge los aviones y los lleva a donde el asiento le sale más barato. Italia, Marruecos, Croacia, Suecia, Hungría.",
+      "duracion": 3.35,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "La aerolínea hace entonces exactamente lo que su modelo la obliga a hacer: coge los aviones y los lleva a donde el asiento le sale más barato. Italia, Marruecos, Croacia, Suecia, Hungría.",
+      "duracion": 3.35,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04d",
+      "texto": "La aerolínea hace entonces exactamente lo que su modelo la obliga a hacer: coge los aviones y los lleva a donde el asiento le sale más barato. Italia, Marruecos, Croacia, Suecia, Hungría.",
+      "duracion": 4.09,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "Un millón doscientos mil asientos fuera de la España regional para el verano que viene, después de otro millón el invierno anterior.",
+      "duracion": 2.41,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aerolinea/hand_luggage_cabin_bag_airplane_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1.2,
+        "dec": 1,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "asientos fuera",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "Un millón doscientos mil asientos fuera de la España regional para el verano que viene, después de otro millón el invierno anterior.",
+      "duracion": 2.94,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/airplanes_parked_row_apron_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05c",
+      "texto": "Un millón doscientos mil asientos fuera de la España regional para el verano que viene, después de otro millón el invierno anterior.",
+      "duracion": 3.59,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aerolinea/aerial_view_planes_parked_airport_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Asturias se queda sin ninguno.",
+      "duracion": 3.48,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "mapa",
+        "puntos": [
+          [
+            "Asturias",
+            -6.03,
+            43.56,
+            true
+          ],
+          [
+            "Santander",
+            -3.82,
+            43.43,
+            true
+          ],
+          [
+            "Santiago",
+            -8.41,
+            42.9,
+            true
+          ],
+          [
+            "Vigo",
+            -8.63,
+            42.23,
+            true
+          ],
+          [
+            "Zaragoza",
+            -1.04,
+            41.66,
+            true
+          ],
+          [
+            "Madrid",
+            -3.57,
+            40.49,
+            false
+          ],
+          [
+            "Barcelona",
+            2.08,
+            41.3,
+            false
+          ]
+        ],
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.52,
+        "retardo": 0.38,
+        "duracion": 2.85,
+        "entrada": "fundido"
+      }
+    },
+    {
+      "id": "cap6_07",
+      "texto": "Y esos aviones no desaparecen. Aterrizan en otro sitio, en países donde el asiento sale más barato, y allí generan el mismo beneficio para la misma empresa.",
+      "duracion": 2.96,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_07.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "esos aviones no *desaparecen*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_07b",
+      "texto": "Y esos aviones no desaparecen. Aterrizan en otro sitio, en países donde el asiento sale más barato, y allí generan el mismo beneficio para la misma empresa.",
+      "duracion": 3.61,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/coins_close_up_macro_euro_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_07c",
+      "texto": "Y esos aviones no desaparecen. Aterrizan en otro sitio, en países donde el asiento sale más barato, y allí generan el mismo beneficio para la misma empresa.",
+      "duracion": 4.41,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aerolinea/hand_holding_coin_small_change_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_08",
+      "texto": "Desde el balance de la compañía no ha pasado nada. Desde Asturias ha pasado todo.",
+      "duracion": 2.77,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_08.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Desde Asturias ha *pasado* todo",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_08b",
+      "texto": "Desde el balance de la compañía no ha pasado nada. Desde Asturias ha pasado todo.",
+      "duracion": 4.13,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aerolinea/invoice_bill_paperwork_desk_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_09",
+      "texto": "Y aquí está lo que convierte esto en un episodio de esta serie y no en una noticia. Pregúntate de quién era la conexión de Asturias con Europa.",
+      "duracion": 2.55,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_09.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "aquí está lo que *convierte*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_09b",
+      "texto": "Y aquí está lo que convierte esto en un episodio de esta serie y no en una noticia. Pregúntate de quién era la conexión de Asturias con Europa.",
+      "duracion": 3.11,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aerolinea/stock_exchange_trading_floor_screens_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_09c",
+      "texto": "Y aquí está lo que convierte esto en un episodio de esta serie y no en una noticia. Pregúntate de quién era la conexión de Asturias con Europa.",
+      "duracion": 3.8,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aerolinea/oil_refinery_fuel_storage_tanks_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_10",
+      "texto": "Del aeropuerto no era: el aeropuerto solo pone el asfalto.",
+      "duracion": 1.99,
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Del *aeropuerto* no era",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_10b",
+      "texto": "Del aeropuerto no era: el aeropuerto solo pone el asfalto.",
+      "duracion": 2.95,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_11",
+      "texto": "De la aerolínea tampoco: la aerolínea puso un avión que ya estaba pagado y que puede aterrizar en cualquier otro sitio mañana.",
+      "duracion": 3.42,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "De la *aerolínea* tampoco",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_11b",
+      "texto": "De la aerolínea tampoco: la aerolínea puso un avión que ya estaba pagado y que puede aterrizar en cualquier otro sitio mañana.",
+      "duracion": 5.08,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aerolinea/airplane_hangar_maintenance_night_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_12",
+      "texto": "Era de quien pagaba la diferencia. Y en el momento en que dejó de pagarla, dejó de existir.",
+      "duracion": 2.8,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_12.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "dejó de *existir*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_12b",
+      "texto": "Era de quien pagaba la diferencia. Y en el momento en que dejó de pagarla, dejó de existir.",
+      "duracion": 4.16,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_aerolinea/spain_landscape_countryside_aerial_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Así que la respuesta tiene dos partes, y la segunda es la que importa.",
+      "duracion": 2.34,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cierre_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "la segunda es la que *importa*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_01b",
+      "texto": "Así que la respuesta tiene dos partes, y la segunda es la que importa.",
+      "duracion": 3.49,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/galicia_coast_atlantic_spain_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Tener una aerolínea cuesta unos seiscientos aviones, quince mil millones de euros al año circulando y una obsesión enfermiza con el céntimo.",
+      "duracion": 3.85,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/small_spanish_town_aerial_view_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 15000.0,
+        "dec": 0,
+        "sufijo": " M €",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "año circulando",
+        "y": 0.26,
+        "retardo": 0.55,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "Tener una aerolínea cuesta unos seiscientos aviones, quince mil millones de euros al año circulando y una obsesión enfermiza con el céntimo.",
+      "duracion": 5.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aerolinea/small_regional_airport_terminal_44.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "Y todo ese aparato descomunal se sostiene sobre diez euros por persona. Un margen tan fino que cualquiera puede borrarlo desde fuera sin despeinarse.",
+      "duracion": 4.15,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aerolinea/empty_airport_gate_no_passengers_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "descomunal",
+        "y": 0.34,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "todo ese aparato *descomunal*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "Y todo ese aparato descomunal se sostiene sobre diez euros por persona. Un margen tan fino que cualquiera puede borrarlo desde fuera sin despeinarse.",
+      "duracion": 6.18,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Michael O'Leary lleva cuarenta años construyendo la aerolínea más eficiente que ha existido nunca, y sigue sin poder decidir lo único que de verdad decide dónde vuela: cuánto le cobra por aterrizar un señor que no trabaja para él.",
+      "duracion": 4.1,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/booking_flight_online_laptop_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 40.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "construyendo la aerolínea",
+        "y": 0.62,
+        "retardo": 0.55,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_04b",
+      "texto": "Michael O'Leary lleva cuarenta años construyendo la aerolínea más eficiente que ha existido nunca, y sigue sin poder decidir lo único que de verdad decide dónde vuela: cuánto le cobra por aterrizar un señor que no trabaja para él.",
+      "duracion": 5.0,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_04c",
+      "texto": "Michael O'Leary lleva cuarenta años construyendo la aerolínea más eficiente que ha existido nunca, y sigue sin poder decidir lo único que de verdad decide dónde vuela: cuánto le cobra por aterrizar un señor que no trabaja para él.",
+      "duracion": 6.11,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "En McDonald's el dueño no era dueño del suelo. En el casino, de la licencia. En el banco, del dinero. En el gimnasio, del cliente.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/silhouettes_people_waiting_terminal_seats_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "En McDonald's el dueño no era dueño del suelo. En el casino, de la licencia. En el banco, del dinero. En el gimnasio, del cliente.",
+      "duracion": 3.81,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/courthouse_columns_facade_steps_53.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "En el *casino*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_05c",
+      "texto": "En McDonald's el dueño no era dueño del suelo. En el casino, de la licencia. En el banco, del dinero. En el gimnasio, del cliente.",
+      "duracion": 4.65,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aeropuerto/business_people_walking_office_82.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_06",
+      "texto": "Aquí es dueño de todo. De los aviones, de las bases, de las tripulaciones, de la marca. De todo menos del permiso para posarse.",
+      "duracion": 3.8,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cierre_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Aquí es *dueño* de todo",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_06b",
+      "texto": "Aquí es dueño de todo. De los aviones, de las bases, de las tripulaciones, de la marca. De todo menos del permiso para posarse.",
+      "duracion": 5.66,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/closed_shutter_shop_empty_street_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_07",
+      "texto": "Y esto no es una rareza irlandesa. Es la forma del negocio. Cualquier aerolínea del mundo, por grande que sea, vive dentro de reglas, tasas y permisos que fija alguien que no es ella.",
+      "duracion": 3.48,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cierre_07.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Es la forma del *negocio*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_07b",
+      "texto": "Y esto no es una rareza irlandesa. Es la forma del negocio. Cualquier aerolínea del mundo, por grande que sea, vive dentro de reglas, tasas y permisos que fija alguien que no es ella.",
+      "duracion": 4.24,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_07c",
+      "texto": "Y esto no es una rareza irlandesa. Es la forma del negocio. Cualquier aerolínea del mundo, por grande que sea, vive dentro de reglas, tasas y permisos que fija alguien que no es ella.",
+      "duracion": 5.17,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_08",
+      "texto": "Puedes ser dueño de la máquina más cara que existe y seguir dependiendo de una firma ajena para usarla.",
+      "duracion": 2.82,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/gloved_hands_assembling_machine_part_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Puedes ser dueño de la *máquina*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_08b",
+      "texto": "Puedes ser dueño de la máquina más cara que existe y seguir dependiendo de una firma ajena para usarla.",
+      "duracion": 4.19,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_09",
+      "texto": "Sesenta y ocho céntimos.",
+      "duracion": 2.99,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 68.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.34,
+        "retardo": 0.55,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_10",
+      "texto": "Ese era el número. Un aeropuerto entero, una provincia conectada con Europa, y la diferencia entre que exista y que no exista cabe en una moneda que te dejarías en la barra sin mirar.",
+      "duracion": 3.24,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cierre_10.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ese era el *número*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_10b",
+      "texto": "Ese era el número. Un aeropuerto entero, una provincia conectada con Europa, y la diferencia entre que exista y que no exista cabe en una moneda que te dejarías en la barra sin mirar.",
+      "duracion": 3.95,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_10c",
+      "texto": "Ese era el número. Un aeropuerto entero, una provincia conectada con Europa, y la diferencia entre que exista y que no exista cabe en una moneda que te dejarías en la barra sin mirar.",
+      "duracion": 4.83,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_11",
+      "texto": "Ese es el precio de ser el dueño.",
+      "duracion": 3.25,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cierre_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ese es el *precio* de ser",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    }
+  ]
+}

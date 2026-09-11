@@ -73,9 +73,21 @@ def main():
     cad = "".join(f"[a{i}]" for i in range(len(trozos)))
     filtros.append(f"{cad}concat=n={len(trozos)}:v=0:a=1[out]")
 
-    subprocess.run(["ffmpeg", "-y", "-v", "error", *entradas,
-                    "-filter_complex", ";".join(filtros), "-map", "[out]",
-                    "-c:a", "libmp3lame", "-q:a", "2", salida], check=True)
+    # El grafo de filtros va en un FICHERO, no en la linea de comandos.
+    # Con 98 frases son mas de 12.000 caracteres de filtro, y Windows corta
+    # la linea de comandos en 32.767: el episodio de la aerolinea reviento
+    # con "el nombre del archivo o la extension es demasiado largo", que no
+    # tiene nada que ver con ningun nombre de archivo.
+    guia = salida + ".filtros.txt"
+    with open(guia, "w", encoding="utf-8") as f:
+        f.write(";".join(filtros))
+    try:
+        subprocess.run(["ffmpeg", "-y", "-v", "error", *entradas,
+                        "-filter_complex_script", guia, "-map", "[out]",
+                        "-c:a", "libmp3lame", "-q:a", "2", salida], check=True)
+    finally:
+        if os.path.exists(guia):
+            os.remove(guia)
     total = sum(d for _, d in trozos)
     print(f"{len(trozos)} frases - {total:.1f}s -> {salida}", file=sys.stderr)
     return 0

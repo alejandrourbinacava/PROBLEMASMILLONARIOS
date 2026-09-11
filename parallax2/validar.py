@@ -233,7 +233,14 @@ def main():
                               f'con las escenas de parallax')
         t = esc.get("texto_pantalla")
         if t:
-            clave = t["texto"].replace("*", "").split()[0].strip(SIGNOS)
+            crudo = t["texto"].replace("*", "").split()
+            if not crudo:
+                # Un rotulo vacio es un plano negro con nada encima. Antes
+                # esto reventaba el validador entero con IndexError y no se
+                # validaba nada de lo que venia detras.
+                graves.append(f'{e["id"]}: rotulo sin texto')
+                continue
+            clave = crudo[0].strip(SIGNOS)
             loc = esc.get("texto", "")
             if loc and clave.lower() not in loc.lower():
                 avisos.append(f'{esc["id"]}: el rotulo dice "{clave}" pero eso '

@@ -47,7 +47,13 @@ PAPEL = [237, 231, 218]
 ROJO = [232, 86, 64]
 
 EPISODIO = "ep"
-TOPE_TARJETA = 3.2       # segundos. Por encima, se parte.
+TOPE_TARJETA = 3.2       # segundos. Por encima, se parte...
+# ...pero solo si las DOS mitades siguen siendo legibles. Con 3,2 pelados
+# salian dos tarjetas de 1,6 s, y una frase sobre negro en un segundo y
+# medio no se lee: se intuye. Treinta y dos avisos del validador eran
+# exactamente esto, y uno se llevo por delante el mapa de Espana, que dura
+# tres segundos de animacion y habia caido en un plano de 1,74.
+MINIMO_MITAD = 2.2
 
 # Planos minimos entre dos usos del mismo clip. A doce se colaban
 # repeticiones a catorce planos -y una a UNO- que el ojo pilla enseguida:
@@ -262,7 +268,8 @@ def main():
         # sin imagen posible -> tarjeta
         t = titular(e.get("texto") or "")
         partes = [(e, t)]
-        if e.get("duracion", 4) > TOPE_TARJETA:
+        if (e.get("duracion", 4) > TOPE_TARJETA
+                and e.get("duracion", 4) / 2 >= MINIMO_MITAD):
             frase = (e.get("texto") or "").strip()
             mitad = frase[:len(frase) // 2].rsplit(" ", 1)[0]
             resto = frase[len(mitad):].strip()
@@ -356,6 +363,18 @@ def main():
     for k, e in enumerate(fuera):
         e["composicion"] = CICLO[k % len(CICLO)]
 
+    # Una tarjeta partida puede dejar la segunda mitad sin texto -"Ese es el
+    # precio de ser el dueno." se corta y el segundo trozo sale vacio-, y
+    # entonces es un plano negro con nada encima. `validar.py` ni siquiera
+    # llegaba a quejarse: reventaba con IndexError al pedir la primera
+    # palabra de una cadena vacia.
+    n_vacios = 0
+    for e in fuera:
+        tp = e.get("texto_pantalla")
+        if tp and not tp.get("texto", "").replace("*", "").strip():
+            del e["texto_pantalla"]
+            n_vacios += 1
+
     g["escenas"] = fuera
     destino = os.path.join(AQUI, a.salida)
     json.dump(g, io.open(destino, "w", encoding="utf-8"),
@@ -369,6 +388,7 @@ def main():
     print(f"  rotulos mudados a su plano: {n_mudados} | caidos: {n_caidos}")
     print(f"  grafico y rotulo separados: {n_separados}")
     print(f"  repeticiones demasiado juntas corregidas: {n_alejados}")
+    print(f"  rotulos vacios quitados: {n_vacios}")
     print(f"escrito {destino}")
     return 0
 

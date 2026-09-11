@@ -62,6 +62,7 @@ def main():
 
     puestos = 0
     sin_sitio = []
+    ajustados = []
     for ficha in fichas:
         clave = norm(ficha["donde"])
         # El primer plano de la frase, no cualquiera: una frase larga se parte
@@ -78,7 +79,31 @@ def main():
         antes = "grafico" if elegido.get("grafico") else (
             "rotulo" if elegido.get("texto_pantalla") else "nada")
         elegido.pop("texto_pantalla", None)
-        elegido["grafico"] = ficha["grafico"]
+        elegido["grafico"] = dict(ficha["grafico"])
+
+        # Que la animacion QUEPA en el plano. Las duraciones del plano salen
+        # de medir la locucion y cambian cada vez que se toca una frase; las
+        # del grafico estan escritas a mano en el JSON. Cuando el plano se
+        # queda corto, la barra se corta a medio llenar y el mapa no termina
+        # de apagar los aeropuertos: se ve como un fallo de render, no como
+        # una decision. Aqui se encoge la animacion en vez de dejarla a
+        # medias, y se dice en voz alta.
+        gr = elegido["grafico"]
+        plano = float(elegido.get("duracion", 0))
+        cabe = plano - 0.25                       # margen de salida
+        pide = gr.get("retardo", 0.4) + gr.get("duracion", 1.6)
+        if pide > cabe:
+            if cabe < 1.0:
+                sin_sitio.append(
+                    f'{ficha["donde"]} -> el plano {elegido["id"]} dura '
+                    f'{plano:.2f}s y no cabe ningun grafico')
+                continue
+            k = cabe / pide
+            gr["retardo"] = round(gr.get("retardo", 0.4) * k, 2)
+            gr["duracion"] = round(gr.get("duracion", 1.6) * k, 2)
+            ajustados.append(
+                f'{elegido["id"]}: {pide:.2f}s de animacion en un plano de '
+                f'{plano:.2f}s -> encogida a {gr["duracion"]:.2f}s')
         # Un grafico protagonista no comparte plano con un barrido de camara.
         elegido.pop("latigo", None)
         elegido["movimiento"] = ficha.get("movimiento", "estatico")
@@ -86,6 +111,8 @@ def main():
         print(f'  {elegido["id"]:14s} {ficha["grafico"]["tipo"]:9s} '
               f'(pisa: {antes})  "{ficha["donde"][:44]}"')
 
+    for x in ajustados:
+        print("  ajustado  " + x)
     if sin_sitio:
         print("\nEstas fichas no encajan en ninguna frase del guion:")
         for s in sin_sitio:

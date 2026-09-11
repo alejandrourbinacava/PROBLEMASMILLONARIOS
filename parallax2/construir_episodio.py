@@ -57,6 +57,8 @@ TOPE_CAP = {
     "cierre": 5.4,          # el cierre respira: el remate no se trocea
 }
 
+ALFABETO = "abcdefghijklmnopqrstuvwxyz"
+
 MOVS = ["push_in", "drift_der", "pull_out", "contra_izq", "estatico",
         "drift_izq", "contra_der", "subir", "push_in", "bajar"]
 
@@ -183,7 +185,12 @@ def main():
                 mov = elige_mov(n, previo, quieto=con_cifra, papel=papel)
                 previo = mov
                 escenas.append({
-                    "id": f"{cap}_{i:02d}" + ("abcd"[j] if j else ""),
+                    # El alfabeto entero, no "abcd": con el tope del gancho
+                    # a 3,0 s una frase larga se parte en siete planos y el
+                    # quinto reventaba con IndexError. Las letras empiezan
+                    # en la "b" -"abcd"[1]- para no cambiar los ids de los
+                    # episodios ya renderizados.
+                    "id": f"{cap}_{i:02d}" + (ALFABETO[j] if j else ""),
                     "texto": texto,
                     "duracion": paso,
                     "movimiento": mov,

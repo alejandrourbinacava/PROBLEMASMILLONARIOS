@@ -20,6 +20,7 @@ La comprobacion es una resta: si la voz no dura mas o menos lo que el video,
 esta montada contra el guion equivocado.
 """
 import argparse
+import hashlib
 import io
 import json
 import os
@@ -38,6 +39,27 @@ def dura(ruta):
         return float(r.stdout.strip())
     except ValueError:
         return -1.0
+
+
+def habla(ruta):
+    """Segundos de audio que NO son silencio.
+
+    Es lo unico que distingue una pista bien montada de una con las frases
+    repetidas: las dos duran lo mismo, pero la mala trae el doble de voz.
+    """
+    r = subprocess.run(
+        ["ffmpeg", "-v", "info", "-i", ruta, "-af",
+         "silencedetect=noise=-32dB:d=0.35", "-f", "null", "-"],
+        capture_output=True, text=True)
+    total = dura(ruta)
+    silencio = 0.0
+    for linea in r.stderr.splitlines():
+        if "silence_duration:" in linea:
+            try:
+                silencio += float(linea.split("silence_duration:")[1].strip())
+            except ValueError:
+                pass
+    return max(0.0, total - silencio)
 
 
 def main():
@@ -62,8 +84,61 @@ def main():
               f"solapan y se oyen varias voces a la vez. Vuelve a lanzar "
               f"voz.py contra {a.guion}, no contra el provisional.")
         return 1
-    print("  la voz cuadra con el video")
-    return 0
+
+    # Y AHORA EL CONTENIDO, que la resta de arriba no mira.
+    #
+    # El episodio de la aerolinea paso esta comprobacion con un cero clavado
+    # de diferencia y el video salio con cada frase repetida hasta tres veces
+    # y cortada a la mitad. Lo habia montado `pista_vox.py`, que trata cada
+    # PLANO como una frase: una frase partida en tres planos se locutaba tres
+    # veces, y cada copia se rellenaba hasta la duracion de su plano. Total
+    # perfecto, contenido destrozado, y el usuario lo descubrio viendolo.
+    #
+    # Medir la voz que suena tampoco sirve, y lo comprobe: la pista MALA
+    # traia 763s de voz y la buena 648s. La mala tiene MAS, y las dos caben
+    # en cualquier umbral razonable. Un umbral aqui es adivinar.
+    #
+    # Lo unico exacto es comparar la lista de frases que se locutaron -que
+    # voz.py deja escrita al lado del mp3- con la que pide el guion.
+    esperados = []
+    for e in g["escenas"]:
+        t = (e.get("voz") or e.get("texto") or "").strip()
+        if t and (not esperados or esperados[-1] != t):
+            esperados.append(t)
+    esperados = [hashlib.sha1(t.encode("utf-8")).hexdigest()[:16]
+                 for t in esperados]
+
+    ruta_m = os.path.join(AQUI, a.voz) + ".json"
+    if not os.path.exists(ruta_m):
+        print(f"::error::{a.voz} no trae manifiesto. Sin el no hay forma de "
+              f"saber que frases lleva dentro: una pista con las frases "
+              f"repetidas dura exactamente lo mismo que una buena. "
+              f"Remontala con: python voz.py {a.guion} {a.voz} "
+              f"--proveedor ai33 (no cuesta creditos, la cache ya esta).")
+        return 1
+
+    m = json.load(io.open(ruta_m, encoding="utf-8"))
+    trae = [b["hash"] for b in m.get("bloques", [])]
+
+    if trae == esperados:
+        print(f"  {len(trae)} frases, las del guion y en su orden")
+        print("  la voz cuadra con el video y dice lo que toca")
+        return 0
+
+    print(f"::error::La pista trae {len(trae)} frases y el guion pide "
+          f"{len(esperados)}.")
+    if len(trae) > len(esperados):
+        print("::error::Sobran frases: hay planos que comparten una misma "
+              "frase y se ha locutado una vez por plano, asi que se oye "
+              "repetida y cortada. Se monta con voz.py, que agrupa los "
+              "planos con el mismo texto; pista_vox.py es para la prueba VOX.")
+    else:
+        print("::error::Faltan frases: la pista es de otro montaje del guion.")
+    for k, (x, y) in enumerate(zip(trae, esperados)):
+        if x != y:
+            print(f"::error::La primera que no coincide es la numero {k + 1}.")
+            break
+    return 1
 
 
 if __name__ == "__main__":

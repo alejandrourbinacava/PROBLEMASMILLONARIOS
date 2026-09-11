@@ -44,7 +44,23 @@ def main():
             continue
         grupo = e["duracion"]
         j = i + 1
-        while j < len(escenas) and escenas[j].get("muda"):
+        # Agrupa por el TEXTO, no solo por la marca `muda`.
+        #
+        # `muda` la ponia construir_clips en la prueba VOX. construir_episodio
+        # -el que monta los episodios de verdad- no la escribe nunca, asi que
+        # aqui los 241 planos del episodio de la aerolinea se trataron como
+        # 241 frases: cada frase partida en tres planos se locutaba tres
+        # veces, y cada copia se recortaba a la duracion de SU plano. El
+        # video salio con frases en bucle y cortadas a medias.
+        #
+        # Y no lo cazo nada, porque el total seguia cuadrando al segundo:
+        # cada trozo se rellenaba hasta la duracion de su plano. Comparar
+        # duraciones totales no dice nada del contenido.
+        mio = (e.get("voz") or e.get("texto") or "").strip()
+        while j < len(escenas) and (
+                escenas[j].get("muda")
+                or (mio and (escenas[j].get("voz")
+                             or escenas[j].get("texto") or "").strip() == mio)):
             grupo += escenas[j]["duracion"]
             j += 1
         # `voz` es la frase entera del guion; `texto` puede ser un trozo

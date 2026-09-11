@@ -32,6 +32,7 @@ no tiene sentido. La de verdad se pide cuando el montaje ya esta.
 import argparse
 import hashlib
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -158,6 +159,33 @@ def main() -> int:
                     "-filter_complex", ";".join(filtros), "-map", "[out]",
                     "-c:a", "libmp3lame", "-b:a", "192k", str(a.salida)],
                    check=True)
+    # Junto al mp3 se deja constancia de QUE se monto y en que orden.
+    #
+    # Una pista mal montada dura exactamente lo mismo que una bien montada
+    # -cada frase se coloca en su hueco-, asi que comparar duraciones no
+    # distingue una de otra. El episodio de la aerolinea se publico con cada
+    # frase repetida hasta tres veces y cortada a la mitad, y paso la
+    # comprobacion con un cero clavado de diferencia.
+    #
+    # Medir la voz tampoco vale: la pista MALA traia 763s de voz y la buena
+    # 648s. Las dos caben en cualquier umbral razonable, y la mala tiene MAS.
+    #
+    # Lo unico exacto es esto: la lista de frases que se locutaron, con su
+    # hash y su instante. Si no coincide con la del guion, la pista es de
+    # otro montaje y se sabe antes de renderizar.
+    manifiesto = {
+        "guion": os.path.basename(str(a.guion)),
+        "total": round(total, 2),
+        "bloques": [
+            {"id": esc[i]["id"],
+             "hash": hashlib.sha1(texto.encode("utf-8")).hexdigest()[:16],
+             "inicio": round(inicios[i], 2)}
+            for i, texto in bloques
+        ],
+    }
+    with open(str(a.salida) + ".json", "w", encoding="utf-8") as fm:
+        json.dump(manifiesto, fm, ensure_ascii=False, indent=1)
+
     print(f"\n{len(piezas)} frases · {total:.1f}s -> {a.salida}")
     if hasattr(tts, "credits"):
         print(f"creditos gastados: {tts.credits}")

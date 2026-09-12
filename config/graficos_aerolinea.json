@@ -1,74 +1,141 @@
 [
   {
-    "_nota": "El grafico central del episodio. Los 74,60 no son una cifra suelta: son una SUMA, y el detector automatico solo sabria poner un contador de 74,60 que no explica de donde sale.",
-    "donde": "la cifra que importa son setenta y cuatro euros con sesenta",
+    "_nota": "FACTURA 1. Primera linea de la cuenta. A partir de aqui, cada capitulo cierra con una linea nueva y el total. Es el hilo que tira del espectador hasta el capitulo siguiente.",
+    "donde": "total acumulado, primer ano: catorce coma cuatro",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu aerolínea, hasta aquí",
+      "lineas": [["3 aviones alquilados, al año", "14,4 M$"]],
+      "total": "14,4 M$",
+      "etiqueta_total": "llevas gastado",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA 2. El certificado entra en la cuenta y ya multiplica por siete lo que costaban los aviones. Ese salto es el argumento del capitulo.",
+    "donde": "total acumulado si hemos tirado por lo bajo",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu aerolínea, hasta aquí",
+      "lineas": [
+        ["3 aviones alquilados, al año", "14,4 M$"],
+        ["certificarte y 2 años sin ingresar", "100 M$"]
+      ],
+      "total": "114,4 M$",
+      "etiqueta_total": "llevas gastado",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "El plano que rompe el topico: un trozo de horario cuesta mas que el avion. Con dos barras se ve sin tener que explicarlo.",
+    "donde": "oman air pago setenta y cinco millones",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "barras",
+      "items": [["un slot", 75.0], ["tu avión", 60.0]],
+      "destacar": {"un slot": [255, 110, 86]},
+      "sufijo": " M$", "dec": 0,
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "Charleroi sin nombrarlo: la flecha va del aeropuerto a la aerolinea, al reves de lo que todo el mundo supone. No hay clip de stock que cuente esto.",
+    "donde": "ahi, a veces, te pagan por ir",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "flecha",
+      "a": "AEROPUERTO",
+      "b": "TÚ",
+      "etiqueta": "te paga por aterrizar ahí",
+      "color": [255, 110, 86],
+      "y": 0.5, "retardo": 0.4, "duracion": 1.6, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA 3. Aqui la cuenta NO sube, y por eso esta: se ve que has esquivado los 75 millones yendote a lo pequeno. La decision del capitulo, en una linea.",
+    "donde": "total acumulado: pongamos que te ahorras el slot",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu aerolínea, hasta aquí",
+      "lineas": [
+        ["3 aviones alquilados, al año", "14,4 M$"],
+        ["certificarte y 2 años sin ingresar", "100 M$"],
+        ["slot en aeropuerto grande", "esquivado"]
+      ],
+      "total": "114,4 M$",
+      "etiqueta_total": "llevas gastado",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "189 cuadraditos son 189 asientos. El capitulo va de que el avion cuesta lo mismo lleno que vacio, y una rejilla medio llena lo dice sin una palabra.",
+    "donde": "ese avion cuesta lo mismo lleno que vacio",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "rejilla",
+      "total": 189,
+      "marcados": 95,
+      "cols": 21,
+      "pie": "medio vacío cuesta lo mismo que lleno",
+      "color_marca": [255, 110, 86],
+      "y": 0.46, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA 4. La ultima linea no es un pago: es un goteo por cada hora en el aire. Cambia la naturaleza de la cuenta y por eso cierra el capitulo del gasto.",
+    "donde": "total acumulado por cada hora que tus aviones",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu aerolínea, hasta aquí",
+      "lineas": [
+        ["3 aviones alquilados, al año", "14,4 M$"],
+        ["certificarte y 2 años sin ingresar", "100 M$"],
+        ["tripulaciones: +100 personas", "nómina fija"],
+        ["cada hora en el aire", "5.700 $"]
+      ],
+      "total": "114,4 M$",
+      "etiqueta_total": "y sumando por hora",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.8, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "Lo que entra: los 74,60 no son una cifra suelta, son una SUMA. Un contador no diria de donde sale.",
+    "donde": "acaban entrando setenta y cuatro euros con sesenta",
     "movimiento": "estatico",
     "grafico": {
       "tipo": "apilada",
       "items": [["billete", 50.60], ["extras", 24.00]],
       "colores": {"billete": [255, 196, 90], "extras": [255, 110, 86]},
       "total": "74,60 € por pasajero",
-      "sufijo": " €",
-      "dec": 2,
-      "y": 0.52,
-      "retardo": 0.5,
-      "duracion": 2.2,
-      "entrada": "golpe"
+      "sufijo": " €", "dec": 2,
+      "y": 0.52, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
     }
   },
   {
-    "_nota": "La misma barra, ahora partida por donde duele. Repetir la FORMA con otro contenido es lo que hace que se entienda sin explicarla.",
-    "donde": "sesenta y tres euros con setenta y seis de coste",
+    "_nota": "La misma forma con otro contenido: es lo que hace que se entienda sin explicarla. Y es el remate de todo el episodio.",
+    "donde": "diez euros con ochenta y cuatro por persona",
     "movimiento": "estatico",
     "grafico": {
       "tipo": "apilada",
-      "items": [["coste", 63.76], ["se lo queda", 10.84]],
-      "colores": {"coste": [120, 130, 150], "se lo queda": [255, 196, 90]},
+      "items": [["coste", 63.76], ["te queda", 10.84]],
+      "colores": {"coste": [120, 130, 150], "te queda": [255, 196, 90]},
       "total": "de cada 74,60 €",
-      "sufijo": " €",
-      "dec": 2,
-      "y": 0.52,
-      "retardo": 0.5,
-      "duracion": 2.2,
-      "entrada": "golpe"
+      "sufijo": " €", "dec": 2,
+      "y": 0.52, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
     }
   },
   {
-    "_nota": "Charleroi. La flecha va del aeropuerto a la aerolinea, que es justo al reves de lo que cualquiera supone. Es un plano sin metraje posible: no existe un clip de stock de esto.",
-    "donde": "el aeropuerto no le cobro por operar",
-    "movimiento": "estatico",
-    "grafico": {
-      "tipo": "flecha",
-      "a": "AEROPUERTO",
-      "b": "AEROLÍNEA",
-      "etiqueta": "paga por que aterrice",
-      "color": [255, 110, 86],
-      "y": 0.5,
-      "retardo": 0.45,
-      "duracion": 1.6,
-      "entrada": "golpe"
-    }
-  },
-  {
-    "_nota": "189 cuadraditos son 189 asientos. Un anillo con un porcentaje aqui seria abstracto justo en el capitulo que va de contar unidades.",
-    "donde": "esos ultimos nueve asientos",
-    "movimiento": "estatico",
-    "grafico": {
-      "tipo": "rejilla",
-      "total": 189,
-      "marcados": 9,
-      "cols": 21,
-      "pie": "los 9 últimos asientos son casi beneficio puro",
-      "color_marca": [255, 196, 90],
-      "y": 0.46,
-      "retardo": 0.4,
-      "duracion": 2.4,
-      "entrada": "golpe"
-    }
-  },
-  {
-    "_nota": "El recorte es una lista de ciudades. En un rotulo es una lista; en un mapa que se va apagando es el episodio entero en una imagen.",
-    "donde": "asturias se queda sin ninguno",
+    "_nota": "El cierre. Una lista de ciudades en un rotulo es una lista; en un mapa que se apaga es el episodio entero en una imagen.",
+    "donde": "asturias, todos los vuelos fuera",
     "movimiento": "estatico",
     "grafico": {
       "tipo": "mapa",
@@ -82,10 +149,7 @@
         ["Barcelona", 2.08, 41.30, false]
       ],
       "color": [255, 196, 90],
-      "y": 0.52,
-      "retardo": 0.4,
-      "duracion": 3.0,
-      "entrada": "fundido"
+      "y": 0.52, "retardo": 0.4, "duracion": 3.0, "entrada": "fundido"
     }
   }
 ]

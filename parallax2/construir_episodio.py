@@ -50,6 +50,13 @@ PAUSA = 1.0         # 0,25 de solape mas 0,75 de respiro
 # tenia exactamente el mismo pulso que el capitulo de la amortizacion. Un
 # gancho se corta rapido porque todavia no te has ganado al que mira; el
 # cuerpo se corta despacio porque ahi ya estas explicando.
+# Suelo para los planos que llevan cifra. El ritmo rapido del gancho es
+# bueno para el metraje y MALO para los datos: con el tope en 3,0 la frase
+# "Y el motivo cabe en una moneda: sesenta y ocho centimos" se partia en
+# planos de 1,69 s, y el contador necesita 2,15 solo para acabar de entrar.
+# La cifra salia y se iba sin que diera tiempo a leerla.
+TOPE_CIFRA = 3.4
+
 TOPE_CAP = {
     "gancho": 3.0,
     "cap1": 4.6, "cap2": 5.0, "cap3": 5.0,
@@ -171,8 +178,13 @@ def main():
             # que el plano AGUANTE: si se parte en tres, el contador arranca
             # en un plano y termina en otro.
             con_cifra = bool(MB.interesante(MB.cifras(texto), texto))
-            trozos = [round(d, 2)] if con_cifra and d <= tope * 1.7 \
-                else reparte(d, tope)
+            if con_cifra:
+                # Entera si cabe; y si no, en trozos que al menos dejen
+                # respirar a la cifra.
+                trozos = ([round(d, 2)] if d <= tope * 1.7
+                          else reparte(d, max(tope, TOPE_CIFRA)))
+            else:
+                trozos = reparte(d, tope)
             tema = CC.tema_de(texto)
             for j, paso in enumerate(trozos):
                 n = len(escenas)

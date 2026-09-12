@@ -19,6 +19,7 @@ import io
 import os
 import re
 import sys
+import unicodedata
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 N = 4
@@ -53,6 +54,29 @@ def cuerpo(ruta):
     return t
 
 
+# Palabras con las que se dice un numero. Un grupo de cuatro formado solo
+# por estas no es una plantilla: es aritmetica. "sesenta millones de
+# dolares" aparece en tres guiones porque tres negocios cuestan eso, y
+# esquivarlo obligaba a retorcer una cifra correcta.
+NUMERO = set((
+    "cero un uno una dos tres cuatro cinco seis siete ocho nueve diez once "
+    "doce trece catorce quince dieciseis diecisiete dieciocho diecinueve "
+    "veinte veintiuno veintidos veintitres veinticuatro veinticinco "
+    "veintiseis veintisiete veintiocho veintinueve treinta cuarenta "
+    "cincuenta sesenta setenta ochenta noventa cien ciento doscientos "
+    "trescientos cuatrocientos quinientos seiscientos setecientos "
+    "ochocientos novecientos mil millon millones billon billones coma "
+    "y de del por ciento euros euro dolares dolar centimos"
+).split())
+
+
+def solo_numeros(frase):
+    # sin tildes: los grupos vienen del texto tal cual y "dolares" se
+    # escribe "dólares".
+    f = unicodedata.normalize("NFKD", frase).encode("ascii", "ignore").decode()
+    return all(w in NUMERO for w in f.split())
+
+
 def grupos(texto):
     p = re.findall(r"[a-záéíóúñü]+", texto.lower())
     return {" ".join(p[i:i + N]): i for i in range(len(p) - N + 1)}
@@ -83,6 +107,8 @@ def main():
             if frase not in suyo:
                 continue
             if any(d in frase for d in DELIBERADO):
+                continue
+            if solo_numeros(frase):
                 continue
             fuera.append((frase, os.path.basename(f)))
 

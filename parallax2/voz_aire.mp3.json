@@ -1,496 +1,536 @@
 {
  "guion": "aerolinea.json",
- "total": 909.64,
+ "total": 928.76,
  "bloques": [
   {
    "id": "gancho_01",
-   "hash": "6b6a777782f9210b",
+   "hash": "92dfa164303c416c",
    "inicio": 0.0
   },
   {
    "id": "gancho_02",
-   "hash": "0b3348a988e882e4",
-   "inicio": 5.31
+   "hash": "c2b1428018605976",
+   "inicio": 4.89
   },
   {
    "id": "gancho_03",
-   "hash": "eec68e681af5bb08",
-   "inicio": 10.78
+   "hash": "30b7512c492d37f1",
+   "inicio": 11.87
   },
   {
    "id": "gancho_04",
-   "hash": "98848c8f1e6e013c",
-   "inicio": 17.03
+   "hash": "e1b2f69307c3ed8b",
+   "inicio": 18.17
   },
   {
    "id": "gancho_05",
-   "hash": "1caf8b635ed7ceba",
-   "inicio": 23.07
+   "hash": "d616304807d8823b",
+   "inicio": 30.48
   },
   {
    "id": "gancho_06",
-   "hash": "e04f339f4c9421a9",
-   "inicio": 37.42
+   "hash": "09acdd7c9a94960e",
+   "inicio": 39.34
   },
   {
    "id": "gancho_07",
-   "hash": "6999fd21a44d9aeb",
-   "inicio": 49.39
+   "hash": "e9f71bfe62e8b5de",
+   "inicio": 53.64
   },
   {
    "id": "gancho_08",
-   "hash": "05c686d98771193e",
-   "inicio": 55.2
+   "hash": "6999fd21a44d9aeb",
+   "inicio": 57.36
   },
   {
    "id": "gancho_09",
-   "hash": "993300b83ed0d52f",
-   "inicio": 65.24
-  },
-  {
-   "id": "gancho_10",
-   "hash": "d1c1f4253fa66b35",
-   "inicio": 70.89
+   "hash": "7909bdb049862cbe",
+   "inicio": 63.17
   },
   {
    "id": "cap1_01",
-   "hash": "a6dda2e0edf88017",
-   "inicio": 81.37
+   "hash": "debc899d95d768a2",
+   "inicio": 65.97
   },
   {
    "id": "cap1_02",
-   "hash": "0b4a955365c2d55e",
-   "inicio": 84.43
+   "hash": "c4520fce3c290533",
+   "inicio": 75.43
   },
   {
    "id": "cap1_03",
-   "hash": "2d66b6978b74de61",
-   "inicio": 93.35
+   "hash": "4c7a6e7ffe2f87dd",
+   "inicio": 83.4
   },
   {
    "id": "cap1_04",
-   "hash": "cfe1dcdb02d6ac07",
-   "inicio": 104.09
+   "hash": "ea86dbfd0b40fd84",
+   "inicio": 94.64
   },
   {
    "id": "cap1_05",
-   "hash": "348af3725854221c",
-   "inicio": 118.23
+   "hash": "2e6dcfd94520382d",
+   "inicio": 101.67
   },
   {
    "id": "cap1_06",
-   "hash": "199a1d99e1859da8",
-   "inicio": 126.34
+   "hash": "8ef796d93958fa07",
+   "inicio": 108.03
   },
   {
    "id": "cap1_07",
-   "hash": "c84275b27269218b",
-   "inicio": 133.9
+   "hash": "614ca8c055d8ec30",
+   "inicio": 114.62
   },
   {
    "id": "cap1_08",
-   "hash": "f66b9daf3d9a021a",
-   "inicio": 144.3
+   "hash": "877380fa084b4388",
+   "inicio": 123.43
   },
   {
    "id": "cap1_09",
-   "hash": "bfd92a5a0ae92652",
-   "inicio": 156.04
+   "hash": "faf2755a9178bd70",
+   "inicio": 134.51
   },
   {
    "id": "cap1_10",
-   "hash": "94b21616320d9dff",
-   "inicio": 165.66
+   "hash": "6cba27f2f5dfc5ff",
+   "inicio": 143.53
   },
   {
    "id": "cap1_11",
-   "hash": "2da89485600b4eae",
-   "inicio": 168.83
+   "hash": "9bfc68eb58744edc",
+   "inicio": 148.55
   },
   {
    "id": "cap1_12",
-   "hash": "80a9e5c2f7603caa",
-   "inicio": 178.14
+   "hash": "25f8c7e154fa3d60",
+   "inicio": 156.5
   },
   {
    "id": "cap1_13",
-   "hash": "ffdd67cb158acd16",
-   "inicio": 190.79
+   "hash": "43ef48f22b48f1ed",
+   "inicio": 162.8
   },
   {
    "id": "cap1_14",
-   "hash": "6e05877955d19d9c",
-   "inicio": 193.85
+   "hash": "d787978a987d21cb",
+   "inicio": 173.02
   },
   {
    "id": "cap1_15",
-   "hash": "610327090ab50205",
-   "inicio": 203.34
+   "hash": "12c650b6c9023291",
+   "inicio": 189.09
   },
   {
    "id": "cap2_01",
-   "hash": "b9f97af3b36412a4",
-   "inicio": 213.3
+   "hash": "db8af5d6135654e4",
+   "inicio": 194.69
   },
   {
    "id": "cap2_02",
-   "hash": "3eada9305c959d77",
-   "inicio": 222.97
+   "hash": "30635e25ea5141d2",
+   "inicio": 198.72
   },
   {
    "id": "cap2_03",
-   "hash": "6804c5dfcc297973",
-   "inicio": 230.81
+   "hash": "cc0c3f3da944655c",
+   "inicio": 209.52
   },
   {
    "id": "cap2_04",
-   "hash": "eeb016c2fb57b4fc",
-   "inicio": 240.2
+   "hash": "096d95c534b75bda",
+   "inicio": 218.93
   },
   {
    "id": "cap2_05",
-   "hash": "ae1fcdecdb9db071",
-   "inicio": 255.12
+   "hash": "877e80269dcd04c5",
+   "inicio": 233.3
   },
   {
    "id": "cap2_06",
-   "hash": "b36465aceb9e9a19",
-   "inicio": 264.06
+   "hash": "c90cfc39497b918d",
+   "inicio": 239.76
   },
   {
    "id": "cap2_07",
-   "hash": "e4bd36289044fa82",
-   "inicio": 272.56
+   "hash": "91ec30b5d257bd97",
+   "inicio": 248.7
   },
   {
    "id": "cap2_08",
-   "hash": "ed33a3f1c8e04eda",
-   "inicio": 281.53
+   "hash": "737337affaf2b82a",
+   "inicio": 259.39
   },
   {
    "id": "cap2_09",
-   "hash": "922198f97437b78e",
-   "inicio": 288.46
+   "hash": "804f3ec602eb7eb7",
+   "inicio": 270.92
   },
   {
    "id": "cap2_10",
-   "hash": "3b410ab6a652ca67",
-   "inicio": 291.37
+   "hash": "721e4e402b71843b",
+   "inicio": 275.84
   },
   {
    "id": "cap2_11",
-   "hash": "3303b2362eb0156a",
-   "inicio": 303.84
+   "hash": "46bfb82fc5a402c8",
+   "inicio": 281.28
   },
   {
    "id": "cap2_12",
-   "hash": "619ce4e07c849e38",
-   "inicio": 308.52
-  },
-  {
-   "id": "cap2_13",
-   "hash": "b1860c3c74bf6fd2",
-   "inicio": 325.22
-  },
-  {
-   "id": "cap2_14",
-   "hash": "405cb1fdc7754576",
-   "inicio": 340.33
+   "hash": "c90052da2a45a2e3",
+   "inicio": 293.64
   },
   {
    "id": "cap3_01",
-   "hash": "6ff8535edfc813ea",
-   "inicio": 352.75
+   "hash": "a16d2e528617d9b1",
+   "inicio": 300.88
   },
   {
    "id": "cap3_02",
-   "hash": "8159e9afa50704a4",
-   "inicio": 356.15
+   "hash": "846a4e0c24bfa818",
+   "inicio": 308.36
   },
   {
    "id": "cap3_03",
-   "hash": "744c1ea260afb0bb",
-   "inicio": 368.64
+   "hash": "ade8856740cc0ff2",
+   "inicio": 318.56
   },
   {
    "id": "cap3_04",
-   "hash": "1d5a6fab62716133",
-   "inicio": 378.31
+   "hash": "f319ceac80219648",
+   "inicio": 324.47
   },
   {
    "id": "cap3_05",
-   "hash": "f2454c63f6a133b2",
-   "inicio": 390.52
+   "hash": "0fb0d3da4d6f743c",
+   "inicio": 331.5
   },
   {
    "id": "cap3_06",
-   "hash": "808fe9301492bfa2",
-   "inicio": 404.19
+   "hash": "7c1a3fff0b26d9f1",
+   "inicio": 342.92
   },
   {
    "id": "cap3_07",
-   "hash": "a5808283d2630fc2",
-   "inicio": 412.58
+   "hash": "66848b42bc9c8ed5",
+   "inicio": 349.33
   },
   {
    "id": "cap3_08",
-   "hash": "a939fb6a40fcc8be",
-   "inicio": 423.61
+   "hash": "502b48a5a08bc3c3",
+   "inicio": 358.87
   },
   {
    "id": "cap3_09",
-   "hash": "ac6d3f173f0011c2",
-   "inicio": 433.33
+   "hash": "4b3eb3eef5e1f7c0",
+   "inicio": 364.57
   },
   {
    "id": "cap3_10",
-   "hash": "7ddcc04b86d0caed",
-   "inicio": 443.21
+   "hash": "f3793d3561b651dc",
+   "inicio": 374.61
   },
   {
    "id": "cap3_11",
-   "hash": "c7cc4d17e53be835",
-   "inicio": 459.52
+   "hash": "d1947701837cf424",
+   "inicio": 383.97
   },
   {
    "id": "cap3_12",
-   "hash": "13570bc3b9173eb0",
-   "inicio": 473.45
+   "hash": "572715ea75d29c7d",
+   "inicio": 390.33
+  },
+  {
+   "id": "cap3_13",
+   "hash": "eac3e922d47cac59",
+   "inicio": 400.13
+  },
+  {
+   "id": "cap3_14",
+   "hash": "f9e5c964e9b5c8ad",
+   "inicio": 414.4
+  },
+  {
+   "id": "cap3_15",
+   "hash": "af1f83b1eb9e3e54",
+   "inicio": 422.01
   },
   {
    "id": "cap4_01",
-   "hash": "948a07823f44d678",
-   "inicio": 484.14
+   "hash": "ac6a066ff51ffdef",
+   "inicio": 430.19
   },
   {
    "id": "cap4_02",
-   "hash": "0be7ba2f02d5dccb",
-   "inicio": 491.88
+   "hash": "fdd5feae02f2af00",
+   "inicio": 438.22
   },
   {
    "id": "cap4_03",
-   "hash": "801c40511267fd6b",
-   "inicio": 497.95
+   "hash": "e0a769ad1c0670fb",
+   "inicio": 447.53
   },
   {
    "id": "cap4_04",
-   "hash": "259ba4473346e79b",
-   "inicio": 501.38
+   "hash": "5a3f1c201c6bd1bf",
+   "inicio": 465.82
   },
   {
    "id": "cap4_05",
-   "hash": "370b1682be608c53",
-   "inicio": 517.32
+   "hash": "1ee4c0ad1162e12b",
+   "inicio": 473.25
   },
   {
    "id": "cap4_06",
-   "hash": "a76a04477c710c73",
-   "inicio": 526.6
+   "hash": "7fdcb4df4559febf",
+   "inicio": 482.19
   },
   {
    "id": "cap4_07",
-   "hash": "5168baa705c4f69f",
-   "inicio": 537.66
+   "hash": "9ed8f4236e33a537",
+   "inicio": 490.9
   },
   {
    "id": "cap4_08",
-   "hash": "fdbbdf9381c38595",
-   "inicio": 543.44
+   "hash": "e1b0a33d3b638b33",
+   "inicio": 506.22
   },
   {
    "id": "cap4_09",
-   "hash": "93ffe3730a81dd62",
-   "inicio": 552.12
+   "hash": "aad0392223016938",
+   "inicio": 514.04
   },
   {
    "id": "cap4_10",
-   "hash": "3a8e38b3ca118de3",
-   "inicio": 567.96
+   "hash": "e7f064aca9e4acc8",
+   "inicio": 523.58
   },
   {
    "id": "cap4_11",
-   "hash": "fdf2d1e241e8b526",
-   "inicio": 579.23
-  },
-  {
-   "id": "cap4_12",
-   "hash": "2bd4709aadb4dc2c",
-   "inicio": 586.03
-  },
-  {
-   "id": "cap4_13",
-   "hash": "cd4c115835300775",
-   "inicio": 596.23
+   "hash": "bd5b30afa1e3bb89",
+   "inicio": 535.16
   },
   {
    "id": "cap5_01",
-   "hash": "6ee78a626187d6fc",
-   "inicio": 612.51
+   "hash": "a97d81f419c137ac",
+   "inicio": 547.11
   },
   {
    "id": "cap5_02",
-   "hash": "4f3a36323dabf1db",
-   "inicio": 617.38
+   "hash": "5921a44269fe129a",
+   "inicio": 555.24
   },
   {
    "id": "cap5_03",
-   "hash": "d04d8a9d02b7f4a7",
-   "inicio": 623.03
+   "hash": "4aaf593e54ff7845",
+   "inicio": 562.17
   },
   {
    "id": "cap5_04",
-   "hash": "ef39d002030f3fe3",
-   "inicio": 627.37
+   "hash": "0c0946582285beb8",
+   "inicio": 569.99
   },
   {
    "id": "cap5_05",
-   "hash": "b7c3db273ebced5f",
-   "inicio": 644.7
+   "hash": "cb888bbc9c6b1c25",
+   "inicio": 580.76
   },
   {
    "id": "cap5_06",
-   "hash": "453959495f8b1f03",
-   "inicio": 654.42
+   "hash": "eeabb0d1fdf0f681",
+   "inicio": 588.06
   },
   {
    "id": "cap5_07",
-   "hash": "3b56af234c6739a7",
-   "inicio": 667.54
+   "hash": "e11eeb53dfcd4b13",
+   "inicio": 596.69
   },
   {
    "id": "cap5_08",
-   "hash": "a997d7043542f268",
-   "inicio": 674.42
+   "hash": "a3a5aa2b6b6fb6ee",
+   "inicio": 604.12
   },
   {
    "id": "cap5_09",
-   "hash": "67ad5a80a60511eb",
-   "inicio": 683.49
+   "hash": "496f569044f1811e",
+   "inicio": 610.16
   },
   {
    "id": "cap5_10",
-   "hash": "492bac775b8ff2e2",
-   "inicio": 688.3
+   "hash": "bf500fcc5395be69",
+   "inicio": 623.18
   },
   {
    "id": "cap5_11",
-   "hash": "a70b7b3cf38ec237",
-   "inicio": 698.78
+   "hash": "d32d368708f3d331",
+   "inicio": 631.18
+  },
+  {
+   "id": "cap5_12",
+   "hash": "5845797d33b16e7c",
+   "inicio": 639.68
+  },
+  {
+   "id": "cap5_13",
+   "hash": "78a0eaf705ebffc7",
+   "inicio": 652.33
+  },
+  {
+   "id": "cap5_14",
+   "hash": "af888f5209118a33",
+   "inicio": 663.28
+  },
+  {
+   "id": "cap5_15",
+   "hash": "3638d1706b6903fc",
+   "inicio": 674.62
+  },
+  {
+   "id": "cap5_16",
+   "hash": "ebad5373cd18db2a",
+   "inicio": 685.83
   },
   {
    "id": "cap6_01",
-   "hash": "6aa601e3cf5c8a56",
-   "inicio": 706.94
+   "hash": "64ac379f7b5492b7",
+   "inicio": 692.29
   },
   {
    "id": "cap6_02",
-   "hash": "fc5eb4ba69b1e2a3",
-   "inicio": 712.59
+   "hash": "3db12850786d61dd",
+   "inicio": 696.24
   },
   {
    "id": "cap6_03",
-   "hash": "9c33c8dc8bafb81e",
-   "inicio": 720.96
+   "hash": "4af86b725eb49253",
+   "inicio": 702.54
   },
   {
    "id": "cap6_04",
-   "hash": "51e44b30f3624899",
-   "inicio": 735.78
+   "hash": "059c8a392a31941e",
+   "inicio": 710.62
   },
   {
    "id": "cap6_05",
-   "hash": "179e7d43eadc63fc",
-   "inicio": 749.32
+   "hash": "4e24a6fbc432bc76",
+   "inicio": 718.67
   },
   {
    "id": "cap6_06",
-   "hash": "29c384b9892b6a3a",
-   "inicio": 758.26
+   "hash": "3922004ebfceb511",
+   "inicio": 731.58
   },
   {
    "id": "cap6_07",
-   "hash": "4dbe2589fbb0bb07",
-   "inicio": 761.74
+   "hash": "9f16693aa512a779",
+   "inicio": 741.91
   },
   {
    "id": "cap6_08",
-   "hash": "eb50a7064fa74e3c",
-   "inicio": 772.72
+   "hash": "94b21616320d9dff",
+   "inicio": 751.16
   },
   {
    "id": "cap6_09",
-   "hash": "21a3310d2fb57afe",
-   "inicio": 779.62
+   "hash": "9defee6404e2c370",
+   "inicio": 754.33
   },
   {
    "id": "cap6_10",
-   "hash": "1eb004fcec4d22ba",
-   "inicio": 789.08
+   "hash": "20bb9298512d6487",
+   "inicio": 765.6
   },
   {
    "id": "cap6_11",
-   "hash": "598aa5252a64fdf0",
-   "inicio": 794.02
+   "hash": "2f5d911642409cc6",
+   "inicio": 770.49
   },
   {
    "id": "cap6_12",
-   "hash": "af4b829a31dffc2d",
-   "inicio": 802.52
+   "hash": "ec41736f87c46ca9",
+   "inicio": 785.26
+  },
+  {
+   "id": "cap6_13",
+   "hash": "755c54f40692b2f9",
+   "inicio": 789.66
+  },
+  {
+   "id": "cap6_14",
+   "hash": "07aa9a19dec20a2a",
+   "inicio": 802.99
+  },
+  {
+   "id": "cap6_15",
+   "hash": "4c6c56a09a3ab10b",
+   "inicio": 814.86
   },
   {
    "id": "cierre_01",
-   "hash": "6962869b2ce9f93e",
-   "inicio": 809.48
+   "hash": "0f4f834f97405947",
+   "inicio": 819.07
   },
   {
    "id": "cierre_02",
-   "hash": "610794da3230b373",
-   "inicio": 815.31
+   "hash": "85799f9854c7911f",
+   "inicio": 824.43
   },
   {
    "id": "cierre_03",
-   "hash": "68b79aaf322c028a",
-   "inicio": 824.9
+   "hash": "1bdea2a2897eb40a",
+   "inicio": 833.32
   },
   {
    "id": "cierre_04",
-   "hash": "b592582ea3379edc",
-   "inicio": 835.23
+   "hash": "6486852a4fed2c61",
+   "inicio": 838.0
   },
   {
    "id": "cierre_05",
-   "hash": "301d26f25f02bae6",
-   "inicio": 850.44
+   "hash": "c4b0ee47c10788fd",
+   "inicio": 850.78
   },
   {
    "id": "cierre_06",
-   "hash": "d2d34cce0b8db46a",
-   "inicio": 862.02
+   "hash": "a200a65327375780",
+   "inicio": 863.95
   },
   {
    "id": "cierre_07",
-   "hash": "34fe8d716694a23c",
-   "inicio": 871.48
+   "hash": "40cdaf607081ebef",
+   "inicio": 870.85
   },
   {
    "id": "cierre_08",
-   "hash": "81ed6ef554502f51",
-   "inicio": 884.37
+   "hash": "b39da9b9a85787f9",
+   "inicio": 886.03
   },
   {
    "id": "cierre_09",
-   "hash": "54d29314f83f3ad8",
-   "inicio": 891.38
+   "hash": "9463004547992a17",
+   "inicio": 889.62
   },
   {
    "id": "cierre_10",
-   "hash": "5ae9da9ce483c7e6",
-   "inicio": 894.37
+   "hash": "ec63e96a1ba74304",
+   "inicio": 900.47
   },
   {
    "id": "cierre_11",
+   "hash": "e896bb4193c49b55",
+   "inicio": 910.22
+  },
+  {
+   "id": "cierre_12",
+   "hash": "7f3cca7352887ee4",
+   "inicio": 921.04
+  },
+  {
+   "id": "cierre_13",
    "hash": "facefbdf716e2582",
-   "inicio": 906.39
+   "inicio": 925.51
   }
  ]
 }

@@ -646,6 +646,18 @@ ACENTO = (255, 176, 60)
 ROJO = (232, 86, 64)
 
 
+def aguanta(esc, retardo):
+    """Cuanto dura la animacion: lo que queda de plano, con tope.
+
+    Antes era un valor fijo -1,6 s por defecto- y en un plano de 1,63 s el
+    grafico pedia mas tiempo del que tenia. Y en uno de siete, el contador
+    terminaba a los dos segundos y quedaban cinco de plano con la cifra
+    quieta. Que dure lo que queda, entre 1,2 y 2,8.
+    """
+    queda = esc.get("duracion", 3.0) - retardo - 0.2
+    return round(max(1.2, min(2.8, queda)), 2)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -661,6 +673,41 @@ def main():
     n_graf = n_rot = 0
     sin_cifra = 0
     visto = set()          # una frase se parte en varios planos: la cifra, una vez
+
+    # En que plano de la frase cae el numero, y en que segundo de ese plano.
+    #
+    # Antes el grafico iba SIEMPRE al primer plano de la frase, con un
+    # retardo fijo de 0,55 s. Pero el numero se dice donde se dice: en "Y el
+    # motivo cabe en una moneda: sesenta y ocho centimos" va al final, asi
+    # que el 68 aparecia sobre "Y el motivo cabe..." y se habia ido cuando la
+    # voz llegaba a decirlo. Es el mismo problema que ya se arreglo para los
+    # rotulos con `retardo_rotulo`, y a los graficos no se les aplico.
+    def sitio(idx, pal):
+        """(indice del plano, retardo dentro de el) donde se dice `pal`."""
+        esc = g["escenas"]
+        texto = esc[idx].get("texto", "")
+        grupo = [idx]
+        k = idx + 1
+        while k < len(esc) and esc[k].get("texto", "") == texto:
+            grupo.append(k)
+            k += 1
+        total = sum(esc[j].get("duracion", 0) for j in grupo)
+        npos = norm_pos(texto)
+        pos = npos.find(pal)
+        if pos < 0 or total <= 0:
+            return idx, 0.55
+        # La voz avanza por el texto a ritmo constante, con suficiente
+        # aproximacion: la posicion en caracteres vale como reloj.
+        cuando = (pos / float(len(npos))) * total
+        acum = 0.0
+        for j in grupo:
+            d = esc[j].get("duracion", 0)
+            if acum + d > cuando or j == grupo[-1]:
+                # que quede al menos un segundo de plano por delante
+                return j, max(0.25, min(cuando - acum, d - 1.0))
+            acum += d
+        return idx, 0.55
+
     for i, e in enumerate(g["escenas"]):
         texto = e.get("texto", "")
         c = interesante(cifras(texto), texto)
@@ -668,6 +715,12 @@ def main():
 
         if c and clave not in visto:
             visto.add(clave)
+            j, ret = sitio(i, c[3])
+            e = g["escenas"][j]          # el plano donde se dice, no el primero
+            # Y si el numero se dice tan al final que ya no queda plano
+            # para ensenarlo, se adelanta: vale mas que entre medio
+            # segundo antes de oirlo que que no llegue a verse.
+            ret = min(ret, max(0.2, e.get("duracion", 3.0) - 1.35))
             val, suf, dec, pal = c
             n = norm(texto)
             prop = de_cada(texto)
@@ -700,7 +753,9 @@ def main():
                     "sufijo": suf or "x", "dec": 1,
                     "y": ALTURAS[i % len(ALTURAS)],
                     "color": list(ACENTO),
-                    "retardo": 0.6, "entrada": ENTRADAS[i % len(ENTRADAS)],
+                    "retardo": ret,
+                    "duracion": aguanta(e, ret),
+                    "entrada": ENTRADAS[i % len(ENTRADAS)],
                 }
             elif tipo == "reparto":
                 e["grafico"] = {
@@ -709,7 +764,9 @@ def main():
                     "etiqueta_a": (contado or pie_de(texto, pal))[:26],
                     "etiqueta_b": "el resto",
                     "y": ALTURAS[i % len(ALTURAS)],
-                    "retardo": 0.6, "entrada": ENTRADAS[i % len(ENTRADAS)],
+                    "retardo": ret,
+                    "duracion": aguanta(e, ret),
+                    "entrada": ENTRADAS[i % len(ENTRADAS)],
                 }
             else:
                 e["grafico"] = {
@@ -718,7 +775,9 @@ def main():
                     "color": list(ACENTO if tipo == "contador" else ROJO),
                     "pie": pie_de(texto, pal),
                     "y": ALTURAS[i % len(ALTURAS)],
-                    "retardo": 0.55, "entrada": ENTRADAS[i % len(ENTRADAS)],
+                    "retardo": ret,
+                    "duracion": aguanta(e, ret),
+                    "entrada": ENTRADAS[i % len(ENTRADAS)],
                 }
             n_graf += 1
             continue

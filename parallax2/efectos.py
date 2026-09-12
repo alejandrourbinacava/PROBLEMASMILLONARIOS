@@ -550,6 +550,70 @@ def grafico(spec, W, H, u, ancla=0.5):
         t = _fmt(spec["valor"] * e, spec.get("dec", 1)) + "%"
         d.text((x0 + 20, cy - 30), t, font=fv, fill=(12, 14, 20, 255))
 
+    elif tipo == "factura":
+        # Las lineas de gasto que ya llevas, y el total debajo.
+        #
+        # Este es EL grafico del canal y no existia. El formato es "cuanto
+        # cuesta comprar y mantener X", y lo que engancha no es cada cifra
+        # suelta: es ver la cuenta crecer. Un contador dice 75 millones y se
+        # va; la factura dice 75 millones Y ademas te recuerda que ya
+        # llevabas catorce, y por eso te quedas a ver el capitulo siguiente.
+        #
+        # Las lineas anteriores entran ya puestas y en gris. La ultima se
+        # escribe delante del espectador y en color: es la de este capitulo.
+        lineas = spec.get("lineas", [])        # [(concepto, importe)]
+        f = _fuente(40)
+        fv = _fuente(44)
+        fvt = _fuente(70)
+        ft = _fuente(38)
+        alto_l = 58
+        ancho = int(W * 0.62)
+        x0 = (W - ancho) // 2
+        alto = len(lineas) * alto_l + 142   # 142 y no 118: el titulo se
+                                            # pegaba a la primera linea
+        y0 = cy - alto // 2
+        _panel(d, [x0 - 40, y0 - 34, x0 + ancho + 40, y0 + alto + 16], alpha=150)
+
+        if spec.get("titulo"):
+            tt = spec["titulo"].upper()
+            d.text((x0, y0 - 6), tt, font=ft, fill=PALETA["hueso"] + (150,))
+
+        for i, par in enumerate(lineas):
+            nom, imp = par[0], par[1]
+            nueva = (i == len(lineas) - 1)
+            y = y0 + 56 + i * alto_l
+            # la ultima se escribe sola, de izquierda a derecha
+            ui = 1.0 if not nueva else float(np.clip((u - 0.18) / 0.42, 0, 1))
+            if ui <= 0.02:
+                continue
+            col = ac if nueva else (170, 172, 180)
+            op = int((255 if nueva else 190) * ui)
+            # el concepto, recortado si no cabe
+            txt = nom
+            while d.textlength(txt, font=f) > ancho * 0.62 and len(txt) > 4:
+                txt = txt[:-2]
+            d.text((x0, y), txt, font=f, fill=col + (op,))
+            imp_t = imp if isinstance(imp, str) else _fmt(imp, 1)
+            d.text((x0 + ancho - d.textlength(imp_t, font=fv), y - 2), imp_t,
+                   font=fv, fill=col + (op,))
+            if nueva and ui > 0.1:
+                # subrayado que crece con la linea
+                d.line([x0, y + alto_l - 12, x0 + int(ancho * ui),
+                        y + alto_l - 12], fill=ac + (int(120 * ui),), width=2)
+
+        # el total, que es lo que de verdad se mira
+        yt = y0 + 56 + len(lineas) * alto_l + 16
+        d.line([x0, yt - 8, x0 + ancho, yt - 8],
+               fill=PALETA["hueso"] + (90,), width=2)
+        ut = float(np.clip((u - 0.55) / 0.4, 0, 1))
+        if ut > 0.02:
+            et = spec.get("etiqueta_total", "llevas gastado")
+            d.text((x0, yt + 16), et, font=ft,
+                   fill=PALETA["hueso"] + (int(190 * ut),))
+            tot = spec.get("total", "")
+            d.text((x0 + ancho - d.textlength(tot, font=fvt), yt + 2), tot,
+                   font=fvt, fill=ac + (int(255 * ut),))
+
     elif tipo == "apilada":
         # Una sola barra partida en tramos, cada uno con su nombre y su
         # cifra. Es el grafico que faltaba: el contador dice UNA cifra, y

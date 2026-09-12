@@ -41,6 +41,22 @@ def main():
         gr = e.get("grafico")
         if gr:
             n_g += 1
+            # Que la animacion QUEPA en el plano.
+            #
+            # El usuario lo vio antes que yo: "se va muy rapido la escena,
+            # no acaba la frase y se ha ido". Habia planos de 1,63 s con un
+            # grafico que necesita 2,15 solo para terminar de entrar, asi
+            # que la cifra aparecia a medias y se la llevaba el corte. Se
+            # dibujaba perfectamente -por eso esta comprobacion lo daba por
+            # bueno- pero no se podia leer.
+            pide = gr.get("retardo", 0.4) + gr.get("duracion", 1.6)
+            plano = e.get("duracion", 0)
+            if pide > plano + 0.01:
+                fallos.append(
+                    f'{e["id"]} {gr.get("tipo")}: la animacion pide '
+                    f'{pide:.2f}s y el plano dura {plano:.2f}s. La cifra se '
+                    f'va antes de poder leerla.')
+                continue
             # a la mitad y al final: un fallo puede estar solo en un extremo
             for u in (0.0, 0.5, 1.0):
                 try:

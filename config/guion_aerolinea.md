@@ -1,228 +1,250 @@
-# Sesenta y ocho céntimos
+# Cuánto cuesta comprar y mantener una aerolínea
 
 **Episodio 06 de la serie "El precio de ser el dueño"**
-**Duración objetivo:** 13:30 · **Locución:** ~2.350 palabras · **Ritmo:** 172 ppm
+**Duración objetivo:** 14:00 · **Locución:** ~2.400 palabras · **Ritmo:** 172 ppm
 
-> Hilo conductor de la serie: en cada episodio, el dueño no es dueño de lo que de verdad genera el dinero. En McDonald's era el suelo. En el casino, la licencia. En el banco, el dinero. En el aeropuerto, los aviones. En el gimnasio, el cliente. Aquí la aerolínea sí es dueña de sus aviones — y aun así no es dueña de la ruta.
+> Hilo conductor de la serie: en cada episodio, el dueño no es dueño de lo que de verdad genera el dinero. En McDonald's era el suelo. En el casino, la licencia. En el banco, el dinero. En el aeropuerto, los aviones. En el gimnasio, el cliente. Aquí es la ruta — y es de quien paga por ella.
 
-**Qué cambia respecto a los cinco anteriores**
+**Qué cambia respecto a la versión 1 de este mismo episodio**
 
-1. **El giro va en el minuto uno, no en el trece.** Los cinco anteriores guardaban la vuelta de tuerca para el final. Este la suelta en el gancho y dedica el resto a demostrarla. Quien haya visto los otros no reconoce la forma.
-2. **Se cuenta desde fuera, siguiendo a alguien real.** Michael O'Leary. Los cinco anteriores van en segunda persona catorce minutos seguidos y eso cansa.
-3. **Estructura circular.** Abre y cierra con la misma cifra, y es una cifra ridícula. El espectador se queda esperando a que vuelva.
-4. **El gesto de atención es propio de este episodio:** «apunta ese número, porque vuelve al final». No se ha usado antes y no se repite dentro del vídeo.
+La v1 era un ensayo sobre el modelo de negocio de Ryanair contado desde fuera, siguiendo a O'Leary. Estaba bien escrito y no servía: **el espectador no compraba nada**. Este canal funciona porque quien mira se pone en la piel del dueño y ve la factura crecer línea a línea. Eso es lo que se recupera aquí.
+
+Lo que sí se conserva de la v1: el giro de los sesenta y ocho céntimos, que es lo que convierte una lista de gastos en un episodio de esta serie.
+
+**Qué cambia respecto a los cinco episodios anteriores**
+
+1. **La cuenta va a la vista todo el rato.** Cada capítulo cierra con el total acumulado en pantalla. No es un recurso de montaje: es la columna vertebral.
+2. **Cada paso es una decisión, no un dato.** En cada capítulo hay dos caminos y hay que elegir uno: comprar o alquilar, aeropuerto grande o pequeño, plantilla propia o subcontrata.
+3. **El orden está invertido a propósito.** El gasto que todo el mundo cree que es el mayor —el avión— es el capítulo 1 y es el más barato de los tres primeros. Eso compra atención para el resto.
+4. **El gesto de atención propio de este episodio:** «apunta ese número, porque vuelve al final».
 
 ---
 
-## GANCHO — 0:00 a 1:10
+## GANCHO — 0:00 a 1:05
 
-Un aeropuerto español se ha quedado sin todos sus vuelos de Ryanair.
+Vamos a comprar una aerolínea. Tú y yo. Hoy.
 
-No una ruta. No una temporada baja. Todos.
+Y te aviso de una cosa antes de empezar, porque lo cambia todo: la parte cara no es el avión.
 
-Y el motivo cabe en una moneda: sesenta y ocho céntimos por pasajero.
+El avión es lo barato. Lo vas a ver dentro de dos minutos y no te lo vas a creer.
 
-Sesenta y ocho céntimos. Menos de lo que cuesta un café en la propia terminal.
+Vamos a ir paso a paso, como si estuvieras firmando tú. El aparato, el permiso para volar, el sitio donde aterrizar, la gente, el combustible y las tasas.
 
-Aena sube sus tasas un seis coma seis por ciento, que son sesenta y ocho céntimos más por cada persona que embarca, y la aerolínea más grande de Europa responde retirando un millón doscientos mil asientos de la España regional.
+Y al final de cada paso te doy el total acumulado, para que veas exactamente en qué momento esto se convierte en otra cosa.
 
-Asturias entera. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Santander, treinta y ocho.
+Te adelanto el final: cuando lo tengas todo pagado, cuando seas el dueño de los aviones, de las tripulaciones y de la marca, va a llegar un señor que no trabaja para ti y va a subirte una tasa sesenta y ocho céntimos.
+
+Y vas a tener que irte de una provincia entera.
 
 Apunta ese número, porque vuelve al final: sesenta y ocho céntimos.
 
-Esto va de una empresa que el año pasado ganó dos mil doscientos sesenta millones de euros y que se marcha de una provincia entera por menos de lo que cuesta un chicle.
+Empezamos por el avión.
 
-Y cuando entiendas por qué, vas a entender algo que no es solo de Ryanair.
+## CAPÍTULO 1 — El avión, que es la parte barata
 
-La aerolínea es dueña de sus aviones, de sus pilotos y de su marca. Pero no es dueña de lo único que decide que un avión despegue de un sitio y no de otro.
+Un Boeing setecientos treinta y siete MAX, el avión más común de Europa, tiene un precio de catálogo de unos ciento veinte millones de dólares.
 
-## CAPÍTULO 1 — La factura que nadie te enseña
+Esa cifra no la paga nadie. Es el precio de la etiqueta, y existe para que el descuento parezca mayor.
 
-Empecemos por lo que pagas tú.
+En un pedido grande, los descuentos de los que se habla en el sector van del cuarenta al sesenta por ciento. Ninguna de las dos partes publica el número real jamás.
 
-En su último ejercicio Ryanair movió doscientos ocho millones de pasajeros. El billete medio costó unos cincuenta euros.
+Así que tu avión, comprado de verdad, te sale por unos sesenta millones de dólares. Uno.
 
-Pero el precio del billete no es la cifra que importa. La cifra que importa son setenta y cuatro euros con sesenta, que es lo que acaba entrando en la caja por cada pasajero.
+Y aquí tienes la primera decisión que tomarías de verdad, porque casi nadie compra.
 
-La diferencia son veinticuatro euros que no viajan dentro del precio del vuelo: la maleta, el asiento, el embarque prioritario, el bocadillo, el seguro, el coche de alquiler que te ofrecen tres pantallas después de pagar.
+Puedes alquilarlo. Un MAX nuevo se alquila por unos cuatrocientos mil dólares al mes.
 
-Casi cinco mil millones de euros al año en cosas que no son volar. Un tercio de todo lo que entra en la empresa.
+Haz la cuenta conmigo: son cuatro coma ocho millones de dólares al año, y al final del contrato el avión no es tuyo.
 
-Y conviene entender cómo se cobran esos veinticuatro euros, porque no es un recargo: es un diseño.
+En doce años de alquiler habrás pagado más que comprándolo. Pero no habrás inmovilizado sesenta millones el primer día, y vas a entender enseguida por qué eso importa tanto.
 
-El billete que ves anunciado te lleva a ti y a nada más. Ni la maleta de cabina grande, ni el sitio donde te sientas, ni el orden en que subes al avión.
+Vamos a coger tres aviones, que es el mínimo con el que una aerolínea pequeña puede operar sin que una avería le tire la mitad de los vuelos.
 
-Cada una de esas tres cosas era gratis hace veinte años y hoy es una línea de facturación. No las inventaron para molestarte: las inventaron porque el billete solo no da.
+Alquilados: catorce coma cuatro millones de dólares al año.
 
-Y ahora viene la resta que descoloca a todo el mundo. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la compañía limpio?
+Y ese es el gasto que todo el mundo cree que es el gordo. Guárdalo, porque en el capítulo tres se va a quedar pequeño.
+
+Antes de seguir, una decisión más que tomarías el primer día y que casi nadie conoce.
+
+Puedes comprar el avión y vendérselo inmediatamente a una empresa de alquiler, que te lo devuelve alquilado. Suena absurdo y lo hace media industria.
+
+¿Por qué? Porque recuperas el dinero de golpe, te quitas el avión del balance y sigues volando con el mismo aparato. El sector lo llama venta con arrendamiento posterior, y es la forma en que una aerolínea joven consigue caja sin pedirla prestada.
+
+Total acumulado, primer año: catorce coma cuatro millones de dólares.
+
+## CAPÍTULO 2 — El permiso, que se paga en meses
+
+Tienes tres aviones. No puedes volar.
+
+Para vender un solo billete necesitas un certificado de operador aéreo. Es lo que te autoriza a transportar pasajeros, y no está a la venta. Te lo tienen que aprobar.
+
+Presentas tus manuales de operaciones, tu plan de mantenimiento, tu organigrama de seguridad. Te auditan. Te vuelven a auditar.
+
+Y tienes que nombrar responsables de verdad, con nombre y apellidos, que respondan personalmente de la seguridad, de las operaciones y del mantenimiento. Son gente con veinte años de sector y no son baratos.
+
+Lo que tarda esto, de la idea al primer vuelo, son entre doce y veinticuatro meses.
+
+Y eso, traducido a dinero, son hasta dos años pagando aviones, sueldos y oficinas sin haber ingresado un euro.
+
+Solo el proceso de certificarte, entre asesores, abogados y auditorías, se va a cientos de miles de dólares, y en los casos grandes a millones.
+
+Por eso, cuando se mira el capital que hace falta para arrancar una aerolínea de verdad, la horquilla que maneja el sector no baja de cien millones de dólares, y llega a trescientos.
+
+No es el avión. Es aguantar dos años sin facturar.
+
+Y hay una factura más que llega antes que el primer pasajero: el seguro.
+
+Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.
+
+Total acumulado si hemos tirado por lo bajo: unos cien millones de dólares antes de vender el primer billete.
+
+## CAPÍTULO 3 — Dónde aterrizas, y aquí se rompe todo
+
+Ahora tienes aviones y tienes permiso. Falta un detalle: un sitio donde posarte.
+
+Un aeropuerto grande no tiene hueco. Están llenos. Aterrizar y despegar a una hora concreta es un derecho que se llama slot, y no hay.
+
+¿Cuánto cuesta uno? Te doy el récord, porque explica el capítulo entero.
+
+En dos mil dieciséis, Oman Air pagó setenta y cinco millones de dólares por un par de slots en Heathrow.
+
+Setenta y cinco millones. Por el derecho a aterrizar una vez al día y despegar una vez al día. Sin avión, sin tripulación y sin un solo pasajero dentro.
+
+Es más de lo que te ha costado tu avión. Es más de lo que te ha costado toda la certificación.
+
+Escucha bien esto, porque es el corazón del negocio: no estás comprando asfalto. Estás comprando un hueco en un horario que ya está lleno.
+
+Y por eso existen las aerolíneas de bajo coste tal y como las conoces.
+
+Si no puedes pagar setenta y cinco millones por un slot en Heathrow, vas al aeropuerto pequeño, al que está a una hora de la ciudad, al que está medio vacío.
+
+Y ahí no solo es barato. Ahí, a veces, te pagan por ir. Al final del vídeo te digo cuánto pagan, y quién lo paga.
+
+Y mira bien lo que acaba de pasar ahí, porque no es un atajo: es todo el modelo.
+
+Tú no has elegido volar a un aeropuerto pequeño porque te guste. Lo has elegido porque el grande estaba lleno y costaba setenta y cinco millones entrar.
+
+Y el aeropuerto pequeño no te acoge por amabilidad. Te acoge porque un aeropuerto vacío no vale nada y uno con dos millones de pasajeros al año llena hoteles, taxis y restaurantes.
+
+Los dos os necesitáis. Y esa es exactamente la relación que se va a romper al final de este vídeo.
+
+Total acumulado: pongamos que te ahorras el slot y te vas a lo pequeño. Sigues en cien millones.
+
+## CAPÍTULO 4 — La gente, que es lo único que no se puede aplazar
+
+Tres aviones necesitan tripulación para volarlos todos los días, y la tripulación no se alquila por horas.
+
+Un piloto no vale para cualquier avión. Está habilitado para un tipo concreto, y cambiarle el tipo cuesta dinero y semanas de simulador.
+
+Eso, que parece un detalle técnico, es la razón de que las aerolíneas de bajo coste compren todas el mismo modelo. Un solo tipo de avión significa que cualquier piloto vale para cualquier vuelo, que el almacén guarda una sola pieza y que el mecánico solo tiene que saberse una máquina.
+
+No es una manía. Es una de las decisiones que más dinero ahorra en todo el negocio, y se toma el primer día.
+
+Y con la gente hay una regla que no admite trampa: el avión puede estar parado, pero la nómina sale igual.
+
+Puedes aplazar la compra de un avión. Puedes retrasar una revisión. No puedes decirle a una tripulación que este mes no.
+
+Y te doy el número que casi nadie se espera. Para tener un avión volando todos los días del año, con turnos, descansos obligatorios, vacaciones y bajas, no te bastan dos tripulaciones. Te hacen falta cinco o seis por avión.
+
+Multiplícalo por tus tres aviones y estás contratando a más de cien personas antes de tu primer vuelo comercial.
+
+Y una última cosa de este capítulo, que parece de detalle y es de las que más dinero mueven: cuánto tarda tu avión en volver a despegar.
+
+Las compañías de bajo coste descargan, limpian, embarcan y vuelven a salir en menos de media hora. Una tradicional se toma el doble o el triple.
+
+No es prisa. Un avión parado cuesta exactamente lo mismo que uno volando, así que cada rotación extra que le sacas al día es un vuelo entero de ingresos sobre el mismo aparato pagado.
+
+## CAPÍTULO 5 — Cada hora en el aire
+
+Ya vuelas. Y ahora empieza la parte que duele, porque esto no se paga una vez: se paga cada hora.
+
+Un setecientos treinta y siete se bebe entre dos mil quinientos y tres mil litros de queroseno por hora de vuelo.
+
+El mantenimiento, contando motores, va de mil a dos mil dólares por cada hora que el avión está en el aire.
+
+Y luego las tasas: aterrizar, la asistencia en tierra, la navegación aérea, la seguridad. Todas se pagan por vuelo y ninguna la fijas tú.
+
+Súmalo entero y operar ese avión te cuesta alrededor de cinco mil setecientos dólares por hora de vuelo.
+
+Un vuelo de dos horas, Madrid-Londres, te cuesta unos once mil cuatrocientos dólares antes de vender un solo asiento.
+
+Y aquí está lo que decide si tienes un negocio o un agujero: ese avión cuesta lo mismo lleno que vacío.
+
+Y del combustible hay algo más que tienes que saber, porque es el gasto que no controlas.
+
+Una guerra a cuatro mil kilómetros te cambia la cuenta de resultados sin que tú hayas hecho nada. Por eso las aerolíneas grandes compran el queroseno con años de antelación y a precio cerrado.
+
+Media aerolínea es, en la práctica, una mesa de operaciones financieras con aviones enganchados detrás.
+
+El queroseno cambia poco con veinte pasajeros más. La tripulación cobra lo mismo. El aterrizaje cuesta lo mismo.
+
+Por eso el número que una aerolínea mira cada mañana no es el precio del billete. Es qué porcentaje de asientos van ocupados, y las buenas lo mantienen por encima del noventa por ciento.
+
+Y la aritmética de eso es preciosa. Cuando el vuelo ya va a salir, los últimos asientos que vendes son casi beneficio limpio: el coste ya te lo has gastado entero.
+
+Por eso existen los billetes de diecinueve euros con noventa y nueve. No son un error ni un truco de escaparate: son la última fila de un avión que despegaba de todas formas.
+
+Pero funciona igual al revés, y ahí es implacable. Si sale medio vacío no pierdes la mitad: pierdes casi todo, porque el coste ya estaba pagado.
+
+Total acumulado por cada hora que tus aviones están en el aire: cinco mil setecientos dólares.
+
+## CAPÍTULO 6 — Y ahora, lo que recaudas
+
+Vamos a llenar tu avión y a ver qué recoges.
+
+Un setecientos treinta y siete configurado al máximo lleva ciento ochenta y nueve asientos.
+
+El billete medio de la aerolínea más grande de Europa cuesta unos cincuenta euros. Ese es el precio que tú ves anunciado.
+
+Pero ese precio dista mucho de lo que recauda contigo. Por cada pasajero acaban entrando setenta y cuatro euros con sesenta.
+
+La diferencia son veinticuatro euros que no viajan dentro del billete: la maleta, el asiento, el embarque prioritario, el bocadillo, el seguro, el coche de alquiler.
+
+Eso, en el conjunto de la compañía, son casi cinco mil millones de euros al año en cosas que no son volar. Un tercio de todo lo que entra.
+
+Ahora haz la resta que tenías pendiente desde el principio. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la empresa limpio?
 
 Diez euros con ochenta y cuatro.
 
-Diez euros con ochenta y cuatro. La aerolínea más rentable de Europa gana contigo menos de lo que te cobra por facturar una maleta.
+Diez euros con ochenta y cuatro por persona. Después de los aviones, del certificado, de los slots, de las tripulaciones, del queroseno y de las tasas.
 
-Esa cifra ya te dice cómo funciona el negocio de verdad. Cuando tu beneficio por cliente es de diez euros, no te puedes permitir que suba nada. Ni el combustible, ni la tripulación, ni las tasas.
+Ganas menos por pasajero de lo que le cobras por facturar una maleta.
 
-Ni sesenta y ocho céntimos.
+Y ojo, que eso es el mejor del sector. La compañía más rentable de Europa mueve doscientos ocho millones de pasajeros al año, ingresa quince mil quinientos cuarenta millones y gana dos mil doscientos sesenta.
 
-Y antes de seguir, quiero que te quede clara una resta. Setenta y cuatro con sesenta entran. Diez con ochenta y cuatro se quedan.
+Tu negocio entero se sostiene sobre diez euros por cabeza.
 
-Entre medias hay sesenta y tres euros con setenta y seis de coste por cada persona que se sienta en ese avión. Eso es lo que vamos a desmontar.
+Y con esa cifra en la mano se entiende por qué te cobran por la maleta, por elegir asiento y por subir antes al avión. No lo inventaron para fastidiarte. Lo inventaron porque con el billete solo no salen las cuentas.
 
-## CAPÍTULO 2 — Bélgica, dos mil uno
+Multiplica ahora tus ciento ochenta y nueve asientos por esos diez euros con ochenta y cuatro. Un vuelo lleno, perfecto, sin un solo problema, te deja poco más de dos mil euros.
 
-Para entender la respuesta hay que retroceder veinticinco años, hasta un aeropuerto belga del que probablemente no habías oído hablar.
+Ese es el premio por haber montado todo lo anterior.
 
-Charleroi. Una pista en mitad de la nada, a una hora de Bruselas, propiedad de la región de Valonia.
+## CIERRE — Sesenta y ocho céntimos
 
-Y un irlandés de cuarenta años con una idea que entonces sonaba a broma: que no tenía por qué ser la aerolínea la que pagara por aterrizar.
+Así que ya tienes tu aerolínea. Vamos a ver de qué eres dueño.
 
-Michael O'Leary se sentó con la región valona y salió de allí con esto. Las tasas de aterrizaje, a mitad de precio. La asistencia en tierra, un euro por pasajero, cuando la tarifa normal del aeropuerto era diez veces esa.
+Eres dueño de los aviones, o de su alquiler. Eres dueño del certificado. Eres dueño de las tripulaciones y de la marca.
 
-Y además: aportaciones para el hotel de las tripulaciones, para la formación de los pilotos, para contratar al personal de la base.
+Y ahora llega el número que te dije que apuntaras.
 
-Fíjate en lo que acaba de pasar ahí. El aeropuerto no le cobró por operar. Le pagó parte de los gastos de instalarse.
+Aena, que gestiona los aeropuertos españoles, aprueba una subida de tasas del seis coma seis por ciento. Traducido a lo que a ti te importa: sesenta y ocho céntimos más por cada persona que embarca.
 
-La Comisión Europea miró aquello en dos mil cuatro y dijo lo que parecía evidente: esto son ayudas de Estado y es ilegal.
+Sobre un margen de diez euros con ochenta y cuatro, sesenta y ocho céntimos son más del seis por ciento de lo que ganas con cada pasajero. Y en un aeropuerto pequeño, donde el avión va menos lleno, el golpe es mayor.
 
-Ryanair recurrió. Y en dos mil ocho el tribunal europeo anuló la decisión de la Comisión.
+¿Qué hace entonces la aerolínea más grande de Europa? Coge los aviones y se los lleva.
 
-O sea: legal.
+Un millón doscientos mil asientos retirados de la España regional. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Asturias, todos los vuelos fuera.
 
-Ese día no ganó un pleito una aerolínea. Ese día quedó inaugurado un modelo que hoy usa media Europa y que se resume en una frase incómoda: hay aeropuertos que pagan por tener aviones.
+Y ahí está lo que has comprado de verdad.
 
-Y si alguien te paga por ir, también puede dejar de pagarte.
+El aeropuerto no se puede mudar. La provincia no se puede mudar. Tu avión sí: se levanta y aterriza en Italia el martes siguiente.
 
-Porque lo de Charleroi no se quedó en Charleroi. En los años siguientes la Comisión revisó acuerdos parecidos en Alemania, en Italia, en Suecia, y en todos concluyó lo mismo: si al aeropuerto le sale rentable, no es una ayuda ilegal.
+Pero por eso mismo, la ruta nunca ha sido tuya. Era de quien pagaba la diferencia, y el día que deja de pagarla, deja de existir.
 
-Así que decenas de aeropuertos pequeños de media Europa aprendieron la lección. Un aeropuerto vacío no vale nada. Un aeropuerto con dos millones de pasajeros al año mueve hoteles, taxis, alquiler de coches y turismo.
+Has comprado aviones, papeles, personas y horas de vuelo. Lo único que no estaba en venta era el permiso para posarte donde te interesa.
 
-Y sale a cuenta pagar por llenarlo. Ese cálculo, hecho por cientos de ayuntamientos y gobiernos regionales a la vez, es lo que construyó el mapa de vuelos baratos de Europa tal y como lo conoces.
-
-## CAPÍTULO 3 — Los aviones sí son suyos
-
-Aquí viene la parte que rompe el tópico.
-
-Casi todas las aerolíneas de bajo coste alquilan sus aviones. Es la jugada obvia: no inmovilizas capital, no cargas con la depreciación, devuelves el aparato y te marchas.
-
-Ryanair hace justo lo contrario. La mayor parte de su flota es suya. Comprada, pagada y metida en su balance.
-
-Más de seiscientos Boeing setecientos treinta y siete, prácticamente todos del mismo modelo, con la misma cabina, las mismas piezas y el mismo entrenamiento para todos los pilotos.
-
-Eso no es tacañería. Es la ventaja entera. Un mecánico que solo conoce un avión es más rápido. Un almacén que solo guarda una pieza es más barato. Un piloto vale para cualquier vuelo de la compañía.
-
-Así que si la ruta se cae, el avión no se queda parado en Asturias. Se levanta y aterriza en Milán el martes siguiente.
-
-Ahí está la asimetría, y es toda la historia. El aeropuerto no se puede mudar. La provincia no se puede mudar. El avión sí.
-
-Y ahora la grieta, porque también hay algo que no controlan. Los aviones nuevos los fabrica Boeing, y Boeing lleva años entregando tarde.
-
-La compañía más obsesionada con el control de Europa depende, para crecer, de una fábrica en Seattle donde no manda ni uno solo de sus directivos.
-
-Y comprar aviones tiene un precio que marea. Un Boeing de este tipo ronda, en tarifa de catálogo, los cien millones de dólares, aunque nadie paga esa cifra: los pedidos grandes se cierran con descuentos enormes que ninguna de las dos partes publica.
-
-Ryanair es famosa precisamente por eso, por comprar cuando nadie compra. Encargó aviones justo después del once de septiembre y justo después de la pandemia, con el sector hundido y las fábricas desesperadas.
-
-Esa es la apuesta de fondo de toda la empresa: si eres dueño de tus aviones y los compraste baratos, tu coste por asiento es más bajo que el de cualquiera para siempre.
-
-## CAPÍTULO 4 — El asiento ciento ochenta y nueve
-
-Vamos a meternos dentro de un vuelo concreto, porque la aritmética de esto es preciosa y casi nadie la cuenta.
-
-Un Boeing setecientos treinta y siete de Ryanair va configurado al máximo.
-
-Ciento ochenta y nueve asientos.
-
-Cuando el avión ya está pagado, la tripulación ya está contratada y el vuelo va a salir de todas formas, el coste ya está gastado casi entero. Despegar con ciento ochenta pasajeros o con ciento ochenta y nueve cuesta prácticamente lo mismo.
-
-Lo que significa que esos últimos nueve asientos son casi beneficio puro. Da igual que los vendas a diecinueve euros con noventa y nueve.
-
-Por eso existen los billetes que parecen imposibles. No son un error ni un truco de escaparate: son la última fila de un avión que iba a despegar de todas formas.
-
-Pero esa misma matemática funciona al revés, y ahí es implacable.
-
-Si el avión sale medio vacío, no pierdes la mitad. Pierdes casi todo, porque el coste ya lo habías pagado entero.
-
-Por eso el número que de verdad vigila una aerolínea no es el precio del billete. Es qué porcentaje de asientos van ocupados, y Ryanair lo mantiene por encima del noventa por ciento año tras año, que es una cifra que el resto del sector mira con envidia.
-
-Quédate con esto, porque explica el vídeo entero: un avión lleno de billetes baratos gana dinero, y un avión medio vacío de billetes caros lo pierde.
-
-Y hay una segunda variable que casi nadie mira: cuántas horas al día está ese avión en el aire.
-
-Un avión parado en la pista cuesta exactamente lo mismo que uno volando. La amortización corre, el seguro corre, la financiación corre.
-
-Por eso Ryanair descarga, limpia, embarca y despega en menos de media hora, mientras una aerolínea tradicional se toma el doble o el triple. No es prisa: cada rotación extra al día es un vuelo entero de ingresos sobre el mismo avión pagado.
-
-## CAPÍTULO 5 — La cuenta anual, entera
-
-Sumemos ahora lo que cuesta tener esto en marcha durante un año.
-
-Quince mil quinientos cuarenta millones de euros entraron por la puerta.
-
-Y salieron trece mil doscientos ochenta millones.
-
-Ese dinero se va, más o menos por este orden, en combustible, en tripulaciones, en tasas de aeropuerto y de navegación aérea, en mantenimiento, y en la amortización de seiscientos aviones que envejecen tanto si vuelan como si están parados.
-
-El combustible es el que manda, y es justo el que no controlas. Una guerra a cuatro mil kilómetros te cambia la cuenta de resultados.
-
-Por eso las grandes aerolíneas compran el queroseno con años de antelación y a precio cerrado. Media aerolínea es, en la práctica, una mesa de operaciones financieras con aviones enganchados detrás.
-
-Y de todo ese engranaje, al final del año, sobran dos mil doscientos sesenta millones.
-
-Suena enorme. Divídelo entre doscientos ocho millones de pasajeros y vuelves a los diez euros con ochenta y cuatro por persona.
-
-Ese es el margen sobre el que se decide si tu ciudad tiene vuelos.
-
-Y fíjate en la proporción, porque es lo que hace frágil a un gigante. De cada cien euros que entran, más de ochenta y cinco vuelven a salir el mismo año.
-
-No hay colchón. Un negocio así no soporta una mala decisión, ni un invierno malo, ni una subida de tasas.
-
-## CAPÍTULO 6 — Y entonces llegó la carta de Aena
-
-Volvemos a España, y ahora ya tienes todas las piezas encima de la mesa.
-
-Aena aprueba una subida de tasas del seis coma seis por ciento. Sesenta y ocho céntimos más por pasajero.
-
-Sobre un margen de diez euros con ochenta y cuatro, sesenta y ocho céntimos son más del seis por ciento del beneficio que deja cada persona que embarca. Y en un aeropuerto regional, donde el avión va menos lleno, el golpe es todavía mayor.
-
-La aerolínea hace entonces exactamente lo que su modelo la obliga a hacer: coge los aviones y los lleva a donde el asiento le sale más barato. Italia, Marruecos, Croacia, Suecia, Hungría.
-
-Un millón doscientos mil asientos fuera de la España regional para el verano que viene, después de otro millón el invierno anterior.
-
-Asturias se queda sin ninguno.
-
-Y esos aviones no desaparecen. Aterrizan en otro sitio, en países donde el asiento sale más barato, y allí generan el mismo beneficio para la misma empresa.
-
-Desde el balance de la compañía no ha pasado nada. Desde Asturias ha pasado todo.
-
-Y aquí está lo que convierte esto en un episodio de esta serie y no en una noticia. Pregúntate de quién era la conexión de Asturias con Europa.
-
-Del aeropuerto no era: el aeropuerto solo pone el asfalto.
-
-De la aerolínea tampoco: la aerolínea puso un avión que ya estaba pagado y que puede aterrizar en cualquier otro sitio mañana.
-
-Era de quien pagaba la diferencia. Y en el momento en que dejó de pagarla, dejó de existir.
-
-## CIERRE — El precio de tener una aerolínea
-
-Así que la respuesta tiene dos partes, y la segunda es la que importa.
-
-Tener una aerolínea cuesta unos seiscientos aviones, quince mil millones de euros al año circulando y una obsesión enfermiza con el céntimo.
-
-Y todo ese aparato descomunal se sostiene sobre diez euros por persona. Un margen tan fino que cualquiera puede borrarlo desde fuera sin despeinarse.
-
-Michael O'Leary lleva cuarenta años construyendo la aerolínea más eficiente que ha existido nunca, y sigue sin poder decidir lo único que de verdad decide dónde vuela: cuánto le cobra por aterrizar un señor que no trabaja para él.
-
-En McDonald's el dueño no era dueño del suelo. En el casino, de la licencia. En el banco, del dinero. En el gimnasio, del cliente.
-
-Aquí es dueño de todo. De los aviones, de las bases, de las tripulaciones, de la marca. De todo menos del permiso para posarse.
-
-Y esto no es una rareza irlandesa. Es la forma del negocio. Cualquier aerolínea del mundo, por grande que sea, vive dentro de reglas, tasas y permisos que fija alguien que no es ella.
-
-Puedes ser dueño de la máquina más cara que existe y seguir dependiendo de una firma ajena para usarla.
-
-Sesenta y ocho céntimos.
-
-Ese era el número. Un aeropuerto entero, una provincia conectada con Europa, y la diferencia entre que exista y que no exista cabe en una moneda que te dejarías en la barra sin mirar.
+Sesenta y ocho céntimos. Ese era el número.
 
 Ese es el precio de ser el dueño.
 
@@ -230,37 +252,44 @@ Ese es el precio de ser el dueño.
 
 | dato | cifra | fuente |
 |---|---|---|
-| Pasajeros FY26 | 208,4 M | Ryanair, resultados FY26 (ejercicio cerrado 31-mar-2026) |
-| Ingresos del grupo | 15.540 M€ | Ryanair FY26 |
-| Ingresos de billete | 10.560 M€ | Ryanair FY26 |
-| Ingresos accesorios | 4.990 M€ (24 €/pax) | Ryanair FY26 |
-| Beneficio después de impuestos | 2.260 M€ (pre-extraordinarios) | Ryanair FY26 |
-| Billete medio | ~50 € | Ryanair FY26 |
+| Catálogo 737 MAX 8 (2026) | ~120 M$ | prensa especializada de aviación |
+| Descuento en pedidos grandes | 40–60 % | práctica del sector, no publicada por las partes |
+| Alquiler de un MAX nuevo | ~400.000 $/mes | informes de lease rates |
+| Certificación (AOC) | 12–24 meses de la idea al primer vuelo | reguladores y consultoras del sector |
+| Capital para arrancar una low-cost | 100–300 M$ | análisis del sector |
+| Récord de slots | 75 M$ por un par en Heathrow, Oman Air, 2016 | prensa de aviación |
+| Consumo 737 | 2.500–3.000 l/hora | datos de operación |
+| Mantenimiento | 1.000–2.000 $/hora de vuelo | estimaciones del sector |
+| Coste total de operar un 737 | ~5.700 $/hora de vuelo | estimaciones del sector |
+| Asientos 737-800/MAX 8200 | 189 | configuración de Ryanair |
+| Ryanair FY26 | 208,4 M pax · 15.540 M€ · 2.260 M€ de beneficio | resultados FY26 de Ryanair |
 | Ingreso por pasajero | 74,60 € | 15.540 / 208,4 — cálculo propio |
 | Beneficio por pasajero | 10,84 € | 2.260 / 208,4 — cálculo propio |
-| Costes del ejercicio | 13.280 M€ | 15.540 − 2.260 — cálculo propio |
-| Subida de tasas Aena | 6,62 % = +0,68 €/pax desde marzo 2026 | Aena / comunicado Ryanair |
-| Recorte España regional | 1,2 M asientos S26, tras 1 M en W25 | comunicado Ryanair |
-| Asturias / Santiago / Vigo | todos los vuelos, base cerrada, suspendido | comunicado Ryanair |
-| Zaragoza −45 %, Santander −38 % | — | comunicado Ryanair |
-| Charleroi 2001 | tasas de aterrizaje −50 %, asistencia en tierra 1 €/pax (10 % de tarifa), aportaciones a hotel, formación y contratación | Comisión Europea, decisión 2004 |
-| Anulación | Tribunal europeo anula la decisión de la Comisión, 2008 | asunto T-196/04 |
-| Flota | 600+ Boeing 737, mayoría en propiedad | Ryanair, flota corporativa |
+| Subida Aena | 6,62 % = +0,68 €/pax desde marzo 2026 | Aena / comunicado de Ryanair |
+| Recorte España regional | 1,2 M asientos | comunicado de Ryanair |
 
 **Pendiente de verificar antes de publicar**
 
-- El porcentaje exacto de flota en propiedad. El dato sólido que encontré es de 2016 (91 %); en el guion se dice «la mayor parte», que es defendible, pero conviene sacar la cifra actual del informe anual antes de dar un número.
-- El billete medio de 50 € y el «por encima del noventa por ciento» de ocupación: ambos redondeados a la baja desde el material de resultados. Confirmar contra el PDF de FY26.
-- Los 13.280 M€ de costes son una resta, no una partida publicada. Si en el vídeo se dice «salieron», es correcto; si se dijera «gastos operativos», no lo sería.
+- Las horquillas de coste por hora de vuelo y de mantenimiento salen de estimaciones del sector, no de cuentas auditadas. En el guion se dicen como horquillas («entre… y…») a propósito. No conviene cerrarlas en un número exacto.
+- El descuento del 40–60 % en pedidos grandes es práctica conocida pero ninguna de las partes la publica. Se dice así en el guion.
+- El récord de slots de Heathrow es de 2016 y sigue siendo el más alto citado; conviene confirmar que no ha habido otro mayor antes de publicar.
 
 ## Notas para el montaje
 
-**Motion graphics que pide este guion** — y que no son un contador más:
+**La factura es el gráfico del episodio.** Cada capítulo cierra con una línea nueva y el total acumulado. No es decoración: es lo que hace que el espectador se quede a ver el siguiente capítulo, porque quiere saber cuánto lleva.
 
-- **Cap 1, la factura.** Los 74,60 € desglosados en una barra apilada que crece por tramos: 50,60 de billete + 24 de extras. Y encima, en rojo, la franja de 10,84 que se queda la empresa. Es el gráfico central del episodio.
-- **Cap 2, Charleroi.** Una flecha que normalmente va de la aerolínea al aeropuerto, y que se da la vuelta. Dos iconos y una flecha: no hace falta más.
-- **Cap 4, el asiento 189.** Rejilla de 189 asientos. Se llenan 180 en gris y los últimos 9 en amarillo. El coste no se mueve; el ingreso sí.
-- **Cap 6, el mapa.** España con los aeropuertos afectados apagándose uno a uno: Asturias, Santiago, Vigo, Zaragoza, Santander. Y las rutas saliendo hacia Italia, Marruecos, Croacia.
-- **Cierre.** Una moneda de 68 céntimos contra la silueta de un aeropuerto. Escala.
+| capítulo | línea que se añade |
+|---|---|
+| 1 | 3 aviones alquilados — 14,4 M$/año |
+| 2 | Certificación y dos años sin ingresar — 100 M$ de capital mínimo |
+| 3 | Un slot en un aeropuerto grande — 75 M$ |
+| 4 | Tripulaciones — nómina fija, vuele o no |
+| 5 | 5.700 $ por cada hora en el aire |
+| 6 | Y entran 74,60 € por pasajero |
 
-**Lo que NO se puede ilustrar con stock** y debe ir generado: el desglose de la factura, la rejilla de asientos y el mapa de salida. Los tres son gráficos propios, y son justamente los tres momentos donde el vídeo demuestra su tesis.
+**Los demás gráficos:**
+
+- **Cap 3.** Comparación de barras: el avión contra el slot. El slot es más caro, y verlo es el capítulo.
+- **Cap 5.** El avión lleno y el avión vacío cuestan lo mismo: dos rejillas de 189 asientos, una llena y otra a medias, con el mismo coste debajo.
+- **Cap 6.** La barra apilada de 74,60 € partida en billete y extras, y después partida en coste y beneficio.
+- **Cierre.** El mapa de España apagando Asturias, Santiago, Vigo, Zaragoza y Santander.

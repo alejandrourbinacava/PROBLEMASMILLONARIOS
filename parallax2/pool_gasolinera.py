@@ -113,6 +113,35 @@ BUSQUEDAS = [
     ("carretera",      "highway traffic cars aerial"),
     ("carretera",      "cars driving road morning commute"),
     ("espana",         "spanish town road countryside"),
+
+    # --- segunda tanda -------------------------------------------------
+    # Catorce de los cincuenta y siete primeros no eran lo que decia su
+    # nombre. Estas consultas rescatan los conceptos que se quedaron sin
+    # metraje, con la palabra cambiada donde el buscador se despistaba:
+    #
+    #   "fuel pump display numbers" devolvia una forma azul abstracta; con
+    #   "meter" y "litres" ya devuelve el contador de verdad.
+    #   "gas station price sign board" devolvia un cartel de SALIDA, porque
+    #   en ingles "sign board" es cualquier senal.
+    #   "oil barrels industrial storage" devolvia un estanque con algas.
+    ("contador",       "fuel pump meter numbers litres close"),
+    ("contador",       "petrol pump price display digits"),
+    ("cartel_precio",  "petrol station price board diesel numbers"),
+    ("cartel_precio",  "roadside fuel price totem sign"),
+    ("camion_cisterna", "fuel tanker truck unloading station"),
+    ("camion_cisterna", "petrol tanker trailer driving road"),
+    ("tienda",         "petrol station convenience shop inside"),
+    ("tienda",         "shop shelves snacks drinks counter"),
+    ("bocadillo",      "wrapped sandwich shop shelf grab"),
+    ("barril",         "oil drums barrels row warehouse"),
+    ("tanque",         "buried pipes trench excavation ground"),
+    ("solar",          "vacant lot fenced empty urban"),
+    ("surtidor",       "petrol pump filling car close up"),
+    ("surtidor",       "fuel pump handle car tank hand"),
+    ("obra",           "excavator digging trench pipes"),
+    ("suelo",          "excavated soil trench close up"),
+    ("desatendida",    "unattended petrol station night empty"),
+    ("noche",          "car headlights night road driving"),
 ]
 
 

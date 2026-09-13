@@ -41,14 +41,70 @@ import emparejar as EMP
 TOPE = 0.15
 
 
+def antes_de_locutar(a):
+    """Cuantas FRASES del guion no encuentran ni una imagen en el pool.
+
+    Se mira con el Markdown en la mano, antes de gastar casi quince mil
+    creditos en la voz. Si un tercio de las frases no tiene imagen posible,
+    el problema es el pool -o el guion- y no se arregla renderizando.
+    """
+    import leer_guion
+
+    pool = json.load(io.open(os.path.join(AQUI, a.pool), encoding="utf-8"))
+    caps = leer_guion.leer(a.guion)
+    frases = [(cap, f) for cap, _t, fs in caps for f in fs]
+
+    huerfanas, flojas, bien = [], 0, 0
+    for cap, f in frases:
+        mejor = 0
+        for _e, desc, ruta in pool:
+            p, _ = EMP.puntua(f, ruta, desc)
+            if p > mejor:
+                mejor = p
+        if not mejor:
+            huerfanas.append((cap, f))
+        elif mejor <= 1:
+            flojas += 1
+        else:
+            bien += 1
+
+    n = len(frases)
+    print(f"{n} frases · pool de {len(pool)} clips")
+    print(f"  {bien} con imagen clara")
+    print(f"  {flojas} con imagen floja (una sola palabra)")
+    print(f"  {len(huerfanas)} SIN NINGUNA imagen posible -> iran a tarjeta")
+    for cap, f in huerfanas[:20]:
+        print(f"    {cap:<8} {f[:78]}")
+
+    parte = len(huerfanas) / float(n)
+    print(f"\n{parte * 100:.0f}% de las frases acabaran en tarjeta negra")
+    if parte > 0.35:
+        print("::error::Mas de un tercio del episodio seria texto sobre "
+              "negro. Amplia el pool con lo que dicen esas frases ANTES de "
+              "locutar: la voz son casi quince mil creditos y el guion no "
+              "cambia por renderizarlo.")
+        return 1
+    print("  el pool da para este guion")
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("guion")
     ap.add_argument("--pool", required=True)
     ap.add_argument("--tope", type=float, default=TOPE)
+    # Antes de locutar. El guion en Markdown todavia no tiene clips ni
+    # duraciones, pero si se puede saber CUANTAS FRASES no encuentran una
+    # sola imagen en el pool. Eso se mira antes de pagar la voz, no
+    # despues: la locucion de un episodio son casi quince mil creditos.
+    ap.add_argument("--md", action="store_true",
+                    help="el guion es el Markdown, aun sin montar")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
+
+    if a.md:
+        return antes_de_locutar(a)
 
     g = json.load(io.open(os.path.join(AQUI, a.guion), encoding="utf-8"))
     pool = json.load(io.open(os.path.join(AQUI, a.pool), encoding="utf-8"))

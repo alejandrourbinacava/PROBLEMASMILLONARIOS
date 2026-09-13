@@ -32,6 +32,7 @@ on:
       - "gim-*"
       - "aero-*"
       - "aire-*"
+      - "gaso-*"
 
 permissions:
   contents: write
@@ -56,6 +57,7 @@ jobs:
             v2-*)    echo "voz=voz_v2.mp3"   >> "$GITHUB_OUTPUT" ;;
             aero-*)  echo "voz=voz_aero.mp3" >> "$GITHUB_OUTPUT" ;;
             aire-*)  echo "voz=voz_aire.mp3" >> "$GITHUB_OUTPUT" ;;
+            gaso-*)  echo "voz=voz_gaso.mp3" >> "$GITHUB_OUTPUT" ;;
             gim-*)   echo "voz=voz_gim.mp3"  >> "$GITHUB_OUTPUT" ;;
             *)       echo "voz=voz.mp3"      >> "$GITHUB_OUTPUT" ;;
           esac
@@ -69,6 +71,10 @@ jobs:
             echo "guion=proyecto/aeropuerto.json" >> "$GITHUB_OUTPUT"
           elif [[ "${GITHUB_REF_NAME}" == aire-* ]]; then
             echo "guion=proyecto/aerolinea.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_aerolinea_revisado.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == gaso-* ]]; then
+            echo "guion=proyecto/gasolinera.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_gasolinera_revisado.json" >> "$GITHUB_OUTPUT"
           else
             echo "guion=${{ inputs.guion || 'proyecto/episodio_banco.json' }}" >> "$GITHUB_OUTPUT"
           fi
@@ -100,6 +106,15 @@ jobs:
       # tres guiones sin las tarjetas que les dibujo vestir.py y los seis
       # renders de ese dia murieron con FileNotFoundError a los cincuenta y
       # siete minutos, con medio video ya compuesto. Esto tarda dos segundos.
+      # La regla de oro del canal: la imagen tiene que ver con lo que se
+      # dice. No lo comprobaba NADA, y en el episodio de la aerolinea 91
+      # planos de 189 llevaban un clip sin una sola palabra en comun con su
+      # frase. Lo vio el usuario al ver el video, no el pipeline.
+      - name: Que el metraje tenga que ver con lo que se dice
+        if: steps.g.outputs.pool != ''
+        working-directory: parallax2
+        run: python comprobar_encaje.py "${{ steps.g.outputs.guion }}" --pool "${{ steps.g.outputs.pool }}"
+
       - name: Que esten todas las capas
         working-directory: parallax2
         run: python comprobar_ficheros.py "${{ steps.g.outputs.guion }}"

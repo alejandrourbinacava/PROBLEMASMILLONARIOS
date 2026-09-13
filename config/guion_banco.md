@@ -131,7 +131,7 @@ En los bancos pequeños, el cumplimiento normativo se lleva el ocho coma siete p
 
 En los grandes, el dos coma nueve.
 
-Léelo otra vez. El banco pequeño paga, en proporción, **tres veces más** que el grande por cumplir exactamente las mismas normas.
+Escucha bien ese dato. El banco pequeño paga, en proporción, **tres veces más** que el grande por cumplir exactamente las mismas normas.
 
 En personal es todavía más claro: entre el once y el quince coma cinco por ciento del gasto en nóminas de un banco pequeño se va en cumplimiento. En los grandes, entre el cinco y medio y el nueve y medio.
 

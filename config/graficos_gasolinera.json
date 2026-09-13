@@ -1,0 +1,126 @@
+[
+  {
+    "_nota": "FACTURA 1. El terreno. La cuenta arranca aqui y no se suelta hasta el cierre.",
+    "donde": "total acumulado: doscientos mil euros",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu gasolinera, hasta aquí",
+      "lineas": [["terreno, en el lado bueno de la vía", "200.000 €"]],
+      "total": "200.000 €",
+      "etiqueta_total": "llevas gastado",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA 2. La obra y los tanques TRIPLICAN el terreno, y es la parte que no se ve nunca. Ese salto es el capitulo.",
+    "donde": "total acumulado: seiscientos mil euros",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu gasolinera, hasta aquí",
+      "lineas": [
+        ["terreno, en el lado bueno de la vía", "200.000 €"],
+        ["obra civil y tanques enterrados", "400.000 €"]
+      ],
+      "total": "600.000 €",
+      "etiqueta_total": "llevas gastado",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA 3. Los papeles son la linea mas pequena de todas y la que mas tiempo cuesta. Verla ridicula al lado de las otras es justo el punto.",
+    "donde": "total acumulado: seiscientos veinticinco mil euros",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu gasolinera, hasta aquí",
+      "lineas": [
+        ["terreno, en el lado bueno de la vía", "200.000 €"],
+        ["obra civil y tanques enterrados", "400.000 €"],
+        ["licencias, permisos y meses", "25.000 €"]
+      ],
+      "total": "625.000 €",
+      "etiqueta_total": "llevas gastado",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "EL GRAFICO DEL EPISODIO. El litro abierto en canal: producto, impuesto de hidrocarburos e IVA. Un contador diria 1,46 y no explicaria nada.",
+    "donde": "el iva se calcula sobre un precio que ya lleva el otro impuesto",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "apilada",
+      "items": [["producto", 0.73], ["hidrocarburos", 0.47], ["IVA", 0.25]],
+      "colores": {
+        "producto": [120, 130, 150],
+        "hidrocarburos": [255, 110, 86],
+        "IVA": [255, 140, 100]
+      },
+      "total": "1,46 € el litro",
+      "sufijo": " €", "dec": 2,
+      "y": 0.52, "retardo": 0.45, "duracion": 2.6, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "El remate del capitulo 4, y probablemente la miniatura del video: lo que se lleva Hacienda contra lo que te llevas tu, por el mismo litro.",
+    "donde": "hacienda se lleva siete veces mas que tu",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "barras",
+      "items": [["Hacienda", 72.0], ["tú", 10.0]],
+      "destacar": {"Hacienda": [255, 110, 86]},
+      "sufijo": " c", "dec": 0,
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "La cuenta que hicieron las low cost, hecha delante del espectador: cuantos litros hay que despachar solo para volver a cero.",
+    "donde": "necesitas despachar seis millones y pico de litros",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "contador",
+      "valor": 6.25,
+      "dec": 2,
+      "sufijo": " M de litros",
+      "pie": "solo para recuperar lo invertido",
+      "color": [255, 110, 86],
+      "y": 0.46, "retardo": 0.5, "duracion": 2.2, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "De donde sale de verdad el dinero de una gasolinera de toda la vida. El combustible es el reclamo; el margen esta en el cafe.",
+    "donde": "la tienda deja entre un veinticinco y un cuarenta",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "barras",
+      "items": [["la tienda", 32.0], ["el combustible", 7.0]],
+      "destacar": {"la tienda": [120, 220, 170]},
+      "sufijo": " % de margen", "dec": 0,
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA FINAL. La unica linea de todo el episodio que no se puede cerrar con un numero. Ese interrogante es el remate del video.",
+    "donde": "la responsabilidad por el suelo contaminado",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "y el día que cierres",
+      "lineas": [
+        ["terreno, obra, tanques y papeles", "625.000 €"],
+        ["vaciar, limpiar e inertizar los tanques", "a tu cargo"],
+        ["descontaminar el suelo, si hubo fuga", "?"]
+      ],
+      "total": "?",
+      "etiqueta_total": "y esto no se extingue",
+      "color": [255, 110, 86],
+      "y": 0.5, "retardo": 0.4, "duracion": 3.0, "entrada": "golpe"
+    }
+  }
+]

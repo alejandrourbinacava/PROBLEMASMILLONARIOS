@@ -176,12 +176,29 @@ def main():
                 combis.append((p, i, ruta))
     combis.sort(key=lambda x: -x[0])
 
-    puesto, usados = {}, set()
+    # Un clip bueno puede VOLVER A SALIR, separado en el tiempo.
+    #
+    # Antes cada clip se usaba una sola vez en todo el episodio. Suena
+    # prudente y es lo que rompia el video: el guion de la aerolinea dice
+    # "avion" en quince frases y en el pool hay quince clips de avion, asi
+    # que las primeras frases se los llevaban todos y a partir de la mitad
+    # no quedaba ni uno. Esos planos caian al reparto por tema del
+    # constructor, que no mira la frase: una grua debajo de "un Boeing 737",
+    # un aparcamiento debajo de "irte de una provincia entera". 91 planos de
+    # 189 sin una sola palabra en comun con lo que se estaba diciendo.
+    #
+    # Vale mas ver el mismo avion tres veces en quince minutos -separados, y
+    # con otro movimiento y otro encuadre- que ver una grua cuando se habla
+    # de un avion. La regla de oro del canal es que la imagen tenga que ver
+    # con lo que se dice; que no se repita es una preferencia, no la regla.
+    puesto, usados = {}, {}
     for p, i, ruta in combis:
-        if i in puesto or ruta in usados:
+        if i in puesto:
+            continue
+        if i - usados.get(ruta, -999) <= DISTANCIA:
             continue
         puesto[i] = ruta
-        usados.add(ruta)
+        usados[ruta] = i
 
     # SEGUNDA PASADA, y es la que decide si esto parece un canal o un
     # PowerPoint. Una frase larga se cuenta en cinco planos y los cinco
@@ -211,16 +228,31 @@ def main():
             if j in puesto:
                 continue
             for ruta in candidatos.get(frase, []):
-                if ruta not in usados:
+                if j - usados.get(ruta, -999) > DISTANCIA:
                     puesto[j] = ruta
-                    usados.add(ruta)
+                    usados[ruta] = j
                     ultimo_uso[ruta] = j
                     break
             else:
-                # nada libre: se repite el que lleve mas planos sin salir
-                lejano = min(candidatos.get(frase, [None]),
-                             key=lambda r: ultimo_uso.get(r, -999))
-                if lejano is not None and j - ultimo_uso.get(lejano, -999) > DISTANCIA:
+                # Nada libre. Se REPITE un clip de esta misma frase.
+                #
+                # Y sin el filtro de distancia, que es lo que estaba mal.
+                # Repetir dentro de la misma frase no es quedarse sin
+                # material: es volver al mismo plano mientras se sigue
+                # hablando de lo mismo, y cada plano lleva movimiento y
+                # encuadre distintos. Con el filtro puesto, esta rama no se
+                # cumplia casi nunca y el plano se quedaba con el clip que
+                # habia repartido el constructor POR TEMA, en rueda.
+                #
+                # Eso puso 91 de 189 planos con puntuacion CERO: el clip no
+                # compartia ni una palabra con la frase. Un aparcamiento
+                # vacio debajo de "vas a tener que irte de una provincia
+                # entera", una grua debajo de "un Boeing 737". El usuario lo
+                # vio: "debe haber varias escenas mal".
+                propios = candidatos.get(frase, [])
+                if propios:
+                    lejano = min(propios,
+                                 key=lambda r: ultimo_uso.get(r, -999))
                     puesto[j] = lejano
                     ultimo_uso[lejano] = j
 
@@ -256,7 +288,14 @@ def main():
         # PowerPoint.
         primera = bool(hermanos) and i == hermanos[0]
 
-        if i in puesto or (not huerfana and e.get("clip")) or                 (huerfana and not primera and e.get("clip")) or                 (e.get("grafico") and e.get("clip")):
+        # Un plano se queda con metraje solo si el clip tiene que ver con
+        # lo que se dice: o lo eligio el emparejador por palabra, o es un
+        # clip de su propia frase repetido. El que reparte el constructor
+        # por tema ya no vale como relleno.
+        #
+        # La excepcion es el plano que lleva un grafico encima: ahi la
+        # imagen es fondo del dato, no ilustra la frase.
+        if i in puesto or (e.get("grafico") and e.get("clip")):
             if i in puesto:
                 e["clip"] = puesto[i]
             e["duotono"] = duo

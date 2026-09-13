@@ -33,7 +33,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -47,38 +47,16 @@
       "id": "gancho_02",
       "texto": "Y te aviso de una cosa antes de empezar, porque lo cambia todo: la parte cara no es el avión.",
       "duracion": 1.88,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_gancho_02.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "texto_pantalla": {
-        "texto": "lo cambia todo",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
       "composicion": "centrado"
     },
@@ -91,7 +69,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -107,7 +85,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -118,38 +96,27 @@
       "id": "gancho_03",
       "texto": "El avión es lo barato. Lo vas a ver dentro de dos minutos y no te lo vas a creer.",
       "duracion": 1.7,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_gancho_03.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "texto_pantalla": {
         "texto": "El avión es lo *barato*",
-        "px": 112,
-        "y": 0.47,
+        "px": 132,
+        "y": 0.3,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "izquierda"
       },
-      "tipo": "rotulo",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "composicion": "centrado"
     },
     {
@@ -161,7 +128,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -177,7 +144,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+      "clip": "stock_aeropuerto/air_traffic_control_tower_7.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -317,33 +284,77 @@
       "id": "gancho_05b",
       "texto": "Y al final de cada paso te doy el total acumulado, para que veas exactamente en qué momento esto se convierte en otra cosa.",
       "duracion": 2.91,
-      "movimiento": "estatico",
-      "grade": "dorado_suave",
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_05b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "al *final* de cada paso te doy",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
       "composicion": "centrado"
     },
     {
       "id": "gancho_05c",
       "texto": "Y al final de cada paso te doy el total acumulado, para que veas exactamente en qué momento esto se convierte en otra cosa.",
       "duracion": 3.56,
-      "movimiento": "drift_izq",
-      "grade": "dorado_suave",
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "polvo"
+        "bokeh"
       ],
-      "clip": "stock_aeropuerto/air_traffic_control_tower_7.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_05c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
       "latigo": "izq",
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "al *final* de cada paso te doy",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "_lat_sal": -1.0,
       "transicion": "corte",
       "composicion": "derecha"
@@ -391,17 +402,39 @@
       "id": "gancho_06b",
       "texto": "Te adelanto el final: cuando lo tengas todo pagado, cuando seas el dueño de los aviones, de las tripulaciones y de la marca, va a llegar un señor que no trabaja para ti y va a subirte una tasa sesenta y ocho céntimos.",
       "duracion": 2.84,
-      "movimiento": "push_in",
-      "grade": "dorado_suave",
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
-      "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_06b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
       "latigo": "izq",
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Te adelanto el *final*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "_lat_sal": -1.0,
       "transicion": "corte",
       "composicion": "centrado"
@@ -410,16 +443,38 @@
       "id": "gancho_06c",
       "texto": "Te adelanto el final: cuando lo tengas todo pagado, cuando seas el dueño de los aviones, de las tripulaciones y de la marca, va a llegar un señor que no trabaja para ti y va a subirte una tasa sesenta y ocho céntimos.",
       "duracion": 2.84,
-      "movimiento": "estatico",
-      "grade": "dorado_suave",
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_06c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Te adelanto el *final*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
       "_lat_ent": -1.0,
       "composicion": "izquierda"
     },
@@ -427,16 +482,38 @@
       "id": "gancho_06d",
       "texto": "Te adelanto el final: cuando lo tengas todo pagado, cuando seas el dueño de los aviones, de las tripulaciones y de la marca, va a llegar un señor que no trabaja para ti y va a subirte una tasa sesenta y ocho céntimos.",
       "duracion": 2.84,
-      "movimiento": "subir",
-      "grade": "dorado_suave",
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "polvo"
+        "bokeh"
       ],
-      "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_06d.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Te adelanto el *final*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "derecha"
     },
     {
@@ -513,16 +590,38 @@
       "id": "gancho_07b",
       "texto": "Y vas a tener que irte de una provincia entera.",
       "duracion": 2.22,
-      "movimiento": "pull_out",
-      "grade": "dorado_suave",
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_gancho_07b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "vas a *tener* que irte",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "izquierda"
     },
     {
@@ -638,38 +737,16 @@
       "id": "cap1_01",
       "texto": "Un Boeing setecientos treinta y siete MAX, el avión más común de Europa, tiene un precio de catálogo de unos ciento veinte millones de dólares.",
       "duracion": 2.55,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap1_01.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "el avión más común de *Europa*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "composicion": "centrado"
     },
     {
@@ -681,7 +758,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -700,7 +777,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -847,19 +924,79 @@
     {
       "id": "cap1_03c",
       "texto": "En un pedido grande, los descuentos de los que se habla en el sector van del cuarenta al sesenta por ciento. Ninguna de las dos partes publica el número real jamás.",
-      "duracion": 4.51,
-      "movimiento": "push_in",
-      "grade": "dorado_suave",
+      "duracion": 2.25,
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "humo"
+        "destellos"
       ],
-      "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap1_03c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "En un pedido *grande*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
       "_lat_ent": 1.0,
       "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03cx",
+      "texto": "En un pedido grande, los descuentos de los que se habla en el sector van del cuarenta al sesenta por ciento. Ninguna de las dos partes publica el número real jamás.",
+      "duracion": 2.26,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap1_03cx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "cuarenta al sesenta por *ciento*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_04",
@@ -870,7 +1007,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -891,45 +1028,23 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_05",
       "texto": "Y aquí tienes la primera decisión que tomarías de verdad, porque casi nadie compra.",
       "duracion": 2.56,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap1_05.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "casi nadie *compra*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "centrado"
+      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_05b",
@@ -940,12 +1055,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/boarding_pass_ticket_scan_69.mp4",
+      "clip": "stock_aeropuerto/business_people_walking_office_82.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_06",
@@ -977,7 +1092,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_07",
@@ -988,7 +1103,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
+      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1020,7 +1135,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_07b",
@@ -1031,12 +1146,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_08",
@@ -1068,7 +1183,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_08b",
@@ -1084,7 +1199,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_08c",
@@ -1095,12 +1210,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+      "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_09",
@@ -1143,7 +1258,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_09b",
@@ -1159,7 +1274,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_10",
@@ -1191,7 +1306,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_11",
@@ -1229,7 +1344,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_11b",
@@ -1261,7 +1376,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_12",
@@ -1299,45 +1414,28 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_12b",
       "texto": "Antes de seguir, una decisión más que tomarías el primer día y que casi nadie conoce.",
       "duracion": 3.77,
-      "movimiento": "bajar",
-      "grade": "dorado_suave",
-      "efectos": [
-        "humo"
-      ],
-      "clip": "stock_aeropuerto/coins_falling_slow_motion_77.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
-    },
-    {
-      "id": "cap1_13",
-      "texto": "Puedes comprar el avión y vendérselo inmediatamente a una empresa de alquiler, que te lo devuelve alquilado. Suena absurdo y lo hace media industria.",
-      "duracion": 2.76,
-      "movimiento": "drift_izq",
+      "movimiento": "drift_der",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
       "capas": [
         {
           "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap1_13.png",
+          "archivo": "tarjeta_aerolinea_cap1_12b.png",
           "clase": "abstracto",
           "entrada": "escala",
           "prompt": "tarjeta del canal"
         }
       ],
-      "tipo": "rotulo",
       "texto_pantalla": {
-        "texto": "que te lo devuelve *alquilado*",
+        "texto": "Antes de *seguir*",
         "px": 112,
         "y": 0.47,
         "acento": [
@@ -1353,7 +1451,24 @@
         "estilo": "sube",
         "retardo": 0.26
       },
+      "tipo": "rotulo",
       "composicion": "centrado"
+    },
+    {
+      "id": "cap1_13",
+      "texto": "Puedes comprar el avión y vendérselo inmediatamente a una empresa de alquiler, que te lo devuelve alquilado. Suena absurdo y lo hace media industria.",
+      "duracion": 2.76,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     },
     {
       "id": "cap1_13b",
@@ -1364,7 +1479,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1380,7 +1495,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_13c",
@@ -1391,12 +1506,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_14",
@@ -1407,7 +1522,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1423,7 +1538,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_14b",
@@ -1434,12 +1549,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_14c",
@@ -1450,12 +1565,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_14d",
@@ -1466,12 +1581,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_15",
@@ -1509,7 +1624,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_01",
@@ -1520,7 +1635,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1541,7 +1656,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_02",
@@ -1560,7 +1675,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_02b",
@@ -1577,7 +1692,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_02c",
@@ -1588,7 +1703,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aerolinea/passengers_boarding_stairs_tarmac_backpacks_26.mp4",
+      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1604,7 +1719,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_03",
@@ -1631,7 +1746,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_03b",
@@ -1650,46 +1765,24 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_04",
       "texto": "Y tienes que nombrar responsables de verdad, con nombre y apellidos, que respondan personalmente de la seguridad, de las operaciones y del mantenimiento. Son gente con veinte años de sector y no son baratos.",
       "duracion": 3.88,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "estatico",
+      "grade": "acero_suave",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap2_04.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "con nombre y *apellidos*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aeropuerto/people_waiting_airport_seats_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_04b",
@@ -1700,7 +1793,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airport_arrivals_greeting_89.mp4",
+      "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1708,7 +1801,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_04c",
@@ -1719,7 +1812,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
+      "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1741,7 +1834,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_05",
@@ -1752,7 +1845,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1773,7 +1866,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_06",
@@ -1784,7 +1877,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
+      "clip": "stock_aeropuerto/business_people_walking_office_82.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1816,7 +1909,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_06b",
@@ -1827,12 +1920,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/judge_gavel_court_84.mp4",
+      "clip": "stock_aeropuerto/clock_ticking_close_up_87.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_07",
@@ -1859,7 +1952,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_07b",
@@ -1870,12 +1963,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aeropuerto/executives_discussing_table_81.mp4",
+      "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_07c",
@@ -1886,50 +1979,28 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
+      "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_08",
       "texto": "Por eso, cuando se mira el capital que hace falta para arrancar una aerolínea de verdad, la horquilla que maneja el sector no baja de cien millones de dólares, y llega a trescientos.",
       "duracion": 3.11,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "acero_suave",
       "efectos": [
-        "destellos"
+        "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap2_08.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "llega a *trescientos*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "derecha"
+      "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap2_08b",
@@ -1940,12 +2011,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/signing_agreement_two_parties_table_39.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_08c",
@@ -1956,7 +2027,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1977,7 +2048,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_09",
@@ -1988,7 +2059,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2009,21 +2080,53 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_10",
       "texto": "Y hay una factura más que llega antes que el primer pasajero: el seguro.",
       "duracion": 2.19,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_aerolinea/passengers_boarding_stairs_tarmac_backpacks_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_10b",
+      "texto": "Y hay una factura más que llega antes que el primer pasajero: el seguro.",
+      "duracion": 3.25,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_11",
+      "texto": "Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.",
+      "duracion": 3.33,
       "movimiento": "drift_der",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [
         {
           "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap2_10.png",
+          "archivo": "tarjeta_aerolinea_cap2_11.png",
           "clase": "abstracto",
           "entrada": "escala",
           "prompt": "tarjeta del canal"
@@ -2031,7 +2134,7 @@
       ],
       "tipo": "rotulo",
       "texto_pantalla": {
-        "texto": "el *seguro*",
+        "texto": "vueles mucho o *vueles* poco",
         "px": 112,
         "y": 0.47,
         "acento": [
@@ -2050,79 +2153,118 @@
       "composicion": "centrado"
     },
     {
-      "id": "cap2_10b",
-      "texto": "Y hay una factura más que llega antes que el primer pasajero: el seguro.",
-      "duracion": 3.25,
-      "movimiento": "push_in",
-      "grade": "acero_suave",
-      "efectos": [
-        "ceniza"
-      ],
-      "clip": "stock_aerolinea/green_coast_northern_spain_cliffs_41.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cap2_11",
-      "texto": "Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.",
-      "duracion": 3.33,
-      "movimiento": "bajar",
-      "grade": "acero_suave",
-      "efectos": [
-        "humo"
-      ],
-      "clip": "stock_aerolinea/hand_taking_bread_snack_close_up_12.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
-    },
-    {
       "id": "cap2_11b",
       "texto": "Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.",
       "duracion": 4.07,
-      "movimiento": "push_in",
-      "grade": "acero_suave",
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/galicia_coast_atlantic_spain_42.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
-    },
-    {
-      "id": "cap2_11c",
-      "texto": "Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.",
-      "duracion": 4.96,
-      "movimiento": "drift_der",
-      "grade": "acero_suave",
-      "efectos": [
-        "niebla"
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_11b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
       ],
-      "clip": "stock_aerolinea/pilot_cockpit_controls_flying_9.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "*vueles* mucho o vueles poco",
-        "px": 108,
-        "y": 0.68,
+        "texto": "vueles mucho o *vueles* poco",
+        "px": 112,
+        "y": 0.47,
         "acento": [
           255,
           176,
           60
         ],
-        "estilo": "sube"
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
       },
+      "tipo": "rotulo",
       "composicion": "derecha"
+    },
+    {
+      "id": "cap2_11c",
+      "texto": "Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.",
+      "duracion": 2.48,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_11c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Nadie te deja *despegar*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_11cx",
+      "texto": "Nadie te deja despegar sin una póliza de responsabilidad que cubra el aparato y a todo el que va dentro, y esa póliza se paga por adelantado y se renueva cada año, vueles mucho o vueles poco.",
+      "duracion": 2.48,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap2_11cx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "va *dentro*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
     },
     {
       "id": "cap2_12",
@@ -2170,39 +2312,28 @@
       "id": "cap3_01",
       "texto": "Ahora tienes aviones y tienes permiso. Falta un detalle: un sitio donde posarte.",
       "duracion": 3.01,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "frio_suave",
       "efectos": [
-        "bokeh"
+        "humo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap3_01.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
         "texto": "Falta un *detalle*",
-        "px": 112,
-        "y": 0.47,
+        "px": 132,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_01b",
@@ -2213,7 +2344,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/hand_luggage_cabin_bag_airplane_14.mp4",
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -2221,7 +2352,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_02",
@@ -2265,7 +2396,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_02c",
@@ -2281,44 +2412,22 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_03",
       "texto": "¿Cuánto cuesta uno? Te doy el récord, porque explica el capítulo entero.",
       "duracion": 2.38,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "frio_suave",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap3_03.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "¿*Cuánto* cuesta uno? Te doy",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda"
     },
     {
@@ -2330,7 +2439,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/coins_close_up_macro_euro_24.mp4",
+      "clip": "stock_aeropuerto/construction_crane_infrastructure_32.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2338,7 +2447,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_04",
@@ -2349,7 +2458,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aerolinea/hand_holding_coin_small_change_25.mp4",
+      "clip": "stock_aerolinea/booking_flight_online_laptop_27.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2386,7 +2495,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_05",
@@ -2397,7 +2506,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2443,13 +2552,13 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/small_regional_airport_terminal_44.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_05c",
@@ -2460,48 +2569,37 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aeropuerto/runway_markings_asphalt_51.mp4",
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_06",
       "texto": "Es más de lo que te ha costado tu avión. Es más de lo que te ha costado toda la certificación.",
       "duracion": 2.58,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "estatico",
+      "grade": "frio_suave",
       "efectos": [
-        "niebla"
+        "fuga_luz"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap3_06.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "Es más de lo que te ha *costado*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "Es más de lo que te ha *costado* tu",
+        "px": 108,
+        "y": 0.3,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "escala"
       },
       "composicion": "izquierda"
     },
@@ -2514,12 +2612,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aerolinea/oil_refinery_fuel_storage_tanks_32.mp4",
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_07",
@@ -2535,7 +2633,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_07b",
@@ -2546,7 +2644,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
+      "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2589,23 +2687,45 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_08b",
       "texto": "Y por eso existen las aerolíneas de bajo coste tal y como las conoces.",
       "duracion": 3.41,
-      "movimiento": "bajar",
-      "grade": "frio_suave",
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "humo"
+        "bokeh"
       ],
-      "clip": "stock_aerolinea/press_conference_microphones_podium_38.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_08b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "por eso *existen*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
     },
     {
       "id": "cap3_09",
@@ -2664,7 +2784,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_09c",
@@ -2680,7 +2800,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_10",
@@ -2721,17 +2841,77 @@
     {
       "id": "cap3_10b",
       "texto": "Y ahí no solo es barato. Ahí, a veces, te pagan por ir. Al final del vídeo te digo cuánto pagan, y quién lo paga.",
-      "duracion": 5.6,
-      "movimiento": "estatico",
-      "grade": "frio_suave",
+      "duracion": 2.8,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/small_spanish_town_aerial_view_43.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_10b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "ahí no solo es *barato*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_10bx",
+      "texto": "Y ahí no solo es barato. Ahí, a veces, te pagan por ir. Al final del vídeo te digo cuánto pagan, y quién lo paga.",
+      "duracion": 2.8,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_10bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*quién*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "centrado"
     },
     {
@@ -2770,23 +2950,45 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_11b",
       "texto": "Y mira bien lo que acaba de pasar ahí, porque no es un atajo: es todo el modelo.",
       "duracion": 3.8,
-      "movimiento": "contra_der",
-      "grade": "frio_suave",
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
-        "fuga_luz"
+        "niebla"
       ],
-      "clip": "stock_aerolinea/empty_airport_gate_no_passengers_45.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_11b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "no es un *atajo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
     },
     {
       "id": "cap3_12",
@@ -2834,7 +3036,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_13",
@@ -2845,12 +3047,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/commercial_airliner_flying_sky_clouds_50.mp4",
+      "clip": "stock_aerolinea/empty_airport_gate_no_passengers_45.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_13b",
@@ -2909,7 +3111,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_14",
@@ -2947,23 +3149,83 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_14b",
       "texto": "Los dos os necesitáis. Y esa es exactamente la relación que se va a romper al final de este vídeo.",
-      "duracion": 4.55,
-      "movimiento": "contra_izq",
-      "grade": "frio_suave",
+      "duracion": 2.27,
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "lluvia"
+        "destellos"
       ],
-      "clip": "stock_aerolinea/closed_shutter_shop_empty_street_60.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_14b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Los dos os *necesitáis*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
       "composicion": "centrado"
+    },
+    {
+      "id": "cap3_14bx",
+      "texto": "Los dos os necesitáis. Y esa es exactamente la relación que se va a romper al final de este vídeo.",
+      "duracion": 2.28,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap3_14bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "relación que se va a *romper*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
     },
     {
       "id": "cap3_15",
@@ -2974,7 +3236,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aerolinea/courthouse_columns_facade_steps_53.mp4",
+      "clip": "stock_aeropuerto/clock_ticking_close_up_87.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3020,7 +3282,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3041,7 +3303,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_01b",
@@ -3052,7 +3314,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -3060,45 +3322,34 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_02",
       "texto": "Un piloto no vale para cualquier avión. Está habilitado para un tipo concreto, y cambiarle el tipo cuesta dinero y semanas de simulador.",
       "duracion": 2.51,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
       "efectos": [
-        "destellos"
+        "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap4_02.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
       "texto_pantalla": {
-        "texto": "Un *piloto* no vale",
-        "px": 112,
-        "y": 0.47,
+        "texto": "Un piloto no vale para *cualquier*",
+        "px": 108,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "derecha"
       },
-      "_lat_ent": 1.0,
       "composicion": "derecha"
     },
     {
@@ -3110,12 +3361,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/runway_markings_asphalt_51.mp4",
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_02c",
@@ -3126,12 +3377,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_03",
@@ -3142,7 +3393,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
+      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3169,12 +3420,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_03c",
@@ -3185,12 +3436,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
+      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_03d",
@@ -3201,7 +3452,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3212,39 +3463,28 @@
       "id": "cap4_04",
       "texto": "No es una manía. Es una de las decisiones que más dinero ahorra en todo el negocio, y se toma el primer día.",
       "duracion": 2.99,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
       "efectos": [
-        "polvo"
+        "humo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap4_04.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "texto_pantalla": {
         "texto": "No es una *manía*",
-        "px": 112,
-        "y": 0.47,
+        "px": 132,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "sube"
       },
-      "tipo": "rotulo",
-      "composicion": "izquierda"
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap4_04b",
@@ -3255,49 +3495,27 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
+      "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_05",
       "texto": "Y con la gente hay una regla que no admite trampa: el avión puede estar parado, pero la nómina sale igual.",
       "duracion": 3.59,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap4_05.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "el avión puede estar *parado*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aeropuerto/people_waiting_airport_seats_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda"
     },
     {
@@ -3309,7 +3527,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
+      "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -3325,45 +3543,23 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_06",
       "texto": "Puedes aplazar la compra de un avión. Puedes retrasar una revisión. No puedes decirle a una tripulación que este mes no.",
       "duracion": 3.5,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
       "efectos": [
-        "polvo"
+        "humo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap4_06.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "Puedes retrasar una *revisión*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "centrado"
+      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_06b",
@@ -3374,7 +3570,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/suitcase_luggage_conveyor_10.mp4",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3393,13 +3589,13 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_07b",
@@ -3410,7 +3606,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aerolinea/hand_luggage_cabin_bag_airplane_14.mp4",
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3418,7 +3614,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_07c",
@@ -3429,7 +3625,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aerolinea/airplane_hangar_maintenance_night_20.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3457,7 +3653,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3478,7 +3674,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_08",
@@ -3489,7 +3685,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aerolinea/booking_flight_online_laptop_27.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3505,7 +3701,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_08b",
@@ -3516,7 +3712,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aerolinea/travellers_walking_suitcases_terminal_shops_56.mp4",
+      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3543,39 +3739,28 @@
       "id": "cap4_09",
       "texto": "Y una última cosa de este capítulo, que parece de detalle y es de las que más dinero mueven: cuánto tarda tu avión en volver a despegar.",
       "duracion": 2.57,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
       "efectos": [
-        "polvo"
+        "humo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap4_09.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "una *última* cosa",
-        "px": 112,
-        "y": 0.47,
+        "texto": "una última cosa de este *capítulo*",
+        "px": 108,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09b",
@@ -3586,12 +3771,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_09c",
@@ -3602,7 +3787,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/people_waiting_airport_seats_58.mp4",
+      "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3645,53 +3830,21 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_10b",
       "texto": "Las compañías de bajo coste descargan, limpian, embarcan y vuelven a salir en menos de media hora. Una tradicional se toma el doble o el triple.",
       "duracion": 3.81,
-      "movimiento": "push_in",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "humo"
-      ],
-      "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
-    },
-    {
-      "id": "cap4_10c",
-      "texto": "Las compañías de bajo coste descargan, limpian, embarcan y vuelven a salir en menos de media hora. Una tradicional se toma el doble o el triple.",
-      "duracion": 4.65,
-      "movimiento": "drift_der",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "polvo"
-      ],
-      "clip": "stock_aerolinea/passengers_boarding_stairs_tarmac_backpacks_26.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
-    },
-    {
-      "id": "cap4_11",
-      "texto": "No es prisa. Un avión parado cuesta exactamente lo mismo que uno volando, así que cada rotación extra que le sacas al día es un vuelo entero de ingresos sobre el mismo aparato pagado.",
-      "duracion": 3.22,
       "movimiento": "drift_izq",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [
         {
           "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap4_11.png",
+          "archivo": "tarjeta_aerolinea_cap4_10b.png",
           "clase": "abstracto",
           "entrada": "escala",
           "prompt": "tarjeta del canal"
@@ -3699,7 +3852,7 @@
       ],
       "tipo": "rotulo",
       "texto_pantalla": {
-        "texto": "No es *prisa*",
+        "texto": "Las compañías de bajo *coste*",
         "px": 112,
         "y": 0.47,
         "acento": [
@@ -3718,6 +3871,109 @@
       "composicion": "izquierda"
     },
     {
+      "id": "cap4_10c",
+      "texto": "Las compañías de bajo coste descargan, limpian, embarcan y vuelven a salir en menos de media hora. Una tradicional se toma el doble o el triple.",
+      "duracion": 2.33,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_10c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "embarcan y *vuelven*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_10cx",
+      "texto": "Las compañías de bajo coste descargan, limpian, embarcan y vuelven a salir en menos de media hora. Una tradicional se toma el doble o el triple.",
+      "duracion": 2.32,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap4_10cx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "salir en menos de *media* hora",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_11",
+      "texto": "No es prisa. Un avión parado cuesta exactamente lo mismo que uno volando, así que cada rotación extra que le sacas al día es un vuelo entero de ingresos sobre el mismo aparato pagado.",
+      "duracion": 3.22,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No es *prisa*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
       "id": "cap4_11b",
       "texto": "No es prisa. Un avión parado cuesta exactamente lo mismo que uno volando, así que cada rotación extra que le sacas al día es un vuelo entero de ingresos sobre el mismo aparato pagado.",
       "duracion": 3.93,
@@ -3726,12 +3982,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_aeropuerto/passport_control_immigration_24.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_11c",
@@ -3742,13 +3998,13 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+      "clip": "stock_aerolinea/hand_luggage_cabin_bag_airplane_14.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_01",
@@ -3786,23 +4042,87 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_01b",
       "texto": "Ya vuelas. Y ahora empieza la parte que duele, porque esto no se paga una vez: se paga cada hora.",
-      "duracion": 4.86,
-      "movimiento": "contra_der",
-      "grade": "verde_suave",
+      "duracion": 2.43,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
-        "destellos"
+        "niebla"
       ],
-      "clip": "stock_aeropuerto/air_freight_warehouse_pallets_27.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap5_01b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
       "latigo": "der",
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ya *vuelas*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_01bx",
+      "texto": "Ya vuelas. Y ahora empieza la parte que duele, porque esto no se paga una vez: se paga cada hora.",
+      "duracion": 2.43,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap5_01bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "esto no se paga una vez",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
       "_lat_sal": 1.0,
       "transicion": "corte",
       "composicion": "centrado"
@@ -3816,7 +4136,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3849,7 +4169,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aerolinea/gloved_hands_assembling_machine_part_51.mp4",
+      "clip": "stock_aerolinea/airplane_hangar_maintenance_night_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3876,38 +4196,27 @@
       "id": "cap5_04",
       "texto": "Y luego las tasas: aterrizar, la asistencia en tierra, la navegación aérea, la seguridad. Todas se pagan por vuelo y ninguna la fijas tú.",
       "duracion": 2.91,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "bajar",
+      "grade": "verde_suave",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap5_04.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "texto_pantalla": {
-        "texto": "luego las *tasas*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "*luego* las tasas",
+        "px": 132,
+        "y": 0.3,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "izquierda"
       },
-      "tipo": "rotulo",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "composicion": "centrado"
     },
     {
@@ -3919,7 +4228,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/airport_construction_runway_works_72.mp4",
+      "clip": "stock_aeropuerto/airport_security_checkpoint_scanner_23.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3935,7 +4244,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/concrete_construction_site_33.mp4",
+      "clip": "stock_aeropuerto/snow_removal_runway_airport_31.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3954,7 +4263,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aeropuerto/asphalt_paving_road_works_73.mp4",
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3982,41 +4291,30 @@
       "id": "cap5_06",
       "texto": "Un vuelo de dos horas, Madrid-Londres, te cuesta unos once mil cuatrocientos dólares antes de vender un solo asiento.",
       "duracion": 3.47,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "verde_suave",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap5_06.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "latigo": "izq",
-      "tipo": "rotulo",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
       "texto_pantalla": {
-        "texto": "Un vuelo de dos *horas*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "Un *vuelo* de dos horas",
+        "px": 132,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "derecha"
       },
-      "_lat_sal": -1.0,
-      "transicion": "corte",
       "composicion": "derecha"
     },
     {
@@ -4028,7 +4326,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
+      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4061,7 +4359,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/empty_building_abandoned_34.mp4",
+      "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4093,7 +4391,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
+      "clip": "stock_aeropuerto/empty_building_abandoned_34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4152,7 +4450,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4195,7 +4493,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aeropuerto/empty_road_countryside_86.mp4",
+      "clip": "stock_aeropuerto/abandoned_airport_empty_terminal_35.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4211,7 +4509,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aerolinea/closed_shutter_shop_empty_street_60.mp4",
+      "clip": "stock_aeropuerto/clock_time_passing_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4227,7 +4525,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4243,7 +4541,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4259,7 +4557,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aeropuerto/investors_handshake_suits_42.mp4",
+      "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4286,37 +4584,26 @@
       "id": "cap5_12",
       "texto": "Por eso el número que una aerolínea mira cada mañana no es el precio del billete. Es qué porcentaje de asientos van ocupados, y las buenas lo mantienen por encima del noventa por ciento.",
       "duracion": 3.41,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "verde_suave",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap5_12.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
         "texto": "Por eso el *número*",
-        "px": 112,
-        "y": 0.47,
+        "px": 132,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "derecha"
       },
       "composicion": "derecha"
     },
@@ -4329,7 +4616,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/auction_gavel_43.mp4",
+      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4345,7 +4632,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/courthouse_legal_documents_44.mp4",
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4372,37 +4659,26 @@
       "id": "cap5_13",
       "texto": "Y la aritmética de eso es preciosa. Cuando el vuelo ya va a salir, los últimos asientos que vendes son casi beneficio limpio: el coste ya te lo has gastado entero.",
       "duracion": 2.95,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "verde_suave",
       "efectos": [
-        "polvo"
+        "billetes"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap5_13.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "Cuando el vuelo ya va a *salir*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "la *aritmética* de eso es preciosa",
+        "px": 108,
+        "y": 0.3,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "izquierda"
       },
       "composicion": "izquierda"
     },
@@ -4415,7 +4691,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/city_aerial_skyline_45.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4431,7 +4707,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/madrid_spain_city_aerial_85.mp4",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4447,7 +4723,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4490,7 +4766,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4506,7 +4782,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/empty_road_countryside_86.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4517,37 +4793,26 @@
       "id": "cap5_15",
       "texto": "Pero funciona igual al revés, y ahí es implacable. Si sale medio vacío no pierdes la mitad: pierdes casi todo, porque el coste ya estaba pagado.",
       "duracion": 3.02,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "estatico",
+      "grade": "verde_suave",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap5_15.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aeropuerto/empty_road_mountains_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "funciona igual al *revés*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "*funciona* igual al revés",
+        "px": 108,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "sube"
       },
       "composicion": "izquierda"
     },
@@ -4560,7 +4825,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/clock_ticking_close_up_87.mp4",
+      "clip": "stock_aeropuerto/empty_parking_spaces_63.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4576,7 +4841,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_aeropuerto/world_map_routes_travel_48.mp4",
+      "clip": "stock_aeropuerto/empty_hall_echo_architecture_74.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4592,7 +4857,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/tourists_travel_vacation_49.mp4",
+      "clip": "stock_aerolinea/airplane_hangar_maintenance_night_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -4637,38 +4902,16 @@
       "id": "cap6_01",
       "texto": "Vamos a llenar tu avión y a ver qué recoges.",
       "duracion": 3.95,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
       "efectos": [
-        "niebla"
+        "lluvia"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap6_01.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "Vamos a llenar tu *avión*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda"
     },
     {
@@ -4680,7 +4923,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_aeropuerto/long_queue_people_waiting_60.mp4",
+      "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4710,38 +4953,16 @@
       "id": "cap6_03",
       "texto": "El billete medio de la aerolínea más grande de Europa cuesta unos cincuenta euros. Ese es el precio que tú ves anunciado.",
       "duracion": 3.25,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
       "efectos": [
-        "polvo"
+        "brasas"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap6_03.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "El billete *medio*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
       "composicion": "izquierda"
     },
@@ -4754,7 +4975,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
+      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4789,7 +5010,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
+      "clip": "stock_aerolinea/passengers_boarding_stairs_plane_22.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4838,7 +5059,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_aeropuerto/engineer_inspecting_machinery_71.mp4",
+      "clip": "stock_aerolinea/passengers_boarding_stairs_tarmac_backpacks_26.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4890,7 +5111,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aeropuerto/packing_suitcase_travel_62.mp4",
+      "clip": "stock_aeropuerto/auction_gavel_43.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -4917,37 +5138,26 @@
       "id": "cap6_06",
       "texto": "Eso, en el conjunto de la compañía, son casi cinco mil millones de euros al año en cosas que no son volar. Un tercio de todo lo que entra.",
       "duracion": 2.79,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "rojo_suave",
       "efectos": [
-        "bokeh"
+        "chispas"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap6_06.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "en el conjunto de la *compañía*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "en el *conjunto* de la compañía",
+        "px": 108,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "sube"
       },
       "composicion": "derecha"
     },
@@ -4960,7 +5170,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
+      "clip": "stock_aeropuerto/flight_information_display_screen_67.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4992,7 +5202,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip": "stock_aerolinea/booking_flight_online_laptop_27.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5008,7 +5218,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5029,49 +5239,82 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "texto_pantalla": {
-        "texto": "Ahora haz la resta que *tenías*",
-        "px": 108,
-        "y": 0.68,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "estilo": "sube"
-      },
       "composicion": "izquierda"
     },
     {
       "id": "cap6_07b",
       "texto": "Ahora haz la resta que tenías pendiente desde el principio. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la empresa limpio?",
       "duracion": 3.04,
-      "movimiento": "subir",
-      "grade": "rojo_suave",
+      "movimiento": "drift_der",
+      "grade": "neutro",
       "efectos": [
-        "chispas"
+        "bokeh"
       ],
-      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_07b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ahora haz la resta que *tenías*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "centrado"
     },
     {
       "id": "cap6_07c",
       "texto": "Ahora haz la resta que tenías pendiente desde el principio. De esos setenta y cuatro euros con sesenta, ¿cuánto se queda la empresa limpio?",
       "duracion": 3.71,
-      "movimiento": "estatico",
-      "grade": "rojo_suave",
+      "movimiento": "drift_izq",
+      "grade": "neutro",
       "efectos": [
-        "brasas"
+        "polvo"
       ],
-      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_aerolinea_cap6_07c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Ahora haz la resta que *tenías*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
       "composicion": "izquierda"
     },
     {
@@ -5083,7 +5326,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
+      "clip": "stock_aerolinea/pilot_cockpit_controls_flying_9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5115,7 +5358,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/pilot_cockpit_controls_flying_9.mp4",
+      "clip": "stock_aeropuerto/highway_road_aerial_46.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5163,7 +5406,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_aerolinea/pilots_preflight_checklist_cockpit_10.mp4",
+      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5179,7 +5422,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/hand_taking_bread_snack_close_up_12.mp4",
+      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5190,38 +5433,27 @@
       "id": "cap6_10",
       "texto": "Ganas menos por pasajero de lo que le cobras por facturar una maleta.",
       "duracion": 1.97,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "rojo_suave",
       "efectos": [
-        "destellos"
+        "ceniza"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap6_10.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aeropuerto/boarding_gate_passengers_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "texto_pantalla": {
         "texto": "Ganas menos por *pasajero*",
-        "px": 112,
-        "y": 0.47,
+        "px": 108,
+        "y": 0.3,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "izquierda"
       },
-      "tipo": "rotulo",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "composicion": "centrado"
     },
     {
@@ -5233,7 +5465,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/airplanes_parked_row_apron_18.mp4",
+      "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5244,37 +5476,26 @@
       "id": "cap6_11",
       "texto": "Y ojo, que eso es el mejor del sector. La compañía más rentable de Europa mueve doscientos ocho millones de pasajeros al año, ingresa quince mil quinientos cuarenta millones y gana dos mil doscientos sesenta.",
       "duracion": 3.0,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "rojo_suave",
       "efectos": [
-        "bokeh"
+        "chispas"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap6_11.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
+      "clip": "stock_aerolinea/airplane_cabin_seats_passengers_rows_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
         "texto": "que eso es el mejor del *sector*",
-        "px": 112,
-        "y": 0.47,
+        "px": 108,
+        "y": 0.3,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "izquierda"
       },
       "composicion": "derecha"
     },
@@ -5287,7 +5508,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/airplane_hangar_maintenance_night_20.mp4",
+      "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5303,7 +5524,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/passengers_boarding_stairs_plane_22.mp4",
+      "clip": "stock_aeropuerto/tourists_travel_vacation_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5335,7 +5556,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/coins_close_up_macro_euro_24.mp4",
+      "clip": "stock_aeropuerto/runway_markings_asphalt_51.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5351,7 +5572,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_aerolinea/hand_holding_coin_small_change_25.mp4",
+      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5378,38 +5599,16 @@
       "id": "cap6_13",
       "texto": "Y con esa cifra en la mano se entiende por qué te cobran por la maleta, por elegir asiento y por subir antes al avión. No lo inventaron para fastidiarte. Lo inventaron porque con el billete solo no salen las cuentas.",
       "duracion": 2.71,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
       "efectos": [
-        "polvo"
+        "brasas"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cap6_13.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "con esa *cifra* en la mano",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "clip": "stock_aerolinea/hand_luggage_cabin_bag_airplane_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda"
     },
     {
@@ -5421,7 +5620,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/invoice_bill_paperwork_desk_29.mp4",
+      "clip": "stock_aeropuerto/rising_bar_chart_business_79.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5437,7 +5636,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/calculator_spreadsheet_finance_desk_30.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_empty_seats_from_rear_7.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5453,7 +5652,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_aerolinea/stock_exchange_trading_floor_screens_31.mp4",
+      "clip": "stock_aerolinea/airplane_hangar_maintenance_night_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5469,7 +5668,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/oil_refinery_fuel_storage_tanks_32.mp4",
+      "clip": "stock_aerolinea/airplane_taking_off_sunset_departure_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5501,7 +5700,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_aerolinea/fuel_gauge_industrial_pipes_33.mp4",
+      "clip": "stock_aerolinea/jet_engine_spinning_airplane_close_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -5528,7 +5727,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_aerolinea/european_union_flags_building_34.mp4",
+      "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -5577,119 +5776,48 @@
     {
       "id": "cierre_01",
       "texto": "Así que ya tienes tu aerolínea. Vamos a ver de qué eres dueño.",
-      "duracion": 2.68,
-      "movimiento": "drift_izq",
-      "grade": "neutro",
+      "duracion": 5.36,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cierre_01.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aeropuerto/aircraft_cockpit_pilots_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "texto_pantalla": {
-        "texto": "que ya tienes tu",
-        "px": 112,
-        "y": 0.47,
+        "texto": "que ya tienes tu *aerolínea*",
+        "px": 108,
+        "y": 0.68,
         "acento": [
           255,
           176,
           60
         ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "sube"
       },
-      "tipo": "rotulo",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
       "composicion": "centrado"
-    },
-    {
-      "id": "cierre_01x",
-      "texto": "Así que ya tienes tu aerolínea. Vamos a ver de qué eres dueño.",
-      "duracion": 2.68,
-      "movimiento": "drift_der",
-      "grade": "neutro",
-      "efectos": [
-        "destellos"
-      ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cierre_01x.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "texto_pantalla": {
-        "texto": "*aerolínea*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "composicion": "derecha"
     },
     {
       "id": "cierre_02",
       "texto": "Eres dueño de los aviones, o de su alquiler. Eres dueño del certificado. Eres dueño de las tripulaciones y de la marca.",
       "duracion": 3.57,
-      "movimiento": "drift_der",
-      "grade": "neutro",
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cierre_02.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "clip": "stock_aerolinea/empty_airplane_cabin_rows_seats_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
       "latigo": "izq",
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "Eres dueño de los *aviones*",
-        "px": 112,
-        "y": 0.47,
-        "acento": [
-          255,
-          176,
-          60
-        ],
-        "color": [
-          237,
-          231,
-          218
-        ],
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_02b",
@@ -5700,13 +5828,13 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/spain_landscape_countryside_aerial_40.mp4",
+      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_03",
@@ -5747,7 +5875,7 @@
       "tipo": "rotulo",
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_03x",
@@ -5789,7 +5917,7 @@
       "_lat_ent": -1.0,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_04",
@@ -5800,13 +5928,13 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/busy_airport_terminal_crowd_19.mp4",
+      "clip": "stock_aeropuerto/airport_runway_aerial_0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_04b",
@@ -5817,7 +5945,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/terminal_signage_corridor_22.mp4",
+      "clip": "stock_aeropuerto/airport_terminal_interior_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -5841,7 +5969,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_04c",
@@ -5852,13 +5980,13 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aeropuerto/airport_check_in_counter_25.mp4",
+      "clip": "stock_aeropuerto/empty_airport_terminal_6.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_05",
@@ -5869,12 +5997,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
+      "clip": "stock_aerolinea/airplane_aisle_passengers_walking_cabin_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_05b",
@@ -5885,7 +6013,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airport_fire_truck_emergency_30.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_passengers_seated_rows_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5906,7 +6034,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_05c",
@@ -5917,7 +6045,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/airport_terminal_moving_walkway_55.mp4",
+      "clip": "stock_aerolinea/empty_airport_gate_no_passengers_45.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -5933,7 +6061,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_06",
@@ -5944,7 +6072,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/ground_crew_working_aircraft_tarmac_57.mp4",
+      "clip": "stock_aeropuerto/airplane_landing_runway_1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -5960,7 +6088,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_06b",
@@ -5971,33 +6099,28 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aerolinea/suitcases_loading_aircraft_tarmac_engine_59.mp4",
+      "clip": "stock_aeropuerto/commercial_airplane_sky_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_07",
       "texto": "Un millón doscientos mil asientos retirados de la España regional. La base de Santiago, cerrada. Vigo, suspendido. Zaragoza, cuarenta y cinco por ciento menos. Asturias, todos los vuelos fuera.",
       "duracion": 4.09,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "dorado_suave",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_aerolinea_cierre_07.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
-      "tipo": "rotulo",
-      "composicion": "izquierda",
+      "clip": "stock_aerolinea/airplane_aisle_walking_cabin_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha",
       "grafico": {
         "tipo": "mapa",
         "puntos": [
@@ -6064,12 +6187,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aerolinea/fuel_truck_tarmac_aircraft_ground_54.mp4",
+      "clip": "stock_aerolinea/airplane_window_view_clouds_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_07c",
@@ -6080,7 +6203,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/silhouettes_people_waiting_terminal_seats_55.mp4",
+      "clip": "stock_aerolinea/wing_view_from_airplane_window_6.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -6101,7 +6224,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_08",
@@ -6139,7 +6262,7 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_09",
@@ -6150,7 +6273,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
+      "clip": "stock_aeropuerto/airport_parking_lot_aerial_12.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -6166,7 +6289,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_09b",
@@ -6177,12 +6300,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/luggage_cart_airport_tarmac_61.mp4",
+      "clip": "stock_aeropuerto/duty_free_shop_airport_15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_09c",
@@ -6193,12 +6316,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aeropuerto/airport_construction_runway_works_72.mp4",
+      "clip": "stock_aeropuerto/crowd_airport_walking_travelers_18.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_10",
@@ -6214,7 +6337,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_10b",
@@ -6225,12 +6348,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airport_runway_night_lights_50.mp4",
+      "clip": "stock_aeropuerto/airport_window_planes_view_56.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_11",
@@ -6241,7 +6364,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_aeropuerto/hands_signing_documents_pen_80.mp4",
+      "clip": "stock_aeropuerto/airplane_wing_window_flight_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -6257,7 +6380,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_11b",
@@ -6268,12 +6391,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_aerolinea/invoice_bill_paperwork_desk_29.mp4",
+      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_11c",
@@ -6284,12 +6407,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_aeropuerto/signing_contract_business_deal_40.mp4",
+      "clip": "stock_aerolinea/airplane_cabin_interior_seats_0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_12",
@@ -6300,7 +6423,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_aeropuerto/airplane_parked_tarmac_29.mp4",
+      "clip": "stock_aeropuerto/cars_driving_parking_entrance_64.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -6321,7 +6444,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_13",
@@ -6360,7 +6483,7 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     }
   ]
 }

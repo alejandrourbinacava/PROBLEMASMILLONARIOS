@@ -82,6 +82,46 @@ def grupos(texto):
     return {" ".join(p[i:i + N]): i for i in range(len(p) - N + 1)}
 
 
+# Un video se ESCUCHA. "Leelo otra vez", "como ves arriba", "en la tabla de
+# abajo" son de un articulo, no de una locucion, y al espectador le suenan
+# raro sin saber por que.
+#
+# Esto existe porque se me ha colado TRES veces: una llego al video
+# publicado y el usuario tuvo que corregirmelo, y las otras dos las cace
+# revisando a mano, que es justo lo que no se puede dejar a la suerte.
+# Ojo con lo que se mete aqui: un chequeo que da falsas alarmas se acaba
+# ignorando, y entonces no sirve para nada. "Mas arriba" a secas NO vale:
+# en el guion del banco hay un "y hay un escalon mas arriba de eso" que es
+# una metafora de jerarquia, no una referencia al texto. Solo entran
+# formulas que unicamente tienen sentido si el espectador esta LEYENDO.
+LECTURA = (
+    "leelo", "lee otra vez", "releelo", "vuelve a leer",
+    "como ves arriba", "como ves mas arriba", "como has leido",
+    "lo que acabas de leer", "como puedes leer", "segun se lee",
+    "en la tabla", "en el grafico de abajo", "en la lista de abajo",
+    "en pantalla puedes leer", "en el cuadro de arriba",
+)
+
+
+def tics(ruta):
+    """Frases de texto escrito dentro de un guion que se locuta."""
+    entero = io.open(ruta, encoding="utf-8").read()
+    corte = entero.find("\n## ")
+    # La cabecera no se locuta, pero la linea que se avisa tiene que ser la
+    # del FICHERO o no hay quien la encuentre.
+    desplaza = entero[:corte].count("\n") if corte > 0 else 0
+    t = entero[corte:] if corte > 0 else entero
+    n = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode()
+    n = n.lower()
+    fuera = []
+    for frase in LECTURA:
+        i = n.find(frase)
+        while i >= 0:
+            fuera.append((frase, t[:i].count("\n") + 1 + desplaza))
+            i = n.find(frase, i + 1)
+    return sorted(fuera, key=lambda x: x[1])
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -130,6 +170,15 @@ def main():
     print(f"  repetidas en uno solo: {len(sueltas)}")
     for f in sueltas[:15]:
         print("    ojo     ", f, " ->", ", ".join(cuenta[f]))
+
+    lectura = tics(nuevo)
+    if lectura:
+        print()
+        for frase, linea in lectura:
+            print(f'  LECTURA  hacia la linea {linea}: "{frase}"')
+        print("\nEsto es un video, no un articulo: nadie LEE nada. Cambialo "
+              "por el gesto de escuchar que le toque a este episodio.")
+        return 1
 
     if molde:
         print("\nEso es plantilla, no estilo. Reescribe esas frases: el "

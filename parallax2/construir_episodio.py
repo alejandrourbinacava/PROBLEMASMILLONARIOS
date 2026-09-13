@@ -155,12 +155,14 @@ def main():
     ap.add_argument("--tope", type=float, default=None)
     ap.add_argument("--salida", default="proyecto/episodio.json")
     ap.add_argument("--titulo", default="")
-    ap.add_argument("--temas", choices=["casino", "banco", "aerolinea"],
+    ap.add_argument("--temas",
+                    choices=["casino", "banco", "aerolinea", "gasolinera"],
                     default="banco")
     a = ap.parse_args()
 
     CC.TEMAS = {"banco": CC.TEMAS_BANCO,
-                "aerolinea": CC.TEMAS_AEROLINEA}.get(a.temas, CC.TEMAS)
+                "aerolinea": CC.TEMAS_AEROLINEA,
+                "gasolinera": CC.TEMAS_GASOLINERA}.get(a.temas, CC.TEMAS)
     pool = CC.cargar_pool(a.pool)
     duraciones = json.load(open(os.path.join(AQUI, a.duraciones), encoding="utf-8"))
     caps = leer_guion.leer(a.md)

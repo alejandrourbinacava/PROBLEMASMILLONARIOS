@@ -142,6 +142,37 @@ BUSQUEDAS = [
     ("suelo",          "excavated soil trench close up"),
     ("desatendida",    "unattended petrol station night empty"),
     ("noche",          "car headlights night road driving"),
+
+    # --- tercera tanda ---------------------------------------------------
+    # Con 54 clips para 223 planos salian 77 tarjetas negras, un tercio del
+    # episodio. El encaje era bueno -1% sin relacion- pero no habia material:
+    # las frases competian por los mismos clips y las que perdian caian a
+    # tarjeta. Esto no es variedad por variedad; es MAS de lo que el guion
+    # nombra una y otra vez: la estacion, el surtidor, el tanque, la moneda.
+    ("gasolinera",     "gas station forecourt cars refuelling"),
+    ("gasolinera",     "petrol station canopy wide shot"),
+    ("gasolinera",     "gas station rain reflection night"),
+    ("gasolinera",     "small rural petrol station road"),
+    ("surtidor",       "fuel pump nozzle returning holster"),
+    ("surtidor",       "petrol pump screen litres counting"),
+    ("surtidor",       "person refuelling car side view"),
+    ("tanque",         "industrial storage tanks aerial farm"),
+    ("tanque",         "steel tank welding construction"),
+    ("excavacion",     "digger trench pipes laying ground"),
+    ("obra",           "construction site aerial progress"),
+    ("moneda",         "euro coins falling slow motion"),
+    ("moneda",         "hand dropping coins counting"),
+    ("dinero",         "cash register money counting shop"),
+    ("impuestos", "tax form paperwork stamp official"),
+    ("desatendida",    "self service fuel terminal screen keypad"),
+    ("desatendida",    "empty gas station forecourt daylight"),
+    ("carretera",      "cars passing road junction traffic"),
+    ("carretera",      "rural road driving pov windscreen"),
+    ("tienda",         "small shop interior shelves products"),
+    ("cafe",           "coffee cup counter shop morning"),
+    ("suelo",          "dry cracked earth ground close"),
+    ("abandonada",     "derelict petrol station overgrown"),
+    ("cartel_precio",  "illuminated price numbers sign night"),
 ]
 
 

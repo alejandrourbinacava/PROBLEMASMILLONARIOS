@@ -1,0 +1,5905 @@
+{
+  "titulo": "Cuanto cuesta montar y mantener una gasolinera",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "En casi toda Europa están cerrando gasolineras. En España se abren.",
+      "duracion": 1.66,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/empty_gas_station_forecourt_daylight_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_01b",
+      "texto": "En casi toda Europa están cerrando gasolineras. En España se abren.",
+      "duracion": 2.03,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/petrol_station_canopy_wide_shot_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "En *España* se abren",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_01c",
+      "texto": "En casi toda Europa están cerrando gasolineras. En España se abren.",
+      "duracion": 2.48,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/aerial_view_gas_station_road_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Y no las abren Repsol ni Cepsa. Las abren empresas de las que hace diez años no habías oído hablar, y todas hacen lo mismo: quitar a la persona de dentro.",
+      "duracion": 2.18,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_02.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "izq",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "no las abren Repsol ni *Cepsa*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "Y no las abren Repsol ni Cepsa. Las abren empresas de las que hace diez años no habías oído hablar, y todas hacen lo mismo: quitar a la persona de dentro.",
+      "duracion": 2.66,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/petrol_pump_screen_litres_counting_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "hace",
+        "y": 0.68,
+        "retardo": 1.31,
+        "duracion": 1.2,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "Y no las abren Repsol ni Cepsa. Las abren empresas de las que hace diez años no habías oído hablar, y todas hacen lo mismo: quitar a la persona de dentro.",
+      "duracion": 2.66,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_02c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "izq",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "no las abren Repsol ni *Cepsa*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_02d",
+      "texto": "Y no las abren Repsol ni Cepsa. Las abren empresas de las que hace diez años no habías oído hablar, y todas hacen lo mismo: quitar a la persona de dentro.",
+      "duracion": 3.24,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_02d.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "no las abren Repsol ni *Cepsa*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Hay ya más de mil gasolineras automáticas en España. Solo las tres grandes del sector abrieron más de ciento setenta en un año, y van a pasar de mil trescientas en dos mil veintisiete.",
+      "duracion": 2.33,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/self_service_gas_station_card_payment_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Hay ya más de mil *gasolineras*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "Hay ya más de mil gasolineras automáticas en España. Solo las tres grandes del sector abrieron más de ciento setenta en un año, y van a pasar de mil trescientas en dos mil veintisiete.",
+      "duracion": 2.85,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/automatic_payment_terminal_outdoor_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "Hay ya más de mil gasolineras automáticas en España. Solo las tres grandes del sector abrieron más de ciento setenta en un año, y van a pasar de mil trescientas en dos mil veintisiete.",
+      "duracion": 2.85,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/welding_metal_sparks_industrial_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03d",
+      "texto": "Hay ya más de mil gasolineras automáticas en España. Solo las tres grandes del sector abrieron más de ciento setenta en un año, y van a pasar de mil trescientas en dos mil veintisiete.",
+      "duracion": 3.47,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/shops_storefronts_night_street_28.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2027.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "pasar de trescientas",
+        "y": 0.26,
+        "retardo": 2.12,
+        "duracion": 1.2,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Vamos a montar una tú y yo, paso a paso, y vas a entender por qué son así.",
+      "duracion": 1.64,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_04.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Vamos a *montar* una tú y yo",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Vamos a montar una tú y yo, paso a paso, y vas a entender por qué son así.",
+      "duracion": 2.0,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_04b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Vamos a *montar* una tú y yo",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Vamos a montar una tú y yo, paso a paso, y vas a entender por qué son así.",
+      "duracion": 2.45,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_04c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Vamos a *montar* una tú y yo",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "El terreno, la obra, los tanques, las licencias y lo que ganas por cada litro. Con el total acumulado al final de cada paso.",
+      "duracion": 2.04,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/construction_site_digging_foundation_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El *terreno*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "El terreno, la obra, los tanques, las licencias y lo que ganas por cada litro. Con el total acumulado al final de cada paso.",
+      "duracion": 2.49,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/concrete_pouring_construction_site_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "El terreno, la obra, los tanques, las licencias y lo que ganas por cada litro. Con el total acumulado al final de cada paso.",
+      "duracion": 2.49,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/excavator_digging_construction_pit_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05d",
+      "texto": "El terreno, la obra, los tanques, las licencias y lo que ganas por cada litro. Con el total acumulado al final de cada paso.",
+      "duracion": 3.04,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/architectural_scale_model_building_desk_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Y te adelanto dos cosas.",
+      "duracion": 2.91,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_gancho_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "te adelanto dos *cosas*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07",
+      "texto": "La primera: de lo que cobras por un litro de gasolina, la mitad no llega a pasar por tu bolsillo.",
+      "duracion": 1.88,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/oil_refinery_towers_industrial_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "La *primera*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_07b",
+      "texto": "La primera: de lo que cobras por un litro de gasolina, la mitad no llega a pasar por tu bolsillo.",
+      "duracion": 2.3,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/hand_fuel_pump_prices_display_panel_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_07c",
+      "texto": "La primera: de lo que cobras por un litro de gasolina, la mitad no llega a pasar por tu bolsillo.",
+      "duracion": 2.8,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/industrial_pipes_valves_fuel_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Y la segunda es la que nadie te cuenta cuando montas esto. El día que decidas cerrar, hay algo debajo del asfalto que no se va contigo.",
+      "duracion": 1.85,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/closed_shutter_empty_building_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_08b",
+      "texto": "Y la segunda es la que nadie te cuenta cuando montas esto. El día que decidas cerrar, hay algo debajo del asfalto que no se va contigo.",
+      "duracion": 2.26,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/tax_documents_calculator_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08c",
+      "texto": "Y la segunda es la que nadie te cuenta cuando montas esto. El día que decidas cerrar, hay algo debajo del asfalto que no se va contigo.",
+      "duracion": 2.26,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/wet_asphalt_light_reflections_night_77.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El día que *decidas* cerrar",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_08d",
+      "texto": "Y la segunda es la que nadie te cuenta cuando montas esto. El día que decidas cerrar, hay algo debajo del asfalto que no se va contigo.",
+      "duracion": 2.75,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/tax_documents_calculator_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_09",
+      "texto": "Empezamos por el suelo.",
+      "duracion": 2.78,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/digger_trench_pipes_laying_ground_84.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Una gasolinera es el único negocio donde el cliente entra sin querer.",
+      "duracion": 2.19,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/empty_gas_station_forecourt_daylight_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Una *gasolinera* es el único negocio",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01b",
+      "texto": "Una gasolinera es el único negocio donde el cliente entra sin querer.",
+      "duracion": 3.25,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/petrol_station_canopy_wide_shot_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "Nadie sale de casa pensando «voy a ir a esa gasolinera». Repostas en la que te pilla de paso, en la dirección en la que ya ibas.",
+      "duracion": 2.67,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/fuel_tanker_truck_unloading_station_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02b",
+      "texto": "Nadie sale de casa pensando «voy a ir a esa gasolinera». Repostas en la que te pilla de paso, en la dirección en la que ya ibas.",
+      "duracion": 3.26,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/aerial_view_gas_station_road_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_02c",
+      "texto": "Nadie sale de casa pensando «voy a ir a esa gasolinera». Repostas en la que te pilla de paso, en la dirección en la que ya ibas.",
+      "duracion": 3.98,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/aerial_view_gas_station_road_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "en la *dirección* en la que ya ibas",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "Por eso el terreno no se elige por el precio. Se elige por el lado de la carretera.",
+      "duracion": 2.39,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/spanish_town_road_countryside_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "Por eso el terreno no se elige por el precio. Se elige por el lado de la carretera.",
+      "duracion": 3.55,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/rural_road_driving_pov_windscreen_93.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "El mismo solar, en el carril de entrada a la ciudad por la mañana, vale el doble que el de enfrente. Porque el depósito se llena cuando vas al trabajo, no cuando vuelves.",
+      "duracion": 3.07,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/night_city_lights_bokeh_blurred_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "El *mismo* solar",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "El mismo solar, en el carril de entrada a la ciudad por la mañana, vale el doble que el de enfrente. Porque el depósito se llena cuando vas al trabajo, no cuando vuelves.",
+      "duracion": 3.74,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/farmland_fields_aerial_countryside_53.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "El mismo solar, en el carril de entrada a la ciudad por la mañana, vale el doble que el de enfrente. Porque el depósito se llena cuando vas al trabajo, no cuando vuelves.",
+      "duracion": 4.56,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/aerial_view_gas_station_road_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Un terreno para esto, en España, va de ochenta mil a trescientos cincuenta mil euros, y la horquilla es tan grande justamente por eso: no estás comprando metros cuadrados, estás comprando tráfico.",
+      "duracion": 2.89,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap1_05.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Un *terreno* para esto",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "Un terreno para esto, en España, va de ochenta mil a trescientos cincuenta mil euros, y la horquilla es tan grande justamente por eso: no estás comprando metros cuadrados, estás comprando tráfico.",
+      "duracion": 3.52,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/cash_register_money_counting_shop_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 350000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.26,
+        "retardo": 0.9552040816326532,
+        "duracion": 2.36,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05c",
+      "texto": "Un terreno para esto, en España, va de ochenta mil a trescientos cincuenta mil euros, y la horquilla es tan grande justamente por eso: no estás comprando metros cuadrados, estás comprando tráfico.",
+      "duracion": 3.52,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap1_05c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Un *terreno* para esto",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05d",
+      "texto": "Un terreno para esto, en España, va de ochenta mil a trescientos cincuenta mil euros, y la horquilla es tan grande justamente por eso: no estás comprando metros cuadrados, estás comprando tráfico.",
+      "duracion": 4.29,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap1_05d.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Un *terreno* para esto",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Vamos a ponernos en un caso normal, ni el mejor sitio ni el peor: doscientos mil euros.",
+      "duracion": 7.09,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 200000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "peor",
+        "y": 0.62,
+        "retardo": 5.378620689655172,
+        "duracion": 1.51,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_07",
+      "texto": "Y hay una trampa en ese terreno que no se ve hasta que lo intentas.",
+      "duracion": 2.07,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap1_07.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "hay una *trampa*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_07b",
+      "texto": "Y hay una trampa en ese terreno que no se ve hasta que lo intentas.",
+      "duracion": 3.08,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap1_07b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "hay una *trampa*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_08",
+      "texto": "No puedes ponerla donde quieras. Necesitas entrada y salida a una vía con tráfico, y eso depende de quien gestione esa carretera: el ayuntamiento, la comunidad o el Estado.",
+      "duracion": 3.39,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/highway_traffic_cars_aerial_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No puedes *ponerla* donde quieras",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_08b",
+      "texto": "No puedes ponerla donde quieras. Necesitas entrada y salida a una vía con tráfico, y eso depende de quien gestione esa carretera: el ayuntamiento, la comunidad o el Estado.",
+      "duracion": 4.13,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/cars_passing_road_junction_traffic_92.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_08c",
+      "texto": "No puedes ponerla donde quieras. Necesitas entrada y salida a una vía con tráfico, y eso depende de quien gestione esa carretera: el ayuntamiento, la comunidad o el Estado.",
+      "duracion": 5.05,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/cars_driving_road_morning_commute_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_09",
+      "texto": "Hay solares perfectos, a pie de una nacional, en los que no te dejan abrir un acceso. Y sin acceso, ese solar para esto no vale nada.",
+      "duracion": 2.69,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/empty_parking_lot_night_lights_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Hay solares *perfectos*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_09b",
+      "texto": "Hay solares perfectos, a pie de una nacional, en los que no te dejan abrir un acceso. Y sin acceso, ese solar para esto no vale nada.",
+      "duracion": 3.28,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/vacant_lot_fenced_empty_urban_68.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_09c",
+      "texto": "Hay solares perfectos, a pie de una nacional, en los que no te dejan abrir un acceso. Y sin acceso, ese solar para esto no vale nada.",
+      "duracion": 3.99,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/spanish_town_road_countryside_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_10",
+      "texto": "Total acumulado: doscientos mil euros.",
+      "duracion": 4.34,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/signing_contract_documents_pen_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "tu gasolinera, hasta aquí",
+        "lineas": [
+          [
+            "terreno, en el lado bueno de la vía",
+            "200.000 €"
+          ]
+        ],
+        "total": "200.000 €",
+        "etiqueta_total": "llevas gastado",
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.4,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Ahora hay que construirla. Y la mayor parte de lo que vas a pagar no se va a ver nunca.",
+      "duracion": 3.03,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ahora hay que *construirla*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Ahora hay que construirla. Y la mayor parte de lo que vas a pagar no se va a ver nunca.",
+      "duracion": 2.25,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_01b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "Ahora hay que *construirla*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_01bx",
+      "texto": "Ahora hay que construirla. Y la mayor parte de lo que vas a pagar no se va a ver nunca.",
+      "duracion": 2.25,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_01bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "parte de lo que vas a *pagar*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "_lat_ent": 1.0,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "La obra civil de una gasolinera va de ciento veinte mil a trescientos cincuenta mil euros. No es levantar una marquesina: es excavar.",
+      "duracion": 2.84,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/woman_phone_beside_car_gas_station_night_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "La obra civil de una gasolinera va de ciento veinte mil a trescientos cincuenta mil euros. No es levantar una marquesina: es excavar.",
+      "duracion": 3.46,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/aerial_view_gas_station_road_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 350000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "gasolinera",
+        "y": 0.68,
+        "retardo": 1.75203007518797,
+        "duracion": 1.51,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02c",
+      "texto": "La obra civil de una gasolinera va de ciento veinte mil a trescientos cincuenta mil euros. No es levantar una marquesina: es excavar.",
+      "duracion": 4.23,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/excavator_digging_construction_pit_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "Debajo del asfalto van los tanques. Y un tanque de combustible enterrado no es un bidón: es una instalación con doble pared, con detección de fugas, con arquetas, con canalizaciones y con un sistema de recuperación de vapores.",
+      "duracion": 3.19,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/large_steel_tank_industrial_installation_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Debajo del *asfalto* van los tanques",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "Debajo del asfalto van los tanques. Y un tanque de combustible enterrado no es un bidón: es una instalación con doble pared, con detección de fugas, con arquetas, con canalizaciones y con un sistema de recuperación de vapores.",
+      "duracion": 3.89,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/buried_pipes_trench_excavation_ground_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_03c",
+      "texto": "Debajo del asfalto van los tanques. Y un tanque de combustible enterrado no es un bidón: es una instalación con doble pared, con detección de fugas, con arquetas, con canalizaciones y con un sistema de recuperación de vapores.",
+      "duracion": 3.89,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/industrial_storage_tanks_aerial_farm_82.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03d",
+      "texto": "Debajo del asfalto van los tanques. Y un tanque de combustible enterrado no es un bidón: es una instalación con doble pared, con detección de fugas, con arquetas, con canalizaciones y con un sistema de recuperación de vapores.",
+      "duracion": 4.76,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/fuel_tanker_truck_unloading_station_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Súmale los surtidores, el sistema de control, la marquesina y la señalización: de ochenta mil a doscientos veinte mil euros más.",
+      "duracion": 2.7,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/hand_fuel_pump_prices_display_panel_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "Súmale los surtidores, el sistema de control, la marquesina y la señalización: de ochenta mil a doscientos veinte mil euros más.",
+      "duracion": 3.29,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/oil_pump_jack_field_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_04c",
+      "texto": "Súmale los surtidores, el sistema de control, la marquesina y la señalización: de ochenta mil a doscientos veinte mil euros más.",
+      "duracion": 4.02,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/rusty_abandoned_fuel_pump_gauge_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 220000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "señalización",
+        "y": 0.3,
+        "retardo": 1.5175,
+        "duracion": 2.3,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Y esos tanques no se instalan y ya está. Hay que probarlos, certificarlos y volver a revisarlos periódicamente durante toda la vida de la instalación.",
+      "duracion": 3.01,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_05.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Hay que *probarlos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Y esos tanques no se instalan y ya está. Hay que probarlos, certificarlos y volver a revisarlos periódicamente durante toda la vida de la instalación.",
+      "duracion": 3.67,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_05b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Hay que *probarlos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_05c",
+      "texto": "Y esos tanques no se instalan y ya está. Hay que probarlos, certificarlos y volver a revisarlos periódicamente durante toda la vida de la instalación.",
+      "duracion": 2.24,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_05c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Hay que *probarlos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05cx",
+      "texto": "Y esos tanques no se instalan y ya está. Hay que probarlos, certificarlos y volver a revisarlos periódicamente durante toda la vida de la instalación.",
+      "duracion": 2.24,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_05cx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "volver a *revisarlos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_06",
+      "texto": "Una fuga en un tanque enterrado no se ve. No hay charco, no hay olor, no hay nada. Se detecta midiendo, y por eso la ley obliga a que se pueda medir.",
+      "duracion": 3.15,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/excavator_digging_trench_pipes_71.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "Una fuga en un tanque enterrado no se ve. No hay charco, no hay olor, no hay nada. Se detecta midiendo, y por eso la ley obliga a que se pueda medir.",
+      "duracion": 3.84,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/digger_trench_pipes_laying_ground_84.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No hay *charco*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_06c",
+      "texto": "Una fuga en un tanque enterrado no se ve. No hay charco, no hay olor, no hay nada. Se detecta midiendo, y por eso la ley obliga a que se pueda medir.",
+      "duracion": 4.69,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/excavator_digging_trench_pipes_71.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_07",
+      "texto": "Y encima va algo que casi nadie sabe que existe: el sistema de recuperación de vapores. Cuando llenas el depósito de tu coche, el aire cargado de gasolina que sale tiene que volver al tanque en vez de irse a la atmósfera. Eso es una instalación entera y es obligatoria.",
+      "duracion": 3.54,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_handle_car_tank_hand_70.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "*encima* va algo que casi nadie",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "Y encima va algo que casi nadie sabe que existe: el sistema de recuperación de vapores. Cuando llenas el depósito de tu coche, el aire cargado de gasolina que sale tiene que volver al tanque en vez de irse a la atmósfera. Eso es una instalación entera y es obligatoria.",
+      "duracion": 4.31,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/industrial_pipes_valves_fuel_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_07c",
+      "texto": "Y encima va algo que casi nadie sabe que existe: el sistema de recuperación de vapores. Cuando llenas el depósito de tu coche, el aire cargado de gasolina que sale tiene que volver al tanque en vez de irse a la atmósfera. Eso es una instalación entera y es obligatoria.",
+      "duracion": 4.31,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/single_car_driving_empty_road_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07d",
+      "texto": "Y encima va algo que casi nadie sabe que existe: el sistema de recuperación de vapores. Cuando llenas el depósito de tu coche, el aire cargado de gasolina que sale tiene que volver al tanque en vez de irse a la atmósfera. Eso es una instalación entera y es obligatoria.",
+      "duracion": 5.27,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/car_wash_brushes_foam_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_08",
+      "texto": "Vamos con cifras de en medio: doscientos cincuenta mil de obra y ciento cincuenta mil de equipamiento.",
+      "duracion": 7.61,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/stock_market_chart_screen_trading_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 250000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "obra",
+        "y": 0.68,
+        "retardo": 2.238235294117647,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_09",
+      "texto": "Y ahora te pido una cosa. Acuérdate de estos tanques, porque en el último capítulo vuelven y no vuelven bien.",
+      "duracion": 3.26,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_09.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*ahora* te pido una cosa",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_09b",
+      "texto": "Y ahora te pido una cosa. Acuérdate de estos tanques, porque en el último capítulo vuelven y no vuelven bien.",
+      "duracion": 2.42,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_09b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*ahora* te pido una cosa",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_09bx",
+      "texto": "Y ahora te pido una cosa. Acuérdate de estos tanques, porque en el último capítulo vuelven y no vuelven bien.",
+      "duracion": 2.43,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap2_09bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "en el último *capítulo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_10",
+      "texto": "Total acumulado: seiscientos mil euros.",
+      "duracion": 4.45,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/petrol_station_night_lights_empty_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "tu gasolinera, hasta aquí",
+        "lineas": [
+          [
+            "terreno, en el lado bueno de la vía",
+            "200.000 €"
+          ],
+          [
+            "obra civil y tanques enterrados",
+            "400.000 €"
+          ]
+        ],
+        "total": "600.000 €",
+        "etiqueta_total": "llevas gastado",
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.6,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Tienes el suelo y tienes la instalación. No puedes vender un litro.",
+      "duracion": 2.3,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "No puedes vender un *litro*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_01b",
+      "texto": "Tienes el suelo y tienes la instalación. No puedes vender un litro.",
+      "duracion": 3.43,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_01b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "No puedes vender un *litro*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Una gasolinera es una instalación de productos petrolíferos, y eso significa licencia de actividad, licencia de obra, autorización ambiental, proyecto firmado por un ingeniero, inspección de industria y plan de emergencia.",
+      "duracion": 3.2,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/signing_contract_documents_pen_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Una gasolinera es una instalación de productos petrolíferos, y eso significa licencia de actividad, licencia de obra, autorización ambiental, proyecto firmado por un ingeniero, inspección de industria y plan de emergencia.",
+      "duracion": 3.91,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/empty_gas_station_forecourt_daylight_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "*licencia* de obra",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_02c",
+      "texto": "Una gasolinera es una instalación de productos petrolíferos, y eso significa licencia de actividad, licencia de obra, autorización ambiental, proyecto firmado por un ingeniero, inspección de industria y plan de emergencia.",
+      "duracion": 3.91,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/excavator_digging_construction_pit_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02d",
+      "texto": "Una gasolinera es una instalación de productos petrolíferos, y eso significa licencia de actividad, licencia de obra, autorización ambiental, proyecto firmado por un ingeniero, inspección de industria y plan de emergencia.",
+      "duracion": 4.77,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/construction_site_digging_foundation_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "En dinero, entre quince mil y cuarenta mil euros.",
+      "duracion": 4.53,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/cash_register_money_counting_shop_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 40000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.68,
+        "retardo": 2.773469387755102,
+        "duracion": 1.56,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "En tiempo, meses. Y ese es el coste de verdad, porque durante esos meses ya estás pagando el suelo y la obra.",
+      "duracion": 3.77,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/concrete_pouring_construction_site_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "En tiempo, meses. Y ese es el coste de verdad, porque durante esos meses ya estás pagando el suelo y la obra.",
+      "duracion": 5.62,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/excavator_digging_construction_pit_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Pon veinticinco mil euros de papeles.",
+      "duracion": 3.51,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/invoice_receipt_paperwork_desk_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 25000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "papeles",
+        "y": 0.62,
+        "retardo": 0.37945945945945947,
+        "duracion": 2.8,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_06",
+      "texto": "Y hay un coste que no aparece en ninguna factura: el tiempo.",
+      "duracion": 2.05,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "el *tiempo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "Y hay un coste que no aparece en ninguna factura: el tiempo.",
+      "duracion": 3.05,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_06b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "el *tiempo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_07",
+      "texto": "Durante esos meses de tramitación ya has pagado el terreno, ya has hecho la obra y ya tienes los tanques enterrados. Todo ese dinero está quieto, sin vender un litro.",
+      "duracion": 3.15,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/buried_pipes_trench_excavation_ground_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_07b",
+      "texto": "Durante esos meses de tramitación ya has pagado el terreno, ya has hecho la obra y ya tienes los tanques enterrados. Todo ese dinero está quieto, sin vender un litro.",
+      "duracion": 3.84,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/large_steel_tank_industrial_installation_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_07c",
+      "texto": "Durante esos meses de tramitación ya has pagado el terreno, ya has hecho la obra y ya tienes los tanques enterrados. Todo ese dinero está quieto, sin vender un litro.",
+      "duracion": 4.69,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/fuel_tanker_truck_unloading_station_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_08",
+      "texto": "Es exactamente el mismo problema que tenía la aerolínea del episodio anterior: lo caro no es comprar la máquina, es aguantar hasta que te dejan encenderla.",
+      "duracion": 3.99,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/credit_card_payment_terminal_outdoor_machine_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_08b",
+      "texto": "Es exactamente el mismo problema que tenía la aerolínea del episodio anterior: lo caro no es comprar la máquina, es aguantar hasta que te dejan encenderla.",
+      "duracion": 5.94,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/credit_card_payment_terminal_outdoor_machine_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_09",
+      "texto": "Total acumulado: seiscientos veinticinco mil euros.",
+      "duracion": 4.47,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/credit_card_payment_terminal_outdoor_machine_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "tu gasolinera, hasta aquí",
+        "lineas": [
+          [
+            "terreno, en el lado bueno de la vía",
+            "200.000 €"
+          ],
+          [
+            "obra civil y tanques enterrados",
+            "400.000 €"
+          ],
+          [
+            "licencias, permisos y meses",
+            "25.000 €"
+          ]
+        ],
+        "total": "625.000 €",
+        "etiqueta_total": "llevas gastado",
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.6,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_10",
+      "texto": "Y aquí hay una decisión que cambia el negocio entero, y conviene que la entiendas antes de seguir.",
+      "duracion": 3.09,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_10.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "aquí hay una *decisión*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_10b",
+      "texto": "Y aquí hay una decisión que cambia el negocio entero, y conviene que la entiendas antes de seguir.",
+      "duracion": 2.3,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_10b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "aquí hay una *decisión*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_10bx",
+      "texto": "Y aquí hay una decisión que cambia el negocio entero, y conviene que la entiendas antes de seguir.",
+      "duracion": 2.3,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_10bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*entero*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_11",
+      "texto": "Puedes poner tu propia marca, comprar el combustible a quien quieras y fijar tú el precio. Eres independiente y asumes todo el riesgo.",
+      "duracion": 3.88,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Puedes poner tu propia *marca*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_11b",
+      "texto": "Puedes poner tu propia marca, comprar el combustible a quien quieras y fijar tú el precio. Eres independiente y asumes todo el riesgo.",
+      "duracion": 2.88,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_11b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Puedes poner tu propia *marca*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_11bx",
+      "texto": "Puedes poner tu propia marca, comprar el combustible a quien quieras y fijar tú el precio. Eres independiente y asumes todo el riesgo.",
+      "duracion": 2.89,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_11bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "quieras y fijar tú el *precio*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_12",
+      "texto": "O puedes abanderarte con una petrolera. Te dan la marca, la clientela y a veces parte de la instalación.",
+      "duracion": 3.24,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_12.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Te dan la *marca*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_12b",
+      "texto": "O puedes abanderarte con una petrolera. Te dan la marca, la clientela y a veces parte de la instalación.",
+      "duracion": 2.4,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_12b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Te dan",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_12bx",
+      "texto": "O puedes abanderarte con una petrolera. Te dan la marca, la clientela y a veces parte de la instalación.",
+      "duracion": 2.41,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap3_12bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*marca*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_13",
+      "texto": "Pero en algunas de esas fórmulas tú no compras el combustible: lo tienes en depósito, lo vendes al precio que te dicen y cobras una comisión.",
+      "duracion": 3.96,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_handle_car_tank_hand_70.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_13b",
+      "texto": "Pero en algunas de esas fórmulas tú no compras el combustible: lo tienes en depósito, lo vendes al precio que te dicen y cobras una comisión.",
+      "duracion": 5.9,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/hand_fuel_pump_prices_display_panel_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_14",
+      "texto": "O sea: hay una forma muy extendida de tener una gasolinera en la que la gasolina no es tuya.",
+      "duracion": 2.65,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/woman_phone_beside_car_gas_station_night_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_14b",
+      "texto": "O sea: hay una forma muy extendida de tener una gasolinera en la que la gasolina no es tuya.",
+      "duracion": 3.94,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/petrol_station_night_lights_empty_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Ya vendes. Vamos a abrir el precio del surtidor y a ver qué te llevas tú.",
+      "duracion": 2.4,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/oil_pump_jack_field_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Ya vendes. Vamos a abrir el precio del surtidor y a ver qué te llevas tú.",
+      "duracion": 3.56,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/rusty_abandoned_fuel_pump_gauge_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "Cojamos la gasolina a un euro con cuarenta y seis el litro, que es un precio normal en España.",
+      "duracion": 6.28,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/petrol_pump_screen_litres_counting_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1.46,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "el litro",
+        "y": 0.26,
+        "retardo": 0.55,
+        "duracion": 2.8,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "El producto, refinado y puesto ahí, son setenta y tres céntimos. La mitad del precio.",
+      "duracion": 7.4,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 73.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.68,
+        "retardo": 3.4823529411764707,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "El impuesto de hidrocarburos son cuarenta y siete céntimos. Fijos, por litro, los venda caros o baratos.",
+      "duracion": 3.28,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 47.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.34,
+        "retardo": 1.9299999999999997,
+        "duracion": 1.2,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "El impuesto de hidrocarburos son cuarenta y siete céntimos. Fijos, por litro, los venda caros o baratos.",
+      "duracion": 2.44,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_04b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "El impuesto de *hidrocarburos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04bx",
+      "texto": "El impuesto de hidrocarburos son cuarenta y siete céntimos. Fijos, por litro, los venda caros o baratos.",
+      "duracion": 2.44,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_04bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*céntimos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "Y encima de todo eso va el IVA: veinticinco céntimos más. Y sí, has oído bien: el IVA se calcula sobre un precio que ya lleva el otro impuesto dentro. Pagas un impuesto sobre un impuesto.",
+      "duracion": 3.61,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/tax_documents_calculator_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "producto",
+            0.73
+          ],
+          [
+            "hidrocarburos",
+            0.47
+          ],
+          [
+            "IVA",
+            0.25
+          ]
+        ],
+        "colores": {
+          "producto": [
+            120,
+            130,
+            150
+          ],
+          "hidrocarburos": [
+            255,
+            110,
+            86
+          ],
+          "IVA": [
+            255,
+            140,
+            100
+          ]
+        },
+        "total": "1,46 € el litro",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.45,
+        "duracion": 2.6,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "Y encima de todo eso va el IVA: veinticinco céntimos más. Y sí, has oído bien: el IVA se calcula sobre un precio que ya lleva el otro impuesto dentro. Pagas un impuesto sobre un impuesto.",
+      "duracion": 4.4,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/tax_form_paperwork_stamp_official_89.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "Y encima de todo eso va el IVA: veinticinco céntimos más. Y sí, has oído bien: el IVA se calcula sobre un precio que ya lleva el otro impuesto dentro. Pagas un impuesto sobre un impuesto.",
+      "duracion": 5.37,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/historic_government_building_facade_flags_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06",
+      "texto": "Si solo te quedas con un dato de todo el vídeo, que sea este: de cada litro que despachas, setenta y dos céntimos son del Estado.",
+      "duracion": 3.45,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "que sea",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "Si solo te quedas con un dato de todo el vídeo, que sea este: de cada litro que despachas, setenta y dos céntimos son del Estado.",
+      "duracion": 5.13,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/signing_contract_documents_pen_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 72.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos",
+        "y": 0.34,
+        "retardo": 2.6025581395348842,
+        "duracion": 2.33,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_07",
+      "texto": "Setenta y dos céntimos de impuestos. ¿Y cuánto te queda a ti?",
+      "duracion": 5.34,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/stamp_official_document_approval_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 72.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos de impuestos",
+        "y": 0.62,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_08",
+      "texto": "El margen bruto del combustible en España está entre ocho y quince céntimos por litro. Y eso es bruto: de ahí salen la luz, el mantenimiento, el seguro y la gente.",
+      "duracion": 3.38,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_meter_numbers_litres_close_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_08b",
+      "texto": "El margen bruto del combustible en España está entre ocho y quince céntimos por litro. Y eso es bruto: de ahí salen la luz, el mantenimiento, el seguro y la gente.",
+      "duracion": 4.12,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/industrial_pipes_valves_fuel_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 15.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos por litro",
+        "y": 0.26,
+        "retardo": 1.2285889570552149,
+        "duracion": 2.69,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_08c",
+      "texto": "El margen bruto del combustible en España está entre ocho y quince céntimos por litro. Y eso es bruto: de ahí salen la luz, el mantenimiento, el seguro y la gente.",
+      "duracion": 5.02,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/stock_market_chart_screen_trading_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_09",
+      "texto": "Ponlo en una balanza: por el mismo litro, Hacienda se lleva siete veces más que tú, y no ha puesto ni el terreno, ni los tanques, ni una sola hora de trabajo.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/large_steel_tank_industrial_installation_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "items": [
+          [
+            "Hacienda",
+            72.0
+          ],
+          [
+            "tú",
+            10.0
+          ]
+        ],
+        "destacar": {
+          "Hacienda": [
+            255,
+            110,
+            86
+          ]
+        },
+        "sufijo": " c",
+        "dec": 0,
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.2,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap4_09b",
+      "texto": "Ponlo en una balanza: por el mismo litro, Hacienda se lleva siete veces más que tú, y no ha puesto ni el terreno, ni los tanques, ni una sola hora de trabajo.",
+      "duracion": 3.74,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_gasolinera/fuel_tanker_truck_unloading_station_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 7.0,
+        "dec": 0,
+        "sufijo": "x",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "Hacienda",
+        "y": 0.3,
+        "retardo": 1.2477215189873418,
+        "duracion": 2.29,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_09c",
+      "texto": "Ponlo en una balanza: por el mismo litro, Hacienda se lleva siete veces más que tú, y no ha puesto ni el terreno, ni los tanques, ni una sola hora de trabajo.",
+      "duracion": 4.56,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/industrial_storage_tanks_aerial_farm_82.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_10",
+      "texto": "No eres el dueño de ese dinero. Eres quien lo recauda.",
+      "duracion": 4.53,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/cash_register_money_counting_shop_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_11",
+      "texto": "Y hay algo que hace este negocio todavía más raro de lo que parece.",
+      "duracion": 2.09,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "hay algo que hace",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_11b",
+      "texto": "Y hay algo que hace este negocio todavía más raro de lo que parece.",
+      "duracion": 3.12,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_11b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "hay algo que hace",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_12",
+      "texto": "Cuando sube el precio del petróleo y la gasolina se pone a dos euros, todo el mundo mira a la gasolinera. Pero tu margen no ha subido: sigue siendo el mismo puñado de céntimos.",
+      "duracion": 3.5,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/aerial_view_gas_station_road_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_12b",
+      "texto": "Cuando sube el precio del petróleo y la gasolina se pone a dos euros, todo el mundo mira a la gasolinera. Pero tu margen no ha subido: sigue siendo el mismo puñado de céntimos.",
+      "duracion": 4.27,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_gasolinera/gas_station_night_exterior_cars_63.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "todo el mundo mira a la *gasolinera*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_12c",
+      "texto": "Cuando sube el precio del petróleo y la gasolina se pone a dos euros, todo el mundo mira a la gasolinera. Pero tu margen no ha subido: sigue siendo el mismo puñado de céntimos.",
+      "duracion": 5.22,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_gasolinera/gas_station_forecourt_cars_refuelling_75.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_13",
+      "texto": "Lo que ha subido es la parte que no es tuya. Tú solo has tenido que adelantar más dinero para llenar los mismos tanques.",
+      "duracion": 3.13,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_13.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Lo que ha subido es la *parte*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_13b",
+      "texto": "Lo que ha subido es la parte que no es tuya. Tú solo has tenido que adelantar más dinero para llenar los mismos tanques.",
+      "duracion": 2.33,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_13b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Tú solo has",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_13bx",
+      "texto": "Lo que ha subido es la parte que no es tuya. Tú solo has tenido que adelantar más dinero para llenar los mismos tanques.",
+      "duracion": 2.33,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_13bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "tenido que *adelantar*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_14",
+      "texto": "El precio alto no te hace ganar más. Te hace necesitar más caja.",
+      "duracion": 2.22,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_14.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Te hace *necesitar* más caja",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_14b",
+      "texto": "El precio alto no te hace ganar más. Te hace necesitar más caja.",
+      "duracion": 3.3,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap4_14b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Te hace *necesitar* más caja",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Ahora sí se entiende lo que está pasando en España.",
+      "duracion": 4.06,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap5_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Ahora sí se *entiende*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "Si ganas diez céntimos por litro, solo tienes dos palancas: vender muchísimo, o gastar muchísimo menos.",
+      "duracion": 8.11,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "céntimos por litro",
+        "y": 0.34,
+        "retardo": 0.7086407766990291,
+        "duracion": 2.8,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "La gasolinera automática es la segunda llevada al extremo. Quitas al empleado. Quitas la tienda. Quitas el lavadero. Quitas el horario. Lo que queda es un tanque, un surtidor y un lector de tarjetas.",
+      "duracion": 3.96,
+      "movimiento": "drift_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/gas_station_fuel_pump_nozzle_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Quitas al *empleado*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "La gasolinera automática es la segunda llevada al extremo. Quitas al empleado. Quitas la tienda. Quitas el lavadero. Quitas el horario. Lo que queda es un tanque, un surtidor y un lector de tarjetas.",
+      "duracion": 4.83,
+      "movimiento": "contra_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_gasolinera/gas_pump_hose_close_up_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "La gasolinera automática es la segunda llevada al extremo. Quitas al empleado. Quitas la tienda. Quitas el lavadero. Quitas el horario. Lo que queda es un tanque, un surtidor y un lector de tarjetas.",
+      "duracion": 5.9,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/self_service_gas_station_card_payment_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_04",
+      "texto": "Y funciona. Hay ya más de mil estaciones así en España, y España es uno de los pocos países de la Unión Europea donde la red de gasolineras sigue creciendo, precisamente por esto.",
+      "duracion": 3.53,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/woman_phone_beside_car_gas_station_night_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "estaciones",
+        "y": 0.68,
+        "retardo": 1.8984357541899444,
+        "duracion": 1.43,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "Y funciona. Hay ya más de mil estaciones así en España, y España es uno de los pocos países de la Unión Europea donde la red de gasolineras sigue creciendo, precisamente por esto.",
+      "duracion": 4.3,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/empty_gas_station_forecourt_daylight_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_04c",
+      "texto": "Y funciona. Hay ya más de mil estaciones así en España, y España es uno de los pocos países de la Unión Europea donde la red de gasolineras sigue creciendo, precisamente por esto.",
+      "duracion": 5.24,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_gasolinera/petrol_station_canopy_wide_shot_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "Haz la cuenta conmigo, porque es la cuenta que hicieron ellos.",
+      "duracion": 4.84,
+      "movimiento": "drift_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/tax_documents_calculator_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Haz la cuenta *conmigo*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Con tus seiscientos veinticinco mil euros invertidos y diez céntimos de margen, necesitas despachar seis millones y pico de litros solo para recuperar lo puesto.",
+      "duracion": 2.8,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap5_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 6.25,
+        "dec": 2,
+        "sufijo": " M de litros",
+        "pie": "solo para recuperar lo invertido",
+        "color": [
+          255,
+          110,
+          86
+        ],
+        "y": 0.46,
+        "retardo": 0.47,
+        "duracion": 2.08,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Con tus seiscientos veinticinco mil euros invertidos y diez céntimos de margen, necesitas despachar seis millones y pico de litros solo para recuperar lo puesto.",
+      "duracion": 3.41,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap5_06b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Con tus *seiscientos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06c",
+      "texto": "Con tus seiscientos veinticinco mil euros invertidos y diez céntimos de margen, necesitas despachar seis millones y pico de litros solo para recuperar lo puesto.",
+      "duracion": 4.17,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_gasolinera/woman_phone_beside_car_gas_station_night_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 6.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "pico de litros",
+        "y": 0.26,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_07",
+      "texto": "A cuatro mil litros al día, eso son más de cuatro años. Cuatro años solo para volver a cero, sin contar un solo gasto de funcionamiento.",
+      "duracion": 3.71,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/petrol_pump_screen_litres_counting_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 4.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "litros al día",
+        "y": 0.3,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "A *cuatro* mil litros al día",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_07b",
+      "texto": "A cuatro mil litros al día, eso son más de cuatro años. Cuatro años solo para volver a cero, sin contar un solo gasto de funcionamiento.",
+      "duracion": 5.52,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/hands_counting_dollar_bills_table_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_08",
+      "texto": "Cada empleado que quitas acorta esa cuenta. Por eso no hay nadie dentro.",
+      "duracion": 2.6,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap5_08.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Por eso no hay nadie *dentro*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_08b",
+      "texto": "Cada empleado que quitas acorta esa cuenta. Por eso no hay nadie dentro.",
+      "duracion": 3.86,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap5_08b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Por eso no hay nadie *dentro*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_09",
+      "texto": "Y funciona porque el cliente está dispuesto a hacer algo que no hace en casi ningún otro negocio: conducir más para pagar dos céntimos menos.",
+      "duracion": 3.94,
+      "movimiento": "bajar",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/single_car_driving_empty_road_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "*funciona* porque el cliente",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_09b",
+      "texto": "Y funciona porque el cliente está dispuesto a hacer algo que no hace en casi ningún otro negocio: conducir más para pagar dos céntimos menos.",
+      "duracion": 5.86,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/cars_driving_road_morning_commute_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_10",
+      "texto": "Dos céntimos por litro, en un depósito de cincuenta, es un euro. Nadie cruza una ciudad por un euro en ningún otro producto.",
+      "duracion": 3.76,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_meter_numbers_litres_close_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 50.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "depósito",
+        "y": 0.62,
+        "retardo": 2.4099999999999997,
+        "duracion": 1.2,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_10b",
+      "texto": "Dos céntimos por litro, en un depósito de cincuenta, es un euro. Nadie cruza una ciudad por un euro en ningún otro producto.",
+      "duracion": 5.6,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_handle_car_tank_hand_70.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_11",
+      "texto": "Pero con la gasolina sí, porque el precio está escrito en un cartel de dos metros en la calle. Es el único producto cuyo precio te enteras sin entrar en la tienda.",
+      "duracion": 2.74,
+      "movimiento": "contra_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/roadside_fuel_price_totem_sign_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "con la *gasolina* sí",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_11b",
+      "texto": "Pero con la gasolina sí, porque el precio está escrito en un cartel de dos metros en la calle. Es el único producto cuyo precio te enteras sin entrar en la tienda.",
+      "duracion": 3.35,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/shopping_street_pedestrians_shops_94.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_11c",
+      "texto": "Pero con la gasolina sí, porque el precio está escrito en un cartel de dos metros en la calle. Es el único producto cuyo precio te enteras sin entrar en la tienda.",
+      "duracion": 4.08,
+      "movimiento": "drift_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/petrol_station_night_lights_empty_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_12",
+      "texto": "Y ahí está la clave del modelo entero: no compiten en servicio, porque no hay servicio. Compiten en un número que se ve desde el coche.",
+      "duracion": 3.83,
+      "movimiento": "contra_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_gasolinera/car_wash_brushes_foam_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_12b",
+      "texto": "Y ahí está la clave del modelo entero: no compiten en servicio, porque no hay servicio. Compiten en un número que se ve desde el coche.",
+      "duracion": 5.69,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/person_refuelling_car_side_view_81.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Aquí está la trampa del modelo, y es lo que casi nadie cuenta.",
+      "duracion": 2.02,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap6_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Aquí está la trampa del *modelo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_01b",
+      "texto": "Aquí está la trampa del modelo, y es lo que casi nadie cuenta.",
+      "duracion": 3.0,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cap6_01b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "izq",
+      "texto_pantalla": {
+        "texto": "Aquí está la trampa del *modelo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "El combustible te deja diez céntimos por litro. La tienda deja entre un veinticinco y un cuarenta por ciento.",
+      "duracion": 3.04,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/hand_fuel_pump_prices_display_panel_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "barras",
+        "items": [
+          [
+            "la tienda",
+            32.0
+          ],
+          [
+            "el combustible",
+            7.0
+          ]
+        ],
+        "destacar": {
+          "la tienda": [
+            120,
+            220,
+            170
+          ]
+        },
+        "sufijo": " % de margen",
+        "dec": 0,
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.2,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "El combustible te deja diez céntimos por litro. La tienda deja entre un veinticinco y un cuarenta por ciento.",
+      "duracion": 4.52,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/gas_station_fuel_pump_nozzle_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 40.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "",
+        "y": 0.3,
+        "retardo": 3.1328440366972474,
+        "duracion": 1.2,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "El café, el bocadillo, el hielo, el limpiaparabrisas, las bebidas de la nevera. Esos son los márgenes de verdad de una gasolinera de toda la vida.",
+      "duracion": 2.99,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/drinks_fridge_supermarket_cold_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "el *bocadillo*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "El café, el bocadillo, el hielo, el limpiaparabrisas, las bebidas de la nevera. Esos son los márgenes de verdad de una gasolinera de toda la vida.",
+      "duracion": 3.64,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_gasolinera/shop_shelves_snacks_drinks_counter_64.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03c",
+      "texto": "El café, el bocadillo, el hielo, el limpiaparabrisas, las bebidas de la nevera. Esos son los márgenes de verdad de una gasolinera de toda la vida.",
+      "duracion": 4.45,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/woman_phone_beside_car_gas_station_night_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "Una estación tradicional no vive del combustible. Vive de lo que te vende mientras repostas.",
+      "duracion": 2.68,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/industrial_pipes_valves_fuel_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Una estación *tradicional* no vive",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "Una estación tradicional no vive del combustible. Vive de lo que te vende mientras repostas.",
+      "duracion": 3.99,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/rusty_abandoned_fuel_pump_gauge_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "Piensa en el café. Lo compras a treinta céntimos y lo vendes a uno con veinte. En ese café ganas más que despachando ochenta litros de gasóleo.",
+      "duracion": 2.73,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_gasolinera/coffee_machine_cup_pouring_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "Piensa en el café. Lo compras a treinta céntimos y lo vendes a uno con veinte. En ese café ganas más que despachando ochenta litros de gasóleo.",
+      "duracion": 3.33,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/coffee_cup_counter_shop_morning_95.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05c",
+      "texto": "Piensa en el café. Lo compras a treinta céntimos y lo vendes a uno con veinte. En ese café ganas más que despachando ochenta litros de gasóleo.",
+      "duracion": 4.06,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/fuel_nozzles_diesel_95_98_pump_row_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 80.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "litros de gasóleo",
+        "y": 0.26,
+        "retardo": 2.219999999999999,
+        "duracion": 1.64,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Lo mismo con el lavadero, con el aire, con la bolsa de hielo de agosto y con el bocadillo de las once.",
+      "duracion": 7.43,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/cash_register_money_counting_shop_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 11.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "bocadillo",
+        "y": 0.3,
+        "retardo": 6.08,
+        "duracion": 1.2,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_07",
+      "texto": "Por eso las estaciones grandes de autopista se parecen cada vez más a una tienda de conveniencia con surtidores en la puerta. No es una desviación del negocio: es el negocio.",
+      "duracion": 3.11,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_gasolinera/business_meeting_office_table_44.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_07b",
+      "texto": "Por eso las estaciones grandes de autopista se parecen cada vez más a una tienda de conveniencia con surtidores en la puerta. No es una desviación del negocio: es el negocio.",
+      "duracion": 3.79,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/gas_pump_hose_close_up_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_07c",
+      "texto": "Por eso las estaciones grandes de autopista se parecen cada vez más a una tienda de conveniencia con surtidores en la puerta. No es una desviación del negocio: es el negocio.",
+      "duracion": 4.63,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/oil_pump_jack_field_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No es una *desviación* del negocio",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_08",
+      "texto": "Así que la automática hace una apuesta muy clara: renuncia al margen bueno para quedarse con el barato, y lo compensa con volumen y con precio.",
+      "duracion": 2.8,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/self_service_gas_station_card_payment_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "que la *automática* hace",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_08b",
+      "texto": "Así que la automática hace una apuesta muy clara: renuncia al margen bueno para quedarse con el barato, y lo compensa con volumen y con precio.",
+      "duracion": 3.41,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_gasolinera/stock_market_chart_screen_trading_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_08c",
+      "texto": "Así que la automática hace una apuesta muy clara: renuncia al margen bueno para quedarse con el barato, y lo compensa con volumen y con precio.",
+      "duracion": 4.17,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/automatic_payment_terminal_outdoor_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_09",
+      "texto": "Funciona mientras la gente conduzca hasta allí por dos céntimos menos. Y ahí está la fragilidad: el día que el de enfrente baja tres, tu única ventaja desaparece.",
+      "duracion": 3.12,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_09b",
+      "texto": "Funciona mientras la gente conduzca hasta allí por dos céntimos menos. Y ahí está la fragilidad: el día que el de enfrente baja tres, tu única ventaja desaparece.",
+      "duracion": 3.8,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "ahí está la *fragilidad*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_09c",
+      "texto": "Funciona mientras la gente conduzca hasta allí por dos céntimos menos. Y ahí está la fragilidad: el día que el de enfrente baja tres, tu única ventaja desaparece.",
+      "duracion": 4.63,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_gasolinera/coin_close_up_macro_cent_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 3.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "enfrente baja",
+        "y": 0.26,
+        "retardo": 2.2059259259259267,
+        "duracion": 2.22,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_10",
+      "texto": "Porque el precio al que tú compras el combustible no lo pones tú. Lo pone un mercado internacional que no sabe que existes.",
+      "duracion": 2.45,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/roadside_fuel_price_totem_sign_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "el precio al que tú *compras*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_10b",
+      "texto": "Porque el precio al que tú compras el combustible no lo pones tú. Lo pone un mercado internacional que no sabe que existes.",
+      "duracion": 2.99,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_meter_numbers_litres_close_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_10c",
+      "texto": "Porque el precio al que tú compras el combustible no lo pones tú. Lo pone un mercado internacional que no sabe que existes.",
+      "duracion": 3.66,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_gasolinera/fuel_tanker_truck_unloading_station_61.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Vamos a cerrar la cuenta. Has puesto unos seiscientos veinticinco mil euros. Vendiendo cuatro mil litros al día, tardas más de cuatro años en recuperarlos.",
+      "duracion": 4.26,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/tax_documents_calculator_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_01b",
+      "texto": "Vamos a cerrar la cuenta. Has puesto unos seiscientos veinticinco mil euros. Vendiendo cuatro mil litros al día, tardas más de cuatro años en recuperarlos.",
+      "duracion": 6.35,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/closed_shutter_empty_building_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 4.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "litros al día",
+        "y": 0.68,
+        "retardo": 1.6952903225806448,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Y ahora acuérdate de los tanques del capítulo dos.",
+      "duracion": 4.11,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/large_steel_tank_industrial_installation_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "ahora *acuérdate* de los tanques",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "Imagina que te cansas. Que te jubilas, o que abren una automática enfrente y ya no hay negocio. Cierras.",
+      "duracion": 3.18,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/credit_card_payment_terminal_outdoor_machine_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "Imagina que te cansas. Que te jubilas, o que abren una automática enfrente y ya no hay negocio. Cierras.",
+      "duracion": 4.74,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/credit_card_payment_terminal_outdoor_machine_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Los tanques siguen ahí.",
+      "duracion": 2.7,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/fuel_pump_handle_car_tank_hand_70.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Los *tanques* siguen ahí",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "No puedes dejarlos y marcharte. Hay que vaciarlos, limpiarlos, gestionar los residuos como peligrosos y, si no se retiran, inertizarlos para que no se acumulen gases ni se hunda el terreno.",
+      "duracion": 4.02,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_05.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "No puedes dejarlos y *marcharte*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "No puedes dejarlos y marcharte. Hay que vaciarlos, limpiarlos, gestionar los residuos como peligrosos y, si no se retiran, inertizarlos para que no se acumulen gases ni se hunda el terreno.",
+      "duracion": 2.45,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_05b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "No puedes dejarlos y *marcharte*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_05bx",
+      "texto": "No puedes dejarlos y marcharte. Hay que vaciarlos, limpiarlos, gestionar los residuos como peligrosos y, si no se retiran, inertizarlos para que no se acumulen gases ni se hunda el terreno.",
+      "duracion": 2.45,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_05bx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*peligrosos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05c",
+      "texto": "No puedes dejarlos y marcharte. Hay que vaciarlos, limpiarlos, gestionar los residuos como peligrosos y, si no se retiran, inertizarlos para que no se acumulen gases ni se hunda el terreno.",
+      "duracion": 2.99,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_05c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "No puedes dejarlos y *marcharte*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_05cx",
+      "texto": "No puedes dejarlos y marcharte. Hay que vaciarlos, limpiarlos, gestionar los residuos como peligrosos y, si no se retiran, inertizarlos para que no se acumulen gases ni se hunda el terreno.",
+      "duracion": 2.99,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_05cx.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "*peligrosos*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_06",
+      "texto": "Y hay una cosa peor, que es la que convierte esto en un episodio de esta serie: la responsabilidad por el suelo contaminado no se extingue cuando cierras el negocio.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/excavated_soil_trench_close_up_72.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "y el día que cierres",
+        "lineas": [
+          [
+            "terreno, obra, tanques y papeles",
+            "625.000 €"
+          ],
+          [
+            "vaciar, limpiar e inertizar los tanques",
+            "a tu cargo"
+          ],
+          [
+            "descontaminar el suelo, si hubo fuga",
+            "?"
+          ]
+        ],
+        "total": "?",
+        "etiqueta_total": "y esto no se extingue",
+        "color": [
+          255,
+          110,
+          86
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 3.0,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cierre_06b",
+      "texto": "Y hay una cosa peor, que es la que convierte esto en un episodio de esta serie: la responsabilidad por el suelo contaminado no se extingue cuando cierras el negocio.",
+      "duracion": 6.19,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/rusty_abandoned_fuel_pump_gauge_49.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_07",
+      "texto": "Si hubo una fuga, y en veinte años de tanques enterrados las hay, el que tiene que descontaminar eres tú. Y no solo tu parcela: también lo que se haya movido al terreno de al lado.",
+      "duracion": 3.19,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/oil_spill_ground_contamination_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 20.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "tanques enterrados",
+        "y": 0.33,
+        "retardo": 1.5090555555555556,
+        "duracion": 1.48,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Si hubo una fuga",
+        "px": 132,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_07b",
+      "texto": "Si hubo una fuga, y en veinte años de tanques enterrados las hay, el que tiene que descontaminar eres tú. Y no solo tu parcela: también lo que se haya movido al terreno de al lado.",
+      "duracion": 3.88,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/empty_parking_lot_night_lights_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_07c",
+      "texto": "Si hubo una fuga, y en veinte años de tanques enterrados las hay, el que tiene que descontaminar eres tú. Y no solo tu parcela: también lo que se haya movido al terreno de al lado.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/buried_pipes_trench_excavation_ground_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_08",
+      "texto": "Piensa en lo que significa eso. Has comprado un terreno que, el día que dejas la actividad, no vale lo que valdría cualquier otro solar igual. Vale eso menos lo que cueste dejarlo limpio.",
+      "duracion": 3.32,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/vacant_lot_fenced_empty_urban_68.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Piensa en lo que *significa* eso",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_08b",
+      "texto": "Piensa en lo que significa eso. Has comprado un terreno que, el día que dejas la actividad, no vale lo que valdría cualquier otro solar igual. Vale eso menos lo que cueste dejarlo limpio.",
+      "duracion": 4.05,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/excavated_soil_trench_close_up_72.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_08c",
+      "texto": "Piensa en lo que significa eso. Has comprado un terreno que, el día que dejas la actividad, no vale lo que valdría cualquier otro solar igual. Vale eso menos lo que cueste dejarlo limpio.",
+      "duracion": 4.94,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/empty_parking_lot_night_lights_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_09",
+      "texto": "Y esa resta no la sabes hasta que excavas. Puede ser cero, si los tanques aguantaron bien. O puede comerse buena parte de lo que vale el suelo.",
+      "duracion": 3.85,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/industrial_storage_tanks_aerial_farm_82.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_09b",
+      "texto": "Y esa resta no la sabes hasta que excavas. Puede ser cero, si los tanques aguantaron bien. O puede comerse buena parte de lo que vale el suelo.",
+      "duracion": 5.72,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/digger_trench_pipes_laying_ground_84.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_10",
+      "texto": "En McDonald's, el primer episodio de esta serie, el suelo era el activo escondido: el dueño creía tener un restaurante y tenía una inmobiliaria.",
+      "duracion": 4.15,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_gasolinera/coffee_machine_cup_pouring_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_10b",
+      "texto": "En McDonald's, el primer episodio de esta serie, el suelo era el activo escondido: el dueño creía tener un restaurante y tenía una inmobiliaria.",
+      "duracion": 6.18,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_gasolinera/coffee_cup_counter_shop_morning_95.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_11",
+      "texto": "Aquí es exactamente al revés. Crees que has comprado un terreno y lo que has firmado es una obligación que sigue viva cuando el negocio ya no existe.",
+      "duracion": 4.17,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/signing_contract_documents_pen_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Aquí es *exactamente* al revés",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_11b",
+      "texto": "Aquí es exactamente al revés. Crees que has comprado un terreno y lo que has firmado es una obligación que sigue viva cuando el negocio ya no existe.",
+      "duracion": 6.21,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_gasolinera/business_meeting_office_table_44.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_12",
+      "texto": "Eres el dueño del suelo. Y es justo lo que no te puedes quitar de encima.",
+      "duracion": 2.2,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_12.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Eres el dueño del *suelo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_12b",
+      "texto": "Eres el dueño del suelo. Y es justo lo que no te puedes quitar de encima.",
+      "duracion": 3.27,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_gasolinera_cierre_12b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "Eres el dueño del *suelo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_13",
+      "texto": "Ese es el precio de ser el dueño.",
+      "duracion": 3.25,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_gasolinera/roadside_fuel_price_totem_sign_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    }
+  ]
+}

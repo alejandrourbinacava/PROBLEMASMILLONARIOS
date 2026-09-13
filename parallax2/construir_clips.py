@@ -122,6 +122,39 @@ TEMAS_AEROLINEA = [
                     "charleroi", "bruselas", "valonia", "irlandes")),
 ]
 
+# La gasolinera tampoco habla de lo mismo. Esta tabla solo decide el reparto
+# INICIAL: desde que vestir.py exige que el clip case con la frase, lo que
+# pone el constructor sobrevive unicamente en los planos que llevan un
+# grafico a pantalla completa, donde la imagen es fondo del dato. Aun asi
+# conviene que ese fondo sea del tema.
+TEMAS_GASOLINERA = [
+    ("surtidor",  ("surtidor", "surtidores", "manguera", "repostar",
+                   "repostas", "litro", "litros", "despachas", "despachar")),
+    ("estacion",  ("gasolinera", "gasolineras", "estacion", "estaciones",
+                   "marquesina", "automatica", "automaticas", "desatendida")),
+    ("obra",      ("obra", "excavar", "excavacion", "zanja", "hormigon",
+                   "construir", "construirla", "instalacion", "asfalto")),
+    ("tanque",    ("tanque", "tanques", "deposito", "depositos", "enterrado",
+                   "enterrados", "fuga", "fugas", "vapores", "tuberia")),
+    ("dinero",    ("euros", "euro", "millones", "mil", "centimos", "centimo",
+                   "margen", "beneficio", "precio", "precios", "cuesta",
+                   "coste", "inversion", "recuperar", "cobras", "ganas")),
+    ("impuestos", ("impuesto", "impuestos", "hacienda", "iva", "estado",
+                   "hidrocarburos", "recauda", "fiscal")),
+    ("papeles",   ("licencia", "licencias", "permiso", "permisos", "proyecto",
+                   "ingeniero", "inspeccion", "tramitacion", "papeles",
+                   "firmado", "autorizacion")),
+    ("tienda",    ("tienda", "cafe", "bocadillo", "nevera", "bebidas",
+                   "lavadero", "hielo", "vende", "margenes")),
+    ("crudo",     ("petroleo", "crudo", "refineria", "barril", "combustible",
+                   "gasolina", "gasoleo", "mercado", "internacional")),
+    ("carretera", ("carretera", "trafico", "coche", "coches", "conducir",
+                   "nacional", "autopista", "acceso", "ciudad", "cliente")),
+    ("cierre",    ("cerrar", "cierras", "abandonada", "jubilas", "suelo",
+                   "contaminado", "contaminacion", "descontaminar", "terreno",
+                   "solar", "parcela")),
+]
+
 POR_DEFECTO = "oficina"
 
 # Grades SUAVES: los normales estan calibrados para arte generado oscuro y

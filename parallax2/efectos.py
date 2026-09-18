@@ -502,11 +502,35 @@ def grafico(spec, W, H, u, ancla=0.5):
             col = tuple(spec.get("destacar", {}).get(nom, ac))
             d.rounded_rectangle([x0, y, x0 + ancho, y + alto], 8,
                                 fill=PALETA["surco"])
-            if largo > 10:
-                d.rounded_rectangle([x0, y, x0 + largo, y + alto], 8,
-                                    fill=col + (232,))
-            d.text((x0 - 26 - d.textlength(nom, font=f), y + 10), nom, font=f,
-                   fill=PALETA["hueso"] + (230,))
+            # Una barra minuscula tiene que VERSE minuscula, no faltar.
+            #
+            # En el episodio del hotel se comparan 9.000 hoteles con los 50
+            # que son suyos: 50 sobre 9.000 son ocho pixeles, y con el corte
+            # en 10 no se dibujaba nada. La barra salia vacia y se leia como
+            # un cero o como un fallo, cuando lo que tiene que decir es
+            # "existe, y es ridicula". Esa astilla ES el argumento.
+            if largo > 2:
+                d.rounded_rectangle([x0, y, x0 + max(8, largo), y + alto],
+                                    8, fill=col + (232,))
+            # La etiqueta se escribe a la IZQUIERDA de la barra, y si es
+            # larga se sale del encuadre: "hoteles con su nombre" salio en
+            # el episodio del hotel como "oteles con su nombre", y encima en
+            # el primer grafico del video, que es el que lleva el argumento.
+            #
+            # Se encoge la fuente hasta que cabe, y si aun asi no cabe, la
+            # etiqueta se mete DENTRO de la barra.
+            fe, ancho_nom = f, d.textlength(nom, font=f)
+            px_e = 40
+            while x0 - 26 - ancho_nom < 12 and px_e > 24:
+                px_e -= 3
+                fe = _fuente(px_e)
+                ancho_nom = d.textlength(nom, font=fe)
+            if x0 - 26 - ancho_nom < 12:
+                d.text((x0 + 16, y + 10), nom, font=fe,
+                       fill=(10, 12, 18, 235))
+            else:
+                d.text((x0 - 26 - ancho_nom, y + 10), nom, font=fe,
+                       fill=PALETA["hueso"] + (230,))
             d.text((x0 + ancho + 26, y + 6),
                    _fmt(v * _suave(ui), spec.get("dec", 1)) + spec.get("sufijo", ""),
                    font=fv, fill=col + (255,))

@@ -43,27 +43,27 @@ Empezamos por lo caro.
 
 Un hotel no se mide en metros. Se mide en habitaciones, y todo el sector habla así: coste por habitación, ingreso por habitación, empleados por habitación.
 
-Y el coste por habitación de un cinco estrellas, construido de cero, ronda los seiscientos mil dólares.
+Y el coste por habitación de un cinco estrellas, construido de cero, ronda los quinientos cincuenta mil euros.
 
-Seiscientos mil dólares por cada puerta. Y eso no es la cama y la tele: ahí dentro va el suelo, el proyecto, la obra, el mobiliario y el dinero de tener el hotel montado meses antes de abrir.
+Quinientos cincuenta mil euros por cada puerta. Y eso no es la cama y la tele: ahí dentro va el suelo, el proyecto, la obra, el mobiliario y el dinero de tener el hotel montado meses antes de abrir.
 
-En los hoteles de lujo de verdad, los de las grandes ciudades, esa cifra supera el millón por habitación. Y en los emblemáticos llega a pasar de dos millones.
+En los hoteles de lujo de verdad, los de las grandes ciudades, esa cifra supera el millón de euros por habitación. Y en los emblemáticos llega a pasar de los dos millones.
 
 Vamos a hacer uno normal dentro de lo excepcional: cien habitaciones, cinco estrellas, en una ciudad española.
 
-Cien habitaciones por seiscientos mil dólares son sesenta millones de dólares.
+Cien habitaciones por quinientos cincuenta mil euros son cincuenta y cinco millones de euros.
 
-Sesenta millones antes de que entre un solo huésped por la puerta.
+Cincuenta y cinco millones antes de que entre un solo huésped por la puerta.
 
 Y fíjate en una cosa que cambia el negocio entero: a diferencia del gimnasio o de la gasolinera, aquí no puedes empezar pequeño y crecer. Un hotel de cinco estrellas con cuarenta habitaciones tiene que tener igualmente restaurante, spa, recepción veinticuatro horas y cocina. Los costes fijos no se dividen por la mitad, pero los ingresos sí.
 
-Total acumulado: sesenta millones de dólares.
+Total acumulado: cincuenta y cinco millones de euros.
 
 Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.
 
 Un hotel no se paga con el dinero del hotel. Se paga con una hipoteca a veinte o treinta años, y el banco no te presta contra tu facturación futura: te presta sobre lo que vale el edificio si tiene que quedárselo.
 
-Así que necesitas poner de tu bolsillo una parte importante de esos sesenta millones antes de que nadie te preste el resto. Ese es el filtro de verdad de este negocio, y explica por qué casi todos los hoteles de una ciudad acaban en manos de cuatro o cinco propietarios.
+Así que necesitas poner de tu bolsillo una parte importante de esos cincuenta y cinco millones antes de que nadie te preste el resto. Ese es el filtro de verdad de este negocio, y explica por qué casi todos los hoteles de una ciudad acaban en manos de cuatro o cinco propietarios.
 
 ## CAPÍTULO 2 — El nombre de la puerta
 
@@ -155,7 +155,7 @@ Suena bien. Es un número que impresiona. Y ahora vamos a repartirlo, empezando 
 
 Si has firmado con una cadena y tu comisión base es el cinco por ciento de lo que entra, eso son trescientos ochenta mil euros al año.
 
-Trescientos ochenta mil euros por el letrero. Sin haber puesto un euro de los sesenta millones, sin haber contratado a una sola de tus doscientas personas, y los cobra el año que ganas y el año que pierdes.
+Trescientos ochenta mil euros por el letrero. Sin haber puesto un euro de los cincuenta y cinco millones, sin haber contratado a una sola de tus doscientas personas, y los cobra el año que ganas y el año que pierdes.
 
 Del resto sale todo lo demás: la plantilla, que es más del cuarenta por ciento de lo que gastas, la luz, el agua, la lavandería, la comida, el mantenimiento y la reposición.
 
@@ -169,7 +169,7 @@ En este negocio, dejar de invertir no se nota en el balance hasta que se nota en
 
 Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.
 
-El tuyo es un negocio inmobiliario y de operación. Pones sesenta millones, cargas con la hipoteca, con doscientos empleados, con la reforma cada ocho años y con que a la ciudad le dé por dejar de estar de moda.
+El tuyo es un negocio inmobiliario y de operación. Pones cincuenta y cinco millones, cargas con la hipoteca, con doscientos empleados, con la reforma cada ocho años y con que a la ciudad le dé por dejar de estar de moda.
 
 El de la cadena es otra cosa. Pone una marca, un manual y un programa de puntos, y se queda con una parte de todo lo que entre en tu caja. Sin edificio, sin nómina, sin obra.
 
@@ -187,7 +187,7 @@ No estás alquilando un logotipo por meses. Estás casándote con una empresa du
 
 Recapitulemos, que la cuenta ya está entera.
 
-Unos seiscientos mil dólares por habitación para construirlo. Sesenta millones para cien puertas. Entre ciento cincuenta y doscientas personas en nómina. Y una reforma completa cada siete u ocho años para seguir mereciendo la quinta estrella.
+Unos quinientos cincuenta mil euros por habitación para construirlo. Cincuenta y cinco millones para cien puertas. Entre ciento cincuenta y doscientas personas en nómina. Y una reforma completa cada siete u ocho años para seguir mereciendo la quinta estrella.
 
 A cambio, si va bien, siete millones y pico al año entrando por la caja.
 
@@ -209,7 +209,7 @@ Ese es el precio de ser el dueño.
 
 | dato | cifra | fuente |
 |---|---|---|
-| Coste de construcción, 5 estrellas | ~604.200 $ por habitación de media | guías de costes de construcción hotelera |
+| Coste de construcción, 5 estrellas | ~604.200 $ ≈ **550.000 €** por habitación | guías de costes de construcción hotelera; en el guion se dice en euros y como aproximación |
 | Lujo urbano | >1 M$ por habitación; emblemáticos >2 M$ | ídem |
 | Marriott | +9.000 hoteles · ~80 % franquiciados · ~20 % gestionados · **~50 en propiedad o alquiler (<1 %)** | análisis del modelo asset-light |
 | Hilton | ~90 % franquiciados · 46 en propiedad | ídem |

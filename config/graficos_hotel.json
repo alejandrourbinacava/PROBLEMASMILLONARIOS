@@ -14,13 +14,13 @@
   },
   {
     "_nota": "FACTURA 1. El edificio. En este episodio la cuenta empieza ya en sesenta millones, que es el salto de escala respecto a la gasolinera.",
-    "donde": "total acumulado: sesenta millones de dolares",
+    "donde": "total acumulado: cincuenta y cinco millones de euros",
     "movimiento": "estatico",
     "grafico": {
       "tipo": "factura",
       "titulo": "tu hotel, hasta aquí",
-      "lineas": [["100 habitaciones a 600.000 $", "60 M$"]],
-      "total": "60 M$",
+      "lineas": [["100 habitaciones a 550.000 €", "55 M€"]],
+      "total": "55 M€",
       "etiqueta_total": "llevas puesto",
       "color": [255, 196, 90],
       "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
@@ -77,12 +77,12 @@
       "tipo": "factura",
       "titulo": "lo que has comprado",
       "lineas": [
-        ["el edificio y las 100 habitaciones", "60 M$"],
+        ["el edificio y las 100 habitaciones", "55 M€"],
         ["150-200 personas en nómina", "todos los meses"],
         ["una reforma completa cada 7-8 años", "obligatoria"],
         ["el nombre de la puerta", "no es tuyo"]
       ],
-      "total": "60 M$",
+      "total": "55 M€",
       "etiqueta_total": "tuyo es el riesgo",
       "color": [255, 110, 86],
       "y": 0.5, "retardo": 0.4, "duracion": 3.0, "entrada": "golpe"

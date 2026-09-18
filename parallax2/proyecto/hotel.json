@@ -1,0 +1,5143 @@
+{
+  "titulo": "Esto cuesta comprar y mantener un hotel de cinco estrellas",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Marriott tiene más de nueve mil hoteles por todo el mundo.",
+      "duracion": 4.53,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_corridor_doors_carpet_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 9000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "hoteles por todo",
+        "y": 0.3,
+        "retardo": 1.7182758620689655,
+        "duracion": 2.61,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "¿Cuántos crees que son suyos?",
+      "duracion": 1.27,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_gancho_02.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "izq",
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "¿Cuántos crees que son *suyos*?",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "¿Cuántos crees que son suyos?",
+      "duracion": 1.9,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_gancho_02b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "¿Cuántos crees que son *suyos*?",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Unos cincuenta. Menos del uno por ciento.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "barras",
+        "items": [
+          [
+            "hoteles con su nombre",
+            9000.0
+          ],
+          [
+            "suyos",
+            50.0
+          ]
+        ],
+        "destacar": {
+          "suyos": [
+            255,
+            110,
+            86
+          ]
+        },
+        "sufijo": "",
+        "dec": 0,
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Repítelo conmigo, porque es toda la trampa: la cadena de hoteles más grande del planeta no tiene hoteles.",
+      "duracion": 2.31,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "*Repítelo* conmigo",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Repítelo conmigo, porque es toda la trampa: la cadena de hoteles más grande del planeta no tiene hoteles.",
+      "duracion": 2.81,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Repítelo conmigo, porque es toda la trampa: la cadena de hoteles más grande del planeta no tiene hoteles.",
+      "duracion": 3.43,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/hotel_lobby_chandelier_marble_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Hilton está igual: nueve de cada diez de sus hoteles son de otro. Y de los que quedan, tiene en propiedad cuarenta y seis.",
+      "duracion": 2.5,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/elevator_doors_opening_hotel_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "*Hilton* está igual",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Hilton está igual: nueve de cada diez de sus hoteles son de otro. Y de los que quedan, tiene en propiedad cuarenta y seis.",
+      "duracion": 3.04,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/waiter_serving_restaurant_hotel_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Hilton está igual: nueve de cada diez de sus hoteles son de otro. Y de los que quedan, tiene en propiedad cuarenta y seis.",
+      "duracion": 3.71,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/hotel_corridor_red_carpet_doors_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 90.0,
+        "color_a": [
+          255,
+          176,
+          60
+        ],
+        "etiqueta_a": "de",
+        "etiqueta_b": "el resto",
+        "y": 0.26,
+        "retardo": 2.36,
+        "duracion": 1.2,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Entonces, ¿de quién son los otros ocho mil novecientos cincuenta?",
+      "duracion": 2.1,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_gancho_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*Entonces*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "Entonces, ¿de quién son los otros ocho mil novecientos cincuenta?",
+      "duracion": 3.13,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 8950.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "?",
+        "y": 0.3,
+        "retardo": 0.6356923076923078,
+        "duracion": 2.29,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_07",
+      "texto": "De gente como tú y como yo, si tuviéramos el dinero. Y hoy lo vamos a tener.",
+      "duracion": 1.73,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "De *gente* como tú y como yo",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07b",
+      "texto": "De gente como tú y como yo, si tuviéramos el dinero. Y hoy lo vamos a tener.",
+      "duracion": 2.11,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_07c",
+      "texto": "De gente como tú y como yo, si tuviéramos el dinero. Y hoy lo vamos a tener.",
+      "duracion": 2.57,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Vamos a comprar un hotel de cinco estrellas, tú y yo, paso a paso y con la factura delante. El edificio, el nombre de la puerta, la plantilla, lo que cuesta abrir cada noche y lo que entra por la caja.",
+      "duracion": 2.44,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_key_card_door_lock_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "estrellas",
+        "y": 0.3,
+        "retardo": 1.0899999999999999,
+        "duracion": 1.2,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_08b",
+      "texto": "Vamos a comprar un hotel de cinco estrellas, tú y yo, paso a paso y con la factura delante. El edificio, el nombre de la puerta, la plantilla, lo que cuesta abrir cada noche y lo que entra por la caja.",
+      "duracion": 2.98,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/motel_resort_building_entrance_road_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_08c",
+      "texto": "Vamos a comprar un hotel de cinco estrellas, tú y yo, paso a paso y con la factura delante. El edificio, el nombre de la puerta, la plantilla, lo que cuesta abrir cada noche y lo que entra por la caja.",
+      "duracion": 2.98,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El *edificio*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08d",
+      "texto": "Vamos a comprar un hotel de cinco estrellas, tú y yo, paso a paso y con la factura delante. El edificio, el nombre de la puerta, la plantilla, lo que cuesta abrir cada noche y lo que entra por la caja.",
+      "duracion": 2.98,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_08e",
+      "texto": "Vamos a comprar un hotel de cinco estrellas, tú y yo, paso a paso y con la factura delante. El edificio, el nombre de la puerta, la plantilla, lo que cuesta abrir cada noche y lo que entra por la caja.",
+      "duracion": 3.62,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_09",
+      "texto": "Y por el camino vas a ver una cosa: en ese edificio hay dos negocios metidos. Uno es el tuyo. El otro es mucho mejor, y no es tuyo.",
+      "duracion": 2.25,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_261.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "por el *camino* vas a ver una cosa",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_09b",
+      "texto": "Y por el camino vas a ver una cosa: en ese edificio hay dos negocios metidos. Uno es el tuyo. El otro es mucho mejor, y no es tuyo.",
+      "duracion": 2.75,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_296.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_09c",
+      "texto": "Y por el camino vas a ver una cosa: en ese edificio hay dos negocios metidos. Uno es el tuyo. El otro es mucho mejor, y no es tuyo.",
+      "duracion": 2.75,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_301.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_09d",
+      "texto": "Y por el camino vas a ver una cosa: en ese edificio hay dos negocios metidos. Uno es el tuyo. El otro es mucho mejor, y no es tuyo.",
+      "duracion": 3.36,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_10",
+      "texto": "Empezamos por lo caro.",
+      "duracion": 2.75,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_gancho_10.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*Empezamos* por lo caro",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Un hotel no se mide en metros. Se mide en habitaciones, y todo el sector habla así: coste por habitación, ingreso por habitación, empleados por habitación.",
+      "duracion": 3.05,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/empty_hotel_room_made_bed_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Un hotel no se mide en *metros*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01b",
+      "texto": "Un hotel no se mide en metros. Se mide en habitaciones, y todo el sector habla así: coste por habitación, ingreso por habitación, empleados por habitación.",
+      "duracion": 3.72,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_room_bed_window_daylight_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_01c",
+      "texto": "Un hotel no se mide en metros. Se mide en habitaciones, y todo el sector habla así: coste por habitación, ingreso por habitación, empleados por habitación.",
+      "duracion": 4.55,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/classic_hotel_room_interior_furniture_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "Y el coste por habitación de un cinco estrellas, construido de cero, ronda los seiscientos mil dólares.",
+      "duracion": 7.43,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/money_counting_machine_258.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 600000.0,
+        "dec": 0,
+        "sufijo": " $",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.68,
+        "retardo": 5.698737864077669,
+        "duracion": 1.53,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "Seiscientos mil dólares por cada puerta. Y eso no es la cama y la tele: ahí dentro va el suelo, el proyecto, la obra, el mobiliario y el dinero de tener el hotel montado meses antes de abrir.",
+      "duracion": 3.66,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/money_and_construction_plans_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 600000.0,
+        "dec": 0,
+        "sufijo": " $",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.34,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "eso no es la cama y la tele",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "Seiscientos mil dólares por cada puerta. Y eso no es la cama y la tele: ahí dentro va el suelo, el proyecto, la obra, el mobiliario y el dinero de tener el hotel montado meses antes de abrir.",
+      "duracion": 4.46,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/money_and_construction_plans_137.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "Seiscientos mil dólares por cada puerta. Y eso no es la cama y la tele: ahí dentro va el suelo, el proyecto, la obra, el mobiliario y el dinero de tener el hotel montado meses antes de abrir.",
+      "duracion": 5.44,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "En los hoteles de lujo de verdad, los de las grandes ciudades, esa cifra supera el millón por habitación. Y en los emblemáticos llega a pasar de dos millones.",
+      "duracion": 2.88,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "En los *hoteles* de lujo de verdad",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "En los hoteles de lujo de verdad, los de las grandes ciudades, esa cifra supera el millón por habitación. Y en los emblemáticos llega a pasar de dos millones.",
+      "duracion": 3.51,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_lobby_chandelier_marble_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "En los hoteles de lujo de verdad, los de las grandes ciudades, esa cifra supera el millón por habitación. Y en los emblemáticos llega a pasar de dos millones.",
+      "duracion": 4.28,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/making_bed_white_sheets_hotel_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "llega a pasar",
+        "y": 0.26,
+        "retardo": 2.93,
+        "duracion": 1.2,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Vamos a hacer uno normal dentro de lo excepcional: cien habitaciones, cinco estrellas, en una ciudad española.",
+      "duracion": 3.25,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "Vamos a hacer uno normal dentro de lo excepcional: cien habitaciones, cinco estrellas, en una ciudad española.",
+      "duracion": 4.83,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 100.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "habitaciones",
+        "y": 0.3,
+        "retardo": 0.4961818181818183,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Cien habitaciones por seiscientos mil dólares son sesenta millones de dólares.",
+      "duracion": 6.22,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 60.0,
+        "dec": 0,
+        "sufijo": " M $",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "dólares",
+        "y": 0.26,
+        "retardo": 3.9871794871794872,
+        "duracion": 2.03,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_07",
+      "texto": "Sesenta millones antes de que entre un solo huésped por la puerta.",
+      "duracion": 4.76,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_107.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 60.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "antes",
+        "y": 0.68,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_08",
+      "texto": "Y fíjate en una cosa que cambia el negocio entero: a diferencia del gimnasio o de la gasolinera, aquí no puedes empezar pequeño y crecer. Un hotel de cinco estrellas con cuarenta habitaciones tiene que tener igualmente restaurante, spa, recepción veinticuatro horas y cocina. Los costes fijos no se dividen por la mitad, pero los ingresos sí.",
+      "duracion": 3.56,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_08b",
+      "texto": "Y fíjate en una cosa que cambia el negocio entero: a diferencia del gimnasio o de la gasolinera, aquí no puedes empezar pequeño y crecer. Un hotel de cinco estrellas con cuarenta habitaciones tiene que tener igualmente restaurante, spa, recepción veinticuatro horas y cocina. Los costes fijos no se dividen por la mitad, pero los ingresos sí.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_08c",
+      "texto": "Y fíjate en una cosa que cambia el negocio entero: a diferencia del gimnasio o de la gasolinera, aquí no puedes empezar pequeño y crecer. Un hotel de cinco estrellas con cuarenta habitaciones tiene que tener igualmente restaurante, spa, recepción veinticuatro horas y cocina. Los costes fijos no se dividen por la mitad, pero los ingresos sí.",
+      "duracion": 4.35,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_kitchen_chefs_working_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 40.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "habitaciones",
+        "y": 0.34,
+        "retardo": 2.9759649122807,
+        "duracion": 1.2,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_08d",
+      "texto": "Y fíjate en una cosa que cambia el negocio entero: a diferencia del gimnasio o de la gasolinera, aquí no puedes empezar pequeño y crecer. Un hotel de cinco estrellas con cuarenta habitaciones tiene que tener igualmente restaurante, spa, recepción veinticuatro horas y cocina. Los costes fijos no se dividen por la mitad, pero los ingresos sí.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_08e",
+      "texto": "Y fíjate en una cosa que cambia el negocio entero: a diferencia del gimnasio o de la gasolinera, aquí no puedes empezar pequeño y crecer. Un hotel de cinco estrellas con cuarenta habitaciones tiene que tener igualmente restaurante, spa, recepción veinticuatro horas y cocina. Los costes fijos no se dividen por la mitad, pero los ingresos sí.",
+      "duracion": 5.29,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "los *ingresos* sí",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_09",
+      "texto": "Total acumulado: sesenta millones de dólares.",
+      "duracion": 4.53,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/money_envelope_cash_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "tu hotel, hasta aquí",
+        "lineas": [
+          [
+            "100 habitaciones a 600.000 $",
+            "60 M$"
+          ]
+        ],
+        "total": "60 M$",
+        "etiqueta_total": "llevas puesto",
+        "color": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.4,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_10",
+      "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
+      "duracion": 2.75,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap1_10.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "una *advertencia*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_10b",
+      "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
+      "duracion": 4.08,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap1_10b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "una *advertencia*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_11",
+      "texto": "Un hotel no se paga con el dinero del hotel. Se paga con una hipoteca a veinte o treinta años, y el banco no te presta contra tu facturación futura: te presta sobre lo que vale el edificio si tiene que quedárselo.",
+      "duracion": 3.59,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Un hotel no se paga con el *dinero*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_11b",
+      "texto": "Un hotel no se paga con el dinero del hotel. Se paga con una hipoteca a veinte o treinta años, y el banco no te presta contra tu facturación futura: te presta sobre lo que vale el edificio si tiene que quedárselo.",
+      "duracion": 4.38,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/hotel_construction_site_crane_building_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 30.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "hipoteca",
+        "y": 0.26,
+        "retardo": 1.4677464788732397,
+        "duracion": 2.71,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_11c",
+      "texto": "Un hotel no se paga con el dinero del hotel. Se paga con una hipoteca a veinte o treinta años, y el banco no te presta contra tu facturación futura: te presta sobre lo que vale el edificio si tiene que quedárselo.",
+      "duracion": 5.33,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/building_under_construction_scaffolding_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_12",
+      "texto": "Así que necesitas poner de tu bolsillo una parte importante de esos sesenta millones antes de que nadie te preste el resto. Ese es el filtro de verdad de este negocio, y explica por qué casi todos los hoteles de una ciudad acaban en manos de cuatro o cinco propietarios.",
+      "duracion": 3.37,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/tourists_city_walking_travel_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "que *necesitas* poner de tu",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_12b",
+      "texto": "Así que necesitas poner de tu bolsillo una parte importante de esos sesenta millones antes de que nadie te preste el resto. Ese es el filtro de verdad de este negocio, y explica por qué casi todos los hoteles de una ciudad acaban en manos de cuatro o cinco propietarios.",
+      "duracion": 4.11,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/white_towels_folded_bathroom_stack_56.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 60.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "antes",
+        "y": 0.3,
+        "retardo": 0.8107407407407408,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_12c",
+      "texto": "Así que necesitas poner de tu bolsillo una parte importante de esos sesenta millones antes de que nadie te preste el resto. Ese es el filtro de verdad de este negocio, y explica por qué casi todos los hoteles de una ciudad acaban en manos de cuatro o cinco propietarios.",
+      "duracion": 4.11,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_12d",
+      "texto": "Así que necesitas poner de tu bolsillo una parte importante de esos sesenta millones antes de que nadie te preste el resto. Ese es el filtro de verdad de este negocio, y explica por qué casi todos los hoteles de una ciudad acaban en manos de cuatro o cinco propietarios.",
+      "duracion": 5.01,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Ya tienes el edificio. Ahora la decisión que define todo lo demás, y es la que casi nadie entiende de este negocio.",
+      "duracion": 3.26,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Ya tienes el edificio. Ahora la decisión que define todo lo demás, y es la que casi nadie entiende de este negocio.",
+      "duracion": 4.85,
+      "movimiento": "drift_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_189.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "Puedes abrirlo con tu nombre. El Hotel Alejandro, pongamos.",
+      "duracion": 2.23,
+      "movimiento": "contra_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Puedes *abrirlo* con tu nombre",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "Puedes abrirlo con tu nombre. El Hotel Alejandro, pongamos.",
+      "duracion": 3.32,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/hotel_corridor_doors_carpet_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "Y entonces te toca a ti llenarlo: tu página web, tu publicidad, tu reputación desde cero, tu programa de fidelidad que no tiene a nadie dentro, y competir con una cadena que tiene cien millones de personas en su club de puntos.",
+      "duracion": 3.79,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "*entonces* te toca a ti llenarlo",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "Y entonces te toca a ti llenarlo: tu página web, tu publicidad, tu reputación desde cero, tu programa de fidelidad que no tiene a nadie dentro, y competir con una cadena que tiene cien millones de personas en su club de puntos.",
+      "duracion": 4.62,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/advertising_billboard_city_187.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03c",
+      "texto": "Y entonces te toca a ti llenarlo: tu página web, tu publicidad, tu reputación desde cero, tu programa de fidelidad que no tiene a nadie dentro, y competir con una cadena que tiene cien millones de personas en su club de puntos.",
+      "duracion": 5.63,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_248.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 100.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "personas",
+        "y": 0.68,
+        "retardo": 2.7230396475770906,
+        "duracion": 2.71,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "O le pones el nombre de una cadena.",
+      "duracion": 3.25,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_04.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "le pones el *nombre*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Y entonces pasa esto. Escúchalo con atención.",
+      "duracion": 2.31,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_05.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "*entonces* pasa esto",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_05x",
+      "texto": "Y entonces pasa esto. Escúchalo con atención.",
+      "duracion": 2.32,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_05x.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Escúchalo con *atención*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_06",
+      "texto": "La cadena no te compra el hotel. No pone dinero. No asume el riesgo. Firma un contrato de gestión y se lleva dos comisiones.",
+      "duracion": 4.0,
+      "movimiento": "contra_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/two_people_signing_agreement_handshake_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "La *cadena* no te compra el hotel",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "La cadena no te compra el hotel. No pone dinero. No asume el riesgo. Firma un contrato de gestión y se lleva dos comisiones.",
+      "duracion": 5.96,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/contract_pages_stack_desk_pen_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_07",
+      "texto": "Una comisión base que va, según el contrato, de alrededor del uno y medio hasta el seis por ciento. ¿De qué? Y aquí está el detalle que lo cambia todo: de los ingresos brutos. De todo lo que entre por la puerta.",
+      "duracion": 3.67,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Una *comisión* base",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "Una comisión base que va, según el contrato, de alrededor del uno y medio hasta el seis por ciento. ¿De qué? Y aquí está el detalle que lo cambia todo: de los ingresos brutos. De todo lo que entre por la puerta.",
+      "duracion": 4.48,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 6.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "medio",
+        "y": 0.3,
+        "retardo": 1.6876303317535548,
+        "duracion": 2.59,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07c",
+      "texto": "Una comisión base que va, según el contrato, de alrededor del uno y medio hasta el seis por ciento. ¿De qué? Y aquí está el detalle que lo cambia todo: de los ingresos brutos. De todo lo que entre por la puerta.",
+      "duracion": 5.47,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/contract_paperwork_stack_des_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_08",
+      "texto": "No de tu beneficio. De tu facturación.",
+      "duracion": 4.29,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_09",
+      "texto": "Así que si el año va mal, si el hotel pierde dinero, si tienes el edificio medio vacío… la cadena cobra igual. Cobra la primera, y cobra sobre lo que entra.",
+      "duracion": 2.97,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/money_counting_machine_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "flecha",
+        "a": "TÚ",
+        "b": "LA CADENA",
+        "etiqueta": "un % de todo lo que entre",
+        "color": [
+          255,
+          110,
+          86
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 1.8,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap2_09b",
+      "texto": "Así que si el año va mal, si el hotel pierde dinero, si tienes el edificio medio vacío… la cadena cobra igual. Cobra la primera, y cobra sobre lo que entra.",
+      "duracion": 3.62,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_09c",
+      "texto": "Así que si el año va mal, si el hotel pierde dinero, si tienes el edificio medio vacío… la cadena cobra igual. Cobra la primera, y cobra sobre lo que entra.",
+      "duracion": 4.41,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/money_counting_machine_186.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_10",
+      "texto": "Y luego una comisión de incentivo, esa sí sobre el beneficio: del orden del veinte al veinticinco por ciento del resultado operativo, a partir de un umbral que se negocia.",
+      "duracion": 3.0,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "luego una comisión de *incentivo*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_10b",
+      "texto": "Y luego una comisión de incentivo, esa sí sobre el beneficio: del orden del veinte al veinticinco por ciento del resultado operativo, a partir de un umbral que se negocia.",
+      "duracion": 3.66,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 25.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "resultado operativo",
+        "y": 0.26,
+        "retardo": 2.31,
+        "duracion": 1.2,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_10c",
+      "texto": "Y luego una comisión de incentivo, esa sí sobre el beneficio: del orden del veinte al veinticinco por ciento del resultado operativo, a partir de un umbral que se negocia.",
+      "duracion": 4.48,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/contract_paperwork_stack_des_176.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_11",
+      "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
+      "duracion": 2.48,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "cuando *pierdes*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_11b",
+      "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
+      "duracion": 3.69,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_11b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "cuando *pierdes*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_12",
+      "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
+      "duracion": 2.47,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_12.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "todavía hay una *tercera* vía",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_12b",
+      "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
+      "duracion": 3.68,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap2_12b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "todavía hay una *tercera* vía",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_13",
+      "texto": "Ahí ni siquiera te gestionan el hotel. Te ceden la marca, te obligan a cumplir su manual y a reformar cuando ellos digan, y tú te encargas de todo lo demás. A cambio pagas un porcentaje, normalmente sobre lo que ingresas por habitación, más otro para el fondo de marketing.",
+      "duracion": 3.45,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Te *ceden* la marca",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_13b",
+      "texto": "Ahí ni siquiera te gestionan el hotel. Te ceden la marca, te obligan a cumplir su manual y a reformar cuando ellos digan, y tú te encargas de todo lo demás. A cambio pagas un porcentaje, normalmente sobre lo que ingresas por habitación, más otro para el fondo de marketing.",
+      "duracion": 4.21,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_13c",
+      "texto": "Ahí ni siquiera te gestionan el hotel. Te ceden la marca, te obligan a cumplir su manual y a reformar cuando ellos digan, y tú te encargas de todo lo demás. A cambio pagas un porcentaje, normalmente sobre lo que ingresas por habitación, más otro para el fondo de marketing.",
+      "duracion": 4.21,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_13d",
+      "texto": "Ahí ni siquiera te gestionan el hotel. Te ceden la marca, te obligan a cumplir su manual y a reformar cuando ellos digan, y tú te encargas de todo lo demás. A cambio pagas un porcentaje, normalmente sobre lo que ingresas por habitación, más otro para el fondo de marketing.",
+      "duracion": 5.12,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_hotel/making_bed_white_sheets_hotel_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_14",
+      "texto": "Ocho de cada diez hoteles de Marriott funcionan así. Nueve de cada diez en Hilton.",
+      "duracion": 6.09,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 80.0,
+        "color_a": [
+          255,
+          176,
+          60
+        ],
+        "etiqueta_a": "hoteles",
+        "etiqueta_b": "el resto",
+        "y": 0.68,
+        "retardo": 0.9654878048780487,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_15",
+      "texto": "Y ahora entiendes por qué esas empresas tienen nueve mil hoteles sin comprar casi ninguno: no están vendiendo alojamiento. Están vendiendo un letrero y un manual, cobrados por el resto de tu vida.",
+      "duracion": 3.37,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 9000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "hoteles sin comprar",
+        "y": 0.34,
+        "retardo": 2.02,
+        "duracion": 1.2,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_15b",
+      "texto": "Y ahora entiendes por qué esas empresas tienen nueve mil hoteles sin comprar casi ninguno: no están vendiendo alojamiento. Están vendiendo un letrero y un manual, cobrados por el resto de tu vida.",
+      "duracion": 4.11,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "no están vendiendo *alojamiento*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_15c",
+      "texto": "Y ahora entiendes por qué esas empresas tienen nueve mil hoteles sin comprar casi ninguno: no están vendiendo alojamiento. Están vendiendo un letrero y un manual, cobrados por el resto de tu vida.",
+      "duracion": 5.01,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Vamos con la gente, porque en un cinco estrellas la gente no es un gasto: es el producto.",
+      "duracion": 7.24,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "estrellas la gente",
+        "y": 0.26,
+        "retardo": 2.6844943820224723,
+        "duracion": 2.8,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Lo que separa un cinco estrellas de un cuatro no es el mármol. Es que haya alguien al otro lado cuando levantas el teléfono a las tres de la mañana.",
+      "duracion": 3.46,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/elevator_doors_opening_hotel_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "estrellas",
+        "y": 0.68,
+        "retardo": 0.9878378378378379,
+        "duracion": 2.27,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Lo que separa un cinco estrellas de un cuatro no es el mármol. Es que haya alguien al otro lado cuando levantas el teléfono a las tres de la mañana.",
+      "duracion": 5.14,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_hotel/waiter_serving_restaurant_hotel_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "El sector lo mide, otra vez, por habitación. Un hotel de cinco estrellas funciona con entre uno y medio y dos empleados por cada habitación.",
+      "duracion": 2.88,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/empty_hotel_room_made_bed_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "El *sector* lo mide",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "El sector lo mide, otra vez, por habitación. Un hotel de cinco estrellas funciona con entre uno y medio y dos empleados por cada habitación.",
+      "duracion": 3.52,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_room_bed_window_daylight_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "estrellas",
+        "y": 0.3,
+        "retardo": 1.4723571428571427,
+        "duracion": 1.85,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03c",
+      "texto": "El sector lo mide, otra vez, por habitación. Un hotel de cinco estrellas funciona con entre uno y medio y dos empleados por cada habitación.",
+      "duracion": 4.29,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/classic_hotel_room_interior_furniture_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "Tu hotel de cien puertas necesita entre ciento cincuenta y doscientas personas en plantilla.",
+      "duracion": 6.12,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_hotel/hotel_key_card_door_lock_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "rejilla",
+        "total": 200,
+        "marcados": 100,
+        "cols": 20,
+        "pie": "200 personas para 100 habitaciones",
+        "color_marca": [
+          255,
+          196,
+          90
+        ],
+        "y": 0.46,
+        "retardo": 0.4,
+        "duracion": 2.4,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Recepción las veinticuatro horas. Cocina. Sala. Bar. Pisos, y ahí la referencia es una camarera por cada diez o catorce habitaciones. Mantenimiento. Spa. Lavandería. Seguridad. Administración.",
+      "duracion": 3.11,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "horas",
+        "y": 0.34,
+        "retardo": 1.1185416666666668,
+        "duracion": 1.79,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Recepción las *veinticuatro* horas",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05b",
+      "texto": "Recepción las veinticuatro horas. Cocina. Sala. Bar. Pisos, y ahí la referencia es una camarera por cada diez o catorce habitaciones. Mantenimiento. Spa. Lavandería. Seguridad. Administración.",
+      "duracion": 3.8,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_05c",
+      "texto": "Recepción las veinticuatro horas. Cocina. Sala. Bar. Pisos, y ahí la referencia es una camarera por cada diez o catorce habitaciones. Mantenimiento. Spa. Lavandería. Seguridad. Administración.",
+      "duracion": 3.8,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_kitchen_chefs_working_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_05d",
+      "texto": "Recepción las veinticuatro horas. Cocina. Sala. Bar. Pisos, y ahí la referencia es una camarera por cada diez o catorce habitaciones. Mantenimiento. Spa. Lavandería. Seguridad. Administración.",
+      "duracion": 4.63,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_06",
+      "texto": "En la hostelería de lujo, cuatro de cada diez euros que gastas en explotar el hotel se van en personal. Es, con diferencia, la línea más grande de la cuenta.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 40.0,
+        "color_a": [
+          255,
+          176,
+          60
+        ],
+        "etiqueta_a": "euros",
+        "etiqueta_b": "el resto",
+        "y": 0.33,
+        "retardo": 1.5499999999999998,
+        "duracion": 1.2,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "En la *hostelería* de lujo",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "En la hostelería de lujo, cuatro de cada diez euros que gastas en explotar el hotel se van en personal. Es, con diferencia, la línea más grande de la cuenta.",
+      "duracion": 3.53,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06c",
+      "texto": "En la hostelería de lujo, cuatro de cada diez euros que gastas en explotar el hotel se van en personal. Es, con diferencia, la línea más grande de la cuenta.",
+      "duracion": 4.31,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_07",
+      "texto": "Y lo peor no es el tamaño. Es que esa plantilla no se apaga.",
+      "duracion": 2.15,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_07b",
+      "texto": "Y lo peor no es el tamaño. Es que esa plantilla no se apaga.",
+      "duracion": 3.21,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/team_working_laptop_documents_office_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_08",
+      "texto": "Si tu hotel se queda a la mitad en noviembre, no puedes cerrar medio restaurante ni tener media recepción. El cliente que sí ha venido, y que ha pagado trescientos euros por la noche, espera el hotel entero funcionando para él solo.",
+      "duracion": 4.04,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/resort_lit_at_night_aerial_view_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_08b",
+      "texto": "Si tu hotel se queda a la mitad en noviembre, no puedes cerrar medio restaurante ni tener media recepción. El cliente que sí ha venido, y que ha pagado trescientos euros por la noche, espera el hotel entero funcionando para él solo.",
+      "duracion": 4.93,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/city_skyline_night_lights_aerial_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "El *cliente* que sí ha venido",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_08c",
+      "texto": "Si tu hotel se queda a la mitad en noviembre, no puedes cerrar medio restaurante ni tener media recepción. El cliente que sí ha venido, y que ha pagado trescientos euros por la noche, espera el hotel entero funcionando para él solo.",
+      "duracion": 6.01,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_hotel/reception_counter_bell_hotel_lobby_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 300.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "ha pagado",
+        "y": 0.68,
+        "retardo": 0.8444827586206909,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_09",
+      "texto": "Y hay una asimetría en esto que es brutal. Si tu hotel está al veinte por ciento, tienes que mantener abierto el restaurante para veinte personas, la recepción las veinticuatro horas y el spa con su socorrista.",
+      "duracion": 3.6,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/contract_pages_stack_desk_pen_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "hay una *asimetría* en esto",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_09b",
+      "texto": "Y hay una asimetría en esto que es brutal. Si tu hotel está al veinte por ciento, tienes que mantener abierto el restaurante para veinte personas, la recepción las veinticuatro horas y el spa con su socorrista.",
+      "duracion": 4.39,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_lobby_chandelier_marble_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 20.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "hotel",
+        "y": 0.62,
+        "retardo": 0.4079999999999999,
+        "duracion": 2.8,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_09c",
+      "texto": "Y hay una asimetría en esto que es brutal. Si tu hotel está al veinte por ciento, tienes que mantener abierto el restaurante para veinte personas, la recepción las veinticuatro horas y el spa con su socorrista.",
+      "duracion": 5.37,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_corridor_doors_carpet_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_10",
+      "texto": "Si está al cien por cien, no puedes atender mejor: el hotel da lo que da.",
+      "duracion": 6.36,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 100.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.34,
+        "retardo": 0.9583561643835616,
+        "duracion": 2.8,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_11",
+      "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
+      "duracion": 2.83,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap3_11.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "los buenos tienen un *techo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_11b",
+      "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
+      "duracion": 3.45,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap3_11b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "los buenos tienen un *techo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_11c",
+      "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
+      "duracion": 4.2,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap3_11c.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "cierra_bloque": true,
+      "texto_pantalla": {
+        "texto": "los buenos tienen un *techo*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Hay un concepto en este negocio que conviene entender, porque explica decisiones que desde fuera parecen absurdas.",
+      "duracion": 2.97,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Hay un concepto en este negocio que conviene entender, porque explica decisiones que desde fuera parecen absurdas.",
+      "duracion": 4.43,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "Una habitación vacía esta noche no se puede vender mañana. Esa noche no vuelve. Es un producto que caduca cada veinticuatro horas.",
+      "duracion": 2.69,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Esa noche no *vuelve*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_02b",
+      "texto": "Una habitación vacía esta noche no se puede vender mañana. Esa noche no vuelve. Es un producto que caduca cada veinticuatro horas.",
+      "duracion": 3.28,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/empty_home_office_chair_175.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_02c",
+      "texto": "Una habitación vacía esta noche no se puede vender mañana. Esa noche no vuelve. Es un producto que caduca cada veinticuatro horas.",
+      "duracion": 3.99,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "horas",
+        "y": 0.3,
+        "retardo": 2.534307692307693,
+        "duracion": 1.26,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "Por eso los hoteles bajan el precio a última hora, y por eso el mismo cuarto vale ochenta euros un martes de febrero y cuatrocientos un sábado de mayo.",
+      "duracion": 2.8,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Por eso los *hoteles* bajan",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03b",
+      "texto": "Por eso los hoteles bajan el precio a última hora, y por eso el mismo cuarto vale ochenta euros un martes de febrero y cuatrocientos un sábado de mayo.",
+      "duracion": 3.41,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03c",
+      "texto": "Por eso los hoteles bajan el precio a última hora, y por eso el mismo cuarto vale ochenta euros un martes de febrero y cuatrocientos un sábado de mayo.",
+      "duracion": 4.17,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/making_bed_white_sheets_hotel_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 401.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "sábado de mayo",
+        "y": 0.68,
+        "retardo": 1.9702649006622517,
+        "duracion": 2.0,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "Y por eso el sector no mira el precio ni la ocupación por separado. Mira las dos a la vez.",
+      "duracion": 2.77,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap4_04.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Mira las dos a la vez",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "Y por eso el sector no mira el precio ni la ocupación por separado. Mira las dos a la vez.",
+      "duracion": 4.13,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap4_04b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Mira las dos a la vez",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "El sector lo llama ingreso por habitación disponible: lo que saca cada habitación del hotel, ocupada o no, cada noche.",
+      "duracion": 3.25,
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/empty_hotel_room_made_bed_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "El sector lo llama ingreso por habitación disponible: lo que saca cada habitación del hotel, ocupada o no, cada noche.",
+      "duracion": 4.83,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_room_bed_window_daylight_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06",
+      "texto": "En España, en dos mil veinticinco, el conjunto de los hoteles sacó ciento veinticinco euros por habitación disponible, con un precio medio de ciento sesenta y seis euros y una ocupación del setenta y cinco por ciento.",
+      "duracion": 2.8,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/conference_room_hotel_empty_chairs_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "En España, en dos mil veinticinco, el conjunto de los hoteles sacó ciento veinticinco euros por habitación disponible, con un precio medio de ciento sesenta y seis euros y una ocupación del setenta y cinco por ciento.",
+      "duracion": 3.42,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/classic_hotel_room_interior_furniture_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_06c",
+      "texto": "En España, en dos mil veinticinco, el conjunto de los hoteles sacó ciento veinticinco euros por habitación disponible, con un precio medio de ciento sesenta y seis euros y una ocupación del setenta y cinco por ciento.",
+      "duracion": 3.42,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06d",
+      "texto": "En España, en dos mil veinticinco, el conjunto de los hoteles sacó ciento veinticinco euros por habitación disponible, con un precio medio de ciento sesenta y seis euros y una ocupación del setenta y cinco por ciento.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 75.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "euros",
+        "y": 0.3,
+        "retardo": 2.442949308755761,
+        "duracion": 1.52,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_07",
+      "texto": "Pero tú no tienes un hotel medio. En los cinco estrellas españoles el precio medio por noche ronda los doscientos ochenta euros, y en agosto pasa de trescientos treinta.",
+      "duracion": 3.19,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/illuminated_hotel_sign_night_facade_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "tú no *tienes* un hotel medio",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_07b",
+      "texto": "Pero tú no tienes un hotel medio. En los cinco estrellas españoles el precio medio por noche ronda los doscientos ochenta euros, y en agosto pasa de trescientos treinta.",
+      "duracion": 3.88,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/resort_lit_at_night_aerial_view_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_07c",
+      "texto": "Pero tú no tienes un hotel medio. En los cinco estrellas españoles el precio medio por noche ronda los doscientos ochenta euros, y en agosto pasa de trescientos treinta.",
+      "duracion": 4.74,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_hotel/city_skyline_night_lights_aerial_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 330.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "agosto pasa",
+        "y": 0.34,
+        "retardo": 3.3423668639053243,
+        "duracion": 1.2,
+        "entrada": "latigo_der"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_08",
+      "texto": "Vamos a ser prudentes con tu hotel: trescientos euros la noche, y un setenta por ciento de ocupación en el año.",
+      "duracion": 7.5,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/hotel_swimming_pool_empty_morning_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 70.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "ocupación",
+        "y": 0.26,
+        "retardo": 4.662162162162162,
+        "duracion": 2.64,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_09",
+      "texto": "Y ese setenta por ciento no es un número plano. Es agosto al noventa y cinco y febrero al cuarenta, con la misma plantilla y la misma factura de la luz los doce meses.",
+      "duracion": 3.46,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 70.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "",
+        "y": 0.68,
+        "retardo": 0.4602395209580838,
+        "duracion": 2.8,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_09b",
+      "texto": "Y ese setenta por ciento no es un número plano. Es agosto al noventa y cinco y febrero al cuarenta, con la misma plantilla y la misma factura de la luz los doce meses.",
+      "duracion": 4.21,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_09c",
+      "texto": "Y ese setenta por ciento no es un número plano. Es agosto al noventa y cinco y febrero al cuarenta, con la misma plantilla y la misma factura de la luz los doce meses.",
+      "duracion": 5.14,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_267.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_10",
+      "texto": "Por eso los hoteles de ciudad pelean tanto por los congresos, y los de playa por los grupos de fuera de temporada: no buscan ganar más en verano, que ya están llenos. Buscan tapar el invierno.",
+      "duracion": 3.4,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_hotel/empty_beach_resort_off_season_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_10b",
+      "texto": "Por eso los hoteles de ciudad pelean tanto por los congresos, y los de playa por los grupos de fuera de temporada: no buscan ganar más en verano, que ya están llenos. Buscan tapar el invierno.",
+      "duracion": 4.14,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_10c",
+      "texto": "Por eso los hoteles de ciudad pelean tanto por los congresos, y los de playa por los grupos de fuera de temporada: no buscan ganar más en verano, que ya están llenos. Buscan tapar el invierno.",
+      "duracion": 5.06,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/tourists_city_walking_travel_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "no *buscan* ganar más en verano",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "La cuenta es sencilla y es la del vídeo entero.",
+      "duracion": 4.58,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/calculator_total_display_77.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "La cuenta es *sencilla*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "Cien habitaciones, por trescientos euros, por un setenta por ciento de ocupación, por trescientos sesenta y cinco noches.",
+      "duracion": 3.54,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_02b",
+      "texto": "Cien habitaciones, por trescientos euros, por un setenta por ciento de ocupación, por trescientos sesenta y cinco noches.",
+      "duracion": 5.27,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 70.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "ocupación",
+        "y": 0.3,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "Siete millones seiscientos mil euros al año.",
+      "duracion": 4.03,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_107.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 7.6,
+        "dec": 1,
+        "sufijo": " M €",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.26,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_04",
+      "texto": "Suena bien. Es un número que impresiona. Y ahora vamos a repartirlo, empezando por el que cobra primero.",
+      "duracion": 3.39,
+      "movimiento": "contra_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/money_counting_machine_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Suena* bien",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "Suena bien. Es un número que impresiona. Y ahora vamos a repartirlo, empezando por el que cobra primero.",
+      "duracion": 5.05,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "Si has firmado con una cadena y tu comisión base es el cinco por ciento de lo que entra, eso son trescientos ochenta mil euros al año.",
+      "duracion": 3.63,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "Si has firmado con una cadena y tu comisión base es el cinco por ciento de lo que entra, eso son trescientos ochenta mil euros al año.",
+      "duracion": 5.39,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 5.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "comisión base",
+        "y": 0.3,
+        "retardo": 0.25,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Trescientos ochenta mil euros por el letrero. Sin haber puesto un euro de los sesenta millones, sin haber contratado a una sola de tus doscientas personas, y los cobra el año que ganas y el año que pierdes.",
+      "duracion": 3.41,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/cash_counting_machine_close_163.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "te queda para todo lo demás",
+            7281.75
+          ],
+          [
+            "el letrero",
+            383.25
+          ]
+        ],
+        "colores": {
+          "te queda para todo lo demás": [
+            120,
+            130,
+            150
+          ],
+          "el letrero": [
+            255,
+            110,
+            86
+          ]
+        },
+        "total": "de 7,66 M€ que entran",
+        "sufijo": " mil €",
+        "dec": 0,
+        "y": 0.52,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Trescientos ochenta mil euros por el letrero. Sin haber puesto un euro de los sesenta millones, sin haber contratado a una sola de tus doscientas personas, y los cobra el año que ganas y el año que pierdes.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 60.0,
+        "dec": 0,
+        "sufijo": " M €",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "haber puesto euro",
+        "y": 0.26,
+        "retardo": 1.3798058252427188,
+        "duracion": 2.58,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_06c",
+      "texto": "Trescientos ochenta mil euros por el letrero. Sin haber puesto un euro de los sesenta millones, sin haber contratado a una sola de tus doscientas personas, y los cobra el año que ganas y el año que pierdes.",
+      "duracion": 5.08,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_07",
+      "texto": "Del resto sale todo lo demás: la plantilla, que es más del cuarenta por ciento de lo que gastas, la luz, el agua, la lavandería, la comida, el mantenimiento y la reposición.",
+      "duracion": 3.37,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_311.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_07b",
+      "texto": "Del resto sale todo lo demás: la plantilla, que es más del cuarenta por ciento de lo que gastas, la luz, el agua, la lavandería, la comida, el mantenimiento y la reposición.",
+      "duracion": 4.11,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 40.0,
+        "dec": 0,
+        "sufijo": "%",
+        "color": [
+          232,
+          86,
+          64
+        ],
+        "pie": "",
+        "y": 0.3,
+        "retardo": 0.8895953757225437,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_07c",
+      "texto": "Del resto sale todo lo demás: la plantilla, que es más del cuarenta por ciento de lo que gastas, la luz, el agua, la lavandería, la comida, el mantenimiento y la reposición.",
+      "duracion": 5.01,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_hotel/making_bed_white_sheets_hotel_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_08",
+      "texto": "Y una que casi nadie mete en la cuenta: un hotel de cinco estrellas se reforma entero cada siete u ocho años. Si no lo haces, dejas de ser un cinco estrellas y tu precio medio se cae. Eso es un gasto enorme que no aparece en ningún mes, hasta que aparece de golpe.",
+      "duracion": 3.49,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/luxury_hotel_exterior_facade_evening_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_08b",
+      "texto": "Y una que casi nadie mete en la cuenta: un hotel de cinco estrellas se reforma entero cada siete u ocho años. Si no lo haces, dejas de ser un cinco estrellas y tu precio medio se cae. Eso es un gasto enorme que no aparece en ningún mes, hasta que aparece de golpe.",
+      "duracion": 4.26,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/hotel_lobby_interior_luxury_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 8.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "entero cada u",
+        "y": 0.68,
+        "retardo": 2.9099999999999997,
+        "duracion": 1.2,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_08c",
+      "texto": "Y una que casi nadie mete en la cuenta: un hotel de cinco estrellas se reforma entero cada siete u ocho años. Si no lo haces, dejas de ser un cinco estrellas y tu precio medio se cae. Eso es un gasto enorme que no aparece en ningún mes, hasta que aparece de golpe.",
+      "duracion": 4.26,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/luxury_bathroom_marble_hotel_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Si no lo *haces*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_08d",
+      "texto": "Y una que casi nadie mete en la cuenta: un hotel de cinco estrellas se reforma entero cada siete u ocho años. Si no lo haces, dejas de ser un cinco estrellas y tu precio medio se cae. Eso es un gasto enorme que no aparece en ningún mes, hasta que aparece de golpe.",
+      "duracion": 5.19,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_09",
+      "texto": "Y si te saltas esa reforma, no pasa nada durante un año. Al segundo empiezan las reseñas diciendo que el hotel está anticuado, y al tercero has bajado de categoría sin que nadie te la haya quitado: simplemente ya no puedes cobrar trescientos euros.",
+      "duracion": 3.49,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/hotel_construction_site_crane_building_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "si te saltas esa *reforma*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_09b",
+      "texto": "Y si te saltas esa reforma, no pasa nada durante un año. Al segundo empiezan las reseñas diciendo que el hotel está anticuado, y al tercero has bajado de categoría sin que nadie te la haya quitado: simplemente ya no puedes cobrar trescientos euros.",
+      "duracion": 4.26,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_hotel/building_under_construction_scaffolding_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_09c",
+      "texto": "Y si te saltas esa reforma, no pasa nada durante un año. Al segundo empiezan las reseñas diciendo que el hotel está anticuado, y al tercero has bajado de categoría sin que nadie te la haya quitado: simplemente ya no puedes cobrar trescientos euros.",
+      "duracion": 4.26,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/motel_resort_building_entrance_road_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_09d",
+      "texto": "Y si te saltas esa reforma, no pasa nada durante un año. Al segundo empiezan las reseñas diciendo que el hotel está anticuado, y al tercero has bajado de categoría sin que nadie te la haya quitado: simplemente ya no puedes cobrar trescientos euros.",
+      "duracion": 5.19,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 300.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "puedes cobrar",
+        "y": 0.26,
+        "retardo": 3.8400000000000003,
+        "duracion": 1.2,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_10",
+      "texto": "En este negocio, dejar de invertir no se nota en el balance hasta que se nota en el precio.",
+      "duracion": 2.56,
+      "movimiento": "drift_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "En este *negocio*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_10b",
+      "texto": "En este negocio, dejar de invertir no se nota en el balance hasta que se nota en el precio.",
+      "duracion": 3.8,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.",
+      "duracion": 2.42,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap6_01.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "aquí dentro hay dos *negocios*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_01b",
+      "texto": "Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.",
+      "duracion": 3.6,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap6_01b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "aquí dentro hay dos *negocios*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "El tuyo es un negocio inmobiliario y de operación. Pones sesenta millones, cargas con la hipoteca, con doscientos empleados, con la reforma cada ocho años y con que a la ciudad le dé por dejar de estar de moda.",
+      "duracion": 2.81,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "El tuyo es un negocio inmobiliario y de operación. Pones sesenta millones, cargas con la hipoteca, con doscientos empleados, con la reforma cada ocho años y con que a la ciudad le dé por dejar de estar de moda.",
+      "duracion": 3.43,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Pones sesenta *millones*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "El tuyo es un negocio inmobiliario y de operación. Pones sesenta millones, cargas con la hipoteca, con doscientos empleados, con la reforma cada ocho años y con que a la ciudad le dé por dejar de estar de moda.",
+      "duracion": 3.43,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 8.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "reforma",
+        "y": 0.3,
+        "retardo": 2.08,
+        "duracion": 1.2,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02d",
+      "texto": "El tuyo es un negocio inmobiliario y de operación. Pones sesenta millones, cargas con la hipoteca, con doscientos empleados, con la reforma cada ocho años y con que a la ciudad le dé por dejar de estar de moda.",
+      "duracion": 4.18,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "El de la cadena es otra cosa. Pone una marca, un manual y un programa de puntos, y se queda con una parte de todo lo que entre en tu caja. Sin edificio, sin nómina, sin obra.",
+      "duracion": 3.51,
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/for_lease_sign_building_252.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El de la *cadena* es otra cosa",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "El de la cadena es otra cosa. Pone una marca, un manual y un programa de puntos, y se queda con una parte de todo lo que entre en tu caja. Sin edificio, sin nómina, sin obra.",
+      "duracion": 4.28,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03c",
+      "texto": "El de la cadena es otra cosa. Pone una marca, un manual y un programa de puntos, y se queda con una parte de todo lo que entre en tu caja. Sin edificio, sin nómina, sin obra.",
+      "duracion": 5.23,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "Por eso Marriott tiene nueve mil hoteles y solo cincuenta son suyos. No es que no puedan comprarlos. Es que el negocio bueno es el otro.",
+      "duracion": 2.53,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 9000.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "hoteles",
+        "y": 0.26,
+        "retardo": 1.1799999999999997,
+        "duracion": 1.2,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "Por eso Marriott tiene nueve mil hoteles y solo cincuenta son suyos. No es que no puedan comprarlos. Es que el negocio bueno es el otro.",
+      "duracion": 3.09,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "Por eso Marriott tiene nueve mil hoteles y solo cincuenta son suyos. No es que no puedan comprarlos. Es que el negocio bueno es el otro.",
+      "duracion": 3.77,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/handshake_business_sale_300.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "Y no es un truco ni un abuso: la marca aporta algo real. Te llena el hotel. Te trae al cliente fiel que elige por los puntos. Sin ella, tendrías que llenarlo tú.",
+      "duracion": 3.28,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_hotel/two_people_signing_agreement_handshake_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "no es un *truco* ni un abuso",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "Y no es un truco ni un abuso: la marca aporta algo real. Te llena el hotel. Te trae al cliente fiel que elige por los puntos. Sin ella, tendrías que llenarlo tú.",
+      "duracion": 4.0,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_hotel/illuminated_hotel_sign_night_facade_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05c",
+      "texto": "Y no es un truco ni un abuso: la marca aporta algo real. Te llena el hotel. Te trae al cliente fiel que elige por los puntos. Sin ella, tendrías que llenarlo tú.",
+      "duracion": 4.87,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
+      "duracion": 2.07,
+      "movimiento": "drift_izq",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap6_06.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "texto_pantalla": {
+        "texto": "conviene *saber*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_06b",
+      "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
+      "duracion": 3.08,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cap6_06b.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "conviene *saber*",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_07",
+      "texto": "Porque la firma no es solo por la marca. Un contrato de gestión de una cadena grande suele venir con cláusulas de permanencia larga, con el derecho de la cadena a imponer las reformas y a veces con penalizaciones si quieres salirte antes.",
+      "duracion": 3.12,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_07b",
+      "texto": "Porque la firma no es solo por la marca. Un contrato de gestión de una cadena grande suele venir con cláusulas de permanencia larga, con el derecho de la cadena a imponer las reformas y a veces con penalizaciones si quieres salirte antes.",
+      "duracion": 3.8,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_07c",
+      "texto": "Porque la firma no es solo por la marca. Un contrato de gestión de una cadena grande suele venir con cláusulas de permanencia larga, con el derecho de la cadena a imponer las reformas y a veces con penalizaciones si quieres salirte antes.",
+      "duracion": 3.8,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_70.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_07d",
+      "texto": "Porque la firma no es solo por la marca. Un contrato de gestión de una cadena grande suele venir con cláusulas de permanencia larga, con el derecho de la cadena a imponer las reformas y a veces con penalizaciones si quieres salirte antes.",
+      "duracion": 4.65,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_08",
+      "texto": "No estás alquilando un logotipo por meses. Estás casándote con una empresa durante una parte importante de la vida útil de tu edificio.",
+      "duracion": 3.53,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_189.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "No estás *alquilando* un logotipo",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_08b",
+      "texto": "No estás alquilando un logotipo por meses. Estás casándote con una empresa durante una parte importante de la vida útil de tu edificio.",
+      "duracion": 5.25,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_261.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Recapitulemos, que la cuenta ya está entera.",
+      "duracion": 4.4,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Unos seiscientos mil dólares por habitación para construirlo. Sesenta millones para cien puertas. Entre ciento cincuenta y doscientas personas en nómina. Y una reforma completa cada siete u ocho años para seguir mereciendo la quinta estrella.",
+      "duracion": 4.0,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 600000.0,
+        "dec": 0,
+        "sufijo": " $",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "",
+        "y": 0.26,
+        "retardo": 0.30619834710743804,
+        "duracion": 2.8,
+        "entrada": "rebote"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Sesenta *millones* para cien puertas",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "Unos seiscientos mil dólares por habitación para construirlo. Sesenta millones para cien puertas. Entre ciento cincuenta y doscientas personas en nómina. Y una reforma completa cada siete u ocho años para seguir mereciendo la quinta estrella.",
+      "duracion": 4.88,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/money_envelope_cash_91.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02c",
+      "texto": "Unos seiscientos mil dólares por habitación para construirlo. Sesenta millones para cien puertas. Entre ciento cincuenta y doscientas personas en nómina. Y una reforma completa cada siete u ocho años para seguir mereciendo la quinta estrella.",
+      "duracion": 5.94,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "A cambio, si va bien, siete millones y pico al año entrando por la caja.",
+      "duracion": 5.96,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 7.0,
+        "dec": 0,
+        "sufijo": " M",
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "pie": "pico al año",
+        "y": 0.3,
+        "retardo": 1.8211111111111113,
+        "duracion": 2.8,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Y encima de esa caja, cobrando antes que tú, una cadena que no arriesgó un euro.",
+      "duracion": 2.61,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*encima* de esa caja",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_04b",
+      "texto": "Y encima de esa caja, cobrando antes que tú, una cadena que no arriesgó un euro.",
+      "duracion": 3.88,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_107.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "Eres el dueño del edificio. Eres el dueño del riesgo. Eres el dueño de la hipoteca y de la nómina.",
+      "duracion": 3.03,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "Eres el dueño del edificio. Eres el dueño del riesgo. Eres el dueño de la hipoteca y de la nómina.",
+      "duracion": 4.5,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_06",
+      "texto": "Y el nombre que hay en la puerta, que es la razón por la que la gente reserva, no es tuyo.",
+      "duracion": 2.6,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/booking_hotel_online_laptop_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "el *nombre* que hay en la puerta",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_06b",
+      "texto": "Y el nombre que hay en la puerta, que es la razón por la que la gente reserva, no es tuyo.",
+      "duracion": 3.86,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_hotel/phone_booking_app_travel_hand_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_07",
+      "texto": "Puedes quitarlo cuando quieras, claro. El edificio seguirá siendo tuyo. Lo que se va con el letrero es la gente que lo llenaba.",
+      "duracion": 3.45,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/for_lease_sign_building_252.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Puedes *quitarlo* cuando quieras",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_07b",
+      "texto": "Puedes quitarlo cuando quieras, claro. El edificio seguirá siendo tuyo. Lo que se va con el letrero es la gente que lo llenaba.",
+      "duracion": 5.13,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_08",
+      "texto": "Marriott tiene nueve mil hoteles y cincuenta son suyos. No están en el negocio de tener hoteles.",
+      "duracion": 7.53,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_hotel/luxury_hotel_exterior_facade_evening_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "lo que has comprado",
+        "lineas": [
+          [
+            "el edificio y las 100 habitaciones",
+            "60 M$"
+          ],
+          [
+            "150-200 personas en nómina",
+            "todos los meses"
+          ],
+          [
+            "una reforma completa cada 7-8 años",
+            "obligatoria"
+          ],
+          [
+            "el nombre de la puerta",
+            "no es tuyo"
+          ]
+        ],
+        "total": "60 M$",
+        "etiqueta_total": "tuyo es el riesgo",
+        "color": [
+          255,
+          110,
+          86
+        ],
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 3.0,
+        "entrada": "golpe"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_09",
+      "texto": "Están en el negocio de cobrarle a quien sí los tiene.",
+      "duracion": 3.95,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_10",
+      "texto": "Ese es el precio de ser el dueño.",
+      "duracion": 3.25,
+      "movimiento": "drift_der",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [
+        {
+          "rol": "fondo",
+          "archivo": "tarjeta_hotel_cierre_10.png",
+          "clase": "abstracto",
+          "entrada": "escala",
+          "prompt": "tarjeta del canal"
+        }
+      ],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Ese es el *precio* de ser",
+        "px": 112,
+        "y": 0.47,
+        "acento": [
+          255,
+          176,
+          60
+        ],
+        "color": [
+          237,
+          231,
+          218
+        ],
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "_nota": "EL GRAFICO DEL EPISODIO, y va en el segundo veinte. 9.000 contra 50 en barras: la segunda barra es una astilla, y esa astilla ES el argumento. No hace falta decir nada mas.",
+    "donde": "unos cincuenta. menos del uno por ciento",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "barras",
+      "items": [["hoteles con su nombre", 9000.0], ["suyos", 50.0]],
+      "destacar": {"suyos": [255, 110, 86]},
+      "sufijo": "", "dec": 0,
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.45, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA 1. El edificio. En este episodio la cuenta empieza ya en sesenta millones, que es el salto de escala respecto a la gasolinera.",
+    "donde": "total acumulado: sesenta millones de dolares",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu hotel, hasta aquí",
+      "lineas": [["100 habitaciones a 600.000 $", "60 M$"]],
+      "total": "60 M$",
+      "etiqueta_total": "llevas puesto",
+      "color": [255, 196, 90],
+      "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "El giro, y la flecha va donde nadie la espera: del dueno a la cadena. Igual que en Charleroi, pero aqui la etiqueta es lo que duele: sobre lo que ENTRA, no sobre lo que ganas.",
+    "donde": "cobra la primera, y cobra sobre lo que entra",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "flecha",
+      "a": "TÚ",
+      "b": "LA CADENA",
+      "etiqueta": "un % de todo lo que entre",
+      "color": [255, 110, 86],
+      "y": 0.5, "retardo": 0.4, "duracion": 1.8, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "Dos empleados por puerta. La rejilla de 200 al lado de las 100 habitaciones es la forma de que se vea la proporcion sin decirla dos veces.",
+    "donde": "entre ciento cincuenta y doscientas personas en plantilla",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "rejilla",
+      "total": 200,
+      "marcados": 100,
+      "cols": 20,
+      "pie": "200 personas para 100 habitaciones",
+      "color_marca": [255, 196, 90],
+      "y": 0.46, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "Lo que entra, partido por donde duele. La comision de la cadena se corta arriba del todo porque cobra ANTES que nadie, y eso es lo que el grafico tiene que decir.",
+    "donde": "trescientos ochenta mil euros por el letrero",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "apilada",
+      "items": [["te queda para todo lo demás", 7281.75], ["el letrero", 383.25]],
+      "colores": {
+        "te queda para todo lo demás": [120, 130, 150],
+        "el letrero": [255, 110, 86]
+      },
+      "total": "de 7,66 M€ que entran",
+      "sufijo": " mil €", "dec": 0,
+      "y": 0.52, "retardo": 0.45, "duracion": 2.4, "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "FACTURA FINAL. La ultima linea no es un gasto: es un socio. Es la primera vez en la serie que la cuenta termina con alguien dentro en vez de con un numero.",
+    "donde": "marriott tiene nueve mil hoteles y cincuenta son suyos",
+    "movimiento": "estatico",
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "lo que has comprado",
+      "lineas": [
+        ["el edificio y las 100 habitaciones", "60 M$"],
+        ["150-200 personas en nómina", "todos los meses"],
+        ["una reforma completa cada 7-8 años", "obligatoria"],
+        ["el nombre de la puerta", "no es tuyo"]
+      ],
+      "total": "60 M$",
+      "etiqueta_total": "tuyo es el riesgo",
+      "color": [255, 110, 86],
+      "y": 0.5, "retardo": 0.4, "duracion": 3.0, "entrada": "golpe"
+    }
+  }
+]

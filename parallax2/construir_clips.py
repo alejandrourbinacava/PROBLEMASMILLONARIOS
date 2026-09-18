@@ -155,6 +155,31 @@ TEMAS_GASOLINERA = [
                    "solar", "parcela")),
 ]
 
+# Hotel. Solo decide el reparto INICIAL: desde que vestir.py exige que el
+# clip case con la frase, esto sobrevive solo en los planos con grafico a
+# pantalla completa, donde la imagen es fondo del dato.
+TEMAS_HOTEL = [
+    ("edificio",  ("hotel", "edificio", "construir", "construido", "obra",
+                   "fachada", "puerta", "puertas", "ciudad")),
+    ("habitacion", ("habitacion", "habitaciones", "cuarto", "cama", "suite",
+                    "bano", "toallas", "llave", "noche", "noches")),
+    ("vestibulo", ("vestibulo", "recepcion", "entrada", "huesped",
+                   "huespedes", "maleta", "maletas", "botones", "llegada")),
+    ("plantilla", ("plantilla", "personal", "empleados", "gente", "camarera",
+                   "camarero", "cocina", "limpieza", "lavanderia", "turno",
+                   "nomina", "contratar")),
+    ("lujo",      ("spa", "piscina", "restaurante", "bar", "salon", "boda",
+                   "desayuno", "estrellas", "lujo", "marmol")),
+    ("marca",     ("marca", "cadena", "letrero", "nombre", "franquicia",
+                   "contrato", "firma", "firmar", "manual", "puntos",
+                   "fidelidad")),
+    ("dinero",    ("millones", "euros", "dolares", "comision", "porcentaje",
+                   "ingresos", "beneficio", "caja", "factura", "cuesta",
+                   "coste", "hipoteca", "banco", "presta")),
+    ("ocupacion", ("ocupacion", "lleno", "llenar", "vacio", "temporada",
+                   "agosto", "febrero", "reserva", "reservar", "precio")),
+]
+
 POR_DEFECTO = "oficina"
 
 # Grades SUAVES: los normales estan calibrados para arte generado oscuro y

@@ -36,6 +36,67 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 # Solo terminos que EXISTEN en el pool: un sinonimo bonito que no tiene
 # metraje detras no empareja nada y ademas disimula el agujero.
 LEXICO = {
+    # --- hotel (episodio 08) -------------------------------------------
+    # Medido con `comprobar_encaje.py --md` antes de locutar: 27 de las 37
+    # palabras centrales del guion no estaban, y el 23% de las frases se
+    # iba a tarjeta. Mismo caso que la gasolinera: el pool tenia el
+    # metraje, el emparejador no sabia pedirlo.
+    "hotel": ["hotel", "lobby", "resort"],
+    "hoteles": ["hotel", "lobby", "resort"],
+    "habitacion": ["room", "bed", "suite"],
+    "habitaciones": ["room", "bed", "suite"],
+    "cuarto": ["room", "bed"], "suite": ["suite", "room"],
+    "cama": ["bed", "sheets", "room"],
+    "sabanas": ["sheets", "laundry", "bed"],
+    "bano": ["bathroom", "marble", "towels"],
+    "toalla": ["towels", "bathroom"], "toallas": ["towels", "bathroom"],
+    "huesped": ["guest", "suitcase", "check"],
+    "huespedes": ["guest", "tourists", "lobby"],
+    "turista": ["tourists", "travel"], "turistas": ["tourists", "travel"],
+    "recepcion": ["reception", "desk", "check"],
+    "vestibulo": ["lobby", "chandelier", "marble"],
+    "conserje": ["reception", "bellboy", "staff"],
+    "botones": ["bellboy", "luggage", "cart"],
+    "llave": ["key", "card", "lock"], "llaves": ["key", "card", "lock"],
+    "ascensor": ["elevator", "doors"],
+    "pasillo": ["corridor", "carpet", "doors"],
+    "spa": ["spa", "massage", "candles"],
+    "piscina": ["pool", "swimming", "resort"],
+    "restaurante": ["restaurant", "tables", "dining"],
+    "cocina": ["kitchen", "chefs", "cooking"],
+    "desayuno": ["breakfast", "buffet"],
+    "bar": ["bar", "cocktails"],
+    "salon": ["conference", "hall", "venue"],
+    "salones": ["conference", "hall", "venue"],
+    "boda": ["wedding", "venue", "decorated"],
+    "congreso": ["conference", "hall"],
+    "lavanderia": ["laundry", "sheets", "folding"],
+    "limpieza": ["housekeeping", "cleaning", "vacuum"],
+    "camarera": ["housekeeping", "cleaning", "cart"],
+    "camarero": ["waiter", "serving", "restaurant"],
+    "plantilla": ["staff", "uniform", "working"],
+    "personal": ["staff", "uniform", "working"],
+    "turno": ["shift", "night", "reception"],
+    "noche": ["night", "evening"], "noches": ["night", "evening"],
+    "marca": ["brand", "logo", "sign"],
+    "letrero": ["sign", "logo", "illuminated"],
+    "cadena": ["brand", "logo", "sign"],
+    "estrellas": ["luxury", "hotel", "grand"],
+    "lujo": ["luxury", "grand", "marble"],
+    "reserva": ["booking", "online", "app"],
+    "reservar": ["booking", "online", "app"],
+    "reservas": ["booking", "online", "app"],
+    "ocupacion": ["empty", "guest", "room"],
+    "mobiliario": ["renovation", "interior", "furniture"],
+    "reforma": ["renovation", "interior", "construction"],
+    "reformar": ["renovation", "interior", "construction"],
+    "comision": ["contract", "sign", "money"],
+    "franquicia": ["contract", "sign", "brand"],
+    "hipoteca": ["contract", "money", "document"],
+    "temporada": ["season", "empty", "beach"],
+    "maleta": ["suitcase", "luggage"],
+    "maletas": ["suitcase", "luggage", "cart"],
+
     # --- gasolinera (episodio 07) --------------------------------------
     # El lexico venia del casino, el banco y el aeropuerto, y no conocia ni
     # "surtidor" ni "litro". Medido con `comprobar_encaje.py --md` antes de

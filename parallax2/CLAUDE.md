@@ -229,13 +229,40 @@ sola imagen apareciendo.
 Las cifras son el argumento del vídeo. Dejarlas solo en la voz las
 desperdicia, y además rompe la monotonía de que todo sea parallax.
 
-Cuatro tipos, en `grafico`:
+Diez tipos, en `grafico`:
 
 - **`contador`** — el número cuenta desde cero. Para cifras sueltas grandes.
 - **`barras`** — comparación entre 2 y 4 elementos, crecen escalonadas.
-  Con `destacar` se pinta una de otro color.
+  Con `destacar` se pinta una de otro color. La etiqueta va **encima** de la
+  barra, no a su izquierda: a la izquierda el ancho depende de lo larga que
+  sea y «hoteles con su nombre» salió en pantalla como «oteles con su
+  nombre».
 - **`anillo`** — un porcentaje. Para cuando la cifra *es* la frase.
 - **`reparto`** — una barra partida: cuánto se lleva cada uno.
+- **`factura`** — **el gráfico del canal.** Las líneas que ya llevas en gris
+  y la nueva en ámbar, con puntos guía y el total debajo. El formato es
+  «cuánto cuesta comprar y mantener X» y lo que engancha no es cada cifra
+  suelta: es ver la cuenta crecer. Una por capítulo, arrastrando el total.
+- **`apilada`** — una barra partida en tramos con su leyenda debajo. Para
+  los desgloses: «de 7,66 M€ que entran, 383.000 se los lleva el letrero».
+- **`rejilla`** — cuenta de unidades. 200 cuadraditos son 200 personas y se
+  entienden sin leer la cifra; un porcentaje en un anillo es abstracto.
+- **`flecha`** — quién le paga a quién. Dos cajas y una flecha que viaja.
+- **`mapa`** — la silueta peninsular con puntos que se encienden y se apagan.
+- **`ilustracion`** — un icono dentro de un medallón, con su anillo de
+  progreso y, si la frase dice que algo sube o cae, una chapa con la flecha.
+  Ver más abajo.
+
+Todos se dibujan sobre la misma **tarjeta**: sombra, degradado vertical, filo
+de luz arriba y galón de acento a la izquierda. Es lo que hace que un mapa y
+una factura parezcan del mismo vídeo. No inventes otro panel.
+
+Y la jerarquía se hace con el **peso de la letra**, no con el color:
+Poppins Black para la cifra, SemiBold para los importes de una lista y Medium
+para etiquetas y pies. Están las tres en `assets/fonts` y las resuelve
+`efectos._fuente(px, peso)`. Nunca una ruta absoluta de fuente: las dos que
+había (`/usr/share/fonts/...`) no existen ni en Windows ni en el runner, así
+que durante meses todos los gráficos se renderizaron con la de reserva.
 
 ```json
 "grafico": { "tipo": "anillo", "valor": 62.5, "sufijo": "%",
@@ -246,6 +273,63 @@ Cuatro tipos, en `grafico`:
 `construir_guion.py` los engancha solo buscando la cifra en la locución.
 Si al menos el 40% de las escenas con números no lleva gráfico,
 `validar.py` avisa.
+
+## El plató: cuando el fondo tiene que ser la marca
+
+Un gráfico encima de un clip de stock siempre pierde. El clip se mueve, tiene
+detalle en todas las frecuencias y trae su propia luz, así que la tarjeta
+necesita opacidad y sombra solo para poder leerse — y aun así el ojo se va al
+metraje. Y encima obliga a buscarle un plano que «pegue» a una cifra, que es
+de donde salían las escenas que no venían a cuento.
+
+Cuando el contenido **es** el dato, el plano no lleva metraje: lleva el plató.
+
+```json
+"fondo": "plato", "fondo_color": [255,196,90],
+"fondo_titulo": "capítulo 1 · el edificio", "fondo_fase": 0.42
+```
+
+Es un degradado del canal, una retícula que deriva, la marca de agua del euro,
+una luz que cruza el plano una vez, y abajo el rótulo **PROBLEMAS
+MILLONARIOS / EL PRECIO DE SER EL DUEÑO**. Todo dibujado por código: no hay
+ni un asset. `fondo_fase` cambia el sentido de la luz y de la retícula para
+que veinte planos de plató no se lean como una plantilla.
+
+Si algún día hay logotipo de verdad, se deja en `assets/brand/logo.png` y el
+plató lo usa en lugar del monograma.
+
+Una ficha de `graficos_*.json` lo pide con `"fondo": true` o
+`"fondo": {"titulo": "..."}`. El título **solo** cuando la tarjeta no lleva
+epígrafe propio: repetir «lo que has comprado» arriba y dentro se lee como un
+fallo de montaje.
+
+## Si no hay clip de calidad, se ILUSTRA
+
+**La regla nueva del canal.** Una frase sin metraje que le pegue no se rellena
+con el clip que toque por tema —de ahí salió el señor cortando pan en el
+episodio de aerolíneas— ni se deja en texto blanco sobre negro. Se ilustra.
+
+`vestir.py` lo hace solo: el plató, un medallón con el icono de lo que se está
+diciendo, la flecha de dirección si la frase dice que algo sube o cae, y el
+titular debajo. Veintitrés planos del episodio del hotel, que antes eran
+veintitrés diapositivas.
+
+El icono sale de `iconos.py`, que trae veintinueve pictogramas de línea y un
+diccionario de español. Dos cosas que hay que respetar al tocarlo:
+
+- **Lo específico va arriba en `TABLA`.** «hipoteca» tiene que caer en banco y
+  no en euro aunque la frase diga las dos cosas.
+- **Nada de palabras comunes.** «más», «menos» y «pierde» estaban en subir y
+  bajar, y «cuando pierdes, cobran, y cuando ganas, cobran más» salía con una
+  flecha de crecimiento.
+
+Y hay un **suelo por episodio** (`iconos.del_tema`): si la frase no dice de
+qué va, el icono es el del tema del vídeo. En un episodio sobre un hotel, un
+hotel siempre viene a cuento; el círculo genérico no dice nada nunca. Eso pasó
+ocho frases de veintitrés del genérico a su icono real.
+
+Si el plano ya lleva un gráfico —`motion_banco` le puso un contador porque la
+frase dice una cifra— se respeta: una cifra contada siempre gana a un icono.
 
 ## Los rótulos entran cuando se dicen
 
@@ -289,7 +373,8 @@ entre `*asteriscos*` salen en color de acento.
 }
 ```
 
-Máximo 34 caracteres o se sale del encuadre. `retardo` es lo que tarda en
+El rótulo **se encoge solo** hasta caber en el encuadre, así que 34
+caracteres es una guía y no un acantilado. `retardo` es lo que tarda en
 aparecer tras el inicio de la escena: nunca a cero, el texto entra
 **después** de que el ojo haya leído la imagen.
 

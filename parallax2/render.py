@@ -470,13 +470,17 @@ def render_escena(esc, cfg, base, ff):
 
     # --- escena de clip de stock: mismo acabado, sin capas ---
     clip = esc.get("clip")
+    # PLATO: la escena no lleva metraje, lleva el fondo de marca del canal.
+    # Se pide desde la ficha del grafico (motion_manual.py) para las escenas
+    # en las que el contenido ES el dato y un clip solo estorbaria.
+    fondo = esc.get("fondo")
     fuente = None
     if clip:
         ruta = clip if os.path.isabs(clip) else os.path.join(base, clip)
         fuente = leer_clip(ruta, W, H, FPS, n, esc.get("clip_desde", 0.0))
 
     capas = []
-    for c in ([] if clip else esc["capas"]):
+    for c in ([] if (clip or fondo) else esc.get("capas", [])):
         ruta = c["archivo"] if os.path.isabs(c["archivo"]) else os.path.join(base, c["archivo"])
         L = cargar(ruta, W, H, c["rol"], c.get("ajuste"), comp,
                    c.get("clase", "arquitectura"))
@@ -545,6 +549,11 @@ def render_escena(esc, cfg, base, ff):
             im = Image.fromarray(cru.astype(np.uint8)).resize((nw, nh), Image.BICUBIC)
             im = im.crop((int(cx), int(cy), int(cx) + W, int(cy) + H))
             lienzo = im
+        elif fondo:
+            lienzo = FX.plato(W, H, f / max(1, n - 1),
+                              acento=esc.get("fondo_color"),
+                              titulo=esc.get("fondo_titulo", ""),
+                              fase=float(esc.get("fondo_fase", 0.0)))
 
         for L in capas:
             ue, us = FX.factor_anim(f, n, FPS, DUR_ENTRADA, DUR_SALIDA,

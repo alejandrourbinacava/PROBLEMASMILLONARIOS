@@ -6,12 +6,25 @@
     "grafico": {
       "tipo": "factura",
       "titulo": "tu gasolinera, hasta aquí",
-      "lineas": [["terreno, en el lado bueno de la vía", "200.000 €"]],
+      "lineas": [
+        [
+          "terreno, en el lado bueno de la vía",
+          "200.000 €"
+        ]
+      ],
       "total": "200.000 €",
       "etiqueta_total": "llevas gastado",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "FACTURA 2. La obra y los tanques TRIPLICAN el terreno, y es la parte que no se ve nunca. Ese salto es el capitulo.",
@@ -21,14 +34,28 @@
       "tipo": "factura",
       "titulo": "tu gasolinera, hasta aquí",
       "lineas": [
-        ["terreno, en el lado bueno de la vía", "200.000 €"],
-        ["obra civil y tanques enterrados", "400.000 €"]
+        [
+          "terreno, en el lado bueno de la vía",
+          "200.000 €"
+        ],
+        [
+          "obra civil y tanques enterrados",
+          "400.000 €"
+        ]
       ],
       "total": "600.000 €",
       "etiqueta_total": "llevas gastado",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "FACTURA 3. Los papeles son la linea mas pequena de todas y la que mas tiempo cuesta. Verla ridicula al lado de las otras es justo el punto.",
@@ -38,15 +65,32 @@
       "tipo": "factura",
       "titulo": "tu gasolinera, hasta aquí",
       "lineas": [
-        ["terreno, en el lado bueno de la vía", "200.000 €"],
-        ["obra civil y tanques enterrados", "400.000 €"],
-        ["licencias, permisos y meses", "25.000 €"]
+        [
+          "terreno, en el lado bueno de la vía",
+          "200.000 €"
+        ],
+        [
+          "obra civil y tanques enterrados",
+          "400.000 €"
+        ],
+        [
+          "licencias, permisos y meses",
+          "25.000 €"
+        ]
       ],
       "total": "625.000 €",
       "etiqueta_total": "llevas gastado",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "EL GRAFICO DEL EPISODIO. El litro abierto en canal: producto, impuesto de hidrocarburos e IVA. Un contador diria 1,46 y no explicaria nada.",
@@ -54,16 +98,46 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "apilada",
-      "items": [["producto", 0.73], ["hidrocarburos", 0.47], ["IVA", 0.25]],
+      "items": [
+        [
+          "producto",
+          0.73
+        ],
+        [
+          "hidrocarburos",
+          0.47
+        ],
+        [
+          "IVA",
+          0.25
+        ]
+      ],
       "colores": {
-        "producto": [120, 130, 150],
-        "hidrocarburos": [255, 110, 86],
-        "IVA": [255, 140, 100]
+        "producto": [
+          120,
+          130,
+          150
+        ],
+        "hidrocarburos": [
+          255,
+          110,
+          86
+        ],
+        "IVA": [
+          255,
+          140,
+          100
+        ]
       },
       "total": "1,46 € el litro",
-      "sufijo": " €", "dec": 2,
-      "y": 0.52, "retardo": 0.45, "duracion": 2.6, "entrada": "golpe"
-    }
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "El remate del capitulo 4, y probablemente la miniatura del video: lo que se lleva Hacienda contra lo que te llevas tu, por el mismo litro.",
@@ -71,11 +145,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "barras",
-      "items": [["Hacienda", 72.0], ["tú", 10.0]],
-      "destacar": {"Hacienda": [255, 110, 86]},
-      "sufijo": " c", "dec": 0,
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
+      "items": [
+        [
+          "Hacienda",
+          72.0
+        ],
+        [
+          "tú",
+          10.0
+        ]
+      ],
+      "destacar": {
+        "Hacienda": [
+          255,
+          110,
+          86
+        ]
+      },
+      "sufijo": " c",
+      "dec": 0,
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "el margen de cada litro"
     }
   },
   {
@@ -88,9 +188,17 @@
       "dec": 2,
       "sufijo": " M de litros",
       "pie": "solo para recuperar lo invertido",
-      "color": [255, 110, 86],
-      "y": 0.46, "retardo": 0.5, "duracion": 2.2, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        110,
+        86
+      ],
+      "y": 0.46,
+      "retardo": 0.5,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "De donde sale de verdad el dinero de una gasolinera de toda la vida. El combustible es el reclamo; el margen esta en el cafe.",
@@ -98,11 +206,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "barras",
-      "items": [["la tienda", 32.0], ["el combustible", 7.0]],
-      "destacar": {"la tienda": [120, 220, 170]},
-      "sufijo": " % de margen", "dec": 0,
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
+      "items": [
+        [
+          "la tienda",
+          32.0
+        ],
+        [
+          "el combustible",
+          7.0
+        ]
+      ],
+      "destacar": {
+        "la tienda": [
+          120,
+          220,
+          170
+        ]
+      },
+      "sufijo": " % de margen",
+      "dec": 0,
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "lo que deja cada repostaje"
     }
   },
   {
@@ -113,14 +247,31 @@
       "tipo": "factura",
       "titulo": "y el día que cierres",
       "lineas": [
-        ["terreno, obra, tanques y papeles", "625.000 €"],
-        ["vaciar, limpiar e inertizar los tanques", "a tu cargo"],
-        ["descontaminar el suelo, si hubo fuga", "?"]
+        [
+          "terreno, obra, tanques y papeles",
+          "625.000 €"
+        ],
+        [
+          "vaciar, limpiar e inertizar los tanques",
+          "a tu cargo"
+        ],
+        [
+          "descontaminar el suelo, si hubo fuga",
+          "?"
+        ]
       ],
       "total": "?",
       "etiqueta_total": "y esto no se extingue",
-      "color": [255, 110, 86],
-      "y": 0.5, "retardo": 0.4, "duracion": 3.0, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        110,
+        86
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "golpe"
+    },
+    "fondo": true
   }
 ]

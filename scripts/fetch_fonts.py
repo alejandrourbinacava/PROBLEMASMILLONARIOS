@@ -53,6 +53,17 @@ CATALOG: list[FontSpec] = [
              {"wght": 700}, "Geométrica redondeada, más ligera y limpia."),
     FontSpec("Poppins", "poppins/Poppins-Black.ttf", "Poppins-Black.ttf", None,
              "Geométrica moderna. No redondeada, pero muy actual."),
+    # Los pesos intermedios de la misma familia. Los motion graphics del canal
+    # (parallax2/efectos.py) construyen la jerarquía con el PESO, no con el
+    # color: la cifra en Black, el importe en SemiBold y la etiqueta en Medium.
+    # Con un solo peso disponible todo pesaba igual y el gráfico se leía como
+    # una captura de pantalla.
+    FontSpec("Poppins", "poppins/Poppins-Bold.ttf", "Poppins-Bold.ttf", None,
+             "Titulares y rótulos sobre metraje."),
+    FontSpec("Poppins", "poppins/Poppins-SemiBold.ttf", "Poppins-SemiBold.ttf",
+             None, "Los importes de una factura: pesan sin gritar."),
+    FontSpec("Poppins", "poppins/Poppins-Medium.ttf", "Poppins-Medium.ttf", None,
+             "Etiquetas, pies y epígrafes. Un escalón por debajo de la cifra."),
 ]
 
 

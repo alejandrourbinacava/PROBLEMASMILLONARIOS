@@ -138,6 +138,33 @@ def fondo_tarjeta(ruta, semilla, fantasma=""):
     im.save(ruta)
 
 
+# Palabras que dicen hacia donde va la cosa. La flecha verde o roja de la
+# esquina del medallon cuenta la mitad de la frase sin gastar una linea de
+# rotulo, y es lo que pidio el usuario: "flechas, iconos, motion graphics".
+ARRIBA = ("sube", "suben", "subir", "crece", "crecen", "aumenta", "aumentan",
+          "subida", "incremento", "dispara", "duplica", "mas caro", "encarece")
+ABAJO = ("baja", "bajan", "bajar", "cae", "caen", "pierde", "pierdes",
+         "perdida", "perdidas", "bajada", "recorte", "hunde", "reduce",
+         "mas barato", "abarata")
+
+
+def direccion(frase):
+    f = " " + _norm_dir(frase) + " "
+    for p in ARRIBA:
+        if " " + p + " " in f:
+            return "sube"
+    for p in ABAJO:
+        if " " + p + " " in f:
+            return "baja"
+    return None
+
+
+def _norm_dir(t):
+    import unicodedata
+    t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore")
+    return re.sub(r"[^a-z0-9 ]+", " ", t.decode().lower())
+
+
 def partir(esc, texto_izq, texto_der):
     """Una tarjeta larga en dos cortas. Cada mitad dice su trozo."""
     a = dict(esc)
@@ -158,6 +185,7 @@ def main():
     sys.stdout.reconfigure(encoding="utf-8")
 
     import emparejar as EMP
+    import iconos as ICO
 
     global EPISODIO
     EPISODIO = os.path.splitext(os.path.basename(a.salida))[0]
@@ -305,32 +333,74 @@ def main():
             continue
 
         # sin imagen posible -> tarjeta
-        t = titular(e.get("texto") or "")
+        # 34 y no 30: el rotulo ya se encoge solo hasta caber (ver
+        # `render_texto`), asi que el tope puede ser el de una clausula
+        # entera en vez del de un cuerpo de letra concreto.
+        t = titular(e.get("texto") or "", 34)
         partes = [(e, t)]
         if (e.get("duracion", 4) > TOPE_TARJETA
                 and e.get("duracion", 4) / 2 >= MINIMO_MITAD):
             frase = (e.get("texto") or "").strip()
             mitad = frase[:len(frase) // 2].rsplit(" ", 1)[0]
             resto = frase[len(mitad):].strip()
-            x, y, ta, tb = partir(e, titular(mitad), titular(resto) or t)
+            x, y, ta, tb = partir(e, titular(mitad, 34),
+                                  titular(resto, 34) or t)
             partes = [(x, ta), (y, tb)]
             n_part += 1
 
         for k, (esc, txt) in enumerate(partes):
-            arch = f"tarjeta_{EPISODIO}_{esc['id']}.png"
-            fantasma = (txt.split() or [""])[-1].strip("*.,:;").upper()[:9]
-            fondo_tarjeta(os.path.join(PROY, arch), i + k, fantasma)
+            # LA TARJETA ES EL PLATO DEL CANAL, no un PNG negro.
+            #
+            # Antes se escribia un PNG por tarjeta -veintitres en el hotel-
+            # con unas diagonales y una palabra fantasma enorme detras, y la
+            # camara derivaba sobre el para que el plano no pareciera
+            # congelado. Tres problemas: el episodio tenia dos fondos
+            # distintos (el negro de las tarjetas y el plato de las cifras),
+            # la palabra fantasma salia de la ultima palabra del titular y a
+            # menudo no venia a cuento, y eran cuarenta KB por plano en un
+            # repo publico.
+            #
+            # El plato se dibuja por fotograma, trae el rotulo del canal
+            # abajo y se mueve solo, asi que tampoco hace falta la deriva:
+            # un rotulo quieto se lee mejor que uno que viaja.
             esc.pop("clip", None)
             esc.pop("clip_desde", None)
             esc["tipo"] = "rotulo"
             esc["grade"] = "neutro"
             esc["efectos"] = [POLVILLO[(i + k) % len(POLVILLO)]]
-            esc["movimiento"] = "drift_der" if (i + k) % 2 else "drift_izq"
-            esc["capas"] = [{"rol": "fondo", "archivo": arch,
-                             "clase": "abstracto", "entrada": "escala",
-                             "prompt": "tarjeta del canal"}]
+            esc["movimiento"] = "estatico"
+            esc["capas"] = []
+            esc["fondo"] = "plato"
+            # La luz del plato cruza en un sentido o en el otro segun el
+            # plano: veintitres tarjetas con la luz entrando siempre por la
+            # izquierda se notan como una plantilla.
+            esc["fondo_fase"] = round(((i + k) % 7) / 7.0, 3)
+            # LA ILUSTRACION. El icono sale de la FRASE ENTERA, no del
+            # titular: el titular son cuatro palabras y "una advertencia" no
+            # dice de que va, mientras que la frase completa si.
+            #
+            # Si el plano ya lleva un grafico -motion_banco le ha puesto un
+            # contador porque la frase dice una cifra- se respeta: una cifra
+            # contada siempre gana a un icono.
+            frase = esc.get("texto") or ""
+            if not esc.get("grafico"):
+                esc["grafico"] = {
+                    "tipo": "ilustracion",
+                    "icono": ICO.elige(frase, ICO.del_tema(EPISODIO)),
+                    "lado": 300,
+                    "color": AMBAR,
+                    "y": 0.32, "retardo": 0.22,
+                    "duracion": max(0.9, min(1.6, esc["duracion"] - 0.5)),
+                    "entrada": "golpe",
+                }
+                d_ir = direccion(frase)
+                if d_ir:
+                    esc["grafico"]["flecha"] = d_ir
+                alto_txt, y_txt = 96, 0.64
+            else:
+                alto_txt, y_txt = 112, 0.47
             esc["texto_pantalla"] = {
-                "texto": acentua(txt), "px": 112, "y": 0.47,
+                "texto": acentua(txt), "px": alto_txt, "y": y_txt,
                 "acento": AMBAR, "color": PAPEL,
                 "estilo": "sube", "retardo": 0.26,
             }

@@ -104,12 +104,45 @@ def main():
             ajustados.append(
                 f'{elegido["id"]}: {pide:.2f}s de animacion en un plano de '
                 f'{plano:.2f}s -> encogida a {gr["duracion"]:.2f}s')
+        # PLATO. Una ficha puede pedir que su plano no lleve metraje sino
+        # el fondo de marca del canal:
+        #
+        #     "fondo": true
+        #     "fondo": {"titulo": "capitulo 1 - el edificio"}
+        #
+        # Es para los graficos que SON el contenido. Encima de un clip, la
+        # tarjeta necesita opacidad y sombra solo para poder leerse, y aun
+        # asi el ojo se va al metraje; ademas obliga a buscarle un plano que
+        # "pegue" a una cifra, que es de donde salian las escenas que no
+        # venian a cuento. Sobre el plato el dato manda, y el corte a un
+        # fondo distinto avisa al espectador de que viene una cuenta.
+        fondo = ficha.get("fondo")
+        if fondo:
+            elegido.pop("clip", None)
+            elegido.pop("clip_desde", None)
+            elegido.pop("duotono", None)
+            elegido.pop("duotono_fuerza", None)
+            elegido["fondo"] = "plato"
+            # `validar.py` da por grave un plano sin clip y sin capas: es un
+            # plano vacio. Declarandolo `grafico` sabe que el vacio es el
+            # punto, que es lo mismo que ya hacia con los rotulos.
+            elegido["tipo"] = "grafico"
+            elegido["capas"] = []
+            # El plato ya viene con el color del canal puesto: pasarle
+            # encima el grade del capitulo lo tenaria dos veces.
+            elegido["grade"] = "neutro"
+            col = fondo.get("color") if isinstance(fondo, dict) else None
+            elegido["fondo_color"] = col or ficha["grafico"].get("color")
+            if isinstance(fondo, dict) and fondo.get("titulo"):
+                elegido["fondo_titulo"] = fondo["titulo"]
+
         # Un grafico protagonista no comparte plano con un barrido de camara.
         elegido.pop("latigo", None)
         elegido["movimiento"] = ficha.get("movimiento", "estatico")
         puestos += 1
         print(f'  {elegido["id"]:14s} {ficha["grafico"]["tipo"]:9s} '
-              f'(pisa: {antes})  "{ficha["donde"][:44]}"')
+              f'{"PLATO " if fondo else "":6s}(pisa: {antes})  '
+              f'"{ficha["donde"][:44]}"')
 
     for x in ajustados:
         print("  ajustado  " + x)

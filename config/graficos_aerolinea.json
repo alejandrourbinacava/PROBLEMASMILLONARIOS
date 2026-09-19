@@ -6,12 +6,25 @@
     "grafico": {
       "tipo": "factura",
       "titulo": "tu aerolínea, hasta aquí",
-      "lineas": [["3 aviones alquilados, al año", "14,4 M$"]],
+      "lineas": [
+        [
+          "3 aviones alquilados, al año",
+          "14,4 M$"
+        ]
+      ],
       "total": "14,4 M$",
       "etiqueta_total": "llevas gastado",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "FACTURA 2. El certificado entra en la cuenta y ya multiplica por siete lo que costaban los aviones. Ese salto es el argumento del capitulo.",
@@ -21,14 +34,28 @@
       "tipo": "factura",
       "titulo": "tu aerolínea, hasta aquí",
       "lineas": [
-        ["3 aviones alquilados, al año", "14,4 M$"],
-        ["certificarte y 2 años sin ingresar", "100 M$"]
+        [
+          "3 aviones alquilados, al año",
+          "14,4 M$"
+        ],
+        [
+          "certificarte y 2 años sin ingresar",
+          "100 M$"
+        ]
       ],
       "total": "114,4 M$",
       "etiqueta_total": "llevas gastado",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "El plano que rompe el topico: un trozo de horario cuesta mas que el avion. Con dos barras se ve sin tener que explicarlo.",
@@ -36,11 +63,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "barras",
-      "items": [["un slot", 75.0], ["tu avión", 60.0]],
-      "destacar": {"un slot": [255, 110, 86]},
-      "sufijo": " M$", "dec": 0,
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
+      "items": [
+        [
+          "un slot",
+          75.0
+        ],
+        [
+          "tu avión",
+          60.0
+        ]
+      ],
+      "destacar": {
+        "un slot": [
+          255,
+          110,
+          86
+        ]
+      },
+      "sufijo": " M$",
+      "dec": 0,
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "lo que cuesta un asiento"
     }
   },
   {
@@ -52,8 +105,18 @@
       "a": "AEROPUERTO",
       "b": "TÚ",
       "etiqueta": "te paga por aterrizar ahí",
-      "color": [255, 110, 86],
-      "y": 0.5, "retardo": 0.4, "duracion": 1.6, "entrada": "golpe"
+      "color": [
+        255,
+        110,
+        86
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.6,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "quién le paga a quién"
     }
   },
   {
@@ -64,15 +127,32 @@
       "tipo": "factura",
       "titulo": "tu aerolínea, hasta aquí",
       "lineas": [
-        ["3 aviones alquilados, al año", "14,4 M$"],
-        ["certificarte y 2 años sin ingresar", "100 M$"],
-        ["slot en aeropuerto grande", "esquivado"]
+        [
+          "3 aviones alquilados, al año",
+          "14,4 M$"
+        ],
+        [
+          "certificarte y 2 años sin ingresar",
+          "100 M$"
+        ],
+        [
+          "slot en aeropuerto grande",
+          "esquivado"
+        ]
       ],
       "total": "114,4 M$",
       "etiqueta_total": "llevas gastado",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.6, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "189 cuadraditos son 189 asientos. El capitulo va de que el avion cuesta lo mismo lleno que vacio, y una rejilla medio llena lo dice sin una palabra.",
@@ -84,8 +164,18 @@
       "marcados": 95,
       "cols": 21,
       "pie": "medio vacío cuesta lo mismo que lleno",
-      "color_marca": [255, 110, 86],
-      "y": 0.46, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+      "color_marca": [
+        255,
+        110,
+        86
+      ],
+      "y": 0.46,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "189 asientos"
     }
   },
   {
@@ -96,16 +186,36 @@
       "tipo": "factura",
       "titulo": "tu aerolínea, hasta aquí",
       "lineas": [
-        ["3 aviones alquilados, al año", "14,4 M$"],
-        ["certificarte y 2 años sin ingresar", "100 M$"],
-        ["tripulaciones: +100 personas", "nómina fija"],
-        ["cada hora en el aire", "5.700 $"]
+        [
+          "3 aviones alquilados, al año",
+          "14,4 M$"
+        ],
+        [
+          "certificarte y 2 años sin ingresar",
+          "100 M$"
+        ],
+        [
+          "tripulaciones: +100 personas",
+          "nómina fija"
+        ],
+        [
+          "cada hora en el aire",
+          "5.700 $"
+        ]
       ],
       "total": "114,4 M$",
       "etiqueta_total": "y sumando por hora",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.8, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.8,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "Lo que entra: los 74,60 no son una cifra suelta, son una SUMA. Un contador no diria de donde sale.",
@@ -113,12 +223,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "apilada",
-      "items": [["billete", 50.60], ["extras", 24.00]],
-      "colores": {"billete": [255, 196, 90], "extras": [255, 110, 86]},
+      "items": [
+        [
+          "billete",
+          50.6
+        ],
+        [
+          "extras",
+          24.0
+        ]
+      ],
+      "colores": {
+        "billete": [
+          255,
+          196,
+          90
+        ],
+        "extras": [
+          255,
+          110,
+          86
+        ]
+      },
       "total": "74,60 € por pasajero",
-      "sufijo": " €", "dec": 2,
-      "y": 0.52, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
-    }
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "La misma forma con otro contenido: es lo que hace que se entienda sin explicarla. Y es el remate de todo el episodio.",
@@ -126,12 +261,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "apilada",
-      "items": [["coste", 63.76], ["te queda", 10.84]],
-      "colores": {"coste": [120, 130, 150], "te queda": [255, 196, 90]},
+      "items": [
+        [
+          "coste",
+          63.76
+        ],
+        [
+          "te queda",
+          10.84
+        ]
+      ],
+      "colores": {
+        "coste": [
+          120,
+          130,
+          150
+        ],
+        "te queda": [
+          255,
+          196,
+          90
+        ]
+      },
       "total": "de cada 74,60 €",
-      "sufijo": " €", "dec": 2,
-      "y": 0.52, "retardo": 0.45, "duracion": 2.2, "entrada": "golpe"
-    }
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "El cierre. Una lista de ciudades en un rotulo es una lista; en un mapa que se apaga es el episodio entero en una imagen.",
@@ -140,16 +300,61 @@
     "grafico": {
       "tipo": "mapa",
       "puntos": [
-        ["Asturias", -6.03, 43.56, true],
-        ["Santander", -3.82, 43.43, true],
-        ["Santiago", -8.41, 42.90, true],
-        ["Vigo", -8.63, 42.23, true],
-        ["Zaragoza", -1.04, 41.66, true],
-        ["Madrid", -3.57, 40.49, false],
-        ["Barcelona", 2.08, 41.30, false]
+        [
+          "Asturias",
+          -6.03,
+          43.56,
+          true
+        ],
+        [
+          "Santander",
+          -3.82,
+          43.43,
+          true
+        ],
+        [
+          "Santiago",
+          -8.41,
+          42.9,
+          true
+        ],
+        [
+          "Vigo",
+          -8.63,
+          42.23,
+          true
+        ],
+        [
+          "Zaragoza",
+          -1.04,
+          41.66,
+          true
+        ],
+        [
+          "Madrid",
+          -3.57,
+          40.49,
+          false
+        ],
+        [
+          "Barcelona",
+          2.08,
+          41.3,
+          false
+        ]
       ],
-      "color": [255, 196, 90],
-      "y": 0.52, "retardo": 0.4, "duracion": 3.0, "entrada": "fundido"
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.52,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "fundido"
+    },
+    "fondo": {
+      "titulo": "el mapa de las rutas"
     }
   }
 ]

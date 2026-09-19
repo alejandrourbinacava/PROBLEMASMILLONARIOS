@@ -1,5 +1,5 @@
 {
-  "titulo": "Esto cuesta comprar y mantener un hotel de cinco estrellas",
+  "titulo": "guion_hotel",
   "lienzo": {
     "w": 1920,
     "h": 1080,
@@ -44,26 +44,34 @@
       "id": "gancho_02",
       "texto": "¿Cuántos crees que son suyos?",
       "duracion": 1.27,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_gancho_02.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "latigo": "izq",
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.9,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "¿Cuántos crees que son *suyos*?",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -85,25 +93,33 @@
       "id": "gancho_02b",
       "texto": "¿Cuántos crees que son suyos?",
       "duracion": 1.9,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_gancho_02b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "¿Cuántos crees que son *suyos*?",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -125,12 +141,10 @@
       "texto": "Unos cincuenta. Menos del uno por ciento.",
       "duracion": 4.06,
       "movimiento": "estatico",
-      "grade": "dorado_suave",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "barras",
@@ -163,9 +177,15 @@
         "duracion": 2.4,
         "entrada": "golpe"
       },
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": [
+        255,
+        196,
+        90
+      ],
+      "fondo_titulo": "el negocio no es el que crees"
     },
     {
       "id": "gancho_04",
@@ -312,25 +332,33 @@
       "id": "gancho_06",
       "texto": "Entonces, ¿de quién son los otros ocho mil novecientos cincuenta?",
       "duracion": 2.1,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_gancho_06.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "*Entonces*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -623,26 +651,34 @@
       "id": "gancho_10",
       "texto": "Empezamos por lo caro.",
       "duracion": 2.75,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_gancho_10.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "*Empezamos* por lo caro",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1140,12 +1176,10 @@
       "texto": "Total acumulado: cincuenta y cinco millones de euros.",
       "duracion": 4.47,
       "movimiento": "estatico",
-      "grade": "dorado_suave",
+      "grade": "neutro",
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "factura",
@@ -1168,33 +1202,46 @@
         "duracion": 2.4,
         "entrada": "golpe"
       },
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": [
+        255,
+        196,
+        90
+      ]
     },
     {
       "id": "cap1_10",
       "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
       "duracion": 2.75,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap1_10.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "alerta",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
-        "texto": "una *advertencia*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "una advertencia sobre ese *número*",
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1214,25 +1261,33 @@
       "id": "cap1_10b",
       "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
       "duracion": 4.08,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap1_10b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "alerta",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
-        "texto": "una *advertencia*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "una advertencia sobre ese *número*",
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1581,25 +1636,33 @@
       "id": "cap2_04",
       "texto": "O le pones el nombre de una cadena.",
       "duracion": 3.25,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_04.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
-        "texto": "le pones el *nombre*",
-        "px": 112,
-        "y": 0.47,
+        "texto": "le pones el nombre de una *cadena*",
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1619,24 +1682,16 @@
       "id": "cap2_05",
       "texto": "Y entonces pasa esto. Escúchalo con atención.",
       "duracion": 2.31,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_05.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "texto_pantalla": {
         "texto": "*entonces* pasa esto",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1651,30 +1706,38 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "composicion": "derecha"
     },
     {
       "id": "cap2_05x",
       "texto": "Y entonces pasa esto. Escúchalo con atención.",
       "duracion": 2.32,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_05x.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "texto_pantalla": {
         "texto": "Escúchalo con *atención*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1689,6 +1752,22 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "composicion": "izquierda"
     },
     {
@@ -1819,15 +1898,11 @@
       "texto": "Así que si el año va mal, si el hotel pierde dinero, si tienes el edificio medio vacío… la cadena cobra igual. Cobra la primera, y cobra sobre lo que entra.",
       "duracion": 2.97,
       "movimiento": "estatico",
-      "grade": "acero_suave",
+      "grade": "neutro",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/money_counting_machine_122.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
       "composicion": "centrado",
       "grafico": {
         "tipo": "flecha",
@@ -1843,7 +1918,15 @@
         "retardo": 0.4,
         "duracion": 1.8,
         "entrada": "golpe"
-      }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": [
+        255,
+        110,
+        86
+      ],
+      "fondo_titulo": "quién cobra primero"
     },
     {
       "id": "cap2_09b",
@@ -1956,25 +2039,34 @@
       "id": "cap2_11",
       "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
       "duracion": 2.48,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_11.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe",
+        "flecha": "baja"
+      },
       "texto_pantalla": {
         "texto": "cuando *pierdes*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -1994,24 +2086,16 @@
       "id": "cap2_11b",
       "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
       "duracion": 3.69,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_11b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "texto_pantalla": {
         "texto": "cuando *pierdes*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -2026,31 +2110,56 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe",
+        "flecha": "baja"
+      },
       "composicion": "izquierda"
     },
     {
       "id": "cap2_12",
       "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
       "duracion": 2.47,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_12.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "todavía hay una *tercera* vía",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -2070,25 +2179,33 @@
       "id": "cap2_12b",
       "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
       "duracion": 3.68,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap2_12b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "todavía hay una *tercera* vía",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -2446,12 +2563,10 @@
       "texto": "Tu hotel de cien puertas necesita entre ciento cincuenta y doscientas personas en plantilla.",
       "duracion": 6.12,
       "movimiento": "estatico",
-      "grade": "frio_suave",
+      "grade": "neutro",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/hotel_key_card_door_lock_15.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "rejilla",
@@ -2469,10 +2584,12 @@
         "duracion": 2.4,
         "entrada": "golpe"
       },
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "la plantilla"
     },
     {
       "id": "cap3_05",
@@ -2857,25 +2974,33 @@
       "id": "cap3_11",
       "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
       "duracion": 2.83,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap3_11.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "los buenos tienen un *techo*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -2895,24 +3020,16 @@
       "id": "cap3_11b",
       "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
       "duracion": 3.45,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap3_11b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "texto_pantalla": {
         "texto": "los buenos tienen un *techo*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -2927,32 +3044,56 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "composicion": "centrado"
     },
     {
       "id": "cap3_11c",
       "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
       "duracion": 4.2,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap3_11c.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "los buenos tienen un *techo*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -3166,25 +3307,33 @@
       "id": "cap4_04",
       "texto": "Y por eso el sector no mira el precio ni la ocupación por separado. Mira las dos a la vez.",
       "duracion": 2.77,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap4_04.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "cama",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "Mira las dos a la vez",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -3204,24 +3353,16 @@
       "id": "cap4_04b",
       "texto": "Y por eso el sector no mira el precio ni la ocupación por separado. Mira las dos a la vez.",
       "duracion": 4.13,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap4_04b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "texto_pantalla": {
         "texto": "Mira las dos a la vez",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -3236,6 +3377,22 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "cama",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "composicion": "izquierda"
     },
     {
@@ -3795,15 +3952,11 @@
       "texto": "Trescientos ochenta mil euros por el letrero. Sin haber puesto un euro de los cincuenta y cinco millones, sin haber contratado a una sola de tus doscientas personas, y los cobra el año que ganas y el año que pierdes.",
       "duracion": 3.68,
       "movimiento": "estatico",
-      "grade": "verde_suave",
+      "grade": "neutro",
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
       "composicion": "centrado",
       "grafico": {
@@ -3837,7 +3990,10 @@
         "retardo": 0.45,
         "duracion": 2.4,
         "entrada": "golpe"
-      }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
     },
     {
       "id": "cap5_06b",
@@ -4181,24 +4337,16 @@
       "id": "cap6_01",
       "texto": "Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.",
       "duracion": 2.42,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap6_01.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "texto_pantalla": {
         "texto": "aquí dentro hay dos *negocios*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -4213,32 +4361,56 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "acuerdo",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "composicion": "derecha"
     },
     {
       "id": "cap6_01b",
       "texto": "Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.",
       "duracion": 3.6,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "destellos"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap6_01b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "latigo": "izq",
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "acuerdo",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "aquí dentro hay dos *negocios*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -4542,25 +4714,33 @@
       "id": "cap6_06",
       "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
       "duracion": 2.07,
-      "movimiento": "drift_der",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap6_06.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.5699999999999998,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "conviene *saber*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -4580,25 +4760,33 @@
       "id": "cap6_06b",
       "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
       "duracion": 3.08,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cap6_06b.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
         "texto": "conviene *saber*",
-        "px": 112,
-        "y": 0.47,
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -5011,12 +5199,10 @@
       "texto": "Marriott tiene nueve mil hoteles y cincuenta son suyos. No están en el negocio de tener hoteles.",
       "duracion": 7.53,
       "movimiento": "estatico",
-      "grade": "dorado_suave",
+      "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/luxury_hotel_exterior_facade_evening_0.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "factura",
@@ -5051,10 +5237,15 @@
         "duracion": 3.0,
         "entrada": "golpe"
       },
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": [
+        255,
+        110,
+        86
+      ]
     },
     {
       "id": "cierre_09",
@@ -5076,25 +5267,17 @@
       "id": "cierre_10",
       "texto": "Ese es el precio de ser el dueño.",
       "duracion": 3.25,
-      "movimiento": "drift_izq",
+      "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "capas": [
-        {
-          "rol": "fondo",
-          "archivo": "tarjeta_hotel_cierre_10.png",
-          "clase": "abstracto",
-          "entrada": "escala",
-          "prompt": "tarjeta del canal"
-        }
-      ],
+      "capas": [],
       "cierra_bloque": true,
       "texto_pantalla": {
-        "texto": "Ese es el *precio* de ser",
-        "px": 112,
-        "y": 0.47,
+        "texto": "Ese es el precio de ser el *dueño*",
+        "px": 96,
+        "y": 0.64,
         "acento": [
           255,
           176,
@@ -5109,6 +5292,22 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "color": [
+          255,
+          176,
+          60
+        ],
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "composicion": "centrado"
     }
   ]

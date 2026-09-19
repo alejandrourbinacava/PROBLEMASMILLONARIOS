@@ -5,11 +5,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "barras",
-      "items": [["hoteles con su nombre", 9000.0], ["suyos", 50.0]],
-      "destacar": {"suyos": [255, 110, 86]},
-      "sufijo": "", "dec": 0,
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.45, "duracion": 2.4, "entrada": "golpe"
+      "items": [
+        [
+          "hoteles con su nombre",
+          9000.0
+        ],
+        [
+          "suyos",
+          50.0
+        ]
+      ],
+      "destacar": {
+        "suyos": [
+          255,
+          110,
+          86
+        ]
+      },
+      "sufijo": "",
+      "dec": 0,
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "el negocio no es el que crees"
     }
   },
   {
@@ -19,12 +45,25 @@
     "grafico": {
       "tipo": "factura",
       "titulo": "tu hotel, hasta aquí",
-      "lineas": [["100 habitaciones a 550.000 €", "55 M€"]],
+      "lineas": [
+        [
+          "100 habitaciones a 550.000 €",
+          "55 M€"
+        ]
+      ],
       "total": "55 M€",
       "etiqueta_total": "llevas puesto",
-      "color": [255, 196, 90],
-      "y": 0.5, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "El giro, y la flecha va donde nadie la espera: del dueno a la cadena. Igual que en Charleroi, pero aqui la etiqueta es lo que duele: sobre lo que ENTRA, no sobre lo que ganas.",
@@ -35,8 +74,18 @@
       "a": "TÚ",
       "b": "LA CADENA",
       "etiqueta": "un % de todo lo que entre",
-      "color": [255, 110, 86],
-      "y": 0.5, "retardo": 0.4, "duracion": 1.8, "entrada": "golpe"
+      "color": [
+        255,
+        110,
+        86
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.8,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "quién cobra primero"
     }
   },
   {
@@ -49,8 +98,18 @@
       "marcados": 100,
       "cols": 20,
       "pie": "200 personas para 100 habitaciones",
-      "color_marca": [255, 196, 90],
-      "y": 0.46, "retardo": 0.4, "duracion": 2.4, "entrada": "golpe"
+      "color_marca": [
+        255,
+        196,
+        90
+      ],
+      "y": 0.46,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": {
+      "titulo": "la plantilla"
     }
   },
   {
@@ -59,15 +118,37 @@
     "movimiento": "estatico",
     "grafico": {
       "tipo": "apilada",
-      "items": [["te queda para todo lo demás", 7281.75], ["el letrero", 383.25]],
+      "items": [
+        [
+          "te queda para todo lo demás",
+          7281.75
+        ],
+        [
+          "el letrero",
+          383.25
+        ]
+      ],
       "colores": {
-        "te queda para todo lo demás": [120, 130, 150],
-        "el letrero": [255, 110, 86]
+        "te queda para todo lo demás": [
+          120,
+          130,
+          150
+        ],
+        "el letrero": [
+          255,
+          110,
+          86
+        ]
       },
       "total": "de 7,66 M€ que entran",
-      "sufijo": " mil €", "dec": 0,
-      "y": 0.52, "retardo": 0.45, "duracion": 2.4, "entrada": "golpe"
-    }
+      "sufijo": " mil €",
+      "dec": 0,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "golpe"
+    },
+    "fondo": true
   },
   {
     "_nota": "FACTURA FINAL. La ultima linea no es un gasto: es un socio. Es la primera vez en la serie que la cuenta termina con alguien dentro en vez de con un numero.",
@@ -77,15 +158,35 @@
       "tipo": "factura",
       "titulo": "lo que has comprado",
       "lineas": [
-        ["el edificio y las 100 habitaciones", "55 M€"],
-        ["150-200 personas en nómina", "todos los meses"],
-        ["una reforma completa cada 7-8 años", "obligatoria"],
-        ["el nombre de la puerta", "no es tuyo"]
+        [
+          "el edificio y las 100 habitaciones",
+          "55 M€"
+        ],
+        [
+          "150-200 personas en nómina",
+          "todos los meses"
+        ],
+        [
+          "una reforma completa cada 7-8 años",
+          "obligatoria"
+        ],
+        [
+          "el nombre de la puerta",
+          "no es tuyo"
+        ]
       ],
       "total": "55 M€",
       "etiqueta_total": "tuyo es el riesgo",
-      "color": [255, 110, 86],
-      "y": 0.5, "retardo": 0.4, "duracion": 3.0, "entrada": "golpe"
-    }
+      "color": [
+        255,
+        110,
+        86
+      ],
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "golpe"
+    },
+    "fondo": true
   }
 ]

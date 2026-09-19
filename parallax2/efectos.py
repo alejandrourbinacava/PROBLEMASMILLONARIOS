@@ -11,10 +11,47 @@ import math
 import numpy as np
 from PIL import Image, ImageFilter, ImageDraw, ImageFont
 
-FUENTES = [
-    "/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf",
-    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+import iconos as ICO
+
+import os as _os
+
+# Donde viven las fuentes. El repo trae las suyas en assets/fonts y esa es
+# la unica ruta que existe en las tres maquinas: Windows, el runner de
+# GitHub y cualquier portatil. Las otras dos quedan de respaldo.
+_AQUI = _os.path.dirname(_os.path.abspath(__file__))
+_RUTAS = [
+    _os.path.join(_AQUI, "..", "assets", "fonts", "{}"),
+    "/usr/share/fonts/truetype/google-fonts/{}",
+    "/usr/share/fonts/truetype/liberation/{}",
+    "C:/Windows/Fonts/{}",
 ]
+
+
+def _busca(*nombres):
+    for nom in nombres:
+        for patron in _RUTAS:
+            ruta = _os.path.normpath(patron.format(nom))
+            if _os.path.exists(ruta):
+                return ruta
+    return None
+
+
+# Cuatro pesos de la misma familia. La jerarquia de un grafico no se hace
+# con colores ni con cajas: se hace con el peso y el tamano de la letra.
+#
+#   NEGRA    las cifras. Es el contenido.
+#   FUERTE   los importes de una lista y los nombres de las cajas.
+#   MEDIA    las etiquetas, los pies y los conceptos.
+#
+# Poppins Medium sobre Poppins Black es un salto de cuatro pesos: se lee
+# como dos niveles distintos de informacion incluso a 480 px de alto.
+NEGRA  = _busca("Poppins-Black.ttf", "Poppins-Bold.ttf", "ArchivoBlack-Regular.ttf",
+                "LiberationSans-Bold.ttf", "arialbd.ttf")
+FUERTE = _busca("Poppins-SemiBold.ttf", "Poppins-Bold.ttf", "Nunito-Black.ttf",
+                "LiberationSans-Bold.ttf", "arialbd.ttf")
+MEDIA  = _busca("Poppins-Medium.ttf", "Poppins-Regular.ttf", "Quicksand-Bold.ttf",
+                "LiberationSans-Regular.ttf", "arial.ttf")
+FUENTES = [f for f in (NEGRA, FUERTE, MEDIA) if f]
 
 # ---------------------------------------------------------------------------
 # GRADACION DE COLOR
@@ -318,13 +355,29 @@ def factor_anim(f, n, fps, dur_ent, dur_sal, retardo=0.0):
 # ---------------------------------------------------------------------------
 # TEXTO EN PANTALLA
 # ---------------------------------------------------------------------------
-def _fuente(px):
-    for f in FUENTES:
+import functools as _ft
+
+
+@_ft.lru_cache(maxsize=256)
+def _fuente(px, peso="negra"):
+    """La fuente del canal al peso que se pida, cacheada.
+
+    Cacheada porque los graficos se dibujan fotograma a fotograma y abrir
+    el mismo TTF veinticinco veces por segundo durante catorce minutos es
+    trabajo tirado.
+    """
+    for ruta in ({"negra": NEGRA, "fuerte": FUERTE, "media": MEDIA}.get(peso),
+                 NEGRA, FUERTE, MEDIA):
+        if not ruta:
+            continue
         try:
-            return ImageFont.truetype(f, px)
+            return ImageFont.truetype(ruta, px)
         except OSError:
             continue
-    return ImageFont.load_default()
+    try:
+        return ImageFont.load_default(px)      # Pillow >= 10.1: escalable
+    except TypeError:
+        return ImageFont.load_default()
 
 
 def render_texto(txt, W, H, px=132, color=(255, 255, 255),
@@ -348,7 +401,19 @@ def render_texto(txt, W, H, px=132, color=(255, 255, 255),
     if act:
         partes.append((act, en_acento))
 
+    # EL ROTULO ENCOGE HASTA CABER.
+    #
+    # Antes el tamano era fijo y el que escribia el rotulo tenia que
+    # adivinar cuantos caracteres caben: por eso `rotulo_de` cortaba a
+    # treinta y "Ese es el precio de ser el dueno" -la ultima frase del
+    # episodio del hotel- salia como "Ese es el precio de ser". Es el mismo
+    # fallo que la etiqueta de la barra que salia como "oteles con su
+    # nombre": medir despues en vez de suponer antes.
     ancho = sum(d.textlength(p, font=f) for p, _ in partes)
+    while ancho > W * 0.86 and px > 56:
+        px = int(px * 0.94)
+        f = _fuente(px)
+        ancho = sum(d.textlength(p, font=f) for p, _ in partes)
     alto = px * 1.25
     ax, ay = pos
     x = (W - ancho) / 2 if ax == "center" else (
@@ -402,12 +467,22 @@ def compon_texto(arr, capa_txt, u_ent, u_sal, estilo, W, H):
 # texto, que se precalcula) porque el numero cuenta y las barras crecen.
 # Rompen la monotonia: sin esto las 200 escenas son todas el mismo recurso.
 # ---------------------------------------------------------------------------
+# La paleta del canal, y solo esta. Tres colores de tinta y dos de papel.
+# Un grafico premium no tiene mas colores que uno cutre: tiene MENOS, y los
+# usa siempre para lo mismo. El ambar es la cifra de la que habla la frase,
+# el rojo es lo que te quitan y el hueso es todo lo demas.
 PALETA = {
     "acento":  (255, 196, 90),
     "aviso":   (255, 110, 86),
     "ok":      (120, 220, 170),
-    "hueso":   (240, 236, 228),
-    "surco":   (255, 255, 255, 38),
+    "hueso":   (242, 238, 230),
+    # El gris de las etiquetas. Antes las etiquetas iban en hueso al 90%,
+    # o sea casi en blanco: competian con la cifra. Un gris azulado a media
+    # luz las pone un escalon por debajo, que es donde tienen que estar.
+    "tenue":   (154, 162, 182),
+    "carta":   (22, 29, 45),
+    "base":    (11, 15, 25),
+    "surco":   (255, 255, 255, 30),
 }
 
 # Contorno muy simplificado de la Espana peninsular, en (longitud, latitud).
@@ -446,7 +521,134 @@ def _fmt(v, dec=0, mil="."):
     return e if dec else e.split(",")[0]
 
 
+# ---------------------------------------------------------------------------
+# PRIMITIVAS DE DISENO
+#
+# Todos los graficos del canal se dibujan con estas cuatro cosas, y por eso
+# parecen de la misma familia aunque uno sea un mapa y otro una factura:
+# la misma tarjeta, el mismo galon de acento, la misma barra y el mismo
+# entreletrado en las etiquetas.
+# ---------------------------------------------------------------------------
+_MARGEN = 56          # aire alrededor de la tarjeta para que quepa la sombra
+
+
+@_ft.lru_cache(maxsize=64)
+def _carta(w, h, radio=30, acento=None, alpha=236):
+    """Una tarjeta de datos: sombra, degradado, filo de luz y galon.
+
+    Lo que separa un grafico de television de un rotulo de programador es
+    que el rotulo es un rectangulo plano de color y la tarjeta tiene CUERPO:
+    una sombra que la despega del metraje, un degradado vertical que le da
+    volumen y un filo claro arriba que simula el canto iluminado.
+
+    Va cacheada porque no depende de la animacion -solo del tamano- y se
+    pediria veinticinco veces por segundo. Sin la cache, el desenfoque
+    gaussiano de la sombra se comeria el render.
+    """
+    m = _MARGEN
+    W_, H_ = w + m * 2, h + m * 2
+    img = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
+
+    # 1. la sombra, que es lo que la despega del fondo
+    mascara = Image.new("L", (W_, H_), 0)
+    ImageDraw.Draw(mascara).rounded_rectangle(
+        [m, m + 18, m + w, m + h + 18], radio, fill=170)
+    mascara = mascara.filter(ImageFilter.GaussianBlur(26))
+    sombra = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
+    sombra.putalpha(mascara)
+    img = Image.alpha_composite(img, sombra)
+
+    # 2. el cuerpo, con degradado vertical
+    rampa = np.linspace(1.16, 0.74, h, dtype=np.float32)[:, None, None]
+    cuerpo = np.clip(np.array(PALETA["carta"], np.float32)[None, None, :] * rampa,
+                     0, 255)
+    cuerpo = np.repeat(cuerpo, w, axis=1).astype(np.uint8)
+    tarjeta = Image.fromarray(cuerpo, "RGB").convert("RGBA")
+    mc = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mc).rounded_rectangle([0, 0, w - 1, h - 1], radio, fill=alpha)
+    tarjeta.putalpha(mc)
+    img.alpha_composite(tarjeta, (m, m))
+
+    d = ImageDraw.Draw(img)
+    # 3. el filo de luz del canto superior y el contorno de un pixel
+    d.rounded_rectangle([m, m, m + w - 1, m + h - 1], radio,
+                        outline=(255, 255, 255, 26), width=2)
+    d.line([m + radio, m + 1, m + w - radio, m + 1], fill=(255, 255, 255, 54),
+           width=2)
+    # 4. el galon de acento en el canto izquierdo: la firma del canal
+    if acento:
+        d.rounded_rectangle([m + 1, m + radio - 4, m + 7, m + h - radio + 4],
+                            3, fill=tuple(acento) + (235,))
+    return img
+
+
+def _pon(capa, carta, x, y):
+    """Pega una tarjeta ya dibujada con su esquina util en (x, y)."""
+    capa.alpha_composite(carta, (int(x) - _MARGEN, int(y) - _MARGEN))
+
+
+def _ancho_esp(d, txt, font, esp=0):
+    return sum(d.textlength(c, font=font) for c in txt) + esp * max(0, len(txt) - 1)
+
+
+def _esp(d, xy, txt, font, fill, esp=4, anchor="ls"):
+    """Texto con entreletrado. PIL no tiene tracking y hay que abrirlo a mano.
+
+    Las mayusculas pegadas se leen como un bloque; abiertas cuatro pixeles
+    se leen como un epigrafe. Es el detalle que mas dice "esto lo ha hecho
+    alguien" y cuesta seis lineas.
+    """
+    x, y = xy
+    for c in txt:
+        d.text((x, y), c, font=font, fill=fill, anchor=anchor)
+        x += d.textlength(c, font=font) + esp
+
+
+def _barra(capa, caja, col, radio=None, brillo=0.20):
+    """Una barra con volumen: clara arriba, oscura abajo, cantos redondos."""
+    x0, y0, x1, y1 = (int(v) for v in caja)
+    w, h = max(1, x1 - x0), max(1, y1 - y0)
+    if radio is None:
+        radio = min(h // 2, 18)
+    rampa = np.linspace(1.0 + brillo, 1.0 - brillo * 0.7, h,
+                        dtype=np.float32)[:, None, None]
+    cuerpo = np.clip(np.array(col, np.float32)[None, None, :] * rampa, 0, 255)
+    img = Image.fromarray(np.repeat(cuerpo, w, axis=1).astype(np.uint8),
+                          "RGB").convert("RGBA")
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).rounded_rectangle([0, 0, w - 1, h - 1], radio, fill=248)
+    img.putalpha(mask)
+    capa.alpha_composite(img, (x0, y0))
+
+
+def _surco(d, caja, radio=None):
+    x0, y0, x1, y1 = (int(v) for v in caja)
+    if radio is None:
+        radio = min((y1 - y0) // 2, 18)
+    d.rounded_rectangle([x0, y0, x1, y1], radio, fill=(255, 255, 255, 24))
+    d.rounded_rectangle([x0, y0, x1, y1], radio, outline=(255, 255, 255, 30),
+                        width=1)
+
+
+def _epigrafe(capa, d, x, y, ancho, txt, color=None):
+    """Epigrafe en versalitas mas la regla que llega hasta el borde.
+
+    El texto no llena la tarjeta, asi que sin la regla queda un hueco raro a
+    la derecha. La regla lo cierra y ademas marca la cabecera: es la misma
+    solucion de una portada de informe.
+    """
+    color = color or PALETA["acento"]
+    f = _fuente(29, "media")
+    txt = txt.upper()
+    an = _ancho_esp(d, txt, f, 5)
+    _esp(d, (x, y), txt, f, tuple(color) + (215,), 5)
+    if an + 28 < ancho:
+        d.line([x + an + 20, y - 10, x + ancho, y - 10],
+               fill=(255, 255, 255, 30), width=2)
+
+
 def _panel(d, caja, radio=18, alpha=104):
+    """Compatibilidad: queda para no romper llamadas viejas."""
     d.rounded_rectangle(caja, radio, fill=(8, 12, 22, alpha))
 
 
@@ -465,305 +667,453 @@ def grafico(spec, W, H, u, ancla=0.5):
     if tipo == "contador":
         val = spec["valor"] * e
         px = spec.get("px", 190)
-        f = _fuente(px)
-        fp = _fuente(int(px * 0.42))
+        f = _fuente(px, "negra")
+        fs = _fuente(int(px * 0.32), "media")
         txt = spec.get("prefijo", "") + _fmt(val, spec.get("dec", 0))
         sub = spec.get("sufijo", "")
         an = d.textlength(txt, font=f)
-        ans = d.textlength(sub, font=fp) if sub else 0
-        x = (W - (an + ans + (18 if sub else 0))) / 2
-        d.text((x + 4, cy - px * 0.6 + 5), txt, font=f, fill=(0, 0, 0, 150))
-        d.text((x, cy - px * 0.6), txt, font=f, fill=ac + (255,))
+        hueco = int(px * 0.11) if sub else 0
+        ans = d.textlength(sub, font=fs) if sub else 0
+        pie = spec.get("pie", "")
+        fp = _fuente(40, "media")
+        ap = _ancho_esp(d, pie.upper(), fp, 4) if pie else 0
+
+        ancho = int(max(an + hueco + ans, ap) + 170)
+        alto = int(px * 0.92) + 96 + (76 if pie else 0)
+        x0, y0 = (W - ancho) // 2, cy - alto // 2
+        _pon(capa, _carta(ancho, alto, 32, ac), x0, y0)
+
+        # La cifra y su unidad comparten LINEA DE BASE. Antes el sufijo se
+        # colocaba por su borde superior y "€ por litro" flotaba a media
+        # altura del cero: se leia como dos rotulos distintos pegados.
+        base = y0 + 62 + int(px * 0.70)
+        x = (W - (an + hueco + ans)) / 2
+        d.text((x + 3, base + 4), txt, font=f, fill=(0, 0, 0, 120), anchor="ls")
+        d.text((x, base), txt, font=f, fill=ac + (255,), anchor="ls")
         if sub:
-            d.text((x + an + 18, cy - px * 0.16), sub, font=fp,
-                   fill=PALETA["hueso"] + (235,))
-        if spec.get("pie"):
-            fpie = _fuente(46)
-            t = spec["pie"]
-            d.text(((W - d.textlength(t, font=fpie)) / 2, cy + px * 0.48),
-                   t, font=fpie, fill=PALETA["hueso"] + (200,))
+            d.text((x + an + hueco, base), sub, font=fs,
+                   fill=PALETA["hueso"] + (235,), anchor="ls")
+        # subrayado que crece con la cifra: la cifra no aparece, LLEGA
+        d.rounded_rectangle([x, base + 20, x + max(4, int((an + hueco + ans) * e)),
+                             base + 26], 3, fill=ac + (190,))
+        if pie:
+            _esp(d, ((W - ap) / 2, base + 82), pie.upper(), fp,
+                 PALETA["tenue"] + (225,), 4)
 
     elif tipo == "barras":
         items = spec["items"]
         mx = max(v for _, v in items) or 1
         n = len(items)
-        alto, hueco = 62, 34
-        ancho = int(W * 0.56)
-        x0 = int(W * 0.22)
-        y0 = cy - (n * alto + (n - 1) * hueco) // 2
-        f = _fuente(40)
-        fv = _fuente(46)
-        _panel(d, [x0 - 46, y0 - 40, x0 + ancho + 250, y0 + n * (alto + hueco) + 10])
+        ancho = int(W * 0.58)
+        x0 = (W - ancho) // 2
+        alto_b, hueco = 30, 92
+        fl = _fuente(36, "media")
+        fv = _fuente(52, "negra")
+        titulo = spec.get("titulo", "")
+
+        alto = (56 if titulo else 0) + n * (alto_b + hueco) - hueco + 146
+        y0 = cy - alto // 2
+        _pon(capa, _carta(ancho + 120, alto, 32, ac), x0 - 60, y0)
+
+        yy = y0 + 76
+        if titulo:
+            _epigrafe(capa, d, x0, yy, ancho, titulo)
+            yy += 56
+
         for i, (nom, v) in enumerate(items):
-            y = y0 + i * (alto + hueco)
-            # cada barra arranca un poco despues que la anterior
-            ui = np.clip((u - i * 0.14) / 0.6, 0, 1)
-            largo = int(ancho * (v / mx) * _suave(ui))
+            ui = _suave(float(np.clip((u - i * 0.16) / 0.62, 0, 1)))
             col = tuple(spec.get("destacar", {}).get(nom, ac))
-            d.rounded_rectangle([x0, y, x0 + ancho, y + alto], 8,
-                                fill=PALETA["surco"])
-            # Una barra minuscula tiene que VERSE minuscula, no faltar.
+            # LA ETIQUETA VA ENCIMA DE LA BARRA, no a su izquierda.
             #
-            # En el episodio del hotel se comparan 9.000 hoteles con los 50
-            # que son suyos: 50 sobre 9.000 son ocho pixeles, y con el corte
-            # en 10 no se dibujaba nada. La barra salia vacia y se leia como
-            # un cero o como un fallo, cuando lo que tiene que decir es
-            # "existe, y es ridicula". Esa astilla ES el argumento.
+            # A la izquierda el ancho disponible depende de lo larga que sea
+            # la etiqueta, y "hoteles con su nombre" se salia del encuadre:
+            # en el episodio del hotel se vio "oteles con su nombre". Encima
+            # de la barra cabe siempre, la cifra queda alineada a la derecha
+            # con las de las demas filas, y ademas se lee en el orden en que
+            # se dice: primero de que hablamos, luego cuanto es.
+            d.text((x0, yy), nom, font=fl, fill=PALETA["tenue"] + (235,),
+                   anchor="ls")
+            et = _fmt(v * ui, spec.get("dec", 0)) + spec.get("sufijo", "")
+            d.text((x0 + ancho, yy + 4), et, font=fv, fill=col + (255,),
+                   anchor="rs")
+            _surco(d, [x0, yy + 24, x0 + ancho, yy + 24 + alto_b])
+            largo = int(ancho * (v / mx) * ui)
+            # Una barra minuscula tiene que VERSE minuscula, no faltar: los
+            # 50 hoteles propios sobre 9.000 son ocho pixeles, y esa astilla
+            # ES el argumento del episodio.
             if largo > 2:
-                d.rounded_rectangle([x0, y, x0 + max(8, largo), y + alto],
-                                    8, fill=col + (232,))
-            # La etiqueta se escribe a la IZQUIERDA de la barra, y si es
-            # larga se sale del encuadre: "hoteles con su nombre" salio en
-            # el episodio del hotel como "oteles con su nombre", y encima en
-            # el primer grafico del video, que es el que lleva el argumento.
-            #
-            # Se encoge la fuente hasta que cabe, y si aun asi no cabe, la
-            # etiqueta se mete DENTRO de la barra.
-            fe, ancho_nom = f, d.textlength(nom, font=f)
-            px_e = 40
-            while x0 - 26 - ancho_nom < 12 and px_e > 24:
-                px_e -= 3
-                fe = _fuente(px_e)
-                ancho_nom = d.textlength(nom, font=fe)
-            if x0 - 26 - ancho_nom < 12:
-                d.text((x0 + 16, y + 10), nom, font=fe,
-                       fill=(10, 12, 18, 235))
-            else:
-                d.text((x0 - 26 - ancho_nom, y + 10), nom, font=fe,
-                       fill=PALETA["hueso"] + (230,))
-            d.text((x0 + ancho + 26, y + 6),
-                   _fmt(v * _suave(ui), spec.get("dec", 1)) + spec.get("sufijo", ""),
-                   font=fv, fill=col + (255,))
+                # el minimo es una pastilla corta, no un circulo: un circulo
+                # suelto al principio de la barra se lee como un punto de
+                # carga, no como una cantidad ridicula
+                _barra(capa, [x0, yy + 24, x0 + max(int(alto_b * 1.9), largo),
+                              yy + 24 + alto_b], col)
+            yy += alto_b + hueco
 
     elif tipo == "anillo":
         val = spec["valor"]
         top = spec.get("max", 100)
-        r = int(spec.get("r", 190))
+        r = int(spec.get("r", 180))
         cx = int(spec.get("x", 0.5) * W)
-        gr = 26
+        gr = 30
+        pie = spec.get("pie", "")
+        fp = _fuente(40, "media")
+        ap = _ancho_esp(d, pie.upper(), fp, 4) if pie else 0
+        ancho = int(max(r * 2 + 150, ap + 150))
+        alto = r * 2 + 130 + (70 if pie else 0)
+        _pon(capa, _carta(ancho, alto, 32, ac), cx - ancho // 2, cy - r - 64)
+
         caja = [cx - r, cy - r, cx + r, cy + r]
-        d.ellipse(caja, outline=(255, 255, 255, 46), width=gr)
-        d.arc(caja, -90, -90 + 360 * (val / top) * e, fill=ac + (255,), width=gr)
-        f = _fuente(int(r * 0.44))
+        d.ellipse(caja, outline=(255, 255, 255, 34), width=gr)
+        ang = 360 * (val / top) * e
+        d.arc(caja, -90, -90 + ang, fill=ac + (255,), width=gr)
+        # Remate redondo en las dos puntas del arco. PIL dibuja el arco a
+        # tope cuadrado y se nota: un arco con canto recto parece un trozo
+        # de tarta, uno con canto redondo parece un indicador.
+        for a_ in (-90, -90 + ang):
+            rad = math.radians(a_)
+            px_, py_ = cx + r * math.cos(rad), cy + r * math.sin(rad)
+            d.ellipse([px_ - gr / 2, py_ - gr / 2, px_ + gr / 2, py_ + gr / 2],
+                      fill=ac + (255,))
+        f = _fuente(int(r * 0.46), "negra")
         t = _fmt(val * e, spec.get("dec", 1)) + spec.get("sufijo", "")
-        caja_t = d.textbbox((0, 0), t, font=f)
-        d.text((cx - (caja_t[2] - caja_t[0]) / 2,
-                cy - (caja_t[3] + caja_t[1]) / 2), t, font=f, fill=ac + (255,))
-        if spec.get("pie"):
-            fp = _fuente(44)
-            d.text((cx - d.textlength(spec["pie"], font=fp) / 2, cy + r + 26),
-                   spec["pie"], font=fp, fill=PALETA["hueso"] + (215,))
+        d.text((cx, cy + int(r * 0.16)), t, font=f, fill=ac + (255,), anchor="ms")
+        if pie:
+            _esp(d, (cx - ap / 2, cy + r + 66), pie.upper(), fp,
+                 PALETA["tenue"] + (225,), 4)
 
     elif tipo == "reparto":
         # una barra partida: cuanto se lleva cada uno. Para el capitulo 4.
         val = spec["valor"] / 100.0
-        ancho, alto = int(W * 0.66), 96
+        ancho, alto = int(W * 0.60), 76
         x0 = (W - ancho) // 2
-        f = _fuente(44)
-        d.rounded_rectangle([x0, cy - alto // 2, x0 + ancho, cy + alto // 2], 12,
-                            fill=(255, 255, 255, 40))
-        corte = int(ancho * val * e)
-        d.rounded_rectangle([x0, cy - alto // 2, x0 + max(14, corte), cy + alto // 2],
-                            12, fill=tuple(spec.get("color_a", PALETA["aviso"])) + (240,))
+        f = _fuente(36, "media")
+        fv = _fuente(54, "negra")
+        _pon(capa, _carta(ancho + 120, alto + 136, 32, ac), x0 - 60, cy - 114)
         izq = spec.get("etiqueta_a", "")
         der = spec.get("etiqueta_b", "")
-        d.text((x0, cy - alto), izq, font=f, fill=PALETA["hueso"] + (230,))
-        d.text((x0 + ancho - d.textlength(der, font=f), cy - alto), der,
-               font=f, fill=PALETA["hueso"] + (230,))
-        fv = _fuente(60)
+        d.text((x0, cy - 46), izq, font=f, fill=PALETA["tenue"] + (235,),
+               anchor="ls")
+        d.text((x0 + ancho, cy - 46), der, font=f, fill=PALETA["tenue"] + (235,),
+               anchor="rs")
+        _surco(d, [x0, cy - 22, x0 + ancho, cy - 22 + alto])
+        corte = int(ancho * val * e)
+        col_a = tuple(spec.get("color_a", PALETA["aviso"]))
+        if corte > 2:
+            _barra(capa, [x0, cy - 22, x0 + max(alto, corte), cy - 22 + alto],
+                   col_a)
         t = _fmt(spec["valor"] * e, spec.get("dec", 1)) + "%"
-        d.text((x0 + 20, cy - 30), t, font=fv, fill=(12, 14, 20, 255))
+        an_t = d.textlength(t, font=fv)
+        # La cifra va DENTRO del tramo si cabe, y fuera si no: metida a la
+        # fuerza en un tramo estrecho se sale por el otro lado.
+        if an_t + 44 < corte:
+            d.text((x0 + 26, cy + 34), t, font=fv, fill=(12, 14, 20, 255),
+                   anchor="ls")
+        else:
+            d.text((x0 + corte + 22, cy + 34), t, font=fv, fill=col_a + (255,),
+                   anchor="ls")
 
     elif tipo == "factura":
         # Las lineas de gasto que ya llevas, y el total debajo.
         #
-        # Este es EL grafico del canal y no existia. El formato es "cuanto
-        # cuesta comprar y mantener X", y lo que engancha no es cada cifra
-        # suelta: es ver la cuenta crecer. Un contador dice 75 millones y se
-        # va; la factura dice 75 millones Y ademas te recuerda que ya
-        # llevabas catorce, y por eso te quedas a ver el capitulo siguiente.
+        # Este es EL grafico del canal. El formato es "cuanto cuesta comprar
+        # y mantener X", y lo que engancha no es cada cifra suelta: es ver
+        # la cuenta crecer. Un contador dice 55 millones y se va; la factura
+        # dice 55 millones Y ademas te recuerda que ya llevabas catorce, y
+        # por eso te quedas a ver el capitulo siguiente.
         #
         # Las lineas anteriores entran ya puestas y en gris. La ultima se
         # escribe delante del espectador y en color: es la de este capitulo.
-        lineas = spec.get("lineas", [])        # [(concepto, importe)]
-        f = _fuente(40)
-        fv = _fuente(44)
-        fvt = _fuente(70)
-        ft = _fuente(38)
-        alto_l = 58
-        ancho = int(W * 0.62)
+        lineas = spec.get("lineas", [])
+        ancho = int(W * 0.58)
         x0 = (W - ancho) // 2
-        alto = len(lineas) * alto_l + 142   # 142 y no 118: el titulo se
-                                            # pegaba a la primera linea
-        y0 = cy - alto // 2
-        _panel(d, [x0 - 40, y0 - 34, x0 + ancho + 40, y0 + alto + 16], alpha=150)
+        fc = _fuente(36, "media")
+        fi = _fuente(38, "fuerte")
+        ft = _fuente(31, "media")
+        ftot = _fuente(78, "negra")
+        alto_l = 62
+        titulo = spec.get("titulo", "")
 
-        if spec.get("titulo"):
-            tt = spec["titulo"].upper()
-            d.text((x0, y0 - 6), tt, font=ft, fill=PALETA["hueso"] + (150,))
+        alto = (62 if titulo else 22) + len(lineas) * alto_l + 240
+        y0 = cy - alto // 2
+        _pon(capa, _carta(ancho + 128, alto, 32, ac), x0 - 64, y0)
+
+        yy = y0 + 56
+        if titulo:
+            _epigrafe(capa, d, x0, yy, ancho, titulo)
+            yy += 40
 
         for i, par in enumerate(lineas):
             nom, imp = par[0], par[1]
             nueva = (i == len(lineas) - 1)
-            y = y0 + 56 + i * alto_l
-            # la ultima se escribe sola, de izquierda a derecha
-            ui = 1.0 if not nueva else float(np.clip((u - 0.18) / 0.42, 0, 1))
+            ui = 1.0 if not nueva else float(np.clip((u - 0.16) / 0.40, 0, 1))
             if ui <= 0.02:
                 continue
-            col = ac if nueva else (170, 172, 180)
-            op = int((255 if nueva else 190) * ui)
-            # el concepto, recortado si no cabe
-            txt = nom
-            while d.textlength(txt, font=f) > ancho * 0.62 and len(txt) > 4:
-                txt = txt[:-2]
-            d.text((x0, y), txt, font=f, fill=col + (op,))
+            col = PALETA["hueso"] if nueva else PALETA["tenue"]
+            col_i = ac if nueva else (178, 184, 200)
+            op = int((255 if nueva else 205) * ui)
+            base = yy + 42
+            # marca de la linea nueva: un galon corto en el margen
+            if nueva:
+                d.rounded_rectangle([x0 - 28, base - 28, x0 - 22, base + 6], 3,
+                                    fill=ac + (op,))
             imp_t = imp if isinstance(imp, str) else _fmt(imp, 1)
-            d.text((x0 + ancho - d.textlength(imp_t, font=fv), y - 2), imp_t,
-                   font=fv, fill=col + (op,))
-            if nueva and ui > 0.1:
-                # subrayado que crece con la linea
-                d.line([x0, y + alto_l - 12, x0 + int(ancho * ui),
-                        y + alto_l - 12], fill=ac + (int(120 * ui),), width=2)
+            an_i = d.textlength(imp_t, font=fi)
+            txt = nom
+            while d.textlength(txt, font=fc) > ancho - an_i - 80 and len(txt) > 4:
+                txt = txt[:-2]
+            an_c = d.textlength(txt, font=fc)
+            d.text((x0, base), txt, font=fc, fill=col + (op,), anchor="ls")
+            d.text((x0 + ancho, base), imp_t, font=fi, fill=col_i + (op,),
+                   anchor="rs")
+            # Puntos guia entre el concepto y el importe. Es lo que hace que
+            # se lea como una FACTURA y no como una lista: el ojo sigue los
+            # puntos de un lado al otro y no se pierde de linea.
+            px_, fin = x0 + an_c + 18, x0 + ancho - an_i - 18
+            while px_ < fin:
+                d.ellipse([px_, base - 11, px_ + 3, base - 8],
+                          fill=PALETA["tenue"] + (int(op * 0.5),))
+                px_ += 13
+            yy += alto_l
 
-        # el total, que es lo que de verdad se mira
-        yt = y0 + 56 + len(lineas) * alto_l + 16
-        d.line([x0, yt - 8, x0 + ancho, yt - 8],
-               fill=PALETA["hueso"] + (90,), width=2)
-        ut = float(np.clip((u - 0.55) / 0.4, 0, 1))
+        yt = yy + 24
+        d.line([x0, yt, x0 + ancho, yt], fill=(255, 255, 255, 46), width=2)
+        ut = float(np.clip((u - 0.55) / 0.40, 0, 1))
         if ut > 0.02:
-            et = spec.get("etiqueta_total", "llevas gastado")
-            d.text((x0, yt + 16), et, font=ft,
-                   fill=PALETA["hueso"] + (int(190 * ut),))
+            et = spec.get("etiqueta_total", "llevas gastado").upper()
+            _esp(d, (x0, yt + 44), et, ft, PALETA["tenue"] + (int(210 * ut),), 4)
             tot = spec.get("total", "")
-            d.text((x0 + ancho - d.textlength(tot, font=fvt), yt + 2), tot,
-                   font=fvt, fill=ac + (int(255 * ut),))
+            d.text((x0 + ancho, yt + 104), tot, font=ftot,
+                   fill=ac + (int(255 * ut),), anchor="rs")
 
     elif tipo == "apilada":
-        # Una sola barra partida en tramos, cada uno con su nombre y su
-        # cifra. Es el grafico que faltaba: el contador dice UNA cifra, y
-        # hay frases que son un DESGLOSE -"cincuenta de billete mas
-        # veinticuatro de extras"-. Con un contador esa frase se cuenta a
-        # medias, y con dos contadores seguidos se cuenta dos veces.
-        items = spec["items"]                      # [(nombre, valor), ...]
+        # Una sola barra partida en tramos. Es el grafico que faltaba: el
+        # contador dice UNA cifra, y hay frases que son un DESGLOSE -"de
+        # 7,66 millones que entran, 383 mil se los lleva el letrero"-. Con
+        # un contador esa frase se cuenta a medias.
+        items = spec["items"]
         suma = sum(v for _, v in items) or 1
-        ancho, alto = int(W * 0.72), 104
+        ancho, alto_b = int(W * 0.60), 54
         x0 = (W - ancho) // 2
-        f = _fuente(38)
-        fv = _fuente(52)
-        ftot = _fuente(64)
-        _panel(d, [x0 - 34, cy - alto - 104, x0 + ancho + 34, cy + alto + 44])
-        d.rounded_rectangle([x0, cy - alto // 2, x0 + ancho, cy + alto // 2], 14,
-                            fill=(255, 255, 255, 34))
-        # Cada tramo entra despues del anterior: asi el ojo lee la SUMA y no
-        # el resultado. Si entraran a la vez seria una barra de colores.
+        fl = _fuente(34, "media")
+        fv = _fuente(42, "negra")
+        alto = 92 + alto_b + 46 + len(items) * 54
+        y0 = cy - alto // 2
+        _pon(capa, _carta(ancho + 128, alto, 32, ac), x0 - 64, y0)
+
+        yy = y0 + 58
+        if spec.get("total"):
+            _epigrafe(capa, d, x0, yy, ancho, spec["total"], PALETA["tenue"])
+        yb = yy + 34
+        _surco(d, [x0, yb, x0 + ancho, yb + alto_b])
+        # LA BARRA SE DIBUJA DE UNA PIEZA Y SE RECORTA DESPUES.
+        #
+        # Tramo a tramo, cada uno con su propio redondeo, el ultimo -que
+        # mide el cinco por ciento- salia redondeado por los cuatro lados:
+        # una pastilla suelta pegada al final, no el remate de la barra.
+        # Dibujando los tramos a canto vivo sobre una tira y aplicando la
+        # mascara redondeada al conjunto, las esquinas exteriores salen
+        # redondas, las juntas interiores rectas y el ultimo tramo termina
+        # exactamente donde termina la barra.
+        tira = Image.new("RGBA", (ancho, alto_b), (0, 0, 0, 0))
+        dt = ImageDraw.Draw(tira)
+        rampa = np.linspace(1.20, 0.86, alto_b, dtype=np.float32)
         cursor = 0.0
         for i, (nom, v) in enumerate(items):
-            ui = float(np.clip((u - i * 0.26) / 0.55, 0, 1))
-            largo = ancho * (v / suma) * _suave(ui)
-            xa = x0 + int(cursor)
-            xb = xa + int(largo)
+            ui = _suave(float(np.clip((u - i * 0.24) / 0.52, 0, 1)))
+            largo = ancho * (v / suma) * ui
+            xa, xb = int(cursor), int(cursor + largo)
             col = tuple(spec.get("colores", {}).get(
                 nom, ac if i == 0 else PALETA["aviso"]))
-            if xb - xa > 3:
-                d.rounded_rectangle([xa, cy - alto // 2, xb, cy + alto // 2],
-                                    14 if i in (0, len(items) - 1) else 4,
-                                    fill=col + (240,))
-            if ui > 0.35:
-                op = int(255 * min(1.0, (ui - 0.35) / 0.4))
-                et = _fmt(v, spec.get("dec", 2)) + spec.get("sufijo", "")
-                anc = d.textlength(et, font=fv)
-                cx_t = xa + (xb - xa) / 2.0
-                # Si el tramo es estrecho la cifra no cabe dentro y se saca
-                # debajo con una guia. Metida a la fuerza se solapaba con la
-                # del tramo vecino y quedaban dos numeros encima del otro.
-                if anc + 52 < xb - xa:
-                    d.text((cx_t - anc / 2, cy - 26), et, font=fv,
-                           fill=(10, 12, 18, op))
-                else:
-                    d.line([cx_t, cy + alto // 2, cx_t, cy + alto // 2 + 26],
-                           fill=col + (op,), width=3)
-                    d.text((cx_t - anc / 2, cy + alto // 2 + 30), et, font=fv,
-                           fill=col + (op,))
-                an = d.textlength(nom, font=f)
-                d.text((cx_t - an / 2, cy - alto // 2 - 52), nom, font=f,
-                       fill=PALETA["hueso"] + (int(op * 0.9),))
+            if xb - xa > 0:
+                for fila in range(alto_b):
+                    dt.line([xa, fila, xb, fila],
+                            fill=tuple(int(min(255, c * rampa[fila]))
+                                       for c in col) + (248,))
             cursor += ancho * (v / suma)
-        if spec.get("total"):
-            tt = spec["total"]
-            d.text(((W - d.textlength(tt, font=ftot)) / 2, cy - alto - 90),
-                   tt, font=ftot, fill=PALETA["hueso"] + (245,))
+        mascara = Image.new("L", (ancho, alto_b), 0)
+        ImageDraw.Draw(mascara).rounded_rectangle(
+            [0, 0, ancho - 1, alto_b - 1], alto_b // 2, fill=255)
+        tira.putalpha(Image.fromarray(
+            np.minimum(np.asarray(tira.getchannel("A")),
+                       np.asarray(mascara))))
+        capa.alpha_composite(tira, (x0, yb))
+
+        # LEYENDA DEBAJO, no cifras metidas dentro de los tramos.
+        #
+        # El tramo del letrero es el 5% de la barra: ahi no cabe "383 mil €"
+        # de ninguna manera, y sacarlo con una guia dejaba dos numeros casi
+        # encima del otro. En una fila por concepto siempre cabe, siempre
+        # esta alineado y se puede leer sin pausar.
+        yl = yb + alto_b + 42
+        for i, (nom, v) in enumerate(items):
+            ui = float(np.clip((u - 0.26 - i * 0.20) / 0.38, 0, 1))
+            if ui <= 0.02:
+                continue
+            op = int(255 * ui)
+            col = tuple(spec.get("colores", {}).get(
+                nom, ac if i == 0 else PALETA["aviso"]))
+            d.rounded_rectangle([x0, yl + 8, x0 + 16, yl + 24], 4,
+                                fill=col + (op,))
+            d.text((x0 + 34, yl + 26), nom, font=fl,
+                   fill=PALETA["hueso"] + (int(op * 0.92),), anchor="ls")
+            et = _fmt(v, spec.get("dec", 2)) + spec.get("sufijo", "")
+            d.text((x0 + ancho, yl + 28), et, font=fv, fill=col + (op,),
+                   anchor="rs")
+            yl += 54
 
     elif tipo == "rejilla":
-        # Cuenta de unidades: 189 asientos, 9 marcados. Un porcentaje
-        # dibujado como anillo es abstracto; 189 cuadraditos son 189
-        # asientos y se entienden sin leer la cifra.
+        # Cuenta de unidades: 200 personas, 100 marcadas. Un porcentaje
+        # dibujado como anillo es abstracto; 200 cuadraditos son 200
+        # personas y se entienden sin leer la cifra.
         total = int(spec.get("total", 100))
         marcados = int(spec.get("marcados", 0))
         cols = int(spec.get("cols", 21))
         filas = (total + cols - 1) // cols
-        lado = int(min(W * 0.62 / cols, H * 0.42 / filas))
-        hueco = max(3, lado // 7)
+        lado = int(min(W * 0.56 / cols, H * 0.38 / filas))
+        hueco = max(3, lado // 6)
         paso = lado + hueco
-        gx = (W - (cols * paso - hueco)) // 2
-        gy = cy - (filas * paso - hueco) // 2
+        an_g = cols * paso - hueco
+        al_g = filas * paso - hueco
+        gx = (W - an_g) // 2
+        pie = spec.get("pie", "")
+        fp = _fuente(40, "media")
+        ap = _ancho_esp(d, pie.upper(), fp, 4) if pie else 0
+        alto = al_g + 116 + (74 if pie else 0)
+        gy = cy - alto // 2 + 58
+        _pon(capa, _carta(int(max(an_g, ap) + 148), alto, 32, ac),
+             (W - int(max(an_g, ap) + 148)) // 2, cy - alto // 2)
+
         base = tuple(spec.get("color_base", (255, 255, 255)))
         marca = tuple(spec.get("color_marca", PALETA["aviso"]))
         for k in range(total):
-            fi, co = divmod(k, cols)
+            fi_, co = divmod(k, cols)
             x = gx + co * paso
-            y = gy + fi * paso
-            # Las celdas normales aparecen en ola; las marcadas esperan al
-            # final, que es donde esta el argumento de la frase.
+            y = gy + fi_ * paso
             if k >= total - marcados:
-                uk = float(np.clip((u - 0.62) / 0.3, 0, 1))
+                uk = float(np.clip((u - 0.62) / 0.30, 0, 1))
                 col, op = marca, int(255 * uk)
             else:
-                uk = float(np.clip((u - 0.55 * (k / float(max(1, total)))) / 0.3,
+                uk = float(np.clip((u - 0.55 * (k / float(max(1, total)))) / 0.30,
                                    0, 1))
-                col, op = base, int(96 * uk)
+                col, op = base, int(84 * uk)
             if op <= 2:
                 continue
             d.rounded_rectangle([x, y, x + lado, y + lado],
-                                max(2, lado // 5), fill=col + (op,))
-        if spec.get("pie"):
-            fp = _fuente(48)
-            yy = gy + filas * paso + 30
-            d.text(((W - d.textlength(spec["pie"], font=fp)) / 2, yy),
-                   spec["pie"], font=fp, fill=PALETA["hueso"] + (225,))
+                                max(2, lado // 4), fill=col + (op,))
+        if pie:
+            _esp(d, ((W - ap) / 2, gy + al_g + 62), pie.upper(), fp,
+                 PALETA["hueso"] + (230,), 4)
 
     elif tipo == "flecha":
         # Quien le paga a quien. Dos cajas y una flecha que viaja. El
         # capitulo de Charleroi es exactamente esto y no hay clip de stock
         # que lo cuente: lo unico que hay que ver es que la flecha va al
         # reves de como todo el mundo cree.
-        f = _fuente(46)
-        fe = _fuente(40)
+        f = _fuente(44, "fuerte")
+        fe = _fuente(34, "media")
         cajas = [spec.get("a", ""), spec.get("b", "")]
-        anchos = [max(300, int(d.textlength(c, font=f)) + 76) for c in cajas]
-        alto = 108
-        sep = int(W * 0.20)
+        anchos = [max(300, int(d.textlength(c, font=f)) + 88) for c in cajas]
+        alto = 132
+        sep = int(W * 0.22)
         xa = (W - (anchos[0] + sep + anchos[1])) // 2
         xb = xa + anchos[0] + sep
-        for cx0, an, nom in ((xa, anchos[0], cajas[0]),
-                             (xb, anchos[1], cajas[1])):
-            d.rounded_rectangle([cx0, cy - alto // 2, cx0 + an, cy + alto // 2],
-                                16, fill=(8, 12, 22, 210),
-                                outline=PALETA["hueso"] + (150,), width=3)
-            d.text((cx0 + (an - d.textlength(nom, font=f)) / 2, cy - 30), nom,
-                   font=f, fill=PALETA["hueso"] + (250,))
-        ix, fx = xa + anchos[0] + 18, xb - 18
+        for cx0, an, nom, acc in ((xa, anchos[0], cajas[0], None),
+                                  (xb, anchos[1], cajas[1], ac)):
+            _pon(capa, _carta(an, alto, 20, acc), cx0, cy - alto // 2)
+            d.text((cx0 + an / 2, cy + 15), nom, font=f,
+                   fill=PALETA["hueso"] + (252,), anchor="ms")
+        # La punta se para ANTES del canto de la caja: metida dentro se
+        # solapaba con el galon de acento y los dos rojos se fundian en un
+        # borron.
+        ix, fx = xa + anchos[0] + 22, xb - 46
         if spec.get("invertida"):
             ix, fx = fx, ix
-        pos = ix + (fx - ix) * _suave(u)
-        d.line([ix, cy, pos, cy], fill=ac + (255,), width=9)
+        pos = ix + (fx - ix) * e
         s = 1 if fx > ix else -1
-        d.polygon([(pos + s * 30, cy), (pos - s * 12, cy - 24),
-                   (pos - s * 12, cy + 24)], fill=ac + (255,))
-        if spec.get("etiqueta") and u > 0.55:
-            op = int(255 * min(1.0, (u - 0.55) / 0.35))
+        d.line([ix, cy, pos, cy], fill=ac + (255,), width=8)
+        d.polygon([(pos + s * 28, cy), (pos - s * 12, cy - 22),
+                   (pos - s * 12, cy + 22)], fill=ac + (255,))
+        # un pulso que recorre la linea ya trazada: dice "esto va pasando
+        # ahora", que es justo lo que la frase esta contando
+        pul = ix + (fx - ix) * float((u * 1.6) % 1.0)
+        if abs(pul - ix) < abs(pos - ix):
+            d.ellipse([pul - 7, cy - 7, pul + 7, cy + 7],
+                      fill=PALETA["hueso"] + (210,))
+        if spec.get("etiqueta") and u > 0.5:
+            op = int(255 * min(1.0, (u - 0.5) / 0.35))
             et = spec["etiqueta"]
-            d.text(((W - d.textlength(et, font=fe)) / 2, cy - alto - 30), et,
-                   font=fe, fill=ac + (op,))
+            an_e = d.textlength(et, font=fe)
+            yp = cy - alto // 2 - 60
+            d.rounded_rectangle([(W - an_e) / 2 - 30, yp - 16,
+                                 (W + an_e) / 2 + 30, yp + 50], 33,
+                                fill=(10, 14, 24, int(op * 0.88)),
+                                outline=ac + (int(op * 0.6),), width=2)
+            d.text((W / 2, yp + 36), et, font=fe, fill=ac + (op,), anchor="ms")
+
+    elif tipo == "ilustracion":
+        # EL MEDALLON. Para las frases que no tienen metraje de calidad.
+        #
+        # Un icono suelto en mitad del cuadro flota. Metido en un medallon
+        # -la misma tarjeta de los demas graficos, pero cuadrada y con las
+        # esquinas muy redondas- tiene sitio, sombra y peso, y se corta con
+        # el resto del episodio sin que cante.
+        #
+        # El anillo que lo rodea se cierra mientras el icono se construye:
+        # es lo que convierte un dibujo en motion graphics. Dice "esto se
+        # esta montando ahora", que es exactamente el tono del canal.
+        lado = int(spec.get("lado", 300))
+        x0 = (W - lado) // 2
+        y0 = cy - lado // 2
+        # Redondo, no cuadrado con las esquinas comidas: el anillo que lo
+        # rodea es un circulo y el canto del cuadrado asomaba por detras en
+        # los planos con el fondo claro.
+        _pon(capa, _carta(lado, lado, lado // 2, None), x0, y0)
+
+        cx, cy_m = x0 + lado // 2, y0 + lado // 2
+        r_an = int(lado * 0.60)
+        caja_an = [cx - r_an, cy_m - r_an, cx + r_an, cy_m + r_an]
+        d.ellipse(caja_an, outline=(255, 255, 255, 26), width=5)
+        if e > 0.01:
+            d.arc(caja_an, -90, -90 + 360 * e, fill=ac + (200,), width=5)
+            rad = math.radians(-90 + 360 * e)
+            d.ellipse([cx + r_an * math.cos(rad) - 7,
+                       cy_m + r_an * math.sin(rad) - 7,
+                       cx + r_an * math.cos(rad) + 7,
+                       cy_m + r_an * math.sin(rad) + 7], fill=ac + (235,))
+
+        m = int(lado * 0.22)
+        ICO.dibuja(spec.get("icono", "dato"), d,
+                   (x0 + m, y0 + m, x0 + lado - m, y0 + lado - m),
+                   ac + (255,), float(np.clip(u / 0.92, 0, 1)))
+
+        # La chapa de direccion, arriba a la derecha del medallon. La frase
+        # dice "sube" o "cae" y eso es la mitad de lo que hay que entender;
+        # una flecha lo dice sin gastar una linea de rotulo.
+        dirn = spec.get("flecha")
+        if dirn and u > 0.45:
+            op = int(255 * min(1.0, (u - 0.45) / 0.3))
+            col_f = PALETA["ok"] if dirn == "sube" else PALETA["aviso"]
+            # En la diagonal del anillo, fuera de el. En la esquina de la
+            # caja caia justo encima del trazo del anillo.
+            bx = int(cx + r_an * 0.74)
+            by = int(cy_m - r_an * 0.74)
+            d.ellipse([bx - 38, by - 38, bx + 38, by + 38],
+                      fill=(10, 14, 24, int(op * 0.94)),
+                      outline=col_f + (op,), width=3)
+            # Hacia donde dice la frase. Estaba invertido: "cuando
+            # pierdes" salia con la flecha subiendo.
+            s = 1 if dirn == "sube" else -1
+            d.line([bx - 15, by + 15 * s, bx + 15, by - 15 * s],
+                   fill=col_f + (op,), width=6)
+            d.polygon([(bx + 21, by - 21 * s), (bx + 2, by - 17 * s),
+                       (bx + 17, by - 2 * s)], fill=col_f + (op,))
+
+        if spec.get("nota"):
+            f = _fuente(30, "media")
+            nota = spec["nota"].upper()
+            an = _ancho_esp(d, nota, f, 5)
+            _esp(d, ((W - an) / 2, y0 + lado + 78), nota, f,
+                 PALETA["tenue"] + (215,), 5)
 
     elif tipo == "mapa":
         # Silueta de la Espana peninsular con los aeropuertos encendiendose
@@ -785,20 +1135,19 @@ def grafico(spec, W, H, u, ancla=0.5):
             return (cx + (lon - lon_c) * kx * escala,
                     cy - (lat - lat_c) * escala)
 
-        d.polygon([proyecta(*q) for q in pts], fill=(255, 255, 255, 26),
-                  outline=PALETA["hueso"] + (120,))
-        fp = _fuente(34)
+        contorno = [proyecta(*q) for q in pts]
+        d.polygon(contorno, fill=(255, 255, 255, 22))
+        d.line(contorno + [contorno[0]], fill=PALETA["hueso"] + (130,), width=3)
+        fp = _fuente(32, "media")
         # Asturias y Santander estan a 180 km, y en pantalla el nombre de
         # una acababa justo encima del circulo de la otra. Se reservan
-        # PRIMERO todos los circulos -si solo se guardan los textos ya
-        # escritos, el nombre de Asturias no sabe que Santander va a poner
-        # un punto ahi- y luego cada nombre baja hasta encontrar hueco.
+        # PRIMERO todos los circulos y luego cada nombre baja hasta hueco.
         ocupadas = []
         for m in spec.get("puntos", []):
-            px, py = proyecta(m[1], m[2])
-            ocupadas.append((px - 22, py - 22, px + 22, py + 22))
+            px_, py_ = proyecta(m[1], m[2])
+            ocupadas.append((px_ - 22, py_ - 22, px_ + 22, py_ + 22))
 
-        def hueco(x, y, ancho, alto=40):
+        def hueco_libre(x, y, ancho, alto=40):
             for _ in range(6):
                 caja = (x, y, x + ancho, y + alto)
                 if not any(caja[0] < o[2] and o[0] < caja[2]
@@ -818,32 +1167,175 @@ def grafico(spec, W, H, u, ancla=0.5):
             if ui <= 0.01:
                 continue
             if off:
-                # Se apaga: del color de acento al gris, y el halo se
-                # contrae. Un punto que solo cambia de color no se lee a
-                # esta escala; uno que ademas encoge, si.
                 col = tuple(int(a + (b - a) * _suave(ui))
                             for a, b in zip(ac, (120, 120, 128)))
                 r = int(15 - 6 * _suave(ui))
-                halo = int(38 * (1 - _suave(ui)))
+                brillo = int(38 * (1 - _suave(ui)))
                 op = int(240 * (1 - 0.55 * _suave(ui)))
             else:
-                col, r, halo, op = ac, 13, 30, int(240 * ui)
-            if halo > 2:
-                d.ellipse([x - r - halo, y - r - halo,
-                           x + r + halo, y + r + halo], fill=col + (46,))
+                col, r, brillo, op = ac, 13, 30, int(240 * ui)
+            if brillo > 2:
+                d.ellipse([x - r - brillo, y - r - brillo,
+                           x + r + brillo, y + r + brillo], fill=col + (46,))
             d.ellipse([x - r, y - r, x + r, y + r], fill=col + (255,))
-            ex = x + r + 12
-            ey = hueco(ex, y - 20, d.textlength(nom, font=fp))
-            if ey != y - 20:                 # ha bajado: una guia hasta el punto
+            ex = x + r + 14
+            an_n = d.textlength(nom, font=fp)
+            ey = hueco_libre(ex, y - 20, an_n)
+            if ey != y - 20:
                 d.line([x + r + 4, y, ex - 4, ey + 18],
                        fill=PALETA["hueso"] + (int(op * 0.5),), width=2)
-            d.text((ex, ey), nom, font=fp, fill=PALETA["hueso"] + (op,))
+            # chapita oscura detras del nombre: sobre el relleno del mapa un
+            # texto claro se pierde
+            d.rounded_rectangle([ex - 8, ey - 2, ex + an_n + 10, ey + 38], 8,
+                                fill=(10, 14, 24, int(op * 0.72)))
+            d.text((ex, ey + 30), nom, font=fp, fill=PALETA["hueso"] + (op,),
+                   anchor="ls")
 
     return capa
 
 
 def compon_grafico(arr, capa, entrada, u_ent, u_sal, W, H):
     return compon_texto(arr, capa, u_ent, u_sal, entrada, W, H)
+
+
+# ---------------------------------------------------------------------------
+# EL PLATO: EL FONDO DE MARCA
+#
+# Un grafico encima de un clip de stock siempre pierde. El clip se mueve, tiene
+# detalle en todas las frecuencias y trae su propia luz, asi que la tarjeta
+# necesita opacidad y sombra solo para poder leerse, y aun asi el ojo se va al
+# metraje. Y encima obliga a buscar un plano que "pegue" con una cifra, que es
+# de donde salian los planos que no venian a cuento.
+#
+# Cuando lo que importa es el dato, el fondo no tiene que competir: tiene que
+# ser del canal. Esto es un plato virtual -degradado, reticula, marca de agua,
+# el rotulo del canal abajo y una luz que cruza- dibujado entero por codigo,
+# sin un solo asset. El espectador nota que el video CAMBIA DE MODO cuando
+# llega una cifra, que es exactamente lo que se quiere decir.
+#
+# Si algun dia hay un logotipo de verdad en assets/brand/logo.png, se usa ese
+# en vez del monograma dibujado. Hasta entonces, el monograma.
+# ---------------------------------------------------------------------------
+CANAL = "PROBLEMAS MILLONARIOS"
+SERIE = "EL PRECIO DE SER EL DUEÑO"
+
+_LOGO = _os.path.normpath(_os.path.join(_AQUI, "..", "assets", "brand", "logo.png"))
+
+
+@_ft.lru_cache(maxsize=4)
+def _plato_fondo(W, H, acento):
+    """La parte quieta del plato. Se calcula una vez por episodio."""
+    y = np.linspace(0, 1, H, dtype=np.float32)[:, None]
+    x = np.linspace(0, 1, W, dtype=np.float32)[None, :]
+    # Degradado radial descentrado hacia arriba: el centro optico de un plano
+    # no esta en el centro geometrico, esta un poco por encima.
+    r = np.sqrt(((x - 0.5) * 1.02) ** 2 + ((y - 0.44) * 1.32) ** 2)
+    v = np.clip(1.0 - r * 0.92, 0.0, 1.0) ** 1.35
+    base = np.stack([9 + v * 30, 13 + v * 38, 24 + v * 54], -1).astype(np.float32)
+
+    capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(capa)
+
+    # Marca de agua: el simbolo del euro, enorme y a punto de no verse. Es lo
+    # que hace que un fondo liso deje de parecer una diapositiva en blanco.
+    # A 0,80 de ancho el simbolo se salia por la derecha y lo que quedaba
+    # en cuadro no se reconocia: se leia como una mancha clara. Entero y algo
+    # mas pequeno se lee como lo que es sin pedir atencion.
+    d.text((int(W * 0.74), int(H * 0.54)), "\u20ac", font=_fuente(int(H * 1.18), "negra"),
+           fill=(255, 255, 255, 10), anchor="mm")
+
+    # La banda de abajo: el rotulo del canal. Es el "banner".
+    yb = int(H * 0.915)
+    d.line([int(W * 0.055), yb - 36, int(W * 0.945), yb - 36],
+           fill=(255, 255, 255, 26), width=2)
+
+    logo, marca_an = None, 0
+    if _os.path.exists(_LOGO):
+        try:
+            logo = Image.open(_LOGO).convert("RGBA")
+            k = 62.0 / max(1, logo.height)
+            logo = logo.resize((max(1, int(logo.width * k)), 62), Image.LANCZOS)
+            marca_an = logo.width + 22
+        except OSError:
+            logo = None
+    if logo is None:
+        # Monograma: el euro dentro de un anillo. Que sea un circulo y no un
+        # cuadrado no es un capricho: al lado de un rotulo en caja alta, un
+        # cuadrado se lee como una vineta y un circulo se lee como un sello.
+        cxm, cym, rm = int(W * 0.055) + 30, yb + 4, 30
+        d.ellipse([cxm - rm, cym - rm, cxm + rm, cym + rm],
+                  outline=tuple(acento) + (225,), width=4)
+        d.text((cxm, cym + 1), "\u20ac", font=_fuente(38, "negra"),
+               fill=tuple(acento) + (245,), anchor="mm")
+        marca_an = 82
+
+    xm = int(W * 0.055) + marca_an
+    _esp(d, (xm, yb - 2), CANAL, _fuente(29, "negra"), PALETA["hueso"] + (215,), 6)
+    _esp(d, (xm, yb + 30), SERIE, _fuente(21, "media"), PALETA["tenue"] + (170,), 5)
+    if logo is not None:
+        capa.alpha_composite(logo, (int(W * 0.055), yb - 40))
+
+    a = np.asarray(capa, np.float32)
+    al = a[..., 3:4] / 255.0
+    return (base * (1 - al) + a[..., :3] * al).astype(np.float32)
+
+
+@_ft.lru_cache(maxsize=4)
+def _plato_reticula(W, H, paso=92):
+    """Trama de lineas finas, con un cuadro de margen para poder moverla."""
+    m = paso
+    g = Image.new("L", (W + m, H + m), 0)
+    d = ImageDraw.Draw(g)
+    for i in range(0, W + m, paso):
+        d.line([i, 0, i, H + m], fill=13, width=1)
+    for j in range(0, H + m, paso):
+        # cada cuarta linea, mas marcada: la jerarquia tambien va en el fondo
+        d.line([0, j, W + m, j], fill=26 if (j // paso) % 4 == 0 else 13, width=1)
+    return np.asarray(g, np.float32)
+
+
+def plato(W, H, t, acento=None, titulo="", fase=0.0):
+    """Un fotograma del plato del canal. `t` va de 0 a 1 a lo largo del plano.
+
+    Lo que se mueve: la reticula deriva despacio en diagonal y una luz calida
+    cruza el plano de izquierda a derecha una sola vez. Nada mas. Un fondo de
+    datos que se mueve mucho compite con el dato; lo que tiene que hacer es no
+    estar quieto del todo, que es distinto.
+    """
+    acento = tuple(acento or PALETA["acento"])
+    arr = _plato_fondo(W, H, acento).copy()
+
+    # `fase` da variedad entre planos sin cambiar nada del diseno: la
+    # reticula deriva hacia un lado o hacia el otro y la luz entra por la
+    # izquierda o por la derecha. Veintitres tarjetas identicas se leen como
+    # una plantilla; las mismas con la luz cambiada, como planos distintos.
+    s = -1.0 if fase >= 0.5 else 1.0
+    paso = 92
+    g = _plato_reticula(W, H, paso)
+    dx = int(((t * 0.55 * s) % 1.0) * paso)
+    dy = int(((1.0 - t * 0.38 * s) % 1.0) * paso)
+    arr += g[dy:dy + H, dx:dx + W][..., None]
+
+    # La luz que cruza, separable -un perfil en x por otro en y- para no
+    # calcular una gaussiana de dos millones de puntos por fotograma.
+    cx = (-0.25 + 1.5 * t) if s > 0 else (1.25 - 1.5 * t)
+    px = np.exp(-(((np.linspace(0, 1, W, dtype=np.float32) - cx) / 0.30) ** 2))
+    py = np.exp(-(((np.linspace(0, 1, H, dtype=np.float32) - 0.40) / 0.75) ** 2))
+    arr += np.outer(py, px)[..., None] * (np.array(acento, np.float32) / 255.0) * 26.0
+
+    if titulo:
+        capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        d = ImageDraw.Draw(capa)
+        x0, y0 = int(W * 0.09), int(H * 0.135)
+        d.rounded_rectangle([x0 - 4, y0 - 26, x0 + 4, y0 + 6], 3,
+                            fill=acento + (235,))
+        _esp(d, (x0 + 22, y0), titulo.upper(), _fuente(30, "media"),
+             PALETA["hueso"] + (205,), 5)
+        a = np.asarray(capa, np.float32)
+        al = a[..., 3:4] / 255.0
+        arr = arr * (1 - al) + a[..., :3] * al
+
+    return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
 
 
 # ---------------------------------------------------------------------------

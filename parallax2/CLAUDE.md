@@ -274,6 +274,48 @@ que durante meses todos los gráficos se renderizaron con la de reserva.
 Si al menos el 40% de las escenas con números no lleva gráfico,
 `validar.py` avisa.
 
+## El tema gráfico sale de las MINIATURAS
+
+Las miniaturas del canal son papel cuadriculado, titulares en tinta negra y
+rojo para lo que importa, con flechas rojas apuntando al objeto. El vídeo iba
+en azul noche y ámbar. O sea: lo que la gente clica y lo que la gente ve no se
+parecían, y eso es medio canal tirado — la miniatura es la promesa.
+
+El tema se declara en la raíz del guion y por defecto es `papel`:
+
+```json
+"tema": "papel"
+```
+
+`efectos.TEMAS` tiene los dos (`papel` y `nocturno`) y `efectos.tema(nombre)`
+cambia de uno a otro vaciando las cachés de color. Lo aplican `render.py`,
+`comprobar_mg.py` y `vestir.py` antes de dibujar nada.
+
+**Las fichas no llevan RGB.** Llevan el PAPEL que hace ese color, y el tema
+decide de qué color es:
+
+| papel | en `papel` | qué es |
+|---|---|---|
+| `acento` | rojo | la cifra de la que habla la frase |
+| `serie` | tinta | la barra de referencia, lo que NO es el punto |
+| `tenue` | gris | etiquetas, pies, líneas anteriores de una factura |
+| `hueso` | tinta | el texto normal |
+
+Y el tipo decide el defecto: un contador o una factura van en `acento`
+—la cifra es el punto—, unas barras en `serie`, y el rojo se reserva para la
+que se destaca. Si ves un `[255, 196, 90]` en una ficha, es de antes: se
+traduce solo, pero cámbialo.
+
+Dos cosas que hay que recordar al tocar el tema claro:
+
+- **Las partículas y la viñeta se SUMAN como luz.** Sobre negro son polvo
+  flotando; sobre papel son manchas blancas que se comen la esquina. `render`
+  las desactiva en los planos de plató claro.
+- **El halo de los rótulos necesita que el lienzo sea de su color.** Un
+  desenfoque gaussiano promedia los cuatro canales por separado, así que un
+  halo blanco sobre un lienzo `(0,0,0,0)` se extiende con el RGB del lienzo:
+  sale una mancha gris debajo del rótulo. Alfa sin premultiplicar.
+
 ## El plató: cuando el fondo tiene que ser la marca
 
 Un gráfico encima de un clip de stock siempre pierde. El clip se mueve, tiene

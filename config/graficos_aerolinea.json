@@ -14,11 +14,7 @@
       ],
       "total": "14,4 M$",
       "etiqueta_total": "llevas gastado",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.4,
@@ -45,11 +41,7 @@
       ],
       "total": "114,4 M$",
       "etiqueta_total": "llevas gastado",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
@@ -74,19 +66,10 @@
         ]
       ],
       "destacar": {
-        "un slot": [
-          255,
-          110,
-          86
-        ]
+        "un slot": "acento"
       },
       "sufijo": " M$",
       "dec": 0,
-      "color": [
-        255,
-        196,
-        90
-      ],
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.2,
@@ -105,15 +88,11 @@
       "a": "AEROPUERTO",
       "b": "TÚ",
       "etiqueta": "te paga por aterrizar ahí",
-      "color": [
-        255,
-        110,
-        86
-      ],
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 1.6,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color": "acento"
     },
     "fondo": {
       "titulo": "quién le paga a quién"
@@ -142,11 +121,7 @@
       ],
       "total": "114,4 M$",
       "etiqueta_total": "llevas gastado",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
@@ -164,15 +139,12 @@
       "marcados": 95,
       "cols": 21,
       "pie": "medio vacío cuesta lo mismo que lleno",
-      "color_marca": [
-        255,
-        110,
-        86
-      ],
+      "color_marca": "acento",
       "y": 0.46,
       "retardo": 0.4,
       "duracion": 2.4,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color_base": "tenue"
     },
     "fondo": {
       "titulo": "189 asientos"
@@ -205,11 +177,7 @@
       ],
       "total": "114,4 M$",
       "etiqueta_total": "y sumando por hora",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.8,
@@ -234,16 +202,8 @@
         ]
       ],
       "colores": {
-        "billete": [
-          255,
-          196,
-          90
-        ],
-        "extras": [
-          255,
-          110,
-          86
-        ]
+        "billete": "serie",
+        "extras": "acento"
       },
       "total": "74,60 € por pasajero",
       "sufijo": " €",
@@ -272,16 +232,8 @@
         ]
       ],
       "colores": {
-        "coste": [
-          120,
-          130,
-          150
-        ],
-        "te queda": [
-          255,
-          196,
-          90
-        ]
+        "coste": "tenue",
+        "te queda": "serie"
       },
       "total": "de cada 74,60 €",
       "sufijo": " €",
@@ -343,11 +295,7 @@
           false
         ]
       ],
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.52,
       "retardo": 0.4,
       "duracion": 3.0,

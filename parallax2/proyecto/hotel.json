@@ -6,6 +6,7 @@
     "fps": 25,
     "ppm": 140
   },
+  "tema": "papel",
   "estilo": "metraje real",
   "escenas": [
     {
@@ -58,11 +59,6 @@
         "tipo": "ilustracion",
         "icono": "hotel",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 0.9,
@@ -73,15 +69,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -106,11 +103,6 @@
         "tipo": "ilustracion",
         "icono": "hotel",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.4,
@@ -121,15 +113,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -159,19 +152,10 @@
           ]
         ],
         "destacar": {
-          "suyos": [
-            255,
-            110,
-            86
-          ]
+          "suyos": "acento"
         },
         "sufijo": "",
         "dec": 0,
-        "color": [
-          255,
-          196,
-          90
-        ],
         "y": 0.5,
         "retardo": 0.45,
         "duracion": 2.4,
@@ -180,11 +164,7 @@
       "composicion": "derecha",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_color": [
-        255,
-        196,
-        90
-      ],
+      "fondo_color": null,
       "fondo_titulo": "el negocio no es el que crees"
     },
     {
@@ -345,11 +325,6 @@
         "tipo": "ilustracion",
         "icono": "hotel",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -360,15 +335,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -665,11 +641,6 @@
         "tipo": "ilustracion",
         "icono": "euro",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -680,15 +651,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -1192,11 +1164,7 @@
         ],
         "total": "55 M€",
         "etiqueta_total": "llevas puesto",
-        "color": [
-          255,
-          196,
-          90
-        ],
+        "color": "acento",
         "y": 0.5,
         "retardo": 0.4,
         "duracion": 2.4,
@@ -1205,11 +1173,7 @@
       "composicion": "derecha",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_color": [
-        255,
-        196,
-        90
-      ]
+      "fondo_color": "acento"
     },
     {
       "id": "cap1_10",
@@ -1228,11 +1192,6 @@
         "tipo": "ilustracion",
         "icono": "alerta",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -1243,15 +1202,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -1274,11 +1234,6 @@
         "tipo": "ilustracion",
         "icono": "alerta",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -1289,15 +1244,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -1649,11 +1605,6 @@
         "tipo": "ilustracion",
         "icono": "hotel",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -1664,15 +1615,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -1693,15 +1645,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -1712,11 +1665,6 @@
         "tipo": "ilustracion",
         "icono": "hotel",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -1739,15 +1687,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -1758,11 +1707,6 @@
         "tipo": "ilustracion",
         "icono": "hotel",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -1909,23 +1853,15 @@
         "a": "TÚ",
         "b": "LA CADENA",
         "etiqueta": "un % de todo lo que entre",
-        "color": [
-          255,
-          110,
-          86
-        ],
         "y": 0.5,
         "retardo": 0.4,
         "duracion": 1.8,
-        "entrada": "golpe"
+        "entrada": "golpe",
+        "color": "acento"
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_color": [
-        255,
-        110,
-        86
-      ],
+      "fondo_color": "acento",
       "fondo_titulo": "quién cobra primero"
     },
     {
@@ -2052,11 +1988,6 @@
         "tipo": "ilustracion",
         "icono": "euro",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -2068,15 +1999,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -2097,15 +2029,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -2116,11 +2049,6 @@
         "tipo": "ilustracion",
         "icono": "euro",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -2146,11 +2074,6 @@
         "tipo": "ilustracion",
         "icono": "contrato",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -2161,15 +2084,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -2192,11 +2116,6 @@
         "tipo": "ilustracion",
         "icono": "contrato",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -2207,15 +2126,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -2574,15 +2494,12 @@
         "marcados": 100,
         "cols": 20,
         "pie": "200 personas para 100 habitaciones",
-        "color_marca": [
-          255,
-          196,
-          90
-        ],
+        "color_marca": "acento",
         "y": 0.46,
         "retardo": 0.4,
         "duracion": 2.4,
-        "entrada": "golpe"
+        "entrada": "golpe",
+        "color_base": "tenue"
       },
       "_lat_ent": -1.0,
       "composicion": "centrado",
@@ -2987,11 +2904,6 @@
         "tipo": "ilustracion",
         "icono": "calendario",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -3002,15 +2914,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -3031,15 +2944,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -3050,11 +2964,6 @@
         "tipo": "ilustracion",
         "icono": "calendario",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -3080,11 +2989,6 @@
         "tipo": "ilustracion",
         "icono": "calendario",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -3095,15 +2999,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -3320,11 +3225,6 @@
         "tipo": "ilustracion",
         "icono": "cama",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -3335,15 +3235,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -3364,15 +3265,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -3383,11 +3285,6 @@
         "tipo": "ilustracion",
         "icono": "cama",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -3972,16 +3869,8 @@
           ]
         ],
         "colores": {
-          "te queda para todo lo demás": [
-            120,
-            130,
-            150
-          ],
-          "el letrero": [
-            255,
-            110,
-            86
-          ]
+          "te queda para todo lo demás": "tenue",
+          "el letrero": "acento"
         },
         "total": "de 7,66 M€ que entran",
         "sufijo": " mil €",
@@ -4348,15 +4237,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -4367,11 +4257,6 @@
         "tipo": "ilustracion",
         "icono": "acuerdo",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -4397,11 +4282,6 @@
         "tipo": "ilustracion",
         "icono": "acuerdo",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -4412,15 +4292,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -4727,11 +4608,6 @@
         "tipo": "ilustracion",
         "icono": "contrato",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.5699999999999998,
@@ -4742,15 +4618,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -4773,11 +4650,6 @@
         "tipo": "ilustracion",
         "icono": "contrato",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,
@@ -4788,15 +4660,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -5227,25 +5100,17 @@
         ],
         "total": "55 M€",
         "etiqueta_total": "tuyo es el riesgo",
-        "color": [
-          255,
-          110,
-          86
-        ],
         "y": 0.5,
         "retardo": 0.4,
         "duracion": 3.0,
-        "entrada": "golpe"
+        "entrada": "golpe",
+        "color": "acento"
       },
       "_lat_ent": -1.0,
       "composicion": "derecha",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_color": [
-        255,
-        110,
-        86
-      ]
+      "fondo_color": "acento"
     },
     {
       "id": "cierre_09",
@@ -5279,15 +5144,16 @@
         "px": 96,
         "y": 0.64,
         "acento": [
-          255,
-          176,
-          60
+          206,
+          32,
+          38
         ],
         "color": [
-          237,
-          231,
-          218
+          24,
+          24,
+          28
         ],
+        "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
       },
@@ -5298,11 +5164,6 @@
         "tipo": "ilustracion",
         "icono": "persona",
         "lado": 300,
-        "color": [
-          255,
-          176,
-          60
-        ],
         "y": 0.32,
         "retardo": 0.22,
         "duracion": 1.6,

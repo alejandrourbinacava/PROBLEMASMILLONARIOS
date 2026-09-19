@@ -181,6 +181,7 @@ def main():
     ap.add_argument("guion")
     ap.add_argument("--salida", required=True)
     ap.add_argument("--pool", default="pool_banco_revisado.json")
+    ap.add_argument("--tema", choices=["papel", "nocturno"], default="papel")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -189,6 +190,10 @@ def main():
 
     global EPISODIO
     EPISODIO = os.path.splitext(os.path.basename(a.salida))[0]
+
+    # El tema del guion manda sobre los colores que se escriban aqui.
+    import efectos as _FX0
+    _FX0.tema(a.tema)
 
     g = json.load(io.open(os.path.join(AQUI, a.guion), encoding="utf-8"))
     pool = json.load(io.open(os.path.join(AQUI, a.pool), encoding="utf-8"))
@@ -388,7 +393,6 @@ def main():
                     "tipo": "ilustracion",
                     "icono": ICO.elige(frase, ICO.del_tema(EPISODIO)),
                     "lado": 300,
-                    "color": AMBAR,
                     "y": 0.32, "retardo": 0.22,
                     "duracion": max(0.9, min(1.6, esc["duracion"] - 0.5)),
                     "entrada": "golpe",
@@ -399,9 +403,15 @@ def main():
                 alto_txt, y_txt = 96, 0.64
             else:
                 alto_txt, y_txt = 112, 0.47
+            # La tinta sale del TEMA, no de una constante. Sobre el plato de
+            # papel, hueso sobre claro con halo negro alrededor es ilegible.
+            import efectos as _FX
+            claro = not _FX.PALETA.get("oscura", True)
             esc["texto_pantalla"] = {
                 "texto": acentua(txt), "px": alto_txt, "y": y_txt,
-                "acento": AMBAR, "color": PAPEL,
+                "acento": list(_FX.PALETA["acento"]) if claro else AMBAR,
+                "color": list(_FX.PALETA["hueso"]) if claro else PAPEL,
+                "halo": "claro" if claro else "oscuro",
                 "estilo": "sube", "retardo": 0.26,
             }
             n_tar += 1

@@ -34,6 +34,9 @@ def main():
     a = ap.parse_args()
 
     g = json.load(io.open(os.path.join(AQUI, a.guion), encoding="utf-8"))
+    # Con el MISMO tema con el que se va a renderizar. Comprobar en ambar lo
+    # que va a salir en rojo es comprobar otra cosa.
+    FX.tema(g.get("tema", "papel"))
     fallos = []
     n_g = n_t = 0
 

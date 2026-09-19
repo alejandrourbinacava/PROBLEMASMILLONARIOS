@@ -490,9 +490,16 @@ def render_escena(esc, cfg, base, ff):
         capas.append(L)
 
     # efectos de pantalla y texto de la escena
-    sistemas = [FX.Particulas(nom, W, H, semilla=esc["id"])
-                for nom in esc.get("efectos", []) if nom in FX.PARTICULAS]
-    con_fuga = "fuga_luz" in esc.get("efectos", [])
+    # Las particulas y la fuga de luz se SUMAN al fotograma. Sobre un plano
+    # oscuro son polvo flotando; sobre el plato de papel son manchas blancas
+    # que se comen media esquina. En un plano de papel no va ninguna de las
+    # dos, y la vineta tampoco: oscurecer los bordes de una hoja no da
+    # profundidad, da aspecto de fotocopia.
+    sobre_papel = bool(fondo) and not FX.PALETA.get("oscura", True)
+    sistemas = [] if sobre_papel else [
+        FX.Particulas(nom, W, H, semilla=esc["id"])
+        for nom in esc.get("efectos", []) if nom in FX.PARTICULAS]
+    con_fuga = (not sobre_papel) and "fuga_luz" in esc.get("efectos", [])
     grade = esc.get("grade", "neutro")
     graf = esc.get("grafico")
     txt = esc.get("texto_pantalla")
@@ -512,9 +519,11 @@ def render_escena(esc, cfg, base, ff):
         px=txt.get("px", 132),
         color=tuple(txt.get("color", (255, 255, 255))),
         acento=tuple(txt["acento"]) if txt.get("acento") else None,
-        pos=(txt.get("x", "center"), txt.get("y", 0.5))) if txt else None
+        pos=(txt.get("x", "center"), txt.get("y", 0.5)),
+        halo=txt.get("halo", "oscuro")) if txt else None
 
-    vg = vineta(W, H, LOOK["vineta"]) if LOOK["vineta"] else None
+    vg = None if sobre_papel else (
+        vineta(W, H, LOOK["vineta"]) if LOOK["vineta"] else None)
 
     t0, t1 = esc.get("_tramo", (0.0, 1.0))
     nlat = max(1, int(FPS * DUR_LATIGO))
@@ -644,6 +653,8 @@ def render_escena(esc, cfg, base, ff):
 
 def main(guion_path, salida):
     guion = preparar(json.load(open(guion_path, encoding="utf-8")))
+    # El tema grafico, ANTES de dibujar el primer fotograma.
+    FX.tema(guion.get("tema", "papel"))
     base = os.path.dirname(os.path.abspath(guion_path))
     cfg = {**dict(w=1920, h=1080, fps=25), **guion.get("lienzo", {})}
 

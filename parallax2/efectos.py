@@ -381,13 +381,14 @@ def _fuente(px, peso="negra"):
 
 
 def render_texto(txt, W, H, px=132, color=(255, 255, 255),
-                 acento=None, pos=("center", 0.5)):
+                 acento=None, pos=("center", 0.5), halo="oscuro"):
     """
     Dibuja el texto una sola vez en una RGBA del tamano del lienzo. Luego se
     anima moviendo esa imagen, que es mucho mas barato que redibujar.
     Las palabras entre *asteriscos* van en color de acento.
     """
-    capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    capa = Image.new("RGBA", (W, H),
+                     (255, 255, 255, 0) if halo == "claro" else (0, 0, 0, 0))
     d = ImageDraw.Draw(capa)
     f = _fuente(px)
     partes, act, en_acento = [], "", False
@@ -418,28 +419,57 @@ def render_texto(txt, W, H, px=132, color=(255, 255, 255),
     ax, ay = pos
     x = (W - ancho) / 2 if ax == "center" else (
         W * 0.09 if ax == "left" else W * 0.91 - ancho)
+    x0_ini = x
     y = ay * H - alto / 2
 
     # Un rotulo sobre metraje real no se lee con una sombra dura: el fondo se
     # mueve y tiene detalle en todas las frecuencias. Lo que lo separa es un
     # HALO oscuro y difuso alrededor -el "scrim" de television- y encima la
     # sombra de siempre. Sobre arte generado sobraba; sobre video no.
-    halo = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    dh = ImageDraw.Draw(halo)
+    # Sobre papel el halo va CLARO: un halo negro alrededor de una letra
+    # negra la emborrona en vez de separarla del fondo.
+    claro = (halo == "claro")
+    col_halo = (255, 255, 255, 225) if claro else (0, 0, 0, 210)
+    # EL FONDO DE LA CAPA TIENE QUE SER DEL COLOR DEL HALO, aunque sea
+    # invisible. Un desenfoque gaussiano promedia los cuatro canales por
+    # separado: si el lienzo es (0,0,0,0) y el texto blanco, lo que se
+    # extiende alrededor es alfa del texto con el RGB del lienzo, o sea
+    # NEGRO. El halo claro salia como una mancha gris debajo del rotulo.
+    # Es el fallo de toda la vida de no premultiplicar el alfa.
+    vacio = (255, 255, 255, 0) if claro else (0, 0, 0, 0)
+    capa_halo = Image.new("RGBA", (W, H), vacio)
+    dh = ImageDraw.Draw(capa_halo)
     xh = x
     for parte, _ in partes:
-        dh.text((xh, y), parte, font=f, fill=(0, 0, 0, 210))
+        dh.text((xh, y), parte, font=f, fill=col_halo)
         xh += dh.textlength(parte, font=f)
-    halo = halo.filter(ImageFilter.GaussianBlur(px * 0.22))
-    capa = Image.alpha_composite(capa, halo)
-    capa = Image.alpha_composite(capa, halo)      # dos pasadas: mas denso
+    capa_halo = capa_halo.filter(ImageFilter.GaussianBlur(px * 0.22))
+    capa = Image.alpha_composite(capa, capa_halo)
+    capa = Image.alpha_composite(capa, capa_halo)   # dos pasadas: mas denso
     d = ImageDraw.Draw(capa)
 
     for parte, es_ac in partes:
         col = acento if (es_ac and acento) else color
-        d.text((x + 3, y + 4), parte, font=f, fill=(0, 0, 0, 170))
+        if not claro:
+            d.text((x + 3, y + 4), parte, font=f, fill=(0, 0, 0, 170))
         d.text((x, y), parte, font=f, fill=tuple(col) + (255,))
         x += d.textlength(parte, font=f)
+
+    # Y el SUBRAYADO ROJO de las miniaturas: la palabra de acento va
+    # subrayada, no solo en color. Es la firma grafica del canal.
+    if claro and acento:
+        xr = x0_ini
+        for parte, es_ac in partes:
+            an_p = d.textlength(parte, font=f)
+            if es_ac:
+                # Debajo de la caja REAL de la palabra, no a una fraccion de
+                # la altura: con la fraccion, el subrayado cruzaba la cola de
+                # la p de "pierdes" y la de la g de "negocios".
+                caja = d.textbbox((xr, y), parte, font=f)
+                yl = caja[3] + max(4, int(px * 0.05))
+                d.rounded_rectangle([xr, yl, xr + an_p, yl + max(5, px // 14)],
+                                    3, fill=tuple(acento) + (255,))
+            xr += an_p
     return capa
 
 
@@ -467,23 +497,70 @@ def compon_texto(arr, capa_txt, u_ent, u_sal, estilo, W, H):
 # texto, que se precalcula) porque el numero cuenta y las barras crecen.
 # Rompen la monotonia: sin esto las 200 escenas son todas el mismo recurso.
 # ---------------------------------------------------------------------------
-# La paleta del canal, y solo esta. Tres colores de tinta y dos de papel.
+# LOS DOS TEMAS DEL CANAL.
+#
+# `papel` es el de las MINIATURAS: cuadricula, tinta negra y rojo para lo que
+# importa. Es el que manda, porque la miniatura es la promesa y el video
+# tiene que cumplirla; un canal cuyo thumbnail es papel cuadriculado y cuyo
+# video es azul noche parece dos canales.
+#
+# `nocturno` es el otro, y se queda por si alguna vez interesa.
+#
 # Un grafico premium no tiene mas colores que uno cutre: tiene MENOS, y los
-# usa siempre para lo mismo. El ambar es la cifra de la que habla la frase,
-# el rojo es lo que te quitan y el hueso es todo lo demas.
-PALETA = {
-    "acento":  (255, 196, 90),
-    "aviso":   (255, 110, 86),
-    "ok":      (120, 220, 170),
-    "hueso":   (242, 238, 230),
-    # El gris de las etiquetas. Antes las etiquetas iban en hueso al 90%,
-    # o sea casi en blanco: competian con la cifra. Un gris azulado a media
-    # luz las pone un escalon por debajo, que es donde tienen que estar.
-    "tenue":   (154, 162, 182),
-    "carta":   (22, 29, 45),
-    "base":    (11, 15, 25),
-    "surco":   (255, 255, 255, 30),
+# usa siempre para lo mismo. El acento es la cifra de la que habla la frase,
+# el aviso es lo que te quitan y el hueso es todo lo demas.
+TEMAS = {
+    "papel": {
+        "acento":  (206, 32, 38),        # el rojo de los subrayados
+        "aviso":   (206, 32, 38),
+        "serie":   (58, 64, 74),         # la barra de referencia, en tinta
+        "ok":      (26, 122, 72),
+        "hueso":   (24, 24, 28),         # aqui "hueso" es TINTA
+        "tenue":   (124, 128, 136),
+        "carta":   (255, 255, 255),
+        "base":    (238, 236, 230),
+        "papel":   (246, 244, 238),
+        "rejilla": (176, 190, 206),
+        "borde":   (24, 24, 28, 70),
+        "surco":   (24, 24, 28, 34),
+        "sombra":  36,                   # cuanto tapa la sombra de la tarjeta
+        "oscura":  False,
+    },
+    "nocturno": {
+        "acento":  (255, 196, 90),
+        "aviso":   (255, 110, 86),
+        "serie":   (255, 196, 90),
+        "ok":      (120, 220, 170),
+        "hueso":   (242, 238, 230),
+        # El gris de las etiquetas. Antes iban en hueso al 90%, o sea casi en
+        # blanco: competian con la cifra. Un gris azulado a media luz las
+        # pone un escalon por debajo, que es donde tienen que estar.
+        "tenue":   (154, 162, 182),
+        "carta":   (22, 29, 45),
+        "base":    (11, 15, 25),
+        "papel":   (11, 15, 25),
+        "rejilla": (255, 255, 255),
+        "borde":   (255, 255, 255, 26),
+        "surco":   (255, 255, 255, 30),
+        "sombra":  170,
+        "oscura":  True,
+    },
 }
+
+# `PALETA` se muta en el sitio en vez de reasignarse: todo el fichero la lee
+# por referencia y reasignarla dejaria la mitad apuntando a la vieja.
+PALETA = dict(TEMAS["papel"])
+
+
+def tema(nombre):
+    """Cambia el tema del canal. Vacia las caches que dependen del color."""
+    if nombre not in TEMAS:
+        raise ValueError("tema desconocido: %s" % nombre)
+    PALETA.clear()
+    PALETA.update(TEMAS[nombre])
+    for f in (_carta, _plato_fondo, _plato_reticula):
+        f.cache_clear()
+    return nombre
 
 # Contorno muy simplificado de la Espana peninsular, en (longitud, latitud).
 # No pretende ser cartografia: pretende que se reconozca de un vistazo a
@@ -514,6 +591,34 @@ ESPANA = [
     # rias baixas
     (-8.85, 42.30), (-8.75, 42.60), (-9.05, 42.75), (-8.85, 42.95),
 ]
+
+
+# Los RGB del tema nocturno que quedan escritos a mano en fichas viejas.
+# Se traducen al papel que hacian, no al color que eran.
+_LEGADO = {
+    (255, 196, 90): "serie", (255, 176, 60): "serie",
+    (255, 110, 86): "acento", (120, 220, 170): "ok",
+    (120, 130, 150): "tenue", (255, 255, 255): "hueso",
+}
+
+# Que color le toca a cada tipo cuando la ficha no dice nada. En un contador
+# la cifra ES el punto y va en acento; en unas barras la barra es la
+# referencia y va en serie, y el acento se reserva para la destacada.
+_POR_TIPO = {
+    "barras": "serie", "apilada": "serie", "reparto": "acento",
+}
+
+
+def _col(v, papel="acento"):
+    """El color de una ficha: un papel del tema, un RGB viejo, o el defecto."""
+    if v is None:
+        return tuple(PALETA.get(papel, PALETA["acento"]))
+    if isinstance(v, str):
+        return tuple(PALETA.get(v, PALETA["acento"]))
+    tup = tuple(int(c) for c in v)
+    if tup in _LEGADO:
+        return tuple(PALETA[_LEGADO[tup]])
+    return tup
 
 
 def _fmt(v, dec=0, mil="."):
@@ -549,17 +654,22 @@ def _carta(w, h, radio=30, acento=None, alpha=236):
     W_, H_ = w + m * 2, h + m * 2
     img = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
 
+    oscura = PALETA.get("oscura", True)
+
     # 1. la sombra, que es lo que la despega del fondo
     mascara = Image.new("L", (W_, H_), 0)
     ImageDraw.Draw(mascara).rounded_rectangle(
-        [m, m + 18, m + w, m + h + 18], radio, fill=170)
-    mascara = mascara.filter(ImageFilter.GaussianBlur(26))
+        [m, m + 18, m + w, m + h + 18], radio, fill=PALETA.get("sombra", 170))
+    mascara = mascara.filter(ImageFilter.GaussianBlur(26 if oscura else 18))
     sombra = Image.new("RGBA", (W_, H_), (0, 0, 0, 0))
     sombra.putalpha(mascara)
     img = Image.alpha_composite(img, sombra)
 
-    # 2. el cuerpo, con degradado vertical
-    rampa = np.linspace(1.16, 0.74, h, dtype=np.float32)[:, None, None]
+    # 2. el cuerpo. Sobre negro, un degradado marcado da volumen; sobre papel
+    #    lo que se busca es una ficha impresa, y una ficha es plana.
+    rampa = (np.linspace(1.16, 0.74, h, dtype=np.float32)[:, None, None]
+             if oscura else
+             np.linspace(1.0, 0.975, h, dtype=np.float32)[:, None, None])
     cuerpo = np.clip(np.array(PALETA["carta"], np.float32)[None, None, :] * rampa,
                      0, 255)
     cuerpo = np.repeat(cuerpo, w, axis=1).astype(np.uint8)
@@ -570,11 +680,14 @@ def _carta(w, h, radio=30, acento=None, alpha=236):
     img.alpha_composite(tarjeta, (m, m))
 
     d = ImageDraw.Draw(img)
-    # 3. el filo de luz del canto superior y el contorno de un pixel
+    # 3. el contorno. Sobre negro es un filo de luz; sobre papel es el trazo
+    #    de tinta de una ficha, y por eso es mas grueso y mas opaco.
     d.rounded_rectangle([m, m, m + w - 1, m + h - 1], radio,
-                        outline=(255, 255, 255, 26), width=2)
-    d.line([m + radio, m + 1, m + w - radio, m + 1], fill=(255, 255, 255, 54),
-           width=2)
+                        outline=PALETA.get("borde", (255, 255, 255, 26)),
+                        width=2 if oscura else 3)
+    if oscura:
+        d.line([m + radio, m + 1, m + w - radio, m + 1],
+               fill=(255, 255, 255, 54), width=2)
     # 4. el galon de acento en el canto izquierdo: la firma del canal
     if acento:
         d.rounded_rectangle([m + 1, m + radio - 4, m + 7, m + h - radio + 4],
@@ -604,12 +717,16 @@ def _esp(d, xy, txt, font, fill, esp=4, anchor="ls"):
         x += d.textlength(c, font=font) + esp
 
 
-def _barra(capa, caja, col, radio=None, brillo=0.20):
+def _barra(capa, caja, col, radio=None, brillo=None):
     """Una barra con volumen: clara arriba, oscura abajo, cantos redondos."""
     x0, y0, x1, y1 = (int(v) for v in caja)
     w, h = max(1, x1 - x0), max(1, y1 - y0)
     if radio is None:
         radio = min(h // 2, 18)
+    if brillo is None:
+        # Sobre papel una barra con degradado se lee como un boton de una
+        # web de 2012. Impresa es plana.
+        brillo = 0.20 if PALETA.get("oscura", True) else 0.0
     rampa = np.linspace(1.0 + brillo, 1.0 - brillo * 0.7, h,
                         dtype=np.float32)[:, None, None]
     cuerpo = np.clip(np.array(col, np.float32)[None, None, :] * rampa, 0, 255)
@@ -661,7 +778,7 @@ def grafico(spec, W, H, u, ancla=0.5):
     capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(capa)
     e = _suave(float(np.clip(u, 0, 1)))
-    ac = tuple(spec.get("color", PALETA["acento"]))
+    ac = _col(spec.get("color"), _POR_TIPO.get(tipo, "acento"))
     cy = int(spec.get("y", ancla) * H)
 
     if tipo == "contador":
@@ -688,7 +805,9 @@ def grafico(spec, W, H, u, ancla=0.5):
         # altura del cero: se leia como dos rotulos distintos pegados.
         base = y0 + 62 + int(px * 0.70)
         x = (W - (an + hueco + ans)) / 2
-        d.text((x + 3, base + 4), txt, font=f, fill=(0, 0, 0, 120), anchor="ls")
+        if PALETA.get("oscura", True):
+            d.text((x + 3, base + 4), txt, font=f, fill=(0, 0, 0, 120),
+                   anchor="ls")
         d.text((x, base), txt, font=f, fill=ac + (255,), anchor="ls")
         if sub:
             d.text((x + an + hueco, base), sub, font=fs,
@@ -722,7 +841,8 @@ def grafico(spec, W, H, u, ancla=0.5):
 
         for i, (nom, v) in enumerate(items):
             ui = _suave(float(np.clip((u - i * 0.16) / 0.62, 0, 1)))
-            col = tuple(spec.get("destacar", {}).get(nom, ac))
+            col = _col(spec.get("destacar", {}).get(nom), "serie") \
+                if nom in spec.get("destacar", {}) else ac
             # LA ETIQUETA VA ENCIMA DE LA BARRA, no a su izquierda.
             #
             # A la izquierda el ancho disponible depende de lo larga que sea
@@ -797,7 +917,7 @@ def grafico(spec, W, H, u, ancla=0.5):
                anchor="rs")
         _surco(d, [x0, cy - 22, x0 + ancho, cy - 22 + alto])
         corte = int(ancho * val * e)
-        col_a = tuple(spec.get("color_a", PALETA["aviso"]))
+        col_a = _col(spec.get("color_a"), "acento")
         if corte > 2:
             _barra(capa, [x0, cy - 22, x0 + max(alto, corte), cy - 22 + alto],
                    col_a)
@@ -922,8 +1042,8 @@ def grafico(spec, W, H, u, ancla=0.5):
             ui = _suave(float(np.clip((u - i * 0.24) / 0.52, 0, 1)))
             largo = ancho * (v / suma) * ui
             xa, xb = int(cursor), int(cursor + largo)
-            col = tuple(spec.get("colores", {}).get(
-                nom, ac if i == 0 else PALETA["aviso"]))
+            col = (_col(spec["colores"][nom]) if nom in spec.get("colores", {})
+                   else (ac if i == 0 else tuple(PALETA["aviso"])))
             if xb - xa > 0:
                 for fila in range(alto_b):
                     dt.line([xa, fila, xb, fila],
@@ -950,8 +1070,8 @@ def grafico(spec, W, H, u, ancla=0.5):
             if ui <= 0.02:
                 continue
             op = int(255 * ui)
-            col = tuple(spec.get("colores", {}).get(
-                nom, ac if i == 0 else PALETA["aviso"]))
+            col = (_col(spec["colores"][nom]) if nom in spec.get("colores", {})
+                   else (ac if i == 0 else tuple(PALETA["aviso"])))
             d.rounded_rectangle([x0, yl + 8, x0 + 16, yl + 24], 4,
                                 fill=col + (op,))
             d.text((x0 + 34, yl + 26), nom, font=fl,
@@ -983,8 +1103,8 @@ def grafico(spec, W, H, u, ancla=0.5):
         _pon(capa, _carta(int(max(an_g, ap) + 148), alto, 32, ac),
              (W - int(max(an_g, ap) + 148)) // 2, cy - alto // 2)
 
-        base = tuple(spec.get("color_base", (255, 255, 255)))
-        marca = tuple(spec.get("color_marca", PALETA["aviso"]))
+        base = _col(spec.get("color_base"), "tenue")
+        marca = _col(spec.get("color_marca"), "acento")
         for k in range(total):
             fi_, co = divmod(k, cols)
             x = gx + co * paso
@@ -1021,7 +1141,7 @@ def grafico(spec, W, H, u, ancla=0.5):
                                   (xb, anchos[1], cajas[1], ac)):
             _pon(capa, _carta(an, alto, 20, acc), cx0, cy - alto // 2)
             d.text((cx0 + an / 2, cy + 15), nom, font=f,
-                   fill=PALETA["hueso"] + (252,), anchor="ms")
+                   fill=tuple(PALETA["hueso"]) + (252,), anchor="ms")
         # La punta se para ANTES del canto de la caja: metida dentro se
         # solapaba con el galon de acento y los dos rojos se fundian en un
         # borron.
@@ -1044,11 +1164,21 @@ def grafico(spec, W, H, u, ancla=0.5):
             et = spec["etiqueta"]
             an_e = d.textlength(et, font=fe)
             yp = cy - alto // 2 - 60
-            d.rounded_rectangle([(W - an_e) / 2 - 30, yp - 16,
-                                 (W + an_e) / 2 + 30, yp + 50], 33,
-                                fill=(10, 14, 24, int(op * 0.88)),
-                                outline=ac + (int(op * 0.6),), width=2)
-            d.text((W / 2, yp + 36), et, font=fe, fill=ac + (op,), anchor="ms")
+            # Sobre negro, chapa oscura con letra de acento. Sobre papel,
+            # al reves: chapa de acento con letra de papel, que es como se
+            # marca algo con un rotulador y no un rectangulo negro suelto en
+            # mitad de una hoja.
+            oscura = PALETA.get("oscura", True)
+            caja_p = [(W - an_e) / 2 - 30, yp - 16,
+                      (W + an_e) / 2 + 30, yp + 50]
+            if oscura:
+                d.rounded_rectangle(caja_p, 33, fill=(10, 14, 24, int(op * 0.88)),
+                                    outline=ac + (int(op * 0.6),), width=2)
+                col_t = ac + (op,)
+            else:
+                d.rounded_rectangle(caja_p, 33, fill=ac + (op,))
+                col_t = (255, 255, 255, op)
+            d.text((W / 2, yp + 36), et, font=fe, fill=col_t, anchor="ms")
 
     elif tipo == "ilustracion":
         # EL MEDALLON. Para las frases que no tienen metraje de calidad.
@@ -1082,9 +1212,12 @@ def grafico(spec, W, H, u, ancla=0.5):
                        cy_m + r_an * math.sin(rad) + 7], fill=ac + (235,))
 
         m = int(lado * 0.22)
+        # El icono va en TINTA y el anillo en acento, como en las miniaturas:
+        # el dibujo es negro y el rojo se reserva para lo que hay que mirar.
+        col_ico = ac if PALETA.get("oscura", True) else PALETA["hueso"]
         ICO.dibuja(spec.get("icono", "dato"), d,
                    (x0 + m, y0 + m, x0 + lado - m, y0 + lado - m),
-                   ac + (255,), float(np.clip(u / 0.92, 0, 1)))
+                   col_ico + (255,), float(np.clip(u / 0.92, 0, 1)))
 
         # La chapa de direccion, arriba a la derecha del medallon. La frase
         # dice "sube" o "cae" y eso es la mitad de lo que hay que entender;
@@ -1097,8 +1230,13 @@ def grafico(spec, W, H, u, ancla=0.5):
             # caja caia justo encima del trazo del anillo.
             bx = int(cx + r_an * 0.74)
             by = int(cy_m - r_an * 0.74)
+            # Sobre papel, la chapa es blanca con el filo del color: un
+            # circulo negro macizo es el unico elemento negro de un plano de
+            # papel y se lleva el ojo antes que el icono.
             d.ellipse([bx - 38, by - 38, bx + 38, by + 38],
-                      fill=(10, 14, 24, int(op * 0.94)),
+                      fill=((10, 14, 24, int(op * 0.94))
+                            if PALETA.get("oscura", True)
+                            else tuple(PALETA["carta"]) + (int(op * 0.96),)),
                       outline=col_f + (op,), width=3)
             # Hacia donde dice la frase. Estaba invertido: "cuando
             # pierdes" salia con la flecha subiendo.
@@ -1225,29 +1363,47 @@ _LOGO = _os.path.normpath(_os.path.join(_AQUI, "..", "assets", "brand", "logo.pn
 @_ft.lru_cache(maxsize=4)
 def _plato_fondo(W, H, acento):
     """La parte quieta del plato. Se calcula una vez por episodio."""
+    oscura = PALETA.get("oscura", True)
     y = np.linspace(0, 1, H, dtype=np.float32)[:, None]
     x = np.linspace(0, 1, W, dtype=np.float32)[None, :]
     # Degradado radial descentrado hacia arriba: el centro optico de un plano
     # no esta en el centro geometrico, esta un poco por encima.
     r = np.sqrt(((x - 0.5) * 1.02) ** 2 + ((y - 0.44) * 1.32) ** 2)
     v = np.clip(1.0 - r * 0.92, 0.0, 1.0) ** 1.35
-    base = np.stack([9 + v * 30, 13 + v * 38, 24 + v * 54], -1).astype(np.float32)
+    if oscura:
+        base = np.stack([9 + v * 30, 13 + v * 38, 24 + v * 54], -1)
+    else:
+        # Papel: el mismo degradado pero al reves y muchisimo mas flojo. Una
+        # hoja no es blanco plano de 255 en toda la superficie; tiene la
+        # esquina algo mas apagada, y eso es lo unico que separa una foto de
+        # un cuaderno de un rectangulo blanco de Paint.
+        pap = np.array(PALETA["papel"], np.float32)
+        base = pap[None, None, :] - (1.0 - v)[..., None] * 16.0
+    base = base.astype(np.float32)
 
     capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     d = ImageDraw.Draw(capa)
+    tinta = PALETA["hueso"]
+    acc = tuple(acento)
 
     # Marca de agua: el simbolo del euro, enorme y a punto de no verse. Es lo
     # que hace que un fondo liso deje de parecer una diapositiva en blanco.
-    # A 0,80 de ancho el simbolo se salia por la derecha y lo que quedaba
-    # en cuadro no se reconocia: se leia como una mancha clara. Entero y algo
-    # mas pequeno se lee como lo que es sin pedir atencion.
-    d.text((int(W * 0.74), int(H * 0.54)), "\u20ac", font=_fuente(int(H * 1.18), "negra"),
-           fill=(255, 255, 255, 10), anchor="mm")
+    # A 0,80 de ancho se salia por la derecha y lo que quedaba en cuadro no
+    # se reconocia: se leia como una mancha. Entero y algo mas pequeno se lee
+    # como lo que es sin pedir atencion.
+    # Sobre papel NO hay marca de agua: la cuadricula ya es la textura, y un
+    # euro gigante en gris encima se lee como una mancha de fotocopia. En las
+    # miniaturas del canal tampoco hay nada detras del papel.
+    if oscura:
+        d.text((int(W * 0.74), int(H * 0.54)), "\u20ac",
+               font=_fuente(int(H * 1.18), "negra"),
+               fill=(255, 255, 255, 10), anchor="mm")
 
     # La banda de abajo: el rotulo del canal. Es el "banner".
     yb = int(H * 0.915)
     d.line([int(W * 0.055), yb - 36, int(W * 0.945), yb - 36],
-           fill=(255, 255, 255, 26), width=2)
+           fill=((255, 255, 255, 26) if oscura else acc + (200,)),
+           width=2 if oscura else 5)
 
     logo, marca_an = None, 0
     if _os.path.exists(_LOGO):
@@ -1259,19 +1415,28 @@ def _plato_fondo(W, H, acento):
         except OSError:
             logo = None
     if logo is None:
-        # Monograma: el euro dentro de un anillo. Que sea un circulo y no un
+        # Monograma: el euro dentro de un sello. Que sea un circulo y no un
         # cuadrado no es un capricho: al lado de un rotulo en caja alta, un
         # cuadrado se lee como una vineta y un circulo se lee como un sello.
+        # Sobre papel va MACIZO, como un tampon de tinta roja.
         cxm, cym, rm = int(W * 0.055) + 30, yb + 4, 30
-        d.ellipse([cxm - rm, cym - rm, cxm + rm, cym + rm],
-                  outline=tuple(acento) + (225,), width=4)
-        d.text((cxm, cym + 1), "\u20ac", font=_fuente(38, "negra"),
-               fill=tuple(acento) + (245,), anchor="mm")
+        if oscura:
+            d.ellipse([cxm - rm, cym - rm, cxm + rm, cym + rm],
+                      outline=acc + (225,), width=4)
+            d.text((cxm, cym + 1), "\u20ac", font=_fuente(38, "negra"),
+                   fill=acc + (245,), anchor="mm")
+        else:
+            d.ellipse([cxm - rm, cym - rm, cxm + rm, cym + rm],
+                      fill=acc + (255,))
+            d.text((cxm, cym + 1), "\u20ac", font=_fuente(38, "negra"),
+                   fill=(255, 255, 255, 255), anchor="mm")
         marca_an = 82
 
     xm = int(W * 0.055) + marca_an
-    _esp(d, (xm, yb - 2), CANAL, _fuente(29, "negra"), PALETA["hueso"] + (215,), 6)
-    _esp(d, (xm, yb + 30), SERIE, _fuente(21, "media"), PALETA["tenue"] + (170,), 5)
+    _esp(d, (xm, yb - 2), CANAL, _fuente(29, "negra"),
+         PALETA["hueso"] + (215 if oscura else 245,), 6)
+    _esp(d, (xm, yb + 30), SERIE, _fuente(21, "media"),
+         PALETA["tenue"] + (170 if oscura else 215,), 5)
     if logo is not None:
         capa.alpha_composite(logo, (int(W * 0.055), yb - 40))
 
@@ -1281,17 +1446,29 @@ def _plato_fondo(W, H, acento):
 
 
 @_ft.lru_cache(maxsize=4)
-def _plato_reticula(W, H, paso=92):
-    """Trama de lineas finas, con un cuadro de margen para poder moverla."""
+def _plato_reticula(W, H, paso=None):
+    """La cuadricula, con un cuadro de margen para poder moverla.
+
+    Sobre papel es LA marca del canal: es lo primero que se ve en las seis
+    miniaturas, antes que el titular. Por eso el cuadro es pequeno -el de un
+    cuaderno de toda la vida- y la linea, visible; sobre negro es una trama
+    de fondo y va casi apagada.
+    """
+    oscura = PALETA.get("oscura", True)
+    paso = paso or (92 if oscura else 46)
     m = paso
     g = Image.new("L", (W + m, H + m), 0)
     d = ImageDraw.Draw(g)
+    fino = 13 if oscura else 120
+    gordo = 26 if oscura else 200
     for i in range(0, W + m, paso):
-        d.line([i, 0, i, H + m], fill=13, width=1)
+        d.line([i, 0, i, H + m], fill=gordo if (i // paso) % 5 == 0 else fino,
+               width=1)
     for j in range(0, H + m, paso):
-        # cada cuarta linea, mas marcada: la jerarquia tambien va en el fondo
-        d.line([0, j, W + m, j], fill=26 if (j // paso) % 4 == 0 else 13, width=1)
-    return np.asarray(g, np.float32)
+        # cada quinta linea, mas marcada: la jerarquia tambien va en el fondo
+        d.line([0, j, W + m, j], fill=gordo if (j // paso) % 5 == 0 else fino,
+               width=1)
+    return np.asarray(g, np.float32), paso
 
 
 def plato(W, H, t, acento=None, titulo="", fase=0.0):
@@ -1302,7 +1479,10 @@ def plato(W, H, t, acento=None, titulo="", fase=0.0):
     datos que se mueve mucho compite con el dato; lo que tiene que hacer es no
     estar quieto del todo, que es distinto.
     """
-    acento = tuple(acento or PALETA["acento"])
+    # `acento` puede venir como nombre de papel -"acento", "serie"- porque
+    # las fichas ya no llevan RGB escrito a mano. `_col` resuelve las tres
+    # formas; sin esto, tuple("acento") son seis letras y PIL revienta.
+    acento = _col(acento)
     arr = _plato_fondo(W, H, acento).copy()
 
     # `fase` da variedad entre planos sin cambiar nada del diseno: la
@@ -1310,18 +1490,30 @@ def plato(W, H, t, acento=None, titulo="", fase=0.0):
     # izquierda o por la derecha. Veintitres tarjetas identicas se leen como
     # una plantilla; las mismas con la luz cambiada, como planos distintos.
     s = -1.0 if fase >= 0.5 else 1.0
-    paso = 92
-    g = _plato_reticula(W, H, paso)
+    g, paso = _plato_reticula(W, H)
     dx = int(((t * 0.55 * s) % 1.0) * paso)
     dy = int(((1.0 - t * 0.38 * s) % 1.0) * paso)
-    arr += g[dy:dy + H, dx:dx + W][..., None]
+    trama = g[dy:dy + H, dx:dx + W][..., None]
+    # Sobre negro la linea SUMA luz; sobre papel RESTA, que es lo que hace un
+    # lapiz. Sumando sobre un fondo casi blanco no se veria nada.
+    if PALETA.get("oscura", True):
+        arr += trama
+    else:
+        azul = np.array([0.55, 0.32, 0.16], np.float32)      # la tinta azulada
+        arr -= trama * azul[None, None, :] * 0.42
 
     # La luz que cruza, separable -un perfil en x por otro en y- para no
-    # calcular una gaussiana de dos millones de puntos por fotograma.
+    # calcular una gaussiana de dos millones de puntos por fotograma. Sobre
+    # negro es una luz calida; sobre papel es la SOMBRA de la pagina, que es
+    # lo que se mueve de verdad cuando alguien pasa la mano por una hoja.
     cx = (-0.25 + 1.5 * t) if s > 0 else (1.25 - 1.5 * t)
     px = np.exp(-(((np.linspace(0, 1, W, dtype=np.float32) - cx) / 0.30) ** 2))
     py = np.exp(-(((np.linspace(0, 1, H, dtype=np.float32) - 0.40) / 0.75) ** 2))
-    arr += np.outer(py, px)[..., None] * (np.array(acento, np.float32) / 255.0) * 26.0
+    g2 = np.outer(py, px)[..., None]
+    if PALETA.get("oscura", True):
+        arr += g2 * (np.array(acento, np.float32) / 255.0) * 26.0
+    else:
+        arr -= g2 * np.array([7.0, 8.0, 10.0], np.float32)[None, None, :]
 
     if titulo:
         capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
@@ -1330,7 +1522,7 @@ def plato(W, H, t, acento=None, titulo="", fase=0.0):
         d.rounded_rectangle([x0 - 4, y0 - 26, x0 + 4, y0 + 6], 3,
                             fill=acento + (235,))
         _esp(d, (x0 + 22, y0), titulo.upper(), _fuente(30, "media"),
-             PALETA["hueso"] + (205,), 5)
+             PALETA["hueso"] + (205 if PALETA.get("oscura", True) else 245,), 5)
         a = np.asarray(capa, np.float32)
         al = a[..., 3:4] / 255.0
         arr = arr * (1 - al) + a[..., :3] * al

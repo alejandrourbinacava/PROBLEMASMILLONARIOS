@@ -16,19 +16,10 @@
         ]
       ],
       "destacar": {
-        "suyos": [
-          255,
-          110,
-          86
-        ]
+        "suyos": "acento"
       },
       "sufijo": "",
       "dec": 0,
-      "color": [
-        255,
-        196,
-        90
-      ],
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.4,
@@ -53,11 +44,7 @@
       ],
       "total": "55 M€",
       "etiqueta_total": "llevas puesto",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.4,
@@ -74,15 +61,11 @@
       "a": "TÚ",
       "b": "LA CADENA",
       "etiqueta": "un % de todo lo que entre",
-      "color": [
-        255,
-        110,
-        86
-      ],
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 1.8,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color": "acento"
     },
     "fondo": {
       "titulo": "quién cobra primero"
@@ -98,15 +81,12 @@
       "marcados": 100,
       "cols": 20,
       "pie": "200 personas para 100 habitaciones",
-      "color_marca": [
-        255,
-        196,
-        90
-      ],
+      "color_marca": "acento",
       "y": 0.46,
       "retardo": 0.4,
       "duracion": 2.4,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color_base": "tenue"
     },
     "fondo": {
       "titulo": "la plantilla"
@@ -129,16 +109,8 @@
         ]
       ],
       "colores": {
-        "te queda para todo lo demás": [
-          120,
-          130,
-          150
-        ],
-        "el letrero": [
-          255,
-          110,
-          86
-        ]
+        "te queda para todo lo demás": "tenue",
+        "el letrero": "acento"
       },
       "total": "de 7,66 M€ que entran",
       "sufijo": " mil €",
@@ -177,15 +149,11 @@
       ],
       "total": "55 M€",
       "etiqueta_total": "tuyo es el riesgo",
-      "color": [
-        255,
-        110,
-        86
-      ],
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 3.0,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color": "acento"
     },
     "fondo": true
   }

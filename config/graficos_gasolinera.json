@@ -14,11 +14,7 @@
       ],
       "total": "200.000 €",
       "etiqueta_total": "llevas gastado",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.4,
@@ -45,11 +41,7 @@
       ],
       "total": "600.000 €",
       "etiqueta_total": "llevas gastado",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
@@ -80,11 +72,7 @@
       ],
       "total": "625.000 €",
       "etiqueta_total": "llevas gastado",
-      "color": [
-        255,
-        196,
-        90
-      ],
+      "color": "acento",
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
@@ -113,16 +101,8 @@
         ]
       ],
       "colores": {
-        "producto": [
-          120,
-          130,
-          150
-        ],
-        "hidrocarburos": [
-          255,
-          110,
-          86
-        ],
+        "producto": "tenue",
+        "hidrocarburos": "acento",
         "IVA": [
           255,
           140,
@@ -156,19 +136,10 @@
         ]
       ],
       "destacar": {
-        "Hacienda": [
-          255,
-          110,
-          86
-        ]
+        "Hacienda": "acento"
       },
       "sufijo": " c",
       "dec": 0,
-      "color": [
-        255,
-        196,
-        90
-      ],
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.2,
@@ -188,15 +159,11 @@
       "dec": 2,
       "sufijo": " M de litros",
       "pie": "solo para recuperar lo invertido",
-      "color": [
-        255,
-        110,
-        86
-      ],
       "y": 0.46,
       "retardo": 0.5,
       "duracion": 2.2,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color": "acento"
     },
     "fondo": true
   },
@@ -217,19 +184,10 @@
         ]
       ],
       "destacar": {
-        "la tienda": [
-          120,
-          220,
-          170
-        ]
+        "la tienda": "ok"
       },
       "sufijo": " % de margen",
       "dec": 0,
-      "color": [
-        255,
-        196,
-        90
-      ],
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.2,
@@ -262,15 +220,11 @@
       ],
       "total": "?",
       "etiqueta_total": "y esto no se extingue",
-      "color": [
-        255,
-        110,
-        86
-      ],
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 3.0,
-      "entrada": "golpe"
+      "entrada": "golpe",
+      "color": "acento"
     },
     "fondo": true
   }

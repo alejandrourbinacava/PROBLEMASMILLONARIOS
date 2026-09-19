@@ -154,6 +154,10 @@ def main():
     # segundos con metraje que se mueve solo que repetir un clip.
     ap.add_argument("--tope", type=float, default=None)
     ap.add_argument("--salida", default="proyecto/episodio.json")
+    # El tema grafico del canal. `papel` es el de las miniaturas -cuadricula,
+    # tinta y rojo- y por eso es el defecto: la miniatura es la promesa y el
+    # video tiene que parecerse a ella.
+    ap.add_argument("--tema", choices=["papel", "nocturno"], default="papel")
     ap.add_argument("--titulo", default="")
     ap.add_argument("--temas",
                     choices=["casino", "banco", "aerolinea", "gasolinera",
@@ -237,6 +241,7 @@ def main():
 
     guion = {"titulo": a.titulo or os.path.basename(a.md).replace(".md", ""),
              "lienzo": {"w": 1920, "h": 1080, "fps": 25, "ppm": 140},
+             "tema": a.tema,
              "estilo": "metraje real", "escenas": escenas}
     with open(os.path.join(AQUI, a.salida), "w", encoding="utf-8") as f:
         json.dump(guion, f, ensure_ascii=False, indent=2)

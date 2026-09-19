@@ -562,7 +562,8 @@ def render_escena(esc, cfg, base, ff):
             lienzo = FX.plato(W, H, f / max(1, n - 1),
                               acento=esc.get("fondo_color"),
                               titulo=esc.get("fondo_titulo", ""),
-                              fase=float(esc.get("fondo_fase", 0.0)))
+                              fase=float(esc.get("fondo_fase", 0.0)),
+                              dur=n / float(FPS))
 
         for L in capas:
             ue, us = FX.factor_anim(f, n, FPS, DUR_ENTRADA, DUR_SALIDA,
@@ -629,7 +630,11 @@ def render_escena(esc, cfg, base, ff):
             dur_g = graf.get("duracion", min(1.6, n / FPS * 0.55))
             if f >= f0:
                 ug = min(1.0, (f - f0) / max(1, int(dur_g * FPS)))
-                ge, gs = FX.factor_anim(f - f0, n - f0, FPS, 0.32, 0.25)
+                # El barrido necesita mas recorrido que un golpe: es un
+                # trazo que cruza el plano y en 0,32 s son ocho fotogramas,
+                # o sea que la barra roja se ve dos veces y ya esta puesto.
+                d_ent = 0.58 if graf.get("entrada") == "barrido" else 0.32
+                ge, gs = FX.factor_anim(f - f0, n - f0, FPS, d_ent, 0.25)
                 cg = FX.grafico(graf, W, H, ug)
                 arr = FX.compon_grafico(arr, cg, graf.get("entrada", "golpe"),
                                         ge, gs, W, H)

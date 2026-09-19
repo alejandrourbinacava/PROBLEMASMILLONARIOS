@@ -345,6 +345,41 @@ Una ficha de `graficos_*.json` lo pide con `"fondo": true` o
 epígrafe propio: repetir «lo que has comprado» arriba y dentro se lee como un
 fallo de montaje.
 
+## Entradas, salidas y sonido
+
+Un gráfico que aparece es una imagen. Uno que se **construye** delante del
+espectador es motion graphics, y es lo que distingue el canal de un
+PowerPoint con música.
+
+- **`"entrada": "barrido"`** — revelado de rotulador: una barra de acento
+  cruza el plano y detrás de ella va quedando el gráfico. Es la entrada de
+  los gráficos escritos a mano (los del plató). Dura 0,58 s, no 0,32: en
+  0,32 s son ocho fotogramas y la barra se ve dos veces.
+- **`"golpe"`** — escala con rebote. Para el medallón de las ilustraciones:
+  un icono no se escribe, aparece.
+- **El plató también se monta.** El epígrafe del capítulo entra desde la
+  izquierda y la regla del rótulo se traza de izquierda a derecha; las dos
+  se van al final del plano. `plato()` recibe `dur`, así que la entrada dura
+  lo mismo en un plano de 1,3 s que en uno de 7.
+- **Las frases de un gráfico empiezan en MAYÚSCULA** (`efectos._may`). Salen
+  de trozos de la locución y por eso venían en minúscula, pero en pantalla
+  son líneas sueltas, no continuación de nada.
+
+Y el sonido sabe qué está entrando (`sonido.py`):
+
+| evento | sonido |
+|---|---|
+| corte a un plano de plató | papel, adelantado 300 ms |
+| factura | dos impactos: la línea nueva y el total |
+| barras / apilada | un tic por barra, escalonados, y un impacto al final |
+| ilustración | pop, no impacto: un icono no pesa lo que una cifra |
+| cifra suelta | impacto |
+
+**Un corte, UN sonido.** Una tarjeta es `tipo: rotulo` y `fondo: plato` a la
+vez: si cada condición añade el suyo se juntan tres golpes en 300 ms, que no
+suenan a tres cosas sino a un golpe sucio — y además suben el pico de la
+pista, con lo que la normalización baja todos los demás efectos del episodio.
+
 ## Si no hay clip de calidad, se ILUSTRA
 
 **La regla nueva del canal.** Una frase sin metraje que le pegue no se rellena

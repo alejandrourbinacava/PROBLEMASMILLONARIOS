@@ -392,6 +392,7 @@ def render_texto(txt, W, H, px=132, color=(255, 255, 255),
     d = ImageDraw.Draw(capa)
     f = _fuente(px)
     partes, act, en_acento = [], "", False
+    txt = _may(txt)
     for ch in txt:
         if ch == "*":
             if act:
@@ -700,6 +701,23 @@ def _pon(capa, carta, x, y):
     capa.alpha_composite(carta, (int(x) - _MARGEN, int(y) - _MARGEN))
 
 
+def _may(s):
+    """La primera letra, en mayuscula.
+
+    Las etiquetas salen de trozos de la locucion y por eso venian en
+    minuscula -van a mitad de oracion-, pero en pantalla son lineas sueltas.
+    Se salta la apertura de interrogacion y el asterisco del acento, que si
+    no la mayuscula caeria sobre el signo.
+    """
+    s = s or ""
+    for i, c in enumerate(s):
+        if c.isalpha():
+            return s[:i] + c.upper() + s[i + 1:]
+        if c not in "\u00bf\u00a1*\"'( ":
+            return s                      # empieza por cifra o simbolo
+    return s
+
+
 def _ancho_esp(d, txt, font, esp=0):
     return sum(d.textlength(c, font=font) for c in txt) + esp * max(0, len(txt) - 1)
 
@@ -851,8 +869,8 @@ def grafico(spec, W, H, u, ancla=0.5):
             # de la barra cabe siempre, la cifra queda alineada a la derecha
             # con las de las demas filas, y ademas se lee en el orden en que
             # se dice: primero de que hablamos, luego cuanto es.
-            d.text((x0, yy), nom, font=fl, fill=PALETA["tenue"] + (235,),
-                   anchor="ls")
+            d.text((x0, yy), _may(nom), font=fl,
+                   fill=PALETA["tenue"] + (235,), anchor="ls")
             et = _fmt(v * ui, spec.get("dec", 0)) + spec.get("sufijo", "")
             d.text((x0 + ancho, yy + 4), et, font=fv, fill=col + (255,),
                    anchor="rs")
@@ -911,10 +929,10 @@ def grafico(spec, W, H, u, ancla=0.5):
         _pon(capa, _carta(ancho + 120, alto + 136, 32, ac), x0 - 60, cy - 114)
         izq = spec.get("etiqueta_a", "")
         der = spec.get("etiqueta_b", "")
-        d.text((x0, cy - 46), izq, font=f, fill=PALETA["tenue"] + (235,),
-               anchor="ls")
-        d.text((x0 + ancho, cy - 46), der, font=f, fill=PALETA["tenue"] + (235,),
-               anchor="rs")
+        d.text((x0, cy - 46), _may(izq), font=f,
+               fill=PALETA["tenue"] + (235,), anchor="ls")
+        d.text((x0 + ancho, cy - 46), _may(der), font=f,
+               fill=PALETA["tenue"] + (235,), anchor="rs")
         _surco(d, [x0, cy - 22, x0 + ancho, cy - 22 + alto])
         corte = int(ancho * val * e)
         col_a = _col(spec.get("color_a"), "acento")
@@ -978,7 +996,7 @@ def grafico(spec, W, H, u, ancla=0.5):
                                     fill=ac + (op,))
             imp_t = imp if isinstance(imp, str) else _fmt(imp, 1)
             an_i = d.textlength(imp_t, font=fi)
-            txt = nom
+            txt = _may(nom)
             while d.textlength(txt, font=fc) > ancho - an_i - 80 and len(txt) > 4:
                 txt = txt[:-2]
             an_c = d.textlength(txt, font=fc)
@@ -1074,7 +1092,7 @@ def grafico(spec, W, H, u, ancla=0.5):
                    else (ac if i == 0 else tuple(PALETA["aviso"])))
             d.rounded_rectangle([x0, yl + 8, x0 + 16, yl + 24], 4,
                                 fill=col + (op,))
-            d.text((x0 + 34, yl + 26), nom, font=fl,
+            d.text((x0 + 34, yl + 26), _may(nom), font=fl,
                    fill=PALETA["hueso"] + (int(op * 0.92),), anchor="ls")
             et = _fmt(v, spec.get("dec", 2)) + spec.get("sufijo", "")
             d.text((x0 + ancho, yl + 28), et, font=fv, fill=col + (op,),
@@ -1161,7 +1179,7 @@ def grafico(spec, W, H, u, ancla=0.5):
                       fill=PALETA["hueso"] + (210,))
         if spec.get("etiqueta") and u > 0.5:
             op = int(255 * min(1.0, (u - 0.5) / 0.35))
-            et = spec["etiqueta"]
+            et = _may(spec["etiqueta"])
             an_e = d.textlength(et, font=fe)
             yp = cy - alto // 2 - 60
             # Sobre negro, chapa oscura con letra de acento. Sobre papel,
@@ -1333,7 +1351,43 @@ def grafico(spec, W, H, u, ancla=0.5):
 
 
 def compon_grafico(arr, capa, entrada, u_ent, u_sal, W, H):
+    """Compone el grafico sobre el fotograma con su entrada y su salida."""
+    if entrada == "barrido" and u_ent < 0.999:
+        return _barrido(arr, capa, u_ent, W, H)
+    if entrada == "barrido":
+        entrada = "sube"          # para la salida, que baja y se desvanece
     return compon_texto(arr, capa, u_ent, u_sal, entrada, W, H)
+
+
+def _barrido(arr, capa, u, W, H):
+    """Revelado de rotulador: una barra de acento cruza y deja el grafico.
+
+    No es un fundido con una mascara movida: la barra va DELANTE del borde,
+    asi que durante medio segundo lo que se ve es el trazo, no el grafico. Es
+    la diferencia entre algo que aparece y algo que alguien escribe.
+    """
+    e = _suave(float(np.clip(u, 0, 1)))
+    borde = -0.12 + 1.24 * e                 # sale del cuadro por los dos lados
+    x = np.linspace(0, 1, W, dtype=np.float32)[None, :]
+    mascara = np.clip((borde - x) / 0.09, 0, 1)[..., None]
+
+    t = np.asarray(capa, np.float32)
+    a = (t[..., 3:4] / 255.0) * mascara
+    arr = arr * (1 - a) + t[..., :3] * a
+
+    # La barra solo cruza la BANDA del grafico, no el plano entero: una raya
+    # de lado a lado tapa el rotulo del canal y el epigrafe del capitulo.
+    filas = np.nonzero(np.any(t[..., 3] > 10, axis=1))[0]
+    if len(filas) and borde < 1.02:
+        y0, y1 = int(filas[0]) - 14, int(filas[-1]) + 14
+        bx = int(borde * W)
+        gr = max(4, int(W * 0.0035))
+        i0, i1 = max(0, bx - gr), min(W, bx + gr)
+        if i1 > i0:
+            col = np.array(PALETA["acento"], np.float32)[None, None, :]
+            franja = arr[max(0, y0):min(H, y1), i0:i1]
+            arr[max(0, y0):min(H, y1), i0:i1] = franja * 0.18 + col * 0.82
+    return arr
 
 
 # ---------------------------------------------------------------------------
@@ -1399,11 +1453,10 @@ def _plato_fondo(W, H, acento):
                font=_fuente(int(H * 1.18), "negra"),
                fill=(255, 255, 255, 10), anchor="mm")
 
-    # La banda de abajo: el rotulo del canal. Es el "banner".
+    # La banda de abajo: el rotulo del canal. Es el "banner". La regla no se
+    # dibuja aqui -se traza por fotograma, en `plato`- porque tiene que
+    # crecer de izquierda a derecha al entrar el plano.
     yb = int(H * 0.915)
-    d.line([int(W * 0.055), yb - 36, int(W * 0.945), yb - 36],
-           fill=((255, 255, 255, 26) if oscura else acc + (200,)),
-           width=2 if oscura else 5)
 
     logo, marca_an = None, 0
     if _os.path.exists(_LOGO):
@@ -1471,7 +1524,7 @@ def _plato_reticula(W, H, paso=None):
     return np.asarray(g, np.float32), paso
 
 
-def plato(W, H, t, acento=None, titulo="", fase=0.0):
+def plato(W, H, t, acento=None, titulo="", fase=0.0, dur=0.0):
     """Un fotograma del plato del canal. `t` va de 0 a 1 a lo largo del plano.
 
     Lo que se mueve: la reticula deriva despacio en diagonal y una luz calida
@@ -1515,14 +1568,42 @@ def plato(W, H, t, acento=None, titulo="", fase=0.0):
     else:
         arr -= g2 * np.array([7.0, 8.0, 10.0], np.float32)[None, None, :]
 
-    if titulo:
+    # EL EPIGRAFE ENTRA Y SE VA. Con `dur` se sabe en que segundo del plano
+    # estamos, no solo la fraccion, asi que la entrada dura lo mismo en un
+    # plano de 1,3 s que en uno de 7. Sin esto los veintinueve planos de
+    # plato empezaban con la pagina ya escrita.
+    seg = t * dur if dur else t * 3.0
+    ent = float(np.clip(seg / 0.42, 0, 1))
+    sal = float(np.clip(((dur - seg) / 0.34) if dur else 1.0, 0, 1))
+    vis = _suave(ent) * _suave(sal)
+
+    # La regla de la banda del canal SE TRAZA: crece de izquierda a derecha
+    # mientras entra el plano. Es medio segundo de movimiento gratis en un
+    # sitio donde el ojo ya esta mirando.
+    oscura = PALETA.get("oscura", True)
+    yb = int(H * 0.915) - 36
+    x_ini = int(W * 0.055)
+    x_fin = x_ini + int((W * 0.945 - x_ini) * _suave(ent) * _suave(sal))
+    if x_fin > x_ini + 2:
+        gr = 2 if oscura else 5
+        col = (np.array([255, 255, 255], np.float32) * 0.10
+               if oscura else np.array(acento, np.float32))
+        mez = 0.10 if oscura else 0.78
+        franja = arr[yb:yb + gr, x_ini:x_fin]
+        arr[yb:yb + gr, x_ini:x_fin] = (franja * (1 - mez)
+                                        + col[None, None, :] * mez)
+    if titulo and vis > 0.01:
         capa = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         d = ImageDraw.Draw(capa)
         x0, y0 = int(W * 0.09), int(H * 0.135)
+        # entra desde la izquierda, con el mismo rebote que las tarjetas
+        x0 -= int(70 * (1.0 - _atras(ent)))
+        op = int(255 * vis)
         d.rounded_rectangle([x0 - 4, y0 - 26, x0 + 4, y0 + 6], 3,
-                            fill=acento + (235,))
+                            fill=acento + (int(235 * vis),))
         _esp(d, (x0 + 22, y0), titulo.upper(), _fuente(30, "media"),
-             PALETA["hueso"] + (205 if PALETA.get("oscura", True) else 245,), 5)
+             PALETA["hueso"] + (int((205 if PALETA.get("oscura", True)
+                                     else 245) * vis),), 5)
         a = np.asarray(capa, np.float32)
         al = a[..., 3:4] / 255.0
         arr = arr * (1 - al) + a[..., :3] * al

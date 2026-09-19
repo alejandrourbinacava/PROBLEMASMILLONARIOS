@@ -18,7 +18,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.4,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -45,7 +45,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -76,7 +76,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -115,7 +115,7 @@
       "y": 0.52,
       "retardo": 0.45,
       "duracion": 2.6,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -143,7 +143,7 @@
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.2,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": {
       "titulo": "el margen de cada litro"
@@ -162,7 +162,7 @@
       "y": 0.46,
       "retardo": 0.5,
       "duracion": 2.2,
-      "entrada": "golpe",
+      "entrada": "barrido",
       "color": "acento"
     },
     "fondo": true
@@ -191,7 +191,7 @@
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.2,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": {
       "titulo": "lo que deja cada repostaje"
@@ -223,7 +223,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 3.0,
-      "entrada": "golpe",
+      "entrada": "barrido",
       "color": "acento"
     },
     "fondo": true

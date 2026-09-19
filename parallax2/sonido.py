@@ -55,9 +55,13 @@ GOLPES = ["whoosh/01_woosh.wav", "whoosh/02_transici_n_futuristica.wav",
           "whoosh/04_digital_buzz_malfunction.wav"]
 GOLPE_LATIGO = "whoosh/02_transici_n_futuristica.wav"
 GOLPE_BLOQUE = "whoosh/04_digital_buzz_malfunction.wav"
+# El corte a un plano de PLATO no es un corte mas: el video cambia de modo y
+# pasa de metraje a la hoja del canal. Suena a papel, que es lo que se ve.
+GOLPE_PLATO = "whoosh/03_sound_effect_paper_clumping_.wav"
 
 VOL = {"corte": 0.30, "latigo": 0.55, "bloque": 0.40,
-       "cifra": 0.42, "rotulo": 0.26}
+       "cifra": 0.42, "rotulo": 0.26,
+       "plato": 0.46, "total": 0.50, "barra": 0.20, "icono": 0.30}
 
 
 def leer_wav(ruta: Path) -> np.ndarray:
@@ -127,10 +131,21 @@ def main() -> int:
     TONOS = [1.00, 1.09, 0.94, 1.16, 0.88, 1.05, 0.97, 1.12, 0.91, 1.03]
     for i in range(1, len(esc)):
         t = max(0.0, inicios[i] - ADELANTO)
+        # Un corte, UN sonido. Una tarjeta es `tipo: rotulo` y `fondo: plato`
+        # a la vez, asi que si cada condicion anade el suyo se juntan tres
+        # golpes en trescientos milisegundos: no suenan a tres cosas, suenan
+        # a un golpe sucio, y ademas suben el pico de la pista y la
+        # normalizacion baja todos los demas efectos del episodio.
+        plato = bool(esc[i].get("fondo"))
         if esc[i].get("_lat_ent") is not None:
             eventos.append((t, GOLPE_LATIGO, VOL["latigo"], 1.0))
         elif trans[i - 1] == M.CIERRE_BLOQUE:
             eventos.append((t, GOLPE_BLOQUE, VOL["bloque"], 0.92))
+        elif plato:
+            # El corte al plato se adelanta mas que los demas: la pagina
+            # tiene que empezar a oirse antes de verse.
+            eventos.append((max(0.0, inicios[i] - 0.30), GOLPE_PLATO,
+                            VOL["plato"], 0.96 + 0.05 * (i % 3)))
         else:
             eventos.append((t, GOLPES[i % len(GOLPES)], VOL["corte"],
                             TONOS[i % len(TONOS)]))
@@ -139,7 +154,7 @@ def main() -> int:
         # un cambio de registro, y pide su propio sonido, mas grave y
         # adelantado. Es lo que separa un montaje con ritmo de uno con
         # golpes iguales cada cuatro segundos.
-        if esc[i].get("tipo") == "rotulo":
+        if esc[i].get("tipo") == "rotulo" and not plato:
             eventos.append((max(0.0, inicios[i] - 0.28), GOLPE_LATIGO,
                             VOL["bloque"], 0.78))
 
@@ -147,8 +162,33 @@ def main() -> int:
     for i, e in enumerate(esc):
         g = e.get("grafico")
         if g:
-            eventos.append((inicios[i] + float(g.get("retardo", 0.25)),
-                            "impact.wav", VOL["cifra"], 1.0))
+            t0 = inicios[i] + float(g.get("retardo", 0.25))
+            dur_g = float(g.get("duracion", 1.6))
+            tipo = g.get("tipo")
+            if tipo == "ilustracion":
+                # Un icono no pesa lo que una cifra. Un impacto grave debajo
+                # de un dibujo suena a que se ha caido algo.
+                eventos.append((t0, "pop.wav", VOL["icono"], 0.84))
+            elif tipo == "factura":
+                # Dos golpes: la linea nueva y el total. Es la pareja con la
+                # que un editor remata una cuenta, y aqui la cuenta es el
+                # formato entero del canal.
+                eventos.append((t0 + dur_g * 0.18, "impact.wav",
+                                VOL["cifra"], 1.06))
+                eventos.append((t0 + dur_g * 0.58, "impact.wav",
+                                VOL["total"], 0.86))
+            elif tipo in ("barras", "apilada"):
+                # Un tic por barra, escalonados como entran. Un solo impacto
+                # para tres barras deja dos entrando en silencio.
+                cuantas = len(g.get("items", [])) or 1
+                paso = 0.16 if tipo == "barras" else 0.24
+                for k in range(min(4, cuantas)):
+                    eventos.append((t0 + dur_g * paso * k, "pop.wav",
+                                    VOL["barra"], 1.14 - 0.08 * k))
+                eventos.append((t0 + dur_g * 0.62, "impact.wav",
+                                VOL["cifra"], 0.94))
+            else:
+                eventos.append((t0, "impact.wav", VOL["cifra"], 1.0))
             cifras += 1
         r = R.retardo_rotulo(e, ppm)
         if r is not None:
@@ -174,8 +214,10 @@ def main() -> int:
         w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
         w.writeframes((np.clip(pista, -1, 1) * 32767).astype(np.int16).tobytes())
 
+    platos = sum(1 for e in esc if e.get("fondo"))
     print(f"{len(esc)} escenas · {len(esc)-1} golpes de corte · "
-          f"{cifras} impactos de cifra · {rotulos} pops de rotulo")
+          f"{cifras} graficos sonorizados · {rotulos} pops de rotulo · "
+          f"{platos} entradas de plato")
     print(f"musica: {args.musica} en bucle a {args.vol_musica:.0%}")
 
     # "auto": una pista distinta por episodio, elegida por el nombre del

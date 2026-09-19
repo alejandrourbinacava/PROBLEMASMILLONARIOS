@@ -18,7 +18,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.4,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -45,7 +45,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -73,7 +73,7 @@
       "y": 0.5,
       "retardo": 0.45,
       "duracion": 2.2,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": {
       "titulo": "lo que cuesta un asiento"
@@ -91,7 +91,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 1.6,
-      "entrada": "golpe",
+      "entrada": "barrido",
       "color": "acento"
     },
     "fondo": {
@@ -125,7 +125,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.6,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -143,7 +143,7 @@
       "y": 0.46,
       "retardo": 0.4,
       "duracion": 2.4,
-      "entrada": "golpe",
+      "entrada": "barrido",
       "color_base": "tenue"
     },
     "fondo": {
@@ -181,7 +181,7 @@
       "y": 0.5,
       "retardo": 0.4,
       "duracion": 2.8,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -211,7 +211,7 @@
       "y": 0.52,
       "retardo": 0.45,
       "duracion": 2.2,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -241,7 +241,7 @@
       "y": 0.52,
       "retardo": 0.45,
       "duracion": 2.2,
-      "entrada": "golpe"
+      "entrada": "barrido"
     },
     "fondo": true
   },
@@ -299,7 +299,7 @@
       "y": 0.52,
       "retardo": 0.4,
       "duracion": 3.0,
-      "entrada": "fundido"
+      "entrada": "barrido"
     },
     "fondo": {
       "titulo": "el mapa de las rutas"

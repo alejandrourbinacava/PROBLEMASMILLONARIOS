@@ -18,7 +18,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/hotel_corridor_doors_carpet_8.mp4",
+      "clip": "stock_hotel/elevator_doors_opening_hotel_9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -44,14 +44,13 @@
     {
       "id": "gancho_02",
       "texto": "¿Cuántos crees que son suyos?",
-      "duracion": 1.27,
+      "duracion": 3.17,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "destellos"
       ],
       "capas": [],
-      "latigo": "izq",
       "tipo": "rotulo",
       "fondo": "plato",
       "fondo_fase": 0.143,
@@ -61,7 +60,7 @@
         "lado": 300,
         "y": 0.32,
         "retardo": 0.22,
-        "duracion": 0.9,
+        "duracion": 1.6,
         "entrada": "golpe"
       },
       "texto_pantalla": {
@@ -82,52 +81,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "_lat_sal": -1.0,
-      "transicion": "corte",
       "composicion": "derecha"
-    },
-    {
-      "id": "gancho_02b",
-      "texto": "¿Cuántos crees que son suyos?",
-      "duracion": 1.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "niebla"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "hotel",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "¿Cuántos crees que son *suyos*?",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "_lat_ent": -1.0,
-      "composicion": "centrado"
     },
     {
       "id": "gancho_03",
@@ -161,7 +115,7 @@
         "duracion": 2.4,
         "entrada": "barrido"
       },
-      "composicion": "derecha",
+      "composicion": "centrado",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": null,
@@ -192,7 +146,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "gancho_04b",
@@ -208,7 +162,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_04c",
@@ -227,7 +181,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_05",
@@ -238,7 +192,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/elevator_doors_opening_hotel_9.mp4",
+      "clip": "stock_hotel/waiter_serving_restaurant_hotel_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -255,7 +209,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_05b",
@@ -266,7 +220,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/waiter_serving_restaurant_hotel_20.mp4",
+      "clip": "stock_hotel/hotel_corridor_red_carpet_doors_22.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -274,7 +228,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "gancho_05c",
@@ -285,7 +239,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/hotel_corridor_red_carpet_doors_22.mp4",
+      "clip": "stock_hotel/hotel_restaurant_tables_set_elegant_28.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -306,21 +260,21 @@
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_06",
       "texto": "Entonces, ¿de quién son los otros ocho mil novecientos cincuenta?",
-      "duracion": 2.1,
+      "duracion": 2.62,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "hotel",
@@ -348,50 +302,60 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
-      "id": "gancho_06b",
+      "id": "gancho_06x",
       "texto": "Entonces, ¿de quién son los otros ocho mil novecientos cincuenta?",
-      "duracion": 3.13,
-      "movimiento": "subir",
-      "grade": "dorado_suave",
+      "duracion": 2.61,
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
-      "clip": "stock_banco/job_interview_office_serious_174.mp4",
-      "clip_desde": 0.3,
       "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
       "grafico": {
-        "tipo": "contador",
-        "valor": 8950.0,
-        "dec": 0,
-        "sufijo": "",
-        "color": [
-          255,
-          176,
-          60
-        ],
-        "pie": "?",
-        "y": 0.3,
-        "retardo": 0.6356923076923078,
-        "duracion": 2.29,
+        "tipo": "ilustracion",
+        "icono": "hotel",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
         "entrada": "golpe"
       },
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "texto_pantalla": {
+        "texto": "otros ocho mil *novecientos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_07",
       "texto": "De gente como tú y como yo, si tuviéramos el dinero. Y hoy lo vamos a tener.",
-      "duracion": 1.73,
+      "duracion": 2.1,
       "movimiento": "pull_out",
       "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip": "stock_banco/money_and_construction_plans_67.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -407,7 +371,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_07b",
@@ -418,28 +382,28 @@
       "efectos": [
         "bokeh"
       ],
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07c",
+      "texto": "De gente como tú y como yo, si tuviéramos el dinero. Y hoy lo vamos a tener.",
+      "duracion": 2.2,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
       "clip": "stock_banco/balance_scale_money_194.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "composicion": "derecha"
-    },
-    {
-      "id": "gancho_07c",
-      "texto": "De gente como tú y como yo, si tuviéramos el dinero. Y hoy lo vamos a tener.",
-      "duracion": 2.57,
-      "movimiento": "estatico",
-      "grade": "dorado_suave",
-      "efectos": [
-        "niebla"
-      ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
     },
     {
       "id": "gancho_08",
@@ -471,7 +435,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_08b",
@@ -482,12 +446,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/motel_resort_building_entrance_road_50.mp4",
+      "clip": "stock_hotel/building_under_construction_scaffolding_41.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "gancho_08c",
@@ -498,7 +462,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
+      "clip": "stock_hotel/motel_resort_building_entrance_road_50.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -514,7 +478,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_08d",
@@ -525,12 +489,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_08e",
@@ -541,12 +505,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip": "stock_hotel/hotel_resort_building_palms_entrance_63.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_09",
@@ -573,7 +537,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "gancho_09b",
@@ -589,7 +553,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_09c",
@@ -605,23 +569,31 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "gancho_09d",
       "texto": "Y por el camino vas a ver una cosa: en ese edificio hay dos negocios metidos. Uno es el tuyo. El otro es mucho mejor, y no es tuyo.",
       "duracion": 3.36,
-      "movimiento": "contra_izq",
-      "grade": "dorado_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "acuerdo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_10",
@@ -630,13 +602,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "euro",
@@ -664,7 +636,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_01",
@@ -691,7 +663,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_01b",
@@ -710,7 +682,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_01c",
@@ -727,7 +699,7 @@
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_02",
@@ -738,7 +710,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -746,7 +718,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_02b",
@@ -757,7 +729,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -779,7 +751,7 @@
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_03",
@@ -790,7 +762,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
+      "clip": "stock_hotel/suitcase_packed_open_bed_room_99.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -814,7 +786,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_03b",
@@ -831,7 +803,7 @@
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_03c",
@@ -842,12 +814,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/money_and_construction_plans_67.mp4",
+      "clip": "stock_hotel/double_bed_pillows_hotel_morning_73.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_04",
@@ -858,7 +830,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip": "stock_hotel/white_towels_folded_bathroom_stack_56.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -874,7 +846,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_04b",
@@ -885,12 +857,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_lobby_chandelier_marble_5.mp4",
+      "clip": "stock_hotel/contract_pages_stack_desk_pen_59.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_04c",
@@ -901,7 +873,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/white_towels_folded_bathroom_stack_56.mp4",
+      "clip": "stock_hotel/marble_floor_lobby_reflection_67.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -922,7 +894,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_05",
@@ -938,7 +910,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_05b",
@@ -970,7 +942,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_06",
@@ -981,7 +953,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1002,7 +974,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_07",
@@ -1013,7 +985,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/cash_briefcase_money_283.mp4",
+      "clip": "stock_banco/money_envelope_cash_91.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1034,7 +1006,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_08",
@@ -1045,12 +1017,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
+      "clip": "stock_hotel/business_chart_printed_report_desk_118.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_08b",
@@ -1061,12 +1033,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
+      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_08c",
@@ -1077,7 +1049,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_kitchen_chefs_working_21.mp4",
+      "clip": "stock_hotel/spa_treatment_room_stones_towels_90.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1098,7 +1070,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_08d",
@@ -1109,12 +1081,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip": "stock_hotel/hotel_kitchen_chefs_working_21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_08e",
@@ -1125,7 +1097,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
+      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -1141,7 +1113,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_09",
@@ -1170,7 +1142,7 @@
         "duracion": 2.4,
         "entrada": "barrido"
       },
-      "composicion": "derecha",
+      "composicion": "centrado",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento"
@@ -1178,16 +1150,16 @@
     {
       "id": "cap1_10",
       "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
-      "duracion": 2.75,
+      "duracion": 3.42,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "alerta",
@@ -1199,6 +1171,48 @@
       },
       "texto_pantalla": {
         "texto": "una advertencia sobre ese *número*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_10x",
+      "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
+      "duracion": 3.41,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "alerta",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "se lleva por *delante*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -1218,48 +1232,6 @@
       "composicion": "izquierda"
     },
     {
-      "id": "cap1_10b",
-      "texto": "Y una advertencia sobre ese número, porque es la que se lleva por delante a los que entran nuevos en esto.",
-      "duracion": 4.08,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "bokeh"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.714,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "alerta",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "una advertencia sobre ese *número*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "centrado"
-    },
-    {
       "id": "cap1_11",
       "texto": "Un hotel no se paga con el dinero del hotel. Se paga con una hipoteca a veinte o treinta años, y el banco no te presta contra tu facturación futura: te presta sobre lo que vale el edificio si tiene que quedárselo.",
       "duracion": 3.59,
@@ -1268,7 +1240,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
+      "clip": "stock_hotel/hands_using_calculator_invoices_117.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1284,7 +1256,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_11b",
@@ -1295,7 +1267,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/hotel_construction_site_crane_building_40.mp4",
+      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1316,7 +1288,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_11c",
@@ -1327,12 +1299,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/building_under_construction_scaffolding_41.mp4",
+      "clip": "stock_hotel/hotel_construction_site_crane_building_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_12",
@@ -1359,7 +1331,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_12b",
@@ -1370,7 +1342,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip": "stock_hotel/glass_skyscrapers_facade_city_64.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1391,7 +1363,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_12c",
@@ -1402,12 +1374,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip": "stock_hotel/rooftop_pool_city_view_evening_91.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_12d",
@@ -1418,13 +1390,13 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip": "stock_hotel/city_aerial_sunset_buildings_dense_123.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_01",
@@ -1451,7 +1423,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_01b",
@@ -1470,7 +1442,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_02",
@@ -1481,13 +1453,13 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip": "stock_hotel/breakfast_buffet_hotel_spread_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_02b",
@@ -1498,7 +1470,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_hotel/hotel_corridor_doors_carpet_8.mp4",
+      "clip": "stock_hotel/white_flowers_petals_close_up_32.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1506,7 +1478,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_03",
@@ -1517,7 +1489,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/advertising_billboard_city_187.mp4",
+      "clip": "stock_banco/cash_briefcase_open_248.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1534,7 +1506,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_03b",
@@ -1545,7 +1517,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/advertising_billboard_city_259.mp4",
+      "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1553,7 +1525,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_03c",
@@ -1564,7 +1536,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1586,7 +1558,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_04",
@@ -1595,12 +1567,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "hotel",
@@ -1628,7 +1600,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_05",
@@ -1637,7 +1609,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "polvo"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1660,7 +1632,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "hotel",
@@ -1670,7 +1642,7 @@
         "duracion": 1.6,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_05x",
@@ -1679,7 +1651,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1702,7 +1674,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "hotel",
@@ -1712,7 +1684,7 @@
         "duracion": 1.6,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_06",
@@ -1728,7 +1700,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_06b",
@@ -1739,12 +1711,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/contract_pages_stack_desk_pen_59.mp4",
+      "clip": "stock_hotel/signing_contract_fountain_pen_close_115.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_07",
@@ -1771,7 +1743,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_07b",
@@ -1803,7 +1775,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_07c",
@@ -1819,7 +1791,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_08",
@@ -1835,7 +1807,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_09",
@@ -1847,7 +1819,7 @@
         "ceniza"
       ],
       "capas": [],
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "flecha",
         "a": "TÚ",
@@ -1878,7 +1850,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_09c",
@@ -1894,7 +1866,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_10",
@@ -1921,7 +1893,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_10b",
@@ -1953,7 +1925,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_10c",
@@ -1969,21 +1941,21 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_11",
       "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
-      "duracion": 2.48,
+      "duracion": 3.08,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "euro",
@@ -1996,6 +1968,49 @@
       },
       "texto_pantalla": {
         "texto": "cuando *pierdes*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_11x",
+      "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
+      "duracion": 3.09,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe",
+        "flecha": "baja"
+      },
+      "texto_pantalla": {
+        "texto": "*cuando*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -2015,17 +2030,29 @@
       "composicion": "centrado"
     },
     {
-      "id": "cap2_11b",
-      "texto": "O sea: cuando pierdes, cobran. Y cuando ganas, cobran más.",
-      "duracion": 3.69,
+      "id": "cap2_12",
+      "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
+      "duracion": 3.08,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "niebla"
       ],
       "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
       "texto_pantalla": {
-        "texto": "cuando *pierdes*",
+        "texto": "todavía hay una *tercera* vía",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -2042,34 +2069,21 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.0,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe",
-        "flecha": "baja"
-      },
       "composicion": "izquierda"
     },
     {
-      "id": "cap2_12",
+      "id": "cap2_12x",
       "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
-      "duracion": 2.47,
+      "duracion": 3.07,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "contrato",
@@ -2080,7 +2094,7 @@
         "entrada": "golpe"
       },
       "texto_pantalla": {
-        "texto": "todavía hay una *tercera* vía",
+        "texto": "es la más común de *todas*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -2100,48 +2114,6 @@
       "composicion": "derecha"
     },
     {
-      "id": "cap2_12b",
-      "texto": "Y todavía hay una tercera vía, que es la más común de todas: la franquicia.",
-      "duracion": 3.68,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "bokeh"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "contrato",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "todavía hay una *tercera* vía",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "centrado"
-    },
-    {
       "id": "cap2_13",
       "texto": "Ahí ni siquiera te gestionan el hotel. Te ceden la marca, te obligan a cumplir su manual y a reformar cuando ellos digan, y tú te encargas de todo lo demás. A cambio pagas un porcentaje, normalmente sobre lo que ingresas por habitación, más otro para el fondo de marketing.",
       "duracion": 3.45,
@@ -2150,7 +2122,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
+      "clip": "stock_hotel/painter_roller_wall_renovation_room_106.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2166,7 +2138,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_13b",
@@ -2177,12 +2149,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
+      "clip": "stock_hotel/hotel_bed_sheets_tucked_corner_78.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_13c",
@@ -2193,12 +2165,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
+      "clip": "stock_hotel/construction_workers_site_building_day_104.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_13d",
@@ -2209,12 +2181,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/making_bed_white_sheets_hotel_13.mp4",
+      "clip": "stock_banco/percentage_graph_screen_179.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_14",
@@ -2225,7 +2197,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip": "stock_hotel/suitcase_wheeled_hotel_lobby_35.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2245,7 +2217,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_15",
@@ -2256,7 +2228,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip": "stock_hotel/illuminated_lettering_building_top_109.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2277,7 +2249,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_15b",
@@ -2288,12 +2260,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip": "stock_banco/handshake_business_meeting_19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_15c",
@@ -2304,13 +2276,13 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_01",
@@ -2321,7 +2293,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip": "stock_hotel/open_plan_office_people_working_72.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2342,7 +2314,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_02",
@@ -2353,7 +2325,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/elevator_doors_opening_hotel_9.mp4",
+      "clip": "stock_hotel/resort_pools_aerial_water_96.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2388,7 +2360,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_02b",
@@ -2399,13 +2371,13 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/waiter_serving_restaurant_hotel_20.mp4",
+      "clip": "stock_hotel/tower_crane_lifting_materials_sky_105.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_03",
@@ -2416,7 +2388,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/empty_hotel_room_made_bed_12.mp4",
+      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2424,7 +2396,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_03b",
@@ -2435,7 +2407,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_room_bed_window_daylight_16.mp4",
+      "clip": "stock_hotel/conference_room_hotel_empty_chairs_31.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2457,7 +2429,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_03c",
@@ -2468,7 +2440,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/classic_hotel_room_interior_furniture_17.mp4",
+      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2476,7 +2448,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_04",
@@ -2502,7 +2474,7 @@
         "color_base": "tenue"
       },
       "_lat_ent": -1.0,
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": null,
@@ -2517,7 +2489,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
+      "clip": "stock_hotel/washing_machines_industrial_laundry_room_88.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2549,7 +2521,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_05b",
@@ -2560,12 +2532,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
+      "clip": "stock_hotel/bartender_pouring_drink_hotel_bar_53.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_05c",
@@ -2576,12 +2548,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/hotel_kitchen_chefs_working_21.mp4",
+      "clip": "stock_hotel/maid_pushing_housekeeping_trolley_hallway_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_05d",
@@ -2592,12 +2564,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip": "stock_hotel/chef_plating_dish_restaurant_kitchen_83.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_06",
@@ -2639,7 +2611,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_06b",
@@ -2655,7 +2627,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_06c",
@@ -2666,12 +2638,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip": "stock_hotel/luggage_trolley_marble_floor_hotel_89.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_07",
@@ -2698,7 +2670,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_07b",
@@ -2709,12 +2681,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/team_working_laptop_documents_office_23.mp4",
+      "clip": "stock_hotel/hotel_kitchen_chefs_working_21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_08",
@@ -2725,12 +2697,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/resort_lit_at_night_aerial_view_43.mp4",
+      "clip": "stock_hotel/night_porter_desk_lamp_quiet_lobby_87.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_08b",
@@ -2741,12 +2713,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/city_skyline_night_lights_aerial_45.mp4",
+      "clip": "stock_hotel/resort_lit_at_night_aerial_view_43.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_08c",
@@ -2757,7 +2729,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/reception_counter_bell_hotel_lobby_47.mp4",
+      "clip": "stock_hotel/city_skyline_night_lights_aerial_45.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2778,7 +2750,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_09",
@@ -2789,7 +2761,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/contract_pages_stack_desk_pen_59.mp4",
+      "clip": "stock_hotel/reception_counter_bell_hotel_lobby_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2805,7 +2777,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_09b",
@@ -2816,7 +2788,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_lobby_chandelier_marble_5.mp4",
+      "clip": "stock_hotel/spa_towels_rolled_basket_79.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2837,7 +2809,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_09c",
@@ -2848,12 +2820,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/hotel_corridor_doors_carpet_8.mp4",
+      "clip": "stock_hotel/family_checking_into_hotel_reception_98.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_10",
@@ -2864,7 +2836,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip": "stock_hotel/booking_hotel_online_laptop_36.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2885,100 +2857,16 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_11",
       "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
-      "duracion": 2.83,
+      "duracion": 5.24,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.857,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "calendario",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "los buenos tienen un *techo*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cap3_11b",
-      "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
-      "duracion": 3.45,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "polvo"
-      ],
-      "capas": [],
-      "texto_pantalla": {
-        "texto": "los buenos tienen un *techo*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.0,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "calendario",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado"
-    },
-    {
-      "id": "cap3_11c",
-      "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
-      "duracion": 4.2,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "destellos"
+        "niebla"
       ],
       "capas": [],
       "cierra_bloque": true,
@@ -2995,7 +2883,50 @@
         "entrada": "golpe"
       },
       "texto_pantalla": {
-        "texto": "los buenos tienen un *techo*",
+        "texto": "los *buenos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_11x",
+      "texto": "O sea que los meses malos te cuestan casi lo mismo que los buenos, y los buenos tienen un techo. Toda la rentabilidad del año se juega en si llenas o no llenas.",
+      "duracion": 5.24,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "tienen un *techo*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -3023,7 +2954,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3039,7 +2970,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_01b",
@@ -3050,7 +2981,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_90.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3058,7 +2989,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_02",
@@ -3086,7 +3017,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/empty_home_office_chair_175.mp4",
+      "clip": "stock_hotel/night_starry_sky_mountain_70.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3094,7 +3025,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_02c",
@@ -3105,7 +3036,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip": "stock_banco/empty_home_office_chair_175.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3127,7 +3058,7 @@
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_03",
@@ -3138,7 +3069,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
+      "clip": "stock_hotel/phone_booking_app_travel_hand_37.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3168,13 +3099,13 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
+      "clip": "stock_hotel/housekeeper_cleaning_bathroom_hotel_55.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_03c",
@@ -3185,7 +3116,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/making_bed_white_sheets_hotel_13.mp4",
+      "clip": "stock_hotel/modern_hotel_facade_daylight_street_62.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3206,47 +3137,32 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_04",
       "texto": "Y por eso el sector no mira el precio ni la ocupación por separado. Mira las dos a la vez.",
       "duracion": 2.77,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
+      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.429,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "cama",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
         "texto": "Mira las dos a la vez",
-        "px": 96,
-        "y": 0.64,
+        "px": 132,
+        "y": 0.3,
         "acento": [
-          206,
-          32,
-          38
+          255,
+          176,
+          60
         ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "escala"
       },
       "composicion": "derecha"
     },
@@ -3254,43 +3170,17 @@
       "id": "cap4_04b",
       "texto": "Y por eso el sector no mira el precio ni la ocupación por separado. Mira las dos a la vez.",
       "duracion": 4.13,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "contra_izq",
+      "grade": "sepia_archivo",
       "efectos": [
-        "bokeh"
+        "fuga_luz"
       ],
+      "clip": "stock_hotel/hotel_room_bed_window_daylight_16.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "texto_pantalla": {
-        "texto": "Mira las dos a la vez",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "cama",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "composicion": "izquierda"
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap4_05",
@@ -3301,12 +3191,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/empty_hotel_room_made_bed_12.mp4",
+      "clip": "stock_hotel/hotel_room_curtain_window_corner_51.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_05b",
@@ -3317,7 +3207,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_room_bed_window_daylight_16.mp4",
+      "clip": "stock_hotel/hotel_room_bed_artwork_interior_57.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3333,12 +3223,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/conference_room_hotel_empty_chairs_31.mp4",
+      "clip": "stock_hotel/hotel_room_curtains_opening_light_74.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_06b",
@@ -3349,12 +3239,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/classic_hotel_room_interior_furniture_17.mp4",
+      "clip": "stock_hotel/hotel_swimming_pool_empty_morning_27.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_06c",
@@ -3365,7 +3255,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/housekeeping_cleaning_hotel_room_cart_18.mp4",
+      "clip": "stock_hotel/rainy_empty_seaside_town_winter_103.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3381,7 +3271,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_spa_massage_room_candles_26.mp4",
+      "clip": "stock_hotel/swimming_pool_sunbeds_umbrellas_65.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3402,7 +3292,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_07",
@@ -3429,7 +3319,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_07b",
@@ -3440,7 +3330,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/resort_lit_at_night_aerial_view_43.mp4",
+      "clip": "stock_hotel/hotel_sign_lit_letters_night_108.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3456,7 +3346,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_hotel/city_skyline_night_lights_aerial_45.mp4",
+      "clip": "stock_hotel/coast_sea_flags_summer_66.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3477,7 +3367,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_08",
@@ -3488,7 +3378,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_hotel/hotel_swimming_pool_empty_morning_27.mp4",
+      "clip": "stock_hotel/restaurant_tables_candles_evening_service_92.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3509,7 +3399,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_09",
@@ -3520,7 +3410,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3563,12 +3453,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+      "clip": "stock_banco/electricity_meter_close_up_267.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09c",
@@ -3579,12 +3469,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/electricity_meter_close_up_267.mp4",
+      "clip": "stock_banco/electricity_meter_close_up_311.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_10",
@@ -3611,12 +3501,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
+      "clip": "stock_hotel/tourists_old_town_street_summer_101.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_10c",
@@ -3627,7 +3517,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_hotel/tourists_city_walking_travel_38.mp4",
+      "clip": "stock_hotel/seaside_promenade_summer_crowd_102.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3644,7 +3534,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_01",
@@ -3671,7 +3561,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/hotel_gym_equipment_empty_33.mp4",
+      "clip": "stock_hotel/empty_hotel_room_made_bed_12.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3679,7 +3569,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_02b",
@@ -3690,7 +3580,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip": "stock_hotel/conference_room_hotel_empty_chairs_31.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3712,7 +3602,7 @@
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_03",
@@ -3723,7 +3613,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3755,7 +3645,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip": "stock_banco/person_counting_money_desk_279.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -3771,7 +3661,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_04b",
@@ -3782,7 +3672,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip": "stock_banco/money_counting_machine_38.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3790,7 +3680,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_05",
@@ -3801,7 +3691,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip": "stock_banco/signing_contract_close_up_ha_70.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3818,7 +3708,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3842,7 +3732,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_06",
@@ -3855,7 +3745,7 @@
       ],
       "capas": [],
       "_lat_ent": -1.0,
-      "composicion": "centrado",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "apilada",
         "items": [
@@ -3893,7 +3783,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_banco/cash_counting_machine_close_163.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3925,12 +3815,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_07",
@@ -3941,7 +3831,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/electricity_meter_close_up_311.mp4",
+      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3957,7 +3847,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_07b",
@@ -3968,7 +3858,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_hotel/staff_walking_hotel_corridor_back_52.mp4",
+      "clip": "stock_hotel/washing_machines_industrial_laundry_room_88.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4005,7 +3895,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_08",
@@ -4021,7 +3911,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_08b",
@@ -4080,7 +3970,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_08d",
@@ -4091,12 +3981,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
+      "clip": "stock_hotel/workers_tiling_floor_renovation_107.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_09",
@@ -4107,7 +3997,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/hotel_construction_site_crane_building_40.mp4",
+      "clip": "stock_hotel/hotel_concierge_desk_telephone_68.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -4134,12 +4024,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/building_under_construction_scaffolding_41.mp4",
+      "clip": "stock_hotel/elevator_lobby_buttons_panel_71.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_09c",
@@ -4150,12 +4040,12 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_hotel/motel_resort_building_entrance_road_50.mp4",
+      "clip": "stock_hotel/hotel_bathroom_shower_glass_clean_75.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_09d",
@@ -4166,7 +4056,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_hotel/grand_hotel_entrance_doorway_1.mp4",
+      "clip": "stock_hotel/sink_mirror_amenities_hotel_bathroom_76.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4198,12 +4088,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/handshake_business_meeting_19.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_10b",
@@ -4214,26 +4104,26 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_01",
       "texto": "Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.",
-      "duracion": 2.42,
+      "duracion": 3.01,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
-        "texto": "aquí dentro hay dos *negocios*",
+        "texto": "Ahora se ve claro lo que te *decía*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -4265,30 +4155,17 @@
       "composicion": "derecha"
     },
     {
-      "id": "cap6_01b",
+      "id": "cap6_01x",
       "texto": "Ahora se ve claro lo que te decía al principio: aquí dentro hay dos negocios.",
-      "duracion": 3.6,
+      "duracion": 3.01,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "niebla"
       ],
       "capas": [],
-      "latigo": "izq",
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "acuerdo",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
       "texto_pantalla": {
-        "texto": "aquí dentro hay dos *negocios*",
+        "texto": "*principio*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -4305,9 +4182,19 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "_lat_sal": -1.0,
-      "transicion": "corte",
-      "composicion": "izquierda"
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "acuerdo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
     },
     {
       "id": "cap6_02",
@@ -4318,13 +4205,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/hotel_building_aerial_city_2.mp4",
+      "clip": "stock_banco/job_interview_office_serious_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_02b",
@@ -4335,7 +4221,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4365,13 +4251,13 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/job_interview_office_serious_20.mp4",
+      "clip": "stock_banco/busy_city_corner_location_86.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_02d",
@@ -4382,7 +4268,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4403,7 +4289,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_03",
@@ -4414,7 +4300,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/for_lease_sign_building_252.mp4",
+      "clip": "stock_hotel/payroll_spreadsheet_screen_office_119.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -4441,12 +4327,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_03c",
@@ -4457,7 +4343,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/cash_register_busy_day_149.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -4465,7 +4351,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_04",
@@ -4476,7 +4362,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/handshake_business_sale_286.mp4",
+      "clip": "stock_hotel/vacuum_cleaning_carpet_hotel_floor_81.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4509,12 +4395,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip": "stock_hotel/hotel_employees_briefing_morning_meeting_85.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_04c",
@@ -4525,12 +4411,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/handshake_business_sale_300.mp4",
+      "clip": "stock_hotel/breakfast_buffet_pastries_coffee_hotel_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_05",
@@ -4541,7 +4427,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_hotel/two_people_signing_agreement_handshake_58.mp4",
+      "clip": "stock_hotel/people_walking_plaza_aerial_crowd_84.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -4568,12 +4454,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_hotel/illuminated_hotel_sign_night_facade_48.mp4",
+      "clip": "stock_hotel/hotel_lounge_bar_stools_evening_94.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_05c",
@@ -4584,17 +4470,17 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_hotel/resort_hotel_pool_palm_trees_3.mp4",
+      "clip": "stock_hotel/banquet_hall_round_tables_set_95.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_06",
       "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
-      "duracion": 2.07,
+      "duracion": 2.58,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
@@ -4603,49 +4489,7 @@
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "contrato",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.5699999999999998,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "conviene *saber*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cap6_06b",
-      "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
-      "duracion": 3.08,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "polvo"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "contrato",
@@ -4673,7 +4517,49 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_06x",
+      "texto": "Pero conviene saber qué estás comprando exactamente cuando firmas.",
+      "duracion": 2.57,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "comprando exactamente *cuando*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
     },
     {
       "id": "cap6_07",
@@ -4684,12 +4570,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_07b",
@@ -4700,7 +4586,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip": "stock_banco/person_signing_pen_paper_143.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -4716,12 +4602,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/signing_contract_close_up_ha_70.mp4",
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_07d",
@@ -4732,12 +4618,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip": "stock_banco/contract_being_torn_214.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_08",
@@ -4748,7 +4634,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/corporate_office_building_gl_189.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -4764,13 +4650,13 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/corporate_office_building_gl_261.mp4",
+      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_01",
@@ -4781,7 +4667,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/calculator_and_invoices_desk_4.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -4797,7 +4683,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_02",
@@ -4808,7 +4694,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
+      "clip": "stock_hotel/clock_ticking_wall_close_up_121.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -4827,13 +4713,13 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_hotel/interior_renovation_work_room_42.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_02c",
@@ -4844,7 +4730,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip": "stock_hotel/painter_roller_wall_renovation_room_106.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -4868,7 +4754,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_03",
@@ -4912,7 +4798,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/cash_briefcase_money_283.mp4",
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -4928,7 +4814,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_04b",
@@ -4939,12 +4825,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip": "stock_banco/cash_briefcase_money_88.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_05",
@@ -4955,7 +4841,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+      "clip": "stock_banco/worried_manager_office_desk_264.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4982,12 +4868,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_hotel/mortgage_documents_signing_table_114.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_06",
@@ -4998,12 +4884,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_hotel/booking_hotel_online_laptop_36.mp4",
+      "clip": "stock_hotel/hands_typing_travel_booking_website_100.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_06b",
@@ -5014,7 +4900,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_hotel/phone_booking_app_travel_hand_37.mp4",
+      "clip": "stock_banco/busy_city_corner_location_151.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -5030,7 +4916,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/for_lease_sign_building_252.mp4",
+      "clip": "stock_banco/busy_city_corner_location_299.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -5046,7 +4932,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_07b",
@@ -5057,7 +4943,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/corporate_office_building_gl_123.mp4",
+      "clip": "stock_hotel/illuminated_lettering_building_top_109.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -5065,7 +4951,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_08",
@@ -5126,50 +5012,35 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_10",
       "texto": "Ese es el precio de ser el dueño.",
       "duracion": 3.25,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
       "efectos": [
-        "niebla"
+        "brasas"
       ],
+      "clip": "stock_hotel/illuminated_hotel_sign_night_facade_48.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "texto_pantalla": {
-        "texto": "Ese es el precio de ser el *dueño*",
-        "px": 96,
-        "y": 0.64,
+        "texto": "Ese es el *precio* de ser el dueño",
+        "px": 108,
+        "y": 0.68,
         "acento": [
-          206,
-          32,
-          38
+          255,
+          176,
+          60
         ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "derecha"
       },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.857,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "persona",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado"
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     }
   ]
 }

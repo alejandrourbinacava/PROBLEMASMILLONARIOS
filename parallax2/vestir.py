@@ -55,6 +55,12 @@ TOPE_TARJETA = 3.2       # segundos. Por encima, se parte...
 # tres segundos de animacion y habia caido en un plano de 1,74.
 MINIMO_MITAD = 2.2
 
+# Lo que dura como poco un plano que lleva rotulo, y lo que tiene que quedarle
+# al hermano que le presta el tiempo. Medio segundo se lo come la entrada del
+# rotulo; con menos de dos, el texto se va antes de que el ojo llegue.
+MINIMO_ROTULO = 2.1
+MINIMO_HERMANO = 1.9
+
 # Planos minimos entre dos usos del mismo clip. A doce se colaban
 # repeticiones a catorce planos -y una a UNO- que el ojo pilla enseguida:
 # el mismo plano dos veces en veinte segundos se lee como que se ha acabado
@@ -165,6 +171,49 @@ def _norm_dir(t):
     return re.sub(r"[^a-z0-9 ]+", " ", t.decode().lower())
 
 
+def a_plato(esc, semilla, episodio, ICO):
+    """Convierte un plano en una ilustracion sobre el plato del canal.
+
+    Se usa en los dos sitios donde hace falta: la frase que no tiene ningun
+    clip posible, y el plano al que le tocaba repetir uno.
+    """
+    esc.pop("clip", None)
+    esc.pop("clip_desde", None)
+    esc.pop("duotono", None)
+    esc.pop("duotono_fuerza", None)
+    esc["grade"] = "neutro"
+    esc["movimiento"] = "estatico"
+    esc["capas"] = []
+    esc["fondo"] = "plato"
+    # `validar.py` da por GRAVE un plano sin clip y sin capas: es un plano
+    # vacio. Declarandolo sabe que el vacio es el punto, igual que ya hacia
+    # con los rotulos. Si el ramo de la tarjeta lo ha marcado `rotulo`, se
+    # respeta: ahi manda la frase.
+    esc.setdefault("tipo", "grafico")
+    # La luz del plato cruza en un sentido o en el otro segun el plano:
+    # veinte planos de plato con la luz entrando siempre por la izquierda se
+    # notan como una plantilla.
+    esc["fondo_fase"] = round((semilla % 7) / 7.0, 3)
+    frase = esc.get("texto") or ""
+    # Si el plano ya lleva un grafico -motion_banco le puso un contador
+    # porque la frase dice una cifra- se respeta: una cifra contada siempre
+    # gana a un icono.
+    if not esc.get("grafico"):
+        esc["grafico"] = {
+            "tipo": "ilustracion",
+            "icono": ICO.elige(frase, ICO.del_tema(episodio)),
+            "lado": 300,
+            "y": 0.32, "retardo": 0.22,
+            "duracion": max(0.9, min(1.6, esc.get("duracion", 3) - 0.5)),
+            "entrada": "golpe",
+        }
+        d_ir = direccion(frase)
+        if d_ir:
+            esc["grafico"]["flecha"] = d_ir
+        return True
+    return False
+
+
 def partir(esc, texto_izq, texto_der):
     """Una tarjeta larga en dos cortas. Cada mitad dice su trozo."""
     a = dict(esc)
@@ -224,7 +273,22 @@ def main():
     # con otro movimiento y otro encuadre- que ver una grua cuando se habla
     # de un avion. La regla de oro del canal es que la imagen tenga que ver
     # con lo que se dice; que no se repita es una preferencia, no la regla.
+    # DOS VUELTAS, y el orden es lo que importa.
+    #
+    # En la primera solo se reparten clips SIN USAR. En la segunda, los
+    # planos que se han quedado sin nada pueden repetir uno lejano.
+    #
+    # Antes habia una sola vuelta que aceptaba repetir en cuanto la
+    # distancia lo permitia, y como `combis` va ordenada por puntuacion, un
+    # clip bueno se colocaba tres veces mientras quedaban clips sin estrenar
+    # en el pool. Con 204 clips para 177 planos salian 72 repeticiones. El
+    # usuario lo vio: "hay varios clips que se repiten".
     puesto, usados = {}, {}
+    for p, i, ruta in combis:
+        if i in puesto or ruta in usados:
+            continue
+        puesto[i] = ruta
+        usados[ruta] = i
     for p, i, ruta in combis:
         if i in puesto:
             continue
@@ -288,6 +352,54 @@ def main():
                                  key=lambda r: ultimo_uso.get(r, -999))
                     puesto[j] = lejano
                     ultimo_uso[lejano] = j
+
+    # --- 1.5: UNA TARJETA NO SE CORTA EN DOS -----------------------------
+    #
+    # Una frase huerfana -sin ningun clip que la ilustre- se parte igual que
+    # las demas, y sus planos hermanos salen todos como la MISMA tarjeta: el
+    # mismo icono, el mismo titular y la misma entrada, una detras de otra.
+    # El espectador ve el rotulo montarse, irse a los 1,3 s y volver a
+    # montarse igual. Lo vio el usuario en el segundo cinco del hotel.
+    #
+    # Con las tarjetas negras se notaba menos porque la camara derivaba sobre
+    # el PNG y el corte se leia como movimiento. Sobre el plato, cada plano
+    # repite su animacion entera y la repeticion canta.
+    #
+    # Se funden. Si el plano fundido sale largo, `partir` lo divide mas
+    # abajo en dos mitades que dicen cosas DISTINTAS, que es la unica forma
+    # correcta de cortar una tarjeta.
+    huerfanas = {txt for txt, idxs in por_frase.items()
+                 if txt and not any(j in puesto for j in idxs)}
+    n_fundidos = 0
+    if huerfanas:
+        nuevas, nuevo_puesto = [], {}
+        i = 0
+        while i < len(escenas):
+            e, j = escenas[i], i
+            if e.get("texto") in huerfanas:
+                while (j + 1 < len(escenas)
+                       and escenas[j + 1].get("texto") == e.get("texto")):
+                    j += 1
+            if j > i:
+                e = dict(e)
+                e["duracion"] = round(
+                    sum(escenas[k]["duracion"] for k in range(i, j + 1)), 2)
+                if escenas[j].get("cierra_bloque"):
+                    e["cierra_bloque"] = True
+                # El latigazo iba en la juntura de dos planos que ya no
+                # existe: un barrido de camara a mitad de una tarjeta quieta
+                # se lee como un fallo.
+                e.pop("latigo", None)
+                n_fundidos += j - i
+            if i in puesto:
+                nuevo_puesto[len(nuevas)] = puesto[i]
+            nuevas.append(e)
+            i = j + 1
+        escenas, puesto = nuevas, nuevo_puesto
+        # los indices han cambiado: el mapa de hermanos se rehace
+        por_frase = {}
+        for i, e in enumerate(escenas):
+            por_frase.setdefault(e.get("texto", ""), []).append(i)
 
     # --- 2, 3 y 4
     CICLO = ["izquierda", "derecha", "centrado", "derecha", "izquierda",
@@ -368,41 +480,13 @@ def main():
             # El plato se dibuja por fotograma, trae el rotulo del canal
             # abajo y se mueve solo, asi que tampoco hace falta la deriva:
             # un rotulo quieto se lee mejor que uno que viaja.
-            esc.pop("clip", None)
-            esc.pop("clip_desde", None)
+            # EL ICONO SALE DE LA FRASE ENTERA, no del titular: el titular
+            # son cuatro palabras y "una advertencia" no dice de que va,
+            # mientras que la frase completa si.
             esc["tipo"] = "rotulo"
-            esc["grade"] = "neutro"
             esc["efectos"] = [POLVILLO[(i + k) % len(POLVILLO)]]
-            esc["movimiento"] = "estatico"
-            esc["capas"] = []
-            esc["fondo"] = "plato"
-            # La luz del plato cruza en un sentido o en el otro segun el
-            # plano: veintitres tarjetas con la luz entrando siempre por la
-            # izquierda se notan como una plantilla.
-            esc["fondo_fase"] = round(((i + k) % 7) / 7.0, 3)
-            # LA ILUSTRACION. El icono sale de la FRASE ENTERA, no del
-            # titular: el titular son cuatro palabras y "una advertencia" no
-            # dice de que va, mientras que la frase completa si.
-            #
-            # Si el plano ya lleva un grafico -motion_banco le ha puesto un
-            # contador porque la frase dice una cifra- se respeta: una cifra
-            # contada siempre gana a un icono.
-            frase = esc.get("texto") or ""
-            if not esc.get("grafico"):
-                esc["grafico"] = {
-                    "tipo": "ilustracion",
-                    "icono": ICO.elige(frase, ICO.del_tema(EPISODIO)),
-                    "lado": 300,
-                    "y": 0.32, "retardo": 0.22,
-                    "duracion": max(0.9, min(1.6, esc["duracion"] - 0.5)),
-                    "entrada": "golpe",
-                }
-                d_ir = direccion(frase)
-                if d_ir:
-                    esc["grafico"]["flecha"] = d_ir
-                alto_txt, y_txt = 96, 0.64
-            else:
-                alto_txt, y_txt = 112, 0.47
+            con_icono = a_plato(esc, i + k, EPISODIO, ICO)
+            alto_txt, y_txt = (96, 0.64) if con_icono else (112, 0.47)
             # La tinta sale del TEMA, no de una constante. Sobre el plato de
             # papel, hueso sobre claro con halo negro alrededor es ilegible.
             import efectos as _FX
@@ -444,20 +528,69 @@ def main():
         for k in ("_tramo", "_trozo_frase", "_sangrado", "hilo_t"):
             e.pop(k, None)
 
+    # UN ROTULO NECESITA TIEMPO PARA LEERSE.
+    #
+    # El rotulo tarda medio segundo en entrar; en un plano de 1,73 s quedan
+    # 1,2 para leer seis palabras, y el que mira no sabe que va a haber
+    # texto, asi que llega tarde. Es el mismo fallo que las cifras que se
+    # iban antes de poder leerlas.
+    #
+    # El plano corto le pide tiempo PRESTADO al hermano de al lado, el que
+    # cuenta la misma frase. No se alarga: el video esta cortado contra la
+    # locucion y estirar un plano un cuarto de segundo desplaza todo lo que
+    # viene detras.
+    n_prestado = 0
+    for i, e in enumerate(fuera):
+        if not e.get("texto_pantalla") or e["duracion"] >= MINIMO_ROTULO:
+            continue
+        falta = round(MINIMO_ROTULO - e["duracion"], 2)
+        # Al hermano MAS LARGO de la frase, no al de al lado: el de al lado
+        # puede ser tan corto como este y entonces no presta nada. El
+        # hermano largo pierde tres decimas y no se nota.
+        hermanos = [v for k, v in enumerate(fuera)
+                    if k != i and v.get("texto") == e.get("texto")
+                    and not v.get("texto_pantalla")
+                    and v["duracion"] - falta >= MINIMO_HERMANO]
+        if hermanos:
+            v = max(hermanos, key=lambda x: x["duracion"])
+            v["duracion"] = round(v["duracion"] - falta, 2)
+            e["duracion"] = round(e["duracion"] + falta, 2)
+            n_prestado += 1
+    if n_prestado:
+        print(f"  rotulos que pidieron tiempo prestado: {n_prestado}")
+
     # Repeticiones demasiado juntas. `construir_episodio` reparte con un tope
     # de usos pero sin mirar la distancia, asi que un clip podia salir dos
     # veces con un solo plano de por medio.
-    libres = [r[2] for r in pool if r[2] not in {e.get("clip") for e in fuera}]
-    visto, n_alejados = {}, 0
+    # Y lo que se pone en lugar del repetido IMPORTA. Antes se cogia el
+    # primer clip libre que hubiera, sin mirar la frase: eso cambia un plano
+    # repetido por uno que no viene a cuento, que es peor. Por orden: un
+    # clip libre que puntue para la frase; y si no hay ninguno, se ilustra.
+    usados_ya = {e.get("clip") for e in fuera if e.get("clip")}
+    libres = [r for r in pool if r[2] not in usados_ya]
+    visto, n_alejados, n_ilustrados = {}, 0, 0
     for i, e in enumerate(fuera):
         c = e.get("clip")
         if not c:
             continue
-        if c in visto and i - visto[c] < DISTANCIA and libres:
-            e["clip"] = libres.pop(0)
-            n_alejados += 1
-            c = e["clip"]
+        if c in visto and i - visto[c] < DISTANCIA:
+            mejor, mejor_p = None, 0
+            for r in libres:
+                p, _ = EMP.puntua(e.get("texto") or "", r[2], r[1])
+                if p > mejor_p:
+                    mejor, mejor_p = r, p
+            if mejor is not None:
+                libres.remove(mejor)
+                e["clip"] = mejor[2]
+                n_alejados += 1
+                c = e["clip"]
+            else:
+                a_plato(e, i, EPISODIO, ICO)
+                n_ilustrados += 1
+                continue
         visto[c] = i
+    if n_ilustrados:
+        print(f"  planos repetidos que pasan a ilustracion: {n_ilustrados}")
 
     # Grafico y rotulo en el mismo plano tienen que ir en bandas distintas.
     # `motion_banco` coloca cada uno sin saber del otro, y en nueve planos de
@@ -503,6 +636,8 @@ def main():
     print(f"{len(fuera)} planos | {dur / 60:.0f}:{dur % 60:04.1f}")
     print(f"  clips por palabra   : {n_clip}")
     print(f"  tarjetas            : {n_tar}  ({n_part} partidas por largas)")
+    print(f"  planos de tarjeta fundidos: {n_fundidos}  "
+          f"(la misma tarjeta ya no sale dos veces seguidas)")
     print(f"  duotonos por capitulo: {duo_i + 1} capitulos")
     print(f"  rotulos mudados a su plano: {n_mudados} | caidos: {n_caidos}")
     print(f"  grafico y rotulo separados: {n_separados}")

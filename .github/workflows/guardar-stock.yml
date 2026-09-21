@@ -51,16 +51,19 @@ jobs:
         run: |
           set -e
           df -h / | tail -1
-          for d in parallax2/proyecto/stock_*; do
+          for d in parallax2/proyecto/stock*; do
             [ -d "$d" ] || continue
-            tema="$(basename "$d" | sed 's/^stock_//')"
+            base="$(basename "$d")"
+            # La carpeta `stock/` a secas es la de los primeros episodios.
+            # No tiene sufijo, asi que se le pone uno: `general`.
+            if [ "$base" = "stock" ]; then tema="general"; else tema="${base#stock_}"; fi
             if [ -n "$SOLO" ] && [ "$SOLO" != "$tema" ]; then
               continue
             fi
 
             # Sin comprimir: un mp4 ya esta comprimido y gzip solo gastaria
             # minutos de CPU para quitarle un uno por ciento.
-            tar -cf "stock-$tema.tar" -C parallax2/proyecto "stock_$tema"
+            tar -cf "stock-$tema.tar" -C parallax2/proyecto "$base"
             MB=$(du -m "stock-$tema.tar" | cut -f1)
             N=$(ls -1 "$d" | wc -l)
             echo "::notice::stock-$tema: $N clips, ${MB} MB"

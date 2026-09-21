@@ -44,13 +44,15 @@ def carpetas(guion):
         if not c:
             continue
         trozo = c.replace("\\", "/").split("/")
-        if len(trozo) > 1 and trozo[0].startswith("stock_"):
+        if len(trozo) > 1 and trozo[0].startswith("stock"):
             fuera.add(trozo[0])
     return sorted(fuera)
 
 
 def baja(carpeta):
-    tema = carpeta[len("stock_"):]
+    # `stock/` a secas es la carpeta de los primeros episodios; no tiene
+    # sufijo, asi que su release se llama `stock-general`.
+    tema = carpeta[len("stock_"):] if carpeta.startswith("stock_") else "general"
     destino = os.path.join(PROY, carpeta)
     if os.path.isdir(destino) and os.listdir(destino):
         print("  %-22s ya esta" % carpeta)

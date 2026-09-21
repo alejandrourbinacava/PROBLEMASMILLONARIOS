@@ -52,3 +52,4 @@ build/
 # son JSON. Solo se necesita el metraje para revisar un pool nuevo a ojo, y
 # entonces lo baja `pool_<tema>.py` en la misma tanda.
 parallax2/proyecto/stock_*/
+parallax2/proyecto/stock/

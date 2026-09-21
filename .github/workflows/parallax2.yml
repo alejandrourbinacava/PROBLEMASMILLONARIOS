@@ -95,6 +95,17 @@ jobs:
           sudo apt-get install -y -qq ffmpeg
           pip install --quiet numpy pillow edge-tts pyyaml
 
+      # El metraje ya no vive en el repo: vive en releases, una por episodio.
+      # El repo iba por 4,78 GB y tres de ellos eran stock, asi que cada
+      # tirada se bajaba las seis carpetas para usar una. `traer_stock.py`
+      # lee el guion, ve que carpetas cita -el pool del hotel hereda ciento
+      # once clips del banco, por ejemplo- y baja solo esas.
+      - name: Traer el metraje que pide este guion
+        working-directory: parallax2
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python traer_stock.py "${{ steps.g.outputs.guion }}"
+
       - name: Comprobar antes de gastar minutos
         working-directory: parallax2
         run: python validar.py "${{ steps.g.outputs.guion }}"

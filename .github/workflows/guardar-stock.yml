@@ -1,0 +1,79 @@
+name: Guardar el stock fuera del repo
+
+# Empaqueta cada carpeta de metraje y la sube como asset de una release.
+#
+# El repo iba por 4,78 GB y 3,1 de eso era metraje de stock. Eso duele en dos
+# sitios: GitHub avisa a partir de los 5 GB, y el render de la nube se
+# descarga el arbol entero en cada tirada aunque solo use una de las seis
+# carpetas.
+#
+# Una release aguanta 2 GB por fichero, es gratis, y en un repo publico se
+# baja con una URL directa sin credenciales. Asi que el metraje vive ahi y el
+# repo se queda con el codigo, los pools y la voz.
+#
+# LO EMPAQUETA LA NUBE, no el ordenador de casa: los ficheros ya estan en el
+# arbol de este commit, asi que el runner solo tiene que hacer checkout y
+# subirlos. Subir tres gigas desde una linea domestica habria tardado horas.
+#
+# Se dispara con una etiqueta:
+#
+#     git tag guardar-stock-1 && git push origin guardar-stock-1
+#
+# Y tiene que hacerse ANTES de quitar el metraje del repo, porque lo que
+# empaqueta es lo que hay en el arbol.
+
+on:
+  push:
+    tags:
+      - "guardar-stock*"
+  workflow_dispatch:
+    inputs:
+      solo:
+        description: "Una sola carpeta (hotel, aeropuerto...). Vacio = todas"
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  guardar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Empaquetar y subir
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOLO: ${{ inputs.solo }}
+        run: |
+          set -e
+          df -h / | tail -1
+          for d in parallax2/proyecto/stock_*; do
+            [ -d "$d" ] || continue
+            tema="$(basename "$d" | sed 's/^stock_//')"
+            if [ -n "$SOLO" ] && [ "$SOLO" != "$tema" ]; then
+              continue
+            fi
+
+            # Sin comprimir: un mp4 ya esta comprimido y gzip solo gastaria
+            # minutos de CPU para quitarle un uno por ciento.
+            tar -cf "stock-$tema.tar" -C parallax2/proyecto "stock_$tema"
+            MB=$(du -m "stock-$tema.tar" | cut -f1)
+            N=$(ls -1 "$d" | wc -l)
+            echo "::notice::stock-$tema: $N clips, ${MB} MB"
+
+            if ! gh release view "stock-$tema" >/dev/null 2>&1; then
+              NOTA="Metraje de stock del episodio $tema, revisado a ojo clip a clip. Lo descomprime en parallax2/proyecto/ el render de la nube, con traer_stock.py. Pexels y Pixabay, uso comercial permitido."
+              gh release create "stock-$tema" --title "Metraje: $tema" --notes "$NOTA"
+            fi
+            gh release upload "stock-$tema" "stock-$tema.tar" --clobber
+            rm -f "stock-$tema.tar"
+          done
+
+      - name: Lo que ha quedado publicado
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release list --limit 30 | grep -i stock || true

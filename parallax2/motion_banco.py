@@ -642,7 +642,10 @@ def formato(val, dec, suf):
 # entrada rotan, que es lo que separa un montaje de una plantilla.
 ALTURAS = (0.30, 0.62, 0.26, 0.68, 0.34)
 ENTRADAS = ("golpe", "desplome", "rebote", "latigo_izq", "latigo_der")
-ACENTO = (255, 176, 60)
+# El acento de los rotulos que van sobre METRAJE. Es el rojo del canal
+# aclarado: el de las miniaturas -206, 32, 38- se apaga sobre un plano
+# oscuro, y el ambar de antes no era ningun color del canal.
+ACENTO = (240, 84, 74)
 ROJO = (232, 86, 64)
 
 

@@ -128,6 +128,144 @@ BUSQUEDAS = [
     ("reloj",          "clock ticking close up"),
     ("mapa",           "flight routes map animation"),
     ("turistas",       "airport arrivals greeting"),
+    # --- segunda tanda ---------------------------------------------------
+    # 184 planos contra 67 clips revisados. Y falta lo que sostiene tres
+    # capitulos enteros: el aeropuerto muerto, los costes que no se apagan
+    # -bomberos, deshielo, asfalto- y el dinero, que este pool no tiene
+    # porque se monto sin heredar del banco.
+    ("pista",          "runway markings close up asphalt"),
+    ("pista",          "runway lights night approach"),
+    ("pista",          "aerial view airport apron planes parked"),
+    ("avion",          "airplane taxiing tarmac day"),
+    ("avion",          "jet engine close up turbine"),
+    ("avion",          "plane landing gear touchdown"),
+    ("terminal",       "airport terminal glass roof daylight"),
+    ("terminal",       "moving walkway airport corridor"),
+    ("terminal",       "airport terminal night deserted"),
+    ("torre",          "control tower silhouette sunset"),
+    ("control",        "radar screen aircraft tracking"),
+    ("pasajeros",      "passengers waiting seats gate"),
+    ("pasajeros",      "travellers hurrying terminal blur"),
+    ("pasajeros",      "people sitting waiting long time"),
+    ("cola",           "long queue passengers waiting"),
+    ("equipajes",      "baggage handlers loading aircraft"),
+    ("equipajes",      "suitcases piled trolley airport"),
+    ("maleta",         "wheeled suitcase walking floor"),
+    ("aparcamiento",   "parking barrier ticket machine car"),
+    ("aparcamiento",   "empty parking lot painted lines aerial"),
+    ("aparcamiento",   "multi storey car park interior rows"),
+    ("tiendas",        "airport duty free perfume shelves"),
+    ("tiendas",        "shopping mall corridor shops people"),
+    ("restaurante",    "airport bar coffee counter travellers"),
+    ("restaurante",    "food court tables people eating"),
+    ("panel",          "departures board flights listed"),
+    ("panel",          "flight information screen delayed"),
+    ("embarque",       "gate agent scanning boarding pass"),
+    ("seguridad",      "security tray belongings scanner"),
+    ("seguridad",      "guard watching monitors security room"),
+
+    # el aeropuerto que se muere: el capitulo seis
+    ("abandonado",     "abandoned airport terminal empty"),
+    ("abandonado",     "derelict building broken windows"),
+    ("abandonado",     "empty car park weeds cracked"),
+    ("abandonado",     "cracked asphalt weeds growing"),
+    ("abandonado",     "closed shutters empty shopping arcade"),
+    ("vacio",          "empty waiting hall chairs nobody"),
+    ("vacio",          "single person empty large hall"),
+    ("subasta",        "auction gavel hammer table"),
+    ("quiebra",        "closed sign door business"),
+    ("obra",           "construction site concrete unfinished"),
+    ("obra",           "crane building site aerial"),
+
+    # los costes que no se apagan
+    ("bomberos",       "airport fire truck rescue vehicle"),
+    ("bomberos",       "firefighters training foam water"),
+    ("deshielo",       "snow plough clearing runway"),
+    ("deshielo",       "de icing aircraft spray winter"),
+    ("mantenimiento",  "workers repairing asphalt road"),
+    ("mantenimiento",  "line marking painting road machine"),
+    ("mantenimiento",  "technician checking equipment industrial"),
+    ("limpieza",       "cleaning staff airport floor machine"),
+    ("noche",          "airport at night lights runway"),
+
+    # el dinero, que este pool no tiene
+    ("dinero",         "counting euro banknotes hands close"),
+    ("dinero",         "euro coins stacked table"),
+    ("dinero",         "wallet euro notes taking out"),
+    ("factura",        "invoice papers stack desk"),
+    ("calculadora",    "hands using calculator invoices"),
+    ("contrato",       "signing contract fountain pen close"),
+    ("contrato",       "flipping through contract pages"),
+    ("banco",          "bank advisor explaining client desk"),
+    ("grafico",        "business chart printed report desk"),
+    ("grafico",        "line graph rising screen finance"),
+    ("reunion",        "executives meeting boardroom table"),
+    ("reunion",        "handshake business agreement office"),
+    ("inversores",     "investors discussing documents office"),
+    ("ciudad",         "city aerial sunset buildings dense"),
+    ("ciudad",         "motorway traffic aerial day"),
+    ("campo",          "empty countryside plain horizon"),
+    ("mapa",           "map spread table planning route"),
+    ("reloj_a",        "clock ticking wall close up"),
+    ("calendario_a",   "wall calendar pages turning"),
+    ("turismo",        "tourists arriving airport summer"),
+
+    # --- tercera tanda: mas de lo que mas se repite ----------------------
+    ("terminal",       "airport departures hall check in desks"),
+    ("terminal",       "terminal escalator passengers levels"),
+    ("terminal",       "airport signage direction gates"),
+    ("terminal",       "wide terminal hall high ceiling"),
+    ("terminal",       "passengers walking terminal wide shot"),
+    ("pista",          "runway from cockpit takeoff view"),
+    ("pista",          "runway edge lights row dusk"),
+    ("pista",          "aircraft shadow runway landing"),
+    ("pista",          "airport apron marshaller signals"),
+    ("avion",          "airplane wing above clouds"),
+    ("avion",          "aircraft nose cockpit windows close"),
+    ("avion",          "planes queue waiting takeoff"),
+    ("avion",          "cargo plane loading freight"),
+    ("aparcamiento",   "cars parked rows aerial top down"),
+    ("aparcamiento",   "car entering parking barrier day"),
+    ("aparcamiento",   "parking sign full spaces"),
+    ("aparcamiento",   "car park payment machine hands"),
+    ("pasajeros",      "crowd walking terminal time lapse"),
+    ("pasajeros",      "passenger checking phone waiting seat"),
+    ("pasajeros",      "family with luggage walking airport"),
+    ("pasajeros",      "passengers boarding bus tarmac"),
+    ("cola",           "queue security line passengers waiting"),
+    ("tiendas",        "shop assistant counter customer store"),
+    ("tiendas",        "perfume bottles shelf shop"),
+    ("tiendas",        "souvenir shop shelves tourist"),
+    ("restaurante",    "coffee served counter cafe hands"),
+    ("restaurante",    "people eating fast food tray"),
+    ("equipajes",      "baggage carousel suitcases turning"),
+    ("equipajes",      "conveyor belt bags sorting"),
+    ("seguridad",      "x ray machine bags belt"),
+    ("bomberos",       "fire station engine bay doors"),
+    ("mantenimiento",  "worker high visibility vest inspecting"),
+    ("mantenimiento",  "airport ground crew working aircraft"),
+    ("deshielo",       "snow falling runway lights night"),
+    ("abandonado",     "empty hangar large doors"),
+    ("abandonado",     "overgrown concrete abandoned site"),
+    ("abandonado",     "peeling paint empty corridor"),
+    ("vacio",          "empty escalator nobody mall"),
+    ("noche",          "aerial airport night runway lights"),
+    ("obra",           "excavator moving earth site"),
+    ("obra",           "concrete pouring construction workers"),
+    ("dinero",         "euro notes fanned hand"),
+    ("dinero",         "coins dropping table slow"),
+    ("factura",        "receipts pile counting desk"),
+    ("grafico",        "bar chart drawn whiteboard hand"),
+    ("reunion",        "people discussing plans table office"),
+    ("contrato",       "hands exchanging documents desk"),
+    ("ciudad",         "road junction aerial cars day"),
+    ("campo",          "flat empty land horizon dry"),
+    ("turismo",        "beach umbrellas summer crowd"),
+    ("turismo",        "suitcase rolling airport departures"),
+    ("carga",          "freight trucks loading warehouse"),
+    ("juez",           "courtroom empty benches"),
+    ("invierno",       "snow covered field grey sky"),
+    ("reloj_a",        "departure board flipping letters"),
 ]
 
 
@@ -138,6 +276,11 @@ def main():
                     help="cuenta lo que se pediria y no descarga")
     ap.add_argument("--dur", type=float, default=4.0,
                     help="duracion minima util de un clip")
+    # Para bajar solo una tanda nueva sin volver a pedir las anteriores:
+    # la misma consulta devuelve el mismo clip, asi que repetirla es
+    # trafico tirado.
+    ap.add_argument("--desde", type=int, default=0,
+                    help="salta las N primeras consultas")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -154,6 +297,8 @@ def main():
     pool, fallos = [], []
 
     for i, (etiqueta, consulta) in enumerate(BUSQUEDAS):
+        if i < a.desde:
+            continue
         try:
             # `fallback_query` desactivado: si no hay clip para "torre de
             # control" es mejor que falte a que salga metraje de billetes

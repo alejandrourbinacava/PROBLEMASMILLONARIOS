@@ -1342,8 +1342,14 @@ def grafico(spec, W, H, u, ancla=0.5):
                        fill=PALETA["hueso"] + (int(op * 0.5),), width=2)
             # chapita oscura detras del nombre: sobre el relleno del mapa un
             # texto claro se pierde
+            # La chapa va del color del PAPEL, no siempre oscura: sobre
+            # el plato claro, tinta sobre chapa oscura no se lee, y los
+            # nombres de Madrid y Ciudad Real salian invisibles.
+            chapa = ((10, 14, 24, int(op * 0.72))
+                     if PALETA.get("oscura", True)
+                     else tuple(PALETA["carta"]) + (int(op * 0.88),))
             d.rounded_rectangle([ex - 8, ey - 2, ex + an_n + 10, ey + 38], 8,
-                                fill=(10, 14, 24, int(op * 0.72)))
+                                fill=chapa)
             d.text((ex, ey + 30), nom, font=fp, fill=PALETA["hueso"] + (op,),
                    anchor="ls")
 

@@ -30,6 +30,7 @@ Cuatro cosas:
    del mismo episodio.
 """
 import argparse
+import collections
 import io
 import json
 import math
@@ -42,7 +43,10 @@ PROY = os.path.join(AQUI, "proyecto")
 sys.path.insert(0, AQUI)
 
 NEGRO = (0, 0, 0)
-AMBAR = [255, 176, 60]
+# El acento de los rotulos que van sobre METRAJE. Rojo, como el del canal,
+# pero aclarado: el rojo de las miniaturas -206, 32, 38- se apaga sobre un
+# plano oscuro, y el ambar de antes no era el color del canal.
+AMBAR = [240, 84, 74]
 PAPEL = [237, 231, 218]
 ROJO = [232, 86, 64]
 
@@ -289,13 +293,30 @@ def main():
             continue
         puesto[i] = ruta
         usados[ruta] = i
+    # Y en la segunda, el que MENOS se ha puesto.
+    #
+    # `combis` va ordenada por puntuacion, asi que recorrerla otra vez vuelve
+    # a elegir el clip que mas puntua -que ya esta colocado- y lo pone una
+    # tercera y una cuarta vez. En el aeropuerto habia un clip de terminal
+    # puesto SEIS veces mientras veintiseis clips del pool no salian ni una.
+    #
+    # Ahora, para cada plano sin clip, se miran todos sus candidatos y gana
+    # el que menos veces se haya usado; la puntuacion solo desempata.
+    veces = collections.Counter(puesto.values())
+    porplano = {}
     for p, i, ruta in combis:
+        porplano.setdefault(i, []).append((p, ruta))
+    for i in sorted(porplano):
         if i in puesto:
             continue
-        if i - usados.get(ruta, -999) <= DISTANCIA:
+        cand = [(veces[r], -p, r) for p, r in porplano[i]
+                if i - usados.get(r, -999) > DISTANCIA]
+        if not cand:
             continue
-        puesto[i] = ruta
-        usados[ruta] = i
+        _v, _p, r = min(cand)
+        puesto[i] = r
+        usados[r] = i
+        veces[r] += 1
 
     # SEGUNDA PASADA, y es la que decide si esto parece un canal o un
     # PowerPoint. Una frase larga se cuenta en cinco planos y los cinco

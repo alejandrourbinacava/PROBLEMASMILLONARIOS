@@ -160,13 +160,18 @@ def main():
     ap.add_argument("--tema", choices=["papel", "nocturno"], default="papel")
     ap.add_argument("--titulo", default="")
     ap.add_argument("--temas",
-                    choices=["casino", "banco", "aerolinea", "gasolinera",
-                             "hotel"],
+                    choices=["casino", "banco", "aerolinea", "aeropuerto",
+                             "gasolinera", "hotel"],
                     default="banco")
     a = ap.parse_args()
 
     CC.TEMAS = {"banco": CC.TEMAS_BANCO,
                 "aerolinea": CC.TEMAS_AEROLINEA,
+                # El aeropuerto reparte con los temas de la aerolinea: son
+                # los mismos sujetos -aviones, pasajeros, terminales- y el
+                # reparto del constructor solo decide el orden de partida,
+                # porque `vestir` vuelve a repartir por palabra.
+                "aeropuerto": CC.TEMAS_AEROLINEA,
                 "gasolinera": CC.TEMAS_GASOLINERA,
                 "hotel": CC.TEMAS_HOTEL}.get(a.temas, CC.TEMAS)
     pool = CC.cargar_pool(a.pool)

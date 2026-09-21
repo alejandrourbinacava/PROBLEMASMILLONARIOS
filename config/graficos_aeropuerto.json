@@ -1,0 +1,236 @@
+[
+  {
+    "_nota": "EL GRAFICO DEL GANCHO. Mil millones contra diez mil euros. La segunda barra no se ve, y ESO es el argumento: lo mismo que los 50 hoteles sobre 9.000. Va en euros y no en millones para que las dos cifras se lean en la misma unidad; en millones, los diez mil euros salen como '0 M€'.",
+    "donde": "y como era la unica oferta, gano",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "julio de 2015"
+    },
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "un aeropuerto entero, a subasta",
+      "items": [
+        [
+          "Costó construirlo",
+          1000000000.0
+        ],
+        [
+          "Se pagó por él",
+          10000.0
+        ]
+      ],
+      "destacar": {
+        "Se pagó por él": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 3.0,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Lo que cuesta entrar de verdad. En libras porque la operacion fue britanica y es lo que dice la locucion; si algun dia se relocuta, va en euros.",
+    "donde": "diez mil millones de libras",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 2 · lo que cuesta entrar"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 10000.0,
+      "dec": 0,
+      "sufijo": " M£",
+      "pie": "por la dueña de Heathrow",
+      "px": 170,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "ESTE ES EL VIDEO ENTERO, y lo dice el propio guion. Cuatro de cada diez euros no vienen de los aviones. El tramo de la gente esperando va en acento porque es el que nadie se espera; el de los aviones, en tinta.",
+    "donde": "cuatro de cada diez euros que entran en un aeropuerto",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "total": "de cada 100 € que entran en un aeropuerto",
+      "items": [
+        [
+          "Aeronáutica: los aviones",
+          60.0
+        ],
+        [
+          "No aeronáutica: la gente esperando",
+          40.0
+        ]
+      ],
+      "colores": {
+        "Aeronáutica: los aviones": "serie",
+        "No aeronáutica: la gente esperando": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El aparcamiento. Un anillo y no una barra porque aqui la cifra ES la frase: no hace falta comparar con nada, hace falta que el 43% se quede en la cabeza.",
+    "donde": "el aparcamiento es el cuarenta y tres por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 4 · el aparcamiento"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 43.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "de los ingresos comerciales en Norteamérica",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL GIRO, y va al reves de como todo el mundo cree. No es el aeropuerto quien cobra: es el aeropuerto quien paga. Es el mismo grafico que Charleroi en el episodio de la aerolinea, y aqui es el corazon del capitulo.",
+    "donde": "le paga a la aerolinea para que venga",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "quién le paga a quién"
+    },
+    "grafico": {
+      "tipo": "flecha",
+      "a": "EL AEROPUERTO",
+      "b": "LA AEROLÍNEA",
+      "etiqueta": "le paga para que venga",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.0,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El slot. En dolares porque es lo que dice la locucion y la venta fue en dolares; el dia que se relocute, en euros. La cifra sola ya es el plano: setenta millones por un hueco en un horario.",
+    "donde": "setenta millones de dolares por el derecho a aterrizar",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 5 · lo que vale un minuto"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 70.0,
+      "dec": 0,
+      "sufijo": " M$",
+      "pie": "por un hueco en el horario",
+      "px": 190,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Ciudad Real. Tres millones de pasajeros previstos al ano contra cien mil en toda su vida. La barra de la prevision es la referencia y la de la realidad la astilla: es la misma forma que el gancho, y a proposito, porque es el mismo error contado al final.",
+    "donde": "algo mas de cien mil personas en total",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 6 · cómo muere un aeropuerto"
+    },
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "pasajeros de ciudad real",
+      "items": [
+        [
+          "Previstos, cada año",
+          3000000.0
+        ],
+        [
+          "Reales, en toda su vida",
+          100000.0
+        ]
+      ],
+      "destacar": {
+        "Reales, en toda su vida": "acento"
+      },
+      "sufijo": "",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Por que murio: no estaba en ningun sitio. Dos puntos en el mapa a doscientos kilometros, y uno de los dos ya tenia un aeropuerto enorme. El mapa dice en un segundo lo que un rotulo tarda cuatro en decir.",
+    "donde": "estaba a doscientos kilometros de madrid",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "mapa",
+      "puntos": [
+        [
+          "Madrid",
+          -3.7,
+          40.42
+        ],
+        [
+          "Ciudad Real",
+          -3.93,
+          38.98,
+          true
+        ]
+      ],
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.0,
+      "entrada": "golpe"
+    }
+  },
+  {
+    "_nota": "LA FACTURA FINAL. La ultima linea no es un gasto: es de quien depende todo. Es el mismo remate que el hotel -la cuenta termina con alguien dentro en vez de con un numero- y es lo que cierra la serie entera.",
+    "donde": "un suelo de gasto que no baja",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "lo que has comprado",
+      "lineas": [
+        [
+          "el terreno, la pista y la terminal",
+          "miles de M€"
+        ],
+        [
+          "bomberos, control y seguridad",
+          "no se apagan"
+        ],
+        [
+          "reasfaltar y repintar la pista",
+          "cada pocos años"
+        ],
+        [
+          "las aerolíneas que la llenan",
+          "no son tuyas"
+        ]
+      ],
+      "total": "lo decide otro",
+      "etiqueta_total": "si entra un euro o no",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "barrido"
+    }
+  }
+]

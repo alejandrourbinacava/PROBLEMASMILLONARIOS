@@ -36,3 +36,19 @@ build/
 # Habilidades de terceros instaladas con `npx skills add`. Son 1,3 MB de
 # codigo que no es nuestro y el repo es publico.
 .agents/
+
+# EL METRAJE DE STOCK NO VA EN EL REPO.
+#
+# Iban tres gigas de mp4 dentro de git: el repo llego a 4,78 GB -GitHub avisa
+# a partir de cinco- y cada tirada de render se descargaba las seis carpetas
+# para usar una.
+#
+# Ahora vive en releases, una por episodio (`stock-hotel`, `stock-aeropuerto`
+# ...). La sube la nube con la etiqueta `guardar-stock` y la baja el render
+# con `parallax2/traer_stock.py`, que mira el guion y pide solo las carpetas
+# que cita.
+#
+# En local no hace falta tenerlo: para montar un guion bastan los pools, que
+# son JSON. Solo se necesita el metraje para revisar un pool nuevo a ojo, y
+# entonces lo baja `pool_<tema>.py` en la misma tanda.
+parallax2/proyecto/stock_*/

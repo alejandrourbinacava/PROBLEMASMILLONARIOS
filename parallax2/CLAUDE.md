@@ -460,6 +460,32 @@ aparecer tras el inicio de la escena: nunca a cero, el texto entra
 Hay valores por defecto según el rol (el fondo no entra nunca, el frente
 sube), así que solo se declaran cuando quieres otra cosa.
 
+## El metraje NO vive en el repo
+
+Vive en **releases**, una por episodio: `stock-hotel`, `stock-aeropuerto`,
+`stock-banco`… Iban tres gigas de mp4 dentro de git, el repo llegó a 4,78 GB
+—GitHub avisa a partir de cinco— y cada tirada de render se descargaba las
+seis carpetas para usar una.
+
+| qué | quién | cuándo |
+|---|---|---|
+| empaquetar y subir | la nube, `guardar-stock.yml` | al etiquetar `guardar-stock-N` |
+| bajar lo que hace falta | el render, `traer_stock.py` | antes de `validar.py` |
+
+**`traer_stock.py` no adivina las carpetas por el nombre de la etiqueta: las
+lee del guion.** Un pool hereda del de otro episodio —el del hotel tiene 111
+clips del banco, porque en un episodio sobre un contrato de gestión los
+despachos y los contratos son la mitad del material—, así que el hotel
+necesita `stock_hotel` y `stock_banco` a la vez. Preguntárselo al guion es lo
+único que no se queda desfasado.
+
+En local **no hace falta tenerlo**: para montar un guion bastan los pools,
+que son JSON de texto. El metraje solo se necesita para revisar un pool nuevo
+a ojo, y entonces lo baja `pool_<tema>.py` en la misma tanda.
+
+Si añades clips a un episodio, hay que volver a etiquetar `guardar-stock` o
+el render no los encontrará.
+
 ## Clips de stock
 
 Cuando una escena es fácil de cubrir con metraje real, se usa en vez de

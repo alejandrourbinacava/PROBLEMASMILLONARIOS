@@ -1,0 +1,66 @@
+name: Probar que el metraje se baja solo
+
+# Comprueba el camino nuevo sin gastar dos horas de render.
+#
+# El metraje salio del repo y ahora lo baja `traer_stock.py` de una release
+# justo antes de validar. Si eso falla, el fallo aparece a los dos minutos de
+# una tirada de render... o a los cuarenta, con medio video ya compuesto. Esto
+# lo comprueba en tres minutos: baja lo que pide cada guion y deja que
+# `comprobar_ficheros.py` diga si esta TODO lo que el guion cita.
+#
+#     git tag probar-stock-1 && git push origin probar-stock-1
+#
+# Y conviene volver a lanzarlo cada vez que se anadan clips a un episodio,
+# porque el metraje nuevo no esta en la release hasta que se etiqueta
+# `guardar-stock` otra vez.
+
+on:
+  push:
+    tags:
+      - "probar-stock*"
+  workflow_dispatch:
+    inputs:
+      guion:
+        description: "Un solo guion. Vacio = todos los del proyecto"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  probar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Bajar el metraje de cada guion y comprobar que esta entero
+        working-directory: parallax2
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          SOLO: ${{ inputs.guion }}
+        run: |
+          set -e
+          # Los guiones de verdad, y solo esos: en proyecto/ hay treinta y un
+          # JSON y la mayoria son pruebas viejas de capas que no citan stock.
+          TODOS="proyecto/aeropuerto.json proyecto/aerolinea.json proyecto/gasolinera.json proyecto/gimnasio.json proyecto/hotel.json proyecto/banco_v2.json"
+          GUIONES="${SOLO:-$TODOS}"
+          mal=0
+          for g in $GUIONES; do
+            # Los JSON de proyecto/ que no son guiones no tienen escenas:
+            # `traer_stock.py` los da por buenos y no baja nada.
+            echo "::group::$g"
+            python traer_stock.py "$g" || mal=1
+            python comprobar_ficheros.py "$g" || mal=1
+            echo "::endgroup::"
+          done
+          echo "--- lo que se ha bajado ---"
+          du -sh proyecto/stock_* 2>/dev/null || echo "ninguna carpeta"
+          df -h / | tail -1
+          exit $mal

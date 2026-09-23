@@ -1026,7 +1026,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/calculator_total_display_77.mp4",
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1042,7 +1042,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1820,7 +1820,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -1837,7 +1837,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+      "clip": "stock_banco/zero_on_calculator_227.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1867,7 +1867,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2119,7 +2119,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/graph_rising_arrow_screen_200.mp4",
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2132,19 +2132,45 @@
       "texto": "No es una recomendación ni una banda orientativa. En los medicamentos financiados —los de receta, los que paga el sistema público— el precio de venta viene marcado, y el margen que se queda la farmacia también: un porcentaje fijado por real decreto, del orden del veintisiete coma nueve por ciento del precio del laboratorio.",
       "duracion": 3.82,
       "movimiento": "estatico",
-      "grade": "sepia_archivo",
+      "grade": "neutro",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/profit_graph_rising_221.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "pastilla",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "No es una *recomendación*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap4_03d",
@@ -2155,7 +2181,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/declining_graph_red_226.mp4",
+      "clip": "stock_farmacia/declining_graph_red_screen_61.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2168,10 +2194,12 @@
       "texto": "No es una recomendación ni una banda orientativa. En los medicamentos financiados —los de receta, los que paga el sistema público— el precio de venta viene marcado, y el margen que se queda la farmacia también: un porcentaje fijado por real decreto, del orden del veintisiete coma nueve por ciento del precio del laboratorio.",
       "duracion": 4.64,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "sepia_archivo",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_farmacia/hand_holding_blister_pills_119.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "anillo",
@@ -2189,9 +2217,8 @@
         "duracion": 2.8,
         "entrada": "latigo_der"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.286,
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "composicion": "derecha"
     },
     {
@@ -2246,7 +2273,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_farmacia/hand_holding_blister_pills_119.mp4",
+      "clip": "stock_farmacia/white_pills_pile_close_up_b1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2262,7 +2289,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/white_pills_pile_close_up_b1.mp4",
+      "clip": "stock_farmacia/colourful_capsules_pills_close_up_b11.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2278,7 +2305,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/colourful_capsules_pills_close_up_b11.mp4",
+      "clip": "stock_farmacia/automated_pharmacy_robot_dispenser_17.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2417,7 +2444,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/automated_pharmacy_robot_dispenser_17.mp4",
+      "clip": "stock_farmacia/old_pharmacy_staff_white_coats_counter_126.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2433,7 +2460,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_farmacia/old_pharmacy_staff_white_coats_counter_126.mp4",
+      "clip": "stock_farmacia/pharmacist_white_coat_old_pharmacy_wood_b2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2551,7 +2578,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/pharmacist_white_coat_old_pharmacy_wood_b2.mp4",
+      "clip": "stock_farmacia/pill_bottles_pharmacy_shelf_15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2567,7 +2594,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/pill_bottles_pharmacy_shelf_15.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2642,7 +2669,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/declining_graph_red_226.mp4",
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3737,7 +3764,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3846,7 +3873,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_farmacia/declining_graph_red_screen_61.mp4",
+      "clip": "stock_farmacia/clock_late_night_working_alone_35.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3958,7 +3985,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -3974,7 +4001,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/calculator_total_display_77.mp4",
+      "clip": "stock_banco/zero_on_calculator_227.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -3990,7 +4017,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip": "stock_farmacia/aerial_view_small_village_fields_42.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4017,7 +4044,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_farmacia/valley_mountains_rural_landscape_141.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4092,7 +4119,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/clock_late_night_working_alone_35.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4119,7 +4146,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4135,7 +4162,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4194,7 +4221,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip": "stock_farmacia/declining_graph_red_screen_61.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4229,7 +4256,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip": "stock_farmacia/bank_advisor_explaining_client_desk_56.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -4263,7 +4290,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4476,7 +4503,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/percentage_graph_screen_179.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",

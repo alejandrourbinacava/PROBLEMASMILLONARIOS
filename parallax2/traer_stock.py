@@ -49,12 +49,27 @@ def carpetas(guion):
     return sorted(fuera)
 
 
-def baja(carpeta):
+def baja(carpeta, quiere=()):
     # `stock/` a secas es la carpeta de los primeros episodios; no tiene
     # sufijo, asi que su release se llama `stock-general`.
     tema = carpeta[len("stock_"):] if carpeta.startswith("stock_") else "general"
     destino = os.path.join(PROY, carpeta)
-    if os.path.isdir(destino) and os.listdir(destino):
+    # SE MIRA CONTRA EL GUION, no si la carpeta tiene algo dentro.
+    #
+    # Antes bastaba con que la carpeta no estuviera vacia, y una carpeta a
+    # medias se saltaba igual que una completa. Pasa de verdad: al subir el
+    # metraje por una rama de usar y tirar, volver a la rama de trabajo se
+    # lleva por delante los ficheros que estaban rastreados en la otra, y
+    # quedan sesenta y siete clips de setenta y cinco. Todo en verde y el
+    # render cae luego, o peor, sale con planos que no estan.
+    if os.path.isdir(destino) and quiere:
+        faltan = [f for f in quiere
+                  if not os.path.exists(os.path.join(destino, f))]
+        if not faltan:
+            print("  %-22s ya esta" % carpeta)
+            return True
+        print("  %-22s faltan %d de %d" % (carpeta, len(faltan), len(quiere)))
+    elif os.path.isdir(destino) and os.listdir(destino):
         print("  %-22s ya esta" % carpeta)
         return True
     url = URL % (REPO, tema, tema)
@@ -101,7 +116,15 @@ def main():
         print("el guion no cita metraje de stock")
         return 0
     print("%s necesita: %s" % (a.guion, ", ".join(cs)))
-    return 0 if all(baja(c) for c in cs) else 1
+    # que fichero pide el guion de cada carpeta
+    pide = {}
+    for e in g.get("escenas", []):
+        c = e.get("clip")
+        if not c or "/" not in c:
+            continue
+        carpeta, fichero = c.split("/", 1)
+        pide.setdefault(carpeta, set()).add(fichero)
+    return 0 if all(baja(c, pide.get(c, ())) for c in cs) else 1
 
 
 if __name__ == "__main__":

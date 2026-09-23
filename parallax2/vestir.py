@@ -218,6 +218,41 @@ def a_plato(esc, semilla, episodio, ICO):
     return False
 
 
+def dos_mitades(frase):
+    """Parte una frase larga por donde ya se parte sola.
+
+    Se cortaba por el caracter de en medio, y por eso «Las reglas cambian
+    segun la comunidad, pero todas se apoyan en dos numeros» salia como
+    «Las reglas cambian segun» y «comunidad»: media oracion y una palabra
+    suelta, cuando daba para dos rotulos enteros.
+
+    Una frase trae sus juntas puestas: una coma, un punto y coma, o una
+    conjuncion. Se busca la que este mas cerca del centro y se corta ahi.
+    La puntuacion pesa mas que la conjuncion porque es una junta mas
+    fuerte, y si no hay ninguna se vuelve al centro por palabra.
+    """
+    p = frase.split()
+    if len(p) < 6:
+        return frase, ""
+    centro = len(p) / 2.0
+    JUNTAS = {"pero", "porque", "aunque", "mientras", "cuando", "sino",
+              "salvo", "y", "o"}
+    corte, coste = None, 1e9
+    for i, w in enumerate(p):
+        if w.endswith((",", ";", ":")):
+            j, c = i + 1, abs(i + 1 - centro) - 2.5
+        elif _MB._pelada(w) in JUNTAS:
+            j, c = i, abs(i - centro) - 1.0
+        else:
+            continue
+        # ninguna mitad puede quedarse en dos palabras: no da un rotulo
+        if c < coste and 3 <= j <= len(p) - 3:
+            corte, coste = j, c
+    if corte is None:
+        corte = int(round(centro))
+    return " ".join(p[:corte]), " ".join(p[corte:])
+
+
 def partir(esc, texto_izq, texto_der):
     """Una tarjeta larga en dos cortas. Cada mitad dice su trozo."""
     a = dict(esc)
@@ -479,12 +514,34 @@ def main():
         if (e.get("duracion", 4) > TOPE_TARJETA
                 and e.get("duracion", 4) / 2 >= MINIMO_MITAD):
             frase = (e.get("texto") or "").strip()
-            mitad = frase[:len(frase) // 2].rsplit(" ", 1)[0]
-            resto = frase[len(mitad):].strip()
-            x, y, ta, tb = partir(e, titular(mitad, 34),
-                                  titular(resto, 34) or t)
-            partes = [(x, ta), (y, tb)]
-            n_part += 1
+            mitad, resto = dos_mitades(frase)
+            # 42 y no 34 para las mitades: cada una tiene que poder llevar
+            # su clausula ENTERA. Con 34, «Las reglas cambian segun la
+            # comunidad» (37) no cabia y se recortaba a «Las reglas
+            # cambian», que es justo lo contrario de lo que se busca al
+            # partir. El rotulo se encoge solo hasta caber en el encuadre.
+            ta, tb = titular(mitad, 42), titular(resto, 42)
+            # SOLO SE PARTE SI LAS DOS MITADES DICEN COSAS DISTINTAS.
+            #
+            # Antes el codigo era `titular(resto) or t`: si de la segunda
+            # mitad no quedaba nada -pasa con «y paga cuando puede», donde
+            # se va la conjuncion, los verbos y el adverbio- la segunda
+            # tarjeta heredaba el titular de la primera. En pantalla eso es
+            # una tarjeta que desaparece y vuelve a salir igual, que es el
+            # fallo que se vio en el minuto 2:43 del hotel. Si la segunda
+            # mitad no tiene nada nuevo que decir, no son dos planos.
+            # Y TRES PALABRAS CADA UNA. Con el minimo en caracteres se
+            # colaban «Un farmaceutico» y «Mientras tanto»: caben, pero
+            # no dicen nada, y un plano entero sosteniendo dos palabras
+            # se lee como que falta algo. Si una mitad no llega, el
+            # plano no se parte y se queda con la frase entera.
+            def _vale(s):
+                return len(s) >= 12 and len(s.split()) >= 3
+
+            if _vale(ta) and _vale(tb) and ta.lower() != tb.lower():
+                x, y = partir(e, ta, tb)[:2]
+                partes = [(x, ta), (y, tb)]
+                n_part += 1
 
         for k, (esc, txt) in enumerate(partes):
             # LA TARJETA ES EL PLATO DEL CANAL, no un PNG negro.
@@ -513,7 +570,11 @@ def main():
             import efectos as _FX
             claro = not _FX.PALETA.get("oscura", True)
             esc["texto_pantalla"] = {
-                "texto": acentua(txt), "px": alto_txt, "y": y_txt,
+                # `_may` y no `.capitalize()`: el titular puede empezar
+                # por el asterisco del acento, y la mayuscula tiene que
+                # caer en la letra, no en el signo.
+                "texto": _FX._may(acentua(txt)), "px": alto_txt,
+                "y": y_txt,
                 "acento": list(_FX.PALETA["acento"]) if claro else AMBAR,
                 "color": list(_FX.PALETA["hueso"]) if claro else PAPEL,
                 "halo": "claro" if claro else "oscuro",
@@ -647,6 +708,31 @@ def main():
         if tp and not tp.get("texto", "").replace("*", "").strip():
             del e["texto_pantalla"]
             n_vacios += 1
+
+    # UNA ILUSTRACION MUDA ES MEDIO PLANO. El icono dice de que familia es
+    # la idea; la frase dice cual. Si el rotulo se mudo a otro plano y el
+    # que se queda ilustra, se le devuelve el titular de su locucion.
+    import efectos as _FXT
+    n_mudas = 0
+    for e in fuera:
+        if (e.get("grafico") or {}).get("tipo") != "ilustracion":
+            continue
+        if e.get("texto_pantalla") or e.get("duracion", 0) < 2.4:
+            continue
+        txt = titular(e.get("texto") or "", 34)
+        if len(txt) < 12:
+            continue
+        claro = not _FXT.PALETA.get("oscura", True)
+        e["texto_pantalla"] = {
+            "texto": _FXT._may(acentua(txt)), "px": 96, "y": 0.64,
+            "acento": list(_FXT.PALETA["acento"]) if claro else AMBAR,
+            "color": list(_FXT.PALETA["hueso"]) if claro else PAPEL,
+            "halo": "claro" if claro else "oscuro",
+            "estilo": "sube", "retardo": 0.26,
+        }
+        n_mudas += 1
+    if n_mudas:
+        print(f"  ilustraciones que estaban mudas: {n_mudas}")
 
     g["escenas"] = fuera
     destino = os.path.join(AQUI, a.salida)

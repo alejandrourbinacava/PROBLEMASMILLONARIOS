@@ -400,6 +400,46 @@ def _dato(d, c, col, gr, paso):
                   .035, col, gr, relleno=col)
 
 
+def _farmacia(d, c, col, gr, paso):
+    """La cruz, colgada de su brazo sobre la calle."""
+    if paso(0):
+        _caja(d, c, .30, .14, .94, .78, col, gr, .10)
+    if paso(1):
+        _lin(d, c, [(.62, .28), (.62, .64)], col, gr + 3)
+        _lin(d, c, [(.44, .46), (.80, .46)], col, gr + 3)
+    if paso(2):
+        _lin(d, c, [(.08, .06), (.08, .94)], col, gr)
+        _lin(d, c, [(.08, .46), (.30, .46)], col, gr)
+
+
+def _mapa(d, c, col, gr, paso):
+    """La hoja, dos calles y la chincheta.
+
+    Iba con tres puntos repartidos entre dos lineas verticales y en
+    pantalla era una ficha de domino. Una calle en cada sentido y una sola
+    marca se lee como un mapa a la primera.
+    """
+    if paso(0):
+        _caja(d, c, .06, .16, .94, .84, col, gr, .05)
+    if paso(1):
+        _lin(d, c, [(.30, .16), (.30, .84)], col, max(2, gr - 3))
+        _lin(d, c, [(.06, .60), (.94, .60)], col, max(2, gr - 3))
+    if paso(2):
+        _circ(d, c, .62, .38, .095, col, gr)
+        _circ(d, c, .62, .38, .030, col, gr, relleno=col)
+
+
+def _pastilla(d, c, col, gr, paso):
+    """La caja de medicamento, partida por la mitad."""
+    if paso(0):
+        _caja(d, c, .10, .34, .90, .66, col, gr, .16)
+    if paso(1):
+        _lin(d, c, [(.50, .34), (.50, .66)], col, gr)
+    if paso(2):
+        for x in (.24, .34):
+            _lin(d, c, [(x, .44), (x, .56)], col, max(2, gr - 3))
+
+
 ICONOS = {
     "edificio": _edificio, "hotel": _hotel, "persona": _persona,
     "personas": _personas, "euro": _euro, "billetes": _billetes,
@@ -409,7 +449,9 @@ ICONOS = {
     "avion": _avion, "surtidor": _surtidor, "coche": _coche,
     "candado": _candado, "balanza": _balanza, "grua": _grua,
     "alerta": _alerta, "porcentaje": _porcentaje, "mancuerna": _mancuerna,
-    "carro": _carro, "factura": _factura, "acuerdo": _acuerdo, "dato": _dato,
+    "carro": _carro, "factura": _factura, "acuerdo": _acuerdo,
+    "farmacia": _farmacia, "mapa": _mapa, "pastilla": _pastilla,
+    "dato": _dato,
 }
 
 # ---------------------------------------------------------------------------
@@ -425,8 +467,17 @@ ICONOS = {
 # no intentarlo es dejar la frase sobre negro.
 # ---------------------------------------------------------------------------
 TABLA = [
+    ("farmacia",   "farmacia farmacias botica boticas farmaceutico "
+                   "farmaceutica farmaceuticos mostrador rebotica"),
+    ("mapa",       "mapa mapas zona zonas barrio barrios pueblo pueblos "
+                   "distancia distancias metros habitantes poblacion "
+                   "comunidad comunidades autonoma autonomas provincia "
+                   "reparto planificacion demarcacion nucleo"),
+    ("pastilla",   "medicamento medicamentos medicina medicinas pastilla "
+                   "pastillas generico genericos receta recetas "
+                   "farmacos farmaco dispensar dispensa envase blister"),
     ("hotel",      "hotel hoteles habitacion habitaciones huesped huespedes "
-                   "recepcion estrellas alojamiento cadena hotelera"),
+                   "recepcion estrellas alojamiento hotelera"),
     ("cama",       "cama camas noche noches dormir pernoctacion ocupacion "
                    "llenas lleno vacia vacias"),
     ("avion",      "avion aviones vuelo vuelos aerolinea aerolineas aeropuerto "
@@ -499,7 +550,7 @@ def _norm(t):
 DEL_TEMA = {
     "hotel": "hotel", "aerolinea": "avion", "aeropuerto": "avion",
     "gasolinera": "surtidor", "gimnasio": "mancuerna", "banco": "banco",
-    "casa": "edificio", "casino": "billetes",
+    "casa": "edificio", "casino": "billetes", "farmacia": "farmacia",
 }
 
 

@@ -180,6 +180,38 @@ TEMAS_HOTEL = [
                    "agosto", "febrero", "reserva", "reservar", "precio")),
 ]
 
+# Los temas de la farmacia. El episodio no va de medicinas: va de un permiso,
+# un mapa y un pagador que es la Administracion, asi que los grupos son esos
+# y no "pastillas".
+TEMAS_FARMACIA = [
+    ("farmacia",  ("farmacia", "farmacias", "botica", "botiquin", "cruz",
+                   "mostrador", "local", "tienda", "persiana", "abrir",
+                   "abierta", "escaparate")),
+    ("permiso",   ("permiso", "licencia", "autorizacion", "decreto", "ley",
+                   "norma", "normativa", "plan", "concurso", "merito",
+                   "meritos", "expediente", "boletin", "oficial")),
+    ("mapa",      ("mapa", "zona", "distancia", "metros", "habitantes",
+                   "poblacion", "barrio", "pueblo", "calle", "esquina",
+                   "reparto", "modulo")),
+    ("medicamento", ("medicamento", "medicamentos", "medicina", "medicinas",
+                     "caja", "cajas", "receta", "recetas", "generico",
+                     "genericos", "principio", "dosis", "blister")),
+    ("paciente",  ("paciente", "cliente", "clientela", "gente", "senora",
+                   "mayor", "tarjeta", "sanitaria", "medico", "consulta",
+                   "sanidad")),
+    ("plantilla", ("plantilla", "personal", "farmaceutico", "farmaceutica",
+                   "titulado", "adjunto", "auxiliar", "nomina", "contratar",
+                   "guardia", "guardias", "turno", "horario", "noche")),
+    ("almacen",   ("almacen", "stock", "existencias", "caduca", "caducidad",
+                   "robot", "cajon", "cajones", "estanteria", "reparto",
+                   "proveedor", "distribuidor")),
+    ("dinero",    ("euros", "millon", "millones", "precio", "precios",
+                   "margen", "descuento", "deduccion", "factura", "facturan",
+                   "facturacion", "cobrar", "pagar", "paga", "prestamo",
+                   "banco", "hipoteca", "credito", "cuesta", "vende",
+                   "traspaso", "comprar")),
+]
+
 POR_DEFECTO = "oficina"
 
 # Grades SUAVES: los normales estan calibrados para arte generado oscuro y

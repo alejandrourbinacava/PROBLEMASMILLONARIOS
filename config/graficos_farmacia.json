@@ -1,0 +1,232 @@
+[
+  {
+    "_nota": "EL GRAFICO DEL GANCHO, y es la factura del canal AL REVES. En los demas episodios la factura suma lo que compras; aqui todas las lineas son cosas que NO compras, y el total es un permiso. Mismo formato de la serie, contenido invertido: el que ha visto otros episodios reconoce la forma y le cambia el significado.",
+    "donde": "un millon de euros por que nadie pueda ponerse enfrente",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que no compras"
+    },
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "por un millón de euros",
+      "lineas": [
+        [
+          "el local",
+          "es de alquiler"
+        ],
+        [
+          "la marca",
+          "no hay"
+        ],
+        [
+          "las medicinas",
+          "las fía el almacén"
+        ],
+        [
+          "el permiso",
+          "eso sí"
+        ]
+      ],
+      "total": "un permiso",
+      "etiqueta_total": "y solo eso",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "La red entera en una cifra. Veintidos mil farmacias no es un dato de color: es la prueba de que el mapa existe y esta dibujado. El pie lleva la densidad, que es lo que lo convierte en argumento.",
+    "donde": "de ahi sale una red de unas veintidos mil farmacias",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 2 · el mapa"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 22000.0,
+      "dec": 0,
+      "sufijo": " farmacias",
+      "pie": "una por cada 2.100 habitantes",
+      "px": 170,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Las dos reglas que dibujan el mapa. Un anillo no vale porque no es un porcentaje, y unas barras tampoco porque habitantes y metros no se comparan. Una tarjeta con las dos cifras y sus unidades, que es lo que son: dos numeros de un decreto.",
+    "donde": "la distancia minima entre una y otra",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "las dos reglas del mapa",
+      "lineas": [
+        [
+          "habitantes por farmacia",
+          "~2.800"
+        ],
+        [
+          "metros entre una y otra",
+          "~250"
+        ]
+      ],
+      "total": "y nadie más cabe",
+      "etiqueta_total": "cumplidas las dos",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El precio contra lo que factura. Las dos barras salen casi iguales, y ESO es el dato: se paga en torno a un ano entero de facturacion por entrar. No hay astilla aqui a proposito; el argumento es la semejanza, no la diferencia.",
+    "donde": "valorarlas como un multiplo de lo que facturan",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 3 · cómo se entra"
+    },
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "lo que factura y lo que cuesta",
+      "items": [
+        [
+          "Factura en un año",
+          800000.0
+        ],
+        [
+          "Cuesta comprarla",
+          1000000.0
+        ]
+      ],
+      "destacar": {
+        "Cuesta comprarla": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El margen. Aqui la cifra ES la frase: no hace falta comparar con nada, hace falta que se entienda que ese numero no lo ha negociado nadie. El pie dice quien lo puso.",
+    "donde": "del veintisiete coma nueve por ciento del precio del laboratorio",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 4 · el precio"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 27.9,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "fijado por real decreto, no negociado",
+      "r": 180,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "QUIEN PAGA. La flecha va invertida: el dinero no viene del mostrador, viene de la Administracion. Es el mismo grafico que Charleroi en la aerolinea y el aeropuerto que paga a la aerolinea, y aqui cierra el capitulo del cliente.",
+    "donde": "tu cliente es una comunidad autonoma",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "quién paga la caja"
+    },
+    "grafico": {
+      "tipo": "flecha",
+      "a": "LA FARMACIA",
+      "b": "LA COMUNIDAD",
+      "etiqueta": "casi todo lo paga ella, y cuando puede",
+      "invertida": true,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El suelo de gastos, capitulo seis. Sin cifras a proposito: ninguna de estas partidas tiene un numero que aguante en toda Espana, y meter uno inventado seria justo el dato que un espectador repetiria. Lo que cuenta es la LISTA, y que ninguna linea se pueda apagar.",
+    "donde": "un suelo de gastos que no baja aunque el barrio se vaya de vacaciones",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 6 · lo que no se apaga"
+    },
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "todos los meses, pase lo que pase",
+      "lineas": [
+        [
+          "el alquiler del local",
+          "aunque sea agosto"
+        ],
+        [
+          "uno o dos farmacéuticos titulados",
+          "obligatorio"
+        ],
+        [
+          "el almacén parado, y lo que caduca",
+          "pagado por adelantado"
+        ],
+        [
+          "las guardias de madrugada",
+          "no se eligen"
+        ]
+      ],
+      "total": "no baja",
+      "etiqueta_total": "y este suelo",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA FACTURA FINAL, y remata la serie: la ultima linea no es un gasto ni un socio, es una casilla. Es lo mismo que el hotel -la cuenta termina con algo que no es un numero- pero aqui lo que no es tuyo es literalmente todo.",
+    "donde": "no es dueno del precio, ni del producto",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "de qué eres dueño",
+      "lineas": [
+        [
+          "el precio de lo que vendes",
+          "lo pone el Gobierno"
+        ],
+        [
+          "el producto que dispensas",
+          "lo elige un médico"
+        ],
+        [
+          "quién te paga y cuándo",
+          "una comunidad autónoma"
+        ],
+        [
+          "las horas que abres",
+          "vienen marcadas"
+        ]
+      ],
+      "total": "una casilla",
+      "etiqueta_total": "tuyo es",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.2,
+      "entrada": "barrido"
+    }
+  }
+]

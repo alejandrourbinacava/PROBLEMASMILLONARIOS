@@ -1,0 +1,376 @@
+{
+ "guion": "farmacia.json",
+ "total": 848.15,
+ "bloques": [
+  {
+   "id": "gancho_01",
+   "hash": "7876fe91973a63b9",
+   "inicio": 0.0
+  },
+  {
+   "id": "gancho_02",
+   "hash": "83a5a73ca85a9371",
+   "inicio": 11.87
+  },
+  {
+   "id": "gancho_03",
+   "hash": "4470c5209da40fae",
+   "inicio": 18.33
+  },
+  {
+   "id": "gancho_04",
+   "hash": "972cb5869b9a5a86",
+   "inicio": 29.57
+  },
+  {
+   "id": "gancho_05",
+   "hash": "c8a7e7bfb37a5d2f",
+   "inicio": 40.26
+  },
+  {
+   "id": "cap1_01",
+   "hash": "f334059cc843ba80",
+   "inicio": 43.79
+  },
+  {
+   "id": "cap1_02",
+   "hash": "1aa074d14bb9191f",
+   "inicio": 46.88
+  },
+  {
+   "id": "cap1_03",
+   "hash": "e15eba466a1c6a13",
+   "inicio": 60.65
+  },
+  {
+   "id": "cap1_04",
+   "hash": "304e7f58afdb878d",
+   "inicio": 76.83
+  },
+  {
+   "id": "cap1_05",
+   "hash": "ae768fd65328126b",
+   "inicio": 83.6
+  },
+  {
+   "id": "cap1_06",
+   "hash": "c7f325e377e3be3c",
+   "inicio": 99.44
+  },
+  {
+   "id": "cap1_07",
+   "hash": "4ce685be6360ff02",
+   "inicio": 103.84
+  },
+  {
+   "id": "cap2_01",
+   "hash": "0dad5b27ddd33806",
+   "inicio": 112.65
+  },
+  {
+   "id": "cap2_02",
+   "hash": "6484f29360a5d947",
+   "inicio": 118.56
+  },
+  {
+   "id": "cap2_03",
+   "hash": "22557deae046dffc",
+   "inicio": 132.88
+  },
+  {
+   "id": "cap2_04",
+   "hash": "2ed28849957835a4",
+   "inicio": 142.16
+  },
+  {
+   "id": "cap2_05",
+   "hash": "84398da343add42d",
+   "inicio": 159.56
+  },
+  {
+   "id": "cap2_06",
+   "hash": "7e976382de74d101",
+   "inicio": 166.54
+  },
+  {
+   "id": "cap2_07",
+   "hash": "36c7b25d8dc3ae48",
+   "inicio": 175.35
+  },
+  {
+   "id": "cap2_08",
+   "hash": "5a115fc3efeef92f",
+   "inicio": 182.72
+  },
+  {
+   "id": "cap2_09",
+   "hash": "11620210b9739941",
+   "inicio": 198.66
+  },
+  {
+   "id": "cap2_10",
+   "hash": "091f49a991a29a42",
+   "inicio": 203.0
+  },
+  {
+   "id": "cap2_11",
+   "hash": "256e85899d30b830",
+   "inicio": 222.83
+  },
+  {
+   "id": "cap3_01",
+   "hash": "0657c27ea39d407a",
+   "inicio": 234.31
+  },
+  {
+   "id": "cap3_02",
+   "hash": "a3d4120b5b1a5ea5",
+   "inicio": 241.29
+  },
+  {
+   "id": "cap3_03",
+   "hash": "5d63c8657294d584",
+   "inicio": 262.22
+  },
+  {
+   "id": "cap3_04",
+   "hash": "287b871d7f8d3690",
+   "inicio": 275.47
+  },
+  {
+   "id": "cap3_05",
+   "hash": "9924252fbcb90209",
+   "inicio": 282.66
+  },
+  {
+   "id": "cap3_06",
+   "hash": "3a00a8482c55b9a5",
+   "inicio": 297.56
+  },
+  {
+   "id": "cap3_07",
+   "hash": "628ec5d0ef6bd079",
+   "inicio": 308.09
+  },
+  {
+   "id": "cap3_08",
+   "hash": "65eb52ad137f316d",
+   "inicio": 317.55
+  },
+  {
+   "id": "cap4_01",
+   "hash": "ae3b2fde1105bf99",
+   "inicio": 329.76
+  },
+  {
+   "id": "cap4_02",
+   "hash": "75f15466829291b1",
+   "inicio": 333.74
+  },
+  {
+   "id": "cap4_03",
+   "hash": "4d3ea96ff2a6b369",
+   "inicio": 342.45
+  },
+  {
+   "id": "cap4_04",
+   "hash": "0c5d9be81b8b0eb5",
+   "inicio": 361.68
+  },
+  {
+   "id": "cap4_05",
+   "hash": "dba1be2439834c63",
+   "inicio": 370.23
+  },
+  {
+   "id": "cap4_06",
+   "hash": "d6423c8628fe1b47",
+   "inicio": 381.91
+  },
+  {
+   "id": "cap4_07",
+   "hash": "2e6d1537b80de3e7",
+   "inicio": 401.82
+  },
+  {
+   "id": "cap4_08",
+   "hash": "bcb41059582db536",
+   "inicio": 415.83
+  },
+  {
+   "id": "cap4_09",
+   "hash": "abf589731fc93275",
+   "inicio": 428.3
+  },
+  {
+   "id": "cap4_10",
+   "hash": "32bd113fc61a603e",
+   "inicio": 445.84
+  },
+  {
+   "id": "cap5_01",
+   "hash": "26b216309fbe2466",
+   "inicio": 462.07
+  },
+  {
+   "id": "cap5_02",
+   "hash": "f5c400ce79576adc",
+   "inicio": 471.27
+  },
+  {
+   "id": "cap5_03",
+   "hash": "435dcabd11895739",
+   "inicio": 480.5
+  },
+  {
+   "id": "cap5_04",
+   "hash": "487aa36a8bb0801f",
+   "inicio": 484.56
+  },
+  {
+   "id": "cap5_05",
+   "hash": "05f431b07a7532dc",
+   "inicio": 496.98
+  },
+  {
+   "id": "cap5_06",
+   "hash": "8382061236bc1ff6",
+   "inicio": 511.56
+  },
+  {
+   "id": "cap5_07",
+   "hash": "04d190e36bf8f46a",
+   "inicio": 525.18
+  },
+  {
+   "id": "cap5_08",
+   "hash": "a436708d79c594c7",
+   "inicio": 535.27
+  },
+  {
+   "id": "cap5_09",
+   "hash": "1b5747d6ebf95e96",
+   "inicio": 552.0
+  },
+  {
+   "id": "cap5_10",
+   "hash": "1c8afffa75286b40",
+   "inicio": 563.95
+  },
+  {
+   "id": "cap6_01",
+   "hash": "c69679dc529d7b71",
+   "inicio": 569.57
+  },
+  {
+   "id": "cap6_02",
+   "hash": "af12bbea5430093e",
+   "inicio": 574.04
+  },
+  {
+   "id": "cap6_03",
+   "hash": "cc53797d6c1f40bd",
+   "inicio": 587.81
+  },
+  {
+   "id": "cap6_04",
+   "hash": "e8f22fe3f60d1252",
+   "inicio": 598.55
+  },
+  {
+   "id": "cap6_05",
+   "hash": "968f1377823f175d",
+   "inicio": 619.14
+  },
+  {
+   "id": "cap6_06",
+   "hash": "d7bc9e0da1ab4100",
+   "inicio": 633.41
+  },
+  {
+   "id": "cap6_07",
+   "hash": "2af5978c9783e0c7",
+   "inicio": 648.54
+  },
+  {
+   "id": "cap6_08",
+   "hash": "a9a1d7f00aad29c4",
+   "inicio": 667.15
+  },
+  {
+   "id": "cap7_01",
+   "hash": "4dc3f450389e6871",
+   "inicio": 683.51
+  },
+  {
+   "id": "cap7_02",
+   "hash": "8b4a02cca3690096",
+   "inicio": 689.6
+  },
+  {
+   "id": "cap7_03",
+   "hash": "e45b2ec44519632a",
+   "inicio": 699.95
+  },
+  {
+   "id": "cap7_04",
+   "hash": "cef6c2ee515566f6",
+   "inicio": 716.36
+  },
+  {
+   "id": "cap7_05",
+   "hash": "c0b69a530295ca21",
+   "inicio": 728.64
+  },
+  {
+   "id": "cap7_06",
+   "hash": "4b04ea2d7ea84322",
+   "inicio": 743.96
+  },
+  {
+   "id": "cap7_07",
+   "hash": "f2442ce0ecf8bc92",
+   "inicio": 760.14
+  },
+  {
+   "id": "cierre_01",
+   "hash": "4d81f7e8c0201139",
+   "inicio": 765.03
+  },
+  {
+   "id": "cierre_02",
+   "hash": "5c12d0c58bb5c807",
+   "inicio": 768.77
+  },
+  {
+   "id": "cierre_03",
+   "hash": "cb4d7aa077a94f63",
+   "inicio": 783.04
+  },
+  {
+   "id": "cierre_04",
+   "hash": "83adbcc6af9e2001",
+   "inicio": 787.51
+  },
+  {
+   "id": "cierre_05",
+   "hash": "69b94009e9fc8eae",
+   "inicio": 801.36
+  },
+  {
+   "id": "cierre_06",
+   "hash": "e70216e7a701918d",
+   "inicio": 813.96
+  },
+  {
+   "id": "cierre_07",
+   "hash": "7fbd0de3b0100ea9",
+   "inicio": 832.67
+  },
+  {
+   "id": "cierre_08",
+   "hash": "cd9f3d6fa3c90d6f",
+   "inicio": 842.92
+  }
+ ]
+}

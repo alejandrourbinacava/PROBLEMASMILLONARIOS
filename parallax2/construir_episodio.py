@@ -161,7 +161,7 @@ def main():
     ap.add_argument("--titulo", default="")
     ap.add_argument("--temas",
                     choices=["casino", "banco", "aerolinea", "aeropuerto",
-                             "gasolinera", "hotel"],
+                             "gasolinera", "hotel", "farmacia"],
                     default="banco")
     a = ap.parse_args()
 
@@ -172,6 +172,7 @@ def main():
                 # reparto del constructor solo decide el orden de partida,
                 # porque `vestir` vuelve a repartir por palabra.
                 "aeropuerto": CC.TEMAS_AEROLINEA,
+                "farmacia": CC.TEMAS_FARMACIA,
                 "gasolinera": CC.TEMAS_GASOLINERA,
                 "hotel": CC.TEMAS_HOTEL}.get(a.temas, CC.TEMAS)
     pool = CC.cargar_pool(a.pool)

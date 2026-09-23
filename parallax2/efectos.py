@@ -901,7 +901,11 @@ def grafico(spec, W, H, u, ancla=0.5):
         _pon(capa, _carta(ancho, alto, 32, ac), cx - ancho // 2, cy - r - 64)
 
         caja = [cx - r, cy - r, cx + r, cy + r]
-        d.ellipse(caja, outline=(255, 255, 255, 34), width=gr)
+        # El surco va en el color del tema, no en blanco fijo. Sobre el
+        # plato de papel el blanco no se ve, y queda el arco rojo flotando
+        # sin la circunferencia detras: un arco suelto no se lee como
+        # "27,9 de 100", se lee como un trozo de algo.
+        d.ellipse(caja, outline=tuple(PALETA["surco"]), width=gr)
         ang = 360 * (val / top) * e
         d.arc(caja, -90, -90 + ang, fill=ac + (255,), width=gr)
         # Remate redondo en las dos puntas del arco. PIL dibuja el arco a
@@ -1220,7 +1224,7 @@ def grafico(spec, W, H, u, ancla=0.5):
         cx, cy_m = x0 + lado // 2, y0 + lado // 2
         r_an = int(lado * 0.60)
         caja_an = [cx - r_an, cy_m - r_an, cx + r_an, cy_m + r_an]
-        d.ellipse(caja_an, outline=(255, 255, 255, 26), width=5)
+        d.ellipse(caja_an, outline=tuple(PALETA["surco"]), width=5)
         if e > 0.01:
             d.arc(caja_an, -90, -90 + 360 * e, fill=ac + (200,), width=5)
             rad = math.radians(-90 + 360 * e)

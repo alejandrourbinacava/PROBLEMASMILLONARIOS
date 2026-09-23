@@ -33,6 +33,8 @@ import os
 import re
 import unicodedata
 
+import efectos as _FXM
+
 TOPE_ROTULO = 34          # caracteres: mas y se sale del encuadre
 
 UNI = {
@@ -486,12 +488,42 @@ COLGANTES = {"de", "del", "y", "o", "que", "al", "a", "por", "en", "con",
              "su", "sus", "se", "lo", "es", "no", "ni", "como", "sin",
              "sobre", "cada", "otro", "otra", "otros", "otras", "tan",
              "mismo", "misma", "este", "esta", "estos", "estas", "ese",
-             "esa", "muy", "mas", "menos", "entre", "hasta", "desde"}
+             "esa", "muy", "mas", "menos", "entre", "hasta", "desde",
+             # Las preposiciones que faltaban. Un rotulo que acaba en
+             # "segun" o en "hacia" no es un rotulo, es media frase
+             # esperando la otra mitad; y como esta lista la usa tambien
+             # `acentua`, sin ellas el subrayado rojo podia caer encima
+             # de la preposicion.
+             "segun", "hacia", "durante", "mediante", "contra", "bajo",
+             "tras", "ante", "salvo", "excepto", "cuando", "mientras",
+             "aunque", "donde", "cuyo", "cuya", "cuyos", "cuyas", "cual",
+             "cuanto"}
+
+# Clausulas que solo enlazan. No son rotulos: no dicen nada por si solas, y
+# como suelen ir al principio de la frase y son cortas, ganaban siempre.
+CONECTORES = {
+    "mientras tanto", "por eso", "aun asi", "asi que", "en cambio",
+    "es decir", "de hecho", "por tanto", "sin embargo", "ahora bien",
+    "eso si", "por supuesto", "al final", "en realidad", "a la vez",
+    "de momento", "por ahora", "en teoria", "en la practica", "y ya esta",
+    "o sea", "es mas", "por si fuera poco", "dicho de otra forma",
+    "en resumen", "por ultimo", "primero", "segundo", "y tercero",
+    "y lo tercero", "y lo segundo", "para empezar", "para terminar",
+}
 
 # Un rotulo que acaba en verbo tambien cuelga: "Hacia el quinto ano TIENES"
 # pide un complemento que no esta. Se recorta hasta la ultima palabra que
 # aguante sola.
-VERBOS = {"tienes", "tiene", "tienen", "hay", "son", "eres", "esta", "estan",
+VERBOS = {
+          # Los infinitivos TRANSITIVOS, que son los que piden un
+          # complemento: «hay que ser», «solo puede tener». NO van los
+          # que cierran clausula sin problema -«no para de subir», «la
+          # obligacion de abrir»-: recortarlos dejaria el rotulo peor de
+          # lo que estaba.
+          "ser", "estar", "tener", "hacer", "poder", "deber", "querer",
+          "saber", "poner", "dar", "ver", "vender", "comprar", "pagar",
+          "cobrar", "montar", "llevar", "dejar", "elegir",
+          "tienes", "tiene", "tienen", "hay", "son", "eres", "esta", "estan",
           "va", "van", "sale", "salen", "pone", "pones", "pagas", "paga",
           "cobras", "cobra", "cuesta", "cuestan", "puedes", "puede", "deja",
           "dejas", "necesitas", "necesita", "queda", "quedan", "lleva",
@@ -516,6 +548,12 @@ def rotulo_de(frase, limite=TOPE_ROTULO):
     # todas las clausulas, en orden, y se coge la primera que quepa entera
     trozos = [x.strip() for x in re.split(r"[.;:,]", frase) if x.strip()]
     for x in trozos:
+        # Un conector no es un rotulo. «Mientras tanto» cabe de sobra y por
+        # eso ganaba, y el plano se quedaba con dos palabras que no dicen
+        # nada mientras la frase buena -«la persiana tiene que estar
+        # subida»- se quedaba fuera. Se salta y se mira la siguiente.
+        if norm(x).lower().strip() in CONECTORES:
+            continue
         if 8 <= len(x) <= limite:
             return _limpia_rotulo(x)
 
@@ -544,7 +582,10 @@ def _pelada(w):
 
 def _limpia_rotulo(txt):
     """Quita lo que cuelga por los dos extremos."""
-    CABEZA = {"y", "o", "pero", "porque", "asi", "aunque", "sino"}
+    CABEZA = {"y", "o", "pero", "porque", "asi", "aunque", "sino",
+              # "que" tambien: un rotulo que empieza por "que" pide la
+              # oracion principal, y la principal no esta en pantalla.
+              "que", "pues", "entonces"}
     p = txt.split()
     while p and _pelada(p[0]) in CABEZA:
         p.pop(0)
@@ -793,7 +834,11 @@ def main():
         if len(t) < 10:
             continue
         e["texto_pantalla"] = {
-            "texto": resalta(t),
+            # En mayuscula, como los de las tarjetas y los de los
+            # graficos. Salen de un trozo de la locucion, donde van a
+            # mitad de oracion, pero en pantalla son una linea suelta.
+            # Se arreglo en `vestir` y aqui quedaron dieciocho.
+            "texto": _FXM._may(resalta(t)),
             "px": 132 if len(t) < 22 else 108,
             "y": 0.30 if i % 2 else 0.68,
             "acento": list(ACENTO),

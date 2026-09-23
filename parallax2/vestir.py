@@ -295,7 +295,27 @@ def main():
             p, cas = EMP.puntua(e.get("texto") or "", ruta, desc)
             if p:
                 combis.append((p, i, ruta))
-    combis.sort(key=lambda x: -x[0])
+
+    # EL GANCHO ELIGE PRIMERO.
+    #
+    # `combis` va ordenada por puntuacion y se reparte a lo bruto, asi que
+    # un clip de farmacia que puntua 5 en una frase del capitulo seis se
+    # coloca antes que ese mismo clip puntuando 2 en el primer plano del
+    # video. Resultado: el episodio sobre una farmacia abria con un puerto
+    # deportivo de noche, sobre la frase «una farmacia de barrio se vende
+    # por ochocientos mil euros».
+    #
+    # El primer plano no es un plano mas: es el unico que todo el mundo ve,
+    # y el que tiene que cumplir lo que promete la miniatura. Los planos
+    # del gancho se sirven antes que nadie. No se les sube la puntuacion
+    # -eso colocaria un clip que no viene a cuento-, se les adelanta el
+    # turno entre los que ya puntuan.
+    def _turno(x):
+        p, i, _ = x
+        return (0 if (escenas[i].get("id") or "").startswith("gancho") else 1,
+                -p)
+
+    combis.sort(key=_turno)
 
     # Un clip bueno puede VOLVER A SALIR, separado en el tiempo.
     #

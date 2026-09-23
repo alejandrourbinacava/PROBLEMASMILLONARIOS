@@ -61,6 +61,28 @@ jobs:
               continue
             fi
 
+            # SE FUSIONA CON LO QUE YA HAY EN LA RELEASE.
+            #
+            # Antes esto rehacia el tar desde cero con lo que hubiera en el
+            # arbol, o sea que para anadir ocho clips de veintiseis megas
+            # habia que volver a subir los cuatrocientos de la carpeta
+            # entera desde una linea domestica. Y cada subida se queda en el
+            # historial de git aunque despues se borre la rama, con el repo
+            # ya rozando los cinco gigas que GitHub avisa.
+            #
+            # Aqui el que tiene la release a un curl de distancia es el
+            # runner. Se baja la que haya, se extrae DEBAJO de lo que traiga
+            # el arbol -`--skip-old-files`, para que un clip realigerado en
+            # el repo gane al viejo- y se empaqueta la union. Asi la rama de
+            # usar y tirar solo lleva lo nuevo.
+            if gh release view "stock-$tema" >/dev/null 2>&1; then
+              if gh release download "stock-$tema" -p "stock-$tema.tar"                    -O viejo.tar 2>/dev/null; then
+                tar -xf viejo.tar -C parallax2/proyecto --skip-old-files
+                rm -f viejo.tar
+                echo "::notice::stock-$tema: fusionado con la release"
+              fi
+            fi
+
             # Sin comprimir: un mp4 ya esta comprimido y gzip solo gastaria
             # minutos de CPU para quitarle un uno por ciento.
             tar -cf "stock-$tema.tar" -C parallax2/proyecto "$base"

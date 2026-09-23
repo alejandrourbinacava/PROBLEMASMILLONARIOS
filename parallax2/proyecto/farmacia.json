@@ -18,7 +18,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+      "clip": "stock_farmacia/city_street_shops_pedestrians_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -45,7 +45,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/city_street_traffic_timelaps_99.mp4",
+      "clip": "stock_farmacia/residential_neighbourhood_street_day_39.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -80,7 +80,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_farmacia/city_street_shops_pedestrians_40.mp4",
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -97,7 +97,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/residential_neighbourhood_street_day_39.mp4",
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -156,7 +156,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip": "stock_banco/money_and_construction_plans_67.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -319,7 +319,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_farmacia/shop_window_display_evening_light_110.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -335,7 +335,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/money_counting_machine_38.mp4",
+      "clip": "stock_banco/money_counting_machine_122.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -351,7 +351,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/money_and_construction_plans_67.mp4",
+      "clip": "stock_banco/balance_scale_money_194.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -384,7 +384,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -403,7 +403,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/money_envelope_cash_91.mp4",
+      "clip": "stock_farmacia/hands_using_calculator_invoices_58.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -420,7 +420,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -436,7 +436,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_188.mp4",
+      "clip": "stock_farmacia/government_building_facade_columns_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -463,7 +463,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/delivery_van_unloading_boxes_street_21.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -479,7 +479,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/government_building_facade_columns_49.mp4",
+      "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -495,7 +495,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -511,7 +511,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_farmacia/hands_using_calculator_invoices_58.mp4",
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -538,7 +538,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -554,7 +554,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/supermarket_aisle_shelves_customer_109.mp4",
+      "clip": "stock_farmacia/antique_apothecary_jars_shelf_pharmacy_b4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -570,7 +570,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_farmacia/official_document_stamp_desk_46.mp4",
+      "clip": "stock_farmacia/pharmacy_counter_staff_white_coats_customer_b6.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -586,7 +586,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_farmacia/signing_official_form_pen_48.mp4",
+      "clip": "stock_farmacia/supermarket_aisle_shelves_customer_109.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -602,7 +602,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/supermarket_aisle_shelves_products_64.mp4",
+      "clip": "stock_farmacia/official_document_stamp_desk_46.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -667,7 +667,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -1085,7 +1085,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/contract_paperwork_stack_des_176.mp4",
+      "clip": "stock_banco/contract_being_torn_214.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1095,16 +1095,43 @@
     {
       "id": "cap2_07",
       "texto": "Para tener una farmacia hay que ser farmacéutico. Y un farmacéutico solo puede tener una.",
-      "duracion": 7.37,
+      "duracion": 2.96,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_farmacia/pharmacist_white_coat_old_pharmacy_wood_b2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Para tener una *farmacia*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "Para tener una farmacia hay que ser farmacéutico. Y un farmacéutico solo puede tener una.",
+      "duracion": 4.41,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "ceniza"
       ],
       "capas": [],
-      "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "farmacia",
@@ -1114,6 +1141,7 @@
         "duracion": 1.6,
         "entrada": "golpe"
       },
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Para tener una *farmacia*",
         "px": 96,
@@ -1131,8 +1159,7 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      },
-      "composicion": "derecha"
+      }
     },
     {
       "id": "cap2_08",
@@ -1159,7 +1186,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_08b",
@@ -1175,7 +1202,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_08c",
@@ -1191,7 +1218,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_08d",
@@ -1202,7 +1229,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip": "stock_farmacia/antique_apothecary_jars_shelf_pharmacy_b4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1223,7 +1250,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_09",
@@ -1234,12 +1261,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_188.mp4",
+      "clip": "stock_farmacia/city_street_shops_pedestrians_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_10",
@@ -1271,7 +1298,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_10b",
@@ -1298,7 +1325,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_10c",
@@ -1314,7 +1341,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_10d",
@@ -1330,7 +1357,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_11",
@@ -1341,7 +1368,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/city_street_traffic_timelaps_99.mp4",
+      "clip": "stock_farmacia/residential_neighbourhood_street_day_39.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1357,7 +1384,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_11b",
@@ -1368,12 +1395,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_farmacia/city_street_shops_pedestrians_40.mp4",
+      "clip": "stock_farmacia/supermarket_aisle_shelves_customer_109.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_11c",
@@ -1384,13 +1411,13 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_farmacia/delivery_van_unloading_boxes_street_21.mp4",
+      "clip": "stock_farmacia/spanish_town_street_old_buildings_36.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_01",
@@ -1417,7 +1444,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_01b",
@@ -1436,7 +1463,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_02",
@@ -1464,7 +1491,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_02b",
@@ -1480,7 +1507,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_02c",
@@ -1496,7 +1523,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_02d",
@@ -1512,7 +1539,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_02e",
@@ -1523,12 +1550,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_03",
@@ -1555,7 +1582,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_03b",
@@ -1571,7 +1598,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_03c",
@@ -1587,18 +1614,58 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_04",
       "texto": "Así que casi todo el mundo entra por la segunda puerta: comprarle la farmacia a otro farmacéutico.",
-      "duracion": 3.6,
+      "duracion": 2.89,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_farmacia/pharmacy_counter_staff_white_coats_customer_b6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Casi todo el *mundo* entra",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "Así que casi todo el mundo entra por la segunda puerta: comprarle la farmacia a otro farmacéutico.",
+      "duracion": 4.3,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "fuga_luz"
       ],
       "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "farmacia",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Casi todo el mundo *entra*",
         "px": 96,
@@ -1616,62 +1683,7 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.143,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "farmacia",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cap3_04x",
-      "texto": "Así que casi todo el mundo entra por la segunda puerta: comprarle la farmacia a otro farmacéutico.",
-      "duracion": 3.59,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "polvo"
-      ],
-      "capas": [],
-      "texto_pantalla": {
-        "texto": "Comprarle la farmacia a otro *farmacéutico*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "farmacia",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha"
+      }
     },
     {
       "id": "cap3_05",
@@ -1683,7 +1695,7 @@
         "humo"
       ],
       "capas": [],
-      "composicion": "centrado",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "barras",
         "titulo": "lo que factura y lo que cuesta",
@@ -1716,36 +1728,88 @@
       "id": "cap3_05b",
       "texto": "Y ahí ya no hay méritos, hay precio. El mercado se ha acostumbrado a valorarlas como un múltiplo de lo que facturan: entre una vez y una vez y media la facturación de un año, con mucha variación según la zona y el tipo de clientela.",
       "duracion": 4.9,
-      "movimiento": "contra_der",
-      "grade": "frio_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/spanish_town_street_old_buildings_36.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "mapa",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Ahí ya no hay *méritos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap3_05c",
       "texto": "Y ahí ya no hay méritos, hay precio. El mercado se ha acostumbrado a valorarlas como un múltiplo de lo que facturan: entre una vez y una vez y media la facturación de un año, con mucha variación según la zona y el tipo de clientela.",
       "duracion": 5.98,
-      "movimiento": "subir",
-      "grade": "frio_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/city_street_traffic_timelaps_2.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "mapa",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.6,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "Ahí ya no hay *méritos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap3_06",
@@ -1762,7 +1826,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_06b",
@@ -1792,7 +1856,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_06c",
@@ -1825,7 +1889,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_07",
@@ -1841,7 +1905,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_07b",
@@ -1873,7 +1937,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_08",
@@ -1916,7 +1980,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_08b",
@@ -1932,7 +1996,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_08c",
@@ -1949,7 +2013,7 @@
       "cierra_bloque": true,
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_01",
@@ -1965,7 +2029,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_02",
@@ -1995,7 +2059,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_02b",
@@ -2012,7 +2076,7 @@
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_03",
@@ -2026,7 +2090,7 @@
       "capas": [],
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "grafico": {
         "tipo": "anillo",
         "valor": 27.9,
@@ -2061,7 +2125,7 @@
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_03c",
@@ -2080,7 +2144,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_03d",
@@ -2097,19 +2161,17 @@
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_03e",
       "texto": "No es una recomendación ni una banda orientativa. En los medicamentos financiados —los de receta, los que paga el sistema público— el precio de venta viene marcado, y el margen que se queda la farmacia también: un porcentaje fijado por real decreto, del orden del veintisiete coma nueve por ciento del precio del laboratorio.",
       "duracion": 4.64,
       "movimiento": "estatico",
-      "grade": "sepia_archivo",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/declining_graph_red_screen_61.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "anillo",
@@ -2127,9 +2189,10 @@
         "duracion": 2.8,
         "entrada": "latigo_der"
       },
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "composicion": "derecha"
     },
     {
       "id": "cap4_04",
@@ -2156,7 +2219,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_04b",
@@ -2172,7 +2235,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_05",
@@ -2188,7 +2251,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_05b",
@@ -2199,12 +2262,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/automated_pharmacy_robot_dispenser_17.mp4",
+      "clip": "stock_farmacia/white_pills_pile_close_up_b1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_05c",
@@ -2215,12 +2278,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/old_pharmacy_staff_white_coats_counter_126.mp4",
+      "clip": "stock_farmacia/colourful_capsules_pills_close_up_b11.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_06",
@@ -2236,7 +2299,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_06b",
@@ -2252,7 +2315,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_06c",
@@ -2268,7 +2331,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_06d",
@@ -2284,7 +2347,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_06e",
@@ -2300,7 +2363,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_07",
@@ -2327,7 +2390,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_07b",
@@ -2343,7 +2406,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_07c",
@@ -2354,12 +2417,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/person_counting_money_desk_279.mp4",
+      "clip": "stock_farmacia/automated_pharmacy_robot_dispenser_17.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_07d",
@@ -2370,12 +2433,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_farmacia/pill_bottles_pharmacy_shelf_15.mp4",
+      "clip": "stock_farmacia/old_pharmacy_staff_white_coats_counter_126.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_08",
@@ -2402,7 +2465,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_08b",
@@ -2418,49 +2481,23 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_08c",
       "texto": "Y hay un detalle que lo remata. Por encima de ciertos volúmenes de facturación se aplica una escala de deducciones: cuanto más vendes, mayor es el descuento que tienes que devolver al sistema.",
       "duracion": 5.01,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_farmacia/pharmacy_counter_staff_white_coats_customer_b6.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "billetes",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.6,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha",
-      "texto_pantalla": {
-        "texto": "Hay un detalle que lo *remata*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09",
@@ -2471,7 +2508,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/corporate_office_building_gl_301.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2487,7 +2524,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_09b",
@@ -2503,7 +2540,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_09c",
@@ -2514,12 +2551,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_farmacia/pharmacist_white_coat_old_pharmacy_wood_b2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09d",
@@ -2530,12 +2567,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+      "clip": "stock_farmacia/pill_bottles_pharmacy_shelf_15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_10",
@@ -2562,7 +2599,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_10b",
@@ -2578,7 +2615,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_10c",
@@ -2594,7 +2631,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_10d",
@@ -2611,7 +2648,7 @@
       "cierra_bloque": true,
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_01",
@@ -2622,7 +2659,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/cash_briefcase_money_88.mp4",
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2638,7 +2675,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_01b",
@@ -2649,7 +2686,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -2657,7 +2694,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_02",
@@ -2670,7 +2707,7 @@
       ],
       "capas": [],
       "_lat_ent": 1.0,
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "flecha",
         "a": "LA FARMACIA",
@@ -2705,17 +2742,19 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_03",
       "texto": "Y un cliente así tiene tres particularidades.",
       "duracion": 4.06,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "verde_suave",
       "efectos": [
         "niebla"
       ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -2733,11 +2772,10 @@
         "duracion": 1.78,
         "entrada": "latigo_izq"
       },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.429,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_04",
@@ -2764,7 +2802,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_04b",
@@ -2780,7 +2818,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_04c",
@@ -2791,12 +2829,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_05",
@@ -2807,12 +2845,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip": "stock_farmacia/waiting_room_health_centre_chairs_28.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_05b",
@@ -2823,12 +2861,12 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_farmacia/waiting_room_health_centre_chairs_28.mp4",
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_05c",
@@ -2839,7 +2877,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip": "stock_farmacia/elderly_hands_holding_medicine_24.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2855,7 +2893,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_06",
@@ -2871,7 +2909,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_06b",
@@ -2898,7 +2936,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_06c",
@@ -2914,7 +2952,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_07",
@@ -2925,7 +2963,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/money_envelope_cash_91.mp4",
+      "clip": "stock_farmacia/signing_official_form_pen_48.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2941,7 +2979,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_07b",
@@ -2952,12 +2990,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/elderly_hands_holding_medicine_24.mp4",
+      "clip": "stock_farmacia/government_building_facade_columns_49.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_07c",
@@ -2968,12 +3006,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_farmacia/government_building_facade_columns_49.mp4",
+      "clip": "stock_farmacia/official_document_stamp_desk_46.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_08",
@@ -2989,7 +3027,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_08b",
@@ -3000,7 +3038,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_farmacia/folder_archive_documents_shelves_51.mp4",
+      "clip": "stock_farmacia/woman_browsing_shop_shelves_169.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3016,7 +3054,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_08c",
@@ -3027,12 +3065,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/supermarket_aisle_shelves_customer_109.mp4",
+      "clip": "stock_farmacia/folder_archive_documents_shelves_51.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_08d",
@@ -3043,12 +3081,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_farmacia/supermarket_aisle_shelves_products_64.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_09",
@@ -3064,7 +3102,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_09b",
@@ -3075,12 +3113,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_09c",
@@ -3091,12 +3129,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_10",
@@ -3105,13 +3143,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "farmacia",
@@ -3139,7 +3177,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_10x",
@@ -3148,13 +3186,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "farmacia",
@@ -3182,7 +3220,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_01",
@@ -3191,12 +3229,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "subir",
@@ -3225,7 +3263,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_02",
@@ -3236,12 +3274,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_farmacia/open_book_flowers_table_115.mp4",
+      "clip": "stock_farmacia/clock_late_night_working_alone_35.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_02b",
@@ -3252,12 +3290,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_farmacia/legal_text_book_pages_law_47.mp4",
+      "clip": "stock_farmacia/open_book_flowers_table_115.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_02c",
@@ -3268,12 +3306,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip": "stock_farmacia/legal_text_book_pages_law_47.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_02d",
@@ -3284,12 +3322,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_03",
@@ -3300,12 +3338,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_farmacia/pharmacist_white_coat_bottles_shelves_b13.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_03b",
@@ -3316,7 +3354,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_196.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3332,7 +3370,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_03c",
@@ -3343,7 +3381,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_farmacia/pharmacist_white_coat_old_pharmacy_wood_b2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3351,7 +3389,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_04",
@@ -3362,7 +3400,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip": "stock_banco/night_seafront_promenade_marina_aerial_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3379,7 +3417,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_04b",
@@ -3390,7 +3428,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_farmacia/dark_alley_night_empty_135.mp4",
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3398,7 +3436,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_04c",
@@ -3409,13 +3447,13 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_farmacia/light_rain_window_night_136.mp4",
+      "clip": "stock_farmacia/dark_alley_night_empty_135.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_04d",
@@ -3426,7 +3464,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_farmacia/empty_street_night_shop_lights_34.mp4",
+      "clip": "stock_farmacia/light_rain_window_night_136.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3447,7 +3485,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_04e",
@@ -3458,12 +3496,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_farmacia/clock_late_night_working_alone_35.mp4",
+      "clip": "stock_farmacia/empty_street_night_shop_lights_34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_05",
@@ -3490,7 +3528,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_05b",
@@ -3506,7 +3544,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_05c",
@@ -3517,12 +3555,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip": "stock_farmacia/woman_reaching_pharmacy_shelves_bottles_b10.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_05d",
@@ -3538,7 +3576,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_06",
@@ -3565,7 +3603,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_06b",
@@ -3581,7 +3619,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_06c",
@@ -3592,12 +3630,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_farmacia/hand_holding_blister_pills_119.mp4",
+      "clip": "stock_farmacia/colourful_capsules_pills_close_up_b11.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_06d",
@@ -3608,12 +3646,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_farmacia/elderly_hands_holding_medicine_24.mp4",
+      "clip": "stock_farmacia/hand_holding_blister_pills_119.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_07",
@@ -3624,12 +3662,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip": "stock_farmacia/stock_inventory_counting_boxes_19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_07b",
@@ -3640,12 +3678,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/cash_counting_machine_close_163.mp4",
+      "clip": "stock_banco/money_counting_machine_122.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_07c",
@@ -3656,7 +3694,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/money_counting_machine_186.mp4",
+      "clip": "stock_farmacia/kitchen_laptop_counter_home_166.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3672,7 +3710,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_07d",
@@ -3683,12 +3721,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
+      "clip": "stock_farmacia/person_showing_health_card_counter_25.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_07e",
@@ -3699,7 +3737,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/money_counting_machine_258.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3720,7 +3758,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_08",
@@ -3732,7 +3770,7 @@
         "brasas"
       ],
       "capas": [],
-      "composicion": "centrado",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "factura",
         "titulo": "todos los meses, pase lo que pase",
@@ -3781,7 +3819,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_08c",
@@ -3797,7 +3835,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_08d",
@@ -3808,13 +3846,13 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/percentage_graph_screen_179.mp4",
+      "clip": "stock_farmacia/declining_graph_red_screen_61.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_01",
@@ -3841,7 +3879,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_01b",
@@ -3852,7 +3890,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_188.mp4",
+      "clip": "stock_farmacia/city_street_shops_pedestrians_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3860,7 +3898,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_02",
@@ -3877,7 +3915,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_02b",
@@ -3888,7 +3926,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip": "stock_farmacia/delivery_van_unloading_boxes_street_21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3909,13 +3947,29 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_03",
       "texto": "Hay una figura que lo deja muy claro. Se llama farmacia de viabilidad económica comprometida: farmacias de pueblos pequeños que facturan tan poco que, con las cuentas en la mano, deberían cerrar. Y no cierran, porque reciben una ayuda pública para seguir abiertas.",
       "duracion": 3.33,
       "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_03b",
+      "texto": "Hay una figura que lo deja muy claro. Se llama farmacia de viabilidad económica comprometida: farmacias de pueblos pequeños que facturan tan poco que, con las cuentas en la mano, deberían cerrar. Y no cierran, porque reciben una ayuda pública para seguir abiertas.",
+      "duracion": 4.06,
+      "movimiento": "drift_der",
       "grade": "dorado_suave",
       "efectos": [
         "polvo"
@@ -3928,22 +3982,6 @@
       "composicion": "izquierda"
     },
     {
-      "id": "cap7_03b",
-      "texto": "Hay una figura que lo deja muy claro. Se llama farmacia de viabilidad económica comprometida: farmacias de pueblos pequeños que facturan tan poco que, con las cuentas en la mano, deberían cerrar. Y no cierran, porque reciben una ayuda pública para seguir abiertas.",
-      "duracion": 4.06,
-      "movimiento": "drift_der",
-      "grade": "dorado_suave",
-      "efectos": [
-        "polvo"
-      ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
-    },
-    {
       "id": "cap7_03c",
       "texto": "Hay una figura que lo deja muy claro. Se llama farmacia de viabilidad económica comprometida: farmacias de pueblos pequeños que facturan tan poco que, con las cuentas en la mano, deberían cerrar. Y no cierran, porque reciben una ayuda pública para seguir abiertas.",
       "duracion": 4.06,
@@ -3952,7 +3990,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -3968,7 +4006,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_03d",
@@ -3979,12 +4017,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_04",
@@ -3995,7 +4033,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/money_and_construction_plans_137.mp4",
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4011,7 +4049,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_04b",
@@ -4027,7 +4065,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_04c",
@@ -4038,12 +4076,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip": "stock_banco/money_and_construction_plans_67.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_05",
@@ -4070,7 +4108,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_05b",
@@ -4086,7 +4124,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_05c",
@@ -4102,7 +4140,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_06",
@@ -4118,7 +4156,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_06b",
@@ -4145,7 +4183,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_06c",
@@ -4156,12 +4194,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_farmacia/declining_graph_red_screen_61.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_06d",
@@ -4172,7 +4210,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4180,17 +4218,19 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_07",
       "texto": "Ninguna de esas tres cosas depende de lo bien que atiendas a nadie.",
       "duracion": 4.89,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "grafico": {
@@ -4209,11 +4249,10 @@
         "duracion": 2.8,
         "entrada": "latigo_der"
       },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.429,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_01",
@@ -4224,12 +4263,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_banco/zero_on_calculator_227.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_02",
@@ -4248,7 +4287,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_02b",
@@ -4292,7 +4331,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_02c",
@@ -4308,7 +4347,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_03",
@@ -4324,7 +4363,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_04",
@@ -4335,12 +4374,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/cash_briefcase_open_107.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_04b",
@@ -4351,7 +4390,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/cash_briefcase_open_248.mp4",
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4367,7 +4406,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_04c",
@@ -4378,12 +4417,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip": "stock_banco/night_seafront_promenade_marina_aerial_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_05",
@@ -4410,7 +4449,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_05b",
@@ -4426,7 +4465,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_05c",
@@ -4437,7 +4476,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/profit_graph_rising_221.mp4",
+      "clip": "stock_banco/percentage_graph_screen_179.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4445,7 +4484,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_06",
@@ -4456,13 +4495,13 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_farmacia/courier_delivering_parcel_shop_22.mp4",
+      "clip": "stock_farmacia/shop_window_display_evening_light_110.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_06b",
@@ -4473,7 +4512,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_farmacia/supermarket_customer_picking_product_65.mp4",
+      "clip": "stock_farmacia/courier_delivering_parcel_shop_22.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -4481,7 +4520,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_06c",
@@ -4492,7 +4531,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_farmacia/woman_browsing_shop_shelves_169.mp4",
+      "clip": "stock_farmacia/supermarket_aisle_shelves_products_64.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -4514,7 +4553,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_06d",
@@ -4525,7 +4564,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_farmacia/bank_advisor_explaining_client_desk_56.mp4",
+      "clip": "stock_farmacia/supermarket_customer_picking_product_65.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4541,7 +4580,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_07",
@@ -4553,7 +4592,7 @@
         "brasas"
       ],
       "capas": [],
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "grafico": {
         "tipo": "factura",
         "titulo": "de qué eres dueño",
@@ -4612,7 +4651,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_08",
@@ -4621,13 +4660,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4655,7 +4694,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_08x",
@@ -4664,13 +4703,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4698,7 +4737,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     }
   ]
 }

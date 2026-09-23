@@ -460,6 +460,47 @@ aparecer tras el inicio de la escena: nunca a cero, el texto entra
 Hay valores por defecto según el rol (el fondo no entra nunca, el frente
 sube), así que solo se declaran cuando quieres otra cosa.
 
+## Un pool no esta revisado hasta que lo has MIRADO
+
+`comprobar_encaje` puntua la frase contra la **descripcion** del clip, y la
+descripcion es **la consulta que se hizo**, no lo que llego. Dice 0% de
+metraje fuera de sitio y a la vez puede haber un radiotelescopio debajo de
+«la fachada de la farmacia». Es el error que ha costado mas caro de todo el
+pipeline y ha vuelto cuatro veces.
+
+Asi que despues de bajar un pool, y otra vez despues de renderizar:
+
+```bash
+python3 pool_<tema>.py                 # baja
+python3 aligerar_clips.py proyecto/stock_<tema>
+# y AHORA se sacan fotogramas y se miran, uno a uno
+```
+
+Lo que hay que buscar, por orden de gravedad:
+
+| que | por que | ya ha pasado |
+|---|---|---|
+| **billetes que no son euros** | la regla del canal es euros en el guion Y en pantalla | dolares y rupias en la farmacia |
+| **marcas visibles** | no se puede poner el logo de nadie | Decathlon, Coca-Cola, Citi |
+| **texto en ingles** | el video es en espanol | «At-Will Employment Agreement» |
+| **el clip no es lo que dice el nombre** | el emparejador solo lee el nombre | un puerto deportivo llamado `city_street_traffic` |
+| **dos ficheros con el mismo metraje** | sale dos veces y parece un fallo | dos contadoras de billetes identicas |
+
+Y se renombra por **lo que se ve**, no por lo que se pidio. Un clip mal
+descrito no es un clip perdido: es un clip que va a caer en la frase
+equivocada, porque puntua alto justo donde no debe.
+
+**El pool del que se hereda es el que hay que arreglar.** El episodio de la
+farmacia hereda 121 planos del pool del banco. Si los dolares se quitan
+solo del pool de la farmacia, el siguiente episodio que herede se los trae
+otra vez.
+
+**Y el gancho elige primero.** `vestir` reparte por puntuacion global, asi
+que un clip que puntua 5 en el capitulo seis se coloca antes que ese mismo
+clip puntuando 2 en el primer plano del video. El primer plano es el unico
+que todo el mundo ve y el que tiene que cumplir lo que promete la
+miniatura, asi que se sirve antes que nadie.
+
 ## El metraje NO vive en el repo
 
 Vive en **releases**, una por episodio: `stock-hotel`, `stock-aeropuerto`,
@@ -484,7 +525,12 @@ que son JSON de texto. El metraje solo se necesita para revisar un pool nuevo
 a ojo, y entonces lo baja `pool_<tema>.py` en la misma tanda.
 
 Si añades clips a un episodio, hay que volver a etiquetar `guardar-stock` o
-el render no los encontrará.
+el render no los encontrará. **El empaquetado fusiona**: el runner se baja
+la release que haya, la extrae debajo de lo que trae el árbol y sube la
+unión, así que la rama de usar y tirar solo lleva los clips NUEVOS. Añadir
+ocho clips son 26 MB, no los 418 de la carpeta entera — y cada subida se
+queda en el historial de git aunque luego se borre la rama, con el repo ya
+rozando los cinco gigas a los que GitHub avisa.
 
 ## Clips de stock
 

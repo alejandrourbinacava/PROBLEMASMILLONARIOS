@@ -90,10 +90,17 @@ def main():
         # medias, y se dice en voz alta.
         gr = elegido["grafico"]
         plano = float(elegido.get("duracion", 0))
-        cabe = plano - 0.25                       # margen de salida
+        # Y QUE SOBRE UN SEGUNDO CON EL DATO QUIETO.
+        #
+        # Antes bastaba con que la animacion cupiera, y cabia justa: en el
+        # plano de la factura del gancho la ultima linea se escribia tres
+        # centesimas antes del corte. Tecnicamente cabe; en pantalla el
+        # espectador ve aparecer un numero y el plano cambia. Lo que se
+        # lee no es la animacion, es el rato que el dato se queda puesto.
+        cabe = plano - 0.25 - 1.45                # salida + rato de lectura
         pide = gr.get("retardo", 0.4) + gr.get("duracion", 1.6)
         if pide > cabe:
-            if cabe < 1.0:
+            if cabe < 0.8:
                 sin_sitio.append(
                     f'{ficha["donde"]} -> el plano {elegido["id"]} dura '
                     f'{plano:.2f}s y no cabe ningun grafico')

@@ -62,7 +62,11 @@ MINIMO_MITAD = 2.2
 # Lo que dura como poco un plano que lleva rotulo, y lo que tiene que quedarle
 # al hermano que le presta el tiempo. Medio segundo se lo come la entrada del
 # rotulo; con menos de dos, el texto se va antes de que el ojo llegue.
-MINIMO_ROTULO = 2.1
+# 2,9 y no 2,1: de 2,1 se van 0,26 de entrada y 0,25 de salida, o sea que
+# el rotulo se veia 1,6 s. Una frase de cinco palabras en segundo y medio
+# se ve pasar, no se lee, y es lo que dijo el usuario. El plano no se
+# alarga -eso desplazaria la locucion-: le pide prestado a su hermano.
+MINIMO_ROTULO = 2.9
 MINIMO_HERMANO = 1.9
 
 # Planos minimos entre dos usos del mismo clip. A doce se colaban
@@ -85,6 +89,12 @@ POLVILLO = ["polvo", "destellos", "niebla", "bokeh"]
 # a esta le faltaban "ese", "lo" y los verbos de apoyo. Una sola fuente.
 import motion_banco as _MB
 COLGANTES = _MB.COLGANTES | _MB.VERBOS
+
+
+# La regla de cuanto texto cabe en un plano vive en `motion_banco`, con
+# `rotulo_de`, que es quien la aplica. Tener aqui una copia es lo que ya
+# paso con las palabras colgantes: se arregla un lado y el otro sigue mal.
+tope_legible = _MB.tope_legible
 
 
 def titular(frase, limite=30):
@@ -208,7 +218,11 @@ def a_plato(esc, semilla, episodio, ICO):
             "icono": ICO.elige(frase, ICO.del_tema(episodio)),
             "lado": 300,
             "y": 0.32, "retardo": 0.22,
-            "duracion": max(0.9, min(1.6, esc.get("duracion", 3) - 0.5)),
+            # El icono se dibuja trazo a trazo, y tiene que acabar de
+            # dibujarse con un segundo por delante. Con `-0.5` el ultimo
+            # trazo caia casi en el corte.
+            "duracion": max(0.8, min(1.4,
+                                     esc.get("duracion", 3) - 0.22 - 1.25)),
             "entrada": "golpe",
         }
         d_ir = direccion(frase)
@@ -529,18 +543,22 @@ def main():
         # 34 y no 30: el rotulo ya se encoge solo hasta caber (ver
         # `render_texto`), asi que el tope puede ser el de una clausula
         # entera en vez del de un cuerpo de letra concreto.
-        t = titular(e.get("texto") or "", 34)
+        t = titular(e.get("texto") or "", tope_legible(e.get("duracion", 4), 0.26))
         partes = [(e, t)]
         if (e.get("duracion", 4) > TOPE_TARJETA
                 and e.get("duracion", 4) / 2 >= MINIMO_MITAD):
             frase = (e.get("texto") or "").strip()
             mitad, resto = dos_mitades(frase)
+            # cada mitad se queda con la mitad del plano
+            x_dur = round(e.get("duracion", 4) / 2, 2)
+            y_dur = e.get("duracion", 4) - x_dur
             # 42 y no 34 para las mitades: cada una tiene que poder llevar
             # su clausula ENTERA. Con 34, «Las reglas cambian segun la
             # comunidad» (37) no cabia y se recortaba a «Las reglas
             # cambian», que es justo lo contrario de lo que se busca al
             # partir. El rotulo se encoge solo hasta caber en el encuadre.
-            ta, tb = titular(mitad, 42), titular(resto, 42)
+            ta = titular(mitad, tope_legible(x_dur, 0.26))
+            tb = titular(resto, tope_legible(y_dur, 0.26))
             # SOLO SE PARTE SI LAS DOS MITADES DICEN COSAS DISTINTAS.
             #
             # Antes el codigo era `titular(resto) or t`: si de la segunda

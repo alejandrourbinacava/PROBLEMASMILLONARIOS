@@ -534,6 +534,38 @@ VERBOS = {
           "siempre", "nunca", "ya", "aun", "quiza", "sino"}
 
 
+# Cuanto tiene que estar un grafico en pantalla para que se lea.
+#
+# REPOSO es el rato con el dato ya puesto y quieto, que es cuando de verdad
+# se lee; SALIDA es el fundido con el que se va. MINIMO_PANTALLA es el
+# total que hace falta, y por debajo de MINIMO_PLANO un plano directamente
+# no puede sostener un grafico y hay que buscarle otro.
+# 1,45 y no 1: de ese rato, la entrada del grafico se come 0,32, asi que
+# el dato acaba quieto poco mas de un segundo. Con REPOSO = 1 quedaba en
+# 0,68 y una cifra de seis digitos no se lee en dos tercios de segundo.
+REPOSO = 1.45
+SALIDA = 0.25
+MINIMO_PANTALLA = 3.0
+MINIMO_PLANO = 3.2
+
+
+def tope_legible(dur, retardo=0.0):
+    """Cuantos caracteres caben LEYENDOLOS en un plano de `dur` segundos.
+
+    Un rotulo no se lee letra a letra, se lee a golpes de palabra: 0,45 s
+    para que el ojo lo encuentre y 0,28 por palabra. Con cuarenta
+    caracteres en dos segundos el espectador ve pasar una frase, no la lee,
+    y eso es exactamente lo que dijo el usuario: «no da tiempo a leer o a
+    apreciar que pone».
+
+    Va en caracteres porque es lo que entiende `rotulo_de`, a razon de seis
+    por palabra contando el espacio.
+    """
+    pant = dur - retardo - 0.25
+    palabras = int((pant - 0.45) / 0.28)
+    return max(14, min(TOPE_ROTULO, palabras * 6))
+
+
 def rotulo_de(frase, limite=TOPE_ROTULO):
     """El trozo de frase que va en pantalla.
 
@@ -698,8 +730,15 @@ def aguanta(esc, retardo):
     terminaba a los dos segundos y quedaban cinco de plano con la cifra
     quieta. Que dure lo que queda, entre 1,2 y 2,8.
     """
-    queda = esc.get("duracion", 3.0) - retardo - 0.2
-    return round(max(1.2, min(2.8, queda)), 2)
+    # LO QUE IMPORTA NO ES LA ANIMACION, ES EL RATO QUE SE QUEDA PUESTO.
+    #
+    # Antes esto daba hasta 2,8 s de cuenta en un plano de 3, y el numero
+    # quedaba quieto una decima de segundo: el espectador ve subir digitos
+    # y el plano corta antes de que se estabilicen. Ahora la cuenta acaba
+    # siempre con REPOSO por delante, y si el plano no da para tanto, se
+    # acorta la cuenta, no el reposo.
+    queda = esc.get("duracion", 3.0) - retardo - SALIDA - REPOSO
+    return round(max(0.6, min(2.0, queda)), 2)
 
 
 def main():
@@ -744,13 +783,29 @@ def main():
         # aproximacion: la posicion en caracteres vale como reloj.
         cuando = (pos / float(len(npos))) * total
         acum = 0.0
-        for j in grupo:
-            d = esc[j].get("duracion", 0)
-            if acum + d > cuando or j == grupo[-1]:
+        j, ret = idx, 0.55
+        for q in grupo:
+            d = esc[q].get("duracion", 0)
+            if acum + d > cuando or q == grupo[-1]:
                 # que quede al menos un segundo de plano por delante
-                return j, max(0.25, min(cuando - acum, d - 1.0))
+                j, ret = q, max(0.25, min(cuando - acum, d - 1.0))
+                break
             acum += d
-        return idx, 0.55
+
+        # SI EL PLANO NO DA PARA SOSTENERLO, AL HERMANO MAS LARGO.
+        #
+        # Poner el grafico donde se dice el numero suena bien y falla
+        # cuando el numero se dice al final: el plano dura dos segundos, el
+        # grafico entra a segundo y medio y el corte llega mientras aun
+        # esta contando. La frase entera se reparte en varios planos, y
+        # cualquiera de ellos sigue siendo "donde se dice". Que se vea
+        # medio segundo antes de oirlo es infinitamente mejor que no
+        # llegar a verse.
+        if esc[j].get("duracion", 0) < MINIMO_PLANO and len(grupo) > 1:
+            largo = max(grupo, key=lambda q: esc[q].get("duracion", 0))
+            if esc[largo].get("duracion", 0) > esc[j].get("duracion", 0):
+                j, ret = largo, 0.3
+        return j, ret
 
     for i, e in enumerate(g["escenas"]):
         texto = e.get("texto", "")
@@ -764,7 +819,9 @@ def main():
             # Y si el numero se dice tan al final que ya no queda plano
             # para ensenarlo, se adelanta: vale mas que entre medio
             # segundo antes de oirlo que que no llegue a verse.
-            ret = min(ret, max(0.2, e.get("duracion", 3.0) - 1.35))
+            # 1,35 s era conformarse: de ese segundo y pico, 1,2 se lo
+            # comia la animacion y el dato no llegaba a quedarse quieto.
+            ret = min(ret, max(0.0, e.get("duracion", 3.0) - MINIMO_PANTALLA))
             val, suf, dec, pal = c
             n = norm(texto)
             prop = de_cada(texto)
@@ -830,7 +887,9 @@ def main():
         sin_cifra += 1
         if sin_cifra % a.cada:
             continue
-        t = rotulo_de(texto)
+        # El tope sale del PLANO, no de una constante: un rotulo de
+        # treinta caracteres en un plano de dos segundos no se lee.
+        t = rotulo_de(texto, tope_legible(e.get("duracion", 4)))
         if len(t) < 10:
             continue
         e["texto_pantalla"] = {

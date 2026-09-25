@@ -1,0 +1,481 @@
+{
+ "guion": "loteria.json",
+ "total": 943.88,
+ "bloques": [
+  {
+   "id": "gancho_01",
+   "hash": "2765f46ca39a4376",
+   "inicio": 0.0
+  },
+  {
+   "id": "gancho_02",
+   "hash": "1e3561c58595c6ee",
+   "inicio": 11.34
+  },
+  {
+   "id": "gancho_03",
+   "hash": "dd7a4d9114fe1b7c",
+   "inicio": 17.09
+  },
+  {
+   "id": "gancho_04",
+   "hash": "b9f6a7addf753d19",
+   "inicio": 21.2
+  },
+  {
+   "id": "gancho_05",
+   "hash": "0a077e5844c13421",
+   "inicio": 29.59
+  },
+  {
+   "id": "gancho_06",
+   "hash": "0cb24a6acfe127fd",
+   "inicio": 39.79
+  },
+  {
+   "id": "gancho_07",
+   "hash": "38b08def629ff88d",
+   "inicio": 54.37
+  },
+  {
+   "id": "cap1_01",
+   "hash": "2d02fb0d122af779",
+   "inicio": 59.29
+  },
+  {
+   "id": "cap1_02",
+   "hash": "2d14f935f2cd8c17",
+   "inicio": 62.54
+  },
+  {
+   "id": "cap1_03",
+   "hash": "1bff0e63ea75450e",
+   "inicio": 72.5
+  },
+  {
+   "id": "cap1_04",
+   "hash": "bf8837f2c522f789",
+   "inicio": 77.73
+  },
+  {
+   "id": "cap1_05",
+   "hash": "3dc680dbf80edba0",
+   "inicio": 90.77
+  },
+  {
+   "id": "cap1_06",
+   "hash": "c340f4390c4dc8bd",
+   "inicio": 94.38
+  },
+  {
+   "id": "cap1_07",
+   "hash": "57bd3275ff05e761",
+   "inicio": 106.38
+  },
+  {
+   "id": "cap1_08",
+   "hash": "1fbb553b2399efad",
+   "inicio": 111.46
+  },
+  {
+   "id": "cap1_09",
+   "hash": "3150f5d83529dd58",
+   "inicio": 124.48
+  },
+  {
+   "id": "cap2_01",
+   "hash": "4cede738bd89f14f",
+   "inicio": 132.79
+  },
+  {
+   "id": "cap2_02",
+   "hash": "e1b14c79b197ad5a",
+   "inicio": 141.05
+  },
+  {
+   "id": "cap2_03",
+   "hash": "cd21dad78fef3c69",
+   "inicio": 158.82
+  },
+  {
+   "id": "cap2_04",
+   "hash": "0331ec130830cba1",
+   "inicio": 163.29
+  },
+  {
+   "id": "cap2_05",
+   "hash": "ac84fc29969f80b8",
+   "inicio": 178.32
+  },
+  {
+   "id": "cap2_06",
+   "hash": "ff68be38ad774fe3",
+   "inicio": 195.96
+  },
+  {
+   "id": "cap2_07",
+   "hash": "1618456bbbf04e19",
+   "inicio": 202.0
+  },
+  {
+   "id": "cap2_08",
+   "hash": "df112564a783bce3",
+   "inicio": 227.16
+  },
+  {
+   "id": "cap2_09",
+   "hash": "ede69a9d1b2b01ab",
+   "inicio": 232.18
+  },
+  {
+   "id": "cap2_10",
+   "hash": "a95da893ae55873d",
+   "inicio": 240.1
+  },
+  {
+   "id": "cap3_01",
+   "hash": "d0e594be456da9f1",
+   "inicio": 250.9
+  },
+  {
+   "id": "cap3_02",
+   "hash": "f075c158e824f4d6",
+   "inicio": 256.42
+  },
+  {
+   "id": "cap3_03",
+   "hash": "6d3fadd067c529fd",
+   "inicio": 272.02
+  },
+  {
+   "id": "cap3_04",
+   "hash": "be423023173621b2",
+   "inicio": 290.1
+  },
+  {
+   "id": "cap3_05",
+   "hash": "2ae7c42f5ce8d029",
+   "inicio": 295.62
+  },
+  {
+   "id": "cap3_06",
+   "hash": "3a99c11a583fc85f",
+   "inicio": 310.57
+  },
+  {
+   "id": "cap3_07",
+   "hash": "b9fb2c79f1e3a142",
+   "inicio": 323.51
+  },
+  {
+   "id": "cap4_01",
+   "hash": "10309cf27874011e",
+   "inicio": 329.0
+  },
+  {
+   "id": "cap4_02",
+   "hash": "942c5126f59778fa",
+   "inicio": 340.58
+  },
+  {
+   "id": "cap4_03",
+   "hash": "010a752a88b54f51",
+   "inicio": 349.89
+  },
+  {
+   "id": "cap4_04",
+   "hash": "6b3d6c962d42f15b",
+   "inicio": 354.44
+  },
+  {
+   "id": "cap4_05",
+   "hash": "5beae37f176e1768",
+   "inicio": 367.09
+  },
+  {
+   "id": "cap4_06",
+   "hash": "0645d89aeaaa6603",
+   "inicio": 372.48
+  },
+  {
+   "id": "cap4_07",
+   "hash": "a56411772a218508",
+   "inicio": 392.58
+  },
+  {
+   "id": "cap4_08",
+   "hash": "d34ed994cc2ef47b",
+   "inicio": 397.79
+  },
+  {
+   "id": "cap4_09",
+   "hash": "5a1a7c1df8a95f64",
+   "inicio": 412.16
+  },
+  {
+   "id": "cap4_10",
+   "hash": "f03aa309031c8b60",
+   "inicio": 427.48
+  },
+  {
+   "id": "cap5_01",
+   "hash": "09e755954ac1876c",
+   "inicio": 444.52
+  },
+  {
+   "id": "cap5_02",
+   "hash": "c08552d00f3c58fb",
+   "inicio": 448.45
+  },
+  {
+   "id": "cap5_03",
+   "hash": "34e765637d42a01a",
+   "inicio": 463.29
+  },
+  {
+   "id": "cap5_04",
+   "hash": "e5d83c30de9e6d58",
+   "inicio": 469.65
+  },
+  {
+   "id": "cap5_05",
+   "hash": "bf3fd5142917a2c2",
+   "inicio": 484.78
+  },
+  {
+   "id": "cap5_06",
+   "hash": "57e21ae63998d82f",
+   "inicio": 501.35
+  },
+  {
+   "id": "cap6_01",
+   "hash": "87e16222b3ab3660",
+   "inicio": 517.37
+  },
+  {
+   "id": "cap6_02",
+   "hash": "4e6236a6d5c99b75",
+   "inicio": 521.45
+  },
+  {
+   "id": "cap6_03",
+   "hash": "a8b403c1647fffac",
+   "inicio": 529.42
+  },
+  {
+   "id": "cap6_04",
+   "hash": "530292521085f621",
+   "inicio": 545.26
+  },
+  {
+   "id": "cap6_05",
+   "hash": "d0d3929ede3e5dc2",
+   "inicio": 552.82
+  },
+  {
+   "id": "cap6_06",
+   "hash": "173264625d946102",
+   "inicio": 556.93
+  },
+  {
+   "id": "cap6_07",
+   "hash": "462bf73c8c5c6428",
+   "inicio": 572.38
+  },
+  {
+   "id": "cap6_08",
+   "hash": "8ba8bc875dc2d3a8",
+   "inicio": 576.88
+  },
+  {
+   "id": "cap6_09",
+   "hash": "efd2bd6c98b4f05c",
+   "inicio": 587.47
+  },
+  {
+   "id": "cap6_10",
+   "hash": "465d3c51729ea6f2",
+   "inicio": 594.79
+  },
+  {
+   "id": "cap6_11",
+   "hash": "39aa92b37cd807fc",
+   "inicio": 600.02
+  },
+  {
+   "id": "cap6_12",
+   "hash": "4e50127f7aa17875",
+   "inicio": 617.82
+  },
+  {
+   "id": "cap6_13",
+   "hash": "44d9566014e45a14",
+   "inicio": 631.07
+  },
+  {
+   "id": "cap7_01",
+   "hash": "93a509eaac750352",
+   "inicio": 641.34
+  },
+  {
+   "id": "cap7_02",
+   "hash": "5ffe956a8178e931",
+   "inicio": 646.31
+  },
+  {
+   "id": "cap7_03",
+   "hash": "050b32d7aa392a02",
+   "inicio": 657.97
+  },
+  {
+   "id": "cap7_04",
+   "hash": "d1affce98692b36b",
+   "inicio": 670.33
+  },
+  {
+   "id": "cap7_05",
+   "hash": "89db83dce667cba8",
+   "inicio": 672.45
+  },
+  {
+   "id": "cap7_06",
+   "hash": "bba85d30db3203db",
+   "inicio": 691.13
+  },
+  {
+   "id": "cap7_07",
+   "hash": "f3a3564cc32d497c",
+   "inicio": 711.51
+  },
+  {
+   "id": "cap8_01",
+   "hash": "5d573eee86cd153b",
+   "inicio": 722.7
+  },
+  {
+   "id": "cap8_02",
+   "hash": "b7adfab9ed95af6e",
+   "inicio": 728.45
+  },
+  {
+   "id": "cap8_03",
+   "hash": "7be7c8fb40419a2d",
+   "inicio": 743.71
+  },
+  {
+   "id": "cap8_04",
+   "hash": "1a14b348a7d25f65",
+   "inicio": 755.68
+  },
+  {
+   "id": "cap8_05",
+   "hash": "5c6522ec84bc52bf",
+   "inicio": 762.92
+  },
+  {
+   "id": "cap8_06",
+   "hash": "628377cbc8be2a8f",
+   "inicio": 768.73
+  },
+  {
+   "id": "cap8_07",
+   "hash": "a7aeb30d6aab31a4",
+   "inicio": 792.8
+  },
+  {
+   "id": "cap8_08",
+   "hash": "2330104a5710abbb",
+   "inicio": 799.55
+  },
+  {
+   "id": "cap9_01",
+   "hash": "0a8877dcb4c4acf7",
+   "inicio": 807.13
+  },
+  {
+   "id": "cap9_02",
+   "hash": "0fc14b2cc37a9c08",
+   "inicio": 814.48
+  },
+  {
+   "id": "cap9_03",
+   "hash": "dda5ffaee75ead49",
+   "inicio": 821.72
+  },
+  {
+   "id": "cap9_04",
+   "hash": "014849c52806846a",
+   "inicio": 833.77
+  },
+  {
+   "id": "cap9_05",
+   "hash": "84338ad8c8b23fb8",
+   "inicio": 845.01
+  },
+  {
+   "id": "cap9_06",
+   "hash": "466eb03e7e959696",
+   "inicio": 851.0
+  },
+  {
+   "id": "cap9_07",
+   "hash": "4917fe946c0c4026",
+   "inicio": 862.66
+  },
+  {
+   "id": "cierre_01",
+   "hash": "33df9915583811a9",
+   "inicio": 870.71
+  },
+  {
+   "id": "cierre_02",
+   "hash": "2b4c92d10ff75820",
+   "inicio": 874.51
+  },
+  {
+   "id": "cierre_03",
+   "hash": "cdcb0436b4554065",
+   "inicio": 879.59
+  },
+  {
+   "id": "cierre_04",
+   "hash": "ecbb3feaf27ef21f",
+   "inicio": 884.95
+  },
+  {
+   "id": "cierre_05",
+   "hash": "5045743994daa387",
+   "inicio": 889.76
+  },
+  {
+   "id": "cierre_06",
+   "hash": "2bc819ff308048a7",
+   "inicio": 895.59
+  },
+  {
+   "id": "cierre_07",
+   "hash": "bcbbd7c779f6e674",
+   "inicio": 901.16
+  },
+  {
+   "id": "cierre_08",
+   "hash": "9d358c364e87e7d0",
+   "inicio": 907.18
+  },
+  {
+   "id": "cierre_09",
+   "hash": "7c6687cfe581b2c4",
+   "inicio": 922.65
+  },
+  {
+   "id": "cierre_10",
+   "hash": "80cbe19185c6f913",
+   "inicio": 931.51
+  },
+  {
+   "id": "cierre_11",
+   "hash": "facefbdf716e2582",
+   "inicio": 940.63
+  }
+ ]
+}

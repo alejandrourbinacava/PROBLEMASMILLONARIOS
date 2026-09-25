@@ -879,6 +879,15 @@ def grafico(spec, W, H, u, ancla=0.5):
             # Una barra minuscula tiene que VERSE minuscula, no faltar: los
             # 50 hoteles propios sobre 9.000 son ocho pixeles, y esa astilla
             # ES el argumento del episodio.
+            #
+            # Y cuando la proporcion es BRUTAL hay que forzar el minimo. En
+            # la loteria la barra son 9 euros contra 4.000.000: la cuenta da
+            # cero coma cero cero dos pixeles y no se dibujaba nada. Una
+            # barra que falta se lee como un fallo de render; una astilla de
+            # seis pixeles se lee como «es que es esto de pequeno», que es
+            # justo lo que hay que entender.
+            if v > 0 and ui > 0.02:
+                largo = max(6, largo)
             if largo > 2:
                 # el minimo es una pastilla corta, no un circulo: un circulo
                 # suelto al principio de la barra se lee como un punto de
@@ -951,8 +960,12 @@ def grafico(spec, W, H, u, ancla=0.5):
             d.text((x0 + 26, cy + 34), t, font=fv, fill=(12, 14, 20, 255),
                    anchor="ls")
         else:
-            d.text((x0 + corte + 22, cy + 34), t, font=fv, fill=col_a + (255,),
-                   anchor="ls")
+            # Fuera del tramo, y contando el MINIMO del tramo, no el corte:
+            # la barra nunca baja de `alto` de ancha, asi que con el corte a
+            # secas la cifra empezaba dos pixeles antes de que acabara el
+            # bloque rojo y se le montaba encima.
+            d.text((x0 + max(alto, corte) + 22, cy + 34), t, font=fv,
+                   fill=col_a + (255,), anchor="ls")
 
     elif tipo == "factura":
         # Las lineas de gasto que ya llevas, y el total debajo.

@@ -89,7 +89,7 @@
     }
   },
   {
-    "_nota": "EL REPARTO DEL BILLETE DE VEINTE EUROS. Es el grafico que mejor explica el episodio entero: una barra partida donde la rodaja del lotero casi no se ve. Mismo tipo que el desglose de la aerolinea, y aqui el desequilibrio ES el argumento.",
+    "_nota": "EL REPARTO DEL DECIMO DE VEINTE EUROS, y es el grafico que mejor explica el episodio: una barra partida donde la rodaja del lotero casi no se ve. El 4,5 % no es un porcentaje cualquiera: es la misma comision del capitulo anterior, dibujada. El desequilibrio ES el argumento, no hay que forzarlo.",
     "donde": "tú te quedas noventa céntimos y los diecinueve con diez son de loterías",
     "movimiento": "estatico",
     "fondo": {
@@ -97,25 +97,14 @@
     },
     "grafico": {
       "tipo": "reparto",
-      "titulo": "de cada décimo de 20 €",
-      "items": [
-        [
-          "El Estado",
-          19.1
-        ],
-        [
-          "La administración",
-          0.9
-        ]
-      ],
-      "destacar": {
-        "La administración": "acento"
-      },
-      "sufijo": " €",
-      "dec": 2,
+      "valor": 4.5,
+      "dec": 1,
+      "etiqueta_a": "la administración",
+      "etiqueta_b": "el Estado",
+      "color_a": "acento",
       "y": 0.5,
       "retardo": 0.4,
-      "duracion": 2.2,
+      "duracion": 2.0,
       "entrada": "barrido"
     }
   },

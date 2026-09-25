@@ -484,7 +484,18 @@ Lo que hay que buscar, por orden de gravedad:
 | **marcas visibles** | no se puede poner el logo de nadie | Decathlon, Coca-Cola, Citi |
 | **texto en ingles** | el video es en espanol | «At-Will Employment Agreement» |
 | **el clip no es lo que dice el nombre** | el emparejador solo lee el nombre | un puerto deportivo llamado `city_street_traffic` |
+| **texto en otro idioma** | el video es en espanol y se lee | «odbierz bilet» en polaco, en el primer plano |
 | **dos ficheros con el mismo metraje** | sale dos veces y parece un fallo | dos contadoras de billetes identicas |
+
+**BUSCAR POR EL NOMBRE NO BASTA.** El barrido de los clips de dinero de la
+farmacia filtro por palabras como `money`, `cash` o `euro`, y dejo dentro
+`contract_paperwork_stack_des_23`, que son billetes de cien dolares contados
+sobre una mesa: como se llama «contract paperwork» no lo pillo el filtro, y
+cayo justo debajo de la frase del contrato de alquiler. En la loteria volvio
+a pasar con otro de la misma familia, y era una demanda de DIVORCIO en
+ingles. Hay que sacar a hoja de contactos TODOS los clips que el episodio
+usa, no solo los que suenan a lo que buscas: son cien y pico miniaturas y se
+miran en dos minutos.
 
 Y se renombra por **lo que se ve**, no por lo que se pidio. Un clip mal
 descrito no es un clip perdido: es un clip que va a caer en la frase

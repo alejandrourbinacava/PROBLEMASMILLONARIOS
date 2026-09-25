@@ -34,7 +34,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_loteria/collect_your_ticket_sign_arrow_10.mp4",
+      "clip": "stock_loteria/crowd_waiting_line_19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -64,7 +64,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_loteria/woman_ticket_gate_station_11.mp4",
+      "clip": "stock_loteria/christmas_street_lights_city_21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -81,7 +81,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/crowd_waiting_line_19.mp4",
+      "clip": "stock_loteria/government_building_facade_28.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -493,73 +493,13 @@
     {
       "id": "cap1_02",
       "texto": "Una ventanilla autorizada por el Estado para vender un producto del Estado a cambio de una comisión que fija el Estado. Eso es todo lo que hay dentro del precio.",
-      "duracion": 2.9,
-      "movimiento": "pull_out",
-      "grade": "dorado_suave",
-      "efectos": [
-        "polvo"
-      ],
-      "clip": "stock_loteria/government_building_facade_28.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "latigo": "der",
-      "texto_pantalla": {
-        "texto": "Una *ventanilla* autorizada",
-        "px": 108,
-        "y": 0.68,
-        "acento": [
-          240,
-          84,
-          74
-        ],
-        "estilo": "derecha"
-      },
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "_lat_sal": 1.0,
-      "transicion": "corte",
-      "composicion": "derecha"
-    },
-    {
-      "id": "cap1_02b",
-      "texto": "Una ventanilla autorizada por el Estado para vender un producto del Estado a cambio de una comisión que fija el Estado. Eso es todo lo que hay dentro del precio.",
-      "duracion": 3.28,
-      "movimiento": "contra_izq",
-      "grade": "dorado_suave",
-      "efectos": [
-        "destellos"
-      ],
-      "clip": "stock_loteria/shop_window_street_4.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "_lat_ent": 1.0,
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cap1_02c",
-      "texto": "Una ventanilla autorizada por el Estado para vender un producto del Estado a cambio de una comisión que fija el Estado. Eso es todo lo que hay dentro del precio.",
-      "duracion": 3.78,
+      "duracion": 4.98,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "porcentaje",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Una ventanilla *autorizada*",
         "px": 96,
@@ -577,7 +517,62 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      }
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02x",
+      "texto": "Una ventanilla autorizada por el Estado para vender un producto del Estado a cambio de una comisión que fija el Estado. Eso es todo lo que hay dentro del precio.",
+      "duracion": 4.98,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Una comisión que fija el *Estado*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_03",
@@ -586,7 +581,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -609,7 +604,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -619,7 +614,7 @@
         "duracion": 1.15,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_03x",
@@ -628,7 +623,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -651,7 +646,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -661,7 +656,7 @@
         "duracion": 1.1399999999999997,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_04",
@@ -672,12 +667,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_loteria/hanging_paper_tickets_blurred_c0.mp4",
+      "clip": "stock_banco/worried_manager_office_desk_264.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_04b",
@@ -688,7 +683,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/worried_manager_office_desk_264.mp4",
+      "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -723,7 +718,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_04c",
@@ -734,13 +729,13 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/contract_paperwork_stack_des_307.mp4",
+      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_05",
@@ -775,9 +770,10 @@
         "duracion": 1.61,
         "entrada": "barrido"
       },
-      "composicion": "centrado",
       "fondo": "plato",
       "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "composicion": "izquierda",
       "fondo_color": null,
       "fondo_titulo": "capítulo 1 · vender el gordo"
     },
@@ -790,12 +786,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
+      "clip": "stock_loteria/hands_drawing_paper_desk_d5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_06b",
@@ -811,7 +807,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_06c",
@@ -822,7 +818,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/christmas_shopping_street_crowd_22.mp4",
+      "clip": "stock_loteria/hands_paper_desk_writing_d1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -843,7 +839,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_07",
@@ -852,7 +848,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -875,7 +871,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -885,7 +881,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_08",
@@ -901,7 +897,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_08b",
@@ -912,12 +908,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_loteria/stamping_papers_office_desk_d10.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_08c",
@@ -928,12 +924,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
+      "clip": "stock_loteria/government_building_facade_28.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_09",
@@ -949,7 +945,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_09b",
@@ -982,7 +978,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_01",
@@ -991,7 +987,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1014,7 +1010,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "farmacia",
@@ -1024,7 +1020,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_01x",
@@ -1033,7 +1029,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1056,7 +1052,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "farmacia",
@@ -1066,7 +1062,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_02",
@@ -1091,7 +1087,7 @@
         "duracion": 1.53,
         "entrada": "barrido"
       },
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento",
@@ -1106,7 +1102,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/shop_window_christmas_trees_c8.mp4",
+      "clip": "stock_loteria/card_terminal_shop_counter_c22.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1114,7 +1110,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_02c",
@@ -1125,13 +1121,13 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_loteria/card_terminal_shop_counter_c22.mp4",
+      "clip": "stock_loteria/clothes_shop_assistant_customer_d0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_02d",
@@ -1142,12 +1138,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_loteria/phone_screen_shopping_35.mp4",
+      "clip": "stock_loteria/elderly_couple_in_shop_d21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_03",
@@ -1163,7 +1159,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_04",
@@ -1172,7 +1168,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1195,7 +1191,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -1205,7 +1201,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_05",
@@ -1221,7 +1217,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_05b",
@@ -1237,7 +1233,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_05c",
@@ -1248,7 +1244,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_loteria/crowd_waiting_line_19.mp4",
+      "clip": "stock_loteria/christmas_shopping_street_crowd_22.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1280,7 +1276,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_05d",
@@ -1291,12 +1287,12 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/shop_window_street_4.mp4",
+      "clip": "stock_loteria/crowd_waiting_line_19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_06",
@@ -1312,7 +1308,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_06b",
@@ -1328,49 +1324,23 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_07",
       "texto": "El mapa de las farmacias te protege de verdad: nadie puede poner otra enfrente. El de la lotería, no. Porque además de las administraciones están los puntos mixtos, y esos sí se abren: el estanco de la esquina, el bar donde desayunas, el quiosco. Tú has pagado medio millón por tu sitio, y el bar de al lado vende el mismo décimo, al mismo precio, sin haber pagado nada por poder hacerlo.",
       "duracion": 3.42,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "acero_suave",
       "efectos": [
         "ceniza"
       ],
+      "clip": "stock_loteria/shop_window_street_4.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "decimo",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado",
-      "texto_pantalla": {
-        "texto": "Nadie puede poner otra *enfrente*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_07b",
@@ -1381,7 +1351,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/metro_ticket_machine_hands_12.mp4",
+      "clip": "stock_loteria/print_shop_paper_stacks_d33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1397,7 +1367,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_07c",
@@ -1413,7 +1383,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_07d",
@@ -1429,7 +1399,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_07e",
@@ -1445,7 +1415,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_07f",
@@ -1461,7 +1431,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_08",
@@ -1470,7 +1440,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1493,7 +1463,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "candado",
@@ -1503,7 +1473,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_09",
@@ -1514,7 +1484,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/empty_home_office_chair_175.mp4",
+      "clip": "stock_loteria/empty_office_black_white_d9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1530,7 +1500,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_09b",
@@ -1546,7 +1516,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_10",
@@ -1562,7 +1532,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_10b",
@@ -1573,7 +1543,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_loteria/government_building_facade_28.mp4",
+      "clip": "stock_loteria/hands_card_terminal_bag_d3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1589,7 +1559,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_10c",
@@ -1604,7 +1574,7 @@
       "cierra_bloque": true,
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "mapa",
@@ -1614,7 +1584,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_01",
@@ -1630,7 +1600,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_01b",
@@ -1649,7 +1619,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_02",
@@ -1660,7 +1630,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -1677,7 +1647,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_02b",
@@ -1688,7 +1658,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/worried_manager_office_desk_264.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_190.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1696,7 +1666,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_02c",
@@ -1707,7 +1677,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/collect_your_ticket_sign_arrow_10.mp4",
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1729,7 +1699,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_02d",
@@ -1740,7 +1710,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/office_corridor_interior_plants_c9.mp4",
+      "clip": "stock_banco/worried_manager_office_desk_264.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1748,7 +1718,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_03",
@@ -1776,7 +1746,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_03b",
@@ -1792,7 +1762,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_03c",
@@ -1824,7 +1794,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_03d",
@@ -1840,7 +1810,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_04",
@@ -1849,7 +1819,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1872,7 +1842,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -1882,7 +1852,7 @@
         "duracion": 1.2899999999999996,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_04x",
@@ -1891,7 +1861,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1914,7 +1884,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -1924,7 +1894,7 @@
         "duracion": 1.2899999999999996,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_05",
@@ -1940,7 +1910,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_05b",
@@ -1967,7 +1937,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_05c",
@@ -1983,7 +1953,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_06",
@@ -2010,7 +1980,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_06b",
@@ -2021,7 +1991,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/contract_paperwork_stack_des_23.mp4",
+      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2042,7 +2012,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_06c",
@@ -2053,43 +2023,27 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_07",
       "texto": "Igual que la farmacia. Igual que la gasolinera. Otra vez.",
-      "duracion": 2.21,
-      "movimiento": "bajar",
-      "grade": "frio_suave",
-      "efectos": [
-        "lluvia"
-      ],
-      "clip": "stock_loteria/woman_ticket_gate_station_11.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
-    },
-    {
-      "id": "cap3_07b",
-      "texto": "Igual que la farmacia. Igual que la gasolinera. Otra vez.",
-      "duracion": 3.28,
+      "duracion": 5.49,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "fuga_luz"
+        "niebla"
       ],
       "capas": [],
       "cierra_bloque": true,
+      "tipo": "rotulo",
       "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "farmacia",
@@ -2099,7 +2053,6 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda",
       "texto_pantalla": {
         "texto": "Igual que la *farmacia*",
         "px": 96,
@@ -2117,7 +2070,8 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      }
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_01",
@@ -2133,7 +2087,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_01b",
@@ -2152,7 +2106,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_01c",
@@ -2163,7 +2117,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/night_seafront_promenade_marina_aerial_2.mp4",
+      "clip": "stock_loteria/harbour_town_night_aerial_d26.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2196,7 +2150,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_loteria/shop_window_christmas_trees_c8.mp4",
+      "clip": "stock_loteria/christmas_street_lights_city_21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2212,7 +2166,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_02b",
@@ -2223,12 +2177,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_loteria/shop_window_street_4.mp4",
+      "clip": "stock_loteria/shop_window_christmas_trees_c8.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_02c",
@@ -2239,7 +2193,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/shopping_street_pedestrians_day_2.mp4",
+      "clip": "stock_loteria/shop_window_street_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -2258,7 +2212,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/man_working_table_workshop_c7.mp4",
+      "clip": "stock_loteria/hands_giving_paper_counter_43.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2280,7 +2234,7 @@
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_04",
@@ -2294,7 +2248,7 @@
       "capas": [],
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "factura",
         "titulo": "tu comisión, por producto",
@@ -2366,7 +2320,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/metro_ticket_machine_hands_12.mp4",
+      "clip": "stock_loteria/hands_drawing_paper_desk_d5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2382,7 +2336,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_05",
@@ -2414,7 +2368,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_06",
@@ -2457,7 +2411,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_06c",
@@ -2471,7 +2425,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -2481,7 +2435,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "texto_pantalla": {
         "texto": "Fíjate en lo que eso *significa*",
         "px": 96,
@@ -2513,7 +2467,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -2555,7 +2509,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -2565,7 +2519,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Fíjate en lo que eso *significa*",
         "px": 96,
@@ -2594,7 +2548,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2610,7 +2564,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_07b",
@@ -2621,7 +2575,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2633,16 +2587,42 @@
       "texto": "Si quieres llevarte cien mil euros de comisión en la campaña de Navidad, a noventa céntimos por décimo, tienes que vender ciento once mil décimos. Eso son más de dos millones de euros pasando por tu mostrador en unas pocas semanas.",
       "duracion": 2.92,
       "movimiento": "estatico",
-      "grade": "sepia_archivo",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/christmas_street_lights_city_21.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "A noventa céntimos por *décimo*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap4_08b",
@@ -2653,7 +2633,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_loteria/hands_giving_paper_counter_43.mp4",
+      "clip": "stock_loteria/christmas_market_stall_candles_c14.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2669,7 +2649,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_08c",
@@ -2680,7 +2660,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_loteria/christmas_market_stall_candles_c14.mp4",
+      "clip": "stock_loteria/christmas_lights_street_night_c15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2696,7 +2676,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_loteria/christmas_lights_street_night_c15.mp4",
+      "clip": "stock_loteria/hanging_paper_tickets_blurred_c0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2717,7 +2697,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09",
@@ -2733,7 +2713,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_09b",
@@ -2760,12 +2740,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09d",
@@ -2776,7 +2756,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2797,7 +2777,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_10",
@@ -2808,7 +2788,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/empty_home_office_chair_175.mp4",
+      "clip": "stock_loteria/empty_office_black_white_d9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2835,12 +2815,12 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_loteria/government_building_facade_28.mp4",
+      "clip": "stock_loteria/office_corridor_interior_plants_c9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_10c",
@@ -2851,7 +2831,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_loteria/collect_your_ticket_sign_arrow_10.mp4",
+      "clip": "stock_loteria/stamping_papers_office_desk_d10.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2872,7 +2852,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_10d",
@@ -2883,7 +2863,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_loteria/government_building_facade_28.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -2905,7 +2885,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_02",
@@ -2919,7 +2899,7 @@
       "capas": [],
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "reparto",
         "valor": 4.5,
@@ -2946,7 +2926,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_loteria/cafe_table_cups_two_people_6.mp4",
+      "clip": "stock_loteria/street_stalls_kiosks_people_c6.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2963,7 +2943,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_loteria/street_stalls_kiosks_people_c6.mp4",
+      "clip": "stock_loteria/people_walking_shopping_bags_d20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -2995,7 +2975,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_03",
@@ -3022,7 +3002,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_03b",
@@ -3050,7 +3030,7 @@
         "niebla"
       ],
       "capas": [],
-      "composicion": "derecha",
+      "composicion": "centrado",
       "grafico": {
         "tipo": "flecha",
         "a": "LA ADMINISTRACIÓN",
@@ -3082,7 +3062,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_04c",
@@ -3114,7 +3094,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_05",
@@ -3125,12 +3105,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/profit_graph_rising_221.mp4",
+      "clip": "stock_loteria/hands_card_terminal_bag_d3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_05b",
@@ -3141,7 +3121,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_loteria/card_terminal_shop_counter_c22.mp4",
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3173,49 +3153,23 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_05d",
       "texto": "Es el mismo esqueleto del episodio del aeropuerto, donde el aeropuerto le pagaba a la aerolínea, y del de la farmacia. Cambia el sector y no cambia la forma: hay un pagador público, y el dueño está entre el público y el pagador, cobrando un porcentaje por estar ahí.",
       "duracion": 5.01,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "verde_suave",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_loteria/card_terminal_shop_counter_c22.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "avion",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado",
-      "texto_pantalla": {
-        "texto": "Del de la *farmacia*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_06",
@@ -3258,7 +3212,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_06c",
@@ -3274,7 +3228,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_06d",
@@ -3285,7 +3239,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3302,7 +3256,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip": "stock_loteria/hands_paper_desk_writing_d1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3323,7 +3277,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_02",
@@ -3334,7 +3288,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip": "stock_loteria/paper_roll_printing_press_d34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -3358,7 +3312,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_02b",
@@ -3369,7 +3323,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3391,7 +3345,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_03b",
@@ -3418,7 +3372,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_03c",
@@ -3450,7 +3404,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_04",
@@ -3461,7 +3415,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -3477,7 +3431,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_04b",
@@ -3488,7 +3442,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
+      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3512,7 +3466,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_06",
@@ -3540,7 +3494,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_06b",
@@ -3576,7 +3530,7 @@
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_06d",
@@ -3608,7 +3562,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_07",
@@ -3667,7 +3621,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_08b",
@@ -3683,7 +3637,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_08c",
@@ -3726,12 +3680,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_loteria/cash_register_small_shop_7.mp4",
+      "clip": "stock_loteria/crowd_walking_aerial_white_plaza_45.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_09b",
@@ -3742,12 +3696,12 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_loteria/dark_shop_interior_hand_c5.mp4",
+      "clip": "stock_loteria/cash_register_small_shop_7.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_10",
@@ -3774,12 +3728,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_loteria/christmas_lights_street_night_c15.mp4",
+      "clip": "stock_loteria/snowy_street_car_winter_d28.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_11",
@@ -3806,7 +3760,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_11b",
@@ -3838,7 +3792,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_11d",
@@ -3849,12 +3803,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_loteria/people_sitting_waiting_hall_dark_20.mp4",
+      "clip": "stock_loteria/long_queue_street_daytime_d19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_11e",
@@ -3865,7 +3819,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_loteria/crowd_walking_aerial_white_plaza_45.mp4",
+      "clip": "stock_loteria/shopping_street_people_day_d4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3881,7 +3835,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/money_and_construction_plans_67.mp4",
+      "clip": "stock_loteria/people_sitting_waiting_hall_dark_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3897,7 +3851,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_12b",
@@ -3908,12 +3862,12 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_loteria/cafe_table_cups_two_people_6.mp4",
+      "clip": "stock_loteria/blurred_people_table_office_d23.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_12c",
@@ -3924,7 +3878,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_loteria/city_square_kiosks_people_3.mp4",
+      "clip": "stock_loteria/market_street_stalls_people_d29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3940,12 +3894,12 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_loteria/street_stalls_kiosks_people_c6.mp4",
+      "clip": "stock_banco/balance_scale_money_194.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_13",
@@ -3961,7 +3915,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_13b",
@@ -3972,7 +3926,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip": "stock_loteria/city_square_kiosks_people_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3988,7 +3942,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip": "stock_loteria/people_walking_shopping_bags_d20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -4005,7 +3959,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_01",
@@ -4032,7 +3986,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_02",
@@ -4068,7 +4022,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_02c",
@@ -4103,7 +4057,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_03",
@@ -4178,7 +4132,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_03c",
@@ -4195,7 +4149,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_04",
@@ -4204,12 +4158,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -4264,7 +4218,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_05b",
@@ -4280,7 +4234,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_05c",
@@ -4312,7 +4266,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_06",
@@ -4339,7 +4293,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_06b",
@@ -4366,12 +4320,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/queue_people_waiting_street_17.mp4",
+      "clip": "stock_loteria/hand_dropping_coins_d17.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_06d",
@@ -4387,7 +4341,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_07",
@@ -4430,7 +4384,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_07c",
@@ -4447,7 +4401,7 @@
       "cierra_bloque": true,
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap8_01",
@@ -4456,12 +4410,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "puerta",
@@ -4498,12 +4452,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "puerta",
@@ -4531,7 +4485,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_02",
@@ -4558,7 +4512,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap8_02b",
@@ -4590,7 +4544,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_03",
@@ -4601,7 +4555,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/cash_register_small_shop_7.mp4",
+      "clip": "stock_loteria/clothes_shop_assistant_customer_d0.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4617,7 +4571,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap8_03b",
@@ -4628,7 +4582,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/dark_shop_interior_hand_c5.mp4",
+      "clip": "stock_loteria/elderly_couple_in_shop_d21.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4644,12 +4598,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/shop_window_christmas_trees_c8.mp4",
+      "clip": "stock_loteria/print_shop_paper_stacks_d33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_04",
@@ -4665,7 +4619,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap8_04b",
@@ -4690,7 +4644,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -4713,7 +4667,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -4723,7 +4677,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_05x",
@@ -4732,7 +4686,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "niebla"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -4755,7 +4709,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -4765,7 +4719,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap8_06",
@@ -4808,7 +4762,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_06c",
@@ -4824,7 +4778,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap8_06d",
@@ -4856,7 +4810,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_07",
@@ -4865,12 +4819,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -4898,7 +4852,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap8_07x",
@@ -4907,12 +4861,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -4967,7 +4921,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap8_08b",
@@ -4978,13 +4932,13 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/hands_giving_paper_counter_43.mp4",
+      "clip": "stock_loteria/customer_paying_counter_terminal_d2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap9_01",
@@ -5022,7 +4976,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/zero_on_calculator_227.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -5030,7 +4984,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap9_02",
@@ -5047,7 +5001,7 @@
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap9_02b",
@@ -5074,7 +5028,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/christmas_market_stall_candles_c14.mp4",
+      "clip": "stock_loteria/christmas_lights_street_night_c15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -5090,7 +5044,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap9_03b",
@@ -5101,12 +5055,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_loteria/christmas_street_lights_city_21.mp4",
+      "clip": "stock_loteria/christmas_market_stall_candles_c14.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap9_03c",
@@ -5133,12 +5087,12 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip": "stock_banco/money_and_construction_plans_67.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap9_04b",
@@ -5149,7 +5103,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -5165,7 +5119,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap9_04c",
@@ -5176,7 +5130,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
+      "clip": "stock_banco/balance_scale_money_194.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -5208,7 +5162,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap9_05b",
@@ -5224,7 +5178,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap9_06",
@@ -5267,7 +5221,7 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap9_06c",
@@ -5278,7 +5232,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
+      "clip": "stock_loteria/hands_paper_desk_writing_d1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -5286,7 +5240,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap9_07",
@@ -5336,7 +5290,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_02",
@@ -5350,7 +5304,7 @@
       "capas": [],
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "factura",
         "titulo": "de qué eres dueño",
@@ -5391,12 +5345,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -5434,12 +5388,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -5467,23 +5421,91 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_04",
       "texto": "La marca no es tuya: es Lotería Nacional.",
-      "duracion": 4.81,
-      "movimiento": "contra_izq",
-      "grade": "dorado_suave",
+      "duracion": 2.4,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.9299999999999997,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "La *marca* no es tuya",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_04x",
+      "texto": "La marca no es tuya: es Lotería Nacional.",
+      "duracion": 2.41,
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_loteria/metro_ticket_machine_hands_12.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.94,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Es Lotería *Nacional*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_05",
@@ -5494,7 +5516,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/money_and_construction_plans_67.mp4",
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -5510,7 +5532,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_05b",
@@ -5521,12 +5543,12 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip": "stock_banco/cash_counting_machine_close_241.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_06",
@@ -5542,7 +5564,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_06b",
@@ -5569,7 +5591,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_07",
@@ -5585,7 +5607,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_07b",
@@ -5601,7 +5623,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_08",
@@ -5628,7 +5650,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_08b",
@@ -5644,7 +5666,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_08c",
@@ -5660,7 +5682,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_09",
@@ -5671,7 +5693,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_loteria/neighbourhood_street_day_39.mp4",
+      "clip": "stock_loteria/long_queue_street_daytime_d19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -5687,7 +5709,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_09b",
@@ -5698,12 +5720,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_loteria/spanish_town_street_shops_38.mp4",
+      "clip": "stock_loteria/market_street_stalls_people_d29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_10",
@@ -5730,7 +5752,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_10b",
@@ -5746,24 +5768,50 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_11",
       "texto": "Ese es el precio de ser el dueño.",
       "duracion": 3.25,
-      "movimiento": "pull_out",
-      "grade": "dorado_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "brasas"
+        "bokeh"
       ],
-      "clip": "stock_loteria/collect_your_ticket_sign_arrow_10.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Ese es el precio de ser el *dueño*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
     }
   ]
 }

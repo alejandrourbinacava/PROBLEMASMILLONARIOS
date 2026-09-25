@@ -183,6 +183,35 @@ TEMAS_HOTEL = [
 # Los temas de la farmacia. El episodio no va de medicinas: va de un permiso,
 # un mapa y un pagador que es la Administracion, asi que los grupos son esos
 # y no "pastillas".
+# Los temas de la loteria. El episodio no va de bolas de colores: va de un
+# mostrador, una cola en la acera, un papel que no es tuyo, un pagador
+# publico y un canal online que te compite. NADA DE CASINO.
+TEMAS_LOTERIA = [
+    ("administracion", ("administracion", "administraciones", "loteria",
+                        "mostrador", "ventanilla", "local", "tienda",
+                        "persiana", "escaparate", "quiosco", "estanco",
+                        "punto", "puntos")),
+    ("decimo",    ("decimo", "decimos", "billete", "billetes", "papel",
+                   "numero", "numeros", "serie", "series", "participacion",
+                   "participaciones", "consignacion")),
+    ("sorteo",    ("sorteo", "bombo", "gordo", "premio", "premios",
+                   "pedrea", "bola", "bolas", "navidad", "diciembre",
+                   "suerte")),
+    ("cola",      ("cola", "colas", "peregrinacion", "arrastre", "campana",
+                   "vecinos", "barrio", "gente", "cliente", "clientes")),
+    ("estado",    ("estado", "selae", "sociedad", "autorizacion",
+                   "consentimiento", "traspaso", "concesion", "comision",
+                   "comisiones", "liquidacion", "supremo", "sentencia",
+                   "tribunal", "contrato")),
+    ("dinero",    ("euros", "euro", "centimos", "millones", "millon",
+                   "dinero", "caja", "cobrar", "cobra", "pagar", "paga",
+                   "recaudacion", "facturacion", "volumen")),
+    ("banco",     ("banco", "bancos", "sucursal", "entidad", "cuenta",
+                   "ingreso")),
+    ("internet",  ("internet", "web", "online", "aplicacion", "movil",
+                   "canal", "digital", "plataforma")),
+]
+
 TEMAS_FARMACIA = [
     ("farmacia",  ("farmacia", "farmacias", "botica", "botiquin", "cruz",
                    "mostrador", "local", "tienda", "persiana", "abrir",

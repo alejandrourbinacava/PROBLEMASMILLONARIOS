@@ -440,6 +440,34 @@ def _pastilla(d, c, col, gr, paso):
             _lin(d, c, [(x, .44), (x, .56)], col, max(2, gr - 3))
 
 
+def _decimo(d, c, col, gr, paso):
+    """El decimo: un papel con su banda de numeros y el borde troquelado."""
+    if paso(0):
+        _caja(d, c, .08, .26, .92, .74, col, gr, .03)
+    if paso(1):
+        _lin(d, c, [(.08, .46), (.92, .46)], col, max(2, gr - 3))
+        for x in (.18, .30, .42, .54):
+            _lin(d, c, [(x, .56), (x, .66)], col, max(2, gr - 2))
+    if paso(2):
+        # el troquel del lateral, que es lo que lo hace un decimo y no una
+        # tarjeta cualquiera
+        for y in (.34, .44, .54, .64):
+            _circ(d, c, .74, y, .018, col, gr, relleno=col)
+
+
+def _bombo(d, c, col, gr, paso):
+    """El bombo sobre su pie, con las bolas dentro."""
+    if paso(0):
+        _circ(d, c, .5, .44, .34, col, gr)
+    if paso(1):
+        _circ(d, c, .42, .50, .075, col, gr)
+        _circ(d, c, .60, .40, .075, col, gr)
+        _circ(d, c, .52, .64, .060, col, gr)
+    if paso(2):
+        _lin(d, c, [(.5, .78), (.5, .90)], col, gr)
+        _lin(d, c, [(.30, .92), (.70, .92)], col, gr)
+
+
 ICONOS = {
     "edificio": _edificio, "hotel": _hotel, "persona": _persona,
     "personas": _personas, "euro": _euro, "billetes": _billetes,
@@ -451,6 +479,7 @@ ICONOS = {
     "alerta": _alerta, "porcentaje": _porcentaje, "mancuerna": _mancuerna,
     "carro": _carro, "factura": _factura, "acuerdo": _acuerdo,
     "farmacia": _farmacia, "mapa": _mapa, "pastilla": _pastilla,
+    "decimo": _decimo, "bombo": _bombo,
     "dato": _dato,
 }
 
@@ -467,6 +496,10 @@ ICONOS = {
 # no intentarlo es dejar la frase sobre negro.
 # ---------------------------------------------------------------------------
 TABLA = [
+    ("decimo",     "decimo decimos billete billetes participacion "
+                   "participaciones papel boleto boletos consignacion"),
+    ("bombo",      "bombo sorteo sorteos bola bolas gordo pedrea "
+                   "premiado premiados suerte azar"),
     ("farmacia",   "farmacia farmacias botica boticas farmaceutico "
                    "farmaceutica farmaceuticos mostrador rebotica"),
     ("mapa",       "mapa mapas zona zonas barrio barrios pueblo pueblos "
@@ -551,6 +584,7 @@ DEL_TEMA = {
     "hotel": "hotel", "aerolinea": "avion", "aeropuerto": "avion",
     "gasolinera": "surtidor", "gimnasio": "mancuerna", "banco": "banco",
     "casa": "edificio", "casino": "billetes", "farmacia": "farmacia",
+    "loteria": "decimo",
 }
 
 

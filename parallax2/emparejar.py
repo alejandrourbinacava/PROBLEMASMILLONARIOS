@@ -404,6 +404,60 @@ LEXICO = {
     "limpieza": ["cleaning"],
     "desgaste": ["worn", "used"],
 
+    # --- loteria (episodio 10) -------------------------------------------
+    # El episodio no va de bolas: va de un mostrador, una cola y un pagador
+    # publico. Las traducciones apuntan ahi. Y "loteria" NO se traduce como
+    # "lottery" a secas a proposito: en los bancos de metraje esa palabra
+    # devuelve casino, ruleta y fichas de Las Vegas.
+    "loteria": ["lottery", "ticket", "kiosk"],
+    "administracion": ["shop", "kiosk", "counter"],
+    "administraciones": ["shop", "kiosk", "counter"],
+    "lotero": ["shop", "owner"], "loteros": ["shop", "owner"],
+    "ventanilla": ["counter", "window"],
+    "mostrador": ["counter", "shop"],
+    "quiosco": ["newsstand", "kiosk"],
+    "estanco": ["kiosk", "shop"],
+    "persiana": ["shutter", "closed"],
+    "escaparate": ["window", "display"],
+    "decimo": ["ticket", "paper"], "decimos": ["tickets", "paper"],
+    "billete": ["ticket", "banknote"], "billetes": ["banknotes"],
+    "participacion": ["ticket", "paper"],
+    "participaciones": ["tickets", "paper"],
+    "bombo": ["balls", "drawing"],
+    "bola": ["ball"], "bolas": ["balls"],
+    "sorteo": ["drawing", "balls"], "sorteos": ["drawing", "balls"],
+    "gordo": ["celebrating", "crowd"],
+    "pedrea": ["coins", "small"],
+    "cava": ["celebrating", "crowd"],
+    "cola": ["queue", "waiting"], "colas": ["queue", "waiting"],
+    "peregrinacion": ["queue", "crowd"],
+    "campana": ["christmas", "crowd"],
+    "navidad": ["christmas", "lights"],
+    "diciembre": ["christmas", "street"],
+    # el papel oficial y el que manda
+    "selae": ["government", "official"],
+    "estatal": ["government", "official"],
+    "concesion": ["official", "document"],
+    "traspaso": ["signing", "contract"],
+    "consignacion": ["boxes", "delivery"],
+    "liquidacion": ["invoice", "calculator"],
+    "supremo": ["court", "gavel"],
+    "sentencia": ["court", "gavel"],
+    "tribunal": ["court", "gavel"],
+    "tribunales": ["court", "gavel"],
+    "demanda": ["legal", "document"],
+    "comision": ["invoice", "calculator"],
+    "comisiones": ["invoice", "calculator"],
+    # el banco, que es donde se cobra de verdad
+    "sucursal": ["bank", "branch"],
+    "entidad": ["bank", "branch"],
+    "entidades": ["bank", "branch"],
+    # y el canal que compite
+    "web": ["online", "laptop"], "online": ["online", "phone"],
+    "aplicacion": ["phone", "app"], "aplicaciones": ["phone", "app"],
+    "digital": ["online", "screen"],
+    "plataforma": ["online", "screen"],
+
     # --- farmacia (episodio 09) -----------------------------------------
     # El episodio no va de pastillas: va de un permiso, un mapa y un pagador
     # publico. Las traducciones apuntan a eso, no al medicamento.

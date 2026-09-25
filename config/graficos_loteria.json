@@ -1,0 +1,239 @@
+[
+  {
+    "_nota": "EL GRAFICO DEL GANCHO. La factura del canal AL REVES, igual que en la farmacia: cada linea es algo que NO compras y el total no es un numero. Aqui el total es una ventanilla, que es la palabra del episodio y la que cierra el cierre.",
+    "donde": "medio millón de euros. ¿a cambio de qué, exactamente?",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "por medio millón de euros"
+    },
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "lo que no te llevas",
+      "lineas": [
+        [
+          "el local",
+          "alquilado"
+        ],
+        [
+          "la marca",
+          "es del Estado"
+        ],
+        [
+          "la mercancía",
+          "en consignación"
+        ],
+        [
+          "el premio",
+          "lo canta un niño"
+        ]
+      ],
+      "total": "una ventanilla",
+      "etiqueta_total": "y te llevas",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA BARRA MAS DESPROPORCIONADA DE LA SERIE, y el dato que la gente va a repetir. Cuatro millones repartidos contra nueve euros cobrados. En pantalla la segunda barra no se ve: ESO es el grafico. No hay que forzar nada, la aritmetica ya es el chiste.",
+    "donde": "y por esa venta cobras nueve euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 1 · vender el gordo"
+    },
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "lo que reparte y lo que cobra",
+      "items": [
+        [
+          "Reparte",
+          4000000.0
+        ],
+        [
+          "Cobra",
+          9.0
+        ]
+      ],
+      "destacar": {
+        "Cobra": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "La red entera. No es dato de color: es la prueba de que el mapa existe y esta cerrado. El pie lleva lo que lo convierte en argumento, que es que no crece.",
+    "donde": "en españa hay unos diez mil novecientos puntos de venta",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 2 · el mapa"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 10900.0,
+      "dec": 0,
+      "sufijo": " puntos de venta",
+      "pie": "y el número lleva años bajando",
+      "px": 160,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 1.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL REPARTO DEL BILLETE DE VEINTE EUROS. Es el grafico que mejor explica el episodio entero: una barra partida donde la rodaja del lotero casi no se ve. Mismo tipo que el desglose de la aerolinea, y aqui el desequilibrio ES el argumento.",
+    "donde": "tú te quedas noventa céntimos y los diecinueve con diez son de loterías",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "quién se queda tus 20 €"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "titulo": "de cada décimo de 20 €",
+      "items": [
+        [
+          "El Estado",
+          19.1
+        ],
+        [
+          "La administración",
+          0.9
+        ]
+      ],
+      "destacar": {
+        "La administración": "acento"
+      },
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Las tres comisiones, que son las tres cifras del negocio y las tres las ha escrito otro. Una factura y no unas barras: no se comparan entre si, se enumeran. El total no es una suma, es de quien son.",
+    "donde": "el cuatro y medio por ciento del sorteo de navidad",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "tu comisión, por producto",
+      "lineas": [
+        [
+          "Sorteo de Navidad",
+          "4,5 %"
+        ],
+        [
+          "Lotería Nacional y Quiniela",
+          "6 %"
+        ],
+        [
+          "Primitiva y Euromillones",
+          "5,9 %"
+        ]
+      ],
+      "total": "las escribe el Estado",
+      "etiqueta_total": "y las tres",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "QUIEN PAGA. La flecha invertida, igual que en la farmacia y en el aeropuerto: el dinero no viene del mostrador, viene del pagador publico. Es el esqueleto que se repite en toda la serie y por eso se dibuja igual.",
+    "donde": "quien te paga a ti es la sociedad estatal",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "quién te paga"
+    },
+    "grafico": {
+      "tipo": "flecha",
+      "a": "LA ADMINISTRACIÓN",
+      "b": "EL ESTADO",
+      "etiqueta": "el cliente solo trae el dinero de paso",
+      "invertida": true,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.0,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA TRAMPA DE LOS DOSCIENTOS MIL, que es el dato mas contraintuitivo del guion. Dos barras que bajan cuando deberian subir. El pie es lo que lo remata: el recorte llega justo cuando mas trabajo hay.",
+    "donde": "si lo pasas, el porcentaje baja al uno coma veinticinco",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "capítulo 7 · cuanto más pagas, menos cobras"
+    },
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "comisión por pagar premios en ventanilla",
+      "items": [
+        [
+          "Hasta 200.000 € al año",
+          2.5
+        ],
+        [
+          "Por encima",
+          1.25
+        ]
+      ],
+      "destacar": {
+        "Por encima": "acento"
+      },
+      "sufijo": " %",
+      "dec": 2,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA FACTURA FINAL, y remata la serie. La ultima linea no es un gasto ni un socio: es un sitio. En el hotel la cuenta terminaba en algo que no era un numero y en la farmacia en una casilla; aqui termina en una ventanilla, que es la palabra que lleva sonando desde el minuto uno.",
+    "donde": "el precio de lo que vendes no es tuyo",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "de qué eres dueño",
+      "lineas": [
+        [
+          "El precio de lo que vendes",
+          "lo fija el Estado"
+        ],
+        [
+          "El producto que despachas",
+          "te lo consignan"
+        ],
+        [
+          "El premio que reparte tu tienda",
+          "ni pasa por tu caja"
+        ],
+        [
+          "Tu mejor día del año",
+          "lo decide un bombo"
+        ]
+      ],
+      "total": "una ventanilla",
+      "etiqueta_total": "tuyo es",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "barrido"
+    }
+  }
+]

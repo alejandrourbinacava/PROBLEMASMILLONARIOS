@@ -35,6 +35,7 @@ on:
       - "gaso-*"
       - "hot-*"
       - "farm-*"
+      - "lot-*"
 
 permissions:
   contents: write
@@ -63,6 +64,7 @@ jobs:
             hot-*)   echo "voz=voz_hotel.mp3" >> "$GITHUB_OUTPUT" ;;
             gim-*)   echo "voz=voz_gim.mp3"  >> "$GITHUB_OUTPUT" ;;
             farm-*)  echo "voz=voz_farmacia.mp3" >> "$GITHUB_OUTPUT" ;;
+            lot-*)   echo "voz=voz_loteria.mp3" >> "$GITHUB_OUTPUT" ;;
             *)       echo "voz=voz.mp3"      >> "$GITHUB_OUTPUT" ;;
           esac
           if [[ "${GITHUB_REF_NAME}" == gancho-* ]]; then
@@ -85,6 +87,9 @@ jobs:
           elif [[ "${GITHUB_REF_NAME}" == farm-* ]]; then
             echo "guion=proyecto/farmacia.json" >> "$GITHUB_OUTPUT"
             echo "pool=pool_farmacia_revisado.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == lot-* ]]; then
+            echo "guion=proyecto/loteria.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_loteria_revisado.json" >> "$GITHUB_OUTPUT"
           else
             echo "guion=${{ inputs.guion || 'proyecto/episodio_banco.json' }}" >> "$GITHUB_OUTPUT"
           fi

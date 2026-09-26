@@ -66,6 +66,32 @@ MINIMO_MITAD = 2.2
 # el rotulo se veia 1,6 s. Una frase de cinco palabras en segundo y medio
 # se ve pasar, no se lee, y es lo que dijo el usuario. El plano no se
 # alarga -eso desplazaria la locucion-: le pide prestado a su hermano.
+# Cuantas veces puede salir el mismo clip en todo el episodio. A cinco, que
+# es donde llegaba sin tope, el espectador lo nota; a tres, separadas por
+# DISTANCIA planos, se lee como un retorno y no como que se acabo el
+# material.
+TOPE_USOS = 3
+
+# UN CLIP PRESTADO Y FLOJO PIERDE CONTRA UNA ILUSTRACION.
+#
+# Un pool hereda mucho del banco, y esos clips -calculadoras, despachos,
+# papeleo- puntuan en media frase de cualquier guion porque cualquier guion
+# de esta serie dice "comision", "cuenta" y "papeles". Tecnicamente aciertan
+# y en pantalla no ensenan NADA del tema: en la loteria solo el 23% de los
+# planos ensenaba una tienda, una cola o un papel, y el usuario lo dijo en
+# una linea: «me haces un video de loteria y no salen clips de loteria».
+#
+# La regla del canal ya existe -si no hay clip de calidad, se ilustra- pero
+# no se aplicaba porque una calculadora SI puntuaba. Asi que: si el clip no
+# es del metraje propio del episodio y ademas puntua flojo, el plato con el
+# icono del tema gana. Un decimo dibujado es loteria; una calculadora no.
+PRESTADO_FLOJO = 1
+
+# Cuantos planos de plato seguidos se aguantan. Mas de tres y el episodio
+# deja de parecer un canal.
+MAX_PLATOS_SEGUIDOS = 3
+
+
 MINIMO_ROTULO = 2.9
 MINIMO_HERMANO = 1.9
 
@@ -324,9 +350,25 @@ def main():
     # del gancho se sirven antes que nadie. No se les sube la puntuacion
     # -eso colocaria un clip que no viene a cuento-, se les adelanta el
     # turno entre los que ya puntuan.
+    # EL METRAJE PROPIO DEL EPISODIO VA PRIMERO.
+    #
+    # Un pool hereda mucho del banco -calculadoras, despachos, papeleo- y
+    # esos clips puntuan 2 en media frase del guion porque el guion dice
+    # "comision", "cuenta" y "papeles" todo el rato. Tecnicamente aciertan y
+    # en pantalla no ensenan NADA del tema: en el episodio de la loteria
+    # solo el 22% de los planos ensenaba una tienda, una cola o un papel, y
+    # el usuario lo dijo en una linea: «me haces un video de loteria y no
+    # salen clips de loteria».
+    #
+    # Asi que a igualdad de puntuacion gana el metraje que se bajo PARA
+    # este episodio. No se le sube la nota -eso colocaria clips que no
+    # vienen a cuento-: se le adelanta el turno.
+    mio = "stock_" + (EPISODIO or "")
+
     def _turno(x):
-        p, i, _ = x
+        p, i, ruta = x
         return (0 if (escenas[i].get("id") or "").startswith("gancho") else 1,
+                0 if ruta.startswith(mio) else 1,
                 -p)
 
     combis.sort(key=_turno)
@@ -356,12 +398,18 @@ def main():
     # clip bueno se colocaba tres veces mientras quedaban clips sin estrenar
     # en el pool. Con 204 clips para 177 planos salian 72 repeticiones. El
     # usuario lo vio: "hay varios clips que se repiten".
+    # La nota DEL CLIP QUE SE LE PONE, no la mejor que podria haber sacado:
+    # lo que decide si el plano ensena algo es el clip que acaba puesto.
+    nota = {}
+    n_prestado_flojo = 0
+
     puesto, usados = {}, {}
     for p, i, ruta in combis:
         if i in puesto or ruta in usados:
             continue
         puesto[i] = ruta
         usados[ruta] = i
+        nota[i] = p
     # Y en la segunda, el que MENOS se ha puesto.
     #
     # `combis` va ordenada por puntuacion, asi que recorrerla otra vez vuelve
@@ -378,13 +426,18 @@ def main():
     for i in sorted(porplano):
         if i in puesto:
             continue
+        # Y CON TOPE DE USOS. Sin el, un clip que puntua alto en media
+        # docena de frases se colocaba cinco veces mientras el pool tenia
+        # clips sin estrenar: en la loteria una calculadora salia 5 veces.
         cand = [(veces[r], -p, r) for p, r in porplano[i]
-                if i - usados.get(r, -999) > DISTANCIA]
+                if i - usados.get(r, -999) > DISTANCIA
+                and veces[r] < TOPE_USOS]
         if not cand:
             continue
         _v, _p, r = min(cand)
         puesto[i] = r
         usados[r] = i
+        nota[i] = -_p
         veces[r] += 1
 
     # SEGUNDA PASADA, y es la que decide si esto parece un canal o un
@@ -530,6 +583,18 @@ def main():
         #
         # La excepcion es el plano que lleva un grafico encima: ahi la
         # imagen es fondo del dato, no ilustra la frase.
+        # Y si el clip es PRESTADO y FLOJO, pierde contra la ilustracion.
+        # Ver PRESTADO_FLOJO: una calculadora del pool del banco puntuando
+        # 1 con «comision» no ensena una loteria; un decimo dibujado si.
+        if i in puesto and not (e.get("grafico") and e.get("clip")):
+            r = puesto[i]
+            if not r.startswith(mio) and nota.get(i, 9) <= PRESTADO_FLOJO:
+                del puesto[i]
+                # se guarda por si hay que devolverlo: una racha larga de
+                # plato es un PowerPoint, y entonces vale mas un clip flojo
+                e["_clip_quitado"] = r
+                n_prestado_flojo += 1
+
         if i in puesto or (e.get("grafico") and e.get("clip")):
             if i in puesto:
                 e["clip"] = puesto[i]
@@ -676,6 +741,9 @@ def main():
             v["duracion"] = round(v["duracion"] - falta, 2)
             e["duracion"] = round(e["duracion"] + falta, 2)
             n_prestado += 1
+    if n_prestado_flojo:
+        print(f"  clips prestados y flojos que pasan a ilustracion: "
+              f"{n_prestado_flojo}")
     if n_prestado:
         print(f"  rotulos que pidieron tiempo prestado: {n_prestado}")
 
@@ -746,6 +814,37 @@ def main():
         if tp and not tp.get("texto", "").replace("*", "").strip():
             del e["texto_pantalla"]
             n_vacios += 1
+
+    # NUNCA MAS DE TRES PLATOS SEGUIDOS.
+    #
+    # Mandar a ilustracion los clips prestados y flojos sube mucho cuanto
+    # del video ensena el tema -del 32% al 45% en la loteria- y tiene un
+    # precio: si caen juntos, son diez planos seguidos de fondo de marca y
+    # eso ya no es un canal, es un PowerPoint con voz. Asi que a partir del
+    # tercero seguido se devuelve el clip que se le habia quitado, empezando
+    # por los que mejor puntuaban. Un clip flojo suelto se perdona; diez
+    # tarjetas seguidas no.
+    n_cortadas = 0
+    racha = 0
+    for e in fuera:
+        if e.get("fondo") != "plato":
+            racha = 0
+            continue
+        racha += 1
+        if racha > MAX_PLATOS_SEGUIDOS and e.get("_clip_quitado"):
+            e["clip"] = e.pop("_clip_quitado")
+            e["clip_desde"] = 0.3
+            e.pop("fondo", None)
+            e.pop("fondo_fase", None)
+            if (e.get("grafico") or {}).get("tipo") == "ilustracion":
+                del e["grafico"]
+            e["duotono_fuerza"] = FUERZA_DUO
+            racha = 0
+            n_cortadas += 1
+    for e in fuera:
+        e.pop("_clip_quitado", None)
+    if n_cortadas:
+        print(f"  rachas de plato cortadas devolviendo el clip: {n_cortadas}")
 
     # UNA ILUSTRACION MUDA ES MEDIO PLANO. El icono dice de que familia es
     # la idea; la frase dice cual. Si el rotulo se mudo a otro plano y el

@@ -79,7 +79,7 @@ Se entra por traspaso. Le compras la administración al anterior.
 
 Y el precio no sale de una tasación de un local ni de un inventario. Sale de una convención del sector: entre una y cinco veces las comisiones netas de un año. Una administración mediana anda por el medio millón de euros.
 
-Léelo otra vez. Entre **una y cinco veces.** Esa horquilla no es un detalle: es toda la negociación. Dos administraciones que ingresan lo mismo pueden valer cien mil euros o quinientos mil según dónde estén, qué reputación tengan y si han dado premios gordos.
+Escúchalo otra vez. Entre **una y cinco veces.** Esa horquilla no es un detalle: es toda la negociación. Dos administraciones que ingresan lo mismo pueden valer cien mil euros o quinientos mil según dónde estén, qué reputación tengan y si han dado premios gordos.
 
 Y hay un tercero en la mesa que no es el comprador ni el vendedor.
 
@@ -171,7 +171,7 @@ Con un tope. Si el total de premios que pagas en el año no llega a doscientos m
 
 A la mitad.
 
-Léelo despacio, porque es contraintuitivo. Cuantos más premios reparte tu administración, más baja el porcentaje que cobras por repartirlos. El negocio te premia por ir bien hasta un punto, y a partir de ese punto te recorta el porcentaje justo cuando más trabajo tienes.
+Párate aquí un segundo, porque es contraintuitivo. Cuantos más premios reparte tu administración, más baja el porcentaje que cobras por repartirlos. El negocio te premia por ir bien hasta un punto, y a partir de ese punto te recorta el porcentaje justo cuando más trabajo tienes.
 
 Tiene su lógica administrativa: esa comisión compensa el servicio de caja, no es una participación en el premio. Pero el efecto en el mostrador es el que es. Un año bueno, con mucha pedrea repartida en el barrio, es un año de más trabajo, más cola, más caja inmovilizada para poder pagar, y un porcentaje menor.
 

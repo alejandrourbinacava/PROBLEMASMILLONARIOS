@@ -212,6 +212,38 @@ TEMAS_LOTERIA = [
                    "canal", "digital", "plataforma")),
 ]
 
+# Los temas del supermercado. El episodio no va de un edificio: va de un
+# billete de cien euros que pasa por una caja y se reparte, asi que las
+# familias son las paradas del billete.
+TEMAS_SUPERMERCADO = [
+    ("tienda",     ("supermercado", "supermercados", "tienda", "tiendas",
+                    "sala", "pasillo", "pasillos", "estanteria",
+                    "estanterias", "escaparate", "mercadona", "local")),
+    ("producto",   ("producto", "productos", "mercancia", "leche", "carne",
+                    "fruta", "pescado", "yogur", "hacendado", "deliplus",
+                    "marca", "marcas", "blanca", "carro", "cesta")),
+    ("caja",       ("caja", "cajas", "cajera", "cliente", "clientes", "ticket",
+                    "cobra", "cobrar", "pagar", "paga", "billete", "compra")),
+    ("proveedor",  ("proveedor", "proveedores", "fabrica", "fabricas",
+                    "fabricante", "produce", "camion", "camiones",
+                    "logistica", "logisticos", "almacen", "almacenes",
+                    "transporte", "transportistas", "bloques")),
+    ("plantilla",  ("personas", "plantilla", "trabajadores", "trabajador",
+                    "nominas", "nomina", "sueldo", "sueldos", "turnos",
+                    "jornada", "personal", "contrato")),
+    ("edificio",   ("edificio", "obra", "frio", "camaras", "camara", "suelo",
+                    "alquiler", "reforma", "reformas", "construir", "metros",
+                    "inversion", "invertir")),
+    ("dinero",     ("euros", "euro", "millones", "millon", "dinero",
+                    "beneficio", "facturacion", "ventas", "margen",
+                    "recaudacion")),
+    ("estado",     ("impuesto", "impuestos", "sociedades", "hacienda",
+                    "estado", "sociedad", "donacion", "donaciones",
+                    "alimentos", "toneladas")),
+    ("modelo",     ("capital", "jefe", "calidad", "modelo", "dueno",
+                    "propietario", "escala", "franquicia", "covi", "dia")),
+]
+
 TEMAS_FARMACIA = [
     ("farmacia",  ("farmacia", "farmacias", "botica", "botiquin", "cruz",
                    "mostrador", "local", "tienda", "persiana", "abrir",

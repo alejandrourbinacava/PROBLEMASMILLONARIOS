@@ -1,0 +1,374 @@
+[
+  {
+    "_nota": "EL GRAFICO DEL GANCHO. Veinticinco millones contra uno, por tienda: la desproporcion es el chiste y la barra pequena casi no se ve. No hay que forzar nada, la aritmetica ya es la pregunta del episodio.",
+    "donde": "y gana uno",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "una tienda, en un año",
+      "items": [
+        ["Entra por la caja", 25000000.0],
+        ["Se queda", 1000000.0]
+      ],
+      "destacar": {
+        "Se queda": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL FINAL DEL VIAJE, dicho en el minuto uno. Cuatro euros de cada cien. Un contador solo, sin comparar con nada: la cifra ES la frase.",
+    "donde": "le llegan cuatro",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el final del viaje"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 4.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "de cada 100 € es del dueño",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA FACTURA DEL EDIFICIO. La primera linea de la cuenta del canal: lo que cuesta tener la tienda montada antes de que entre nadie. El suelo va como linea aparte porque no esta dentro de los 4,2 millones.",
+    "donde": "fueron cuatro millones doscientos mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "montar la tienda",
+      "lineas": [
+        ["Sala de ventas", "1.500 a 1.800 m²"],
+        ["Obra, instalaciones y frío", "4,2 M€"],
+        ["El suelo", "si lo compras, aparte"]
+      ],
+      "total": "4.200.000 €",
+      "etiqueta_total": "sin un cliente",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LAS VEINTISIETE TIENDAS. El dato que dice que la mayor cadena del pais prefiere alquilar su suelo. Un contador y no unas barras: no se compara con nada, se queda en la cabeza.",
+    "donde": "por ciento ochenta millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el suelo no es suyo"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 180.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "por 27 tiendas, y siguió pagando alquiler",
+      "px": 170,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL CENTRO DEL VIDEO. Una barra partida en tres: 84 mercancia, 10 personal, 6 para todo lo demas. Es la estructura del SECTOR, no de la cadena, y la leyenda dice solo 'mercancia', 'personal' y 'lo demas' para no atribuirsela.",
+    "donde": "ochenta y cuatro de esos cien euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        ["mercancía", 84.0],
+        ["personal", 10.0],
+        ["lo demás", 6.0]
+      ],
+      "colores": {
+        "mercancía": "serie",
+        "personal": "tenue",
+        "lo demás": "acento"
+      },
+      "total": "100 € de una compra",
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "MARCA PROPIA. Un anillo: aqui la cifra ES la frase, casi ocho de cada diez euros.",
+    "donde": "el setenta y siete coma ocho por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "una marca tuya"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 77.8,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "de sus ventas son marca propia",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA MITAD DE LA MARCA BLANCA DEL PAIS. Una barra partida donde una sola cadena se queda la mitad y el resto se reparte el resto.",
+    "donde": "el cincuenta coma cuatro por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la marca blanca de España"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "valor": 50.4,
+      "dec": 1,
+      "etiqueta_a": "Mercadona",
+      "etiqueta_b": "todas las demás",
+      "color_a": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA NOMINA DE UNA TIENDA. La linea de la plantilla: 60 personas a 2.000 euros de media, mas la Seguridad Social. Es CALCULO PROPIO y la cifra se dice como 'casi dos millones'.",
+    "donde": "casi dos millones",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "la plantilla de una tienda",
+      "lineas": [
+        ["60 personas", "2.000 € al mes de media"],
+        ["Sueldos al año", "1.440.000 €"],
+        ["Seguridad Social", "unos 430.000 €"]
+      ],
+      "total": "casi 2 M€",
+      "etiqueta_total": "cada año",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "SEIS MIL QUINIENTOS EUROS POR HORA. Cifra de calculo propio (25 M€ / unos 310 dias / 12,5 h). Un contador solo.",
+    "donde": "seis mil quinientos euros cada hora",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "con la tienda abierta"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 6500.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "por hora, de media",
+      "px": 190,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL BENEFICIO. Mil setecientos veintinueve millones, que es lo que da la cuenta del principio. Contador solo.",
+    "donde": "mil setecientos veintinueve millones",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que queda"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1729.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "de beneficio en 2025",
+      "px": 170,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "ALGO MAS DE CUATRO POR CADA CIEN. 1.729 / 41.858 = 4,13 %. Un anillo pequeno: el vacio del resto de la rueda ES el argumento.",
+    "donde": "algo más de cuatro euros por cada cien",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que queda de cada 100 €"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 4.1,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "es el beneficio sobre las ventas",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA INVERSION PREVISTA, el doble de lo que ganara. Es lo que dice que mantener una tienda no es pagar la luz.",
+    "donde": "más de tres mil setecientos millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "mantener la red"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 3700.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "de inversión prevista este año",
+      "px": 170,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LOS DIECIOCHO BLOQUES. Detras de cada tienda hay un almacen que no sale en su factura.",
+    "donde": "dieciocho bloques logísticos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "detrás de la tienda"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 18.0,
+      "dec": 0,
+      "sufijo": " bloques",
+      "pie": "logísticos para 1.672 tiendas",
+      "px": 170,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL QUINTO LUGAR. EL GIRO DE LA SERIE, escrito por la propia empresa: la factura final no termina en un numero sino en un puesto. La ultima linea es el dueno.",
+    "donde": "por este orden",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "a quién atiende primero",
+      "lineas": [
+        ["1.º El cliente", "al que llaman el jefe"],
+        ["2.º El trabajador", "los diez de cada cien"],
+        ["3.º El proveedor", "los ochenta y cuatro"],
+        ["4.º La sociedad", "impuestos y donaciones"]
+      ],
+      "total": "el dueño",
+      "etiqueta_total": "5.º y último",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA FRANQUICIA PEQUENA. Las cifras vienen de webs de franquicia y se dicen como orden de magnitud. El total es el contraste con los 4,2 millones.",
+    "donde": "una de covirán pide",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "si lo haces pequeño",
+      "lineas": [
+        ["Covirán", "75.000 a 220.000 €"],
+        ["Canon de entrada", "7.000 €"],
+        ["Dia, 400 m²", "unos 400.000 €"]
+      ],
+      "total": "contra 4,2 M€",
+      "etiqueta_total": "y no es lo mismo",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA ESCALA. Con el mismo margen, tres millones de ventas dan 120.000 euros y la tienda media de la cadena da un millon. La segunda barra casi la sale del cuadro: ESO es la escala.",
+    "donde": "deja ciento veinte mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "beneficio al año, con el mismo margen",
+      "items": [
+        ["Tu tienda", 120000.0],
+        ["Una de la cadena", 1030000.0]
+      ],
+      "destacar": {
+        "Tu tienda": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA FACTURA FINAL, y remata la serie. Aqui el dueno es dueno de todo y la cuenta termina en cuatro euros. Es el espejo del hotel, donde terminaba en un letrero, y de la loteria, donde terminaba en una ventanilla.",
+    "donde": "de cada cien euros, cuatro",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "de qué eres dueño",
+      "lineas": [
+        ["Las tiendas", "tuyas"],
+        ["La marca", "tuya"],
+        ["La logística", "tuya"],
+        ["Lo que cruza la caja", "casi todo, de otros"]
+      ],
+      "total": "4 €",
+      "etiqueta_total": "de cada 100, tuyos",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 3.0,
+      "entrada": "barrido"
+    }
+  }
+]

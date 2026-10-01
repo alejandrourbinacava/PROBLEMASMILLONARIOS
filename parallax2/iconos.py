@@ -468,6 +468,18 @@ def _bombo(d, c, col, gr, paso):
         _lin(d, c, [(.30, .92), (.70, .92)], col, gr)
 
 
+def _camion(d, c, col, gr, paso):
+    """El camion: la caja de carga, la cabina y las dos ruedas."""
+    if paso(0):
+        _caja(d, c, .06, .28, .60, .70, col, gr, .02)
+    if paso(1):
+        _lin(d, c, [(.60, .42), (.80, .42), (.94, .56), (.94, .70), (.60, .70)],
+             col, gr)
+    if paso(2):
+        _circ(d, c, .24, .74, .08, col, gr)
+        _circ(d, c, .76, .74, .08, col, gr)
+
+
 ICONOS = {
     "edificio": _edificio, "hotel": _hotel, "persona": _persona,
     "personas": _personas, "euro": _euro, "billetes": _billetes,
@@ -479,7 +491,7 @@ ICONOS = {
     "alerta": _alerta, "porcentaje": _porcentaje, "mancuerna": _mancuerna,
     "carro": _carro, "factura": _factura, "acuerdo": _acuerdo,
     "farmacia": _farmacia, "mapa": _mapa, "pastilla": _pastilla,
-    "decimo": _decimo, "bombo": _bombo,
+    "decimo": _decimo, "bombo": _bombo, "camion": _camion,
     "dato": _dato,
 }
 
@@ -496,6 +508,9 @@ ICONOS = {
 # no intentarlo es dejar la frase sobre negro.
 # ---------------------------------------------------------------------------
 TABLA = [
+    ("camion",     "camion camiones transporte transportistas logistica "
+                   "logistico logisticos bloques almacen almacenes "
+                   "distribucion entrega"),
     ("decimo",     "decimo decimos billete billetes participacion "
                    "participaciones papel boleto boletos consignacion"),
     ("bombo",      "bombo sorteo sorteos bola bolas gordo pedrea "
@@ -584,7 +599,7 @@ DEL_TEMA = {
     "hotel": "hotel", "aerolinea": "avion", "aeropuerto": "avion",
     "gasolinera": "surtidor", "gimnasio": "mancuerna", "banco": "banco",
     "casa": "edificio", "casino": "billetes", "farmacia": "farmacia",
-    "loteria": "decimo",
+    "loteria": "decimo", "mercadona": "carro", "supermercado": "carro",
 }
 
 

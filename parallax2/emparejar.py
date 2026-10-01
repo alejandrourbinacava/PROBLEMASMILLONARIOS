@@ -514,6 +514,58 @@ LEXICO = {
     "traspaso": ["signing", "contract"],
 }
 
+# --- supermercado (episodio 11) ---------------------------------------------
+# Se SUMA a lo que ya traduce cada palabra: "caja" era box/medicine (farmacia)
+# y "compra" era handshake (banco); aqui son el cobro y la cesta.
+_SUPER = {
+    "supermercados": ["supermarket", "grocery"],
+    "supermercado": ["grocery", "aisle", "shelves"],
+    "tienda": ["store", "grocery"], "tiendas": ["store", "grocery"],
+    "carro": ["cart", "trolley", "shopping"],
+    "carrito": ["cart", "trolley"], "cesta": ["basket", "groceries"],
+    "compra": ["groceries", "shopping", "basket"],
+    "compras": ["groceries", "shopping"],
+    "caja": ["checkout", "cashier", "register"],
+    "cajas": ["checkout", "cashier"], "cajera": ["cashier", "checkout"],
+    "ticket": ["receipt", "checkout"],
+    "estanteria": ["shelves", "aisle"], "estanterias": ["shelves", "aisle"],
+    "estante": ["shelves", "aisle"],
+    "frio": ["freezer", "refrigerated", "fridge"],
+    "camara": ["fridge", "refrigerated"], "camaras": ["fridge", "refrigerated"],
+    "leche": ["milk", "dairy"], "carne": ["meat", "butcher"],
+    "pescado": ["fish", "seafood"], "fruta": ["fruit", "produce"],
+    "verdura": ["vegetables", "produce"], "yogur": ["yogurt", "dairy"],
+    "producto": ["groceries", "packaging"],
+    "productos": ["groceries", "packaging"],
+    "marca": ["packaging", "label"], "marcas": ["packaging", "label"],
+    "blanca": ["packaging", "label"],
+    "fabrica": ["factory", "production line"],
+    "fabricas": ["factory", "production line"],
+    "fabricante": ["factory", "production"],
+    "proveedor": ["delivery", "warehouse", "supplier"],
+    "proveedores": ["delivery", "warehouse", "supplier"],
+    "camion": ["truck", "delivery"], "camiones": ["trucks", "delivery"],
+    "almacen": ["warehouse", "pallets"], "almacenes": ["warehouse", "pallets"],
+    "logistica": ["warehouse", "logistics", "forklift"],
+    "logisticos": ["warehouse", "logistics"],
+    "transporte": ["truck", "logistics"],
+    "transportistas": ["truck", "logistics"],
+    "reponer": ["stocking", "shelves"], "reponiendo": ["stocking", "shelves"],
+    "sueldo": ["payroll", "salary"], "sueldos": ["payroll", "salary"],
+    "trabajadores": ["staff", "employees", "working"],
+    "turnos": ["staff", "working"], "jornada": ["staff", "working"],
+    "escala": ["warehouse", "aerial"], "volumen": ["warehouse", "pallets"],
+    "reformas": ["renovation", "construction"],
+    "reforma": ["renovation", "construction"],
+    "sala": ["interior", "store"],
+    "central": ["warehouse", "office"],
+    "donaciones": ["food donation", "boxes"],
+    "alimentos": ["food", "groceries"], "toneladas": ["pallets", "boxes"],
+    "capital": ["office", "meeting"], "jefe": ["office", "meeting"],
+}
+for _k, _v in _SUPER.items():
+    LEXICO[_k] = list(dict.fromkeys(LEXICO.get(_k, []) + _v))
+
 VACIAS = {"que", "los", "las", "del", "por", "con", "para", "una", "uno",
           "eso", "esa", "ese", "esto", "hay", "son", "mas", "pero", "como",
           "todo", "todos", "cada", "sus", "sin", "muy", "ese", "les", "nos"}

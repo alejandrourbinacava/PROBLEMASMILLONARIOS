@@ -161,7 +161,7 @@ def main():
     ap.add_argument("--titulo", default="")
     ap.add_argument("--temas",
                     choices=["casino", "banco", "aerolinea", "aeropuerto",
-                             "gasolinera", "hotel", "farmacia", "loteria"],
+                             "gasolinera", "hotel", "farmacia", "loteria", "supermercado"],
                     default="banco")
     a = ap.parse_args()
 
@@ -174,6 +174,7 @@ def main():
                 "aeropuerto": CC.TEMAS_AEROLINEA,
                 "farmacia": CC.TEMAS_FARMACIA,
                 "loteria": CC.TEMAS_LOTERIA,
+                "supermercado": CC.TEMAS_SUPERMERCADO,
                 "gasolinera": CC.TEMAS_GASOLINERA,
                 "hotel": CC.TEMAS_HOTEL}.get(a.temas, CC.TEMAS)
     pool = CC.cargar_pool(a.pool)

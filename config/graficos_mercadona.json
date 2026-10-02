@@ -8,8 +8,14 @@
       "tipo": "barras",
       "titulo": "una tienda, en un año",
       "items": [
-        ["Entra por la caja", 25000000.0],
-        ["Se queda", 1000000.0]
+        [
+          "Entra por la caja",
+          25000000.0
+        ],
+        [
+          "Se queda",
+          1000000.0
+        ]
       ],
       "destacar": {
         "Se queda": "acento"
@@ -52,9 +58,18 @@
       "tipo": "factura",
       "titulo": "montar la tienda",
       "lineas": [
-        ["Sala de ventas", "1.500 a 1.800 m²"],
-        ["Obra, instalaciones y frío", "4,2 M€"],
-        ["El suelo", "si lo compras, aparte"]
+        [
+          "Sala de ventas",
+          "1.500 a 1.800 m²"
+        ],
+        [
+          "Obra, instalaciones y frío",
+          "4,2 M€"
+        ],
+        [
+          "El suelo",
+          "si lo compras, aparte"
+        ]
       ],
       "total": "4.200.000 €",
       "etiqueta_total": "sin un cliente",
@@ -94,9 +109,18 @@
     "grafico": {
       "tipo": "apilada",
       "items": [
-        ["mercancía", 84.0],
-        ["personal", 10.0],
-        ["lo demás", 6.0]
+        [
+          "mercancía",
+          84.0
+        ],
+        [
+          "personal",
+          10.0
+        ],
+        [
+          "lo demás",
+          6.0
+        ]
       ],
       "colores": {
         "mercancía": "serie",
@@ -162,9 +186,18 @@
       "tipo": "factura",
       "titulo": "la plantilla de una tienda",
       "lineas": [
-        ["60 personas", "2.000 € al mes de media"],
-        ["Sueldos al año", "1.440.000 €"],
-        ["Seguridad Social", "unos 430.000 €"]
+        [
+          "60 personas",
+          "2.000 € al mes de media"
+        ],
+        [
+          "Sueldos al año",
+          "1.440.000 €"
+        ],
+        [
+          "Seguridad Social",
+          "unos 430.000 €"
+        ]
       ],
       "total": "casi 2 M€",
       "etiqueta_total": "cada año",
@@ -289,10 +322,22 @@
       "tipo": "factura",
       "titulo": "a quién atiende primero",
       "lineas": [
-        ["1.º El cliente", "al que llaman el jefe"],
-        ["2.º El trabajador", "los diez de cada cien"],
-        ["3.º El proveedor", "los ochenta y cuatro"],
-        ["4.º La sociedad", "impuestos y donaciones"]
+        [
+          "1.º El cliente",
+          "al que llaman el jefe"
+        ],
+        [
+          "2.º El trabajador",
+          "los diez de cada cien"
+        ],
+        [
+          "3.º El proveedor",
+          "los ochenta y cuatro"
+        ],
+        [
+          "4.º La sociedad",
+          "impuestos y donaciones"
+        ]
       ],
       "total": "el dueño",
       "etiqueta_total": "5.º y último",
@@ -312,9 +357,18 @@
       "tipo": "factura",
       "titulo": "si lo haces pequeño",
       "lineas": [
-        ["Covirán", "75.000 a 220.000 €"],
-        ["Canon de entrada", "7.000 €"],
-        ["Dia, 400 m²", "unos 400.000 €"]
+        [
+          "Covirán",
+          "75.000 a 220.000 €"
+        ],
+        [
+          "Canon de entrada",
+          "7.000 €"
+        ],
+        [
+          "Dia, 400 m²",
+          "unos 400.000 €"
+        ]
       ],
       "total": "contra 4,2 M€",
       "etiqueta_total": "y no es lo mismo",
@@ -334,8 +388,14 @@
       "tipo": "barras",
       "titulo": "beneficio al año, con el mismo margen",
       "items": [
-        ["Tu tienda", 120000.0],
-        ["Una de la cadena", 1030000.0]
+        [
+          "Tu tienda",
+          120000.0
+        ],
+        [
+          "Una de la cadena",
+          1030000.0
+        ]
       ],
       "destacar": {
         "Tu tienda": "acento"
@@ -349,6 +409,148 @@
     }
   },
   {
+    "_nota": "EL SUELDO. El contador automatico leia 'treinta y cuatro' y ponia un 4 con 'brutos al mes'. Dos barras: el primer ano y el cuarto.",
+    "donde": "empieza en mil setecientos treinta y cuatro",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido",
+      "tipo": "barras",
+      "titulo": "sueldo bruto al mes",
+      "items": [
+        [
+          "Primer año",
+          1734.0
+        ],
+        [
+          "A los cuatro años",
+          2347.0
+        ]
+      ],
+      "destacar": {
+        "Primer año": "acento"
+      },
+      "sufijo": " €",
+      "dec": 0
+    }
+  },
+  {
+    "_nota": "EL SUELDO MEDIO del calculo propio. El automatico ponia un 2 a secas.",
+    "donde": "un sueldo medio de dos mil euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "sueldo medio"
+    },
+    "grafico": {
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido",
+      "tipo": "contador",
+      "valor": 2000.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "al mes, por persona",
+      "px": 190,
+      "color": "acento"
+    }
+  },
+  {
+    "_nota": "LOS SEIS QUE QUEDAN. El automatico ponia 100 con 'Quedan euros'.",
+    "donde": "quedan seis euros de los cien",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que queda"
+    },
+    "grafico": {
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido",
+      "tipo": "contador",
+      "valor": 6.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "de cada 100 €",
+      "px": 230,
+      "color": "acento"
+    }
+  },
+  {
+    "_nota": "LAS MIL SEISCIENTAS TIENDAS. El automatico leia 'mil' y ponia 1.000 con 'seiscientas tiendas'.",
+    "donde": "no tienes mil seiscientas tiendas",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la red de Mercadona"
+    },
+    "grafico": {
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido",
+      "tipo": "contador",
+      "valor": 1672.0,
+      "dec": 0,
+      "sufijo": " tiendas",
+      "pie": "y tú tienes una",
+      "px": 150,
+      "color": "acento"
+    }
+  },
+  {
+    "_nota": "DESDE DOS MIL NUEVE. Un ano no es una cantidad: el automatico lo animaba como 2.009.",
+    "donde": "desde dos mil nueve",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la misma estructura"
+    },
+    "grafico": {
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido",
+      "tipo": "contador",
+      "valor": 17.0,
+      "dec": 0,
+      "sufijo": " años",
+      "pie": "casi sin moverse, desde 2009",
+      "px": 190,
+      "color": "acento"
+    }
+  },
+  {
+    "_nota": "LA SALA DE VENTAS. El automatico se quedaba con el 1.800 y perdia el 'desde 1.500'.",
+    "donde": "una sala de ventas de entre mil quinientos",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "tipo": "barras",
+      "titulo": "sala de ventas",
+      "items": [
+        [
+          "Desde",
+          1500.0
+        ],
+        [
+          "Hasta",
+          1800.0
+        ]
+      ],
+      "destacar": {
+        "Hasta": "acento"
+      },
+      "sufijo": " m²",
+      "dec": 0
+    }
+  },
+  {
     "_nota": "LA FACTURA FINAL, y remata la serie. Aqui el dueno es dueno de todo y la cuenta termina en cuatro euros. Es el espejo del hotel, donde terminaba en un letrero, y de la loteria, donde terminaba en una ventanilla.",
     "donde": "de cada cien euros, cuatro",
     "movimiento": "estatico",
@@ -357,10 +559,22 @@
       "tipo": "factura",
       "titulo": "de qué eres dueño",
       "lineas": [
-        ["Las tiendas", "tuyas"],
-        ["La marca", "tuya"],
-        ["La logística", "tuya"],
-        ["Lo que cruza la caja", "casi todo, de otros"]
+        [
+          "Las tiendas",
+          "tuyas"
+        ],
+        [
+          "La marca",
+          "tuya"
+        ],
+        [
+          "La logística",
+          "tuya"
+        ],
+        [
+          "Lo que cruza la caja",
+          "casi todo, de otros"
+        ]
       ],
       "total": "4 €",
       "etiqueta_total": "de cada 100, tuyos",

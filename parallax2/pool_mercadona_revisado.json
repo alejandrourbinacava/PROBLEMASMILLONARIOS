@@ -15,16 +15,6 @@
   "stock_banco/cash_briefcase_open_18.mp4"
  ],
  [
-  "oficina",
-  "handshake business meeting",
-  "stock_banco/handshake_business_meeting_19.mp4"
- ],
- [
-  "oficina",
-  "job interview office serious",
-  "stock_banco/job_interview_office_serious_20.mp4"
- ],
- [
   "edificio",
   "real estate buildings aerial",
   "stock_banco/real_estate_buildings_aerial_29.mp4"
@@ -43,16 +33,6 @@
   "dinero",
   "person working cash register",
   "stock_banco/person_working_cash_register_50.mp4"
- ],
- [
-  "dinero",
-  "money and construction plans",
-  "stock_banco/money_and_construction_plans_67.mp4"
- ],
- [
-  "papeles",
-  "signing contract close up hands",
-  "stock_banco/signing_contract_close_up_ha_70.mp4"
  ],
  [
   "oficina",
@@ -85,11 +65,6 @@
   "stock_banco/night_city_aerial_neon_101.mp4"
  ],
  [
-  "oficina",
-  "job interview office serious",
-  "stock_banco/job_interview_office_serious_109.mp4"
- ],
- [
   "edificio",
   "aerial city real estate",
   "stock_banco/aerial_city_real_estate_117.mp4"
@@ -120,19 +95,9 @@
   "stock_banco/executive_office_window_city_153.mp4"
  ],
  [
-  "graficos",
-  "investment growth chart",
-  "stock_banco/investment_growth_chart_155.mp4"
- ],
- [
   "oficina",
   "job interview office serious",
   "stock_banco/job_interview_office_serious_174.mp4"
- ],
- [
-  "graficos",
-  "calculator numbers close up",
-  "stock_banco/calculator_numbers_close_up_190.mp4"
  ],
  [
   "papeles",
@@ -173,11 +138,6 @@
   "papeles",
   "payroll documents calculator",
   "stock_banco/payroll_documents_calculator_263.mp4"
- ],
- [
-  "oficina",
-  "worried manager office desk",
-  "stock_banco/worried_manager_office_desk_264.mp4"
  ],
  [
   "papeles",
@@ -316,11 +276,6 @@
  ],
  [
   "proveedor",
-  "greenhouse tomatoes plant",
-  "stock_mercadona/greenhouse_tomatoes_plant_115.mp4"
- ],
- [
-  "proveedor",
   "tractor field aerial farmer",
   "stock_mercadona/tractor_field_aerial_farmer_116.mp4"
  ],
@@ -386,11 +341,6 @@
  ],
  [
   "dinero",
-  "euro coin spinning white",
-  "stock_mercadona/euro_coin_spinning_white_140.mp4"
- ],
- [
-  "dinero",
   "calculator papers desk",
   "stock_mercadona/calculator_papers_desk_142.mp4"
  ],
@@ -453,5 +403,45 @@
   "proveedor",
   "tractor mowing green field aerial farmer",
   "stock_mercadona/tractor_mowing_green_field_aerial_farmer_225.mp4"
+ ],
+ [
+  "proveedor",
+  "olive grove aerial landscape",
+  "stock_mercadona/olive_grove_aerial_landscape_304.mp4"
+ ],
+ [
+  "proveedor",
+  "hens chickens coop farm",
+  "stock_mercadona/hens_chickens_coop_farm_310.mp4"
+ ],
+ [
+  "proveedor",
+  "aerial highway lanes trucks",
+  "stock_mercadona/aerial_highway_lanes_trucks_325.mp4"
+ ],
+ [
+  "proveedor",
+  "aerial flatbed truck loading warehouse",
+  "stock_mercadona/aerial_flatbed_truck_loading_warehouse_326.mp4"
+ ],
+ [
+  "producto",
+  "cheese plate olives tapas",
+  "stock_mercadona/cheese_plate_olives_tapas_328.mp4"
+ ],
+ [
+  "caja",
+  "woman shopkeeper card payment smiling",
+  "stock_mercadona/woman_shopkeeper_card_payment_smiling_339.mp4"
+ ],
+ [
+  "edificio",
+  "aerial crane building site",
+  "stock_mercadona/aerial_crane_building_site_346.mp4"
+ ],
+ [
+  "dinero",
+  "euro 50 banknotes fan",
+  "stock_mercadona/euro_50_banknotes_fan_348.mp4"
  ]
 ]

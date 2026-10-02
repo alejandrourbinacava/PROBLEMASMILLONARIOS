@@ -70,7 +70,12 @@ MINIMO_MITAD = 2.2
 # es donde llegaba sin tope, el espectador lo nota; a tres, separadas por
 # DISTANCIA planos, se lee como un retorno y no como que se acabo el
 # material.
-TOPE_USOS = 3
+# Se puede bajar sin tocar el codigo: `TOPE_USOS=2 python vestir.py ...`. En el
+# episodio de Mercadona el pool tenia pocos supermercados y la misma fruteria
+# salia cuatro veces; el usuario lo noto. Antes una ilustracion que el mismo
+# clip otra vez.
+import os as _os
+TOPE_USOS = int(_os.environ.get("TOPE_USOS", "3"))
 
 # UN CLIP PRESTADO Y FLOJO PIERDE CONTRA UNA ILUSTRACION.
 #
@@ -780,6 +785,25 @@ def main():
     if n_ilustrados:
         print(f"  planos repetidos que pasan a ilustracion: {n_ilustrados}")
 
+    # TOPE DURO DE USOS. Ni el reparto de arriba ni la sustitucion de
+    # repetidos ni el cortador de rachas de plato -que devuelve clips- miran
+    # cuantas veces sale ya un clip: en Mercadona la misma fruteria salia
+    # CINCO veces con el tope puesto en dos. Aqui se cuenta de verdad, y lo
+    # que pasa del tope se ilustra.
+    cuenta_uso = collections.Counter()
+    n_topados = 0
+    for i, e in enumerate(fuera):
+        c = e.get("clip")
+        if not c:
+            continue
+        if cuenta_uso[c] >= TOPE_USOS:
+            a_plato(e, i, EPISODIO, ICO)
+            n_topados += 1
+            continue
+        cuenta_uso[c] += 1
+    if n_topados:
+        print(f"  planos que pasaban del tope de usos y se ilustran: {n_topados}")
+
     # Grafico y rotulo en el mismo plano tienen que ir en bandas distintas.
     # `motion_banco` coloca cada uno sin saber del otro, y en nueve planos de
     # doce coincidian -tres de ellos en la MISMA altura-: el anillo rojo salia
@@ -832,7 +856,21 @@ def main():
             continue
         racha += 1
         if racha > MAX_PLATOS_SEGUIDOS and e.get("_clip_quitado"):
-            e["clip"] = e.pop("_clip_quitado")
+            devuelto = e.pop("_clip_quitado")
+            if cuenta_uso[devuelto] >= TOPE_USOS:
+                # agotado: se busca uno que no se haya usado y puntue algo
+                mejor, mejor_p = None, 0
+                for r in pool:
+                    if cuenta_uso[r[2]] > 0:
+                        continue
+                    p, _ = EMP.puntua(e.get("texto") or "", r[2], r[1])
+                    if p > mejor_p:
+                        mejor, mejor_p = r, p
+                if mejor is None:
+                    continue
+                devuelto = mejor[2]
+            cuenta_uso[devuelto] += 1
+            e["clip"] = devuelto
             e["clip_desde"] = 0.3
             e.pop("fondo", None)
             e.pop("fondo_fase", None)

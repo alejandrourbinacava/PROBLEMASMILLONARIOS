@@ -69,12 +69,49 @@ def main():
         # en tres planos y el grafico tiene que entrar con la frase, no a la
         # mitad.
         elegido = None
-        for e in g["escenas"]:
-            if clave in norm(e.get("texto", "")):
-                elegido = e
-                break
+        # `"plano": "cap6_03b"` elige el plano por su id en vez de por el texto.
+        # Hace falta cuando una frase corta se parte en dos trozos IGUALES:
+        # «El capital. Es decir, el dueño. En quinto lugar.» eran dos planos
+        # con el mismo texto, el primero se llevaba el grafico por el criterio
+        # de arriba y el segundo se quedaba con un icono suelto y sin una
+        # palabra, justo en la frase que da el giro de la serie.
+        if ficha.get("plano"):
+            for e in g["escenas"]:
+                if e["id"] == ficha["plano"]:
+                    elegido = e
+                    break
+        else:
+            cands = [e for e in g["escenas"] if clave in norm(e.get("texto", ""))]
+            if cands:
+                # Una frase larga se parte en varios planos que REPITEN el texto
+                # entero. Elegir siempre el primero hacia que un dato dicho al
+                # final de la frase saliera ocho segundos antes de oirse:
+                # «17 anos, desde 2009» aparecia mientras el narrador decia
+                # «esa cifra no es de Mercadona». Se elige el plano en cuyo
+                # tramo de audio cae el fragmento, estimado por posicion en la
+                # frase y duracion de cada trozo. Un fragmento del principio
+                # sigue cayendo en el primero.
+                primero = cands[0]
+                grupo = [e for e in cands if e["texto"] == primero["texto"]]
+                tot = sum(e["duracion"] for e in grupo) or 1.0
+                texto_n = norm(primero["texto"])
+                pos = texto_n.find(clave) / max(1, len(texto_n))
+                elegido, acum = grupo[-1], 0.0
+                for e in grupo:
+                    acum += e["duracion"]
+                    if pos < acum / tot:
+                        elegido = e
+                        break
         if elegido is None:
             sin_sitio.append(ficha["donde"])
+            continue
+        # Una ficha sin grafico solo le pone un titular al plano. Es para las
+        # ilustraciones que `vestir` deja MUDAS cuando el plano es demasiado
+        # corto para el rotulo de la frase: un icono sin nada escrito no dice
+        # de que va.
+        if "grafico" not in ficha:
+            elegido["texto_pantalla"] = dict(ficha["texto_pantalla"])
+            puestos += 1
             continue
         antes = "grafico" if elegido.get("grafico") else (
             "rotulo" if elegido.get("texto_pantalla") else "nada")

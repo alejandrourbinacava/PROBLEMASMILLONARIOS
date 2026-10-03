@@ -246,67 +246,16 @@
     {
       "id": "gancho_05",
       "texto": "Para averiguarlo hay una sola manera honesta: montar una tienda, tú y yo, y apuntar cada gasto según aparece.",
-      "duracion": 2.27,
-      "movimiento": "drift_der",
-      "grade": "dorado_suave",
-      "efectos": [
-        "niebla"
-      ],
-      "clip": "stock_mercadona/two_men_shopping_cart_parking_lot_102.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
-    },
-    {
-      "id": "gancho_05b",
-      "texto": "Para averiguarlo hay una sola manera honesta: montar una tienda, tú y yo, y apuntar cada gasto según aparece.",
-      "duracion": 2.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "polvo"
-      ],
-      "capas": [],
-      "texto_pantalla": {
-        "texto": "*Montar* una tienda",
-        "px": 132,
-        "y": 0.74,
-        "acento": [
-          240,
-          84,
-          74
-        ],
-        "estilo": "escala"
-      },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.429,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "factura",
-        "lado": 300,
-        "y": 0.33,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "izquierda"
-    },
-    {
-      "id": "gancho_05c",
-      "texto": "Para averiguarlo hay una sola manera honesta: montar una tienda, tú y yo, y apuntar cada gasto según aparece.",
-      "duracion": 3.25,
+      "duracion": 4.21,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "destellos"
       ],
       "capas": [],
+      "tipo": "rotulo",
       "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "factura",
@@ -316,7 +265,6 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Montar una *tienda*",
         "px": 96,
@@ -334,7 +282,50 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      }
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05x",
+      "texto": "Para averiguarlo hay una sola manera honesta: montar una tienda, tú y yo, y apuntar cada gasto según aparece.",
+      "duracion": 4.21,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "factura",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Apuntar cada gasto según *aparece*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_06",
@@ -361,7 +352,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_06b",
@@ -377,7 +368,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_06c",
@@ -387,6 +378,48 @@
       "grade": "neutro",
       "efectos": [
         "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.3599999999999999,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Aviso antes de *empezar*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "gancho_06d",
+      "texto": "Aviso antes de empezar: no puedes comprarla. Mercadona no tiene franquicias ni vende licencias, y no deja que nadie ponga su nombre en la puerta. Todas sus tiendas son suyas, de la primera a la última.",
+      "duracion": 2.83,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
       ],
       "capas": [],
       "fondo": "plato",
@@ -422,48 +455,6 @@
       }
     },
     {
-      "id": "gancho_06d",
-      "texto": "Aviso antes de empezar: no puedes comprarla. Mercadona no tiene franquicias ni vende licencias, y no deja que nadie ponga su nombre en la puerta. Todas sus tiendas son suyas, de la primera a la última.",
-      "duracion": 2.83,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "destellos"
-      ],
-      "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.143,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "contrato",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.3599999999999999,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha",
-      "texto_pantalla": {
-        "texto": "Aviso antes de *empezar*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
-    },
-    {
       "id": "gancho_06e",
       "texto": "Aviso antes de empezar: no puedes comprarla. Mercadona no tiene franquicias ni vende licencias, y no deja que nadie ponga su nombre en la puerta. Todas sus tiendas son suyas, de la primera a la última.",
       "duracion": 2.88,
@@ -475,7 +466,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "contrato",
@@ -485,7 +476,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "texto_pantalla": {
         "texto": "Aviso antes de *empezar*",
         "px": 96,
@@ -530,7 +521,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_07b",
@@ -546,7 +537,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_07c",
@@ -562,7 +553,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "gancho_07d",
@@ -594,7 +585,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "gancho_08",
@@ -603,12 +594,54 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Te adelanto el final del *viaje*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08x",
+      "texto": "Te adelanto el final del viaje. De esos cien euros, al dueño de la tienda, que eres tú, le llegan cuatro.",
+      "duracion": 4.39,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
       ],
       "capas": [],
       "tipo": "grafico",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "contador",
         "valor": 4.0,
@@ -627,29 +660,29 @@
       "fondo_titulo": "el final del viaje"
     },
     {
-      "id": "gancho_08x",
-      "texto": "Te adelanto el final del viaje. De esos cien euros, al dueño de la tienda, que eres tú, le llegan cuatro.",
-      "duracion": 4.39,
+      "id": "gancho_09",
+      "texto": "Los otros noventa y seis ya iban camino de otro sitio antes de que el cliente entrara por la puerta.",
+      "duracion": 1.91,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
-        "icono": "persona",
+        "icono": "puerta",
         "lado": 300,
         "y": 0.32,
         "retardo": 0.22,
-        "duracion": 1.4,
+        "duracion": 0.8,
         "entrada": "golpe"
       },
       "texto_pantalla": {
-        "texto": "Al dueño de la *tienda*",
+        "texto": "Camino de otro *sitio*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -669,53 +702,36 @@
       "composicion": "izquierda"
     },
     {
-      "id": "gancho_09",
+      "id": "gancho_09b",
       "texto": "Los otros noventa y seis ya iban camino de otro sitio antes de que el cliente entrara por la puerta.",
-      "duracion": 1.91,
+      "duracion": 2.9,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
         "texto": "Los otros *noventa* y seis",
-        "px": 108,
-        "y": 0.68,
+        "px": 96,
+        "y": 0.64,
         "acento": [
-          240,
-          84,
-          74
+          206,
+          32,
+          38
         ],
-        "estilo": "derecha"
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
       },
+      "tipo": "rotulo",
       "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "puerta",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 0.8,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado"
-    },
-    {
-      "id": "gancho_09b",
-      "texto": "Los otros noventa y seis ya iban camino de otro sitio antes de que el cliente entrara por la puerta.",
-      "duracion": 2.33,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "niebla"
-      ],
-      "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "puerta",
@@ -725,12 +741,12 @@
         "duracion": 0.8599999999999999,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "gancho_09c",
       "texto": "Los otros noventa y seis ya iban camino de otro sitio antes de que el cliente entrara por la puerta.",
-      "duracion": 2.85,
+      "duracion": 2.28,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
@@ -756,8 +772,8 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "composicion": "derecha"
+      "fondo_fase": 0.429,
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_01",
@@ -784,7 +800,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_01b",
@@ -803,7 +819,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_02",
@@ -816,7 +832,7 @@
       ],
       "capas": [],
       "_lat_ent": -1.0,
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "grafico": {
         "y": 0.5,
         "retardo": 0.16,
@@ -861,7 +877,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_02c",
@@ -878,7 +894,7 @@
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_02d",
@@ -897,20 +913,51 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_03",
       "texto": "Lo que cuesta ponerlo en marcha lo cuenta la propia compañía cada vez que abre una tienda nueva. En la de Príncipe Pío, en Madrid, fueron cuatro millones doscientos mil euros. En las grandes, cinco o más.",
       "duracion": 3.6,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
       "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "Lo que cuesta ponerlo en marcha lo cuenta la propia compañía cada vez que abre una tienda nueva. En la de Príncipe Pío, en Madrid, fueron cuatro millones doscientos mil euros. En las grandes, cinco o más.",
+      "duracion": 4.39,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "Lo que cuesta ponerlo en marcha lo cuenta la propia compañía cada vez que abre una tienda nueva. En la de Príncipe Pío, en Madrid, fueron cuatro millones doscientos mil euros. En las grandes, cinco o más.",
+      "duracion": 5.37,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
       "grafico": {
         "tipo": "factura",
         "titulo": "montar la tienda",
@@ -932,87 +979,14 @@
         "etiqueta_total": "sin un cliente",
         "color": "acento",
         "y": 0.5,
-        "retardo": 0.25,
-        "duracion": 1.65,
+        "retardo": 0.4,
+        "duracion": 2.6,
         "entrada": "barrido"
       },
+      "composicion": "derecha",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento"
-    },
-    {
-      "id": "cap1_03b",
-      "texto": "Lo que cuesta ponerlo en marcha lo cuenta la propia compañía cada vez que abre una tienda nueva. En la de Príncipe Pío, en Madrid, fueron cuatro millones doscientos mil euros. En las grandes, cinco o más.",
-      "duracion": 4.39,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "polvo"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "En la de *Príncipe* Pío",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "derecha"
-    },
-    {
-      "id": "cap1_03c",
-      "texto": "Lo que cuesta ponerlo en marcha lo cuenta la propia compañía cada vez que abre una tienda nueva. En la de Príncipe Pío, en Madrid, fueron cuatro millones doscientos mil euros. En las grandes, cinco o más.",
-      "duracion": 5.37,
-      "movimiento": "estatico",
-      "grade": "dorado_suave",
-      "efectos": [
-        "bokeh"
-      ],
-      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "grafico": {
-        "tipo": "contador",
-        "valor": 4.2,
-        "dec": 1,
-        "sufijo": " M €",
-        "color": [
-          240,
-          84,
-          74
-        ],
-        "pie": "",
-        "y": 0.34,
-        "retardo": 1.0476470588235287,
-        "duracion": 2.0,
-        "entrada": "latigo_der"
-      },
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
     },
     {
       "id": "cap1_04",
@@ -1044,7 +1018,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_05",
@@ -1060,7 +1034,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_05b",
@@ -1076,7 +1050,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_05c",
@@ -1092,7 +1066,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_05d",
@@ -1108,7 +1082,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_06",
@@ -1117,12 +1091,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "carro",
@@ -1150,36 +1124,34 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_07",
       "texto": "Si lo compras, se suma. Y mira qué hace la propia Mercadona con el suyo. En dos mil veinte vendió veintisiete de sus tiendas a un fondo de inversión por ciento ochenta millones de euros. Poco más de seis millones y medio cada una.",
       "duracion": 3.14,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "composicion": "centrado",
-      "grafico": {
-        "tipo": "contador",
-        "valor": 180.0,
-        "dec": 0,
-        "sufijo": " M€",
-        "pie": "por 27 tiendas, y siguió pagando alquiler",
-        "px": 170,
-        "color": "acento",
-        "y": 0.5,
-        "retardo": 0.21,
-        "duracion": 1.23,
-        "entrada": "barrido"
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Si lo *compras*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_color": "acento",
-      "fondo_titulo": "el suelo no es suyo"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_07b",
@@ -1195,39 +1167,36 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_07c",
       "texto": "Si lo compras, se suma. Y mira qué hace la propia Mercadona con el suyo. En dos mil veinte vendió veintisiete de sus tiendas a un fondo de inversión por ciento ochenta millones de euros. Poco más de seis millones y medio cada una.",
       "duracion": 3.83,
-      "movimiento": "push_in",
-      "grade": "dorado_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "humo"
       ],
-      "clip": "stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
         "valor": 180.0,
         "dec": 0,
-        "sufijo": " M €",
-        "color": [
-          240,
-          84,
-          74
-        ],
-        "pie": "fondo de inversión",
-        "y": 0.68,
-        "retardo": 0.8300000000000001,
-        "duracion": 1.3,
-        "entrada": "latigo_izq"
+        "sufijo": " M€",
+        "pie": "por 27 tiendas, y siguió pagando alquiler",
+        "px": 170,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.3,
+        "duracion": 1.83,
+        "entrada": "barrido"
       },
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el suelo no es suyo"
     },
     {
       "id": "cap1_07d",
@@ -1243,7 +1212,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_08",
@@ -1259,7 +1228,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_09",
@@ -1286,7 +1255,7 @@
       },
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap1_09b",
@@ -1302,7 +1271,7 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap1_09c",
@@ -1318,17 +1287,19 @@
       "capas": [],
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap1_10",
       "texto": "Total acumulado: cuatro millones de euros. Y todavía no ha entrado nadie.",
       "duracion": 6.51,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_mercadona/construction_site_cranes_timelapse_130.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "grafico": {
@@ -1347,10 +1318,9 @@
         "duracion": 2.0,
         "entrada": "desplome"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
-      "composicion": "derecha"
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_01",
@@ -1361,7 +1331,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/two_men_shopping_cart_parking_lot_102.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1382,7 +1352,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_02",
@@ -1391,7 +1361,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "latigo": "izq",
@@ -1415,7 +1385,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "decimo",
@@ -1427,7 +1397,7 @@
       },
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_03",
@@ -1440,7 +1410,7 @@
       ],
       "capas": [],
       "_lat_ent": -1.0,
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "apilada",
         "items": [
@@ -1507,37 +1477,35 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_04",
       "texto": "Esa cifra no es de Mercadona: es la del sector entero. En el comercio de alimentación español, de cada cien euros que se facturan, ochenta y cuatro se van en pagar lo que hay en las estanterías. Y lleva así, casi sin moverse, desde dos mil nueve.",
       "duracion": 3.29,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "acero_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_mercadona/shopping_carts_supermarket_floor_shoppers_85.mp4",
+      "clip_desde": 0.3,
       "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "izquierda",
-      "grafico": {
-        "y": 0.5,
-        "retardo": 0.24,
-        "duracion": 1.35,
-        "entrada": "barrido",
-        "tipo": "contador",
-        "valor": 17.0,
-        "dec": 0,
-        "sufijo": " años",
-        "pie": "casi sin moverse, desde 2009",
-        "px": 190,
-        "color": "acento"
+      "texto_pantalla": {
+        "texto": "Esa cifra no es de *Mercadona*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_color": "acento",
-      "fondo_titulo": "la misma estructura"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_04b",
@@ -1548,7 +1516,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_mercadona/shopping_carts_supermarket_floor_shoppers_85.mp4",
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1556,24 +1524,50 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_04c",
       "texto": "Esa cifra no es de Mercadona: es la del sector entero. En el comercio de alimentación español, de cada cien euros que se facturan, ochenta y cuatro se van en pagar lo que hay en las estanterías. Y lleva así, casi sin moverse, desde dos mil nueve.",
       "duracion": 4.02,
       "movimiento": "estatico",
-      "grade": "acero_suave",
+      "grade": "neutro",
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/person_working_cash_register_50.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Esa cifra no es de *Mercadona*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap2_04d",
@@ -1585,19 +1579,25 @@
         "humo"
       ],
       "capas": [],
+      "grafico": {
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido",
+        "tipo": "contador",
+        "valor": 17.0,
+        "dec": 0,
+        "sufijo": " años",
+        "pie": "casi sin moverse, desde 2009",
+        "px": 190,
+        "color": "acento"
+      },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.143,
-      "composicion": "derecha",
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      }
+      "fondo_fase": 0.0,
+      "composicion": "centrado",
+      "fondo_color": "acento",
+      "fondo_titulo": "la misma estructura"
     },
     {
       "id": "cap2_05",
@@ -1608,7 +1608,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/construction_site_cranes_timelapse_130.mp4",
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -1640,7 +1640,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap2_05b",
@@ -1656,7 +1656,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_05c",
@@ -1672,12 +1672,12 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_06",
       "texto": "Eres el dueño de una tienda de cuatro millones de euros, y casi todo lo que cruza tu caja pertenece a otros desde antes de cruzarla.",
-      "duracion": 2.98,
+      "duracion": 3.53,
       "movimiento": "subir",
       "grade": "acero_suave",
       "efectos": [
@@ -1704,20 +1704,20 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_06b",
       "texto": "Eres el dueño de una tienda de cuatro millones de euros, y casi todo lo que cruza tu caja pertenece a otros desde antes de cruzarla.",
-      "duracion": 2.9,
+      "duracion": 5.25,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "polvo"
       ],
       "capas": [],
-      "tipo": "rotulo",
       "fondo": "plato",
+      "tipo": "grafico",
       "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
@@ -1725,9 +1725,10 @@
         "lado": 300,
         "y": 0.32,
         "retardo": 0.22,
-        "duracion": 1.15,
+        "duracion": 1.4,
         "entrada": "golpe"
       },
+      "composicion": "derecha",
       "texto_pantalla": {
         "texto": "Eres el dueño de una *tienda*",
         "px": 96,
@@ -1745,50 +1746,7 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      },
-      "composicion": "centrado"
-    },
-    {
-      "id": "cap2_06bx",
-      "texto": "Eres el dueño de una tienda de cuatro millones de euros, y casi todo lo que cruza tu caja pertenece a otros desde antes de cruzarla.",
-      "duracion": 2.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "niebla"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.857,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "persona",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.1599999999999997,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "Casi todo lo que *cruza* tu",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "derecha"
+      }
     },
     {
       "id": "cap2_07",
@@ -1797,12 +1755,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "euro",
@@ -1830,7 +1788,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap2_07b",
@@ -1839,7 +1797,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -1861,10 +1819,18 @@
         "retardo": 0.26
       },
       "tipo": "rotulo",
-      "composicion": "centrado",
-      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
-      "clip_desde": 0.3,
-      "duotono_fuerza": 0.55
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
     },
     {
       "id": "cap2_07c",
@@ -1891,13 +1857,13 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+      "clip": "stock_mercadona/tractor_field_aerial_farmer_116.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_01",
@@ -1913,7 +1879,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_01b",
@@ -1930,7 +1896,7 @@
       "transicion": "corte",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "llave",
@@ -1973,7 +1939,7 @@
       "_lat_ent": 1.0,
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "llave",
@@ -1983,7 +1949,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Lleva *Hacendado*",
         "px": 96,
@@ -2010,12 +1976,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "grafico",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "anillo",
         "valor": 77.8,
@@ -2029,7 +1995,7 @@
         "duracion": 2.2,
         "entrada": "barrido"
       },
-      "composicion": "centrado",
+      "composicion": "derecha",
       "fondo_color": null,
       "fondo_titulo": "una marca tuya"
     },
@@ -2040,12 +2006,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "carro",
@@ -2080,31 +2046,19 @@
       "texto": "Y la cadena se lleva ella sola más de la mitad de toda la marca blanca que se vende en España: el cincuenta coma cuatro por ciento. La segunda, Lidl, se queda en poco más del trece.",
       "duracion": 3.33,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "frio_suave",
       "efectos": [
         "fuga_luz"
       ],
+      "clip": "stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+      "clip_desde": 0.3,
       "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.429,
-      "grafico": {
-        "tipo": "reparto",
-        "valor": 50.4,
-        "dec": 1,
-        "etiqueta_a": "Mercadona",
-        "etiqueta_b": "todas las demás",
-        "color_a": "acento",
-        "y": 0.5,
-        "retardo": 0.25,
-        "duracion": 1.38,
-        "entrada": "barrido"
-      },
-      "composicion": "derecha",
-      "fondo_color": null,
-      "fondo_titulo": "la marca blanca de España"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_03b",
@@ -2119,23 +2073,22 @@
       "grafico": {
         "tipo": "reparto",
         "valor": 50.4,
-        "color_a": [
-          240,
-          84,
-          74
-        ],
-        "etiqueta_a": "vende en España",
-        "etiqueta_b": "el resto",
-        "y": 0.34,
-        "retardo": 1.0599999999999996,
-        "duracion": 1.3,
-        "entrada": "latigo_der"
+        "dec": 1,
+        "etiqueta_a": "Mercadona",
+        "etiqueta_b": "todas las demás",
+        "color_a": "acento",
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 2.0,
+        "entrada": "barrido"
       },
       "_lat_ent": 1.0,
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "composicion": "centrado"
+      "fondo_fase": 0.286,
+      "composicion": "izquierda",
+      "fondo_color": null,
+      "fondo_titulo": "la marca blanca de España"
     },
     {
       "id": "cap3_03c",
@@ -2160,7 +2113,7 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "carro",
@@ -2197,7 +2150,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_04b",
@@ -2213,7 +2166,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_05",
@@ -2261,7 +2214,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_06b",
@@ -2277,7 +2230,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_06c",
@@ -2309,7 +2262,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_07b",
@@ -2325,7 +2278,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap3_07c",
@@ -2384,7 +2337,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_08b",
@@ -2398,7 +2351,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.0,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "euro",
@@ -2408,7 +2361,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado",
+      "composicion": "izquierda",
       "texto_pantalla": {
         "texto": "Para bastantes de *ellos*",
         "px": 96,
@@ -2440,7 +2393,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "euro",
@@ -2484,23 +2437,49 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_09b",
       "texto": "Esa es la primera pieza del negocio, y no se puede comprar: tener la marca, el escaparate y el poder de negociar, mientras el riesgo de la fábrica lo carga otro.",
       "duracion": 3.93,
-      "movimiento": "push_in",
-      "grade": "frio_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "acuerdo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "La *marca*, el escaparate",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap3_09c",
@@ -2514,7 +2493,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "acuerdo",
@@ -2524,7 +2503,25 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "El riesgo de la *fábrica*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap3_10",
@@ -2540,7 +2537,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap3_10b",
@@ -2565,7 +2562,7 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "llave",
@@ -2575,7 +2572,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap3_10c",
@@ -2606,7 +2603,7 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.0,
       "composicion": "derecha"
     },
     {
@@ -2639,7 +2636,7 @@
       },
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_02",
@@ -2658,7 +2655,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_02b",
@@ -2719,7 +2716,7 @@
       "transicion": "corte",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "puerta",
@@ -2729,7 +2726,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "derecha",
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "De lunes a *sábado*",
         "px": 96,
@@ -2756,12 +2753,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "puerta",
@@ -2790,25 +2787,38 @@
         "retardo": 0.26
       },
       "_lat_ent": 1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_04",
       "texto": "Según el convenio de este año, que cuenta la prensa, un contrato de jornada completa empieza en mil setecientos treinta y cuatro euros brutos al mes. A los cuatro años ya son dos mil trescientos cuarenta y siete.",
       "duracion": 3.61,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "tipo": "grafico",
-      "fondo": "plato",
-      "fondo_fase": 0.714,
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "Según el convenio de este año, que cuenta la prensa, un contrato de jornada completa empieza en mil setecientos treinta y cuatro euros brutos al mes. A los cuatro años ya son dos mil trescientos cuarenta y siete.",
+      "duracion": 3.97,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
       "grafico": {
         "y": 0.5,
-        "retardo": 0.25,
-        "duracion": 1.66,
+        "retardo": 0.3,
+        "duracion": 1.97,
         "entrada": "barrido",
         "tipo": "barras",
         "titulo": "sueldo bruto al mes",
@@ -2828,40 +2838,94 @@
         "sufijo": " €",
         "dec": 0
       },
-      "composicion": "derecha",
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
       "fondo_color": null
-    },
-    {
-      "id": "cap4_04b",
-      "texto": "Según el convenio de este año, que cuenta la prensa, un contrato de jornada completa empieza en mil setecientos treinta y cuatro euros brutos al mes. A los cuatro años ya son dos mil trescientos cuarenta y siete.",
-      "duracion": 4.4,
-      "movimiento": "estatico",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "destellos"
-      ],
-      "clip": "stock_banco/reading_contract_closeup_276.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
     },
     {
       "id": "cap4_04c",
       "texto": "Según el convenio de este año, que cuenta la prensa, un contrato de jornada completa empieza en mil setecientos treinta y cuatro euros brutos al mes. A los cuatro años ya son dos mil trescientos cuarenta y siete.",
-      "duracion": 5.37,
-      "movimiento": "subir",
-      "grade": "sepia_archivo",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "fuga_luz"
+        "polvo"
       ],
-      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "texto_pantalla": {
+        "texto": "Según el *convenio* de este año",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.2199999999999998,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04cx",
+      "texto": "Según el convenio de este año, que cuenta la prensa, un contrato de jornada completa empieza en mil setecientos treinta y cuatro euros brutos al mes. A los cuatro años ya son dos mil trescientos cuarenta y siete.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Cuatro euros *brutos* al mes",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.21,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_05",
@@ -2870,10 +2934,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "humo"
+        "destellos"
       ],
       "capas": [],
-      "composicion": "izquierda",
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
       "grafico": {
         "y": 0.5,
         "retardo": 0.27,
@@ -2887,8 +2953,7 @@
         "px": 190,
         "color": "acento"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
+      "composicion": "centrado",
       "fondo_color": "acento",
       "fondo_titulo": "sueldo medio"
     },
@@ -2906,23 +2971,47 @@
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_05c",
       "texto": "Haz la cuenta con sesenta personas y un sueldo medio de dos mil euros al mes. Son un millón cuatrocientos mil euros al año en sueldos. Con la Seguridad Social de la empresa, casi dos millones.",
       "duracion": 5.11,
       "movimiento": "estatico",
-      "grade": "sepia_archivo",
+      "grade": "neutro",
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "la plantilla de una tienda",
+        "lineas": [
+          [
+            "60 personas",
+            "2.000 € al mes de media"
+          ],
+          [
+            "Sueldos al año",
+            "1.440.000 €"
+          ],
+          [
+            "Seguridad Social",
+            "unos 430.000 €"
+          ]
+        ],
+        "total": "casi 2 M€",
+        "etiqueta_total": "cada año",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.8,
+        "entrada": "barrido"
+      },
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento"
     },
     {
       "id": "cap4_06",
@@ -2931,7 +3020,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -2954,7 +3043,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "carro",
@@ -2964,7 +3053,7 @@
         "duracion": 1.0799999999999996,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_06x",
@@ -2973,7 +3062,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -2996,7 +3085,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "carro",
@@ -3006,7 +3095,7 @@
         "duracion": 1.0799999999999996,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_07",
@@ -3015,12 +3104,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "personas",
@@ -3048,7 +3137,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap4_08",
@@ -3057,12 +3146,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "personas",
@@ -3090,7 +3179,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap4_09",
@@ -3099,12 +3188,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "grafico",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "contador",
         "valor": 6500.0,
@@ -3118,7 +3207,7 @@
         "duracion": 2.2,
         "entrada": "barrido"
       },
-      "composicion": "derecha",
+      "composicion": "izquierda",
       "fondo_color": "acento",
       "fondo_titulo": "con la tienda abierta"
     },
@@ -3129,12 +3218,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "reloj",
@@ -3162,23 +3251,39 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap4_10",
       "texto": "El primer chorro de dinero se va a quien fabrica. El segundo, a quien trabaja. Quedan seis euros de los cien.",
       "duracion": 3.3,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "composicion": "derecha",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_10b",
+      "texto": "El primer chorro de dinero se va a quien fabrica. El segundo, a quien trabaja. Quedan seis euros de los cien.",
+      "duracion": 4.91,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
       "grafico": {
         "y": 0.5,
-        "retardo": 0.25,
-        "duracion": 1.35,
+        "retardo": 0.4,
+        "duracion": 2.2,
         "entrada": "barrido",
         "tipo": "contador",
         "valor": 6.0,
@@ -3188,27 +3293,11 @@
         "px": 230,
         "color": "acento"
       },
+      "composicion": "derecha",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento",
       "fondo_titulo": "lo que queda"
-    },
-    {
-      "id": "cap4_10b",
-      "texto": "El primer chorro de dinero se va a quien fabrica. El segundo, a quien trabaja. Quedan seis euros de los cien.",
-      "duracion": 4.91,
-      "movimiento": "pull_out",
-      "grade": "sepia_archivo",
-      "efectos": [
-        "fuga_luz"
-      ],
-      "clip": "stock_mercadona/bottling_line_factory_conveyor_112.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "cierra_bloque": true,
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
     },
     {
       "id": "cap5_01",
@@ -3219,7 +3308,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_banco/negotiation_meeting_table_72.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3240,7 +3329,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_02",
@@ -3254,24 +3343,24 @@
       "capas": [],
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "grafico": {
-        "tipo": "anillo",
-        "valor": 4.1,
-        "max": 100,
-        "sufijo": "%",
-        "dec": 1,
-        "pie": "es el beneficio sobre las ventas",
-        "r": 180,
+        "tipo": "contador",
+        "valor": 1729.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "de beneficio en 2025",
+        "px": 170,
+        "color": "acento",
         "y": 0.5,
-        "retardo": 0.24,
-        "duracion": 1.18,
+        "retardo": 0.2,
+        "duracion": 1.22,
         "entrada": "barrido"
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_color": null,
-      "fondo_titulo": "lo que queda de cada 100 €"
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que queda"
     },
     {
       "id": "cap5_02b",
@@ -3304,7 +3393,7 @@
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_02c",
@@ -3316,9 +3405,39 @@
         "niebla"
       ],
       "capas": [],
-      "latigo": "izq",
       "_lat_sal": -1.0,
       "transicion": "corte",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 4.1,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 1,
+        "pie": "es el beneficio sobre las ventas",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 1.75,
+        "entrada": "barrido"
+      },
+      "composicion": "derecha",
+      "fondo_color": null,
+      "fondo_titulo": "lo que queda de cada 100 €"
+    },
+    {
+      "id": "cap5_02d",
+      "texto": "Mil setecientos veintinueve millones de euros de beneficio, sobre cuarenta y un mil ochocientos cincuenta y ocho millones de ventas. Algo más de cuatro euros por cada cien. Y eso después de pagar unos seiscientos noventa millones de impuesto de sociedades.",
+      "duracion": 4.65,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "billetes"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_fase": 0.571,
@@ -3352,49 +3471,6 @@
       }
     },
     {
-      "id": "cap5_02d",
-      "texto": "Mil setecientos veintinueve millones de euros de beneficio, sobre cuarenta y un mil ochocientos cincuenta y ocho millones de ventas. Algo más de cuatro euros por cada cien. Y eso después de pagar unos seiscientos noventa millones de impuesto de sociedades.",
-      "duracion": 4.65,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "billetes"
-      ],
-      "capas": [],
-      "_lat_ent": -1.0,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.714,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "billetes",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha",
-      "texto_pantalla": {
-        "texto": "Mil setecientos *veintinueve*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
-    },
-    {
       "id": "cap5_03",
       "texto": "Cuatro euros no parece nada. Hasta que lo multiplicas.",
       "duracion": 5.0,
@@ -3403,7 +3479,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3427,7 +3503,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_04",
@@ -3438,7 +3514,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -3460,7 +3536,7 @@
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_05",
@@ -3476,7 +3552,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_05b",
@@ -3517,8 +3593,8 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.286,
-      "composicion": "derecha"
+      "fondo_fase": 0.143,
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_05c",
@@ -3532,49 +3608,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.429,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "calendario",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado",
-      "texto_pantalla": {
-        "texto": "No lo hacen *todas*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
-    },
-    {
-      "id": "cap5_05d",
-      "texto": "Y si una tienda nueva se comportara como la media, y no lo hacen todas, un millón al año sobre cuatro millones de inversión significa recuperarlo en cuatro años. Es un cálculo nuestro, de servilleta, no un dato de la empresa.",
-      "duracion": 4.67,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "destellos"
-      ],
-      "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "calendario",
@@ -3605,16 +3639,47 @@
       }
     },
     {
+      "id": "cap5_05d",
+      "texto": "Y si una tienda nueva se comportara como la media, y no lo hacen todas, un millón al año sobre cuatro millones de inversión significa recuperarlo en cuatro años. Es un cálculo nuestro, de servilleta, no un dato de la empresa.",
+      "duracion": 4.67,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
       "id": "cap5_06",
       "texto": "Y lo que gana, no se lo queda. La compañía prevé invertir este año más de tres mil setecientos millones de euros en tiendas, logística y reformas. Más del doble de lo que ganó el año pasado.",
       "duracion": 3.6,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "verde_suave",
       "efectos": [
         "niebla"
       ],
+      "clip": "stock_mercadona/man_painting_wall_interior_renovation_136.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "composicion": "izquierda",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Y lo que gana, no se lo queda. La compañía prevé invertir este año más de tres mil setecientos millones de euros en tiendas, logística y reformas. Más del doble de lo que ganó el año pasado.",
+      "duracion": 4.38,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "billetes"
+      ],
+      "capas": [],
       "grafico": {
         "tipo": "contador",
         "valor": 3700.0,
@@ -3624,46 +3689,15 @@
         "px": 170,
         "color": "acento",
         "y": 0.5,
-        "retardo": 0.27,
-        "duracion": 1.63,
+        "retardo": 0.38,
+        "duracion": 2.3,
         "entrada": "barrido"
       },
+      "composicion": "izquierda",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento",
       "fondo_titulo": "mantener la red"
-    },
-    {
-      "id": "cap5_06b",
-      "texto": "Y lo que gana, no se lo queda. La compañía prevé invertir este año más de tres mil setecientos millones de euros en tiendas, logística y reformas. Más del doble de lo que ganó el año pasado.",
-      "duracion": 4.38,
-      "movimiento": "push_in",
-      "grade": "verde_suave",
-      "efectos": [
-        "billetes"
-      ],
-      "clip": "stock_mercadona/worker_cleaning_industrial_floor_warehouse_127.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "grafico": {
-        "tipo": "contador",
-        "valor": 3700.0,
-        "dec": 0,
-        "sufijo": " M €",
-        "color": [
-          240,
-          84,
-          74
-        ],
-        "pie": "tiendas",
-        "y": 0.62,
-        "retardo": 1.38,
-        "duracion": 1.3,
-        "entrada": "desplome"
-      },
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
     },
     {
       "id": "cap5_06c",
@@ -3679,7 +3713,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_07",
@@ -3688,12 +3722,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "factura",
@@ -3721,7 +3755,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_07x",
@@ -3730,12 +3764,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "factura",
@@ -3763,7 +3797,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_08",
@@ -3779,7 +3813,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_08b",
@@ -3793,7 +3827,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "euro",
@@ -3803,7 +3837,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "texto_pantalla": {
         "texto": "Vuelve a la *tienda*",
         "px": 96,
@@ -3830,7 +3864,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -3853,7 +3887,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "camion",
@@ -3863,7 +3897,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_09x",
@@ -3872,7 +3906,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -3895,7 +3929,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "camion",
@@ -3905,16 +3939,43 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_10",
       "texto": "Mercadona abastece sus mil seiscientos setenta y dos supermercados desde dieciocho bloques logísticos, con más de un millón y medio de metros cuadrados de naves, y trabaja con trescientas setenta empresas de transporte. Solo el año pasado metió ciento treinta y ocho millones de euros en ampliar y modernizar esa red.",
       "duracion": 3.71,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "verde_suave",
       "efectos": [
         "bokeh"
+      ],
+      "clip": "stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Mercadona* abastece sus mil",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_10b",
+      "texto": "Mercadona abastece sus mil seiscientos setenta y dos supermercados desde dieciocho bloques logísticos, con más de un millón y medio de metros cuadrados de naves, y trabaja con trescientas setenta empresas de transporte. Solo el año pasado metió ciento treinta y ocho millones de euros en ampliar y modernizar esa red.",
+      "duracion": 4.52,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
       ],
       "capas": [],
       "composicion": "derecha",
@@ -3927,30 +3988,14 @@
         "px": 170,
         "color": "acento",
         "y": 0.5,
-        "retardo": 0.31,
-        "duracion": 1.7,
+        "retardo": 0.4,
+        "duracion": 2.2,
         "entrada": "barrido"
       },
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento",
       "fondo_titulo": "detrás de la tienda"
-    },
-    {
-      "id": "cap5_10b",
-      "texto": "Mercadona abastece sus mil seiscientos setenta y dos supermercados desde dieciocho bloques logísticos, con más de un millón y medio de metros cuadrados de naves, y trabaja con trescientas setenta empresas de transporte. Solo el año pasado metió ciento treinta y ocho millones de euros en ampliar y modernizar esa red.",
-      "duracion": 4.52,
-      "movimiento": "subir",
-      "grade": "verde_suave",
-      "efectos": [
-        "destellos"
-      ],
-      "clip": "stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
     },
     {
       "id": "cap5_10c",
@@ -3966,7 +4011,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_10d",
@@ -3998,7 +4043,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_11",
@@ -4014,7 +4059,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_11b",
@@ -4055,8 +4100,8 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.714,
-      "composicion": "izquierda"
+      "fondo_fase": 0.571,
+      "composicion": "centrado"
     },
     {
       "id": "cap5_11c",
@@ -4071,7 +4116,7 @@
       "cierra_bloque": true,
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "calendario",
@@ -4081,7 +4126,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "derecha",
+      "composicion": "izquierda",
       "texto_pantalla": {
         "texto": "En un solo año",
         "px": 96,
@@ -4108,12 +4153,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4141,7 +4186,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_01x",
@@ -4150,12 +4195,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4183,18 +4228,101 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_02",
       "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
       "duracion": 3.35,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "rojo_suave",
       "efectos": [
         "chispas"
       ],
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip_desde": 0.3,
       "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Por este *orden*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02d",
+      "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "factura",
         "titulo": "a quién atiende primero",
@@ -4220,57 +4348,34 @@
         "etiqueta_total": "5.º y último",
         "color": "acento",
         "y": 0.5,
-        "retardo": 0.17,
-        "duracion": 1.48,
+        "retardo": 0.25,
+        "duracion": 2.13,
         "entrada": "barrido"
       },
-      "_lat_sal": -1.0,
-      "transicion": "corte",
-      "composicion": "izquierda",
       "fondo": "plato",
       "tipo": "grafico",
       "fondo_color": "acento"
     },
     {
-      "id": "cap6_02b",
+      "id": "cap6_02e",
       "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
-      "duracion": 4.08,
-      "movimiento": "push_in",
-      "grade": "rojo_suave",
-      "efectos": [
-        "brasas"
-      ],
-      "clip": "stock_banco/executive_office_window_city_153.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "_lat_ent": -1.0,
-      "composicion": "centrado"
-    },
-    {
-      "id": "cap6_02c",
-      "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
-      "duracion": 4.08,
+      "duracion": 4.98,
       "movimiento": "estatico",
       "grade": "rojo_suave",
       "efectos": [
-        "ceniza"
+        "chispas"
       ],
-      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
       "clip_desde": 0.3,
       "capas": [],
-      "latigo": "izq",
       "duotono": "duo_ambar",
       "duotono_fuerza": 0.55,
-      "_lat_sal": -1.0,
-      "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
-      "id": "cap6_02d",
-      "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
-      "duracion": 4.08,
+      "id": "cap6_03",
+      "texto": "El capital. Es decir, el dueño. En quinto lugar.",
+      "duracion": 2.9,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
@@ -4286,11 +4391,11 @@
         "lado": 300,
         "y": 0.32,
         "retardo": 0.22,
-        "duracion": 1.4,
+        "duracion": 0.9699999999999998,
         "entrada": "golpe"
       },
       "texto_pantalla": {
-        "texto": "Por este *orden*",
+        "texto": "El *capital*, el dueño",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -4307,53 +4412,12 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "_lat_ent": -1.0,
-      "composicion": "derecha"
-    },
-    {
-      "id": "cap6_02e",
-      "texto": "Desde mil novecientos noventa y tres, Mercadona se rige por lo que llama su Modelo de Calidad Total. Y ese modelo dice que la empresa existe para satisfacer a cinco partes, por este orden: el cliente, al que llaman el jefe. El trabajador. El proveedor. La sociedad. Y, la última, el capital.",
-      "duracion": 4.98,
-      "movimiento": "estatico",
-      "grade": "rojo_suave",
-      "efectos": [
-        "chispas"
-      ],
-      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
       "composicion": "centrado"
-    },
-    {
-      "id": "cap6_03",
-      "texto": "El capital. Es decir, el dueño. En quinto lugar.",
-      "duracion": 2.44,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "brasas"
-      ],
-      "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "persona",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 0.9699999999999998,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha"
     },
     {
       "id": "cap6_03b",
       "texto": "El capital. Es decir, el dueño. En quinto lugar.",
-      "duracion": 3.63,
+      "duracion": 3.17,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
@@ -4362,17 +4426,23 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.0,
       "grafico": {
-        "tipo": "ilustracion",
-        "icono": "persona",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
+        "tipo": "contador",
+        "valor": 5.0,
+        "dec": 0,
+        "sufijo": "º",
+        "pie": "lugar, el último de cinco",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.27,
+        "duracion": 1.2,
+        "entrada": "barrido"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha",
+      "fondo_color": "acento",
+      "fondo_titulo": "el dueño"
     },
     {
       "id": "cap6_04",
@@ -4402,8 +4472,8 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.286,
-      "composicion": "centrado"
+      "fondo_fase": 0.143,
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_05",
@@ -4430,23 +4500,49 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_05b",
       "texto": "El cliente, el jefe, se lleva la promesa de precios bajos, y por eso vuelve cada semana. El proveedor se lleva los ochenta y cuatro. El trabajador, los diez. La sociedad, con sus impuestos y sus donaciones. Y al capital, lo que sobra.",
       "duracion": 4.29,
       "movimiento": "estatico",
-      "grade": "rojo_suave",
+      "grade": "neutro",
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Por eso *vuelve* cada semana",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap6_05c",
@@ -4476,8 +4572,8 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.714,
-      "composicion": "centrado"
+      "fondo_fase": 0.571,
+      "composicion": "derecha"
     },
     {
       "id": "cap6_05d",
@@ -4491,7 +4587,7 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4501,7 +4597,25 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "derecha"
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "Y al *capital*, lo que sobra",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap6_06",
@@ -4510,12 +4624,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4543,7 +4657,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_06x",
@@ -4552,12 +4666,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4585,7 +4699,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_07",
@@ -4594,13 +4708,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -4628,7 +4742,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_01",
@@ -4653,10 +4767,9 @@
         "px": 150,
         "color": "acento"
       },
+      "composicion": "izquierda",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.429,
-      "composicion": "derecha",
       "fondo_color": "acento",
       "fondo_titulo": "la red de Mercadona"
     },
@@ -4677,7 +4790,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_02b",
@@ -4710,7 +4823,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_03",
@@ -4719,12 +4832,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "contrato",
@@ -4752,7 +4865,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_03x",
@@ -4761,12 +4874,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "contrato",
@@ -4794,7 +4907,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_04",
@@ -4806,7 +4919,7 @@
         "polvo"
       ],
       "capas": [],
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "grafico": {
         "tipo": "factura",
         "titulo": "si lo haces pequeño",
@@ -4853,7 +4966,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_04c",
@@ -4870,7 +4983,7 @@
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_04d",
@@ -4886,17 +4999,19 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_05",
       "texto": "Es muchísimo más asequible que los cuatro millones. Y es verdad.",
       "duracion": 5.28,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "grafico": {
         "tipo": "contador",
@@ -4914,25 +5029,28 @@
         "duracion": 1.3,
         "entrada": "rebote"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.714,
-      "composicion": "izquierda"
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     },
     {
       "id": "cap7_06",
       "texto": "Pero mira lo que has comprado. Los mismos ochenta y cuatro de cada cien euros, pagados a la central de compras de otro, con los precios que ella consiga. Los mismos diez de plantilla. Y tu tienda, que mueve una fracción de lo que mueve una de ellas.",
       "duracion": 3.31,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip_desde": 0.3,
       "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
         "texto": "Mira lo que has *comprado*",
         "px": 108,
-        "y": 0.74,
+        "y": 0.3,
         "acento": [
           240,
           84,
@@ -4940,19 +5058,7 @@
         ],
         "estilo": "izquierda"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.857,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.33,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_06b",
@@ -4983,12 +5089,28 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_06c",
       "texto": "Pero mira lo que has comprado. Los mismos ochenta y cuatro de cada cien euros, pagados a la central de compras de otro, con los precios que ella consiga. Los mismos diez de plantilla. Y tu tienda, que mueve una fracción de lo que mueve una de ellas.",
       "duracion": 4.04,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_06d",
+      "texto": "Pero mira lo que has comprado. Los mismos ochenta y cuatro de cada cien euros, pagados a la central de compras de otro, con los precios que ella consiga. Los mismos diez de plantilla. Y tu tienda, que mueve una fracción de lo que mueve una de ellas.",
+      "duracion": 4.94,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
@@ -5028,84 +5150,20 @@
       }
     },
     {
-      "id": "cap7_06d",
-      "texto": "Pero mira lo que has comprado. Los mismos ochenta y cuatro de cada cien euros, pagados a la central de compras de otro, con los precios que ella consiga. Los mismos diez de plantilla. Y tu tienda, que mueve una fracción de lo que mueve una de ellas.",
-      "duracion": 4.94,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "polvo"
-      ],
-      "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "centrado",
-      "texto_pantalla": {
-        "texto": "Mira lo que has *comprado*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
-    },
-    {
       "id": "cap7_07",
       "texto": "Imagina que consiguieras el mismo margen que Mercadona, que no lo vas a conseguir. Una tienda de tres millones al año, con cuatro euros de cada cien, deja ciento veinte mil euros. Por abrir doce horas y media, seis días a la semana.",
       "duracion": 4.17,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "composicion": "derecha",
-      "grafico": {
-        "tipo": "barras",
-        "titulo": "beneficio al año, con el mismo margen",
-        "items": [
-          [
-            "Tu tienda",
-            120000.0
-          ],
-          [
-            "Una de la cadena",
-            1030000.0
-          ]
-        ],
-        "destacar": {
-          "Tu tienda": "acento"
-        },
-        "sufijo": " €",
-        "dec": 0,
-        "y": 0.5,
-        "retardo": 0.39,
-        "duracion": 2.08,
-        "entrada": "barrido"
-      },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_color": null
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap7_07b",
@@ -5135,8 +5193,8 @@
       },
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "composicion": "izquierda"
+      "fondo_fase": 0.429,
+      "composicion": "derecha"
     },
     {
       "id": "cap7_07c",
@@ -5150,35 +5208,32 @@
       "capas": [],
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.571,
       "grafico": {
-        "tipo": "ilustracion",
-        "icono": "calendario",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
+        "tipo": "barras",
+        "titulo": "beneficio al año, con el mismo margen",
+        "items": [
+          [
+            "Tu tienda",
+            120000.0
+          ],
+          [
+            "Una de la cadena",
+            1030000.0
+          ]
+        ],
+        "destacar": {
+          "Tu tienda": "acento"
+        },
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido"
       },
-      "composicion": "centrado",
-      "texto_pantalla": {
-        "texto": "No lo vas a *conseguir*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "composicion": "izquierda",
+      "fondo_color": null
     },
     {
       "id": "cap7_08",
@@ -5194,7 +5249,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_08b",
@@ -5205,7 +5260,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/aerial_roundabout_city_traffic_152.mp4",
+      "clip": "stock_banco/night_seafront_promenade_marina_aerial_2.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5226,7 +5281,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_08c",
@@ -5243,7 +5298,7 @@
       "cierra_bloque": true,
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_01",
@@ -5254,7 +5309,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip": "stock_banco/euro_banknotes_stack_tall_215.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5275,7 +5330,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_02",
@@ -5321,7 +5376,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_02b",
@@ -5338,7 +5393,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_02c",
@@ -5355,7 +5410,7 @@
       "transicion": "corte",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -5365,7 +5420,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Ochenta y *cuatro*",
         "px": 96,
@@ -5394,7 +5449,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/single_euro_coin_close_up_224.mp4",
+      "clip": "stock_mercadona/euro_banknotes_hanging_clips_139.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -5416,7 +5471,7 @@
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_04",
@@ -5443,7 +5498,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_04b",
@@ -5459,7 +5514,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_04c",
@@ -5478,7 +5533,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_05",
@@ -5520,9 +5575,10 @@
         "entrada": "barrido"
       },
       "_lat_ent": 1.0,
-      "composicion": "centrado",
       "fondo": "plato",
       "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "composicion": "izquierda",
       "fondo_color": "acento"
     },
     {
@@ -5539,7 +5595,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_06b",
@@ -5566,7 +5622,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_06c",
@@ -5598,7 +5654,7 @@
       },
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_07",
@@ -5614,7 +5670,7 @@
       "capas": [],
       "duotono": "duo_rojo",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_07b",
@@ -5623,12 +5679,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "niebla"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "carro",
@@ -5656,7 +5712,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_08",
@@ -5665,7 +5721,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "texto_pantalla": {
@@ -5688,7 +5744,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "llave",
@@ -5698,7 +5754,7 @@
         "duracion": 1.4,
         "entrada": "golpe"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_09",
@@ -5707,13 +5763,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",
@@ -5741,7 +5797,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     }
   ]
 }

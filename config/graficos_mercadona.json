@@ -551,6 +551,159 @@
     }
   },
   {
+    "_nota": "EL GIRO DE LA SERIE, segunda mitad: el dueno, en quinto lugar. Antes era un icono de persona sin una palabra.",
+    "donde": "en quinto lugar",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el dueño"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 5.0,
+      "dec": 0,
+      "sufijo": "º",
+      "pie": "lugar, el último de cinco",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Titular de la ilustracion del 'ya iban camino de otro sitio'.",
+    "donde": "ya iban camino de otro sitio",
+    "texto_pantalla": {
+      "texto": "Camino de otro *sitio*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube",
+      "retardo": 0.26
+    }
+  },
+  {
+    "_nota": "Ilustracion que se quedaba muda: dice la marca y el escaparate.",
+    "donde": "tener la marca, el escaparate",
+    "texto_pantalla": {
+      "texto": "La *marca*, el escaparate",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube",
+      "retardo": 0.26
+    }
+  },
+  {
+    "_nota": "Ilustracion muda: la ultima parte de la frase.",
+    "donde": "el riesgo de la fábrica",
+    "texto_pantalla": {
+      "texto": "El riesgo de la *fábrica*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube",
+      "retardo": 0.26
+    }
+  },
+  {
+    "_nota": "PRIMERA MITAD DEL GIRO. 'El capital, es decir, el dueño.'",
+    "donde": "el capital. es decir, el dueño",
+    "texto_pantalla": {
+      "texto": "El *capital*, el dueño",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube",
+      "retardo": 0.26
+    }
+  },
+  {
+    "_nota": "Ilustracion muda: lo que se dice a mitad de la frase.",
+    "donde": "por eso vuelve cada semana",
+    "texto_pantalla": {
+      "texto": "Por eso *vuelve* cada semana",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube",
+      "retardo": 0.26
+    }
+  },
+  {
+    "_nota": "Ilustracion muda: el final de la frase.",
+    "donde": "y al capital, lo que sobra",
+    "texto_pantalla": {
+      "texto": "Y al *capital*, lo que sobra",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube",
+      "retardo": 0.26
+    }
+  },
+  {
     "_nota": "LA FACTURA FINAL, y remata la serie. Aqui el dueno es dueno de todo y la cuenta termina en cuatro euros. Es el espejo del hotel, donde terminaba en un letrero, y de la loteria, donde terminaba en una ventanilla.",
     "donde": "de cada cien euros, cuatro",
     "movimiento": "estatico",

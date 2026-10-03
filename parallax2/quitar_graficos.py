@@ -22,6 +22,14 @@ Si era un plato -tarjeta sin metraje- se convierte en una ilustracion con el
 icono de lo que dice la frase, que es la regla del canal: nunca un plato
 vacio.
 
+Y de paso, una pasada final: toda ILUSTRACION que se quede sin titular
+recibe uno, sacado de su propia frase. `vestir` ya intenta esto, pero con una
+regla estricta -clausula entera de doce caracteres o mas-, y al reconstruir el
+episodio cambian los planos y reaparecen iconos sueltos sin una palabra: en
+Mercadona salio asi la frase que da el giro de la serie, «El capital. Es
+decir, el dueño. En quinto lugar.», que se vio como dos iconos de persona en
+blanco. Un icono sin nada escrito no dice de que va.
+
 Va DESPUES de `motion_manual`.
 """
 import json
@@ -34,9 +42,10 @@ sys.path.insert(0, os.path.dirname(AQUI))
 
 
 def main():
-    if len(sys.argv) < 3:
+    if len(sys.argv) < 2:
         print(__doc__)
         return 2
+    # Sin ids solo hace la pasada de titulares.
     ruta, ids = sys.argv[1], set(sys.argv[2:])
     sys.stdout.reconfigure(encoding="utf-8")
     import iconos
@@ -56,8 +65,32 @@ def main():
         if e.get("fondo") == "plato":
             vestir.a_plato(e, i, episodio, iconos)
             ilustrados.append(e["id"])
+    # --- ilustraciones sin titular -------------------------------------
+    import efectos as FX
+    import motion_banco as MB
+    claro = not FX.PALETA.get("oscura", True)
+    previo, puestos = "", []
+    for e in g["escenas"]:
+        tp = (e.get("texto_pantalla") or {}).get("texto")
+        if (e.get("grafico") or {}).get("tipo") == "ilustracion" and not tp:
+            limite = min(34, MB.tope_legible(e.get("duracion", 3), 0.26))
+            txt = MB.rotulo_de(e.get("texto") or "", limite)
+            sin_marca = txt.replace("*", "").strip()
+            if len(sin_marca) >= 8 and sin_marca != previo:
+                e["texto_pantalla"] = {
+                    "texto": FX._may(MB.resalta(txt)), "px": 96, "y": 0.64,
+                    "acento": list(FX.PALETA["acento"]),
+                    "color": list(FX.PALETA["hueso"]),
+                    "halo": "claro" if claro else "oscuro",
+                    "estilo": "sube", "retardo": 0.26,
+                }
+                puestos.append(e["id"])
+                tp = txt
+        previo = (tp or "").replace("*", "").strip()
     json.dump(g, open(ruta, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
     print(f"graficos quitados: {len(quitados)} ({', '.join(quitados)})")
+    if puestos:
+        print(f"  ilustraciones mudas que reciben titular: {', '.join(puestos)}")
     if ilustrados:
         print(f"  platos que pasan a ilustracion: {', '.join(ilustrados)}")
     if ausentes:

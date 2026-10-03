@@ -11,6 +11,7 @@
  *   --still <frame>    NO hace video: guarda ese fotograma en --out (con --solo)
  *   --out <fichero>    destino del fotograma suelto
  *   --concurrencia <n> pestanas del navegador a la vez
+ *   --estilo <e>       paridad (como Pillow, por defecto) o pro (movimiento nuevo)
  *
  * Por que PNG a ffmpeg y no el codec de Remotion: `render_par.py` codifica
  * fotogramas RGB con libx264 y deja que ffmpeg haga el paso a YUV. Si estos
@@ -40,6 +41,7 @@ if (!manifiestoRuta) {
 
 const manifiesto = JSON.parse(fs.readFileSync(manifiestoRuta, 'utf-8'));
 const {fps, w: W, h: H} = manifiesto;
+const estilo = opt('--estilo', 'paridad');
 let platos = manifiesto.platos;
 if (opt('--solo')) platos = platos.filter((p) => p.id === opt('--solo'));
 if (opt('--ids')) {
@@ -78,7 +80,7 @@ const composicion = async (plato) =>
   selectComposition({
     serveUrl,
     id: 'Plato',
-    inputProps: {plato, W, H, fps},
+    inputProps: {plato, W, H, fps, estilo},
     puppeteerInstance: navegador,
     logLevel: 'error',
   });
@@ -101,7 +103,7 @@ if (opt('--stills')) {
       serveUrl,
       output: salida,
       frame: Number(frame),
-      inputProps: {plato, W, H, fps},
+      inputProps: {plato, W, H, fps, estilo},
       puppeteerInstance: navegador,
       imageFormat: 'png',
       logLevel: 'error',
@@ -122,7 +124,7 @@ if (opt('--still') !== null) {
     serveUrl,
     output: salida,
     frame: Number(opt('--still')),
-    inputProps: {plato, W, H, fps},
+    inputProps: {plato, W, H, fps, estilo},
     puppeteerInstance: navegador,
     imageFormat: 'png',
     logLevel: 'error',
@@ -152,7 +154,7 @@ for (const plato of platos) {
   await renderFrames({
     composition: comp,
     serveUrl,
-    inputProps: {plato, W, H, fps},
+    inputProps: {plato, W, H, fps, estilo},
     outputDir: tmp,
     imageFormat: 'png',
     puppeteerInstance: navegador,

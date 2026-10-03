@@ -1,6 +1,6 @@
 import React from 'react';
 import {NEGRA, P} from './base';
-import {Anim, rgb} from './util';
+import {Anim, clamp01, expo, rgb} from './util';
 
 /**
  * El titular de un plano: la frase corta que va en pantalla, con la palabra de
@@ -46,7 +46,9 @@ export const Titular: React.FC<{
   H: number;
   anim: Anim;
   textoYaConMayuscula: string;
-}> = ({spec, W, H, anim, textoYaConMayuscula}) => {
+  pro?: boolean;
+  tLoc?: number; // segundos desde que entra el titular
+}> = ({spec, W, H, anim, textoYaConMayuscula, pro, tLoc = 99}) => {
   const partes = partir(textoYaConMayuscula);
   let px: number = spec.px ?? 132;
   const total = (p: number) => partes.reduce((a, x) => a + medir(x.txt, p).ancho, 0);
@@ -65,12 +67,39 @@ export const Titular: React.FC<{
   const x0 = (W - ancho) / 2;
 
   let x = x0;
-  const trozos = partes.map((p) => {
+  let trozos = partes.map((p) => {
     const w = medir(p.txt, px).ancho;
-    const t = {...p, x, w, baja: medir(p.txt, px).baja};
+    const t = {...p, x, w, baja: medir(p.txt, px).baja, p: 1, dy: 0};
     x += w;
     return t;
   });
+  if (pro) {
+    // palabra a palabra: cada una sube con frenada larga, 70 ms despues de la
+    // anterior. Es lo que separa un rotulo que se escribe de uno que aparece.
+    const palabras: typeof trozos = [];
+    let cursor = x0;
+    let k = 0;
+    for (const p of partes) {
+      for (const pedazo of p.txt.split(/(\s+)/)) {
+        if (!pedazo) continue;
+        const w = medir(pedazo, px).ancho;
+        const esEspacio = /^\s+$/.test(pedazo);
+        const prog = esEspacio ? 1 : expo(clamp01((tLoc - k * 0.07) / 0.38));
+        palabras.push({
+          txt: pedazo,
+          acento: p.acento,
+          x: cursor,
+          w,
+          baja: medir(pedazo, px).baja,
+          p: prog,
+          dy: (1 - prog) * 38,
+        });
+        if (!esEspacio) k++;
+        cursor += w;
+      }
+    }
+    trozos = palabras;
+  }
   const sigma = px * 0.22;
 
   return (
@@ -113,7 +142,8 @@ export const Titular: React.FC<{
         <text
           key={i}
           x={t.x}
-          y={base}
+          y={base + t.dy}
+          opacity={t.p}
           fontFamily={`"${NEGRA}"`}
           fontSize={px}
           fill={rgb(t.acento ? acento : color)}
@@ -131,7 +161,7 @@ export const Titular: React.FC<{
               key={`u${i}`}
               x={t.x}
               y={base + t.baja + Math.max(4, Math.floor(px * 0.05))}
-              width={t.w}
+              width={t.w * t.p}
               height={Math.max(5, Math.floor(px / 14))}
               rx={3}
               fill={rgb(acento)}

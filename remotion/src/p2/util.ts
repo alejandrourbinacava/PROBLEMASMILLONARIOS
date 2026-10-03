@@ -162,3 +162,22 @@ export const combina = (a: Anim, b: Anim): Anim => ({
   op: a.op * b.op,
   blur: a.blur + b.blur,
 });
+
+
+// --- curvas del movimiento "pro" ------------------------------------------
+/** Frenada larga: sale disparado y se asienta. La de un contador de verdad. */
+export const expo = (u: number) => (u >= 1 ? 1 : 1 - Math.pow(2, -10 * clamp01(u)));
+
+/** Pasa de largo y vuelve: el "muelle" de una tarjeta que entra. */
+export const atrasK = (u: number, k = 1.45) => {
+  const v = clamp01(u) - 1;
+  return 1 + (k + 1) * v * v * v + k * v * v;
+};
+
+export const dobleSuave = (u: number) => {
+  const v = clamp01(u);
+  return v < 0.5 ? 4 * v * v * v : 1 - Math.pow(-2 * v + 2, 3) / 2;
+};
+
+/** Un pulso que sube y baja una vez: 0 -> 1 -> 0. */
+export const pulso = (u: number) => Math.sin(Math.PI * clamp01(u));

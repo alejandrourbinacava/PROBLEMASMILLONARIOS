@@ -102,6 +102,12 @@ jobs:
           # -papel, grafico, icono, sin metraje- los renderice Remotion.
           if [[ "${GITHUB_REF_NAME}" =~ -r[0-9] ]]; then
             echo "remotion=true" >> "$GITHUB_OUTPUT"
+            echo "estilo=paridad" >> "$GITHUB_OUTPUT"
+          fi
+          # y -p<n> (mer-p01) es lo mismo pero con el movimiento nuevo
+          if [[ "${GITHUB_REF_NAME}" =~ -p[0-9] ]]; then
+            echo "remotion=true" >> "$GITHUB_OUTPUT"
+            echo "estilo=pro" >> "$GITHUB_OUTPUT"
           fi
           cat "$GITHUB_OUTPUT"
 
@@ -190,7 +196,7 @@ jobs:
           set -o pipefail
           (cd parallax2 && python exportar_platos.py "${{ steps.g.outputs.guion }}" ../platos.json)
           mkdir -p parallax2/_escenas
-          if ! (cd remotion && node render-platos.mjs ../platos.json ../parallax2/_escenas                    --concurrencia 4) 2>&1 | tee remotion.log; then
+          if ! (cd remotion && node render-platos.mjs ../platos.json ../parallax2/_escenas                    --concurrencia 4 --estilo "${{ steps.g.outputs.estilo }}") 2>&1 | tee remotion.log; then
             echo "::error::Remotion ha fallado. Ultimas lineas:"
             tail -n 30 remotion.log | while IFS= read -r linea; do
               echo "::error::${linea}"

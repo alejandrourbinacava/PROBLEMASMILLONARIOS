@@ -1,7 +1,7 @@
 import React from 'react';
 import iconos from '../../public/p2/iconos.json';
 import {FUERTE, MEDIA, NEGRA, P, T, medir} from './base';
-import {clamp01, fmt, may, rgb, suave} from './util';
+import {atrasK, clamp01, dobleSuave, expo, fmt, may, pulso, rgb, suave} from './util';
 
 /**
  * Los siete graficos que usan los planos de plato, portados de
@@ -11,7 +11,7 @@ import {clamp01, fmt, may, rgb, suave} from './util';
  *
  * `u` va de 0 a 1 a lo largo de la animacion del propio grafico.
  */
-export type G = {spec: any; W: number; H: number; u: number; cy: number};
+export type G = {spec: any; W: number; H: number; u: number; cy: number; pro?: boolean; ts?: number};
 
 const TINTA = rgb(P.tinta);
 const TENUE = rgb(P.tenue);
@@ -82,8 +82,10 @@ const Barra: React.FC<{x0: number; y0: number; x1: number; y1: number; col: numb
 };
 
 // ---------------------------------------------------------------------------
-export const Contador: React.FC<G> = ({spec, W, u, cy}) => {
-  const e = suave(clamp01(u));
+export const Contador: React.FC<G> = ({spec, W, u, cy, pro, ts = 0}) => {
+  const e = pro ? expo(clamp01(u)) : suave(clamp01(u));
+  // al llegar a la cifra, un golpe de escala de medio segundo
+  const golpe = pro ? 1 + 0.05 * pulso((ts - (spec.duracion ?? 1.4)) / 0.4) : 1;
   const ac = spec._ac as number[];
   const px = spec.px ?? 190;
   const val = spec.valor * e;
@@ -107,14 +109,16 @@ export const Contador: React.FC<G> = ({spec, W, u, cy}) => {
     <>
       <Carta x={x0} y={y0} w={ancho} h={alto} acento={ac} />
       <svg width={W} height={1080} style={{position: 'absolute', left: 0, top: 0}}>
-        <T x={x} y={base} px={px} familia={NEGRA} fill={rgb(ac)}>
-          {txt}
-        </T>
-        {sub && (
-          <T x={x + an + hueco} y={base} px={pxs} familia={MEDIA} fill={TINTA} op={0.92}>
-            {sub}
+        <g transform={`translate(${W / 2} ${base - px * 0.35}) scale(${golpe}) translate(${-W / 2} ${-(base - px * 0.35)})`}>
+          <T x={x} y={base} px={px} familia={NEGRA} fill={rgb(ac)}>
+            {txt}
           </T>
-        )}
+          {sub && (
+            <T x={x + an + hueco} y={base} px={pxs} familia={MEDIA} fill={TINTA} op={0.92}>
+              {sub}
+            </T>
+          )}
+        </g>
         <rect x={x} y={base + 20} width={subr} height={6} rx={3} fill={rgb(ac)} opacity={0.75} />
         {pie && (
           <T x={(W - ap) / 2} y={base + 82} px={40} familia={MEDIA} fill={TENUE} op={0.88} esp={4}>
@@ -127,7 +131,7 @@ export const Contador: React.FC<G> = ({spec, W, u, cy}) => {
 };
 
 // ---------------------------------------------------------------------------
-export const Barras: React.FC<G> = ({spec, W, u, cy}) => {
+export const Barras: React.FC<G> = ({spec, W, u, cy, pro}) => {
   const ac = spec._ac as number[];
   const items: [string, number][] = spec.items;
   const mx = Math.max(...items.map((i) => i[1])) || 1;
@@ -143,7 +147,7 @@ export const Barras: React.FC<G> = ({spec, W, u, cy}) => {
   const filas: React.ReactNode[] = [];
   if (titulo) yy += 56;
   items.forEach(([nom, v], i) => {
-    const ui = suave(clamp01((u - i * 0.16) / 0.62));
+    const ui = (pro ? expo : suave)(clamp01((u - i * 0.16) / 0.62));
     const col: number[] = spec._destacar && nom in spec._destacar ? spec._destacar[nom] : ac;
     const et = fmt(v * ui, spec.dec ?? 0) + (spec.sufijo ?? '');
     let largo = Math.floor(ancho * (v / mx) * ui);
@@ -157,6 +161,7 @@ export const Barras: React.FC<G> = ({spec, W, u, cy}) => {
         <T x={x0 + ancho} y={yy + 4} px={52} familia={NEGRA} fill={rgb(col)} anchor="end">
           {et}
         </T>
+        {pro && <rect x={x0} y={yy + 24} width={ancho} height={altoB} rx={15} fill="rgba(24,24,28,0.06)" />}
         {largo > 2 && (
           <Barra x0={x0} y0={yy + 24} x1={x0 + Math.max(Math.floor(altoB * 1.9), largo)} y1={yy + 24 + altoB} col={col} />
         )}
@@ -176,8 +181,8 @@ export const Barras: React.FC<G> = ({spec, W, u, cy}) => {
 };
 
 // ---------------------------------------------------------------------------
-export const Anillo: React.FC<G> = ({spec, W, u, cy}) => {
-  const e = suave(clamp01(u));
+export const Anillo: React.FC<G> = ({spec, W, u, cy, pro}) => {
+  const e = pro ? dobleSuave(clamp01(u)) : suave(clamp01(u));
   const ac = spec._ac as number[];
   const val: number = spec.valor;
   const top: number = spec.max ?? 100;
@@ -241,8 +246,8 @@ const ArcoAnillo: React.FC<{cx: number; cy: number; r: number; ang: number; gr: 
 };
 
 // ---------------------------------------------------------------------------
-export const Reparto: React.FC<G> = ({spec, W, u, cy}) => {
-  const e = suave(clamp01(u));
+export const Reparto: React.FC<G> = ({spec, W, u, cy, pro}) => {
+  const e = pro ? expo(clamp01(u)) : suave(clamp01(u));
   const ac = spec._ac as number[];
   const colA = spec._color_a as number[];
   const val = spec.valor / 100;
@@ -279,7 +284,7 @@ export const Reparto: React.FC<G> = ({spec, W, u, cy}) => {
 };
 
 // ---------------------------------------------------------------------------
-export const Factura: React.FC<G> = ({spec, W, u, cy}) => {
+export const Factura: React.FC<G> = ({spec, W, u, cy, pro}) => {
   const ac = spec._ac as number[];
   const lineas: [string, string | number][] = spec.lineas ?? [];
   const ancho = Math.floor(W * 0.58);
@@ -293,7 +298,9 @@ export const Factura: React.FC<G> = ({spec, W, u, cy}) => {
   const filas: React.ReactNode[] = [];
   lineas.forEach((par, i) => {
     const nueva = i === lineas.length - 1;
-    const ui = nueva ? clamp01((u - 0.16) / 0.4) : 1;
+    const ui = pro ? clamp01((u - 0.04 * i) / 0.3) : nueva ? clamp01((u - 0.16) / 0.4) : 1;
+    // en "pro" cada linea entra deslizando desde la izquierda
+    const desl = pro ? (1 - expo(ui)) * -36 : 0;
     if (ui > 0.02) {
       const col = nueva ? P.tinta : P.tenue;
       const colI = nueva ? ac : [178, 184, 200];
@@ -309,7 +316,7 @@ export const Factura: React.FC<G> = ({spec, W, u, cy}) => {
         puntos.push(<circle key={px} cx={px + 1.5} cy={base - 9.5} r={1.7} fill={rgb(P.tenue)} opacity={op * 0.5} />);
       }
       filas.push(
-        <g key={i}>
+        <g key={i} transform={`translate(${desl} 0)`}>
           {nueva && <rect x={x0 - 28} y={base - 28} width={6} height={34} rx={3} fill={rgb(ac)} opacity={op} />}
           <T x={x0} y={base} px={36} familia={MEDIA} fill={rgb(col)} op={op}>
             {txt}
@@ -324,7 +331,7 @@ export const Factura: React.FC<G> = ({spec, W, u, cy}) => {
     yy += altoL;
   });
   const yt = yy + 24;
-  const ut = clamp01((u - 0.55) / 0.4);
+  const ut = pro ? expo(clamp01((u - 0.5) / 0.4)) : clamp01((u - 0.55) / 0.4);
   return (
     <>
       <Carta x={x0 - 64} y={y0} w={ancho + 128} h={alto} acento={ac} />
@@ -348,7 +355,7 @@ export const Factura: React.FC<G> = ({spec, W, u, cy}) => {
 };
 
 // ---------------------------------------------------------------------------
-export const Apilada: React.FC<G> = ({spec, W, u, cy}) => {
+export const Apilada: React.FC<G> = ({spec, W, u, cy, pro}) => {
   const ac = spec._ac as number[];
   const items: [string, number][] = spec.items;
   const suma = items.reduce((a, b) => a + b[1], 0) || 1;
@@ -364,7 +371,7 @@ export const Apilada: React.FC<G> = ({spec, W, u, cy}) => {
   const tramos: React.ReactNode[] = [];
   let cursor = 0;
   items.forEach(([nom, v], i) => {
-    const ui = suave(clamp01((u - i * 0.24) / 0.52));
+    const ui = (pro ? expo : suave)(clamp01((u - i * 0.24) / 0.52));
     const largo = ancho * (v / suma) * ui;
     if (largo > 0) {
       tramos.push(<rect key={i} x={x0 + cursor} y={yb} width={largo} height={altoB} fill={rgb(colorDe(nom, i))} opacity={0.97} />);
@@ -469,8 +476,8 @@ const Trazo: React.FC<{p: Prim; w: number; prog: number; col: string}> = ({p, w,
   }
 };
 
-export const Ilustracion: React.FC<G> = ({spec, W, u, cy}) => {
-  const e = suave(clamp01(u));
+export const Ilustracion: React.FC<G> = ({spec, W, u, cy, pro}) => {
+  const e = pro ? dobleSuave(clamp01(u)) : suave(clamp01(u));
   const ac = spec._ac as number[];
   const lado = Math.floor(spec.lado ?? 300);
   const x0 = Math.floor((W - lado) / 2);

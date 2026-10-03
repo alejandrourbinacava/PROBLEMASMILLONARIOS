@@ -23,6 +23,10 @@ on:
         description: Ids de los planos, separados por comas
         type: string
         default: ""
+      estilo:
+        description: paridad (como Pillow) o pro (movimiento nuevo)
+        type: string
+        default: pro
   push:
     tags:
       - "plato-*"
@@ -94,7 +98,7 @@ jobs:
           fi
           mkdir -p ../parallax2/_escenas
           if ! node render-platos.mjs ../platos.json ../parallax2/_escenas \
-                 --ids "$IDS" 2>&1 | tee ../render.log; then
+                 --ids "$IDS" --estilo "${{ inputs.estilo || 'pro' }}" 2>&1 | tee ../render.log; then
             echo "::error::El render ha fallado. Ultimas lineas:"
             tail -n 30 ../render.log | while IFS= read -r linea; do
               echo "::error::${linea}"

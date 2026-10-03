@@ -4,7 +4,7 @@ import {Plato as PlatoT, P, useFuentes} from './base';
 import {GRAFICOS} from './Graficos';
 import {Plato} from './Plato';
 import {Titular} from './Titular';
-import {Anim, animCapa, clamp01, combina, factorAnim, may, rgb, suave} from './util';
+import {Anim, animCapa, atrasK, clamp01, combina, factorAnim, may, rgb, suave} from './util';
 
 /**
  * Un plano de plato entero: el papel, el titular y el grafico, con los
@@ -48,12 +48,14 @@ const useBanda = (ref: React.RefObject<HTMLDivElement | null>, dep: unknown) => 
   return banda;
 };
 
-export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: number}> = ({
+export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: number; estilo?: string}> = ({
   plato,
   W,
   H,
   fps,
+  estilo = 'paridad',
 }) => {
+  const pro = estilo === 'pro';
   const listo = useFuentes();
   const f = useCurrentFrame();
   const n = plato.frames;
@@ -68,8 +70,11 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
     const f0 = Math.floor((txt.retardo ?? 0.35) * fps);
     if (f >= f0) {
       const [te, ts] = factorAnim(Math.max(0, f - f0), n - f0, fps, txt.dur_entrada ?? 0.5, txt.dur_salida ?? 0.4);
-      const estilo = txt.estilo ?? 'sube';
-      animT = combina(animCapa(estilo, te, W, H), animCapa(estilo, ts, W, H, true));
+      const estiloT = txt.estilo ?? 'sube';
+      animT = combina(
+        pro ? animCapa('ninguna', 1, W, H) : animCapa(estiloT, te, W, H),
+        animCapa(estiloT, ts, W, H, true),
+      );
     }
   }
 
@@ -77,22 +82,36 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
   const graf = plato.grafico;
   let animG: Anim | null = null;
   let ug = 0;
+  let tsG = 0;
   let borde: number | null = null;
   if (graf) {
     const f0 = Math.floor((graf.retardo ?? 0.25) * fps);
     if (f >= f0) {
       const durG = graf.duracion ?? Math.min(1.6, (n / fps) * 0.55);
       ug = Math.min(1, (f - f0) / Math.max(1, Math.floor(durG * fps)));
+      tsG = (f - f0) / fps;
       const dEnt = graf.entrada === 'barrido' ? 0.58 : 0.32;
       const [ge, gs] = factorAnim(f - f0, n - f0, fps, dEnt, 0.25);
       if (graf.entrada === 'barrido' && ge < 0.999) {
         borde = -0.12 + 1.24 * suave(clamp01(ge));
         animG = {dx: 0, dy: 0, scale: 1, op: 1, blur: 0};
       } else {
-        const estilo = graf.entrada === 'barrido' ? 'sube' : graf.entrada ?? 'golpe';
+        const estiloG = graf.entrada === 'barrido' ? 'sube' : graf.entrada ?? 'golpe';
         // tras un barrido solo queda la SALIDA (que baja y se desvanece)
-        const entrada = graf.entrada === 'barrido' ? animCapa('ninguna', 1, W, H) : animCapa(estilo, ge, W, H);
-        animG = combina(entrada, animCapa(estilo, gs, W, H, true));
+        let entrada = graf.entrada === 'barrido' ? animCapa('ninguna', 1, W, H) : animCapa(estiloG, ge, W, H);
+        if (pro && graf.entrada !== 'barrido') {
+          // "pro": una tarjeta que entra con muelle -pasa de largo y vuelve-,
+          // sube desde abajo y se enfoca, en vez del golpe de escala
+          const sp = atrasK(ge, 1.3);
+          entrada = {dx: 0, dy: (1 - sp) * 30, scale: 0.9 + 0.1 * sp, op: clamp01(ge * 3), blur: (1 - ge) * 5};
+        }
+        animG = combina(entrada, animCapa(estiloG, gs, W, H, true));
+        if (pro) {
+          // y mientras el dato esta puesto, no se queda congelado: una deriva
+          // muy lenta de escala y una flotacion de un par de pixeles
+          const h = f / Math.max(1, n);
+          animG = {...animG, scale: animG.scale * (1 + 0.014 * h), dy: animG.dy + Math.sin((f / fps) * 1.6) * 2};
+        }
       }
     }
   }
@@ -150,7 +169,15 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
           fase={plato.fase}
         />
         {txt && animT && animT.op > 0.01 && (
-          <Titular spec={txt} W={W} H={H} anim={animT} textoYaConMayuscula={may(txt.texto)} />
+          <Titular
+            spec={txt}
+            W={W}
+            H={H}
+            anim={animT}
+            textoYaConMayuscula={may(txt.texto)}
+            pro={pro}
+            tLoc={(f - Math.floor((txt.retardo ?? 0.35) * fps)) / fps}
+          />
         )}
         {graf && Graf && animG && (
           <AbsoluteFill
@@ -170,7 +197,7 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
             }}
           >
             <div ref={refG} style={{position: 'absolute', inset: 0}}>
-              <Graf spec={graf} W={W} H={H} u={ug} cy={Math.floor((graf.y ?? 0.5) * H)} />
+              <Graf spec={graf} W={W} H={H} u={ug} cy={Math.floor((graf.y ?? 0.5) * H)} pro={pro} ts={tsG} />
             </div>
           </AbsoluteFill>
         )}

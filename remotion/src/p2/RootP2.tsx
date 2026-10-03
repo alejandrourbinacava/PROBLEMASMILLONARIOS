@@ -7,7 +7,7 @@ import {EscenaPlato} from './Escena';
  * La composicion de un plano de plato. `render-platos.mjs` la pide una vez por
  * plano con sus datos (`plato`) y los fotogramas exactos que tiene que durar.
  */
-type Props = {plato: Plato; W: number; H: number; fps: number};
+type Props = {plato: Plato; W: number; H: number; fps: number; estilo?: string};
 
 const VACIO: Plato = {
   archivo: 'demo.mp4',
@@ -42,7 +42,7 @@ export const RootP2: React.FC = () => (
     fps={25}
     width={1920}
     height={1080}
-    defaultProps={{plato: VACIO, W: 1920, H: 1080, fps: 25}}
+    defaultProps={{plato: VACIO, W: 1920, H: 1080, fps: 25, estilo: 'paridad'}}
     calculateMetadata={({props}) => ({
       durationInFrames: Math.max(1, (props as Props).plato.frames),
       fps: (props as Props).fps,

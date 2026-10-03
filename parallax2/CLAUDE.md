@@ -512,6 +512,41 @@ clip puntuando 2 en el primer plano del video. El primer plano es el unico
 que todo el mundo ve y el que tiene que cumplir lo que promete la
 miniatura, asi que se sirve antes que nadie.
 
+## Despues de montar: lo que hay que mirar en el video, no en los chequeos
+
+Los cinco chequeos dieron verde en las cuatro tiradas de Mercadona y las
+cuatro tenian fallos que ve cualquiera al abrir el video. Lo que hay que mirar,
+en este orden:
+
+1. **Los contadores automaticos.** `motion_banco` lee el numero SUELTO:
+   «mil seiscientas tiendas» salio «1.000 · seiscientas tiendas», «mil
+   setecientos treinta y cuatro euros brutos» salio «4 · brutos al mes», «dos
+   mil euros» salio «2 M», y un año -«desde dos mil nueve»- se animaba como
+   una cantidad hasta 2.009. Antes de renderizar, listar TODOS los graficos de
+   cifra con su frase y su sufijo. Los malos se sustituyen por una ficha
+   manual y los que sobran se quitan con `quitar_graficos.py <guion> <ids>`.
+2. **Una frase larga se parte en varios planos que REPITEN el texto entero.**
+   `motion_manual` elige el plano en cuyo TRAMO DE AUDIO cae el fragmento de
+   `donde` (posicion en la frase por duracion de cada trozo); antes elegia
+   siempre el primero y un dato dicho al final salia ocho segundos antes. Una
+   ficha puede llevar solo `texto_pantalla` (un titular, sin grafico) o
+   `"plano": "<id>"`, pero los ids CAMBIAN en cada reconstruccion: usa
+   fragmentos de frase, no ids.
+3. **Ilustraciones mudas.** Un icono sin una palabra no dice de que va.
+   `quitar_graficos.py` hace al final una pasada que les pone titular. En
+   Mercadona la frase que daba el giro de la serie salio como dos iconos en
+   blanco.
+4. **Repeticiones.** El tope de usos solo lo respetaba el primer reparto; la
+   sustitucion de repetidos y el cortador de rachas de plato devolvian clips
+   sin contar. Hay tope duro y se baja con `TOPE_USOS=2` sin tocar codigo.
+5. **Los clips heredados, A TAMANO LEGIBLE.** En miniatura una pizarra con
+   «Brand Strategy» en ingles parece una reunion y un panel de bolsa parece un
+   grafico. Doce fotogramas de 640 px por hoja, no veinticuatro de 333.
+
+La cadena entera, en orden: `construir_episodio`, `motion_banco`, `vestir`,
+`motion_manual`, `quitar_graficos`; despues `voz.py` (con la cache, 0 creditos),
+los cinco chequeos, y el render en la nube.
+
 ## El metraje NO vive en el repo
 
 Vive en **releases**, una por episodio: `stock-hotel`, `stock-aeropuerto`,

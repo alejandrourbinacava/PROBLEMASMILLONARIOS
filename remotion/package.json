@@ -4,13 +4,16 @@
   "private": true,
   "scripts": {
     "start": "remotion studio src/index.ts",
-    "render": "remotion render src/index.ts ParallaxScene out/scene.mp4"
+    "render": "remotion render src/index.ts ParallaxScene out/scene.mp4",
+    "platos": "node render-platos.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.410",
     "remotion": "4.0.410",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "@remotion/bundler": "4.0.410",
+    "@remotion/renderer": "4.0.410"
   },
   "devDependencies": {
     "@types/react": "19.2.2",

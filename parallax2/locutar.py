@@ -28,12 +28,15 @@ def duracion(p):
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("guion"); ap.add_argument("--tmp", default="_voz")
-    ap.add_argument("--proveedor", choices=["edge","ai33"], default="ai33")
+    ap.add_argument("--proveedor", choices=["edge","ai33","genaipro"], default="ai33")
+    ap.add_argument("--voz", default="es-ES-AlvaroNeural")
+    ap.add_argument("--paso", default="", help="k/n: solo sintetiza las frases i %% n == k (para repartir en varios procesos)")
+    ap.add_argument("--velocidad", type=float, default=1.06)
     ap.add_argument("--salida-duraciones", default="duraciones_voz.json")
     a = ap.parse_args()
 
     from voz import hacer_tts
-    tts = hacer_tts(a.proveedor, "es-ES-AlvaroNeural", 1.06)
+    tts = hacer_tts(a.proveedor, a.voz, a.velocidad)
     tmp = Path(a.tmp); tmp.mkdir(parents=True, exist_ok=True)
 
     frases = [f for _, _, fs in leer_guion.leer(a.guion) for f in fs]
@@ -44,7 +47,10 @@ def main():
         pass
 
     nuevas = 0
+    k, n = (int(x) for x in a.paso.split("/")) if a.paso else (0, 1)
     for i, t in enumerate(frases, 1):
+        if i % n != k:
+            continue
         h = hashlib.sha1(t.encode("utf-8")).hexdigest()[:16]
         mp3 = tmp / f"{h}.mp3"
         if not mp3.exists():

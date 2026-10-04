@@ -86,6 +86,18 @@ def hacer_tts(proveedor, voz, velocidad):
     if proveedor == "edge":
         return VozGratis(voz, velocidad)
     from pipeline.config import Config
+    if proveedor == "genaipro":
+        from pipeline.providers.genaipro import GenAIPro
+        cfg = Config()
+        base = cfg.get
+        suyo = {"voice.base_url": "https://genaipro.io/api/v1",
+                "voice.voice_id": voz,
+                "voice.speed": velocidad}
+
+        def get(k, d=None):
+            return suyo[k] if k in suyo else base(k, d)
+        cfg.get = get
+        return GenAIPro(cfg)
     from pipeline.providers.ai33 import Ai33
     return Ai33(Config())
 
@@ -98,8 +110,8 @@ def main() -> int:
     ap.add_argument("--tmp", type=Path, default=Path("_voz"))
     ap.add_argument("--voz", default="es-ES-AlvaroNeural")
     ap.add_argument("--velocidad", type=float, default=1.06)
-    ap.add_argument("--proveedor", choices=["edge", "ai33"], default="edge",
-                    help="edge = gratis; ai33 = la voz del canal, gasta creditos")
+    ap.add_argument("--proveedor", choices=["edge", "ai33", "genaipro"], default="edge",
+                    help="edge = gratis; ai33 = la voz del canal, gasta creditos; genaipro = lo mismo en genaipro.io (--voz = id de voz, --tmp aparte)")
     a = ap.parse_args()
 
     import montar as M

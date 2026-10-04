@@ -551,24 +551,18 @@
     }
   },
   {
-    "_nota": "EL GIRO DE LA SERIE, segunda mitad: el dueno, en quinto lugar. Antes era un icono de persona sin una palabra.",
+    "_nota": "EL GIRO DE LA SERIE, segunda mitad: el dueno, en quinto lugar. Con la voz de Luca (genaipro) el plano dura 1,9 s y el contador de 5º no cabe: va un titular, que es lo que se oye.",
     "donde": "en quinto lugar",
-    "movimiento": "estatico",
-    "fondo": {
-      "titulo": "el dueño"
-    },
-    "grafico": {
-      "tipo": "contador",
-      "valor": 5.0,
-      "dec": 0,
-      "sufijo": "º",
-      "pie": "lugar, el último de cinco",
-      "px": 230,
-      "color": "acento",
-      "y": 0.5,
-      "retardo": 0.4,
-      "duracion": 1.8,
-      "entrada": "barrido"
+    "texto_pantalla": {
+      "texto": "En *quinto* lugar",
+      "px": 132,
+      "y": 0.68,
+      "acento": [
+        240,
+        84,
+        74
+      ],
+      "estilo": "sube"
     }
   },
   {

@@ -19,7 +19,7 @@ from ..config import Config, env
 from ..util import log
 
 _TIMEOUT = 60
-_POLL_INTERVAL = 3.0
+_POLL_INTERVAL = 4.0
 _POLL_TIMEOUT = 600.0
 _SUBTITLE_TIMEOUT = 90.0
 
@@ -49,8 +49,8 @@ class GenAIPro:
     # ---------------- HTTP ----------------
 
     @retry(
-        stop=stop_after_attempt(4),
-        wait=wait_exponential(multiplier=2, min=2, max=25),
+        stop=stop_after_attempt(8),
+        wait=wait_exponential(multiplier=2, min=4, max=60),
         # Solo se reintenta lo que puede arreglarse esperando. Un 400 o un 401
         # van a fallar igual las cuatro veces y ademas la excepcion que sale del
         # reintento no es la nuestra, asi que los catch de arriba no la ven.

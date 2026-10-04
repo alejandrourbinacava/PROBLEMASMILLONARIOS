@@ -562,6 +562,12 @@ _SUPER = {
     "donaciones": ["food donation", "boxes"],
     "alimentos": ["food", "groceries"], "toneladas": ["pallets", "boxes"],
     "capital": ["office", "meeting"], "jefe": ["office", "meeting"],
+    # fotos de Wikimedia Commons convertidas en clips (stock_mercadona/*_9NN)
+    "mercadona": ["mercadona"], "hacendado": ["hacendado", "sauces"],
+    "sede": ["headquarters", "office"], "oficinas": ["headquarters", "office"],
+    "fachada": ["facade", "storefront"], "bloque": ["logistics", "warehouse"],
+    "pan": ["bread", "loaves"], "panaderia": ["bread", "bakery"],
+    "precio": ["price", "prices"], "precios": ["price", "prices"],
 }
 for _k, _v in _SUPER.items():
     LEXICO[_k] = list(dict.fromkeys(LEXICO.get(_k, []) + _v))

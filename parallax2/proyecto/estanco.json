@@ -1,0 +1,4941 @@
+{
+  "titulo": "guion_estanco",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "tema": "papel",
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Cuarenta y seis céntimos.",
+      "duracion": 2.72,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 0.46,
+        "dec": 2,
+        "sufijo": " €",
+        "pie": "lo que le queda al estanquero",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.2,
+        "duracion": 0.82,
+        "entrada": "barrido"
+      },
+      "composicion": "izquierda",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "de cada paquete"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Eso es lo que le queda a un estanquero de un paquete de tabaco de cinco euros con cuarenta y cuatro, que es lo que cuesta, de media, uno de cigarrillos.",
+      "duracion": 2.61,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/cigarette_ashtray_table_notebook_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5.44,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          240,
+          84,
+          74
+        ],
+        "pie": "euros",
+        "y": 0.62,
+        "retardo": 0.0,
+        "duracion": 0.91,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "Eso es lo que le queda a un estanquero de un paquete de tabaco de cinco euros con cuarenta y cuatro, que es lo que cuesta, de media, uno de cigarrillos.",
+      "duracion": 3.18,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_estanco/stack_of_cigarette_cartons_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "Eso es lo que le queda a un estanquero de un paquete de tabaco de cinco euros con cuarenta y cuatro, que es lo que cuesta, de media, uno de cigarrillos.",
+      "duracion": 3.89,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/tabacos_shop_porch_brick_building_sign_9003.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "No es una estimación. Es la ley: el margen del estanquero está fijado en el ocho y medio por ciento del precio de venta, y está escrito en el BOE.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/law_books_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "No es una *estimación*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "No es una estimación. Es la ley: el margen del estanquero está fijado en el ocho y medio por ciento del precio de venta, y está escrito en el BOE.",
+      "duracion": 3.22,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 8.5,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 1,
+        "pie": "es el margen del estanquero",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.26,
+        "duracion": 1.26,
+        "entrada": "barrido"
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "lo que dice la ley"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "No es una estimación. Es la ley: el margen del estanquero está fijado en el ocho y medio por ciento del precio de venta, y está escrito en el BOE.",
+      "duracion": 3.66,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_estanco/tabacos_shop_old_stone_facade_sign_9013.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "¿Y el resto del paquete? Cuatro euros con veinticinco se los lleva Hacienda, entre el impuesto especial y el IVA. Por cada euro que se queda el dueño del estanco, el Estado cobra más de nueve.",
+      "duracion": 2.61,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "Hacienda",
+            4.25
+          ],
+          [
+            "fabricante y distribuidor",
+            0.73
+          ],
+          [
+            "estanquero",
+            0.46
+          ]
+        ],
+        "colores": {
+          "Hacienda": "serie",
+          "fabricante y distribuidor": "tenue",
+          "estanquero": "acento"
+        },
+        "total": "5,44 € el paquete medio",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.13,
+        "duracion": 0.78,
+        "entrada": "barrido"
+      },
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "¿Y el resto del paquete? Cuatro euros con veinticinco se los lleva Hacienda, entre el impuesto especial y el IVA. Por cada euro que se queda el dueño del estanco, el Estado cobra más de nueve.",
+      "duracion": 3.18,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/counting_coins_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "¿Y el resto del paquete? Cuatro euros con veinticinco se los lleva Hacienda, entre el impuesto especial y el IVA. Por cada euro que se queda el dueño del estanco, el Estado cobra más de nueve.",
+      "duracion": 3.18,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/tabacos_lottery_shop_corner_building_striped_facade_9017.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_04d",
+      "texto": "¿Y el resto del paquete? Cuatro euros con veinticinco se los lleva Hacienda, entre el impuesto especial y el IVA. Por cada euro que se queda el dueño del estanco, el Estado cobra más de nueve.",
+      "duracion": 3.87,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_estanco/tabacos_sign_stone_arcade_corner_9051.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El *Estado* cobra más de nueve",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Y aun así, comprar un estanco cuesta de trescientos mil a cuatrocientos cincuenta mil euros, según la prensa. En la última subasta pública, la oferta más alta fue de siete millones de euros, por un estanco en La Jonquera, pegado a la frontera con Francia.",
+      "duracion": 2.57,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "traspaso de un estanco, según la prensa",
+        "items": [
+          [
+            "Desde",
+            300000.0
+          ],
+          [
+            "Hasta",
+            450000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.14,
+        "duracion": 0.73,
+        "entrada": "barrido",
+        "destacar": {
+          "Hasta": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Y aun así, comprar un estanco cuesta de trescientos mil a cuatrocientos cincuenta mil euros, según la prensa. En la última subasta pública, la oferta más alta fue de siete millones de euros, por un estanco en La Jonquera, pegado a la frontera con Francia.",
+      "duracion": 3.14,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/cash_register_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Y aun así, comprar un estanco cuesta de trescientos mil a cuatrocientos cincuenta mil euros, según la prensa. En la última subasta pública, la oferta más alta fue de siete millones de euros, por un estanco en La Jonquera, pegado a la frontera con Francia.",
+      "duracion": 3.14,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/paying_cash_counter_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05d",
+      "texto": "Y aun así, comprar un estanco cuesta de trescientos mil a cuatrocientos cincuenta mil euros, según la prensa. En la última subasta pública, la oferta más alta fue de siete millones de euros, por un estanco en La Jonquera, pegado a la frontera con Francia.",
+      "duracion": 3.14,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 7.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "la oferta más alta de la subasta, en La Jonquera",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.22,
+        "duracion": 1.22,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "subasta de 2022"
+    },
+    {
+      "id": "gancho_05e",
+      "texto": "Y aun así, comprar un estanco cuesta de trescientos mil a cuatrocientos cincuenta mil euros, según la prensa. En la última subasta pública, la oferta más alta fue de siete millones de euros, por un estanco en La Jonquera, pegado a la frontera con Francia.",
+      "duracion": 3.82,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/tabacos_shop_closed_shutters_yellow_mailbox_9016.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Eso se pregunta cualquiera. ¿Quién paga una fortuna por quedarse con cuarenta y seis céntimos de cada paquete?",
+      "duracion": 1.87,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Eso se pregunta *cualquiera*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "Eso se pregunta cualquiera. ¿Quién paga una fortuna por quedarse con cuarenta y seis céntimos de cada paquete?",
+      "duracion": 2.28,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06c",
+      "texto": "Eso se pregunta cualquiera. ¿Quién paga una fortuna por quedarse con cuarenta y seis céntimos de cada paquete?",
+      "duracion": 2.79,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 46.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          240,
+          84,
+          74
+        ],
+        "pie": "céntimos",
+        "y": 0.62,
+        "retardo": 0.0,
+        "duracion": 1.09,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07",
+      "texto": "Hoy vamos a comprar uno y a ver cuánto entra, cuánto sale y de qué eres dueño de verdad. Y te aviso de algo desde ahora: la palabra «comprar» no significa aquí lo que crees.",
+      "duracion": 2.17,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/handshake_deal_83.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_07b",
+      "texto": "Hoy vamos a comprar uno y a ver cuánto entra, cuánto sale y de qué eres dueño de verdad. Y te aviso de algo desde ahora: la palabra «comprar» no significa aquí lo que crees.",
+      "duracion": 2.64,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_07c",
+      "texto": "Hoy vamos a comprar uno y a ver cuánto entra, cuánto sale y de qué eres dueño de verdad. Y te aviso de algo desde ahora: la palabra «comprar» no significa aquí lo que crees.",
+      "duracion": 2.64,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_07d",
+      "texto": "Hoy vamos a comprar uno y a ver cuánto entra, cuánto sale y de qué eres dueño de verdad. Y te aviso de algo desde ahora: la palabra «comprar» no significa aquí lo que crees.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Te *aviso* de algo desde ahora",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07e",
+      "texto": "Hoy vamos a comprar uno y a ver cuánto entra, cuánto sale y de qué eres dueño de verdad. Y te aviso de algo desde ahora: la palabra «comprar» no significa aquí lo que crees.",
+      "duracion": 2.96,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "Te aviso de algo desde *ahora*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "gancho_08",
+      "texto": "Que quede claro, además, de qué va este vídeo y de qué no. No va de si fumar está bien o mal. Va de un negocio, de quién cobra cada euro y de qué es exactamente lo que se compra cuando alguien dice: tengo un estanco.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/no_smoking_sign_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Quede* claro",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_08b",
+      "texto": "Que quede claro, además, de qué va este vídeo y de qué no. No va de si fumar está bien o mal. Va de un negocio, de quién cobra cada euro y de qué es exactamente lo que se compra cuando alguien dice: tengo un estanco.",
+      "duracion": 2.97,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/ashtray_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_08c",
+      "texto": "Que quede claro, además, de qué va este vídeo y de qué no. No va de si fumar está bien o mal. Va de un negocio, de quién cobra cada euro y de qué es exactamente lo que se compra cuando alguien dice: tengo un estanco.",
+      "duracion": 2.97,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_estanco/busy_shopping_street_90.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_08d",
+      "texto": "Que quede claro, además, de qué va este vídeo y de qué no. No va de si fumar está bien o mal. Va de un negocio, de quién cobra cada euro y de qué es exactamente lo que se compra cuando alguien dice: tengo un estanco.",
+      "duracion": 2.97,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/tabacos_wooden_sign_number_9169.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_08e",
+      "texto": "Que quede claro, además, de qué va este vídeo y de qué no. No va de si fumar está bien o mal. Va de un negocio, de quién cobra cada euro y de qué es exactamente lo que se compra cuando alguien dice: tengo un estanco.",
+      "duracion": 3.17,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/old_tabacos_shop_shutter_vine_9047.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "En España hay doce mil quinientos ochenta y seis estancos. Cada uno es una concesión del Estado: el Estado tiene el monopolio de la venta de tabaco al por menor y se lo presta a una persona.",
+      "duracion": 3.43,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 12586.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "estancos en España",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.27,
+        "duracion": 1.46,
+        "entrada": "barrido"
+      },
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la red"
+    },
+    {
+      "id": "cap1_01b",
+      "texto": "En España hay doce mil quinientos ochenta y seis estancos. Cada uno es una concesión del Estado: el Estado tiene el monopolio de la venta de tabaco al por menor y se lo presta a una persona.",
+      "duracion": 3.47,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_mercadona/government_building_facade_arches_145.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_01c",
+      "texto": "En España hay doce mil quinientos ochenta y seis estancos. Cada uno es una concesión del Estado: el Estado tiene el monopolio de la venta de tabaco al por menor y se lo presta a una persona.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.0699999999999998,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En *España* hay doce mil",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01cx",
+      "texto": "En España hay doce mil quinientos ochenta y seis estancos. Cada uno es una concesión del Estado: el Estado tiene el monopolio de la venta de tabaco al por menor y se lo presta a una persona.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.0799999999999996,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El Estado tiene el *monopolio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "Por eso no se puede montar un estanco como se monta una cafetería. No eliges la calle: las plazas las crea el Ministerio de Hacienda, por zonas, con distancias mínimas entre una y otra, y las reparte por subasta.",
+      "duracion": 3.0,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/sunrise_city_street_92.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02b",
+      "texto": "Por eso no se puede montar un estanco como se monta una cafetería. No eliges la calle: las plazas las crea el Ministerio de Hacienda, por zonas, con distancias mínimas entre una y otra, y las reparte por subasta.",
+      "duracion": 3.66,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/estanco_bookshop_window_street_9049.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "No *eliges* la calle",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_02c",
+      "texto": "Por eso no se puede montar un estanco como se monta una cafetería. No eliges la calle: las plazas las crea el Ministerio de Hacienda, por zonas, con distancias mínimas entre una y otra, y las reparte por subasta.",
+      "duracion": 3.66,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02d",
+      "texto": "Por eso no se puede montar un estanco como se monta una cafetería. No eliges la calle: las plazas las crea el Ministerio de Hacienda, por zonas, con distancias mínimas entre una y otra, y las reparte por subasta.",
+      "duracion": 4.47,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_mercadona/aerial_town_street_rooftops_224.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "La última fue en dos mil veintidós. Salieron doscientos tres estancos y Hacienda ingresó setenta y cuatro millones setecientos mil euros. Desde entonces, ninguna más.",
+      "duracion": 3.34,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/tabacos_lottery_shop_corner_building_striped_facade_9017.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "La última fue en dos mil *veintidós*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "La última fue en dos mil veintidós. Salieron doscientos tres estancos y Hacienda ingresó setenta y cuatro millones setecientos mil euros. Desde entonces, ninguna más.",
+      "duracion": 4.07,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 74.7,
+        "dec": 1,
+        "sufijo": " M€",
+        "pie": "ingresó Hacienda con 203 estancos",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 2.01,
+        "entrada": "barrido"
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la subasta de 2022"
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "La última fue en dos mil veintidós. Salieron doscientos tres estancos y Hacienda ingresó setenta y cuatro millones setecientos mil euros. Desde entonces, ninguna más.",
+      "duracion": 4.97,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/cash_register_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "Así que lo normal es lo otro: el traspaso. Comprarle el estanco a alguien que ya lo tiene. En dos mil veinticinco cambiaron de manos trescientos cincuenta y siete estancos, y otros setenta y dos pasaron a herederos.",
+      "duracion": 3.05,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/notary_signing_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "Así que lo normal es lo otro: el traspaso. Comprarle el estanco a alguien que ya lo tiene. En dos mil veinticinco cambiaron de manos trescientos cincuenta y siete estancos, y otros setenta y dos pasaron a herederos.",
+      "duracion": 3.72,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/contract_signing_85.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "Así que lo normal es lo otro: el traspaso. Comprarle el estanco a alguien que ya lo tiene. En dos mil veinticinco cambiaron de manos trescientos cincuenta y siete estancos, y otros setenta y dos pasaron a herederos.",
+      "duracion": 3.72,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 357.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "estancos cambiaron de manos en 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.31,
+        "duracion": 1.71,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "los traspasos"
+    },
+    {
+      "id": "cap1_04d",
+      "texto": "Así que lo normal es lo otro: el traspaso. Comprarle el estanco a alguien que ya lo tiene. En dos mil veinticinco cambiaron de manos trescientos cincuenta y siete estancos, y otros setenta y dos pasaron a herederos.",
+      "duracion": 4.53,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "¿Cuánto cuesta uno? No hay un precio oficial. Hacienda sabe lo que se paga, porque la venta se escritura, pero no lo publica. La prensa habla de entre trescientos mil y cuatrocientos cincuenta mil euros, según dónde esté y cuánto venda.",
+      "duracion": 3.29,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "¿Cuánto cuesta uno? No hay un precio oficial. Hacienda sabe lo que se paga, porque la venta se escritura, pero no lo publica. La prensa habla de entre trescientos mil y cuatrocientos cincuenta mil euros, según dónde esté y cuánto venda.",
+      "duracion": 4.02,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05c",
+      "texto": "¿Cuánto cuesta uno? No hay un precio oficial. Hacienda sabe lo que se paga, porque la venta se escritura, pero no lo publica. La prensa habla de entre trescientos mil y cuatrocientos cincuenta mil euros, según dónde esté y cuánto venda.",
+      "duracion": 4.02,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_05d",
+      "texto": "¿Cuánto cuesta uno? No hay un precio oficial. Hacienda sabe lo que se paga, porque la venta se escritura, pero no lo publica. La prensa habla de entre trescientos mil y cuatrocientos cincuenta mil euros, según dónde esté y cuánto venda.",
+      "duracion": 4.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/counting_coins_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Y no puede comprarlo cualquiera. Tienes que ser persona física, de la Unión Europea, sin deudas con Hacienda ni con la Seguridad Social, y no tener ya otro estanco. Quien vende, además, tiene que llevar cinco años al frente. Y la venta no vale hasta que la autoriza el Comisionado para el Mercado de Tabacos.",
+      "duracion": 3.33,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/old_archive_folders_59.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No puede comprarlo *cualquiera*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_06b",
+      "texto": "Y no puede comprarlo cualquiera. Tienes que ser persona física, de la Unión Europea, sin deudas con Hacienda ni con la Seguridad Social, y no tener ya otro estanco. Quien vende, además, tiene que llevar cinco años al frente. Y la venta no vale hasta que la autoriza el Comisionado para el Mercado de Tabacos.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/government_building_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_06c",
+      "texto": "Y no puede comprarlo cualquiera. Tienes que ser persona física, de la Unión Europea, sin deudas con Hacienda ni con la Seguridad Social, y no tener ya otro estanco. Quien vende, además, tiene que llevar cinco años al frente. Y la venta no vale hasta que la autoriza el Comisionado para el Mercado de Tabacos.",
+      "duracion": 4.06,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/tabacos_shop_closed_shutters_yellow_mailbox_9016.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_06d",
+      "texto": "Y no puede comprarlo cualquiera. Tienes que ser persona física, de la Unión Europea, sin deudas con Hacienda ni con la Seguridad Social, y no tener ya otro estanco. Quien vende, además, tiene que llevar cinco años al frente. Y la venta no vale hasta que la autoriza el Comisionado para el Mercado de Tabacos.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/tabacos_shop_old_stone_facade_sign_9013.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_06e",
+      "texto": "Y no puede comprarlo cualquiera. Tienes que ser persona física, de la Unión Europea, sin deudas con Hacienda ni con la Seguridad Social, y no tener ya otro estanco. Quien vende, además, tiene que llevar cinco años al frente. Y la venta no vale hasta que la autoriza el Comisionado para el Mercado de Tabacos.",
+      "duracion": 4.95,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/tabacos_shop_porch_brick_building_sign_9003.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_07",
+      "texto": "Lo que firmas, entonces, no es una propiedad. Es una concesión que dura veinticinco años. Cuando acaba, el Estado vuelve a subastarla.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/signing_documents_desk_53.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Lo que *firmas*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_07b",
+      "texto": "Lo que firmas, entonces, no es una propiedad. Es una concesión que dura veinticinco años. Cuando acaba, el Estado vuelve a subastarla.",
+      "duracion": 3.38,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 25.0,
+        "dec": 0,
+        "sufijo": " años",
+        "pie": "dura la concesión",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.31,
+        "duracion": 1.37,
+        "entrada": "barrido"
+      },
+      "composicion": "izquierda",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que firmas"
+    },
+    {
+      "id": "cap1_07c",
+      "texto": "Lo que firmas, entonces, no es una propiedad. Es una concesión que dura veinticinco años. Cuando acaba, el Estado vuelve a subastarla.",
+      "duracion": 4.01,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Lo que *firmas*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap1_08",
+      "texto": "Trescientos mil euros, en total, para cobrar un ocho y medio por ciento durante un tiempo que fija otro.",
+      "duracion": 6.8,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "*Trescientos* mil euros",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Ahora, el paquete. Tomemos el de cinco euros con cuarenta y cuatro, el precio medio de uno de cigarrillos a finales de dos mil veinticinco.",
+      "duracion": 3.69,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/cigarette_ashtray_table_notebook_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 5.44,
+        "dec": 2,
+        "sufijo": "",
+        "color": [
+          240,
+          84,
+          74
+        ],
+        "pie": "euros",
+        "y": 0.62,
+        "retardo": 0.55,
+        "duracion": 1.44,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Ahora, el paquete. Tomemos el de cinco euros con cuarenta y cuatro, el precio medio de uno de cigarrillos a finales de dos mil veinticinco.",
+      "duracion": 5.48,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_estanco/stack_of_cigarette_cartons_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "Noventa y cuatro céntimos son IVA. Tres euros con treinta y uno son impuesto especial del tabaco. Suma: cuatro euros con veinticinco para Hacienda. El setenta y ocho por ciento del precio.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "ceniza"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "paquete de 5,44 €",
+        "lineas": [
+          [
+            "IVA",
+            "0,94 €"
+          ],
+          [
+            "Impuesto especial del tabaco",
+            "3,31 €"
+          ]
+        ],
+        "total": "4,25 €",
+        "etiqueta_total": "para Hacienda",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.27,
+        "duracion": 1.77,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "Noventa y cuatro céntimos son IVA. Tres euros con treinta y uno son impuesto especial del tabaco. Suma: cuatro euros con veinticinco para Hacienda. El setenta y ocho por ciento del precio.",
+      "duracion": 4.56,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/tabacos_wooden_sign_number_9169.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02c",
+      "texto": "Noventa y cuatro céntimos son IVA. Tres euros con treinta y uno son impuesto especial del tabaco. Suma: cuatro euros con veinticinco para Hacienda. El setenta y ocho por ciento del precio.",
+      "duracion": 5.56,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 78.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "del precio es para Hacienda",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "_lat_ent": -1.0,
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "el paquete medio"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "Al estanquero le quedan cuarenta y seis céntimos. El resto, setenta y tres céntimos, es lo que se reparten el fabricante y el distribuidor.",
+      "duracion": 3.78,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 0.46,
+        "dec": 2,
+        "sufijo": " €",
+        "pie": "para el estanquero, de un paquete de 5,44 €",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 1.72,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que le queda"
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "Al estanquero le quedan cuarenta y seis céntimos. El resto, setenta y tres céntimos, es lo que se reparten el fabricante y el distribuidor.",
+      "duracion": 5.63,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Y lo importante no es cuánto se queda cada uno, sino quién fija el precio. No eres tú. Lo fija el fabricante o el importador, se publica en el BOE y es el mismo en una gran ciudad que en un pueblo de Soria.",
+      "duracion": 3.77,
+      "movimiento": "contra_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/woman_drying_leaves_village_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "Y lo importante no es cuánto se queda cada uno, sino quién fija el precio. No eres tú. Lo fija el fabricante o el importador, se publica en el BOE y es el mismo en una gran ciudad que en un pueblo de Soria.",
+      "duracion": 4.59,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/crowd_plaza_aerial_bw_67.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Quién fija el *precio*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_04c",
+      "texto": "Y lo importante no es cuánto se queda cada uno, sino quién fija el precio. No eres tú. Lo fija el fabricante o el importador, se publica en el BOE y es el mismo en una gran ciudad que en un pueblo de Soria.",
+      "duracion": 5.6,
+      "movimiento": "drift_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Y no puedes tocarlo. Hacer un descuento, regalar un producto para que el cliente vuelva o quedarte con menos margen para vender más está prohibido. Es una infracción muy grave, y se castiga con una multa de más de ciento veinte mil euros, o con la pérdida de la concesión.",
+      "duracion": 3.59,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No puedes *tocarlo*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Y no puedes tocarlo. Hacer un descuento, regalar un producto para que el cliente vuelva o quedarte con menos margen para vender más está prohibido. Es una infracción muy grave, y se castiga con una multa de más de ciento veinte mil euros, o con la pérdida de la concesión.",
+      "duracion": 4.37,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_05c",
+      "texto": "Y no puedes tocarlo. Hacer un descuento, regalar un producto para que el cliente vuelva o quedarte con menos margen para vender más está prohibido. Es una infracción muy grave, y se castiga con una multa de más de ciento veinte mil euros, o con la pérdida de la concesión.",
+      "duracion": 4.37,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/law_books_54.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05d",
+      "texto": "Y no puedes tocarlo. Hacer un descuento, regalar un producto para que el cliente vuelva o quedarte con menos margen para vender más está prohibido. Es una infracción muy grave, y se castiga con una multa de más de ciento veinte mil euros, o con la pérdida de la concesión.",
+      "duracion": 5.34,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 120000.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "multa desde, por rebajar el precio",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "composicion": "izquierda",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "descuentos prohibidos"
+    },
+    {
+      "id": "cap2_06",
+      "texto": "Piensa lo que eso significa para un negocio. No puedes competir en precio. No puedes hacer una oferta. No puedes ni siquiera ser el estanco barato del barrio.",
+      "duracion": 2.81,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "Piensa lo que eso significa para un negocio. No puedes competir en precio. No puedes hacer una oferta. No puedes ni siquiera ser el estanco barato del barrio.",
+      "duracion": 3.43,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "mapa",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No puedes competir en *precio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_06c",
+      "texto": "Piensa lo que eso significa para un negocio. No puedes competir en precio. No puedes hacer una oferta. No puedes ni siquiera ser el estanco barato del barrio.",
+      "duracion": 4.19,
+      "movimiento": "contra_izq",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/busy_shopping_street_90.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07",
+      "texto": "Y cada vez que sube el impuesto, tu cliente lo nota en el paquete y tú, apenas, en la cuenta. En dos mil veinticinco hubo una subida generalizada, la primera en doce años, y Hacienda recaudó cuatrocientos trece millones de euros más.",
+      "duracion": 3.28,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Cada vez que sube el *impuesto*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "Y cada vez que sube el impuesto, tu cliente lo nota en el paquete y tú, apenas, en la cuenta. En dos mil veinticinco hubo una subida generalizada, la primera en doce años, y Hacienda recaudó cuatrocientos trece millones de euros más.",
+      "duracion": 4.0,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_estanco/paying_cash_counter_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07c",
+      "texto": "Y cada vez que sube el impuesto, tu cliente lo nota en el paquete y tú, apenas, en la cuenta. En dos mil veinticinco hubo una subida generalizada, la primera en doce años, y Hacienda recaudó cuatrocientos trece millones de euros más.",
+      "duracion": 4.0,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "balanza",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "sube"
+      },
+      "texto_pantalla": {
+        "texto": "Cada vez que sube el *impuesto*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_07d",
+      "texto": "Y cada vez que sube el impuesto, tu cliente lo nota en el paquete y tú, apenas, en la cuenta. En dos mil veinticinco hubo una subida generalizada, la primera en doce años, y Hacienda recaudó cuatrocientos trece millones de euros más.",
+      "duracion": 4.86,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "contador",
+        "valor": 413.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "más recaudó Hacienda en 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "composicion": "centrado",
+      "fondo_color": "acento",
+      "fondo_titulo": "la subida de impuestos"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Con todo esto, vamos a la caja. Un año entero.",
+      "duracion": 4.07,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_estanco/cigar_box_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Con todo esto",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "En dos mil veinticinco se vendieron en España labores de tabaco por trece mil setecientos once millones de euros. Es algo más de un cuatro por ciento más que el año anterior. Pero ojo con la trampa: el dinero sube y las toneladas bajan, algo más de un dos por ciento. Se vende menos y más caro.",
+      "duracion": 3.33,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "En dos mil veinticinco se vendieron en España labores de tabaco por trece mil setecientos once millones de euros. Es algo más de un cuatro por ciento más que el año anterior. Pero ojo con la trampa: el dinero sube y las toneladas bajan, algo más de un dos por ciento. Se vende menos y más caro.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 13711.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "de tabaco vendido en 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 2.0,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el mercado"
+    },
+    {
+      "id": "cap3_02c",
+      "texto": "En dos mil veinticinco se vendieron en España labores de tabaco por trece mil setecientos once millones de euros. Es algo más de un cuatro por ciento más que el año anterior. Pero ojo con la trampa: el dinero sube y las toneladas bajan, algo más de un dos por ciento. Se vende menos y más caro.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_02d",
+      "texto": "En dos mil veinticinco se vendieron en España labores de tabaco por trece mil setecientos once millones de euros. Es algo más de un cuatro por ciento más que el año anterior. Pero ojo con la trampa: el dinero sube y las toneladas bajan, algo más de un dos por ciento. Se vende menos y más caro.",
+      "duracion": 4.06,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_estanco/handshake_deal_83.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Ojo con la *trampa*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02e",
+      "texto": "En dos mil veinticinco se vendieron en España labores de tabaco por trece mil setecientos once millones de euros. Es algo más de un cuatro por ciento más que el año anterior. Pero ojo con la trampa: el dinero sube y las toneladas bajan, algo más de un dos por ciento. Se vende menos y más caro.",
+      "duracion": 4.95,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_estanco/old_tabacos_shop_shutter_vine_9047.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "Dividido entre los doce mil quinientos ochenta y seis estancos, salen casi un millón cien mil euros de ventas por estanco, de media. Es una cuenta nuestra, hecha con las cifras oficiales.",
+      "duracion": 3.5,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/elderly_shop_owner_69.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "Dividido entre los doce mil quinientos ochenta y seis estancos, salen casi un millón cien mil euros de ventas por estanco, de media. Es una cuenta nuestra, hecha con las cifras oficiales.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1.1,
+        "dec": 1,
+        "sufijo": " M€",
+        "pie": "de ventas por estanco, de media",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.17,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "composicion": "derecha",
+      "fondo_color": "acento",
+      "fondo_titulo": "la caja de un año"
+    },
+    {
+      "id": "cap3_03c",
+      "texto": "Dividido entre los doce mil quinientos ochenta y seis estancos, salen casi un millón cien mil euros de ventas por estanco, de media. Es una cuenta nuestra, hecha con las cifras oficiales.",
+      "duracion": 5.21,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "De *media*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap3_04",
+      "texto": "Y el ocho y medio por ciento de eso, aplicado a cada tipo de tabaco, deja unos noventa y tres mil euros de margen bruto. Bruto, de nuevo: antes de pagar nada.",
+      "duracion": 2.94,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "Y el ocho y medio por ciento de eso, aplicado a cada tipo de tabaco, deja unos noventa y tres mil euros de margen bruto. Bruto, de nuevo: antes de pagar nada.",
+      "duracion": 3.58,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 93000.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "de margen bruto medio por estanco",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.29,
+        "duracion": 1.59,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "antes de pagar nada"
+    },
+    {
+      "id": "cap3_04c",
+      "texto": "Y el ocho y medio por ciento de eso, aplicado a cada tipo de tabaco, deja unos noventa y tres mil euros de margen bruto. Bruto, de nuevo: antes de pagar nada.",
+      "duracion": 4.37,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Porque de ese margen salen el alquiler, los sueldos, la luz, el seguro, el canon al Estado, la cuota de autónomo y los impuestos personales. De ahí a lo que te llevas a casa hay un trecho, y aquí no hay estadística oficial que lo cuente.",
+      "duracion": 3.34,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_05b",
+      "texto": "Porque de ese margen salen el alquiler, los sueldos, la luz, el seguro, el canon al Estado, la cuota de autónomo y los impuestos personales. De ahí a lo que te llevas a casa hay un trecho, y aquí no hay estadística oficial que lo cuente.",
+      "duracion": 4.07,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_05c",
+      "texto": "Porque de ese margen salen el alquiler, los sueldos, la luz, el seguro, el canon al Estado, la cuota de autónomo y los impuestos personales. De ahí a lo que te llevas a casa hay un trecho, y aquí no hay estadística oficial que lo cuente.",
+      "duracion": 4.07,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05d",
+      "texto": "Porque de ese margen salen el alquiler, los sueldos, la luz, el seguro, el canon al Estado, la cuota de autónomo y los impuestos personales. De ahí a lo que te llevas a casa hay un trecho, y aquí no hay estadística oficial que lo cuente.",
+      "duracion": 4.98,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06",
+      "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
+      "duracion": 3.87,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Lo que hay son *casos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
+      "duracion": 3.6,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1.0,
+        "dec": 0,
+        "sufijo": " M €",
+        "color": [
+          240,
+          84,
+          74
+        ],
+        "pie": "vendidos",
+        "y": 0.68,
+        "retardo": 0.9299319727891158,
+        "duracion": 2.0,
+        "entrada": "latigo_izq"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_06c",
+      "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8899999999999997,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Lo que hay son *casos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06cx",
+      "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8899999999999997,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Un caso, *no* una media",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          24
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06d",
+      "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Lo que hay son *casos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_06dx",
+      "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Siete mil euros *limpios*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "composicion": "derecha",
+      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip_desde": 0.3,
+      "duotono_fuerza": 0.55
+    },
+    {
+      "id": "cap3_07",
+      "texto": "Y ahora haz la cuenta de lo de antes. Si pagas trescientos mil euros por el traspaso y ganas treinta mil al año, tardas diez años en recuperarlo. Con una concesión de veinticinco, el negocio sale. Pero no sobra.",
+      "duracion": 4.0,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_07b",
+      "texto": "Y ahora haz la cuenta de lo de antes. Si pagas trescientos mil euros por el traspaso y ganas treinta mil al año, tardas diez años en recuperarlo. Con una concesión de veinticinco, el negocio sale. Pero no sobra.",
+      "duracion": 4.88,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": " años",
+        "pie": "para recuperar 300.000 € si ganas 30.000 al año",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.0,
+        "entrada": "barrido"
+      },
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la cuenta"
+    },
+    {
+      "id": "cap3_07c",
+      "texto": "Y ahora haz la cuenta de lo de antes. Si pagas trescientos mil euros por el traspaso y ganas treinta mil al año, tardas diez años en recuperarlo. Con una concesión de veinticinco, el negocio sale. Pero no sobra.",
+      "duracion": 5.96,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "En una cafetería eliges a quién compras la leche. En un estanco, no.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "En un *estanco*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "llave",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.9099999999999997,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "En una cafetería eliges a quién compras la leche. En un estanco, no.",
+      "duracion": 3.02,
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/contract_signing_85.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "La ley dice que el estanquero solo puede comprar tabaco a distribuidores autorizados. Hay catorce. Pero uno de ellos, Logista, reparte el ochenta y ocho por ciento de todos los cigarrillos. En el tabaco de liar es, prácticamente, el único.",
+      "duracion": 3.46,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/rolling_paper_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_02b",
+      "texto": "La ley dice que el estanquero solo puede comprar tabaco a distribuidores autorizados. Hay catorce. Pero uno de ellos, Logista, reparte el ochenta y ocho por ciento de todos los cigarrillos. En el tabaco de liar es, prácticamente, el único.",
+      "duracion": 4.23,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_estanco/trucks_highway_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Hay *catorce*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02c",
+      "texto": "La ley dice que el estanquero solo puede comprar tabaco a distribuidores autorizados. Hay catorce. Pero uno de ellos, Logista, reparte el ochenta y ocho por ciento de todos los cigarrillos. En el tabaco de liar es, prácticamente, el único.",
+      "duracion": 4.23,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 87.88,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "de los cigarrillos los reparte Logista",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.43,
+        "duracion": 2.1,
+        "entrada": "barrido"
+      },
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "tu proveedor"
+    },
+    {
+      "id": "cap4_02d",
+      "texto": "La ley dice que el estanquero solo puede comprar tabaco a distribuidores autorizados. Hay catorce. Pero uno de ellos, Logista, reparte el ochenta y ocho por ciento de todos los cigarrillos. En el tabaco de liar es, prácticamente, el único.",
+      "duracion": 5.15,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "Y detrás hay cuatro fabricantes. Imperial, que antes fue Altadis, Philip Morris, JTI y BAT venden nueve de cada diez cigarrillos en España. Cada uno decide el precio de lo suyo.",
+      "duracion": 3.68,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Detrás hay cuatro *fabricantes*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03b",
+      "texto": "Y detrás hay cuatro fabricantes. Imperial, que antes fue Altadis, Philip Morris, JTI y BAT venden nueve de cada diez cigarrillos en España. Cada uno decide el precio de lo suyo.",
+      "duracion": 4.48,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 90.6,
+        "dec": 1,
+        "etiqueta_a": "cuatro fabricantes",
+        "etiqueta_b": "todos los demás",
+        "color_a": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "las marcas"
+    },
+    {
+      "id": "cap4_03c",
+      "texto": "Y detrás hay cuatro fabricantes. Imperial, que antes fue Altadis, Philip Morris, JTI y BAT venden nueve de cada diez cigarrillos en España. Cada uno decide el precio de lo suyo.",
+      "duracion": 5.47,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "El pedido te llega en un máximo de seis días. Cuánto crédito te dan y a qué plazo pagas lo fija el mayorista, no la ley. Y si dejas de pagar, te pueden cortar el crédito.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 6.0,
+        "dec": 0,
+        "sufijo": " días",
+        "pie": "como máximo, para recibir tu pedido",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.25,
+        "duracion": 1.12,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el pedido"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "El pedido te llega en un máximo de seis días. Cuánto crédito te dan y a qué plazo pagas lo fija el mayorista, no la ley. Y si dejas de pagar, te pueden cortar el crédito.",
+      "duracion": 3.75,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/cardboard_boxes_stacked_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04c",
+      "texto": "El pedido te llega en un máximo de seis días. Cuánto crédito te dan y a qué plazo pagas lo fija el mayorista, no la ley. Y si dejas de pagar, te pueden cortar el crédito.",
+      "duracion": 4.58,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_mercadona/aerial_highway_lanes_trucks_325.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "Así que tu proveedor es casi uno, tus marcas son cuatro y el precio es de ellos. Lo único que está de tu parte del mostrador es la persona que cobra.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/woman_behind_counter_73.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Tu *proveedor* es casi uno",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "Así que tu proveedor es casi uno, tus marcas son cuatro y el precio es de ellos. Lo único que está de tu parte del mostrador es la persona que cobra.",
+      "duracion": 3.31,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "Así que tu proveedor es casi uno, tus marcas son cuatro y el precio es de ellos. Lo único que está de tu parte del mostrador es la persona que cobra.",
+      "duracion": 3.85,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_06",
+      "texto": "Y hay algo más, que se nota mucho menos. Tu local no puede anunciar a ninguna marca. Es un estanco, no el escaparate de un fabricante: la ley exige neutralidad.",
+      "duracion": 3.15,
+      "movimiento": "drift_izq",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "Y hay algo más, que se nota mucho menos. Tu local no puede anunciar a ninguna marca. Es un estanco, no el escaparate de un fabricante: la ley exige neutralidad.",
+      "duracion": 3.84,
+      "movimiento": "contra_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06c",
+      "texto": "Y hay algo más, que se nota mucho menos. Tu local no puede anunciar a ninguna marca. Es un estanco, no el escaparate de un fabricante: la ley exige neutralidad.",
+      "duracion": 4.69,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/estanco_bookshop_window_street_9049.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "A cambio de la concesión, el Estado te pide cosas. Por escrito.",
+      "duracion": 2.06,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Por *escrito*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_01b",
+      "texto": "A cambio de la concesión, el Estado te pide cosas. Por escrito.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "latigo": "izq",
+      "texto_pantalla": {
+        "texto": "A cambio de la *concesión*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "Un horario mínimo: ocho horas de lunes a viernes y cuatro el sábado por la mañana. Tener siempre existencias suficientes. Y no cerrar más de un mes sin autorización, porque eso, también, es una infracción muy grave.",
+      "duracion": 3.14,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "billetes"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "horario mínimo",
+        "items": [
+          [
+            "Lunes a viernes",
+            8.0
+          ],
+          [
+            "Sábado por la mañana",
+            4.0
+          ]
+        ],
+        "sufijo": " h",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.23,
+        "duracion": 1.21,
+        "entrada": "barrido",
+        "destacar": {
+          "Sábado por la mañana": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap5_02b",
+      "texto": "Un horario mínimo: ocho horas de lunes a viernes y cuatro el sábado por la mañana. Tener siempre existencias suficientes. Y no cerrar más de un mes sin autorización, porque eso, también, es una infracción muy grave.",
+      "duracion": 3.83,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/market_stall_vegetables_customer_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_02c",
+      "texto": "Un horario mínimo: ocho horas de lunes a viernes y cuatro el sábado por la mañana. Tener siempre existencias suficientes. Y no cerrar más de un mes sin autorización, porque eso, también, es una infracción muy grave.",
+      "duracion": 3.83,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_estanco/lighter_flame_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_02d",
+      "texto": "Un horario mínimo: ocho horas de lunes a viernes y cuatro el sábado por la mañana. Tener siempre existencias suficientes. Y no cerrar más de un mes sin autorización, porque eso, también, es una infracción muy grave.",
+      "duracion": 4.69,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_estanco/card_payment_terminal_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "No puedes tener otro estanco. No puedes cederlo a un tercero para que lo lleve por ti. Y si algún día quieres vender, tienes que haber estado cinco años al frente, y quedarte tres años sin poder pujar por otro.",
+      "duracion": 3.5,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No puedes tener otro *estanco*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "No puedes tener otro estanco. No puedes cederlo a un tercero para que lo lleve por ti. Y si algún día quieres vender, tienes que haber estado cinco años al frente, y quedarte tres años sin poder pujar por otro.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No puedes tener otro *estanco*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "No puedes tener otro estanco. No puedes cederlo a un tercero para que lo lleve por ti. Y si algún día quieres vender, tienes que haber estado cinco años al frente, y quedarte tres años sin poder pujar por otro.",
+      "duracion": 5.21,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Tres años sin *pujar*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          24
+        ],
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap5_04",
+      "texto": "Y pagas por tenerlo. Un canon anual que fija el Estado y que, en dos mil veinticinco, sumó catorce millones doscientos noventa mil euros. De media, unos mil cien euros por estanco.",
+      "duracion": 3.77,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Pagas por *tenerlo*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "Y pagas por tenerlo. Un canon anual que fija el Estado y que, en dos mil veinticinco, sumó catorce millones doscientos noventa mil euros. De media, unos mil cien euros por estanco.",
+      "duracion": 4.59,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "billetes"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 14.29,
+        "dec": 2,
+        "sufijo": " M€",
+        "pie": "de canon pagaron todos los estancos en 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que pagas al Estado"
+    },
+    {
+      "id": "cap5_04c",
+      "texto": "Y pagas por tenerlo. Un canon anual que fija el Estado y que, en dos mil veinticinco, sumó catorce millones doscientos noventa mil euros. De media, unos mil cien euros por estanco.",
+      "duracion": 5.6,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "Lo que tienen en común es esto: todas ordenan el monopolio, no tu negocio. Y todas se pueden convertir en una sanción que acaba, en el peor caso, con la revocación de la concesión.",
+      "duracion": 3.49,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "balanza",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Lo que tienen en *común* es esto",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "Lo que tienen en común es esto: todas ordenan el monopolio, no tu negocio. Y todas se pueden convertir en una sanción que acaba, en el peor caso, con la revocación de la concesión.",
+      "duracion": 4.26,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05c",
+      "texto": "Lo que tienen en común es esto: todas ordenan el monopolio, no tu negocio. Y todas se pueden convertir en una sanción que acaba, en el peor caso, con la revocación de la concesión.",
+      "duracion": 5.19,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Por eso casi todos los estanqueros buscan otra caja.",
+      "duracion": 3.88,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_estanco/cigar_box_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "La ley lo permite. Un estanco puede vender cosas que no son tabaco con solo comunicárselo al Comisionado: papelería, regalos, pilas, recargas del móvil, artículos para fumadores, tarjetas de transporte. Y hay productos con nicotina que no son tabaco, como los vapers y las bolsas de nicotina: están fuera del monopolio y se pueden vender.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_estanco/tabacos_shop_night_arcade_plaza_9007.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "La ley lo *permite*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "La ley lo permite. Un estanco puede vender cosas que no son tabaco con solo comunicárselo al Comisionado: papelería, regalos, pilas, recargas del móvil, artículos para fumadores, tarjetas de transporte. Y hay productos con nicotina que no son tabaco, como los vapers y las bolsas de nicotina: están fuera del monopolio y se pueden vender.",
+      "duracion": 3.81,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_estanco/phone_on_notebooks_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "La ley lo permite. Un estanco puede vender cosas que no son tabaco con solo comunicárselo al Comisionado: papelería, regalos, pilas, recargas del móvil, artículos para fumadores, tarjetas de transporte. Y hay productos con nicotina que no son tabaco, como los vapers y las bolsas de nicotina: están fuera del monopolio y se pueden vender.",
+      "duracion": 3.81,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02d",
+      "texto": "La ley lo permite. Un estanco puede vender cosas que no son tabaco con solo comunicárselo al Comisionado: papelería, regalos, pilas, recargas del móvil, artículos para fumadores, tarjetas de transporte. Y hay productos con nicotina que no son tabaco, como los vapers y las bolsas de nicotina: están fuera del monopolio y se pueden vender.",
+      "duracion": 3.81,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_mercadona/aerial_flatbed_truck_loading_warehouse_326.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02e",
+      "texto": "La ley lo permite. Un estanco puede vender cosas que no son tabaco con solo comunicárselo al Comisionado: papelería, regalos, pilas, recargas del móvil, artículos para fumadores, tarjetas de transporte. Y hay productos con nicotina que no son tabaco, como los vapers y las bolsas de nicotina: están fuera del monopolio y se pueden vender.",
+      "duracion": 3.81,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02f",
+      "texto": "La ley lo permite. Un estanco puede vender cosas que no son tabaco con solo comunicárselo al Comisionado: papelería, regalos, pilas, recargas del móvil, artículos para fumadores, tarjetas de transporte. Y hay productos con nicotina que no son tabaco, como los vapers y las bolsas de nicotina: están fuera del monopolio y se pueden vender.",
+      "duracion": 4.65,
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "Ahí el margen ya no lo fija la ley, lo fijas tú. Pero tampoco hay cifras publicadas de cuánto pesa cada cosa.",
+      "duracion": 3.09,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Ahí el *margen* ya no lo fija la ley",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "Ahí el margen ya no lo fija la ley, lo fijas tú. Pero tampoco hay cifras publicadas de cuánto pesa cada cosa.",
+      "duracion": 4.6,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "Y está el sello. Los timbres y sellos los vende el estanquero a precio de sello, y por cada uno se queda un cuatro por ciento. En dos mil veinticinco se distribuyeron casi ciento noventa y tres millones de sellos entre todos los estancos: unos quince mil cada uno.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_estanco/stamp_collection_album_23.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Está el *sello*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "Y está el sello. Los timbres y sellos los vende el estanquero a precio de sello, y por cada uno se queda un cuatro por ciento. En dos mil veinticinco se distribuyeron casi ciento noventa y tres millones de sellos entre todos los estancos: unos quince mil cada uno.",
+      "duracion": 3.52,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 4.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "es lo que se queda por cada sello",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.31,
+        "duracion": 1.51,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "los sellos"
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "Y está el sello. Los timbres y sellos los vende el estanquero a precio de sello, y por cada uno se queda un cuatro por ciento. En dos mil veinticinco se distribuyeron casi ciento noventa y tres millones de sellos entre todos los estancos: unos quince mil cada uno.",
+      "duracion": 3.52,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_04d",
+      "texto": "Y está el sello. Los timbres y sellos los vende el estanquero a precio de sello, y por cada uno se queda un cuatro por ciento. En dos mil veinticinco se distribuyeron casi ciento noventa y tres millones de sellos entre todos los estancos: unos quince mil cada uno.",
+      "duracion": 3.52,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_estanco/no_smoking_sign_60.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04e",
+      "texto": "Y está el sello. Los timbres y sellos los vende el estanquero a precio de sello, y por cada uno se queda un cuatro por ciento. En dos mil veinticinco se distribuyeron casi ciento noventa y tres millones de sellos entre todos los estancos: unos quince mil cada uno.",
+      "duracion": 4.26,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 15300.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "sellos al año por estanco, de media",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.39,
+        "duracion": 2.17,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que no es tabaco"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Todo lo *demás* sí",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.3399999999999999,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
+      "duracion": 3.42,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Todo lo *demás* sí",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap6_05c",
+      "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
+      "duracion": 3.42,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "ceniza"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Todo lo *demás* sí",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05d",
+      "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Todo lo *demás* sí",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap7_01",
+      "texto": "Y llegamos a lo que de verdad pesa en la decisión: el futuro.",
+      "duracion": 4.81,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El *futuro*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_02",
+      "texto": "El consumo cae. En dos mil veinticinco, el volumen bajó un dos por ciento. En diez años, el número de cajetillas de cigarrillos vendidas cayó un ocho por ciento. Los fumadores diarios eran el treinta y cinco por ciento en mil novecientos noventa y siete, y el veintiséis por ciento en dos mil veinticuatro.",
+      "duracion": 4.09,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "El *consumo* cae",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_02b",
+      "texto": "El consumo cae. En dos mil veinticinco, el volumen bajó un dos por ciento. En diez años, el número de cajetillas de cigarrillos vendidas cayó un ocho por ciento. Los fumadores diarios eran el treinta y cinco por ciento en mil novecientos noventa y siete, y el veintiséis por ciento en dos mil veinticuatro.",
+      "duracion": 4.98,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 8.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "menos cajetillas de cigarrillos en diez años",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que viene"
+    },
+    {
+      "id": "cap7_02c",
+      "texto": "El consumo cae. En dos mil veinticinco, el volumen bajó un dos por ciento. En diez años, el número de cajetillas de cigarrillos vendidas cayó un ocho por ciento. Los fumadores diarios eran el treinta y cinco por ciento en mil novecientos noventa y siete, y el veintiséis por ciento en dos mil veinticuatro.",
+      "duracion": 4.98,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "fumadores diarios",
+        "items": [
+          [
+            "1997",
+            34.9
+          ],
+          [
+            "2024",
+            25.8
+          ]
+        ],
+        "sufijo": " %",
+        "dec": 1,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "2024": "acento"
+        }
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap7_02d",
+      "texto": "El consumo cae. En dos mil veinticinco, el volumen bajó un dos por ciento. En diez años, el número de cajetillas de cigarrillos vendidas cayó un ocho por ciento. Los fumadores diarios eran el treinta y cinco por ciento en mil novecientos noventa y siete, y el veintiséis por ciento en dos mil veinticuatro.",
+      "duracion": 6.08,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_mercadona/worker_cleaning_industrial_floor_warehouse_127.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_03",
+      "texto": "El Estado, mientras tanto, compensa con precio. Sube el impuesto, sube el paquete, y baja el número de paquetes. El estanquero se queda con un porcentaje de un precio que sube, sobre unas ventas que bajan.",
+      "duracion": 3.97,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/profit_graph_rising_221.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_03b",
+      "texto": "El Estado, mientras tanto, compensa con precio. Sube el impuesto, sube el paquete, y baja el número de paquetes. El estanquero se queda con un porcentaje de un precio que sube, sobre unas ventas que bajan.",
+      "duracion": 4.84,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_03c",
+      "texto": "El Estado, mientras tanto, compensa con precio. Sube el impuesto, sube el paquete, y baja el número de paquetes. El estanquero se queda con un porcentaje de un precio que sube, sobre unas ventas que bajan.",
+      "duracion": 5.89,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "balanza",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "sube"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "El *Estado*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap7_04",
+      "texto": "Y hay una ley en camino. En julio de dos mil veintiséis el Consejo de Ministros aprobó el proyecto de ley del tabaco y lo envió al Congreso. Amplía los espacios sin humo y equipara los vapers al tabaco. El empaquetado neutro, de momento, no está dentro. Todavía puede cambiar.",
+      "duracion": 3.98,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_90.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Hay una ley en *camino*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_04b",
+      "texto": "Y hay una ley en camino. En julio de dos mil veintiséis el Consejo de Ministros aprobó el proyecto de ley del tabaco y lo envió al Congreso. Amplía los espacios sin humo y equipara los vapers al tabaco. El empaquetado neutro, de momento, no está dentro. Todavía puede cambiar.",
+      "duracion": 4.86,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_04c",
+      "texto": "Y hay una ley en camino. En julio de dos mil veintiséis el Consejo de Ministros aprobó el proyecto de ley del tabaco y lo envió al Congreso. Amplía los espacios sin humo y equipara los vapers al tabaco. El empaquetado neutro, de momento, no está dentro. Todavía puede cambiar.",
+      "duracion": 4.86,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_04d",
+      "texto": "Y hay una ley en camino. En julio de dos mil veintiséis el Consejo de Ministros aprobó el proyecto de ley del tabaco y lo envió al Congreso. Amplía los espacios sin humo y equipara los vapers al tabaco. El empaquetado neutro, de momento, no está dentro. Todavía puede cambiar.",
+      "duracion": 5.92,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_05",
+      "texto": "La red también se encoge. En dos mil veinticinco había doscientos nueve estancos menos que el año anterior, un uno coma seis por ciento, en parte porque Hacienda depuró los que ya no estaban activos. Y sin subasta desde dos mil veintidós, no entra ninguno nuevo.",
+      "duracion": 3.57,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/tabacos_shop_night_arcade_plaza_9007.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "La red *también* se encoge",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_05b",
+      "texto": "La red también se encoge. En dos mil veinticinco había doscientos nueve estancos menos que el año anterior, un uno coma seis por ciento, en parte porque Hacienda depuró los que ya no estaban activos. Y sin subasta desde dos mil veintidós, no entra ninguno nuevo.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 209.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "estancos menos que el año anterior",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la red se encoge"
+    },
+    {
+      "id": "cap7_05c",
+      "texto": "La red también se encoge. En dos mil veinticinco había doscientos nueve estancos menos que el año anterior, un uno coma seis por ciento, en parte porque Hacienda depuró los que ya no estaban activos. Y sin subasta desde dos mil veintidós, no entra ninguno nuevo.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "balanza",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "La red también se *encoge*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap7_05d",
+      "texto": "La red también se encoge. En dos mil veinticinco había doscientos nueve estancos menos que el año anterior, un uno coma seis por ciento, en parte porque Hacienda depuró los que ya no estaban activos. Y sin subasta desde dos mil veintidós, no entra ninguno nuevo.",
+      "duracion": 5.31,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "balanza",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "La red también se *encoge*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap7_06",
+      "texto": "Y mientras, el contrabando. En dos mil veinticinco se incautaron once millones y medio de cajetillas ilegales, casi el doble que el año anterior. Es el tabaco que se vende sin pagar los impuestos, y por eso cuesta mucho menos.",
+      "duracion": 3.29,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "El *contrabando*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          24
+        ],
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap7_06b",
+      "texto": "Y mientras, el contrabando. En dos mil veinticinco se incautaron once millones y medio de cajetillas ilegales, casi el doble que el año anterior. Es el tabaco que se vende sin pagar los impuestos, y por eso cuesta mucho menos.",
+      "duracion": 4.02,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "contador",
+        "valor": 11.5,
+        "dec": 1,
+        "sufijo": " M",
+        "pie": "de cajetillas ilegales incautadas en 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 1.96,
+        "entrada": "barrido"
+      },
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "contrabando"
+    },
+    {
+      "id": "cap7_06c",
+      "texto": "Y mientras, el contrabando. En dos mil veinticinco se incautaron once millones y medio de cajetillas ilegales, casi el doble que el año anterior. Es el tabaco que se vende sin pagar los impuestos, y por eso cuesta mucho menos.",
+      "duracion": 4.02,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/cardboard_boxes_stacked_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_06d",
+      "texto": "Y mientras, el contrabando. En dos mil veinticinco se incautaron once millones y medio de cajetillas ilegales, casi el doble que el año anterior. Es el tabaco que se vende sin pagar los impuestos, y por eso cuesta mucho menos.",
+      "duracion": 4.9,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_estanco/courier_unloading_boxes_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Vamos a hacer la cuenta final. La de qué es tuyo.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "de qué eres dueño",
+        "lineas": [
+          [
+            "Tuyo",
+            "local, mobiliario, mercancía y el 8,5 %"
+          ],
+          [
+            "No es tuyo",
+            "la licencia, el precio, el proveedor, el horario"
+          ]
+        ],
+        "total": "0,46 €",
+        "etiqueta_total": "de cada paquete de 5,44 €",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.31,
+        "duracion": 2.15,
+        "entrada": "barrido"
+      },
+      "composicion": "izquierda",
+      "fondo_color": "acento"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Es tuyo el local, o su alquiler. El mobiliario. La mercancía, desde que la pagas. Los empleados, si los tienes. El ocho y medio por ciento de cada paquete. Y el derecho a traspasarlo, con permiso, a alguien que cumpla los requisitos.",
+      "duracion": 3.59,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Es tuyo el *local*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "Es tuyo el local, o su alquiler. El mobiliario. La mercancía, desde que la pagas. Los empleados, si los tienes. El ocho y medio por ciento de cada paquete. Y el derecho a traspasarlo, con permiso, a alguien que cumpla los requisitos.",
+      "duracion": 4.37,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_02c",
+      "texto": "Es tuyo el local, o su alquiler. El mobiliario. La mercancía, desde que la pagas. Los empleados, si los tienes. El ocho y medio por ciento de cada paquete. Y el derecho a traspasarlo, con permiso, a alguien que cumpla los requisitos.",
+      "duracion": 4.37,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02d",
+      "texto": "Es tuyo el local, o su alquiler. El mobiliario. La mercancía, desde que la pagas. Los empleados, si los tienes. El ocho y medio por ciento de cada paquete. Y el derecho a traspasarlo, con permiso, a alguien que cumpla los requisitos.",
+      "duracion": 5.34,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "No es tuya la licencia: es del Estado y dura veinticinco años. No es tuyo el precio: lo pone el fabricante. No es tuyo el proveedor: casi siempre es el mismo. No es tuyo el horario, ni el número de estancos que puedes tener, ni la manera de venderlo.",
+      "duracion": 3.65,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 25.0,
+        "dec": 0,
+        "sufijo": " años",
+        "color": [
+          240,
+          84,
+          74
+        ],
+        "pie": "Estado",
+        "y": 0.62,
+        "retardo": 0.6499999999999999,
+        "duracion": 1.3,
+        "entrada": "desplome"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "No es tuya la *licencia*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "No es tuya la licencia: es del Estado y dura veinticinco años. No es tuyo el precio: lo pone el fabricante. No es tuyo el proveedor: casi siempre es el mismo. No es tuyo el horario, ni el número de estancos que puedes tener, ni la manera de venderlo.",
+      "duracion": 4.46,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03c",
+      "texto": "No es tuya la licencia: es del Estado y dura veinticinco años. No es tuyo el precio: lo pone el fabricante. No es tuyo el proveedor: casi siempre es el mismo. No es tuyo el horario, ni el número de estancos que puedes tener, ni la manera de venderlo.",
+      "duracion": 4.46,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03d",
+      "texto": "No es tuya la licencia: es del Estado y dura veinticinco años. No es tuyo el precio: lo pone el fabricante. No es tuyo el proveedor: casi siempre es el mismo. No es tuyo el horario, ni el número de estancos que puedes tener, ni la manera de venderlo.",
+      "duracion": 5.43,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Y antes de vender cada paquete, ya lo has comprado: el noventa y uno y medio por ciento de su precio, impuestos incluidos. El riesgo de venderlo es tuyo.",
+      "duracion": 4.19,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 91.5,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 1,
+        "pie": "del precio de cada paquete lo pagas antes de venderlo",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.42,
+        "duracion": 2.07,
+        "entrada": "barrido"
+      },
+      "composicion": "derecha",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "tu inversión"
+    },
+    {
+      "id": "cierre_04b",
+      "texto": "Y antes de vender cada paquete, ya lo has comprado: el noventa y uno y medio por ciento de su precio, impuestos incluidos. El riesgo de venderlo es tuyo.",
+      "duracion": 6.24,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/person_thinking_worried_desk_247.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 3.23,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "Hacienda",
+            4.25
+          ],
+          [
+            "fabricante y distribuidor",
+            0.73
+          ],
+          [
+            "el dueño",
+            0.46
+          ]
+        ],
+        "colores": {
+          "Hacienda": "serie",
+          "fabricante y distribuidor": "tenue",
+          "el dueño": "acento"
+        },
+        "total": "5,44 € el paquete medio",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.23,
+        "duracion": 1.3,
+        "entrada": "barrido"
+      },
+      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 3.06,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_estanco/machine_rollers_boxes_factory_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_05c",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 4.43,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "El fabricante y el *distribuidor*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05d",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Por eso la *cifra*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_05dx",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Setenta y tres *céntimos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05e",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.23,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El fabricante y el *distribuidor*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_05ex",
+      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "Setenta y tres *céntimos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado",
+      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
+      "clip_desde": 0.3,
+      "duotono_fuerza": 0.55
+    },
+    {
+      "id": "cierre_06",
+      "texto": "Cuarenta y seis céntimos. Con permiso del Estado.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "grafico": {
+        "tipo": "contador",
+        "valor": 46.0,
+        "dec": 0,
+        "sufijo": "",
+        "color": [
+          240,
+          84,
+          74
+        ],
+        "pie": "céntimos",
+        "y": 0.26,
+        "retardo": 0.25,
+        "duracion": 2.0,
+        "entrada": "rebote"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Con permiso del *Estado*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          24
+        ],
+        "estilo": "sube"
+      }
+    }
+  ]
+}

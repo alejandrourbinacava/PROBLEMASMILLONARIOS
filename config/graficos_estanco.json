@@ -1,0 +1,817 @@
+[
+  {
+    "_nota": "LA CIFRA A SECAS. Abre el episodio.",
+    "donde": "cuarenta y seis céntimos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "de cada paquete"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 0.46,
+      "dec": 2,
+      "sufijo": " €",
+      "pie": "lo que le queda al estanquero",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "EL PAQUETE ENTERO: 5,44 € = Hacienda 4,25 + fabricante y distribuidor 0,73 + estanquero 0,46 (calculo propio con la Ley 38/1992).",
+    "donde": "cuatro euros con veinticinco",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        [
+          "Hacienda",
+          4.25
+        ],
+        [
+          "fabricante y distribuidor",
+          0.73
+        ],
+        [
+          "estanquero",
+          0.46
+        ]
+      ],
+      "colores": {
+        "Hacienda": "serie",
+        "fabricante y distribuidor": "tenue",
+        "estanquero": "acento"
+      },
+      "total": "5,44 € el paquete medio",
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ocho y medio por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que dice la ley"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 8.5,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "es el margen del estanquero",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Rango de prensa (El Confidencial Digital, 2024); no hay precio oficial.",
+    "donde": "de trescientos mil a cuatrocientos cincuenta mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "traspaso de un estanco, según la prensa",
+      "items": [
+        [
+          "Desde",
+          300000.0
+        ],
+        [
+          "Hasta",
+          450000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Hasta": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "Puja del listado provisional de 2023.",
+    "donde": "siete millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "subasta de 2022"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 7.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "la oferta más alta de la subasta, en La Jonquera",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "doce mil quinientos ochenta y seis",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la red"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 12586.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "estancos en España",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "setenta y cuatro millones setecientos mil",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la subasta de 2022"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 74.7,
+      "dec": 1,
+      "sufijo": " M€",
+      "pie": "ingresó Hacienda con 203 estancos",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "trescientos cincuenta y siete estancos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los traspasos"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 357.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "estancos cambiaron de manos en 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "dura veinticinco años",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que firmas"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 25.0,
+      "dec": 0,
+      "sufijo": " años",
+      "pie": "dura la concesión",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "IVA + impuesto especial del paquete medio. Calculo propio con los tipos del BOE.",
+    "donde": "noventa y cuatro céntimos son iva",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "paquete de 5,44 €",
+      "lineas": [
+        [
+          "IVA",
+          "0,94 €"
+        ],
+        [
+          "Impuesto especial del tabaco",
+          "3,31 €"
+        ]
+      ],
+      "total": "4,25 €",
+      "etiqueta_total": "para Hacienda",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "setenta y ocho por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el paquete medio"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 78.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "del precio es para Hacienda",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "le quedan cuarenta y seis céntimos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que le queda"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 0.46,
+      "dec": 2,
+      "sufijo": " €",
+      "pie": "para el estanquero, de un paquete de 5,44 €",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.9,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "más de ciento veinte mil euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "descuentos prohibidos"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 120000.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "multa desde, por rebajar el precio",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "cuatrocientos trece millones",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la subida de impuestos"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 413.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "más recaudó Hacienda en 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "trece mil setecientos once millones",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el mercado"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 13711.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "de tabaco vendido en 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "casi un millón cien mil",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la caja de un año"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1.1,
+      "dec": 1,
+      "sufijo": " M€",
+      "pie": "de ventas por estanco, de media",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "noventa y tres mil euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "antes de pagar nada"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 93000.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "de margen bruto medio por estanco",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Los 30.000-37.000 € netos son casos de prensa.",
+    "donde": "no es una media",
+    "texto_pantalla": {
+      "texto": "Un caso, *no* una media",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        24
+      ],
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "diez años en recuperarlo",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la cuenta"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 10.0,
+      "dec": 0,
+      "sufijo": " años",
+      "pie": "para recuperar 300.000 € si ganas 30.000 al año",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.0,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ochenta y ocho por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "tu proveedor"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 87.88,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "de los cigarrillos los reparte Logista",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Altadis/Imperial 27,41 + Philip Morris 27,10 + JTI 26,89 + BAT 9,24 = 90,64 %.",
+    "donde": "nueve de cada diez cigarrillos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "las marcas"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "valor": 90.6,
+      "dec": 1,
+      "etiqueta_a": "cuatro fabricantes",
+      "etiqueta_b": "todos los demás",
+      "color_a": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "máximo de seis días",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el pedido"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 6.0,
+      "dec": 0,
+      "sufijo": " días",
+      "pie": "como máximo, para recibir tu pedido",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ocho horas de lunes a viernes",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "horario mínimo",
+      "items": [
+        [
+          "Lunes a viernes",
+          8.0
+        ],
+        [
+          "Sábado por la mañana",
+          4.0
+        ]
+      ],
+      "sufijo": " h",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Sábado por la mañana": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "catorce millones doscientos noventa mil euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que pagas al Estado"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 14.29,
+      "dec": 2,
+      "sufijo": " M€",
+      "pie": "de canon pagaron todos los estancos en 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "por cada uno se queda un cuatro por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los sellos"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 4.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "es lo que se queda por cada sello",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "unos quince mil cada uno",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que no es tabaco"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 15300.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "sellos al año por estanco, de media",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "cayó un ocho por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que viene"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 8.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "menos cajetillas de cigarrillos en diez años",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "treinta y cinco por ciento en mil novecientos noventa y siete",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "fumadores diarios",
+      "items": [
+        [
+          "1997",
+          34.9
+        ],
+        [
+          "2024",
+          25.8
+        ]
+      ],
+      "sufijo": " %",
+      "dec": 1,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "2024": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "doscientos nueve estancos menos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la red se encoge"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 209.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "estancos menos que el año anterior",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "once millones y medio",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "contrabando"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 11.5,
+      "dec": 1,
+      "sufijo": " M",
+      "pie": "de cajetillas ilegales incautadas en 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "LA CUENTA FINAL: lo que es tuyo y lo que no.",
+    "donde": "vamos a hacer la cuenta final",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "de qué eres dueño",
+      "lineas": [
+        [
+          "Tuyo",
+          "local, mobiliario, mercancía y el 8,5 %"
+        ],
+        [
+          "No es tuyo",
+          "la licencia, el precio, el proveedor, el horario"
+        ]
+      ],
+      "total": "0,46 €",
+      "etiqueta_total": "de cada paquete de 5,44 €",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "noventa y uno y medio por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "tu inversión"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 91.5,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "del precio de cada paquete lo pagas antes de venderlo",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El desglose final repite el del gancho, con el dueno resaltado.",
+    "donde": "en cada paquete de cinco euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        [
+          "Hacienda",
+          4.25
+        ],
+        [
+          "fabricante y distribuidor",
+          0.73
+        ],
+        [
+          "el dueño",
+          0.46
+        ]
+      ],
+      "colores": {
+        "Hacienda": "serie",
+        "fabricante y distribuidor": "tenue",
+        "el dueño": "acento"
+      },
+      "total": "5,44 € el paquete medio",
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "El remate.",
+    "donde": "con permiso del estado",
+    "texto_pantalla": {
+      "texto": "Con permiso del *Estado*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        24
+      ],
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "Ilustracion que se quedaba muda: el contrabando.",
+    "donde": "y mientras, el contrabando",
+    "texto_pantalla": {
+      "texto": "El *contrabando*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        24
+      ],
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "Ilustracion muda del final de la frase: tres anos sin pujar.",
+    "donde": "quedarte tres años sin poder pujar",
+    "texto_pantalla": {
+      "texto": "Tres años sin *pujar*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        24
+      ],
+      "estilo": "sube"
+    }
+  }
+]

@@ -244,6 +244,33 @@ TEMAS_SUPERMERCADO = [
                     "propietario", "escala", "franquicia", "covi", "dia")),
 ]
 
+TEMAS_ESTANCO = [
+    ("tienda",    ("estanco", "estancos", "local", "mostrador", "puerta",
+                   "persiana", "escaparate", "calle", "kiosco", "tienda")),
+    ("producto",  ("tabaco", "paquete", "paquetes", "cajetilla", "cajetillas",
+                   "cigarrillos", "cigarros", "picadura", "liar", "vapers",
+                   "nicotina", "marca", "marcas", "fumar", "fumadores")),
+    ("sellos",    ("sello", "sellos", "timbre", "timbres", "recargas",
+                   "papeleria", "regalos", "pilas", "tarjetas", "transporte")),
+    ("caja",      ("caja", "cobra", "cobrar", "cliente", "clientes", "ventas",
+                   "vende", "vender", "vendes", "vendido", "vendidos")),
+    ("proveedor", ("proveedor", "distribuidor", "distribuidores", "logista",
+                   "fabricante", "fabricantes", "pedido", "mayorista",
+                   "mayoristas", "reparte", "reparten", "credito")),
+    ("estado",    ("hacienda", "impuesto", "impuestos", "iva", "estado",
+                   "ministerio", "concesion", "licencia", "subasta", "ley",
+                   "boe", "comisionado", "monopolio", "canon", "multa",
+                   "sancion", "infraccion", "congreso", "proyecto")),
+    ("riesgo",    ("contrabando", "cae", "caida", "baja", "bajo", "cierran",
+                   "cierre", "revocacion", "ilegales", "incautaron", "futuro")),
+    ("dueno",     ("dueno", "estanquero", "estanqueros", "titular",
+                   "herederos", "propiedad", "tuyo", "tuya")),
+    ("dinero",    ("euros", "euro", "millones", "millon", "dinero", "margen",
+                   "beneficio", "precio", "cuesta", "mil", "ingreso")),
+    ("modelo",    ("traspaso", "comprar", "compras", "contrato", "firmas",
+                   "autoriza", "autorizacion")),
+]
+
 TEMAS_FARMACIA = [
     ("farmacia",  ("farmacia", "farmacias", "botica", "botiquin", "cruz",
                    "mostrador", "local", "tienda", "persiana", "abrir",

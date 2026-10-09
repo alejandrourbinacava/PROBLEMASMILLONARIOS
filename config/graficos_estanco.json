@@ -685,7 +685,7 @@
           "local, mobiliario, mercancía y el 8,5 %"
         ],
         [
-          "No es tuyo",
+          "Ajeno",
           "la licencia, el precio, el proveedor, el horario"
         ]
       ],
@@ -811,6 +811,27 @@
         24,
         24
       ],
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "Segunda mitad de la frase; antes repetia el titular de la primera.",
+    "donde": "no significa aquí lo que crees",
+    "texto_pantalla": {
+      "texto": "«Comprar» no es lo que *crees*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
       "estilo": "sube"
     }
   }

@@ -541,11 +541,17 @@
         "px": 108,
         "y": 0.68,
         "acento": [
-          240,
-          84,
-          74
+          206,
+          32,
+          38
         ],
-        "estilo": "sube"
+        "estilo": "sube",
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro"
       },
       "fondo": "plato",
       "tipo": "grafico",
@@ -585,7 +591,7 @@
       },
       "composicion": "centrado",
       "texto_pantalla": {
-        "texto": "Te aviso de algo desde *ahora*",
+        "texto": "«Comprar» no es lo que *crees*",
         "px": 96,
         "y": 0.64,
         "acento": [
@@ -599,8 +605,7 @@
           28
         ],
         "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "sube"
       }
     },
     {
@@ -3764,11 +3769,17 @@
         "px": 132,
         "y": 0.68,
         "acento": [
-          240,
-          84,
-          74
+          206,
+          32,
+          38
         ],
-        "estilo": "derecha"
+        "estilo": "derecha",
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro"
       },
       "fondo": "plato",
       "tipo": "grafico",
@@ -4404,7 +4415,7 @@
             "local, mobiliario, mercancía y el 8,5 %"
           ],
           [
-            "No es tuyo",
+            "Ajeno",
             "la licencia, el precio, el proveedor, el horario"
           ]
         ],

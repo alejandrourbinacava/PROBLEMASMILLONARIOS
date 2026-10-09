@@ -651,7 +651,20 @@ _ESTANCO = {
     "tercero": ["handshake", "contract", "signing"],
     "cifras": ["calculator", "numbers", "documents"],
 }
-for _k, _v in _ESTANCO.items():
+# segunda tanda (fotos de tabaco, puros y kioscos): se SUMA a la primera
+_ESTANCO2 = {
+    "hojas": ["leaves", "tobacco"], "hoja": ["leaves", "tobacco"],
+    "kiosco": ["kiosk", "newspaper"], "prensa": ["kiosk", "newspaper"],
+    "cliente": ["customers"], "clientes": ["customers"],
+    "noche": ["night"], "calle": ["street"],
+    "puros": ["cigar", "cigars"], "habanos": ["cigar", "cigars"],
+    "fabrica": ["workshop", "leaves", "cigar"], "fabricante": ["workshop", "leaves", "cigar"],
+    "fabricantes": ["workshop", "leaves", "cigar"],
+    "proveedor": ["workshop", "leaves"], "proveedores": ["workshop", "leaves"],
+    "local": ["storefront", "street"], "tienda": ["storefront", "street"],
+    "cerrar": ["closed", "storefront"], "persiana": ["closed", "storefront", "shutter"],
+}
+for _k, _v in list(_ESTANCO.items()) + list(_ESTANCO2.items()):
     LEXICO[_k] = list(dict.fromkeys(LEXICO.get(_k, []) + _v))
 
 VACIAS = {"que", "los", "las", "del", "por", "con", "para", "una", "uno",

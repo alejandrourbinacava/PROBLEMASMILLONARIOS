@@ -99,7 +99,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/tabacos_shop_porch_brick_building_sign_9003.mp4",
+      "clip": "stock_estanco/dried_tobacco_leaves_stacks_warehouse_9020.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -177,7 +177,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_estanco/tabacos_shop_old_stone_facade_sign_9013.mp4",
+      "clip": "stock_estanco/tabacos_shop_porch_brick_building_sign_9003.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -254,7 +254,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_estanco/tabacos_lottery_shop_corner_building_striped_facade_9017.mp4",
+      "clip": "stock_estanco/tabacos_shop_old_stone_facade_sign_9013.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -270,7 +270,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_estanco/tabacos_sign_stone_arcade_corner_9051.mp4",
+      "clip": "stock_estanco/tabacos_lottery_shop_corner_building_striped_facade_9017.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -335,7 +335,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_estanco/cash_register_33.mp4",
+      "clip": "stock_estanco/newspaper_kiosk_street_girona_spain_9099.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -351,7 +351,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_estanco/paying_cash_counter_34.mp4",
+      "clip": "stock_estanco/cash_register_33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -396,7 +396,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/tabacos_shop_closed_shutters_yellow_mailbox_9016.mp4",
+      "clip": "stock_estanco/elderly_shop_owner_69.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -412,7 +412,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip": "stock_estanco/dried_tobacco_leaves_texture_closeup_9021.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -439,7 +439,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip": "stock_estanco/tobacco_leaves_worker_village_green_9022.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -455,7 +455,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_estanco/men_inspecting_tobacco_leaves_warehouse_9019.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "grafico": {
@@ -676,7 +676,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/tabacos_wooden_sign_number_9169.mp4",
+      "clip": "stock_estanco/tabacos_shop_closed_shutters_yellow_mailbox_9016.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -692,7 +692,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_estanco/old_tabacos_shop_shutter_vine_9047.mp4",
+      "clip": "stock_estanco/tabacos_sign_stone_arcade_corner_9051.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -858,7 +858,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_estanco/estanco_bookshop_window_street_9049.mp4",
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -885,7 +885,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip": "stock_mercadona/aerial_town_street_rooftops_224.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -896,17 +896,43 @@
       "id": "cap1_02d",
       "texto": "Por eso no se puede montar un estanco como se monta una cafetería. No eliges la calle: las plazas las crea el Ministerio de Hacienda, por zonas, con distancias mínimas entre una y otra, y las reparte por subasta.",
       "duracion": 4.47,
-      "movimiento": "drift_izq",
-      "grade": "dorado_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
-      "clip": "stock_mercadona/aerial_town_street_rooftops_224.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "mapa",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No eliges la *calle*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "_lat_sal": -1.0,
       "transicion": "corte",
       "composicion": "izquierda"
@@ -979,7 +1005,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/cash_register_33.mp4",
+      "clip": "stock_estanco/tabacos_shop_old_stone_facade_sign_9013.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1121,7 +1147,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/counting_coins_36.mp4",
+      "clip": "stock_estanco/cash_register_33.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1180,7 +1206,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_estanco/tabacos_shop_closed_shutters_yellow_mailbox_9016.mp4",
+      "clip": "stock_estanco/tabacos_shop_porch_brick_building_sign_9003.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1196,7 +1222,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/tabacos_shop_old_stone_facade_sign_9013.mp4",
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1212,7 +1238,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_estanco/tabacos_shop_porch_brick_building_sign_9003.mp4",
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1321,44 +1347,18 @@
       "id": "cap1_08",
       "texto": "Trescientos mil euros, en total, para cobrar un ocho y medio por ciento durante un tiempo que fija otro.",
       "duracion": 6.8,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_estanco/counting_coins_36.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
-      "composicion": "centrado",
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "*Trescientos* mil euros",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap2_01",
@@ -1457,7 +1457,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_estanco/tabacos_wooden_sign_number_9169.mp4",
+      "clip": "stock_estanco/dried_tobacco_leaves_stacks_warehouse_9020.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1701,7 +1701,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip": "stock_estanco/newspaper_kiosk_street_girona_spain_9099.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1712,15 +1712,42 @@
       "id": "cap2_06b",
       "texto": "Piensa lo que eso significa para un negocio. No puedes competir en precio. No puedes hacer una oferta. No puedes ni siquiera ser el estanco barato del barrio.",
       "duracion": 3.43,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_estanco/tabacos_sign_stone_arcade_corner_9051.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No puedes *competir* en precio",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_06c",
+      "texto": "Piensa lo que eso significa para un negocio. No puedes competir en precio. No puedes hacer una oferta. No puedes ni siquiera ser el estanco barato del barrio.",
+      "duracion": 4.19,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "mapa",
@@ -1748,22 +1775,6 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cap2_06c",
-      "texto": "Piensa lo que eso significa para un negocio. No puedes competir en precio. No puedes hacer una oferta. No puedes ni siquiera ser el estanco barato del barrio.",
-      "duracion": 4.19,
-      "movimiento": "contra_izq",
-      "grade": "acero_suave",
-      "efectos": [
-        "polvo"
-      ],
-      "clip": "stock_estanco/busy_shopping_street_90.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
       "composicion": "derecha"
     },
     {
@@ -1775,7 +1786,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip": "stock_estanco/paying_cash_counter_34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1802,7 +1813,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_estanco/paying_cash_counter_34.mp4",
+      "clip": "stock_mercadona/government_building_facade_arches_145.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1813,44 +1824,17 @@
       "id": "cap2_07c",
       "texto": "Y cada vez que sube el impuesto, tu cliente lo nota en el paquete y tú, apenas, en la cuenta. En dos mil veinticinco hubo una subida generalizada, la primera en doce años, y Hacienda recaudó cuatrocientos trece millones de euros más.",
       "duracion": 4.0,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "acero_suave",
       "efectos": [
         "humo"
       ],
+      "clip": "stock_estanco/men_inspecting_tobacco_leaves_warehouse_9019.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.857,
-      "composicion": "izquierda",
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "balanza",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe",
-        "flecha": "sube"
-      },
-      "texto_pantalla": {
-        "texto": "Cada vez que sube el *impuesto*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap2_07d",
@@ -1863,9 +1847,7 @@
       ],
       "capas": [],
       "cierra_bloque": true,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
+      "composicion": "centrado",
       "grafico": {
         "tipo": "contador",
         "valor": 413.0,
@@ -1879,7 +1861,8 @@
         "duracion": 2.2,
         "entrada": "barrido"
       },
-      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
       "fondo_color": "acento",
       "fondo_titulo": "la subida de impuestos"
     },
@@ -1968,7 +1951,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip": "stock_banco/money_counting_machine_122.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1987,7 +1970,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_estanco/handshake_deal_83.mp4",
+      "clip": "stock_banco/balance_scale_money_194.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -2015,7 +1998,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_estanco/old_tabacos_shop_shutter_vine_9047.mp4",
+      "clip": "stock_estanco/tabacos_shop_closed_shutters_yellow_mailbox_9016.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -2065,10 +2048,9 @@
         "duracion": 2.17,
         "entrada": "barrido"
       },
+      "composicion": "derecha",
       "fondo": "plato",
       "tipo": "grafico",
-      "fondo_fase": 0.143,
-      "composicion": "derecha",
       "fondo_color": "acento",
       "fondo_titulo": "la caja de un año"
     },
@@ -2184,7 +2166,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_estanco/card_payment_terminal_35.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2200,7 +2182,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2216,7 +2198,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2232,7 +2214,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2242,49 +2224,23 @@
     {
       "id": "cap3_06",
       "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
-      "duracion": 3.87,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "duracion": 3.83,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
       "efectos": [
-        "destellos"
+        "lluvia"
       ],
+      "clip": "stock_estanco/tabacos_neon_night_madrid_snow_street_9050.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.286,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "billetes",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "Lo que hay son *casos*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda"
     },
     {
       "id": "cap3_06b",
       "texto": "Lo que hay son casos. Estanqueros que han contado en la prensa que, sobre un millón de euros vendidos, se les quedaron entre treinta mil y treinta y siete mil euros limpios. No es una media. Es lo que dicen unos pocos, y como cada estanco depende de su calle, puede ser mucho más o mucho menos.",
-      "duracion": 3.6,
+      "duracion": 3.64,
       "movimiento": "estatico",
       "grade": "frio_suave",
       "efectos": [
@@ -2584,7 +2540,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/contract_signing_85.mp4",
+      "clip": "stock_estanco/busy_shopping_street_90.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2603,7 +2559,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_estanco/rolling_paper_16.mp4",
+      "clip": "stock_estanco/cigar_rolling_machine_workshop_table_9011.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2620,7 +2576,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_estanco/trucks_highway_47.mp4",
+      "clip": "stock_estanco/rolling_paper_16.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2680,7 +2636,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+      "clip": "stock_estanco/cigar_mold_wooden_box_closeup_9013.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2816,7 +2772,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_mercadona/aerial_highway_lanes_trucks_325.mp4",
+      "clip": "stock_mercadona/truck_highway_bridge_delivery_119.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2853,7 +2809,7 @@
     {
       "id": "cap4_05b",
       "texto": "Así que tu proveedor es casi uno, tus marcas son cuatro y el precio es de ellos. Lo único que está de tu parte del mostrador es la persona que cobra.",
-      "duracion": 3.31,
+      "duracion": 3.12,
       "movimiento": "push_in",
       "grade": "sepia_archivo",
       "efectos": [
@@ -2869,17 +2825,43 @@
     {
       "id": "cap4_05c",
       "texto": "Así que tu proveedor es casi uno, tus marcas son cuatro y el precio es de ellos. Lo único que está de tu parte del mostrador es la persona que cobra.",
-      "duracion": 3.85,
+      "duracion": 4.04,
       "movimiento": "estatico",
-      "grade": "sepia_archivo",
+      "grade": "neutro",
       "efectos": [
-        "destellos"
+        "niebla"
       ],
-      "clip": "stock_banco/money_counting_machine_122.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_verde",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Tu *proveedor* es casi uno",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "derecha"
     },
     {
@@ -2891,7 +2873,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip": "stock_estanco/estanco_bookshop_window_street_9049.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2907,7 +2889,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -2923,7 +2905,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/estanco_bookshop_window_street_9049.mp4",
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3066,7 +3048,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_estanco/market_stall_vegetables_customer_10.mp4",
+      "clip": "stock_estanco/newsstand_3.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3085,7 +3067,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_estanco/lighter_flame_19.mp4",
+      "clip": "stock_estanco/market_stall_vegetables_customer_10.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3102,7 +3084,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_estanco/card_payment_terminal_35.mp4",
+      "clip": "stock_estanco/lighter_flame_19.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3368,7 +3350,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -3401,7 +3383,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_estanco/tabacos_shop_night_arcade_plaza_9007.mp4",
+      "clip": "stock_estanco/old_tabacos_shop_shutter_vine_9047.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -3431,7 +3413,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_estanco/phone_on_notebooks_27.mp4",
+      "clip": "stock_estanco/tabacos_shop_night_arcade_plaza_9007.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3448,7 +3430,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip": "stock_estanco/tabacos_shop_madrid_red_shutter_street_9044.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3464,7 +3446,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_mercadona/aerial_flatbed_truck_loading_warehouse_326.mp4",
+      "clip": "stock_estanco/tabacos_shop_customers_entrance_madrid_9051.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3480,7 +3462,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip": "stock_estanco/phone_on_notebooks_27.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3496,7 +3478,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip": "stock_estanco/cigar_bundles_wooden_counter_9015.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3512,7 +3494,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -3539,7 +3521,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3617,7 +3599,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip": "stock_estanco/postage_stamps_colorful_blue_background_9007.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3634,7 +3616,7 @@
       "efectos": [
         "ceniza"
       ],
-      "clip": "stock_estanco/no_smoking_sign_60.mp4",
+      "clip": "stock_estanco/postage_stamps_collage_album_mixed_9002.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3673,170 +3655,78 @@
     {
       "id": "cap6_05",
       "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
-      "duracion": 2.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "duracion": 2.81,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
       "efectos": [
-        "bokeh"
+        "chispas"
       ],
+      "clip": "stock_estanco/cigar_workers_table_leaves_9016.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "texto_pantalla": {
-        "texto": "Todo lo *demás* sí",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.0,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "porcentaje",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.3399999999999999,
-        "entrada": "golpe"
-      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda"
     },
     {
       "id": "cap6_05b",
       "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
       "duracion": 3.42,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
       "efectos": [
         "brasas"
       ],
+      "clip": "stock_estanco/cigar_mold_wooden_box_closeup_9013.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "porcentaje",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha",
-      "texto_pantalla": {
-        "texto": "Todo lo *demás* sí",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     },
     {
       "id": "cap6_05c",
       "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
       "duracion": 3.42,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "bajar",
+      "grade": "rojo_suave",
       "efectos": [
         "ceniza"
       ],
+      "clip": "stock_estanco/cigar_rolling_machine_workshop_table_9011.mp4",
+      "clip_desde": 0.3,
       "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
         "texto": "Todo lo *demás* sí",
         "px": 132,
-        "y": 0.68,
+        "y": 0.3,
         "acento": [
-          206,
-          32,
-          38
+          240,
+          84,
+          74
         ],
-        "estilo": "derecha",
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro"
-      },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.714,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "porcentaje",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
+        "estilo": "escala"
       },
       "composicion": "centrado"
     },
     {
       "id": "cap6_05d",
       "texto": "No hay una estadística que diga qué parte del beneficio viene del tabaco y qué parte de todo lo demás. Lo único que se sabe con seguridad es que el tabaco tiene un margen que no puedes mover, y que todo lo demás sí.",
-      "duracion": 4.08,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "duracion": 4.17,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
       "efectos": [
         "lluvia"
       ],
+      "clip": "stock_estanco/tabacos_neon_night_madrid_snow_street_9050.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.857,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "porcentaje",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha",
-      "texto_pantalla": {
-        "texto": "Todo lo *demás* sí",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     },
     {
       "id": "cap7_01",
@@ -3989,7 +3879,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/worker_cleaning_industrial_floor_warehouse_127.mp4",
+      "clip": "stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4022,7 +3912,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+      "clip": "stock_estanco/no_smoking_sign_60.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4033,44 +3923,17 @@
       "id": "cap7_03c",
       "texto": "El Estado, mientras tanto, compensa con precio. Sube el impuesto, sube el paquete, y baja el número de paquetes. El estanquero se queda con un porcentaje de un precio que sube, sobre unas ventas que bajan.",
       "duracion": 5.89,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "balanza",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe",
-        "flecha": "sube"
-      },
-      "composicion": "centrado",
-      "texto_pantalla": {
-        "texto": "El *Estado*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
     },
     {
       "id": "cap7_04",
@@ -4159,7 +4022,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/tabacos_shop_night_arcade_plaza_9007.mp4",
+      "clip": "stock_estanco/old_tabacos_shop_shutter_vine_9047.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4211,85 +4074,33 @@
       "id": "cap7_05c",
       "texto": "La red también se encoge. En dos mil veinticinco había doscientos nueve estancos menos que el año anterior, un uno coma seis por ciento, en parte porque Hacienda depuró los que ya no estaban activos. Y sin subasta desde dos mil veintidós, no entra ninguno nuevo.",
       "duracion": 4.35,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_estanco/tabacos_shop_madrid_red_shutter_street_9044.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.0,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "balanza",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "izquierda",
-      "texto_pantalla": {
-        "texto": "La red también se *encoge*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_05d",
       "texto": "La red también se encoge. En dos mil veinticinco había doscientos nueve estancos menos que el año anterior, un uno coma seis por ciento, en parte porque Hacienda depuró los que ya no estaban activos. Y sin subasta desde dos mil veintidós, no entra ninguno nuevo.",
       "duracion": 5.31,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "dorado_suave",
       "efectos": [
         "polvo"
       ],
+      "clip": "stock_estanco/tabacos_shop_night_arcade_plaza_9007.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.143,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "balanza",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "composicion": "derecha",
-      "texto_pantalla": {
-        "texto": "La red también se *encoge*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     },
     {
       "id": "cap7_06",
@@ -4369,7 +4180,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/cardboard_boxes_stacked_48.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -4385,7 +4196,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_estanco/courier_unloading_boxes_43.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -4403,9 +4214,7 @@
         "bokeh"
       ],
       "capas": [],
-      "tipo": "grafico",
-      "fondo": "plato",
-      "fondo_fase": 0.429,
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "factura",
         "titulo": "de qué eres dueño",
@@ -4427,7 +4236,8 @@
         "duracion": 2.15,
         "entrada": "barrido"
       },
-      "composicion": "izquierda",
+      "fondo": "plato",
+      "tipo": "grafico",
       "fondo_color": "acento"
     },
     {
@@ -4522,7 +4332,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip": "stock_estanco/cigars_stacked_worker_hairnet_workshop_9012.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -4568,7 +4378,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4581,15 +4391,41 @@
       "texto": "No es tuya la licencia: es del Estado y dura veinticinco años. No es tuyo el precio: lo pone el fabricante. No es tuyo el proveedor: casi siempre es el mismo. No es tuyo el horario, ni el número de estancos que puedes tener, ni la manera de venderlo.",
       "duracion": 4.46,
       "movimiento": "estatico",
-      "grade": "dorado_suave",
+      "grade": "neutro",
       "efectos": [
-        "brasas"
+        "niebla"
       ],
-      "clip": "stock_banco/reading_contract_closeup_142.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No es tuya la *licencia*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "derecha"
     },
     {
@@ -4601,7 +4437,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip": "stock_estanco/tabacos_wooden_sign_number_9169.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4646,7 +4482,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/person_thinking_worried_desk_247.mp4",
+      "clip": "stock_banco/person_thinking_worried_desk_169.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4656,7 +4492,7 @@
     {
       "id": "cierre_05",
       "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
-      "duracion": 3.23,
+      "duracion": 3.63,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
@@ -4688,8 +4524,8 @@
         "sufijo": " €",
         "dec": 2,
         "y": 0.52,
-        "retardo": 0.23,
-        "duracion": 1.3,
+        "retardo": 0.28,
+        "duracion": 1.65,
         "entrada": "barrido"
       },
       "composicion": "centrado",
@@ -4700,13 +4536,13 @@
     {
       "id": "cierre_05b",
       "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
-      "duracion": 3.06,
+      "duracion": 4.43,
       "movimiento": "subir",
       "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_estanco/machine_rollers_boxes_factory_40.mp4",
+      "clip": "stock_banco/person_thinking_worried_desk_247.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -4722,7 +4558,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+      "clip": "stock_estanco/machine_rollers_boxes_factory_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -4743,172 +4579,46 @@
     {
       "id": "cierre_05d",
       "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
-      "duracion": 2.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "duracion": 4.43,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
       "efectos": [
         "destellos"
       ],
+      "clip": "stock_estanco/contract_signing_85.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.429,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 0.8,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "Por eso la *cifra*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "composicion": "centrado"
-    },
-    {
-      "id": "cierre_05dx",
-      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
-      "duracion": 2.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "niebla"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 0.8,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "Setenta y tres *céntimos*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "derecha"
     },
     {
       "id": "cierre_05e",
       "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
-      "duracion": 2.9,
+      "duracion": 5.4,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "dorado_suave",
       "efectos": [
-        "niebla"
+        "brasas"
       ],
-      "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "euro",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.23,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "El fabricante y el *distribuidor*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "izquierda"
-    },
-    {
-      "id": "cierre_05ex",
-      "texto": "Por eso la cifra del principio es la que es. En cada paquete de cinco euros con cuarenta y cuatro, Hacienda se lleva cuatro con veinticinco. El fabricante y el distribuidor, setenta y tres céntimos. Y el dueño del negocio, el que abre cada mañana, el que da la cara, el que asume el riesgo, el que paga el traspaso, cuarenta y seis.",
-      "duracion": 2.9,
-      "movimiento": "estatico",
-      "grade": "neutro",
-      "efectos": [
-        "bokeh"
-      ],
-      "capas": [],
-      "tipo": "rotulo",
-      "texto_pantalla": {
-        "texto": "Setenta y tres *céntimos*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "composicion": "centrado",
-      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
+      "clip": "stock_estanco/notary_signing_55.mp4",
       "clip_desde": 0.3,
-      "duotono_fuerza": 0.55
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
     },
     {
       "id": "cierre_06",
       "texto": "Cuarenta y seis céntimos. Con permiso del Estado.",
       "duracion": 4.16,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
       "efectos": [
         "bokeh"
       ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "grafico": {
@@ -4927,9 +4637,8 @@
         "duracion": 2.0,
         "entrada": "rebote"
       },
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.429,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
       "composicion": "izquierda",
       "texto_pantalla": {
         "texto": "Con permiso del *Estado*",

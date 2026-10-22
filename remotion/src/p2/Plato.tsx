@@ -43,12 +43,19 @@ export const Plato: React.FC<{
   acento: number[];
   titulo: string;
   fase: number;
-}> = ({W, H, f, n, fps, acento, titulo, fase}) => {
+  ident?: any;
+}> = ({W, H, f, n, fps, acento, titulo, fase, ident = {}}) => {
+  const rejilla: number[] = (P as any).rejilla ?? [176, 190, 206];
+  // linea que RESTA, del color de la reja del tema (multiply sobre el papel)
+  const lineaDe = (k: number) => rgb(rejilla.map((c) => Math.round(255 - (255 - c) * k)));
+  const cuadricula: string = ident.cuadricula ?? 'cuadro';
+  const tintada = Object.keys(ident).length > 0;
   const t = f / Math.max(1, n - 1);
   const dur = n / fps;
   const s = fase >= 0.5 ? -1 : 1;
-  const dx = (((t * 0.55 * s) % 1) + 1) % 1 * PASO;
-  const dy = ((((1 - t * 0.38 * s) % 1) + 1) % 1) * PASO;
+  const vel = ident.deriva ?? 1;
+  const dx = (((t * 0.55 * s * vel) % 1) + 1) % 1 * PASO;
+  const dy = ((((1 - t * 0.38 * s * vel) % 1) + 1) % 1) * PASO;
 
   // la sombra que cruza
   const cx = s > 0 ? -0.25 + 1.5 * t : 1.25 - 1.5 * t;
@@ -72,20 +79,38 @@ export const Plato: React.FC<{
 
   return (
     <AbsoluteFill style={{background: fondoPapel()}}>
-      {/* cuadricula: cada quinta linea mas marcada */}
+      {/* cuadricula: cada quinta linea mas marcada; o puntos; o rayas de cuaderno */}
       <AbsoluteFill
         style={{
           mixBlendMode: 'multiply',
-          backgroundImage: [
-            `linear-gradient(to right, ${LINEA_GORDA} 1px, transparent 1px)`,
-            `linear-gradient(to bottom, ${LINEA_GORDA} 1px, transparent 1px)`,
-            `linear-gradient(to right, ${LINEA_FINA} 1px, transparent 1px)`,
-            `linear-gradient(to bottom, ${LINEA_FINA} 1px, transparent 1px)`,
-          ].join(','),
-          backgroundSize: `${PASO * 5}px ${PASO * 5}px, ${PASO * 5}px ${PASO * 5}px, ${PASO}px ${PASO}px, ${PASO}px ${PASO}px`,
-          backgroundPosition: `${-dx}px ${-dy}px`,
+          ...(cuadricula === 'puntos'
+            ? {
+                backgroundImage: `radial-gradient(circle, ${lineaDe(0.55)} 2.2px, transparent 2.6px)`,
+                backgroundSize: `${PASO}px ${PASO}px`,
+                backgroundPosition: `${-dx}px ${-dy}px`,
+              }
+            : cuadricula === 'rayas'
+              ? {
+                  backgroundImage: `linear-gradient(to bottom, ${lineaDe(0.34)} 2px, transparent 2px)`,
+                  backgroundSize: `${PASO}px ${PASO}px`,
+                  backgroundPosition: `0px ${-dy}px`,
+                }
+              : {
+                  backgroundImage: [
+                    `linear-gradient(to right, ${tintada ? lineaDe(0.3) : LINEA_GORDA} 1px, transparent 1px)`,
+                    `linear-gradient(to bottom, ${tintada ? lineaDe(0.3) : LINEA_GORDA} 1px, transparent 1px)`,
+                    `linear-gradient(to right, ${tintada ? lineaDe(0.18) : LINEA_FINA} 1px, transparent 1px)`,
+                    `linear-gradient(to bottom, ${tintada ? lineaDe(0.18) : LINEA_FINA} 1px, transparent 1px)`,
+                  ].join(','),
+                  backgroundSize: `${PASO * 5}px ${PASO * 5}px, ${PASO * 5}px ${PASO * 5}px, ${PASO}px ${PASO}px, ${PASO}px ${PASO}px`,
+                  backgroundPosition: `${-dx}px ${-dy}px`,
+                }),
         }}
       />
+      {/* el margen rojo de las hojas de cuaderno */}
+      {cuadricula === 'rayas' && (
+        <div style={{position: 'absolute', left: Math.floor(W * 0.07), top: 0, width: 3, height: H, background: rgb(acento), opacity: 0.35}} />
+      )}
       {/* sombra de la pagina */}
       <AbsoluteFill
         style={{
@@ -106,7 +131,13 @@ export const Plato: React.FC<{
           />
         )}
         {/* el sello del canal: un euro blanco sobre tinta roja maciza */}
-        <circle cx={xIni + 30} cy={yb + 4} r={30} fill={rgb(acento)} />
+        {ident.sello === 'cuadrado' ? (
+          <rect x={xIni} y={yb - 26} width={60} height={60} rx={8} fill={rgb(acento)} />
+        ) : ident.sello === 'rombo' ? (
+          <rect x={xIni + 4} y={yb - 22} width={52} height={52} rx={6} fill={rgb(acento)} transform={`rotate(45 ${xIni + 30} ${yb + 4})`} />
+        ) : (
+          <circle cx={xIni + 30} cy={yb + 4} r={30} fill={rgb(acento)} />
+        )}
         <T x={xIni + 30} y={yb + 4 + 14} px={38} familia={NEGRA} fill="#fff" anchor="middle">
           €
         </T>

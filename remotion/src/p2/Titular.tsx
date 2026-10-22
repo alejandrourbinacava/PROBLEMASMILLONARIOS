@@ -47,8 +47,11 @@ export const Titular: React.FC<{
   anim: Anim;
   textoYaConMayuscula: string;
   pro?: boolean;
+  ident?: any;
   tLoc?: number; // segundos desde que entra el titular
-}> = ({spec, W, H, anim, textoYaConMayuscula, pro, tLoc = 99}) => {
+}> = ({spec, W, H, anim, textoYaConMayuscula, pro, ident = {}, tLoc = 99}) => {
+  const paso = ident.stagger ?? 0.07;
+  const modo = (ident.entrada_titular as string) ?? 'sube';
   const partes = partir(textoYaConMayuscula);
   let px: number = spec.px ?? 132;
   const total = (p: number) => partes.reduce((a, x) => a + medir(x.txt, p).ancho, 0);
@@ -59,7 +62,8 @@ export const Titular: React.FC<{
   }
   const ay: number = spec.y ?? 0.5;
   const claro = spec.halo === 'claro';
-  const acento: number[] = spec.acento ?? P.acento;
+  // con identidad propia, la palabra de acento sigue al acento del tema (no al rojo de la ficha)
+  const acento: number[] = Object.keys(ident).length > 0 ? P.acento : spec.acento ?? P.acento;
   const color: number[] = spec.color ?? [255, 255, 255];
   // Pillow dibuja con ancla "la" desde y = ay*H - alto/2, y Poppins tiene el
   // ascendente en 1,05 em: la linea de base cae en ay*H + 0,425 px.
@@ -69,7 +73,7 @@ export const Titular: React.FC<{
   let x = x0;
   let trozos = partes.map((p) => {
     const w = medir(p.txt, px).ancho;
-    const t = {...p, x, w, baja: medir(p.txt, px).baja, p: 1, dy: 0};
+    const t = {...p, x, w, baja: medir(p.txt, px).baja, p: 1, dy: 0, dx: 0};
     x += w;
     return t;
   });
@@ -84,7 +88,7 @@ export const Titular: React.FC<{
         if (!pedazo) continue;
         const w = medir(pedazo, px).ancho;
         const esEspacio = /^\s+$/.test(pedazo);
-        const prog = esEspacio ? 1 : expo(clamp01((tLoc - k * 0.07) / 0.38));
+        const prog = esEspacio ? 1 : expo(clamp01((tLoc - k * paso) / 0.38));
         palabras.push({
           txt: pedazo,
           acento: p.acento,
@@ -92,7 +96,8 @@ export const Titular: React.FC<{
           w,
           baja: medir(pedazo, px).baja,
           p: prog,
-          dy: (1 - prog) * 38,
+          dy: modo === 'lateral' ? 0 : (modo === 'baja' ? -1 : 1) * (1 - prog) * 38,
+          dx: modo === 'lateral' ? (1 - prog) * 70 : 0,
         });
         if (!esEspacio) k++;
         cursor += w;
@@ -141,7 +146,7 @@ export const Titular: React.FC<{
       {trozos.map((t, i) => (
         <text
           key={i}
-          x={t.x}
+          x={t.x + (t.dx ?? 0)}
           y={base + t.dy}
           opacity={t.p}
           fontFamily={`"${NEGRA}"`}

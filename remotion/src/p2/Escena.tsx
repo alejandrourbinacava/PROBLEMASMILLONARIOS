@@ -1,6 +1,6 @@
 import React, {useLayoutEffect, useRef, useState} from 'react';
 import {AbsoluteFill, useCurrentFrame} from 'remotion';
-import {Plato as PlatoT, P, useFuentes} from './base';
+import {Plato as PlatoT, P, aplicaPaleta, useFuentes} from './base';
 import {GRAFICOS} from './Graficos';
 import {Plato} from './Plato';
 import {Titular} from './Titular';
@@ -48,14 +48,23 @@ const useBanda = (ref: React.RefObject<HTMLDivElement | null>, dep: unknown) => 
   return banda;
 };
 
-export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: number; estilo?: string}> = ({
-  plato,
-  W,
-  H,
-  fps,
-  estilo = 'paridad',
-}) => {
+export const EscenaPlato: React.FC<{
+  plato: PlatoT;
+  W: number;
+  H: number;
+  fps: number;
+  estilo?: string;
+  ident?: any;
+  paleta?: any;
+}> = ({plato, W, H, fps, estilo = 'paridad', ident = {}, paleta = null}) => {
+  aplicaPaleta(paleta);
   const pro = estilo === 'pro';
+  // hash estable del id: reparte las entradas de la identidad "mezcla" sin azar
+  const semilla = Array.from(plato.id).reduce((a, c) => (a * 31 + c.charCodeAt(0)) >>> 0, 7);
+  const modos = ['resorte', 'desliza', 'zoom', 'caida'];
+  const pedido = (ident.entrada_grafico as string) ?? 'barrido';
+  const modoEntrada = pedido === 'mezcla' ? modos[semilla % modos.length] : pedido;
+  const lado = semilla % 2 === 0 ? 1 : -1;
   const listo = useFuentes();
   const f = useCurrentFrame();
   const n = plato.frames;
@@ -90,27 +99,39 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
       const durG = graf.duracion ?? Math.min(1.6, (n / fps) * 0.55);
       ug = Math.min(1, (f - f0) / Math.max(1, Math.floor(durG * fps)));
       tsG = (f - f0) / fps;
-      const dEnt = graf.entrada === 'barrido' ? 0.58 : 0.32;
+      // la identidad puede cambiar el barrido de rotulador por otra entrada
+      const barrido = graf.entrada === 'barrido' && modoEntrada === 'barrido';
+      const dEnt = barrido ? 0.58 : 0.32;
       const [ge, gs] = factorAnim(f - f0, n - f0, fps, dEnt, 0.25);
-      if (graf.entrada === 'barrido' && ge < 0.999) {
+      if (barrido && ge < 0.999) {
         borde = -0.12 + 1.24 * suave(clamp01(ge));
         animG = {dx: 0, dy: 0, scale: 1, op: 1, blur: 0};
       } else {
         const estiloG = graf.entrada === 'barrido' ? 'sube' : graf.entrada ?? 'golpe';
         // tras un barrido solo queda la SALIDA (que baja y se desvanece)
-        let entrada = graf.entrada === 'barrido' ? animCapa('ninguna', 1, W, H) : animCapa(estiloG, ge, W, H);
-        if (pro && graf.entrada !== 'barrido') {
+        let entrada = barrido ? animCapa('ninguna', 1, W, H) : animCapa(estiloG, ge, W, H);
+        if (pro && !barrido) {
           // "pro": una tarjeta que entra con muelle -pasa de largo y vuelve-,
           // sube desde abajo y se enfoca, en vez del golpe de escala
-          const sp = atrasK(ge, 1.3);
-          entrada = {dx: 0, dy: (1 - sp) * 30, scale: 0.9 + 0.1 * sp, op: clamp01(ge * 3), blur: (1 - ge) * 5};
+          const sp = atrasK(ge, ident.resorte ?? 1.3);
+          const op = clamp01(ge * 3);
+          if (modoEntrada === 'desliza') {
+            entrada = {dx: (1 - sp) * 170 * lado, dy: 0, scale: 1, op, blur: (1 - ge) * 7};
+          } else if (modoEntrada === 'zoom') {
+            entrada = {dx: 0, dy: 0, scale: 0.74 + 0.26 * sp, op, blur: (1 - ge) * 9};
+          } else if (modoEntrada === 'caida') {
+            entrada = {dx: 0, dy: -(1 - sp) * 150, scale: 1.05 - 0.05 * sp, op, blur: (1 - ge) * 4};
+          } else {
+            entrada = {dx: 0, dy: (1 - sp) * 30, scale: 0.9 + 0.1 * sp, op, blur: (1 - ge) * 5};
+          }
         }
         animG = combina(entrada, animCapa(estiloG, gs, W, H, true));
         if (pro) {
           // y mientras el dato esta puesto, no se queda congelado: una deriva
           // muy lenta de escala y una flotacion de un par de pixeles
           const h = f / Math.max(1, n);
-          animG = {...animG, scale: animG.scale * (1 + 0.014 * h), dy: animG.dy + Math.sin((f / fps) * 1.6) * 2};
+          const dv = ident.deriva ?? 1;
+          animG = {...animG, scale: animG.scale * (1 + 0.014 * dv * h), dy: animG.dy + Math.sin((f / fps) * 1.6) * 2 * dv};
         }
       }
     }
@@ -167,6 +188,7 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
           acento={plato.acento}
           titulo={plato.fondo_titulo}
           fase={plato.fase}
+          ident={ident}
         />
         {txt && animT && animT.op > 0.01 && (
           <Titular
@@ -176,6 +198,7 @@ export const EscenaPlato: React.FC<{plato: PlatoT; W: number; H: number; fps: nu
             anim={animT}
             textoYaConMayuscula={may(txt.texto)}
             pro={pro}
+            ident={ident}
             tLoc={(f - Math.floor((txt.retardo ?? 0.35) * fps)) / fps}
           />
         )}

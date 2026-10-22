@@ -68,14 +68,19 @@ def linea_de_tiempo(guion, solape=SOLAPE):
     misma cuenta, y tiene que salir de un solo sitio.
     """
     esc = guion["escenas"]
+    # Cada episodio puede traer su propia rueda de transiciones y su propio
+    # corte de capitulo (guion["identidad"]); sin ella, la de siempre.
+    ident = guion.get("identidad") or {}
+    rueda = ident.get("rueda") or RUEDA
+    cierre = ident.get("cierre") or CIERRE_BLOQUE
     trans = []
     for i, e in enumerate(esc):
         if e.get("transicion"):
             trans.append(e["transicion"])
         elif e.get("cierra_bloque"):
-            trans.append(CIERRE_BLOQUE)
+            trans.append(cierre)
         else:
-            trans.append(RUEDA[i % len(RUEDA)])
+            trans.append(rueda[i % len(rueda)])
 
     # Cada escena empieza a verse cuando acaba la anterior: ni un segundo
     # mas ni uno menos. Antes el reloj avanzaba `duracion - solape`, o sea

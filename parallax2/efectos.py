@@ -112,6 +112,8 @@ DUOTONOS = {
     "duo_rojo":  ((16, 10, 18),   (255, 176, 150)),
     "duo_papel": ((12, 14, 22),   (237, 231, 218)),
     "duo_verde": ((8, 16, 18),    (176, 226, 196)),
+    "duo_rosa":  ((18, 10, 20),   (246, 196, 220)),
+    "duo_teal":  ((6, 16, 24),    (150, 214, 228)),
 }
 
 
@@ -550,6 +552,22 @@ TEMAS = {
 
 # `PALETA` se muta en el sitio en vez de reasignarse: todo el fichero la lee
 # por referencia y reasignarla dejaria la mitad apuntando a la vieja.
+# --- identidades: el MISMO papel con otro acento, otro tono de hoja y otra reja.
+# Cada episodio nuevo elige una, para que dos videos no se lean como la misma
+# plantilla con otro tema. El rojo se queda para la serie vieja (estanco,
+# Mercadona...). Solo cambian colores: la geometria de las tarjetas es igual.
+def _variante(acento, papel, rejilla, serie):
+    v = dict(TEMAS["papel"])
+    v.update(acento=acento, aviso=acento, papel=papel, base=tuple(max(0, c - 8) for c in papel),
+             rejilla=rejilla, serie=serie)
+    return v
+
+
+TEMAS["papel_granate"] = _variante((150, 28, 66), (247, 240, 233), (200, 176, 160), (66, 50, 58))
+TEMAS["papel_azul"] = _variante((18, 84, 178), (240, 244, 250), (168, 188, 214), (40, 58, 84))
+TEMAS["papel_naranja"] = _variante((224, 96, 8), (252, 245, 232), (214, 190, 150), (74, 60, 46))
+TEMAS["papel_rosa"] = _variante((184, 28, 112), (249, 241, 247), (208, 184, 206), (72, 52, 74))
+
 PALETA = dict(TEMAS["papel"])
 
 

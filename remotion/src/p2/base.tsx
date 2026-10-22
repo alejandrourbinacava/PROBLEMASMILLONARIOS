@@ -43,6 +43,26 @@ export const P = {
   papel: [246, 244, 238] as number[],
 };
 
+/**
+ * Pasa la paleta del tema del episodio (la del manifiesto) a `P`. Sin esto el
+ * papel sale siempre blanco-hueso y el acento solo cambia en las tarjetas.
+ */
+export const aplicaPaleta = (p: Record<string, any> | null | undefined) => {
+  if (!p) return;
+  const copia = (k: string, destino: keyof typeof P, origen = k) => {
+    if (Array.isArray(p[origen])) (P as any)[destino] = p[origen].slice(0, 3);
+  };
+  copia('acento', 'acento');
+  copia('aviso', 'aviso');
+  copia('serie', 'serie');
+  copia('ok', 'ok');
+  copia('hueso', 'tinta');
+  copia('tenue', 'tenue');
+  copia('carta', 'carta');
+  copia('papel', 'papel');
+  (P as any).rejilla = Array.isArray(p.rejilla) ? p.rejilla.slice(0, 3) : [176, 190, 206];
+};
+
 export const NEGRA = 'P2 Black';
 export const FUERTE = 'P2 SemiBold';
 export const MEDIA = 'P2 Medium';

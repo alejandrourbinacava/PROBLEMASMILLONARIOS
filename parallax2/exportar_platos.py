@@ -94,6 +94,7 @@ def main():
     paleta = {k: (list(v) if isinstance(v, tuple) else v)
               for k, v in FX.PALETA.items()}
     salida = {"fps": FPS, "w": cfg["w"], "h": cfg["h"], "paleta": paleta,
+              "identidad": (guion.get("identidad") or {}).get("remotion") or {},
               "total": len(guion["escenas"]), "platos": platos}
     with open(destino, "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=1)

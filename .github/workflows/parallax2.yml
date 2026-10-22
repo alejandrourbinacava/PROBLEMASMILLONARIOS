@@ -38,6 +38,10 @@ on:
       - "lot-*"
       - "mer-*"
       - "est-*"
+      - "bar-*"
+      - "tax-*"
+      - "bur-*"
+      - "pel-*"
 
 permissions:
   contents: write
@@ -69,6 +73,10 @@ jobs:
             lot-*)   echo "voz=voz_loteria.mp3" >> "$GITHUB_OUTPUT" ;;
             mer-*)   echo "voz=voz_mercadona.mp3" >> "$GITHUB_OUTPUT" ;;
             est-*)   echo "voz=voz_estanco.mp3" >> "$GITHUB_OUTPUT" ;;
+            bar-*)   echo "voz=voz_bar.mp3" >> "$GITHUB_OUTPUT" ;;
+            tax-*)   echo "voz=voz_taxi.mp3" >> "$GITHUB_OUTPUT" ;;
+            bur-*)   echo "voz=voz_burger.mp3" >> "$GITHUB_OUTPUT" ;;
+            pel-*)   echo "voz=voz_peluqueria.mp3" >> "$GITHUB_OUTPUT" ;;
             *)       echo "voz=voz.mp3"      >> "$GITHUB_OUTPUT" ;;
           esac
           if [[ "${GITHUB_REF_NAME}" == gancho-* ]]; then
@@ -100,6 +108,18 @@ jobs:
           elif [[ "${GITHUB_REF_NAME}" == est-* ]]; then
             echo "guion=proyecto/estanco.json" >> "$GITHUB_OUTPUT"
             echo "pool=pool_estanco_revisado.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == bar-* ]]; then
+            echo "guion=proyecto/bar.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_bar_revisado.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == tax-* ]]; then
+            echo "guion=proyecto/taxi.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_taxi_revisado.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == bur-* ]]; then
+            echo "guion=proyecto/burger.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_burger_revisado.json" >> "$GITHUB_OUTPUT"
+          elif [[ "${GITHUB_REF_NAME}" == pel-* ]]; then
+            echo "guion=proyecto/peluqueria.json" >> "$GITHUB_OUTPUT"
+            echo "pool=pool_peluqueria_revisado.json" >> "$GITHUB_OUTPUT"
           else
             echo "guion=${{ inputs.guion || 'proyecto/episodio_banco.json' }}" >> "$GITHUB_OUTPUT"
           fi

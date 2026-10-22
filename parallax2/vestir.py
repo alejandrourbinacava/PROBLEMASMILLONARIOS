@@ -314,7 +314,8 @@ def main():
     ap.add_argument("guion")
     ap.add_argument("--salida", required=True)
     ap.add_argument("--pool", default="pool_banco_revisado.json")
-    ap.add_argument("--tema", choices=["papel", "nocturno"], default="papel")
+    ap.add_argument("--tema", choices=["papel", "nocturno", "papel_granate", "papel_azul", "papel_naranja", "papel_rosa"],
+                    default="papel")
     a = ap.parse_args()
     sys.stdout.reconfigure(encoding="utf-8")
 
@@ -332,6 +333,7 @@ def main():
     pool = json.load(io.open(os.path.join(AQUI, a.pool), encoding="utf-8"))
     pool = [r for r in pool if "euro" not in r[2].lower()]
     escenas = g["escenas"]
+    DUOS_USO = (g.get("identidad") or {}).get("duos") or DUOS
 
     # --- 1. el clip se elige por la palabra
     combis = []
@@ -559,7 +561,7 @@ def main():
         cap = re.sub(r"_.*", "", e["id"])
         if cap != cap_visto:
             cap_visto, duo_i = cap, duo_i + 1
-        duo = DUOS[duo_i % len(DUOS)]
+        duo = DUOS_USO[duo_i % len(DUOS_USO)]
 
 
         # Una frase es HUERFANA solo si NINGUNO de sus planos encuentra un

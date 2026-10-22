@@ -42,6 +42,8 @@ if (!manifiestoRuta) {
 const manifiesto = JSON.parse(fs.readFileSync(manifiestoRuta, 'utf-8'));
 const {fps, w: W, h: H} = manifiesto;
 const estilo = opt('--estilo', 'paridad');
+// la identidad del episodio (paleta de papel, cuadricula, entradas, titulares)
+const extra = {ident: manifiesto.identidad || {}, paleta: manifiesto.paleta || null};
 let platos = manifiesto.platos;
 if (opt('--solo')) platos = platos.filter((p) => p.id === opt('--solo'));
 if (opt('--ids')) {
@@ -80,7 +82,7 @@ const composicion = async (plato) =>
   selectComposition({
     serveUrl,
     id: 'Plato',
-    inputProps: {plato, W, H, fps, estilo},
+    inputProps: {plato, W, H, fps, estilo, ...extra},
     puppeteerInstance: navegador,
     logLevel: 'error',
   });
@@ -103,7 +105,7 @@ if (opt('--stills')) {
       serveUrl,
       output: salida,
       frame: Number(frame),
-      inputProps: {plato, W, H, fps, estilo},
+      inputProps: {plato, W, H, fps, estilo, ...extra},
       puppeteerInstance: navegador,
       imageFormat: 'png',
       logLevel: 'error',
@@ -124,7 +126,7 @@ if (opt('--still') !== null) {
     serveUrl,
     output: salida,
     frame: Number(opt('--still')),
-    inputProps: {plato, W, H, fps, estilo},
+    inputProps: {plato, W, H, fps, estilo, ...extra},
     puppeteerInstance: navegador,
     imageFormat: 'png',
     logLevel: 'error',
@@ -154,7 +156,7 @@ for (const plato of platos) {
   await renderFrames({
     composition: comp,
     serveUrl,
-    inputProps: {plato, W, H, fps, estilo},
+    inputProps: {plato, W, H, fps, estilo, ...extra},
     outputDir: tmp,
     imageFormat: 'png',
     puppeteerInstance: navegador,

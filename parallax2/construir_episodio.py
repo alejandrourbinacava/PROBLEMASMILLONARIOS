@@ -157,13 +157,21 @@ def main():
     # El tema grafico del canal. `papel` es el de las miniaturas -cuadricula,
     # tinta y rojo- y por eso es el defecto: la miniatura es la promesa y el
     # video tiene que parecerse a ella.
-    ap.add_argument("--tema", choices=["papel", "nocturno"], default="papel")
+    ap.add_argument("--tema", choices=["papel", "nocturno", "papel_granate", "papel_azul", "papel_naranja", "papel_rosa"],
+                    default="papel")
     ap.add_argument("--titulo", default="")
+    ap.add_argument("--identidad", default="",
+                    help="bar | taxi | burger | peluqueria (ver identidades.py). Sin ella, la serie de siempre.")
     ap.add_argument("--temas",
                     choices=["casino", "banco", "aerolinea", "aeropuerto",
                              "gasolinera", "hotel", "farmacia", "loteria", "supermercado", "estanco"],
                     default="banco")
     a = ap.parse_args()
+    import identidades as ID
+    IDENT = ID.identidad(a.identidad) if a.identidad else {}
+    if IDENT:
+        a.tema = IDENT["tema"]
+    CLIMA_USO = IDENT.get("clima") or CLIMA
 
     CC.TEMAS = {"banco": CC.TEMAS_BANCO,
                 "aerolinea": CC.TEMAS_AEROLINEA,
@@ -186,7 +194,7 @@ def main():
     escenas = []
     previo = None
     for cap, _titulo, frases in caps:
-        grade, paleta = CLIMA.get(cap, ("dorado_suave", ["polvo"]))
+        grade, paleta = CLIMA_USO.get(cap, ("dorado_suave", ["polvo"]))
         primera = len(escenas)
         tope = a.tope or TOPE_CAP.get(cap, TOPE)
         for i, texto in enumerate(frases, 1):
@@ -242,7 +250,7 @@ def main():
             cifra_aqui = bool(MB.interesante(MB.cifras(escenas[k2 + 1]["texto"]),
                                              escenas[k2 + 1]["texto"]))
             entrada = (k2 == primera + 1)
-            if (entrada or cifra_aqui) and k2 - primera > 0 and puesto < 3:
+            if (entrada or cifra_aqui) and k2 - primera > 0 and puesto < IDENT.get("latigos", 3):
                 # y nunca dos seguidos, que se lee como un fallo de montaje
                 if not escenas[k2 - 1].get("latigo"):
                     escenas[k2]["latigo"] = "izq" if k2 % 2 else "der"
@@ -252,6 +260,8 @@ def main():
              "lienzo": {"w": 1920, "h": 1080, "fps": 25, "ppm": 140},
              "tema": a.tema,
              "estilo": "metraje real", "escenas": escenas}
+    if IDENT:
+        guion["identidad"] = dict(IDENT, nombre=a.identidad)
     with open(os.path.join(AQUI, a.salida), "w", encoding="utf-8") as f:
         json.dump(guion, f, ensure_ascii=False, indent=2)
 

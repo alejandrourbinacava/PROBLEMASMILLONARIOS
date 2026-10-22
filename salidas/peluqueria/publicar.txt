@@ -1,0 +1,56 @@
+TÍTULO
+Esto Cuesta Montar y Mantener Una Peluquería
+
+DESCRIPCIÓN
+Un corte de pelo a 30 euros. De esos 30, 5,21 € son IVA. Y una parte es el sueldo de quien corta: un oficial cuesta a la empresa más de 14 € la hora. Todavía no hemos pagado el champú, el alquiler ni la gestoría.
+
+Es un ejemplo con cifras reales y supuestos nuestros (el precio y el tiempo del corte), pero sirve para ver a quién llega el dinero en una de las 50.000 peluquerías de España. Y a quién no: la clientela es del peluquero, el local es del casero y el precio lo marcan el IVA y el convenio.
+
+⏱ CAPÍTULOS
+0:00 Un corte de 30 euros
+1:02 Minuto cero: el Estado
+2:18 Minuto diez: las tijeras
+3:47 Minuto veinte: el espejo
+4:54 Lo que cuesta montarla
+6:02 Minuto treinta: el cliente
+7:07 Cuántos hay y cuántos duran
+8:19 Y cada vez cuesta más
+9:20 Un corte, cuatro cobros
+
+📌 Episodio 15 de «El precio de ser el dueño».
+
+📊 DE DÓNDE SALEN LAS CIFRAS
+• IVA del 8 % al 21 % el 1-9-2012: Real Decreto-ley 20/2012 (BOE). Sigue al 21 %: confirmar en la AEAT.
+• Convenio estatal de peluquerías, institutos de belleza y gimnasios (2024–2026): BOE-A-2024-21671. Oficial (grupo III): 1.202 € en 2024, 1.300 € en 2025 y 1.350 € en 2026 en 14 pagas; 1.750 h al año.
+• Coste de un oficial (≈ 24.700 €/año, ≈ 14 €/h) y ejemplo del corte de 30 €: cálculo propio con la cotización empresarial de ≈ 30,65 %.
+• Pacto de no competencia (máx. 2 años técnicos, 6 meses el resto): Estatuto de los Trabajadores, art. 21.2.
+• 155.724 empresas de «otros servicios personales» (60 % sin asalariados) y supervivencia: INE, DIRCE y Demografía de Empresas. Incluye lavanderías y funerarias, no solo peluquerías.
+• 50.000 salones y 13 % de titulares de más de 60 años: Stanpa. IPC de peluquerías (+4,3 %): INE.
+• Costes de montar y alquiler de local: portales de franquicias y un caso hipotético de Emprendedores (2022); fuente débil. Los cierres atribuidos al IVA son cifras de campaña del sector.
+Vídeo divulgativo; no es asesoramiento financiero ni jurídico. Las cifras de fuente débil se dicen como tales en el vídeo.
+
+📷 FOTOGRAFÍAS (Wikimedia Commons)
+Las fotografías de lugares reales del vídeo son de Wikimedia Commons, animadas con movimiento de cámara. Autores y licencias:
+• «Maruchi-peluqueria-villadiego-marzo-2022» — MottaW, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Maruchi-peluqueria-villadiego-marzo-2022.jpg
+• «La Barbera (Yvdh, 2021)» — Daniel Capilla, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:La_Barbera_(Yvdh,_2021).jpg
+• «Oliver Peluqueros Mural (Súnico, 2018)» — Daniel Capilla, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Oliver_Peluqueros_Mural_(S%C3%BAnico,_2018).jpg
+• «Peluqueros (5014219243)» — Daniel Lobo, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Peluqueros_(5014219243).jpg
+• «Peluquería Castillo» — Mentxuwiki, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Peluquer%C3%ADa_Castillo.jpg
+• «Peluquería Chelo Campos, Valencia de Alcántara» — Mentxuwiki, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Peluquer%C3%ADa_Chelo_Campos,_Valencia_de_Alc%C3%A1ntara.jpg
+• «Peluquería Urbano (Colón 10, Madrid) 01» — Luis García (Zaqarbal), CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Peluquer%C3%ADa_Urbano_(Col%C3%B3n_10,_Madrid)_01.jpg
+• «Salón de Peluquería Embajadores 31 (6268904506)» — Francisco Gonzalez, CC BY 2.0. https://commons.wikimedia.org/wiki/File:Sal%C3%B3n_de_Peluquer%C3%ADa_Embajadores_31_(6268904506).jpg
+• «Fachada antiguo salón de peluqueria en la calle Embajadores de Madrid» — Garabata, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Fachada_antiguo_sal%C3%B3n_de_peluqueria_en_la_calle_Embajadores_de_Madrid.jpg
+• «Fachada - Peluquería Lavapies» — Tamorlan, CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:Fachada_-_Peluquer%C3%ADa_Lavapies.JPG
+• «Peluquería Anuncia (414048432)» — Tnarik Innael from London, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Peluquer%C3%ADa_Anuncia_(414048432).jpg
+• «Peluquería Granada (6851985914)» — Xuanxu from Madrid, España, CC BY-SA 2.0. https://commons.wikimedia.org/wiki/File:Peluquer%C3%ADa_Granada_(6851985914).jpg
+• «Robert's Peluquero» — Daniel Capilla, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Robert%27s_Peluquero.jpg
+• «Mural peluqueria» — Centenoyespelta, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Mural_peluqueria.jpg
+• «Peluquería tradicional» — Mwinocur, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Peluquer%C3%ADa_tradicional.jpg
+• «Dania Peluquería. Establecimiento cerrado en Zaragoza» — Mentxuwiki, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Dania_Peluquer%C3%ADa._Establecimiento_cerrado_en_Zaragoza.jpg
+
+El resto del metraje es de Pexels y Pixabay, con licencia de uso libre. Las marcas y rótulos que aparecen son de sus titulares; se muestran con fines informativos.
+
+#Peluqueria #CuantoCuesta #Negocios
+
+PALABRAS CLAVE (para el campo de etiquetas, separadas por comas)
+peluquería, cuánto cuesta montar una peluquería, abrir una peluquería, montar una peluquería, cuánto gana una peluquería, negocio de peluquería, cuánto cuesta un corte de pelo, iva peluquerías, convenio peluquerías, cuánto gana un peluquero, rentabilidad peluquería, el precio de ser el dueño, problemas millonarios, cuánto cuesta mantener un negocio, negocios rentables, economía explicada

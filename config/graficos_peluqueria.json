@@ -1,0 +1,688 @@
+[
+  {
+    "_nota": "Ejemplo con supuestos (30 € y 45 min). IVA 21 %; oficial 14,1 €/h (convenio 2026 + 30,65 % Seg. Social).",
+    "donde": "cinco con veintiuno son IVA",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        [
+          "IVA",
+          5.21
+        ],
+        [
+          "quien corta",
+          10.6
+        ],
+        [
+          "queda",
+          14.19
+        ]
+      ],
+      "colores": {
+        "IVA": "acento",
+        "quien corta": "serie",
+        "queda": "tenue"
+      },
+      "total": "30 € un corte",
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "más de catorce euros por hora",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la hora de quien corta"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 14.1,
+      "dec": 1,
+      "sufijo": " €",
+      "pie": "por hora cuesta a la empresa un oficial",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "unas cincuenta mil peluquerías",
+    "texto_pantalla": {
+      "texto": "Cincuenta mil *peluquerías*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ocho por ciento a pagar un veintiuno",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "IVA de las peluquerías",
+      "items": [
+        [
+          "Hasta agosto de 2012",
+          8.0
+        ],
+        [
+          "Desde septiembre de 2012",
+          21.0
+        ]
+      ],
+      "sufijo": " %",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Desde septiembre de 2012": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "veintiuno de cada ciento veintiuno",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el primer cobro"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 17.4,
+      "dec": 1,
+      "sufijo": " %",
+      "pie": "del precio de un corte es IVA (21 sobre 121)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "BOE-A-2024-21671, anexo I, grupo III.",
+    "donde": "mil doscientos dos euros en dos mil veinticuatro",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "sueldo base mensual de un oficial (14 pagas)",
+      "items": [
+        [
+          "2024",
+          1202.0
+        ],
+        [
+          "2025",
+          1300.0
+        ],
+        [
+          "2026",
+          1350.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "2026": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "mil setecientas cincuenta horas",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la jornada"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1750.0,
+      "dec": 0,
+      "sufijo": " h",
+      "pie": "efectivas al año, según el convenio",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Calculo propio: 18.900 x 1,3065.",
+    "donde": "unos veinticuatro mil setecientos euros al año",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el segundo cobro"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 24700.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "al año cuesta un oficial a la empresa",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "dos mensualidades de renta",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el casero"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 2.0,
+      "dec": 0,
+      "sufijo": " meses",
+      "pie": "de renta es la fianza legal de un local",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Una sola fuente: L'Express Franchise.",
+    "donde": "entre doce y veinte euros por metro cuadrado",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "alquiler de local comercial, al mes",
+      "items": [
+        [
+          "Mínimo",
+          12.0
+        ],
+        [
+          "Máximo",
+          20.0
+        ]
+      ],
+      "sufijo": " €/m²",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Máximo": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "entre veinticinco mil y cuarenta mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "montar una peluquería, según portales de franquicias",
+      "items": [
+        [
+          "Mínimo",
+          25000.0
+        ],
+        [
+          "Máximo",
+          40000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Máximo": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "treinta y dos mil euros de inversión",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "un caso hipotético (Emprendedores, 2022)",
+      "lineas": [
+        [
+          "Obra",
+          "6.000 €"
+        ],
+        [
+          "Mobiliario y utillaje",
+          "11.900 €"
+        ],
+        [
+          "Existencias",
+          "3.000 €"
+        ],
+        [
+          "Informática",
+          "1.000 €"
+        ]
+      ],
+      "total": "32.000 €",
+      "etiqueta_total": "de inversión total, más IVA",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "mil ciento veinte euros al mes",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "antes de ganar un euro"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1120.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "al mes solo en costes fijos",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "1.120 / 30 = 37,3.",
+    "donde": "casi treinta y ocho cortes",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "más de uno al día"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 38.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "cortes al mes para cubrir los fijos",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Estatuto de los Trabajadores, art. 21.2: con compensacion e interes comercial.",
+    "donde": "un máximo de seis meses, o dos años si es técnico",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "pacto de no competencia al irse un oficial",
+      "items": [
+        [
+          "Resto de trabajadores",
+          6.0
+        ],
+        [
+          "Técnicos",
+          24.0
+        ]
+      ],
+      "sufijo": " meses",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Técnicos": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ciento cincuenta y cinco mil setecientas veinticuatro",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "cuántos hay"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 155724.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "empresas de otros servicios personales (INE, 2025)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "El sesenta por ciento no tiene ni un asalariado",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "autónomos solos"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 60.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "no tiene ni un asalariado",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el ochenta y cinco por ciento son personas físicas",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "personas físicas"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 85.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "son autónomos",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el trece por ciento de los titulares",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el relevo"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 13.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "de los titulares tiene más de 60 años",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "INE: grupo 96 entero, no solo peluquerias.",
+    "donde": "el setenta y seis por ciento seguía abierta al año",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "empresas del grupo nacidas en 2017",
+      "items": [
+        [
+          "Al año",
+          76.0
+        ],
+        [
+          "A los tres años",
+          56.0
+        ],
+        [
+          "A los cinco años",
+          45.0
+        ]
+      ],
+      "sufijo": " %",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "A los cinco años": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el treinta por ciento de los salones no era rentable",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "según Stanpa"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 30.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "de los salones no era rentable antes del COVID",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "un cuatro coma tres por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los precios"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 4.3,
+      "dec": 1,
+      "sufijo": " %",
+      "pie": "subieron las peluquerías en un año (sep. 2026)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "un cuarenta y cuatro por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el ticket"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 44.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "subió el ticket medio entre 2017 y 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Volvamos al corte de treinta euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "un corte, cuatro cobros",
+      "lineas": [
+        [
+          "El Estado",
+          "21 % de IVA antes de empezar"
+        ],
+        [
+          "Quien corta",
+          "su hora, que sube cada año"
+        ],
+        [
+          "El casero",
+          "el sitio, y no se renueva si no quiere"
+        ],
+        [
+          "El cliente",
+          "se va con su peluquero"
+        ]
+      ],
+      "total": "≈ 9 €",
+      "etiqueta_total": "para luz, alquiler, productos y la dueña",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "se queda con las tijeras",
+    "texto_pantalla": {
+      "texto": "Se queda con las *tijeras*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "no llegó a entrar en vigor",
+    "texto_pantalla": {
+      "texto": "Nunca entró en *vigor*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "no es, por sí solo, competencia desleal",
+    "texto_pantalla": {
+      "texto": "No es competencia *desleal*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Los tribunales miran si usó listados",
+    "texto_pantalla": {
+      "texto": "Miran los *listados*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  }
+]

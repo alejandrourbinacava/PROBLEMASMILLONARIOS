@@ -1,0 +1,642 @@
+[
+  {
+    "_nota": "Ultima Hora, feb. 2021: declaraciones de asociaciones del sector.",
+    "donde": "unos doscientos setenta mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "una licencia de taxi en Mallorca",
+      "items": [
+        [
+          "Febrero de 2020",
+          270000.0
+        ],
+        [
+          "Un año después",
+          160000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Un año después": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el setenta por ciento del valor de la licencia",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el crédito"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 70.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "del valor de la licencia prestaban los bancos",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "sesenta y tres mil cuatrocientas setenta y cuatro",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "cuántas hay"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 63474.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "licencias de taxi en España (2026)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "setenta mil ochocientas ocho",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "licencias de taxi en España",
+      "items": [
+        [
+          "2013",
+          70808.0
+        ],
+        [
+          "2026",
+          63474.0
+        ]
+      ],
+      "sufijo": "",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "2026": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "Estudio del Sector del Taxi en Málaga 2025: 87,2 % compró, 9,25 % heredó, 3,52 % adjudicacion.",
+    "donde": "el ochenta y siete por ciento la compró",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los taxistas de Málaga"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "valor": 87.2,
+      "dec": 1,
+      "etiqueta_a": "la compró",
+      "etiqueta_b": "otras vías",
+      "color_a": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el tres y medio por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "adjudicación municipal"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 3.5,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "la recibió del ayuntamiento",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ciento cuarenta y dos mil euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el precio de 2015"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 142254.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "valía una licencia de Madrid en 2015 (CNMC)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "CNMC.",
+    "donde": "En San Sebastián, doscientos veinte mil",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "valor de una licencia en 2015",
+      "items": [
+        [
+          "Media nacional (2013)",
+          93426.0
+        ],
+        [
+          "Madrid",
+          142254.0
+        ],
+        [
+          "Palma",
+          205957.0
+        ],
+        [
+          "San Sebastián",
+          220271.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "San Sebastián": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "unos seis mil euros al año",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que vale es la escasez"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 6117.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "al año, la renta de escasez por licencia en Madrid",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Vozpopuli 2020 (fuentes del sector): 75-85.000; se toma el centro.",
+    "donde": "entre setenta y cinco y ochenta y cinco mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "una licencia de Madrid",
+      "items": [
+        [
+          "2015",
+          142254.0
+        ],
+        [
+          "Noviembre de 2020",
+          80000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Noviembre de 2020": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Se vendieron ocho licencias",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el precio fijado"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 8.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "licencias vendidas en Sevilla, de 169 vendedores",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el cincuenta y tres por ciento de la lista",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la lista de vendedores de Sevilla"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "valor": 53.0,
+      "dec": 0,
+      "etiqueta_a": "jubilados",
+      "etiqueta_b": "el resto",
+      "color_a": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "doscientos treinta y siete millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los tribunales"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 237.5,
+      "dec": 1,
+      "sufijo": " M€",
+      "pie": "pedía Cabify de indemnización; el Supremo dijo que no",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "veinticuatro mil doscientas cincuenta y nueve VTC",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los coches de alquiler"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 24259.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "VTC en España (2026)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "un dieciocho por ciento más",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el crecimiento"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 18.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "más VTC que un año antes",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "OKDiario, oct. 2026: una sola fuente.",
+    "donde": "entre ciento ochenta mil y doscientos diez mil euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "licencias de Madrid, según un diario",
+      "items": [
+        [
+          "Mínimo",
+          180000.0
+        ],
+        [
+          "Máximo",
+          210000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Máximo": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "unos ochenta mil, y una que puede trabajar el fin de semana",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "según los días que puedes trabajar",
+      "items": [
+        [
+          "Con libranza L-X",
+          80000.0
+        ],
+        [
+          "Con fines de semana",
+          200000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Con fines de semana": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "Elite Taxi y CHECK24: cifras de parte.",
+    "donde": "ronda los cuatro mil euros al año",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "un seguro, al año",
+      "items": [
+        [
+          "Coche particular",
+          409.0
+        ],
+        [
+          "Taxi",
+          4000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Taxi": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "diez mil ochocientos cincuenta y dos euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los gastos"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 10852.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "gasta al año el taxista medio de Málaga",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "treinta y siete mil ciento cuarenta y ocho euros al año",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que entra"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 37148.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "al año, ingresos medios (¿brutos?)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ciento ocho euros en temporada baja",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "recaudación diaria media en Málaga",
+      "items": [
+        [
+          "Temporada baja",
+          108.0
+        ],
+        [
+          "Temporada alta",
+          193.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Temporada alta": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "entre tres coma ocho y cinco coma una",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "horas al día con un cliente dentro",
+      "items": [
+        [
+          "Jornada",
+          12.7
+        ],
+        [
+          "Con cliente (baja)",
+          3.8
+        ],
+        [
+          "Con cliente (alta)",
+          5.1
+        ]
+      ],
+      "sufijo": " h",
+      "dec": 1,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Jornada": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "dieciocho mil ocho euros brutos al año",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el convenio"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 18008.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "brutos al año, mínimo de un asalariado",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Ciento cuarenta y dos mil, setenta y cinco mil, doscientos mil",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "una licencia de Madrid",
+      "items": [
+        [
+          "2015",
+          142254.0
+        ],
+        [
+          "2020",
+          80000.0
+        ],
+        [
+          "2026",
+          200000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "2020": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "dos mil quinientos millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la reclamación"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 2500.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "reclamaban los taxistas de Madrid por las VTC",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "cuando se compra una licencia de taxi",
+    "texto_pantalla": {
+      "texto": "Un *papel*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  }
+]

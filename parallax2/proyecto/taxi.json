@@ -1,0 +1,4113 @@
+{
+  "titulo": "guion_taxi",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "tema": "papel_azul",
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "En febrero de dos mil veinte, una licencia de taxi en Mallorca valía unos doscientos setenta mil euros.",
+      "duracion": 1.97,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/government_building_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_01b",
+      "texto": "En febrero de dos mil veinte, una licencia de taxi en Mallorca valía unos doscientos setenta mil euros.",
+      "duracion": 2.41,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/driving_night_rain_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_01c",
+      "texto": "En febrero de dos mil veinte, una licencia de taxi en Mallorca valía unos doscientos setenta mil euros.",
+      "duracion": 2.94,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "una licencia de taxi en Mallorca",
+        "items": [
+          [
+            "Febrero de 2020",
+            270000.0
+          ],
+          [
+            "Un año después",
+            160000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.2,
+        "duracion": 1.04,
+        "entrada": "barrido",
+        "destacar": {
+          "Un año después": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Un año después, unos ciento sesenta mil.",
+      "duracion": 3.41,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/aerial_highway_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/car_dashboard_city_driving_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Nadie había *cambiado* el coche",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 3.34,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/taxi_night_city_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 3.34,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 70.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "del valor de la licencia prestaban los bancos",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.25,
+        "duracion": 1.39,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el crédito"
+    },
+    {
+      "id": "gancho_03d",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 3.34,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/car_interior_mirror_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03e",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 3.34,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/city_traffic_aerial_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03f",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 3.34,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/empty_city_street_dawn_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03g",
+      "texto": "Nadie había cambiado el coche, ni la ciudad, ni el trabajo del taxista. Cambió la pandemia. Y como los bancos habían prestado hasta el setenta por ciento del valor de la licencia, más de cincuenta taxistas la pusieron a la venta para pagar sus deudas. Es lo que contó la prensa balear. Son declaraciones de asociaciones del sector, no una estadística.",
+      "duracion": 3.88,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/passenger_getting_in_car_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Este vídeo va de eso: de un papel que puede perder cuatro de cada diez euros de su valor en un solo año, sin que su dueño haga nada distinto.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Este *vídeo* va de eso",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Este vídeo va de eso: de un papel que puede perder cuatro de cada diez euros de su valor en un solo año, sin que su dueño haga nada distinto.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Este *vídeo* va de eso",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.0599999999999996,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Este vídeo va de eso: de un papel que puede perder cuatro de cada diez euros de su valor en un solo año, sin que su dueño haga nada distinto.",
+      "duracion": 2.53,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.0599999999999996,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Este *vídeo* va de eso",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_04d",
+      "texto": "Este vídeo va de eso: de un papel que puede perder cuatro de cada diez euros de su valor en un solo año, sin que su dueño haga nada distinto.",
+      "duracion": 1.91,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Una licencia de taxi no es un coche, ni un negocio, ni un local. Es una autorización administrativa. Un permiso que da el ayuntamiento, que hay que comprar a quien ya lo tiene y que vale lo que valga la escasez.",
+      "duracion": 2.33,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/handshake_contract_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Una licencia de taxi no es un coche, ni un negocio, ni un local. Es una autorización administrativa. Un permiso que da el ayuntamiento, que hay que comprar a quien ya lo tiene y que vale lo que valga la escasez.",
+      "duracion": 2.9,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/car_insurance_documents_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Ni un *negocio*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Una licencia de taxi no es un coche, ni un negocio, ni un local. Es una autorización administrativa. Un permiso que da el ayuntamiento, que hay que comprar a quien ya lo tiene y que vale lo que valga la escasez.",
+      "duracion": 2.84,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/taxi_car_city_street_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05d",
+      "texto": "Una licencia de taxi no es un coche, ni un negocio, ni un local. Es una autorización administrativa. Un permiso que da el ayuntamiento, que hay que comprar a quien ya lo tiene y que vale lo que valga la escasez.",
+      "duracion": 2.84,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/signing_documents_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05e",
+      "texto": "Una licencia de taxi no es un coche, ni un negocio, ni un local. Es una autorización administrativa. Un permiso que da el ayuntamiento, que hay que comprar a quien ya lo tiene y que vale lo que valga la escasez.",
+      "duracion": 3.42,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/lawyer_documents_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Hoy vamos a seguir el precio de ese papel. Y a ver quién lo mueve.",
+      "duracion": 1.95,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Hoy vamos a *seguir*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "Hoy vamos a seguir el precio de ese papel. Y a ver quién lo mueve.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "texto_pantalla": {
+        "texto": "A ver quién lo *mueve*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "En España hay sesenta y tres mil cuatrocientas setenta y cuatro licencias de taxi. A principios de dos mil veintiséis, según el Ministerio de Transportes, que cita el blog de un datáfono. Hace un año eran sesenta y dos mil trescientas noventa y ocho.",
+      "duracion": 3.35,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 63474.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "licencias de taxi en España (2026)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.25,
+        "duracion": 1.4,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "cuántas hay"
+    },
+    {
+      "id": "cap1_01b",
+      "texto": "En España hay sesenta y tres mil cuatrocientas setenta y cuatro licencias de taxi. A principios de dos mil veintiséis, según el Ministerio de Transportes, que cita el blog de un datáfono. Hace un año eran sesenta y dos mil trescientas noventa y ocho.",
+      "duracion": 4.09,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_taxi/woman_in_taxi_back_seat_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "A *principios* de dos mil veintiséis",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_01c",
+      "texto": "En España hay sesenta y tres mil cuatrocientas setenta y cuatro licencias de taxi. A principios de dos mil veintiséis, según el Ministerio de Transportes, que cita el blog de un datáfono. Hace un año eran sesenta y dos mil trescientas noventa y ocho.",
+      "duracion": 4.09,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/receipt_printing_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_01d",
+      "texto": "En España hay sesenta y tres mil cuatrocientas setenta y cuatro licencias de taxi. A principios de dos mil veintiséis, según el Ministerio de Transportes, que cita el blog de un datáfono. Hace un año eran sesenta y dos mil trescientas noventa y ocho.",
+      "duracion": 4.98,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/parking_ticket_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "En dos mil trece, por cierto, eran más: setenta mil ochocientas ocho.",
+      "duracion": 5.55,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "licencias de taxi en España",
+        "items": [
+          [
+            "2013",
+            70808.0
+          ],
+          [
+            "2026",
+            63474.0
+          ]
+        ],
+        "sufijo": "",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "2026": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap1_03",
+      "texto": "Fíjate en una cosa. Las licencias de taxi las sacan los ayuntamientos, y en las grandes ciudades casi no sacan ninguna. En Barcelona no se ha dado una licencia nueva desde mil novecientos ochenta. Si quieres una, se la compras a alguien.",
+      "duracion": 3.31,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/barcelona_sants_train_station_and_parking_9081.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "*Fíjate* en una cosa",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "Fíjate en una cosa. Las licencias de taxi las sacan los ayuntamientos, y en las grandes ciudades casi no sacan ninguna. En Barcelona no se ha dado una licencia nueva desde mil novecientos ochenta. Si quieres una, se la compras a alguien.",
+      "duracion": 4.04,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/prius_taxi_barcelona_9100.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "Fíjate en una cosa. Las licencias de taxi las sacan los ayuntamientos, y en las grandes ciudades casi no sacan ninguna. En Barcelona no se ha dado una licencia nueva desde mil novecientos ochenta. Si quieres una, se la compras a alguien.",
+      "duracion": 4.04,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_taxi/prius_taxi_barcelona_04_2016_6779_9101.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03d",
+      "texto": "Fíjate en una cosa. Las licencias de taxi las sacan los ayuntamientos, y en las grandes ciudades casi no sacan ninguna. En Barcelona no se ha dado una licencia nueva desde mil novecientos ochenta. Si quieres una, se la compras a alguien.",
+      "duracion": 4.94,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/parada_de_taxis_barcelona_9138.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "¿Quién la tiene? En Málaga, de trescientos dos taxistas encuestados por la universidad para el ayuntamiento, el ochenta y siete por ciento la compró. El nueve por ciento la heredó. Y solo el tres y medio por ciento la recibió directamente del ayuntamiento.",
+      "duracion": 3.72,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/seat_toledo_mk2_tdi_taxi_rear_9066.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*¿Quién* la tiene? En Málaga",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "¿Quién la tiene? En Málaga, de trescientos dos taxistas encuestados por la universidad para el ayuntamiento, el ochenta y siete por ciento la compró. El nueve por ciento la heredó. Y solo el tres y medio por ciento la recibió directamente del ayuntamiento.",
+      "duracion": 4.53,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 87.2,
+        "dec": 1,
+        "etiqueta_a": "la compró",
+        "etiqueta_b": "otras vías",
+        "color_a": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "los taxistas de Málaga"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "¿Quién la tiene? En Málaga, de trescientos dos taxistas encuestados por la universidad para el ayuntamiento, el ochenta y siete por ciento la compró. El nueve por ciento la heredó. Y solo el tres y medio por ciento la recibió directamente del ayuntamiento.",
+      "duracion": 4.53,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/148_casa_mil_pg_de_gr_9078.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04d",
+      "texto": "¿Quién la tiene? En Málaga, de trescientos dos taxistas encuestados por la universidad para el ayuntamiento, el ochenta y siete por ciento la compró. El nueve por ciento la heredó. Y solo el tres y medio por ciento la recibió directamente del ayuntamiento.",
+      "duracion": 5.54,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 3.5,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 1,
+        "pie": "la recibió del ayuntamiento",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "adjudicación municipal"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "La licencia, además, no es un derecho de propiedad. Cada comunidad y cada ciudad tiene su norma. En Aragón, por ejemplo, la ley dice que es revocable por interés público, con indemnización. La de Madrid no la he podido leer.",
+      "duracion": 3.29,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_taxi/seat_1500_taxi_de_madrid_barrido_9024.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "La *licencia*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "La licencia, además, no es un derecho de propiedad. Cada comunidad y cada ciudad tiene su norma. En Aragón, por ejemplo, la ley dice que es revocable por interés público, con indemnización. La de Madrid no la he podido leer.",
+      "duracion": 4.01,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/taxi_nissan_hybrid_24318322147_9105.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_05c",
+      "texto": "La licencia, además, no es un derecho de propiedad. Cada comunidad y cada ciudad tiene su norma. En Aragón, por ejemplo, la ley dice que es revocable por interés público, con indemnización. La de Madrid no la he podido leer.",
+      "duracion": 4.01,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05d",
+      "texto": "La licencia, además, no es un derecho de propiedad. Cada comunidad y cada ciudad tiene su norma. En Aragón, por ejemplo, la ley dice que es revocable por interés público, con indemnización. La de Madrid no la he podido leer.",
+      "duracion": 4.88,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Tomemos Madrid.",
+      "duracion": 2.16,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/car_dashboard_city_driving_3.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "En dos mil quince, según la Comisión Nacional de los Mercados y la Competencia, una licencia valía ciento cuarenta y dos mil euros. La media nacional, de las declaraciones de la renta de dos mil trece, era noventa y tres mil.",
+      "duracion": 3.93,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/aerial_highway_46.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "En dos mil *quince*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "En dos mil quince, según la Comisión Nacional de los Mercados y la Competencia, una licencia valía ciento cuarenta y dos mil euros. La media nacional, de las declaraciones de la renta de dos mil trece, era noventa y tres mil.",
+      "duracion": 4.79,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 142254.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "valía una licencia de Madrid en 2015 (CNMC)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el precio de 2015"
+    },
+    {
+      "id": "cap2_02c",
+      "texto": "En dos mil quince, según la Comisión Nacional de los Mercados y la Competencia, una licencia valía ciento cuarenta y dos mil euros. La media nacional, de las declaraciones de la renta de dos mil trece, era noventa y tres mil.",
+      "duracion": 2.92,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En dos mil *quince*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02cx",
+      "texto": "En dos mil quince, según la Comisión Nacional de los Mercados y la Competencia, una licencia valía ciento cuarenta y dos mil euros. La media nacional, de las declaraciones de la renta de dos mil trece, era noventa y tres mil.",
+      "duracion": 2.92,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Dos mil *euros*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "En San Sebastián, doscientos veinte mil. En Santander, doscientos quince mil. En Palma, casi doscientos seis mil.",
+      "duracion": 8.24,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "valor de una licencia en 2015",
+        "items": [
+          [
+            "Media nacional (2013)",
+            93426.0
+          ],
+          [
+            "Madrid",
+            142254.0
+          ],
+          [
+            "Palma",
+            205957.0
+          ],
+          [
+            "San Sebastián",
+            220271.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "San Sebastián": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Y la propia comisión decía algo curioso: que esas licencias no tienen valor intrínseco. Que lo que vale es la escasez, lo que se gana de más por no poder entrar nadie más. En Madrid lo calculaba en unos seis mil euros al año por licencia.",
+      "duracion": 3.44,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "Y la propia comisión decía algo curioso: que esas licencias no tienen valor intrínseco. Que lo que vale es la escasez, lo que se gana de más por no poder entrar nadie más. En Madrid lo calculaba en unos seis mil euros al año por licencia.",
+      "duracion": 4.19,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Lo que vale es la *escasez*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_04c",
+      "texto": "Y la propia comisión decía algo curioso: que esas licencias no tienen valor intrínseco. Que lo que vale es la escasez, lo que se gana de más por no poder entrar nadie más. En Madrid lo calculaba en unos seis mil euros al año por licencia.",
+      "duracion": 4.19,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_04d",
+      "texto": "Y la propia comisión decía algo curioso: que esas licencias no tienen valor intrínseco. Que lo que vale es la escasez, lo que se gana de más por no poder entrar nadie más. En Madrid lo calculaba en unos seis mil euros al año por licencia.",
+      "duracion": 5.11,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 6117.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "al año, la renta de escasez por licencia en Madrid",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que vale es la escasez"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Después de dos mil quince llegaron Uber y Cabify. Las VTC, vehículos de alquiler con conductor, empezaron a competir con el taxi.",
+      "duracion": 3.76,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/phone_app_map_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Después de dos mil quince llegaron Uber y Cabify. Las VTC, vehículos de alquiler con conductor, empezaron a competir con el taxi.",
+      "duracion": 5.6,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/navigation_gps_map_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "texto_pantalla": {
+        "texto": "*Empezaron* a competir con el taxi",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "En noviembre de dos mil veinte, según el diario Vozpópuli, que cita a fuentes del sector, la licencia de Madrid valía entre setenta y cinco y ochenta y cinco mil euros. Había quien la ponía a cien mil, pero nadie la compraba por más de ochenta y cinco.",
+      "duracion": 3.16,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En noviembre de dos mil *veinte*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_01b",
+      "texto": "En noviembre de dos mil veinte, según el diario Vozpópuli, que cita a fuentes del sector, la licencia de Madrid valía entre setenta y cinco y ochenta y cinco mil euros. Había quien la ponía a cien mil, pero nadie la compraba por más de ochenta y cinco.",
+      "duracion": 3.86,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "latigo": "izq",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En noviembre de dos mil *veinte*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_01c",
+      "texto": "En noviembre de dos mil veinte, según el diario Vozpópuli, que cita a fuentes del sector, la licencia de Madrid valía entre setenta y cinco y ochenta y cinco mil euros. Había quien la ponía a cien mil, pero nadie la compraba por más de ochenta y cinco.",
+      "duracion": 3.86,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "una licencia de Madrid",
+        "items": [
+          [
+            "2015",
+            142254.0
+          ],
+          [
+            "Noviembre de 2020",
+            80000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.34,
+        "duracion": 1.82,
+        "entrada": "barrido",
+        "destacar": {
+          "Noviembre de 2020": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap3_01d",
+      "texto": "En noviembre de dos mil veinte, según el diario Vozpópuli, que cita a fuentes del sector, la licencia de Madrid valía entre setenta y cinco y ochenta y cinco mil euros. Había quien la ponía a cien mil, pero nadie la compraba por más de ochenta y cinco.",
+      "duracion": 4.7,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/barcelona_sants_train_station_and_parking_9081.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Es una caída de más del cuarenta por ciento respecto de dos mil quince. Una parte, por las VTC. Otra, por la pandemia.",
+      "duracion": 3.52,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/car_interior_mirror_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Es una caída de más del cuarenta por ciento respecto de dos mil quince. Una parte, por las VTC. Otra, por la pandemia.",
+      "duracion": 5.24,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_taxi/driving_night_rain_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "En Mallorca, el mismo año, los bancos habían prestado el setenta por ciento del valor, y de repente ese valor cayó.",
+      "duracion": 7.41,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/333_telef_ric_de_montju_c_9079.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "En Sevilla, el ayuntamiento hizo algo más raro: fijó el precio de venta de la licencia en setenta mil euros. Los taxistas dicen que es irreal. En enero de dos mil veinticuatro había ciento sesenta y nueve vendedores y solo diecinueve compradores. Se vendieron ocho licencias.",
+      "duracion": 3.38,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "En *Sevilla*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "En Sevilla, el ayuntamiento hizo algo más raro: fijó el precio de venta de la licencia en setenta mil euros. Los taxistas dicen que es irreal. En enero de dos mil veinticuatro había ciento sesenta y nueve vendedores y solo diecinueve compradores. Se vendieron ocho licencias.",
+      "duracion": 4.12,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_04c",
+      "texto": "En Sevilla, el ayuntamiento hizo algo más raro: fijó el precio de venta de la licencia en setenta mil euros. Los taxistas dicen que es irreal. En enero de dos mil veinticuatro había ciento sesenta y nueve vendedores y solo diecinueve compradores. Se vendieron ocho licencias.",
+      "duracion": 4.12,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04d",
+      "texto": "En Sevilla, el ayuntamiento hizo algo más raro: fijó el precio de venta de la licencia en setenta mil euros. Los taxistas dicen que es irreal. En enero de dos mil veinticuatro había ciento sesenta y nueve vendedores y solo diecinueve compradores. Se vendieron ocho licencias.",
+      "duracion": 4.12,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04e",
+      "texto": "En Sevilla, el ayuntamiento hizo algo más raro: fijó el precio de venta de la licencia en setenta mil euros. Los taxistas dicen que es irreal. En enero de dos mil veinticuatro había ciento sesenta y nueve vendedores y solo diecinueve compradores. Se vendieron ocho licencias.",
+      "duracion": 5.04,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 8.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "licencias vendidas en Sevilla, de 169 vendedores",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el precio fijado"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Y hay otro problema: la jubilación. En Sevilla, el cincuenta y tres por ciento de la lista de vendedores son jubilados, y noventa y tres llevan tiempo sin poder vender.",
+      "duracion": 3.17,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/old_man_tired_evening_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Hay otro *problema*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_05b",
+      "texto": "Y hay otro problema: la jubilación. En Sevilla, el cincuenta y tres por ciento de la lista de vendedores son jubilados, y noventa y tres llevan tiempo sin poder vender.",
+      "duracion": 2.8,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 53.0,
+        "dec": 0,
+        "etiqueta_a": "jubilados",
+        "etiqueta_b": "el resto",
+        "color_a": "acento",
+        "y": 0.5,
+        "retardo": 0.17,
+        "duracion": 0.93,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "la lista de vendedores de Sevilla"
+    },
+    {
+      "id": "cap3_05c",
+      "texto": "Y hay otro problema: la jubilación. En Sevilla, el cincuenta y tres por ciento de la lista de vendedores son jubilados, y noventa y tres llevan tiempo sin poder vender.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "reloj",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8999999999999999,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Hay otro *problema*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05cx",
+      "texto": "Y hay otro problema: la jubilación. En Sevilla, el cincuenta y tres por ciento de la lista de vendedores son jubilados, y noventa y tres llevan tiempo sin poder vender.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "reloj",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8899999999999997,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Noventa y tres llevan *tiempo*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06",
+      "texto": "La licencia es el plan de pensiones del taxista. Y no siempre se puede cobrar.",
+      "duracion": 2.32,
+      "movimiento": "drift_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "La licencia es el plan de pensiones del taxista. Y no siempre se puede cobrar.",
+      "duracion": 3.46,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Hay una razón para que el valor suba y baje: no lo decide el taxista.",
+      "duracion": 2.19,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Hay una razón para que el valor suba y baje: no lo decide el taxista.",
+      "duracion": 3.27,
+      "movimiento": "bajar",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "En España, desde mil novecientos ochenta y siete se aplicaba una regla: una licencia de VTC por cada treinta de taxi. Era la ratio uno a treinta, y el Tribunal Supremo la avaló en dos mil dieciocho.",
+      "duracion": 3.64,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_taxi/court_gavel_judge_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_02b",
+      "texto": "En España, desde mil novecientos ochenta y siete se aplicaba una regla: una licencia de VTC por cada treinta de taxi. Era la ratio uno a treinta, y el Tribunal Supremo la avaló en dos mil dieciocho.",
+      "duracion": 4.44,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/lawyer_documents_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02c",
+      "texto": "En España, desde mil novecientos ochenta y siete se aplicaba una regla: una licencia de VTC por cada treinta de taxi. Era la ratio uno a treinta, y el Tribunal Supremo la avaló en dos mil dieciocho.",
+      "duracion": 5.41,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_taxi/signing_documents_desk_37.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 3.35,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03b",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 3.66,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03c",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "texto_pantalla": {
+        "texto": "En *julio* de ese año",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03d",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En *julio* de ese año",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03e",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 3.67,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 237.5,
+        "dec": 1,
+        "sufijo": " M€",
+        "pie": "pedía Cabify de indemnización; el Supremo dijo que no",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.3,
+        "duracion": 1.67,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "los tribunales"
+    },
+    {
+      "id": "cap4_03f",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "En *junio* de dos mil",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.0099999999999998,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03fx",
+      "texto": "Pero en junio de dos mil veintitrés, el Tribunal de Justicia de la Unión Europea dijo que esa regla no estaba justificada, porque lo que protege es el negocio del taxi y no el interés general. En julio de ese año, el Supremo rechazó que Cabify cobrase doscientos treinta y siete millones de euros de indemnización y dijo que las autorizaciones de VTC no consolidan derechos adquiridos.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "No el interés *general*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.02,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "La consecuencia es que hoy hay un VTC por cada tres taxis, no uno por cada treinta. En enero de dos mil veintiséis había veinticuatro mil doscientas cincuenta y nueve VTC. Un dieciocho por ciento más que un año antes.",
+      "duracion": 3.19,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/night_seafront_promenade_marina_aerial_2.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "La consecuencia es que hoy hay un VTC por cada tres taxis, no uno por cada treinta. En enero de dos mil veintiséis había veinticuatro mil doscientas cincuenta y nueve VTC. Un dieciocho por ciento más que un año antes.",
+      "duracion": 3.89,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/phone_app_map_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No uno por cada *treinta*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_04c",
+      "texto": "La consecuencia es que hoy hay un VTC por cada tres taxis, no uno por cada treinta. En enero de dos mil veintiséis había veinticuatro mil doscientas cincuenta y nueve VTC. Un dieciocho por ciento más que un año antes.",
+      "duracion": 3.89,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24259.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "VTC en España (2026)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.34,
+        "duracion": 1.85,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "los coches de alquiler"
+    },
+    {
+      "id": "cap4_04d",
+      "texto": "La consecuencia es que hoy hay un VTC por cada tres taxis, no uno por cada treinta. En enero de dos mil veintiséis había veinticuatro mil doscientas cincuenta y nueve VTC. Un dieciocho por ciento más que un año antes.",
+      "duracion": 4.75,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 18.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "más VTC que un año antes",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el crecimiento"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "Y el treinta de septiembre de este año, el Supremo añadió que la ratio de uno a treinta no puede aplicarse automáticamente: hay que probar que es necesaria y proporcionada.",
+      "duracion": 3.03,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El treinta de *septiembre*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "Y el treinta de septiembre de este año, el Supremo añadió que la ratio de uno a treinta no puede aplicarse automáticamente: hay que probar que es necesaria y proporcionada.",
+      "duracion": 3.69,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El treinta de *septiembre*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "Y el treinta de septiembre de este año, el Supremo añadió que la ratio de uno a treinta no puede aplicarse automáticamente: hay que probar que es necesaria y proporcionada.",
+      "duracion": 4.5,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "El treinta de *septiembre*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap4_06",
+      "texto": "En Cataluña hay una ley del taxi en tramitación. No está aprobada. Y en Valencia, un decreto en vigor desde junio de este año suspende hasta dos años nuevas autorizaciones de taxi y de VTC.",
+      "duracion": 3.56,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/parliament_building_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "En Cataluña hay una ley del taxi en tramitación. No está aprobada. Y en Valencia, un decreto en vigor desde junio de este año suspende hasta dos años nuevas autorizaciones de taxi y de VTC.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_taxi/airport_arrivals_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06c",
+      "texto": "En Cataluña hay una ley del taxi en tramitación. No está aprobada. Y en Valencia, un decreto en vigor desde junio de este año suspende hasta dos años nuevas autorizaciones de taxi y de VTC.",
+      "duracion": 5.3,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_taxi/street_lights_bokeh_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_07",
+      "texto": "El valor de una licencia depende de lo que decidan los parlamentos y los tribunales. El taxista no vota.",
+      "duracion": 2.92,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_07b",
+      "texto": "El valor de una licencia depende de lo que decidan los parlamentos y los tribunales. El taxista no vota.",
+      "duracion": 4.35,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El *taxista* no vota",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Y aun así, hoy el papel vuelve a valer.",
+      "duracion": 3.41,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "decimo",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Aun así",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "Según un diario, que cita expertos y anuncios, en octubre de dos mil veintiséis las operaciones de Madrid se hacen entre ciento ochenta mil y doscientos diez mil euros. Una sola fuente, sin cifra oficial.",
+      "duracion": 3.75,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/148_casa_mil_pg_de_gr_9078.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Según un *diario*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_02b",
+      "texto": "Según un diario, que cita expertos y anuncios, en octubre de dos mil veintiséis las operaciones de Madrid se hacen entre ciento ochenta mil y doscientos diez mil euros. Una sola fuente, sin cifra oficial.",
+      "duracion": 4.58,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "licencias de Madrid, según un diario",
+        "items": [
+          [
+            "Mínimo",
+            180000.0
+          ],
+          [
+            "Máximo",
+            210000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Máximo": "acento"
+        }
+      },
+      "composicion": "centrado",
+      "fondo_color": null
+    },
+    {
+      "id": "cap5_02c",
+      "texto": "Según un diario, que cita expertos y anuncios, en octubre de dos mil veintiséis las operaciones de Madrid se hacen entre ciento ochenta mil y doscientos diez mil euros. Una sola fuente, sin cifra oficial.",
+      "duracion": 5.58,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/parada_de_taxis_barcelona_9138.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
+      "duracion": 3.67,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/government_building_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Con un *matiz* clave",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
+      "duracion": 4.47,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "según los días que puedes trabajar",
+        "items": [
+          [
+            "Con libranza L-X",
+            80000.0
+          ],
+          [
+            "Con fines de semana",
+            200000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.44,
+        "duracion": 2.33,
+        "entrada": "barrido",
+        "destacar": {
+          "Con fines de semana": "acento"
+        }
+      },
+      "composicion": "centrado",
+      "fondo_color": null
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
+      "duracion": 5.45,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Con un *matiz* clave",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap5_04",
+      "texto": "Es decir, que el precio depende de qué días te dejan trabajar.",
+      "duracion": 4.3,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/taxi_sign_roof_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "No hay registro oficial de precios. Lo que sé de cada ciudad sale de prensa y de anuncios.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No hay *registro* oficial de precios",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "No hay registro oficial de precios. Lo que sé de cada ciudad sale de prensa y de anuncios.",
+      "duracion": 3.16,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Para transmitir una licencia hay que pedir permiso al ayuntamiento. En el área metropolitana de Barcelona, el trámite se resuelve en un mes como máximo, y el comprador necesita carné, estar al corriente con Hacienda y Seguridad Social y no tener multas firmes.",
+      "duracion": 3.39,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Para transmitir una licencia hay que pedir permiso al ayuntamiento. En el área metropolitana de Barcelona, el trámite se resuelve en un mes como máximo, y el comprador necesita carné, estar al corriente con Hacienda y Seguridad Social y no tener multas firmes.",
+      "duracion": 4.13,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_06c",
+      "texto": "Para transmitir una licencia hay que pedir permiso al ayuntamiento. En el área metropolitana de Barcelona, el trámite se resuelve en un mes como máximo, y el comprador necesita carné, estar al corriente con Hacienda y Seguridad Social y no tener multas firmes.",
+      "duracion": 4.13,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "El *comprador* necesita carné",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06d",
+      "texto": "Para transmitir una licencia hay que pedir permiso al ayuntamiento. En el área metropolitana de Barcelona, el trámite se resuelve en un mes como máximo, y el comprador necesita carné, estar al corriente con Hacienda y Seguridad Social y no tener multas firmes.",
+      "duracion": 5.05,
+      "movimiento": "contra_izq",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_07",
+      "texto": "La transmisión no lleva IVA, según el Tribunal Supremo. Pero el vendedor declara una ganancia en la renta.",
+      "duracion": 3.09,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/court_gavel_judge_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "La *transmisión* no lleva IVA",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_07b",
+      "texto": "La transmisión no lleva IVA, según el Tribunal Supremo. Pero el vendedor declara una ganancia en la renta.",
+      "duracion": 4.6,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/receipt_printing_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Una vez que tienes la licencia, hay que mantenerla.",
+      "duracion": 3.93,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Una vez que tienes la *licencia*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "El seguro. Según el sindicato Élite Taxi, un seguro a terceros de un taxi ronda los cuatro mil euros al año, con casos de hasta doce mil. Un seguro de coche particular costaba por esas fechas unos cuatrocientos nueve. Las primas subieron entre un cien y un doscientos por ciento, según el propio sector. En enero de dos mil veinticinco, tres mil taxis protestaron en Madrid.",
+      "duracion": 3.48,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_taxi/car_mechanic_engine_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "El seguro. Según el sindicato Élite Taxi, un seguro a terceros de un taxi ronda los cuatro mil euros al año, con casos de hasta doce mil. Un seguro de coche particular costaba por esas fechas unos cuatrocientos nueve. Las primas subieron entre un cien y un doscientos por ciento, según el propio sector. En enero de dos mil veinticinco, tres mil taxis protestaron en Madrid.",
+      "duracion": 4.25,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "lluvia"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "un seguro, al año",
+        "items": [
+          [
+            "Coche particular",
+            409.0
+          ],
+          [
+            "Taxi",
+            4000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.15,
+        "entrada": "barrido",
+        "destacar": {
+          "Taxi": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "El seguro. Según el sindicato Élite Taxi, un seguro a terceros de un taxi ronda los cuatro mil euros al año, con casos de hasta doce mil. Un seguro de coche particular costaba por esas fechas unos cuatrocientos nueve. Las primas subieron entre un cien y un doscientos por ciento, según el propio sector. En enero de dos mil veinticinco, tres mil taxis protestaron en Madrid.",
+      "duracion": 4.25,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/madrid_taxis_9014.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02d",
+      "texto": "El seguro. Según el sindicato Élite Taxi, un seguro a terceros de un taxi ronda los cuatro mil euros al año, con casos de hasta doce mil. Un seguro de coche particular costaba por esas fechas unos cuatrocientos nueve. Las primas subieron entre un cien y un doscientos por ciento, según el propio sector. En enero de dos mil veinticinco, tres mil taxis protestaron en Madrid.",
+      "duracion": 4.25,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_taxi/skoda_octavia_taxi_madrid_3867_9028.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02e",
+      "texto": "El seguro. Según el sindicato Élite Taxi, un seguro a terceros de un taxi ronda los cuatro mil euros al año, con casos de hasta doce mil. Un seguro de coche particular costaba por esas fechas unos cuatrocientos nueve. Las primas subieron entre un cien y un doscientos por ciento, según el propio sector. En enero de dos mil veinticinco, tres mil taxis protestaron en Madrid.",
+      "duracion": 4.25,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/taxi_madrid_9031.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02f",
+      "texto": "El seguro. Según el sindicato Élite Taxi, un seguro a terceros de un taxi ronda los cuatro mil euros al año, con casos de hasta doce mil. Un seguro de coche particular costaba por esas fechas unos cuatrocientos nueve. Las primas subieron entre un cien y un doscientos por ciento, según el propio sector. En enero de dos mil veinticinco, tres mil taxis protestaron en Madrid.",
+      "duracion": 5.18,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/taxi_en_madrid_9034.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "El coche. Un Toyota Corolla con etiqueta ECO parte de veintiséis mil setecientos cincuenta euros.",
+      "duracion": 7.27,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "latigo": "izq",
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.571,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "coche",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El *coche*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap6_04",
+      "texto": "Los gastos. En Málaga, el taxista medio gasta diez mil ochocientos cincuenta y dos euros al año. Y el ochenta y ocho por ciento dice que subieron en dos mil veinticuatro.",
+      "duracion": 3.19,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "Los gastos. En Málaga, el taxista medio gasta diez mil ochocientos cincuenta y dos euros al año. Y el ochenta y ocho por ciento dice que subieron en dos mil veinticuatro.",
+      "duracion": 3.89,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10852.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "gasta al año el taxista medio de Málaga",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.34,
+        "duracion": 1.85,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "los gastos"
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "Los gastos. En Málaga, el taxista medio gasta diez mil ochocientos cincuenta y dos euros al año. Y el ochenta y ocho por ciento dice que subieron en dos mil veinticuatro.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_taxi/taxi_driver_steering_wheel_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "La cuota de autónomo. La tabla de este año va de unos doscientos a unos seiscientos veinte euros al mes, según el tramo. Las fuentes discrepan.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "La cuota de *autónomo*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "La cuota de autónomo. La tabla de este año va de unos doscientos a unos seiscientos veinte euros al mes, según el tramo. Las fuentes discrepan.",
+      "duracion": 3.51,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05c",
+      "texto": "La cuota de autónomo. La tabla de este año va de unos doscientos a unos seiscientos veinte euros al mes, según el tramo. Las fuentes discrepan.",
+      "duracion": 4.25,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_taxi/card_payment_terminal_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Y las aplicaciones. Free Now cobraba, según su director, un doce y medio por ciento.",
+      "duracion": 6.67,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/navigation_gps_map_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_07",
+      "texto": "Si alquilas la licencia a un asalariado, un taxista cuenta que pide entre mil quinientos y dos mil euros al mes. En muchas ordenanzas, alquilarla puede ser causa de revocación. No lo he podido comprobar en Madrid.",
+      "duracion": 2.96,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/calculator_desk_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_07b",
+      "texto": "Si alquilas la licencia a un asalariado, un taxista cuenta que pide entre mil quinientos y dos mil euros al mes. En muchas ordenanzas, alquilarla puede ser causa de revocación. No lo he podido comprobar en Madrid.",
+      "duracion": 3.6,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_07c",
+      "texto": "Si alquilas la licencia a un asalariado, un taxista cuenta que pide entre mil quinientos y dos mil euros al mes. En muchas ordenanzas, alquilarla puede ser causa de revocación. No lo he podido comprobar en Madrid.",
+      "duracion": 3.6,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "lluvia"
+      ],
+      "clip": "stock_taxi/prius_taxi_barcelona_04_2016_6779_9101.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "En muchas *ordenanzas*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_07d",
+      "texto": "Si alquilas la licencia a un asalariado, un taxista cuenta que pide entre mil quinientos y dos mil euros al mes. En muchas ordenanzas, alquilarla puede ser causa de revocación. No lo he podido comprobar en Madrid.",
+      "duracion": 4.4,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/prius_taxi_barcelona_9100.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_01",
+      "texto": "Veamos ahora lo que entra. Los datos más fiables son de Málaga.",
+      "duracion": 2.5,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.0299999999999998,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Veamos ahora lo que *entra*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_01x",
+      "texto": "Veamos ahora lo que entra. Los datos más fiables son de Málaga.",
+      "duracion": 2.49,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.02,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Datos más *fiables*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_02",
+      "texto": "Ingresos medios del titular: treinta y siete mil ciento cuarenta y ocho euros al año. No se aclara si es bruto o neto. La recaudación diaria media es de ciento ocho euros en temporada baja y ciento noventa y tres en alta.",
+      "duracion": 4.12,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 37148.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "al año, ingresos medios (¿brutos?)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.37,
+        "duracion": 2.05,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que entra"
+    },
+    {
+      "id": "cap7_02b",
+      "texto": "Ingresos medios del titular: treinta y siete mil ciento cuarenta y ocho euros al año. No se aclara si es bruto o neto. La recaudación diaria media es de ciento ocho euros en temporada baja y ciento noventa y tres en alta.",
+      "duracion": 5.02,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Ingresos medios del *titular*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "baja"
+      },
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_02c",
+      "texto": "Ingresos medios del titular: treinta y siete mil ciento cuarenta y ocho euros al año. No se aclara si es bruto o neto. La recaudación diaria media es de ciento ocho euros en temporada baja y ciento noventa y tres en alta.",
+      "duracion": 6.12,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "recaudación diaria media en Málaga",
+        "items": [
+          [
+            "Temporada baja",
+            108.0
+          ],
+          [
+            "Temporada alta",
+            193.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Temporada alta": "acento"
+        }
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda",
+      "fondo_color": null
+    },
+    {
+      "id": "cap7_03",
+      "texto": "La jornada media es de doce coma siete horas al día, de lunes a viernes. Y de esas, solo entre tres coma ocho y cinco coma una con un cliente dentro.",
+      "duracion": 10.52,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "horas al día con un cliente dentro",
+        "items": [
+          [
+            "Jornada",
+            12.7
+          ],
+          [
+            "Con cliente (baja)",
+            3.8
+          ],
+          [
+            "Con cliente (alta)",
+            5.1
+          ]
+        ],
+        "sufijo": " h",
+        "dec": 1,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Jornada": "acento"
+        }
+      },
+      "_lat_ent": 1.0,
+      "composicion": "derecha",
+      "fondo_color": null
+    },
+    {
+      "id": "cap7_04",
+      "texto": "Es decir, que durante dos de cada tres horas de trabajo, el taxi no está llevando a nadie.",
+      "duracion": 5.88,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "reloj",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El taxi no está *llevando* a nadie",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap7_05",
+      "texto": "Y la tarifa no la fijas tú. En Madrid, desde el uno de enero, la bajada de bandera es de dos euros cincuenta y cinco entre semana de día y tres con veinte por la noche y los festivos. En Barcelona, dos con ochenta. Las fija una comisión, no el taxista.",
+      "duracion": 3.8,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_taxi/aerial_city_night_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "La *tarifa* no la fijas tú",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_05b",
+      "texto": "Y la tarifa no la fijas tú. En Madrid, desde el uno de enero, la bajada de bandera es de dos euros cincuenta y cinco entre semana de día y tres con veinte por la noche y los festivos. En Barcelona, dos con ochenta. Las fija una comisión, no el taxista.",
+      "duracion": 4.64,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_taxi/taxis_in_the_puerta_del_sol_9036.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_05c",
+      "texto": "Y la tarifa no la fijas tú. En Madrid, desde el uno de enero, la bajada de bandera es de dos euros cincuenta y cinco entre semana de día y tres con veinte por la noche y los festivos. En Barcelona, dos con ochenta. Las fija una comisión, no el taxista.",
+      "duracion": 4.64,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/taxis_puerta_de_atocha_9070.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_05d",
+      "texto": "Y la tarifa no la fijas tú. En Madrid, desde el uno de enero, la bajada de bandera es de dos euros cincuenta y cinco entre semana de día y tres con veinte por la noche y los festivos. En Barcelona, dos con ochenta. Las fija una comisión, no el taxista.",
+      "duracion": 5.66,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_taxi/taxis_en_el_terminal_3_de_9071.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_06",
+      "texto": "Y si quien trabaja es un asalariado, el convenio estatal le garantiza como mínimo dieciocho mil ocho euros brutos al año.",
+      "duracion": 7.69,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 18008.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "brutos al año, mínimo de un asalariado",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el convenio"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Vuelve a mirar el precio de esa licencia. Ciento cuarenta y dos mil, setenta y cinco mil, doscientos mil.",
+      "duracion": 7.46,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "una licencia de Madrid",
+        "items": [
+          [
+            "2015",
+            142254.0
+          ],
+          [
+            "2020",
+            80000.0
+          ],
+          [
+            "2026",
+            200000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "2020": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cierre_02",
+      "texto": "En esos años el taxista no cambió ni de coche ni de calle. Cambiaron cuántas VTC dejó entrar un ayuntamiento, qué dijo un tribunal en Luxemburgo, cuántas licencias nuevas se convocaron y cuántos días a la semana podía trabajar.",
+      "duracion": 3.94,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "latigo": "izq",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Dijo un tribunal en *Luxemburgo*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "En esos años el taxista no cambió ni de coche ni de calle. Cambiaron cuántas VTC dejó entrar un ayuntamiento, qué dijo un tribunal en Luxemburgo, cuántas licencias nuevas se convocaron y cuántos días a la semana podía trabajar.",
+      "duracion": 4.81,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Dijo un tribunal en *Luxemburgo*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_02c",
+      "texto": "En esos años el taxista no cambió ni de coche ni de calle. Cambiaron cuántas VTC dejó entrar un ayuntamiento, qué dijo un tribunal en Luxemburgo, cuántas licencias nuevas se convocaron y cuántos días a la semana podía trabajar.",
+      "duracion": 5.86,
+      "movimiento": "drift_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "En diciembre de dos mil veintiuno, la federación de taxistas de Madrid anunció que pediría ciento cincuenta mil euros por cada una de las quince mil setecientas licencias, unos dos mil quinientos millones de euros, por el daño de las VTC. Lo que digan los tribunales sobre eso todavía no lo he podido comprobar.",
+      "duracion": 4.08,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "En *diciembre* de dos mil veintiuno",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "En diciembre de dos mil veintiuno, la federación de taxistas de Madrid anunció que pediría ciento cincuenta mil euros por cada una de las quince mil setecientas licencias, unos dos mil quinientos millones de euros, por el daño de las VTC. Lo que digan los tribunales sobre eso todavía no lo he podido comprobar.",
+      "duracion": 4.97,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_taxi/empty_city_street_dawn_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03c",
+      "texto": "En diciembre de dos mil veintiuno, la federación de taxistas de Madrid anunció que pediría ciento cincuenta mil euros por cada una de las quince mil setecientas licencias, unos dos mil quinientos millones de euros, por el daño de las VTC. Lo que digan los tribunales sobre eso todavía no lo he podido comprobar.",
+      "duracion": 4.97,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2500.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "reclamaban los taxistas de Madrid por las VTC",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la reclamación"
+    },
+    {
+      "id": "cierre_03d",
+      "texto": "En diciembre de dos mil veintiuno, la federación de taxistas de Madrid anunció que pediría ciento cincuenta mil euros por cada una de las quince mil setecientas licencias, unos dos mil quinientos millones de euros, por el daño de las VTC. Lo que digan los tribunales sobre eso todavía no lo he podido comprobar.",
+      "duracion": 6.07,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_taxi/madrid_taxis_9014.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Porque quien posee una licencia posee algo que le ha cedido el ayuntamiento. Y puede cambiar.",
+      "duracion": 2.49,
+      "movimiento": "contra_der",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_04b",
+      "texto": "Porque quien posee una licencia posee algo que le ha cedido el ayuntamiento. Y puede cambiar.",
+      "duracion": 3.71,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "Eso es lo que se compra cuando se compra una licencia de taxi: un papel.",
+      "duracion": 2.23,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Un *papel*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cierre_05b",
+      "texto": "Eso es lo que se compra cuando se compra una licencia de taxi: un papel.",
+      "duracion": 3.32,
+      "movimiento": "bajar",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_06",
+      "texto": "Y quien lo firma, y quien lo anula, no es el dueño.",
+      "duracion": 4.11,
+      "movimiento": "pull_out",
+      "grade": "frio_suave",
+      "efectos": [
+        "fuga_luz"
+      ],
+      "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    }
+  ],
+  "identidad": {
+    "tema": "papel_azul",
+    "rueda": [
+      "slideleft",
+      "circleopen",
+      "smoothup",
+      "dissolve",
+      "wiperight",
+      "fadefast",
+      "smoothright"
+    ],
+    "cierre": "fadeblack",
+    "clima": {
+      "gancho": [
+        "frio_suave",
+        [
+          "fuga_luz",
+          "bokeh",
+          "lluvia"
+        ]
+      ],
+      "cap1": [
+        "frio_suave",
+        [
+          "bokeh",
+          "fuga_luz",
+          "polvo"
+        ]
+      ],
+      "cap2": [
+        "acero_suave",
+        [
+          "lluvia",
+          "bokeh",
+          "niebla"
+        ]
+      ],
+      "cap3": [
+        "frio_suave",
+        [
+          "fuga_luz",
+          "destellos",
+          "bokeh"
+        ]
+      ],
+      "cap4": [
+        "acero_suave",
+        [
+          "niebla",
+          "lluvia",
+          "polvo"
+        ]
+      ],
+      "cap5": [
+        "frio_suave",
+        [
+          "bokeh",
+          "fuga_luz",
+          "lluvia"
+        ]
+      ],
+      "cap6": [
+        "rojo_suave",
+        [
+          "lluvia",
+          "fuga_luz",
+          "chispas"
+        ]
+      ],
+      "cap7": [
+        "acero_suave",
+        [
+          "bokeh",
+          "niebla",
+          "fuga_luz"
+        ]
+      ],
+      "cierre": [
+        "frio_suave",
+        [
+          "fuga_luz",
+          "bokeh",
+          "niebla"
+        ]
+      ]
+    },
+    "duos": [
+      "duo_frio",
+      "duo_papel",
+      "duo_frio",
+      "duo_verde"
+    ],
+    "latigos": 4,
+    "remotion": {
+      "cuadricula": "puntos",
+      "entrada_grafico": "zoom",
+      "entrada_titular": "sube",
+      "resorte": 1.6,
+      "stagger": 0.05,
+      "sello": "rombo",
+      "deriva": 1.0
+    },
+    "nombre": "taxi"
+  }
+}

@@ -1,0 +1,607 @@
+[
+  {
+    "_nota": "Caso de Viladecans (El Español, jul. 2026): 0,55 de producto, ~0,15 que quedan (8-9 % de 1,80).",
+    "donde": "cincuenta y cinco céntimos",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        [
+          "producto",
+          0.55
+        ],
+        [
+          "le queda a la dueña",
+          0.15
+        ],
+        [
+          "alquiler, sueldos y demás",
+          1.1
+        ]
+      ],
+      "colores": {
+        "producto": "serie",
+        "le queda a la dueña": "acento",
+        "alquiler, sueldos y demás": "tenue"
+      },
+      "total": "1,80 € el café con leche",
+      "sufijo": " €",
+      "dec": 2,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "100 % - 12 %: calculo del propio guion; un caso, no una media.",
+    "donde": "el ochenta y ocho por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el caso de Viladecans"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 88.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "se va antes de que ella cobre nada",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Blogs (Qamarero): fuente debil.",
+    "donde": "entre ochenta mil y ciento cincuenta mil",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "montar un bar, según blogs",
+      "items": [
+        [
+          "Mínimo",
+          80000.0
+        ],
+        [
+          "Máximo",
+          150000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Máximo": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "un veinte por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "artículo 32 de la LAU"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 20.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "puede subirte el casero la renta al traspasar",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "diez mensualidades de renta",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la clientela"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 10.0,
+      "dec": 0,
+      "sufijo": " meses",
+      "pie": "de renta, la indemnización de una sentencia de 2026",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "70-80 %: blogs.",
+    "donde": "entre el setenta y el ochenta por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "mobiliario con logo"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 75.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "de los bares, según blogs del sector",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ochenta por ciento de las compras",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la regla del 80 %"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 80.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "de las compras, según una cervecera ante la CNMC (2013)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "seiscientos millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el proyecto de ley"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 600.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "costaría retirar el mobiliario, según el sector",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "entre treinta y uno y ochenta y un euros",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "un velador al año en Vitoria",
+      "items": [
+        [
+          "Zona más barata",
+          31.0
+        ],
+        [
+          "Zona más cara",
+          81.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Zona más cara": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "veinticuatro euros y cuarenta y un céntimos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los derechos"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 24.41,
+      "dec": 2,
+      "sufijo": " €",
+      "pie": "al mes por la música, hasta 50 m² (2023)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Blogs del sector: fuente debil.",
+    "donde": "entre el quince y el treinta y cinco por ciento",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "lo que se quedan las plataformas de reparto",
+      "items": [
+        [
+          "Mínimo",
+          15.0
+        ],
+        [
+          "Máximo",
+          35.0
+        ]
+      ],
+      "sufijo": " %",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Máximo": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "es del diez por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el IVA"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 10.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "de IVA en hostelería",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "treinta y uno coma cinco por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "quien atiende"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 31.5,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 1,
+      "pie": "de los bares no tiene ni un asalariado",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "cincuenta y un mil seiscientos cuarenta y cinco",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el dueño solo"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 51645.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "bares sin asalariados",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "mil ochocientas horas",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la jornada"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1800.0,
+      "dec": 0,
+      "sufijo": " h",
+      "pie": "de trabajo efectivo al año, en el convenio de Madrid",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "unos ciento treinta y ocho mil al año",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la cuenta de un café"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 138000.0,
+      "dec": 0,
+      "sufijo": " €",
+      "pie": "factura al año la cafetería de Viladecans",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "un sesenta y dos por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los gastos fijos"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 62.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "de lo que entra se va en alquiler, sueldos y cotizaciones",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "entre el ocho y el nueve por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el préstamo"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 8.5,
+      "dec": 1,
+      "sufijo": " %",
+      "pie": "de la facturación va al banco",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "sobran unos quince céntimos",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que queda"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 0.15,
+      "dec": 2,
+      "sufijo": " €",
+      "pie": "sobran de cada café",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "ciento sesenta y tres mil ochocientos noventa bares",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "cuántos hay"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 163890.0,
+      "dec": 0,
+      "sufijo": "",
+      "pie": "bares en España (INE, 2024)",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "INE; metodologia distinta desde 2023.",
+    "donde": "ciento ochenta y nueve mil seiscientos cuarenta y ocho",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "bares en España",
+      "items": [
+        [
+          "2014",
+          189648.0
+        ],
+        [
+          "2024",
+          163890.0
+        ]
+      ],
+      "sufijo": "",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "2024": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "treinta y cuatro mil novecientas ochenta y nueve",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "empresas de comidas y bebidas en 2023",
+      "items": [
+        [
+          "Altas",
+          34989.0
+        ],
+        [
+          "Bajas",
+          32355.0
+        ]
+      ],
+      "sufijo": "",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Bajas": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "INE: de TODAS las empresas, no solo bares.",
+    "donde": "el setenta y siete por ciento sigue abierto al año",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "empresas que siguen abiertas (todas las actividades)",
+      "items": [
+        [
+          "Al año",
+          77.0
+        ],
+        [
+          "A los cinco años",
+          42.0
+        ]
+      ],
+      "sufijo": " %",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "A los cinco años": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "El casero se queda con el suelo",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "los seis dueños de tu bar",
+      "lineas": [
+        [
+          "El casero",
+          "el local, y un 20 % más al traspasar"
+        ],
+        [
+          "La cervecera",
+          "la terraza y los grifos"
+        ],
+        [
+          "El ayuntamiento",
+          "el permiso"
+        ],
+        [
+          "Los cobros",
+          "música, tarjeta, plataformas, IVA"
+        ],
+        [
+          "El camarero",
+          "las horas"
+        ]
+      ],
+      "total": "0,15 €",
+      "etiqueta_total": "de un café con leche para ti",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Eso es lo que cuesta ser el sexto dueño",
+    "texto_pantalla": {
+      "texto": "El *sexto* dueño",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  }
+]

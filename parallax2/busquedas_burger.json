@@ -1,0 +1,21 @@
+[
+ ["local", "fast food restaurant exterior"], ["local", "burger restaurant interior"], ["local", "fast food counter"],
+ ["local", "drive thru lane"], ["local", "restaurant open sign"], ["local", "fast food restaurant empty"],
+ ["local", "restaurant entrance street"], ["local", "restaurant parking lot"], ["local", "shopping mall food court"],
+ ["producto", "burger close up"], ["producto", "cheeseburger"], ["producto", "burger grill patty"],
+ ["producto", "french fries"], ["producto", "fast food tray"], ["producto", "soft drink cup"],
+ ["producto", "burger assembly"], ["producto", "burger bun toasting"], ["producto", "ketchup mustard"],
+ ["cocina", "restaurant kitchen"], ["cocina", "fryer basket"], ["cocina", "cook flipping burgers"],
+ ["cocina", "kitchen staff working"], ["cocina", "stainless steel kitchen"], ["cocina", "food preparation hands"],
+ ["caja", "cashier order screen"], ["caja", "paying card terminal"], ["caja", "order kiosk touchscreen"],
+ ["caja", "customer ordering counter"], ["caja", "takeaway bag"], ["caja", "delivery rider bike"],
+ ["gente", "restaurant crew team"], ["gente", "young worker uniform"], ["gente", "manager clipboard"],
+ ["gente", "customers eating"], ["gente", "family eating restaurant"],
+ ["proveedor", "meat processing factory"], ["proveedor", "cattle farm"], ["proveedor", "refrigerated truck"],
+ ["proveedor", "warehouse pallets"], ["proveedor", "food delivery truck unloading"], ["proveedor", "potato harvest"],
+ ["negocio", "business handshake franchise"], ["negocio", "contract signing"], ["negocio", "boardroom meeting"],
+ ["negocio", "investor meeting"], ["negocio", "city skyline office"], ["negocio", "stock market screen"],
+ ["negocio", "lawyer documents"], ["negocio", "keys handover"], ["negocio", "empty restaurant interior"],
+ ["escala", "aerial city"], ["escala", "highway aerial"], ["escala", "night street city"],
+ ["dinero", "euro banknotes"], ["dinero", "counting money"], ["dinero", "calculator desk"], ["dinero", "euro coins"]
+]

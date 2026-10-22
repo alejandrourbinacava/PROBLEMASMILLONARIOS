@@ -1,0 +1,3721 @@
+{
+  "titulo": "guion_burger",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "tema": "papel_naranja",
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "En julio de dos mil veintiséis, el dueño de Burger King en España tenía comprador.",
+      "duracion": 2.32,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/shopping_mall_food_court_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_01b",
+      "texto": "En julio de dos mil veintiséis, el dueño de Burger King en España tenía comprador.",
+      "duracion": 3.46,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/burger_close_up_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Un fondo de Abu Dabi ofrecía más de dos mil cien millones de euros por la filial. Y la filial no se vendió.",
+      "duracion": 2.01,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "Un fondo de Abu Dabi ofrecía más de dos mil cien millones de euros por la filial. Y la filial no se vendió.",
+      "duracion": 2.45,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Más de *2.100* millones",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "Un fondo de Abu Dabi ofrecía más de dos mil cien millones de euros por la filial. Y la filial no se vendió.",
+      "duracion": 3.0,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "La *filial* no se vendió",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/city_skyline_office_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "No lo impidió el *comprador*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 3.1,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/lawyer_documents_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 3.1,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/cheeseburger_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03d",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 3.1,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 10.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "tiene la matriz de la marca",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.24,
+        "duracion": 1.16,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "quien dijo que no"
+    },
+    {
+      "id": "gancho_03e",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 3.1,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/french_fries_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03f",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 3.1,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/burger_assembly_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03g",
+      "texto": "No lo impidió el comprador, ni el vendedor, ni ningún regulador. Lo impidió la marca: Restaurant Brands International, la matriz de Burger King en el mundo, que tiene algo más del diez por ciento de la empresa, dijo que no. Es lo que cuenta el diario Expansión, con fuentes del sector. No hay comunicado oficial.",
+      "duracion": 3.41,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/ketchup_mustard_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Una compañía que factura mil quinientos veinte millones de euros al año en España y no puede decidir a quién venderse.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1520.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "factura al año en España",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.18,
+        "duracion": 1.02,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "Burger King España"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Una compañía que factura mil quinientos veinte millones de euros al año en España y no puede decidir a quién venderse.",
+      "duracion": 2.51,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Una compañía que factura mil quinientos veinte millones de euros al año en España y no puede decidir a quién venderse.",
+      "duracion": 2.23,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Ese es el verdadero título de este vídeo. Porque vamos a ver cuánto cuesta montar un Burger King en España, sí. Pero antes hay que decir algo que casi nadie cuenta: apenas quedan franquiciados pequeños.",
+      "duracion": 2.9,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/calculator_desk_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Ese es el *verdadero* título",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Ese es el verdadero título de este vídeo. Porque vamos a ver cuánto cuesta montar un Burger King en España, sí. Pero antes hay que decir algo que casi nadie cuenta: apenas quedan franquiciados pequeños.",
+      "duracion": 2.72,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/cook_flipping_burgers_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Ese es el verdadero título de este vídeo. Porque vamos a ver cuánto cuesta montar un Burger King en España, sí. Pero antes hay que decir algo que casi nadie cuenta: apenas quedan franquiciados pequeños.",
+      "duracion": 2.72,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/kitchen_staff_working_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05d",
+      "texto": "Ese es el verdadero título de este vídeo. Porque vamos a ver cuánto cuesta montar un Burger King en España, sí. Pero antes hay que decir algo que casi nadie cuenta: apenas quedan franquiciados pequeños.",
+      "duracion": 2.72,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/stainless_steel_kitchen_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05e",
+      "texto": "Ese es el verdadero título de este vídeo. Porque vamos a ver cuánto cuesta montar un Burger King en España, sí. Pero antes hay que decir algo que casi nadie cuenta: apenas quedan franquiciados pequeños.",
+      "duracion": 2.66,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/paying_card_terminal_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "De los mil restaurantes de Burger King que hay en el país, doscientos treinta y siete son de franquiciados. Los otros setecientos sesenta y tres son de la propia cadena.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/business_handshake_franchise_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "De los mil *restaurantes* de Burger",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "De los mil restaurantes de Burger King que hay en el país, doscientos treinta y siete son de franquiciados. Los otros setecientos sesenta y tres son de la propia cadena.",
+      "duracion": 2.72,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 76.3,
+        "dec": 1,
+        "etiqueta_a": "de la cadena",
+        "etiqueta_b": "franquiciados",
+        "color_a": "acento",
+        "y": 0.5,
+        "retardo": 0.16,
+        "duracion": 0.86,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "763 de 1.000"
+    },
+    {
+      "id": "gancho_06c",
+      "texto": "De los mil restaurantes de Burger King que hay en el país, doscientos treinta y siete son de franquiciados. Los otros setecientos sesenta y tres son de la propia cadena.",
+      "duracion": 2.72,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/family_eating_restaurant_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06d",
+      "texto": "De los mil restaurantes de Burger King que hay en el país, doscientos treinta y siete son de franquiciados. Los otros setecientos sesenta y tres son de la propia cadena.",
+      "duracion": 2.64,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/contract_signing_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Burger King llegó a España hace cincuenta años. A finales de dos mil veinticinco superó los mil restaurantes, con más de cuarenta mil empleados.",
+      "duracion": 2.64,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/aerial_city_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_01b",
+      "texto": "Burger King llegó a España hace cincuenta años. A finales de dos mil veinticinco superó los mil restaurantes, con más de cuarenta mil empleados.",
+      "duracion": 3.22,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_burger/highway_aerial_51.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01c",
+      "texto": "Burger King llegó a España hace cincuenta años. A finales de dos mil veinticinco superó los mil restaurantes, con más de cuarenta mil empleados.",
+      "duracion": 3.92,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_burger/burger_king_martos_9026.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Con más de cuarenta mil *empleados*",
+        "px": 108,
+        "y": 0.74,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "Fíjate en la dirección en la que se ha movido la red. Un año antes eran novecientos ochenta y tres: setecientos veintinueve propios y doscientos cincuenta y cuatro de franquiciados. En un año los propios subieron en treinta y cuatro y los franquiciados bajaron en diecisiete.",
+      "duracion": 9.16,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "restaurantes de Burger King en España",
+        "items": [
+          [
+            "Propios 2024",
+            729.0
+          ],
+          [
+            "Propios 2025",
+            763.0
+          ],
+          [
+            "Franquiciados 2024",
+            254.0
+          ],
+          [
+            "Franquiciados 2025",
+            237.0
+          ]
+        ],
+        "sufijo": "",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Franquiciados 2025": "acento"
+        }
+      },
+      "composicion": "derecha",
+      "fondo_color": null
+    },
+    {
+      "id": "cap1_02x",
+      "texto": "Fíjate en la dirección en la que se ha movido la red. Un año antes eran novecientos ochenta y tres: setecientos veintinueve propios y doscientos cincuenta y cuatro de franquiciados. En un año los propios subieron en treinta y cuatro y los franquiciados bajaron en diecisiete.",
+      "duracion": 9.16,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Doscientos cincuenta y *cuatro*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "¿Por qué? Porque la cadena lleva años comprando a sus franquiciados. En dos mil dieciocho se quedó con Megafood, su mayor franquiciado, por cien millones de euros. Después compró Grupo Kam: setenta locales. En dos mil veinte, el cincuenta y nueve por ciento ya era suyo. En dos mil veinticuatro compró cincuenta y cuatro de Alsea y otros cincuenta y nueve a otros franquiciados.",
+      "duracion": 3.45,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "¿Por qué? Porque la cadena lleva años comprando a sus franquiciados. En dos mil dieciocho se quedó con Megafood, su mayor franquiciado, por cien millones de euros. Después compró Grupo Kam: setenta locales. En dos mil veinte, el cincuenta y nueve por ciento ya era suyo. En dos mil veinticuatro compró cincuenta y cuatro de Alsea y otros cincuenta y nueve a otros franquiciados.",
+      "duracion": 4.2,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "¿Por qué? Porque la cadena lleva años comprando a sus franquiciados. En dos mil dieciocho se quedó con Megafood, su mayor franquiciado, por cien millones de euros. Después compró Grupo Kam: setenta locales. En dos mil veinte, el cincuenta y nueve por ciento ya era suyo. En dos mil veinticuatro compró cincuenta y cuatro de Alsea y otros cincuenta y nueve a otros franquiciados.",
+      "duracion": 4.2,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Su mayor *franquiciado*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03d",
+      "texto": "¿Por qué? Porque la cadena lleva años comprando a sus franquiciados. En dos mil dieciocho se quedó con Megafood, su mayor franquiciado, por cien millones de euros. Después compró Grupo Kam: setenta locales. En dos mil veinte, el cincuenta y nueve por ciento ya era suyo. En dos mil veinticuatro compró cincuenta y cuatro de Alsea y otros cincuenta y nueve a otros franquiciados.",
+      "duracion": 4.2,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 59.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "de los locales ya eran propios en 2020",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.38,
+        "duracion": 2.12,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la red se concentra"
+    },
+    {
+      "id": "cap1_03e",
+      "texto": "¿Por qué? Porque la cadena lleva años comprando a sus franquiciados. En dos mil dieciocho se quedó con Megafood, su mayor franquiciado, por cien millones de euros. Después compró Grupo Kam: setenta locales. En dos mil veinte, el cincuenta y nueve por ciento ya era suyo. En dos mil veinticuatro compró cincuenta y cuatro de Alsea y otros cincuenta y nueve a otros franquiciados.",
+      "duracion": 4.2,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03f",
+      "texto": "¿Por qué? Porque la cadena lleva años comprando a sus franquiciados. En dos mil dieciocho se quedó con Megafood, su mayor franquiciado, por cien millones de euros. Después compró Grupo Kam: setenta locales. En dos mil veinte, el cincuenta y nueve por ciento ya era suyo. En dos mil veinticuatro compró cincuenta y cuatro de Alsea y otros cincuenta y nueve a otros franquiciados.",
+      "duracion": 5.13,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "Cada vez que un franquiciado crece lo bastante, el franquiciador le compra.",
+      "duracion": 2.05,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_burger/shopping_mall_food_court_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "Cada vez que un franquiciado crece lo bastante, el franquiciador le compra.",
+      "duracion": 3.04,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "llave",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "sube"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "El franquiciador le *compra*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Y los precios dan una idea de lo que vale un local. En dos mil veintidós, Ibersol le vendió a la cadena ciento cincuenta y nueve restaurantes por doscientos cincuenta millones de euros. Eso son más de un millón y medio de euros por local, con el negocio dentro.",
+      "duracion": 3.43,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "Y los precios dan una idea de lo que vale un local. En dos mil veintidós, Ibersol le vendió a la cadena ciento cincuenta y nueve restaurantes por doscientos cincuenta millones de euros. Eso son más de un millón y medio de euros por local, con el negocio dentro.",
+      "duracion": 4.18,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "En dos mil *veintidós*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05c",
+      "texto": "Y los precios dan una idea de lo que vale un local. En dos mil veintidós, Ibersol le vendió a la cadena ciento cincuenta y nueve restaurantes por doscientos cincuenta millones de euros. Eso son más de un millón y medio de euros por local, con el negocio dentro.",
+      "duracion": 4.18,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 250.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "por 159 restaurantes, en 2022",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.38,
+        "duracion": 2.1,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que vale un local"
+    },
+    {
+      "id": "cap1_05d",
+      "texto": "Y los precios dan una idea de lo que vale un local. En dos mil veintidós, Ibersol le vendió a la cadena ciento cincuenta y nueve restaurantes por doscientos cincuenta millones de euros. Eso son más de un millón y medio de euros por local, con el negocio dentro.",
+      "duracion": 5.09,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Pasemos a la cuenta del título. Si quisieras abrir uno, ¿cuánto te costaría?",
+      "duracion": 2.29,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "*Pasemos* a la cuenta del título",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Pasemos a la cuenta del título. Si quisieras abrir uno, ¿cuánto te costaría?",
+      "duracion": 3.4,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "puerta",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Pasemos a la cuenta del *título*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "Aquí hay que ser prudente. No he encontrado una cifra oficial de la cadena. Lo que circula son los portales de franquicias, que se copian unos a otros y no llevan fecha.",
+      "duracion": 3.1,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Aquí hay que ser *prudente*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "estilo": "derecha",
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "Aquí hay que ser prudente. No he encontrado una cifra oficial de la cadena. Lo que circula son los portales de franquicias, que se copian unos a otros y no llevan fecha.",
+      "duracion": 3.78,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "Aquí hay que ser *prudente*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_02c",
+      "texto": "Aquí hay que ser prudente. No he encontrado una cifra oficial de la cadena. Lo que circula son los portales de franquicias, que se copian unos a otros y no llevan fecha.",
+      "duracion": 4.62,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "latigo": "izq",
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Aquí hay que ser *prudente*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_03",
+      "texto": "Esos portales hablan de unos seiscientos mil euros de inversión, con un canon de entrada de sesenta mil. Otros llegan al millón y pico. Un local de al menos doscientos veinticinco metros cuadrados, con salida de humos industrial, en una ciudad de más de treinta mil habitantes. Y diez o doce meses desde que firmas hasta que abres.",
+      "duracion": 3.51,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "lo que dicen los portales de franquicias",
+        "items": [
+          [
+            "Canon de entrada",
+            60000.0
+          ],
+          [
+            "Inversión total",
+            600000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.29,
+        "duracion": 1.52,
+        "entrada": "barrido",
+        "destacar": {
+          "Inversión total": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "Esos portales hablan de unos seiscientos mil euros de inversión, con un canon de entrada de sesenta mil. Otros llegan al millón y pico. Un local de al menos doscientos veinticinco metros cuadrados, con salida de humos industrial, en una ciudad de más de treinta mil habitantes. Y diez o doce meses desde que firmas hasta que abres.",
+      "duracion": 4.28,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03c",
+      "texto": "Esos portales hablan de unos seiscientos mil euros de inversión, con un canon de entrada de sesenta mil. Otros llegan al millón y pico. Un local de al menos doscientos veinticinco metros cuadrados, con salida de humos industrial, en una ciudad de más de treinta mil habitantes. Y diez o doce meses desde que firmas hasta que abres.",
+      "duracion": 4.28,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "contador",
+        "valor": 225.0,
+        "dec": 0,
+        "sufijo": " m²",
+        "pie": "de local como mínimo, según los portales",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.18,
+        "entrada": "barrido"
+      },
+      "_lat_ent": -1.0,
+      "composicion": "izquierda",
+      "fondo_color": "acento",
+      "fondo_titulo": "los requisitos"
+    },
+    {
+      "id": "cap2_03d",
+      "texto": "Esos portales hablan de unos seiscientos mil euros de inversión, con un canon de entrada de sesenta mil. Otros llegan al millón y pico. Un local de al menos doscientos veinticinco metros cuadrados, con salida de humos industrial, en una ciudad de más de treinta mil habitantes. Y diez o doce meses desde que firmas hasta que abres.",
+      "duracion": 4.28,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03e",
+      "texto": "Esos portales hablan de unos seiscientos mil euros de inversión, con un canon de entrada de sesenta mil. Otros llegan al millón y pico. Un local de al menos doscientos veinticinco metros cuadrados, con salida de humos industrial, en una ciudad de más de treinta mil habitantes. Y diez o doce meses desde que firmas hasta que abres.",
+      "duracion": 5.22,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Pon esa cifra como un orden de magnitud y nada más. No es el precio de Burger King. Es lo que dicen las webs que viven de venderte una franquicia.",
+      "duracion": 3.71,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_burger/business_handshake_franchise_41.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "Pon esa cifra como un orden de magnitud y nada más. No es el precio de Burger King. Es lo que dicen las webs que viven de venderte una franquicia.",
+      "duracion": 5.51,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/contract_signing_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "No es el *precio* de Burger King",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Y hay una pregunta anterior que esas webs no resuelven. Una de ellas asegura que Burger King ya no concede franquicias nuevas en España, y que solo las da de otras marcas del grupo. No he podido confirmarlo con la cadena. Pero cuadra con lo que hemos visto en el capítulo anterior.",
+      "duracion": 3.68,
+      "movimiento": "drift_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/burger_king_bk_fontaine_l_v_9021.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Hay una *pregunta* anterior",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Y hay una pregunta anterior que esas webs no resuelven. Una de ellas asegura que Burger King ya no concede franquicias nuevas en España, y que solo las da de otras marcas del grupo. No he podido confirmarlo con la cadena. Pero cuadra con lo que hemos visto en el capítulo anterior.",
+      "duracion": 4.49,
+      "movimiento": "contra_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_burger/burger_king_oostwijk_vlaardingen_9029.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05c",
+      "texto": "Y hay una pregunta anterior que esas webs no resuelven. Una de ellas asegura que Burger King ya no concede franquicias nuevas en España, y que solo las da de otras marcas del grupo. No he podido confirmarlo con la cadena. Pero cuadra con lo que hemos visto en el capítulo anterior.",
+      "duracion": 4.49,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/burger_king_schnellrestaurant_mit_drive_in_9079.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05d",
+      "texto": "Y hay una pregunta anterior que esas webs no resuelven. Una de ellas asegura que Burger King ya no concede franquicias nuevas en España, y que solo las da de otras marcas del grupo. No he podido confirmarlo con la cadena. Pero cuadra con lo que hemos visto en el capítulo anterior.",
+      "duracion": 5.48,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/2023_02_03_burger_king_in_9001.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Supongamos que lo consigues. Abres. Entra un cliente y deja cien euros.",
+      "duracion": 5.69,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Según los portales, de esos cien euros salen cinco por royalty a la marca y entre cuatro y cinco por publicidad. Entre nueve y diez euros, antes de pagar una hamburguesa, un empleado o un alquiler.",
+      "duracion": 3.64,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "royalty",
+            5.0
+          ],
+          [
+            "publicidad",
+            4.5
+          ],
+          [
+            "queda",
+            90.5
+          ]
+        ],
+        "colores": {
+          "royalty": "acento",
+          "publicidad": "tenue",
+          "queda": "serie"
+        },
+        "total": "100 € de un cliente",
+        "sufijo": " €",
+        "dec": 1,
+        "y": 0.52,
+        "retardo": 0.29,
+        "duracion": 1.65,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Según los portales, de esos cien euros salen cinco por royalty a la marca y entre cuatro y cinco por publicidad. Entre nueve y diez euros, antes de pagar una hamburguesa, un empleado o un alquiler.",
+      "duracion": 4.05,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_02c",
+      "texto": "Según los portales, de esos cien euros salen cinco por royalty a la marca y entre cuatro y cinco por publicidad. Entre nueve y diez euros, antes de pagar una hamburguesa, un empleado o un alquiler.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.2399999999999998,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Según los *portales*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02cx",
+      "texto": "Según los portales, de esos cien euros salen cinco por royalty a la marca y entre cuatro y cinco por publicidad. Entre nueve y diez euros, antes de pagar una hamburguesa, un empleado o un alquiler.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.23,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Cinco por *publicidad*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "Cifras de portales, repito. En el contrato tipo que la matriz declara en Estados Unidos, el royalty va de tres a seis por ciento y la publicidad de dos a cinco. Cuadra con lo anterior. No es España, pero da la forma.",
+      "duracion": 3.16,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_90.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Cifras de *portales*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "Cifras de portales, repito. En el contrato tipo que la matriz declara en Estados Unidos, el royalty va de tres a seis por ciento y la publicidad de dos a cinco. Cuadra con lo anterior. No es España, pero da la forma.",
+      "duracion": 3.86,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03c",
+      "texto": "Cifras de portales, repito. En el contrato tipo que la matriz declara en Estados Unidos, el royalty va de tres a seis por ciento y la publicidad de dos a cinco. Cuadra con lo anterior. No es España, pero da la forma.",
+      "duracion": 3.86,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_03d",
+      "texto": "Cifras de portales, repito. En el contrato tipo que la matriz declara en Estados Unidos, el royalty va de tres a seis por ciento y la publicidad de dos a cinco. Cuadra con lo anterior. No es España, pero da la forma.",
+      "duracion": 4.7,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "Después viene lo demás. Los proveedores los aprueba la marca. Y en ese mismo documento, la matriz dice que si el local es suyo, el franquiciado le paga entre el ocho y medio y el diez por ciento de las ventas de alquiler.",
+      "duracion": 3.83,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Después* viene lo demás",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "Después viene lo demás. Los proveedores los aprueba la marca. Y en ese mismo documento, la matriz dice que si el local es suyo, el franquiciado le paga entre el ocho y medio y el diez por ciento de las ventas de alquiler.",
+      "duracion": 4.67,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04c",
+      "texto": "Después viene lo demás. Los proveedores los aprueba la marca. Y en ese mismo documento, la matriz dice que si el local es suyo, el franquiciado le paga entre el ocho y medio y el diez por ciento de las ventas de alquiler.",
+      "duracion": 5.69,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "En España no he encontrado quién es el dueño del suelo de un Burger King.",
+      "duracion": 4.76,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/aerial_city_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06",
+      "texto": "Una cosa más sobre el beneficio. Los portales prometen un margen de entre el quince y el veinte por ciento. Pero el único dato con nombre y apellidos que encontré es antiguo: Megafood, el mayor franquiciado del país, tenía un margen operativo estimado de entre el cinco y el ocho por ciento. Y eso contradice mucho a los portales.",
+      "duracion": 3.59,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Una cosa más sobre el *beneficio*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06b",
+      "texto": "Una cosa más sobre el beneficio. Los portales prometen un margen de entre el quince y el veinte por ciento. Pero el único dato con nombre y apellidos que encontré es antiguo: Megafood, el mayor franquiciado del país, tenía un margen operativo estimado de entre el cinco y el ocho por ciento. Y eso contradice mucho a los portales.",
+      "duracion": 4.37,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_06c",
+      "texto": "Una cosa más sobre el beneficio. Los portales prometen un margen de entre el quince y el veinte por ciento. Pero el único dato con nombre y apellidos que encontré es antiguo: Megafood, el mayor franquiciado del país, tenía un margen operativo estimado de entre el cinco y el ocho por ciento. Y eso contradice mucho a los portales.",
+      "duracion": 4.37,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_06d",
+      "texto": "Una cosa más sobre el beneficio. Los portales prometen un margen de entre el quince y el veinte por ciento. Pero el único dato con nombre y apellidos que encontré es antiguo: Megafood, el mayor franquiciado del país, tenía un margen operativo estimado de entre el cinco y el ocho por ciento. Y eso contradice mucho a los portales.",
+      "duracion": 4.37,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_06e",
+      "texto": "Una cosa más sobre el beneficio. Los portales prometen un margen de entre el quince y el veinte por ciento. Pero el único dato con nombre y apellidos que encontré es antiguo: Megafood, el mayor franquiciado del país, tenía un margen operativo estimado de entre el cinco y el ocho por ciento. Y eso contradice mucho a los portales.",
+      "duracion": 5.34,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "margen de un franquiciado grande",
+        "items": [
+          [
+            "Portales (mínimo)",
+            15.0
+          ],
+          [
+            "Portales (máximo)",
+            20.0
+          ],
+          [
+            "Megafood (mínimo)",
+            5.0
+          ],
+          [
+            "Megafood (máximo)",
+            8.0
+          ]
+        ],
+        "sufijo": " %",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Megafood (mínimo)": "acento",
+          "Megafood (máximo)": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Veamos entonces cuánto queda, no en el local de un franquiciado, sino en la propia cadena.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Veamos *entonces*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Veamos entonces cuánto queda, no en el local de un franquiciado, sino en la propia cadena.",
+      "duracion": 3.72,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "Burger King España facturó mil quinientos veinte millones de euros en dos mil veinticinco, un cuatro por ciento más. Abrió veintitrés restaurantes nuevos. Hace una media de millón y medio de euros por local. Es un cálculo nuestro, dividiendo ventas entre restaurantes.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_burger/night_street_city_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_02b",
+      "texto": "Burger King España facturó mil quinientos veinte millones de euros en dos mil veinticinco, un cuatro por ciento más. Abrió veintitrés restaurantes nuevos. Hace una media de millón y medio de euros por local. Es un cálculo nuestro, dividiendo ventas entre restaurantes.",
+      "duracion": 3.8,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/customer_ordering_counter_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Un *cuatro* por ciento",
+        "px": 132,
+        "y": 0.74,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02c",
+      "texto": "Burger King España facturó mil quinientos veinte millones de euros en dos mil veinticinco, un cuatro por ciento más. Abrió veintitrés restaurantes nuevos. Hace una media de millón y medio de euros por local. Es un cálculo nuestro, dividiendo ventas entre restaurantes.",
+      "duracion": 3.8,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/delivery_rider_bike_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_02d",
+      "texto": "Burger King España facturó mil quinientos veinte millones de euros en dos mil veinticinco, un cuatro por ciento más. Abrió veintitrés restaurantes nuevos. Hace una media de millón y medio de euros por local. Es un cálculo nuestro, dividiendo ventas entre restaurantes.",
+      "duracion": 3.8,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_burger/meat_processing_factory_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_02e",
+      "texto": "Burger King España facturó mil quinientos veinte millones de euros en dos mil veinticinco, un cuatro por ciento más. Abrió veintitrés restaurantes nuevos. Hace una media de millón y medio de euros por local. Es un cálculo nuestro, dividiendo ventas entre restaurantes.",
+      "duracion": 4.64,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/cattle_farm_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "El grupo que gestiona la marca, que además de España tiene Portugal e Italia, sumó más de dos mil millones de ventas entre locales propios y franquiciados. Y ganó treinta y nueve millones cuatrocientos mil euros.",
+      "duracion": 3.7,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El grupo que *gestiona* la marca",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03b",
+      "texto": "El grupo que gestiona la marca, que además de España tiene Portugal e Italia, sumó más de dos mil millones de ventas entre locales propios y franquiciados. Y ganó treinta y nueve millones cuatrocientos mil euros.",
+      "duracion": 4.51,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03c",
+      "texto": "El grupo que gestiona la marca, que además de España tiene Portugal e Italia, sumó más de dos mil millones de ventas entre locales propios y franquiciados. Y ganó treinta y nueve millones cuatrocientos mil euros.",
+      "duracion": 5.51,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 39.4,
+        "dec": 1,
+        "sufijo": " M€",
+        "pie": "ganó el grupo en 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el beneficio"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "Un año antes había perdido dos millones cuatrocientos mil.",
+      "duracion": 4.25,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Un año antes había *perdido* dos",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap4_05",
+      "texto": "Haz la cuenta con los restaurantes propios, que vendieron mil quinientos cuarenta y un millones: treinta y nueve millones es un dos coma seis por ciento. De cada cien euros que entran por la caja, dos con sesenta se quedan.",
+      "duracion": 2.94,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_burger/calculator_desk_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "Haz la cuenta con los restaurantes propios, que vendieron mil quinientos cuarenta y un millones: treinta y nueve millones es un dos coma seis por ciento. De cada cien euros que entran por la caja, dos con sesenta se quedan.",
+      "duracion": 3.58,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Dos con *sesenta*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "Haz la cuenta con los restaurantes propios, que vendieron mil quinientos cuarenta y un millones: treinta y nueve millones es un dos coma seis por ciento. De cada cien euros que entran por la caja, dos con sesenta se quedan.",
+      "duracion": 3.58,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2.6,
+        "dec": 1,
+        "sufijo": " %",
+        "pie": "de lo que entra se queda",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.29,
+        "duracion": 1.59,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que se queda la cadena"
+    },
+    {
+      "id": "cap4_05d",
+      "texto": "Haz la cuenta con los restaurantes propios, que vendieron mil quinientos cuarenta y un millones: treinta y nueve millones es un dos coma seis por ciento. De cada cien euros que entran por la caja, dos con sesenta se quedan.",
+      "duracion": 4.37,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06",
+      "texto": "Y eso es lo que ganó la empresa más grande de la hamburguesa en España, la que no paga franquicia a nadie más que a la matriz.",
+      "duracion": 3.03,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/city_skyline_office_45.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Eso es lo que ganó la *empresa*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "Y eso es lo que ganó la empresa más grande de la hamburguesa en España, la que no paga franquicia a nadie más que a la matriz.",
+      "duracion": 4.52,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Ahora volvemos al principio.",
+      "duracion": 2.72,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.25,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Ahora volvemos al *principio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "La filial la controla un fondo, Cinven, que la compró en dos mil veintiuno por unos mil millones de euros, cuando ganaba ciento cuatro millones antes de impuestos e intereses. Cinco años después buscaba vender por más del doble: más de dos mil cien millones, aunque aspiraba a dos mil quinientos.",
+      "duracion": 3.93,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "La filial la *controla* un fondo",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_02b",
+      "texto": "La filial la controla un fondo, Cinven, que la compró en dos mil veintiuno por unos mil millones de euros, cuando ganaba ciento cuatro millones antes de impuestos e intereses. Cinco años después buscaba vender por más del doble: más de dos mil cien millones, aunque aspiraba a dos mil quinientos.",
+      "duracion": 4.79,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_02c",
+      "texto": "La filial la controla un fondo, Cinven, que la compró en dos mil veintiuno por unos mil millones de euros, cuando ganaba ciento cuatro millones antes de impuestos e intereses. Cinco años después buscaba vender por más del doble: más de dos mil cien millones, aunque aspiraba a dos mil quinientos.",
+      "duracion": 4.79,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_burger/lawyer_documents_47.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_02d",
+      "texto": "La filial la controla un fondo, Cinven, que la compró en dos mil veintiuno por unos mil millones de euros, cuando ganaba ciento cuatro millones antes de impuestos e intereses. Cinco años después buscaba vender por más del doble: más de dos mil cien millones, aunque aspiraba a dos mil quinientos.",
+      "duracion": 2.92,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "valor de la filial, en millones de euros",
+        "items": [
+          [
+            "Compra 2021",
+            1000.0
+          ],
+          [
+            "Venta 2026",
+            2100.0
+          ]
+        ],
+        "sufijo": " M€",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.19,
+        "duracion": 1.03,
+        "entrada": "barrido",
+        "destacar": {
+          "Venta 2026": "acento"
+        }
+      },
+      "_lat_ent": 1.0,
+      "composicion": "izquierda",
+      "fondo_color": null
+    },
+    {
+      "id": "cap5_02dx",
+      "texto": "La filial la controla un fondo, Cinven, que la compró en dos mil veintiuno por unos mil millones de euros, cuando ganaba ciento cuatro millones antes de impuestos e intereses. Cinco años después buscaba vender por más del doble: más de dos mil cien millones, aunque aspiraba a dos mil quinientos.",
+      "duracion": 2.91,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "banco",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Más de dos mil cien *millones*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "En medio, una refinanciación de más de mil millones de deuda, vencimiento en dos mil treinta y uno. Y, según un medio especializado, doscientos millones de esa operación se repartieron como dividendo entre los accionistas.",
+      "duracion": 3.69,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1098.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "de deuda refinanciada, hasta 2031",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.31,
+        "duracion": 1.68,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la deuda"
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "En medio, una refinanciación de más de mil millones de deuda, vencimiento en dos mil treinta y uno. Y, según un medio especializado, doscientos millones de esa operación se repartieron como dividendo entre los accionistas.",
+      "duracion": 4.5,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En *medio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "En medio, una refinanciación de más de mil millones de deuda, vencimiento en dos mil treinta y uno. Y, según un medio especializado, doscientos millones de esa operación se repartieron como dividendo entre los accionistas.",
+      "duracion": 5.49,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "billetes",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "En *medio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_04",
+      "texto": "Y llegó el comprador. Pero la marca dijo que no.",
+      "duracion": 4.16,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Llegó el *comprador*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "¿Con qué derecho? Con el del contrato. En la franquicia maestra, el contrato que le da a la empresa española el derecho a usar el nombre y la receta, hay una cláusula de cambio de control: si cambia quién manda, la marca tiene que dar su permiso.",
+      "duracion": 3.51,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "texto_pantalla": {
+        "texto": "En la franquicia *maestra*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda",
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "duotono_fuerza": 0.55
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "¿Con qué derecho? Con el del contrato. En la franquicia maestra, el contrato que le da a la empresa española el derecho a usar el nombre y la receta, hay una cláusula de cambio de control: si cambia quién manda, la marca tiene que dar su permiso.",
+      "duracion": 4.28,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "En la franquicia *maestra*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_05c",
+      "texto": "¿Con qué derecho? Con el del contrato. En la franquicia maestra, el contrato que le da a la empresa española el derecho a usar el nombre y la receta, hay una cláusula de cambio de control: si cambia quién manda, la marca tiene que dar su permiso.",
+      "duracion": 4.28,
+      "movimiento": "estatico",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05d",
+      "texto": "¿Con qué derecho? Con el del contrato. En la franquicia maestra, el contrato que le da a la empresa española el derecho a usar el nombre y la receta, hay una cláusula de cambio de control: si cambia quién manda, la marca tiene que dar su permiso.",
+      "duracion": 5.23,
+      "movimiento": "drift_izq",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Lo que se publicó es que la matriz se negó. Un motivo posible, que también es información de prensa: el comprador ya controla Burger King en Brasil.",
+      "duracion": 2.86,
+      "movimiento": "contra_der",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_burger/2023_02_03_burger_king_in_9001.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_06b",
+      "texto": "Lo que se publicó es que la matriz se negó. Un motivo posible, que también es información de prensa: el comprador ya controla Burger King en Brasil.",
+      "duracion": 3.49,
+      "movimiento": "subir",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/burger_assembly_15.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Un motivo *posible*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_06c",
+      "texto": "Lo que se publicó es que la matriz se negó. Un motivo posible, que también es información de prensa: el comprador ya controla Burger King en Brasil.",
+      "duracion": 4.26,
+      "movimiento": "push_in",
+      "grade": "verde_suave",
+      "efectos": [
+        "billetes"
+      ],
+      "clip": "stock_burger/burger_close_up_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_07",
+      "texto": "No hay comunicado de la marca, del fondo ni del comprador. Es lo que cuenta Expansión.",
+      "duracion": 2.9,
+      "movimiento": "bajar",
+      "grade": "verde_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "No hay *comunicado* de la marca",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_07b",
+      "texto": "No hay comunicado de la marca, del fondo ni del comprador. Es lo que cuenta Expansión.",
+      "duracion": 2.93,
+      "movimiento": "pull_out",
+      "grade": "verde_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Con todo esto, vamos a hacer la cuenta de lo que es tuyo.",
+      "duracion": 3.93,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Con todo esto",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "Si fueras franquiciado de Burger King, tu contrato duraría veinte años, según los portales, prorrogable. No es tuyo el nombre, ni la receta, ni los proveedores, ni la decisión de cuándo reformar el local con la imagen que toque.",
+      "duracion": 3.23,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 20.0,
+        "dec": 0,
+        "sufijo": " años",
+        "pie": "de contrato, según los portales",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.28,
+        "duracion": 1.25,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que firmas"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "Si fueras franquiciado de Burger King, tu contrato duraría veinte años, según los portales, prorrogable. No es tuyo el nombre, ni la receta, ni los proveedores, ni la decisión de cuándo reformar el local con la imagen que toque.",
+      "duracion": 3.94,
+      "movimiento": "push_in",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_burger/delivery_rider_bike_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "Si fueras franquiciado de Burger King, tu contrato duraría veinte años, según los portales, prorrogable. No es tuyo el nombre, ni la receta, ni los proveedores, ni la decisión de cuándo reformar el local con la imagen que toque.",
+      "duracion": 3.94,
+      "movimiento": "estatico",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/night_street_city_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02d",
+      "texto": "Si fueras franquiciado de Burger King, tu contrato duraría veinte años, según los portales, prorrogable. No es tuyo el nombre, ni la receta, ni los proveedores, ni la decisión de cuándo reformar el local con la imagen que toque.",
+      "duracion": 4.8,
+      "movimiento": "subir",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/burger_grill_patty_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "En el modelo que la matriz declara en Estados Unidos, además, el contrato no se puede ceder sin su permiso, y la marca tiene derecho de tanteo. Si algún día quieres vender, el primero al que tienes que ofrecérselo es a quien te dio la franquicia.",
+      "duracion": 3.18,
+      "movimiento": "contra_der",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "En el modelo que la matriz declara en Estados Unidos, además, el contrato no se puede ceder sin su permiso, y la marca tiene derecho de tanteo. Si algún día quieres vender, el primero al que tienes que ofrecérselo es a quien te dio la franquicia.",
+      "duracion": 3.88,
+      "movimiento": "subir",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03c",
+      "texto": "En el modelo que la matriz declara en Estados Unidos, además, el contrato no se puede ceder sin su permiso, y la marca tiene derecho de tanteo. Si algún día quieres vender, el primero al que tienes que ofrecérselo es a quien te dio la franquicia.",
+      "duracion": 3.88,
+      "movimiento": "push_in",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "La marca tiene *derecho* de tanteo",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_03d",
+      "texto": "En el modelo que la matriz declara en Estados Unidos, además, el contrato no se puede ceder sin su permiso, y la marca tiene derecho de tanteo. Si algún día quieres vender, el primero al que tienes que ofrecérselo es a quien te dio la franquicia.",
+      "duracion": 4.74,
+      "movimiento": "bajar",
+      "grade": "rojo_alerta",
+      "efectos": [
+        "ceniza"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "Eso explica lo que veíamos en la red. Los que crecen terminan vendiendo, y a un único comprador.",
+      "duracion": 3.61,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "subir",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "sube"
+      },
+      "texto_pantalla": {
+        "texto": "Los que crecen terminan *vendiendo*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_04x",
+      "texto": "Eso explica lo que veíamos en la red. Los que crecen terminan vendiendo, y a un único comprador.",
+      "duracion": 3.61,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "subir",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "sube"
+      },
+      "texto_pantalla": {
+        "texto": "A un único *comprador*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "Y no es una trampa escondida. Está escrito.",
+      "duracion": 3.97,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "texto_pantalla": {
+        "texto": "No es una trampa *escondida*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "alerta",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_01",
+      "texto": "Si de verdad quieres ganar dinero con hamburguesas en España, hay cifras con las que comparar.",
+      "duracion": 2.38,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_01b",
+      "texto": "Si de verdad quieres ganar dinero con hamburguesas en España, hay cifras con las que comparar.",
+      "duracion": 3.54,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_02",
+      "texto": "Five Guys, que no franquicia en España y lo tiene todo propio, facturó unos ciento seis millones de euros en dos mil veinticinco con cuarenta y tres restaurantes. Ganó setecientos mil euros. La subida de la carne se llevó buena parte del resultado.",
+      "duracion": 3.48,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_burger/meat_processing_factory_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_02b",
+      "texto": "Five Guys, que no franquicia en España y lo tiene todo propio, facturó unos ciento seis millones de euros en dos mil veinticinco con cuarenta y tres restaurantes. Ganó setecientos mil euros. La subida de la carne se llevó buena parte del resultado.",
+      "duracion": 4.25,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 106.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "facturó Five Guys con 43 restaurantes",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.39,
+        "duracion": 2.16,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "otra forma de hacerlo"
+    },
+    {
+      "id": "cap7_02c",
+      "texto": "Five Guys, que no franquicia en España y lo tiene todo propio, facturó unos ciento seis millones de euros en dos mil veinticinco con cuarenta y tres restaurantes. Ganó setecientos mil euros. La subida de la carne se llevó buena parte del resultado.",
+      "duracion": 4.25,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/burger_king_martos_9026.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_02d",
+      "texto": "Five Guys, que no franquicia en España y lo tiene todo propio, facturó unos ciento seis millones de euros en dos mil veinticinco con cuarenta y tres restaurantes. Ganó setecientos mil euros. La subida de la carne se llevó buena parte del resultado.",
+      "duracion": 5.18,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_03",
+      "texto": "El sector entero mueve seis mil cien millones de euros al año en comida rápida, y la hamburguesa es seis de cada diez. Burger King y McDonald's tienen más del noventa y cuatro por ciento de las hamburgueserías organizadas.",
+      "duracion": 3.67,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_burger/warehouse_pallets_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "El *sector* entero mueve seis mil",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_03b",
+      "texto": "El sector entero mueve seis mil cien millones de euros al año en comida rápida, y la hamburguesa es seis de cada diez. Burger King y McDonald's tienen más del noventa y cuatro por ciento de las hamburgueserías organizadas.",
+      "duracion": 4.47,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_burger/keys_handover_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_03c",
+      "texto": "El sector entero mueve seis mil cien millones de euros al año en comida rápida, y la hamburguesa es seis de cada diez. Burger King y McDonald's tienen más del noventa y cuatro por ciento de las hamburgueserías organizadas.",
+      "duracion": 5.45,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "reparto",
+        "valor": 94.0,
+        "dec": 0,
+        "etiqueta_a": "dos marcas",
+        "etiqueta_b": "todas las demás",
+        "color_a": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "la hamburguesería organizada"
+    },
+    {
+      "id": "cap7_04",
+      "texto": "Es un mercado enorme. Y lo reparten dos marcas.",
+      "duracion": 4.02,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Es un mercado *enorme*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Montar un Burger King cuesta, según los portales, unos seiscientos mil euros. Y a cambio recibes un nombre que no es tuyo, unos proveedores que no eliges y un contrato que no puedes vender sin pedir permiso.",
+      "duracion": 3.61,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "lo que compras",
+        "lineas": [
+          [
+            "Es tuyo",
+            "un local y su plantilla"
+          ],
+          [
+            "No es tuyo",
+            "el nombre, los proveedores, la venta"
+          ]
+        ],
+        "total": "600.000 €",
+        "etiqueta_total": "según los portales de franquicias",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.25,
+        "duracion": 1.66,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento"
+    },
+    {
+      "id": "cierre_01b",
+      "texto": "Montar un Burger King cuesta, según los portales, unos seiscientos mil euros. Y a cambio recibes un nombre que no es tuyo, unos proveedores que no eliges y un contrato que no puedes vender sin pedir permiso.",
+      "duracion": 4.41,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_01c",
+      "texto": "Montar un Burger King cuesta, según los portales, unos seiscientos mil euros. Y a cambio recibes un nombre que no es tuyo, unos proveedores que no eliges y un contrato que no puedes vender sin pedir permiso.",
+      "duracion": 5.38,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "Y al otro lado, una empresa de más de dos mil millones que no pudo venderse porque la marca dijo que no.",
+      "duracion": 6.29,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "Todo el mundo en esta historia es el dueño de algo. El franquiciado, de un local. La cadena española, de setecientos sesenta y tres restaurantes. El fondo, de la cadena española. Y la matriz, con algo más del diez por ciento, del único derecho que importaba: decir que no.",
+      "duracion": 3.89,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "franquiciado",
+            237.0
+          ],
+          [
+            "cadena española",
+            763.0
+          ]
+        ],
+        "colores": {
+          "franquiciado": "acento",
+          "cadena española": "serie"
+        },
+        "total": "1.000 restaurantes",
+        "sufijo": "",
+        "dec": 0,
+        "y": 0.52,
+        "retardo": 0.32,
+        "duracion": 1.87,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "Todo el mundo en esta historia es el dueño de algo. El franquiciado, de un local. La cadena española, de setecientos sesenta y tres restaurantes. El fondo, de la cadena española. Y la matriz, con algo más del diez por ciento, del único derecho que importaba: decir que no.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "El *franquiciado*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03c",
+      "texto": "Todo el mundo en esta historia es el dueño de algo. El franquiciado, de un local. La cadena española, de setecientos sesenta y tres restaurantes. El fondo, de la cadena española. Y la matriz, con algo más del diez por ciento, del único derecho que importaba: decir que no.",
+      "duracion": 4.74,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03d",
+      "texto": "Todo el mundo en esta historia es el dueño de algo. El franquiciado, de un local. La cadena española, de setecientos sesenta y tres restaurantes. El fondo, de la cadena española. Y la matriz, con algo más del diez por ciento, del único derecho que importaba: decir que no.",
+      "duracion": 5.79,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_burger/burger_king_oostwijk_vlaardingen_9029.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "El derecho de decir *no*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Ese es el precio de ser el dueño.",
+      "duracion": 3.0,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Ese es el precio de ser el *dueño*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    }
+  ],
+  "identidad": {
+    "tema": "papel_naranja",
+    "rueda": [
+      "wipeleft",
+      "circleopen",
+      "smoothright",
+      "slidedown",
+      "fadefast",
+      "diagtl",
+      "dissolve"
+    ],
+    "cierre": "fadewhite",
+    "clima": {
+      "gancho": [
+        "dorado_suave",
+        [
+          "brasas",
+          "chispas",
+          "destellos"
+        ]
+      ],
+      "cap1": [
+        "dorado_suave",
+        [
+          "brasas",
+          "bokeh",
+          "humo"
+        ]
+      ],
+      "cap2": [
+        "rojo_suave",
+        [
+          "chispas",
+          "brasas",
+          "humo"
+        ]
+      ],
+      "cap3": [
+        "dorado_suave",
+        [
+          "destellos",
+          "brasas",
+          "polvo"
+        ]
+      ],
+      "cap4": [
+        "rojo_suave",
+        [
+          "humo",
+          "brasas",
+          "chispas"
+        ]
+      ],
+      "cap5": [
+        "verde_suave",
+        [
+          "billetes",
+          "bokeh",
+          "destellos"
+        ]
+      ],
+      "cap6": [
+        "rojo_alerta",
+        [
+          "brasas",
+          "chispas",
+          "ceniza"
+        ]
+      ],
+      "cap7": [
+        "dorado_suave",
+        [
+          "destellos",
+          "brasas",
+          "bokeh"
+        ]
+      ],
+      "cierre": [
+        "dorado_suave",
+        [
+          "brasas",
+          "destellos",
+          "chispas"
+        ]
+      ]
+    },
+    "duos": [
+      "duo_ambar",
+      "duo_rojo",
+      "duo_ambar",
+      "duo_papel"
+    ],
+    "latigos": 3,
+    "remotion": {
+      "cuadricula": "cuadro",
+      "entrada_grafico": "caida",
+      "entrada_titular": "baja",
+      "resorte": 1.9,
+      "stagger": 0.06,
+      "sello": "circulo",
+      "deriva": 1.4
+    },
+    "nombre": "burger"
+  }
+}

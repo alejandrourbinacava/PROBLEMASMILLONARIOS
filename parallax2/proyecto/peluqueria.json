@@ -1,0 +1,3794 @@
+{
+  "titulo": "guion_peluqueria",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "tema": "papel_rosa",
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Un corte de pelo a treinta euros.",
+      "duracion": 3.04,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/hairdresser_cutting_hair_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "Treinta euros que alguien deja en el mostrador de una peluquería, una tarde cualquiera, en España.",
+      "duracion": 1.86,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/scissors_hair_close_up_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "Treinta euros que alguien deja en el mostrador de una peluquería, una tarde cualquiera, en España.",
+      "duracion": 2.27,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/hair_cut_woman_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "Treinta euros que alguien deja en el mostrador de una peluquería, una tarde cualquiera, en España.",
+      "duracion": 2.77,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/hair_dryer_styling_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "De esos treinta, cinco con veintiuno son IVA. Es decir, del Estado. Antes de septiembre de dos mil doce, con el IVA que tenían las peluquerías entonces, serían dos con veintidós.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "IVA",
+            5.21
+          ],
+          [
+            "quien corta",
+            10.6
+          ],
+          [
+            "queda",
+            14.19
+          ]
+        ],
+        "colores": {
+          "IVA": "acento",
+          "quien corta": "serie",
+          "queda": "tenue"
+        },
+        "total": "30 € un corte",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.18,
+        "duracion": 1.02,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "De esos treinta, cinco con veintiuno son IVA. Es decir, del Estado. Antes de septiembre de dos mil doce, con el IVA que tenían las peluquerías entonces, serían dos con veintidós.",
+      "duracion": 3.19,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/hair_coloring_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "De esos treinta, cinco con veintiuno son IVA. Es decir, del Estado. Antes de septiembre de dos mil doce, con el IVA que tenían las peluquerías entonces, serían dos con veintidós.",
+      "duracion": 3.19,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/hair_brush_combing_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03d",
+      "texto": "De esos treinta, cinco con veintiuno son IVA. Es decir, del Estado. Antes de septiembre de dos mil doce, con el IVA que tenían las peluquerías entonces, serían dos con veintidós.",
+      "duracion": 3.61,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/hair_products_shelf_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Del resto, una parte es el sueldo de quien corta: un oficial cuesta a la empresa más de catorce euros por hora, según el convenio. Si tarda tres cuartos de hora, son unos diez con sesenta.",
+      "duracion": 2.62,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/calculator_invoices_desk_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Del resto, una parte es el sueldo de quien corta: un oficial cuesta a la empresa más de catorce euros por hora, según el convenio. Si tarda tres cuartos de hora, son unos diez con sesenta.",
+      "duracion": 3.19,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 14.1,
+        "dec": 1,
+        "sufijo": " €",
+        "pie": "por hora cuesta a la empresa un oficial",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.23,
+        "duracion": 1.26,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la hora de quien corta"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Del resto, una parte es el sueldo de quien corta: un oficial cuesta a la empresa más de catorce euros por hora, según el convenio. Si tarda tres cuartos de hora, son unos diez con sesenta.",
+      "duracion": 3.19,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/stylist_talking_client_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04d",
+      "texto": "Del resto, una parte es el sueldo de quien corta: un oficial cuesta a la empresa más de catorce euros por hora, según el convenio. Si tarda tres cuartos de hora, son unos diez con sesenta.",
+      "duracion": 3.89,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/rental_contract_signing_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Todavía no hemos pagado el champú, el tinte, la luz, el alquiler, la gestoría ni el sueldo de quien abre el local.",
+      "duracion": 2.02,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/keys_handover_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_05b",
+      "texto": "Todavía no hemos pagado el champú, el tinte, la luz, el alquiler, la gestoría ni el sueldo de quien abre el local.",
+      "duracion": 2.47,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05c",
+      "texto": "Todavía no hemos pagado el champú, el tinte, la luz, el alquiler, la gestoría ni el sueldo de quien abre el local.",
+      "duracion": 3.01,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Esto es un ejemplo hecho con cifras reales y supuestos nuestros: el precio y el tiempo del corte los hemos puesto nosotros. Pero sirve para ver a quién llega el dinero.",
+      "duracion": 2.9,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/cash_register_28.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Esto es un *ejemplo* hecho",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "Esto es un ejemplo hecho con cifras reales y supuestos nuestros: el precio y el tiempo del corte los hemos puesto nosotros. Pero sirve para ver a quién llega el dinero.",
+      "duracion": 2.94,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/haircut_man_10.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06c",
+      "texto": "Esto es un ejemplo hecho con cifras reales y supuestos nuestros: el precio y el tiempo del corte los hemos puesto nosotros. Pero sirve para ver a quién llega el dinero.",
+      "duracion": 2.94,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/la_barbera_yvdh_2021_9010.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06d",
+      "texto": "Esto es un ejemplo hecho con cifras reales y supuestos nuestros: el precio y el tiempo del corte los hemos puesto nosotros. Pero sirve para ver a quién llega el dinero.",
+      "duracion": 3.09,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/oliver_peluqueros_mural_s_nico_2018_9017.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_07",
+      "texto": "Hay unas cincuenta mil peluquerías en España. Y casi todas las lleva una sola persona. Vamos a montar una.",
+      "duracion": 2.06,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/hair_dye_mixing_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Cincuenta mil *peluquerías*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "gancho_07b",
+      "texto": "Hay unas cincuenta mil peluquerías en España. Y casi todas las lleva una sola persona. Vamos a montar una.",
+      "duracion": 2.51,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/hair_tools_table_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_07c",
+      "texto": "Hay unas cincuenta mil peluquerías en España. Y casi todas las lleva una sola persona. Vamos a montar una.",
+      "duracion": 3.07,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/maruchi_peluqueria_villadiego_marzo_2022_9013.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Antes de que nadie coja unas tijeras, ya ha cobrado el primero.",
+      "duracion": 4.39,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Ya ha cobrado el *primero*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "En septiembre de dos mil doce, las peluquerías pasaron de pagar un IVA del ocho por ciento a pagar un veintiuno. Fue en un real decreto de ajuste del déficit, y no se pudo repercutir del todo al cliente: la gente simplemente iba menos.",
+      "duracion": 3.25,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_anuncia_414048432_9021.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "En *septiembre* de dos mil doce",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02b",
+      "texto": "En septiembre de dos mil doce, las peluquerías pasaron de pagar un IVA del ocho por ciento a pagar un veintiuno. Fue en un real decreto de ajuste del déficit, y no se pudo repercutir del todo al cliente: la gente simplemente iba menos.",
+      "duracion": 3.96,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "IVA de las peluquerías",
+        "items": [
+          [
+            "Hasta agosto de 2012",
+            8.0
+          ],
+          [
+            "Desde septiembre de 2012",
+            21.0
+          ]
+        ],
+        "sufijo": " %",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 1.9,
+        "entrada": "barrido",
+        "destacar": {
+          "Desde septiembre de 2012": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap1_02c",
+      "texto": "En septiembre de dos mil doce, las peluquerías pasaron de pagar un IVA del ocho por ciento a pagar un veintiuno. Fue en un real decreto de ajuste del déficit, y no se pudo repercutir del todo al cliente: la gente simplemente iba menos.",
+      "duracion": 3.96,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/robert_s_peluquero_9033.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02d",
+      "texto": "En septiembre de dos mil doce, las peluquerías pasaron de pagar un IVA del ocho por ciento a pagar un veintiuno. Fue en un real decreto de ajuste del déficit, y no se pudo repercutir del todo al cliente: la gente simplemente iba menos.",
+      "duracion": 4.83,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/mural_peluqueria_9014.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "Desde entonces, el sector lleva años pidiendo volver a un tipo reducido. En dos mil veintiuno, el Senado llegó a aprobar bajarlo al diez por ciento desde enero del año siguiente. No llegó a entrar en vigor. A día de hoy el servicio sigue al veintiuno, aunque conviene confirmarlo con la Agencia Tributaria.",
+      "duracion": 3.33,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/calendar_appointment_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Desde *entonces*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "Desde entonces, el sector lleva años pidiendo volver a un tipo reducido. En dos mil veintiuno, el Senado llegó a aprobar bajarlo al diez por ciento desde enero del año siguiente. No llegó a entrar en vigor. A día de hoy el servicio sigue al veintiuno, aunque conviene confirmarlo con la Agencia Tributaria.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Desde *entonces*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "Desde entonces, el sector lleva años pidiendo volver a un tipo reducido. En dos mil veintiuno, el Senado llegó a aprobar bajarlo al diez por ciento desde enero del año siguiente. No llegó a entrar en vigor. A día de hoy el servicio sigue al veintiuno, aunque conviene confirmarlo con la Agencia Tributaria.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      }
+    },
+    {
+      "id": "cap1_03d",
+      "texto": "Desde entonces, el sector lleva años pidiendo volver a un tipo reducido. En dos mil veintiuno, el Senado llegó a aprobar bajarlo al diez por ciento desde enero del año siguiente. No llegó a entrar en vigor. A día de hoy el servicio sigue al veintiuno, aunque conviene confirmarlo con la Agencia Tributaria.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Nunca entró en *vigor*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap1_03e",
+      "texto": "Desde entonces, el sector lleva años pidiendo volver a un tipo reducido. En dos mil veintiuno, el Senado llegó a aprobar bajarlo al diez por ciento desde enero del año siguiente. No llegó a entrar en vigor. A día de hoy el servicio sigue al veintiuno, aunque conviene confirmarlo con la Agencia Tributaria.",
+      "duracion": 4.95,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Desde *entonces*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap1_04",
+      "texto": "Y ojo con lo que se contó entonces. Se dijo que habían cerrado miles de peluquerías por culpa del IVA. El Gobierno respondió con datos del Instituto Nacional de Estadística que en dos mil doce y en dos mil trece abrieron más locales de los que cerraron, y reconoció que no sabe cuántos cierres se deben al IVA.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/receipt_printing_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Ojo con lo que se contó *entonces*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "Y ojo con lo que se contó entonces. Se dijo que habían cerrado miles de peluquerías por culpa del IVA. El Gobierno respondió con datos del Instituto Nacional de Estadística que en dos mil doce y en dos mil trece abrieron más locales de los que cerraron, y reconoció que no sabe cuántos cierres se deben al IVA.",
+      "duracion": 3.81,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_tradicional_9040.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "Y ojo con lo que se contó entonces. Se dijo que habían cerrado miles de peluquerías por culpa del IVA. El Gobierno respondió con datos del Instituto Nacional de Estadística que en dos mil doce y en dos mil trece abrieron más locales de los que cerraron, y reconoció que no sabe cuántos cierres se deben al IVA.",
+      "duracion": 3.81,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/dania_peluquer_a_establecimiento_cerrado_en_9004.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04d",
+      "texto": "Y ojo con lo que se contó entonces. Se dijo que habían cerrado miles de peluquerías por culpa del IVA. El Gobierno respondió con datos del Instituto Nacional de Estadística que en dos mil doce y en dos mil trece abrieron más locales de los que cerraron, y reconoció que no sabe cuántos cierres se deben al IVA.",
+      "duracion": 3.81,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/calculator_invoices_desk_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04e",
+      "texto": "Y ojo con lo que se contó entonces. Se dijo que habían cerrado miles de peluquerías por culpa del IVA. El Gobierno respondió con datos del Instituto Nacional de Estadística que en dos mil doce y en dos mil trece abrieron más locales de los que cerraron, y reconoció que no sabe cuántos cierres se deben al IVA.",
+      "duracion": 4.65,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/hair_brush_combing_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Eso no quiere decir que no doliera. Quiere decir que la cifra de cierres que circula es la de la campaña del propio sector, no una medida independiente.",
+      "duracion": 4.75,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Eso no quiere decir que no *doliera*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05x",
+      "texto": "Eso no quiere decir que no doliera. Quiere decir que la cifra de cierres que circula es la de la campaña del propio sector, no una medida independiente.",
+      "duracion": 4.75,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "No una medida *independiente*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Primer cobro: el Estado. Veintiuno de cada ciento veintiuno euros, antes de empezar.",
+      "duracion": 6.67,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 17.4,
+        "dec": 1,
+        "sufijo": " %",
+        "pie": "del precio de un corte es IVA (21 sobre 121)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el primer cobro"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Ahora sí. El cliente se sienta, el oficial empieza a cortar.",
+      "duracion": 4.72,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/hairdresser_cutting_hair_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "Y empieza a correr el segundo gasto, el más grande: la hora de esa persona.",
+      "duracion": 2.96,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "factura",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Empieza a correr el *segundo*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_02x",
+      "texto": "Y empieza a correr el segundo gasto, el más grande: la hora de esa persona.",
+      "duracion": 2.96,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "factura",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El más *grande*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 3.76,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Institutos* de belleza y gimnasios",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 4.59,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03c",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 4.59,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03d",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 4.59,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "sueldo base mensual de un oficial (14 pagas)",
+        "items": [
+          [
+            "2024",
+            1202.0
+          ],
+          [
+            "2025",
+            1300.0
+          ],
+          [
+            "2026",
+            1350.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "2026": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap2_03e",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 4.59,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/person_signing_pen_paper_143.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03f",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 4.59,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_03g",
+      "texto": "Hay un convenio colectivo estatal de peluquerías, institutos de belleza y gimnasios. Es del Boletín Oficial del Estado de octubre de dos mil veinticuatro, vale hasta finales de dos mil veintiséis. En él, el sueldo base mensual de un oficial pasa de mil doscientos dos euros en dos mil veinticuatro a mil trescientos en dos mil veinticinco y a mil trescientos cincuenta en dos mil veintiséis. Catorce pagas. Es un ocho por ciento más en un año y casi cuatro en el siguiente.",
+      "duracion": 5.59,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/hairdresser_smiling_client_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "El convenio fija también la jornada: mil setecientas cincuenta horas efectivas al año, treinta días naturales de vacaciones, doce horas de descanso entre jornadas.",
+      "duracion": 3.03,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1750.0,
+        "dec": 0,
+        "sufijo": " h",
+        "pie": "efectivas al año, según el convenio",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.2,
+        "duracion": 1.13,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la jornada"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "El convenio fija también la jornada: mil setecientas cincuenta horas efectivas al año, treinta días naturales de vacaciones, doce horas de descanso entre jornadas.",
+      "duracion": 3.69,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04c",
+      "texto": "El convenio fija también la jornada: mil setecientas cincuenta horas efectivas al año, treinta días naturales de vacaciones, doce horas de descanso entre jornadas.",
+      "duracion": 4.5,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "El *convenio* fija",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Suma lo que paga la empresa a la Seguridad Social, algo más del treinta por ciento sobre el sueldo, y el oficial te cuesta unos veinticuatro mil setecientos euros al año. Es nuestro cálculo y no incluye los seguros de accidentes. Dividido entre sus horas de trabajo, más de catorce euros por hora.",
+      "duracion": 4.01,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "reloj",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Más de catorce *euros* por hora",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Suma lo que paga la empresa a la Seguridad Social, algo más del treinta por ciento sobre el sueldo, y el oficial te cuesta unos veinticuatro mil setecientos euros al año. Es nuestro cálculo y no incluye los seguros de accidentes. Dividido entre sus horas de trabajo, más de catorce euros por hora.",
+      "duracion": 4.89,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24700.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "al año cuesta un oficial a la empresa",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el segundo cobro"
+    },
+    {
+      "id": "cap2_05c",
+      "texto": "Suma lo que paga la empresa a la Seguridad Social, algo más del treinta por ciento sobre el sueldo, y el oficial te cuesta unos veinticuatro mil setecientos euros al año. Es nuestro cálculo y no incluye los seguros de accidentes. Dividido entre sus horas de trabajo, más de catorce euros por hora.",
+      "duracion": 4.89,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05d",
+      "texto": "Suma lo que paga la empresa a la Seguridad Social, algo más del treinta por ciento sobre el sueldo, y el oficial te cuesta unos veinticuatro mil setecientos euros al año. Es nuestro cálculo y no incluye los seguros de accidentes. Dividido entre sus horas de trabajo, más de catorce euros por hora.",
+      "duracion": 5.97,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_06",
+      "texto": "Y una cosa que no hace el convenio: no regula comisiones. No encontré ninguna norma que diga cuánto se lleva el peluquero por cada servicio. Eso lo pacta cada uno.",
+      "duracion": 3.07,
+      "movimiento": "bajar",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/stylist_talking_client_21.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Una cosa que no hace el *convenio*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "Y una cosa que no hace el convenio: no regula comisiones. No encontré ninguna norma que diga cuánto se lleva el peluquero por cada servicio. Eso lo pacta cada uno.",
+      "duracion": 3.75,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "Una cosa que no hace el *convenio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_06c",
+      "texto": "Y una cosa que no hace el convenio: no regula comisiones. No encontré ninguna norma que diga cuánto se lleva el peluquero por cada servicio. Eso lo pacta cada uno.",
+      "duracion": 4.58,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "porcentaje",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "Una cosa que no hace el *convenio*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap2_07",
+      "texto": "Segundo cobro: quien corta.",
+      "duracion": 2.95,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Segundo *cobro*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Mira a tu alrededor: el local.",
+      "duracion": 3.51,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Mira a tu *alrededor*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "Sin local no hay peluquería. Y casi ninguna peluquería es dueña del suyo. Se alquila.",
+      "duracion": 2.53,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/peluqueros_5014219243_9019.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "Sin local no hay peluquería. Y casi ninguna peluquería es dueña del suyo. Se alquila.",
+      "duracion": 3.76,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_castillo_9022.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "El contrato de un local de negocio es el que acuerdan las dos partes, no el de una vivienda. La fianza legal son dos mensualidades de renta, no una. Una media de alquiler de local comercial que he visto, de una sola fuente, anda entre doce y veinte euros por metro cuadrado al mes. Una peluquería pequeña, de treinta metros, serían entre trescientos sesenta y seiscientos euros. Es un dato de portal, no una estadística.",
+      "duracion": 3.96,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/business_handshake_39.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "El contrato de un local de negocio es el que acuerdan las dos partes, no el de una vivienda. La fianza legal son dos mensualidades de renta, no una. Una media de alquiler de local comercial que he visto, de una sola fuente, anda entre doce y veinte euros por metro cuadrado al mes. Una peluquería pequeña, de treinta metros, serían entre trescientos sesenta y seiscientos euros. Es un dato de portal, no una estadística.",
+      "duracion": 4.82,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 2.0,
+        "dec": 0,
+        "sufijo": " meses",
+        "pie": "de renta es la fianza legal de un local",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el casero"
+    },
+    {
+      "id": "cap3_03c",
+      "texto": "El contrato de un local de negocio es el que acuerdan las dos partes, no el de una vivienda. La fianza legal son dos mensualidades de renta, no una. Una media de alquiler de local comercial que he visto, de una sola fuente, anda entre doce y veinte euros por metro cuadrado al mes. Una peluquería pequeña, de treinta metros, serían entre trescientos sesenta y seiscientos euros. Es un dato de portal, no una estadística.",
+      "duracion": 4.82,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_03d",
+      "texto": "El contrato de un local de negocio es el que acuerdan las dos partes, no el de una vivienda. La fianza legal son dos mensualidades de renta, no una. Una media de alquiler de local comercial que he visto, de una sola fuente, anda entre doce y veinte euros por metro cuadrado al mes. Una peluquería pequeña, de treinta metros, serían entre trescientos sesenta y seiscientos euros. Es un dato de portal, no una estadística.",
+      "duracion": 4.82,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "alquiler de local comercial, al mes",
+        "items": [
+          [
+            "Mínimo",
+            12.0
+          ],
+          [
+            "Máximo",
+            20.0
+          ]
+        ],
+        "sufijo": " €/m²",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Máximo": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap3_03e",
+      "texto": "El contrato de un local de negocio es el que acuerdan las dos partes, no el de una vivienda. La fianza legal son dos mensualidades de renta, no una. Una media de alquiler de local comercial que he visto, de una sola fuente, anda entre doce y veinte euros por metro cuadrado al mes. Una peluquería pequeña, de treinta metros, serían entre trescientos sesenta y seiscientos euros. Es un dato de portal, no una estadística.",
+      "duracion": 4.82,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03f",
+      "texto": "El contrato de un local de negocio es el que acuerdan las dos partes, no el de una vivienda. La fianza legal son dos mensualidades de renta, no una. Una media de alquiler de local comercial que he visto, de una sola fuente, anda entre doce y veinte euros por metro cuadrado al mes. Una peluquería pequeña, de treinta metros, serían entre trescientos sesenta y seiscientos euros. Es un dato de portal, no una estadística.",
+      "duracion": 5.9,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "Si el contrato termina y no se renueva, la ley prevé una indemnización por la clientela que has creado, una mensualidad por año de contrato, con un tope. Pero es renunciable, hay que haber avisado con cuatro meses, y muchos contratos la excluyen. Ni siquiera he podido confirmar que una peluquería, que es un servicio y no una venta, entre en ese supuesto.",
+      "duracion": 3.85,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "Si el contrato termina y no se renueva, la ley prevé una indemnización por la clientela que has creado, una mensualidad por año de contrato, con un tope. Pero es renunciable, hay que haber avisado con cuatro meses, y muchos contratos la excluyen. Ni siquiera he podido confirmar que una peluquería, que es un servicio y no una venta, entre en ese supuesto.",
+      "duracion": 4.69,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_04c",
+      "texto": "Si el contrato termina y no se renueva, la ley prevé una indemnización por la clientela que has creado, una mensualidad por año de contrato, con un tope. Pero es renunciable, hay que haber avisado con cuatro meses, y muchos contratos la excluyen. Ni siquiera he podido confirmar que una peluquería, que es un servicio y no una venta, entre en ese supuesto.",
+      "duracion": 4.69,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Con un tope",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04d",
+      "texto": "Si el contrato termina y no se renueva, la ley prevé una indemnización por la clientela que has creado, una mensualidad por año de contrato, con un tope. Pero es renunciable, hay que haber avisado con cuatro meses, y muchos contratos la excluyen. Ni siquiera he podido confirmar que una peluquería, que es un servicio y no una venta, entre en ese supuesto.",
+      "duracion": 4.69,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04e",
+      "texto": "Si el contrato termina y no se renueva, la ley prevé una indemnización por la clientela que has creado, una mensualidad por año de contrato, con un tope. Pero es renunciable, hay que haber avisado con cuatro meses, y muchos contratos la excluyen. Ni siquiera he podido confirmar que una peluquería, que es un servicio y no una venta, entre en ese supuesto.",
+      "duracion": 5.74,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Tercer cobro: el casero. Se queda con el sitio.",
+      "duracion": 4.81,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/keys_handover_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "texto_pantalla": {
+        "texto": "*Tercer* cobro",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Y para llegar hasta aquí, hay que montar la peluquería.",
+      "duracion": 3.97,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/dania_peluquer_a_establecimiento_cerrado_en_9004.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "No hay una cifra oficial. Los portales de franquicias hablan de entre veinticinco mil y cuarenta mil euros para un salón normal, y de más de setenta y cinco mil en las franquicias de marca. Esas webs viven de vender franquicias.",
+      "duracion": 3.11,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "No hay una cifra *oficial*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_02b",
+      "texto": "No hay una cifra oficial. Los portales de franquicias hablan de entre veinticinco mil y cuarenta mil euros para un salón normal, y de más de setenta y cinco mil en las franquicias de marca. Esas webs viven de vender franquicias.",
+      "duracion": 3.79,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "grafico",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "montar una peluquería, según portales de franquicias",
+        "items": [
+          [
+            "Mínimo",
+            25000.0
+          ],
+          [
+            "Máximo",
+            40000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.33,
+        "duracion": 1.76,
+        "entrada": "barrido",
+        "destacar": {
+          "Máximo": "acento"
+        }
+      },
+      "_lat_ent": 1.0,
+      "composicion": "izquierda",
+      "fondo_color": null
+    },
+    {
+      "id": "cap4_02c",
+      "texto": "No hay una cifra oficial. Los portales de franquicias hablan de entre veinticinco mil y cuarenta mil euros para un salón normal, y de más de setenta y cinco mil en las franquicias de marca. Esas webs viven de vender franquicias.",
+      "duracion": 3.79,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/cash_register_28.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_02d",
+      "texto": "No hay una cifra oficial. Los portales de franquicias hablan de entre veinticinco mil y cuarenta mil euros para un salón normal, y de más de setenta y cinco mil en las franquicias de marca. Esas webs viven de vender franquicias.",
+      "duracion": 4.61,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/hair_coloring_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "Un caso hipotético con desglose, publicado por la revista Emprendedores en dos mil veintidós: treinta y dos mil euros de inversión. Obra: seis mil. Mobiliario y utillaje: casi doce mil. Existencias: tres mil. Alquiler: quinientos cincuenta euros al mes. Costes fijos, mil sesenta al mes, más sesenta de cuota de autónomo.",
+      "duracion": 3.6,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/barber_shop_interior_1.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Un caso *hipotético* con desglose",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03b",
+      "texto": "Un caso hipotético con desglose, publicado por la revista Emprendedores en dos mil veintidós: treinta y dos mil euros de inversión. Obra: seis mil. Mobiliario y utillaje: casi doce mil. Existencias: tres mil. Alquiler: quinientos cincuenta euros al mes. Costes fijos, mil sesenta al mes, más sesenta de cuota de autónomo.",
+      "duracion": 4.39,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "un caso hipotético (Emprendedores, 2022)",
+        "lineas": [
+          [
+            "Obra",
+            "6.000 €"
+          ],
+          [
+            "Mobiliario y utillaje",
+            "11.900 €"
+          ],
+          [
+            "Existencias",
+            "3.000 €"
+          ],
+          [
+            "Informática",
+            "1.000 €"
+          ]
+        ],
+        "total": "32.000 €",
+        "etiqueta_total": "de inversión total, más IVA",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 2.33,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento"
+    },
+    {
+      "id": "cap4_03c",
+      "texto": "Un caso hipotético con desglose, publicado por la revista Emprendedores en dos mil veintidós: treinta y dos mil euros de inversión. Obra: seis mil. Mobiliario y utillaje: casi doce mil. Existencias: tres mil. Alquiler: quinientos cincuenta euros al mes. Costes fijos, mil sesenta al mes, más sesenta de cuota de autónomo.",
+      "duracion": 4.39,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/beauty_salon_entrance_6.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03d",
+      "texto": "Un caso hipotético con desglose, publicado por la revista Emprendedores en dos mil veintidós: treinta y dos mil euros de inversión. Obra: seis mil. Mobiliario y utillaje: casi doce mil. Existencias: tres mil. Alquiler: quinientos cincuenta euros al mes. Costes fijos, mil sesenta al mes, más sesenta de cuota de autónomo.",
+      "duracion": 4.39,
+      "movimiento": "push_in",
+      "grade": "frio_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/barber_trimmer_beard_16.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03e",
+      "texto": "Un caso hipotético con desglose, publicado por la revista Emprendedores en dos mil veintidós: treinta y dos mil euros de inversión. Obra: seis mil. Mobiliario y utillaje: casi doce mil. Existencias: tres mil. Alquiler: quinientos cincuenta euros al mes. Costes fijos, mil sesenta al mes, más sesenta de cuota de autónomo.",
+      "duracion": 4.39,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/woman_looking_mirror_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03f",
+      "texto": "Un caso hipotético con desglose, publicado por la revista Emprendedores en dos mil veintidós: treinta y dos mil euros de inversión. Obra: seis mil. Mobiliario y utillaje: casi doce mil. Existencias: tres mil. Alquiler: quinientos cincuenta euros al mes. Costes fijos, mil sesenta al mes, más sesenta de cuota de autónomo.",
+      "duracion": 5.34,
+      "movimiento": "subir",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/paying_card_terminal_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "Es un caso inventado para enseñar a hacer un plan, no una media. Pero da la forma.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Es un caso inventado para *enseñar*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04x",
+      "texto": "Es un caso inventado para enseñar a hacer un plan, no una media. Pero da la forma.",
+      "duracion": 3.13,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No una *media*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "Con eso se llega a un número simple: antes de ganar un euro, hay que cubrir mil ciento veinte euros al mes solo en costes fijos. Con cortes a treinta euros, son casi treinta y ocho cortes. Más de uno al día solo para no perder.",
+      "duracion": 3.22,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "Con eso se llega a un número simple: antes de ganar un euro, hay que cubrir mil ciento veinte euros al mes solo en costes fijos. Con cortes a treinta euros, son casi treinta y ocho cortes. Más de uno al día solo para no perder.",
+      "duracion": 3.93,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1120.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "al mes solo en costes fijos",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.34,
+        "duracion": 1.89,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "antes de ganar un euro"
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "Con eso se llega a un número simple: antes de ganar un euro, hay que cubrir mil ciento veinte euros al mes solo en costes fijos. Con cortes a treinta euros, son casi treinta y ocho cortes. Más de uno al día solo para no perder.",
+      "duracion": 3.93,
+      "movimiento": "estatico",
+      "grade": "frio_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_05d",
+      "texto": "Con eso se llega a un número simple: antes de ganar un euro, hay que cubrir mil ciento veinte euros al mes solo en costes fijos. Con cortes a treinta euros, son casi treinta y ocho cortes. Más de uno al día solo para no perder.",
+      "duracion": 4.78,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 38.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "cortes al mes para cubrir los fijos",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "más de uno al día"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Ahora el cliente se levanta, se mira al espejo. Y aquí está la pregunta que decide si el negocio vale algo: ¿de quién es ese cliente?",
+      "duracion": 3.89,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_87.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Ahora el *cliente* se levanta",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_01b",
+      "texto": "Ahora el cliente se levanta, se mira al espejo. Y aquí está la pregunta que decide si el negocio vale algo: ¿de quién es ese cliente?",
+      "duracion": 5.79,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "No es tuyo. Es de su peluquero.",
+      "duracion": 3.09,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "No es tuyo",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "Esto no es una opinión, es lo que dice la ley. Si contratas a un oficial y un día se va, el Estatuto de los Trabajadores solo te deja prohibirle que trabaje en la competencia durante un máximo de seis meses, o dos años si es técnico, y solo si tienes un interés comercial real y le pagas una compensación adecuada. Si no, es libre de abrir la peluquería de enfrente.",
+      "duracion": 3.89,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_peluqueria/law_books_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Esto no es una *opinión*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "Esto no es una opinión, es lo que dice la ley. Si contratas a un oficial y un día se va, el Estatuto de los Trabajadores solo te deja prohibirle que trabaje en la competencia durante un máximo de seis meses, o dos años si es técnico, y solo si tienes un interés comercial real y le pagas una compensación adecuada. Si no, es libre de abrir la peluquería de enfrente.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "Esto no es una opinión, es lo que dice la ley. Si contratas a un oficial y un día se va, el Estatuto de los Trabajadores solo te deja prohibirle que trabaje en la competencia durante un máximo de seis meses, o dos años si es técnico, y solo si tienes un interés comercial real y le pagas una compensación adecuada. Si no, es libre de abrir la peluquería de enfrente.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "pacto de no competencia al irse un oficial",
+        "items": [
+          [
+            "Resto de trabajadores",
+            6.0
+          ],
+          [
+            "Técnicos",
+            24.0
+          ]
+        ],
+        "sufijo": " meses",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Técnicos": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap5_03d",
+      "texto": "Esto no es una opinión, es lo que dice la ley. Si contratas a un oficial y un día se va, el Estatuto de los Trabajadores solo te deja prohibirle que trabaje en la competencia durante un máximo de seis meses, o dos años si es técnico, y solo si tienes un interés comercial real y le pagas una compensación adecuada. Si no, es libre de abrir la peluquería de enfrente.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03e",
+      "texto": "Esto no es una opinión, es lo que dice la ley. Si contratas a un oficial y un día se va, el Estatuto de los Trabajadores solo te deja prohibirle que trabaje en la competencia durante un máximo de seis meses, o dos años si es técnico, y solo si tienes un interés comercial real y le pagas una compensación adecuada. Si no, es libre de abrir la peluquería de enfrente.",
+      "duracion": 5.78,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_04",
+      "texto": "El convenio de peluquerías tampoco lo impide: solo prohíbe trabajar para otra empresa del sector mientras sigue en tu plantilla.",
+      "duracion": 3.44,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "El convenio de peluquerías tampoco lo impide: solo prohíbe trabajar para otra empresa del sector mientras sigue en tu plantilla.",
+      "duracion": 5.13,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "Y que un oficial se establezca cerca y capte a sus clientes de siempre no es, por sí solo, competencia desleal. Los tribunales miran si usó listados o datos del antiguo patrón. No he encontrado una sentencia concreta de este caso.",
+      "duracion": 3.13,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "Y que un oficial se establezca cerca y capte a sus clientes de siempre no es, por sí solo, competencia desleal. Los tribunales miran si usó listados o datos del antiguo patrón. No he encontrado una sentencia concreta de este caso.",
+      "duracion": 3.81,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "No es competencia *desleal*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap5_05c",
+      "texto": "Y que un oficial se establezca cerca y capte a sus clientes de siempre no es, por sí solo, competencia desleal. Los tribunales miran si usó listados o datos del antiguo patrón. No he encontrado una sentencia concreta de este caso.",
+      "duracion": 3.81,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "personas",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Miran los *listados*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    },
+    {
+      "id": "cap5_05d",
+      "texto": "Y que un oficial se establezca cerca y capte a sus clientes de siempre no es, por sí solo, competencia desleal. Los tribunales miran si usó listados o datos del antiguo patrón. No he encontrado una sentencia concreta de este caso.",
+      "duracion": 4.65,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "personas",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Cuarto cobro: el cliente, que va con quien le corta.",
+      "duracion": 4.34,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Cuarto *cobro*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Con todo esto, ¿cuántos lo intentan?",
+      "duracion": 3.18,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.0,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Con todo esto",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "El Instituto Nacional de Estadística no separa las peluquerías en una cifra propia. Su grupo de otros servicios personales, donde la peluquería es lo más grande pero entran también lavanderías y funerarias, tenía ciento cincuenta y cinco mil setecientas veinticuatro empresas a principios de dos mil veinticinco.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_chelo_campos_valencia_de_9024.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "El *Instituto* Nacional",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "El Instituto Nacional de Estadística no separa las peluquerías en una cifra propia. Su grupo de otros servicios personales, donde la peluquería es lo más grande pero entran también lavanderías y funerarias, tenía ciento cincuenta y cinco mil setecientas veinticuatro empresas a principios de dos mil veinticinco.",
+      "duracion": 3.75,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_urbano_col_n_10_9026.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "El Instituto Nacional de Estadística no separa las peluquerías en una cifra propia. Su grupo de otros servicios personales, donde la peluquería es lo más grande pero entran también lavanderías y funerarias, tenía ciento cincuenta y cinco mil setecientas veinticuatro empresas a principios de dos mil veinticinco.",
+      "duracion": 3.75,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/sal_n_de_peluquer_a_embajadores_9034.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02d",
+      "texto": "El Instituto Nacional de Estadística no separa las peluquerías en una cifra propia. Su grupo de otros servicios personales, donde la peluquería es lo más grande pero entran también lavanderías y funerarias, tenía ciento cincuenta y cinco mil setecientas veinticuatro empresas a principios de dos mil veinticinco.",
+      "duracion": 3.75,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 155724.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "empresas de otros servicios personales (INE, 2025)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.32,
+        "duracion": 1.73,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "cuántos hay"
+    },
+    {
+      "id": "cap6_02e",
+      "texto": "El Instituto Nacional de Estadística no separa las peluquerías en una cifra propia. Su grupo de otros servicios personales, donde la peluquería es lo más grande pero entran también lavanderías y funerarias, tenía ciento cincuenta y cinco mil setecientas veinticuatro empresas a principios de dos mil veinticinco.",
+      "duracion": 4.56,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/fachada_peluquer_a_lavapies_9038.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "El sesenta por ciento no tiene ni un asalariado. Y el ochenta y cinco por ciento son personas físicas, es decir, autónomos.",
+      "duracion": 3.48,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 60.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "no tiene ni un asalariado",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.3,
+        "duracion": 1.48,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "autónomos solos"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "El sesenta por ciento no tiene ni un asalariado. Y el ochenta y cinco por ciento son personas físicas, es decir, autónomos.",
+      "duracion": 5.18,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 85.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "son autónomos",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "personas físicas"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "La patronal Stanpa habla de unos cincuenta mil salones. Y de un dato más inquietante: el trece por ciento de los titulares tiene más de sesenta años.",
+      "duracion": 2.95,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/hair_cut_woman_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "La patronal Stanpa habla de unos cincuenta mil salones. Y de un dato más inquietante: el trece por ciento de los titulares tiene más de sesenta años.",
+      "duracion": 3.6,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 13.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "de los titulares tiene más de 60 años",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.29,
+        "duracion": 1.61,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el relevo"
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "La patronal Stanpa habla de unos cincuenta mil salones. Y de un dato más inquietante: el trece por ciento de los titulares tiene más de sesenta años.",
+      "duracion": 4.39,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_peluqueria/hair_dye_mixing_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "¿Cuántas sobreviven? De las empresas de ese grupo nacidas en dos mil diecisiete, el setenta y seis por ciento seguía abierta al año, el cincuenta y seis a los tres, y el cuarenta y cinco a los cinco. Es casi igual que la media de todas las actividades, el cuarenta y cuatro. Es del grupo entero, no solo de peluquerías.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/hair_products_shelf_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05b",
+      "texto": "¿Cuántas sobreviven? De las empresas de ese grupo nacidas en dos mil diecisiete, el setenta y seis por ciento seguía abierta al año, el cincuenta y seis a los tres, y el cuarenta y cinco a los cinco. Es casi igual que la media de todas las actividades, el cuarenta y cuatro. Es del grupo entero, no solo de peluquerías.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "empresas del grupo nacidas en 2017",
+        "items": [
+          [
+            "Al año",
+            76.0
+          ],
+          [
+            "A los tres años",
+            56.0
+          ],
+          [
+            "A los cinco años",
+            45.0
+          ]
+        ],
+        "sufijo": " %",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.32,
+        "duracion": 1.72,
+        "entrada": "barrido",
+        "destacar": {
+          "A los cinco años": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap6_05c",
+      "texto": "¿Cuántas sobreviven? De las empresas de ese grupo nacidas en dos mil diecisiete, el setenta y seis por ciento seguía abierta al año, el cincuenta y seis a los tres, y el cuarenta y cinco a los cinco. Es casi igual que la media de todas las actividades, el cuarenta y cuatro. Es del grupo entero, no solo de peluquerías.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_peluqueria/hair_washing_sink_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El *cincuenta* y seis a los tres",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05d",
+      "texto": "¿Cuántas sobreviven? De las empresas de ese grupo nacidas en dos mil diecisiete, el setenta y seis por ciento seguía abierta al año, el cincuenta y seis a los tres, y el cuarenta y cinco a los cinco. Es casi igual que la media de todas las actividades, el cuarenta y cuatro. Es del grupo entero, no solo de peluquerías.",
+      "duracion": 3.74,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/maruchi_peluqueria_villadiego_marzo_2022_9013.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_05e",
+      "texto": "¿Cuántas sobreviven? De las empresas de ese grupo nacidas en dos mil diecisiete, el setenta y seis por ciento seguía abierta al año, el cincuenta y seis a los tres, y el cuarenta y cinco a los cinco. Es casi igual que la media de todas las actividades, el cuarenta y cuatro. Es del grupo entero, no solo de peluquerías.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/mural_peluqueria_9014.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_05f",
+      "texto": "¿Cuántas sobreviven? De las empresas de ese grupo nacidas en dos mil diecisiete, el setenta y seis por ciento seguía abierta al año, el cincuenta y seis a los tres, y el cuarenta y cinco a los cinco. Es casi igual que la media de todas las actividades, el cuarenta y cuatro. Es del grupo entero, no solo de peluquerías.",
+      "duracion": 4.56,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_peluqueria/oliver_peluqueros_mural_s_nico_2018_9017.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Y en dos mil veinte, la propia Stanpa estimaba que el treinta por ciento de los salones no era rentable ni antes de la pandemia.",
+      "duracion": 3.24,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 30.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "de los salones no era rentable antes del COVID",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.24,
+        "duracion": 1.3,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "según Stanpa"
+    },
+    {
+      "id": "cap6_06b",
+      "texto": "Y en dos mil veinte, la propia Stanpa estimaba que el treinta por ciento de los salones no era rentable ni antes de la pandemia.",
+      "duracion": 4.82,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_castillo_9022.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_01",
+      "texto": "Y a pesar de todo, los precios suben.",
+      "duracion": 3.32,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_02",
+      "texto": "El Instituto Nacional de Estadística mide el precio de las peluquerías dentro del IPC. En septiembre de dos mil veintiséis habían subido un cuatro coma tres por ciento sobre un año antes. En diciembre de dos mil veinticinco, un cuatro coma uno. Todos los meses desde agosto de dos mil veinticinco, entre el cuatro coma uno y el cuatro coma cinco.",
+      "duracion": 3.85,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_granada_6851985914_9025.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_02b",
+      "texto": "El Instituto Nacional de Estadística mide el precio de las peluquerías dentro del IPC. En septiembre de dos mil veintiséis habían subido un cuatro coma tres por ciento sobre un año antes. En diciembre de dos mil veinticinco, un cuatro coma uno. Todos los meses desde agosto de dos mil veinticinco, entre el cuatro coma uno y el cuatro coma cinco.",
+      "duracion": 4.69,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/peluquer_a_tradicional_9040.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_02c",
+      "texto": "El Instituto Nacional de Estadística mide el precio de las peluquerías dentro del IPC. En septiembre de dos mil veintiséis habían subido un cuatro coma tres por ciento sobre un año antes. En diciembre de dos mil veinticinco, un cuatro coma uno. Todos los meses desde agosto de dos mil veinticinco, entre el cuatro coma uno y el cuatro coma cinco.",
+      "duracion": 4.69,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 4.3,
+        "dec": 1,
+        "sufijo": " %",
+        "pie": "subieron las peluquerías en un año (sep. 2026)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "los precios"
+    },
+    {
+      "id": "cap7_02d",
+      "texto": "El Instituto Nacional de Estadística mide el precio de las peluquerías dentro del IPC. En septiembre de dos mil veintiséis habían subido un cuatro coma tres por ciento sobre un año antes. En diciembre de dos mil veinticinco, un cuatro coma uno. Todos los meses desde agosto de dos mil veinticinco, entre el cuatro coma uno y el cuatro coma cinco.",
+      "duracion": 4.69,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_peluqueria/robert_s_peluquero_9033.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_02e",
+      "texto": "El Instituto Nacional de Estadística mide el precio de las peluquerías dentro del IPC. En septiembre de dos mil veintiséis habían subido un cuatro coma tres por ciento sobre un año antes. En diciembre de dos mil veinticinco, un cuatro coma uno. Todos los meses desde agosto de dos mil veinticinco, entre el cuatro coma uno y el cuatro coma cinco.",
+      "duracion": 5.74,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/scissors_hair_close_up_8.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_03",
+      "texto": "Y según un estudio de Stanpa, el ticket medio ha subido un cuarenta y cuatro por ciento entre dos mil diecisiete y dos mil veinticinco. Pero los clientes vienen con menos frecuencia.",
+      "duracion": 3.13,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/receipt_printing_27.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Según un *estudio* de Stanpa",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_03b",
+      "texto": "Y según un estudio de Stanpa, el ticket medio ha subido un cuarenta y cuatro por ciento entre dos mil diecisiete y dos mil veinticinco. Pero los clientes vienen con menos frecuencia.",
+      "duracion": 3.81,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 44.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "subió el ticket medio entre 2017 y 2025",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.32,
+        "duracion": 1.79,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el ticket"
+    },
+    {
+      "id": "cap7_03c",
+      "texto": "Y según un estudio de Stanpa, el ticket medio ha subido un cuarenta y cuatro por ciento entre dos mil diecisiete y dos mil veinticinco. Pero los clientes vienen con menos frecuencia.",
+      "duracion": 4.65,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_04",
+      "texto": "No encontré el precio medio de un corte en España. Solo anuncios sueltos: desde doce euros en algunas ciudades, hasta cuarenta y cinco con lavado y secado en Madrid.",
+      "duracion": 2.86,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_peluqueria/aerial_city_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_04b",
+      "texto": "No encontré el precio medio de un corte en España. Solo anuncios sueltos: desde doce euros en algunas ciudades, hasta cuarenta y cinco con lavado y secado en Madrid.",
+      "duracion": 3.49,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Solo *anuncios* sueltos",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_04c",
+      "texto": "No encontré el precio medio de un corte en España. Solo anuncios sueltos: desde doce euros en algunas ciudades, hasta cuarenta y cinco con lavado y secado en Madrid.",
+      "duracion": 4.26,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_05",
+      "texto": "Lo que se puede decir es esto. Se vende cada vez más caro a menos clientes, y de cada euro que se cobra, una parte creciente se la llevan el Estado, el casero y la persona que corta.",
+      "duracion": 3.24,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "sube"
+      },
+      "texto_pantalla": {
+        "texto": "Lo que se puede *decir* es esto",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          184,
+          28,
+          112
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_05b",
+      "texto": "Lo que se puede decir es esto. Se vende cada vez más caro a menos clientes, y de cada euro que se cobra, una parte creciente se la llevan el Estado, el casero y la persona que corta.",
+      "duracion": 3.95,
+      "movimiento": "drift_der",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_05c",
+      "texto": "Lo que se puede decir es esto. Se vende cada vez más caro a menos clientes, y de cada euro que se cobra, una parte creciente se la llevan el Estado, el casero y la persona que corta.",
+      "duracion": 4.82,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Volvamos al corte de treinta euros.",
+      "duracion": 3.09,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "un corte, cuatro cobros",
+        "lineas": [
+          [
+            "El Estado",
+            "21 % de IVA antes de empezar"
+          ],
+          [
+            "Quien corta",
+            "su hora, que sube cada año"
+          ],
+          [
+            "El casero",
+            "el sitio, y no se renueva si no quiere"
+          ],
+          [
+            "El cliente",
+            "se va con su peluquero"
+          ]
+        ],
+        "total": "≈ 9 €",
+        "etiqueta_total": "para luz, alquiler, productos y la dueña",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.19,
+        "duracion": 1.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "El Estado cobró su veintiuno por ciento antes de que nadie cogiera las tijeras. Quien cortó, su hora, que sube cada año por convenio. El casero, su alquiler, y no se renueva si él no quiere. Y el cliente, que se va con el peluquero.",
+      "duracion": 4.23,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "El Estado cobró su veintiuno por ciento antes de que nadie cogiera las tijeras. Quien cortó, su hora, que sube cada año por convenio. El casero, su alquiler, y no se renueva si él no quiere. Y el cliente, que se va con el peluquero.",
+      "duracion": 5.16,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_02c",
+      "texto": "El Estado cobró su veintiuno por ciento antes de que nadie cogiera las tijeras. Quien cortó, su hora, que sube cada año por convenio. El casero, su alquiler, y no se renueva si él no quiere. Y el cliente, que se va con el peluquero.",
+      "duracion": 6.29,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "Y la dueña, la que puso treinta mil euros, la que abrió la persiana, la que paga la gestoría y el champú, se queda con lo que sobra: unos nueve euros de ese corte, según nuestro ejemplo, para pagar luz, alquiler, productos y ella misma.",
+      "duracion": 3.33,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "Y la dueña, la que puso treinta mil euros, la que abrió la persiana, la que paga la gestoría y el champú, se queda con lo que sobra: unos nueve euros de ese corte, según nuestro ejemplo, para pagar luz, alquiler, productos y ella misma.",
+      "duracion": 4.06,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03c",
+      "texto": "Y la dueña, la que puso treinta mil euros, la que abrió la persiana, la que paga la gestoría y el champú, se queda con lo que sobra: unos nueve euros de ese corte, según nuestro ejemplo, para pagar luz, alquiler, productos y ella misma.",
+      "duracion": 4.06,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03d",
+      "texto": "Y la dueña, la que puso treinta mil euros, la que abrió la persiana, la que paga la gestoría y el champú, se queda con lo que sobra: unos nueve euros de ese corte, según nuestro ejemplo, para pagar luz, alquiler, productos y ella misma.",
+      "duracion": 4.97,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_267.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "El peluquero se lleva a su cliente. El casero se lleva el local. El Estado se lleva su parte antes de empezar.",
+      "duracion": 3.07,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "El *peluquero* se lleva a su cliente",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_04b",
+      "texto": "El peluquero se lleva a su cliente. El casero se lleva el local. El Estado se lleva su parte antes de empezar.",
+      "duracion": 4.57,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "Y ella se queda con las tijeras.",
+      "duracion": 3.0,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_peluqueria/fachada_antiguo_sal_n_de_peluqueria_9039.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado",
+      "texto_pantalla": {
+        "texto": "Se queda con las *tijeras*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    }
+  ],
+  "identidad": {
+    "tema": "papel_rosa",
+    "rueda": [
+      "dissolve",
+      "smoothup",
+      "fadefast",
+      "circleopen",
+      "smoothleft"
+    ],
+    "cierre": "fadewhite",
+    "clima": {
+      "gancho": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "destellos",
+          "niebla"
+        ]
+      ],
+      "cap1": [
+        "frio_suave",
+        [
+          "bokeh",
+          "niebla",
+          "polvo"
+        ]
+      ],
+      "cap2": [
+        "dorado_suave",
+        [
+          "destellos",
+          "bokeh",
+          "polvo"
+        ]
+      ],
+      "cap3": [
+        "rojo_suave",
+        [
+          "bokeh",
+          "niebla",
+          "destellos"
+        ]
+      ],
+      "cap4": [
+        "frio_suave",
+        [
+          "niebla",
+          "polvo",
+          "bokeh"
+        ]
+      ],
+      "cap5": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "destellos",
+          "niebla"
+        ]
+      ],
+      "cap6": [
+        "rojo_suave",
+        [
+          "niebla",
+          "bokeh",
+          "chispas"
+        ]
+      ],
+      "cap7": [
+        "acero_suave",
+        [
+          "niebla",
+          "bokeh",
+          "polvo"
+        ]
+      ],
+      "cierre": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "destellos",
+          "niebla"
+        ]
+      ]
+    },
+    "duos": [
+      "duo_papel",
+      "duo_ambar",
+      "duo_papel"
+    ],
+    "latigos": 1,
+    "remotion": {
+      "cuadricula": "puntos",
+      "entrada_grafico": "mezcla",
+      "entrada_titular": "sube",
+      "resorte": 1.3,
+      "stagger": 0.11,
+      "sello": "circulo",
+      "deriva": 0.5
+    },
+    "nombre": "peluqueria"
+  }
+}

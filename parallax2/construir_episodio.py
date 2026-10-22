@@ -164,7 +164,7 @@ def main():
                     help="bar | taxi | burger | peluqueria (ver identidades.py). Sin ella, la serie de siempre.")
     ap.add_argument("--temas",
                     choices=["casino", "banco", "aerolinea", "aeropuerto",
-                             "gasolinera", "hotel", "farmacia", "loteria", "supermercado", "estanco"],
+                             "gasolinera", "hotel", "farmacia", "loteria", "supermercado", "estanco", "burger", "bar", "taxi", "peluqueria"],
                     default="banco")
     a = ap.parse_args()
     import identidades as ID
@@ -184,6 +184,10 @@ def main():
                 "loteria": CC.TEMAS_LOTERIA,
                 "supermercado": CC.TEMAS_SUPERMERCADO,
                 "estanco": CC.TEMAS_ESTANCO,
+                "burger": CC.TEMAS_BURGER,
+                "bar": CC.TEMAS_BAR,
+                "taxi": CC.TEMAS_TAXI,
+                "peluqueria": CC.TEMAS_PELUQUERIA,
                 "gasolinera": CC.TEMAS_GASOLINERA,
                 "hotel": CC.TEMAS_HOTEL}.get(a.temas, CC.TEMAS)
     pool = CC.cargar_pool(a.pool)

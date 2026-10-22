@@ -1,0 +1,266 @@
+{
+ "guion": "peluqueria.json",
+ "total": 606.81,
+ "bloques": [
+  {
+   "id": "gancho_01",
+   "hash": "96484d1c0a67d78c",
+   "inicio": 0.0
+  },
+  {
+   "id": "gancho_02",
+   "hash": "26068e5f7a223616",
+   "inicio": 3.04
+  },
+  {
+   "id": "gancho_03",
+   "hash": "9ad826b79612983e",
+   "inicio": 9.94
+  },
+  {
+   "id": "gancho_04",
+   "hash": "e72cb9e3471d2e23",
+   "inicio": 22.83
+  },
+  {
+   "id": "gancho_05",
+   "hash": "7c2c1aac0b38ebf3",
+   "inicio": 35.72
+  },
+  {
+   "id": "gancho_06",
+   "hash": "b9000702167c252a",
+   "inicio": 43.22
+  },
+  {
+   "id": "gancho_07",
+   "hash": "54c5150c7ab88894",
+   "inicio": 55.09
+  },
+  {
+   "id": "cap1_01",
+   "hash": "4a38889c32b8a8d4",
+   "inicio": 62.73
+  },
+  {
+   "id": "cap1_02",
+   "hash": "c143774fbb92fca0",
+   "inicio": 67.12
+  },
+  {
+   "id": "cap1_03",
+   "hash": "f3d09d0036c72a64",
+   "inicio": 83.12
+  },
+  {
+   "id": "cap1_04",
+   "hash": "5e212b92ad9ab141",
+   "inicio": 103.58
+  },
+  {
+   "id": "cap1_05",
+   "hash": "b700795fe5ec12cf",
+   "inicio": 122.78
+  },
+  {
+   "id": "cap1_06",
+   "hash": "83434f73f2a73c74",
+   "inicio": 132.28
+  },
+  {
+   "id": "cap2_01",
+   "hash": "dbcaea94a7343bbf",
+   "inicio": 138.95
+  },
+  {
+   "id": "cap2_02",
+   "hash": "7a531912cc216c97",
+   "inicio": 143.67
+  },
+  {
+   "id": "cap2_03",
+   "hash": "c1453f69424bf2ab",
+   "inicio": 149.59
+  },
+  {
+   "id": "cap2_04",
+   "hash": "0d170d3a536a764f",
+   "inicio": 181.89
+  },
+  {
+   "id": "cap2_05",
+   "hash": "b8234778948103be",
+   "inicio": 193.11
+  },
+  {
+   "id": "cap2_06",
+   "hash": "9c50a9c51928a68e",
+   "inicio": 212.87
+  },
+  {
+   "id": "cap2_07",
+   "hash": "d42406c301fa284a",
+   "inicio": 224.27
+  },
+  {
+   "id": "cap3_01",
+   "hash": "bafa7b5604d25a38",
+   "inicio": 227.22
+  },
+  {
+   "id": "cap3_02",
+   "hash": "34bfa14a9f91e315",
+   "inicio": 230.73
+  },
+  {
+   "id": "cap3_03",
+   "hash": "32ed7f1ce6ea13b0",
+   "inicio": 237.02
+  },
+  {
+   "id": "cap3_04",
+   "hash": "8778f0ce3d0e44a8",
+   "inicio": 266.16
+  },
+  {
+   "id": "cap3_05",
+   "hash": "3d20e3c397f55799",
+   "inicio": 289.82
+  },
+  {
+   "id": "cap4_01",
+   "hash": "2ebfa7cc3352521d",
+   "inicio": 294.63
+  },
+  {
+   "id": "cap4_02",
+   "hash": "0e9eceb5e6616d74",
+   "inicio": 298.6
+  },
+  {
+   "id": "cap4_03",
+   "hash": "ee17d587cdc93348",
+   "inicio": 313.9
+  },
+  {
+   "id": "cap4_04",
+   "hash": "b9ecd730e37a7213",
+   "inicio": 340.4
+  },
+  {
+   "id": "cap4_05",
+   "hash": "645ea161b78055ee",
+   "inicio": 346.65
+  },
+  {
+   "id": "cap5_01",
+   "hash": "22205e46e3062120",
+   "inicio": 362.51
+  },
+  {
+   "id": "cap5_02",
+   "hash": "fd1a5b922a9c2f06",
+   "inicio": 372.19
+  },
+  {
+   "id": "cap5_03",
+   "hash": "4084bea119e721fa",
+   "inicio": 375.28
+  },
+  {
+   "id": "cap5_04",
+   "hash": "284138352421d309",
+   "inicio": 399.17
+  },
+  {
+   "id": "cap5_05",
+   "hash": "1c7a5c2fdfcb3e6a",
+   "inicio": 407.74
+  },
+  {
+   "id": "cap5_06",
+   "hash": "1ba738d676cafb30",
+   "inicio": 423.14
+  },
+  {
+   "id": "cap6_01",
+   "hash": "aeceba22c1714f00",
+   "inicio": 427.48
+  },
+  {
+   "id": "cap6_02",
+   "hash": "a4dfaa89a968fbdf",
+   "inicio": 430.66
+  },
+  {
+   "id": "cap6_03",
+   "hash": "1514473ddf9fc9dd",
+   "inicio": 449.54
+  },
+  {
+   "id": "cap6_04",
+   "hash": "32c6557e31a04d1a",
+   "inicio": 458.2
+  },
+  {
+   "id": "cap6_05",
+   "hash": "5743034600a2ed5c",
+   "inicio": 469.14
+  },
+  {
+   "id": "cap6_06",
+   "hash": "c1728166ba53c1e4",
+   "inicio": 491.73
+  },
+  {
+   "id": "cap7_01",
+   "hash": "44e4645a866a81e0",
+   "inicio": 499.79
+  },
+  {
+   "id": "cap7_02",
+   "hash": "1493850720613b76",
+   "inicio": 503.11
+  },
+  {
+   "id": "cap7_03",
+   "hash": "9d2846bb0d8c75d6",
+   "inicio": 526.77
+  },
+  {
+   "id": "cap7_04",
+   "hash": "545eed78f49f3c1d",
+   "inicio": 538.36
+  },
+  {
+   "id": "cap7_05",
+   "hash": "cca908e3da842b61",
+   "inicio": 548.97
+  },
+  {
+   "id": "cierre_01",
+   "hash": "c107a1ce11d73248",
+   "inicio": 560.98
+  },
+  {
+   "id": "cierre_02",
+   "hash": "39dd7f7d1b254dec",
+   "inicio": 564.07
+  },
+  {
+   "id": "cierre_03",
+   "hash": "33f5a830bd86a833",
+   "inicio": 579.75
+  },
+  {
+   "id": "cierre_04",
+   "hash": "740647705bcce222",
+   "inicio": 596.17
+  },
+  {
+   "id": "cierre_05",
+   "hash": "870363e0524c7a74",
+   "inicio": 603.81
+  }
+ ]
+}

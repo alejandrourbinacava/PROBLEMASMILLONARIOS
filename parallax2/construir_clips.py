@@ -271,6 +271,54 @@ TEMAS_ESTANCO = [
                    "autoriza", "autorizacion")),
 ]
 
+TEMAS_BURGER = [
+    ("local",     ("restaurante", "restaurantes", "local", "locales", "tienda", "drive", "puerta", "calle", "burger", "king")),
+    ("producto",  ("hamburguesa", "hamburguesas", "patatas", "menu", "comida", "carne", "whopper")),
+    ("cocina",    ("cocina", "cocinan", "freir", "plancha")),
+    ("caja",      ("caja", "cliente", "clientes", "cobra", "ticket", "pagas", "paga", "pedido", "reparto")),
+    ("gente",     ("empleados", "empleo", "personal", "plantilla", "trabajadores")),
+    ("proveedor", ("proveedores", "proveedor", "carne", "logistica", "camion", "suministro")),
+    ("negocio",   ("franquicia", "franquiciado", "franquiciados", "franquiciador", "contrato", "marca", "matriz", "fondo", "venta", "vender", "comprador", "veto", "cadena", "master", "cinven", "mubadala", "derecho", "tanteo")),
+    ("escala",    ("espana", "pais", "mundo", "mil", "mercado", "sector")),
+    ("dinero",    ("euros", "euro", "millones", "millon", "royalty", "canon", "inversion", "beneficio", "ventas", "facturo", "gano", "perdio", "deuda", "dividendo")),
+]
+
+TEMAS_BAR = [
+    ("local",     ("bar", "bares", "local", "terraza", "persiana", "casero", "alquiler", "puerta", "traspaso", "fianza")),
+    ("barra",     ("cafe", "cerveza", "cervecera", "grifos", "barril", "barra", "camarero", "taza")),
+    ("gente",     ("camarero", "empleados", "asalariados", "plantilla", "convenio", "clientes", "cliente", "equipo")),
+    ("cobro",     ("datafono", "tarjeta", "iva", "cobra", "cobran", "reparto", "plataformas", "propina", "tasa", "musica")),
+    ("proveedor", ("cervecera", "proveedor", "suministro", "pedido", "exclusiva", "mobiliario", "logo")),
+    ("papeles",   ("licencia", "ayuntamiento", "ley", "contrato", "permiso", "sentencia", "supremo", "tribunal", "proyecto", "clientela", "indemnizacion", "tramite", "comision", "bruselas")),
+    ("negocio",   ("dueno", "duenos", "dueña", "inversion", "reforma", "montar", "abrir", "cuenta", "gastos", "cierran", "cierre", "sobreviven")),
+    ("escala",    ("espana", "bares", "ciento", "mil", "sector", "hosteleria")),
+    ("dinero",    ("euros", "euro", "millones", "centimos", "cuesta", "facturacion", "margen", "beneficio")),
+]
+
+TEMAS_TAXI = [
+    ("coche",     ("taxi", "taxis", "taxista", "coche", "vtc", "seguro", "conductor", "volante")),
+    ("ciudad",    ("ciudad", "ciudades", "madrid", "barcelona", "sevilla", "malaga", "mallorca", "calle", "calles", "valencia")),
+    ("cliente",   ("cliente", "clientes", "pasajero", "viaje", "viajes", "aplicaciones", "apps", "app", "uber", "cabify")),
+    ("cobro",     ("tarifa", "tarifas", "bajada", "bandera", "cobra", "recaudacion", "ingresos", "ganan", "gana")),
+    ("coste",     ("seguro", "gastos", "autonomo", "cuota", "primas", "mantener", "gasolina", "coste")),
+    ("papeles",   ("licencia", "licencias", "ayuntamiento", "tribunal", "supremo", "ley", "autorizacion", "transmitir", "permiso", "decreto", "sentencia", "ratio", "comision", "justicia", "reclamar", "indemnizacion")),
+    ("negocio",   ("precio", "vale", "valia", "valor", "vender", "vende", "comprar", "jubilacion", "jubilados", "papel", "dueno", "heredar")),
+    ("escala",    ("espana", "sesenta", "mil", "ciento", "ratio", "sector")),
+    ("dinero",    ("euros", "euro", "millones", "cuesta")),
+]
+
+TEMAS_PELUQUERIA = [
+    ("local",     ("peluqueria", "peluquerias", "salon", "salones", "local", "alquiler", "casero", "fianza", "metros")),
+    ("corte",     ("corte", "cortar", "tijeras", "pelo", "oficial", "peinado", "hora")),
+    ("gente",     ("peluquero", "peluqueros", "cliente", "clientes", "clientela", "empleado", "autonomos", "equipo")),
+    ("producto",  ("productos", "champu", "tinte", "marcas")),
+    ("cobro",     ("iva", "precio", "precios", "cobra", "ticket", "cobro", "tarjeta")),
+    ("papeles",   ("convenio", "ley", "contrato", "estatuto", "licencia", "senado", "tribunales", "boletin", "gobierno", "indemnizacion", "competencia", "agencia")),
+    ("negocio",   ("montar", "abrir", "inversion", "negocio", "sobreviven", "cierran", "cuantos", "duran", "dueno", "dueña")),
+    ("escala",    ("espana", "mil", "salones", "sector", "empresas", "estadistica")),
+    ("dinero",    ("euros", "euro", "centimos", "veintiuno", "sueldo", "cuesta", "coste")),
+]
+
 TEMAS_FARMACIA = [
     ("farmacia",  ("farmacia", "farmacias", "botica", "botiquin", "cruz",
                    "mostrador", "local", "tienda", "persiana", "abrir",

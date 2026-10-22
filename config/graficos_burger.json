@@ -1,0 +1,519 @@
+[
+  {
+    "_nota": "Valoracion segun Expansion (fuentes anonimas); el plano es corto para un contador.",
+    "donde": "más de dos mil cien millones de euros",
+    "texto_pantalla": {
+      "texto": "Más de *2.100* millones",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "RBI, algo mas del 10 %.",
+    "donde": "algo más del diez por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "quien dijo que no"
+    },
+    "grafico": {
+      "tipo": "anillo",
+      "valor": 10.0,
+      "max": 100,
+      "sufijo": "%",
+      "dec": 0,
+      "pie": "tiene la matriz de la marca",
+      "r": 180,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "mil quinientos veinte millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "Burger King España"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1520.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "factura al año en España",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "763 propios y 237 franquiciados.",
+    "donde": "doscientos treinta y siete son de franquiciados",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "763 de 1.000"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "valor": 76.3,
+      "dec": 1,
+      "etiqueta_a": "de la cadena",
+      "etiqueta_b": "franquiciados",
+      "color_a": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Alimarket: 729+254 (2024) y 763+237 (2025).",
+    "donde": "Un año antes eran novecientos ochenta y tres",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "restaurantes de Burger King en España",
+      "items": [
+        [
+          "Propios 2024",
+          729.0
+        ],
+        [
+          "Propios 2025",
+          763.0
+        ],
+        [
+          "Franquiciados 2024",
+          254.0
+        ],
+        [
+          "Franquiciados 2025",
+          237.0
+        ]
+      ],
+      "sufijo": "",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Franquiciados 2025": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "el cincuenta y nueve por ciento ya era suyo",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la red se concentra"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 59.0,
+      "dec": 0,
+      "sufijo": " %",
+      "pie": "de los locales ya eran propios en 2020",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "doscientos cincuenta millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que vale un local"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 250.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "por 159 restaurantes, en 2022",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Portales de franquicias: fuente debil, sin fecha.",
+    "donde": "unos seiscientos mil euros de inversión",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "lo que dicen los portales de franquicias",
+      "items": [
+        [
+          "Canon de entrada",
+          60000.0
+        ],
+        [
+          "Inversión total",
+          600000.0
+        ]
+      ],
+      "sufijo": " €",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Inversión total": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "doscientos veinticinco metros cuadrados",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "los requisitos"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 225.0,
+      "dec": 0,
+      "sufijo": " m²",
+      "pie": "de local como mínimo, según los portales",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Portales: royalty 5 %, publicidad 4-5 %.",
+    "donde": "de esos cien euros salen cinco",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        [
+          "royalty",
+          5.0
+        ],
+        [
+          "publicidad",
+          4.5
+        ],
+        [
+          "queda",
+          90.5
+        ]
+      ],
+      "colores": {
+        "royalty": "acento",
+        "publicidad": "tenue",
+        "queda": "serie"
+      },
+      "total": "100 € de un cliente",
+      "sufijo": " €",
+      "dec": 1,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Portales 15-20 %; Megafood 5-8 % estimado (2015-2017, fuente debil).",
+    "donde": "entre el cinco y el ocho por ciento",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "margen de un franquiciado grande",
+      "items": [
+        [
+          "Portales (mínimo)",
+          15.0
+        ],
+        [
+          "Portales (máximo)",
+          20.0
+        ],
+        [
+          "Megafood (mínimo)",
+          5.0
+        ],
+        [
+          "Megafood (máximo)",
+          8.0
+        ]
+      ],
+      "sufijo": " %",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Megafood (mínimo)": "acento",
+        "Megafood (máximo)": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "Grupo RBE: España, Portugal e Italia.",
+    "donde": "treinta y nueve millones cuatrocientos mil euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "el beneficio"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 39.4,
+      "dec": 1,
+      "sufijo": " M€",
+      "pie": "ganó el grupo en 2025",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "39,4 / 1.541: calculo propio.",
+    "donde": "dos coma seis por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que se queda la cadena"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 2.6,
+      "dec": 1,
+      "sufijo": " %",
+      "pie": "de lo que entra se queda",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "Cinven: ~1.000 M€ en 2021; mas de 2.100 M€ buscados en 2026.",
+    "donde": "más del doble",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "barras",
+      "titulo": "valor de la filial, en millones de euros",
+      "items": [
+        [
+          "Compra 2021",
+          1000.0
+        ],
+        [
+          "Venta 2026",
+          2100.0
+        ]
+      ],
+      "sufijo": " M€",
+      "dec": 0,
+      "y": 0.5,
+      "retardo": 0.45,
+      "duracion": 2.4,
+      "entrada": "barrido",
+      "destacar": {
+        "Venta 2026": "acento"
+      }
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "más de mil millones de deuda",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la deuda"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 1098.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "de deuda refinanciada, hasta 2031",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "tu contrato duraría veinte años",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "lo que firmas"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 20.0,
+      "dec": 0,
+      "sufijo": " años",
+      "pie": "de contrato, según los portales",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 1.8,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "unos ciento seis millones de euros",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "otra forma de hacerlo"
+    },
+    "grafico": {
+      "tipo": "contador",
+      "valor": 106.0,
+      "dec": 0,
+      "sufijo": " M€",
+      "pie": "facturó Five Guys con 43 restaurantes",
+      "px": 230,
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "más del noventa y cuatro por ciento",
+    "movimiento": "estatico",
+    "fondo": {
+      "titulo": "la hamburguesería organizada"
+    },
+    "grafico": {
+      "tipo": "reparto",
+      "valor": 94.0,
+      "dec": 0,
+      "etiqueta_a": "dos marcas",
+      "etiqueta_b": "todas las demás",
+      "color_a": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.2,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Montar un Burger King cuesta",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "factura",
+      "titulo": "lo que compras",
+      "lineas": [
+        [
+          "Es tuyo",
+          "un local y su plantilla"
+        ],
+        [
+          "No es tuyo",
+          "el nombre, los proveedores, la venta"
+        ]
+      ],
+      "total": "600.000 €",
+      "etiqueta_total": "según los portales de franquicias",
+      "color": "acento",
+      "y": 0.5,
+      "retardo": 0.4,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "Todo el mundo en esta historia es el dueño de algo",
+    "movimiento": "estatico",
+    "fondo": true,
+    "grafico": {
+      "tipo": "apilada",
+      "items": [
+        [
+          "franquiciado",
+          237.0
+        ],
+        [
+          "cadena española",
+          763.0
+        ]
+      ],
+      "colores": {
+        "franquiciado": "acento",
+        "cadena española": "serie"
+      },
+      "total": "1.000 restaurantes",
+      "sufijo": "",
+      "dec": 0,
+      "y": 0.52,
+      "retardo": 0.45,
+      "duracion": 2.6,
+      "entrada": "barrido"
+    }
+  },
+  {
+    "_nota": "",
+    "donde": "algo más del diez por ciento, del único derecho",
+    "texto_pantalla": {
+      "texto": "El derecho de decir *no*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  }
+]

@@ -1,0 +1,3560 @@
+{
+  "titulo": "guion_bar",
+  "lienzo": {
+    "w": 1920,
+    "h": 1080,
+    "fps": 25,
+    "ppm": 140
+  },
+  "tema": "papel_granate",
+  "estilo": "metraje real",
+  "escenas": [
+    {
+      "id": "gancho_01",
+      "texto": "Un café con leche a un euro con ochenta.",
+      "duracion": 3.14,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/beer_tap_pouring_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_02",
+      "texto": "El café, la leche y el azúcar le cuestan al bar cincuenta y cinco céntimos. Pero al final del año, a la dueña le quedan unos quince céntimos de cada taza.",
+      "duracion": 2.2,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/coffee_shop_interior_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02b",
+      "texto": "El café, la leche y el azúcar le cuestan al bar cincuenta y cinco céntimos. Pero al final del año, a la dueña le quedan unos quince céntimos de cada taza.",
+      "duracion": 2.69,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "apilada",
+        "items": [
+          [
+            "producto",
+            0.55
+          ],
+          [
+            "le queda a la dueña",
+            0.15
+          ],
+          [
+            "alquiler, sueldos y demás",
+            1.1
+          ]
+        ],
+        "colores": {
+          "producto": "serie",
+          "le queda a la dueña": "acento",
+          "alquiler, sueldos y demás": "tenue"
+        },
+        "total": "1,80 € el café con leche",
+        "sufijo": " €",
+        "dec": 2,
+        "y": 0.52,
+        "retardo": 0.15,
+        "duracion": 0.84,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "gancho_02c",
+      "texto": "El café, la leche y el azúcar le cuestan al bar cincuenta y cinco céntimos. Pero al final del año, a la dueña le quedan unos quince céntimos de cada taza.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/pouring_coffee_cup_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Al *final* del año",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_02d",
+      "texto": "El café, la leche y el azúcar le cuestan al bar cincuenta y cinco céntimos. Pero al final del año, a la dueña le quedan unos quince céntimos de cada taza.",
+      "duracion": 3.06,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/barista_making_coffee_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03",
+      "texto": "Esto no es una media. Es el caso de una cafetería de Viladecans, en Barcelona, que contó sus cuentas en El Español en julio de dos mil veintiséis. Factura unos ciento treinta y ocho mil euros al año. Y de esa cifra, el ochenta y ocho por ciento se va antes de que ella cobre nada.",
+      "duracion": 2.9,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/tip_jar_coins_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Esto no es una *media*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03b",
+      "texto": "Esto no es una media. Es el caso de una cafetería de Viladecans, en Barcelona, que contó sus cuentas en El Español en julio de dos mil veintiséis. Factura unos ciento treinta y ocho mil euros al año. Y de esa cifra, el ochenta y ocho por ciento se va antes de que ella cobre nada.",
+      "duracion": 3.15,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/city_hall_building_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_03c",
+      "texto": "Esto no es una media. Es el caso de una cafetería de Viladecans, en Barcelona, que contó sus cuentas en El Español en julio de dos mil veintiséis. Factura unos ciento treinta y ocho mil euros al año. Y de esa cifra, el ochenta y ocho por ciento se va antes de que ella cobre nada.",
+      "duracion": 3.15,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_03d",
+      "texto": "Esto no es una media. Es el caso de una cafetería de Viladecans, en Barcelona, que contó sus cuentas en El Español en julio de dos mil veintiséis. Factura unos ciento treinta y ocho mil euros al año. Y de esa cifra, el ochenta y ocho por ciento se va antes de que ella cobre nada.",
+      "duracion": 3.15,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_03e",
+      "texto": "Esto no es una media. Es el caso de una cafetería de Viladecans, en Barcelona, que contó sus cuentas en El Español en julio de dos mil veintiséis. Factura unos ciento treinta y ocho mil euros al año. Y de esa cifra, el ochenta y ocho por ciento se va antes de que ella cobre nada.",
+      "duracion": 3.15,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 88.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "se va antes de que ella cobre nada",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.25,
+        "duracion": 1.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "el caso de Viladecans"
+    },
+    {
+      "id": "gancho_03f",
+      "texto": "Esto no es una media. Es el caso de una cafetería de Viladecans, en Barcelona, que contó sus cuentas en El Español en julio de dos mil veintiséis. Factura unos ciento treinta y ocho mil euros al año. Y de esa cifra, el ochenta y ocho por ciento se va antes de que ella cobre nada.",
+      "duracion": 3.52,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04",
+      "texto": "Montar un bar es el sueño de media España. Ser tu propio jefe, tu propia barra, tus propias reglas.",
+      "duracion": 2.15,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/bar_interior_wooden_counter_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_04b",
+      "texto": "Montar un bar es el sueño de media España. Ser tu propio jefe, tu propia barra, tus propias reglas.",
+      "duracion": 2.9,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/tavern_bar_night_5.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Ser tu *propio* jefe",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_04c",
+      "texto": "Montar un bar es el sueño de media España. Ser tu propio jefe, tu propia barra, tus propias reglas.",
+      "duracion": 2.92,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/closed_bar_shutter_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_05",
+      "texto": "Pero un bar tiene seis dueños. Y tú eres el último.",
+      "duracion": 4.3,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Un bar tiene seis *dueños*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "gancho_06",
+      "texto": "Vamos a abrir uno y a ver quién cobra primero. Una advertencia: gran parte de las cifras de coste de abrir un bar salen de blogs y de anuncios, no de estadísticas oficiales. Cuando sea así, lo voy a decir.",
+      "duracion": 2.29,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/calculator_invoices_desk_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "gancho_06b",
+      "texto": "Vamos a abrir uno y a ver quién cobra primero. Una advertencia: gran parte de las cifras de coste de abrir un bar salen de blogs y de anuncios, no de estadísticas oficiales. Cuando sea así, lo voy a decir.",
+      "duracion": 2.9,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/cash_register_coins_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Una *advertencia*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06c",
+      "texto": "Vamos a abrir uno y a ver quién cobra primero. Una advertencia: gran parte de las cifras de coste de abrir un bar salen de blogs y de anuncios, no de estadísticas oficiales. Cuando sea así, lo voy a decir.",
+      "duracion": 2.8,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/stamping_documents_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "gancho_06d",
+      "texto": "Vamos a abrir uno y a ver quién cobra primero. Una advertencia: gran parte de las cifras de coste de abrir un bar salen de blogs y de anuncios, no de estadísticas oficiales. Cuando sea así, lo voy a decir.",
+      "duracion": 2.8,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/lawyer_documents_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "gancho_06e",
+      "texto": "Vamos a abrir uno y a ver quién cobra primero. Una advertencia: gran parte de las cifras de coste de abrir un bar salen de blogs y de anuncios, no de estadísticas oficiales. Cuando sea así, lo voy a decir.",
+      "duracion": 3.31,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/bartender_cleaning_bar_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_01",
+      "texto": "Empecemos por lo que ves al entrar: el local.",
+      "duracion": 4.16,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_02",
+      "texto": "Casi nunca es tuyo. Se alquila. Y el contrato de un local de negocio, a diferencia del de una vivienda, es el que pactan las dos partes: la ley solo manda en lo que no se haya escrito.",
+      "duracion": 3.23,
+      "movimiento": "drift_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "texto_pantalla": {
+        "texto": "Casi *nunca* es tuyo",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_02b",
+      "texto": "Casi nunca es tuyo. Se alquila. Y el contrato de un local de negocio, a diferencia del de una vivienda, es el que pactan las dos partes: la ley solo manda en lo que no se haya escrito.",
+      "duracion": 3.93,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_02c",
+      "texto": "Casi nunca es tuyo. Se alquila. Y el contrato de un local de negocio, a diferencia del de una vivienda, es el que pactan las dos partes: la ley solo manda en lo que no se haya escrito.",
+      "duracion": 4.8,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03",
+      "texto": "La fianza legal son dos meses de renta. Los blogs del sector hablan de entre ochenta mil y ciento cincuenta mil euros para montar un bar completo, y de diez mil a cuarenta mil euros solo por el traspaso del local. Son cifras de blogs, sin fuente oficial; sirven como orden de magnitud y nada más.",
+      "duracion": 3.12,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_glasses_shelf_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_03b",
+      "texto": "La fianza legal son dos meses de renta. Los blogs del sector hablan de entre ochenta mil y ciento cincuenta mil euros para montar un bar completo, y de diez mil a cuarenta mil euros solo por el traspaso del local. Son cifras de blogs, sin fuente oficial; sirven como orden de magnitud y nada más.",
+      "duracion": 3.81,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "montar un bar, según blogs",
+        "items": [
+          [
+            "Mínimo",
+            80000.0
+          ],
+          [
+            "Máximo",
+            150000.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.33,
+        "duracion": 1.78,
+        "entrada": "barrido",
+        "destacar": {
+          "Máximo": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap1_03c",
+      "texto": "La fianza legal son dos meses de renta. Los blogs del sector hablan de entre ochenta mil y ciento cincuenta mil euros para montar un bar completo, y de diez mil a cuarenta mil euros solo por el traspaso del local. Son cifras de blogs, sin fuente oficial; sirven como orden de magnitud y nada más.",
+      "duracion": 3.81,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/empty_restaurant_interior_40.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_03d",
+      "texto": "La fianza legal son dos meses de renta. Los blogs del sector hablan de entre ochenta mil y ciento cincuenta mil euros para montar un bar completo, y de diez mil a cuarenta mil euros solo por el traspaso del local. Son cifras de blogs, sin fuente oficial; sirven como orden de magnitud y nada más.",
+      "duracion": 3.81,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_03e",
+      "texto": "La fianza legal son dos meses de renta. Los blogs del sector hablan de entre ochenta mil y ciento cincuenta mil euros para montar un bar completo, y de diez mil a cuarenta mil euros solo por el traspaso del local. Son cifras de blogs, sin fuente oficial; sirven como orden de magnitud y nada más.",
+      "duracion": 4.65,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04",
+      "texto": "Y aquí viene lo que casi nadie sabe. Cuando traspasas un local, es decir, cuando le vendes tu bar a otro, el casero tiene derecho legal a subir la renta un veinte por ciento. Está en el artículo treinta y dos de la ley de arrendamientos urbanos.",
+      "duracion": 3.18,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/business_handshake_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_04b",
+      "texto": "Y aquí viene lo que casi nadie sabe. Cuando traspasas un local, es decir, cuando le vendes tu bar a otro, el casero tiene derecho legal a subir la renta un veinte por ciento. Está en el artículo treinta y dos de la ley de arrendamientos urbanos.",
+      "duracion": 3.88,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/barista_making_coffee_19.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_04c",
+      "texto": "Y aquí viene lo que casi nadie sabe. Cuando traspasas un local, es decir, cuando le vendes tu bar a otro, el casero tiene derecho legal a subir la renta un veinte por ciento. Está en el artículo treinta y dos de la ley de arrendamientos urbanos.",
+      "duracion": 3.88,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 20.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "puede subirte el casero la renta al traspasar",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.34,
+        "duracion": 1.84,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "artículo 32 de la LAU"
+    },
+    {
+      "id": "cap1_04d",
+      "texto": "Y aquí viene lo que casi nadie sabe. Cuando traspasas un local, es decir, cuando le vendes tu bar a otro, el casero tiene derecho legal a subir la renta un veinte por ciento. Está en el artículo treinta y dos de la ley de arrendamientos urbanos.",
+      "duracion": 4.74,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/city_hall_building_35.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_05",
+      "texto": "Imagina el cálculo: tú pagas por el traspaso, y quien te lo compra paga además una renta más alta.",
+      "duracion": 2.98,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_05b",
+      "texto": "Imagina el cálculo: tú pagas por el traspaso, y quien te lo compra paga además una renta más alta.",
+      "duracion": 4.43,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_06",
+      "texto": "Y si te vas porque se acaba el contrato, puedes tener derecho a una indemnización por la clientela que has creado. Pero solo si llevabas cinco años, solo si avisaste con cuatro meses y solo si el contrato no lo excluye. Muchos lo excluyen. Una sentencia del Tribunal Supremo de febrero de este año, según la prensa, la concedió a un bar: diez mensualidades de renta, quince mil euros.",
+      "duracion": 3.5,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/rental_contract_signing_34.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_06b",
+      "texto": "Y si te vas porque se acaba el contrato, puedes tener derecho a una indemnización por la clientela que has creado. Pero solo si llevabas cinco años, solo si avisaste con cuatro meses y solo si el contrato no lo excluye. Muchos lo excluyen. Una sentencia del Tribunal Supremo de febrero de este año, según la prensa, la concedió a un bar: diez mensualidades de renta, quince mil euros.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/customers_bar_counter_17.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap1_06c",
+      "texto": "Y si te vas porque se acaba el contrato, puedes tener derecho a una indemnización por la clientela que has creado. Pero solo si llevabas cinco años, solo si avisaste con cuatro meses y solo si el contrato no lo excluye. Muchos lo excluyen. Una sentencia del Tribunal Supremo de febrero de este año, según la prensa, la concedió a un bar: diez mensualidades de renta, quince mil euros.",
+      "duracion": 4.27,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Solo si *llevabas* cinco años",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_06d",
+      "texto": "Y si te vas porque se acaba el contrato, puedes tener derecho a una indemnización por la clientela que has creado. Pero solo si llevabas cinco años, solo si avisaste con cuatro meses y solo si el contrato no lo excluye. Muchos lo excluyen. Una sentencia del Tribunal Supremo de febrero de este año, según la prensa, la concedió a un bar: diez mensualidades de renta, quince mil euros.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap1_06e",
+      "texto": "Y si te vas porque se acaba el contrato, puedes tener derecho a una indemnización por la clientela que has creado. Pero solo si llevabas cinco años, solo si avisaste con cuatro meses y solo si el contrato no lo excluye. Muchos lo excluyen. Una sentencia del Tribunal Supremo de febrero de este año, según la prensa, la concedió a un bar: diez mensualidades de renta, quince mil euros.",
+      "duracion": 4.27,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap1_06f",
+      "texto": "Y si te vas porque se acaba el contrato, puedes tener derecho a una indemnización por la clientela que has creado. Pero solo si llevabas cinco años, solo si avisaste con cuatro meses y solo si el contrato no lo excluye. Muchos lo excluyen. Una sentencia del Tribunal Supremo de febrero de este año, según la prensa, la concedió a un bar: diez mensualidades de renta, quince mil euros.",
+      "duracion": 5.22,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 10.0,
+        "dec": 0,
+        "sufijo": " meses",
+        "pie": "de renta, la indemnización de una sentencia de 2026",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 1.8,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la clientela"
+    },
+    {
+      "id": "cap1_07",
+      "texto": "Primer dueño: el casero. Se queda con el suelo y con lo que valga tu clientela cuando te vayas.",
+      "duracion": 6.8,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Primer *dueño*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_01",
+      "texto": "Entras al bar, te sientas en la terraza. La silla lleva un logotipo. La sombrilla, también. La nevera, los grifos, las mesas.",
+      "duracion": 3.89,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/bar_casa_casimiro_9049.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_01b",
+      "texto": "Entras al bar, te sientas en la terraza. La silla lleva un logotipo. La sombrilla, también. La nevera, los grifos, las mesas.",
+      "duracion": 5.79,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_el_pino_9051.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02",
+      "texto": "No son del bar. Según los blogs del sector, entre el setenta y el ochenta por ciento de los bares tiene un acuerdo con una cervecera: ella pone el mobiliario y los grifos, y a cambio el bar se compromete a comprarle la cerveza.",
+      "duracion": 3.07,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "_lat_ent": 1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 75.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "de los bares, según blogs del sector",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.23,
+        "duracion": 1.14,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "mobiliario con logo"
+    },
+    {
+      "id": "cap2_02b",
+      "texto": "No son del bar. Según los blogs del sector, entre el setenta y el ochenta por ciento de los bares tiene un acuerdo con una cervecera: ella pone el mobiliario y los grifos, y a cambio el bar se compromete a comprarle la cerveza.",
+      "duracion": 3.74,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/beer_bottling_line_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_02c",
+      "texto": "No son del bar. Según los blogs del sector, entre el setenta y el ochenta por ciento de los bares tiene un acuerdo con una cervecera: ella pone el mobiliario y los grifos, y a cambio el bar se compromete a comprarle la cerveza.",
+      "duracion": 3.74,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_alfalfa_9041.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_02d",
+      "texto": "No son del bar. Según los blogs del sector, entre el setenta y el ochenta por ciento de los bares tiene un acuerdo con una cervecera: ella pone el mobiliario y los grifos, y a cambio el bar se compromete a comprarle la cerveza.",
+      "duracion": 4.57,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/bar_bayadoliz_01_9043.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_03",
+      "texto": "¿Cuánta? En un expediente de la Comisión Nacional de los Mercados y la Competencia de dos mil trece, una cervecera afirmó que los grandes grupos piden cubrir el ochenta por ciento de las compras del bar, con exclusiva en el barril. Es lo que alegó una de las partes, no lo que concluyó la comisión. Pero da una idea.",
+      "duracion": 4.03,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/bar_la_latina_salamanca_9056.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_03b",
+      "texto": "¿Cuánta? En un expediente de la Comisión Nacional de los Mercados y la Competencia de dos mil trece, una cervecera afirmó que los grandes grupos piden cubrir el ochenta por ciento de las compras del bar, con exclusiva en el barril. Es lo que alegó una de las partes, no lo que concluyó la comisión. Pero da una idea.",
+      "duracion": 4.91,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_las_columnas_9057.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_03c",
+      "texto": "¿Cuánta? En un expediente de la Comisión Nacional de los Mercados y la Competencia de dos mil trece, una cervecera afirmó que los grandes grupos piden cubrir el ochenta por ciento de las compras del bar, con exclusiva en el barril. Es lo que alegó una de las partes, no lo que concluyó la comisión. Pero da una idea.",
+      "duracion": 4.91,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 80.0,
+        "dec": 0,
+        "sufijo": " %",
+        "pie": "de las compras, según una cervecera ante la CNMC (2013)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la regla del 80 %"
+    },
+    {
+      "id": "cap2_03d",
+      "texto": "¿Cuánta? En un expediente de la Comisión Nacional de los Mercados y la Competencia de dos mil trece, una cervecera afirmó que los grandes grupos piden cubrir el ochenta por ciento de las compras del bar, con exclusiva en el barril. Es lo que alegó una de las partes, no lo que concluyó la comisión. Pero da una idea.",
+      "duracion": 6.0,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/patatas_bravas_tapa_de_bar_espa_9033.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_04",
+      "texto": "Y la ley europea pone un límite: una cláusula que te obliga a comprar solo a un proveedor, durante más de cinco años o por tiempo indefinido, queda fuera de la excepción general, salvo que el local sea del proveedor.",
+      "duracion": 3.97,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "La ley *europea* pone un límite",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_04b",
+      "texto": "Y la ley europea pone un límite: una cláusula que te obliga a comprar solo a un proveedor, durante más de cinco años o por tiempo indefinido, queda fuera de la excepción general, salvo que el local sea del proveedor.",
+      "duracion": 4.84,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_04c",
+      "texto": "Y la ley europea pone un límite: una cláusula que te obliga a comprar solo a un proveedor, durante más de cinco años o por tiempo indefinido, queda fuera de la excepción general, salvo que el local sea del proveedor.",
+      "duracion": 5.89,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/business_handshake_42.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_05",
+      "texto": "Hay un proyecto de ley, aprobado por el Consejo de Ministros en marzo de dos mil veinticinco, que limitaría la publicidad de alcohol cerca de colegios. Según un informe encargado por el propio sector, retirar ese mobiliario costaría seiscientos millones de euros. Es un proyecto, no una ley; no he podido comprobar en qué punto está.",
+      "duracion": 3.52,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Hay un *proyecto* de ley",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05b",
+      "texto": "Hay un proyecto de ley, aprobado por el Consejo de Ministros en marzo de dos mil veinticinco, que limitaría la publicidad de alcohol cerca de colegios. Según un informe encargado por el propio sector, retirar ese mobiliario costaría seiscientos millones de euros. Es un proyecto, no una ley; no he podido comprobar en qué punto está.",
+      "duracion": 4.29,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_05c",
+      "texto": "Hay un proyecto de ley, aprobado por el Consejo de Ministros en marzo de dos mil veinticinco, que limitaría la publicidad de alcohol cerca de colegios. Según un informe encargado por el propio sector, retirar ese mobiliario costaría seiscientos millones de euros. Es un proyecto, no una ley; no he podido comprobar en qué punto está.",
+      "duracion": 4.29,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_90.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_05d",
+      "texto": "Hay un proyecto de ley, aprobado por el Consejo de Ministros en marzo de dos mil veinticinco, que limitaría la publicidad de alcohol cerca de colegios. Según un informe encargado por el propio sector, retirar ese mobiliario costaría seiscientos millones de euros. Es un proyecto, no una ley; no he podido comprobar en qué punto está.",
+      "duracion": 4.29,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 600.0,
+        "dec": 0,
+        "sufijo": " M€",
+        "pie": "costaría retirar el mobiliario, según el sector",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.19,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el proyecto de ley"
+    },
+    {
+      "id": "cap2_05e",
+      "texto": "Hay un proyecto de ley, aprobado por el Consejo de Ministros en marzo de dos mil veinticinco, que limitaría la publicidad de alcohol cerca de colegios. Según un informe encargado por el propio sector, retirar ese mobiliario costaría seiscientos millones de euros. Es un proyecto, no una ley; no he podido comprobar en qué punto está.",
+      "duracion": 5.23,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/corporate_meeting_boardroom_152.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_06",
+      "texto": "Cuánto te adelantan, a cuántos años y con qué condiciones es un contrato privado. No hay datos públicos.",
+      "duracion": 3.03,
+      "movimiento": "drift_der",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Cuánto te *adelantan*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap2_06b",
+      "texto": "Cuánto te adelantan, a cuántos años y con qué condiciones es un contrato privado. No hay datos públicos.",
+      "duracion": 4.52,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/contract_being_torn_214.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap2_07",
+      "texto": "Segundo dueño: la cervecera. Se queda con la terraza y con tu cerveza.",
+      "duracion": 2.9,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/bar_kuluska2_9053.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Segundo* dueño",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap2_07b",
+      "texto": "Segundo dueño: la cervecera. Se queda con la terraza y con tu cerveza.",
+      "duracion": 2.47,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/bar_la_bodeguilla_9054.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_01",
+      "texto": "Ahora, el papel que cuelga en la puerta.",
+      "duracion": 3.28,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02",
+      "texto": "La licencia de un bar no es tuya, como persona. Va ligada al local y a la actividad. Por eso se puede traspasar, pero con un trámite: hay que comunicar el cambio de titular al ayuntamiento, y cómo se hace depende de cada municipio.",
+      "duracion": 3.95,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "latigo": "der",
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "La *licencia* de un bar no es tuya",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_02b",
+      "texto": "La licencia de un bar no es tuya, como persona. Va ligada al local y a la actividad. Por eso se puede traspasar, pero con un trámite: hay que comunicar el cambio de titular al ayuntamiento, y cómo se hace depende de cada municipio.",
+      "duracion": 4.82,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_02c",
+      "texto": "La licencia de un bar no es tuya, como persona. Va ligada al local y a la actividad. Por eso se puede traspasar, pero con un trámite: hay que comunicar el cambio de titular al ayuntamiento, y cómo se hace depende de cada municipio.",
+      "duracion": 5.88,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03",
+      "texto": "Si quieres terraza, necesitas la licencia de apertura primero. Y la terraza es temporal: solo vale por el periodo que has pagado. Las tasas varían mucho de una ciudad a otra. En Vitoria, por ejemplo, un velador cuesta entre treinta y uno y ochenta y un euros al año, según la zona. En Madrid no he encontrado la tarifa.",
+      "duracion": 3.5,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_bar/people_terrace_dining_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "texto_pantalla": {
+        "texto": "Si *quieres* terraza",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_03b",
+      "texto": "Si quieres terraza, necesitas la licencia de apertura primero. Y la terraza es temporal: solo vale por el periodo que has pagado. Las tasas varían mucho de una ciudad a otra. En Vitoria, por ejemplo, un velador cuesta entre treinta y uno y ochenta y un euros al año, según la zona. En Madrid no he encontrado la tarifa.",
+      "duracion": 4.27,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/tapa_de_bar_calamares_a_la_9037.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_03c",
+      "texto": "Si quieres terraza, necesitas la licencia de apertura primero. Y la terraza es temporal: solo vale por el periodo que has pagado. Las tasas varían mucho de una ciudad a otra. En Vitoria, por ejemplo, un velador cuesta entre treinta y uno y ochenta y un euros al año, según la zona. En Madrid no he encontrado la tarifa.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_la_herreria_03_9055.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_03d",
+      "texto": "Si quieres terraza, necesitas la licencia de apertura primero. Y la terraza es temporal: solo vale por el periodo que has pagado. Las tasas varían mucho de una ciudad a otra. En Vitoria, por ejemplo, un velador cuesta entre treinta y uno y ochenta y un euros al año, según la zona. En Madrid no he encontrado la tarifa.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "un velador al año en Vitoria",
+        "items": [
+          [
+            "Zona más barata",
+            31.0
+          ],
+          [
+            "Zona más cara",
+            81.0
+          ]
+        ],
+        "sufijo": " €",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.41,
+        "duracion": 2.16,
+        "entrada": "barrido",
+        "destacar": {
+          "Zona más cara": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap3_03e",
+      "texto": "Si quieres terraza, necesitas la licencia de apertura primero. Y la terraza es temporal: solo vale por el periodo que has pagado. Las tasas varían mucho de una ciudad a otra. En Vitoria, por ejemplo, un velador cuesta entre treinta y uno y ochenta y un euros al año, según la zona. En Madrid no he encontrado la tarifa.",
+      "duracion": 5.22,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_04",
+      "texto": "No te lo puedo decir como si fuera una norma general: no he encontrado nada que diga que la licencia se herede. Lo que sí sé es que se tramita, y que quien la concede puede no renovarla.",
+      "duracion": 3.38,
+      "movimiento": "drift_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_04b",
+      "texto": "No te lo puedo decir como si fuera una norma general: no he encontrado nada que diga que la licencia se herede. Lo que sí sé es que se tramita, y que quien la concede puede no renovarla.",
+      "duracion": 4.12,
+      "movimiento": "contra_der",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap3_04c",
+      "texto": "No te lo puedo decir como si fuera una norma general: no he encontrado nada que diga que la licencia se herede. Lo que sí sé es que se tramita, y que quien la concede puede no renovarla.",
+      "duracion": 5.02,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Lo que sí sé es que se *tramita*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap3_05",
+      "texto": "Tercer dueño: el ayuntamiento. Se queda con el permiso para abrir.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "*Tercer* dueño",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap3_05b",
+      "texto": "Tercer dueño: el ayuntamiento. Se queda con el permiso para abrir.",
+      "duracion": 2.56,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_01",
+      "texto": "Abres. Entra el primer cliente. Pide un café y paga con tarjeta.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/person_working_cash_register_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Entra el primer *cliente*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_01b",
+      "texto": "Abres. Entra el primer cliente. Pide un café y paga con tarjeta.",
+      "duracion": 2.84,
+      "movimiento": "drift_der",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_02",
+      "texto": "Y empiezan a cobrar los demás.",
+      "duracion": 2.95,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Empiezan a cobrar los *demás*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": 1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03",
+      "texto": "La música. Si suena la radio, hay que pagar a la entidad de gestión de derechos de autor. La tarifa de dos mil veintitrés para un bar de hasta cincuenta metros cuadrados era de veinticuatro euros y cuarenta y un céntimos al mes. Poco. Pero es otro recibo.",
+      "duracion": 3.06,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "der",
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_03b",
+      "texto": "La música. Si suena la radio, hay que pagar a la entidad de gestión de derechos de autor. La tarifa de dos mil veintitrés para un bar de hasta cincuenta metros cuadrados era de veinticuatro euros y cuarenta y un céntimos al mes. Poco. Pero es otro recibo.",
+      "duracion": 3.73,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_58.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": 1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_03c",
+      "texto": "La música. Si suena la radio, hay que pagar a la entidad de gestión de derechos de autor. La tarifa de dos mil veintitrés para un bar de hasta cincuenta metros cuadrados era de veinticuatro euros y cuarenta y un céntimos al mes. Poco. Pero es otro recibo.",
+      "duracion": 3.73,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_03d",
+      "texto": "La música. Si suena la radio, hay que pagar a la entidad de gestión de derechos de autor. La tarifa de dos mil veintitrés para un bar de hasta cincuenta metros cuadrados era de veinticuatro euros y cuarenta y un céntimos al mes. Poco. Pero es otro recibo.",
+      "duracion": 3.73,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 24.41,
+        "dec": 2,
+        "sufijo": " €",
+        "pie": "al mes por la música, hasta 50 m² (2023)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.31,
+        "duracion": 1.72,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "los derechos"
+    },
+    {
+      "id": "cap4_03e",
+      "texto": "La música. Si suena la radio, hay que pagar a la entidad de gestión de derechos de autor. La tarifa de dos mil veintitrés para un bar de hasta cincuenta metros cuadrados era de veinticuatro euros y cuarenta y un céntimos al mes. Poco. Pero es otro recibo.",
+      "duracion": 4.54,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/electricity_meter_close_up_311.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04",
+      "texto": "El datáfono. La tasa de intercambio entre bancos está limitada por Europa a un cero coma dos por ciento en débito y un cero coma tres en crédito. Lo que cobra el banco de verdad es más, y no he encontrado la cifra para un bar.",
+      "duracion": 2.99,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/piggy_bank_50.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El *datáfono*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_04b",
+      "texto": "El datáfono. La tasa de intercambio entre bancos está limitada por Europa a un cero coma dos por ciento en débito y un cero coma tres en crédito. Lo que cobra el banco de verdad es más, y no he encontrado la cifra para un bar.",
+      "duracion": 3.65,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_bar/paying_card_terminal_22.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_04c",
+      "texto": "El datáfono. La tasa de intercambio entre bancos está limitada por Europa a un cero coma dos por ciento en débito y un cero coma tres en crédito. Lo que cobra el banco de verdad es más, y no he encontrado la cifra para un bar.",
+      "duracion": 3.65,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_04d",
+      "texto": "El datáfono. La tasa de intercambio entre bancos está limitada por Europa a un cero coma dos por ciento en débito y un cero coma tres en crédito. Lo que cobra el banco de verdad es más, y no he encontrado la cifra para un bar.",
+      "duracion": 4.46,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/cash_register_coins_24.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_05",
+      "texto": "El reparto a domicilio. Según blogs del sector, las plataformas se quedan entre el quince y el treinta y cinco por ciento de cada pedido, más IVA. Es una cifra de blogs.",
+      "duracion": 3.28,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_bar/delivery_truck_unloading_boxes_32.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "El reparto a *domicilio*",
+        "px": 108,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_05b",
+      "texto": "El reparto a domicilio. Según blogs del sector, las plataformas se quedan entre el quince y el treinta y cinco por ciento de cada pedido, más IVA. Es una cifra de blogs.",
+      "duracion": 4.0,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "lo que se quedan las plataformas de reparto",
+        "items": [
+          [
+            "Mínimo",
+            15.0
+          ],
+          [
+            "Máximo",
+            35.0
+          ]
+        ],
+        "sufijo": " %",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.36,
+        "duracion": 1.94,
+        "entrada": "barrido",
+        "destacar": {
+          "Máximo": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap4_05c",
+      "texto": "El reparto a domicilio. Según blogs del sector, las plataformas se quedan entre el quince y el treinta y cinco por ciento de cada pedido, más IVA. Es una cifra de blogs.",
+      "duracion": 4.87,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06",
+      "texto": "Y el IVA. En hostelería es del diez por ciento, y a veinte y uno si vendes alcohol para llevar. En junio de dos mil veintiséis, la recomendación de Bruselas puso en duda ese diez. No es vinculante y el Gobierno no ha respondido.",
+      "duracion": 3.09,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "humo"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 10.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "de IVA en hostelería",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.24,
+        "duracion": 1.15,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "el IVA"
+    },
+    {
+      "id": "cap4_06b",
+      "texto": "Y el IVA. En hostelería es del diez por ciento, y a veinte y uno si vendes alcohol para llevar. En junio de dos mil veintiséis, la recomendación de Bruselas puso en duda ese diez. No es vinculante y el Gobierno no ha respondido.",
+      "duracion": 3.76,
+      "movimiento": "subir",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_06c",
+      "texto": "Y el IVA. En hostelería es del diez por ciento, y a veinte y uno si vendes alcohol para llevar. En junio de dos mil veintiséis, la recomendación de Bruselas puso en duda ese diez. No es vinculante y el Gobierno no ha respondido.",
+      "duracion": 3.76,
+      "movimiento": "estatico",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap4_06d",
+      "texto": "Y el IVA. En hostelería es del diez por ciento, y a veinte y uno si vendes alcohol para llevar. En junio de dos mil veintiséis, la recomendación de Bruselas puso en duda ese diez. No es vinculante y el Gobierno no ha respondido.",
+      "duracion": 4.6,
+      "movimiento": "push_in",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "humo"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap4_07",
+      "texto": "Cuarto dueño: la cadena de cobros. Se queda un trozo de cada café antes de que llegue a la caja.",
+      "duracion": 2.9,
+      "movimiento": "bajar",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/coffee_shop_interior_4.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "*Cuarto* dueño",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap4_07b",
+      "texto": "Cuarto dueño: la cadena de cobros. Se queda un trozo de cada café antes de que llegue a la caja.",
+      "duracion": 4.32,
+      "movimiento": "pull_out",
+      "grade": "sepia_archivo",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/pouring_coffee_cup_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_01",
+      "texto": "Hay un bar en España, de cada tres, que no tiene ni un empleado. Lo lleva su dueño solo.",
+      "duracion": 6.76,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_alfalfa_9041.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_02",
+      "texto": "El treinta y uno coma cinco por ciento, cincuenta y un mil seiscientos cuarenta y cinco bares, no tiene asalariados. Y otro sesenta y seis por ciento son pequeñas empresas de entre uno y nueve empleados. Datos del Instituto Nacional de Estadística, dos mil veinticuatro.",
+      "duracion": 3.78,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 51645.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "bares sin asalariados",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.32,
+        "duracion": 1.76,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el dueño solo"
+    },
+    {
+      "id": "cap5_02b",
+      "texto": "El treinta y uno coma cinco por ciento, cincuenta y un mil seiscientos cuarenta y cinco bares, no tiene asalariados. Y otro sesenta y seis por ciento son pequeñas empresas de entre uno y nueve empleados. Datos del Instituto Nacional de Estadística, dos mil veinticuatro.",
+      "duracion": 4.6,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/people_terrace_dining_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "No tiene *asalariados*",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "sube"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_02c",
+      "texto": "El treinta y uno coma cinco por ciento, cincuenta y un mil seiscientos cuarenta y cinco bares, no tiene asalariados. Y otro sesenta y seis por ciento son pequeñas empresas de entre uno y nueve empleados. Datos del Instituto Nacional de Estadística, dos mil veinticuatro.",
+      "duracion": 4.6,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_bayadoliz_01_9043.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_02d",
+      "texto": "El treinta y uno coma cinco por ciento, cincuenta y un mil seiscientos cuarenta y cinco bares, no tiene asalariados. Y otro sesenta y seis por ciento son pequeñas empresas de entre uno y nueve empleados. Datos del Instituto Nacional de Estadística, dos mil veinticuatro.",
+      "duracion": 5.62,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_bar/bar_casa_casimiro_9049.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03",
+      "texto": "Y cuando contratas, hay un convenio. No existe uno estatal único: hay un acuerdo marco y convenios por provincia. El de Madrid, por ejemplo, limita la jornada a mil ochocientas horas de trabajo efectivo al año.",
+      "duracion": 3.99,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_03b",
+      "texto": "Y cuando contratas, hay un convenio. No existe uno estatal único: hay un acuerdo marco y convenios por provincia. El de Madrid, por ejemplo, limita la jornada a mil ochocientas horas de trabajo efectivo al año.",
+      "duracion": 4.87,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03c",
+      "texto": "Y cuando contratas, hay un convenio. No existe uno estatal único: hay un acuerdo marco y convenios por provincia. El de Madrid, por ejemplo, limita la jornada a mil ochocientas horas de trabajo efectivo al año.",
+      "duracion": 5.93,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "chispas"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 1800.0,
+        "dec": 0,
+        "sufijo": " h",
+        "pie": "de trabajo efectivo al año, en el convenio de Madrid",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la jornada"
+    },
+    {
+      "id": "cap5_04",
+      "texto": "A lo que cobra el camarero hay que sumarle la cuota de la empresa a la Seguridad Social: cerca del treinta y uno por ciento más sobre el sueldo bruto, en un contrato indefinido. Por cada cien euros que ve el camarero, tú pagas unos ciento treinta.",
+      "duracion": 3.13,
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/waiter_serving_drinks_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_04b",
+      "texto": "A lo que cobra el camarero hay que sumarle la cuota de la empresa a la Seguridad Social: cerca del treinta y uno por ciento más sobre el sueldo bruto, en un contrato indefinido. Por cada cien euros que ve el camarero, tú pagas unos ciento treinta.",
+      "duracion": 3.82,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/waiter_taking_order_20.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_04c",
+      "texto": "A lo que cobra el camarero hay que sumarle la cuota de la empresa a la Seguridad Social: cerca del treinta y uno por ciento más sobre el sueldo bruto, en un contrato indefinido. Por cada cien euros que ve el camarero, tú pagas unos ciento treinta.",
+      "duracion": 3.82,
+      "movimiento": "subir",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_04d",
+      "texto": "A lo que cobra el camarero hay que sumarle la cuota de la empresa a la Seguridad Social: cerca del treinta y uno por ciento más sobre el sueldo bruto, en un contrato indefinido. Por cada cien euros que ve el camarero, tú pagas unos ciento treinta.",
+      "duracion": 4.67,
+      "movimiento": "estatico",
+      "grade": "rojo_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/calculator_invoices_desk_38.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "En un contrato *indefinido*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap5_05",
+      "texto": "Y el sector tiene un problema que sale en prensa: faltan camareros. Hay bares que cierran días sueltos en verano porque no encuentran plantilla.",
+      "duracion": 3.78,
+      "movimiento": "pull_out",
+      "grade": "rojo_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/closed_bar_shutter_7.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_05b",
+      "texto": "Y el sector tiene un problema que sale en prensa: faltan camareros. Hay bares que cierran días sueltos en verano porque no encuentran plantilla.",
+      "duracion": 5.63,
+      "movimiento": "contra_izq",
+      "grade": "rojo_suave",
+      "efectos": [
+        "chispas"
+      ],
+      "clip": "stock_bar/bartender_cleaning_bar_12.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap5_06",
+      "texto": "Quinto dueño: quien atiende la barra. Se queda con el horario.",
+      "duracion": 5.18,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "persona",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Quinto *dueño*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_01",
+      "texto": "Ahora, la cuenta. Volvemos a Viladecans.",
+      "duracion": 3.55,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_02",
+      "texto": "Una cafetería de especialidad. Inversión inicial: unos ciento cinco mil euros. Facturación: unos ciento treinta y ocho mil al año, entre once mil quinientos y doce mil euros al mes.",
+      "duracion": 3.54,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/coins_falling_slow_motion_11.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "texto_pantalla": {
+        "texto": "Una cafetería de *especialidad*",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_02b",
+      "texto": "Una cafetería de especialidad. Inversión inicial: unos ciento cinco mil euros. Facturación: unos ciento treinta y ocho mil al año, entre once mil quinientos y doce mil euros al mes.",
+      "duracion": 4.32,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "_lat_ent": -1.0,
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 138000.0,
+        "dec": 0,
+        "sufijo": " €",
+        "pie": "factura al año la cafetería de Viladecans",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "la cuenta de un café"
+    },
+    {
+      "id": "cap6_02c",
+      "texto": "Una cafetería de especialidad. Inversión inicial: unos ciento cinco mil euros. Facturación: unos ciento treinta y ocho mil al año, entre once mil quinientos y doce mil euros al mes.",
+      "duracion": 5.26,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/tip_jar_coins_25.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_03",
+      "texto": "Los gastos fijos, es decir, el alquiler, los sueldos y las cotizaciones, son de siete mil a siete mil quinientos euros al mes. Eso es más de la mitad de lo que entra: un sesenta y dos por ciento.",
+      "duracion": 2.9,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "texto_pantalla": {
+        "texto": "Los *gastos* fijos",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "escala"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_03b",
+      "texto": "Los gastos fijos, es decir, el alquiler, los sueldos y las cotizaciones, son de siete mil a siete mil quinientos euros al mes. Eso es más de la mitad de lo que entra: un sesenta y dos por ciento.",
+      "duracion": 3.51,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_03c",
+      "texto": "Los gastos fijos, es decir, el alquiler, los sueldos y las cotizaciones, son de siete mil a siete mil quinientos euros al mes. Eso es más de la mitad de lo que entra: un sesenta y dos por ciento.",
+      "duracion": 3.51,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_03d",
+      "texto": "Los gastos fijos, es decir, el alquiler, los sueldos y las cotizaciones, son de siete mil a siete mil quinientos euros al mes. Eso es más de la mitad de lo que entra: un sesenta y dos por ciento.",
+      "duracion": 4.27,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "anillo",
+        "valor": 62.0,
+        "max": 100,
+        "sufijo": "%",
+        "dec": 0,
+        "pie": "de lo que entra se va en alquiler, sueldos y cotizaciones",
+        "r": 180,
+        "y": 0.5,
+        "retardo": 0.44,
+        "duracion": 2.13,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null,
+      "fondo_titulo": "los gastos fijos"
+    },
+    {
+      "id": "cap6_04",
+      "texto": "El café, la leche y lo que se compra para el mostrador cuestan otro tercio del precio. Y al banco, por el préstamo de la reforma, va entre el ocho y el nueve por ciento de la facturación.",
+      "duracion": 3.26,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/bar_el_pino_9051.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_04b",
+      "texto": "El café, la leche y lo que se compra para el mostrador cuestan otro tercio del precio. Y al banco, por el préstamo de la reforma, va entre el ocho y el nueve por ciento de la facturación.",
+      "duracion": 3.98,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_interior_wooden_counter_0.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_04c",
+      "texto": "El café, la leche y lo que se compra para el mostrador cuestan otro tercio del precio. Y al banco, por el préstamo de la reforma, va entre el ocho y el nueve por ciento de la facturación.",
+      "duracion": 4.86,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 8.5,
+        "dec": 1,
+        "sufijo": " %",
+        "pie": "de la facturación va al banco",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "el préstamo"
+    },
+    {
+      "id": "cap6_05",
+      "texto": "Cuando lo sumas todo, sobran unos quince céntimos por café. Quince céntimos de un euro con ochenta.",
+      "duracion": 7.18,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "polvo"
+      ],
+      "capas": [],
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 0.15,
+        "dec": 2,
+        "sufijo": " €",
+        "pie": "sobran de cada café",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.4,
+        "duracion": 2.2,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "lo que queda"
+    },
+    {
+      "id": "cap6_06",
+      "texto": "Este es un caso, no la media. No existe una estadística oficial de lo que gana un bar. Los blogs hablan de un margen del diez al quince por ciento. El único caso con nombre y cuentas que he encontrado da la mitad.",
+      "duracion": 3.05,
+      "movimiento": "push_in",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/lawyer_documents_43.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Este es un caso",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap6_06b",
+      "texto": "Este es un caso, no la media. No existe una estadística oficial de lo que gana un bar. Los blogs hablan de un margen del diez al quince por ciento. El único caso con nombre y cuentas que he encontrado da la mitad.",
+      "duracion": 3.72,
+      "movimiento": "estatico",
+      "grade": "acero_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_bar/stamping_documents_36.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap6_06c",
+      "texto": "Este es un caso, no la media. No existe una estadística oficial de lo que gana un bar. Los blogs hablan de un margen del diez al quince por ciento. El único caso con nombre y cuentas que he encontrado da la mitad.",
+      "duracion": 3.72,
+      "movimiento": "subir",
+      "grade": "acero_suave",
+      "efectos": [
+        "polvo"
+      ],
+      "clip": "stock_bar/bar_glasses_shelf_13.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap6_06d",
+      "texto": "Este es un caso, no la media. No existe una estadística oficial de lo que gana un bar. Los blogs hablan de un margen del diez al quince por ciento. El único caso con nombre y cuentas que he encontrado da la mitad.",
+      "duracion": 4.53,
+      "movimiento": "pull_out",
+      "grade": "acero_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_la_bodeguilla_9054.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_ambar",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_01",
+      "texto": "Y aun así, se intenta una y otra vez.",
+      "duracion": 3.32,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.571,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Aun así",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_02",
+      "texto": "En España hay ciento sesenta y tres mil ochocientos noventa bares, según el Instituto Nacional de Estadística. En dos mil catorce eran ciento ochenta y nueve mil seiscientos cuarenta y ocho. Han bajado un trece coma seis por ciento. Hay un aviso: desde dos mil veintitrés la estadística cambió de método, y no es del todo comparable.",
+      "duracion": 3.57,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "destellos"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
+      "grafico": {
+        "tipo": "contador",
+        "valor": 163890.0,
+        "dec": 0,
+        "sufijo": "",
+        "pie": "bares en España (INE, 2024)",
+        "px": 230,
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.29,
+        "duracion": 1.58,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento",
+      "fondo_titulo": "cuántos hay"
+    },
+    {
+      "id": "cap7_02b",
+      "texto": "En España hay ciento sesenta y tres mil ochocientos noventa bares, según el Instituto Nacional de Estadística. En dos mil catorce eran ciento ochenta y nueve mil seiscientos cuarenta y ocho. Han bajado un trece coma seis por ciento. Hay un aviso: desde dos mil veintitrés la estadística cambió de método, y no es del todo comparable.",
+      "duracion": 4.35,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/bar_la_latina_salamanca_9056.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_02c",
+      "texto": "En España hay ciento sesenta y tres mil ochocientos noventa bares, según el Instituto Nacional de Estadística. En dos mil catorce eran ciento ochenta y nueve mil seiscientos cuarenta y ocho. Han bajado un trece coma seis por ciento. Hay un aviso: desde dos mil veintitrés la estadística cambió de método, y no es del todo comparable.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "bares en España",
+        "items": [
+          [
+            "2014",
+            189648.0
+          ],
+          [
+            "2024",
+            163890.0
+          ]
+        ],
+        "sufijo": "",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.42,
+        "duracion": 2.23,
+        "entrada": "barrido",
+        "destacar": {
+          "2024": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap7_02d",
+      "texto": "En España hay ciento sesenta y tres mil ochocientos noventa bares, según el Instituto Nacional de Estadística. En dos mil catorce eran ciento ochenta y nueve mil seiscientos cuarenta y ocho. Han bajado un trece coma seis por ciento. Hay un aviso: desde dos mil veintitrés la estadística cambió de método, y no es del todo comparable.",
+      "duracion": 4.35,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/bar_moli_9058.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_02e",
+      "texto": "En España hay ciento sesenta y tres mil ochocientos noventa bares, según el Instituto Nacional de Estadística. En dos mil catorce eran ciento ochenta y nueve mil seiscientos cuarenta y ocho. Han bajado un trece coma seis por ciento. Hay un aviso: desde dos mil veintitrés la estadística cambió de método, y no es del todo comparable.",
+      "duracion": 5.32,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_bar/beer_bottling_line_31.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap7_03",
+      "texto": "Mientras tanto los restaurantes y cafeterías están en récord: más de ochenta y tres mil.",
+      "duracion": 5.92,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/patatas_bravas_tapa_de_bar_espa_9033.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_04",
+      "texto": "Cada año abren y cierran muchos. En dos mil veintitrés, en comidas y bebidas, se dieron de alta treinta y cuatro mil novecientas ochenta y nueve empresas y se dieron de baja treinta y dos mil trescientas cincuenta y cinco.",
+      "duracion": 3.83,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/waiter_serving_drinks_14.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "texto_pantalla": {
+        "texto": "Cada año abren y *cierran* muchos",
+        "px": 108,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_04b",
+      "texto": "Cada año abren y cierran muchos. En dos mil veintitrés, en comidas y bebidas, se dieron de alta treinta y cuatro mil novecientas ochenta y nueve empresas y se dieron de baja treinta y dos mil trescientas cincuenta y cinco.",
+      "duracion": 4.67,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.714,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "empresas de comidas y bebidas en 2023",
+        "items": [
+          [
+            "Altas",
+            34989.0
+          ],
+          [
+            "Bajas",
+            32355.0
+          ]
+        ],
+        "sufijo": "",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.45,
+        "duracion": 2.4,
+        "entrada": "barrido",
+        "destacar": {
+          "Bajas": "acento"
+        }
+      },
+      "fondo_color": null
+    },
+    {
+      "id": "cap7_04c",
+      "texto": "Cada año abren y cierran muchos. En dos mil veintitrés, en comidas y bebidas, se dieron de alta treinta y cuatro mil novecientas ochenta y nueve empresas y se dieron de baja treinta y dos mil trescientas cincuenta y cinco.",
+      "duracion": 5.69,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "calendario",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe",
+        "flecha": "baja"
+      },
+      "composicion": "derecha",
+      "texto_pantalla": {
+        "texto": "Cada año abren y cierran *muchos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
+    },
+    {
+      "id": "cap7_05",
+      "texto": "¿Cuántos sobreviven? De los bares en concreto, no hay dato. De todas las empresas de España, el setenta y siete por ciento sigue abierto al año y el cuarenta y dos por ciento a los cinco años.",
+      "duracion": 3.63,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/brewery_tanks_30.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_05b",
+      "texto": "¿Cuántos sobreviven? De los bares en concreto, no hay dato. De todas las empresas de España, el setenta y siete por ciento sigue abierto al año y el cuarenta y dos por ciento a los cinco años.",
+      "duracion": 4.42,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "brasas"
+      ],
+      "capas": [],
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "barras",
+        "titulo": "empresas que siguen abiertas (todas las actividades)",
+        "items": [
+          [
+            "Al año",
+            77.0
+          ],
+          [
+            "A los cinco años",
+            42.0
+          ]
+        ],
+        "sufijo": " %",
+        "dec": 0,
+        "y": 0.5,
+        "retardo": 0.43,
+        "duracion": 2.29,
+        "entrada": "barrido",
+        "destacar": {
+          "A los cinco años": "acento"
+        }
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": null
+    },
+    {
+      "id": "cap7_05c",
+      "texto": "¿Cuántos sobreviven? De los bares en concreto, no hay dato. De todas las empresas de España, el setenta y siete por ciento sigue abierto al año y el cuarenta y dos por ciento a los cinco años.",
+      "duracion": 5.4,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/delivery_rider_bike_26.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_06",
+      "texto": "La hostelería entera facturó ciento diecisiete mil cuatrocientos cuarenta millones de euros en dos mil veinticuatro. Es un sector enorme. Pero reparte el dinero entre muchos.",
+      "duracion": 3.19,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/money_envelope_cash_233.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cap7_06b",
+      "texto": "La hostelería entera facturó ciento diecisiete mil cuatrocientos cuarenta millones de euros en dos mil veinticuatro. Es un sector enorme. Pero reparte el dinero entre muchos.",
+      "duracion": 3.89,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "brasas"
+      ],
+      "clip": "stock_banco/balance_scale_money_194.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Es un *sector* enorme",
+        "px": 132,
+        "y": 0.68,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "derecha"
+      },
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cap7_06c",
+      "texto": "La hostelería entera facturó ciento diecisiete mil cuatrocientos cuarenta millones de euros en dos mil veinticuatro. Es un sector enorme. Pero reparte el dinero entre muchos.",
+      "duracion": 4.74,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_rojo",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_01",
+      "texto": "Hagamos el recuento.",
+      "duracion": 2.39,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.9199999999999999,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Hagamos el *recuento*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_02",
+      "texto": "El casero se queda con el suelo, con lo que cobre cada mes y con un veinte por ciento extra si traspasas. La cervecera, con la terraza, los grifos y tu cerveza. El ayuntamiento, con el permiso. Los demás, con un trozo de cada café: la música, la tarjeta, la plataforma, el IVA. Y el camarero, con las horas.",
+      "duracion": 4.35,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "niebla"
+      ],
+      "capas": [],
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "factura",
+        "titulo": "los seis dueños de tu bar",
+        "lineas": [
+          [
+            "El casero",
+            "el local, y un 20 % más al traspasar"
+          ],
+          [
+            "La cervecera",
+            "la terraza y los grifos"
+          ],
+          [
+            "El ayuntamiento",
+            "el permiso"
+          ],
+          [
+            "Los cobros",
+            "música, tarjeta, plataformas, IVA"
+          ],
+          [
+            "El camarero",
+            "las horas"
+          ]
+        ],
+        "total": "0,15 €",
+        "etiqueta_total": "de un café con leche para ti",
+        "color": "acento",
+        "y": 0.5,
+        "retardo": 0.35,
+        "duracion": 2.3,
+        "entrada": "barrido"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_color": "acento"
+    },
+    {
+      "id": "cierre_02b",
+      "texto": "El casero se queda con el suelo, con lo que cobre cada mes y con un veinte por ciento extra si traspasas. La cervecera, con la terraza, los grifos y tu cerveza. El ayuntamiento, con el permiso. Los demás, con un trozo de cada café: la música, la tarjeta, la plataforma, el IVA. Y el camarero, con las horas.",
+      "duracion": 5.3,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_bar/bar_benja_9045.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_02c",
+      "texto": "El casero se queda con el suelo, con lo que cobre cada mes y con un veinte por ciento extra si traspasas. La cervecera, con la terraza, los grifos y tu cerveza. El ayuntamiento, con el permiso. Los demás, con un trozo de cada café: la música, la tarjeta, la plataforma, el IVA. Y el camarero, con las horas.",
+      "duracion": 5.3,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_bar/bar_bodega_chori_01_9046.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "latigo": "izq",
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_sal": -1.0,
+      "transicion": "corte",
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_02d",
+      "texto": "El casero se queda con el suelo, con lo que cobre cada mes y con un veinte por ciento extra si traspasas. La cervecera, con la terraza, los grifos y tu cerveza. El ayuntamiento, con el permiso. Los demás, con un trozo de cada café: la música, la tarjeta, la plataforma, el IVA. Y el camarero, con las horas.",
+      "duracion": 6.48,
+      "movimiento": "push_in",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_bar/bar_bodega_chori_03_9048.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "_lat_ent": -1.0,
+      "composicion": "izquierda"
+    },
+    {
+      "id": "cierre_03",
+      "texto": "Y tú, que lo montaste, que abres la persiana cada mañana, que pones el dinero para la reforma, te quedas con lo que sobra.",
+      "duracion": 2.98,
+      "movimiento": "contra_izq",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/money_counting_machine_122.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "texto_pantalla": {
+        "texto": "Lo *montaste*",
+        "px": 132,
+        "y": 0.3,
+        "acento": [
+          240,
+          84,
+          74
+        ],
+        "estilo": "izquierda"
+      },
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_03b",
+      "texto": "Y tú, que lo montaste, que abres la persiana cada mañana, que pones el dinero para la reforma, te quedas con lo que sobra.",
+      "duracion": 4.43,
+      "movimiento": "estatico",
+      "grade": "dorado_suave",
+      "efectos": [
+        "destellos"
+      ],
+      "clip": "stock_banco/person_counting_money_desk_223.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "centrado"
+    },
+    {
+      "id": "cierre_04",
+      "texto": "Quince céntimos de un café con leche.",
+      "duracion": 3.18,
+      "movimiento": "subir",
+      "grade": "dorado_suave",
+      "efectos": [
+        "niebla"
+      ],
+      "clip": "stock_bar/euro_coins_48.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cierre_05",
+      "texto": "Eso es lo que cuesta ser el sexto dueño.",
+      "duracion": 3.14,
+      "movimiento": "pull_out",
+      "grade": "dorado_suave",
+      "efectos": [
+        "bokeh"
+      ],
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip_desde": 0.3,
+      "capas": [],
+      "cierra_bloque": true,
+      "duotono": "duo_papel",
+      "duotono_fuerza": 0.55,
+      "composicion": "izquierda",
+      "texto_pantalla": {
+        "texto": "El *sexto* dueño",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube"
+      }
+    }
+  ],
+  "identidad": {
+    "tema": "papel_granate",
+    "rueda": [
+      "fadefast",
+      "smoothleft",
+      "slideup",
+      "dissolve",
+      "wipeleft"
+    ],
+    "cierre": "fadewhite",
+    "clima": {
+      "gancho": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "polvo",
+          "destellos"
+        ]
+      ],
+      "cap1": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "humo",
+          "polvo"
+        ]
+      ],
+      "cap2": [
+        "rojo_suave",
+        [
+          "polvo",
+          "brasas",
+          "bokeh"
+        ]
+      ],
+      "cap3": [
+        "dorado_suave",
+        [
+          "humo",
+          "destellos",
+          "bokeh"
+        ]
+      ],
+      "cap4": [
+        "sepia_archivo",
+        [
+          "polvo",
+          "humo",
+          "bokeh"
+        ]
+      ],
+      "cap5": [
+        "rojo_suave",
+        [
+          "brasas",
+          "bokeh",
+          "chispas"
+        ]
+      ],
+      "cap6": [
+        "acero_suave",
+        [
+          "niebla",
+          "polvo",
+          "bokeh"
+        ]
+      ],
+      "cap7": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "destellos",
+          "brasas"
+        ]
+      ],
+      "cierre": [
+        "dorado_suave",
+        [
+          "bokeh",
+          "destellos",
+          "niebla"
+        ]
+      ]
+    },
+    "duos": [
+      "duo_ambar",
+      "duo_rojo",
+      "duo_papel"
+    ],
+    "latigos": 2,
+    "remotion": {
+      "cuadricula": "rayas",
+      "entrada_grafico": "desliza",
+      "entrada_titular": "lateral",
+      "resorte": 1.1,
+      "stagger": 0.09,
+      "sello": "cuadrado",
+      "deriva": 0.6
+    },
+    "nombre": "bar"
+  }
+}

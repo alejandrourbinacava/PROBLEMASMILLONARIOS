@@ -667,6 +667,65 @@ _ESTANCO2 = {
 for _k, _v in list(_ESTANCO.items()) + list(_ESTANCO2.items()):
     LEXICO[_k] = list(dict.fromkeys(LEXICO.get(_k, []) + _v))
 
+# --- cuatro episodios nuevos (burger, bar, taxi, peluqueria): ADITIVO ----------
+_NUEVOS = {
+    # burger
+    "hamburguesa": ["burger", "patty", "cheeseburger"], "hamburguesas": ["burger", "patty", "cheeseburger"],
+    "patatas": ["fries", "french"], "carne": ["meat", "patty", "grill"], "cocina": ["kitchen", "cook"],
+    "restaurante": ["restaurant", "burger"], "restaurantes": ["restaurant", "burger"], "burger": ["burger", "martos"],
+    "king": ["burger", "king"], "drive": ["drive", "king"],
+    "franquicia": ["handshake", "franchise", "contract"], "franquiciado": ["handshake", "contract", "signing"],
+    "franquiciados": ["handshake", "contract", "signing"], "matriz": ["boardroom", "skyline", "office"],
+    "fondo": ["investor", "skyline", "office"], "venta": ["handshake", "contract", "signing"],
+    "veto": ["boardroom", "law", "documents"], "cadena": ["restaurant", "king"],
+    "deuda": ["calculator", "documents", "euro"], "dividendo": ["euro", "banknotes", "coins"],
+    # bar
+    "bar": ["bar", "counter", "beer", "cafe"], "bares": ["bar", "counter", "beer", "cafe"],
+    "terraza": ["terrace", "cafe", "street"], "cerveza": ["beer", "tap", "pouring", "bottles"],
+    "cervecera": ["beer", "brewery", "bottling", "barrel"], "grifos": ["beer", "tap"], "barril": ["barrel", "beer"],
+    "camarero": ["waiter", "bartender", "serving"], "camareros": ["waiter", "bartender", "serving"],
+    "cafe": ["coffee", "espresso", "cup", "pouring"], "taza": ["coffee", "cup"],
+    "casero": ["landlord", "keys", "rental"], "alquiler": ["rental", "keys", "contract"],
+    "traspaso": ["keys", "handover", "contract", "handshake"], "fianza": ["rental", "contract", "keys"],
+    "datafono": ["terminal", "card", "paying"], "tarjeta": ["terminal", "card", "paying"],
+    "reparto": ["delivery", "rider", "bike", "bag"], "plataformas": ["delivery", "rider", "phone", "app"],
+    "propina": ["tip", "coins"], "musica": ["music", "speaker"],
+    "ayuntamiento": ["city", "hall", "building", "government"], "permiso": ["stamp", "seal", "documents"],
+    "sentencia": ["court", "gavel", "judge", "law"], "supremo": ["court", "gavel", "law"],
+    "tribunal": ["court", "gavel", "law"], "tribunales": ["court", "gavel", "law"],
+    "clientela": ["customers", "terrace", "people"], "cierran": ["closed", "shutter", "closing"],
+    # taxi
+    "taxi": ["taxi", "car", "street"], "taxis": ["taxi", "car", "street"], "taxista": ["driver", "steering", "taxi"],
+    "taxistas": ["driver", "steering", "taxi"], "coche": ["car", "driving", "dashboard"],
+    "vtc": ["phone", "app", "car", "night"], "uber": ["phone", "app", "map", "car"], "cabify": ["phone", "app", "map", "car"],
+    "aplicaciones": ["phone", "app", "map"], "apps": ["phone", "app", "map"],
+    "ciudad": ["city", "traffic", "street", "aerial"], "ciudades": ["city", "traffic", "street", "aerial"],
+    "madrid": ["madrid", "street", "city"], "barcelona": ["barcelona", "street", "city"],
+    "seguro": ["insurance", "documents", "car"], "tarifa": ["meter", "taxi", "paying"], "tarifas": ["meter", "taxi", "paying"],
+    "bandera": ["meter", "taxi"], "recaudacion": ["coins", "cash", "paying"],
+    "licencia": ["stamp", "seal", "government", "documents"], "licencias": ["stamp", "seal", "government", "documents"],
+    "ley": ["law", "books", "parliament"], "ratio": ["law", "court", "documents"],
+    "jubilacion": ["old", "retirement", "evening"], "jubilados": ["old", "retirement", "evening"],
+    "precio": ["price", "chart", "euro"], "valor": ["price", "chart", "euro"], "vale": ["price", "chart", "euro"],
+    "papel": ["stamp", "documents", "seal"], "decreto": ["government", "building", "documents"],
+    "autonomo": ["calculator", "documents"], "primas": ["insurance", "documents"],
+    # peluqueria
+    "peluqueria": ["hair", "salon", "hairdresser"], "peluquerias": ["hair", "salon", "hairdresser"],
+    "salon": ["salon", "hair", "mirror"], "salones": ["salon", "hair", "mirror"],
+    "corte": ["cutting", "scissors", "haircut", "hair"], "tijeras": ["scissors", "cutting", "hair"],
+    "pelo": ["hair", "cutting", "brush"], "peluquero": ["hairdresser", "stylist", "cutting"],
+    "peluqueros": ["hairdresser", "stylist", "cutting"], "oficial": ["hairdresser", "stylist", "cutting"],
+    "champu": ["shampoo", "washing", "bottles"], "tinte": ["coloring", "dye"], "productos": ["products", "shelf", "bottles"],
+    "iva": ["tax", "documents", "calculator"], "convenio": ["documents", "signing", "calculator"],
+    "estatuto": ["law", "books", "documents"], "senado": ["parliament", "government", "building"],
+    "gobierno": ["government", "building"], "indemnizacion": ["documents", "signing", "law"],
+    "competencia": ["owner", "closing", "shop"], "autonomos": ["worker", "salon", "hairdresser"],
+    "sobreviven": ["closing", "shop", "owner"], "duran": ["closing", "shop", "owner"],
+    "metros": ["rental", "keys", "contract"], "sueldo": ["calculator", "documents", "euro"],
+}
+for _k, _v in _NUEVOS.items():
+    LEXICO[_k] = list(dict.fromkeys(LEXICO.get(_k, []) + _v))
+
 VACIAS = {"que", "los", "las", "del", "por", "con", "para", "una", "uno",
           "eso", "esa", "ese", "esto", "hay", "son", "mas", "pero", "como",
           "todo", "todos", "cada", "sus", "sin", "muy", "ese", "les", "nos"}

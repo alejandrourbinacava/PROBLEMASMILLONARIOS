@@ -453,16 +453,42 @@
       "id": "cap1_01",
       "texto": "Empecemos por lo que ves al entrar: el local.",
       "duracion": 4.16,
-      "movimiento": "push_in",
-      "grade": "dorado_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.857,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "edificio",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Empecemos por lo que ves al *entrar*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          150,
+          28,
+          66
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "composicion": "centrado"
     },
     {
@@ -1109,7 +1135,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1359,7 +1385,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip": "stock_bar/lawyer_documents_43.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1420,7 +1446,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip": "stock_bar/rental_contract_signing_34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1437,7 +1463,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
+      "clip": "stock_bar/stamping_documents_36.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1554,7 +1580,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip": "stock_banco/night_city_aerial_neon_101.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1629,7 +1655,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -1656,7 +1682,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -2553,7 +2579,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/real_estate_buildings_aerial_29.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2581,7 +2607,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2597,7 +2623,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2732,7 +2758,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_bar/lawyer_documents_43.mp4",
+      "clip": "stock_bar/bar_glasses_shelf_13.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2759,7 +2785,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_bar/stamping_documents_36.mp4",
+      "clip": "stock_bar/bar_la_bodeguilla_9054.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2775,7 +2801,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_bar/bar_glasses_shelf_13.mp4",
+      "clip": "stock_bar/bar_la_herreria_03_9055.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2791,7 +2817,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_bar/bar_la_bodeguilla_9054.mp4",
+      "clip": "stock_bar/bar_la_latina_salamanca_9056.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -2881,7 +2907,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_bar/bar_la_latina_salamanca_9056.mp4",
+      "clip": "stock_bar/bar_moli_9058.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2938,7 +2964,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_bar/bar_moli_9058.mp4",
+      "clip": "stock_bar/brewery_tanks_30.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2955,7 +2981,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_bar/beer_bottling_line_31.mp4",
+      "clip": "stock_bar/customers_bar_counter_17.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -3096,7 +3122,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_bar/brewery_tanks_30.mp4",
+      "clip": "stock_bar/delivery_rider_bike_26.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -3150,7 +3176,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_bar/delivery_rider_bike_26.mp4",
+      "clip": "stock_bar/empty_restaurant_interior_40.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -3409,17 +3435,43 @@
       "id": "cierre_04",
       "texto": "Quince céntimos de un café con leche.",
       "duracion": 3.18,
-      "movimiento": "subir",
-      "grade": "dorado_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_bar/euro_coins_48.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "composicion": "derecha",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Quince *céntimos* de un café",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cierre_05",
@@ -3430,7 +3482,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/invoices_paperwork_desk_290.mp4",
+      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,

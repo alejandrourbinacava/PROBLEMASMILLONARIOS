@@ -111,7 +111,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/car_dashboard_city_driving_3.mp4",
+      "clip": "stock_taxi/taxi_night_city_1.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -139,7 +139,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/taxi_night_city_1.mp4",
+      "clip": "stock_taxi/taxi_driver_steering_wheel_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -188,7 +188,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/car_interior_mirror_6.mp4",
+      "clip": "stock_taxi/passenger_getting_in_car_16.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -207,7 +207,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/city_traffic_aerial_8.mp4",
+      "clip": "stock_taxi/car_mechanic_engine_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -224,7 +224,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/empty_city_street_dawn_14.mp4",
+      "clip": "stock_taxi/los_nuevos_veh_culos_para_taxi_9009.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -240,7 +240,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/passenger_getting_in_car_16.mp4",
+      "clip": "stock_taxi/madrid_taxis_9014.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -441,7 +441,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/taxi_car_city_street_0.mp4",
+      "clip": "stock_taxi/signing_documents_desk_37.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -457,7 +457,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/signing_documents_desk_37.mp4",
+      "clip": "stock_taxi/lawyer_documents_43.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -473,7 +473,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/lawyer_documents_43.mp4",
+      "clip": "stock_taxi/empty_city_street_dawn_14.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -603,7 +603,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_taxi/woman_in_taxi_back_seat_17.mp4",
+      "clip": "stock_taxi/receipt_printing_26.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -633,7 +633,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/receipt_printing_26.mp4",
+      "clip": "stock_taxi/parking_ticket_32.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -650,7 +650,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/parking_ticket_32.mp4",
+      "clip": "stock_taxi/retirement_older_man_44.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -708,7 +708,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/barcelona_sants_train_station_and_parking_9081.mp4",
+      "clip": "stock_taxi/seat_toledo_mk2_tdi_taxi_rear_9066.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -738,7 +738,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/prius_taxi_barcelona_9100.mp4",
+      "clip": "stock_taxi/333_telef_ric_de_montju_c_9079.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -755,7 +755,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_taxi/prius_taxi_barcelona_04_2016_6779_9101.mp4",
+      "clip": "stock_taxi/148_casa_mil_pg_de_gr_9078.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -774,7 +774,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/parada_de_taxis_barcelona_9138.mp4",
+      "clip": "stock_taxi/seat_1500_taxi_de_madrid_9023.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -791,7 +791,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/seat_toledo_mk2_tdi_taxi_rear_9066.mp4",
+      "clip": "stock_taxi/seat_1500_taxi_de_madrid_barrido_9024.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -846,7 +846,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/148_casa_mil_pg_de_gr_9078.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -891,7 +891,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_taxi/seat_1500_taxi_de_madrid_barrido_9024.mp4",
+      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -918,7 +918,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/taxi_nissan_hybrid_24318322147_9105.mp4",
+      "clip": "stock_banco/reading_contract_closeup_142.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -934,7 +934,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -950,7 +950,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/reading_contract_closeup_142.mp4",
+      "clip": "stock_banco/insurance_documents_desk_219.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -967,7 +967,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/car_dashboard_city_driving_3.mp4",
+      "clip": "stock_taxi/los_nuevos_veh_culos_para_taxi_9009.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -1136,6 +1136,9 @@
       ],
       "capas": [],
       "_lat_ent": 1.0,
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.286,
       "composicion": "centrado",
       "grafico": {
         "tipo": "barras",
@@ -1168,8 +1171,6 @@
           "San Sebastián": "acento"
         }
       },
-      "fondo": "plato",
-      "tipo": "grafico",
       "fondo_color": null
     },
     {
@@ -1181,7 +1182,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/insurance_documents_desk_219.mp4",
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1200,7 +1201,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip": "stock_banco/insurance_documents_desk_76.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -1228,7 +1229,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/insurance_documents_desk_76.mp4",
+      "clip": "stock_banco/manager_reviewing_documents_55.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -1316,41 +1317,26 @@
       "id": "cap3_01",
       "texto": "En noviembre de dos mil veinte, según el diario Vozpópuli, que cita a fuentes del sector, la licencia de Madrid valía entre setenta y cinco y ochenta y cinco mil euros. Había quien la ponía a cien mil, pero nadie la compraba por más de ochenta y cinco.",
       "duracion": 3.16,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "frio_suave",
       "efectos": [
-        "niebla"
+        "bokeh"
       ],
+      "clip": "stock_taxi/madrid_taxis_9014.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.143,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "contrato",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "texto_pantalla": {
-        "texto": "En noviembre de dos mil *veinte*",
-        "px": 96,
-        "y": 0.64,
+        "texto": "En *noviembre* de dos mil veinte",
+        "px": 108,
+        "y": 0.3,
         "acento": [
-          18,
+          240,
           84,
-          178
+          74
         ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
+        "estilo": "izquierda"
       },
       "composicion": "derecha"
     },
@@ -1447,7 +1433,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/barcelona_sants_train_station_and_parking_9081.mp4",
+      "clip": "stock_taxi/seat_toledo_mk2_tdi_taxi_rear_9066.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1483,7 +1469,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_taxi/driving_night_rain_4.mp4",
+      "clip": "stock_taxi/car_mechanic_engine_29.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1502,7 +1488,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/333_telef_ric_de_montju_c_9079.mp4",
+      "clip": "stock_taxi/148_casa_mil_pg_de_gr_9078.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -1519,7 +1505,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1549,7 +1535,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip": "stock_banco/person_signing_pen_paper_313.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -1566,7 +1552,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/executive_office_window_city_93.mp4",
+      "clip": "stock_taxi/government_building_34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -1582,7 +1568,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip": "stock_taxi/signing_documents_desk_37.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -1782,7 +1768,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/reading_contract_magnifying_65.mp4",
+      "clip": "stock_banco/reading_contract_closeup_217.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -1870,7 +1856,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_taxi/signing_documents_desk_37.mp4",
+      "clip": "stock_taxi/driving_night_rain_4.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2124,7 +2110,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/night_seafront_promenade_marina_aerial_2.mp4",
+      "clip": "stock_taxi/phone_app_map_20.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2140,7 +2126,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/phone_app_map_20.mp4",
+      "clip": "stock_taxi/passenger_getting_in_car_16.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2367,7 +2353,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_taxi/airport_arrivals_12.mp4",
+      "clip": "stock_taxi/street_lights_bokeh_15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2383,7 +2369,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_taxi/street_lights_bokeh_15.mp4",
+      "clip": "stock_taxi/woman_in_taxi_back_seat_17.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2399,7 +2385,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/reading_contract_closeup_276.mp4",
+      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -2415,7 +2401,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/signing_contract_close_up_ha_305.mp4",
+      "clip": "stock_taxi/taxi_driver_steering_wheel_5.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -2480,17 +2466,13 @@
       "id": "cap5_02",
       "texto": "Según un diario, que cita expertos y anuncios, en octubre de dos mil veintiséis las operaciones de Madrid se hacen entre ciento ochenta mil y doscientos diez mil euros. Una sola fuente, sin cifra oficial.",
       "duracion": 3.75,
-      "movimiento": "subir",
-      "grade": "frio_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/148_casa_mil_pg_de_gr_9078.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
       "texto_pantalla": {
@@ -2498,11 +2480,29 @@
         "px": 132,
         "y": 0.68,
         "acento": [
-          240,
-          84,
-          74
+          206,
+          32,
+          38
         ],
-        "estilo": "sube"
+        "estilo": "sube",
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro"
+      },
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "euro",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
       },
       "composicion": "izquierda"
     },
@@ -2517,9 +2517,7 @@
       ],
       "capas": [],
       "_lat_ent": -1.0,
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
+      "composicion": "centrado",
       "grafico": {
         "tipo": "barras",
         "titulo": "licencias de Madrid, según un diario",
@@ -2543,7 +2541,8 @@
           "Máximo": "acento"
         }
       },
-      "composicion": "centrado",
+      "fondo": "plato",
+      "tipo": "grafico",
       "fondo_color": null
     },
     {
@@ -2555,7 +2554,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/parada_de_taxis_barcelona_9138.mp4",
+      "clip": "stock_taxi/seat_1500_taxi_de_madrid_9023.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2568,46 +2567,59 @@
     {
       "id": "cap5_03",
       "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
-      "duracion": 3.67,
-      "movimiento": "estatico",
-      "grade": "frio_suave",
-      "efectos": [
-        "fuga_luz"
-      ],
-      "clip": "stock_taxi/government_building_34.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "_lat_ent": -1.0,
-      "texto_pantalla": {
-        "texto": "Con un *matiz* clave",
-        "px": 132,
-        "y": 0.68,
-        "acento": [
-          240,
-          84,
-          74
-        ],
-        "estilo": "sube"
-      },
-      "composicion": "derecha"
-    },
-    {
-      "id": "cap5_03b",
-      "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
-      "duracion": 4.47,
+      "duracion": 6.79,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "lluvia"
+        "niebla"
       ],
       "capas": [],
-      "_lat_sal": -1.0,
-      "transicion": "corte",
+      "tipo": "rotulo",
       "fondo": "plato",
+      "fondo_fase": 0.429,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "contrato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Con un matiz *clave*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          18,
+          84,
+          178
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
+      "_lat_ent": -1.0,
+      "composicion": "derecha"
+    },
+    {
+      "id": "cap5_03x",
+      "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
+      "duracion": 6.8,
+      "movimiento": "estatico",
+      "grade": "neutro",
+      "efectos": [
+        "bokeh"
+      ],
+      "capas": [],
       "tipo": "grafico",
-      "fondo_fase": 0.0,
+      "fondo": "plato",
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "barras",
         "titulo": "según los días que puedes trabajar",
@@ -2624,8 +2636,8 @@
         "sufijo": " €",
         "dec": 0,
         "y": 0.5,
-        "retardo": 0.44,
-        "duracion": 2.33,
+        "retardo": 0.45,
+        "duracion": 2.4,
         "entrada": "barrido",
         "destacar": {
           "Con fines de semana": "acento"
@@ -2635,23 +2647,21 @@
       "fondo_color": null
     },
     {
-      "id": "cap5_03c",
-      "texto": "Y con un matiz clave: según esa misma información, una licencia con libranza de lunes a miércoles vale unos ochenta mil, y una que puede trabajar el fin de semana, más de doscientos mil.",
-      "duracion": 5.45,
+      "id": "cap5_04",
+      "texto": "Es decir, que el precio depende de qué días te dejan trabajar.",
+      "duracion": 4.3,
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
         "bokeh"
       ],
       "capas": [],
-      "_lat_ent": -1.0,
+      "tipo": "rotulo",
       "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.143,
-      "composicion": "derecha",
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
-        "icono": "contrato",
+        "icono": "calendario",
         "lado": 300,
         "y": 0.32,
         "retardo": 0.22,
@@ -2659,13 +2669,13 @@
         "entrada": "golpe"
       },
       "texto_pantalla": {
-        "texto": "Con un *matiz* clave",
+        "texto": "Es *decir*",
         "px": 96,
         "y": 0.64,
         "acento": [
-          206,
-          32,
-          38
+          18,
+          84,
+          178
         ],
         "color": [
           24,
@@ -2675,23 +2685,8 @@
         "halo": "claro",
         "estilo": "sube",
         "retardo": 0.26
-      }
-    },
-    {
-      "id": "cap5_04",
-      "texto": "Es decir, que el precio depende de qué días te dejan trabajar.",
-      "duracion": 4.3,
-      "movimiento": "subir",
-      "grade": "frio_suave",
-      "efectos": [
-        "fuga_luz"
-      ],
-      "clip": "stock_taxi/taxi_sign_roof_7.mp4",
-      "clip_desde": 0.3,
-      "capas": [],
-      "duotono": "duo_papel",
-      "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      },
+      "composicion": "derecha"
     },
     {
       "id": "cap5_05",
@@ -2702,7 +2697,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_banco/busy_city_corner_location_151.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -2718,7 +2713,7 @@
         ],
         "estilo": "escala"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_05b",
@@ -2729,12 +2724,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip": "stock_taxi/empty_city_street_dawn_14.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_06",
@@ -2750,7 +2745,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_06b",
@@ -2766,7 +2761,7 @@
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_06c",
@@ -2793,7 +2788,7 @@
       },
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap5_06d",
@@ -2804,12 +2799,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/reading_contract_closeup_217.mp4",
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap5_07",
@@ -2836,7 +2831,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap5_07b",
@@ -2853,7 +2848,7 @@
       "cierra_bloque": true,
       "duotono": "duo_papel",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_01",
@@ -2862,12 +2857,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.143,
+      "fondo_fase": 0.857,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "contrato",
@@ -2895,7 +2890,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_02",
@@ -2906,7 +2901,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_taxi/car_mechanic_engine_29.mp4",
+      "clip": "stock_taxi/skoda_octavia_taxi_madrid_3867_9028.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2914,7 +2909,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_02b",
@@ -2927,7 +2922,7 @@
       ],
       "capas": [],
       "_lat_ent": -1.0,
-      "composicion": "derecha",
+      "composicion": "centrado",
       "grafico": {
         "tipo": "barras",
         "titulo": "un seguro, al año",
@@ -2964,7 +2959,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/madrid_taxis_9014.mp4",
+      "clip": "stock_taxi/taxi_en_madrid_9034.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2972,7 +2967,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_02d",
@@ -2983,13 +2978,13 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_taxi/skoda_octavia_taxi_madrid_3867_9028.mp4",
+      "clip": "stock_taxi/taxis_in_the_puerta_del_sol_9036.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_02e",
@@ -3000,7 +2995,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/taxi_madrid_9031.mp4",
+      "clip": "stock_taxi/taxis_puerta_de_atocha_9070.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3008,7 +3003,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_02f",
@@ -3019,58 +3014,32 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/taxi_en_madrid_9034.mp4",
+      "clip": "stock_taxi/taxis_en_el_terminal_3_de_9071.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_03",
       "texto": "El coche. Un Toyota Corolla con etiqueta ECO parte de veintiséis mil setecientos cincuenta euros.",
       "duracion": 7.27,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "push_in",
+      "grade": "rojo_suave",
       "efectos": [
         "chispas"
       ],
+      "clip": "stock_banco/manager_reviewing_documents_266.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.571,
-      "composicion": "centrado",
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "coche",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "El *coche*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "composicion": "derecha"
     },
     {
       "id": "cap6_04",
@@ -3087,7 +3056,7 @@
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
       "_lat_ent": -1.0,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_04b",
@@ -3099,7 +3068,7 @@
         "fuga_luz"
       ],
       "capas": [],
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "contador",
         "valor": 10852.0,
@@ -3123,16 +3092,42 @@
       "texto": "Los gastos. En Málaga, el taxista medio gasta diez mil ochocientos cincuenta y dos euros al año. Y el ochenta y ocho por ciento dice que subieron en dos mil veinticuatro.",
       "duracion": 4.74,
       "movimiento": "estatico",
-      "grade": "rojo_suave",
+      "grade": "neutro",
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_taxi/taxi_driver_steering_wheel_5.mp4",
-      "clip_desde": 0.3,
       "capas": [],
-      "duotono": "duo_frio",
-      "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "fondo": "plato",
+      "tipo": "grafico",
+      "fondo_fase": 0.857,
+      "composicion": "izquierda",
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "factura",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
+      "texto_pantalla": {
+        "texto": "Los *gastos*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          206,
+          32,
+          38
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      }
     },
     {
       "id": "cap6_05",
@@ -3159,7 +3154,7 @@
         ],
         "estilo": "derecha"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_05b",
@@ -3175,7 +3170,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_05c",
@@ -3191,7 +3186,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_06",
@@ -3207,7 +3202,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_07",
@@ -3223,7 +3218,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap6_07b",
@@ -3239,7 +3234,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap6_07c",
@@ -3250,7 +3245,7 @@
       "efectos": [
         "lluvia"
       ],
-      "clip": "stock_taxi/prius_taxi_barcelona_04_2016_6779_9101.mp4",
+      "clip": "stock_taxi/seat_1500_taxi_de_madrid_barrido_9024.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -3266,7 +3261,7 @@
       },
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap6_07d",
@@ -3277,13 +3272,13 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/prius_taxi_barcelona_9100.mp4",
+      "clip": "stock_taxi/taxi_nissan_hybrid_24318322147_9105.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_01",
@@ -3292,12 +3287,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "dato",
@@ -3325,7 +3320,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "centrado"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_01x",
@@ -3334,12 +3329,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.0,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "dato",
@@ -3367,7 +3362,7 @@
         "estilo": "sube",
         "retardo": 0.26
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_02",
@@ -3381,7 +3376,7 @@
       "capas": [],
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "composicion": "izquierda",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "contador",
         "valor": 37148.0,
@@ -3404,45 +3399,18 @@
       "id": "cap7_02b",
       "texto": "Ingresos medios del titular: treinta y siete mil ciento cuarenta y ocho euros al año. No se aclara si es bruto o neto. La recaudación diaria media es de ciento ocho euros en temporada baja y ciento noventa y tres en alta.",
       "duracion": 5.02,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "subir",
+      "grade": "acero_suave",
       "efectos": [
-        "bokeh"
+        "niebla"
       ],
+      "clip": "stock_banco/cash_briefcase_open_18.mp4",
+      "clip_desde": 0.3,
       "capas": [],
-      "texto_pantalla": {
-        "texto": "Ingresos medios del *titular*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          18,
-          84,
-          178
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.143,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "calendario",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe",
-        "flecha": "baja"
-      },
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "_lat_ent": 1.0,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_02c",
@@ -3451,12 +3419,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "fuga_luz"
       ],
       "capas": [],
-      "tipo": "grafico",
-      "fondo": "plato",
-      "fondo_fase": 0.286,
+      "_lat_sal": 1.0,
+      "transicion": "corte",
+      "composicion": "centrado",
       "grafico": {
         "tipo": "barras",
         "titulo": "recaudación diaria media en Málaga",
@@ -3480,9 +3448,8 @@
           "Temporada alta": "acento"
         }
       },
-      "_lat_sal": 1.0,
-      "transicion": "corte",
-      "composicion": "izquierda",
+      "fondo": "plato",
+      "tipo": "grafico",
       "fondo_color": null
     },
     {
@@ -3492,12 +3459,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "grafico",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "barras",
         "titulo": "horas al día con un cliente dentro",
@@ -3526,7 +3493,7 @@
         }
       },
       "_lat_ent": 1.0,
-      "composicion": "derecha",
+      "composicion": "izquierda",
       "fondo_color": null
     },
     {
@@ -3534,45 +3501,19 @@
       "texto": "Es decir, que durante dos de cada tres horas de trabajo, el taxi no está llevando a nadie.",
       "duracion": 5.88,
       "movimiento": "estatico",
-      "grade": "neutro",
+      "grade": "acero_suave",
       "efectos": [
         "bokeh"
       ],
+      "clip": "stock_taxi/airport_arrivals_12.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
+      "duotono": "duo_verde",
+      "duotono_fuerza": 0.55,
       "_lat_sal": 1.0,
       "transicion": "corte",
-      "fondo": "plato",
-      "tipo": "grafico",
-      "fondo_fase": 0.143,
-      "composicion": "centrado",
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "reloj",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "El taxi no está *llevando* a nadie",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          206,
-          32,
-          38
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      }
+      "composicion": "derecha"
     },
     {
       "id": "cap7_05",
@@ -3583,7 +3524,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_taxi/aerial_city_night_47.mp4",
+      "clip": "stock_taxi/barcelona_sants_train_station_and_parking_9081.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
@@ -3600,7 +3541,7 @@
         ],
         "estilo": "sube"
       },
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_05b",
@@ -3611,12 +3552,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_taxi/taxis_in_the_puerta_del_sol_9036.mp4",
+      "clip": "stock_taxi/prius_taxi_barcelona_9100.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cap7_05c",
@@ -3627,12 +3568,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/taxis_puerta_de_atocha_9070.mp4",
+      "clip": "stock_taxi/prius_taxi_barcelona_04_2016_6779_9101.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cap7_05d",
@@ -3643,12 +3584,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_taxi/taxis_en_el_terminal_3_de_9071.mp4",
+      "clip": "stock_taxi/parada_de_taxis_barcelona_9138.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_verde",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cap7_06",
@@ -3661,7 +3602,7 @@
       ],
       "capas": [],
       "cierra_bloque": true,
-      "composicion": "derecha",
+      "composicion": "izquierda",
       "grafico": {
         "tipo": "contador",
         "valor": 18008.0,
@@ -3690,7 +3631,7 @@
         "fuga_luz"
       ],
       "capas": [],
-      "composicion": "centrado",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "barras",
         "titulo": "una licencia de Madrid",
@@ -3726,46 +3667,20 @@
       "id": "cierre_02",
       "texto": "En esos años el taxista no cambió ni de coche ni de calle. Cambiaron cuántas VTC dejó entrar un ayuntamiento, qué dijo un tribunal en Luxemburgo, cuántas licencias nuevas se convocaron y cuántos días a la semana podía trabajar.",
       "duracion": 3.94,
-      "movimiento": "estatico",
-      "grade": "neutro",
+      "movimiento": "bajar",
+      "grade": "frio_suave",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
+      "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
+      "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
-      "tipo": "rotulo",
-      "fondo": "plato",
-      "fondo_fase": 0.571,
-      "grafico": {
-        "tipo": "ilustracion",
-        "icono": "calendario",
-        "lado": 300,
-        "y": 0.32,
-        "retardo": 0.22,
-        "duracion": 1.4,
-        "entrada": "golpe"
-      },
-      "texto_pantalla": {
-        "texto": "Dijo un tribunal en *Luxemburgo*",
-        "px": 96,
-        "y": 0.64,
-        "acento": [
-          18,
-          84,
-          178
-        ],
-        "color": [
-          24,
-          24,
-          28
-        ],
-        "halo": "claro",
-        "estilo": "sube",
-        "retardo": 0.26
-      },
+      "duotono": "duo_frio",
+      "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_02b",
@@ -3776,7 +3691,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3793,7 +3708,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_02c",
@@ -3804,7 +3719,7 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/busy_city_corner_location_86.mp4",
+      "clip": "stock_taxi/skoda_octavia_taxi_madrid_3867_9028.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3812,7 +3727,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_03",
@@ -3823,7 +3738,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip": "stock_taxi/street_lights_bokeh_15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
@@ -3840,7 +3755,7 @@
         ],
         "estilo": "izquierda"
       },
-      "composicion": "izquierda"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_03b",
@@ -3851,7 +3766,7 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_taxi/empty_city_street_dawn_14.mp4",
+      "clip": "stock_taxi/taxi_en_madrid_9034.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -3859,7 +3774,7 @@
       "duotono_fuerza": 0.55,
       "_lat_sal": -1.0,
       "transicion": "corte",
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_03c",
@@ -3872,7 +3787,7 @@
       ],
       "capas": [],
       "_lat_ent": -1.0,
-      "composicion": "centrado",
+      "composicion": "derecha",
       "grafico": {
         "tipo": "contador",
         "valor": 2500.0,
@@ -3900,12 +3815,12 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_taxi/madrid_taxis_9014.mp4",
+      "clip": "stock_taxi/taxis_en_el_terminal_3_de_9071.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "centrado"
     },
     {
       "id": "cierre_04",
@@ -3916,12 +3831,12 @@
       "efectos": [
         "niebla"
       ],
-      "clip": "stock_banco/busy_city_corner_location_299.mp4",
+      "clip": "stock_banco/hands_signing_contract_pen_9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda"
+      "composicion": "derecha"
     },
     {
       "id": "cierre_04b",
@@ -3932,12 +3847,12 @@
       "efectos": [
         "fuga_luz"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip": "stock_banco/reading_contract_closeup_276.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_05",
@@ -3953,7 +3868,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "izquierda",
+      "composicion": "centrado",
       "texto_pantalla": {
         "texto": "Un *papel*",
         "px": 96,
@@ -3986,7 +3901,7 @@
       "capas": [],
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "derecha"
+      "composicion": "izquierda"
     },
     {
       "id": "cierre_06",
@@ -4003,7 +3918,7 @@
       "cierra_bloque": true,
       "duotono": "duo_frio",
       "duotono_fuerza": 0.55,
-      "composicion": "centrado"
+      "composicion": "derecha"
     }
   ],
   "identidad": {

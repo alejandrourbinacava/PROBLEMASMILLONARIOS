@@ -514,7 +514,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_burger/aerial_city_50.mp4",
+      "clip": "stock_burger/highway_aerial_51.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -530,7 +530,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_burger/highway_aerial_51.mp4",
+      "clip": "stock_burger/burger_king_martos_9026.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -549,7 +549,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_burger/burger_king_martos_9026.mp4",
+      "clip": "stock_burger/burger_king_bk_fontaine_l_v_9021.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -845,7 +845,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -932,7 +932,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_282.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -944,27 +944,42 @@
       "id": "cap2_01",
       "texto": "Pasemos a la cuenta del título. Si quisieras abrir uno, ¿cuánto te costaría?",
       "duracion": 2.29,
-      "movimiento": "push_in",
-      "grade": "rojo_suave",
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "brasas"
+        "polvo"
       ],
-      "clip": "stock_banco/mortgage_payment_calculator_80.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
-        "texto": "*Pasemos* a la cuenta del título",
-        "px": 108,
-        "y": 0.3,
+        "texto": "Si quisieras *abrir* uno",
+        "px": 96,
+        "y": 0.64,
         "acento": [
-          240,
-          84,
-          74
+          224,
+          96,
+          8
         ],
-        "estilo": "escala"
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
       },
-      "duotono": "duo_ambar",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.714,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "puerta",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 0.8199999999999998,
+        "entrada": "golpe"
+      },
       "composicion": "centrado"
     },
     {
@@ -1189,7 +1204,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_33.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -1239,7 +1254,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_117.mp4",
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1255,7 +1270,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/aerial_city_real_estate_310.mp4",
+      "clip": "stock_burger/contract_signing_42.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1287,7 +1302,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_burger/contract_signing_42.mp4",
+      "clip": "stock_burger/burger_assembly_15.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1314,7 +1329,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_burger/burger_king_bk_fontaine_l_v_9021.mp4",
+      "clip": "stock_burger/burger_king_oostwijk_vlaardingen_9029.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1341,7 +1356,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_burger/burger_king_oostwijk_vlaardingen_9029.mp4",
+      "clip": "stock_burger/burger_king_schnellrestaurant_mit_drive_in_9079.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1357,7 +1372,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_burger/burger_king_schnellrestaurant_mit_drive_in_9079.mp4",
+      "clip": "stock_burger/2023_02_03_burger_king_in_9001.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -1373,7 +1388,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_burger/2023_02_03_burger_king_in_9001.mp4",
+      "clip": "stock_burger/burger_king_bk_fontaine_l_v_9021.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "cierra_bloque": true,
@@ -1452,7 +1467,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/real_estate_buildings_aerial_114.mp4",
+      "clip": "stock_banco/invoices_paperwork_desk_302.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1640,7 +1655,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/delivery_rider_scooter_city_127.mp4",
+      "clip": "stock_banco/handshake_business_meeting_249.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1667,7 +1682,7 @@
       "efectos": [
         "polvo"
       ],
-      "clip": "stock_banco/handshake_business_meeting_249.mp4",
+      "clip": "stock_banco/handshake_business_meeting_295.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1683,7 +1698,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/handshake_business_meeting_295.mp4",
+      "clip": "stock_banco/legal_documents_signing_199.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1699,7 +1714,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_burger/aerial_city_50.mp4",
+      "clip": "stock_burger/burger_close_up_9.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -1838,7 +1853,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/aerial_view_commercial_real_308.mp4",
+      "clip": "stock_banco/legal_documents_signing_52.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
@@ -1865,7 +1880,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_banco/billboard_advertisement_stre_40.mp4",
+      "clip": "stock_banco/person_signing_pen_paper_143.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "izq",
@@ -2185,7 +2200,7 @@
       "efectos": [
         "humo"
       ],
-      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip": "stock_burger/2023_02_03_burger_king_in_9001.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -2287,7 +2302,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_banco/legal_documents_signing_199.mp4",
+      "clip": "stock_banco/executive_office_window_city_153.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -2317,7 +2332,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/legal_documents_signing_52.mp4",
+      "clip": "stock_banco/executive_office_window_city_93.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2701,7 +2716,7 @@
       "efectos": [
         "bokeh"
       ],
-      "clip": "stock_burger/2023_02_03_burger_king_in_9001.mp4",
+      "clip": "stock_burger/burger_grill_patty_11.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2717,7 +2732,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_burger/burger_assembly_15.mp4",
+      "clip": "stock_burger/burger_king_martos_9026.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2744,7 +2759,7 @@
       "efectos": [
         "billetes"
       ],
-      "clip": "stock_burger/burger_close_up_9.mp4",
+      "clip": "stock_burger/burger_king_oostwijk_vlaardingen_9029.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_rojo",
@@ -2754,45 +2769,87 @@
     {
       "id": "cap5_07",
       "texto": "No hay comunicado de la marca, del fondo ni del comprador. Es lo que cuenta Expansión.",
-      "duracion": 2.9,
-      "movimiento": "bajar",
-      "grade": "verde_suave",
+      "duracion": 2.92,
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "bokeh"
+        "niebla"
       ],
-      "clip": "stock_banco/payroll_documents_calculator_263.mp4",
-      "clip_desde": 0.3,
       "capas": [],
       "texto_pantalla": {
-        "texto": "No hay *comunicado* de la marca",
-        "px": 108,
-        "y": 0.3,
+        "texto": "No hay comunicado de la *marca*",
+        "px": 96,
+        "y": 0.64,
         "acento": [
-          240,
-          84,
-          74
+          224,
+          96,
+          8
         ],
-        "estilo": "izquierda"
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
       },
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
+      "cierra_bloque": true,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.143,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
       "composicion": "derecha"
     },
     {
-      "id": "cap5_07b",
+      "id": "cap5_07x",
       "texto": "No hay comunicado de la marca, del fondo ni del comprador. Es lo que cuenta Expansión.",
-      "duracion": 2.93,
-      "movimiento": "pull_out",
-      "grade": "verde_suave",
+      "duracion": 2.91,
+      "movimiento": "estatico",
+      "grade": "neutro",
       "efectos": [
-        "destellos"
+        "bokeh"
       ],
-      "clip": "stock_banco/calculator_numbers_close_up_124.mp4",
-      "clip_desde": 0.3,
       "capas": [],
+      "texto_pantalla": {
+        "texto": "Del fondo ni del *comprador*",
+        "px": 96,
+        "y": 0.64,
+        "acento": [
+          224,
+          96,
+          8
+        ],
+        "color": [
+          24,
+          24,
+          28
+        ],
+        "halo": "claro",
+        "estilo": "sube",
+        "retardo": 0.26
+      },
       "cierra_bloque": true,
-      "duotono": "duo_rojo",
-      "duotono_fuerza": 0.55,
+      "tipo": "rotulo",
+      "fondo": "plato",
+      "fondo_fase": 0.286,
+      "grafico": {
+        "tipo": "ilustracion",
+        "icono": "dato",
+        "lado": 300,
+        "y": 0.32,
+        "retardo": 0.22,
+        "duracion": 1.4,
+        "entrada": "golpe"
+      },
       "composicion": "centrado"
     },
     {
@@ -2802,12 +2859,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "bokeh"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.429,
+      "fondo_fase": 0.286,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "dato",
@@ -2913,7 +2970,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_burger/burger_grill_patty_11.mp4",
+      "clip": "stock_burger/burger_king_schnellrestaurant_mit_drive_in_9079.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3003,12 +3060,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "polvo"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.714,
+      "fondo_fase": 0.571,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "subir",
@@ -3046,12 +3103,12 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
       "capas": [],
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "subir",
@@ -3089,7 +3146,7 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "niebla"
+        "destellos"
       ],
       "capas": [],
       "cierra_bloque": true,
@@ -3113,7 +3170,7 @@
       },
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.857,
+      "fondo_fase": 0.714,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "alerta",
@@ -3217,7 +3274,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_burger/burger_king_martos_9026.mp4",
+      "clip": "stock_burger/cheeseburger_10.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_papel",
@@ -3323,13 +3380,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "polvo"
+        "bokeh"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.286,
+      "fondo_fase": 0.143,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "dato",
@@ -3440,7 +3497,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/coins_falling_slow_motion_242.mp4",
+      "clip": "stock_banco/corporate_decision_meeting_229.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -3499,7 +3556,7 @@
       "efectos": [
         "brasas"
       ],
-      "clip": "stock_banco/executive_office_window_city_153.mp4",
+      "clip": "stock_burger/family_eating_restaurant_34.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "latigo": "der",
@@ -3529,7 +3586,7 @@
       "efectos": [
         "destellos"
       ],
-      "clip": "stock_banco/job_interview_office_serious_174.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_232.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3546,7 +3603,7 @@
       "efectos": [
         "chispas"
       ],
-      "clip": "stock_burger/burger_king_oostwijk_vlaardingen_9029.mp4",
+      "clip": "stock_banco/corporate_meeting_boardroom_293.mp4",
       "clip_desde": 0.3,
       "capas": [],
       "duotono": "duo_ambar",
@@ -3577,13 +3634,13 @@
       "movimiento": "estatico",
       "grade": "neutro",
       "efectos": [
-        "destellos"
+        "polvo"
       ],
       "capas": [],
       "cierra_bloque": true,
       "tipo": "rotulo",
       "fondo": "plato",
-      "fondo_fase": 0.571,
+      "fondo_fase": 0.429,
       "grafico": {
         "tipo": "ilustracion",
         "icono": "persona",

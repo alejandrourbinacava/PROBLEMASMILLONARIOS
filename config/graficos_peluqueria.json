@@ -684,5 +684,48 @@
       "halo": "claro",
       "estilo": "sube"
     }
+  },
+  {
+    "_nota": "",
+    "donde": "aunque conviene confirmarlo con la Agencia Tributaria",
+    "texto_pantalla": {
+      "texto": "A confirmar con la *Agencia Tributaria*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
+  },
+  {
+    "_nota": "ilustracion muda por id (si el id cambia, revisar_ep la vuelve a marcar)",
+    "donde": "plano cap1_03c",
+    "plano": "cap1_03c",
+    "texto_pantalla": {
+      "texto": "Sigue al *21 %*",
+      "px": 96,
+      "y": 0.64,
+      "acento": [
+        206,
+        32,
+        38
+      ],
+      "color": [
+        24,
+        24,
+        28
+      ],
+      "halo": "claro",
+      "estilo": "sube"
+    }
   }
 ]

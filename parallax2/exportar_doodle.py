@@ -206,6 +206,7 @@ def emocion(fragmento, semilla):
     return ["serio", "feliz", "feliz", "serio", "pensando"][semilla % 5]
 
 
+PAPEL_STICK = {"bar": "stick", "taxi": "stick2", "burger": "stick", "peluqueria": "stick2", "estanco": "stick", "mercadona": "stick2"}
 PAPEL = {"bar": "crema", "taxi": "mantequilla", "burger": "rosa", "peluqueria": "lila", "estanco": "menta", "mercadona": "cielo"}
 ARTICULOS = {"el", "la", "los", "las", "un", "una", "unos", "unas", "del", "al", "tu", "tus", "su", "sus"}
 SOLO_TARJETAS = "--tarjetas" in sys.argv
@@ -317,7 +318,7 @@ def main():
         return 2
     ruta, destino = pos[0], pos[1]
     tema = opt("--tema") or next((t for t in SUELO if t in os.path.basename(ruta)), "bar")
-    papel = opt("--papel") or PAPEL.get(tema, "crema")
+    papel = opt("--papel") or (PAPEL_STICK.get(tema, "stick") if opt("--estilo") == "stick" else PAPEL.get(tema, "crema"))
     suelo = SUELO.get(tema, SUELO["bar"])
 
     guion = json.load(open(ruta, encoding="utf-8"))

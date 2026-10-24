@@ -54,10 +54,10 @@ const Trozos: React.FC<{linea: string}> = ({linea}) => {
   );
 };
 
-const Titular: React.FC<{texto: string; retardo: number; x: number; y: number; ancho: number; anchor: 'middle' | 'start'; fps: number}> = ({texto, retardo, x, y, ancho, anchor, fps}) => {
+const Titular: React.FC<{texto: string; retardo: number; x: number; y: number; ancho: number; anchor: 'middle' | 'start'; fps: number; tamanos?: number[]}> = ({texto, retardo, x, y, ancho, anchor, fps, tamanos}) => {
   const f = useCurrentFrame();
   const t0 = Math.round(retardo * fps);
-  const {px, l} = lineasTitular(may(texto), ancho);
+  const {px, l} = lineasTitular(may(texto), ancho, tamanos);
   const t = useContext(Ctx);
   const ult = l[l.length - 1].replace(/\*/g, '');
   const wUlt = Math.min(ancho, ult.length * px * 0.5);
@@ -159,7 +159,7 @@ const Cartel: React.FC<{texto: string; retardo: number; fps: number}> = ({texto,
   return (
     <g opacity={clamp01((f - Math.round(retardo * fps)) / 4)} transform={`translate(960,${60 + h / 2}) rotate(-1.2) scale(${Math.max(0.01, u)}) translate(-960,${-(60 + h / 2)})`}>
       <F d={rr(960 - w / 2, 60, w, h, 28)} c="blanco" />
-      <Titular texto={texto} retardo={retardo + 0.1} x={960} y={60 + 30 + px * 0.82} ancho={1500} anchor="middle" fps={fps} />
+      <Titular texto={texto} retardo={retardo + 0.1} x={960} y={60 + 30 + px * 0.82} ancho={1500} anchor="middle" fps={fps} tamanos={[96, 84, 74, 66]} />
     </g>
   );
 };

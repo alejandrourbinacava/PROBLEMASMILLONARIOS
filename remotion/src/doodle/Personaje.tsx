@@ -94,7 +94,7 @@ const PeloFrente: React.FC<{e: Pelo; c: string; gorro?: string | null}> = ({e, c
   );
 };
 
-const Rostro: React.FC<{cara: Cara; f: number; semilla: number; gafas?: boolean; bigote?: boolean}> = ({cara, f, semilla, gafas, bigote}) => {
+export const Rostro: React.FC<{cara: Cara; f: number; semilla: number; gafas?: boolean; bigote?: boolean; rubor?: boolean}> = ({cara, f, semilla, gafas, bigote, rubor = true}) => {
   const parpadeo = (f + semilla * 13) % 96 < 4 ? 0.1 : 1;
   const ojo = cara === 'sorpresa' ? 11 : 8;
   const mov = Math.sin((f + semilla) / 30) * 2;
@@ -129,8 +129,8 @@ const Rostro: React.FC<{cara: Cara; f: number; semilla: number; gafas?: boolean;
       {cara === 'preocupado' && <R d="M70,-300 q10,22 0,30 q-12,-8 0,-30 Z" c="cielo" />}
       {gafas && <g><L d={ci(-27, -290, 23)} w={4} /><L d={ci(27, -290, 23)} w={4} /><L d="M-4,-290 H4" w={4} /></g>}
       {bigote && <F d="M-34,-252 Q-18,-270 0,-254 Q18,-270 34,-252 Q18,-244 0,-250 Q-18,-244 -34,-252 Z" c="gris" w={4} />}
-      <path d={ci(-42, -258, 11)} fill="#F0584A" opacity={0.22} />
-      <path d={ci(42, -258, 11)} fill="#F0584A" opacity={0.22} />
+      {rubor && <path d={ci(-42, -258, 11)} fill="#F0584A" opacity={0.22} />}
+      {rubor && <path d={ci(42, -258, 11)} fill="#F0584A" opacity={0.22} />}
     </g>
   );
 };

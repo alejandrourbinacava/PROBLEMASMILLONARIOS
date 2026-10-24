@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {Entra} from './anim';
 import {OBJ} from './Objetos';
 import {Personaje} from './Personaje';
-import {F, L, R, T, ci, el, poli, rr} from './prim';
+import {Ctx, F, L, R, T, ci, el, poli, rr} from './prim';
 import {Actor, Bloque, Burbuja, Caja3, Cielo, EP, OWNER, PAREDES, Persiana, Pieza, RUOTULO, SUELOS, Suelo, Ventana, Letrero} from './escenario';
 import {clamp01, suave} from './util';
 
@@ -346,7 +346,7 @@ export const TaxiInt: React.FC<EP> = ({foco, burbuja, cara, v, s, n}) => {
       {/* ciudad que pasa */}
       {Array.from({length: 7}).map((_, i) => {
         const x = ((i * 380 - f * 5) % 2660 + 2660) % 2660 - 340;
-        return <Bloque key={i} x={x} y={260 + (i % 3) * 40} w={260} h={440 - (i % 3) * 40} c={['rosa', 'azul', 'verde', 'amarillo', 'lila', 'naranja', 'cielo'][i]} cols={2} filas={3} />;
+        return <Bloque key={i} x={x} y={260 + (i % 3) * 40} w={260} h={440 - (i % 3) * 40} c={['rosa', 'azul', 'verde', 'amarillo', 'morado', 'naranja', 'cielo'][i]} cols={2} filas={3} />;
       })}
       <R d={rr(0, 700, 1920, 380, 0)} c="#5C5F73" />
       <L d="M0,700 H1920" w={7} />
@@ -411,7 +411,7 @@ export const Terraza: React.FC<EP> = ({foco, burbuja, cara, v, tema, s}) => {
   return (
     <g>
       <Cielo />
-      <Bloque x={40} y={280} w={300} h={520} c="lila" />
+      <Bloque x={40} y={280} w={300} h={520} c="morado" />
       <F d={rr(1480, 300, 400, 500, 12)} c="blanco" />
       <Letrero x={1680} y={380} w={340} h={84} texto={RUOTULO[tema] ?? 'BAR'} c="verde" px={58} />
       <R d={rr(0, 800, 1920, 280, 0)} c="#CFC3A8" />
@@ -438,7 +438,7 @@ export const Cierre: React.FC<EP> = ({foco, burbuja, cara, v, tema, s, n}) => {
         <path key={i} d={ci(x, y, 5 + (i % 3))} fill="#FFF3B0" opacity={0.6 + Math.sin(f / 9 + i) * 0.3} />
       ))}
       <path d={ci(1600, 200, 80)} fill="#FFF3B0" />
-      <path d={ci(1636, 182, 70)} fill="#46557F" />
+      <path d={ci(1636, 182, 70)} fill={useContext(Ctx).stick ? useContext(Ctx).fondo : '#46557F'} />
       <F d={rr(400, 330, 840, 470, 12)} c="#E5E2D8" />
       <Letrero x={820} y={400} w={560} h={110} texto={RUOTULO[tema] ?? 'TIENDA'} c="oscuro" px={78} />
       <Persiana x={470} y={500} w={700} h={300} u={u} />

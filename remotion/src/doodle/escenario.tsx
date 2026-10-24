@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {useCurrentFrame} from 'remotion';
 import {Entra} from './anim';
 import {OBJ} from './Objetos';
 import {Personaje, Cara, Pose} from './Personaje';
-import {F, L, R, T, ci, el, rr} from './prim';
+import {Stick} from './Stick';
+import {Ctx, F, L, R, T, ci, el, rr} from './prim';
 import {atras, clamp01, suave} from './util';
 
 /** Lo que recibe toda escena grande. */
@@ -51,11 +52,15 @@ export const Actor: React.FC<{
   s?: number;
   mano?: React.ReactNode;
   piernas?: boolean;
-}> = ({x, pies, k = 1, look, pose = 'quieto', cara = 'feliz', voltea, t0 = 4, s = 0, mano, piernas = true}) => (
-  <Entra t0={t0} x={x} y={pies} k={1} rot={0} fase={s}>
-    <Personaje x={0} y={-152 * k} k={k} look={look} pose={pose} cara={cara} voltea={voltea} semilla={s} mano={mano} piernas={piernas} />
-  </Entra>
-);
+}> = ({x, pies, k = 1, look, pose = 'quieto', cara = 'feliz', voltea, t0 = 4, s = 0, mano, piernas = true}) => {
+  const stick = useContext(Ctx).stick;
+  const C = stick ? Stick : Personaje;
+  return (
+    <Entra t0={t0} x={x} y={pies} k={1} rot={0} fase={s}>
+      <C x={0} y={-152 * k} k={k} look={look} pose={pose} cara={cara} voltea={voltea} semilla={s} mano={mano} piernas={piernas} />
+    </Entra>
+  );
+};
 
 /** Un objeto de la libreria, con su sombra, entrando con rebote. */
 export const Pieza: React.FC<{o?: string; x: number; y: number; k?: number; t0?: number; rot?: number; s?: number; sombra?: boolean}> = ({o, x, y, k = 1, t0 = 8, rot = -6, s = 0, sombra = true}) => {
@@ -91,13 +96,16 @@ export const Burbuja: React.FC<{o?: string; x: number; y: number; k?: number; t0
 };
 
 /** Ventana con cielo y cruceta. */
-export const Ventana: React.FC<{x: number; y: number; w: number; h: number; noche?: boolean}> = ({x, y, w, h, noche}) => (
+export const Ventana: React.FC<{x: number; y: number; w: number; h: number; noche?: boolean}> = ({x, y, w, h, noche}) => {
+  const tt = useContext(Ctx);
+  const fondoNoche = tt.stick ? tt.fondo : '#2E3A63';
+  return (
   <g>
     <F d={rr(x, y, w, h, 14)} c={noche ? '#2E3A63' : 'cielo'} />
     {noche ? (
       <g>
         <path d={ci(x + w * 0.72, y + h * 0.3, 34)} fill="#FFF3B0" />
-        <path d={ci(x + w * 0.72 + 14, y + h * 0.3 - 8, 30)} fill="#2E3A63" />
+        <path d={ci(x + w * 0.72 + 14, y + h * 0.3 - 8, 30)} fill={fondoNoche} />
         {[[0.2, 0.25], [0.4, 0.6], [0.55, 0.2], [0.3, 0.75]].map(([a, b], i) => (
           <path key={i} d={ci(x + w * a, y + h * b, 4)} fill="#FFF3B0" />
         ))}
@@ -111,7 +119,8 @@ export const Ventana: React.FC<{x: number; y: number; w: number; h: number; noch
     <L d={`M${x + w / 2},${y} V${y + h} M${x},${y + h / 2} H${x + w}`} w={7} />
     <F d={rr(x - 18, y + h - 2, w + 36, 26, 8)} c="madera" />
   </g>
-);
+  );
+};
 
 export const Letrero: React.FC<{x: number; y: number; w: number; h?: number; texto: string; c?: string; px?: number; t0?: number}> = ({x, y, w, h = 90, texto, c = 'verde', px = 62, t0 = 2}) => (
   <Entra t0={t0} x={x} y={y} k={1} rot={-2}>

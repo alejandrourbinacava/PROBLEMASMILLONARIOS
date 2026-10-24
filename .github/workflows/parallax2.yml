@@ -139,6 +139,11 @@ jobs:
           if [[ "${GITHUB_REF_NAME}" =~ -d[0-9] ]]; then
             echo "doodle=true" >> "$GITHUB_OUTPUT"
           fi
+          # y -s<n> (bar-s01): lo mismo en estilo STICKMAN (munecos de palitos)
+          if [[ "${GITHUB_REF_NAME}" =~ -s[0-9] ]]; then
+            echo "doodle=true" >> "$GITHUB_OUTPUT"
+            echo "estilo_doodle=stick" >> "$GITHUB_OUTPUT"
+          fi
           cat "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5
@@ -238,7 +243,7 @@ jobs:
         if: steps.g.outputs.doodle == 'true'
         run: |
           set -o pipefail
-          (cd parallax2 && python exportar_doodle.py "${{ steps.g.outputs.guion }}" ../doodle.json)
+          (cd parallax2 && python exportar_doodle.py "${{ steps.g.outputs.guion }}" ../doodle.json --estilo "${{ steps.g.outputs.estilo_doodle || 'doodle' }}")
           mkdir -p parallax2/_escenas
           if ! (cd remotion && node render-doodle.mjs ../doodle.json ../parallax2/_escenas --concurrencia 4) 2>&1 | tee doodle.log; then
             echo "::error::Remotion (doodle) ha fallado. Ultimas lineas:"

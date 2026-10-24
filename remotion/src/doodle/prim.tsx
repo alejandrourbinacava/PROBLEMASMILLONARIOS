@@ -10,6 +10,7 @@ export type Paleta = {
   fondo: string;
   tinta: string;
   c: Record<string, string>;
+  stick?: boolean;
 };
 
 export const PAPELES: Record<string, string> = {
@@ -21,7 +22,27 @@ export const PAPELES: Record<string, string> = {
   lila: '#EDE6F7',
 };
 
-export const paleta = (papel: string): Paleta => ({
+const STICK: Record<string, string> = {
+  rojo: '#E5483B',
+  amarillo: '#FFD23F',
+  azul: '#CFE3F5',
+  verde: '#CDEBD5',
+  madera: '#EBD7B8',
+  piel: '#FFFFFF',
+  blanco: '#FFFFFF',
+  oscuro: '#55555E',
+  gris: '#E4E4E4',
+  rosa: '#F9D3DC',
+  naranja: '#FBC48E',
+  morado: '#DDD3F2',
+  cielo: '#E4F1FA',
+};
+export const paleta = (papel: string): Paleta =>
+  papel.startsWith('stick')
+    ? {fondo: papel === 'stick2' ? '#F3F0E8' : '#FFFFFF', tinta: '#1E1E24', c: STICK, stick: true}
+    : paleta0(papel);
+
+const paleta0 = (papel: string): Paleta => ({
   fondo: PAPELES[papel] ?? PAPELES.crema,
   tinta: '#1E1E24',
   c: {
@@ -81,11 +102,19 @@ export const ci = (cx: number, cy: number, r: number) => el(cx, cy, r, r);
 export const poli = (pts: [number, number][]) => 'M' + pts.map((p) => p.join(',')).join('L') + 'Z';
 
 // ---------------------------------------------------------------- forma
-export const color = (t: Paleta, c: string) => (c === 'fondo' ? t.fondo : t.c[c] ?? c);
+export const color = (t: Paleta, c: string) =>
+  c === 'fondo' ? t.fondo : t.stick && c.startsWith('#') && !t.c[c] ? t.fondo : t.c[c] ?? c;
 
 export const F: React.FC<{d: string; c: string; op?: number; w?: number}> = ({d, c, op = 1, w = 6}) => {
   const t = useContext(Ctx);
   const col = color(t, c);
+  if (t.stick)
+    return (
+      <g>
+        <path d={d} fill={col} opacity={op} />
+        <path d={d} fill="none" stroke={t.tinta} strokeWidth={w ? w + 1.5 : 0} strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    );
   return (
     <g>
       <path d={d} fill={col} opacity={op} transform="translate(7,6)" />
@@ -118,8 +147,8 @@ export const T: React.FC<{
   borde?: boolean;
 }> = ({x, y, px, children, c, anchor = 'start', rot = 0, fam = TEXTO, borde}) => {
   const t = useContext(Ctx);
-  const col = c ? color(t, c) : t.tinta;
   const conBorde = borde ?? !!c;
+  const col = c ? (t.stick && c === 'blanco' && !conBorde ? t.tinta : color(t, c)) : t.tinta;
   return (
     <text
       x={x}

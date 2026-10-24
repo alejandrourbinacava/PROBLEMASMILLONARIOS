@@ -88,7 +88,7 @@ TABLA = [
     ("hamburguesa", "hamburguesa hamburguesas burger whopper menu menus carne"),
     ("patatas", "patatas fritas freidora"),
     ("refresco", "refresco refrescos cola"),
-    ("corona", "king rey marca franquiciado franquiciados franquicia franquicias corona"),
+    ("corona", "rey marca franquiciado franquiciados franquicia franquicias corona"),
     ("bolsa", "bolsa pedido pedidos reparto delivery domicilio"),
     ("camion", "camion camiones transporte logistica proveedor proveedores distribucion"),
     ("carrito", "supermercado carrito mercadona"),

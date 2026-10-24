@@ -137,8 +137,78 @@ SUELO = {
     "estanco": ["cajetilla", "mechero", "decimo", "sello", "caja", "local", "ayuntamiento", "duena"],
     "mercadona": ["carrito", "bolsa", "caja", "camion", "local", "gente", "euro"],
 }
+# ---------------------------------------------------------------------------
+# ESCENAS GRANDES: un lugar entero con personajes. Se elige por las palabras
+# del trozo; si no dice nada, rota por las del tema.
+# ---------------------------------------------------------------------------
+ESCENA_KW = {
+    "cuentas": "cuentas cuenta gastos gasto perdidas perdida deuda deudas ruina quiebra nomina nominas pagar cuesta cuestan beneficio beneficios queda sobra margen ahorro hipoteca prestamo intereses interes euros centimos factura facturas",
+    "oficina": "ayuntamiento licencia licencias permiso permisos tramite tramites ley leyes hacienda impuesto impuestos iva registro boe norma tribunal contrato contratos firma firmar documento documentos papeles administracion estado concesion autorizacion",
+    "edificio": "banco bancos ayuntamiento gobierno ministerio edificio edificios estado",
+    "cola": "clientes cliente gente cola publico ventas vender vendes venden consumidores",
+    "calle": "barrio calle ciudad zona zonas esquina pueblo comprar abrir apertura traspaso casero alquiler renta local locales negocio negocios",
+    "trastienda": "proveedor proveedores almacen mercancia stock cocina nevera cerveza botellas camara frio",
+    "reparto": "reparto camion camiones transporte logistica entrega pedido pedidos distribucion",
+    "cierre": "cierre cierra cerrar cerraron quiebra ruina traspasar noche madrugada horas persiana",
+    "terraza": "terraza terrazas mesas mesa veladores",
+    "taxi_int": "conducir conductor carrera carreras taximetro tarifa volante kilometros kilometro",
+    "salon": "corte cortes pelo cabello peinar tinte tijeras peluquero peluquera oficial peluqueria",
+}
+ESCENA_TEMA = {
+    "bar": ["tienda", "cuentas", "calle", "terraza", "trastienda", "cola", "cierre", "oficina", "reparto", "edificio"],
+    "burger": ["tienda", "cuentas", "calle", "trastienda", "cola", "reparto", "oficina", "cierre", "edificio"],
+    "estanco": ["tienda", "cuentas", "calle", "cola", "oficina", "edificio", "cierre", "reparto"],
+    "peluqueria": ["salon", "cuentas", "calle", "cola", "oficina", "cierre", "edificio", "trastienda"],
+    "taxi": ["calle", "taxi_int", "cuentas", "oficina", "edificio", "cola", "cierre", "reparto"],
+    "mercadona": ["tienda", "cuentas", "calle", "trastienda", "cola", "reparto", "oficina", "edificio"],
+}
+EMO_KW = {
+    "preocupado": "pierde pierden perdidas perdida ruina quiebra deuda deudas cuesta cuestan caro cara cae caen problema problemas riesgo riesgos cierre cierran cerrar agobio",
+    "feliz": "gana ganas ganan beneficio beneficios queda sobra crece crecen rentable ahorro exito mejor bien",
+    "sorpresa": "millones millon solo apenas increible sorprende nada",
+    "pensando": "porque como cuanto cuando si pregunta calcula calcular",
+    "enfadado": "multa multas sancion sanciones abuso casero cobran cobra impuesto impuestos iva hacienda",
+}
+_ESC = [(k, set(v.split())) for k, v in ESCENA_KW.items()]
+_EMO = [(k, set(v.split())) for k, v in EMO_KW.items()]
+POSES = ["quieto", "sostiene", "cadera", "senala", "quieto", "sostiene"]
+
+
+def elige_escena(fragmento, texto, tema, semilla, previas):
+    permitidas = ESCENA_TEMA.get(tema, ESCENA_TEMA["bar"])
+    pf = set(_norm(fragmento).split())
+    pt = set(_norm(texto).split())
+    punt = {}
+    for nom, kw in _ESC:
+        if nom not in permitidas:
+            continue
+        s = len(pf & kw) * 3 + len(pt & kw)
+        if s:
+            punt[nom] = s
+    orden = [n for n, _ in sorted(punt.items(), key=lambda kv: -kv[1])]
+    rot = permitidas[semilla % len(permitidas):] + permitidas[:semilla % len(permitidas)]
+    for n in orden + rot:
+        if not previas or n != previas[-1]:
+            if len(previas) < 2 or n != previas[-2] or n == orden[:1] and False:
+                return n
+    return rot[0]
+
+
+def emocion(fragmento, semilla):
+    pf = set(_norm(fragmento).split())
+    mejor, mn = None, 0
+    for nom, kw in _EMO:
+        n = len(pf & kw)
+        if n > mn:
+            mejor, mn = nom, n
+    if mejor:
+        return mejor
+    return ["serio", "feliz", "feliz", "serio", "pensando"][semilla % 5]
+
+
 PAPEL = {"bar": "crema", "taxi": "mantequilla", "burger": "rosa", "peluqueria": "lila", "estanco": "menta", "mercadona": "cielo"}
 ARTICULOS = {"el", "la", "los", "las", "un", "una", "unos", "unas", "del", "al", "tu", "tus", "su", "sus"}
+SOLO_TARJETAS = "--tarjetas" in sys.argv
 GRAFICOS_DOODLE = {"contador", "barras", "apilada", "anillo", "reparto", "factura"}
 
 
@@ -258,7 +328,8 @@ def main():
     esc = guion["escenas"]
     frag = trozos(esc)
 
-    planos, previos, prev_lay = [], [], []
+    planos, previos, prev_lay, escenas_prev = [], [], [], []
+    n_esc = 0
     graf_n = obj_n = 0
     for i, e in enumerate(esc):
         n = int(FPS * (e.get("duracion", 8) + e.get("_sangrado", 0.0)))
@@ -303,13 +374,27 @@ def main():
             prev_lay.append(plano["layout"])
             if len(m) == 2:
                 plano["simbolo"] = simbolo_para(fr)
+            real = casa(fr)
+            # una de cada diez, aprox., sigue siendo una tarjeta de objetos (variedad);
+            # los titulares siempre van sobre una escena
+            if not (real and not plano["titular"] and (semilla >> 5) % 10 < 2) and not SOLO_TARJETAS:
+                nombre = elige_escena(fr, e.get("texto") or "", tema, semilla >> 3, escenas_prev)
+                escenas_prev.append(nombre)
+                cara = emocion(fr, semilla >> 4)
+                pose = "celebra" if cara == "feliz" and set(_norm(fr).split()) & {"gana", "ganas", "beneficio", "beneficios"} else POSES[(semilla >> 6) % len(POSES)]
+                personas = {"duena", "cliente", "jefe", "gente"}
+                foco = next((o for o in m if o not in personas), None)
+                plano["escena"] = {"id": nombre, "foco": foco, "burbuja": next((o for o in m if o != foco and o not in personas), None),
+                                   "cara": cara, "pose": pose, "v": (semilla >> 7) % 5, "tema": tema}
+                plano["etiqueta"] = ROTULO.get(foco or m[0])
+                n_esc += 1
         planos.append(plano)
 
     salida = {"fps": FPS, "w": cfg["w"], "h": cfg["h"], "tema": tema, "total": len(esc), "planos": planos}
     with open(destino, "w", encoding="utf-8") as f:
         json.dump(salida, f, ensure_ascii=False, indent=1)
     seg = sum(p["frames"] for p in planos) / float(FPS)
-    print("%d planos doodle (%d graficos, %d con objetos; %.1f min) -> %s" % (len(planos), graf_n, obj_n, seg / 60.0, destino))
+    print("%d planos doodle (%d graficos, %d con objetos, %d escenas grandes; %.1f min) -> %s" % (len(planos), graf_n, obj_n, n_esc, seg / 60.0, destino))
     import collections
     c = collections.Counter(o["o"] for p in planos for o in p["objetos"])
     print("objetos:", ", ".join("%s %d" % kv for kv in c.most_common(14)))

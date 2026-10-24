@@ -1,8 +1,10 @@
 import React, {useContext} from 'react';
 import {AbsoluteFill, useCurrentFrame} from 'remotion';
 import {GRAFICOS} from './Graficos';
+import {ESCENAS} from './Escenas';
+import type {Cara, Pose} from './Personaje';
 import {OBJ} from './Objetos';
-import {Ctx, Defs, F, Fondo, GRANDE, L, R, T, TEXTO, ci, color, paleta, poli, useFuentes} from './prim';
+import {Ctx, Defs, F, Fondo, GRANDE, L, R, T, TEXTO, ci, color, paleta, poli, rr, useFuentes} from './prim';
 import {atras, azar, clamp01, may, parte, suave} from './util';
 
 export type Obj = {o: string; e?: string};
@@ -13,6 +15,8 @@ export type PlanoD = {
   objetos: Obj[];
   layout: 'heroe' | 'izq' | 'der' | 'duo' | 'trio';
   simbolo?: string;
+  escena?: {id: string; foco?: string; burbuja?: string; cara: Cara; pose: Pose; v: number; tema: string} | null;
+  etiqueta?: string;
   titular?: {texto: string; retardo?: number} | null;
   grafico?: Record<string, any> | null;
   epigrafe?: string;
@@ -21,37 +25,12 @@ export type PlanoD = {
   camara?: {k0: number; k1: number; dx: number; dy: number};
 };
 
-// ------------------------------------------------------------------ animacion
-/** Entrada de un objeto: crece con rebasamiento, girando un poco, y luego respira. */
-const Entra: React.FC<{t0: number; x: number; y: number; k: number; rot?: number; fase?: number; children: React.ReactNode}> = ({t0, x, y, k, rot = 0, fase = 0, children}) => {
-  const f = useCurrentFrame();
-  const u = clamp01((f - t0) / 14);
-  const s = k * (0.25 + 0.75 * atras(u, 2.1));
-  const giro = rot * (1 - suave(u)) + Math.sin((f + fase) / 17) * 1.4;
-  const dy = Math.sin((f + fase) / 13) * 7 * suave(u);
-  return (
-    <g transform={`translate(${x},${y + dy}) rotate(${giro}) scale(${Math.max(0.01, s)})`} opacity={clamp01(u * 4)}>
-      {children}
-    </g>
-  );
-};
-
-const Etiqueta: React.FC<{t0: number; x: number; y: number; texto: string; px?: number}> = ({t0, x, y, texto, px = 58}) => {
-  const f = useCurrentFrame();
-  const u = suave((f - t0) / 10);
-  const w = Math.min(1500, texto.length * px * 0.5 + 60);
-  return (
-    <g opacity={u} transform={`translate(0,${(1 - u) * 24})`}>
-      <T x={x} y={y} px={px} anchor="middle">{texto}</T>
-      <L d={`M${x - w / 2},${y + 18} Q${x},${y + 8} ${x + w / 2},${y + 20}`} c="rojo" w={7} />
-    </g>
-  );
-};
+import {Entra, Etiqueta} from './anim';
 
 // ------------------------------------------------------------------ titular
-const lineasTitular = (texto: string, maxAncho: number) => {
+const lineasTitular = (texto: string, maxAncho: number, tamanos = [132, 116, 100, 88, 76]) => {
   // ajusta el cuerpo para que quepa en 3 lineas como mucho
-  for (const px of [132, 116, 100, 88, 76]) {
+  for (const px of tamanos) {
     const max = Math.floor(maxAncho / (px * 0.52));
     const l = parte(texto, max);
     if (l.length <= (px >= 100 ? 2 : 3)) return {px, l};
@@ -170,12 +149,39 @@ const Simbolo: React.FC<{s: string; t0: number}> = ({s, t0}) => {
 };
 
 // ------------------------------------------------------------------ escena
+/** El titular de una escena grande, sobre un cartel de papel para que se lea sobre cualquier fondo. */
+const Cartel: React.FC<{texto: string; retardo: number; fps: number}> = ({texto, retardo, fps}) => {
+  const f = useCurrentFrame();
+  const {px, l} = lineasTitular(may(texto), 1500, [96, 84, 74, 66]);
+  const w = Math.min(1700, Math.max(...l.map((x) => x.replace(/\*/g, '').length)) * px * 0.68 + 150);
+  const h = l.length * px * 1.12 + 56;
+  const u = atras((f - Math.round(retardo * fps)) / 14, 1.5);
+  return (
+    <g opacity={clamp01((f - Math.round(retardo * fps)) / 4)} transform={`translate(960,${60 + h / 2}) rotate(-1.2) scale(${Math.max(0.01, u)}) translate(-960,${-(60 + h / 2)})`}>
+      <F d={rr(960 - w / 2, 60, w, h, 28)} c="blanco" />
+      <Titular texto={texto} retardo={retardo + 0.1} x={960} y={60 + 30 + px * 0.82} ancho={1500} anchor="middle" fps={fps} />
+    </g>
+  );
+};
+
 const Contenido: React.FC<{p: PlanoD; fps: number}> = ({p, fps}) => {
   const t = useContext(Ctx);
   const objs = p.objetos;
   const ret = Math.round(((p.titular?.retardo ?? 0.35) as number) * fps);
   const conTitular = !!p.titular;
 
+  if (p.escena) {
+    const S = ESCENAS[p.escena.id];
+    if (S) {
+      const e = p.escena;
+      return (
+        <g>
+          <S foco={e.foco} burbuja={e.burbuja} cara={e.cara} pose={e.pose} v={e.v} tema={e.tema} s={p.semilla % 7} n={p.frames} />
+          {(p.titular || p.etiqueta) && <Cartel texto={p.titular?.texto ?? (p.etiqueta as string)} retardo={p.titular?.retardo ?? 0.3} fps={fps} />}
+        </g>
+      );
+    }
+  }
   if (p.grafico) {
     const G = GRAFICOS[p.grafico.tipo];
     if (G) return <G spec={p.grafico} fps={fps} epigrafe={p.epigrafe} />;

@@ -144,6 +144,11 @@ jobs:
             echo "doodle=true" >> "$GITHUB_OUTPUT"
             echo "estilo_doodle=stick" >> "$GITHUB_OUTPUT"
           fi
+          # y -t<n> (bar-t01): estilo TOON (personajes de tebeo, escenas con HUD)
+          if [[ "${GITHUB_REF_NAME}" =~ -t[0-9] ]]; then
+            echo "doodle=true" >> "$GITHUB_OUTPUT"
+            echo "estilo_doodle=toon" >> "$GITHUB_OUTPUT"
+          fi
           cat "$GITHUB_OUTPUT"
 
       - uses: actions/setup-python@v5

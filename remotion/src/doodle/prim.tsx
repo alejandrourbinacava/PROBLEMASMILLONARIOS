@@ -1,4 +1,4 @@
-import React, {createContext, useContext, useEffect, useState} from 'react';
+import React, {createContext, useContext, useEffect, useId, useState} from 'react';
 import {continueRender, delayRender, staticFile} from 'remotion';
 
 /**
@@ -11,6 +11,7 @@ export type Paleta = {
   tinta: string;
   c: Record<string, string>;
   stick?: boolean;
+  toon?: boolean;
 };
 
 export const PAPELES: Record<string, string> = {
@@ -37,8 +38,25 @@ const STICK: Record<string, string> = {
   morado: '#DDD3F2',
   cielo: '#E4F1FA',
 };
+const TOON: Record<string, string> = {
+  rojo: '#D94A3D',
+  amarillo: '#F2B93B',
+  azul: '#3F78B5',
+  verde: '#4E9A6B',
+  madera: '#B87A4B',
+  piel: '#FFFBF2',
+  blanco: '#FFFFFF',
+  oscuro: '#3B3640',
+  gris: '#B8B4AC',
+  rosa: '#E58BA5',
+  naranja: '#E8803A',
+  morado: '#7C5BA8',
+  cielo: '#9CCBE8',
+};
 export const paleta = (papel: string): Paleta =>
-  papel.startsWith('stick')
+  papel.startsWith('toon')
+    ? {fondo: papel === 'toon2' ? '#DCCBA3' : '#E9D9B5', tinta: '#1E1B22', c: TOON, toon: true}
+    : papel.startsWith('stick')
     ? {fondo: papel === 'stick2' ? '#F3F0E8' : '#FFFFFF', tinta: '#1E1E24', c: STICK, stick: true}
     : paleta0(papel);
 
@@ -105,9 +123,33 @@ export const poli = (pts: [number, number][]) => 'M' + pts.map((p) => p.join(','
 export const color = (t: Paleta, c: string) =>
   c === 'fondo' ? t.fondo : t.stick && c.startsWith('#') && !t.c[c] ? t.fondo : t.c[c] ?? c;
 
+/** Oscurece un #rrggbb para la sombra de tebeo. */
+export const oscurece = (hex: string, k = 0.78) => {
+  if (!/^#[0-9a-fA-F]{6}$/.test(hex)) return hex;
+  const n = parseInt(hex.slice(1), 16);
+  const f = (v: number) => Math.max(0, Math.min(255, Math.round(v * k)));
+  return '#' + [(n >> 16) & 255, (n >> 8) & 255, n & 255].map((v) => f(v).toString(16).padStart(2, '0')).join('');
+};
+
 export const F: React.FC<{d: string; c: string; op?: number; w?: number}> = ({d, c, op = 1, w = 6}) => {
   const t = useContext(Ctx);
   const col = color(t, c);
+  const id = useId().replace(/[^a-zA-Z0-9]/g, '');
+  if (t.toon) {
+    const sombra = oscurece(col.startsWith('#') ? col : '#888888', col === '#FFFFFF' || col === '#FFFBF2' ? 0.84 : 0.74);
+    return (
+      <g opacity={op}>
+        <clipPath id={`cl${id}`}>
+          <path d={d} />
+        </clipPath>
+        <path d={d} fill={sombra} />
+        <g clipPath={`url(#cl${id})`}>
+          <path d={d} fill={col} transform="translate(-9,-11)" />
+        </g>
+        <path d={d} fill="none" stroke={t.tinta} strokeWidth={w ? Math.max(3.4, w * 0.72) : 0} strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    );
+  }
   if (t.stick)
     return (
       <g>
@@ -176,6 +218,10 @@ export const Defs: React.FC<{semilla?: number}> = ({semilla = 4}) => (
       <feTurbulence type="fractalNoise" baseFrequency={0.016} numOctaves={2} seed={semilla} result="r" />
       <feDisplacementMap in="SourceGraphic" in2="r" scale={8} />
     </filter>
+    <radialGradient id="vig" cx="0.5" cy="0.5" r="0.75">
+      <stop offset="0.55" stopColor="#2a1d0a" stopOpacity={0} />
+      <stop offset="1" stopColor="#2a1d0a" stopOpacity={0.32} />
+    </radialGradient>
     <filter id="grano">
       <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves={2} seed={9} />
       <feColorMatrix type="saturate" values="0" />
@@ -188,7 +234,7 @@ export const Fondo: React.FC<{w: number; h: number}> = ({w, h}) => {
   return (
     <>
       <rect width={w} height={h} fill={t.fondo} />
-      <rect width={w} height={h} filter="url(#grano)" opacity={0.08} />
+      <rect width={w} height={h} filter="url(#grano)" opacity={t.toon ? 0.2 : 0.08} />
     </>
   );
 };

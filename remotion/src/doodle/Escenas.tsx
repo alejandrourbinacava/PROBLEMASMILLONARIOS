@@ -456,7 +456,26 @@ export const Cierre: React.FC<EP> = ({foco, burbuja, cara, v, tema, s, n}) => {
   );
 };
 
+// ---------------------------------------------------------------- M. primer plano
+export const Cerca: React.FC<EP> = ({foco, burbuja, cara, pose, v, tema, s}) => {
+  const f = useCurrentFrame();
+  return (
+    <g>
+      <R d={rr(0, 0, 1920, 1080, 0)} c={PAREDES[(v + 3) % 5]} />
+      {[[300, 220, 260], [1500, 160, 200], [900, 860, 320], [1700, 760, 240]].map(([x, y, r], i) => (
+        <path key={i} d={ci(x, y + Math.sin((f + i * 20) / 40) * 10, r)} fill="#FFFFFF" opacity={0.16} />
+      ))}
+      <R d={rr(0, 840, 1920, 240, 0)} c={SUELOS[(v + 3) % 5]} />
+      <L d="M0,840 H1920" w={6} />
+      <Actor x={560} pies={1490} k={2.1} look={OWNER[tema] ?? 'duena'} pose={pose === 'quieto' ? 'sostiene' : pose} cara={cara} s={s} t0={3} />
+      <Pieza o={foco ?? 'euro'} x={1400} y={600} k={1.9} t0={9} s={s} />
+      <Burbuja o={burbuja} x={1060} y={330} k={0.7} s={s} cola="izq" />
+    </g>
+  );
+};
+
 export const ESCENAS: Record<string, React.FC<EP>> = {
+  cerca: Cerca,
   tienda: Tienda,
   calle: Calle,
   oficina: Oficina,

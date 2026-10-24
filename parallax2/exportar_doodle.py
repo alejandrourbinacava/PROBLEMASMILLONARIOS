@@ -152,15 +152,16 @@ ESCENA_KW = {
     "cierre": "cierre cierra cerrar cerraron quiebra ruina traspasar noche madrugada horas persiana",
     "terraza": "terraza terrazas mesas mesa veladores",
     "taxi_int": "conducir conductor carrera carreras taximetro tarifa volante kilometros kilometro",
+    "cerca": "importante clave sorprendente solo apenas increible mira fijate sabias secreto trampa verdad",
     "salon": "corte cortes pelo cabello peinar tinte tijeras peluquero peluquera oficial peluqueria",
 }
 ESCENA_TEMA = {
-    "bar": ["tienda", "cuentas", "calle", "terraza", "trastienda", "cola", "cierre", "oficina", "reparto", "edificio"],
-    "burger": ["tienda", "cuentas", "calle", "trastienda", "cola", "reparto", "oficina", "cierre", "edificio"],
-    "estanco": ["tienda", "cuentas", "calle", "cola", "oficina", "edificio", "cierre", "reparto"],
-    "peluqueria": ["salon", "cuentas", "calle", "cola", "oficina", "cierre", "edificio", "trastienda"],
-    "taxi": ["calle", "taxi_int", "cuentas", "oficina", "edificio", "cola", "cierre", "reparto"],
-    "mercadona": ["tienda", "cuentas", "calle", "trastienda", "cola", "reparto", "oficina", "edificio"],
+    "bar": ["tienda", "cerca", "cuentas", "calle", "terraza", "trastienda", "cola", "cierre", "oficina", "reparto", "edificio"],
+    "burger": ["tienda", "cerca", "cuentas", "calle", "trastienda", "cola", "reparto", "oficina", "cierre", "edificio"],
+    "estanco": ["tienda", "cerca", "cuentas", "calle", "cola", "oficina", "edificio", "cierre", "reparto"],
+    "peluqueria": ["salon", "cerca", "cuentas", "calle", "cola", "oficina", "cierre", "edificio", "trastienda"],
+    "taxi": ["calle", "cerca", "taxi_int", "cuentas", "oficina", "edificio", "cola", "cierre", "reparto"],
+    "mercadona": ["tienda", "cerca", "cuentas", "calle", "trastienda", "cola", "reparto", "oficina", "edificio"],
 }
 EMO_KW = {
     "preocupado": "pierde pierden perdidas perdida ruina quiebra deuda deudas cuesta cuestan caro cara cae caen problema problemas riesgo riesgos cierre cierran cerrar agobio",
@@ -206,6 +207,7 @@ def emocion(fragmento, semilla):
     return ["serio", "feliz", "feliz", "serio", "pensando"][semilla % 5]
 
 
+PAPEL_TOON = {"bar": "toon", "taxi": "toon2", "burger": "toon", "peluqueria": "toon2", "estanco": "toon", "mercadona": "toon2"}
 PAPEL_STICK = {"bar": "stick", "taxi": "stick2", "burger": "stick", "peluqueria": "stick2", "estanco": "stick", "mercadona": "stick2"}
 PAPEL = {"bar": "crema", "taxi": "mantequilla", "burger": "rosa", "peluqueria": "lila", "estanco": "menta", "mercadona": "cielo"}
 ARTICULOS = {"el", "la", "los", "las", "un", "una", "unos", "unas", "del", "al", "tu", "tus", "su", "sus"}
@@ -318,7 +320,7 @@ def main():
         return 2
     ruta, destino = pos[0], pos[1]
     tema = opt("--tema") or next((t for t in SUELO if t in os.path.basename(ruta)), "bar")
-    papel = opt("--papel") or (PAPEL_STICK.get(tema, "stick") if opt("--estilo") == "stick" else PAPEL.get(tema, "crema"))
+    papel = opt("--papel") or (PAPEL_STICK.get(tema, "stick") if opt("--estilo") == "stick" else PAPEL_TOON.get(tema, "toon") if opt("--estilo") == "toon" else PAPEL.get(tema, "crema"))
     suelo = SUELO.get(tema, SUELO["bar"])
 
     guion = json.load(open(ruta, encoding="utf-8"))

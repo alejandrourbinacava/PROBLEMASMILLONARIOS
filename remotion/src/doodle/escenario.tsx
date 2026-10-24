@@ -4,6 +4,7 @@ import {Entra} from './anim';
 import {OBJ} from './Objetos';
 import {Personaje, Cara, Pose} from './Personaje';
 import {Stick} from './Stick';
+import {Toon} from './Toon';
 import {Ctx, F, L, R, T, ci, el, rr} from './prim';
 import {atras, clamp01, suave} from './util';
 
@@ -53,8 +54,8 @@ export const Actor: React.FC<{
   mano?: React.ReactNode;
   piernas?: boolean;
 }> = ({x, pies, k = 1, look, pose = 'quieto', cara = 'feliz', voltea, t0 = 4, s = 0, mano, piernas = true}) => {
-  const stick = useContext(Ctx).stick;
-  const C = stick ? Stick : Personaje;
+  const pal = useContext(Ctx);
+  const C = pal.toon ? Toon : pal.stick ? Stick : Personaje;
   return (
     <Entra t0={t0} x={x} y={pies} k={1} rot={0} fase={s}>
       <C x={0} y={-152 * k} k={k} look={look} pose={pose} cara={cara} voltea={voltea} semilla={s} mano={mano} piernas={piernas} />

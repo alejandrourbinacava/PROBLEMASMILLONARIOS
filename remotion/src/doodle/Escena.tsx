@@ -153,13 +153,42 @@ const Simbolo: React.FC<{s: string; t0: number}> = ({s, t0}) => {
 const Cartel: React.FC<{texto: string; retardo: number; fps: number}> = ({texto, retardo, fps}) => {
   const f = useCurrentFrame();
   const {px, l} = lineasTitular(may(texto), 1500, [96, 84, 74, 66]);
-  const w = Math.min(1700, Math.max(...l.map((x) => x.replace(/\*/g, '').length)) * px * 0.68 + 150);
+  const w = Math.min(1480, Math.max(...l.map((x) => x.replace(/\*/g, '').length)) * px * 0.68 + 150);
   const h = l.length * px * 1.12 + 56;
   const u = atras((f - Math.round(retardo * fps)) / 14, 1.5);
   return (
     <g opacity={clamp01((f - Math.round(retardo * fps)) / 4)} transform={`translate(960,${60 + h / 2}) rotate(-1.2) scale(${Math.max(0.01, u)}) translate(-960,${-(60 + h / 2)})`}>
       <F d={rr(960 - w / 2, 60, w, h, 28)} c="blanco" />
       <Titular texto={texto} retardo={retardo + 0.1} x={960} y={60 + 30 + px * 0.82} ancho={1500} anchor="middle" fps={fps} tamanos={[96, 84, 74, 66]} />
+    </g>
+  );
+};
+
+const ICONO_TEMA: Record<string, string> = {bar: 'taza', burger: 'hamburguesa', taxi: 'taxi', peluqueria: 'tijeras', estanco: 'cajetilla', mercadona: 'carrito'};
+
+/** Etiqueta de capitulo arriba a la izquierda y banda con el rotulo abajo a la derecha, como en los canales de historia. */
+const Hud: React.FC<{p: PlanoD; fps: number}> = ({p, fps}) => {
+  const f = useCurrentFrame();
+  const m = /cap(\d+)/.exec(p.id);
+  const capitulo = m ? 'CAP. ' + m[1] : p.id.startsWith('cierre') ? 'FIN' : 'INTRO';
+  const Ico = OBJ[ICONO_TEMA[p.escena?.tema ?? 'bar'] ?? 'euro'] ?? OBJ.euro;
+  const u = suave((f - 6) / 12);
+  const txt = (p.etiqueta ?? '').toUpperCase();
+  return (
+    <g>
+      <g transform={`translate(${24 - (1 - u) * 200},24)`}>
+        <rect width={150} height={158} rx={16} fill="#1E1B22" opacity={0.86} />
+        <g transform="translate(75,64) scale(0.26)">
+          <Ico />
+        </g>
+        <text x={75} y={140} fontSize={30} textAnchor="middle" fill="#FFFFFF" fontFamily={`"${GRANDE}"`}>{capitulo}</text>
+      </g>
+      {txt && (
+        <g transform={`translate(${(1 - u) * 700},0)`}>
+          <path d="M1480,1080 L1520,1000 H1920 V1080 Z" fill="#1E1B22" />
+          <text x={1890} y={1062} fontSize={54} textAnchor="end" fill="#FFFFFF" fontFamily={`"${GRANDE}"`}>{txt}</text>
+        </g>
+      )}
     </g>
   );
 };
@@ -177,6 +206,7 @@ const Contenido: React.FC<{p: PlanoD; fps: number}> = ({p, fps}) => {
       return (
         <g>
           <S foco={e.foco} burbuja={e.burbuja} cara={e.cara} pose={e.pose} v={e.v} tema={e.tema} s={p.semilla % 7} n={p.frames} />
+          {t.toon && <Hud p={p} fps={fps} />}
           {(p.titular || p.etiqueta) && <Cartel texto={p.titular?.texto ?? (p.etiqueta as string)} retardo={p.titular?.retardo ?? 0.3} fps={fps} />}
         </g>
       );
@@ -260,7 +290,7 @@ export const EscenaDoodle: React.FC<{plano: PlanoD; fps?: number}> = ({plano, fp
           <Defs semilla={hierve} />
           <Fondo w={1920} h={1080} />
           <g transform={`translate(960,540) scale(${k}) translate(${-960 + cam.dx * u},${-540 + cam.dy * u})`}>
-            <g filter="url(#torcido)">
+            <g filter={t.toon ? undefined : 'url(#torcido)'}>
               <Adornos semilla={plano.semilla} huecos={elegidos} />
               <Contenido p={plano} fps={fps} />
             </g>

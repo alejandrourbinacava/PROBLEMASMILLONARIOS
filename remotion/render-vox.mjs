@@ -3,6 +3,7 @@
  * Prueba del estilo VOX por capas.
  *   node render-vox.mjs <salida.mp4>                 video entero
  *   node render-vox.mjs --stills 10,60,95 <carpeta>   fotogramas sueltos
+ *   --comp PruebaModerna                              otra composicion (por defecto PruebaVox)
  */
 import {bundle} from '@remotion/bundler';
 import {openBrowser, renderFrames, renderStill, selectComposition} from '@remotion/renderer';
@@ -13,16 +14,19 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
-const args = process.argv.slice(2);
+const todos = process.argv.slice(2);
+const ic = todos.indexOf('--comp');
+const COMP = ic >= 0 ? todos[ic + 1] : 'PruebaVox';
+const args = ic >= 0 ? todos.filter((_, i) => i !== ic && i !== ic + 1) : todos;
 const publica = path.join(AQUI, '.publica_vox');
 const fuentes = path.join(publica, 'vox', 'fonts');
 fs.mkdirSync(fuentes, {recursive: true});
-for (const f of ['PlayfairDisplay-VF.ttf', 'OldStandard-Regular.ttf', 'OldStandard-Italic.ttf', 'LibreFranklin-VF.ttf', 'Caveat-VF.ttf', 'CourierPrime-Regular.ttf', 'CourierPrime-Bold.ttf']) {
+for (const f of ['PlayfairDisplay-VF.ttf', 'OldStandard-Regular.ttf', 'OldStandard-Italic.ttf', 'LibreFranklin-VF.ttf', 'Caveat-VF.ttf', 'CourierPrime-Regular.ttf', 'CourierPrime-Bold.ttf', 'ArchivoBlack-Regular.ttf', 'Poppins-Black.ttf', 'Poppins-SemiBold.ttf', 'Poppins-Medium.ttf']) {
   fs.copyFileSync(path.join(AQUI, '..', 'assets', 'fonts', f), path.join(fuentes, f));
 }
 const serveUrl = await bundle({entryPoint: path.join(AQUI, 'src', 'vox', 'index.ts'), publicDir: publica});
 const nav = await openBrowser('chrome', {chromiumOptions: {gl: 'angle'}, logLevel: 'error'});
-const composition = await selectComposition({serveUrl, id: 'PruebaVox', inputProps: {}, puppeteerInstance: nav, logLevel: 'error'});
+const composition = await selectComposition({serveUrl, id: COMP, inputProps: {}, puppeteerInstance: nav, logLevel: 'error'});
 
 if (args[0] === '--stills') {
   const dir = args[2] ?? 'stills';

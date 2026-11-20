@@ -1,0 +1,83 @@
+"""Mezcla de sonido de un video de la piel moderna.
+
+    python sonido.py <voz.wav> <spec.json> <salida.mp3> [--musica pista.mp3]
+
+Voz normalizada (solo loudnorm, sin mas procesado), cama de musica muy baja
+con fundidos, y un sonido por evento: un soplo en cada cambio de plano y un
+golpe en cada capitulo. Nunca tres a la vez.
+"""
+import json
+import os
+import subprocess
+import sys
+
+import numpy as np
+
+AQUI = os.path.dirname(os.path.abspath(__file__))
+ACT = os.path.join(os.path.dirname(AQUI), "assets")
+SR = 48000
+
+
+def lee(ruta, filtro=None):
+    cmd = ["ffmpeg", "-v", "error", "-i", ruta]
+    if filtro:
+        cmd += ["-af", filtro]
+    cmd += ["-ac", "2", "-ar", str(SR), "-f", "f32le", "-"]
+    d = subprocess.run(cmd, capture_output=True, check=True).stdout
+    return np.frombuffer(d, dtype=np.float32).reshape(-1, 2).copy()
+
+
+def db(x):
+    return 10 ** (x / 20.0)
+
+
+def pon(mezcla, clip, seg, ganancia):
+    a = int(seg * SR)
+    if a >= len(mezcla):
+        return
+    b = min(len(mezcla), a + len(clip))
+    mezcla[a:b] += clip[: b - a] * ganancia
+
+
+def main():
+    voz_wav, spec_json, salida = sys.argv[1:4]
+    musica = sys.argv[sys.argv.index("--musica") + 1] if "--musica" in sys.argv else os.path.join(ACT, "music", "space_bar_ambient.mp3")
+    spec = json.load(open(spec_json, encoding="utf-8"))
+    fps = spec["fps"]
+    n = int(spec["total"] / float(fps) * SR)
+    mezcla = np.zeros((n, 2), dtype=np.float32)
+
+    voz = lee(voz_wav, "loudnorm=I=-16:TP=-1.5:LRA=11")
+    pon(mezcla, voz, 0.0, 1.0)
+
+    # musica: en bucle, muy por debajo de la voz, con fundido al entrar y al salir
+    m = lee(musica)
+    rep = int(np.ceil(n / float(len(m))))
+    cama = np.tile(m, (rep, 1))[:n]
+    env = np.ones(n, dtype=np.float32)
+    f = int(2.0 * SR)
+    env[:f] = np.linspace(0, 1, f)
+    env[-int(3.0 * SR):] = np.linspace(1, 0, int(3.0 * SR))
+    mezcla += cama * env[:, None] * db(-27)
+
+    soplos = [lee(os.path.join(ACT, "sfx", "whoosh", x)) for x in ("01_woosh.wav", "02_transici_n_futuristica.wav")]
+    golpe = lee(os.path.join(ACT, "sfx", "impact.wav"))
+    for i, e in enumerate(spec["escenas"]):
+        if i == 0:
+            continue
+        t = e["f0"] / float(fps)
+        if e["tipo"] == "capitulo":
+            pon(mezcla, golpe, t, db(-15))
+        else:
+            pon(mezcla, soplos[0], max(0.0, t - 0.12), db(-24))
+
+    pico = float(np.abs(mezcla).max())
+    if pico > 0.97:
+        mezcla *= 0.97 / pico
+    p = subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "f32le", "-ar", str(SR), "-ac", "2", "-i", "-", "-b:a", "192k", salida],
+                       input=mezcla.tobytes())
+    print("ok" if p.returncode == 0 else "FALLO", salida, "%.1f s" % (n / float(SR)), "pico %.2f" % pico)
+
+
+if __name__ == "__main__":
+    main()

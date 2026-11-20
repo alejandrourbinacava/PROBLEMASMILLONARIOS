@@ -3,6 +3,16 @@
 Convertimos un guion de texto en vídeo estilo MagnatesMedia: capas PNG
 recortadas que se mueven a distinta velocidad para simular profundidad.
 
+## El estilo de montaje es VOX, por capas
+
+Desde noviembre de 2026 los vídeos se montan como un explicativo de Vox:
+cada dato se enseña como un objeto (recorte de periódico, documento, foto de
+archivo, mapa, gráfico) sobre papel, marcado a mano y con la fuente a la
+vista. **Antes de montar nada, lee `ESTILO_VOX.md`**: la pila de ocho capas,
+las dieciocho reglas y el catálogo de planos. Lo que diga ese fichero manda
+sobre lo que este documento cuenta del plató, el metraje de stock o los
+estilos doodle/toon, que quedan como historia.
+
 ## El proveedor de imágenes no lo eliges tú
 
 Está en `proveedores.json`. Si el usuario tiene un agregador (kie.ai,

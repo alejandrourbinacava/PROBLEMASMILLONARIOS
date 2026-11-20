@@ -73,6 +73,20 @@ def main():
         ocupado.append(t)
         return True
 
+    # Piel documental: el sonido casi no se nota. Un golpe grave en cada
+    # capitulo y un soplo muy bajo al entrar un inserto; nada en los cortes.
+    if spec.get("piel") == "doc":
+        insertos = ("barras", "linea", "cita", "documento", "mapa", "pares", "duo")
+        for i, e in enumerate(spec["escenas"]):
+            t = e["f0"] / float(fps)
+            if not i:
+                continue
+            if e["tipo"] == "capitulo":
+                pon(mezcla, golpe, t, db(-17))
+            elif e["tipo"] in insertos:
+                pon(mezcla, soplos[0], max(0.0, t - 0.1), db(-31))
+        spec = dict(spec, escenas=[])
+
     for i, e in enumerate(spec["escenas"]):
         t = e["f0"] / float(fps)
         if i:

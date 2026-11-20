@@ -134,14 +134,15 @@ class Media:
         return out
 
 
-def construye(T, escenas, marca, destino, media=None):
+def construye(T, escenas, marca, destino, media=None, piel=None):
     out = []
     cap = None
     for i, e in enumerate(escenas):
-        f0 = max(0, int(round(T.t(e["de"]) * FPS)) - ADELANTO) if i else 0
+        de = e["de"] if isinstance(e["de"], tuple) else (e["de"], 0)   # (fragmento, frase|fraccion): el plano puede empezar a mitad de fragmento
+        f0 = max(0, int(round(T.t(*de) * FPS)) - ADELANTO) if i else 0
         cap = e.get("cap", cap)
         pasos = []
-        for k, ps in enumerate(e.get("pasos") or [(e["de"], 0)]):
+        for k, ps in enumerate(e.get("pasos") or [de]):
             fr = int(round(T.t(*ps) * FPS)) - ANTES - f0
             pasos.append(max(0, fr) if k else max(0, min(fr, ADELANTO)))
         o = {"id": "e%02d_%s" % (i, e["tipo"]), "f0": f0, "tipo": e["tipo"], "fondo": e.get("fondo", "marca"),
@@ -193,7 +194,11 @@ def construye(T, escenas, marca, destino, media=None):
                 o = media.uso(usados, x, sale - en + 18)
                 o["en"], o["sale"] = en, sale
                 e["medios"].append(o)
+    if piel:
+        usados["grano.jpg"] = "vox/media/comun/grano.jpg"
     spec = {"fps": FPS, "total": total, "marca": marca, "escenas": out, "tiempos_reales": T.real, "medios": usados}
+    if piel:
+        spec["piel"] = piel
     with io.open(destino, "w", encoding="utf-8", newline="\n") as f:
         json.dump(spec, f, ensure_ascii=False, indent=1)
     durs = [(e["f1"] - e["f0"]) / float(FPS) for e in out]

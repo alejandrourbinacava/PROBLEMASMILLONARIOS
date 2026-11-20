@@ -37,9 +37,9 @@ export type Escena = {
   /** como entra: 'cortinilla' tapa el corte con dos bandas de color */
   trans?: string;
 };
-export type Spec = {fps: number; total: number; marca: Marca; escenas: Escena[]; medios?: Record<string, string>};
+export type Spec = {fps: number; total: number; marca: Marca; escenas: Escena[]; medios?: Record<string, string>; piel?: string};
 /** Lo que recibe cada tipo de escena. `p(k)` = fotogramas desde que arranco el paso k (negativo si aun no). */
-export type EP = {d: Record<string, any>; t: number; dur: number; p: (k: number) => number; ancho: number};
+export type EP = {d: Record<string, any>; t: number; dur: number; p: (k: number) => number; ancho: number; ctx?: {f0: number; f: number; fps: number; medios: any[]}};
 
 // ---------------------------------------------------------------- fuentes
 const CARAS: [string, string][] = [
@@ -48,6 +48,7 @@ const CARAS: [string, string][] = [
   ['M Semi', 'vox/fonts/Poppins-SemiBold.ttf'],
   ['M Medium', 'vox/fonts/Poppins-Medium.ttf'],
   ['M Serif', 'vox/fonts/PlayfairDisplay-VF.ttf'],
+  ['D Sans', 'vox/fonts/LibreFranklin-VF.ttf'],
 ];
 let cargadas: Promise<void> | null = null;
 export const useFuentes = () => {
@@ -57,7 +58,7 @@ export const useFuentes = () => {
     if (!cargadas) {
       cargadas = Promise.all(
         CARAS.map(async ([n, r]) => {
-          const f = new FontFace(n, `url(${staticFile(r)})`, n === 'M Serif' ? {weight: '400 900'} : {});
+          const f = new FontFace(n, `url(${staticFile(r)})`, n === 'M Serif' ? {weight: '400 900'} : n === 'D Sans' ? {weight: '100 900'} : {});
           await f.load();
           (document as any).fonts.add(f);
         }),

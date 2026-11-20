@@ -107,6 +107,10 @@
 "dur": 0.0,
 "ruta": "vox/media/mercadona_fuera/f_dia.jpg"
 },
+"f_dia_china.jpg": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/f_dia_china.jpg"
+},
 "f_dia_francia.jpg": {
 "dur": 0.0,
 "ruta": "vox/media/mercadona_fuera/f_dia_francia.jpg"
@@ -187,6 +191,14 @@
 "dur": 8.0,
 "ruta": "parallax2/proyecto/stock_mercadona/fresh_fish_hake_crate_ice_price_supermarket_946.mp4"
 },
+"greengrocer_shop_street_fruteria_209.mp4": {
+"dur": 12.01,
+"ruta": "parallax2/proyecto/stock_mercadona/greengrocer_shop_street_fruteria_209.mp4"
+},
+"greenhouse_tomatoes_plant_115.mp4": {
+"dur": 8.0,
+"ruta": "parallax2/proyecto/stock_mercadona/greenhouse_tomatoes_plant_115.mp4"
+},
 "hacendado_sauces_shelf_prices_supermarket_945.mp4": {
 "dur": 8.0,
 "ruta": "parallax2/proyecto/stock_mercadona/hacendado_sauces_shelf_prices_supermarket_945.mp4"
@@ -206,6 +218,10 @@
 "handshake_deal_white_background_149.mp4": {
 "dur": 6.0,
 "ruta": "parallax2/proyecto/stock_mercadona/handshake_deal_white_background_149.mp4"
+},
+"hens_chickens_coop_farm_310.mp4": {
+"dur": 10.8,
+"ruta": "parallax2/proyecto/stock_mercadona/hens_chickens_coop_farm_310.mp4"
 },
 "man_painting_wall_interior_renovation_136.mp4": {
 "dur": 9.08,
@@ -319,6 +335,10 @@
 "dur": 8.0,
 "ruta": "parallax2/proyecto/stock_mercadona/supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4"
 },
+"supermarket_produce_vegetables_price_labels_208.mp4": {
+"dur": 12.0,
+"ruta": "parallax2/proyecto/stock_mercadona/supermarket_produce_vegetables_price_labels_208.mp4"
+},
 "tractor_field_aerial_farmer_116.mp4": {
 "dur": 8.51,
 "ruta": "parallax2/proyecto/stock_mercadona/tractor_field_aerial_farmer_116.mp4"
@@ -343,9 +363,17 @@
 "dur": 12.01,
 "ruta": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4"
 },
+"two_men_shopping_cart_parking_lot_102.mp4": {
+"dur": 12.0,
+"ruta": "parallax2/proyecto/stock_mercadona/two_men_shopping_cart_parking_lot_102.mp4"
+},
 "warehouse_racks_aisle_logistics_117.mp4": {
 "dur": 12.0,
 "ruta": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4"
+},
+"woman_card_payment_contactless_104.mp4": {
+"dur": 12.0,
+"ruta": "parallax2/proyecto/stock_mercadona/woman_card_payment_contactless_104.mp4"
 },
 "woman_paying_checkout_fruit_cashier_100.mp4": {
 "dur": 12.16,

@@ -21,3 +21,4 @@ f_bolsa_dentro | «Interior del Palacio de la Bolsa, Madrid, España, 2017 29» 
 f_bolsa | «Palacio de la Bolsa de Madrid (6 de diciembre de 2005, Madrid) 02» — Discasto, CC BY-SA 4.0. https://commons.wikimedia.org/wiki/File:Palacio_de_la_Bolsa_de_Madrid_(6_de_diciembre_de_2005,_Madrid)_02.JPG
 f_porto | «Rabelo boats and Ribeira seen from Cais de Gaia, 20250605 1623 9879» — Jakub Hałun, CC BY 4.0. https://commons.wikimedia.org/wiki/File:Rabelo_boats_and_Ribeira_seen_from_Cais_de_Gaia,_20250605_1623_9879.jpg
 f_porto2 | «View of Porto old town from Cais de Gaia with Porto Cathedral, 20250605 1614 9873» — Jakub Hałun, CC BY 4.0. https://commons.wikimedia.org/wiki/File:View_of_Porto_old_town_from_Cais_de_Gaia_with_Porto_Cathedral,_20250605_1614_9873.jpg
+f_dia_china | «DIA supermarket in Pudong, Shanghai» — Jordiferrer, CC BY-SA 3.0. https://commons.wikimedia.org/wiki/File:DIA_supermarket_in_Pudong,_Shanghai.JPG

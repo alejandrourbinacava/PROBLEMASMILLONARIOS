@@ -102,7 +102,7 @@ E("versus", 4, {"signo": "vs",
   medios=[M("f_lidl", B2[0], paso=0, de="izq", rot=-2, mas=6), M("sign_tower_car_park", B2[1], paso=1, de="der", mas=5)])
 E("cita", 5, dict(ROIG, cuando="10 de marzo de 2026", desde=1, previo="Le preguntaron cuál sería el siguiente país", partes=["*No hay un tercer país.* No vamos a ir a un tercer país."]),
   pasos=[(5, 0), (5, 0.62)], fondo="oscuro", fuente="rueda de prensa de resultados · OKDiario, 11-3-2026",
-  region=REG_D, medios=[M("headquarters_night", COL_I, paso=0, de="izq", rot=-2, pie="Oficinas centrales de Mercadona")])
+  region=REG_D, medios=turnos(COL_I, ("headquarters_office", 0, {"pie": "Oficinas centrales de Mercadona"}), ("headquarters_night", (5, 0.32), {"pie": "Oficinas centrales de Mercadona"}), lados=IZQ))
 E("plano", 6, {"lineas": [{"t": "Gana más dinero que nunca."}, {"t": "Y *se niega* a salir de casa."}]}, pasos=[(6, 0), (6, 0.5)],
   clips=[C("euro_50"), C("facade_street_entrance", 1)])
 E("plano", 7, {"lineas": [{"t": "No es miedo.", "tenue": True}, {"t": "No es que no pueda pagarlo.", "tenue": True},
@@ -127,7 +127,8 @@ E("documento", 13, {"cabecera": "Mercadona · nota de prensa", "fecha": "23 DE J
                     "marca": "un mercado cercano, próximo en lo logístico y que encaja con el crecimiento orgánico y natural de la compañía.",
                     "pie": "TRADUCCIÓN PROPIA DE LA VERSIÓN EN INGLÉS DE LA NOTA", "nota": {"t": "Traducido: se llega en camión", "paso": 2}},
   pasos=[(13, 0), (13, 1), (14, 0)], fuente="info.mercadona.es",
-  region=(0, 1300), medios=turnos((1320, 200, 520, 700), ("logistics_center", (13, 1), {"pie": "Bloque logístico de Mercadona"}), ("truck_highway_bridge", (14, 0))))
+  region=(0, 1300), medios=turnos((1320, 200, 520, 700), ("f_porto2", 0, {"mas": 10, "pie": "Oporto"}), ("logistics_center", (13, 0.52), {"pie": "Bloque logístico de Mercadona"}),
+                              ("truck_highway_bridge", (14, 0))))
 E("tarjetas", 15, {"titulo": "El plan de 2016", "cols": 4,
                    "items": [{"cifra": "4", "pie": "supermercados", "paso": 1}, {"cifra": "25 M€", "pie": "de inversión", "paso": 2},
                              {"cifra": "200", "pie": "empleos", "paso": 3}, {"cifra": "2019", "pie": "apertura", "color": "acento", "paso": 4}]},
@@ -167,9 +168,10 @@ E("barras", 26, {"titulo": "Inversión en Portugal",
                  "items": [{"et": "Plan inicial (2016)", "valor": 25, "texto": "25 M€", "color": "gris", "paso": 0},
                            {"et": "Al abrir las primeras tiendas (2019)", "valor": 60, "texto": "60 M€", "color": "acento", "paso": 1},
                            {"et": "Acumulada a cierre de 2025", "valor": 1230, "texto": "1.230 M€", "paso": 2}],
-                 "sello": {"t": "×49 el plan", "paso": 3}},
+                 "sello": {"t": "×49 el plan", "paso": 3, "y": 170}},
   pasos=[(26, 0), (26, 1), (27, 0.45), (28, 0)], fondo="oscuro", fuente="Mercadona (2016) · Valencia Plaza (2019) · ECO (2026)",
-  region=REG_I, medios=turnos(COL_D, ("aerial_crane", 0, {"mas": 8}), ("concrete_frame", 1), ("logistics_block", 2, {"pie": "Bloque logístico de Mercadona"})))
+  region=REG_I, medios=turnos(COL_D, ("aerial_crane", 0, {"mas": 8}), ("concrete_frame", 1), ("f_pt_guimaraes", (27, 0), {"pie": "Mercadona de Guimarães"}),
+                              ("logistics_block", 2, {"pie": "Bloque logístico de Mercadona"})))
 E("plano", 29, {"pos": "c", "lineas": [{"t": "¿Y cuánto ha *ganado* con eso?"}]}, clips=[C("euro_coin")])
 E("linea", 30, {"titulo": "Resultado de Mercadona en Portugal",
                 "hitos": [{"anio": "2019–22", "t": "Pérdidas", "color": "rojo", "paso": 1}, {"anio": "2023", "t": "Por primera vez no pierde", "paso": 2},
@@ -187,7 +189,7 @@ E("anillos", 33, {"titulo": "Lo que le queda de cada 100 € que vende",
                   "items": [{"valor": 4.1, "max": 5, "texto": "4,1 €", "pie": "Grupo Mercadona", "paso": 1},
                             {"valor": 1.2, "max": 5, "texto": "1,2 €", "pie": "Portugal", "color": "acento", "paso": 2}],
                   "nota": {"t": "Cálculo propio con las cifras de la compañía", "paso": 3}},
-  pasos=[(33, 0), (34, 0), (34, 1), (35, 0)], fondo="oscuro", fuente=RES, clips=[C("self_checkout")], velo="oscuro")
+  pasos=[(33, 0), (34, 0), (34, 1), (35, 0)], fondo="oscuro", fuente=RES, clips=[C("self_checkout"), C("woman_paying_checkout", (34, 0.3))], velo="oscuro")
 E("barras", 36, {"titulo": "Ventas por tienda y año",
                  "items": [{"et": "Portugal", "valor": 30.3, "texto": "≈ 30 M€", "color": "acento", "paso": 1},
                            {"et": "España", "valor": 24.8, "texto": "≈ 25 M€", "paso": 2}],
@@ -207,7 +209,7 @@ E("cita", 40, dict(ROIG, cuando="10 de marzo de 2026", desde=1, previo="La frase
                    partes=["Cuesta mucho empezar una operación en un país, corregir las cosas que no están bien hechas, adaptar el surtido a los consumidores y encontrar buenos proveedores de frescos.",
                            "*Cuando todo eso esté hecho, ganaremos lo mismo que en España.*"]),
   pasos=[(40, 0), (40, 0.42), (41, 0.25)], fondo="oscuro", fuente="ECO (eco.sapo.pt), 10-3-2026 · traducido del portugués",
-  region=REG_D, medios=turnos(COL_I, ("headquarters_office", 0, {"pie": "Oficinas centrales de Mercadona"}), ("excavator", (40, 0.44)), ("worker_cleaning", (40, 0.58)),
+  region=REG_D, medios=turnos(COL_I, ("headquarters_office", 0, {"pie": "Oficinas centrales de Mercadona"}), ("sign_pylon", (40, 0.22)), ("excavator", (40, 0.44)), ("worker_cleaning", (40, 0.58)),
                               ("seafood_salad", (40, 0.72)), ("fresh_fish", (40, 0.86)), ("f_pt_legumes", (41, 0.25)), lados=IZQ))
 E("plano", 42, {"lineas": [{"t": "Cuando todo eso esté hecho.", "tenue": True}, {"t": "Siete años después,", "grupo": 1}, {"t": "*todavía no lo está*.", "grupo": 1}]},
   pasos=[(42, 0), (42, 1), (42, 0.75)], clips=[C("parking_lot_building"), C("facade_empty_parking", 1)])
@@ -268,7 +270,7 @@ E("barras", 58, {"titulo": "Tiendas en Portugal",
                            {"et": "A cierre de 2025", "valor": 69, "texto": "69", "color": "acento", "paso": 1},
                            {"et": "Previsión para el cierre de 2026", "valor": 81, "texto": "81", "paso": 2}]},
   pasos=[(58, 0), (58, 1), (59, 0)], fondo="oscuro", fuente="Valencia Plaza (2019) · ECO y Xataka (2026)",
-  region=REG_I, medios=turnos(COL_D, ("f_pt_legumes", 0, {"mas": 8}), ("f_pt_guimaraes", 1, {"pie": "Mercadona de Guimarães"}), ("construction_site_cranes", 2)))
+  region=REG_I, medios=turnos(COL_D, ("f_pt_legumes", 0, {"mas": 8}), ("f_pt_carne", (58, 0.45)), ("f_pt_guimaraes", 1, {"pie": "Mercadona de Guimarães"}), ("construction_site_cranes", 2)))
 E("plano", 60, {"lineas": [{"t": "Tienda a tienda,", "tenue": True}, {"t": "un país tarda *más de una década*.", "grupo": 0}]}, pasos=[(60, 0), (60, 0.3)],
   clips=[C("concrete_frame")])
 
@@ -283,7 +285,7 @@ E("mapa", 62, {"titulo": "Walmart en _Alemania_", "sinMapa": True,
                                    {"t": "≈ 1.000 M$ de golpe", "sub": "Cerca de 800 M€ de entonces", "paso": 4, "color": "rojo"}]}},
   pasos=[(62, 0), (62, 1), (63, 0), (63, 1), (63, 0.62)], fuente="Supermarket News, Irish Times y NBC, julio de 2006",
   region=REG_I, medios=turnos(COL_DA, ("f_walmart_de", 0, {"mas": 8, "pie": "Wal-Mart en Pattensen (Alemania), 2006"}), ("f_aldi", 1, {"pie": "Aldi", "mas": 10}))
-  + turnos(COL_DB, ("empty_shopping_arcade", 2, {"mas": 6}), ("f_walmart_vacio", 3, {"pie": "Un antiguo Walmart alemán, vacío (2007)"}), lados=("aba", "der")))
+  + turnos(COL_DB, ("self_checkout", (62, 0.45)), ("empty_shopping_arcade", 2, {"mas": 6}), ("f_walmart_vacio", 3, {"pie": "Un antiguo Walmart alemán, vacío (2007)"}), lados=("aba", "der")))
 E("lista", 64, {"titulo": "No fue la única",
                 "items": [{"t": "Tesco · Estados Unidos", "sub": "Seis años sin un solo año de beneficios", "etiqueta": "2013"},
                           {"t": "Carrefour · China", "sub": "Vende la mayoría de su negocio", "etiqueta": "2019"},
@@ -291,10 +293,11 @@ E("lista", 64, {"titulo": "No fue la única",
                           {"t": "Dia · China", "etiqueta": "2018", "color": "acento"},
                           {"t": "Dia · Portugal", "sub": "Vendida a Auchan", "etiqueta": "2023", "color": "acento"}]},
   pasos=[(64, 0), (65, 0), (66, 2), (66, 3), (67, 0)], fuente="Fortune · Merca2.0 · Alimarket · ESM Magazine",
-  region=REG_I, medios=turnos(COL_D, ("f_fresh_easy", 0, {"mas": 8, "pie": "Fresh & Easy, la cadena de Tesco en EE. UU."}),
+  region=REG_I, medios=turnos(COL_DA, ("f_fresh_easy", 0, {"mas": 8, "pie": "Fresh & Easy, la cadena de Tesco en EE. UU."}),
                               ("f_carrefour_china", 1, {"pie": "Un antiguo Carrefour en Shenzhen (China)"}),
-                              ("f_dia_francia", 2, {"pie": "Dia en Villeurbanne (Francia)"}), ("f_dia", 3, {"pie": "Dia"}),
-                              ("f_minipreco", 4, {"pie": "Minipreço, la marca de Dia en Portugal"})))
+                              ("f_dia_francia", 2, {"pie": "Dia en Villeurbanne (Francia)"}),
+                              ("f_minipreco", 4, {"pie": "Minipreço, la marca de Dia en Portugal"}))
+  + turnos(COL_DB, ("empty_shopping_arcade", (64, 1)), ("f_vacio", (66, 0), {"pie": "Una tienda de Dia, vacía (2024)"}), ("f_dia", 3, {"pie": "Dia"}), lados=("aba", "der")))
 E("plano", 68, {"lineas": [{"t": "El patrón se repite.", "tenue": True}, {"t": "Un supermercado es", "grupo": 1}, {"t": "un *negocio de céntimos*.", "grupo": 1}]},
   pasos=[(68, 0), (68, 1), (68, 0.7)], clips=[C("woman_paying_checkout"), C("euro_coin", 1)])
 E("lista", 69, {"titulo": "Ser muy grande en _un_ sitio",
@@ -333,6 +336,7 @@ E("lista", 76, {"titulo": "1 · No cotiza en bolsa",
                           {"t": "¿Ocho años para ganar en Portugal? _Puede_", "icono": "✓", "paso": 4}]},
   pasos=[(76, 0), (76, 1), (76, 2), (77, 0), (77, 1)], fuente="nota de Mercadona, 23-6-2016",
   region=REG_I, medios=turnos(COL_D, ("headquarters_office", 1, {"pie": "Oficinas centrales de Mercadona"}), ("f_placa_canidelo", 2, {"pie": "«…Juan Roig y Hortensia Herrero»"}),
+                              ("headquarters_night", (76, 0.72)),
                               ("f_bolsa_dentro", 3, {"pie": "Bolsa de Madrid"}), ("f_pt_canidelo", 4, {"pie": "Canidelo, la primera tienda"})))
 E("plano", 78, {"lineas": [{"t": "2 · El dato que casi nadie mira", "tenue": True}, {"t": "Sigue creciendo en España.", "grupo": 1}, {"t": "*Sin abrir tiendas*.", "grupo": 1}]},
   pasos=[(78, 0), (78, 1), (78, 2)], clips=[C("supermercados_de_confianza"), C("sign_pylon", 1), C("delivery_van", 2)])
@@ -356,7 +360,7 @@ E("tarjetas", 84, {"titulo": "¿Cómo? Cambiando las tiendas",
 E("cifra", 85, {"pre": "El plan que sí tiene sobre la mesa: Tienda 9", "valor": 3700, "sufijo": "M€", "pasoValor": 1,
                 "post": "para rehacer *todos* sus supermercados hasta 2033", "pasoPost": 2},
   pasos=[(85, 0), (85, 0.5), (85, 0.8)], fuente="Merca2 y Forbes, 11-3-2026",
-  clips=[C("man_painting"), C("aisle_shelves", 1), C("checkout_lanes", 2)], velo="lado")
+  clips=[C("man_painting"), C("modern_store_glass", (85, 1)), C("aisle_shelves", 1), C("checkout_lanes", 2)], velo="lado")
 E("versus", 86, {"titulo": "La elección de Roig", "signo": "o",
                  "a": {"et": "Otro país", "cifra": "1.230 M€", "pie": "y una década", "sub": "para ganar lo que gana en casa", "paso": 1},
                  "b": {"et": "Sus tiendas", "cifra": "Tienda 9", "pie": "las que ya conoce", "sub": "y que cada año venden más", "paso": 2, "color": "acento"},

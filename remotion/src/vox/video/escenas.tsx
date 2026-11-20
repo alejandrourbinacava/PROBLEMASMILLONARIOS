@@ -226,7 +226,7 @@ const Barras: React.FC<EP> = ({d, p, ancho}) => {
         );
       })}
       {d.sello && (
-        <div style={{position: 'absolute', right: ancho < 1500 ? 50 : 70, top: d.sello.abajo ? undefined : 44, bottom: d.sello.abajo ? 40 : undefined, background: AMARILLO, color: NEGRO, borderRadius: 22, padding: '16px 30px', font: "56px 'M Archivo'", opacity: c01(p(d.sello.paso) / 4), transform: `scale(${0.5 + 0.5 * atras(p(d.sello.paso) / 12, 2.4)}) rotate(-3deg)`}}>{d.sello.t}</div>
+        <div style={{position: 'absolute', right: ancho < 1500 ? 50 : 70, top: d.sello.abajo ? undefined : d.sello.y ?? 44, bottom: d.sello.abajo ? 40 : undefined, background: AMARILLO, color: NEGRO, borderRadius: 22, padding: '16px 30px', font: "56px 'M Archivo'", opacity: c01(p(d.sello.paso) / 4), transform: `scale(${0.5 + 0.5 * atras(p(d.sello.paso) / 12, 2.4)}) rotate(-3deg)`}}>{d.sello.t}</div>
       )}
       {d.pregunta && (
         <div style={{position: 'absolute', left: 70, bottom: 46, right: 70, font: "84px/1 'M Black'", color: '#fff', opacity: c01(p(d.pregunta.paso) / 5), transform: `translateY(${(1 - atras(p(d.pregunta.paso) / 14)) * 60}px)`}}>

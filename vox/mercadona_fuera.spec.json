@@ -193,9 +193,25 @@
    "f1": 747,
    "medios": [
     {
+     "src": "mercadona_headquarters_office_building_cranes_933.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "izq",
+     "pie": "Oficinas centrales de Mercadona",
+     "en": 4,
+     "sale": 66
+    },
+    {
      "src": "mercadona_headquarters_night_sign_lights_934.mp4",
-     "desde": 0.0,
-     "rate": 0.879,
+     "desde": 0.4,
+     "rate": 1.0,
      "caja": [
       90,
       185,
@@ -203,9 +219,9 @@
       760
      ],
      "rot": -2,
-     "de": "izq",
+     "de": "aba",
      "pie": "Oficinas centrales de Mercadona",
-     "en": 4,
+     "en": 66,
      "sale": 205
     }
    ]
@@ -459,9 +475,8 @@
    "f1": 1860,
    "medios": [
     {
-     "src": "mercadona_logistics_center_warehouse_docks_green_field_968.mp4",
-     "desde": 0.0,
-     "rate": 0.992,
+     "src": "f_porto2.jpg",
+     "foto": true,
      "caja": [
       1320,
       200,
@@ -470,8 +485,24 @@
      ],
      "rot": 2,
      "de": "der",
+     "pie": "Oporto",
+     "en": 14,
+     "sale": 120
+    },
+    {
+     "src": "mercadona_logistics_center_warehouse_docks_green_field_968.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1320,
+      200,
+      520,
+      700
+     ],
+     "rot": -2,
+     "de": "aba",
      "pie": "Bloque logístico de Mercadona",
-     "en": 57,
+     "en": 120,
      "sale": 233
     },
     {
@@ -484,8 +515,8 @@
       520,
       700
      ],
-     "rot": -2,
-     "de": "aba",
+     "rot": 2,
+     "de": "arr",
      "en": 233,
      "sale": 324
     }
@@ -977,7 +1008,8 @@
     ],
     "sello": {
      "t": "×49 el plan",
-     "paso": 3
+     "paso": 3,
+     "y": 170
     }
    },
    "region": [
@@ -1014,6 +1046,21 @@
      "rot": -2,
      "de": "aba",
      "en": 46,
+     "sale": 115
+    },
+    {
+     "src": "f_pt_guimaraes.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "pie": "Mercadona de Guimarães",
+     "en": 115,
      "sale": 181
     },
     {
@@ -1026,8 +1073,8 @@
       600,
       760
      ],
-     "rot": 2,
-     "de": "arr",
+     "rot": -2,
+     "de": "der",
      "pie": "Bloque logístico de Mercadona",
      "en": 181,
      "sale": 319
@@ -1240,9 +1287,15 @@
    "fondoClip": [
     {
      "src": "woman_paying_self_checkout_supermarket_tote_bag_218.mp4",
-     "desde": 0.0,
-     "rate": 0.817,
+     "desde": 0.4,
+     "rate": 1.0,
      "en": 0
+    },
+    {
+     "src": "woman_paying_checkout_fruit_cashier_100.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 128
     }
    ]
   },
@@ -1500,6 +1553,21 @@
      "de": "izq",
      "pie": "Oficinas centrales de Mercadona",
      "en": 4,
+     "sale": 71
+    },
+    {
+     "src": "mercadona_sign_pylon_basket_logo_storefront_952.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 71,
      "sale": 138
     },
     {
@@ -1512,8 +1580,8 @@
       600,
       760
      ],
-     "rot": -2,
-     "de": "aba",
+     "rot": 2,
+     "de": "arr",
      "en": 138,
      "sale": 180
     },
@@ -1527,8 +1595,8 @@
       600,
       760
      ],
-     "rot": 2,
-     "de": "arr",
+     "rot": -2,
+     "de": "izq",
      "en": 180,
      "sale": 223
     },
@@ -1542,8 +1610,8 @@
       600,
       760
      ],
-     "rot": -2,
-     "de": "izq",
+     "rot": 2,
+     "de": "aba",
      "en": 223,
      "sale": 265
     },
@@ -1557,8 +1625,8 @@
       600,
       760
      ],
-     "rot": 2,
-     "de": "aba",
+     "rot": -2,
+     "de": "arr",
      "en": 265,
      "sale": 340
     },
@@ -1571,8 +1639,8 @@
       600,
       760
      ],
-     "rot": -2,
-     "de": "arr",
+     "rot": 2,
+     "de": "izq",
      "en": 340,
      "sale": 408
     }
@@ -2461,6 +2529,20 @@
      "rot": 2,
      "de": "der",
      "en": 12,
+     "sale": 92
+    },
+    {
+     "src": "f_pt_carne.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 92,
      "sale": 173
     },
     {
@@ -2472,8 +2554,8 @@
       600,
       760
      ],
-     "rot": -2,
-     "de": "aba",
+     "rot": 2,
+     "de": "arr",
      "pie": "Mercadona de Guimarães",
      "en": 173,
      "sale": 207
@@ -2488,8 +2570,8 @@
       600,
       760
      ],
-     "rot": 2,
-     "de": "arr",
+     "rot": -2,
+     "de": "der",
      "en": 207,
      "sale": 252
     }
@@ -2636,7 +2718,7 @@
      "sale": 466
     },
     {
-     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "src": "woman_paying_self_checkout_supermarket_tote_bag_218.mp4",
      "desde": 0.4,
      "rate": 1.0,
      "caja": [
@@ -2647,6 +2729,21 @@
      ],
      "rot": 2,
      "de": "aba",
+     "en": 102,
+     "sale": 229
+    },
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "der",
      "en": 235,
      "sale": 278
     },
@@ -2659,8 +2756,8 @@
       600,
       365
      ],
-     "rot": -2,
-     "de": "der",
+     "rot": 2,
+     "de": "aba",
      "pie": "Un antiguo Walmart alemán, vacío (2007)",
      "en": 278,
      "sale": 462
@@ -2726,7 +2823,7 @@
       1230,
       185,
       600,
-      760
+      365
      ],
      "rot": 2,
      "de": "der",
@@ -2741,7 +2838,7 @@
       1230,
       185,
       600,
-      760
+      365
      ],
      "rot": -2,
      "de": "aba",
@@ -2756,27 +2853,12 @@
       1230,
       185,
       600,
-      760
+      365
      ],
      "rot": 2,
      "de": "arr",
      "pie": "Dia en Villeurbanne (Francia)",
      "en": 420,
-     "sale": 461
-    },
-    {
-     "src": "f_dia.jpg",
-     "foto": true,
-     "caja": [
-      1230,
-      185,
-      600,
-      760
-     ],
-     "rot": -2,
-     "de": "der",
-     "pie": "Dia",
-     "en": 461,
      "sale": 511
     },
     {
@@ -2786,13 +2868,58 @@
       1230,
       185,
       600,
-      760
+      365
      ],
-     "rot": 2,
-     "de": "aba",
+     "rot": -2,
+     "de": "der",
      "pie": "Minipreço, la marca de Dia en Portugal",
      "en": 511,
      "sale": 603
+    },
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "aba",
+     "en": 107,
+     "sale": 319
+    },
+    {
+     "src": "f_vacio.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "der",
+     "pie": "Una tienda de Dia, vacía (2024)",
+     "en": 319,
+     "sale": 461
+    },
+    {
+     "src": "f_dia.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "aba",
+     "pie": "Dia",
+     "en": 461,
+     "sale": 599
     }
    ]
   },
@@ -3292,6 +3419,21 @@
      "de": "aba",
      "pie": "«…Juan Roig y Hortensia Herrero»",
      "en": 73,
+     "sale": 156
+    },
+    {
+     "src": "mercadona_headquarters_night_sign_lights_934.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 156,
      "sale": 222
     },
     {
@@ -3303,8 +3445,8 @@
       600,
       760
      ],
-     "rot": 2,
-     "de": "arr",
+     "rot": -2,
+     "de": "der",
      "pie": "Bolsa de Madrid",
      "en": 222,
      "sale": 303
@@ -3318,8 +3460,8 @@
       600,
       760
      ],
-     "rot": -2,
-     "de": "der",
+     "rot": 2,
+     "de": "aba",
      "pie": "Canidelo, la primera tienda",
      "en": 303,
      "sale": 390
@@ -3617,6 +3759,12 @@
      "desde": 0.4,
      "rate": 1.0,
      "en": 0
+    },
+    {
+     "src": "mercadona_modern_store_glass_entrance_garden_927.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 60
     },
     {
      "src": "supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
@@ -4077,10 +4225,10 @@
   "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
   "f_lidl.jpg": "vox/media/mercadona_fuera/f_lidl.jpg",
   "mercadona_store_sign_tower_car_park_953.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_sign_tower_car_park_953.mp4",
+  "mercadona_headquarters_office_building_cranes_933.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_office_building_cranes_933.mp4",
   "mercadona_headquarters_night_sign_lights_934.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_night_sign_lights_934.mp4",
   "euro_50_banknotes_fan_348.mp4": "parallax2/proyecto/stock_mercadona/euro_50_banknotes_fan_348.mp4",
   "mercadona_store_facade_street_entrance_951.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_facade_street_entrance_951.mp4",
-  "mercadona_headquarters_office_building_cranes_933.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_office_building_cranes_933.mp4",
   "euro_banknotes_hanging_clips_139.mp4": "parallax2/proyecto/stock_mercadona/euro_banknotes_hanging_clips_139.mp4",
   "f_pt_guimaraes.jpg": "vox/media/mercadona_fuera/f_pt_guimaraes.jpg",
   "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
@@ -4088,6 +4236,7 @@
   "aerial_roundabout_city_traffic_152.mp4": "parallax2/proyecto/stock_mercadona/aerial_roundabout_city_traffic_152.mp4",
   "fish_counter_sea_bream_salmon_ice_supermarket_947.mp4": "parallax2/proyecto/stock_mercadona/fish_counter_sea_bream_salmon_ice_supermarket_947.mp4",
   "f_porto.jpg": "vox/media/mercadona_fuera/f_porto.jpg",
+  "f_porto2.jpg": "vox/media/mercadona_fuera/f_porto2.jpg",
   "mercadona_logistics_center_warehouse_docks_green_field_968.mp4": "parallax2/proyecto/stock_mercadona/mercadona_logistics_center_warehouse_docks_green_field_968.mp4",
   "truck_highway_bridge_delivery_119.mp4": "parallax2/proyecto/stock_mercadona/truck_highway_bridge_delivery_119.mp4",
   "mercadona_modern_store_glass_entrance_garden_927.mp4": "parallax2/proyecto/stock_mercadona/mercadona_modern_store_glass_entrance_garden_927.mp4",
@@ -4100,7 +4249,6 @@
   "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
   "mercadona_sign_pylon_basket_logo_storefront_952.mp4": "parallax2/proyecto/stock_mercadona/mercadona_sign_pylon_basket_logo_storefront_952.mp4",
   "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
-  "f_porto2.jpg": "vox/media/mercadona_fuera/f_porto2.jpg",
   "f_pt_canidelo.jpg": "vox/media/mercadona_fuera/f_pt_canidelo.jpg",
   "f_placa_canidelo.jpg": "vox/media/mercadona_fuera/f_placa_canidelo.jpg",
   "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
@@ -4148,10 +4296,10 @@
   "f_fresh_easy.jpg": "vox/media/mercadona_fuera/f_fresh_easy.jpg",
   "f_carrefour_china.jpg": "vox/media/mercadona_fuera/f_carrefour_china.jpg",
   "f_dia_francia.jpg": "vox/media/mercadona_fuera/f_dia_francia.jpg",
-  "f_dia.jpg": "vox/media/mercadona_fuera/f_dia.jpg",
   "f_minipreco.jpg": "vox/media/mercadona_fuera/f_minipreco.jpg",
-  "aerial_flatbed_truck_loading_warehouse_326.mp4": "parallax2/proyecto/stock_mercadona/aerial_flatbed_truck_loading_warehouse_326.mp4",
   "f_vacio.jpg": "vox/media/mercadona_fuera/f_vacio.jpg",
+  "f_dia.jpg": "vox/media/mercadona_fuera/f_dia.jpg",
+  "aerial_flatbed_truck_loading_warehouse_326.mp4": "parallax2/proyecto/stock_mercadona/aerial_flatbed_truck_loading_warehouse_326.mp4",
   "f_kaufland.jpg": "vox/media/mercadona_fuera/f_kaufland.jpg",
   "f_bolsa.jpg": "vox/media/mercadona_fuera/f_bolsa.jpg",
   "f_bolsa_dentro.jpg": "vox/media/mercadona_fuera/f_bolsa_dentro.jpg",

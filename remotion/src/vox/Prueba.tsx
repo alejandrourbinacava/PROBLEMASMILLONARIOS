@@ -289,10 +289,11 @@ export const PruebaVox: React.FC = () => {
   if (!ok) return <AbsoluteFill style={{background: '#E9E0CC'}} />;
   const c = camara(f);
   const g = a12(f);
-  // temblor minimo, a doses
-  const tx = (ruido(g * 0.37) - 0.5) * 5;
-  const ty = (ruido(g * 0.91 + 4) - 0.5) * 5;
-  const rot = (ruido(g * 0.53 + 9) - 0.5) * 0.35;
+  // Sin temblor: una deriva lenta y continua, de un par de pixeles. El temblor
+  // a doses (+-5 px y giro al azar) se leia como un fallo, no como camara en mano.
+  const tx = Math.sin(f / 37) * 2.2;
+  const ty = Math.cos(f / 29) * 1.6;
+  const rot = 0;
   const mundo = (factor: number): React.CSSProperties => ({
     position: 'absolute', left: 0, top: 0, width: W, height: H, transformOrigin: '0 0',
     transform: `translate(${W / 2 + tx}px, ${H / 2 + ty}px) rotate(${rot}deg) scale(${1 + (c.k - 1) * factor}) translate(${-c.x * factor}px, ${-c.y * factor}px)`,

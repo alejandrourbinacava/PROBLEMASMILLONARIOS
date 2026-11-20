@@ -62,14 +62,36 @@ def main():
 
     soplos = [lee(os.path.join(ACT, "sfx", "whoosh", x)) for x in ("01_woosh.wav", "02_transici_n_futuristica.wav")]
     golpe = lee(os.path.join(ACT, "sfx", "impact.wav"))
+    pop = lee(os.path.join(ACT, "sfx", "pop.wav"))
+    obturador = lee(os.path.join(ACT, "sfx", "shutter.wav"))
+    # un sonido por evento, y nunca dos pegados: cada uno reserva su hueco
+    ocupado = []
+
+    def libre(t, hueco=0.28):
+        if any(abs(t - o) < hueco for o in ocupado):
+            return False
+        ocupado.append(t)
+        return True
+
     for i, e in enumerate(spec["escenas"]):
-        if i == 0:
-            continue
         t = e["f0"] / float(fps)
-        if e["tipo"] == "capitulo":
-            pon(mezcla, golpe, t, db(-15))
-        else:
-            pon(mezcla, soplos[0], max(0.0, t - 0.12), db(-24))
+        if i:
+            libre(t)
+            if e["tipo"] == "capitulo":
+                pon(mezcla, soplos[1], max(0.0, t - 0.3), db(-25))
+                pon(mezcla, golpe, t, db(-15))
+            else:
+                pon(mezcla, soplos[0], max(0.0, t - 0.12), db(-24))
+        # cortes de metraje dentro del plano: un clic de obturador
+        for c in (e.get("fondoClip") or [])[1:]:
+            tc = t + c["en"] / float(fps)
+            if libre(tc):
+                pon(mezcla, obturador, tc, db(-27))
+        # recortes que entran: un pop bajo
+        for m in e.get("medios") or []:
+            tm = t + m["en"] / float(fps)
+            if libre(tm):
+                pon(mezcla, pop, tm, db(-26))
 
     pico = float(np.abs(mezcla).max())
     if pico > 0.97:

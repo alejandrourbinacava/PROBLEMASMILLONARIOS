@@ -38,7 +38,28 @@
      }
     ]
    },
-   "f1": 282
+   "velo": "lado",
+   "f1": 282,
+   "fondoClip": [
+    {
+     "src": "mercadona_store_facade_hill_logo_960.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 115
+    },
+    {
+     "src": "hands_checkout_scanner_groceries_bag_101.mp4",
+     "desde": 0.0,
+     "rate": 0.937,
+     "en": 163
+    }
+   ]
   },
   {
    "id": "e01_mapa",
@@ -72,7 +93,16 @@
      }
     ]
    },
-   "f1": 405
+   "velo": "marca",
+   "f1": 405,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e02_versus",
@@ -101,7 +131,38 @@
      "paso": 1
     }
    },
-   "f1": 540
+   "f1": 540,
+   "medios": [
+    {
+     "src": "f_lidl.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      712,
+      790,
+      252
+     ],
+     "rot": -2,
+     "de": "izq",
+     "en": 10,
+     "sale": 133
+    },
+    {
+     "src": "mercadona_store_sign_tower_car_park_953.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      712,
+      790,
+      252
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 80,
+     "sale": 129
+    }
+   ]
   },
   {
    "id": "e03_cita",
@@ -120,16 +181,39 @@
     "iniciales": "JR",
     "cuando": "10 de marzo de 2026",
     "desde": 1,
+    "previo": "Le preguntaron cuál sería el siguiente país",
     "partes": [
      "*No hay un tercer país.* No vamos a ir a un tercer país."
     ]
    },
-   "f1": 747
+   "region": [
+    670,
+    1250
+   ],
+   "f1": 747,
+   "medios": [
+    {
+     "src": "mercadona_headquarters_night_sign_lights_934.mp4",
+     "desde": 0.0,
+     "rate": 0.879,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "izq",
+     "pie": "Oficinas centrales de Mercadona",
+     "en": 4,
+     "sale": 205
+    }
+   ]
   },
   {
-   "id": "e04_texto",
+   "id": "e04_plano",
    "f0": 747,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
@@ -147,13 +231,28 @@
      }
     ]
    },
-   "f1": 825
+   "f1": 825,
+   "fondoClip": [
+    {
+     "src": "euro_50_banknotes_fan_348.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "mercadona_store_facade_street_entrance_951.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 37
+    }
+   ],
+   "velo": "plano"
   },
   {
-   "id": "e05_texto",
+   "id": "e05_plano",
    "f0": 825,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
@@ -180,7 +279,33 @@
      }
     ]
    },
-   "f1": 976
+   "f1": 976,
+   "fondoClip": [
+    {
+     "src": "mercadona_headquarters_office_building_cranes_933.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "euro_banknotes_hanging_clips_139.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 17
+    },
+    {
+     "src": "f_pt_guimaraes.jpg",
+     "foto": true,
+     "en": 60
+    },
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 95
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e06_capitulo",
@@ -198,7 +323,17 @@
     "titulo": "El plan que empezaba por *«I»*",
     "sub": "Más de diez años pensando en salir de España"
    },
-   "f1": 1052
+   "velo": "medio",
+   "trans": "cortinilla",
+   "f1": 1052,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e07_mapa",
@@ -250,7 +385,49 @@
      ]
     }
    },
-   "f1": 1534
+   "velo": "marca",
+   "f1": 1534,
+   "fondoClip": [
+    {
+     "src": "aerial_roundabout_city_traffic_152.mp4",
+     "desde": 0.0,
+     "rate": 0.588,
+     "en": 0
+    }
+   ],
+   "medios": [
+    {
+     "src": "fish_counter_sea_bream_salmon_ice_supermarket_947.mp4",
+     "desde": 0.0,
+     "rate": 0.972,
+     "caja": [
+      90,
+      690,
+      600,
+      295
+     ],
+     "rot": 2,
+     "de": "izq",
+     "pie": "Los frescos, lo primero",
+     "en": 271,
+     "sale": 451
+    },
+    {
+     "src": "f_porto.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      690,
+      600,
+      295
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Oporto",
+     "en": 451,
+     "sale": 480
+    }
+   ]
   },
   {
    "id": "e08_documento",
@@ -275,7 +452,44 @@
      "paso": 2
     }
    },
-   "f1": 1860
+   "region": [
+    0,
+    1300
+   ],
+   "f1": 1860,
+   "medios": [
+    {
+     "src": "mercadona_logistics_center_warehouse_docks_green_field_968.mp4",
+     "desde": 0.0,
+     "rate": 0.992,
+     "caja": [
+      1320,
+      200,
+      520,
+      700
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Bloque logístico de Mercadona",
+     "en": 57,
+     "sale": 233
+    },
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1320,
+      200,
+      520,
+      700
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 233,
+     "sale": 324
+    }
+   ]
   },
   {
    "id": "e09_tarjetas",
@@ -318,7 +532,54 @@
      }
     ]
    },
-   "f1": 2063
+   "f1": 2063,
+   "medios": [
+    {
+     "src": "mercadona_modern_store_glass_entrance_garden_927.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      600,
+      560,
+      370
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 47,
+     "sale": 201
+    },
+    {
+     "src": "hand_drawing_building_plan_chalkboard_124.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      680,
+      600,
+      560,
+      370
+     ],
+     "rot": 1.5,
+     "de": "aba",
+     "en": 76,
+     "sale": 197
+    },
+    {
+     "src": "woman_paying_checkout_fruit_cashier_100.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1270,
+      600,
+      560,
+      370
+     ],
+     "rot": -1.5,
+     "de": "aba",
+     "en": 132,
+     "sale": 193
+    }
+   ]
   },
   {
    "id": "e10_linea",
@@ -352,7 +613,16 @@
      "paso": 1
     }
    },
-   "f1": 2225
+   "velo": "medio",
+   "f1": 2225,
+   "fondoClip": [
+    {
+     "src": "construction_site_cranes_timelapse_130.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e11_anillos",
@@ -384,7 +654,42 @@
      }
     ]
    },
-   "f1": 2524
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 2524,
+   "medios": [
+    {
+     "src": "f_pt_padaria.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Mercadona de Canidelo (Portugal)",
+     "en": 14,
+     "sale": 297
+    },
+    {
+     "src": "f_pt_legumes.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 121,
+     "sale": 293
+    }
+   ]
   },
   {
    "id": "e12_cita",
@@ -404,12 +709,64 @@
     "iniciales": "JR",
     "cuando": "12 de marzo de 2019",
     "desde": 1,
+    "previo": "A punto de abrir en Portugal, le preguntan por el siguiente país",
     "partes": [
      "Lo tengo en mente, hay tres o cuatro países. Normalmente será en mancha de aceite *y empieza por I…*",
      "*El año que viene te lo digo.*"
     ]
    },
-   "f1": 2881
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 2881,
+   "medios": [
+    {
+     "src": "mercadona_totem_sign_blue_sky_963.mp4",
+     "desde": 0.0,
+     "rate": 0.953,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 4,
+     "sale": 188
+    },
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 188,
+     "sale": 297
+    },
+    {
+     "src": "mercadona_sign_pylon_basket_logo_storefront_952.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 297,
+     "sale": 355
+    }
+   ]
   },
   {
    "id": "e13_linea",
@@ -459,26 +816,44 @@
      "paso": 3
     }
    },
-   "f1": 3046
+   "velo": "medio",
+   "f1": 3046,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
-   "id": "e14_texto",
+   "id": "e14_plano",
    "f0": 3046,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": null,
    "pasos": [
     4
    ],
    "d": {
+    "pos": "c",
     "lineas": [
      {
       "t": "Algo pasó en _Portugal_."
      }
     ]
    },
-   "f1": 3084
+   "f1": 3084,
+   "fondoClip": [
+    {
+     "src": "f_porto2.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e15_capitulo",
@@ -486,7 +861,7 @@
    "tipo": "capitulo",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
-   "fuente": "El Independiente, 2-7-2019",
+   "fuente": "El Independiente, 2-7-2019 · placa de la tienda (Wikimedia Commons)",
    "pasos": [
     4,
     36
@@ -494,14 +869,45 @@
    "d": {
     "num": "2",
     "titulo": "Lo que cuesta *un país*",
-    "sub": "2 de julio de 2019 · primera tienda, en Canidelo (Oporto)"
+    "sub": "2 de julio de 2019 · Canidelo (Oporto)",
+    "tam": 124
    },
-   "f1": 3201
+   "velo": "medio",
+   "region": [
+    0,
+    1120
+   ],
+   "trans": "cortinilla",
+   "f1": 3201,
+   "fondoClip": [
+    {
+     "src": "f_pt_canidelo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "medios": [
+    {
+     "src": "f_placa_canidelo.jpg",
+     "foto": true,
+     "caja": [
+      1120,
+      250,
+      710,
+      530
+     ],
+     "rot": 3,
+     "de": "der",
+     "pie": "La placa de la primera tienda",
+     "en": 28,
+     "sale": 115
+    }
+   ]
   },
   {
-   "id": "e16_texto",
+   "id": "e16_plano",
    "f0": 3201,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
@@ -516,11 +922,21 @@
       "tenue": true
      },
      {
-      "t": "el tono de *Juan Roig*"
+      "t": "el tono de *Juan Roig*",
+      "grupo": 0
      }
     ]
    },
-   "f1": 3276
+   "f1": 3276,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e17_barras",
@@ -536,7 +952,7 @@
     272
    ],
    "d": {
-    "titulo": "Inversión de Mercadona en Portugal",
+    "titulo": "Inversión en Portugal",
     "items": [
      {
       "et": "Plan inicial (2016)",
@@ -564,12 +980,64 @@
      "paso": 3
     }
    },
-   "f1": 3597
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 3597,
+   "medios": [
+    {
+     "src": "aerial_crane_building_site_346.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 12,
+     "sale": 46
+    },
+    {
+     "src": "concrete_frame_building_construction_131.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 46,
+     "sale": 181
+    },
+    {
+     "src": "mercadona_logistics_block_warehouse_loading_docks_field_967.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "pie": "Bloque logístico de Mercadona",
+     "en": 181,
+     "sale": 319
+    }
+   ]
   },
   {
-   "id": "e18_texto",
+   "id": "e18_plano",
    "f0": 3597,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
@@ -577,13 +1045,23 @@
     4
    ],
    "d": {
+    "pos": "c",
     "lineas": [
      {
       "t": "¿Y cuánto ha *ganado* con eso?"
      }
     ]
    },
-   "f1": 3636
+   "f1": 3636,
+   "fondoClip": [
+    {
+     "src": "euro_coin_spinning_white_140.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e19_linea",
@@ -627,7 +1105,16 @@
      "paso": 4
     }
    },
-   "f1": 3947
+   "velo": "medio",
+   "f1": 3947,
+   "fondoClip": [
+    {
+     "src": "shopping_carts_supermarket_floor_shoppers_85.mp4",
+     "desde": 0.0,
+     "rate": 0.894,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e20_tarjetas",
@@ -663,7 +1150,53 @@
      }
     ]
    },
-   "f1": 4138
+   "f1": 4138,
+   "medios": [
+    {
+     "src": "f_pt_guimaraes.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      600,
+      560,
+      370
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Mercadona de Guimarães",
+     "en": 50,
+     "sale": 189
+    },
+    {
+     "src": "f_pt_padaria.jpg",
+     "foto": true,
+     "caja": [
+      680,
+      600,
+      560,
+      370
+     ],
+     "rot": 1.5,
+     "de": "aba",
+     "en": 86,
+     "sale": 185
+    },
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1270,
+      600,
+      560,
+      370
+     ],
+     "rot": -1.5,
+     "de": "aba",
+     "en": 143,
+     "sale": 181
+    }
+   ]
   },
   {
    "id": "e21_anillos",
@@ -702,7 +1235,16 @@
      "paso": 3
     }
    },
-   "f1": 4497
+   "velo": "oscuro",
+   "f1": 4497,
+   "fondoClip": [
+    {
+     "src": "woman_paying_self_checkout_supermarket_tote_bag_218.mp4",
+     "desde": 0.0,
+     "rate": 0.817,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e22_barras",
@@ -734,11 +1276,48 @@
      }
     ],
     "nota": {
-     "t": "Cálculo propio: ventas entre número de tiendas (2025)",
+     "t": "Cálculo propio: ventas ÷ tiendas (2025)",
      "paso": 2
     }
    },
-   "f1": 4696
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 4696,
+   "medios": [
+    {
+     "src": "f_pt_carne.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Portugal",
+     "en": 66,
+     "sale": 197
+    },
+    {
+     "src": "supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "España",
+     "en": 157,
+     "sale": 193
+    }
+   ]
   },
   {
    "id": "e23_anillos",
@@ -759,7 +1338,16 @@
      }
     ]
    },
-   "f1": 4773
+   "velo": "oscuro",
+   "f1": 4773,
+   "fondoClip": [
+    {
+     "src": "produce_cloth_bag_orange_groceries_106.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e24_barras",
@@ -791,12 +1379,48 @@
      }
     ]
    },
-   "f1": 4950
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 4950,
+   "medios": [
+    {
+     "src": "f_pt_canidelo.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Mercadona · Portugal",
+     "en": 12,
+     "sale": 175
+    },
+    {
+     "src": "f_lidl_malaga.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Lidl · Málaga",
+     "en": 97,
+     "sale": 171
+    }
+   ]
   },
   {
-   "id": "e25_texto",
+   "id": "e25_plano",
    "f0": 4950,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
@@ -815,7 +1439,22 @@
      }
     ]
    },
-   "f1": 5035
+   "f1": 5035,
+   "fondoClip": [
+    {
+     "src": "supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 42
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e26_cita",
@@ -835,17 +1474,114 @@
     "iniciales": "JR",
     "cuando": "10 de marzo de 2026",
     "desde": 1,
+    "previo": "La frase más importante de todo el vídeo",
     "partes": [
      "Cuesta mucho empezar una operación en un país, corregir las cosas que no están bien hechas, adaptar el surtido a los consumidores y encontrar buenos proveedores de frescos.",
      "*Cuando todo eso esté hecho, ganaremos lo mismo que en España.*"
     ]
    },
-   "f1": 5445
+   "region": [
+    670,
+    1250
+   ],
+   "f1": 5445,
+   "medios": [
+    {
+     "src": "mercadona_headquarters_office_building_cranes_933.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "izq",
+     "pie": "Oficinas centrales de Mercadona",
+     "en": 4,
+     "sale": 138
+    },
+    {
+     "src": "excavator_digging_construction_137.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 138,
+     "sale": 180
+    },
+    {
+     "src": "worker_cleaning_industrial_floor_warehouse_127.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 180,
+     "sale": 223
+    },
+    {
+     "src": "seafood_salad_packs_hacendado_fridge_supermarket_949.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "izq",
+     "en": 223,
+     "sale": 265
+    },
+    {
+     "src": "fresh_fish_hake_crate_ice_price_supermarket_946.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "aba",
+     "en": 265,
+     "sale": 340
+    },
+    {
+     "src": "f_pt_legumes.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "arr",
+     "en": 340,
+     "sale": 408
+    }
+   ]
   },
   {
-   "id": "e27_texto",
+   "id": "e27_plano",
    "f0": 5445,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
@@ -861,14 +1597,31 @@
       "tenue": true
      },
      {
-      "t": "Siete años después,"
+      "t": "Siete años después,",
+      "grupo": 1
      },
      {
-      "t": "*todavía no lo está*."
+      "t": "*todavía no lo está*.",
+      "grupo": 1
      }
     ]
    },
-   "f1": 5550
+   "f1": 5550,
+   "fondoClip": [
+    {
+     "src": "mercadona_supermarket_parking_lot_building_966.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "mercadona_store_facade_empty_parking_964.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 38
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e28_capitulo",
@@ -886,7 +1639,17 @@
     "titulo": "Por qué su máquina *no viaja*",
     "sub": "Qué es Mercadona de verdad"
    },
-   "f1": 5645
+   "velo": "medio",
+   "trans": "cortinilla",
+   "f1": 5645,
+   "fondoClip": [
+    {
+     "src": "mercadona_logistics_center_warehouse_docks_green_field_968.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e29_flujo",
@@ -923,7 +1686,16 @@
      }
     ]
    },
-   "f1": 5746
+   "velo": "oscuro",
+   "f1": 5746,
+   "fondoClip": [
+    {
+     "src": "bottling_line_factory_conveyor_112.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e30_anillos",
@@ -961,7 +1733,44 @@
      }
     ]
    },
-   "f1": 5885
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 5885,
+   "medios": [
+    {
+     "src": "hacendado_sauces_shelf_prices_supermarket_945.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      300
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Hacendado",
+     "en": 90,
+     "sale": 137
+    },
+    {
+     "src": "bread_loaves_bakery_shelf_price_tag_supermarket_944.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      510,
+      600,
+      300
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 117,
+     "sale": 133
+    }
+   ]
   },
   {
    "id": "e31_lista",
@@ -991,11 +1800,77 @@
       "t": "Con los que trabaja durante años"
      },
      {
-      "t": "Y a los que compra cantidades enormes"
+      "t": "Y les compra cantidades enormes"
      }
     ]
    },
-   "f1": 6060
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 6060,
+   "medios": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 12,
+     "sale": 54
+    },
+    {
+     "src": "food_factory_conveyor_dough_machine_110.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 54,
+     "sale": 98
+    },
+    {
+     "src": "dairy_factory_cheese_vat_111.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 98,
+     "sale": 135
+    },
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "der",
+     "en": 135,
+     "sale": 173
+    }
+   ]
   },
   {
    "id": "e32_cifra",
@@ -1012,13 +1887,28 @@
     "valor": 30200,
     "sufijo": "M€"
    },
-   "f1": 6180
+   "velo": "lado",
+   "f1": 6180,
+   "fondoClip": [
+    {
+     "src": "tractor_field_aerial_farmer_116.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "olive_grove_aerial_landscape_304.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 57
+    }
+   ]
   },
   {
-   "id": "e33_texto",
+   "id": "e33_plano",
    "f0": 6180,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
@@ -1035,7 +1925,22 @@
      }
     ]
    },
-   "f1": 6258
+   "f1": 6258,
+   "fondoClip": [
+    {
+     "src": "bread_rolls_conveyor_belt_bakery_factory_109.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "truck_container_port_crane_logistics_120.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 37
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e34_columnas",
@@ -1071,7 +1976,7 @@
     },
     "b": {
      "et": "Mercadona",
-     "titulo": "Construir la red otra vez",
+     "titulo": "Rehacer la red",
      "paso": 3,
      "items": [
       {
@@ -1083,13 +1988,89 @@
        "paso": 5
       },
       {
-       "t": "¿Quién fabrica el yogur a su manera?",
+       "t": "¿Quién le fabrica el yogur?",
        "paso": 6
       }
      ]
     }
    },
-   "f1": 6640
+   "f1": 6640,
+   "medios": [
+    {
+     "src": "f_carrefour.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      712,
+      790,
+      252
+     ],
+     "rot": -2,
+     "de": "izq",
+     "en": 12,
+     "sale": 171
+    },
+    {
+     "src": "raw_meat_cutting_board_91.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      712,
+      790,
+      252
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 179,
+     "sale": 254
+    },
+    {
+     "src": "bread_rolls_conveyor_belt_bakery_factory_109.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      712,
+      790,
+      252
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 254,
+     "sale": 310
+    },
+    {
+     "src": "fish_counter_sea_bream_salmon_ice_supermarket_947.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      712,
+      790,
+      252
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 310,
+     "sale": 334
+    },
+    {
+     "src": "milk_pouring_glass_bottle_89.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      712,
+      790,
+      252
+     ],
+     "rot": -2,
+     "de": "der",
+     "en": 334,
+     "sale": 380
+    }
+   ]
   },
   {
    "id": "e35_tarjetas",
@@ -1132,7 +2113,58 @@
      }
     ]
    },
-   "f1": 6950
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 6950,
+   "medios": [
+    {
+     "src": "tractor_mowing_green_field_aerial_farmer_225.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 36,
+     "sale": 134
+    },
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 134,
+     "sale": 236
+    },
+    {
+     "src": "f_porto.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "pie": "Oporto",
+     "en": 236,
+     "sale": 308
+    }
+   ]
   },
   {
    "id": "e36_cita",
@@ -1151,16 +2183,38 @@
     "iniciales": "JR",
     "cuando": "10 de marzo de 2026",
     "desde": 1,
+    "previo": "Y aun así dice esto",
     "partes": [
      "Estamos en Portugal, pero *no conocemos a fondo el país*, no somos portugueses."
     ]
    },
-   "f1": 7103
+   "region": [
+    670,
+    1250
+   ],
+   "f1": 7103,
+   "medios": [
+    {
+     "src": "f_pt_padaria.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "izq",
+     "pie": "Mercadona de Canidelo (Portugal)",
+     "en": 4,
+     "sale": 151
+    }
+   ]
   },
   {
-   "id": "e37_texto",
+   "id": "e37_plano",
    "f0": 7103,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
@@ -1175,11 +2229,21 @@
       "tenue": true
      },
      {
-      "t": "Y es una _decisión suya_."
+      "t": "Y es una _decisión suya_.",
+      "grupo": 0
      }
     ]
    },
-   "f1": 7176
+   "f1": 7176,
+   "fondoClip": [
+    {
+     "src": "mercadona_headquarters_night_sign_lights_934.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e38_cita",
@@ -1198,11 +2262,33 @@
     "iniciales": "JR",
     "cuando": "12 de marzo de 2019",
     "desde": 1,
+    "previo": "Mercadona no compra cadenas",
     "partes": [
      "No vamos a hacer adquisiciones y *abriremos tienda a tienda*."
     ]
    },
-   "f1": 7343
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 7343,
+   "medios": [
+    {
+     "src": "mercadona_store_building_street_corner_918.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 4,
+     "sale": 165
+    }
+   ]
   },
   {
    "id": "e39_columnas",
@@ -1256,7 +2342,69 @@
      ]
     }
    },
-   "f1": 7669
+   "f1": 7669,
+   "medios": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.18,
+     "rate": 1.0,
+     "caja": [
+      90,
+      735,
+      790,
+      250
+     ],
+     "rot": -2,
+     "de": "izq",
+     "en": 54,
+     "sale": 324
+    },
+    {
+     "src": "mercadona_store_facade_hill_logo_960.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      735,
+      250,
+      250
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 261,
+     "sale": 320
+    },
+    {
+     "src": "mercadona_store_facade_street_entrance_951.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1310,
+      735,
+      250,
+      250
+     ],
+     "rot": 1.5,
+     "de": "aba",
+     "en": 266,
+     "sale": 316
+    },
+    {
+     "src": "mercadona_supermarket_modern_building_mountains_961.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1580,
+      735,
+      250,
+      250
+     ],
+     "rot": -1.5,
+     "de": "aba",
+     "en": 271,
+     "sale": 312
+    }
+   ]
   },
   {
    "id": "e40_barras",
@@ -1271,7 +2419,7 @@
     207
    ],
    "d": {
-    "titulo": "Supermercados de Mercadona en Portugal",
+    "titulo": "Tiendas en Portugal",
     "items": [
      {
       "et": "Objetivo de 2019, en siete u ocho años",
@@ -1295,12 +2443,62 @@
      }
     ]
    },
-   "f1": 7923
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 7923,
+   "medios": [
+    {
+     "src": "f_pt_legumes.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 12,
+     "sale": 173
+    },
+    {
+     "src": "f_pt_guimaraes.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Mercadona de Guimarães",
+     "en": 173,
+     "sale": 207
+    },
+    {
+     "src": "construction_site_cranes_timelapse_130.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 207,
+     "sale": 252
+    }
+   ]
   },
   {
-   "id": "e41_texto",
+   "id": "e41_plano",
    "f0": 7923,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
@@ -1315,11 +2513,21 @@
       "tenue": true
      },
      {
-      "t": "un país tarda *más de una década*."
+      "t": "un país tarda *más de una década*.",
+      "grupo": 0
      }
     ]
    },
-   "f1": 7988
+   "f1": 7988,
+   "fondoClip": [
+    {
+     "src": "concrete_frame_building_construction_131.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e42_capitulo",
@@ -1337,7 +2545,17 @@
     "titulo": "Los que salieron *y volvieron*",
     "sub": "Antes lo intentaron los más grandes del mundo"
    },
-   "f1": 8158
+   "velo": "medio",
+   "trans": "cortinilla",
+   "f1": 8158,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e43_mapa",
@@ -1355,13 +2573,7 @@
    ],
    "d": {
     "titulo": "Walmart en _Alemania_",
-    "luces": [
-     {
-      "cod": "DE",
-      "color": "rojo",
-      "paso": 0
-     }
-    ],
+    "sinMapa": true,
     "panel": {
      "items": [
       {
@@ -1387,7 +2599,73 @@
      ]
     }
    },
-   "f1": 8626
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 8626,
+   "medios": [
+    {
+     "src": "f_walmart_de.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Wal-Mart en Pattensen (Alemania), 2006",
+     "en": 12,
+     "sale": 141
+    },
+    {
+     "src": "f_aldi.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Aldi",
+     "en": 151,
+     "sale": 466
+    },
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "aba",
+     "en": 235,
+     "sale": 278
+    },
+    {
+     "src": "f_walmart_vacio.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "der",
+     "pie": "Un antiguo Walmart alemán, vacío (2007)",
+     "en": 278,
+     "sale": 462
+    }
+   ]
   },
   {
    "id": "e44_lista",
@@ -1435,13 +2713,94 @@
      }
     ]
    },
-   "f1": 9231
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 9231,
+   "medios": [
+    {
+     "src": "f_fresh_easy.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Fresh & Easy, la cadena de Tesco en EE. UU.",
+     "en": 12,
+     "sale": 228
+    },
+    {
+     "src": "f_carrefour_china.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Un antiguo Carrefour en Shenzhen (China)",
+     "en": 228,
+     "sale": 420
+    },
+    {
+     "src": "f_dia_francia.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "pie": "Dia en Villeurbanne (Francia)",
+     "en": 420,
+     "sale": 461
+    },
+    {
+     "src": "f_dia.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "der",
+     "pie": "Dia",
+     "en": 461,
+     "sale": 511
+    },
+    {
+     "src": "f_minipreco.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "aba",
+     "pie": "Minipreço, la marca de Dia en Portugal",
+     "en": 511,
+     "sale": 603
+    }
+   ]
   },
   {
-   "id": "e45_texto",
+   "id": "e45_plano",
    "f0": 9231,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "Los que salieron y volvieron",
    "fuente": null,
    "pasos": [
@@ -1456,14 +2815,31 @@
       "tenue": true
      },
      {
-      "t": "Un supermercado es"
+      "t": "Un supermercado es",
+      "grupo": 1
      },
      {
-      "t": "un *negocio de céntimos*."
+      "t": "un *negocio de céntimos*.",
+      "grupo": 1
      }
     ]
    },
-   "f1": 9321
+   "f1": 9321,
+   "fondoClip": [
+    {
+     "src": "woman_paying_checkout_fruit_cashier_100.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "euro_coin_spinning_white_140.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 31
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e46_lista",
@@ -1479,7 +2855,7 @@
     127
    ],
    "d": {
-    "titulo": "Funciona cuando eres muy grande en _un_ sitio",
+    "titulo": "Ser muy grande en _un_ sitio",
     "items": [
      {
       "t": "Compras más barato",
@@ -1495,7 +2871,58 @@
      }
     ]
    },
-   "f1": 9491
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 9491,
+   "medios": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 12,
+     "sale": 102
+    },
+    {
+     "src": "aerial_flatbed_truck_loading_warehouse_326.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 102,
+     "sale": 127
+    },
+    {
+     "src": "mercadona_supermarket_parking_lot_building_966.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "en": 127,
+     "sale": 168
+    }
+   ]
   },
   {
    "id": "e47_versus",
@@ -1522,7 +2949,47 @@
      "paso": 1
     }
    },
-   "f1": 9580
+   "velo": "marca",
+   "f1": 9580,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "medios": [
+    {
+     "src": "f_vacio.jpg",
+     "foto": true,
+     "caja": [
+      90,
+      712,
+      790,
+      252
+     ],
+     "rot": -2,
+     "de": "izq",
+     "en": 12,
+     "sale": 87
+    },
+    {
+     "src": "supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1040,
+      712,
+      790,
+      252
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 53,
+     "sale": 83
+    }
+   ]
   },
   {
    "id": "e48_barras",
@@ -1562,7 +3029,43 @@
      }
     ]
    },
-   "f1": 9748
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 9748,
+   "medios": [
+    {
+     "src": "f_walmart_de.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Walmart · 85",
+     "en": 50,
+     "sale": 166
+    },
+    {
+     "src": "f_kaufland.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "Kaufland · unas 400",
+     "en": 130,
+     "sale": 162
+    }
+   ]
   },
   {
    "id": "e49_cita",
@@ -1590,7 +3093,28 @@
      "paso": 2
     }
    },
-   "f1": 9945
+   "region": [
+    670,
+    1250
+   ],
+   "f1": 9945,
+   "medios": [
+    {
+     "src": "supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4",
+     "desde": 0.0,
+     "rate": 0.921,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "izq",
+     "en": 4,
+     "sale": 195
+    }
+   ]
   },
   {
    "id": "e50_capitulo",
@@ -1608,7 +3132,16 @@
     "titulo": "*No lo necesita*",
     "sub": "Si salir es tan caro, ¿por qué lo hacen las demás?"
    },
-   "f1": 10043
+   "velo": "medio",
+   "trans": "cortinilla",
+   "f1": 10043,
+   "fondoClip": [
+    {
+     "src": "f_bolsa.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e51_flujo",
@@ -1641,13 +3174,21 @@
      }
     ]
    },
-   "f1": 10278
+   "velo": "oscuro",
+   "f1": 10278,
+   "fondoClip": [
+    {
+     "src": "f_bolsa_dentro.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ]
   },
   {
-   "id": "e52_texto",
+   "id": "e52_plano",
    "f0": 10278,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
@@ -1660,11 +3201,21 @@
       "t": "Mercadona no tiene ese problema."
      },
      {
-      "t": "Por *dos* motivos."
+      "t": "Por *dos* motivos.",
+      "grupo": 0
      }
     ]
    },
-   "f1": 10347
+   "f1": 10347,
+   "fondoClip": [
+    {
+     "src": "mercadona_modern_store_glass_entrance_garden_927.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e53_lista",
@@ -1695,24 +3246,91 @@
       "paso": 2
      },
      {
-      "t": "Ningún fondo exige un país nuevo cada dos años",
+      "t": "Ningún fondo le exige un país nuevo",
       "icono": "✓",
       "paso": 3
      },
      {
-      "t": "¿Ocho años para ganar dinero en Portugal? _Puede_",
+      "t": "¿Ocho años para ganar en Portugal? _Puede_",
       "icono": "✓",
       "paso": 4
      }
     ]
    },
-   "f1": 10739
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 10739,
+   "medios": [
+    {
+     "src": "mercadona_headquarters_office_building_cranes_933.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "der",
+     "pie": "Oficinas centrales de Mercadona",
+     "en": 37,
+     "sale": 73
+    },
+    {
+     "src": "f_placa_canidelo.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "aba",
+     "pie": "«…Juan Roig y Hortensia Herrero»",
+     "en": 73,
+     "sale": 222
+    },
+    {
+     "src": "f_bolsa_dentro.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": 2,
+     "de": "arr",
+     "pie": "Bolsa de Madrid",
+     "en": 222,
+     "sale": 303
+    },
+    {
+     "src": "f_pt_canidelo.jpg",
+     "foto": true,
+     "caja": [
+      1230,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "der",
+     "pie": "Canidelo, la primera tienda",
+     "en": 303,
+     "sale": 390
+    }
+   ]
   },
   {
-   "id": "e54_texto",
+   "id": "e54_plano",
    "f0": 10739,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
@@ -1724,18 +3342,40 @@
     "lineas": [
      {
       "t": "2 · El dato que casi nadie mira",
-      "tenue": true,
-      "tam": 70
+      "tenue": true
      },
      {
-      "t": "Sigue creciendo en España."
+      "t": "Sigue creciendo en España.",
+      "grupo": 1
      },
      {
-      "t": "*Sin abrir tiendas*."
+      "t": "*Sin abrir tiendas*.",
+      "grupo": 1
      }
     ]
    },
-   "f1": 10893
+   "f1": 10893,
+   "fondoClip": [
+    {
+     "src": "mercadona_supermercados_de_confianza_sign_wall_962.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "mercadona_sign_pylon_basket_logo_storefront_952.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 58
+    },
+    {
+     "src": "mercadona_delivery_van_store_entrance_street_957.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 112
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e55_versus",
@@ -1776,7 +3416,16 @@
      ]
     }
    },
-   "f1": 11185
+   "velo": "marca",
+   "f1": 11185,
+   "fondoClip": [
+    {
+     "src": "mercadona_round_building_plaza_922.mp4",
+     "desde": 0.0,
+     "rate": 0.625,
+     "en": 0
+    }
+   ]
   },
   {
    "id": "e56_barras",
@@ -1810,14 +3459,51 @@
     ],
     "sello": {
      "t": "×2 en ventas",
-     "paso": 0
+     "paso": 0,
+     "abajo": true
     },
     "nota": {
-     "t": "Cuentas propias, con las cifras de la compañía",
+     "t": "Cuentas propias",
      "paso": 3
     }
    },
-   "f1": 11428
+   "region": [
+    0,
+    1250
+   ],
+   "f1": 11428,
+   "medios": [
+    {
+     "src": "mercadona_store_facade_empty_parking_964.mp4",
+     "desde": 0.1,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      185,
+      600,
+      365
+     ],
+     "rot": 2,
+     "de": "der",
+     "en": 69,
+     "sale": 241
+    },
+    {
+     "src": "hands_checkout_scanner_groceries_bag_101.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1230,
+      580,
+      600,
+      365
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 139,
+     "sale": 237
+    }
+   ]
   },
   {
    "id": "e57_tarjetas",
@@ -1854,7 +3540,54 @@
      }
     ]
    },
-   "f1": 11655
+   "f1": 11655,
+   "medios": [
+    {
+     "src": "mercadona_supermarket_modern_building_mountains_961.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      90,
+      600,
+      560,
+      370
+     ],
+     "rot": -2,
+     "de": "aba",
+     "en": 77,
+     "sale": 225
+    },
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      680,
+      600,
+      560,
+      370
+     ],
+     "rot": 1.5,
+     "de": "aba",
+     "en": 139,
+     "sale": 221
+    },
+    {
+     "src": "seafood_salad_packs_hacendado_fridge_supermarket_949.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "caja": [
+      1270,
+      600,
+      560,
+      370
+     ],
+     "rot": -1.5,
+     "de": "aba",
+     "en": 156,
+     "sale": 217
+    }
+   ]
   },
   {
    "id": "e58_cifra",
@@ -1876,7 +3609,28 @@
     "post": "para rehacer *todos* sus supermercados hasta 2033",
     "pasoPost": 2
    },
-   "f1": 11915
+   "velo": "lado",
+   "f1": 11915,
+   "fondoClip": [
+    {
+     "src": "man_painting_wall_interior_renovation_136.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 128
+    },
+    {
+     "src": "supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 203
+    }
+   ]
   },
   {
    "id": "e59_versus",
@@ -1914,12 +3668,21 @@
      "paso": 3
     }
    },
-   "f1": 12183
+   "velo": "oscuro",
+   "f1": 12183,
+   "fondoClip": [
+    {
+     "src": "mercadona_store_sign_tower_car_park_953.mp4",
+     "desde": 0.0,
+     "rate": 0.678,
+     "en": 0
+    }
+   ]
   },
   {
-   "id": "e60_texto",
+   "id": "e60_plano",
    "f0": 12183,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
@@ -1934,45 +3697,221 @@
       "tenue": true
      },
      {
-      "t": "No se queda en España *por miedo*."
+      "t": "No se queda en España *por miedo*.",
+      "grupo": 0
      }
     ]
    },
-   "f1": 12260
+   "f1": 12260,
+   "fondoClip": [
+    {
+     "src": "mercadona_logo_basket_close_up_sign_965.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
-   "id": "e61_lista",
+   "id": "e61_plano",
    "f0": 12260,
-   "tipo": "lista",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    229,
-    496
+    17,
+    60,
+    105,
+    150
    ],
    "d": {
-    "titulo": "Se queda porque…",
-    "items": [
+    "pos": "ai",
+    "lineas": [
      {
-      "t": "Ya sabe lo que cuesta un país",
-      "sub": "1.230 M€ · 8 años hasta el primer beneficio · un margen que no llega a la tercera parte"
+      "t": "Se queda porque…",
+      "tenue": true,
+      "queda": true
      },
      {
-      "t": "Lo que la hace ganar no cabe en un camión",
-      "sub": "Una red de proveedores de 40 años que hay que empezar otra vez en cada frontera"
+      "t": "ya sabe lo que *cuesta un país*",
+      "queda": true
+     }
+    ],
+    "cifras": [
+     {
+      "t": "1.230 M€",
+      "pie": "de inversión",
+      "paso": 2,
+      "sale": 3
      },
      {
-      "t": "Nadie le obliga a irse",
-      "sub": "Sin bolsa, sin prisa, y vendiendo el doble que hace diez años"
+      "t": "8 años",
+      "pie": "hasta el primer beneficio",
+      "paso": 3,
+      "sale": 4,
+      "color": "acento"
+     },
+     {
+      "t": "< 1/3",
+      "pie": "del margen que tiene en casa",
+      "paso": 4
      }
     ]
    },
-   "f1": 12943
+   "f1": 12485,
+   "fondoClip": [
+    {
+     "src": "aerial_crane_building_site_346.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "euro_50_banknotes_fan_348.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 60
+    },
+    {
+     "src": "f_pt_canidelo.jpg",
+     "foto": true,
+     "en": 105
+    },
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 150
+    }
+   ],
+   "velo": "plano"
   },
   {
-   "id": "e62_cita",
+   "id": "e62_plano",
+   "f0": 12485,
+   "tipo": "plano",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": null,
+   "pasos": [
+    4,
+    35,
+    115,
+    182
+   ],
+   "d": {
+    "lineas": [
+     {
+      "t": "Lo que la hace ganar",
+      "grupo": 0,
+      "tam": 100
+     },
+     {
+      "t": "*no cabe en un camión*",
+      "grupo": 0,
+      "tam": 100
+     },
+     {
+      "t": "Una red de proveedores de _40 años_",
+      "grupo": 1,
+      "tam": 84
+     },
+     {
+      "t": "que en cada frontera hay que empezar otra vez",
+      "grupo": 1,
+      "tam": 62
+     }
+    ]
+   },
+   "f1": 12752,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "food_factory_conveyor_dough_machine_110.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 115
+    },
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 182
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_plano",
+   "f0": 12752,
+   "tipo": "plano",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": null,
+   "pasos": [
+    4,
+    52,
+    69,
+    87
+   ],
+   "d": {
+    "lineas": [
+     {
+      "t": "Y nadie le obliga a irse.",
+      "grupo": 0,
+      "tam": 110
+     },
+     {
+      "t": "Sin bolsa.",
+      "grupo": 1,
+      "color": "blanco",
+      "tam": 110
+     },
+     {
+      "t": "Sin prisa.",
+      "grupo": 1,
+      "color": "blanco",
+      "tam": 110
+     },
+     {
+      "t": "Y vendiendo *el doble* que hace diez años.",
+      "grupo": 1,
+      "tam": 74
+     }
+    ]
+   },
+   "f1": 12943,
+   "fondoClip": [
+    {
+     "src": "mercadona_headquarters_night_sign_lights_934.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "f_bolsa.jpg",
+     "foto": true,
+     "en": 52
+    },
+    {
+     "src": "supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 87
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_cita",
    "f0": 12943,
    "tipo": "cita",
    "fondo": "oscuro",
@@ -1989,6 +3928,7 @@
     "iniciales": "JR",
     "cuando": "marzo de 2023",
     "desde": 1,
+    "previo": "¿Habrá tercer país?",
     "partes": [
      "Lo del tercer país *llegará*, pero en los próximos dos o tres años no."
     ],
@@ -1997,12 +3937,34 @@
      "paso": 2
     }
    },
-   "f1": 13121
+   "region": [
+    670,
+    1250
+   ],
+   "f1": 13121,
+   "medios": [
+    {
+     "src": "mercadona_headquarters_office_building_cranes_933.mp4",
+     "desde": 0.1,
+     "rate": 1.0,
+     "caja": [
+      90,
+      185,
+      600,
+      760
+     ],
+     "rot": -2,
+     "de": "izq",
+     "pie": "Oficinas centrales de Mercadona",
+     "en": 4,
+     "sale": 176
+    }
+   ]
   },
   {
-   "id": "e63_texto",
+   "id": "e65_plano",
    "f0": 13121,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
@@ -2011,23 +3973,33 @@
     26
    ],
    "d": {
+    "pos": "c",
     "lineas": [
      {
       "t": "Y eso, de momento,",
       "tenue": true
      },
      {
-      "t": "*no ha pasado*."
+      "t": "*no ha pasado*.",
+      "grupo": 0
      }
     ]
    },
-   "f1": 13172
+   "f1": 13172,
+   "fondoClip": [
+    {
+     "src": "f_pt_guimaraes.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
-   "id": "e64_texto",
+   "id": "e66_plano",
    "f0": 13172,
-   "tipo": "texto",
-   "fondo": "oscuro",
+   "tipo": "plano",
+   "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
@@ -2041,16 +4013,26 @@
       "tenue": true
      },
      {
-      "t": "porque no saben estarse quietas."
+      "t": "porque no saben estarse quietas.",
+      "grupo": 0
      }
     ]
    },
-   "f1": 13251
+   "f1": 13251,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   },
   {
-   "id": "e65_texto",
+   "id": "e67_plano",
    "f0": 13251,
-   "tipo": "texto",
+   "tipo": "plano",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
@@ -2060,20 +4042,123 @@
     46
    ],
    "d": {
+    "pos": "c",
+    "acumula": true,
     "lineas": [
      {
       "t": "Mercadona ha hecho de"
      },
      {
-      "t": "*quedarse en casa*"
+      "t": "*quedarse en casa*",
+      "color": "blanco"
      },
      {
       "t": "su mejor negocio."
      }
     ]
    },
-   "f1": 13387
+   "f1": 13387,
+   "fondoClip": [
+    {
+     "src": "mercadona_store_facade_hill_logo_960.mp4",
+     "desde": 0.4,
+     "rate": 0.6,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
   }
  ],
- "tiempos_reales": true
+ "tiempos_reales": true,
+ "medios": {
+  "mercadona_store_facade_hill_logo_960.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_facade_hill_logo_960.mp4",
+  "supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4": "parallax2/proyecto/stock_mercadona/supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4",
+  "hands_checkout_scanner_groceries_bag_101.mp4": "parallax2/proyecto/stock_mercadona/hands_checkout_scanner_groceries_bag_101.mp4",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "f_lidl.jpg": "vox/media/mercadona_fuera/f_lidl.jpg",
+  "mercadona_store_sign_tower_car_park_953.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_sign_tower_car_park_953.mp4",
+  "mercadona_headquarters_night_sign_lights_934.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_night_sign_lights_934.mp4",
+  "euro_50_banknotes_fan_348.mp4": "parallax2/proyecto/stock_mercadona/euro_50_banknotes_fan_348.mp4",
+  "mercadona_store_facade_street_entrance_951.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_facade_street_entrance_951.mp4",
+  "mercadona_headquarters_office_building_cranes_933.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_office_building_cranes_933.mp4",
+  "euro_banknotes_hanging_clips_139.mp4": "parallax2/proyecto/stock_mercadona/euro_banknotes_hanging_clips_139.mp4",
+  "f_pt_guimaraes.jpg": "vox/media/mercadona_fuera/f_pt_guimaraes.jpg",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "aerial_highway_lanes_trucks_325.mp4": "parallax2/proyecto/stock_mercadona/aerial_highway_lanes_trucks_325.mp4",
+  "aerial_roundabout_city_traffic_152.mp4": "parallax2/proyecto/stock_mercadona/aerial_roundabout_city_traffic_152.mp4",
+  "fish_counter_sea_bream_salmon_ice_supermarket_947.mp4": "parallax2/proyecto/stock_mercadona/fish_counter_sea_bream_salmon_ice_supermarket_947.mp4",
+  "f_porto.jpg": "vox/media/mercadona_fuera/f_porto.jpg",
+  "mercadona_logistics_center_warehouse_docks_green_field_968.mp4": "parallax2/proyecto/stock_mercadona/mercadona_logistics_center_warehouse_docks_green_field_968.mp4",
+  "truck_highway_bridge_delivery_119.mp4": "parallax2/proyecto/stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+  "mercadona_modern_store_glass_entrance_garden_927.mp4": "parallax2/proyecto/stock_mercadona/mercadona_modern_store_glass_entrance_garden_927.mp4",
+  "hand_drawing_building_plan_chalkboard_124.mp4": "parallax2/proyecto/stock_mercadona/hand_drawing_building_plan_chalkboard_124.mp4",
+  "woman_paying_checkout_fruit_cashier_100.mp4": "parallax2/proyecto/stock_mercadona/woman_paying_checkout_fruit_cashier_100.mp4",
+  "construction_site_cranes_timelapse_130.mp4": "parallax2/proyecto/stock_mercadona/construction_site_cranes_timelapse_130.mp4",
+  "f_pt_padaria.jpg": "vox/media/mercadona_fuera/f_pt_padaria.jpg",
+  "f_pt_legumes.jpg": "vox/media/mercadona_fuera/f_pt_legumes.jpg",
+  "mercadona_totem_sign_blue_sky_963.mp4": "parallax2/proyecto/stock_mercadona/mercadona_totem_sign_blue_sky_963.mp4",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "mercadona_sign_pylon_basket_logo_storefront_952.mp4": "parallax2/proyecto/stock_mercadona/mercadona_sign_pylon_basket_logo_storefront_952.mp4",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "f_porto2.jpg": "vox/media/mercadona_fuera/f_porto2.jpg",
+  "f_pt_canidelo.jpg": "vox/media/mercadona_fuera/f_pt_canidelo.jpg",
+  "f_placa_canidelo.jpg": "vox/media/mercadona_fuera/f_placa_canidelo.jpg",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "aerial_crane_building_site_346.mp4": "parallax2/proyecto/stock_mercadona/aerial_crane_building_site_346.mp4",
+  "concrete_frame_building_construction_131.mp4": "parallax2/proyecto/stock_mercadona/concrete_frame_building_construction_131.mp4",
+  "mercadona_logistics_block_warehouse_loading_docks_field_967.mp4": "parallax2/proyecto/stock_mercadona/mercadona_logistics_block_warehouse_loading_docks_field_967.mp4",
+  "euro_coin_spinning_white_140.mp4": "parallax2/proyecto/stock_mercadona/euro_coin_spinning_white_140.mp4",
+  "shopping_carts_supermarket_floor_shoppers_85.mp4": "parallax2/proyecto/stock_mercadona/shopping_carts_supermarket_floor_shoppers_85.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "woman_paying_self_checkout_supermarket_tote_bag_218.mp4": "parallax2/proyecto/stock_mercadona/woman_paying_self_checkout_supermarket_tote_bag_218.mp4",
+  "f_pt_carne.jpg": "vox/media/mercadona_fuera/f_pt_carne.jpg",
+  "supermarket_aisle_shelves_products_mercadona_interior_923.mp4": "parallax2/proyecto/stock_mercadona/supermarket_aisle_shelves_products_mercadona_interior_923.mp4",
+  "produce_cloth_bag_orange_groceries_106.mp4": "parallax2/proyecto/stock_mercadona/produce_cloth_bag_orange_groceries_106.mp4",
+  "f_lidl_malaga.jpg": "vox/media/mercadona_fuera/f_lidl_malaga.jpg",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "excavator_digging_construction_137.mp4": "parallax2/proyecto/stock_mercadona/excavator_digging_construction_137.mp4",
+  "worker_cleaning_industrial_floor_warehouse_127.mp4": "parallax2/proyecto/stock_mercadona/worker_cleaning_industrial_floor_warehouse_127.mp4",
+  "seafood_salad_packs_hacendado_fridge_supermarket_949.mp4": "parallax2/proyecto/stock_mercadona/seafood_salad_packs_hacendado_fridge_supermarket_949.mp4",
+  "fresh_fish_hake_crate_ice_price_supermarket_946.mp4": "parallax2/proyecto/stock_mercadona/fresh_fish_hake_crate_ice_price_supermarket_946.mp4",
+  "mercadona_supermarket_parking_lot_building_966.mp4": "parallax2/proyecto/stock_mercadona/mercadona_supermarket_parking_lot_building_966.mp4",
+  "mercadona_store_facade_empty_parking_964.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_facade_empty_parking_964.mp4",
+  "bottling_line_factory_conveyor_112.mp4": "parallax2/proyecto/stock_mercadona/bottling_line_factory_conveyor_112.mp4",
+  "hacendado_sauces_shelf_prices_supermarket_945.mp4": "parallax2/proyecto/stock_mercadona/hacendado_sauces_shelf_prices_supermarket_945.mp4",
+  "bread_loaves_bakery_shelf_price_tag_supermarket_944.mp4": "parallax2/proyecto/stock_mercadona/bread_loaves_bakery_shelf_price_tag_supermarket_944.mp4",
+  "packaging_conveyor_rollers_cardboard_113.mp4": "parallax2/proyecto/stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+  "food_factory_conveyor_dough_machine_110.mp4": "parallax2/proyecto/stock_mercadona/food_factory_conveyor_dough_machine_110.mp4",
+  "dairy_factory_cheese_vat_111.mp4": "parallax2/proyecto/stock_mercadona/dairy_factory_cheese_vat_111.mp4",
+  "trucks_highway_aerial_parking_logistics_122.mp4": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+  "tractor_field_aerial_farmer_116.mp4": "parallax2/proyecto/stock_mercadona/tractor_field_aerial_farmer_116.mp4",
+  "olive_grove_aerial_landscape_304.mp4": "parallax2/proyecto/stock_mercadona/olive_grove_aerial_landscape_304.mp4",
+  "bread_rolls_conveyor_belt_bakery_factory_109.mp4": "parallax2/proyecto/stock_mercadona/bread_rolls_conveyor_belt_bakery_factory_109.mp4",
+  "truck_container_port_crane_logistics_120.mp4": "parallax2/proyecto/stock_mercadona/truck_container_port_crane_logistics_120.mp4",
+  "f_carrefour.jpg": "vox/media/mercadona_fuera/f_carrefour.jpg",
+  "raw_meat_cutting_board_91.mp4": "parallax2/proyecto/stock_mercadona/raw_meat_cutting_board_91.mp4",
+  "milk_pouring_glass_bottle_89.mp4": "parallax2/proyecto/stock_mercadona/milk_pouring_glass_bottle_89.mp4",
+  "tractor_mowing_green_field_aerial_farmer_225.mp4": "parallax2/proyecto/stock_mercadona/tractor_mowing_green_field_aerial_farmer_225.mp4",
+  "mercadona_store_building_street_corner_918.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_building_street_corner_918.mp4",
+  "elderly_people_meeting_table_documents_132.mp4": "parallax2/proyecto/stock_mercadona/elderly_people_meeting_table_documents_132.mp4",
+  "mercadona_supermarket_modern_building_mountains_961.mp4": "parallax2/proyecto/stock_mercadona/mercadona_supermarket_modern_building_mountains_961.mp4",
+  "container_port_reach_stacker_logistics_223.mp4": "parallax2/proyecto/stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
+  "f_walmart_de.jpg": "vox/media/mercadona_fuera/f_walmart_de.jpg",
+  "f_aldi.jpg": "vox/media/mercadona_fuera/f_aldi.jpg",
+  "empty_shopping_arcade_corridor_84.mp4": "parallax2/proyecto/stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
+  "f_walmart_vacio.jpg": "vox/media/mercadona_fuera/f_walmart_vacio.jpg",
+  "f_fresh_easy.jpg": "vox/media/mercadona_fuera/f_fresh_easy.jpg",
+  "f_carrefour_china.jpg": "vox/media/mercadona_fuera/f_carrefour_china.jpg",
+  "f_dia_francia.jpg": "vox/media/mercadona_fuera/f_dia_francia.jpg",
+  "f_dia.jpg": "vox/media/mercadona_fuera/f_dia.jpg",
+  "f_minipreco.jpg": "vox/media/mercadona_fuera/f_minipreco.jpg",
+  "aerial_flatbed_truck_loading_warehouse_326.mp4": "parallax2/proyecto/stock_mercadona/aerial_flatbed_truck_loading_warehouse_326.mp4",
+  "f_vacio.jpg": "vox/media/mercadona_fuera/f_vacio.jpg",
+  "f_kaufland.jpg": "vox/media/mercadona_fuera/f_kaufland.jpg",
+  "f_bolsa.jpg": "vox/media/mercadona_fuera/f_bolsa.jpg",
+  "f_bolsa_dentro.jpg": "vox/media/mercadona_fuera/f_bolsa_dentro.jpg",
+  "mercadona_supermercados_de_confianza_sign_wall_962.mp4": "parallax2/proyecto/stock_mercadona/mercadona_supermercados_de_confianza_sign_wall_962.mp4",
+  "mercadona_delivery_van_store_entrance_street_957.mp4": "parallax2/proyecto/stock_mercadona/mercadona_delivery_van_store_entrance_street_957.mp4",
+  "mercadona_round_building_plaza_922.mp4": "parallax2/proyecto/stock_mercadona/mercadona_round_building_plaza_922.mp4",
+  "man_painting_wall_interior_renovation_136.mp4": "parallax2/proyecto/stock_mercadona/man_painting_wall_interior_renovation_136.mp4",
+  "mercadona_logo_basket_close_up_sign_965.mp4": "parallax2/proyecto/stock_mercadona/mercadona_logo_basket_close_up_sign_965.mp4"
+ }
 }

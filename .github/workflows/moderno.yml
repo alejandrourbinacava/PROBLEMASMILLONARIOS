@@ -49,6 +49,20 @@ jobs:
           npm ci
           npx remotion browser ensure
 
+      # El metraje no vive en el repo: cada carpeta `stock_<tema>` esta en la
+      # release `stock-<tema>`. El spec dice que ficheros usa (`medios`); se
+      # baja solo lo que haga falta, con el mismo `traer_stock.py` de siempre.
+      - name: Metraje
+        run: |
+          python3 - "vox/${{ steps.e.outputs.ep }}.spec.json" <<'PY'
+          import json, sys
+          spec = json.load(open(sys.argv[1], encoding="utf-8"))
+          clips = [r.split("parallax2/proyecto/", 1)[1] for r in spec.get("medios", {}).values() if r.startswith("parallax2/proyecto/stock")]
+          json.dump({"escenas": [{"clip": c} for c in clips]}, open("parallax2/_stock_moderno.json", "w"))
+          print(len(clips), "clips de stock")
+          PY
+          python3 parallax2/traer_stock.py _stock_moderno.json
+
       - name: Render
         working-directory: remotion
         run: |

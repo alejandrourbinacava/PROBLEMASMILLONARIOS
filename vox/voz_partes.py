@@ -18,7 +18,7 @@ import sys
 
 import numpy as np
 
-SR_GTA = r"C:\Users\aleja\Desktop\Sr GTA"
+SR_GTA = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "Sr GTA"))
 PY = os.path.join(SR_GTA, "tools", "qwen-venv", "Scripts", "python.exe")
 GAP_PAR = 0.45
 RATE = 24000

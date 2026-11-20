@@ -53,3 +53,9 @@ build/
 # entonces lo baja `pool_<tema>.py` en la misma tanda.
 parallax2/proyecto/stock_*/
 parallax2/proyecto/stock/
+
+# motor moderno: carpetas de trabajo del render y de la busqueda de fotos
+remotion/.publica_vox/
+remotion/.bundle_vox/
+parallax2/_fotos/
+parallax2/_stock_moderno.json

@@ -27,10 +27,19 @@ export type Escena = {
   fuente?: string;
   pasos?: number[];
   d: Record<string, any>;
+  /** metraje a sangre detras de la escena (uno o varios clips, con cortes) y el velo que lleva encima */
+  fondoClip?: any[];
+  velo?: 'plano' | 'oscuro' | 'marca' | 'lado';
+  /** recortes (foto o clip) que entran y salen por encima */
+  medios?: any[];
+  /** franja horizontal [x, ancho] en la que se compone el grafico; el resto queda para los recortes */
+  region?: [number, number];
+  /** como entra: 'cortinilla' tapa el corte con dos bandas de color */
+  trans?: string;
 };
-export type Spec = {fps: number; total: number; marca: Marca; escenas: Escena[]};
+export type Spec = {fps: number; total: number; marca: Marca; escenas: Escena[]; medios?: Record<string, string>};
 /** Lo que recibe cada tipo de escena. `p(k)` = fotogramas desde que arranco el paso k (negativo si aun no). */
-export type EP = {d: Record<string, any>; t: number; dur: number; p: (k: number) => number};
+export type EP = {d: Record<string, any>; t: number; dur: number; p: (k: number) => number; ancho: number};
 
 // ---------------------------------------------------------------- fuentes
 const CARAS: [string, string][] = [
@@ -126,8 +135,8 @@ export const Ficha: React.FC<{t: number; cifra: string; pie: string; color?: str
 );
 
 /** Tarjeta oscura que ocupa casi todo el cuadro. */
-export const Tarjeta: React.FC<{t: number; children: React.ReactNode; pad?: string}> = ({t, children, pad = '54px 70px'}) => (
-  <div style={{position: 'absolute', left: 90, top: 150, right: 90, bottom: 118, borderRadius: 40, background: 'rgba(8,16,12,0.86)', border: '2px solid rgba(255,255,255,0.12)', boxShadow: '0 30px 90px rgba(0,0,0,0.5)', padding: pad, opacity: c01(t / 5), transform: `scale(${0.95 + 0.05 * suave(t / 12)})`}}>
+export const Tarjeta: React.FC<{t: number; children: React.ReactNode; pad?: string; bajo?: number}> = ({t, children, pad = '54px 70px', bajo = 118}) => (
+  <div style={{position: 'absolute', left: 90, top: 150, right: 90, bottom: bajo, borderRadius: 40, background: 'rgba(8,16,12,0.86)', border: '2px solid rgba(255,255,255,0.12)', boxShadow: '0 30px 90px rgba(0,0,0,0.5)', padding: pad, opacity: c01(t / 5), transform: `scale(${0.95 + 0.05 * suave(t / 12)})`}}>
     {children}
   </div>
 );

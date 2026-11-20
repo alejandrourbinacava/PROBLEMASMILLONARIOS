@@ -1,4 +1,5 @@
 import React from 'react';
+import {Plano} from './capas';
 import {AMARILLO, EP, Ficha, Marcado, NEGRO, ROJO, Rico, Salta, Sube, Tarjeta, Titulo, atras, c01, expo, miles, suave, useMarca} from './base';
 
 /**
@@ -13,12 +14,12 @@ const useColor = () => {
 };
 
 // ------------------------------------------------------------------ cifra
-const Cifra: React.FC<EP> = ({d, p}) => {
+const Cifra: React.FC<EP> = ({d, p, ancho}) => {
   const m = useMarca();
   const tv = p(d.pasoValor ?? 0);
   const v = d.valor * expo((tv - 6) / 32);
   const txt = (d.prefijo ?? '') + miles(v, d.dec ?? 0);
-  const tam = d.tam ?? (txt.length > 6 ? 250 : 300);
+  const tam = d.tam ?? Math.round((txt.length > 6 ? 250 : 300) * Math.min(1, ancho / 1700));
   return (
     <>
       <div style={{position: 'absolute', left: 90, top: 190, right: 90, color: '#fff'}}>
@@ -67,15 +68,16 @@ const Texto: React.FC<EP> = ({d, p}) => {
 };
 
 // ------------------------------------------------------------------ cita
-const Cita: React.FC<EP> = ({d, p}) => {
+const Cita: React.FC<EP> = ({d, p, ancho}) => {
   const m = useMarca();
   const partes: string[] = d.partes;
   const largo = partes.join(' ').length;
-  const tam = largo < 70 ? 98 : largo < 130 ? 80 : largo < 200 ? 64 : 54;
+  const compacto = ancho < 1500;
+  const tam = Math.round((largo < 70 ? 98 : largo < 130 ? 80 : largo < 200 ? 64 : 54) * (compacto ? 0.92 : 1));
   return (
-    <Tarjeta t={p(0)} pad="60px 76px">
+    <Tarjeta t={p(0)} pad={compacto ? '50px 60px' : '60px 76px'} bajo={d.bajo}>
       <div style={{display: 'flex', gap: 60, height: '100%'}}>
-        <div style={{width: 330, flex: 'none', display: 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
+        <div style={{width: 330, flex: 'none', display: compacto ? 'none' : 'flex', flexDirection: 'column', alignItems: 'flex-start'}}>
           <Salta t={p(0) - 3}>
             <div style={{width: 210, height: 210, borderRadius: 105, background: `linear-gradient(135deg, ${m.claro}, ${m.color})`, display: 'flex', alignItems: 'center', justifyContent: 'center', font: "92px 'M Archivo'", color: '#fff', border: '6px solid rgba(255,255,255,0.9)'}}>{d.iniciales}</div>
           </Salta>
@@ -87,6 +89,9 @@ const Cita: React.FC<EP> = ({d, p}) => {
         </div>
         <div style={{flex: 1, position: 'relative'}}>
           <div style={{font: "260px/0.7 'M Serif'", fontWeight: 900, color: m.claro, height: 110, opacity: c01(p(0) / 6)}}>“</div>
+          {d.previo && (
+            <div style={{position: 'absolute', left: 0, right: 0, top: 118, font: "58px/1.16 'M Black'", color: 'rgba(255,255,255,0.5)', opacity: c01((p(0) - 4) / 8) * (1 - c01((p(d.desde ?? 0) + 4) / 6)), transform: `translateY(${-c01((p(d.desde ?? 0) + 4) / 8) * 30}px)`}}>{d.previo}</div>
+          )}
           {partes.map((parte, k) => {
             let n = 0;
             const t = p(k + (d.desde ?? 0));
@@ -108,6 +113,15 @@ const Cita: React.FC<EP> = ({d, p}) => {
               </div>
             );
           })}
+          {compacto && (
+            <div style={{position: 'absolute', left: 170, top: 6, display: 'flex', alignItems: 'center', gap: 20, opacity: c01((p(0) - 8) / 8)}}>
+              <div style={{width: 10, height: 74, borderRadius: 5, background: m.acento}} />
+              <div>
+                <div style={{font: "44px/1.1 'M Black'", color: '#fff'}}>{d.autor}</div>
+                <div style={{font: "27px/1.25 'M Medium'", color: 'rgba(255,255,255,0.8)', marginTop: 4}}>{d.cargo} · <span style={{color: m.acento}}>{d.cuando}</span></div>
+              </div>
+            </div>
+          )}
           {d.nota && (
             <div style={{position: 'absolute', left: 0, bottom: 0, font: "44px/1.25 'M Semi'", color: 'rgba(255,255,255,0.86)', opacity: c01(p(d.nota.paso ?? 0) / 8)}}>{d.nota.t}</div>
           )}
@@ -160,7 +174,7 @@ const Mapa: React.FC<EP> = ({d, p, t}) => {
           </div>
         )}
       </div>
-      <div style={{position: 'absolute', left: 940, top: 150, width: 7 * (L + G), height: 7 * (L + G)}}>
+      <div style={{position: 'absolute', left: 940, top: 150, width: 7 * (L + G), height: 7 * (L + G), display: d.sinMapa ? 'none' : undefined}}>
         {PAISES.map(([cod, cx, cy]) => {
           const luz = luces[cod];
           const ti = t - 6 - (cx + cy) * 2;
@@ -190,13 +204,13 @@ const Mapa: React.FC<EP> = ({d, p, t}) => {
 };
 
 // ------------------------------------------------------------------ barras
-const Barras: React.FC<EP> = ({d, p}) => {
+const Barras: React.FC<EP> = ({d, p, ancho}) => {
   const col = useColor();
   const items: any[] = d.items;
   const max = d.max ?? Math.max(...items.map((x) => x.valor));
   const alto = items.length <= 2 ? 104 : items.length === 3 ? 84 : 66;
   return (
-    <Tarjeta t={p(0)}>
+    <Tarjeta t={p(0)} bajo={d.bajo}>
       <Titulo t={p(0) - 3} tam={56} style={{marginBottom: items.length > 3 ? 26 : 40}}><Rico texto={d.titulo} t={p(0)} /></Titulo>
       {items.map((x, i) => {
         const tt = p(x.paso ?? i);
@@ -205,14 +219,14 @@ const Barras: React.FC<EP> = ({d, p}) => {
           <div key={i} style={{marginBottom: items.length > 3 ? 24 : 38, opacity: c01(tt / 4)}}>
             <div style={{font: `${items.length > 3 ? 30 : 36}px 'M Semi'`, color: 'rgba(255,255,255,0.86)', marginBottom: 10}}>{x.et}</div>
             <div style={{display: 'flex', alignItems: 'center', gap: 28}}>
-              <div style={{height: alto, width: Math.max(12, (x.valor / max) * 1080 * u), borderRadius: 18, background: col(x.color)}} />
+              <div style={{height: alto, width: Math.max(12, (x.valor / max) * (ancho - 840) * u), borderRadius: 18, background: col(x.color)}} />
               <div style={{font: `${alto}px/1 'M Archivo'`, color: '#fff', whiteSpace: 'nowrap'}}>{x.texto}</div>
             </div>
           </div>
         );
       })}
       {d.sello && (
-        <div style={{position: 'absolute', right: 70, top: 50, background: AMARILLO, color: NEGRO, borderRadius: 22, padding: '16px 30px', font: "56px 'M Archivo'", opacity: c01(p(d.sello.paso) / 4), transform: `scale(${0.5 + 0.5 * atras(p(d.sello.paso) / 12, 2.4)}) rotate(-3deg)`}}>{d.sello.t}</div>
+        <div style={{position: 'absolute', right: ancho < 1500 ? 50 : 70, top: d.sello.abajo ? undefined : 44, bottom: d.sello.abajo ? 40 : undefined, background: AMARILLO, color: NEGRO, borderRadius: 22, padding: '16px 30px', font: "56px 'M Archivo'", opacity: c01(p(d.sello.paso) / 4), transform: `scale(${0.5 + 0.5 * atras(p(d.sello.paso) / 12, 2.4)}) rotate(-3deg)`}}>{d.sello.t}</div>
       )}
       {d.pregunta && (
         <div style={{position: 'absolute', left: 70, bottom: 46, right: 70, font: "84px/1 'M Black'", color: '#fff', opacity: c01(p(d.pregunta.paso) / 5), transform: `translateY(${(1 - atras(p(d.pregunta.paso) / 14)) * 60}px)`}}>
@@ -258,12 +272,12 @@ const Versus: React.FC<EP> = ({d, p}) => {
 };
 
 // ------------------------------------------------------------------ linea de tiempo
-const Linea: React.FC<EP> = ({d, p}) => {
+const Linea: React.FC<EP> = ({d, p, ancho}) => {
   const m = useMarca();
   const hitos: any[] = d.hitos;
   const n = hitos.length;
   const x0 = 280;
-  const x1 = 1640;
+  const x1 = ancho - 280;
   const y = 600;
   const paso = n > 1 ? (x1 - x0) / (n - 1) : 0;
   const ultimo = Math.max(...hitos.map((h) => (p(h.paso) > 0 ? hitos.indexOf(h) : -1)));
@@ -325,12 +339,12 @@ const Lista: React.FC<EP> = ({d, p}) => {
 };
 
 // ------------------------------------------------------------------ documento
-const Documento: React.FC<EP> = ({d, p}) => {
+const Documento: React.FC<EP> = ({d, p, ancho}) => {
   const m = useMarca();
   const t = p(0);
   return (
     <>
-      <div style={{position: 'absolute', left: 230, right: 230, top: 150, bottom: 130, background: '#FBFAF6', borderRadius: 26, padding: '54px 70px', color: '#16181A', boxShadow: '0 40px 100px rgba(0,0,0,0.45)', opacity: c01(t / 4), transform: `translateY(${(1 - atras(t / 14, 1.2)) * 120}px) rotate(${-1.2 + (1 - suave(t / 14)) * 3}deg)`}}>
+      <div style={{position: 'absolute', left: ancho < 1500 ? 90 : 230, right: ancho < 1500 ? 40 : 230, top: 150, bottom: d.bajo ?? 130, background: '#FBFAF6', borderRadius: 26, padding: '54px 70px', color: '#16181A', boxShadow: '0 40px 100px rgba(0,0,0,0.45)', opacity: c01(t / 4), transform: `translateY(${(1 - atras(t / 14, 1.2)) * 120}px) rotate(${-1.2 + (1 - suave(t / 14)) * 3}deg)`}}>
         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', borderBottom: '4px solid #16181A', paddingBottom: 16}}>
           <div style={{font: "44px 'M Black'"}}>{d.cabecera}</div>
           <div style={{font: "28px 'M Semi'", color: '#5B6168', letterSpacing: 2}}>{d.fecha}</div>
@@ -361,7 +375,7 @@ const Capitulo: React.FC<EP> = ({d, p}) => {
         <div style={{height: 6, width: 300 * suave((t - 4) / 16), background: '#fff', borderRadius: 3}} />
       </div>
       <Sube t={t - 5} dy={90} style={{marginTop: 30}}>
-        <div style={{font: `${d.titulo.length > 26 ? 128 : 160}px/1.02 'M Black'`, letterSpacing: -3}}><Rico texto={d.titulo} t={t} t0={18} /></div>
+        <div style={{font: `${d.tam ?? (d.titulo.length > 26 ? 128 : 160)}px/1.02 'M Black'`, letterSpacing: -3}}><Rico texto={d.titulo} t={t} t0={18} /></div>
       </Sube>
       {d.sub && (
         <Sube t={p(d.pasoSub ?? 1)} style={{marginTop: 34}}>
@@ -430,7 +444,7 @@ const Anillos: React.FC<EP> = ({d, p}) => {
                   <circle cx={R + 50} cy={R + 50} r={R} fill="none" stroke="rgba(8,16,12,0.55)" strokeWidth={70} />
                   <circle cx={R + 50} cy={R + 50} r={R} fill="none" stroke={col} strokeWidth={70} strokeDasharray={`${C * fr} ${C}`} />
                 </svg>
-                <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', font: `${items.length > 1 ? 62 : 104}px 'M Archivo'`}}>{x.texto}</div>
+                <div style={{position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', font: `${items.length > 1 ? 62 : String(x.texto).length > 4 ? 80 : 104}px 'M Archivo'`, whiteSpace: 'nowrap'}}>{x.texto}</div>
               </div>
               <div style={{maxWidth: items.length > 1 ? 330 : 820}}>
                 <div style={{font: `${items.length > 1 ? 52 : 72}px/1.08 'M Black'`}}><Rico texto={x.pie} t={t} t0={16} /></div>
@@ -455,15 +469,15 @@ const Anillos: React.FC<EP> = ({d, p}) => {
 };
 
 // ------------------------------------------------------------------ tarjetas
-const Tarjetas: React.FC<EP> = ({d, p}) => {
+const Tarjetas: React.FC<EP> = ({d, p, ancho: an}) => {
   const m = useMarca();
   const items: any[] = d.items;
   const cols = d.cols ?? (items.length === 4 ? 2 : items.length);
-  const ancho = Math.floor((1740 - (cols - 1) * 30) / cols);
+  const ancho = Math.floor((an - 180 - (cols - 1) * 30) / cols);
   return (
     <>
       {d.titulo && <div style={{position: 'absolute', left: 90, top: 160, right: 90}}><Titulo t={p(0) - 2} tam={66}><Rico texto={d.titulo} t={p(0)} /></Titulo></div>}
-      <div style={{position: 'absolute', left: 90, top: d.titulo ? 300 : 230, width: 1740, display: 'flex', flexWrap: 'wrap', gap: 30}}>
+      <div style={{position: 'absolute', left: 90, top: d.titulo ? 300 : 230, width: an - 180, display: 'flex', flexWrap: 'wrap', gap: 30}}>
         {items.map((x, i) => (
           <Ficha key={i} t={p(x.paso ?? i)} cifra={x.cifra} pie={x.pie} ancho={ancho} grande color={x.color === 'acento' ? m.acento : x.color === 'oscuro' ? 'rgba(8,16,12,0.8)' : undefined} />
         ))}
@@ -506,5 +520,5 @@ const Columnas: React.FC<EP> = ({d, p}) => {
 
 export const TIPOS: Record<string, React.FC<EP>> = {
   cifra: Cifra, texto: Texto, cita: Cita, mapa: Mapa, barras: Barras, versus: Versus, linea: Linea, lista: Lista,
-  documento: Documento, capitulo: Capitulo, flujo: Flujo, anillos: Anillos, tarjetas: Tarjetas, columnas: Columnas,
+  documento: Documento, capitulo: Capitulo, flujo: Flujo, anillos: Anillos, tarjetas: Tarjetas, columnas: Columnas, plano: Plano,
 };

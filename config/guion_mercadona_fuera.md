@@ -217,10 +217,10 @@ Mercadona ha hecho de quedarse en casa su mejor negocio.
 
 ### Pendiente de comprobar antes de locutar
 
-1. **Tienda 9.** Merca2 dice 3.700 M€ «hasta 2033». El guion anterior de Mercadona decía que eran más de 3.700 M€ de inversión «este año». Hay que mirar la nota oficial de resultados y dejar solo la versión correcta.
+1. ~~Tienda 9~~ **Comprobado (20-11-2026):** 3.700 M€ es el plan hasta 2033 (Merca2, Forbes, Directo al Paladar); la inversión prevista para 2026 son 1.000 M€. El guion antiguo de Mercadona, que decía 3.700 M€ «este año», estaba mal.
 2. **Cuota en Portugal.** Worldpanel da 7,4 % (primer semestre de 2026); la compañía «reclama» un 8,8 % (ECO). El guion usa la de Worldpanel.
 3. **Portugal «perdió dinero hasta 2022».** Sale de que 2023 fue el primer año sin pérdidas; no tengo la cifra de pérdidas de cada año.
 4. **Año de entrada de Walmart en Alemania.** Las fuentes solo dicen «casi diez años»; no doy el año.
 5. **«El 60 % de los productos»** solo está comprobado por el titular de Alicante Plaza.
 6. La cita «Lo del tercer país llegará» es de un resumen de búsqueda de The Objective; conviene abrir el artículo.
-7. **De memoria, sin fuente abierta en esta sesión:** que la primera tienda abrió en julio de 2019 (las fuentes dicen «segundo semestre de 2019, en Canidelo») y que Lidl lleva «tres décadas» en España (llegó en 1994).
+7. ~~Primera tienda~~ **Comprobado:** abrió el 2 de julio de 2019 en Canidelo (El Independiente, Que.es, nota de Mercadona). Sigue de memoria que Lidl lleva «tres décadas» en España (llegó en 1994).

@@ -1,6 +1,6 @@
 {
  "fps": 25,
- "total": 17513,
+ "total": 13387,
  "marca": {
   "nombre": "MERCADONA",
   "color": "#12B25E",
@@ -18,8 +18,8 @@
    "fuente": "resultados anuales de Mercadona · 10 de marzo de 2026",
    "pasos": [
     0,
-    172,
-    241
+    115,
+    163
    ],
    "d": {
     "pre": "Vendió en un año",
@@ -38,19 +38,19 @@
      }
     ]
    },
-   "f1": 406
+   "f1": 282
   },
   {
    "id": "e01_mapa",
-   "f0": 406,
+   "f0": 282,
    "tipo": "mapa",
    "fondo": "marca",
    "capitulo": "",
    "fuente": "tiendas por país · resultados anuales de Mercadona · 10 de marzo de 2026 · mapa esquemático",
    "pasos": [
     4,
-    72,
-    96
+    51,
+    73
    ],
    "d": {
     "titulo": "¿Dónde están esas tiendas?",
@@ -72,18 +72,18 @@
      }
     ]
    },
-   "f1": 554
+   "f1": 405
   },
   {
    "id": "e02_versus",
-   "f0": 554,
+   "f0": 405,
    "tipo": "versus",
    "fondo": "marca",
    "capitulo": "",
    "fuente": "Worldpanel by Numerator (cuotas) · Schwarz Gruppe (países)",
    "pasos": [
     4,
-    93
+    75
    ],
    "d": {
     "signo": "vs",
@@ -101,18 +101,18 @@
      "paso": 1
     }
    },
-   "f1": 718
+   "f1": 540
   },
   {
    "id": "e03_cita",
-   "f0": 718,
+   "f0": 540,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "",
    "fuente": "rueda de prensa de resultados · OKDiario, 11-3-2026",
    "pasos": [
     4,
-    158
+    125
    ],
    "d": {
     "autor": "Juan Roig",
@@ -124,18 +124,18 @@
      "*No hay un tercer país.* No vamos a ir a un tercer país."
     ]
    },
-   "f1": 977
+   "f1": 747
   },
   {
    "id": "e04_texto",
-   "f0": 977,
+   "f0": 747,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    58
+    37
    ],
    "d": {
     "lineas": [
@@ -147,20 +147,20 @@
      }
     ]
    },
-   "f1": 1096
+   "f1": 825
   },
   {
    "id": "e05_texto",
-   "f0": 1096,
+   "f0": 825,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    24,
-    82,
-    129
+    17,
+    60,
+    95
    ],
    "d": {
     "lineas": [
@@ -180,39 +180,39 @@
      }
     ]
    },
-   "f1": 1297
+   "f1": 976
   },
   {
    "id": "e06_capitulo",
-   "f0": 1297,
+   "f0": 976,
    "tipo": "capitulo",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": null,
    "pasos": [
     4,
-    39
+    27
    ],
    "d": {
     "num": "1",
     "titulo": "El plan que empezaba por *«I»*",
     "sub": "Más de diez años pensando en salir de España"
    },
-   "f1": 1406
+   "f1": 1052
   },
   {
    "id": "e07_mapa",
-   "f0": 1406,
+   "f0": 1052,
    "tipo": "mapa",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": "Valencia Plaza, 12-3-2019 · nota de Mercadona, 23-6-2016",
    "pasos": [
     4,
-    102,
-    219,
-    457,
-    570
+    80,
+    171,
+    358,
+    451
    ],
    "d": {
     "titulo": "Primero pensó en _Italia_",
@@ -250,19 +250,19 @@
      ]
     }
    },
-   "f1": 1999
+   "f1": 1534
   },
   {
    "id": "e08_documento",
-   "f0": 1999,
+   "f0": 1534,
    "tipo": "documento",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": "info.mercadona.es",
    "pasos": [
     4,
-    73,
-    303
+    57,
+    233
    ],
    "d": {
     "cabecera": "Mercadona · nota de prensa",
@@ -275,21 +275,21 @@
      "paso": 2
     }
    },
-   "f1": 2423
+   "f1": 1860
   },
   {
    "id": "e09_tarjetas",
-   "f0": 2423,
+   "f0": 1860,
    "tipo": "tarjetas",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": "nota de Mercadona, 23-6-2016",
    "pasos": [
     4,
-    51,
-    86,
-    156,
-    188
+    41,
+    70,
+    126,
+    152
    ],
    "d": {
     "titulo": "El plan de 2016",
@@ -318,18 +318,18 @@
      }
     ]
    },
-   "f1": 2672
+   "f1": 2063
   },
   {
    "id": "e10_linea",
-   "f0": 2672,
+   "f0": 2063,
    "tipo": "linea",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": null,
    "pasos": [
     4,
-    113
+    80
    ],
    "d": {
     "titulo": "De decidirlo a abrir la primera puerta",
@@ -352,19 +352,19 @@
      "paso": 1
     }
    },
-   "f1": 2899
+   "f1": 2225
   },
   {
    "id": "e11_anillos",
-   "f0": 2899,
+   "f0": 2225,
    "tipo": "anillos",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": "Valencia Plaza y Alicante Plaza, marzo de 2019",
    "pasos": [
     4,
-    164,
-    294
+    121,
+    214
    ],
    "d": {
     "titulo": "Tres años probando productos en Matosinhos",
@@ -384,19 +384,19 @@
      }
     ]
    },
-   "f1": 3307
+   "f1": 2524
   },
   {
    "id": "e12_cita",
-   "f0": 3307,
+   "f0": 2524,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": "Valencia Plaza, 12-3-2019",
    "pasos": [
     4,
-    120,
-    394
+    90,
+    297
    ],
    "d": {
     "autor": "Juan Roig",
@@ -409,21 +409,21 @@
      "*El año que viene te lo digo.*"
     ]
    },
-   "f1": 3773
+   "f1": 2881
   },
   {
    "id": "e13_linea",
-   "f0": 3773,
+   "f0": 2881,
    "tipo": "linea",
    "fondo": "marca",
    "capitulo": "El plan que empezaba por «I»",
    "fuente": null,
    "pasos": [
     4,
-    24,
-    50,
-    79,
-    116
+    18,
+    38,
+    64,
+    95
    ],
    "d": {
     "titulo": "«El año que viene te lo digo»",
@@ -459,11 +459,11 @@
      "paso": 3
     }
    },
-   "f1": 3970
+   "f1": 3046
   },
   {
    "id": "e14_texto",
-   "f0": 3970,
+   "f0": 3046,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "El plan que empezaba por «I»",
@@ -478,36 +478,36 @@
      }
     ]
    },
-   "f1": 4016
+   "f1": 3084
   },
   {
    "id": "e15_capitulo",
-   "f0": 4016,
+   "f0": 3084,
    "tipo": "capitulo",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": "El Independiente, 2-7-2019",
    "pasos": [
     4,
-    46
+    36
    ],
    "d": {
     "num": "2",
     "titulo": "Lo que cuesta *un país*",
     "sub": "2 de julio de 2019 · primera tienda, en Canidelo (Oporto)"
    },
-   "f1": 4167
+   "f1": 3201
   },
   {
    "id": "e16_texto",
-   "f0": 4167,
+   "f0": 3201,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
    "pasos": [
     4,
-    47
+    30
    ],
    "d": {
     "lineas": [
@@ -520,20 +520,20 @@
      }
     ]
    },
-   "f1": 4264
+   "f1": 3276
   },
   {
    "id": "e17_barras",
-   "f0": 4264,
+   "f0": 3276,
    "tipo": "barras",
    "fondo": "oscuro",
    "capitulo": "Lo que cuesta un país",
    "fuente": "Mercadona (2016) · Valencia Plaza (2019) · ECO (2026)",
    "pasos": [
     4,
-    62,
-    247,
-    366
+    46,
+    181,
+    272
    ],
    "d": {
     "titulo": "Inversión de Mercadona en Portugal",
@@ -564,11 +564,11 @@
      "paso": 3
     }
    },
-   "f1": 4696
+   "f1": 3597
   },
   {
    "id": "e18_texto",
-   "f0": 4696,
+   "f0": 3597,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
@@ -583,21 +583,21 @@
      }
     ]
    },
-   "f1": 4752
+   "f1": 3636
   },
   {
    "id": "e19_linea",
-   "f0": 4752,
+   "f0": 3636,
    "tipo": "linea",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": "ECO (eco.sapo.pt), 12-3-2024 y 10-3-2026",
    "pasos": [
     4,
-    36,
-    113,
-    194,
-    306
+    32,
+    98,
+    169,
+    263
    ],
    "d": {
     "titulo": "Resultado de Mercadona en Portugal",
@@ -627,20 +627,20 @@
      "paso": 4
     }
    },
-   "f1": 5127
+   "f1": 3947
   },
   {
    "id": "e20_tarjetas",
-   "f0": 5127,
+   "f0": 3947,
    "tipo": "tarjetas",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": "resultados anuales de Mercadona · 10 de marzo de 2026",
    "pasos": [
     4,
-    55,
-    102,
-    176
+    44,
+    80,
+    137
    ],
    "d": {
     "titulo": "Portugal en 2025",
@@ -663,20 +663,20 @@
      }
     ]
    },
-   "f1": 5370
+   "f1": 4138
   },
   {
    "id": "e21_anillos",
-   "f0": 5370,
+   "f0": 4138,
    "tipo": "anillos",
    "fondo": "oscuro",
    "capitulo": "Lo que cuesta un país",
    "fuente": "resultados anuales de Mercadona · 10 de marzo de 2026",
    "pasos": [
     4,
-    81,
-    236,
-    328
+    71,
+    196,
+    269
    ],
    "d": {
     "titulo": "Lo que le queda de cada 100 € que vende",
@@ -702,19 +702,19 @@
      "paso": 3
     }
    },
-   "f1": 5806
+   "f1": 4497
   },
   {
    "id": "e22_barras",
-   "f0": 5806,
+   "f0": 4497,
    "tipo": "barras",
    "fondo": "oscuro",
    "capitulo": "Lo que cuesta un país",
    "fuente": "resultados anuales de Mercadona · 10 de marzo de 2026",
    "pasos": [
     4,
-    88,
-    210
+    66,
+    157
    ],
    "d": {
     "titulo": "Ventas por tienda y año",
@@ -738,11 +738,11 @@
      "paso": 2
     }
    },
-   "f1": 6073
+   "f1": 4696
   },
   {
    "id": "e23_anillos",
-   "f0": 6073,
+   "f0": 4696,
    "tipo": "anillos",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
@@ -759,18 +759,18 @@
      }
     ]
    },
-   "f1": 6198
+   "f1": 4773
   },
   {
    "id": "e24_barras",
-   "f0": 6198,
+   "f0": 4773,
    "tipo": "barras",
    "fondo": "oscuro",
    "capitulo": "Lo que cuesta un país",
    "fuente": "Worldpanel by Numerator, 2026 (vía Xataka)",
    "pasos": [
     4,
-    133
+    97
    ],
    "d": {
     "titulo": "Cuota de mercado",
@@ -791,18 +791,18 @@
      }
     ]
    },
-   "f1": 6423
+   "f1": 4950
   },
   {
    "id": "e25_texto",
-   "f0": 6423,
+   "f0": 4950,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
    "pasos": [
     4,
-    58
+    42
    ],
    "d": {
     "lineas": [
@@ -815,19 +815,19 @@
      }
     ]
    },
-   "f1": 6539
+   "f1": 5035
   },
   {
    "id": "e26_cita",
-   "f0": 6539,
+   "f0": 5035,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "Lo que cuesta un país",
    "fuente": "ECO (eco.sapo.pt), 10-3-2026 · traducido del portugués",
    "pasos": [
     4,
-    178,
-    458
+    132,
+    340
    ],
    "d": {
     "autor": "Juan Roig",
@@ -840,19 +840,19 @@
      "*Cuando todo eso esté hecho, ganaremos lo mismo que en España.*"
     ]
    },
-   "f1": 7092
+   "f1": 5445
   },
   {
    "id": "e27_texto",
-   "f0": 7092,
+   "f0": 5445,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "Lo que cuesta un país",
    "fuente": null,
    "pasos": [
     4,
-    49,
-    96
+    38,
+    74
    ],
    "d": {
     "lineas": [
@@ -868,39 +868,39 @@
      }
     ]
    },
-   "f1": 7225
+   "f1": 5550
   },
   {
    "id": "e28_capitulo",
-   "f0": 7225,
+   "f0": 5550,
    "tipo": "capitulo",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    78
+    50
    ],
    "d": {
     "num": "3",
     "titulo": "Por qué su máquina *no viaja*",
     "sub": "Qué es Mercadona de verdad"
    },
-   "f1": 7370
+   "f1": 5645
   },
   {
    "id": "e29_flujo",
-   "f0": 7370,
+   "f0": 5645,
    "tipo": "flujo",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    50,
-    77,
-    95,
-    113
+    37,
+    56,
+    69,
+    81
    ],
    "d": {
     "tachado": "Una cadena de tiendas",
@@ -923,20 +923,20 @@
      }
     ]
    },
-   "f1": 7507
+   "f1": 5746
   },
   {
    "id": "e30_anillos",
-   "f0": 7507,
+   "f0": 5746,
    "tipo": "anillos",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": "Worldpanel, 2025 (77,8 %), vía elEconomista",
    "pasos": [
     4,
-    110,
-    133,
-    150
+    90,
+    109,
+    122
    ],
    "d": {
     "items": [
@@ -961,20 +961,20 @@
      }
     ]
    },
-   "f1": 7679
+   "f1": 5885
   },
   {
    "id": "e31_lista",
-   "f0": 7679,
+   "f0": 5885,
    "tipo": "lista",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    81,
-    148,
-    204
+    54,
+    98,
+    135
    ],
    "d": {
     "titulo": "Cómo llena sus estanterías",
@@ -995,11 +995,11 @@
      }
     ]
    },
-   "f1": 7946
+   "f1": 6060
   },
   {
    "id": "e32_cifra",
-   "f0": 7946,
+   "f0": 6060,
    "tipo": "cifra",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
@@ -1012,18 +1012,18 @@
     "valor": 30200,
     "sufijo": "M€"
    },
-   "f1": 8103
+   "f1": 6180
   },
   {
    "id": "e33_texto",
-   "f0": 8103,
+   "f0": 6180,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    41
+    37
    ],
    "d": {
     "lineas": [
@@ -1035,23 +1035,23 @@
      }
     ]
    },
-   "f1": 8187
+   "f1": 6258
   },
   {
    "id": "e34_columnas",
-   "f0": 8187,
+   "f0": 6258,
    "tipo": "columnas",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    126,
-    177,
-    237,
-    360,
-    442,
-    478
+    92,
+    129,
+    171,
+    254,
+    310,
+    334
    ],
    "d": {
     "a": {
@@ -1089,21 +1089,21 @@
      ]
     }
    },
-   "f1": 8732
+   "f1": 6640
   },
   {
    "id": "e35_tarjetas",
-   "f0": 8732,
+   "f0": 6640,
    "tipo": "tarjetas",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": "ECO (eco.sapo.pt), 10-3-2026",
    "pasos": [
     4,
-    46,
-    113,
-    180,
-    319
+    36,
+    85,
+    134,
+    236
    ],
    "d": {
     "titulo": "Mercadona en Portugal, hoy",
@@ -1132,18 +1132,18 @@
      }
     ]
    },
-   "f1": 9138
+   "f1": 6950
   },
   {
    "id": "e36_cita",
-   "f0": 9138,
+   "f0": 6950,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": "OKDiario, 11-3-2026",
    "pasos": [
     4,
-    55
+    46
    ],
    "d": {
     "autor": "Juan Roig",
@@ -1155,18 +1155,18 @@
      "Estamos en Portugal, pero *no conocemos a fondo el país*, no somos portugueses."
     ]
    },
-   "f1": 9320
+   "f1": 7103
   },
   {
    "id": "e37_texto",
-   "f0": 9320,
+   "f0": 7103,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    37
+    31
    ],
    "d": {
     "lineas": [
@@ -1179,18 +1179,18 @@
      }
     ]
    },
-   "f1": 9404
+   "f1": 7176
   },
   {
    "id": "e38_cita",
-   "f0": 9404,
+   "f0": 7176,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": "Valencia Plaza, 12-3-2019",
    "pasos": [
     4,
-    92
+    82
    ],
    "d": {
     "autor": "Juan Roig",
@@ -1202,23 +1202,23 @@
      "No vamos a hacer adquisiciones y *abriremos tienda a tienda*."
     ]
    },
-   "f1": 9591
+   "f1": 7343
   },
   {
    "id": "e39_columnas",
-   "f0": 9591,
+   "f0": 7343,
    "tipo": "columnas",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    50,
-    158,
-    220,
-    249,
-    275,
-    306
+    44,
+    136,
+    189,
+    214,
+    236,
+    261
    ],
    "d": {
     "a": {
@@ -1256,19 +1256,19 @@
      ]
     }
    },
-   "f1": 9994
+   "f1": 7669
   },
   {
    "id": "e40_barras",
-   "f0": 9994,
+   "f0": 7669,
    "tipo": "barras",
    "fondo": "oscuro",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": "Valencia Plaza (2019) · ECO y Xataka (2026)",
    "pasos": [
     4,
-    233,
-    281
+    173,
+    207
    ],
    "d": {
     "titulo": "Supermercados de Mercadona en Portugal",
@@ -1295,18 +1295,18 @@
      }
     ]
    },
-   "f1": 10338
+   "f1": 7923
   },
   {
    "id": "e41_texto",
-   "f0": 10338,
+   "f0": 7923,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "Por qué su máquina no viaja",
    "fuente": null,
    "pasos": [
     4,
-    27
+    20
    ],
    "d": {
     "lineas": [
@@ -1319,39 +1319,39 @@
      }
     ]
    },
-   "f1": 10427
+   "f1": 7988
   },
   {
    "id": "e42_capitulo",
-   "f0": 10427,
+   "f0": 7988,
    "tipo": "capitulo",
    "fondo": "marca",
    "capitulo": "Los que salieron y volvieron",
    "fuente": null,
    "pasos": [
     4,
-    92
+    69
    ],
    "d": {
     "num": "4",
     "titulo": "Los que salieron *y volvieron*",
     "sub": "Antes lo intentaron los más grandes del mundo"
    },
-   "f1": 10652
+   "f1": 8158
   },
   {
    "id": "e43_mapa",
-   "f0": 10652,
+   "f0": 8158,
    "tipo": "mapa",
    "fondo": "marca",
    "capitulo": "Los que salieron y volvieron",
    "fuente": "Supermarket News, Irish Times y NBC, julio de 2006",
    "pasos": [
     4,
-    184,
-    302,
-    367,
-    496
+    141,
+    229,
+    278,
+    373
    ],
    "d": {
     "titulo": "Walmart en _Alemania_",
@@ -1387,21 +1387,21 @@
      ]
     }
    },
-   "f1": 11273
+   "f1": 8626
   },
   {
    "id": "e44_lista",
-   "f0": 11273,
+   "f0": 8626,
    "tipo": "lista",
    "fondo": "marca",
    "capitulo": "Los que salieron y volvieron",
    "fuente": "Fortune · Merca2.0 · Alimarket · ESM Magazine",
    "pasos": [
     4,
-    286,
-    550,
-    606,
-    676
+    228,
+    420,
+    461,
+    511
    ],
    "d": {
     "titulo": "No fue la única",
@@ -1435,19 +1435,19 @@
      }
     ]
    },
-   "f1": 12088
+   "f1": 9231
   },
   {
    "id": "e45_texto",
-   "f0": 12088,
+   "f0": 9231,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "Los que salieron y volvieron",
    "fuente": null,
    "pasos": [
     4,
-    37,
-    75
+    31,
+    62
    ],
    "d": {
     "lineas": [
@@ -1463,20 +1463,20 @@
      }
     ]
    },
-   "f1": 12200
+   "f1": 9321
   },
   {
    "id": "e46_lista",
-   "f0": 12200,
+   "f0": 9321,
    "tipo": "lista",
    "fondo": "marca",
    "capitulo": "Los que salieron y volvieron",
    "fuente": null,
    "pasos": [
     4,
-    101,
-    143,
-    178
+    73,
+    102,
+    127
    ],
    "d": {
     "titulo": "Funciona cuando eres muy grande en _un_ sitio",
@@ -1495,18 +1495,18 @@
      }
     ]
    },
-   "f1": 12443
+   "f1": 9491
   },
   {
    "id": "e47_versus",
-   "f0": 12443,
+   "f0": 9491,
    "tipo": "versus",
    "fondo": "marca",
    "capitulo": "Los que salieron y volvieron",
    "fuente": null,
    "pasos": [
     4,
-    57
+    47
    ],
    "d": {
     "signo": "<",
@@ -1522,19 +1522,19 @@
      "paso": 1
     }
    },
-   "f1": 12550
+   "f1": 9580
   },
   {
    "id": "e48_barras",
-   "f0": 12550,
+   "f0": 9580,
    "tipo": "barras",
    "fondo": "oscuro",
    "capitulo": "Los que salieron y volvieron",
    "fuente": "IGD, citado por The Grocer (2006)",
    "pasos": [
     4,
-    63,
-    166
+    50,
+    130
    ],
    "d": {
     "titulo": "Tiendas en Alemania",
@@ -1562,19 +1562,19 @@
      }
     ]
    },
-   "f1": 12764
+   "f1": 9748
   },
   {
    "id": "e49_cita",
-   "f0": 12764,
+   "f0": 9748,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "Los que salieron y volvieron",
    "fuente": "OKDiario, 11-3-2026",
    "pasos": [
     4,
-    52,
-    120
+    41,
+    94
    ],
    "d": {
     "autor": "Juan Roig",
@@ -1590,38 +1590,38 @@
      "paso": 2
     }
    },
-   "f1": 13014
+   "f1": 9945
   },
   {
    "id": "e50_capitulo",
-   "f0": 13014,
+   "f0": 9945,
    "tipo": "capitulo",
    "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
     4,
-    49
+    35
    ],
    "d": {
     "num": "5",
     "titulo": "*No lo necesita*",
     "sub": "Si salir es tan caro, ¿por qué lo hacen las demás?"
    },
-   "f1": 13151
+   "f1": 10043
   },
   {
    "id": "e51_flujo",
-   "f0": 13151,
+   "f0": 10043,
    "tipo": "flujo",
    "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
     4,
-    58,
-    182,
-    255
+    44,
+    134,
+    187
    ],
    "d": {
     "titulo": "Una empresa que cotiza en bolsa",
@@ -1641,18 +1641,18 @@
      }
     ]
    },
-   "f1": 13468
+   "f1": 10278
   },
   {
    "id": "e52_texto",
-   "f0": 13468,
+   "f0": 10278,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
     4,
-    56
+    42
    ],
    "d": {
     "lineas": [
@@ -1664,21 +1664,21 @@
      }
     ]
    },
-   "f1": 13557
+   "f1": 10347
   },
   {
    "id": "e53_lista",
-   "f0": 13557,
+   "f0": 10347,
    "tipo": "lista",
    "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": "nota de Mercadona, 23-6-2016",
    "pasos": [
     4,
-    41,
-    81,
-    248,
-    357
+    37,
+    73,
+    222,
+    303
    ],
    "d": {
     "titulo": "1 · No cotiza en bolsa",
@@ -1706,19 +1706,19 @@
      }
     ]
    },
-   "f1": 14030
+   "f1": 10739
   },
   {
    "id": "e54_texto",
-   "f0": 14030,
+   "f0": 10739,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
     4,
-    72,
-    143
+    58,
+    112
    ],
    "d": {
     "lineas": [
@@ -1735,20 +1735,20 @@
      }
     ]
    },
-   "f1": 14210
+   "f1": 10893
   },
   {
    "id": "e55_versus",
-   "f0": 14210,
+   "f0": 10893,
    "tipo": "versus",
    "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": "nota de Mercadona (2016) · resultados anuales (2026)",
    "pasos": [
     4,
-    104,
-    196,
-    320
+    72,
+    139,
+    245
    ],
    "d": {
     "titulo": "Mercadona en España",
@@ -1776,20 +1776,20 @@
      ]
     }
    },
-   "f1": 14593
+   "f1": 11185
   },
   {
    "id": "e56_barras",
-   "f0": 14593,
+   "f0": 11185,
    "tipo": "barras",
    "fondo": "oscuro",
    "capitulo": "No lo necesita",
    "fuente": "nota de Mercadona (2016) · resultados anuales (2026)",
    "pasos": [
     4,
-    97,
-    199,
-    258
+    69,
+    139,
+    180
    ],
    "d": {
     "titulo": "Ventas por tienda en España",
@@ -1817,20 +1817,20 @@
      "paso": 3
     }
    },
-   "f1": 14936
+   "f1": 11428
   },
   {
    "id": "e57_tarjetas",
-   "f0": 14936,
+   "f0": 11428,
    "tipo": "tarjetas",
    "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": "Merca2, 11-3-2026",
    "pasos": [
     4,
-    89,
-    168,
-    189
+    71,
+    133,
+    150
    ],
    "d": {
     "titulo": "¿Cómo? Cambiando las tiendas",
@@ -1854,19 +1854,19 @@
      }
     ]
    },
-   "f1": 15219
+   "f1": 11655
   },
   {
    "id": "e58_cifra",
-   "f0": 15219,
+   "f0": 11655,
    "tipo": "cifra",
    "fondo": "marca",
    "capitulo": "No lo necesita",
    "fuente": "Merca2 y Forbes, 11-3-2026",
    "pasos": [
     4,
-    163,
-    259
+    128,
+    203
    ],
    "d": {
     "pre": "El plan que sí tiene sobre la mesa: Tienda 9",
@@ -1876,20 +1876,20 @@
     "post": "para rehacer *todos* sus supermercados hasta 2033",
     "pasoPost": 2
    },
-   "f1": 15548
+   "f1": 11915
   },
   {
    "id": "e59_versus",
-   "f0": 15548,
+   "f0": 11915,
    "tipo": "versus",
    "fondo": "oscuro",
    "capitulo": "No lo necesita",
    "fuente": null,
    "pasos": [
     4,
-    46,
-    206,
-    327
+    31,
+    146,
+    233
    ],
    "d": {
     "titulo": "La elección de Roig",
@@ -1914,18 +1914,18 @@
      "paso": 3
     }
    },
-   "f1": 15920
+   "f1": 12183
   },
   {
    "id": "e60_texto",
-   "f0": 15920,
+   "f0": 12183,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    23
+    18
    ],
    "d": {
     "lineas": [
@@ -1938,19 +1938,19 @@
      }
     ]
    },
-   "f1": 16018
+   "f1": 12260
   },
   {
    "id": "e61_lista",
-   "f0": 16018,
+   "f0": 12260,
    "tipo": "lista",
    "fondo": "oscuro",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    326,
-    674
+    229,
+    496
    ],
    "d": {
     "titulo": "Se queda porque…",
@@ -1969,19 +1969,19 @@
      }
     ]
    },
-   "f1": 16949
+   "f1": 12943
   },
   {
    "id": "e62_cita",
-   "f0": 16949,
+   "f0": 12943,
    "tipo": "cita",
    "fondo": "oscuro",
    "capitulo": "",
    "fuente": "The Objective, 15-3-2023",
    "pasos": [
     4,
-    36,
-    120
+    29,
+    98
    ],
    "d": {
     "autor": "Juan Roig",
@@ -1997,18 +1997,18 @@
      "paso": 2
     }
    },
-   "f1": 17167
+   "f1": 13121
   },
   {
    "id": "e63_texto",
-   "f0": 17167,
+   "f0": 13121,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    32
+    26
    ],
    "d": {
     "lineas": [
@@ -2021,18 +2021,18 @@
      }
     ]
    },
-   "f1": 17229
+   "f1": 13172
   },
   {
    "id": "e64_texto",
-   "f0": 17229,
+   "f0": 13172,
    "tipo": "texto",
    "fondo": "oscuro",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    57
+    38
    ],
    "d": {
     "lineas": [
@@ -2045,19 +2045,19 @@
      }
     ]
    },
-   "f1": 17346
+   "f1": 13251
   },
   {
    "id": "e65_texto",
-   "f0": 17346,
+   "f0": 13251,
    "tipo": "texto",
    "fondo": "marca",
    "capitulo": "",
    "fuente": null,
    "pasos": [
     4,
-    36,
-    67
+    25,
+    46
    ],
    "d": {
     "lineas": [
@@ -2072,8 +2072,8 @@
      }
     ]
    },
-   "f1": 17513
+   "f1": 13387
   }
  ],
- "tiempos_reales": false
+ "tiempos_reales": true
 }

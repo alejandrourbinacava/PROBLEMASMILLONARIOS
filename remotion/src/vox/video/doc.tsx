@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {EP, H, W, c01, expo, miles, suave, useMarca} from './base';
 import {Metraje} from './capas';
+import {Collage} from './collage';
 import {EUROPA, EUROPA_H, EUROPA_W} from './europa';
 
 /**
@@ -452,5 +453,5 @@ export const ParesDoc: React.FC<EP> = ({d, p}) => {
 };
 
 export const TIPOS_DOC: Record<string, React.FC<EP>> = {
-  broll: Broll, duo: Duo, barras: BarrasDoc, linea: LineaDoc, cita: CitaDoc, documento: DocumentoDoc, mapa: MapaDoc, capitulo: CapituloDoc, pares: ParesDoc,
+  broll: Broll, duo: Duo, barras: BarrasDoc, linea: LineaDoc, cita: CitaDoc, documento: DocumentoDoc, mapa: MapaDoc, capitulo: CapituloDoc, pares: ParesDoc, collage: Collage,
 };

@@ -82,7 +82,7 @@ class Media:
             if not os.path.isdir(d):
                 continue
             for f in sorted(os.listdir(d)):
-                if f.lower().endswith((".mp4", ".jpg", ".jpeg", ".png")):
+                if f.lower().endswith((".mp4", ".jpg", ".jpeg", ".png", ".webp")):
                     self.fich[f] = c + "/" + f
         # sin el metraje en disco (en la nube solo se renderiza) vale lo que diga la cache
         for f, v in self.cache.items():
@@ -91,7 +91,7 @@ class Media:
     def busca(self, alias):
         if alias in self.fich:
             return alias
-        for ext in (".jpg", ".mp4", ".png"):
+        for ext in (".jpg", ".mp4", ".png", ".webp"):
             if alias + ext in self.fich:
                 return alias + ext
         c = [f for f in self.fich if alias in f]
@@ -128,7 +128,7 @@ class Media:
                 r = max(0.25, libre / need)
             out["desde"] = round(d0, 2)
             out["rate"] = round(r, 3)
-        for k in ("caja", "rot", "de", "z", "pie", "marco", "bn", "foco"):
+        for k in ("caja", "rot", "de", "z", "pie", "marco", "bn", "foco", "k", "o", "et", "etPos", "etArriba", "color", "borde", "pos"):
             if x.get(k) is not None:
                 out[k] = x[k]
         return out
@@ -185,11 +185,14 @@ def construye(T, escenas, marca, destino, media=None, piel=None):
             sin_salida = [x for x in src["medios"] if x.get("sale") is None]
             for x in src["medios"]:
                 en = min(dur - 12, fr(x.get("paso")) + x.get("mas", 0))
-                if x.get("sale") is None:
+                if x.get("sale") is None and x.get("queda"):
+                    sale = dur + 30          # collage: lo que entra se queda hasta el corte
+                elif x.get("sale") is None:
                     # los que aguantan hasta el final se van escalonados
                     sale = dur - 2 - 4 * sin_salida.index(x)
                 else:
                     sale = min(dur - 2, fr(x["sale"]) + x.get("mas_sale", 0))
+                en = min(en, sale - 12) if x.get("queda") else en
                 assert sale > en + 10, "%s: el recorte %s dura %d fotogramas" % (e["id"], x["a"], sale - en)
                 o = media.uso(usados, x, sale - en + 18)
                 o["en"], o["sale"] = en, sale

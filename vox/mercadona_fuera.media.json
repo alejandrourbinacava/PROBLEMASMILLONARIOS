@@ -315,6 +315,30 @@
 "dur": 10.31,
 "ruta": "parallax2/proyecto/stock_mercadona/produce_cloth_bag_orange_groceries_106.mp4"
 },
+"r_furgo.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/r_furgo.webp"
+},
+"r_leche.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/r_leche.webp"
+},
+"r_logo.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/r_logo.webp"
+},
+"r_pan.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/r_pan.webp"
+},
+"r_pescado.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/r_pescado.webp"
+},
+"r_salsas.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/r_salsas.webp"
+},
 "raw_meat_cutting_board_91.mp4": {
 "dur": 12.0,
 "ruta": "parallax2/proyecto/stock_mercadona/raw_meat_cutting_board_91.mp4"

@@ -85,6 +85,17 @@ def main():
                 pon(mezcla, golpe, t, db(-17))
             elif e["tipo"] in insertos:
                 pon(mezcla, soplos[0], max(0.0, t - 0.1), db(-31))
+        # collage: cada foto o recorte que cae sobre la mesa suena a papel, muy bajo
+        papel = lee(os.path.join(ACT, "sfx", "whoosh", "03_sound_effect_paper_clumping_.wav"))
+        puestos = []
+        for e in spec["escenas"]:
+            if e["tipo"] != "collage":
+                continue
+            for m in e.get("medios") or []:
+                tm = (e["f0"] + m["en"]) / float(fps)
+                if all(abs(tm - o) > 0.3 for o in puestos):
+                    puestos.append(tm)
+                    pon(mezcla, papel[: int(0.5 * SR)], max(0.0, tm - 0.05), db(-27))
         spec = dict(spec, escenas=[])
 
     for i, e in enumerate(spec["escenas"]):

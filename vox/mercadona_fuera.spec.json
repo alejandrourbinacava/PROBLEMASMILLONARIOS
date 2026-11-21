@@ -559,7 +559,7 @@
    "tipo": "anim",
    "fondo": "marca",
    "capitulo": "2",
-   "fuente": "ECO (eco.sapo.pt), 10-3-2026 · traducido del portugués",
+   "fuente": "ECO (eco.sapo.pt), 10-3-2026 · traducido del portugués · foto: Junta de Andalucía, CC BY-SA 2.0",
    "pasos": [
     4,
     102,
@@ -574,7 +574,24 @@
    "d": {
     "comp": "lista"
    },
-   "f1": 5550
+   "f1": 5550,
+   "fondoClip": [
+    {
+     "src": "mercadona_headquarters_office_building_cranes_933.mp4",
+     "desde": 0.0,
+     "rate": 0.363,
+     "en": 0
+    }
+   ],
+   "velo": "plano",
+   "medios": [
+    {
+     "src": "c_roig.webp",
+     "foto": true,
+     "en": 0,
+     "sale": 545
+    }
+   ]
   },
   {
    "id": "e25_capitulo",
@@ -1584,11 +1601,11 @@
   "c_tienda.webp": "vox/media/mercadona_fuera/c_tienda.webp",
   "c_furgo.webp": "vox/media/mercadona_fuera/c_furgo.webp",
   "f_porto2.jpg": "vox/media/mercadona_fuera/f_porto2.jpg",
+  "mercadona_headquarters_office_building_cranes_933.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_office_building_cranes_933.mp4",
   "r_salsas.webp": "vox/media/mercadona_fuera/r_salsas.webp",
   "r_pan.webp": "vox/media/mercadona_fuera/r_pan.webp",
   "r_pescado.webp": "vox/media/mercadona_fuera/r_pescado.webp",
   "r_leche.webp": "vox/media/mercadona_fuera/r_leche.webp",
-  "mercadona_headquarters_office_building_cranes_933.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_office_building_cranes_933.mp4",
   "c_walmart.webp": "vox/media/mercadona_fuera/c_walmart.webp",
   "c_aldi.webp": "vox/media/mercadona_fuera/c_aldi.webp",
   "c_lidl.webp": "vox/media/mercadona_fuera/c_lidl.webp",

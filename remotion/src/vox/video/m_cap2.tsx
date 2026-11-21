@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {EP} from './base';
 import {A, Almacen, Barra, Camion, Casa, Chip, Cifra, Escenario, Eti, Fabrica, Fajo, GRIS, Hoja, Mapa, Marca, Moneda, Mundo, PAL, Sans, Sello, Serif, T, Tienda, Tira, c01, camara, geo, io, miles, pop, rebote, rnd, sal, tr} from './kit';
+import {FondoReal, Sujeto, med} from './m_capas';
 import {MK, MX, MY, PRT, PilaMonedas} from './m_gancho';
 
 const PORTO = geo([101, 772], MX, MY, MK);
@@ -396,12 +397,20 @@ export const Detras: React.FC<EP> = ({t, p, dur}) => {
 };
 
 /** 202-222 s · «cuesta mucho»: las cuatro cosas que hay que hacer en un pais nuevo. Y aun no estan hechas. */
-export const Lista: React.FC<EP> = ({t, p}) => {
+export const Lista: React.FC<EP> = ({t, p, dur, ctx}) => {
+  const intro = 1 - tr(p(1), -8, 8);
   const filas = ['Empezar una operación en un país', 'Corregir lo que no está bien hecho', 'Adaptar el surtido a los consumidores', 'Encontrar buenos proveedores de frescos'];
   const apaga = 0.45 * tr(p(5), 0, 8) * (1 - tr(p(7), 0, 8));
   return (
     <AbsoluteFill>
-      <Escenario />
+      <FondoReal ctx={ctx} t={t} dur={dur} blur={14} luz={0.26} />
+      <Sujeto src={med(ctx, 'c_roig')} x={420} y={1110} alto={860} t={t - 3} de="aba" op={intro} />
+      <T x={800} y={470} ancla="i" op={tr(t, 6, 8) * intro}>
+        <Serif tam={88} peso={600}>La frase más importante</Serif>
+      </T>
+      <T x={800} y={585} ancla="i" op={tr(t, 10, 8) * intro}>
+        <Serif tam={88} peso={600} color="#FFD95A">de todo el vídeo</Serif>
+      </T>
       <T x={140} y={110} ancla="i" op={tr(t, 0, 8)}>
         <Eti tam={30} color={PAL.verde[0]}>Juan Roig · 10 de marzo de 2026</Eti>
       </T>

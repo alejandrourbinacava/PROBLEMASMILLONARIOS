@@ -157,7 +157,7 @@ export const T: React.FC<AP & {ancla?: 'c' | 'i' | 'd'; arriba?: boolean; estilo
 // ---------------------------------------------------------------- texto
 /** Cifra gorda con degradado y canto, como un bloque. */
 export const Cifra: React.FC<{children: React.ReactNode; tam?: number; color?: Col; canto?: boolean}> = ({children, tam = 150, color = 'verde', canto = true}) => (
-  <span style={{font: `${tam}px/1 'M Black'`, letterSpacing: -tam * 0.02, background: grad(color), WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', filter: canto ? `drop-shadow(0 ${Math.max(3, tam * 0.045)}px 0 ${PAL[color][1]}66) drop-shadow(0 ${tam * 0.1}px ${tam * 0.16}px rgba(0,0,0,0.45))` : undefined, padding: `0 ${tam * 0.04}px`}}>{children}</span>
+  <span style={{font: `${tam}px/1 'M Black'`, letterSpacing: -tam * 0.02, backgroundImage: grad(color), WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', filter: canto ? `drop-shadow(0 ${Math.max(3, tam * 0.045)}px 0 ${PAL[color][1]}66) drop-shadow(0 ${tam * 0.1}px ${tam * 0.16}px rgba(0,0,0,0.45))` : undefined, padding: `0 ${tam * 0.04}px`}}>{children}</span>
 );
 export const Serif: React.FC<{children: React.ReactNode; tam?: number; color?: string; peso?: number; it?: boolean}> = ({children, tam = 64, color = TINTA, peso = 500, it}) => (
   <span style={{font: `${it ? 'italic ' : ''}${peso} ${tam}px/1.12 'M Serif'`, color, letterSpacing: -tam * 0.012}}>{children}</span>

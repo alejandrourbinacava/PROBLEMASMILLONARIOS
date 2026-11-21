@@ -109,7 +109,7 @@ an("hogares", 37, fuente="Worldpanel by Numerator, primer semestre de 2026 (vía
 an("cuota", 38, [(38, 0), (38, "siete coma"), (38, "más de lo que"), (38, "tres décadas")], fuente="Worldpanel by Numerator, 2026 (vía Xataka)")
 an("detras", 39, [(39, 0), (39, 1)])
 an("lista", 40, [(40, 0), (40, "«Cuesta"), (40, "corregir"), (40, "adaptar"), (40, "y encontrar"), (41, 0), (41, "«Cuando"), (42, 0), (42, 1)],
-   fuente="ECO (eco.sapo.pt), 10-3-2026 · traducido del portugués")
+   fuente="ECO (eco.sapo.pt), 10-3-2026 · traducido del portugués · foto: Junta de Andalucía, CC BY-SA 2.0", fotos=["c_roig"], clips=[C("headquarters_office")])
 
 # =============================================================== 3
 E("capitulo", 43, {"num": "3", "titulo": "Por qué su máquina *no viaja*", "sub": "Qué es Mercadona de verdad"}, pasos=[(43, 0), (43, 0.5)], cap="3")

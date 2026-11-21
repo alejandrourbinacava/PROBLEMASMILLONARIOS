@@ -414,8 +414,8 @@ export const Recap2: React.FC<EP> = ({t, p, dur, ctx}) => {
       <T x={276} y={188} ancla="i" op={tr(t, 5, 8)}>
         <Serif tam={84} peso={600}>lo que la hace ganar <span style={{color: '#FFD95A'}}>no cabe en un camión</span></Serif>
       </T>
-      <Detras x={600} y={520} t={p(2) + 14} tam={300}>40 años</Detras>
-      <Sujeto src={med(ctx, 'c_furgo')} x={x} y={1040} ancho={900} t={t - 6} de="izq" lejos={0} />
+      <Detras x={560} y={430} t={p(2) + 14} tam={300}>40 años</Detras>
+      <Sujeto src={med(ctx, 'c_furgo')} x={x - 60} y={1070} ancho={760} t={t - 6} de="izq" lejos={0} />
       {pegas.map((q, i) => (
         <T key={q} x={1820} y={470 + i * 150} ancla="d" s={pop(p(i + 1), 11, 1.5)} rot={(i - 1) * 2}>
           <Chip tam={i === 1 ? 54 : 46} color={i === 1 ? 'verde' : 'humo'}>{q}</Chip>

@@ -62,8 +62,14 @@ export const Detras: React.FC<{x: number; y: number; t: number; children: React.
 export const Frescos: React.FC<EP> = ({t, p, dur, ctx}) => (
   <AbsoluteFill>
     <FondoReal ctx={ctx} t={t} dur={dur} blur={9} luz={0.5} />
-    <T x={960} y={120} s={pop(t, 11, 1.4)} op={1 - tr(p(1), -2, 6) * 0}>
-      <Chip tam={40} color="humo">Antes, arreglar lo que no funcionaba en casa</Chip>
+    <T x={960} y={120} s={pop(t, 11, 1.4)}>
+      <Chip tam={40} color="humo">Según contó el propio Roig</Chip>
+    </T>
+    <T x={960} y={450} op={tr(t, 4, 8) * (1 - tr(p(1), -5, 6))}>
+      <Serif tam={110} peso={600}>Antes tenía que arreglar</Serif>
+    </T>
+    <T x={960} y={610} op={tr(t, 9, 8) * (1 - tr(p(1), -5, 6))}>
+      <Serif tam={96} peso={600} color="#FFD95A">algo que no le funcionaba en casa</Serif>
     </T>
     <Detras x={960} y={430} t={p(1)} tam={400}>frescos</Detras>
     <Sujeto src={med(ctx, 'c_pescado')} x={500} y={1060} ancho={820} t={p(1) - 3} de="izq" rot={-3} />

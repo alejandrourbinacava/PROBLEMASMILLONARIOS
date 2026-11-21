@@ -73,6 +73,7 @@ class Tiempos:
 # ---------------------------------------------------------------- metraje
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAL = 9
+KIT = ["c_tienda", "c_walmartvacio", "c_furgo", "c_bloque", "c_b500", "c_b200", "c_euro1", "c_packs", "c_pan", "c_fruta", "c_huevos", "c_salsas", "c_pescado", "c_tomates", "c_leche", "c_pilon", "c_logo", "c_redondo"]
 
 
 class Media:
@@ -204,6 +205,17 @@ def construye(T, escenas, marca, destino, media=None, piel=None):
                 e["medios"].append(o)
     if piel:
         usados["grano.jpg"] = "vox/media/comun/grano.jpg"
+    if piel == "anim":
+        # lo que dibuja kit.tsx con imagen real: platos de fondo y piezas de los actores
+        tema = os.path.basename(destino).split(".")[0]
+        for i in range(6):
+            usados["plato_%d.jpg" % i] = "vox/media/comun/plato_%d.jpg" % i
+        for n in KIT:
+            usados[n + ".webp"] = "vox/media/%s/%s.webp" % (tema, n)
+        carpeta = os.path.join(REPO, "vox", "media", tema)
+        for f in sorted(os.listdir(carpeta)) if os.path.isdir(carpeta) else []:
+            if f.startswith("g_") and f.endswith(".webp"):
+                usados[f] = "vox/media/%s/%s" % (tema, f)
     spec = {"fps": FPS, "total": total, "marca": marca, "escenas": out, "tiempos_reales": T.real, "medios": usados}
     if piel:
         spec["piel"] = piel

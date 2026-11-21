@@ -1,8 +1,8 @@
 import React from 'react';
-import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {EP, Escena, MarcaCtx, Spec, useFuentes} from './base';
 import {Metraje} from './capas';
-import {A, Cifra, Defs, Escenario, Eti, FONDO, GRIS, PAL, Palabras, Sans, Serif, T, TINTA, c01, grad, io, pop, rebote, sal, tr} from './kit';
+import {A, Cifra, Defs, Escenario, IdxCtx, Eti, FONDO, GRIS, PAL, Palabras, Sans, Serif, T, TINTA, c01, grad, io, pop, rebote, sal, tr} from './kit';
 import {Detras, FondoReal, Sujeto, med} from './m_capas';
 import {ESCENAS} from './mercadona';
 
@@ -151,7 +151,7 @@ export const Animado: React.FC<{spec: Spec}> = ({spec}) => {
     <MarcaCtx.Provider value={spec.marca}>
       <AbsoluteFill style={{background: FONDO, overflow: 'hidden'}}>
         <Defs />
-        {spec.escenas.map((e) => {
+        {spec.escenas.map((e, idx) => {
           const t = f - e.f0;
           const dur = e.f1 - e.f0;
           if (t < 0 || t >= dur) return null;
@@ -162,7 +162,7 @@ export const Animado: React.FC<{spec: Spec}> = ({spec}) => {
           const claro = e.d?.claro;
           return (
             <AbsoluteFill key={e.id} style={{background: FONDO}}>
-              {e.tipo === 'broll' ? <Broll {...ep} e={e} f={f} fps={fps} /> : C ? <C {...ep} /> : null}
+              <IdxCtx.Provider value={idx}>{e.tipo === 'broll' ? <Broll {...ep} e={e} f={f} fps={fps} /> : C ? <C {...ep} /> : null}</IdxCtx.Provider>
               {e.fuente && (
                 <div style={{position: 'absolute', left: 60, bottom: 34, font: "500 18px 'D Sans'", letterSpacing: 2, textTransform: 'uppercase', color: claro ? 'rgba(20,30,50,0.55)' : 'rgba(255,255,255,0.42)', opacity: c01((t - 12) / 10)}}>
                   Fuente: {e.fuente}
@@ -172,6 +172,10 @@ export const Animado: React.FC<{spec: Spec}> = ({spec}) => {
           );
         })}
         <AbsoluteFill style={{background: 'radial-gradient(ellipse at center, rgba(0,0,0,0) 62%, rgba(0,0,0,0.26) 100%)', pointerEvents: 'none'}} />
+        {/* grano de pelicula, igual en todo el video: quita el aspecto de vector limpio */}
+        <AbsoluteFill style={{overflow: 'hidden', mixBlendMode: 'overlay', opacity: 0.17, pointerEvents: 'none'}}>
+          <Img src={staticFile('vox/media/grano.jpg')} style={{position: 'absolute', width: 2400, height: 1400, left: -((Math.floor(f / 2) * 173) % 440), top: -((Math.floor(f / 2) * 97) % 300)}} />
+        </AbsoluteFill>
       </AbsoluteFill>
     </MarcaCtx.Provider>
   );

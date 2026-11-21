@@ -7,6 +7,7 @@ import {CAP4} from './m_cap4';
 import {CAP5} from './m_cap5';
 import {CAPAS} from './m_capas';
 import {GANCHO} from './m_gancho';
+import {VOX} from './m_vox';
 
 /** Registro de escenas animadas de «Por que Mercadona NO quiere crecer fuera de Espana». */
 export const ESCENAS: Record<string, React.FC<EP>> = {
@@ -18,4 +19,5 @@ export const ESCENAS: Record<string, React.FC<EP>> = {
   ...CAP5,
   // las escenas por capas con imagen real pisan a su version dibujada
   ...CAPAS,
+  ...VOX,
 };

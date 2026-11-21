@@ -71,10 +71,8 @@ export const Frescos: React.FC<EP> = ({t, p, dur, ctx}) => (
     <T x={960} y={610} op={tr(t, 9, 8) * (1 - tr(p(1), -5, 6))}>
       <Serif tam={96} peso={600} color="#FFD95A">algo que no le funcionaba en casa</Serif>
     </T>
-    <Detras x={960} y={430} t={p(1)} tam={400}>frescos</Detras>
-    <Sujeto src={med(ctx, 'c_pescado')} x={500} y={1060} ancho={820} t={p(1) - 3} de="izq" rot={-3} />
-    <Sujeto src={med(ctx, 'c_pan')} x={1450} y={1040} ancho={700} t={p(1) - 8} de="der" rot={3} />
-    <Sujeto src={med(ctx, 'c_leche')} x={1010} y={1090} alto={560} t={p(1) - 13} de="aba" />
+    <Detras x={960} y={330} t={p(1)} tam={380}>frescos</Detras>
+    <Sujeto src="g_frescos.webp" x={960} y={1230} ancho={900} t={p(1) - 4} de="aba" />
   </AbsoluteFill>
 );
 
@@ -94,15 +92,15 @@ export const CamionReal: React.FC<EP> = ({t, p, dur, ctx}) => {
       <T x={985} y={486} op={tr(t, 8, 8)}>
         <Eti tam={28} color="#fff">frontera</Eti>
       </T>
-      <Sujeto src={med(ctx, 'c_bloque')} x={430} y={920} ancho={860} t={t - 2} de="izq" />
-      <Sujeto src={med(ctx, 'c_tienda')} x={1490} y={920} ancho={860} t={t - 6} de="der" />
+      <Sujeto src="g_nave.webp" x={400} y={930} ancho={820} t={t - 2} de="izq" />
+      <Sujeto src="g_super_m.webp" x={1560} y={940} ancho={680} t={t - 6} de="der" />
       <T x={420} y={600} op={tr(t, 10, 8)}>
         <Chip tam={40} fondo="#F4F5F7" tinta="#0B0C10">España · sus almacenes</Chip>
       </T>
       <T x={1500} y={600} op={tr(t, 14, 8)}>
         <Chip tam={40}>Portugal</Chip>
       </T>
-      <Sujeto src={med(ctx, 'c_furgo')} x={x} y={1010 + Math.sin(x / 9) * 2} ancho={520} t={t - 8} de="izq" lejos={500} />
+      <Sujeto src="g_camion_m.webp" x={x} y={1040 + Math.sin(x / 9) * 2} ancho={640} t={t - 8} de="izq" lejos={500} />
     </AbsoluteFill>
   );
 };

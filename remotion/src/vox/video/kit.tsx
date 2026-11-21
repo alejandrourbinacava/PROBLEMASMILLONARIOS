@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {createContext, useContext} from 'react';
+import {Img, staticFile} from 'remotion';
 import {EUROPA} from './europa';
 
 /**
@@ -113,22 +114,34 @@ export const Mundo: React.FC<{cam: Cam; children: React.ReactNode; f?: number}> 
   <div style={{position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, transformOrigin: '0 0', transform: `translate(${960 - cam.x * cam.z}px, ${540 - cam.y * cam.z}px) scale(${cam.z})`}}>{children}</div>
 );
 
-/** Fondo del plano. `oscuro` es el de siempre; `verde` y `claro` cambian el registro. */
+/** Indice del plano en el video: decide que plato de fondo le toca. */
+export const IdxCtx = createContext(0);
+const N_PLATOS = 6;
+/**
+ * Fondo del plano. `oscuro` es el de siempre: un PLATO (fotograma real muy
+ * desenfocado y oscurecido, `vox/piezas_kit.py`) que deriva despacio con la
+ * camara, para que detras de los recortes haya imagen y no un color plano.
+ * `verde` y `claro` cambian el registro.
+ */
 export const Escenario: React.FC<{tipo?: 'oscuro' | 'verde' | 'claro' | 'azul'; cam?: Cam}> = ({tipo = 'oscuro', cam}) => {
-  const bg = tipo === 'verde' ? 'linear-gradient(180deg, #12B764 0%, #07753F 100%)' : tipo === 'azul' ? 'linear-gradient(180deg, #1F56D8 0%, #0B1FA8 100%)' : tipo === 'claro' ? 'linear-gradient(180deg, #FFFFFF 0%, #E7EAF0 100%)' : `radial-gradient(ellipse at 50% 40%, #14161D 0%, ${FONDO} 70%)`;
-  const lin = tipo === 'claro' ? 'rgba(10,20,40,0.05)' : 'rgba(255,255,255,0.045)';
-  // el dibujo de lineas se mueve muy poco con la camara: da profundidad sin distraer
+  const idx = useContext(IdxCtx);
+  const bg = tipo === 'verde' ? 'linear-gradient(180deg, #12B764 0%, #07753F 100%)' : tipo === 'azul' ? 'linear-gradient(180deg, #1F56D8 0%, #0B1FA8 100%)' : tipo === 'claro' ? 'linear-gradient(180deg, #FFFFFF 0%, #E7EAF0 100%)' : FONDO;
+  const lin = tipo === 'claro' ? 'rgba(10,20,40,0.05)' : 'rgba(255,255,255,0.04)';
   const dx = cam ? -cam.x * 0.06 : 0;
   const dy = cam ? -cam.y * 0.04 : 0;
   return (
     <div style={{position: 'absolute', inset: 0, background: bg, overflow: 'hidden'}}>
+      {tipo === 'oscuro' && (
+        <>
+          <Img src={staticFile(`vox/media/plato_${idx % N_PLATOS}.jpg`)} style={{position: 'absolute', left: -160 + (dx % 300) * 0.5, top: -90 + dy * 0.3, width: 2240, height: 1260, objectFit: 'cover'}} />
+          <div style={{position: 'absolute', inset: 0, background: 'radial-gradient(ellipse at 50% 42%, rgba(11,12,16,0.30) 0%, rgba(11,12,16,0.78) 80%)'}} />
+        </>
+      )}
       <svg width={2600} height={1400} style={{position: 'absolute', left: -200 + (dx % 520), top: -120 + dy}} fill="none" stroke={lin} strokeWidth={2}>
         {[0, 1, 2, 3, 4].map((i) => (
           <g key={i} transform={`translate(${i * 520},0)`}>
             <path d="M40,160 L220,60 L400,160 L400,420 L220,520 L40,420 Z" />
             <path d="M300,620 L480,520 L660,620 L660,880 L480,980 L300,880 Z" />
-            <path d="M-80,940 L100,840 L280,940 L280,1200" />
-            <path d="M220,60 L220,-80 M480,980 L480,1200" />
           </g>
         ))}
       </svg>
@@ -250,6 +263,30 @@ export const Sello: React.FC<{x: number; y: number; t: number; children: React.R
   );
 
 // ---------------------------------------------------------------- actores
+/**
+ * Pieza de imagen real: un recorte limpio (`c_<nombre>.webp`). Con ella se
+ * dibujan los actores (tienda, furgoneta, almacen, billetes, moneda, productos):
+ * las escenas son collage de imagenes reales, no pictogramas.
+ */
+export const Pieza: React.FC<AP & {src: string; w: number; ancla?: 'base' | 'centro'; flip?: boolean; filtro?: string; sombra?: boolean}> = ({src, w, x, y, s = 1, rot = 0, op = 1, ancla = 'base', flip, filtro = '', sombra = true}) =>
+  op <= 0 || s <= 0 ? null : (
+    <div style={{position: 'absolute', left: x, top: y, width: 0, height: 0, opacity: op}}>
+      <Img
+        src={staticFile('vox/media/' + src + '.webp')}
+        style={{position: 'absolute', width: w, maxWidth: 'none', left: -w / 2, transform: `translateY(${ancla === 'base' ? '-100%' : '-50%'}) rotate(${rot}deg) scale(${flip ? -s : s}, ${s})`, transformOrigin: ancla === 'base' ? '50% 100%' : '50% 50%', filter: `${filtro} ${sombra ? 'drop-shadow(0 12px 16px rgba(0,0,0,0.55))' : ''}`}}
+      />
+    </div>
+  );
+/** Tintes para dar el color de otra cadena a un edificio o a un producto reales. */
+const TINTE: Partial<Record<Col, string>> = {
+  rosa: 'grayscale(1) sepia(1) hue-rotate(282deg) saturate(4.2) brightness(0.95)',
+  azul: 'grayscale(1) sepia(1) hue-rotate(186deg) saturate(4.6) brightness(0.9)',
+  cian: 'grayscale(1) sepia(1) hue-rotate(152deg) saturate(4) brightness(1)',
+  rojo: 'grayscale(1) sepia(1) hue-rotate(-40deg) saturate(5.5) brightness(0.9)',
+  ambar: 'grayscale(1) sepia(1) saturate(3.4) brightness(1.05)',
+  humo: 'grayscale(1) brightness(0.72)',
+};
+
 /** Persona de papel. Los pies estan en (x, y). `fase` (radianes) la hace andar. */
 export const Persona: React.FC<AP & {color?: Col; fase?: number; flip?: boolean; brazo?: number}> = ({color = 'verde', fase, brazo, ...a}) => {
   const g = `url(#gp-${color})`;
@@ -271,35 +308,15 @@ export const Persona: React.FC<AP & {color?: Col; fase?: number; flip?: boolean;
   );
 };
 
-/** Supermercado visto de frente. La base esta en (x, y). `cierre` 0..1 baja la persiana. */
-export const Tienda: React.FC<AP & {color?: Col; nombre?: string; cierre?: number; ancho?: number; luz?: number}> = ({color = 'verde', nombre, cierre = 0, ancho = 280, luz = 1, ...a}) => {
-  const w = ancho / 2;
-  const hueco = (x0: number, x1: number, y0: number) => (
-    <g>
-      <rect x={x0} y={y0} width={x1 - x0} height={-y0} rx={5} fill="url(#g-cristal)" />
-      <path d={`M${x0 + 8},${y0 + 40} L${x0 + 40},${y0 + 6} L${x0 + 58},${y0 + 6} L${x0 + 8},${y0 + 62} Z`} fill="#fff" opacity={0.12 * luz} />
-      {cierre > 0 && <rect x={x0} y={y0} width={x1 - x0} height={-y0 * cierre} fill="#8E96A6" />}
-      {cierre > 0 && Array.from({length: 7}, (_, i) => -y0 * cierre > (i + 1) * 16 && <rect key={i} x={x0} y={y0 + (i + 1) * 16} width={x1 - x0} height={2.5} fill="#6B7383" />)}
-    </g>
-  );
-  return (
-    <A {...a}>
-      <ellipse cx={0} cy={4} rx={w + 26} ry={12} fill="#000" opacity={0.35} />
-      <rect x={-w + 8} y={-150} width={ancho - 16} height={150} fill="#EEF1F6" />
-      <rect x={-w + 8} y={-16} width={ancho - 16} height={16} fill="#CCD2DD" />
-      {hueco(-w + 26, -40, -112)}
-      {hueco(40, w - 26, -112)}
-      <g transform="translate(0 -14)">{hueco(-30, 30, -112)}</g>
-      <rect x={-1.5} y={-126} width={3} height={112} fill="#0B0F18" opacity={0.6} />
-      <rect x={-w} y={-204} width={ancho} height={58} rx={10} fill={`url(#g-${color})`} />
-      <rect x={-w} y={-152} width={ancho} height={8} fill={PAL[color][1]} />
-      {nombre && (
-        <text x={0} y={-164} textAnchor="middle" style={{font: `${nombre.length > 9 ? 27 : 32}px 'M Black'`}} fill="#fff">
-          {nombre}
-        </text>
-      )}
-    </A>
-  );
+const ROTULO: Record<string, string> = {MERCADONA: 'm', WALMART: 'w', LIDL: 'l', CARREFOUR: 'c', DIA: 'd', TESCO: 'e', 'FRESH & EASY': 't'};
+/**
+ * Supermercado: foto de estudio de un edificio con el nombre de la cadena en el
+ * letrero (`vox/rotular.py`). La base esta en (x, y). `cierre` 0..1 lo apaga.
+ */
+export const Tienda: React.FC<AP & {color?: Col; nombre?: string; cierre?: number; ancho?: number; luz?: number}> = ({color = 'verde', nombre, cierre = 0, ancho = 280, luz, ...a}) => {
+  const clave = (nombre && ROTULO[nombre]) || (color === 'verde' ? 'm' : color === 'azul' ? 'a' : 'x');
+  const gris = color === 'humo' ? 1 : cierre;
+  return <Pieza {...a} src={'g_super_' + clave} w={ancho * 1.95} filtro={`grayscale(${gris}) brightness(${1 - 0.5 * gris})`} />;
 };
 /** Tienda diminuta para rejillas y mapas (se dibuja dentro de un <svg> propio). */
 export const mini = (x: number, y: number, s: number, c1: string, c2 = '#EEF1F6', key?: React.Key, op = 1) => (
@@ -310,60 +327,16 @@ export const mini = (x: number, y: number, s: number, c1: string, c2 = '#EEF1F6'
   </g>
 );
 
-/** Camion mirando a la derecha. Las ruedas se apoyan en (x, y). `avance` gira las ruedas. */
-export const Camion: React.FC<AP & {color?: Col; nombre?: string; flip?: boolean; avance?: number; carga?: number}> = ({color = 'verde', nombre, avance = 0, ...a}) => {
-  const rueda = (cx: number) => (
-    <g transform={`translate(${cx} -24)`}>
-      <circle r={24} fill="#12151C" />
-      <circle r={10} fill="#8E96A6" />
-      <rect x={-1.5} y={-10} width={3} height={20} fill="#12151C" transform={`rotate(${avance * 2.4})`} />
-    </g>
-  );
-  return (
-    <A {...a}>
-      <ellipse cx={0} cy={2} rx={220} ry={10} fill="#000" opacity={0.35} />
-      <rect x={-210} y={-190} width={300} height={150} rx={12} fill="#F1F3F7" />
-      <rect x={-210} y={-92} width={300} height={22} fill={`url(#g-${color})`} />
-      <rect x={-210} y={-46} width={300} height={10} fill="#2B3140" />
-      <path d="M98,-150 L150,-150 Q172,-150 182,-128 L204,-84 Q210,-74 210,-62 L210,-36 L98,-36 Z" fill={`url(#g-${color})`} />
-      <path d="M112,-136 L150,-136 Q162,-136 168,-124 L186,-88 L112,-88 Z" fill="url(#g-cristal)" />
-      {nombre && (
-        <g transform={a.flip ? 'scale(-1 1)' : undefined}>
-          <text x={a.flip ? 60 : -60} y={-124} textAnchor="middle" style={{font: "30px 'M Black'"}} fill={PAL[color][1]}>
-            {nombre}
-          </text>
-        </g>
-      )}
-      {rueda(-150)}
-      {rueda(-92)}
-      {rueda(150)}
-    </A>
-  );
-};
-
-/** Bloque logistico / almacen. Base en (x, y). */
-export const Almacen: React.FC<AP & {color?: Col; nombre?: string}> = ({color = 'verde', nombre, ...a}) => (
-  <A {...a}>
-    <ellipse cx={0} cy={4} rx={300} ry={12} fill="#000" opacity={0.35} />
-    <rect x={-280} y={-170} width={560} height={170} fill="#E4E8EF" />
-    <path d="M-290,-170 L-280,-196 L280,-196 L290,-170 Z" fill="#C5CBD7" />
-    <rect x={-280} y={-150} width={560} height={30} fill={`url(#g-${color})`} />
-    {[-220, -130, -40, 50, 140].map((x) => (
-      <g key={x}>
-        <rect x={x} y={-92} width={70} height={92} rx={4} fill="#2A3142" />
-        {[0, 1, 2, 3].map((i) => <rect key={i} x={x} y={-76 + i * 20} width={70} height={3} fill="#454D61" />)}
-      </g>
-    ))}
-    {nombre && (
-      <text x={0} y={-127} textAnchor="middle" style={{font: "24px 'M Black'"}} fill="#fff">
-        {nombre}
-      </text>
-    )}
-  </A>
+/** Camion (foto de estudio), mirando a la derecha. Las ruedas se apoyan en (x, y). */
+export const Camion: React.FC<AP & {color?: Col; nombre?: string; flip?: boolean; avance?: number; carga?: number}> = ({color, nombre, avance = 0, carga, ...a}) => (
+  <Pieza {...a} y={a.y + Math.sin(avance / 9) * 1.5} src={nombre === '' ? 'g_camion' : 'g_camion_m'} w={600} />
 );
 
+/** Bloque logistico (foto de estudio). Base en (x, y). */
+export const Almacen: React.FC<AP & {color?: Col; nombre?: string}> = ({color, nombre, ...a}) => <Pieza {...a} src="g_nave" w={700} />;
+
 /** Fabrica con tejado en sierra. Base en (x, y). `t` mueve el humo. */
-export const Fabrica: React.FC<AP & {color?: Col; t?: number}> = ({color = 'ambar', t = 0, ...a}) => (
+export const FabricaDibujo: React.FC<AP & {color?: Col; t?: number}> = ({color = 'ambar', t = 0, ...a}) => (
   <A {...a}>
     <ellipse cx={0} cy={4} rx={170} ry={10} fill="#000" opacity={0.35} />
     {[0, 1, 2].map((i) => {
@@ -378,51 +351,25 @@ export const Fabrica: React.FC<AP & {color?: Col; t?: number}> = ({color = 'amba
   </A>
 );
 
-/** Fajo de billetes de euro, visto de frente. Centro en (x, y). */
-export const Fajo: React.FC<AP & {tono?: number}> = ({tono = 0, ...a}) => (
-  <A {...a}>
-    <rect x={-66} y={-27} width={132} height={58} rx={7} fill="#3E9C63" />
-    <rect x={-66} y={-31} width={132} height={56} rx={7} fill={tono ? '#C9EFD6' : '#DDF6E5'} />
-    <rect x={-58} y={-24} width={116} height={42} rx={4} fill="none" stroke="#6FBF8C" strokeWidth={2.5} />
-    <circle cx={-34} cy={-3} r={12} fill="#8BD3A4" />
-    <rect x={-10} y={-31} width={26} height={56} fill="#fff" />
-    <rect x={-10} y={-31} width={26} height={56} fill="#19A05B" opacity={0.18} />
-    <text x={3} y={7} textAnchor="middle" style={{font: "26px 'M Black'"}} fill="#128249">
-      €
-    </text>
-    <rect x={30} y={-12} width={22} height={5} rx={2.5} fill="#6FBF8C" />
-    <rect x={30} y={-1} width={16} height={5} rx={2.5} fill="#6FBF8C" />
-  </A>
-);
+/** Un proveedor: una fabrica (foto de estudio). En gris (`humo`), la que aun no se conoce. */
+export const Fabrica: React.FC<AP & {color?: Col; t?: number}> = ({color = 'ambar', t, ...a}) => <Pieza {...a} src="g_fabrica" w={400} filtro={color === 'humo' ? 'grayscale(1) brightness(0.55)' : ''} />;
 
-/** Moneda de un euro. Centro en (x, y), radio 50. `gris` la apaga. */
-export const Moneda: React.FC<AP & {gris?: number; cara?: string}> = ({gris = 0, cara = '€', ...a}) => (
-  <A {...a}>
-    <circle r={50} cy={5} fill="#8A5E05" opacity={1 - gris} />
-    <circle r={50} cy={5} fill="#3A3F4B" opacity={gris} />
-    <circle r={50} fill="url(#g-oro)" />
-    <circle r={33} fill="url(#g-plata)" />
-    <circle r={50} fill="#4A5060" opacity={gris * 0.82} />
-    <text y={15} textAnchor="middle" style={{font: "800 44px 'D Sans'"}} fill={gris > 0.5 ? '#8D93A1' : '#4A5160'}>
-      {cara}
-    </text>
-  </A>
-);
+/** Billete de euro real, tumbado (500 o 200, alternando con `tono`). Centro en (x, y). */
+export const Fajo: React.FC<AP & {tono?: number}> = ({tono = 0, ...a}) => <Pieza {...a} rot={(a.rot ?? 0) + 90} src={tono ? 'c_b200' : 'c_b500'} w={76} ancla="centro" />;
 
-/** Caja de producto generica. Base en (x, y). */
-export const Caja: React.FC<AP & {color?: Col; alto?: number; ancho?: number; marca?: string}> = ({color = 'verde', alto = 110, ancho = 78, marca, ...a}) => (
-  <A {...a}>
-    <rect x={-ancho / 2} y={-alto} width={ancho} height={alto} rx={8} fill="#F1F3F7" />
-    <rect x={-ancho / 2} y={-alto * 0.72} width={ancho} height={alto * 0.4} fill={`url(#g-${color})`} />
-    <rect x={-ancho / 2 + 10} y={-alto + 12} width={ancho * 0.5} height={7} rx={3.5} fill="#C5CBD7" />
-    <rect x={-ancho / 2} y={-10} width={ancho} height={10} rx={4} fill="#C5CBD7" />
-    {marca && (
-      <text x={0} y={-alto * 0.47} textAnchor="middle" style={{font: `${ancho * 0.17}px 'M Black'`}} fill="#fff">
-        {marca}
-      </text>
-    )}
-  </A>
-);
+/** Moneda de un euro real. Centro en (x, y), unos 100 px. `gris` la apaga. */
+export const Moneda: React.FC<AP & {gris?: number; cara?: string}> = ({gris = 0, cara, ...a}) => <Pieza {...a} src="g_moneda" w={106} ancla="centro" filtro={`grayscale(${gris}) brightness(${1 - 0.45 * gris})`} />;
+
+const PRODUCTOS = ['c_packs', 'c_pan', 'c_fruta', 'c_huevos', 'c_salsas', 'c_pescado', 'c_tomates', 'c_leche'];
+/**
+ * Un producto real del lineal (va rotando entre los recortes que hay). Base en
+ * (x, y). `rojo`, `azul`... lo tintan; `humo` lo deja en gris.
+ */
+export const Caja: React.FC<AP & {color?: Col; alto?: number; ancho?: number; marca?: string}> = ({color = 'verde', alto, ancho = 78, marca, ...a}) => {
+  const k = Math.abs(Math.round(a.x / 37 + a.y / 91)) % PRODUCTOS.length;
+  const tinte = color === 'rojo' || color === 'azul' || color === 'humo' ? TINTE[color] : '';
+  return <Pieza {...a} src={PRODUCTOS[k]} w={ancho * 1.5} filtro={tinte} />;
+};
 
 /** Carro de la compra. Ruedas en (x, y). */
 export const Carro: React.FC<AP & {color?: string; lleno?: number}> = ({color = '#E8ECF2', lleno = 0, ...a}) => (

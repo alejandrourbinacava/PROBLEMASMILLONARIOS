@@ -3,6 +3,8 @@ import {AbsoluteFill} from 'remotion';
 import {EP} from './base';
 import {A, Almacen, Caja, Camion, Chip, Cifra, Col, Escenario, Eti, FONDO, Fajo, Flecha, GRIS, Hoja, Mapa, Marca, Mundo, PAL, Persona, Sans, Sello, Serif, T, Tienda, Tira, c01, camara, centro, geo, io, lerp, miles, pop, rebote, rnd, sal, tr} from './kit';
 import {MK, MX, MY, Tiendas} from './m_gancho';
+import {Im} from './m_vox';
+
 
 const VERDE_PAIS = '#0F4A2D';
 const GRIS_PAIS = '#3A3F4B';
@@ -169,22 +171,14 @@ export const PlanInicial: React.FC<EP> = ({t, p}) => {
         <div key={i} style={{position: 'absolute', left: (X[i - 1] + X[i]) / 2, top: 290, width: 2, height: 660, background: 'rgba(255,255,255,0.08)', opacity: tr(p(i + 1), -6, 8)}} />
       ))}
       {[0, 1, 2, 3].map((k) => (
-        <Tienda key={k} x={X[0] + (k % 2 ? 100 : -100)} y={k < 2 ? 470 : 660} s={0.62 * pop(p(1) - k * 3, 11, 1.8)} />
+        <Tienda key={k} x={X[0] + (k % 2 ? 105 : -105)} y={k < 2 ? 480 : 660} s={0.42 * pop(p(1) - k * 3, 11, 1.8)} />
       ))}
       {pie(0, '4', 'supermercados')}
-      {[0, 1, 2, 3, 4].map((k) => {
-        const tt = p(2) - k * 3;
-        return tt < 0 ? null : <Fajo key={k} x={X[1] + (rnd(k) - 0.5) * 14} y={640 - k * 50 - (1 - rebote(tt / 10, 0.9)) * 300} s={1.7} rot={(rnd(k + 5) - 0.5) * 6} tono={k % 2} />;
-      })}
+      <Im src="g_fajo" x={X[1]} y={680} w={410} t={p(2)} de="pop" />
       {pie(1, '25 M€', 'de inversión')}
-      {Array.from({length: 200}, (_, k) => {
-        const c = k % 20;
-        const r = Math.floor(k / 20);
-        const tt = p(3) - (c * 0.5 + r * 1.2);
-        return tt < 0 ? null : <Persona key={k} x={X[2] - 190 + c * 20} y={346 + r * 34} s={0.125 * pop(tt, 8, 2.2)} color={k % 7 === 3 ? 'menta' : 'verde'} />;
-      })}
+      <Im src="g_empleados" x={X[2]} y={690} w={420} t={p(3)} de="pop" />
       {pie(2, miles(Math.round(200 * sal(p(3) / 24))), 'empleos')}
-      <Tienda x={X[3]} y={660} s={1.05 * pop(p(4), 12, 1.5)} nombre="MERCADONA" cierre={1 - io(tr(p(4), 12, 22))} />
+      <Tienda x={X[3]} y={670} s={0.74 * pop(p(4), 12, 1.5)} nombre="MERCADONA" cierre={1 - io(tr(p(4), 12, 22))} />
       {pie(3, '2019', 'año de apertura')}
     </AbsoluteFill>
   );
@@ -256,9 +250,7 @@ export const Pruebas: React.FC<EP> = ({t, p}) => {
       <T x={144} y={326} ancla="i" op={tr(p(4), 0, 8)}>
         <Sans tam={54} peso={700}>productos había que cambiarlos para Portugal</Sans>
       </T>
-      {[520, 960, 1400].map((x, i) => (
-        <Persona key={i} x={x + (1 - sal(tr(t, 4 + i * 6, 26))) * 1100} y={1016} s={2.1} color="rosa" fase={tr(t, 4 + i * 6, 26) < 1 ? t / 3 + i : undefined} flip />
-      ))}
+      <Im src="g_clientes" x={960} y={1120} w={860} t={t - 4} de="aba" />
       <div style={{position: 'absolute', left: 220, top: 820, width: 1480, height: 30, borderRadius: 15, background: '#4A5165'}} />
       <div style={{position: 'absolute', left: 320, top: 850, width: 26, height: 230, background: '#333949'}} />
       <div style={{position: 'absolute', left: 1574, top: 850, width: 26, height: 230, background: '#333949'}} />

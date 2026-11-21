@@ -71,7 +71,8 @@ def cita(de, pasos, partes, cuando, previo=None, fuente=None, nota=None, pregunt
 FOTOS = " · fotos: Wikimedia Commons"
 
 # =============================================================== GANCHO
-an("ventas", 0, [(0, 0), (1, 0), (1, 1), (1, 2), (1, "pasan por")], fuente=RES)
+an("ventas", 0, [(0, 0), (1, 0), (1, 1), (1, 2), (1, "pasan por")], fuente=RES,
+   clips=[C("supermarket_checkout_lanes"), C("aerial_town_avenue", 2), C("hands_checkout", 3)])
 an("mapa_dos", 2, [(2, 0), (3, 0), (3, 1), (3, 2), (4, 0), (4, "tiene tiendas")],
    fuente="Mercadona (tiendas) · Worldpanel by Numerator (cuotas) · Schwarz Gruppe (países)")
 cita(5, [(5, 0), (5, "«No hay")], ["*No hay un tercer país.* No vamos a ir a un tercer país."], "10 de marzo de 2026",
@@ -118,7 +119,7 @@ an("marcas", 45, [(45, 0), (45, "Hacendado"), (45, "Deliplus"), (45, "Bosque")],
 an("encargo", 46, [(46, 0), (46, "los encarga"), (46, "con los que"), (46, "y a los que")])
 an("red_es", 47, [(47, 0), (48, 0), (48, 1)], fuente="prensa económica, julio de 2026")
 an("otros_abren", 49, [(49, 0), (49, "llenan"), (49, "con marcas"), (49, "y con su marca")])
-an("merc_abre", 50, [(50, 0), (50, 1), (50, "quién le trae"), (50, "quién le fabrica"), (50, "y a su precio")], fotos=["r_pan.webp", "r_pescado.webp", "r_leche.webp"])
+an("merc_abre", 50, [(50, 0), (50, 1), (50, "quién le trae"), (50, "quién le fabrica"), (50, "y a su precio")], fotos=["c_pan", "c_pescado", "c_leche"])
 an("red_pt", 51, [(51, 0), (51, "y les compra"), (51, 1), (51, "uno en"), (51, "y otro"), (52, 0)], fuente="ECO (eco.sapo.pt), 10-3-2026")
 cita(53, [(53, 0), (53, "«Estamos")], ["Estamos en Portugal, pero *no conocemos a fondo el país*. No somos portugueses."], "10 de marzo de 2026",
      previo="Después de siete años", pregunta="Y aun así, dice esto:", fuente="OKDiario, 11-3-2026")

@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {EP} from './base';
 import {EUROPA} from './europa';
 import {A, Barra, Casa, Chip, Cifra, Escenario, Eti, FONDO, Fajo, Flecha, GRIS, Mapa, Marca, Moneda, Mundo, PAL, Persona, Carro, Sans, Serif, T, Tienda, c01, camara, centro, geo, io, kf, lerp, miles, mini, pop, rebote, rnd, sal, tr} from './kit';
@@ -117,7 +117,7 @@ export const Ventas: React.FC<EP> = ({t, p, dur}) => {
         <T x={4800} y={200} op={tr(p(3), 8, 8)}>
           <Sans tam={62} peso={700}>De cada 10 € que se gastan en la compra en España…</Sans>
         </T>
-        <Tienda x={4340} y={1010} s={1.75 * pop(p(3) - 22, 12, 1.4)} nombre="MERCADONA" />
+        <Tienda x={4330} y={1000} s={0.92 * pop(p(3) - 22, 12, 1.4)} nombre="MERCADONA" />
         {monedas}
         <T x={5130} y={660} op={tr(p(4), 16, 8)}>
           <Eti tam={36} color="#C9CED8">casi 3 pasan por sus cajas</Eti>
@@ -253,21 +253,16 @@ export const MapaDos: React.FC<EP> = ({t, p, dur}) => {
   );
 };
 
-const PilaMonedas: React.FC<{x: number; y: number; n: number; s?: number}> = ({x, y, n, s = 1}) => (
-  <A x={x} y={y} s={s}>
-    {Array.from({length: Math.ceil(n)}, (_, i) => {
-      const e = c01(n - i);
-      return (
-        <g key={i} transform={`translate(0 ${-i * 17 - (1 - sal(e)) * 60})`} opacity={e}>
-          <ellipse cx={0} cy={6} rx={44} ry={13} fill="#B67806" />
-          <rect x={-44} y={0} width={88} height={6} fill="#B67806" />
-          <ellipse cx={0} cy={0} rx={44} ry={13} fill="url(#g-oro)" />
-          <ellipse cx={0} cy={0} rx={30} ry={8} fill="none" stroke="#B67806" strokeWidth={2} opacity={0.5} />
-        </g>
-      );
-    })}
-  </A>
-);
+/** Pila de monedas de euro (foto de estudio): crece de abajo arriba hasta `n` de 17. La base esta en (x, y). */
+const PilaMonedas: React.FC<{x: number; y: number; n: number; s?: number}> = ({x, y, n, s = 1}) => {
+  const f = Math.min(1, Math.max(0, n / 17));
+  const w = 116 * s;
+  return f <= 0 || s <= 0 ? null : (
+    <div style={{position: 'absolute', left: x, top: y + 10 * s, width: 0, height: 0}}>
+      <Img src={staticFile('vox/media/g_monedas.webp')} style={{position: 'absolute', width: w, maxWidth: 'none', left: -w / 2, transform: 'translateY(-100%)', clipPath: `inset(${(1 - f) * 100}% 0 0 0)`, filter: 'drop-shadow(0 10px 14px rgba(0,0,0,0.55))'}} />
+    </div>
+  );
+};
 export {PilaMonedas};
 
 /** 30-39 s · gana mas que nunca y se niega a salir. No es miedo ni dinero: ya lo intento una vez. */

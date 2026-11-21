@@ -3,6 +3,8 @@ import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {EP} from './base';
 import {A, Almacen, Barra, Camion, Casa, Chip, Cifra, Escenario, Eti, Fabrica, Fajo, GRIS, Hoja, Mapa, Marca, Moneda, Mundo, PAL, Sans, Sello, Serif, T, Tienda, Tira, c01, camara, geo, io, miles, pop, rebote, rnd, sal, tr} from './kit';
 import {FondoReal, Sujeto, med} from './m_capas';
+import {Im} from './m_vox';
+
 import {MK, MX, MY, PRT, PilaMonedas} from './m_gancho';
 
 const PORTO = geo([101, 772], MX, MY, MK);
@@ -63,19 +65,13 @@ export const Canidelo: React.FC<EP> = ({t, p, dur, ctx}) => {
   );
 };
 
-const Bloque: React.FC<{x: number; y: number; s?: number; lleno?: number; resalta?: number}> = ({x, y, s = 1, lleno = 1, resalta = 0}) => (
-  <A x={x} y={y} s={s}>
-    <g clipPath={lleno < 1 ? `inset(${(1 - lleno) * 100}% 0 0 0)` : undefined} style={lleno < 1 ? {clipPath: `inset(${(1 - lleno) * 100}% 0 0 0)`} : undefined}>
-      <rect x={-48} y={-44} width={96} height={96} rx={12} fill="#3E9C63" />
-      <rect x={-48} y={-48} width={96} height={94} rx={12} fill="#DDF6E5" />
-      <rect x={-48} y={-48} width={96} height={94} rx={12} fill="#FFD95A" opacity={resalta} />
-      <rect x={-48} y={-13} width={96} height={24} fill="#19A05B" opacity={0.85} />
-      <text x={0} y={8} textAnchor="middle" style={{font: "24px 'M Black'"}} fill="#fff">
-        €
-      </text>
-    </g>
-  </A>
-);
+/** Un fajo de 25 M EUR (foto de estudio). El centro de su base esta en (x, y). */
+const Bloque: React.FC<{x: number; y: number; s?: number; lleno?: number; resalta?: number}> = ({x, y, s = 1, lleno = 1, resalta = 0}) =>
+  s <= 0 ? null : (
+    <div style={{position: 'absolute', left: x, top: y, width: 0, height: 0}}>
+      <Img src={staticFile('vox/media/g_fajo.webp')} style={{position: 'absolute', width: 150, maxWidth: 'none', left: -75, transform: `translateY(-100%) scale(${s})`, transformOrigin: '50% 100%', clipPath: lleno < 1 ? `inset(${(1 - lleno) * 100}% 0 0 0)` : undefined, filter: `brightness(${1 + 0.25 * resalta}) drop-shadow(0 6px 8px rgba(0,0,0,0.5))`}} />
+    </div>
+  );
 
 /** 131-144 s · la cuenta: 25 M EUR de plan, 60 al abrir, 1.230 a cierre de 2025. Casi 50 veces. */
 export const Cuenta: React.FC<EP> = ({t, p, dur}) => {
@@ -88,7 +84,8 @@ export const Cuenta: React.FC<EP> = ({t, p, dur}) => {
     [s(2) + 22, 960, 540, 1],
     [dur, 960, 540, 1.03],
   ]);
-  const P = 106;
+  const P = 74;
+  const PX = 154;
   const SUELO = 940;
   const n = Math.max(0, Math.min(49, Math.floor((p(3) + 44) / 1.15)));
   const cifra = n >= 49 ? 1230 : Math.max(60, n * 25);
@@ -99,8 +96,8 @@ export const Cuenta: React.FC<EP> = ({t, p, dur}) => {
       <Mundo cam={cam}>
         <div style={{position: 'absolute', left: -600, top: SUELO + 4, width: 3200, height: 6, background: '#30364A'}} />
         {/* el plan */}
-        <Bloque x={250} y={SUELO - 48} s={pop(t - 2, 12, 1.6)} resalta={tr(p(4), 0, 8)} />
-        <T x={250} y={790} s={pop(t - 6, 12, 1.4)}>
+        <Bloque x={250} y={SUELO} s={pop(t - 2, 12, 1.6)} resalta={tr(p(4), 0, 8)} />
+        <T x={250} y={770} s={pop(t - 6, 12, 1.4)}>
           <Cifra tam={84}>25 M€</Cifra>
         </T>
         <T x={250} y={996} op={tr(t, 8, 8)}>
@@ -108,9 +105,9 @@ export const Cuenta: React.FC<EP> = ({t, p, dur}) => {
         </T>
         {/* al abrir */}
         {[0, 1, 2].map((k) => (
-          <Bloque key={k} x={560} y={SUELO - 48 - k * P - (1 - rebote(tr(p(1), k * 4, 10), 0.9)) * 260} s={p(1) - k * 4 >= 0 ? 1 : 0} lleno={k === 2 ? 0.4 : 1} />
+          <Bloque key={k} x={560} y={SUELO - k * P - (1 - rebote(tr(p(1), k * 4, 10), 0.9)) * 260} s={p(1) - k * 4 >= 0 ? 1 : 0} lleno={k === 2 ? 0.4 : 1} />
         ))}
-        <T x={560} y={604} s={pop(p(1) - 12, 12, 1.4)}>
+        <T x={560} y={640} s={pop(p(1) - 12, 12, 1.4)}>
           <Cifra tam={84}>60 M€</Cifra>
         </T>
         <T x={560} y={996} op={tr(p(1), 8, 8)}>
@@ -118,10 +115,10 @@ export const Cuenta: React.FC<EP> = ({t, p, dur}) => {
         </T>
         {/* a cierre de 2025 */}
         {Array.from({length: n}, (_, k) => {
-          const c = k % 7;
-          const r = Math.floor(k / 7);
+          const c = k % 5;
+          const r = Math.floor(k / 5);
           const tt = p(3) + 44 - k * 1.15;
-          return <Bloque key={k} x={960 + c * P} y={SUELO - 48 - r * P} s={pop(tt, 8, 2.2) * lat(k)} />;
+          return <Bloque key={k} x={980 + c * PX} y={SUELO - r * P} s={pop(tt, 8, 2.2) * lat(k)} />;
         })}
         <T x={1278} y={116} s={pop(p(2) - 14, 12, 1.4)}>
           <Cifra tam={140} color={n >= 49 ? 'ambar' : 'verde'}>{miles(cifra)} M€</Cifra>
@@ -218,7 +215,7 @@ export const Despega: React.FC<EP> = ({t, p, dur}) => {
 /** 166-180 s · de cada 100 EUR que vende: al grupo le quedan 4,1; a Portugal, 1,2. */
 export const Margen: React.FC<EP> = ({t, p}) => {
   const rejilla = (cx: number, t0: number, tRes: number, cuantas: number) => (
-    <svg width={500} height={500} style={{position: 'absolute', left: cx - 250, top: 330, overflow: 'visible'}}>
+    <>
       {Array.from({length: 100}, (_, k) => {
         const c = k % 10;
         const r = Math.floor(k / 10);
@@ -226,20 +223,15 @@ export const Margen: React.FC<EP> = ({t, p}) => {
         if (e <= 0) return null;
         const mia = k < cuantas;
         const u = c01(tRes / 10);
-        const sc = e * (mia ? 1 + 0.5 * rebote(c01((tRes - k * 3) / 10), 2) * (tRes >= 0 ? 1 : 0) : 1);
+        const sc = e * (mia && tRes >= 0 ? 1 + 0.45 * rebote(c01((tRes - k * 3) / 10), 2) : 1);
         return (
-          <g key={k} transform={`translate(${c * 50 + 25} ${r * 50 + 25}) scale(${sc})`} opacity={mia ? 1 : 1 - 0.72 * u}>
-            <circle r={21} fill={mia && tRes >= 0 ? PAL.verde[0] : 'url(#g-oro)'} />
-            <circle r={13.5} fill={mia && tRes >= 0 ? '#0B6B3B' : 'url(#g-plata)'} />
-            {mia && tRes >= 0 && (
-              <text y={7} textAnchor="middle" style={{font: "800 19px 'D Sans'"}} fill="#fff">
-                €
-              </text>
-            )}
-          </g>
+          <React.Fragment key={k}>
+            {mia && tRes >= 0 && <div style={{position: 'absolute', left: cx - 250 + c * 50 + 25 - 27, top: 330 + r * 50 + 25 - 27, width: 54, height: 54, borderRadius: 27, background: PAL.verde[0], transform: `scale(${sc})`}} />}
+            <Moneda x={cx - 250 + c * 50 + 25} y={330 + r * 50 + 25} s={0.43 * sc} gris={mia ? 0 : u} />
+          </React.Fragment>
         );
       })}
-    </svg>
+    </>
   );
   return (
     <AbsoluteFill>

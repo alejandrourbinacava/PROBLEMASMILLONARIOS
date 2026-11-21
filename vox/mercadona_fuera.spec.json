@@ -26,7 +26,28 @@
    "d": {
     "comp": "ventas"
    },
-   "f1": 282
+   "f1": 282,
+   "fondoClip": [
+    {
+     "src": "supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    },
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 115
+    },
+    {
+     "src": "hands_checkout_scanner_groceries_bag_101.mp4",
+     "desde": 0.0,
+     "rate": 0.937,
+     "en": 163
+    }
+   ],
+   "velo": "plano"
   },
   {
    "id": "e01_anim",
@@ -726,19 +747,19 @@
    "f1": 6640,
    "medios": [
     {
-     "src": "r_pan.webp",
+     "src": "c_pan.webp",
      "foto": true,
      "en": 0,
      "sale": 245
     },
     {
-     "src": "r_pescado.webp",
+     "src": "c_pescado.webp",
      "foto": true,
      "en": 0,
      "sale": 245
     },
     {
-     "src": "r_leche.webp",
+     "src": "c_leche.webp",
      "foto": true,
      "en": 0,
      "sale": 245
@@ -1589,6 +1610,9 @@
  ],
  "tiempos_reales": true,
  "medios": {
+  "supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4": "parallax2/proyecto/stock_mercadona/supermarket_checkout_lanes_fruit_vegetables_aisle_mercadona_920.mp4",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "hands_checkout_scanner_groceries_bag_101.mp4": "parallax2/proyecto/stock_mercadona/hands_checkout_scanner_groceries_bag_101.mp4",
   "mercadona_headquarters_night_sign_lights_934.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_night_sign_lights_934.mp4",
   "c_roig.webp": "vox/media/mercadona_fuera/c_roig.webp",
   "fish_counter_sea_bream_salmon_ice_supermarket_947.mp4": "parallax2/proyecto/stock_mercadona/fish_counter_sea_bream_salmon_ice_supermarket_947.mp4",
@@ -1603,9 +1627,6 @@
   "f_porto2.jpg": "vox/media/mercadona_fuera/f_porto2.jpg",
   "mercadona_headquarters_office_building_cranes_933.mp4": "parallax2/proyecto/stock_mercadona/mercadona_headquarters_office_building_cranes_933.mp4",
   "r_salsas.webp": "vox/media/mercadona_fuera/r_salsas.webp",
-  "r_pan.webp": "vox/media/mercadona_fuera/r_pan.webp",
-  "r_pescado.webp": "vox/media/mercadona_fuera/r_pescado.webp",
-  "r_leche.webp": "vox/media/mercadona_fuera/r_leche.webp",
   "c_walmart.webp": "vox/media/mercadona_fuera/c_walmart.webp",
   "c_aldi.webp": "vox/media/mercadona_fuera/c_aldi.webp",
   "c_lidl.webp": "vox/media/mercadona_fuera/c_lidl.webp",
@@ -1615,7 +1636,56 @@
   "mercadona_modern_store_glass_entrance_garden_927.mp4": "parallax2/proyecto/stock_mercadona/mercadona_modern_store_glass_entrance_garden_927.mp4",
   "c_logo.webp": "vox/media/mercadona_fuera/c_logo.webp",
   "mercadona_store_facade_hill_logo_960.mp4": "parallax2/proyecto/stock_mercadona/mercadona_store_facade_hill_logo_960.mp4",
-  "grano.jpg": "vox/media/comun/grano.jpg"
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "c_walmartvacio.webp": "vox/media/mercadona_fuera/c_walmartvacio.webp",
+  "c_b500.webp": "vox/media/mercadona_fuera/c_b500.webp",
+  "c_b200.webp": "vox/media/mercadona_fuera/c_b200.webp",
+  "c_euro1.webp": "vox/media/mercadona_fuera/c_euro1.webp",
+  "c_packs.webp": "vox/media/mercadona_fuera/c_packs.webp",
+  "c_fruta.webp": "vox/media/mercadona_fuera/c_fruta.webp",
+  "c_huevos.webp": "vox/media/mercadona_fuera/c_huevos.webp",
+  "c_salsas.webp": "vox/media/mercadona_fuera/c_salsas.webp",
+  "c_tomates.webp": "vox/media/mercadona_fuera/c_tomates.webp",
+  "c_pilon.webp": "vox/media/mercadona_fuera/c_pilon.webp",
+  "c_redondo.webp": "vox/media/mercadona_fuera/c_redondo.webp",
+  "g_balanza.webp": "vox/media/mercadona_fuera/g_balanza.webp",
+  "g_caja.webp": "vox/media/mercadona_fuera/g_caja.webp",
+  "g_camion.webp": "vox/media/mercadona_fuera/g_camion.webp",
+  "g_camion_l.webp": "vox/media/mercadona_fuera/g_camion_l.webp",
+  "g_camion_m.webp": "vox/media/mercadona_fuera/g_camion_m.webp",
+  "g_camion_x.webp": "vox/media/mercadona_fuera/g_camion_x.webp",
+  "g_carro.webp": "vox/media/mercadona_fuera/g_carro.webp",
+  "g_catalogo.webp": "vox/media/mercadona_fuera/g_catalogo.webp",
+  "g_clientes.webp": "vox/media/mercadona_fuera/g_clientes.webp",
+  "g_compradora.webp": "vox/media/mercadona_fuera/g_compradora.webp",
+  "g_empleados.webp": "vox/media/mercadona_fuera/g_empleados.webp",
+  "g_fabrica.webp": "vox/media/mercadona_fuera/g_fabrica.webp",
+  "g_fajo.webp": "vox/media/mercadona_fuera/g_fajo.webp",
+  "g_fajos.webp": "vox/media/mercadona_fuera/g_fajos.webp",
+  "g_frescos.webp": "vox/media/mercadona_fuera/g_frescos.webp",
+  "g_inversor.webp": "vox/media/mercadona_fuera/g_inversor.webp",
+  "g_lineal.webp": "vox/media/mercadona_fuera/g_lineal.webp",
+  "g_moneda.webp": "vox/media/mercadona_fuera/g_moneda.webp",
+  "g_monedas.webp": "vox/media/mercadona_fuera/g_monedas.webp",
+  "g_nave.webp": "vox/media/mercadona_fuera/g_nave.webp",
+  "g_pale.webp": "vox/media/mercadona_fuera/g_pale.webp",
+  "g_super.webp": "vox/media/mercadona_fuera/g_super.webp",
+  "g_super_a.webp": "vox/media/mercadona_fuera/g_super_a.webp",
+  "g_super_c.webp": "vox/media/mercadona_fuera/g_super_c.webp",
+  "g_super_d.webp": "vox/media/mercadona_fuera/g_super_d.webp",
+  "g_super_e.webp": "vox/media/mercadona_fuera/g_super_e.webp",
+  "g_super_l.webp": "vox/media/mercadona_fuera/g_super_l.webp",
+  "g_super_m.webp": "vox/media/mercadona_fuera/g_super_m.webp",
+  "g_super_t.webp": "vox/media/mercadona_fuera/g_super_t.webp",
+  "g_super_w.webp": "vox/media/mercadona_fuera/g_super_w.webp",
+  "g_super_x.webp": "vox/media/mercadona_fuera/g_super_x.webp",
+  "g_tique.webp": "vox/media/mercadona_fuera/g_tique.webp"
  },
  "piel": "anim"
 }

@@ -3,6 +3,8 @@ import {AbsoluteFill} from 'remotion';
 import {EP} from './base';
 import {A, Almacen, Camion, Chip, Cifra, Col, Escenario, Eti, Flecha, Hoja, Mapa, Marca, Moneda, Mundo, PAL, Sans, Sello, Serif, T, Tienda, c01, camara, centro, io, lerp, mini, pop, rebote, rnd, sal, tr} from './kit';
 import {Sujeto, med} from './m_capas';
+import {Im} from './m_vox';
+
 import {MK, MX, MY} from './m_gancho';
 
 /** Rejilla de tiendas diminutas. `tt(k)` da los fotogramas desde que aparece la k; `color(k)` su color. */
@@ -18,6 +20,7 @@ export const Rejilla: React.FC<{x: number; y: number; n: number; cols: number; p
 /** 322-326 s · antes lo intentaron los mas grandes del mundo. Y varios volvieron a casa. */
 export const Vuelven: React.FC<EP> = ({t, p}) => {
   const G: [string, Col, string][] = [['Walmart', 'azul', '#FFC83D'], ['Tesco', 'azul', '#fff'], ['Carrefour', 'azul', '#fff'], ['Dia', 'rojo', '#fff']];
+  void G[0][1];
   return (
     <AbsoluteFill>
       <Escenario />
@@ -30,11 +33,9 @@ export const Vuelven: React.FC<EP> = ({t, p}) => {
         const vuelta = io(tr(p(1), i * 4, 22));
         return (
           <React.Fragment key={n}>
-            <T x={x} y={840} s={pop(t - 4 - i * 4, 11, 1.6)}>
-              <Chip tam={64} color={c} tinta={tinta}>{n}</Chip>
-            </T>
-            <Flecha x0={x - 50} y0={760} x1={x - 50} y1={380} u={ida} curva={0} grosor={9} color="#F4F5F7" />
-            <Flecha x0={x + 50} y0={380} x1={x + 50} y1={760} u={vuelta} curva={0} grosor={9} color={PAL.rojo[0]} />
+            <Tienda x={x} y={960} s={0.66 * pop(t - 4 - i * 4, 11, 1.6)} nombre={n.toUpperCase()} cierre={io(tr(p(1), i * 4 + 16, 12))} />
+            <Flecha x0={x - 50} y0={700} x1={x - 50} y1={400} u={ida} curva={0} grosor={9} color="#F4F5F7" />
+            <Flecha x0={x + 50} y0={400} x1={x + 50} y1={700} u={vuelta} curva={0} grosor={9} color={PAL.rojo[0]} />
           </React.Fragment>
         );
       })}
@@ -172,7 +173,7 @@ export const Tesco: React.FC<EP> = ({t, p, ctx}) => {
           <T x={566} y={540} ancla="i" op={tr(b, 12, 8)}>
             <Sans tam={40} peso={600} color="#C9CED8">vende la mayoría de su negocio</Sans>
           </T>
-          <Tienda x={1560} y={800} s={1.5 * pop(b - 6, 12, 1.5)} color="azul" nombre="CARREFOUR" cierre={io(tr(b, 22, 18))} />
+          <Tienda x={1500} y={820} s={1.15 * pop(b - 6, 12, 1.5)} color="azul" nombre="CARREFOUR" cierre={io(tr(b, 22, 18))} />
           <Sello x={1560} y={900} t={b + 30} tam={90} rot={-7}>Vendido</Sello>
         </>
       )}
@@ -296,9 +297,9 @@ export const Grande: React.FC<EP> = ({t, p}) => {
         <Sans tam={54} peso={800}>Compras más barato</Sans>
       </T>
       {/* 2: el camion va lleno */}
-      <Camion x={X[1]} y={700} s={1.05 * pop(p(2), 12, 1.4)} nombre="" />
-      {Array.from({length: carga}, (_, k) => (
-        <div key={k} style={{position: 'absolute', left: X[1] - 206 + (k % 4) * 72, top: 700 - 190 * 1.05 + 14 + Math.floor(k / 4) * 60, width: 62, height: 50, borderRadius: 8, background: 'linear-gradient(180deg,#FFD95A,#F29A0B)', transform: `scale(${pop(p(2) - 4 - k * 2.2, 7, 2)})`}} />
+      <Camion x={X[1] + 30} y={640} s={0.82 * pop(p(2), 12, 1.4)} />
+      {[0, 1, 2].map((k) => (
+        <Im key={k} src="g_pale" x={X[1] - 190 + k * 120} y={720 + (k % 2) * 14} w={150} t={p(2) - 6 - k * 5} de="pop" />
       ))}
       <T x={X[1]} y={860} op={tr(p(2), 6, 8)}>
         <Sans tam={54} peso={800}>Llenas los camiones</Sans>
@@ -306,12 +307,12 @@ export const Grande: React.FC<EP> = ({t, p}) => {
       {/* 3: un almacen para muchas tiendas */}
       <Almacen x={X[2]} y={520} s={0.5 * pop(p(3), 12, 1.5)} />
       <svg width={1920} height={1080} style={{position: 'absolute'}}>
-        {[0, 1, 2, 3, 4, 5].map((k) => (
-          <path key={k} d={`M${X[2]},530 L${X[2] - 200 + k * 80},660`} stroke={PAL.verde[0]} strokeWidth={4} strokeDasharray="10 9" opacity={tr(p(3), 8 + k * 2, 6)} />
+        {[0, 1, 2, 3].map((k) => (
+          <path key={k} d={`M${X[2]},530 L${X[2] - 195 + k * 130},680`} stroke={PAL.verde[0]} strokeWidth={4} strokeDasharray="10 9" opacity={tr(p(3), 8 + k * 2, 6)} />
         ))}
       </svg>
-      {[0, 1, 2, 3, 4, 5].map((k) => (
-        <Tienda key={k} x={X[2] - 200 + k * 80} y={740} s={0.28 * pop(p(3) - 10 - k * 2, 9, 2)} />
+      {[0, 1, 2, 3].map((k) => (
+        <Tienda key={k} x={X[2] - 195 + k * 130} y={750} s={0.24 * pop(p(3) - 10 - k * 2, 9, 2)} />
       ))}
       <T x={X[2]} y={860} op={tr(p(3), 6, 8)}>
         <Sans tam={54} peso={800}>Repartes los costes</Sans>

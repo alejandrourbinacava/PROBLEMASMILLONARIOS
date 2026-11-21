@@ -3,6 +3,8 @@ import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {EP} from './base';
 import {A, Almacen, Caja, Camion, Carro, Chip, Cifra, Col, Escenario, Eti, Fabrica, Hoja, Mapa, Marca, Mundo, PAL, Persona, Sans, Sello, Serif, T, Tienda, Tira, c01, camara, centro, geo, io, lerp, miles, mini, pop, rebote, rnd, sal, tr} from './kit';
 import {ESP, MK, MX, MY, PRT} from './m_gancho';
+import {Im} from './m_vox';
+
 
 /** Recorte real (webp con alfa). Centro en (x, y), `w` de ancho. */
 export const Recorte: React.FC<{src?: string; x: number; y: number; w: number; t: number; rot?: number}> = ({src, x, y, w, t, rot = 0}) =>
@@ -26,7 +28,7 @@ export const Cadena: React.FC<EP> = ({t, p}) => {
         <path d="M330,630 L1590,630" stroke="#fff" strokeWidth={8} strokeDasharray="4 22" strokeLinecap="round" opacity={0.5 * tr(t, 8, 10)} />
       </svg>
       {XS.map((x, i) => (
-        <Tienda key={i} x={x} y={740} s={1.02 * pop(t - i * 2, 11, 1.6) * (1 - fuera)} nombre="MERCADONA" />
+        <Tienda key={i} x={x} y={760} s={0.6 * pop(t - i * 2, 11, 1.6) * (1 - fuera)} nombre="MERCADONA" />
       ))}
       <T x={960} y={190} op={tr(t, 0, 8) * (1 - fuera)}>
         <Serif tam={100} peso={600}>¿Una cadena de tiendas?</Serif>
@@ -36,11 +38,11 @@ export const Cadena: React.FC<EP> = ({t, p}) => {
       <svg width={1920} height={1080} style={{position: 'absolute'}}>
         <path d="M250,820 L1740,820" stroke={PAL.verde[0]} strokeWidth={8} strokeDasharray="26 22" opacity={tr(b, 14, 10)} />
       </svg>
-      <Fabrica x={270} y={740} s={1.05 * pop(b - 2, 11, 1.6)} color="cian" t={t} />
-      <Fabrica x={640} y={740} s={1.05 * pop(b - 5, 11, 1.6)} color="ambar" t={t + 12} />
-      <Fabrica x={1010} y={740} s={1.05 * pop(b - 8, 11, 1.6)} color="lila" t={t + 24} />
-      <Almacen x={1380} y={740} s={0.56 * pop(b - 11, 11, 1.6)} />
-      <Tienda x={1720} y={740} s={0.6 * pop(b - 16, 11, 1.8)} nombre="MERCADONA" />
+      <Fabrica x={250} y={750} s={0.92 * pop(b - 2, 11, 1.6)} color="cian" t={t} />
+      <Fabrica x={620} y={750} s={0.92 * pop(b - 5, 11, 1.6)} color="ambar" t={t + 12} />
+      <Fabrica x={990} y={750} s={0.92 * pop(b - 8, 11, 1.6)} color="lila" t={t + 24} />
+      <Almacen x={1370} y={750} s={0.52 * pop(b - 11, 11, 1.6)} />
+      <Tienda x={1720} y={756} s={0.58 * pop(b - 16, 11, 1.8)} nombre="MERCADONA" />
       <T x={640} y={890} op={tr(b, 12, 8)}>
         <Eti tam={32} color="#C9CED8">proveedores</Eti>
       </T>
@@ -69,17 +71,13 @@ export const Marcas: React.FC<EP> = ({t, p, ctx}) => {
       <T x={138} y={290} ancla="i" op={tr(t, 8, 8)}>
         <Sans tam={50} peso={700}>que vende son de sus propias marcas</Sans>
       </T>
-      {[0, 1].map((r) => (
-        <div key={r} style={{position: 'absolute', left: 120, top: 640 + r * 250, width: 860, height: 14, borderRadius: 7, background: '#4A5165'}} />
-      ))}
-      {Array.from({length: 10}, (_, k) => {
-        const c = k % 5;
-        const r = Math.floor(k / 5);
-        const propia = k < 8;
-        const on = propia ? tr(t, 14 + k * 3, 6) : 0;
-        return <Caja key={k} x={220 + c * 165} y={640 + r * 250} s={pop(t - 4 - k * 1.5, 11, 1.6)} alto={190} ancho={124} color={on > 0.5 ? 'verde' : 'humo'} />;
-      })}
-      <Recorte src={ctx?.medios?.[0]?.src} x={1430} y={520} w={800} t={t - 10} rot={-2} />
+      <Im src="g_lineal" x={560} y={1040} w={900} t={t - 4} de="aba" />
+      <div style={{position: 'absolute', left: 848, top: 410, width: 172, height: 626, background: 'rgba(11,12,16,0.78)', opacity: tr(t, 30, 12)}} />
+      <div style={{position: 'absolute', left: 112, top: 404, width: 730 * io(tr(t, 16, 26)), height: 634, border: '7px solid #2BE38A', borderRadius: 14, boxShadow: '0 0 40px rgba(43,227,138,0.35)', opacity: tr(t, 16, 6)}} />
+      <T x={480} y={370} s={pop(t - 34, 11, 1.5)}>
+        <Chip tam={36}>sus marcas</Chip>
+      </T>
+      <Im src="c_salsas" x={1450} y={700} w={820} t={t - 10} de="der" rot={-2} />
       {noms.map(([n, c], i) => (
         <T key={n} x={[1130, 1400, 1670][i]} y={830 + (i % 2) * 70} s={pop(p(i + 1), 11, 1.7)} rot={(i - 1) * 3}>
           <Chip tam={46} color={c}>{n}</Chip>
@@ -107,14 +105,14 @@ export const Encargo: React.FC<EP> = ({t, p}) => {
   return (
     <AbsoluteFill>
       <Escenario />
-      <Catalogo x={lerp(960, 250, io(u1))} y={lerp(520, 250, io(u1))} s={pop(t, 12, 1.4) * lerp(1.3, 0.52, io(u1))} />
+      <Im src="g_catalogo" x={lerp(960, 250, io(u1))} y={lerp(700, 340, io(u1))} w={lerp(760, 300, io(u1))} t={t} de="pop" />
       <T x={lerp(960, 250, io(u1))} y={lerp(830, 410, io(u1))} op={tr(t, 6, 8)} s={lerp(1, 0.62, io(u1))}>
         <Chip tam={54} color="humo">De catálogo</Chip>
       </T>
       <Marca tipo="no" x={lerp(960, 250, io(u1))} y={lerp(520, 250, io(u1))} t={t - 22} s={lerp(4.2, 1.9, io(u1))} grosor={8} />
       <div style={{position: 'absolute', left: 380, top: 842, width: 1420, height: 6, background: '#30364A', opacity: tr(p(1), 0, 8)}} />
-      <Fabrica x={640} y={840} s={1.6 * pop(p(1), 12, 1.5)} t={t} />
-      <Tienda x={1540} y={840} s={1.4 * pop(p(1) - 4, 12, 1.5)} nombre="MERCADONA" />
+      <Fabrica x={640} y={846} s={1.45 * pop(p(1), 12, 1.5)} t={t} />
+      <Tienda x={1540} y={850} s={1.05 * pop(p(1) - 4, 12, 1.5)} nombre="MERCADONA" />
       <T x={640} y={930} op={tr(p(1), 8, 8)}>
         <Chip tam={44} color="ambar" tinta="#1B1D22">Un fabricante concreto</Chip>
       </T>
@@ -136,7 +134,7 @@ export const Encargo: React.FC<EP> = ({t, p}) => {
       </T>
       {[0, 1, 2].map((k) => {
         const u = tr(p(3), k * 9, 40);
-        return u <= 0 || u >= 1 ? null : <Camion key={k} x={lerp(840, 1360, u)} y={842} s={0.62} avance={u * 900} nombre="" />;
+        return u <= 0 || u >= 1 ? null : <Camion key={k} x={lerp(860, 1320, u)} y={850} s={0.5} avance={u * 900} />;
       })}
       <T x={1100} y={640} s={pop(p(3) - 4, 11, 1.5)}>
         <Chip tam={52}>Cantidades enormes</Chip>
@@ -223,15 +221,9 @@ export const OtrosAbren: React.FC<EP> = ({t, p}) => {
       <T x={136} y={270} ancla="i" op={tr(t, 8, 8)}>
         <Serif tam={64} peso={600}>abren en un país nuevo…</Serif>
       </T>
-      <Tienda x={420} y={830} s={1.7 * pop(t - 8, 12, 1.5)} color="azul" nombre="SÚPER" />
-      <Estante x={900} y={420} />
-      {Array.from({length: 24}, (_, k) => {
-        const c = k % 8;
-        const r = Math.floor(k / 8);
-        const tt = p(1) - 2 - k * 0.9;
-        const blanca = r === 2;
-        return tt < 0 ? null : <Caja key={k} x={964 + c * 110 - (1 - sal(tt / 8)) * 900} y={420 + r * 200} alto={150} ancho={92} color={blanca ? 'azul' : COLS[(c + r * 3) % 8]} op={c01(tt / 3)} />;
-      })}
+      <Tienda x={420} y={860} s={1.1 * pop(t - 8, 12, 1.5)} color="azul" />
+      <Im src="g_lineal" x={1360} y={1000} w={1000} t={t - 6} de="nada" luz={0.16} gris={1} />
+      <Im src="g_lineal" x={1360} y={1000} w={1000} t={p(1)} de="nada" recorte={`inset(0 ${(1 - io(tr(p(1), 0, 50))) * 100}% 0 0)`} />
       <T x={1350} y={196} s={pop(p(2), 11, 1.5)}>
         <Chip tam={46} color="humo">Marcas internacionales</Chip>
       </T>
@@ -334,9 +326,7 @@ export const RedPt: React.FC<EP> = ({t, p, dur}) => {
       <T x={1170} y={664} ancla="i" op={tr(p(2), 6, 8)}>
         <Sans tam={46} peso={700}>bloques logísticos</Sans>
       </T>
-      {[0, 1, 2, 3, 4, 5].map((k) => (
-        <Persona key={k} x={1090 + k * 86} y={960} s={0.62 * pop(p(5) - k * 2, 10, 1.8)} color="verde" />
-      ))}
+      <Im src="g_empleados" x={1330} y={1090} w={560} t={p(5)} de="aba" />
       <T x={1290} y={770} s={pop(p(5) - 10, 12, 1.5)} rot={-2}>
         <Chip tam={38} color="ambar" tinta="#1B1D22">Todos sus directores, portugueses</Chip>
       </T>
@@ -365,18 +355,16 @@ export const Segunda: React.FC<EP> = ({t, p}) => {
           <T x={960} y={130} op={tr(b, 0, 6)}>
             <Serif tam={96} peso={600}>Mercadona <span style={{color: '#FF6A5C'}}>no compra</span> cadenas</Serif>
           </T>
-          <Carro x={330} y={650} s={2.5 * pop(b, 12, 1.4)} />
-          {[0, 1, 2].map((k) => (
-            <Tienda key={k} x={250 + k * 80} y={500 - (k % 2) * 40} s={0.4 * pop(b - 6 - k * 3, 11, 1.8)} color="rosa" />
-          ))}
-          <Marca tipo="no" x={330} y={470} t={b - 22} s={3.4} grosor={9} />
+          <Im src="g_carro" x={330} y={760} w={470} t={b} de="pop" />
+          <Tienda x={330} y={420} s={0.5 * pop(b - 8, 11, 1.8)} color="rosa" />
+          <Marca tipo="no" x={330} y={520} t={b - 22} s={4.2} grosor={9} />
           <Tira x={1230} y={440} t={p(3)} ancho={1100} tam={52} rot={1.5} trozos={['«No vamos a hacer adquisiciones. ', {m: 'Abriremos tienda a tienda', en: p(3) - p(4)}, '»']} color="rgba(43,227,138,0.6)" />
           <T x={1230} y={600} op={tr(p(3), 10, 8)}>
             <Eti tam={24}>Juan Roig · 12 de marzo de 2019</Eti>
           </T>
           <div style={{position: 'absolute', left: 660, top: 942, width: 1150, height: 6, background: '#30364A', opacity: tr(p(4), 0, 8)}} />
           {[0, 1, 2, 3].map((k) => (
-            <Tienda key={k} x={800 + k * 290} y={940} s={0.95 * pop(p(4) - k * 9, 11, 1.8)} nombre="MERCADONA" />
+            <Tienda key={k} x={800 + k * 290} y={950} s={0.5 * pop(p(4) - k * 9, 11, 1.8)} nombre="MERCADONA" />
           ))}
         </>
       )}
@@ -402,13 +390,13 @@ export const Letrero: React.FC<EP> = ({t, p}) => {
         <Serif tam={84} peso={600}>La <span style={{color: '#FFD95A'}}>rápida</span>: comprar y cambiar el letrero</Serif>
       </T>
       <div style={{position: 'absolute', left: 120, top: 742, width: 1680, height: 6, background: '#30364A'}} />
-      {p(1) < 0 && <Tienda x={960} y={740} s={1.5 * pop(t - 6, 14, 1.5)} nombre="MERCADONA" />}
+      {p(1) < 0 && <Tienda x={960} y={760} s={1.2 * pop(t - 6, 14, 1.5)} nombre="MERCADONA" />}
       {XS.map((x, i) => {
         const u = tr(p(2), i * 4, 10);
         const giro = Math.abs(Math.cos(u * Math.PI));
         return (
           <div key={i} style={{position: 'absolute', left: x, top: 740, width: 0, height: 0, transform: `scaleX(${Math.max(0.05, giro)})`, opacity: 1 - fuera}}>
-            <Tienda x={0} y={0} s={ES[i] * pop(p(1) - 4 - i * 2, 11, 1.7)} ancho={AN[i]} color={u > 0.5 ? 'verde' : 'rosa'} nombre={u > 0.5 ? 'MERCADONA' : 'SÚPER'} />
+            <Tienda x={0} y={0} s={0.6 * ES[i] * pop(p(1) - 4 - i * 2, 11, 1.7)} ancho={AN[i] + 60} color={u > 0.5 ? 'verde' : 'rosa'} />
           </div>
         );
       })}
@@ -426,7 +414,7 @@ export const Letrero: React.FC<EP> = ({t, p}) => {
             <Serif tam={104} peso={600}>Y todas tienen que ser <span style={{color: '#FFD95A'}}>iguales</span></Serif>
           </T>
           {XS.map((x, i) => (
-            <Tienda key={i} x={x} y={740} s={1.08 * pop(igual - i * 3, 9, 2)} nombre="MERCADONA" />
+            <Tienda key={i} x={x} y={760} s={0.58 * pop(igual - i * 3, 9, 2)} nombre="MERCADONA" />
           ))}
         </>
       )}

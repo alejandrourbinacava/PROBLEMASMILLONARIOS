@@ -4,6 +4,8 @@ import {EP} from './base';
 import {EUROPA} from './europa';
 import {A, Barra, Chip, Cifra, Escenario, Eti, Fajo, Flecha, Hoja, Mapa, Marca, Mundo, PAL, Persona, Sans, Sello, Serif, T, Tienda, c01, camara, centro, io, lerp, miles, mini, pop, rebote, rnd, sal, tr} from './kit';
 import {Detras, FondoReal, Sujeto, med} from './m_capas';
+import {Im} from './m_vox';
+
 import {MK, MX, MY, PilaMonedas, Tiendas} from './m_gancho';
 
 /** 402-411 s · las que cotizan necesitan crecer cada trimestre; cuando su pais no da mas, solo queda salir. */
@@ -108,7 +110,7 @@ export const Familiar: React.FC<EP> = ({t, p, dur, ctx}) => {
       {/* nadie le mete prisa */}
       {p(4) >= -3 && (
         <>
-          <Persona x={1560} y={1040} s={1.5 * pop(p(4), 12, 1.5)} color="rosa" />
+          <Im src="g_inversor" x={1720} y={1110} w={250} t={p(4)} de="der" />
           <T x={1500} y={590} s={pop(p(4) - 6, 11, 1.5)} rot={3} op={1 - tr(p(5), 0, 8) * 0.5}>
             <Chip tam={40} color="rosa">«¡Un país nuevo cada dos años!»</Chip>
           </T>
@@ -249,7 +251,7 @@ export const Como: React.FC<EP> = ({t, p, ctx}) => {
       </T>
       <div style={{position: 'absolute', left: 120, top: 852, width: 1680, height: 6, background: '#30364A'}} />
       <div style={{position: 'absolute', inset: 0, opacity: 1 - 0.55 * tr(p(2), 0, 12)}}>
-        <Tienda x={420} y={850} s={1.05 * pop(p(1) - 2, 12, 1.4)} ancho={210} cierre={cierra} color="humo" />
+        <Tienda x={420} y={856} s={0.9 * pop(p(1) - 2, 12, 1.4)} ancho={210} cierre={cierra} color="humo" />
       </div>
       <T x={420} y={930} op={tr(p(1), 6, 8)}>
         <Sans tam={42} peso={700} color="#C9CED8">Cierra las pequeñas</Sans>
@@ -260,7 +262,7 @@ export const Como: React.FC<EP> = ({t, p, ctx}) => {
       <T x={420} y={570} op={tr(p(4), 6, 8)}>
         <Sans tam={36} peso={600} color="#C9CED8">cierres en 2025</Sans>
       </T>
-      <Tienda x={1180} y={850} s={1.85 * pop(p(2), 13, 1.5)} ancho={420} nombre="MERCADONA" />
+      <Tienda x={1180} y={860} s={0.78 * pop(p(2), 13, 1.5)} ancho={420} nombre="MERCADONA" />
       <T x={1180} y={930} op={tr(p(2), 6, 8)}>
         <Sans tam={42} peso={700}>Abre las grandes</Sans>
       </T>
@@ -415,7 +417,7 @@ export const Recap2: React.FC<EP> = ({t, p, dur, ctx}) => {
         <Serif tam={84} peso={600}>lo que la hace ganar <span style={{color: '#FFD95A'}}>no cabe en un camión</span></Serif>
       </T>
       <Detras x={560} y={430} t={p(2) + 14} tam={300}>40 años</Detras>
-      <Sujeto src={med(ctx, 'c_furgo')} x={x - 60} y={1070} ancho={760} t={t - 6} de="izq" lejos={0} />
+      <Sujeto src="g_camion_m.webp" x={x - 40} y={1060} ancho={900} t={t - 6} de="izq" lejos={0} />
       {pegas.map((q, i) => (
         <T key={q} x={1820} y={470 + i * 150} ancla="d" s={pop(p(i + 1), 11, 1.5)} rot={(i - 1) * 2}>
           <Chip tam={i === 1 ? 54 : 46} color={i === 1 ? 'verde' : 'humo'}>{q}</Chip>

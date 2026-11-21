@@ -54,8 +54,13 @@ class Tiempos:
         self.total = self.fin[-1]
 
     def t(self, c, s=0):
-        """Segundo en que empieza la frase `s` (entero) o la fraccion `s` (decimal) del fragmento c."""
+        """Segundo en que empieza la frase `s` (entero), la fraccion `s` (decimal) o el texto `s` (cadena) del fragmento c."""
         a, b = self.ini[c], self.fin[c]
+        if isinstance(s, str):
+            # un trozo literal de la locucion: su posicion dentro del fragmento
+            i = self.textos[c].lower().find(s.lower())
+            assert i >= 0, "fragmento %d: no contiene %r" % (c, s)
+            return a + (b - a) * i / float(len(self.textos[c]) + 1)
         if isinstance(s, float):
             return a + (b - a) * s
         if s == 0:

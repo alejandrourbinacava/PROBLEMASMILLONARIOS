@@ -4,7 +4,8 @@
 
 Voz normalizada (solo loudnorm, sin mas procesado), cama de musica muy baja
 con fundidos, y un sonido por evento: un soplo en cada cambio de plano y un
-golpe en cada capitulo. Nunca tres a la vez.
+golpe en cada capitulo. Nunca tres a la vez. Cada piel (moderna, doc, anim)
+tiene su reparto de efectos.
 """
 import json
 import os
@@ -72,6 +73,24 @@ def main():
             return False
         ocupado.append(t)
         return True
+
+    # Piel animada: un soplo bajo en cada cambio de escena, un golpe en cada
+    # capitulo y un pop muy bajo cuando entra cada cosa (cada paso), sin pisarse.
+    if spec.get("piel") == "anim":
+        for i, e in enumerate(spec["escenas"]):
+            t = e["f0"] / float(fps)
+            if i:
+                libre(t, 0.3)
+                if e["tipo"] == "capitulo":
+                    pon(mezcla, golpe, t, db(-18))
+                else:
+                    pon(mezcla, soplos[0], max(0.0, t - 0.1), db(-29))
+            if e["tipo"] in ("anim",):
+                for k in (e.get("pasos") or [])[1:]:
+                    tk = t + k / float(fps)
+                    if libre(tk, 0.42):
+                        pon(mezcla, pop, tk, db(-29))
+        spec = dict(spec, escenas=[], piel="doc_hecho")
 
     # Piel documental: el sonido casi no se nota. Un golpe grave en cada
     # capitulo y un soplo muy bajo al entrar un inserto; nada en los cortes.

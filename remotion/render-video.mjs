@@ -5,6 +5,7 @@
  *   node render-video.mjs <spec.json> --stills <carpeta>      un fotograma por escena, al 88 % de su duracion
  *   --fracs 0.3,0.6,0.9        (con --stills) varios fotogramas por escena
  *   --solo 3,7,12              (con --stills) solo esas escenas
+ *   --fotogramas 10,50,120     (con --stills) fotogramas absolutos sueltos
  *   --desde <f> --hasta <f>    solo ese tramo de fotogramas
  *   --concurrencia <n>
  */
@@ -48,7 +49,17 @@ const inputProps = {spec};
 const composition = await selectComposition({serveUrl, id: 'Video', inputProps, logLevel: 'error'});
 console.log(`bundle en ${((Date.now() - t0) / 1000).toFixed(1)} s · ${composition.durationInFrames} fotogramas`);
 
-if (args.includes('--stills')) {
+if (args.includes('--fotogramas')) {
+  // fotogramas sueltos (absolutos): --fotogramas 10,50,120 --stills <carpeta>
+  const dir = opt('--stills');
+  fs.mkdirSync(dir, {recursive: true});
+  const nav = await openBrowser('chrome', {chromiumOptions: {gl: 'angle'}, logLevel: 'error'});
+  for (const fr of opt('--fotogramas').split(',').map(Number)) {
+    await renderStill({composition, serveUrl, output: path.join(dir, `f${String(fr).padStart(5, '0')}.jpeg`), frame: Math.min(composition.durationInFrames - 1, fr), inputProps, puppeteerInstance: nav, imageFormat: 'jpeg', jpegQuality: 82, logLevel: 'error'});
+  }
+  await nav.close({silent: true});
+  console.log('fotogramas en', dir);
+} else if (args.includes('--stills')) {
   const dir = opt('--stills');
   fs.mkdirSync(dir, {recursive: true});
   const nav = await openBrowser('chrome', {chromiumOptions: {gl: 'angle'}, logLevel: 'error'});

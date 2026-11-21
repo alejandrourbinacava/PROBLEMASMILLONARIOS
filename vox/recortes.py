@@ -1,6 +1,10 @@
 """Recortes de papel para el montaje por capas (estilo Vox / Moatseek).
 
-    python recortes.py <tema> nombre=fuente[@seg][:x0,y0,x1,y1] ...
+    python recortes.py <tema> nombre=fuente[@seg][:x0,y0,x1,y1] ... [--limpio]
+
+Con `--limpio` no pone reborde y guarda `c_<nombre>.webp`: el recorte tal cual,
+para las escenas por capas sobre metraje real (persona u objeto delante, texto
+detras).
 
 De una foto o de un fotograma de un clip saca el sujeto (rembg, en local, sin
 creditos), le pone el reborde blanco irregular de un recorte hecho a tijera y
@@ -49,7 +53,7 @@ def fotograma(ruta, seg=None):
     return Image.open(io.BytesIO(raw)).convert("RGB")
 
 
-def recorta(im, sesion):
+def recorta(im, sesion, limpio=False):
     from rembg import remove
     out = remove(im, session=sesion, post_process_mask=True)
     a = np.array(out)
@@ -72,6 +76,11 @@ def recorta(im, sesion):
         vale = [i + 1 for i, ar in enumerate(areas) if ar > 0.04 * areas.max()]
         alfa = np.where(np.isin(lab, vale), 255, 0).astype(np.uint8)
     alfa = cv2.morphologyEx(alfa, cv2.MORPH_CLOSE, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9)))
+    if limpio:
+        # sin papel: el sujeto tal cual, con el filo suavizado (para montar sobre metraje real)
+        fino = cv2.erode(alfa, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3)))
+        s2 = cv2.GaussianBlur(np.minimum(a[:, :, 3], fino), (0, 0), 0.9)
+        return Image.fromarray(np.dstack([a[:, :, :3], s2]), "RGBA")
     # reborde: el sujeto engordado, con el filo a trozos rectos, como cortado a tijera
     gordo = cv2.dilate(alfa, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * BORDE + 1, 2 * BORDE + 1)))
     cs, _ = cv2.findContours(gordo, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -90,6 +99,7 @@ def main():
     from rembg import new_session
     hoja_ruta = sys.argv[sys.argv.index("--hoja") + 1] if "--hoja" in sys.argv else None
     args = [x for x in sys.argv[1:] if not x.startswith("--") and x != hoja_ruta]
+    limpio = "--limpio" in sys.argv
     tema, pedidos = args[0], args[1:]
     carpetas = [os.path.join(REPO, "vox", "media", tema)] + [os.path.join(REPO, "parallax2", "proyecto", d) for d in sorted(os.listdir(os.path.join(REPO, "parallax2", "proyecto"))) if d.startswith("stock") and tema.split("_")[0] in d]
     destino = os.path.join(REPO, "vox", "media", tema)
@@ -109,14 +119,14 @@ def main():
         if caja:
             w, h = im.size
             im = im.crop((int(caja[0] * w), int(caja[1] * h), int(caja[2] * w), int(caja[3] * h)))
-        r = recorta(im, sesion)
+        r = recorta(im, sesion, limpio)
         if r is None:
             print("SIN SUJETO", nombre)
             continue
-        out = os.path.join(destino, "r_%s.webp" % nombre)
+        out = os.path.join(destino, "%s_%s.webp" % ("c" if limpio else "r", nombre))
         r.save(out, "WEBP", quality=88, method=6)
         hechos.append((nombre, r))
-        print("ok r_%s.webp %s %d KB" % (nombre, r.size, os.path.getsize(out) // 1000), flush=True)
+        print("ok %s %s %d KB" % (os.path.basename(out), r.size, os.path.getsize(out) // 1000), flush=True)
     if "--hoja" in sys.argv and hechos:
         T = 420
         cols = 5

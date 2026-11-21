@@ -2,6 +2,7 @@ import React from 'react';
 import {AbsoluteFill, useCurrentFrame, useVideoConfig} from 'remotion';
 import {AMARILLO, Escena, Fondo, H, MarcaCtx, NEGRO, Spec, W, c01, suave, useFuentes} from './base';
 import {Cortinilla, FondoClip, Recorte} from './capas';
+import {Animado} from './Animado';
 import {Documental} from './Documental';
 import {TIPOS} from './escenas';
 
@@ -41,7 +42,7 @@ const Hud: React.FC<{f: number; esc: Escena | undefined; nombre: string; acento:
 };
 
 /** La piel la dice el spec: `doc` es la documental; sin nada, la moderna de tarjetas. */
-export const Video: React.FC<{spec: Spec}> = ({spec}) => (spec?.piel === 'doc' ? <Documental spec={spec} /> : <Moderno spec={spec} />);
+export const Video: React.FC<{spec: Spec}> = ({spec}) => (spec?.piel === 'anim' ? <Animado spec={spec} /> : spec?.piel === 'doc' ? <Documental spec={spec} /> : <Moderno spec={spec} />);
 
 const Moderno: React.FC<{spec: Spec}> = ({spec}) => {
   const ok = useFuentes();

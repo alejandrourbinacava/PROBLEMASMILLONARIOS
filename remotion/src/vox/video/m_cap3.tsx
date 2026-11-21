@@ -72,12 +72,11 @@ export const Marcas: React.FC<EP> = ({t, p, ctx}) => {
         <Sans tam={50} peso={700}>que vende son de sus propias marcas</Sans>
       </T>
       <Im src="g_lineal" x={560} y={1040} w={900} t={t - 4} de="aba" />
-      <div style={{position: 'absolute', left: 848, top: 410, width: 172, height: 626, background: 'rgba(11,12,16,0.78)', opacity: tr(t, 30, 12)}} />
       <div style={{position: 'absolute', left: 112, top: 404, width: 730 * io(tr(t, 16, 26)), height: 634, border: '7px solid #2BE38A', borderRadius: 14, boxShadow: '0 0 40px rgba(43,227,138,0.35)', opacity: tr(t, 16, 6)}} />
       <T x={480} y={370} s={pop(t - 34, 11, 1.5)}>
         <Chip tam={36}>sus marcas</Chip>
       </T>
-      <Im src="c_salsas" x={1450} y={700} w={820} t={t - 10} de="der" rot={-2} />
+      <Im src="g_marcas" x={1490} y={720} w={760} t={t - 10} de="der" />
       {noms.map(([n, c], i) => (
         <T key={n} x={[1130, 1400, 1670][i]} y={830 + (i % 2) * 70} s={pop(p(i + 1), 11, 1.7)} rot={(i - 1) * 3}>
           <Chip tam={46} color={c}>{n}</Chip>
@@ -169,12 +168,8 @@ export const RedEs: React.FC<EP> = ({t, p, dur}) => {
               const [x, y] = geo(q, MX, MY, MK);
               return <circle key={i} cx={x} cy={y} r={1.7 * pop(t - 4 - i * 0.12, 8, 2.6)} fill="#FFD95A" />;
             })}
-            {/* el ancla cuelga de la red */}
-            <g transform={`translate(${esp[0] + 8} ${esp[1] + 30}) scale(${0.34 * pop(p(2), 12, 1.6)})`}>
-              <path d="M0,-60 L0,130 M-70,60 Q-70,140 0,140 Q70,140 70,60 M-90,70 L-70,44 L-48,72 M90,70 L70,44 L48,72 M-34,-20 L34,-20" fill="none" stroke="#F4F5F7" strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" />
-              <circle cx={0} cy={-82} r={22} fill="none" stroke="#F4F5F7" strokeWidth={14} />
-            </g>
           </svg>
+          <Im src="g_ancla" x={esp[0] + 8} y={esp[1] + 80} w={78} t={p(2)} de="pop" luz={1.7} />
         </div>
       </Mundo>
       <T x={110} y={230} ancla="i" s={pop(t - 2, 12, 1.4)}>
@@ -258,9 +253,9 @@ export const MercAbre: React.FC<EP> = ({t, p, ctx}) => {
       <T x={560} y={122} ancla="i" op={tr(t, 6, 8)}>
         <Serif tam={76} peso={600}>tiene que <span style={{color: '#FFD95A'}}>volver a construir la red</span></Serif>
       </T>
-      {col(0, 400, 440, '¿Quién le hace el pan?')}
-      {col(1, 960, 470, '¿Quién le trae el pescado?')}
-      {col(2, 1520, 330, '¿Quién le fabrica el yogur?')}
+      {col(0, 400, 520, '¿Quién le hace el pan?')}
+      {col(1, 960, 500, '¿Quién le trae el pescado?')}
+      {col(2, 1520, 480, '¿Quién le fabrica el yogur?')}
       <T x={1520} y={250} s={pop(p(4), 11, 1.6)} rot={4}>
         <Chip tam={44} color="humo">a su manera y a su precio</Chip>
       </T>
@@ -326,8 +321,8 @@ export const RedPt: React.FC<EP> = ({t, p, dur}) => {
       <T x={1170} y={664} ancla="i" op={tr(p(2), 6, 8)}>
         <Sans tam={46} peso={700}>bloques logísticos</Sans>
       </T>
-      <Im src="g_empleados" x={1330} y={1090} w={560} t={p(5)} de="aba" />
-      <T x={1290} y={770} s={pop(p(5) - 10, 12, 1.5)} rot={-2}>
+      <Im src="g_empleados" x={1330} y={1072} w={370} t={p(5)} de="aba" />
+      <T x={1330} y={768} s={pop(p(5) - 10, 12, 1.5)} rot={-2}>
         <Chip tam={38} color="ambar" tinta="#1B1D22">Todos sus directores, portugueses</Chip>
       </T>
     </AbsoluteFill>

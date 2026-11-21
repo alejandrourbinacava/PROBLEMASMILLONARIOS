@@ -2,7 +2,7 @@ import React from 'react';
 import {AbsoluteFill, Img, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {EP, Escena, MarcaCtx, Spec, useFuentes} from './base';
 import {Metraje} from './capas';
-import {A, Cifra, Defs, Escenario, IdxCtx, Eti, FONDO, GRIS, PAL, Palabras, Sans, Serif, T, TINTA, c01, grad, io, pop, rebote, sal, tr} from './kit';
+import {A, Cifra, Defs, Escenario, FondoCtx, IdxCtx, Eti, FONDO, GRIS, PAL, Palabras, Sans, Serif, T, TINTA, c01, grad, io, pop, rebote, sal, tr} from './kit';
 import {Detras, FondoReal, Sujeto, med} from './m_capas';
 import {ESCENAS} from './mercadona';
 
@@ -162,7 +162,11 @@ export const Animado: React.FC<{spec: Spec}> = ({spec}) => {
           const claro = e.d?.claro;
           return (
             <AbsoluteFill key={e.id} style={{background: FONDO}}>
-              <IdxCtx.Provider value={idx}>{e.tipo === 'broll' ? <Broll {...ep} e={e} f={f} fps={fps} /> : C ? <C {...ep} /> : null}</IdxCtx.Provider>
+              <IdxCtx.Provider value={idx}>
+                <FondoCtx.Provider value={e.tipo === 'anim' && e.fondoClip ? <FondoReal ctx={ep.ctx} t={t} dur={dur} blur={13} luz={0.3} /> : null}>
+                  {e.tipo === 'broll' ? <Broll {...ep} e={e} f={f} fps={fps} /> : C ? <C {...ep} /> : null}
+                </FondoCtx.Provider>
+              </IdxCtx.Provider>
               {e.fuente && (
                 <div style={{position: 'absolute', left: 60, bottom: 34, font: "500 18px 'D Sans'", letterSpacing: 2, textTransform: 'uppercase', color: claro ? 'rgba(20,30,50,0.55)' : 'rgba(255,255,255,0.42)', opacity: c01((t - 12) / 10)}}>
                   Fuente: {e.fuente}

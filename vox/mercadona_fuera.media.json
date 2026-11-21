@@ -243,6 +243,18 @@
 "dur": 8.0,
 "ruta": "parallax2/proyecto/stock_mercadona/fresh_fish_hake_crate_ice_price_supermarket_946.mp4"
 },
+"g_pan2.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/g_pan2.webp"
+},
+"g_pescado.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/g_pescado.webp"
+},
+"g_yogur.webp": {
+"dur": 0.0,
+"ruta": "vox/media/mercadona_fuera/g_yogur.webp"
+},
 "greengrocer_shop_street_fruteria_209.mp4": {
 "dur": 12.01,
 "ruta": "parallax2/proyecto/stock_mercadona/greengrocer_shop_street_fruteria_209.mp4"

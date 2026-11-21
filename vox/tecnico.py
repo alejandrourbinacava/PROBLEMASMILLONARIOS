@@ -73,7 +73,7 @@ class Tiempos:
 # ---------------------------------------------------------------- metraje
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SAL = 9
-KIT = ["c_tienda", "c_walmartvacio", "c_furgo", "c_bloque", "c_b500", "c_b200", "c_euro1", "c_packs", "c_pan", "c_fruta", "c_huevos", "c_salsas", "c_pescado", "c_tomates", "c_leche", "c_pilon", "c_logo", "c_redondo"]
+KIT = []   # los actores de kit.tsx usan ya solo las fotos de estudio g_*.webp, que entran todas
 
 
 class Media:

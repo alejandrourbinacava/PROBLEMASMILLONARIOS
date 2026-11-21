@@ -18,8 +18,8 @@ export const Bolsa: React.FC<EP> = ({t, p, dur, ctx}) => {
       <T x={960} y={110} op={tr(t, 0, 8)}>
         <Serif tam={84} peso={600}>Muchas <span style={{color: '#FFD95A'}}>no tienen elección</span></Serif>
       </T>
-      <Detras x={640} y={400} t={p(1) - 4} tam={360}>Bolsa</Detras>
-      <Sujeto src={med(ctx, 'c_bolsa')} x={640} y={1130} ancho={1180} t={p(1)} de="aba" />
+      <Detras x={610} y={330} t={p(1) - 4} tam={380}>Bolsa</Detras>
+      <Sujeto src="g_bolsa.webp" x={610} y={1250} ancho={900} t={p(1)} de="aba" />
       {/* cada trimestre, mas */}
       {H.map((h, i) => {
         const u = io(tr(p(2), -10 + i * 7, 14));
@@ -54,7 +54,7 @@ export const Bolsa: React.FC<EP> = ({t, p, dur, ctx}) => {
 export const DosMotivos: React.FC<EP> = ({t, p, dur, ctx}) => (
   <AbsoluteFill>
     <FondoReal ctx={ctx} t={t} dur={dur} blur={12} luz={0.45} />
-    <Sujeto src={med(ctx, 'c_logo')} x={440} y={900} alto={640} t={t - 2} de="pop" />
+    <Sujeto src="g_super_m.webp" x={440} y={860} ancho={720} t={t - 2} de="pop" />
     <T x={860} y={360} ancla="i" op={tr(t, 4, 8)}>
       <Serif tam={110} peso={600}>Mercadona no tiene</Serif>
     </T>
@@ -86,7 +86,7 @@ export const Familiar: React.FC<EP> = ({t, p, dur, ctx}) => {
       <T x={270} y={122} ancla="i" op={tr(t, 4, 8)}>
         <Serif tam={96} peso={600}>No cotiza en bolsa</Serif>
       </T>
-      <Detras x={690} y={410} t={p(1) - 3} tam={270} ancla="i">Familiar</Detras>
+      <Detras x={690} y={410} t={p(1) - 3} tam={236} ancla="i">Familiar</Detras>
       <Sujeto src={med(ctx, 'c_roig')} x={470} y={1110} alto={860} t={p(2) - 4} de="aba" />
       {/* el capital */}
       <div style={{position: 'absolute', inset: 0, opacity: (1 - b) * tr(p(3), -6, 8)}}>
@@ -110,7 +110,7 @@ export const Familiar: React.FC<EP> = ({t, p, dur, ctx}) => {
       {/* nadie le mete prisa */}
       {p(4) >= -3 && (
         <>
-          <Im src="g_inversor" x={1720} y={1110} w={250} t={p(4)} de="der" />
+          <Im src="g_inversor" x={1790} y={1110} w={230} t={p(4)} de="der" />
           <T x={1500} y={590} s={pop(p(4) - 6, 11, 1.5)} rot={3} op={1 - tr(p(5), 0, 8) * 0.5}>
             <Chip tam={40} color="rosa">«¡Un país nuevo cada dos años!»</Chip>
           </T>
@@ -277,7 +277,7 @@ export const Como: React.FC<EP> = ({t, p, ctx}) => {
           <Chip tam={44} color={i === 0 ? 'cian' : i === 1 ? 'ambar' : 'lila'} tinta={i === 1 ? '#1B1D22' : '#fff'}>{x}</Chip>
         </T>
       ))}
-      <Sujeto src={med(ctx, 'c_pescado')} x={1610} y={470} ancho={300} t={p(5) - 2} de="pop" />
+      <Sujeto src="g_frescos.webp" x={1610} y={480} ancho={300} t={p(5) - 2} de="pop" />
     </AbsoluteFill>
   );
 };
@@ -301,7 +301,7 @@ export const Tienda9: React.FC<EP> = ({t, p, dur, ctx}) => {
         </T>
       </div>
       <Detras x={960} y={390} t={p(2)} tam={340}>Tienda 9</Detras>
-      <Sujeto src={med(ctx, 'c_tienda')} x={960} y={900} ancho={1400} t={p(2) - 4} de="aba" />
+      <Sujeto src="g_tienda_m.webp" x={960} y={900} ancho={1500} t={p(2) - 4} de="aba" />
       <T x={700} y={970} s={pop(p(3), 12, 1.5)}>
         <Cifra tam={150} color="ambar">{miles(Math.round(3700 * sal(p(3) / 34)))} M€</Cifra>
       </T>
@@ -515,7 +515,7 @@ export const Final: React.FC<EP> = ({t, p, dur, ctx}) => {
     <AbsoluteFill>
       <FondoReal ctx={ctx} t={t} dur={dur} blur={9} luz={0.5} />
       <Detras x={960} y={360} t={b + 4} tam={400}>en casa</Detras>
-      <Sujeto src={med(ctx, 'c_tienda')} x={960} y={900} ancho={1500} t={b} de="aba" />
+      <Sujeto src="g_tienda_m.webp" x={960} y={900} ancho={1600} t={b} de="aba" />
       <T x={960} y={980} op={tr(b, 14, 10)}>
         <Serif tam={70} peso={600}>Quedarse fue <span style={{color: '#FFD95A'}}>su mejor negocio</span></Serif>
       </T>

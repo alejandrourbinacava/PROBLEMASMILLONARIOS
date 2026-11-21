@@ -10,6 +10,7 @@ como una mancha gris. Guarda `vox/media/<tema>/g_<nombre>.webp`.
   :cursor=x,y   borra el puntero del raton que se colo en la captura
   :t=N          umbral de blanco del fondo (226); mas bajo se come sombras claras
   :huecos=N     quita tambien los blancos encerrados de N px o mas
+  :w=N          reduce antes la imagen a N px de ancho
 """
 import os
 import sys
@@ -82,7 +83,11 @@ def main():
         # la ruta puede llevar C: delante
         ruta = trozos[0] if len(trozos[0]) > 1 else trozos[0] + ":" + trozos[1]
         ops = trozos[1:] if len(trozos[0]) > 1 else trozos[2:]
-        rgb = np.array(Image.open(ruta).convert("RGB"))
+        im = Image.open(ruta).convert("RGB")
+        ancho = next((int(o.split("=")[1]) for o in ops if o.startswith("w=")), 0)
+        if ancho and im.size[0] > ancho:
+            im = im.resize((ancho, int(im.size[1] * ancho / im.size[0])), Image.LANCZOS)
+        rgb = np.array(im)
         for o in ops:
             if o.startswith("cursor="):
                 cx, cy = [int(v) for v in o[7:].split(",")]

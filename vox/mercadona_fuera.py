@@ -84,11 +84,11 @@ an("niega", 6, [(6, 0), (6, "se niega"), (7, 0), (7, 1), (8, 0), (8, 1)])
 E("capitulo", 9, {"num": "1", "titulo": "El plan que empezaba por *«I»*", "sub": "Más de diez años pensando en salir de España"},
   pasos=[(9, 0), (9, 0.3)], cap="1")
 an("italia", 10, [(10, 0), (10, "aterrizaje"), (10, 1), (10, "cerca"), (10, "con un mercado"), (10, 2)], fuente="Valencia Plaza, 12-3-2019")
-an("frescos", 11, [(11, 0), (11, "los productos frescos")], fotos=["c_pescado", "c_pan", "c_leche"],
+an("frescos", 11, [(11, 0), (11, "los productos frescos")],
    clips=[C("fish_counter"), C("fresh_fish", (11, 0.55))], fuente="Valencia Plaza, 12-3-2019")
 an("portugal_elige", 12, [(12, 0), (12, "eligió"), (12, 2), (13, 0), (13, "un mercado cercano"), (13, "que encajaba")],
    fuente="nota de Mercadona, 23-6-2016 · traducción propia de la versión en inglés")
-an("camion", 14, [(14, 0), (14, "se puede llegar"), (14, "desde los almacenes")], fotos=["c_bloque", "c_tienda", "c_furgo"],
+an("camion", 14, [(14, 0), (14, "se puede llegar"), (14, "desde los almacenes")],
    clips=[C("truck_highway_bridge")])
 an("plan_inicial", 15, [(15, 0), (15, 1), (15, 2), (15, 3), (15, 4)], fuente="nota de Mercadona, 23-6-2016")
 an("tres_anios", 16, [(16, 0), (16, 1), (16, "abrir la primera")])
@@ -99,8 +99,8 @@ an("siete_anios", 21, [(21, 0), (21, 1), (22, 0), (22, 1), (23, 0)])
 # =============================================================== 2
 E("capitulo", 24, {"num": "2", "titulo": "Lo que cuesta *un país*", "sub": "Julio de 2019 · abre la primera tienda"},
   pasos=[(24, 0), (24, 0.12)], cap="2")
-an("canidelo", (24, "en Canidelo"), [(24, "en Canidelo"), (24, "al lado"), (25, 0)], fotos=["c_tienda"], clips=[C("f_porto2")],
-   fuente="El Independiente, 2-7-2019" + FOTOS)
+an("canidelo", (24, "en Canidelo"), [(24, "en Canidelo"), (24, "al lado"), (25, 0)], clips=[C("f_porto2")],
+   fuente="El Independiente, 2-7-2019")
 an("cuenta", 26, [(26, 0), (26, 1), (27, 0), (27, "supera"), (28, 0)], fuente="Mercadona (2016) · Valencia Plaza (2019) · ECO (2026)")
 an("ganado", 29, [(29, 0), (30, 0), (30, 1), (30, 2), (30, 3), (31, 0)], fuente="ECO (eco.sapo.pt), 12-3-2024 y 10-3-2026")
 an("despega", 32, [(32, 0), (32, "Sesenta y nueve"), (32, "dos mil noventa"), (32, "veintiséis")], fuente=RES)
@@ -115,11 +115,11 @@ an("lista", 40, [(40, 0), (40, "«Cuesta"), (40, "corregir"), (40, "adaptar"), (
 # =============================================================== 3
 E("capitulo", 43, {"num": "3", "titulo": "Por qué su máquina *no viaja*", "sub": "Qué es Mercadona de verdad"}, pasos=[(43, 0), (43, 0.5)], cap="3")
 an("cadena", 44, [(44, 0), (44, 1)])
-an("marcas", 45, [(45, 0), (45, "Hacendado"), (45, "Deliplus"), (45, "Bosque")], fotos=["r_salsas.webp"], fuente="Worldpanel, 2025 (77,8 %), vía elEconomista")
+an("marcas", 45, [(45, 0), (45, "Hacendado"), (45, "Deliplus"), (45, "Bosque")], fuente="Worldpanel, 2025 (77,8 %), vía elEconomista")
 an("encargo", 46, [(46, 0), (46, "los encarga"), (46, "con los que"), (46, "y a los que")])
 an("red_es", 47, [(47, 0), (48, 0), (48, 1)], fuente="prensa económica, julio de 2026")
 an("otros_abren", 49, [(49, 0), (49, "llenan"), (49, "con marcas"), (49, "y con su marca")])
-an("merc_abre", 50, [(50, 0), (50, 1), (50, "quién le trae"), (50, "quién le fabrica"), (50, "y a su precio")], fotos=["c_pan", "c_pescado", "c_leche"])
+an("merc_abre", 50, [(50, 0), (50, 1), (50, "quién le trae"), (50, "quién le fabrica"), (50, "y a su precio")], fotos=["g_pan2", "g_pescado", "g_yogur"])
 an("red_pt", 51, [(51, 0), (51, "y les compra"), (51, 1), (51, "uno en"), (51, "y otro"), (52, 0)], fuente="ECO (eco.sapo.pt), 10-3-2026")
 cita(53, [(53, 0), (53, "«Estamos")], ["Estamos en Portugal, pero *no conocemos a fondo el país*. No somos portugueses."], "10 de marzo de 2026",
      previo="Después de siete años", pregunta="Y aun así, dice esto:", fuente="OKDiario, 11-3-2026")
@@ -132,9 +132,9 @@ E("capitulo", 61, {"num": "4", "titulo": "Los que salieron *y volvieron*", "sub"
   pasos=[(61, 0), (61, 0.1)], cap="4")
 an("vuelven", (61, 1), [(61, 1), (61, 2)])
 W = "Supermarket News, Irish Times y NBC, julio de 2006"
-an("walmart_entra", 62, [(62, 0), (62, "convencida"), (62, "ya era"), (62, "y de")], fotos=["c_walmart", "c_aldi", "c_lidl"], fuente=W + FOTOS)
+an("walmart_entra", 62, [(62, 0), (62, "convencida"), (62, "ya era"), (62, "y de")], fuente=W)
 an("walmart_sale", 63, [(63, 0), (63, 1), (63, "y asumió"), (63, "cerca de")], fuente=W)
-an("tesco", 64, [(64, 0), (64, 1), (64, "sin haber"), (64, "la vendió"), (65, 0)], fotos=["c_fresh"], fuente="Fortune · Merca2.0" + FOTOS)
+an("tesco", 64, [(64, 0), (64, 1), (64, "sin haber"), (64, "la vendió"), (65, 0)], fuente="Fortune · Merca2.0")
 an("dia", 66, [(66, 0), (66, 1), (66, 2), (66, 3), (67, 0)], fuente="Alimarket · ESM Magazine")
 an("centimos", 68, [(68, 0), (68, 1)], fuente=RES + " · cálculo propio")
 an("grande", 69, [(69, 0), (69, "compras"), (69, "llenas"), (69, "repartes")])
@@ -147,18 +147,18 @@ cita(72, [(72, 0), (72, "lo que tienes"), (72, 1)],
 # =============================================================== 5
 E("capitulo", 73, {"num": "5", "titulo": "*No lo necesita*", "sub": "Si salir es tan caro, ¿por qué lo hacen las demás?"},
   pasos=[(73, 0), (73, 1)], cap="5")
-an("bolsa", 74, [(74, 0), (74, 1), (74, "cada trimestre"), (74, 2), (74, "el único")], fotos=["c_bolsa"], clips=[C("f_bolsa_dentro")],
+an("bolsa", 74, [(74, 0), (74, 1), (74, "cada trimestre"), (74, 2), (74, "el único")], clips=[C("f_bolsa_dentro")],
    fuente="fotos: Wikimedia Commons")
-an("dos_motivos", 75, [(75, 0), (75, 1)], fotos=["c_logo"], clips=[C("modern_store_glass")])
+an("dos_motivos", 75, [(75, 0), (75, 1)], clips=[C("modern_store_glass")])
 an("familiar", 76, [(76, 0), (76, 1), (76, "Juan Roch"), (76, "la mayoría"), (77, 0), (77, 1), (77, "puede")], fotos=["c_roig"],
    clips=[C("headquarters_office")], fuente="nota de Mercadona, 23-6-2016 (el 80 % del capital) · foto: Junta de Andalucía, CC BY-SA 2.0")
 an("sin_abrir", 78, [(78, 0), (78, 1), (78, 2)])
 N = "nota de Mercadona (2016) · resultados anuales (2026)"
 an("diez_anios", 79, [(79, 0), (79, "y vendía"), (80, 0), (80, 1), (81, 0), (82, 0)], fuente=N)
 an("por_tienda_es", (82, 1), [(82, 1), (82, "a mover"), (83, 0)], fuente=N)
-an("como", 84, [(84, 0), (84, 1), (84, "abriendo"), (84, 2), (84, "y cerró"), (84, 3), (84, "comida"), (84, "aparcamiento")], fotos=["c_pescado"],
+an("como", 84, [(84, 0), (84, 1), (84, "abriendo"), (84, 2), (84, "y cerró"), (84, 3), (84, "comida"), (84, "aparcamiento")],
    fuente="Merca2, 11-3-2026")
-an("tienda9", 85, [(85, 0), (85, 1), (85, 2), (85, "tres mil"), (85, "de aquí")], fotos=["c_tienda"], clips=[C("modern_store_glass")],
+an("tienda9", 85, [(85, 0), (85, 1), (85, 2), (85, "tres mil"), (85, "de aquí")], clips=[C("modern_store_glass")],
    fuente="Merca2 y Forbes, 11-3-2026")
 an("eleccion", 86, [(86, 0), (87, 0), (87, "o gastárselos"), (87, "Roch elige")], fotos=["c_roig"], clips=[C("headquarters_office")],
    fuente="foto: Junta de Andalucía, CC BY-SA 2.0")
@@ -166,13 +166,31 @@ an("eleccion", 86, [(86, 0), (87, 0), (87, "o gastárselos"), (87, "Roch elige")
 # =============================================================== CIERRE
 an("no_miedo", 88, [(88, 0), (88, 1)], cap="")
 an("recap1", 89, [(89, 0), (89, 1), (89, "ocho años"), (89, "y un margen")], fuente=RES)
-an("recap2", 90, [(90, 0), (90, 1), (91, 0), (91, "y que en cada")], fotos=["c_furgo"], clips=[C("truck_highway_bridge")])
+an("recap2", 90, [(90, 0), (90, 1), (91, 0), (91, "y que en cada")], clips=[C("truck_highway_bridge")])
 an("recap3", 92, [(92, 0), (92, "Sin bolsa"), (92, "sin prisa"), (92, "y con un mercado")], fotos=["c_roig"], clips=[C("modern_store_glass")],
    fuente="foto: Junta de Andalucía, CC BY-SA 2.0")
 cita(93, [(93, 0), (93, "llegará"), (93, 2)], ["*Llegará.*"], "marzo de 2023", previo="Hace tres años", pregunta="¿Habrá tercer país?",
      nota="Pero antes, Portugal tiene que ganar lo mismo que España.", fuente="The Objective, 15-3-2023")
 an("no_pasado", 94, [(94, 0), (94, "no ha pasado")], fuente=RES + " · cálculo propio")
-an("final", 95, [(95, 0), (96, 0)], fotos=["c_tienda"], clips=[C("facade_hill")])
+an("final", 95, [(95, 0), (96, 0)], clips=[C("facade_hill")])
+
+# Metraje real desenfocado detras de las escenas que no llevan mapa ni fondo propio:
+# el fondo se mueve y es del tema, en vez de un oscuro plano.
+FONDOS = {
+    "plan_inicial": "construction_site_cranes", "tres_anios": "concrete_frame", "pruebas": "supermarket_produce",
+    "ganado": "calculator_papers", "margen": "woman_paying_checkout", "por_tienda": "supermarket_parking_lot",
+    "hogares": "aerial_town_street", "cuota": "supermarket_aisle_shelves", "cadena": "food_factory",
+    "marcas": "supermarket_aisle_shelves", "encargo": "bottling_line", "otros_abren": "empty_shopping_arcade",
+    "merc_abre": "fresh_fish_hake", "segunda": "store_building_street_corner", "letrero": "greengrocer_shop",
+    "objetivo": "aerial_town_avenue", "vuelven": "container_port_reach", "walmart_sale": "traffic_sunset",
+    "tesco": "aerial_roundabout", "centimos": "card_terminal", "grande": "warehouse_racks", "balanza": "aerial_highway",
+    "walmart85": "trucks_highway_aerial", "diez_anios": "supermarket_checkout_lanes", "por_tienda_es": "store_facade_hill",
+    "como": "store_facade_empty_parking", "recap1": "hands_laptop", "no_pasado": "woman_card_payment",
+}
+for _e in S:
+    _c = _e["d"].get("comp")
+    if _e["tipo"] == "anim" and _c in FONDOS and "fondo_clip" not in _e:
+        _e["fondo_clip"] = [C(FONDOS[_c])]
 
 if __name__ == "__main__":
     base = os.path.abspath(os.path.join(AQUI, "..", "..", "MERCADONA_FUERA"))

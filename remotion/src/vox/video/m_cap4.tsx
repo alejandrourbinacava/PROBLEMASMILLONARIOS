@@ -70,19 +70,19 @@ export const WalmartEntra: React.FC<EP> = ({t, p, dur, ctx}) => {
       <T x={116} y={380} ancla="i" op={tr(t, 14, 8)}>
         <Serif tam={90} peso={600}>entra en <span style={{color: '#FFD95A'}}>Alemania</span></Serif>
       </T>
-      <Sujeto src={med(ctx, 'c_walmart')} x={1210} y={560 - cae * 700} ancho={860} t={t - 14} de="pop" />
-      <T x={1210} y={270} s={pop(p(1), 11, 1.7)} rot={-4}>
+      <Sujeto src="g_super_w.webp" x={1230} y={600 - cae * 700} ancho={640} t={t - 14} de="pop" />
+      <T x={1640} y={250} s={pop(p(1), 11, 1.7)} rot={-4}>
         <Chip tam={52} color="ambar" tinta="#1B1D22">«Precios bajos»</Chip>
       </T>
-      <Sujeto src={med(ctx, 'c_aldi')} x={830} y={910} alto={310} t={p(2)} de="pop" />
-      <Sujeto src={med(ctx, 'c_lidl')} x={1560} y={910} ancho={560} t={p(3)} de="pop" />
-      <T x={830} y={960} s={pop(p(2) - 8, 11, 1.6)}>
+      <Sujeto src="g_super_k.webp" x={860} y={930} ancho={470} t={p(2)} de="pop" />
+      <Sujeto src="g_super_l.webp" x={1580} y={930} ancho={470} t={p(3)} de="pop" />
+      <T x={860} y={980} s={pop(p(2) - 8, 11, 1.6)}>
         <Chip tam={36} color="humo">precio bajo</Chip>
       </T>
-      <T x={1600} y={960} s={pop(p(3) - 8, 11, 1.6)}>
+      <T x={1580} y={980} s={pop(p(3) - 8, 11, 1.6)}>
         <Chip tam={36} color="humo">precio bajo</Chip>
       </T>
-      <Sello x={430} y={640} t={p(3) + 8} tam={72} rot={-6}>Ya tenía dueño</Sello>
+      <Sello x={470} y={650} t={p(3) + 8} tam={58} rot={-6}>Ya tenía dueño</Sello>
     </AbsoluteFill>
   );
 };
@@ -145,7 +145,7 @@ export const Tesco: React.FC<EP> = ({t, p, ctx}) => {
           <T x={1130} y={330} s={pop(t - 28, 11, 1.4)}>
             <Chip tam={50} color="humo">Estados Unidos</Chip>
           </T>
-          <Sujeto src={med(ctx, 'c_fresh')} x={1640} y={470} ancho={430} t={t - 34} de="pop" gris={tr(p(3), 6, 10)} />
+          <Sujeto src="g_super_t.webp" x={1620} y={480} ancho={440} t={t - 34} de="pop" gris={tr(p(3), 6, 10)} />
           <T x={1640} y={520} op={tr(t, 40, 8)}>
             <Eti tam={24} color="#C9CED8">una cadena nueva, desde cero</Eti>
           </T>

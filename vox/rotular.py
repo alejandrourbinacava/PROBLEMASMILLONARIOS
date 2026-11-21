@@ -26,6 +26,7 @@ CADENAS = {
     "c": ("CARREFOUR", (20, 60, 170), (255, 255, 255)),
     "d": ("DIA", (200, 22, 28), (255, 255, 255)),
     "e": ("TESCO", (238, 240, 245), (0, 80, 160)),
+    "k": ("ALDI", (16, 44, 120), (255, 255, 255)),
     "t": ("FRESH & EASY", (40, 120, 60), (255, 255, 255)),
 }
 
@@ -78,6 +79,22 @@ def main():
         out[:, :, :3] = np.clip(sup[:, :, :3] * (1 - m) + puesto * np.clip(luz, 0.75, 1.05) * m, 0, 255).astype(np.uint8)
         Image.fromarray(out, "RGBA").save(os.path.join(M, "g_super_%s.webp" % clave), "WEBP", quality=92, method=6)
     print("super", [tuple(int(v) for v in p) for p in q])
+    # la tienda grande (protagonista de plano): el rotulo va en el panel de encima de la entrada,
+    # con las esquinas medidas a mano sobre la imagen
+    gr = os.path.join(M, "g_tienda.webp")
+    if os.path.exists(gr):
+        t = np.array(Image.open(gr).convert("RGBA"))
+        k = t.shape[1] / 1790.0
+        qt = np.float32([[592, 56], [1010, 113], [1010, 202], [592, 158]]) * k
+        txt, fondo, tinta = CADENAS["m"]
+        c = cartel(txt, fondo, tinta, 1100, 300)
+        P = cv2.getPerspectiveTransform(np.float32([[0, 0], [1100, 0], [1100, 300], [0, 300]]), qt)
+        puesto = cv2.warpPerspective(c, P, (t.shape[1], t.shape[0]), flags=cv2.INTER_AREA)
+        m = cv2.warpPerspective(np.full((300, 1100), 255, np.uint8), P, (t.shape[1], t.shape[0]))
+        m = cv2.GaussianBlur(m, (0, 0), 0.8).astype(np.float32)[:, :, None] / 255.0
+        t[:, :, :3] = np.clip(t[:, :, :3] * (1 - m) + puesto * m, 0, 255).astype(np.uint8)
+        Image.fromarray(t, "RGBA").save(os.path.join(M, "g_tienda_m.webp"), "WEBP", quality=92, method=6)
+        print("tienda grande rotulada")
     # camion: el nombre en el lateral de la caja, con una franja del color de la cadena
     cam = np.array(Image.open(os.path.join(M, "g_camion.webp")).convert("RGBA"))
     h, w = cam.shape[:2]

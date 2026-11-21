@@ -117,7 +117,7 @@ export const CanideloReal: React.FC<EP> = ({t, p, dur, ctx}) => (
       <Serif tam={72} peso={600}>Abre la primera tienda</Serif>
     </T>
     <Detras x={840} y={440} t={t - 4} tam={290}>Canidelo</Detras>
-    <Sujeto src={med(ctx, 'c_tienda')} x={900} y={1000} ancho={1560} t={t - 8} de="aba" />
+    <Sujeto src="g_tienda_m.webp" x={900} y={1000} ancho={1620} t={t - 8} de="aba" />
     <T x={380} y={980} s={pop(p(1), 11, 1.5)} rot={-3}>
       <Chip tam={44} fondo="#F4F5F7" tinta="#0B0C10">junto a Oporto</Chip>
     </T>

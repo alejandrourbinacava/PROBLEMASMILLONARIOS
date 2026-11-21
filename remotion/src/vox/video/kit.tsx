@@ -114,6 +114,8 @@ export const Mundo: React.FC<{cam: Cam; children: React.ReactNode; f?: number}> 
   <div style={{position: 'absolute', left: 0, top: 0, width: 1920, height: 1080, transformOrigin: '0 0', transform: `translate(${960 - cam.x * cam.z}px, ${540 - cam.y * cam.z}px) scale(${cam.z})`}}>{children}</div>
 );
 
+/** Metraje real desenfocado para el fondo del plano (lo pone Animado cuando el plano declara `clips`). */
+export const FondoCtx = createContext<React.ReactNode>(null);
 /** Indice del plano en el video: decide que plato de fondo le toca. */
 export const IdxCtx = createContext(0);
 const N_PLATOS = 6;
@@ -125,6 +127,9 @@ const N_PLATOS = 6;
  */
 export const Escenario: React.FC<{tipo?: 'oscuro' | 'verde' | 'claro' | 'azul'; cam?: Cam}> = ({tipo = 'oscuro', cam}) => {
   const idx = useContext(IdxCtx);
+  const metraje = useContext(FondoCtx);
+  // sin camara de mapa y con metraje declarado: el fondo es imagen real en movimiento, desenfocada
+  if (tipo === 'oscuro' && !cam && metraje) return <>{metraje}</>;
   const bg = tipo === 'verde' ? 'linear-gradient(180deg, #12B764 0%, #07753F 100%)' : tipo === 'azul' ? 'linear-gradient(180deg, #1F56D8 0%, #0B1FA8 100%)' : tipo === 'claro' ? 'linear-gradient(180deg, #FFFFFF 0%, #E7EAF0 100%)' : FONDO;
   const lin = tipo === 'claro' ? 'rgba(10,20,40,0.05)' : 'rgba(255,255,255,0.04)';
   const dx = cam ? -cam.x * 0.06 : 0;
@@ -354,13 +359,13 @@ export const FabricaDibujo: React.FC<AP & {color?: Col; t?: number}> = ({color =
 /** Un proveedor: una fabrica (foto de estudio). En gris (`humo`), la que aun no se conoce. */
 export const Fabrica: React.FC<AP & {color?: Col; t?: number}> = ({color = 'ambar', t, ...a}) => <Pieza {...a} src="g_fabrica" w={400} filtro={color === 'humo' ? 'grayscale(1) brightness(0.55)' : ''} />;
 
-/** Billete de euro real, tumbado (500 o 200, alternando con `tono`). Centro en (x, y). */
-export const Fajo: React.FC<AP & {tono?: number}> = ({tono = 0, ...a}) => <Pieza {...a} rot={(a.rot ?? 0) + 90} src={tono ? 'c_b200' : 'c_b500'} w={76} ancla="centro" />;
+/** Fajo de billetes de 50 EUR (foto de estudio). Centro en (x, y). */
+export const Fajo: React.FC<AP & {tono?: number}> = ({tono = 0, ...a}) => <Pieza {...a} src="g_fajo" w={132} ancla="centro" flip={!!tono} />;
 
 /** Moneda de un euro real. Centro en (x, y), unos 100 px. `gris` la apaga. */
 export const Moneda: React.FC<AP & {gris?: number; cara?: string}> = ({gris = 0, cara, ...a}) => <Pieza {...a} src="g_moneda" w={106} ancla="centro" filtro={`grayscale(${gris}) brightness(${1 - 0.45 * gris})`} />;
 
-const PRODUCTOS = ['c_packs', 'c_pan', 'c_fruta', 'c_huevos', 'c_salsas', 'c_pescado', 'c_tomates', 'c_leche'];
+const PRODUCTOS = ['g_marcas', 'g_pan2', 'g_frescos', 'g_yogur', 'g_pescado'];
 /**
  * Un producto real del lineal (va rotando entre los recortes que hay). Base en
  * (x, y). `rojo`, `azul`... lo tintan; `humo` lo deja en gris.

@@ -148,7 +148,7 @@ cita(72, [(72, 0), (72, "lo que tienes"), (72, 1)],
 E("capitulo", 73, {"num": "5", "titulo": "*No lo necesita*", "sub": "Si salir es tan caro, ¿por qué lo hacen las demás?"},
   pasos=[(73, 0), (73, 1)], cap="5")
 an("bolsa", 74, [(74, 0), (74, 1), (74, "cada trimestre"), (74, 2), (74, "el único")], clips=[C("f_bolsa_dentro")],
-   fuente="fotos: Wikimedia Commons")
+   fuente="edificio recreado con IA a partir de una foto de Wikimedia Commons")
 an("dos_motivos", 75, [(75, 0), (75, 1)], clips=[C("modern_store_glass")])
 an("familiar", 76, [(76, 0), (76, 1), (76, "Juan Roch"), (76, "la mayoría"), (77, 0), (77, 1), (77, "puede")], fotos=["c_roig"],
    clips=[C("headquarters_office")], fuente="nota de Mercadona, 23-6-2016 (el 80 % del capital) · foto: Junta de Andalucía, CC BY-SA 2.0")

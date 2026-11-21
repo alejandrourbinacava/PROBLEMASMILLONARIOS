@@ -18,8 +18,8 @@ export const Bolsa: React.FC<EP> = ({t, p, dur, ctx}) => {
       <T x={960} y={110} op={tr(t, 0, 8)}>
         <Serif tam={84} peso={600}>Muchas <span style={{color: '#FFD95A'}}>no tienen elección</span></Serif>
       </T>
-      <Detras x={610} y={330} t={p(1) - 4} tam={380}>Bolsa</Detras>
-      <Sujeto src="g_bolsa.webp" x={610} y={1250} ancho={900} t={p(1)} de="aba" />
+      <Detras x={620} y={370} t={p(1) - 4} tam={400}>Bolsa</Detras>
+      <Sujeto src="g_bolsa.webp" x={620} y={1000} ancho={1160} t={p(1)} de="aba" />
       {/* cada trimestre, mas */}
       {H.map((h, i) => {
         const u = io(tr(p(2), -10 + i * 7, 14));

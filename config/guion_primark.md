@@ -161,6 +161,24 @@ La diferencia, si se confirma lo que adelanta la prensa británica, es que ese v
 
 ---
 
+## EPÍLOGO — el último minuto (añadido el 22-11-2026 para llegar a 8 minutos)
+
+Y no vas a pagarlo solo en Primark. Desde febrero de 2023, Zara cobra en España 1,95 euros por recoger una devolución a domicilio. Devolverla en la tienda sigue siendo gratis.
+
+Las grandes cadenas han empezado a cobrar lo que antes regalaban. Y eso le abre la puerta a Primark: puede vender por internet sin tocar el precio de la camiseta.
+
+Porque ese precio es todo lo que tiene. Según la propia empresa, lo consigue comprando cantidades enormes de cada prenda, sin apenas publicidad y ahorrándose hasta las perchas caras. Gana muy poco con cada prenda y vende muchísimas.
+
+Pero al otro lado tiene a quien sí lleva la ropa a casa, y más barata. Solo en el Reino Unido, Shein vendió en 2024 unos 2.400 millones de euros, un tercio más que el año anterior.
+
+¿Y cuándo llegará a España? Primark no ha dicho nada. Pero su historia da una pista de cómo hace las cosas: despacio.
+
+La recogida en tienda empezó en 25 tiendas. Al verano siguiente estaba en 57. En abril de 2024, después de año y medio de prueba, anunció que la llevaría a todo el país. En total, tardó dos años y medio en llegar a todas.
+
+Si repite el orden, y esto es una suposición nuestra, lo primero que verás aquí no será una furgoneta en tu calle. Será un mostrador de recogida en la tienda.
+
+Hasta entonces, el botón seguirá diciendo lo mismo: «ver la disponibilidad». Y si has llegado hasta aquí, ya sabes por qué.
+
 ## Fuentes
 
 | dato | cifra | fuente |
@@ -195,6 +213,10 @@ La diferencia, si se confirma lo que adelanta la prensa británica, es que ese v
 | Habrá pedido mínimo y cargos de envío; los cargos por envío y devolución cubren la mayor parte del coste logístico | Retail Week; George Weston | Retail Week, noviembre de 2026 |
 | Shein como motivo | interpretación de la prensa | PA / Irish Times, 10-9-2026 |
 | Escisión de Primark: anunciada el 21-4-2026, antes de que acabe 2027, cotización en Londres, Eoin Tonge consejero delegado | Retail Gazette, 21-4-2026; ABF |
+| Zara cobra 1,95 € por la recogida a domicilio de una devolución en España (pedidos desde el 1-2-2023); en tienda sigue siendo gratis | ayuda de Zara; Modaes; Forbes España | febrero de 2023 |
+| Cómo mantiene los precios: compra en grandes volúmenes, muy poca publicidad, sin perchas ni etiquetas caras; márgenes pequeños por prenda | web corporativa de Primark («How Primark keeps prices low»); Paul Lister en Business of Fashion; director financiero de ABF (Yahoo Finance UK) | varias fechas |
+| Shein en el Reino Unido: ventas de 2.050 M£ en 2024 (+32,3 %) | cuentas de Shein Distribution UK | Retail Gazette, RTÉ y Reuters, agosto de 2025 |
+| Recogida en tienda: 25 tiendas (noviembre de 2022); 57 con Londres y ropa de mujer (verano de 2023); anuncio de extensión a toda Gran Bretaña (abril de 2024, tras 18 meses de prueba); 187 tiendas (mayo de 2025) | comunicados de Primark; prensa local británica | 2022-2025 |
 
 ### Conversiones (libras → euros)
 
@@ -205,6 +227,7 @@ Cambio medio aproximado de cada año: 2019 ≈ 1,14 · 2020 ≈ 1,13 · 2021 ≈
 - Existencias: 284 M£ × 1,13 ≈ 320 M€ → «más de trescientos millones».
 - Beneficio: 969 M£ (2019) ≈ 1.105 M€ → «unos mil cien»; 362 M£ (2020) ≈ 410 M€ → «poco más de cuatrocientos».
 - Camiseta de 2 £ (2017) ≈ 2,3 € → «poco más de dos euros». Artículo de 5 £ ≈ 5,8 € → «unos seis»; 6,50 £ ≈ 7,5 € → «siete y medio».
+- Shein Reino Unido 2024: 2.050 M£ × 1,18 ≈ 2.420 M€ → «unos dos mil cuatrocientos millones».
 - Asos 2025: 281,6 M£ × 1,17 ≈ 330 M€ → «más de trescientos millones».
 
 ### Cálculos e interpretaciones propias (marcadas en la locución cuando son opinión)
@@ -213,6 +236,8 @@ Cambio medio aproximado de cada año: 2019 ≈ 1,14 · 2020 ≈ 1,13 · 2021 ≈
 - «En una prenda de dos euros el viaje cuesta más que la prenda»: razonamiento a partir de las frases de Bason y del modelo de Portsmouth; no es una cifra de Primark.
 - «A una empresa que va a cotizar sola le conviene llegar con algo más que tiendas»: lectura nuestra; así se dice en el guion.
 - «No es porque la cuenta le salga mejor…»: conclusión nuestra a partir de la caída de ventas comparables y de margen.
+
+- Epílogo: «si repite el orden, lo primero será un mostrador de recogida» es una suposición nuestra y así se dice. «Las grandes cadenas han empezado a cobrar lo que antes regalaban» generaliza a partir de Inditex.
 
 ### Pendiente de comprobar antes de publicar
 

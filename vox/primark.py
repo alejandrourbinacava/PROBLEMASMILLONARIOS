@@ -145,6 +145,23 @@ an("recap", 71, [(71, 0), (71, 1), (71, 2), (72, 0)], clips=["empty_shopping_arc
 an("quieta", 73, [(73, 0), (73, 1)], clips=["f_calle"], fuente="conclusión propia")
 an("final", 74, [(74, 0), (74, 1), (75, 0), (75, "es que ese viaje")], clips=["f_salon"])
 
+# =============================================================== EPILOGO (el ultimo minuto)
+an("zara", 76, [(76, 0), (76, 1), (76, "Zara cobra"), (76, "un euro con"), (77, 0)], clips=["f_salon"],
+   fuente="ayuda de Zara · Modaes y Forbes, febrero de 2023")
+an("regalaban", 78, [(78, 0), (78, "lo que antes"), (78, 1), (78, "sin tocar")], clips=["card_terminal"],
+   fuente="Modaes, 2023 («Inditex abre la veda a cobrar por devoluciones online»)")
+an("receta", 79, [(79, 0), (79, 1), (79, "comprando"), (79, "sin apenas"), (79, "y ahorrándose"), (80, 0), (80, "y vende")],
+   clips=["f_interior"], fuente="Primark («How Primark keeps prices low») · Business of Fashion")
+an("shein_uk", 81, [(81, 0), (82, 0), (82, "Shi in vendió"), (82, "unos dos mil"), (82, "un tercio")], clips=["packaging_conveyor"],
+   fuente="cuentas de Shein Distribution UK, vía Retail Gazette, agosto de 2025 · 2.050 M£, al cambio")
+an("cuando", 83, [(83, 0), (83, 1), (83, 2)])
+an("escalera", 84, [(84, 0), (84, 1), (85, 0), (85, "anunció"), (85, 1)], clips=["f_interior"],
+   fuente="comunicados de Primark, 2022-2025")
+an("mostrador", 86, [(86, 0), (86, "y esto es"), (86, "lo primero"), (86, "no será"), (86, 1)], clips=["f_calle"],
+   fuente="suposición propia")
+an("boton", 87, [(87, 0), (87, "«ver la"), (87, 1), (87, "ya sabes")], clips=["f_salon"],
+   fuente="primark.com/es-es, comprobado el 22-11-2026 · ficha recreada")
+
 if __name__ == "__main__":
     base = os.path.abspath(os.path.join(AQUI, "..", "..", "PRIMARK"))
     loc = os.path.join(AQUI, "primark.locucion.txt")

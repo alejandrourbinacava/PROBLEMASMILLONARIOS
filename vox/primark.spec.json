@@ -1,6 +1,6 @@
 {
  "fps": 25,
- "total": 10596,
+ "total": 12429,
  "marca": {
   "nombre": "PRIMARK",
   "color": "#0AA5D8",
@@ -1233,7 +1233,215 @@
    "d": {
     "comp": "final"
    },
-   "f1": 10596,
+   "f1": 10540,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 10540,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "ayuda de Zara · Modaes y Forbes, febrero de 2023",
+   "pasos": [
+    4,
+    48,
+    92,
+    117,
+    205
+   ],
+   "d": {
+    "comp": "zara"
+   },
+   "f1": 10796,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 10796,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "Modaes, 2023 («Inditex abre la veda a cobrar por devoluciones online»)",
+   "pasos": [
+    4,
+    53,
+    80,
+    151
+   ],
+   "d": {
+    "comp": "regalaban"
+   },
+   "f1": 10996,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 10996,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "Primark («How Primark keeps prices low») · Business of Fashion",
+   "pasos": [
+    4,
+    45,
+    83,
+    130,
+    152,
+    200,
+    232
+   ],
+   "d": {
+    "comp": "receta"
+   },
+   "f1": 11256,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 11256,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "cuentas de Shein Distribution UK, vía Retail Gazette, agosto de 2025 · 2.050 M£, al cambio",
+   "pasos": [
+    4,
+    95,
+    124,
+    169,
+    224
+   ],
+   "d": {
+    "comp": "shein_uk"
+   },
+   "f1": 11529,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.614,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 11529,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": null,
+   "pasos": [
+    4,
+    39,
+    73
+   ],
+   "d": {
+    "comp": "cuando"
+   },
+   "f1": 11690
+  },
+  {
+   "id": "e53_anim",
+   "f0": 11690,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "comunicados de Primark, 2022-2025",
+   "pasos": [
+    4,
+    59,
+    116,
+    197,
+    244
+   ],
+   "d": {
+    "comp": "escalera"
+   },
+   "f1": 12003,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 12003,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "suposición propia",
+   "pasos": [
+    4,
+    27,
+    68,
+    98,
+    140
+   ],
+   "d": {
+    "comp": "mostrador"
+   },
+   "f1": 12202,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 12202,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "primark.com/es-es, comprobado el 22-11-2026 · ficha recreada",
+   "pasos": [
+    4,
+    67,
+    97,
+    132
+   ],
+   "d": {
+    "comp": "boton"
+   },
+   "f1": 12429,
    "fondoClip": [
     {
      "src": "f_salon.jpg",

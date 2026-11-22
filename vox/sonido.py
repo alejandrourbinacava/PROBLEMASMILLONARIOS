@@ -1,6 +1,6 @@
 """Mezcla de sonido de un video de la piel moderna.
 
-    python sonido.py <voz.wav> <spec.json> <salida.mp3> [--musica pista.mp3]
+    python sonido.py <voz.wav> <spec.json> <salida.mp3> [--musica pista.mp3] [--nivel-musica -19]
 
 Voz normalizada (solo loudnorm, sin mas procesado), cama de musica muy baja
 con fundidos, y un sonido por evento: un soplo en cada cambio de plano y un
@@ -59,7 +59,9 @@ def main():
     f = int(2.0 * SR)
     env[:f] = np.linspace(0, 1, f)
     env[-int(3.0 * SR):] = np.linspace(1, 0, int(3.0 * SR))
-    mezcla += cama * env[:, None] * db(-27)
+    # -27 dB casi no se oia debajo de la voz (media de -45 dB en las pausas); -19 se nota sin taparla
+    nivel = float(sys.argv[sys.argv.index("--nivel-musica") + 1]) if "--nivel-musica" in sys.argv else -19.0
+    mezcla += cama * env[:, None] * db(nivel)
 
     soplos = [lee(os.path.join(ACT, "sfx", "whoosh", x)) for x in ("01_woosh.wav", "02_transici_n_futuristica.wav")]
     golpe = lee(os.path.join(ACT, "sfx", "impact.wav"))

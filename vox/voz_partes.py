@@ -44,7 +44,8 @@ def lee_wav(ruta):
 
 
 def main():
-    txt, carpeta = sys.argv[1], sys.argv[2]
+    # absolutas: el generador se ejecuta con la carpeta de Sr GTA como directorio de trabajo
+    txt, carpeta = os.path.abspath(sys.argv[1]), os.path.abspath(sys.argv[2])
     n_partes = int(sys.argv[sys.argv.index("--partes") + 1]) if "--partes" in sys.argv else 8
     os.makedirs(os.path.join(carpeta, "partes"), exist_ok=True)
     paras = [p.strip() for p in io.open(txt, encoding="utf-8").read().replace("\r", "").split("\n") if p.strip()]

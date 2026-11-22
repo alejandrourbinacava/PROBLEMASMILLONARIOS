@@ -37,7 +37,7 @@ export type Escena = {
   /** como entra: 'cortinilla' tapa el corte con dos bandas de color */
   trans?: string;
 };
-export type Spec = {fps: number; total: number; marca: Marca; escenas: Escena[]; medios?: Record<string, string>; piel?: string};
+export type Spec = {fps: number; total: number; marca: Marca; escenas: Escena[]; medios?: Record<string, string>; piel?: string; tema?: string};
 /** Lo que recibe cada tipo de escena. `p(k)` = fotogramas desde que arranco el paso k (negativo si aun no). */
 export type EP = {d: Record<string, any>; t: number; dur: number; p: (k: number) => number; ancho: number; ctx?: {f0: number; f: number; fps: number; medios: any[]; clips?: any[]}};
 

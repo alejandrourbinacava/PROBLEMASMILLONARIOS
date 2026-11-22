@@ -1,6 +1,7 @@
 """Pone el nombre de una cadena en el letrero en blanco del supermercado y en la caja del camion.
 
     python rotular.py <tema>
+    python rotular.py --pegar <src.webp> <dst.webp> "TEXTO" x0,y0,x1,y1,x2,y2,x3,y3 R,G,B R,G,B
 
 Parte de `g_super.webp` (edificio generico con el letrero vacio) y de
 `g_camion.webp` (trailer blanco) y saca variantes con el NOMBRE escrito, sin
@@ -61,7 +62,41 @@ def esquinas_letrero(a):
     return np.float32([q[np.argmin(s)], q[np.argmax(d)], q[np.argmax(s)], q[np.argmin(d)]])   # si, sd, id, ii
 
 
+def pegar(src, dst, texto, quad, fondo, tinta, alto=0.62):
+    """Escribe `texto` en el cuadrilatero `quad` (si, sd, id, ii) de una imagen: un letrero, una etiqueta de precio."""
+    t = np.array(Image.open(src).convert("RGBA"))
+    q = np.float32(quad)
+    w = int(max(np.linalg.norm(q[1] - q[0]), np.linalg.norm(q[2] - q[3])) * 3)
+    h = int(max(np.linalg.norm(q[3] - q[0]), np.linalg.norm(q[2] - q[1])) * 3)
+    im = Image.new("RGB", (w, h), fondo)
+    d = ImageDraw.Draw(im)
+    tam = int(h * alto)
+    while True:
+        f = ImageFont.truetype(FUENTE, tam)
+        x0, y0, x1, y1 = d.textbbox((0, 0), texto, font=f)
+        if x1 - x0 <= w * 0.86 or tam < 12:
+            break
+        tam -= 4
+    d.text(((w - (x1 - x0)) / 2 - x0, (h - (y1 - y0)) / 2 - y0), texto, font=f, fill=tinta)
+    P = cv2.getPerspectiveTransform(np.float32([[0, 0], [w, 0], [w, h], [0, h]]), q)
+    puesto = cv2.warpPerspective(np.array(im), P, (t.shape[1], t.shape[0]), flags=cv2.INTER_AREA)
+    m = cv2.warpPerspective(np.full((h, w), 255, np.uint8), P, (t.shape[1], t.shape[0]))
+    m = cv2.GaussianBlur(m, (0, 0), 0.8).astype(np.float32)[:, :, None] / 255.0
+    luz = np.clip(t[:, :, :3].astype(np.float32).mean(axis=2, keepdims=True) / 240.0, 0.8, 1.05)
+    t[:, :, :3] = np.clip(t[:, :, :3] * (1 - m) + puesto * luz * m, 0, 255).astype(np.uint8)
+    Image.fromarray(t, "RGBA").save(dst, "WEBP", quality=92, method=6)
+    print("pegado", os.path.basename(dst))
+
+
 def main():
+    if "--pegar" in sys.argv:
+        # python rotular.py --pegar <src.webp> <dst.webp> "TEXTO" x0,y0,...,x3,y3 R,G,B R,G,B [alto]
+        i = sys.argv.index("--pegar")
+        src, dst, texto, quad, fondo, tinta = sys.argv[i + 1:i + 7]
+        v = [float(x) for x in quad.split(",")]
+        pegar(src, dst, texto, [v[k:k + 2] for k in range(0, 8, 2)], tuple(int(x) for x in fondo.split(",")), tuple(int(x) for x in tinta.split(",")),
+              float(sys.argv[i + 7]) if len(sys.argv) > i + 7 else 0.62)
+        return
     M = os.path.join(REPO, "vox", "media", sys.argv[1])
     sup = np.array(Image.open(os.path.join(M, "g_super.webp")).convert("RGBA"))
     q = esquinas_letrero(sup)

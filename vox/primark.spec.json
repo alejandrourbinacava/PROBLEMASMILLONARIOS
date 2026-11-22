@@ -1,0 +1,1302 @@
+{
+ "fps": 25,
+ "total": 10596,
+ "marca": {
+  "nombre": "PRIMARK",
+  "color": "#0AA5D8",
+  "claro": "#45D0FF",
+  "oscuro": "#063A52",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "primark.com/es-es, comprobado el 22-11-2026 · ficha recreada",
+   "pasos": [
+    0,
+    56,
+    73,
+    141,
+    171,
+    247,
+    318,
+    340
+   ],
+   "d": {
+    "comp": "web"
+   },
+   "f1": 373,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 373,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "resultados anuales de ABF (dueña de Primark), 3-11-2026 · Inditex, ejercicio 2025 (26,7 % online)",
+   "pasos": [
+    4,
+    67,
+    128,
+    159,
+    229
+   ],
+   "d": {
+    "comp": "gigante"
+   },
+   "f1": 637,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 637,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Consultancy.uk, 26-1-2021 · 650 M£ al mes, al cambio de 2020",
+   "pasos": [
+    4,
+    59,
+    85,
+    152
+   ],
+   "d": {
+    "comp": "pandemia"
+   },
+   "f1": 817,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 817,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "anuncio de ABF, 10-9-2026",
+   "pasos": [
+    4,
+    46,
+    89,
+    124,
+    154,
+    183
+   ],
+   "d": {
+    "comp": "cuentas"
+   },
+   "f1": 1044,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_capitulo",
+   "f0": 1044,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "Una camiseta de *dos euros*",
+    "sub": "Por qué no le salían las cuentas"
+   },
+   "f1": 1108
+  },
+  {
+   "id": "e05_anim",
+   "f0": 1108,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "John Bason a The Mirror, recogido por Marie Claire UK, 28-7-2017 · 2 £ al cambio",
+   "pasos": [
+    4,
+    73,
+    101,
+    154,
+    213
+   ],
+   "d": {
+    "comp": "bason"
+   },
+   "f1": 1382,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.1,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 1382,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    77,
+    104,
+    138,
+    178,
+    192,
+    205
+   ],
+   "d": {
+    "comp": "viaje"
+   },
+   "f1": 1621,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    },
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 104
+    },
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 138
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_anim",
+   "f0": 1621,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "razonamiento propio a partir de Bason y del modelo de Portsmouth",
+   "pasos": [
+    4,
+    46,
+    77,
+    97
+   ],
+   "d": {
+    "comp": "cuarenta_dos"
+   },
+   "f1": 1770,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1770,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Lisa Jack, Universidad de Portsmouth · The Conversation, 28-1-2021",
+   "pasos": [
+    4,
+    41,
+    130,
+    178
+   ],
+   "d": {
+    "comp": "devoluciones"
+   },
+   "f1": 2004,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 2004,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "L. Jack, Univ. de Portsmouth (5 £ → 6,50 £, al cambio) · precio medio: estimación de BearingPoint, Retail Gazette, 25-1-2022",
+   "pasos": [
+    4,
+    93,
+    156,
+    206,
+    234
+   ],
+   "d": {
+    "comp": "portsmouth"
+   },
+   "f1": 2367,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 2367,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "comunicado de Primark, Irish Times (FT), 20-9-2016",
+   "pasos": [
+    4,
+    72,
+    95,
+    119,
+    167
+   ],
+   "d": {
+    "comp": "dos_maneras"
+   },
+   "f1": 2603,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_capitulo",
+   "f0": 2603,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "Ya lo había *probado*",
+    "sub": "2013 · la prueba con Asos"
+   },
+   "f1": 2678
+  },
+  {
+   "id": "e12_anim",
+   "f0": 2678,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "John Bason, Irish Times (FT), 20-9-2016",
+   "pasos": [
+    4,
+    4,
+    50,
+    139,
+    161,
+    231
+   ],
+   "d": {
+    "comp": "asos"
+   },
+   "f1": 3033,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.478,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 3033,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    71,
+    103,
+    147
+   ],
+   "d": {
+    "comp": "contrario"
+   },
+   "f1": 3225,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 3225,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Euromonitor y Primark, Irish Times (FT), 20-9-2016",
+   "pasos": [
+    4,
+    33,
+    147,
+    200,
+    269,
+    289
+   ],
+   "d": {
+    "comp": "seis"
+   },
+   "f1": 3558,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.839,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 3558,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "informe de Afi para Primark, octubre de 2025 · Modaes, 15-10-2015",
+   "pasos": [
+    4,
+    64,
+    95,
+    118,
+    158
+   ],
+   "d": {
+    "comp": "gran_via"
+   },
+   "f1": 3782,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 3782,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Modaes, julio de 2026 · resultados anuales de ABF, 4-11-2025 (margen 11,9 %)",
+   "pasos": [
+    4,
+    14,
+    50,
+    79,
+    159
+   ],
+   "d": {
+    "comp": "espana"
+   },
+   "f1": 4058
+  },
+  {
+   "id": "e17_anim",
+   "f0": 4058,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "resultados de Asos, vía FashionUnited y AJ Bell, noviembre de 2026 · al cambio",
+   "pasos": [
+    4,
+    57,
+    95,
+    173
+   ],
+   "d": {
+    "comp": "asos_pierde"
+   },
+   "f1": 4312,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_capitulo",
+   "f0": 4312,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "El año que vendió *cero*",
+    "sub": "Marzo de 2020 · cierran las tiendas en media Europa"
+   },
+   "f1": 4411
+  },
+  {
+   "id": "e19_anim",
+   "f0": 4411,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    4,
+    45,
+    83
+   ],
+   "d": {
+    "comp": "cierre"
+   },
+   "f1": 4533,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 4533,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Consultancy.uk, 26-1-2021 · 650 M£ al mes y 284 M£ de existencias, al cambio de 2020",
+   "pasos": [
+    4,
+    28,
+    99,
+    115,
+    131
+   ],
+   "d": {
+    "comp": "cero"
+   },
+   "f1": 4762,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 4762,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Retail Gazette, 25-1-2022 · RTÉ, 3-11-2020 (969 → 362 M£, al cambio)",
+   "pasos": [
+    4,
+    67,
+    102,
+    183,
+    250
+   ],
+   "d": {
+    "comp": "persianas"
+   },
+   "f1": 5052,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.957,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 5052,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    46
+   ],
+   "d": {
+    "comp": "sector"
+   },
+   "f1": 5147,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 5147,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "George Weston, recogido por Retail Gazette, 25-1-2022 · traducción propia",
+   "pasos": [
+    4,
+    48,
+    93,
+    187
+   ],
+   "d": {
+    "comp": "weston"
+   },
+   "f1": 5416,
+   "fondoClip": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.3,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 5416,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "cuenta de Primark en Twitter, 14-1-2021, recogido por Retail Gazette · traducción propia · pantalla recreada",
+   "pasos": [
+    4,
+    75,
+    103
+   ],
+   "d": {
+    "comp": "tuit"
+   },
+   "f1": 5612,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 5612,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Reuters y LBC, 15-6-2020",
+   "pasos": [
+    4,
+    48,
+    104,
+    181,
+    280,
+    324
+   ],
+   "d": {
+    "comp": "colas"
+   },
+   "f1": 5962,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 5962,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Modaes",
+   "pasos": [
+    4,
+    142,
+    199
+   ],
+   "d": {
+    "comp": "espana_covid"
+   },
+   "f1": 6195
+  },
+  {
+   "id": "e27_capitulo",
+   "f0": 6195,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "El *atajo*",
+    "sub": "Vender por internet sin llevarlo a casa"
+   },
+   "f1": 6266
+  },
+  {
+   "id": "e28_anim",
+   "f0": 6266,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    44,
+    77
+   ],
+   "d": {
+    "comp": "tramo"
+   },
+   "f1": 6383,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 6383,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Merca2, 3-5-2025 · Marketing4eCommerce, 10-9-2026 · web recreada",
+   "pasos": [
+    4,
+    23,
+    69,
+    119,
+    165,
+    237
+   ],
+   "d": {
+    "comp": "escaparate"
+   },
+   "f1": 6657,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 6657,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Reuters y Retail Gazette, 14-11-2022",
+   "pasos": [
+    4,
+    43,
+    118,
+    146,
+    199,
+    225,
+    234
+   ],
+   "d": {
+    "comp": "recogida"
+   },
+   "f1": 6926,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.3,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 6926,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Retail Gazette y RetailDetail, 14-11-2022 · pantalla recreada",
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "caida"
+   },
+   "f1": 6971,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 6971,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "comunicado de Primark, 21-5-2025 · puntos orientativos, no la ubicación de cada tienda",
+   "pasos": [
+    4,
+    37
+   ],
+   "d": {
+    "comp": "gb187"
+   },
+   "f1": 7095
+  },
+  {
+   "id": "e33_anim",
+   "f0": 7095,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "FashionUnited, 3-11-2026",
+   "pasos": [
+    4,
+    31,
+    165,
+    220
+   ],
+   "d": {
+    "comp": "truco"
+   },
+   "f1": 7406,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.0,
+     "rate": 0.895,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 7406,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    30
+   ],
+   "d": {
+    "comp": "sin_pagar"
+   },
+   "f1": 7496,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_capitulo",
+   "f0": 7496,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "Lo que ha *cambiado*",
+    "sub": "¿Por qué este año?"
+   },
+   "f1": 7592
+  },
+  {
+   "id": "e36_anim",
+   "f0": 7592,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "resultados anuales de ABF (dueña de Primark), 3-11-2026",
+   "pasos": [
+    4,
+    75,
+    166,
+    218,
+    306
+   ],
+   "d": {
+    "comp": "dejado"
+   },
+   "f1": 7958,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 7958,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "resultados anuales de ABF (dueña de Primark), 3-11-2026",
+   "pasos": [
+    4,
+    45,
+    93
+   ],
+   "d": {
+    "comp": "margen2"
+   },
+   "f1": 8081,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 8081,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "PA / Irish Times, 10-9-2026",
+   "pasos": [
+    4,
+    66,
+    78,
+    116
+   ],
+   "d": {
+    "comp": "shein"
+   },
+   "f1": 8235,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.3,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 8235,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "anuncio de ABF, 21-4-2026 (Retail Gazette)",
+   "pasos": [
+    4,
+    33,
+    70,
+    153,
+    252,
+    349
+   ],
+   "d": {
+    "comp": "escision"
+   },
+   "f1": 8667,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.0,
+     "rate": 0.653,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 8667,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Retail Technology Innovation Hub, 18-5-2026",
+   "pasos": [
+    4,
+    28
+   ],
+   "d": {
+    "comp": "mayo"
+   },
+   "f1": 8811,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 8811,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "ABF, 10-9-2026 · FashionUnited · Marketing4eCommerce",
+   "pasos": [
+    4,
+    61,
+    112,
+    170,
+    221
+   ],
+   "d": {
+    "comp": "anuncio"
+   },
+   "f1": 9102,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 9102,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Primark, recogido por Marketing4eCommerce, 10-9-2026 · traducción propia",
+   "pasos": [
+    4,
+    33
+   ],
+   "d": {
+    "comp": "oficial"
+   },
+   "f1": 9259,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 9259,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Retail Week, noviembre de 2026",
+   "pasos": [
+    4,
+    42,
+    60,
+    109,
+    187,
+    221,
+    324
+   ],
+   "d": {
+    "comp": "quien_paga"
+   },
+   "f1": 9645,
+   "fondoClip": [
+    {
+     "src": "woman_card_payment_contactless_104.mp4",
+     "desde": 0.0,
+     "rate": 0.728,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 9645,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "primark.com/es-es, comprobado el 22-11-2026 · ficha recreada",
+   "pasos": [
+    4,
+    30,
+    54,
+    104,
+    145
+   ],
+   "d": {
+    "comp": "espana_hoy"
+   },
+   "f1": 9873,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 9873,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": null,
+   "pasos": [
+    4,
+    107,
+    134,
+    197
+   ],
+   "d": {
+    "comp": "recap"
+   },
+   "f1": 10127,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 10127,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "conclusión propia",
+   "pasos": [
+    4,
+    76
+   ],
+   "d": {
+    "comp": "quieta"
+   },
+   "f1": 10273,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 10273,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": null,
+   "pasos": [
+    4,
+    49,
+    132,
+    209
+   ],
+   "d": {
+    "comp": "final"
+   },
+   "f1": 10596,
+   "fondoClip": [
+    {
+     "src": "f_salon.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_salon.jpg": "vox/media/primark/f_salon.jpg",
+  "f_calle.jpg": "vox/media/primark/f_calle.jpg",
+  "empty_shopping_arcade_corridor_84.mp4": "parallax2/proyecto/stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "f_almacen.jpg": "vox/media/primark/f_almacen.jpg",
+  "truck_highway_bridge_delivery_119.mp4": "parallax2/proyecto/stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+  "trucks_highway_aerial_parking_logistics_122.mp4": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "packaging_conveyor_rollers_cardboard_113.mp4": "parallax2/proyecto/stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+  "f_interior.jpg": "vox/media/primark/f_interior.jpg",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "elderly_people_meeting_table_documents_132.mp4": "parallax2/proyecto/stock_mercadona/elderly_people_meeting_table_documents_132.mp4",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "aerial_highway_lanes_trucks_325.mp4": "parallax2/proyecto/stock_mercadona/aerial_highway_lanes_trucks_325.mp4",
+  "woman_card_payment_contactless_104.mp4": "parallax2/proyecto/stock_mercadona/woman_card_payment_contactless_104.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_bolsa.webp": "vox/media/primark/g_bolsa.webp",
+  "g_camion.webp": "vox/media/primark/g_camion.webp",
+  "g_camiseta.webp": "vox/media/primark/g_camiseta.webp",
+  "g_camiseta_2.webp": "vox/media/primark/g_camiseta_2.webp",
+  "g_camiseta_6.webp": "vox/media/primark/g_camiseta_6.webp",
+  "g_casa.webp": "vox/media/primark/g_casa.webp",
+  "g_cola.webp": "vox/media/primark/g_cola.webp",
+  "g_compradora.webp": "vox/media/primark/g_compradora.webp",
+  "g_devolucion.webp": "vox/media/primark/g_devolucion.webp",
+  "g_fajo.webp": "vox/media/primark/g_fajo.webp",
+  "g_fajos.webp": "vox/media/primark/g_fajos.webp",
+  "g_furgo.webp": "vox/media/primark/g_furgo.webp",
+  "g_jersey.webp": "vox/media/primark/g_jersey.webp",
+  "g_moneda.webp": "vox/media/primark/g_moneda.webp",
+  "g_monedas.webp": "vox/media/primark/g_monedas.webp",
+  "g_monton.webp": "vox/media/primark/g_monton.webp",
+  "g_movil.webp": "vox/media/primark/g_movil.webp",
+  "g_nave.webp": "vox/media/primark/g_nave.webp",
+  "g_paquete.webp": "vox/media/primark/g_paquete.webp",
+  "g_perchero.webp": "vox/media/primark/g_perchero.webp",
+  "g_persiana.webp": "vox/media/primark/g_persiana.webp",
+  "g_portatil.webp": "vox/media/primark/g_portatil.webp",
+  "g_repartidor.webp": "vox/media/primark/g_repartidor.webp",
+  "g_tienda.webp": "vox/media/primark/g_tienda.webp",
+  "g_tienda_p.webp": "vox/media/primark/g_tienda_p.webp"
+ },
+ "tema": "primark",
+ "piel": "anim"
+}

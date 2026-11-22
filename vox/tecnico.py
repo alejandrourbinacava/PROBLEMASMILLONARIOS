@@ -216,7 +216,8 @@ def construye(T, escenas, marca, destino, media=None, piel=None):
         for f in sorted(os.listdir(carpeta)) if os.path.isdir(carpeta) else []:
             if f.startswith("g_") and f.endswith(".webp"):
                 usados[f] = "vox/media/%s/%s" % (tema, f)
-    spec = {"fps": FPS, "total": total, "marca": marca, "escenas": out, "tiempos_reales": T.real, "medios": usados}
+    spec = {"fps": FPS, "total": total, "marca": marca, "escenas": out, "tiempos_reales": T.real, "medios": usados,
+            "tema": os.path.basename(destino).split(".")[0]}
     if piel:
         spec["piel"] = piel
     with io.open(destino, "w", encoding="utf-8", newline="\n") as f:

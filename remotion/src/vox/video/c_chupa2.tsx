@@ -144,7 +144,7 @@ export const Anuncio: React.FC<EP> = (ep) => {
       <Fondo ep={ep} luz={0.28} />
       <Quien x={110} y={150} t={t} nombre="Johan Cruyff" cargo="Anuncio contra el tabaco · 1991" />
       <div style={{position: 'absolute', left: 110, top: 400, width: 1120, font: "700 72px/1.18 'D Sans'", color: '#F4F5F7'}}>
-        <Palabras texto="«El fútbol me lo ha dado todo en la vida. *Fumar casi me la quita*»." u={p(1) < 0 ? 0 : c01(p(1) / 95)} />
+        <Palabras texto="«El fútbol me lo ha dado todo en la vida. *Fumar casi me la quita*»." u={p(1) < 0 ? 0 : c01(p(1) / 66)} />
       </div>
       <Im src="g_balon" x={1570} y={1080} w={440} t={t - 4} de="der" cam={cam} />
     </AbsoluteFill>
@@ -166,7 +166,7 @@ export const Mir: React.FC<EP> = (ep) => {
       <T x={120} y={720} ancla="i" s={pop(p(2), 12, 1.4)}>
         <Chip tam={42} fondo="#F4F5F7" tinta="#0B0C10">Los cosmonautas salen con ellos en televisión</Chip>
       </T>
-      <Im src="g_piruleta" x={1280 + Math.sin(t / 40) * 14} y={1150 + Math.cos(t / 34) * 10} w={150} t={p(1) - 4} de="pop" rot={-16 + t * 0.05} />
+      <Im src="g_piruleta" x={1500 + Math.sin(t / 40) * 14} y={1150 + Math.cos(t / 34) * 10} w={150} t={p(1) - 4} de="pop" rot={-16 + t * 0.05} />
     </AbsoluteFill>
   );
 };
@@ -273,7 +273,7 @@ export const Caida: React.FC<EP> = (ep) => {
       <Columna x={330} base={900} alto={414 * K} t={t - 4} cifra="414 M€" pie="2001" color="linear-gradient(180deg,#F4F5F7,#AEB5C2)" />
       <Columna x={700} base={900} alto={344 * K} t={p(1)} cifra="344 M€" pie="2002" color="linear-gradient(180deg,#FFD95A,#F29A0B)" />
       <Columna x={1070} base={900} alto={261 * K} t={p(2)} cifra="261 M€" pie="2004" color="linear-gradient(180deg,#FF6A5C,#C4161C)" />
-      <Dato x={1570} y={450} t={p(3)} cifra="−37 %" pie="en tres años: más de un tercio" tam={210} color="rojo" />
+      <Dato x={1550} y={450} t={p(3)} cifra="−37 %" pie="en tres años" tam={190} color="rojo" />
     </AbsoluteFill>
   );
 };
@@ -289,7 +289,7 @@ export const Encoge: React.FC<EP> = (ep) => {
       <Parrafo x={120} y={100} w={1500} t={t} tam={66} serif>Una empresa montada para vender en 160 países <Am>no encoge con facilidad</Am></Parrafo>
       <Im src="g_fabrica" x={500} y={1080} w={800} t={t - 6} de="izq" gris={0.55} luz={0.8} cam={cam} />
       <T x={1040} y={520} ancla="i" op={tr(p(1), 0, 8)}>
-        <Eti tam={28} color={GRIS}>Fábrica de Barcelona · capacidad utilizada</Eti>
+        <Eti tam={23} color={GRIS}>Fábrica de Barcelona · capacidad utilizada</Eti>
       </T>
       {p(1) >= 0 && (
         <div style={{position: 'absolute', left: 1040, top: 560, width: 760, height: 76, borderRadius: 38, background: 'linear-gradient(180deg,#3A4052,#252936)', overflow: 'hidden'}}>
@@ -394,7 +394,7 @@ export const Batllo: React.FC<EP> = (ep) => {
         <Sans tam={40} peso={600} color="#D5DBE6">Paseo de Gracia, Barcelona</Sans>
       </T>
       <T x={1196} y={650} ancla="i" op={tr(p(2), 0, 8)}>
-        <Sans tam={40} peso={700} color={AM}>De los Bernat desde los años noventa</Sans>
+        <Sans tam={35} peso={700} color={AM}>De los Bernat desde los años noventa</Sans>
       </T>
       <Dato x={1190} y={850} t={p(3)} cifra="71 M€" pie="valor de tasación" tam={190} color="ambar" ancla="i" />
     </AbsoluteFill>

@@ -449,10 +449,10 @@
     "titulo": "Nada que *traducir*",
     "sub": "1967 · empieza a salir",
     "el": "g_globo",
-    "ew": 560,
-    "ex": 1480,
-    "ey": 1110,
-    "nx": 1240
+    "ew": 410,
+    "ex": 1620,
+    "ey": 1060,
+    "nx": 1230
    },
    "f1": 2858,
    "fondoClip": [
@@ -666,10 +666,10 @@
     "titulo": "Nueve de cada *diez*",
     "sub": "1970 · solo uno de cada diez se vende fuera de España",
     "el": "g_piruletas",
-    "ew": 620,
-    "ex": 1640,
-    "ey": 1090,
-    "nx": 1420
+    "ew": 560,
+    "ex": 1560,
+    "ey": 1080,
+    "nx": 1360
    },
    "f1": 4371,
    "fondoClip": [
@@ -928,9 +928,9 @@
     "titulo": "Ahí empezó *el problema*",
     "sub": "Demasiado grande",
     "el": "g_fajos",
-    "ew": 600,
-    "ex": 1580,
-    "ey": 1100,
+    "ew": 520,
+    "ex": 1570,
+    "ey": 1060,
     "nx": 1220
    },
    "f1": 6392,
@@ -1278,10 +1278,10 @@
     "titulo": "Se *vende*",
     "sub": "3 de julio de 2006 · la familia vende la empresa entera",
     "el": "g_escritura",
-    "ew": 700,
-    "ex": 1560,
-    "ey": 1090,
-    "nx": 1220
+    "ew": 640,
+    "ex": 1490,
+    "ey": 1060,
+    "nx": 1240
    },
    "f1": 9298,
    "fondoClip": [

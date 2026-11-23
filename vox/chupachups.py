@@ -77,7 +77,7 @@ an("bocas", 14, [(14, 0), (14, 1), (14, "encontrando")], clips=["f_fabrica"])
 an("techo", 15, [(15, 0), (15, 1), (15, "tiene techo")], fuente="INE, censo de 1960: 30,4 millones de habitantes")
 
 # =============================================================== 2
-E("capitulo", 16, {"num": "2", "titulo": "Nada que *traducir*", "sub": "1967 · empieza a salir", "el": "g_globo", "ew": 560, "ex": 1480, "ey": 1110, "nx": 1240},
+E("capitulo", 16, {"num": "2", "titulo": "Nada que *traducir*", "sub": "1967 · empieza a salir", "el": "g_globo", "ew": 410, "ex": 1620, "ey": 1060, "nx": 1230},
   pasos=[(16, 0), (16, 0.05)], cap="2", clips=["f_expositor"])
 an("salida", (16, 1), [(16, 1), (16, "y su primera filial"), (17, 0)], fuente=IDCH)
 an("socios", 18, [(18, 0), (18, 1), (18, "en Italia"), (18, "y en Estados Unidos")], clips=["f_confiteria"], fuente=IDCH)
@@ -91,7 +91,7 @@ an("arriba", 24, [(24, 0), (24, "poner el logotipo"), (24, "y no en un lado"), (
 an("traducir", 25, [(25, 0), (25, 1)], clips=["f_expositor"], fuente=EXPO)
 
 # =============================================================== 3
-E("capitulo", 26, {"num": "3", "titulo": "Nueve de cada *diez*", "sub": "1970 · solo uno de cada diez se vende fuera de España", "el": "g_piruletas", "ew": 620, "ex": 1640, "ey": 1090, "nx": 1420},
+E("capitulo", 26, {"num": "3", "titulo": "Nueve de cada *diez*", "sub": "1970 · solo uno de cada diez se vende fuera de España", "el": "g_piruletas", "ew": 560, "ex": 1560, "ey": 1080, "nx": 1360},
   pasos=[(26, 0), (26, 0.03)], cap="3", clips=["container_port_reach"])
 an("paises", (26, 1), [(26, 1), (26, 1), (26, 2), (27, 0), (28, 0), (28, "nueve de cada")], clips=["container_port_reach"], fuente=IDCH)
 an("fabricas", 29, [(29, 0), (29, "y en mil"), (29, 1), (29, "otra en"), (29, "y una filial")], clips=["trucks_highway_aerial"], fuente=IDCH)
@@ -107,7 +107,7 @@ an("cumbre", 36, [(36, 0), (37, 0), (37, "tenía dos mil"), (37, "y vendía")], 
 an("espacio", 38, [(38, 0)], clips=["f_mir"], fuente="foto: NASA (misión STS-89), dominio público")
 
 # =============================================================== 4
-E("capitulo", 39, {"num": "4", "titulo": "Ahí empezó *el problema*", "sub": "Demasiado grande", "el": "g_fajos", "ew": 600, "ex": 1580, "ey": 1100, "nx": 1220},
+E("capitulo", 39, {"num": "4", "titulo": "Ahí empezó *el problema*", "sub": "Demasiado grande", "el": "g_fajos", "ew": 520, "ex": 1570, "ey": 1060, "nx": 1220},
   pasos=[(39, 0), (39, 0.05)], cap="4", clips=["f_fabrica"])
 an("fabricas5", (40, "Chupa Chups había"), [(40, "Chupa Chups había"), (40, "España"), (40, "Francia"), (40, "Rusia"), (40, "México"), (40, "y China"), (40, 1)],
    clips=["trucks_highway_aerial"], fuente=IDCH)
@@ -130,7 +130,7 @@ an("hacienda", 55, [(55, 0), (55, "por otros"), (55, "para que Hacienda")], clip
 an("bruselas", 56, [(56, 0), (56, 1), (56, 2)], clips=["government_building"], fuente=CE)
 
 # =============================================================== 5
-E("capitulo", 57, {"num": "5", "titulo": "Se *vende*", "sub": "3 de julio de 2006 · la familia vende la empresa entera", "el": "g_escritura", "ew": 700, "ex": 1560, "ey": 1090, "nx": 1220},
+E("capitulo", 57, {"num": "5", "titulo": "Se *vende*", "sub": "3 de julio de 2006 · la familia vende la empresa entera", "el": "g_escritura", "ew": 640, "ex": 1490, "ey": 1060, "nx": 1240},
   pasos=[(57, 0), (57, 0.03)], cap="5", clips=["f_paseo"])
 an("venta", (57, 1), [(57, 1), (57, 1), (57, "un grupo"), (57, "el dueño"), (58, 0), (58, 1)],
    clips=["calculator_papers"], fuente=WH + " (1.434 M€ frente a 264 M€)")

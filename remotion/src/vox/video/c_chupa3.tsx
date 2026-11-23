@@ -137,7 +137,7 @@ export const Profesores: React.FC<EP> = (ep) => {
         <Eti tam={28} color={GRIS}>Jaime Llopis · IESE</Eti>
       </T>
       <div style={{position: 'absolute', left: 120, top: 580, width: 1440, font: "700 72px/1.18 'D Sans'", color: '#F4F5F7'}}>
-        <Palabras texto="«El futuro de las marcas estará garantizado, *pero no el de la empresa*»." u={p(3) < 0 ? 0 : c01(p(3) / 105)} />
+        <Palabras texto="«El futuro de las marcas estará garantizado, *pero no el de la empresa*»." u={p(3) < 0 ? 0 : c01(p(3) / 60)} />
       </div>
     </AbsoluteFill>
   );
@@ -262,7 +262,7 @@ export const Hoy: React.FC<EP> = (ep) => {
       <Dato x={1030} y={500} t={p(2)} cifra="18.000" pie="empleados" tam={112} color="blanco" />
       <Dato x={1560} y={500} t={p(3)} cifra="34" pie="fábricas" tam={112} color="blanco" />
       <Im src="g_globo" x={380} y={1150} w={300} t={p(4) - 2} de="aba" cam={cam} />
-      <Dato x={1160} y={860} t={p(4)} cifra="+150 países" pie="donde se sigue vendiendo el caramelo" tam={150} color="ambar" />
+      <Dato x={1160} y={840} t={p(4)} cifra="+150" pie="países donde se sigue vendiendo el caramelo" tam={170} color="ambar" />
     </AbsoluteFill>
   );
 };

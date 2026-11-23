@@ -184,7 +184,7 @@ export const Granja: React.FC<EP> = (ep) => {
       <T x={1112} y={380} ancla="i" op={tr(p(1), 8, 8)}>
         <Sans tam={46} peso={600} color="#D5DBE6">Dulces de manzana</Sans>
       </T>
-      <Sello x={1440} y={700} t={p(3)} tam={78} rot={-6}>A punto de quebrar</Sello>
+      <Sello x={1430} y={720} t={p(3)} tam={64} rot={-6}>A punto de quebrar</Sello>
     </AbsoluteFill>
   );
 };
@@ -282,7 +282,7 @@ export const Nombre: React.FC<EP> = (ep) => {
         <Serif tam={190} peso={600} color={AM}>Chupa Chups</Serif>
       </T>
       <T x={660} y={990} ancla="i" s={pop(p(3), 12, 1.4)}>
-        <Chip tam={38} color="humo">La empresa acabó cambiándose el nombre por el del caramelo</Chip>
+        <Chip tam={34} color="humo">La empresa acabó cambiándose el nombre por el del caramelo</Chip>
       </T>
     </AbsoluteFill>
   );
@@ -311,7 +311,7 @@ export const Flota: React.FC<EP> = (ep) => {
   return (
     <AbsoluteFill>
       <Fondo ep={ep} luz={0.32} />
-      <Sello x={300} y={150} t={t - 2} tam={96} rot={-5} color="#2BE38A">Funcionó</Sello>
+      <Sello x={400} y={160} t={t - 2} tam={84} rot={-5} color="#2BE38A">Funcionó</Sello>
       <T x={520} y={330} op={tr(p(1), 0, 8)}>
         <Eti tam={30} color={GRIS}>Finales de los cincuenta</Eti>
       </T>
@@ -383,7 +383,7 @@ export const Salida: React.FC<EP> = (ep) => {
       <Mundo cam={cam}>
         <Mapa x={MX} y={MY} k={MK} estilo={(c) => (c === 'ESP' ? {fill: '#5A1A1E', borde: ROJO} : c === 'FRA' && p(1) >= 0 ? {fill: '#5A450F', borde: AM} : undefined)} />
         <Ciudad x={SANT_ESTEVE[0]} y={SANT_ESTEVE[1]} t={t - 10} nombre="Segunda fábrica" lado="i" tam={10} color="#FF6A5C" />
-        <Ciudad x={PERPINAN[0]} y={PERPINAN[1]} t={p(1)} nombre="Perpiñán · primera filial fuera" tam={10} />
+        <Ciudad x={PERPINAN[0]} y={PERPINAN[1]} t={p(1)} nombre="Perpiñán · filial" tam={10} />
         <Ciudad x={BAYONA[0]} y={BAYONA[1]} t={p(2)} nombre="Bayona · fábrica" lado="i" tam={10} />
       </Mundo>
       <Hoja x={190} y={160} anio="1967" s={1.05 * pop(t, 12, 1.4)} color="rojo" />
@@ -404,7 +404,7 @@ export const Socios: React.FC<EP> = (ep) => {
     <AbsoluteFill>
       <Fondo ep={ep} luz={0.28} />
       <Tit x={120} y={120} t={t} ancla="i" tam={84}>No montó tiendas</Tit>
-      <Im src="g_expositor" x={400} y={1100} w={420} t={t - 4} de="aba" cam={cam} />
+      <Im src="g_expositor" x={400} y={1050} w={460} t={t - 4} de="aba" cam={cam} />
       <Parrafo x={800} y={250} w={1000} t={p(1)} tam={58}>En cada país se apoyó en quien <Am>ya llegaba a los mostradores</Am></Parrafo>
       <T x={800} y={600} ancla="i" s={pop(p(2), 12, 1.4)}>
         <Chip tam={48} fondo="#F4F5F7" tinta="#0B0C10">Italia</Chip>

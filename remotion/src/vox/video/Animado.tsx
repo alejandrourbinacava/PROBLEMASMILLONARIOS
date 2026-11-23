@@ -6,6 +6,10 @@ import {A, Cifra, Defs, Escenario, FondoCtx, IdxCtx, Eti, FONDO, GRIS, PAL, Pala
 import {Detras, FondoReal, Sujeto, med} from './m_capas';
 import {ESCENAS} from './mercadona';
 import {PRIMARK} from './primark';
+import {CHUPA} from './chupachups';
+
+/** Registro de escenas de cada tema (el spec dice cual: `tema`). Sin tema propio, las de Mercadona. */
+const REGISTROS: Record<string, Record<string, React.FC<any>>> = {primark: PRIMARK, chupachups: CHUPA};
 
 /**
  * Piel `anim`: el video entero como una sucesion de escenas animadas (ver
@@ -81,7 +85,7 @@ const Capitulo: React.FC<EP> = ({d, t, p}) => {
   const trozos = String(d.titulo).split(/(\*[^*]+\*)/g).filter(Boolean);
   return (
     <AbsoluteFill>
-      <Escenario tipo={marca.nombre === 'PRIMARK' ? 'cian' : 'verde'} />
+      <Escenario tipo={marca.nombre === 'PRIMARK' ? 'cian' : marca.nombre === 'CHUPA CHUPS' ? 'rojo' : 'verde'} />
       <T x={330} y={540} op={tr(t, 0, 6)} s={0.7 + 0.3 * rebote(t / 14, 1.3)}>
         <span style={{font: "700 760px/1 'M Serif'", color: 'transparent', WebkitTextStroke: '5px rgba(255,255,255,0.32)'}}>{d.num}</span>
       </T>
@@ -160,7 +164,7 @@ export const Animado: React.FC<{spec: Spec}> = ({spec}) => {
           const pasos = e.pasos ?? [0];
           const p = (k: number) => (pasos[k] !== undefined ? t - pasos[k] : k === 0 ? t : -1e6);
           const ep: EP = {d: e.d, t, dur, p, ancho: 1920, ctx: {f0: e.f0, f, fps, medios: e.medios ?? [], clips: e.fondoClip}};
-          const C = e.tipo === 'anim' ? (spec.tema === 'primark' ? PRIMARK : ESCENAS)[e.d.comp] : e.tipo === 'cita' ? Cita : e.tipo === 'capitulo' ? Capitulo : null;
+          const C = e.tipo === 'anim' ? (REGISTROS[spec.tema ?? ''] ?? ESCENAS)[e.d.comp] : e.tipo === 'cita' ? Cita : e.tipo === 'capitulo' ? Capitulo : null;
           const claro = e.d?.claro;
           return (
             <AbsoluteFill key={e.id} style={{background: FONDO}}>

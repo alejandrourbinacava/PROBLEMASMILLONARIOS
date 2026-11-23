@@ -125,12 +125,12 @@ const N_PLATOS = 6;
  * camara, para que detras de los recortes haya imagen y no un color plano.
  * `verde` y `claro` cambian el registro.
  */
-export const Escenario: React.FC<{tipo?: 'oscuro' | 'verde' | 'claro' | 'azul' | 'cian'; cam?: Cam}> = ({tipo = 'oscuro', cam}) => {
+export const Escenario: React.FC<{tipo?: 'oscuro' | 'verde' | 'claro' | 'azul' | 'cian' | 'rojo'; cam?: Cam}> = ({tipo = 'oscuro', cam}) => {
   const idx = useContext(IdxCtx);
   const metraje = useContext(FondoCtx);
   // sin camara de mapa y con metraje declarado: el fondo es imagen real en movimiento, desenfocada
   if (tipo === 'oscuro' && !cam && metraje) return <>{metraje}</>;
-  const bg = tipo === 'cian' ? 'linear-gradient(180deg, #17A9DC 0%, #075E94 100%)' : tipo === 'verde' ? 'linear-gradient(180deg, #12B764 0%, #07753F 100%)' : tipo === 'azul' ? 'linear-gradient(180deg, #1F56D8 0%, #0B1FA8 100%)' : tipo === 'claro' ? 'linear-gradient(180deg, #FFFFFF 0%, #E7EAF0 100%)' : FONDO;
+  const bg = tipo === 'rojo' ? 'linear-gradient(180deg, #E23A30 0%, #8E0F16 100%)' : tipo === 'cian' ? 'linear-gradient(180deg, #17A9DC 0%, #075E94 100%)' : tipo === 'verde' ? 'linear-gradient(180deg, #12B764 0%, #07753F 100%)' : tipo === 'azul' ? 'linear-gradient(180deg, #1F56D8 0%, #0B1FA8 100%)' : tipo === 'claro' ? 'linear-gradient(180deg, #FFFFFF 0%, #E7EAF0 100%)' : FONDO;
   const lin = tipo === 'claro' ? 'rgba(10,20,40,0.05)' : 'rgba(255,255,255,0.04)';
   const dx = cam ? -cam.x * 0.06 : 0;
   const dy = cam ? -cam.y * 0.04 : 0;

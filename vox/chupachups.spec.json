@@ -1,0 +1,1742 @@
+{
+ "fps": 25,
+ "total": 13367,
+ "marca": {
+  "nombre": "CHUPA CHUPS",
+  "color": "#E0352B",
+  "claro": "#FF6A5C",
+  "oscuro": "#5A1014",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    0,
+    29
+   ],
+   "d": {
+    "comp": "caramelo"
+   },
+   "f1": 62,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 62,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · Ara, 20-9-2023 · foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    4,
+    76,
+    106,
+    178
+   ],
+   "d": {
+    "comp": "tres"
+   },
+   "f1": 292,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 292,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    93,
+    118,
+    182,
+    209
+   ],
+   "d": {
+    "comp": "vuelta"
+   },
+   "f1": 541,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 541,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) (93 % en 1999)",
+   "pasos": [
+    4,
+    55
+   ],
+   "d": {
+    "comp": "noventa"
+   },
+   "f1": 667,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 667,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "vendida a Perfetti Van Melle en 2006 · foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    4,
+    48
+   ],
+   "d": {
+    "comp": "ya_no"
+   },
+   "f1": 763,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 763,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    93,
+    141
+   ],
+   "d": {
+    "comp": "locura"
+   },
+   "f1": 939,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_capitulo",
+   "f0": 939,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    13
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "Un solo *caramelo*",
+    "sub": "Enric Bernat, de una familia de confiteros de Barcelona"
+   },
+   "f1": 1010
+  },
+  {
+   "id": "e07_anim",
+   "f0": 1010,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "entrevista en El País (1990), recogida por Merca2, 2-6-2024",
+   "pasos": [
+    4,
+    43
+   ],
+   "d": {
+    "comp": "bernat"
+   },
+   "f1": 1114,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1114,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    50,
+    113,
+    129
+   ],
+   "d": {
+    "comp": "granja"
+   },
+   "f1": 1293
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1293,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    55,
+    97,
+    152
+   ],
+   "d": {
+    "comp": "uno_solo"
+   },
+   "f1": 1485,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1485,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    72,
+    94,
+    173
+   ],
+   "d": {
+    "comp": "ninos"
+   },
+   "f1": 1707,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1707,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · El Temps (2006)",
+   "pasos": [
+    4,
+    45,
+    108,
+    171
+   ],
+   "d": {
+    "comp": "palo"
+   },
+   "f1": 1913,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 1913,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Ara, 20-9-2023 · foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    4,
+    28,
+    51,
+    100
+   ],
+   "d": {
+    "comp": "nombre"
+   },
+   "f1": 2088,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2088,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · 1 € = 166,386 pesetas",
+   "pasos": [
+    4,
+    32,
+    73
+   ],
+   "d": {
+    "comp": "peseta"
+   },
+   "f1": 2236,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2236,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · Ara, 20-9-2023",
+   "pasos": [
+    4,
+    16,
+    114,
+    197
+   ],
+   "d": {
+    "comp": "flota"
+   },
+   "f1": 2477,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 2477,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    77,
+    114
+   ],
+   "d": {
+    "comp": "bocas"
+   },
+   "f1": 2624,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2624,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "INE, censo de 1960: 30,4 millones de habitantes",
+   "pasos": [
+    4,
+    47,
+    143
+   ],
+   "d": {
+    "comp": "techo"
+   },
+   "f1": 2789
+  },
+  {
+   "id": "e17_capitulo",
+   "f0": 2789,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    16
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "Nada que *traducir*",
+    "sub": "1967 · empieza a salir"
+   },
+   "f1": 2858
+  },
+  {
+   "id": "e18_anim",
+   "f0": 2858,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    104,
+    173
+   ],
+   "d": {
+    "comp": "salida"
+   },
+   "f1": 3101
+  },
+  {
+   "id": "e19_anim",
+   "f0": 3101,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    27,
+    103,
+    169
+   ],
+   "d": {
+    "comp": "socios"
+   },
+   "f1": 3327,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3327,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · Confectionery News, 5-7-2006",
+   "pasos": [
+    4,
+    89,
+    114
+   ],
+   "d": {
+    "comp": "van_melle"
+   },
+   "f1": 3477
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3477,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "razonamiento propio · foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    4,
+    63,
+    91
+   ],
+   "d": {
+    "comp": "duro"
+   },
+   "f1": 3609,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 3609,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    28
+   ],
+   "d": {
+    "comp": "imagen"
+   },
+   "f1": 3713,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 3713,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · Ara, 20-9-2023 · foto: Carl Van Vechten (1939), dominio público · flor: ilustración propia, no es el logotipo",
+   "pasos": [
+    4,
+    83,
+    129,
+    195
+   ],
+   "d": {
+    "comp": "dali"
+   },
+   "f1": 3952,
+   "fondoClip": [
+    {
+     "src": "f_dali.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 3952,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Artnet News · ilustración propia, no es el logotipo",
+   "pasos": [
+    4,
+    83,
+    124,
+    144
+   ],
+   "d": {
+    "comp": "arriba"
+   },
+   "f1": 4160,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 4160,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    4,
+    59
+   ],
+   "d": {
+    "comp": "traducir"
+   },
+   "f1": 4264,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_capitulo",
+   "f0": 4264,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    11
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "Nueve de cada *diez*",
+    "sub": "1970 · solo uno de cada diez se vende fuera de España"
+   },
+   "f1": 4371
+  },
+  {
+   "id": "e27_anim",
+   "f0": 4371,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    4,
+    65,
+    128,
+    192,
+    256
+   ],
+   "d": {
+    "comp": "paises"
+   },
+   "f1": 4683,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.0,
+     "rate": 0.892,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 4683,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    52,
+    130,
+    173,
+    190
+   ],
+   "d": {
+    "comp": "fabricas"
+   },
+   "f1": 4908,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 4908,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Ara, 20-9-2023",
+   "pasos": [
+    4,
+    95
+   ],
+   "d": {
+    "comp": "veinte_mil"
+   },
+   "f1": 5087,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 5087,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Ara, 20-9-2023 · foto de fondo: Daniel (Glasgow), CC BY 2.0",
+   "pasos": [
+    4,
+    69,
+    157
+   ],
+   "d": {
+    "comp": "jackson"
+   },
+   "f1": 5314,
+   "fondoClip": [
+    {
+     "src": "f_campnou.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 5314,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Ara, 20-9-2023 · foto de fondo: Daniel (Glasgow), CC BY 2.0",
+   "pasos": [
+    4,
+    88,
+    161,
+    225
+   ],
+   "d": {
+    "comp": "cruyff"
+   },
+   "f1": 5601,
+   "fondoClip": [
+    {
+     "src": "f_campnou.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 5601,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "campaña de la Generalitat de Catalunya, 1991 · foto de fondo: Daniel (Glasgow), CC BY 2.0",
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "anuncio"
+   },
+   "f1": 5756,
+   "fondoClip": [
+    {
+     "src": "f_campnou.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 5756,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · foto: NASA (misión STS-89), dominio público",
+   "pasos": [
+    4,
+    102,
+    146
+   ],
+   "d": {
+    "comp": "mir"
+   },
+   "f1": 5968,
+   "fondoClip": [
+    {
+     "src": "f_mir.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 5968,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · 73.000 millones de pesetas, a euros",
+   "pasos": [
+    4,
+    113,
+    181,
+    207
+   ],
+   "d": {
+    "comp": "cumbre"
+   },
+   "f1": 6240,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 6240,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "foto: NASA (misión STS-89), dominio público",
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "espacio"
+   },
+   "f1": 6316,
+   "fondoClip": [
+    {
+     "src": "f_mir.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_capitulo",
+   "f0": 6316,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Ahí empezó *el problema*",
+    "sub": "Demasiado grande"
+   },
+   "f1": 6392
+  },
+  {
+   "id": "e37_anim",
+   "f0": 6392,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001)",
+   "pasos": [
+    4,
+    59,
+    70,
+    83,
+    93,
+    103,
+    116
+   ],
+   "d": {
+    "comp": "fabricas5"
+   },
+   "f1": 6599,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 6599,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "International Directory of Company Histories, vol. 38 (2001) · Knowledge at Wharton, 12-7-2006",
+   "pasos": [
+    4,
+    101,
+    175,
+    229,
+    260,
+    323,
+    360
+   ],
+   "d": {
+    "comp": "casi_todo"
+   },
+   "f1": 7044,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 7044,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Confectionery News, 10-2-2003 (2001) · Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups (2002 y 2004)",
+   "pasos": [
+    4,
+    76,
+    130,
+    203
+   ],
+   "d": {
+    "comp": "caida"
+   },
+   "f1": 7321,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.999,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 7321,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Confectionery News, 10-2-2003",
+   "pasos": [
+    4,
+    105,
+    155
+   ],
+   "d": {
+    "comp": "encoge"
+   },
+   "f1": 7516,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 7516,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups · deuda: Cinco Días, vía Confectionery News, 10-2-2003",
+   "pasos": [
+    4,
+    85,
+    132,
+    169
+   ],
+   "d": {
+    "comp": "perdidas"
+   },
+   "f1": 7842,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.856,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 7842,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Confectionery News, 10-2-2003 · El Temps (2006)",
+   "pasos": [
+    4,
+    119,
+    157,
+    212,
+    252
+   ],
+   "d": {
+    "comp": "recortes"
+   },
+   "f1": 8140,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.0,
+     "rate": 0.932,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 8140,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups · Confectionery News, 10-2-2003",
+   "pasos": [
+    4,
+    58
+   ],
+   "d": {
+    "comp": "familia"
+   },
+   "f1": 8296,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 8296,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups",
+   "pasos": [
+    4,
+    40,
+    110
+   ],
+   "d": {
+    "comp": "hipoteca"
+   },
+   "f1": 8452,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 8452,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups · The Art Newspaper, 25-4-2025 · edificio recreado con IA · fondo: DimiTalen, CC0",
+   "pasos": [
+    4,
+    26,
+    112,
+    170
+   ],
+   "d": {
+    "comp": "batllo"
+   },
+   "f1": 8677,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 8677,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "27 de diciembre de 2003",
+   "pasos": [
+    4,
+    50
+   ],
+   "d": {
+    "comp": "muere"
+   },
+   "f1": 8762,
+   "fondoClip": [
+    {
+     "src": "f_confiteria.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 8762,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups (15,24 M€, febrero de 2004) · edificio recreado con IA",
+   "pasos": [
+    4,
+    79,
+    107
+   ],
+   "d": {
+    "comp": "hacienda"
+   },
+   "f1": 8948,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 8948,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisión Europea, decisión de 10-5-2007 sobre Chupa Chups",
+   "pasos": [
+    4,
+    95,
+    174
+   ],
+   "d": {
+    "comp": "bruselas"
+   },
+   "f1": 9193,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_capitulo",
+   "f0": 9193,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "Se *vende*",
+    "sub": "3 de julio de 2006 · la familia vende la empresa entera"
+   },
+   "f1": 9298
+  },
+  {
+   "id": "e50_anim",
+   "f0": 9298,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Knowledge at Wharton, 12-7-2006 (1.434 M€ frente a 264 M€)",
+   "pasos": [
+    4,
+    4,
+    48,
+    86,
+    123,
+    259
+   ],
+   "d": {
+    "comp": "venta"
+   },
+   "f1": 9617,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.874,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 9617,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Knowledge at Wharton, 12-7-2006 · El Temps, julio de 2006",
+   "pasos": [
+    4,
+    40
+   ],
+   "d": {
+    "comp": "precio"
+   },
+   "f1": 9724,
+   "fondoClip": [
+    {
+     "src": "euro_50_banknotes_fan_348.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 9724,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "El Temps, julio de 2006 · traducido del catalán",
+   "pasos": [
+    4,
+    78,
+    107,
+    167
+   ],
+   "d": {
+    "comp": "comite"
+   },
+   "f1": 10032,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.0,
+     "rate": 0.903,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 10032,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "El Temps, julio de 2006 · Knowledge at Wharton, 12-7-2006 · traducción propia",
+   "pasos": [
+    4,
+    67,
+    173,
+    251
+   ],
+   "d": {
+    "comp": "promesas"
+   },
+   "f1": 10347,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 10347,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Knowledge at Wharton, 12-7-2006 · traducción propia",
+   "pasos": [
+    4,
+    97,
+    153,
+    176
+   ],
+   "d": {
+    "comp": "profesores"
+   },
+   "f1": 10609,
+   "fondoClip": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 10609,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Ara, 20-9-2023",
+   "pasos": [
+    4,
+    27
+   ],
+   "d": {
+    "comp": "medias"
+   },
+   "f1": 10770
+  },
+  {
+   "id": "e56_anim",
+   "f0": 10770,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Just Food y Confectionery News, junio de 2010 · fondo: jacilluch, CC BY-SA 2.0",
+   "pasos": [
+    4,
+    88,
+    159,
+    198,
+    250
+   ],
+   "d": {
+    "comp": "villamayor"
+   },
+   "f1": 11068,
+   "fondoClip": [
+    {
+     "src": "f_pilona.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 11068,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Alimarket, 2013",
+   "pasos": [
+    4,
+    94
+   ],
+   "d": {
+    "comp": "ere"
+   },
+   "f1": 11209,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 11209,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "elDiario.es, 1-8-2025 · fondo: jacilluch, CC BY-SA 2.0",
+   "pasos": [
+    4,
+    63
+   ],
+   "d": {
+    "comp": "kiwis"
+   },
+   "f1": 11337,
+   "fondoClip": [
+    {
+     "src": "f_pilona.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 11337,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "elDiario.es, 1-8-2025 · fondo: jacilluch, CC BY-SA 2.0",
+   "pasos": [
+    4,
+    84,
+    132,
+    171,
+    274
+   ],
+   "d": {
+    "comp": "quesos"
+   },
+   "f1": 11639,
+   "fondoClip": [
+    {
+     "src": "f_pilona.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 11639,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Perfetti Van Melle, «At a glance» (2025)",
+   "pasos": [
+    4,
+    76,
+    140,
+    171,
+    211
+   ],
+   "d": {
+    "comp": "hoy"
+   },
+   "f1": 11930,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.0,
+     "rate": 0.953,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 11930,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "foto de fondo: J Aaron Farr, CC BY 2.0",
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "pregunta"
+   },
+   "f1": 12020,
+   "fondoClip": [
+    {
+     "src": "f_expositor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 12020,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "flor: ilustración propia, no es el logotipo",
+   "pasos": [
+    4,
+    119,
+    215
+   ],
+   "d": {
+    "comp": "porque"
+   },
+   "f1": 12323,
+   "fondoClip": [
+    {
+     "src": "f_fabrica.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 12323,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "conclusión propia",
+   "pasos": [
+    4,
+    60,
+    144,
+    182
+   ],
+   "d": {
+    "comp": "comprado"
+   },
+   "f1": 12535,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_anim",
+   "f0": 12535,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "Ara, 18-4-2026 · The Art Newspaper, 25-4-2025 · edificio recreado con IA · fondo: DimiTalen, CC0",
+   "pasos": [
+    4,
+    39,
+    109,
+    141,
+    185
+   ],
+   "d": {
+    "comp": "casa"
+   },
+   "f1": 12799,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e65_anim",
+   "f0": 12799,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "The Art Newspaper, 25-4-2025 · foto: jqmj (Queralt), CC BY-SA 2.0",
+   "pasos": [
+    4,
+    83,
+    117
+   ],
+   "d": {
+    "comp": "visitantes"
+   },
+   "f1": 12976,
+   "fondoClip": [
+    {
+     "src": "f_batllo2.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e66_anim",
+   "f0": 12976,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "Ara, 20-9-2023 (2022) · The Art Newspaper, 25-4-2025 (2023) · son años distintos",
+   "pasos": [
+    4,
+    84,
+    183
+   ],
+   "d": {
+    "comp": "comparacion"
+   },
+   "f1": 13237,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e67_anim",
+   "f0": 13237,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "edificio recreado con IA · fondo: DimiTalen, CC0",
+   "pasos": [
+    4,
+    29
+   ],
+   "d": {
+    "comp": "final"
+   },
+   "f1": 13367,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_expositor.jpg": "vox/media/chupachups/f_expositor.jpg",
+  "f_confiteria.jpg": "vox/media/chupachups/f_confiteria.jpg",
+  "container_port_reach_stacker_logistics_223.mp4": "parallax2/proyecto/stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
+  "f_fabrica.jpg": "vox/media/chupachups/f_fabrica.jpg",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "f_dali.jpg": "vox/media/chupachups/f_dali.jpg",
+  "trucks_highway_aerial_parking_logistics_122.mp4": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+  "f_campnou.jpg": "vox/media/chupachups/f_campnou.jpg",
+  "f_mir.jpg": "vox/media/chupachups/f_mir.jpg",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "f_paseo.jpg": "vox/media/chupachups/f_paseo.jpg",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "euro_50_banknotes_fan_348.mp4": "parallax2/proyecto/stock_mercadona/euro_50_banknotes_fan_348.mp4",
+  "elderly_people_meeting_table_documents_132.mp4": "parallax2/proyecto/stock_mercadona/elderly_people_meeting_table_documents_132.mp4",
+  "f_pilona.jpg": "vox/media/chupachups/f_pilona.jpg",
+  "f_batllo2.jpg": "vox/media/chupachups/f_batllo2.jpg",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_accesorios.webp": "vox/media/chupachups/g_accesorios.webp",
+  "g_balon.webp": "vox/media/chupachups/g_balon.webp",
+  "g_batllo.webp": "vox/media/chupachups/g_batllo.webp",
+  "g_camion.webp": "vox/media/chupachups/g_camion.webp",
+  "g_caramelos.webp": "vox/media/chupachups/g_caramelos.webp",
+  "g_cigarrillo.webp": "vox/media/chupachups/g_cigarrillo.webp",
+  "g_coche.webp": "vox/media/chupachups/g_coche.webp",
+  "g_escritura.webp": "vox/media/chupachups/g_escritura.webp",
+  "g_estacion.webp": "vox/media/chupachups/g_estacion.webp",
+  "g_expositor.webp": "vox/media/chupachups/g_expositor.webp",
+  "g_fabrica.webp": "vox/media/chupachups/g_fabrica.webp",
+  "g_fajo.webp": "vox/media/chupachups/g_fajo.webp",
+  "g_fajos.webp": "vox/media/chupachups/g_fajos.webp",
+  "g_globo.webp": "vox/media/chupachups/g_globo.webp",
+  "g_juguetes.webp": "vox/media/chupachups/g_juguetes.webp",
+  "g_kiwis.webp": "vox/media/chupachups/g_kiwis.webp",
+  "g_monton.webp": "vox/media/chupachups/g_monton.webp",
+  "g_nave.webp": "vox/media/chupachups/g_nave.webp",
+  "g_periodico.webp": "vox/media/chupachups/g_periodico.webp",
+  "g_persiana.webp": "vox/media/chupachups/g_persiana.webp",
+  "g_piruleta.webp": "vox/media/chupachups/g_piruleta.webp",
+  "g_piruletas.webp": "vox/media/chupachups/g_piruletas.webp",
+  "g_quesos.webp": "vox/media/chupachups/g_quesos.webp",
+  "g_sin_envolver.webp": "vox/media/chupachups/g_sin_envolver.webp",
+  "g_tenedor.webp": "vox/media/chupachups/g_tenedor.webp"
+ },
+ "tema": "chupachups",
+ "piel": "anim"
+}

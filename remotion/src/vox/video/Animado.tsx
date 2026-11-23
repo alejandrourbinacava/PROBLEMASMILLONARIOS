@@ -4,6 +4,7 @@ import {EP, Escena, MarcaCtx, Spec, useFuentes, useMarca} from './base';
 import {Metraje} from './capas';
 import {A, Cifra, Defs, Escenario, FondoCtx, IdxCtx, Eti, FONDO, GRIS, PAL, Palabras, Sans, Serif, T, TINTA, c01, grad, io, pop, rebote, sal, tr} from './kit';
 import {Detras, FondoReal, Sujeto, med} from './m_capas';
+import {Im, deriva} from './m_vox';
 import {ESCENAS} from './mercadona';
 import {PRIMARK} from './primark';
 import {CHUPA} from './chupachups';
@@ -80,8 +81,58 @@ const Cita: React.FC<EP> = ({d, t, p, dur, ctx}) => {
   );
 };
 
-const Capitulo: React.FC<EP> = ({d, t, p}) => {
+/**
+ * Cartela de capitulo por capas (cuando el guion le da `el`): foto real del capitulo
+ * desenfocada y tenida con el color de la marca, el numero enorme detras, el objeto
+ * del capitulo delante tapandolo, el titulo a la izquierda y algo desenfocado muy
+ * cerca de camara. Todo entra en menos de medio segundo: algunas duran 1,5 s.
+ */
+const CapituloCapas: React.FC<EP> = ({d, t, p, dur, ctx}) => {
   const marca = useMarca();
+  const trozos = String(d.titulo).split(/(\*[^*]+\*)/g).filter(Boolean);
+  const cam = deriva(t, 0, Math.max(dur, 40), 70, 0.07);
+  const num = String(d.num).padStart(2, '0');
+  const tinte = marca.oscuro ?? '#5A1014';
+  const hayClip = ((ctx as any)?.clips ?? []).length > 0;
+  return (
+    <AbsoluteFill style={{overflow: 'hidden'}}>
+      {hayClip ? <FondoReal ctx={ctx} t={t} dur={dur} blur={6} luz={0.62} /> : <Escenario />}
+      <AbsoluteFill style={{background: `linear-gradient(90deg, ${tinte}F2 0%, ${tinte}D9 38%, ${tinte}73 70%, ${tinte}40 100%)`}} />
+      <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 65%, rgba(0,0,0,0.55) 100%)'}} />
+      {/* el numero, detras del objeto */}
+      <div style={{position: 'absolute', left: (d.nx ?? 1360) - cam.x * 0.4, top: 520, width: 0, height: 0}}>
+        <div style={{position: 'absolute', transform: `translate(-50%, -50%) scale(${(0.86 + 0.14 * sal(tr(t, 0, 12))) * (1 + cam.s * 0.4)})`, opacity: tr(t, 0, 5), font: "700 800px/1 'M Serif'", letterSpacing: -40, whiteSpace: 'nowrap', backgroundImage: 'linear-gradient(180deg, #FFF3C4 0%, #FFD95A 55%, #F2A20B 100%)', WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', filter: 'drop-shadow(0 30px 60px rgba(0,0,0,0.45))'}}>{num}</div>
+      </div>
+      {d.el && <Im src={d.el} x={d.ex ?? 1360} y={d.ey ?? 1150} w={d.ew ?? 600} t={t - 2} de="aba" z={1} rot={d.erot ?? 0} cam={cam} />}
+      {/* texto */}
+      <div style={{position: 'absolute', left: 120, top: 300, width: 860}}>
+        <div style={{display: 'flex', alignItems: 'center', gap: 18, opacity: tr(t, 0, 5)}}>
+          <div style={{height: 6, width: 90 * io(tr(t, 0, 10)), borderRadius: 3, background: '#FFE27A'}} />
+          <Eti tam={30} color="rgba(255,255,255,0.92)">Capítulo {d.num}</Eti>
+        </div>
+        <div style={{marginTop: 26, font: "600 120px/1.02 'M Serif'", color: '#fff', letterSpacing: -2.5, textShadow: '0 10px 40px rgba(0,0,0,0.45)'}}>
+          {trozos.map((x, i) => (
+            <span key={i} style={{display: 'inline-block', marginRight: 26, opacity: tr(t, 1 + i * 3, 5), transform: `translateY(${(1 - sal(tr(t, 1 + i * 3, 10))) * 46}px)`, color: x.startsWith('*') ? '#FFE27A' : '#fff'}}>
+              {x.startsWith('*') ? x.slice(1, -1) : x}
+            </span>
+          ))}
+        </div>
+        {d.sub && (
+          <div style={{marginTop: 30, maxWidth: 620, opacity: tr(p(1), 0, 6), transform: `translateY(${(1 - sal(tr(p(1), 0, 10))) * 20}px)`}}>
+            <Sans tam={36} peso={600} color="rgba(255,255,255,0.9)">{d.sub}</Sans>
+          </div>
+        )}
+      </div>
+      {/* muy cerca de camara, desenfocado */}
+      {d.el2 && <Im src={d.el2} x={d.e2x ?? 1820} y={d.e2y ?? 1230} w={d.e2w ?? 620} t={t} de="nada" z={1.8} blur={11} luz={0.75} rot={d.e2rot ?? -12} cam={cam} />}
+    </AbsoluteFill>
+  );
+};
+
+const Capitulo: React.FC<EP> = (ep) => {
+  const {d, t, p} = ep;
+  const marca = useMarca();
+  if (d.el) return <CapituloCapas {...ep} />;
   const trozos = String(d.titulo).split(/(\*[^*]+\*)/g).filter(Boolean);
   return (
     <AbsoluteFill>

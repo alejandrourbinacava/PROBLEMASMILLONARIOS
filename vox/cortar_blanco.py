@@ -11,6 +11,9 @@ como una mancha gris. Guarda `vox/media/<tema>/g_<nombre>.webp`.
   :t=N          umbral de blanco del fondo (226); mas bajo se come sombras claras
   :huecos=N     quita tambien los blancos encerrados de N px o mas
   :w=N          reduce antes la imagen a N px de ancho
+  :negro        el objeto se fotografio sobre NEGRO (objetos blancos o con palos blancos):
+                fuera lo oscuro conectado con el borde, sin sombra; los restos que
+                quedan son oscuros y no se ven sobre los fondos del canal
 """
 import os
 import sys
@@ -23,10 +26,46 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(AQUI)
 
 
-def corta(rgb, usar_rembg=False, umbral=226, huecos=0):
+def corta_negro(rgb, umbral=34):
+    h, w = rgb.shape[:2]
+    alto = rgb.max(axis=2)
+    oscuro = (alto < umbral).astype(np.uint8)
+    marco = np.zeros((h + 2, w + 2), np.uint8)
+    lleno = oscuro.copy()
+    for x in range(0, w, 4):
+        for y in (0, h - 1):
+            if lleno[y, x] == 1:
+                cv2.floodFill(lleno, marco, (x, y), 2)
+    for y in range(0, h, 4):
+        for x in (0, w - 1):
+            if lleno[y, x] == 1:
+                cv2.floodFill(lleno, marco, (x, y), 2)
+    objeto = lleno != 2
+    # huecos negros encerrados (entre palos y ramas): tambien son fondo
+    n, lab, st, _ = cv2.connectedComponentsWithStats(((alto < umbral) & objeto).astype(np.uint8), 4)
+    for i in range(1, n):
+        if st[i, cv2.CC_STAT_AREA] >= 120:
+            objeto[lab == i] = False
+    n, lab, st, _ = cv2.connectedComponentsWithStats(objeto.astype(np.uint8), 8)
+    if n > 2:
+        areas = st[1:, cv2.CC_STAT_AREA]
+        objeto = np.isin(lab, [i + 1 for i, ar in enumerate(areas) if ar > 0.004 * areas.max()])
+    # borde suave: lo casi negro del contorno se vuelve semitransparente en vez de un filo duro
+    rampa = np.clip((alto.astype(np.float32) - umbral * 0.5) / (umbral * 1.5), 0, 1)
+    alfa = cv2.GaussianBlur(objeto.astype(np.float32), (0, 0), 0.8) * np.where(objeto, np.maximum(rampa, 0.0), 0)
+    borde = cv2.dilate(objeto.astype(np.uint8), np.ones((3, 3), np.uint8)) - cv2.erode(objeto.astype(np.uint8), np.ones((5, 5), np.uint8))
+    alfa = np.where(borde > 0, alfa, objeto.astype(np.float32))
+    out = np.dstack([rgb, np.clip(alfa * 255, 0, 255)]).astype(np.uint8)
+    ys, xs = np.where(out[:, :, 3] > 8)
+    return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+
+
+def corta(rgb, usar_rembg=False, umbral=226, huecos=0, negro=False):
     h, w = rgb.shape[:2]
     lum = rgb.min(axis=2).astype(np.float32)
     sat = (rgb.max(axis=2).astype(np.float32) - lum)
+    if negro:
+        return corta_negro(rgb)
     if usar_rembg:
         from rembg import new_session, remove
         a = np.array(remove(Image.fromarray(rgb), session=new_session("u2net"), post_process_mask=True))[:, :, 3]
@@ -95,7 +134,7 @@ def main():
                 m[cy - 4:cy + 20, cx - 4:cx + 16] = 255
                 rgb = cv2.inpaint(rgb, m, 5, cv2.INPAINT_TELEA)
         num = lambda k, d: next((int(o.split("=")[1]) for o in ops if o.startswith(k + "=")), d)
-        r = corta(rgb, "rembg" in ops, num("t", 226), num("huecos", 0))
+        r = corta(rgb, "rembg" in ops, num("t", 226), num("huecos", 0), "negro" in ops)
         out = os.path.join(destino, "g_%s.webp" % nombre)
         Image.fromarray(r, "RGBA").save(out, "WEBP", quality=92, method=6)
         hechos.append((nombre, r))

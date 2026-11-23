@@ -88,7 +88,7 @@ export const Vuelta: React.FC<EP> = (ep) => {
       <T x={1290} y={732} ancla="i" s={pop(p(4), 12, 1.5)}>
         <Chip tam={50} color="ambar" tinta="#1B1D22">9 de cada 10, fuera</Chip>
       </T>
-      <Im src="g_piruletas" x={1500} y={1100} w={560} t={t - 6} de="der" />
+      <Im src="g_piruletas" x={1580} y={1150} w={440} t={t - 6} de="der" />
     </AbsoluteFill>
   );
 };

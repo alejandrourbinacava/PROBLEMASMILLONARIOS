@@ -387,7 +387,7 @@ export const Libre: React.FC<EP> = (ep) => {
   });
   return (
     <AbsoluteFill ref={raiz}>
-      {!mapa && <Fondo ep={ep} luz={d.luz ?? 0.42} blur={d.blur ?? 10} arriba={d.arriba ?? 0.6} abajo={d.abajo ?? 0.62} />}
+      {!mapa && <Fondo ep={ep} luz={d.luz ?? 0.86} blur={d.blur ?? 5} arriba={d.arriba ?? 0.5} abajo={d.abajo ?? 0.4} />}
       {items.map((it, i) => (
         <Pieza key={i} it={it} ep={ep} cam={cam} />
       ))}

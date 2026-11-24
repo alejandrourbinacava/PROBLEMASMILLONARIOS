@@ -13,7 +13,8 @@ como una mancha gris. Guarda `vox/media/<tema>/g_<nombre>.webp`.
   :w=N          reduce antes la imagen a N px de ancho
   :negro        el objeto se fotografio sobre NEGRO (objetos blancos o con palos blancos):
                 fuera lo oscuro conectado con el borde, sin sombra; los restos que
-                quedan son oscuros y no se ven sobre los fondos del canal
+                quedan son oscuros y no se ven sobre los fondos del canal. Con :macizo no toca
+                el interior (edificios) y con :rembg la silueta la decide la red (personas)
 """
 import os
 import sys
@@ -26,9 +27,16 @@ AQUI = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(AQUI)
 
 
-def corta_negro(rgb, umbral=34):
+def corta_negro(rgb, umbral=34, macizo=False, red=False):
+    """macizo: no quita huecos interiores (edificios, cosas oscuras por dentro). red: la silueta la decide rembg (personas)."""
     h, w = rgb.shape[:2]
     alto = rgb.max(axis=2)
+    if red:
+        from rembg import new_session, remove
+        a = np.array(remove(Image.fromarray(rgb), session=new_session("isnet-general-use"), post_process_mask=True))[:, :, 3]
+        out = np.dstack([rgb, a]).astype(np.uint8)
+        ys, xs = np.where(a > 8)
+        return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
     oscuro = (alto < umbral).astype(np.uint8)
     marco = np.zeros((h + 2, w + 2), np.uint8)
     lleno = oscuro.copy()
@@ -42,9 +50,9 @@ def corta_negro(rgb, umbral=34):
                 cv2.floodFill(lleno, marco, (x, y), 2)
     objeto = lleno != 2
     # huecos negros encerrados (entre palos y ramas): tambien son fondo
-    n, lab, st, _ = cv2.connectedComponentsWithStats(((alto < umbral) & objeto).astype(np.uint8), 4)
-    for i in range(1, n):
-        if st[i, cv2.CC_STAT_AREA] >= 120:
+    n, lab, st, _ = cv2.connectedComponentsWithStats(((alto < 9) & objeto).astype(np.uint8), 4)
+    for i in range(1, 1 if macizo else n):
+        if st[i, cv2.CC_STAT_AREA] >= 160:
             objeto[lab == i] = False
     n, lab, st, _ = cv2.connectedComponentsWithStats(objeto.astype(np.uint8), 8)
     if n > 2:
@@ -60,12 +68,12 @@ def corta_negro(rgb, umbral=34):
     return out[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
 
 
-def corta(rgb, usar_rembg=False, umbral=226, huecos=0, negro=False):
+def corta(rgb, usar_rembg=False, umbral=226, huecos=0, negro=False, macizo=False):
     h, w = rgb.shape[:2]
     lum = rgb.min(axis=2).astype(np.float32)
     sat = (rgb.max(axis=2).astype(np.float32) - lum)
     if negro:
-        return corta_negro(rgb)
+        return corta_negro(rgb, umbral if umbral < 100 else 34, macizo, usar_rembg)
     if usar_rembg:
         from rembg import new_session, remove
         a = np.array(remove(Image.fromarray(rgb), session=new_session("u2net"), post_process_mask=True))[:, :, 3]
@@ -134,7 +142,7 @@ def main():
                 m[cy - 4:cy + 20, cx - 4:cx + 16] = 255
                 rgb = cv2.inpaint(rgb, m, 5, cv2.INPAINT_TELEA)
         num = lambda k, d: next((int(o.split("=")[1]) for o in ops if o.startswith(k + "=")), d)
-        r = corta(rgb, "rembg" in ops, num("t", 226), num("huecos", 0), "negro" in ops)
+        r = corta(rgb, "rembg" in ops, num("t", 226), num("huecos", 0), "negro" in ops, "macizo" in ops)
         out = os.path.join(destino, "g_%s.webp" % nombre)
         Image.fromarray(r, "RGBA").save(out, "WEBP", quality=92, method=6)
         hechos.append((nombre, r))

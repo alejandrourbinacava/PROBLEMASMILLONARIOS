@@ -1,0 +1,4963 @@
+{
+ "fps": 25,
+ "total": 13167,
+ "marca": {
+  "nombre": "LIDL DIA",
+  "color": "#0A5CB8",
+  "claro": "#FFE14D",
+  "oscuro": "#0B2A5C",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    0
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 520,
+      "y": 1010,
+      "w": 640,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "src": "g_lidl",
+      "x": 1370,
+      "y": 1040,
+      "w": 1040,
+      "de": "der",
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "t": "Dos *primeras tiendas*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 36,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 36,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Directo al Paladar, 6-5-2019 · Alimarket, 21-6-2021",
+   "pasos": [
+    4,
+    81
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 560,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "1979",
+      "x": 1300,
+      "y": 300,
+      "k": "hoja"
+     },
+     {
+      "t": "Madrid",
+      "x": 1420,
+      "y": 300,
+      "ancla": "i",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "t": "La cerraron en 2021",
+      "x": 1380,
+      "y": 720,
+      "tam": 76,
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 166,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 166,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Alimarket, 12-12-2024",
+   "pasos": [
+    4,
+    81,
+    135,
+    193,
+    257
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1994",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "La primera de Lidl, en *Lleida*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_lidl",
+      "x": 900,
+      "y": 760,
+      "w": 620,
+      "de": "pop",
+      "k": "im",
+      "sale": 1
+     },
+     {
+      "src": "g_lidl",
+      "x": 820,
+      "y": 1060,
+      "w": 1320,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Derribada en 2024",
+      "x": 960,
+      "y": 620,
+      "tam": 96,
+      "k": "sello",
+      "p": 1,
+      "sale": 2
+     },
+     {
+      "cifra": "×2",
+      "pie": "de 750 a 1.441 m²",
+      "x": 1600,
+      "y": 330,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "145 plazas de aparcamiento",
+      "x": 1570,
+      "y": 600,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "8 millones de euros",
+      "x": 1570,
+      "y": 710,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 456,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.0,
+     "rate": 0.957,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 456,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "ICEX-Invest in Spain, 2015",
+   "pasos": [
+    4,
+    63,
+    111
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_blancos",
+      "x": 430,
+      "y": 1060,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Enseñó a España a *comprar barato*",
+      "x": 430,
+      "y": 150,
+      "ancla": "c",
+      "tam": 60,
+      "max": 780,
+      "k": "tit"
+     },
+     {
+      "x": 940,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "src": "g_lidl",
+      "x": 1420,
+      "y": 900,
+      "w": 760,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Llegó *15 años más tarde*",
+      "x": 1420,
+      "y": 150,
+      "ancla": "c",
+      "tam": 60,
+      "max": 800,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 700",
+      "pie": "productos, casi todos envasados",
+      "x": 1420,
+      "y": 400,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 639,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 639,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Kantar Worldpanel, enero-septiembre de 2015, vía Alimarket",
+   "pasos": [
+    4,
+    91,
+    132
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2015",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "De cada 100 € de la compra…",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 500,
+      "y": 1030,
+      "w": 460,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "cifra": "8,7 €",
+      "x": 500,
+      "y": 430,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_lidl",
+      "x": 1400,
+      "y": 1030,
+      "w": 820,
+      "de": "der",
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "cifra": "3,5 €",
+      "x": 1400,
+      "y": 430,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 809,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 809,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Lidl (2025-26) y Día (2025), vía Alimarket y El Español",
+   "pasos": [
+    4,
+    75,
+    122
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cinco años después, *Lidl va delante*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_lidl",
+      "x": 1300,
+      "y": 1060,
+      "w": 1150,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_dia",
+      "x": 330,
+      "y": 1060,
+      "w": 360,
+      "de": "aba",
+      "gris": 0.4,
+      "k": "im"
+     },
+     {
+      "t": "Un tercio de las tiendas",
+      "x": 900,
+      "y": 330,
+      "ancla": "c",
+      "tam": 54,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Vende bastante más",
+      "x": 960,
+      "y": 480,
+      "tam": 84,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 964,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 964,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "titular de Merca2, 4-10-2022",
+   "pasos": [
+    4,
+    53
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_periodico",
+      "x": 960,
+      "y": 1080,
+      "w": 1180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La prensa lo resumió con una frase",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 62,
+      "k": "tit"
+     },
+     {
+      "t": "«Lidl se sigue *comiendo* el mercado de Dia»",
+      "x": 960,
+      "y": 330,
+      "ancla": "c",
+      "tam": 86,
+      "k": "tit",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 1064,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_anim",
+   "f0": 1064,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    28,
+    74,
+    122
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 960,
+      "y": 1070,
+      "w": 640,
+      "de": "aba",
+      "grisEn": 3,
+      "k": "im"
+     },
+     {
+      "t": "Le falta *la mitad de la historia*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Día empezó a comerse a sí misma",
+      "x": 960,
+      "y": 350,
+      "tam": 76,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1232,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_capitulo",
+   "f0": 1232,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "Quitarlo *todo*",
+    "sub": "1979 · la tienda que inventó el barato",
+    "el": "g_blancos",
+    "ew": 560,
+    "ex": 1560,
+    "ey": 1060,
+    "nx": 1250
+   },
+   "f1": 1325,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1325,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Forbes España, 25-5-2017 · Directo al Paladar, 6-5-2019 · envases recreados",
+   "pasos": [
+    4,
+    60,
+    83,
+    115
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lineal",
+      "x": 560,
+      "y": 1060,
+      "w": 900,
+      "de": "aba",
+      "luz": 0.9,
+      "k": "im"
+     },
+     {
+      "t": "No se parecía a nada",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Pocos productos",
+      "x": 1430,
+      "y": 320,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Estanterías sin adornos",
+      "x": 1430,
+      "y": 450,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "src": "g_blancos",
+      "x": 1430,
+      "y": 1040,
+      "w": 470,
+      "de": "pop",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "t": "Marca propia · envase blanco, franja roja",
+      "x": 1430,
+      "y": 560,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1537,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1537,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    32
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Se llamaba *descuento*",
+      "x": 960,
+      "y": 200,
+      "ancla": "c",
+      "tam": 130,
+      "k": "tit"
+     },
+     {
+      "src": "g_caja",
+      "x": 960,
+      "y": 1080,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Quitar todo lo que no fuera *el precio*",
+      "x": 260,
+      "y": 340,
+      "w": 1400,
+      "tam": 74,
+      "centro": true,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 1640,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1640,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Forbes España · Merca2",
+   "pasos": [
+    4,
+    89,
+    120,
+    195
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_globo",
+      "x": 1560,
+      "y": 1090,
+      "w": 470,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "Funcionó",
+      "x": 330,
+      "y": 150,
+      "tam": 86,
+      "color": "#2BE38A",
+      "k": "sello"
+     },
+     {
+      "cifra": "+1.000",
+      "pie": "tiendas en los noventa",
+      "x": 520,
+      "y": 420,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Portugal",
+      "x": 180,
+      "y": 720,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Grecia",
+      "x": 480,
+      "y": 720,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 8
+     },
+     {
+      "t": "Argentina",
+      "x": 730,
+      "y": 720,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 16
+     },
+     {
+      "t": "Turquía",
+      "x": 1060,
+      "y": 720,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "t": "Brasil",
+      "x": 180,
+      "y": 850,
+      "ancla": "i",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "China",
+      "x": 440,
+      "y": 850,
+      "ancla": "i",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3,
+      "dt": 8
+     }
+    ]
+   },
+   "f1": 1882,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 1882,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    72,
+    108
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Otra manera de crecer: *la franquicia*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_tendero",
+      "x": 420,
+      "y": 1130,
+      "w": 340,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "El tendero pone la tienda",
+      "x": 420,
+      "y": 260,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "src": "g_dia",
+      "x": 1400,
+      "y": 1060,
+      "w": 620,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Día pone el cartel y la mercancía",
+      "x": 1400,
+      "y": 310,
+      "ancla": "c",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 2049,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2049,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Memoria de DIA 2011",
+   "pasos": [
+    4,
+    49,
+    127
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2011",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Sale a bolsa",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_globo",
+      "x": 1620,
+      "y": 1090,
+      "w": 420,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "cifra": "6.833",
+      "pie": "tiendas en siete países",
+      "x": 620,
+      "y": 460,
+      "ancla": "c",
+      "tam": 290,
+      "color": "ambar",
+      "desde": 1000,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "2.827",
+      "pie": "en España",
+      "x": 620,
+      "y": 840,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 2220,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2220,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Libertad Digital, 5-7-2011",
+   "pasos": [
+    4,
+    46
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_monedas",
+      "x": 400,
+      "y": 1080,
+      "w": 330,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "3,50 €",
+      "pie": "por acción",
+      "x": 1150,
+      "y": 360,
+      "ancla": "c",
+      "tam": 250,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "cifra": "−8,46 %",
+      "pie": "el primer día",
+      "x": 1150,
+      "y": 760,
+      "ancla": "c",
+      "tam": 190,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 2325,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 2325,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "cálculo propio con la memoria de DIA 2011",
+   "pasos": [
+    4,
+    55,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 500,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Eso sí: tiendas *pequeñas*",
+      "x": 120,
+      "y": 120,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "≈ 430 m²",
+      "pie": "de media",
+      "x": 1370,
+      "y": 430,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Más o menos, una cancha de baloncesto",
+      "x": 1370,
+      "y": 740,
+      "ancla": "c",
+      "tam": 44,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 2522,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2522,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "ICEX-Invest in Spain, 2015",
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lidl",
+      "x": 660,
+      "y": 1050,
+      "w": 1080,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Lidl, *una rareza alemana*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "150",
+      "pie": "tiendas en sus cuatro primeros años",
+      "x": 1560,
+      "y": 430,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 2679,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 2679,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Kantar Worldpanel, 2013, vía Reason Why",
+   "pasos": [
+    4,
+    79,
+    148,
+    201
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cuánto de lo que venden es *marca propia*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "t": "2013",
+      "x": 960,
+      "y": 200,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti"
+     },
+     {
+      "t": "Lidl",
+      "x": 160,
+      "y": 360,
+      "ancla": "i",
+      "tam": 56,
+      "color": "azul",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "x": 420,
+      "y": 318,
+      "w": 1105,
+      "t": "79,6 %",
+      "color": "ambar",
+      "total": 1388,
+      "h": 86,
+      "k": "barra",
+      "p": 1
+     },
+     {
+      "t": "Día",
+      "x": 160,
+      "y": 540,
+      "ancla": "i",
+      "tam": 56,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "x": 420,
+      "y": 498,
+      "w": 750,
+      "t": "54 %",
+      "color": "ambar",
+      "total": 1388,
+      "h": 86,
+      "k": "barra",
+      "p": 2
+     },
+     {
+      "src": "g_lidl",
+      "x": 960,
+      "y": 1080,
+      "w": 700,
+      "de": "aba",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "t": "Nadie la miraba",
+      "x": 960,
+      "y": 690,
+      "tam": 64,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2931,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_capitulo",
+   "f0": 2931,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "«Necesitamos *más tiendas»*",
+    "sub": "2015 · Día está en lo más alto",
+    "el": "g_dia",
+    "ew": 440,
+    "ex": 1640,
+    "ey": 1050,
+    "nx": 1430
+   },
+   "f1": 2995,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 2995,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Kantar Worldpanel, enero-septiembre de 2015, vía Alimarket",
+   "pasos": [
+    4,
+    54
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 430,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "8,7 %",
+      "pie": "del mercado",
+      "x": 1280,
+      "y": 350,
+      "ancla": "c",
+      "tam": 280,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "t": "Segunda de España",
+      "x": 1280,
+      "y": 690,
+      "ancla": "c",
+      "tam": 60,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Por delante de Carrefour, 8,5 %",
+      "x": 1280,
+      "y": 800,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti",
+      "p": 1,
+      "dt": 8
+     }
+    ]
+   },
+   "f1": 3111,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3111,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Alimarket, 12-3-2015",
+   "pasos": [
+    4,
+    105
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "El director de franquicias",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Fernando Calderón de la Rocha · Grupo DIA · 12-3-2015",
+      "x": 114,
+      "y": 215.51999999999998,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "src": "g_dia",
+      "x": 1560,
+      "y": 1060,
+      "w": 520,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "src": "g_dia",
+      "x": 1220,
+      "y": 1060,
+      "w": 330,
+      "de": "der",
+      "luz": 0.6,
+      "blur": 1.5,
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "t": "«Necesitamos *más tiendas»*",
+      "x": 110,
+      "y": 430,
+      "w": 900,
+      "tam": 130,
+      "k": "cita",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 3269,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3269,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuentas anuales de DIA 2014 (CNMV)",
+   "pasos": [
+    4,
+    46,
+    124,
+    159,
+    218
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Llevaba dos años *comprándolas*",
+      "x": 120,
+      "y": 110,
+      "ancla": "i",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 1600,
+      "y": 1060,
+      "w": 420,
+      "de": "der",
+      "luz": 0.7,
+      "gris": 0.2,
+      "k": "im",
+      "sale": 3
+     },
+     {
+      "t": "Schlecker, que será *Clarel* · unas 1.100 tiendas",
+      "x": 150,
+      "y": 280,
+      "tam": 48,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "El Árbol · *437 tiendas*",
+      "x": 150,
+      "y": 390,
+      "tam": 48,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "src": "g_moneda",
+      "x": 620,
+      "y": 1010,
+      "w": 330,
+      "de": "pop",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "cifra": "1 €",
+      "pie": "por las acciones de El Árbol",
+      "x": 1150,
+      "y": 660,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "El préstamo y las deudas, aparte",
+      "x": 1250,
+      "y": 970,
+      "tam": 44,
+      "k": "sello",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 3544,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 3544,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuentas anuales de DIA 2014 (CNMV)",
+   "pasos": [
+    4,
+    75
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 430,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "gris": 0.5,
+      "k": "im"
+     },
+     {
+      "t": "Y venía con *pérdidas*",
+      "x": 120,
+      "y": 120,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "−77,5 M€",
+      "pie": "de resultado si la hubiera tenido todo 2014",
+      "x": 1330,
+      "y": 430,
+      "ancla": "c",
+      "tam": 210,
+      "color": "rojo",
+      "maxPie": 1000,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 3700,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 3700,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "ESM Magazine, abril de 2015",
+   "pasos": [
+    4,
+    86
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 480,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "144",
+      "pie": "supermercados de Eroski",
+      "x": 1280,
+      "y": 340,
+      "ancla": "c",
+      "tam": 250,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "≈ 135 M€",
+      "pie": "abril de 2015",
+      "x": 1280,
+      "y": 760,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 3842,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 3842,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuentas anuales de DIA 2014 (CNMV)",
+   "pasos": [
+    4,
+    33,
+    92
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "En un solo año",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 190,
+      "y": 1050,
+      "w": 300,
+      "de": "aba",
+      "luz": 0.55,
+      "blur": 1.5,
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "src": "g_dia",
+      "x": 830,
+      "y": 1050,
+      "w": 300,
+      "de": "aba",
+      "luz": 0.55,
+      "blur": 1.5,
+      "k": "im",
+      "dt": 10
+     },
+     {
+      "src": "g_dia",
+      "x": 510,
+      "y": 1075,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+843",
+      "pie": "tiendas",
+      "x": 1400,
+      "y": 390,
+      "ancla": "c",
+      "tam": 260,
+      "color": "ambar",
+      "desde": 0,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "7.306",
+      "pie": "en total",
+      "x": 1400,
+      "y": 790,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3993,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 3993,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Alimarket, 23-2-2015",
+   "pasos": [
+    4,
+    78,
+    120
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Un número *no encajaba con la fiesta*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "src": "g_caja",
+      "x": 520,
+      "y": 1080,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "En las tiendas que ya tenía en España",
+      "x": 1030,
+      "y": 290,
+      "w": 800,
+      "tam": 52,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "−5,4 %",
+      "pie": "de ventas",
+      "x": 1430,
+      "y": 610,
+      "ancla": "c",
+      "tam": 260,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 4186,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 4186,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    67
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 960,
+      "y": 880,
+      "w": 330,
+      "de": "aba",
+      "gris": 0.3,
+      "k": "im"
+     },
+     {
+      "t": "cada vez más",
+      "x": 480,
+      "y": 880,
+      "alto": 520,
+      "pie": "Tiendas",
+      "color": "cian",
+      "w": 300,
+      "tam": 54,
+      "max": 620,
+      "k": "col"
+     },
+     {
+      "t": "cada vez menos",
+      "x": 1440,
+      "y": 880,
+      "alto": 230,
+      "pie": "Ventas de las de siempre",
+      "color": "rojo",
+      "w": 300,
+      "tam": 54,
+      "max": 620,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "Esquema, sin escala",
+      "x": 1780,
+      "y": 1000,
+      "ancla": "d",
+      "tam": 22,
+      "k": "eti"
+     }
+    ]
+   },
+   "f1": 4315,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 4315,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "El Independiente, 13-12-2016",
+   "pasos": [
+    4,
+    78,
+    127
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cajon",
+      "x": 560,
+      "y": 1070,
+      "w": 900,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Probó con *producto fresco*",
+      "x": 120,
+      "y": 120,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_blancos",
+      "x": 1500,
+      "y": 1070,
+      "w": 420,
+      "de": "der",
+      "gris": 0.4,
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "«no compensa la caída en alimentación envasada»",
+      "x": 1060,
+      "y": 250,
+      "w": 800,
+      "tam": 58,
+      "serif": true,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "t": "Kantar Worldpanel · diciembre de 2016",
+      "x": 1064,
+      "y": 480,
+      "ancla": "i",
+      "tam": 24,
+      "k": "eti",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 4523,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 4523,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuentas anuales de DIA 2014 (CNMV)",
+   "pasos": [
+    4,
+    92
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 520,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "54 %",
+      "pie": "de las tiendas con cartel Dia, en 2014",
+      "x": 1380,
+      "y": 380,
+      "ancla": "c",
+      "tam": 260,
+      "color": "ambar",
+      "maxPie": 900,
+      "k": "dato"
+     },
+     {
+      "src": "g_tendero",
+      "x": 1380,
+      "y": 1085,
+      "w": 185,
+      "de": "pop",
+      "k": "im",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 4654,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 4654,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Merca2, 6-3-2017",
+   "pasos": [
+    4,
+    46,
+    92,
+    139
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tendero",
+      "x": 360,
+      "y": 1100,
+      "w": 390,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Muchos empezaron a *protestar*",
+      "x": 1200,
+      "y": 120,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Obligados a comprarle a Día",
+      "x": 740,
+      "y": 320,
+      "tam": 54,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Los descuentos, *de su bolsillo*",
+      "x": 740,
+      "y": 470,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "La cadena les facturaba gastos",
+      "x": 740,
+      "y": 620,
+      "tam": 54,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Es lo que denunciaban",
+      "x": 1180,
+      "y": 800,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 3,
+      "dt": 12
+     }
+    ]
+   },
+   "f1": 4843,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 4843,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "El Independiente, 17-1-2020",
+   "pasos": [
+    4,
+    20,
+    159,
+    202
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Día lo negó",
+      "x": 360,
+      "y": 160,
+      "tam": 76,
+      "color": "#F4F5F7",
+      "k": "sello"
+     },
+     {
+      "src": "g_mazo",
+      "x": 430,
+      "y": 1050,
+      "w": 640,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Tarragona, 2019: *dos sentencias*",
+      "x": 900,
+      "y": 200,
+      "ancla": "i",
+      "tam": 66,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Primera instancia · no nos consta cómo acabaron",
+      "x": 900,
+      "y": 330,
+      "ancla": "i",
+      "tam": 38,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "En una, el balance que le enseñaron al firmar *no reflejaba las pérdidas*",
+      "x": 900,
+      "y": 460,
+      "w": 900,
+      "tam": 56,
+      "k": "par",
+      "p": 3
+     },
+     {
+      "src": "g_escritura",
+      "x": 1500,
+      "y": 1060,
+      "w": 480,
+      "de": "der",
+      "k": "im",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 5160,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.879,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 5160,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "LZ Retailytics, vía Vozpópuli, 8-8-2018",
+   "pasos": [
+    4,
+    71,
+    162
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Ventas por cada *metro cuadrado*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Estudio de 2018",
+      "x": 960,
+      "y": 200,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti"
+     },
+     {
+      "t": "10.500 €",
+      "x": 620,
+      "y": 900,
+      "alto": 525,
+      "pie": "Mercadona",
+      "color": "verde",
+      "w": 300,
+      "tam": 92,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "3.000 €",
+      "x": 1300,
+      "y": 900,
+      "alto": 150,
+      "pie": "Día",
+      "color": "rojo",
+      "w": 300,
+      "tam": 92,
+      "k": "col",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5347,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 5347,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    32
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Crecer era *abrir*",
+      "x": 960,
+      "y": 270,
+      "ancla": "c",
+      "tam": 130,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 960,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "Y abrir costaba dinero",
+      "x": 960,
+      "y": 480,
+      "tam": 72,
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 5438,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_capitulo",
+   "f0": 5438,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "El alemán *aprende español*",
+    "sub": "Lidl hace justo lo contrario",
+    "el": "g_cajon",
+    "ew": 620,
+    "ex": 1560,
+    "ey": 1060,
+    "nx": 1250
+   },
+   "f1": 5491,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 5491,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "ICEX-Invest in Spain, 2015",
+   "pasos": [
+    4,
+    24,
+    130
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cuánto compra Lidl *a proveedores españoles*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 68,
+      "k": "tit"
+     },
+     {
+      "src": "g_cajon",
+      "x": 1450,
+      "y": 1070,
+      "w": 780,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "cifra": "38 %",
+      "pie": "del surtido, en 2008",
+      "x": 420,
+      "y": 360,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+70 %",
+      "pie": "siete años después",
+      "x": 420,
+      "y": 760,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5671,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 5671,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "ICEX-Invest in Spain, 2015",
+   "pasos": [
+    4,
+    51,
+    95
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_blancos",
+      "x": 330,
+      "y": 1040,
+      "w": 420,
+      "de": "aba",
+      "gris": 0.3,
+      "k": "im"
+     },
+     {
+      "t": "700 productos",
+      "x": 330,
+      "y": 300,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "x0": 600,
+      "y0": 700,
+      "x1": 830,
+      "y1": 700,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "src": "g_cajon",
+      "x": 1330,
+      "y": 1060,
+      "w": 980,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Más del doble",
+      "x": 1330,
+      "y": 180,
+      "ancla": "c",
+      "tam": 60,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Y fresco",
+      "x": 1500,
+      "y": 330,
+      "tam": 64,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5856,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 5856,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Alimarket, 30-9-2026",
+   "pasos": [
+    4,
+    80
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pale",
+      "x": 430,
+      "y": 1070,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_camion",
+      "x": 1400,
+      "y": 1040,
+      "w": 860,
+      "de": "izq",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 8.400 M€",
+      "pie": "compra en España al año",
+      "x": 1330,
+      "y": 300,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "Más de la mitad, para otros Lidl de fuera",
+      "x": 1400,
+      "y": 620,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 6012,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 6012,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Lidl, 28-11-2024 · Alimarket, 30-9-2026",
+   "pasos": [
+    4,
+    85,
+    189
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No llenó el mapa: *las hizo más grandes*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "src": "g_lidl",
+      "x": 700,
+      "y": 1040,
+      "w": 1200,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "1.200–1.500 m²",
+      "pie": "con aparcamiento",
+      "x": 1500,
+      "y": 350,
+      "ancla": "c",
+      "tam": 100,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_nave",
+      "x": 1500,
+      "y": 960,
+      "w": 620,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "14 centros logísticos",
+      "x": 1500,
+      "y": 660,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6254,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 6254,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Merca2, 31-12-2018 (368, 330 y 320 M€)",
+   "pasos": [
+    4,
+    49,
+    103
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 480,
+      "y": 1080,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El dinero, *a otro sitio*",
+      "x": 120,
+      "y": 120,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "2016 · 2017 · 2018",
+      "x": 1350,
+      "y": 300,
+      "ancla": "c",
+      "tam": 36,
+      "k": "eti",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 1.000 M€",
+      "pie": "invertidos en España",
+      "x": 1350,
+      "y": 500,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6422,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 6422,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "El Español, 26-2-2026 · Alimarket, 30-9-2026",
+   "pasos": [
+    4,
+    69,
+    170
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_balanza",
+      "x": 960,
+      "y": 1080,
+      "w": 900,
+      "de": "aba",
+      "fijo": true,
+      "k": "im"
+     },
+     {
+      "t": "+2.300 Días",
+      "x": 420,
+      "y": 300,
+      "ancla": "c",
+      "tam": 66,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "src": "g_dia",
+      "x": 654,
+      "y": 930,
+      "w": 250,
+      "de": "pop",
+      "fijo": true,
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "730 Lidl",
+      "x": 1500,
+      "y": 300,
+      "ancla": "c",
+      "tam": 66,
+      "color": "azul",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "src": "g_lidl",
+      "x": 1262,
+      "y": 940,
+      "w": 340,
+      "de": "pop",
+      "fijo": true,
+      "k": "im",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6655,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 6655,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Alimarket, 30-9-2026 (Lidl, netas) · El Español, 26-2-2026 (Día, brutas)",
+   "pasos": [
+    4,
+    36,
+    102
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lidl",
+      "x": 560,
+      "y": 1060,
+      "w": 940,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "7.641 M€",
+      "pie": "ventas netas de Lidl en un año",
+      "x": 1350,
+      "y": 280,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "×4",
+      "pie": "vende cada Lidl frente a cada Día",
+      "x": 1350,
+      "y": 680,
+      "ancla": "c",
+      "tam": 260,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Cálculo propio",
+      "x": 1350,
+      "y": 1000,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6865,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 6865,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_blancos",
+      "x": 430,
+      "y": 1060,
+      "w": 520,
+      "de": "aba",
+      "gris": 0.8,
+      "luz": 0.7,
+      "k": "im"
+     },
+     {
+      "t": "No era *quitar* cosas",
+      "x": 180,
+      "y": 160,
+      "w": 640,
+      "tam": 72,
+      "serif": true,
+      "centro": true,
+      "k": "par"
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "src": "g_cajon",
+      "x": 1430,
+      "y": 1060,
+      "w": 780,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Era *tenerlas*, y baratas",
+      "x": 1100,
+      "y": 160,
+      "w": 660,
+      "tam": 72,
+      "serif": true,
+      "centro": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 6994,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 6994,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Kantar Worldpanel (2015: enero-septiembre), vía Alimarket, El Independiente y OKDiario",
+   "pasos": [
+    4,
+    48,
+    119,
+    205
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "El marcador",
+      "x": 160,
+      "y": 110,
+      "ancla": "i",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Día",
+      "x": 1180,
+      "y": 115,
+      "ancla": "c",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip"
+     },
+     {
+      "t": "Lidl",
+      "x": 1400,
+      "y": 115,
+      "ancla": "c",
+      "tam": 44,
+      "color": "ambar",
+      "k": "chip"
+     },
+     {
+      "x": 260,
+      "y": 850,
+      "w": 1150,
+      "h": 560,
+      "series": [
+       {
+        "v": [
+         8.7,
+         8.5,
+         8.2,
+         7.5
+        ],
+        "color": "rojo",
+        "t": "7,5 %"
+       },
+       {
+        "v": [
+         3.5,
+         4.1,
+         4.3,
+         4.8
+        ],
+        "color": "ambar",
+        "t": "4,8 %"
+       }
+      ],
+      "ejes": [
+       "2015",
+       "2016",
+       "2017",
+       "2018"
+      ],
+      "minimo": 0,
+      "maximo": 9.5,
+      "dur": 150,
+      "k": "serie",
+      "p": 1
+     },
+     {
+      "t": "Cuota de mercado en España",
+      "x": 836,
+      "y": 1000,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti"
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7290,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_capitulo",
+   "f0": 7290,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Una mañana *de octubre*",
+    "sub": "15 de octubre de 2018",
+    "el": "g_periodico",
+    "ew": 720,
+    "ex": 1520,
+    "ey": 1040,
+    "nx": 1230
+   },
+   "f1": 7341,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 7341,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Alimarket, 15-10-2018",
+   "pasos": [
+    4,
+    57,
+    117,
+    147
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2018",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "15 de octubre",
+      "x": 320,
+      "y": 130,
+      "ancla": "i",
+      "tam": 28,
+      "k": "eti"
+     },
+     {
+      "t": "Día avisa",
+      "x": 316,
+      "y": 200,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 1500,
+      "y": 1060,
+      "w": 560,
+      "de": "der",
+      "gris": 0.5,
+      "k": "im"
+     },
+     {
+      "t": "Ganará *mucho menos* de lo previsto",
+      "x": 170,
+      "y": 430,
+      "tam": 54,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "No habrá dividendo",
+      "x": 170,
+      "y": 570,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Tiene que *corregir sus cuentas*",
+      "x": 170,
+      "y": 710,
+      "tam": 54,
+      "k": "linea",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 7536,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 7536,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "El Independiente, 15-10-2018 · Euribor.com.es, 16-10-2018 · Valencia Plaza, 15-1-2020",
+   "pasos": [
+    4,
+    27,
+    81,
+    197
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "cifra": "−42 %",
+      "pie": "en una sola sesión",
+      "x": 520,
+      "y": 360,
+      "ancla": "c",
+      "tam": 270,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "1.230",
+      "x": 1150,
+      "y": 880,
+      "alto": 560,
+      "pie": "Antes",
+      "color": "blanco",
+      "w": 230,
+      "tam": 80,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "≈ 680",
+      "x": 1560,
+      "y": 880,
+      "alto": 310,
+      "pie": "Después",
+      "color": "rojo",
+      "w": 230,
+      "tam": 80,
+      "k": "col",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "t": "Millones de euros",
+      "x": 1355,
+      "y": 1000,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 2
+     },
+     {
+      "t": "Otro −24 % una semana después",
+      "x": 520,
+      "y": 830,
+      "tam": 44,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 7792,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 7792,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "The Objective y Alimarket, 8-2-2019",
+   "pasos": [
+    4,
+    43,
+    107
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 430,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "gris": 0.9,
+      "luz": 0.65,
+      "k": "im"
+     },
+     {
+      "cifra": "−352 M€",
+      "pie": "pérdidas de 2018",
+      "x": 1300,
+      "y": 350,
+      "ancla": "c",
+      "tam": 250,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Debe más de lo que tiene",
+      "x": 1300,
+      "y": 800,
+      "tam": 60,
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 7938,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 7938,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Valencia Plaza, 17-5-2019",
+   "pasos": [
+    4,
+    84
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 520,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Recapitalizarse *o disolverse*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "20 mayo",
+      "x": 1400,
+      "y": 560,
+      "s": 2.1,
+      "tam": 32,
+      "k": "hoja",
+      "p": 1
+     },
+     {
+      "t": "Vence el plazo para evitar el concurso",
+      "x": 1400,
+      "y": 850,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti",
+      "p": 1,
+      "dt": 8
+     }
+    ]
+   },
+   "f1": 8100,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 8100,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Público, 17-5-2019 · Libertad Digital, 5-7-2011",
+   "pasos": [
+    4,
+    64,
+    133,
+    187
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_inversor",
+      "x": 330,
+      "y": 1100,
+      "w": 290,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "LetterOne",
+      "x": 620,
+      "y": 150,
+      "ancla": "i",
+      "tam": 120,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "El fondo de Mijaíl Fridman, su mayor accionista",
+      "x": 624,
+      "y": 250,
+      "ancla": "i",
+      "tam": 28,
+      "k": "eti",
+      "p": 1
+     },
+     {
+      "t": "0,67 €",
+      "x": 1450,
+      "y": 900,
+      "alto": 95,
+      "pie": "2019, la opa",
+      "color": "rojo",
+      "w": 240,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "3,50 €",
+      "x": 950,
+      "y": 900,
+      "alto": 460,
+      "pie": "2011, salida a bolsa",
+      "color": "blanco",
+      "w": 240,
+      "tam": 90,
+      "k": "col",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 8358,
+   "fondoClip": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 8358,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Alimarket, febrero de 2020 · El Independiente, 17-1-2020",
+   "pasos": [
+    4,
+    45,
+    93,
+    170
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2019",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_persiana",
+      "x": 1500,
+      "y": 1090,
+      "w": 640,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "cifra": "−790 M€",
+      "pie": "de pérdidas",
+      "x": 780,
+      "y": 320,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "−448",
+      "pie": "tiendas en España",
+      "x": 780,
+      "y": 640,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Más de 1.200 personas en el despido colectivo",
+      "x": 640,
+      "y": 900,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 8628,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.27,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 8628,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Público, 13-9-2022 (auto de 8-9-2022)",
+   "pasos": [
+    4,
+    64,
+    147,
+    212,
+    258
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mazo",
+      "x": 430,
+      "y": 1050,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Acabó en *la Audiencia Nacional*",
+      "x": 120,
+      "y": 120,
+      "ancla": "i",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "2022",
+      "x": 960,
+      "y": 390,
+      "k": "hoja",
+      "p": 2
+     },
+     {
+      "t": "Archivado",
+      "x": 1470,
+      "y": 390,
+      "tam": 96,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     },
+     {
+      "t": "El juez concluyó que *no había delito*",
+      "x": 900,
+      "y": 580,
+      "w": 900,
+      "tam": 56,
+      "k": "par",
+      "p": 3
+     },
+     {
+      "t": "Nadie fue condenado",
+      "x": 1350,
+      "y": 820,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 8919,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.954,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 8919,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Qué!, 18-1-2021 · Valencia Plaza, 30-11-2020",
+   "pasos": [
+    4,
+    83,
+    130,
+    204
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_inversor",
+      "x": 320,
+      "y": 1100,
+      "w": 290,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Archivo provisional · 15-12-2020",
+      "x": 600,
+      "y": 170,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "La denuncia contra Fridman por hundir el precio para comprar barato",
+      "x": 600,
+      "y": 270,
+      "w": 1200,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "El juez recordó que su fondo *también perdió dinero*",
+      "x": 600,
+      "y": 500,
+      "w": 1200,
+      "tam": 54,
+      "color": "#D5DBE6",
+      "k": "par",
+      "p": 2
+     },
+     {
+      "cifra": "+1.100 M€",
+      "pie": "puestos hasta 2020",
+      "x": 1100,
+      "y": 800,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 9196,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.999,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 9196,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Kantar Worldpanel, vía Vozpópuli, 26-10-2021",
+   "pasos": [
+    4,
+    43,
+    111,
+    184
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "La última oportunidad",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 560,
+      "y": 1070,
+      "w": 700,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_bolsa",
+      "x": 960,
+      "y": 1070,
+      "w": 250,
+      "de": "aba",
+      "k": "im",
+      "p": 2,
+      "dt": 8
+     },
+     {
+      "t": "España, confinada",
+      "x": 1420,
+      "y": 330,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "6,6 %",
+      "pie": "del mercado",
+      "x": 1450,
+      "y": 650,
+      "ancla": "c",
+      "tam": 250,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 9448,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 9448,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Kantar Worldpanel, año 2020, vía Marketing Directo y El Español, 16-2-2021",
+   "pasos": [
+    4,
+    22,
+    117,
+    205,
+    240,
+    285
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No lo retuvo",
+      "x": 120,
+      "y": 120,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit",
+      "sale": 2
+     },
+     {
+      "src": "g_persiana",
+      "x": 960,
+      "y": 1100,
+      "w": 620,
+      "de": "arr",
+      "k": "im",
+      "sale": 2
+     },
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja",
+      "p": 2
+     },
+     {
+      "t": "Cierre del año",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "src": "g_lidl",
+      "x": 520,
+      "y": 1060,
+      "w": 760,
+      "de": "izq",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "cifra": "6,1 %",
+      "x": 520,
+      "y": 480,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "src": "g_dia",
+      "x": 1420,
+      "y": 1060,
+      "w": 430,
+      "de": "der",
+      "k": "im",
+      "p": 2,
+      "dt": 6
+     },
+     {
+      "cifra": "5,8 %",
+      "x": 1420,
+      "y": 480,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "k": "dato",
+      "p": 4
+     },
+     {
+      "t": "Se habían cruzado",
+      "x": 1430,
+      "y": 190,
+      "tam": 62,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 5
+     }
+    ]
+   },
+   "f1": 9752,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 9752,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "BORME, 12-7-2021 · Merca2, 6-8-2021",
+   "pasos": [
+    4,
+    106
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "2021: la deuda, *en acciones*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "77,7 %",
+      "pie": "de Día, para el fondo",
+      "x": 1340,
+      "y": 520,
+      "ancla": "c",
+      "tam": 250,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 9934,
+   "fondoClip": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_capitulo",
+   "f0": 9934,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "¿Se la *comió?*",
+    "sub": "Quién se quedó con lo que perdió Día",
+    "el": "g_balanza",
+    "ew": 620,
+    "ex": 1560,
+    "ey": 1070,
+    "nx": 1240
+   },
+   "f1": 9990,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 9990,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Kantar Worldpanel · cálculo propio sobre la misma serie",
+   "pasos": [
+    4,
+    96,
+    149,
+    168,
+    233
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De 2016 a 2020",
+      "x": 160,
+      "y": 110,
+      "ancla": "i",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "−2,7",
+      "x": 460,
+      "y": 880,
+      "alto": 486,
+      "pie": "Día",
+      "color": "rojo",
+      "w": 260,
+      "tam": 96,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "+2,0",
+      "x": 960,
+      "y": 880,
+      "alto": 360,
+      "pie": "Lidl",
+      "color": "ambar",
+      "w": 260,
+      "tam": 96,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "+1,6",
+      "x": 1460,
+      "y": 880,
+      "alto": 288,
+      "pie": "Mercadona",
+      "color": "verde",
+      "w": 260,
+      "tam": 96,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "Puntos de cuota de mercado · son sumas, no clientes contados uno a uno",
+      "x": 960,
+      "y": 1000,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti",
+      "p": 3
+     },
+     {
+      "t": "No había una sola boca",
+      "x": 1330,
+      "y": 250,
+      "tam": 60,
+      "k": "sello",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 10351,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 10351,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "El Español, 27-7-2023 · Modaes, 5-12-2023 · ESM Magazine, 3-5-2024",
+   "pasos": [
+    4,
+    45,
+    73,
+    140,
+    206
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y una parte *la vendió ella*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_escritura",
+      "x": 1500,
+      "y": 1060,
+      "w": 640,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "*223* supermercados, a Alcampo",
+      "x": 150,
+      "y": 350,
+      "tam": 56,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Unas *1.000* tiendas de Clarel, a un grupo mexicano",
+      "x": 150,
+      "y": 510,
+      "tam": 52,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "*Portugal* entero, por 155 M€",
+      "x": 150,
+      "y": 670,
+      "tam": 56,
+      "k": "linea",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 10642,
+   "fondoClip": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.0,
+     "rate": 0.953,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 10642,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Alimarket, 31-5-2024",
+   "pasos": [
+    4,
+    65,
+    131,
+    156,
+    172
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2024",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Y *Brasil*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_globo",
+      "x": 330,
+      "y": 1090,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "100 €",
+      "pie": "el negocio entero",
+      "x": 1200,
+      "y": 480,
+      "ancla": "c",
+      "tam": 330,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "No cien millones",
+      "x": 1200,
+      "y": 830,
+      "tam": 64,
+      "k": "sello",
+      "p": 2,
+      "sale": 4
+     },
+     {
+      "t": "Y puso 39 millones para que se lo llevaran",
+      "x": 1200,
+      "y": 850,
+      "ancla": "c",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 10909,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.38,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 10909,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Memoria de DIA 2011 · Día, 2026",
+   "pasos": [
+    4,
+    45
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_globo",
+      "x": 480,
+      "y": 1090,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "7",
+      "pie": "países en 2011",
+      "x": 1080,
+      "y": 400,
+      "ancla": "c",
+      "tam": 250,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "x0": 1230,
+      "y0": 400,
+      "x1": 1400,
+      "y1": 400,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "cifra": "2",
+      "pie": "España y Argentina",
+      "x": 1560,
+      "y": 400,
+      "ancla": "c",
+      "tam": 250,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 11000,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 11000,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "El Español, 26-2-2026",
+   "pasos": [
+    4,
+    63,
+    110,
+    196
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La parte que *nadie esperaba*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_dia",
+      "x": 500,
+      "y": 1070,
+      "w": 620,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_bolsa",
+      "x": 860,
+      "y": 1070,
+      "w": 230,
+      "de": "pop",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "La compra de hoy para cenar hoy",
+      "x": 1380,
+      "y": 330,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "+129 M€",
+      "pie": "ganó en 2025",
+      "x": 1380,
+      "y": 620,
+      "ancla": "c",
+      "tam": 230,
+      "color": "verde",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "Incluye 52 M€ de créditos fiscales",
+      "x": 1380,
+      "y": 880,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti",
+      "p": 3,
+      "dt": 10
+     }
+    ]
+   },
+   "f1": 11283,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 11283,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Alimarket, 26-10-2026 · Merca2, 30-7-2026",
+   "pasos": [
+    4,
+    50,
+    132,
+    204,
+    277
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 400,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+8,4 %",
+      "pie": "ventas comparables en España, hasta septiembre",
+      "x": 1300,
+      "y": 270,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "maxPie": 1050,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "No todo está resuelto",
+      "x": 1300,
+      "y": 600,
+      "ancla": "c",
+      "tam": 60,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "cifra": "−38 %",
+      "pie": "beneficio del grupo, primer semestre: Argentina",
+      "x": 1300,
+      "y": 780,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "maxPie": 1050,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11602,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 11602,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Infobae / agencias, 30-12-2024",
+   "pasos": [
+    4,
+    45,
+    64,
+    100
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moneda",
+      "x": 380,
+      "y": 1030,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "0,015 €",
+      "pie": "llegó a valer la acción",
+      "x": 1260,
+      "y": 300,
+      "ancla": "c",
+      "tam": 190,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "1.000 acciones = 1",
+      "x": 1260,
+      "y": 600,
+      "ancla": "c",
+      "tam": 64,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Siete años viva",
+      "x": 1260,
+      "y": 830,
+      "tam": 72,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11784,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 11784,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Lidl, 29-11-2024 · Alimarket, 30-9-2026",
+   "pasos": [
+    4,
+    73,
+    161,
+    207
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lidl",
+      "x": 620,
+      "y": 1050,
+      "w": 1080,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+700",
+      "pie": "tiendas de Lidl",
+      "x": 1480,
+      "y": 250,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "7 abiertas el mismo día",
+      "x": 1480,
+      "y": 480,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Más de 20.000 empleados",
+      "x": 1480,
+      "y": 620,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "440 M€ más este año",
+      "x": 1480,
+      "y": 760,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 12082,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.0,
+     "rate": 0.932,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_anim",
+   "f0": 12082,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Worldpanel, enero-12 de julio de 2026, vía Merca2, 5-9-2026",
+   "pasos": [
+    4,
+    131,
+    164,
+    279
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Kantar cambió de base en 2021: no se restan",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "Hoy",
+      "x": 960,
+      "y": 240,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_lidl",
+      "x": 500,
+      "y": 1060,
+      "w": 820,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "cifra": "7,3 %",
+      "x": 500,
+      "y": 520,
+      "ancla": "c",
+      "tam": 250,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "src": "g_dia",
+      "x": 1430,
+      "y": 1060,
+      "w": 420,
+      "de": "der",
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "cifra": "3,9 %",
+      "x": 1430,
+      "y": 520,
+      "ancla": "c",
+      "tam": 250,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 12404,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e65_anim",
+   "f0": 12404,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "conclusión propia",
+   "pasos": [
+    4,
+    70,
+    108,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lidl",
+      "x": 960,
+      "y": 1070,
+      "w": 1250,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lidl se quedó *con el sitio de Día*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Menos tiendas",
+      "x": 380,
+      "y": 330,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Más grandes",
+      "x": 960,
+      "y": 330,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Con más cosas dentro",
+      "x": 1520,
+      "y": 330,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 12569,
+   "fondoClip": [
+    {
+     "src": "f_super.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e66_anim",
+   "f0": 12569,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "conclusión propia",
+   "pasos": [
+    4,
+    51,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 960,
+      "y": 1080,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No la tumbó *la competencia*",
+      "x": 960,
+      "y": 150,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "La tumbó creer que *más tiendas* eran *más clientes*",
+      "x": 260,
+      "y": 250,
+      "w": 1400,
+      "tam": 80,
+      "centro": true,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 12716,
+   "fondoClip": [
+    {
+     "src": "f_tienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e67_anim",
+   "f0": 12716,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "El Español (Quincemil), 18-4-2026 · fachada recreada, no es la real",
+   "pasos": [
+    4,
+    41,
+    91,
+    191
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Queda una última tienda",
+      "x": 960,
+      "y": 200,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit",
+      "sale": 1
+     },
+     {
+      "src": "g_persiana",
+      "x": 960,
+      "y": 1090,
+      "w": 640,
+      "de": "aba",
+      "luz": 0.8,
+      "k": "im",
+      "sale": 2
+     },
+     {
+      "t": "1975",
+      "x": 190,
+      "y": 160,
+      "k": "hoja",
+      "p": 2
+     },
+     {
+      "t": "El *primer Zara* del mundo",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "Calle Juan Flórez, A Coruña",
+      "x": 324,
+      "y": 250,
+      "ancla": "i",
+      "tam": 28,
+      "k": "eti",
+      "p": 2,
+      "dt": 8
+     },
+     {
+      "src": "g_zara1",
+      "x": 960,
+      "y": 1070,
+      "w": 760,
+      "de": "aba",
+      "grisEn": 3,
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Cerrado en enero de 2026",
+      "x": 960,
+      "y": 760,
+      "tam": 60,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 12953,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e68_anim",
+   "f0": 12953,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "El Español (Quincemil), 18-4-2026",
+   "pasos": [
+    4,
+    40
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_zara1",
+      "x": 560,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "gris": 0.9,
+      "luz": 0.7,
+      "k": "im"
+     },
+     {
+      "t": "Ya tiene *inquilino*",
+      "x": 1340,
+      "y": 260,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "≈ 300 m²",
+      "pie": "anunciado en abril",
+      "x": 1340,
+      "y": 560,
+      "ancla": "c",
+      "tam": 160,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 13067,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e69_anim",
+   "f0": 13067,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "",
+   "fuente": "apertura sin confirmar a 24-11-2026",
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_dia",
+      "x": 960,
+      "y": 1080,
+      "w": 980,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo ha alquilado *Día*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 120,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 13167,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "f_tienda.jpg": "vox/media/lidl_dia/f_tienda.jpg",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "container_port_reach_stacker_logistics_223.mp4": "parallax2/proyecto/stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "f_super.jpg": "vox/media/lidl_dia/f_super.jpg",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "elderly_people_meeting_table_documents_132.mp4": "parallax2/proyecto/stock_mercadona/elderly_people_meeting_table_documents_132.mp4",
+  "empty_shopping_arcade_corridor_84.mp4": "parallax2/proyecto/stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/lidl_dia/g_balanza.webp",
+  "g_barrio.webp": "vox/media/lidl_dia/g_barrio.webp",
+  "g_blancos.webp": "vox/media/lidl_dia/g_blancos.webp",
+  "g_bolsa.webp": "vox/media/lidl_dia/g_bolsa.webp",
+  "g_caja.webp": "vox/media/lidl_dia/g_caja.webp",
+  "g_cajon.webp": "vox/media/lidl_dia/g_cajon.webp",
+  "g_camion.webp": "vox/media/lidl_dia/g_camion.webp",
+  "g_catalogo.webp": "vox/media/lidl_dia/g_catalogo.webp",
+  "g_clientes.webp": "vox/media/lidl_dia/g_clientes.webp",
+  "g_compradora.webp": "vox/media/lidl_dia/g_compradora.webp",
+  "g_dia.webp": "vox/media/lidl_dia/g_dia.webp",
+  "g_empleados.webp": "vox/media/lidl_dia/g_empleados.webp",
+  "g_escritura.webp": "vox/media/lidl_dia/g_escritura.webp",
+  "g_fajo.webp": "vox/media/lidl_dia/g_fajo.webp",
+  "g_fajos.webp": "vox/media/lidl_dia/g_fajos.webp",
+  "g_globo.webp": "vox/media/lidl_dia/g_globo.webp",
+  "g_grande.webp": "vox/media/lidl_dia/g_grande.webp",
+  "g_inversor.webp": "vox/media/lidl_dia/g_inversor.webp",
+  "g_lidl.webp": "vox/media/lidl_dia/g_lidl.webp",
+  "g_lineal.webp": "vox/media/lidl_dia/g_lineal.webp",
+  "g_mazo.webp": "vox/media/lidl_dia/g_mazo.webp",
+  "g_moneda.webp": "vox/media/lidl_dia/g_moneda.webp",
+  "g_monedas.webp": "vox/media/lidl_dia/g_monedas.webp",
+  "g_nave.webp": "vox/media/lidl_dia/g_nave.webp",
+  "g_pale.webp": "vox/media/lidl_dia/g_pale.webp",
+  "g_paquete.webp": "vox/media/lidl_dia/g_paquete.webp",
+  "g_periodico.webp": "vox/media/lidl_dia/g_periodico.webp",
+  "g_persiana.webp": "vox/media/lidl_dia/g_persiana.webp",
+  "g_tendero.webp": "vox/media/lidl_dia/g_tendero.webp",
+  "g_tienda.webp": "vox/media/lidl_dia/g_tienda.webp",
+  "g_zara1.webp": "vox/media/lidl_dia/g_zara1.webp"
+ },
+ "tema": "lidl_dia",
+ "piel": "anim"
+}

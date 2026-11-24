@@ -8,6 +8,7 @@ import {Im, deriva} from './m_vox';
 import {ESCENAS} from './mercadona';
 import {PRIMARK} from './primark';
 import {CHUPA} from './chupachups';
+import {Libre} from './libre';
 
 /** Registro de escenas de cada tema (el spec dice cual: `tema`). Sin tema propio, las de Mercadona. */
 const REGISTROS: Record<string, Record<string, React.FC<any>>> = {primark: PRIMARK, chupachups: CHUPA};
@@ -215,7 +216,7 @@ export const Animado: React.FC<{spec: Spec}> = ({spec}) => {
           const pasos = e.pasos ?? [0];
           const p = (k: number) => (pasos[k] !== undefined ? t - pasos[k] : k === 0 ? t : -1e6);
           const ep: EP = {d: e.d, t, dur, p, ancho: 1920, ctx: {f0: e.f0, f, fps, medios: e.medios ?? [], clips: e.fondoClip}};
-          const C = e.tipo === 'anim' ? (REGISTROS[spec.tema ?? ''] ?? ESCENAS)[e.d.comp] : e.tipo === 'cita' ? Cita : e.tipo === 'capitulo' ? Capitulo : null;
+          const C = e.tipo === 'anim' ? e.d.comp === 'libre' ? Libre : (REGISTROS[spec.tema ?? ''] ?? ESCENAS)[e.d.comp] : e.tipo === 'cita' ? Cita : e.tipo === 'capitulo' ? Capitulo : null;
           const claro = e.d?.claro;
           return (
             <AbsoluteFill key={e.id} style={{background: FONDO}}>

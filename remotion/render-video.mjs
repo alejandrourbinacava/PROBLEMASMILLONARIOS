@@ -45,6 +45,8 @@ for (const [nombre, rel] of Object.entries(spec.medios ?? {})) {
 }
 const t0 = Date.now();
 const serveUrl = await bundle({entryPoint: path.join(AQUI, 'src', 'vox', 'index.ts'), publicDir: publica, outDir: path.join(AQUI, '.bundle_vox')});
+// con --vigia cada plano libre avisa de lo que se sale del cuadro o se pisa
+if (args.includes('--vigia')) spec.vigia = true;
 const inputProps = {spec};
 const composition = await selectComposition({serveUrl, id: 'Video', inputProps, logLevel: 'error'});
 console.log(`bundle en ${((Date.now() - t0) / 1000).toFixed(1)} s · ${composition.durationInFrames} fotogramas`);
@@ -63,6 +65,7 @@ if (args.includes('--fotogramas')) {
   const dir = opt('--stills');
   fs.mkdirSync(dir, {recursive: true});
   const nav = await openBrowser('chrome', {chromiumOptions: {gl: 'angle'}, logLevel: 'error'});
+  const vistos = new Set();
   const solo = opt('--solo') ? opt('--solo').split(',').map(Number) : null;
   for (const [i, e] of spec.escenas.entries()) {
     if (solo && !solo.includes(i)) continue;
@@ -70,10 +73,11 @@ if (args.includes('--fotogramas')) {
     const fracs = (opt('--fracs') ?? '0.88').split(',').map(Number);
     for (const [k, fr0] of fracs.entries()) {
       const fr = Math.min(e.f1 - 2, Math.round(e.f0 + (e.f1 - e.f0) * fr0));
-      await renderStill({composition, serveUrl, output: path.join(dir, `${String(i).padStart(2, '0')}${fracs.length > 1 ? 'abcdef'[k] : ''}_${e.tipo}.jpeg`), frame: fr, inputProps, puppeteerInstance: nav, imageFormat: 'jpeg', jpegQuality: 80, logLevel: 'error'});
+      await renderStill({composition, serveUrl, output: path.join(dir, `${String(i).padStart(2, '0')}${fracs.length > 1 ? 'abcdef'[k] : ''}_${e.tipo}.jpeg`), frame: fr, inputProps, puppeteerInstance: nav, imageFormat: 'jpeg', jpegQuality: 80, logLevel: 'error', onBrowserLog: (l) => l.text.startsWith('VIGIA') && vistos.add(`${i} @${fr0}: ${l.text}`)});
     }
   }
   await nav.close({silent: true});
+  for (const v of vistos) console.log(v);
   console.log('fotogramas en', dir);
 } else {
   const salida = args[1];

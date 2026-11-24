@@ -1,0 +1,4698 @@
+{
+ "fps": 25,
+ "total": 12781,
+ "marca": {
+  "nombre": "COLCHONES",
+  "color": "#3C6FA8",
+  "claro": "#FFE9C2",
+  "oscuro": "#122640",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    0,
+    54
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Cerca de tu casa hay *una como esta*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Seguramente, más de una",
+      "x": 960,
+      "y": 250,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 91,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 91,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    76,
+    132
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 1380,
+      "y": 1060,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_tendero",
+      "x": 420,
+      "y": 1100,
+      "w": 285,
+      "de": "izq",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "*Una* persona",
+      "x": 1330,
+      "y": 180,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "*Quince* camas vacías",
+      "x": 1330,
+      "y": 330,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 262,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 262,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    50,
+    93
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 1070,
+      "w": 960,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Has pasado *cien veces*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Nunca entra nadie",
+      "x": 960,
+      "y": 290,
+      "tam": 76,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Y ahí sigue, año tras año",
+      "x": 960,
+      "y": 445,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 398,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 398,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    67,
+    90
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 480,
+      "y": 1060,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La explicación de internet",
+      "x": 1400,
+      "y": 190,
+      "ancla": "c",
+      "tam": 66,
+      "k": "tit"
+     },
+     {
+      "t": "Es una tapadera",
+      "x": 1400,
+      "y": 430,
+      "tam": 80,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Nadie puede pagar *ese local* vendiendo tan poco",
+      "x": 1040,
+      "y": 600,
+      "w": 780,
+      "tam": 58,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 560,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 560,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Reddit, 2018 (sobre Mattress Firm, Estados Unidos)",
+   "pasos": [
+    4,
+    121,
+    171
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2018",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_portatil",
+      "x": 460,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un comentario en Reddit",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "+41.000",
+      "pie": "votos",
+      "x": 1370,
+      "y": 430,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "En España, el mismo cálculo en los foros",
+      "x": 1370,
+      "y": 780,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 797,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 797,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    48
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajo",
+      "x": 480,
+      "y": 1040,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Vamos a hacer la cuenta *de verdad*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Con datos oficiales",
+      "x": 1380,
+      "y": 470,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Línea a línea",
+      "x": 1380,
+      "y": 600,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 14
+     }
+    ]
+   },
+   "f1": 898,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 898,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Flex, Estado de Información No Financiera 2024 (Artedescanso)",
+   "pasos": [
+    4,
+    92,
+    124,
+    171
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Una cadena *del grupo Flex*, en Vizcaya",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 200,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_tienda",
+      "x": 454,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 4
+     },
+     {
+      "src": "g_tienda",
+      "x": 708,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 8
+     },
+     {
+      "src": "g_tienda",
+      "x": 962,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 12
+     },
+     {
+      "src": "g_tienda",
+      "x": 1216,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 16
+     },
+     {
+      "src": "g_tienda",
+      "x": 1470,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "src": "g_tienda",
+      "x": 1724,
+      "y": 520,
+      "w": 230,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "7 tiendas",
+      "x": 960,
+      "y": 250,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_tendero",
+      "x": 270,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_tendero",
+      "x": 500,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2,
+      "dt": 4
+     },
+     {
+      "src": "g_tendero",
+      "x": 730,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2,
+      "dt": 8
+     },
+     {
+      "src": "g_tendero",
+      "x": 960,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2,
+      "dt": 12
+     },
+     {
+      "src": "g_tendero",
+      "x": 1190,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2,
+      "dt": 16
+     },
+     {
+      "src": "g_tendero",
+      "x": 1420,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2,
+      "dt": 20
+     },
+     {
+      "src": "g_tendero",
+      "x": 1650,
+      "y": 1085,
+      "w": 110,
+      "de": "pop",
+      "k": "im",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "t": "*7* personas",
+      "x": 960,
+      "y": 620,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 1085,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_anim",
+   "f0": 1085,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Flex, Estado de Información No Financiera 2024",
+   "pasos": [
+    4,
+    63
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 520,
+      "y": 1060,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo firma *la propia empresa*",
+      "x": 1370,
+      "y": 330,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "Ahí empieza la respuesta",
+      "x": 1370,
+      "y": 560,
+      "ancla": "c",
+      "tam": 52,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 1189,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_capitulo",
+   "f0": 1189,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "La cuenta, *línea a línea*",
+    "sub": "Una tienda tipo de 120 metros",
+    "el": "g_tienda",
+    "ew": 640,
+    "ex": 1560,
+    "ey": 1050,
+    "nx": 1270
+   },
+   "f1": 1293,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1293,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Idealista (media de Andalucía), vía L'Express Franchise, 4-8-2026",
+   "pasos": [
+    4,
+    36,
+    71,
+    116
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 520,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No es ninguna en concreto",
+      "x": 1410,
+      "y": 170,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "Una tienda tipo",
+      "x": 1410,
+      "y": 280,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "1.450 €",
+      "pie": "de alquiler al mes",
+      "x": 1400,
+      "y": 560,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "120 m² × 12 €/m²",
+      "x": 1400,
+      "y": 830,
+      "ancla": "c",
+      "tam": 30,
+      "k": "eti",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 1472,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1472,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Flex, EINF 2024, más cotizaciones",
+   "pasos": [
+    4,
+    110
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tendero",
+      "x": 430,
+      "y": 1100,
+      "w": 285,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El dependiente",
+      "x": 1300,
+      "y": 200,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "2.350 €",
+      "pie": "al mes, con seguros sociales",
+      "x": 1300,
+      "y": 500,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 1642,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1642,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    82,
+    107,
+    138,
+    197
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajo",
+      "x": 1560,
+      "y": 1040,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y lo demás",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Luz, seguro, gestoría, datáfono · *700 €*",
+      "x": 140,
+      "y": 300,
+      "tam": 56,
+      "k": "linea"
+     },
+     {
+      "t": "Publicidad · *1.000 €*",
+      "x": 140,
+      "y": 430,
+      "tam": 56,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Reparto · *500 €*",
+      "x": 140,
+      "y": 560,
+      "tam": 56,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Cambios y garantías · *500 €*",
+      "x": 140,
+      "y": 690,
+      "tam": 56,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Estas cuatro son estimaciones",
+      "x": 480,
+      "y": 870,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 1892,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 1892,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "cuenta propia, con supuestos",
+   "pasos": [
+    4,
+    54
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 440,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "6.500 €",
+      "pie": "al mes",
+      "x": 1330,
+      "y": 380,
+      "ancla": "c",
+      "tam": 260,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "t": "Sin lo que gana el dueño, obra ni impuestos",
+      "x": 1330,
+      "y": 720,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 2030,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2030,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    82
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 500,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_tendero",
+      "x": 880,
+      "y": 1090,
+      "w": 180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Local y sueldo",
+      "x": 1400,
+      "y": 260,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "3.800 €",
+      "pie": "lo que no se puede dejar de pagar",
+      "x": 1400,
+      "y": 520,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 2148,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2148,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 1060,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Parece *mucho*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Mira cuánto deja el que entra",
+      "x": 960,
+      "y": 320,
+      "tam": 60,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 2267,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_capitulo",
+   "f0": 2267,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    8
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "Le basta *con una venta*",
+    "sub": "Lo que deja el que sí entra",
+    "el": "g_colchon",
+    "ew": 760,
+    "ex": 1500,
+    "ey": 1040,
+    "nx": 1270
+   },
+   "f1": 2342,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2342,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "INE, Encuesta Industrial de Productos 2024 (cálculo propio)",
+   "pasos": [
+    4,
+    31,
+    86,
+    155
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_colchon",
+      "x": 560,
+      "y": 1040,
+      "w": 980,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 4 millones",
+      "pie": "de colchones fabricados en 2024",
+      "x": 1330,
+      "y": 190,
+      "ancla": "c",
+      "tam": 130,
+      "color": "blanco",
+      "maxPie": 900,
+      "k": "dato"
+     },
+     {
+      "cifra": "160 €",
+      "pie": "de media, al salir de fábrica",
+      "x": 1420,
+      "y": 560,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Sin impuestos, todas las medidas",
+      "x": 1420,
+      "y": 850,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2568,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.733,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 2568,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Eurostat SBS, 2024",
+   "pasos": [
+    4,
+    96,
+    164
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *100 €* que vende, se queda…",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "40 €",
+      "x": 620,
+      "y": 900,
+      "alto": 520,
+      "pie": "Muebles y hogar",
+      "color": "ambar",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "24 €",
+      "x": 1260,
+      "y": 900,
+      "alto": 312,
+      "pie": "Un supermercado",
+      "color": "blanco",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 2784,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 2784,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia con el margen de Eurostat",
+   "pasos": [
+    4,
+    48,
+    107,
+    179
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Ahora, *la división*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_cama",
+      "x": 420,
+      "y": 1050,
+      "w": 660,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "x": 760,
+      "y": 370,
+      "w": 1080,
+      "partes": [
+       {
+        "t": "IVA, mercancía… 540 €",
+        "v": 540,
+        "color": "humo"
+       },
+       {
+        "t": "260 €",
+        "v": 260,
+        "color": "verde"
+       }
+      ],
+      "h": 110,
+      "k": "reparto",
+      "p": 2
+     },
+     {
+      "cifra": "800 €",
+      "x": 1300,
+      "y": 265,
+      "ancla": "c",
+      "tam": 100,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 260 €",
+      "pie": "le quedan por cada venta",
+      "x": 1380,
+      "y": 680,
+      "ancla": "c",
+      "tam": 200,
+      "color": "verde",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2994,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 2994,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    81
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 480,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Para pagar 6.500 €",
+      "x": 1400,
+      "y": 220,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "25",
+      "pie": "ventas al mes",
+      "x": 1400,
+      "y": 520,
+      "ancla": "c",
+      "tam": 340,
+      "color": "ambar",
+      "k": "dato",
+      "dt": 40
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 3093,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3093,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    53,
+    101
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 480,
+      "y": 1060,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Abre unos 25 días",
+      "x": 1370,
+      "y": 200,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "No necesita *que entre gente*",
+      "x": 1040,
+      "y": 330,
+      "w": 780,
+      "tam": 64,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Una venta al día",
+      "x": 1390,
+      "y": 720,
+      "tam": 86,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3236,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3236,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    42,
+    87,
+    116
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 480,
+      "y": 1050,
+      "w": 860,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Con *canapé*: 1.200 €",
+      "x": 1400,
+      "y": 220,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "17",
+      "pie": "ventas al mes",
+      "x": 1400,
+      "y": 530,
+      "ancla": "c",
+      "tam": 300,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Una cada día y medio",
+      "x": 1400,
+      "y": 860,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 3398,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 3398,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "L'Express Franchise (portal de franquicias)",
+   "pasos": [
+    4,
+    68,
+    113
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 520,
+      "y": 1050,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La *segunda* venta",
+      "x": 1410,
+      "y": 180,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Almohada",
+      "x": 1410,
+      "y": 360,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Funda",
+      "x": 1410,
+      "y": 470,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 10
+     },
+     {
+      "t": "Somier",
+      "x": 1410,
+      "y": 580,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Donde más se gana",
+      "x": 1410,
+      "y": 780,
+      "tam": 64,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 3589,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 3589,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    108,
+    124,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Ventas al mes *para cubrir gastos*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "28",
+      "x": 480,
+      "y": 880,
+      "alto": 504,
+      "pie": "Madrid",
+      "color": "rojo",
+      "w": 260,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "25",
+      "x": 960,
+      "y": 880,
+      "alto": 450,
+      "pie": "Andalucía",
+      "color": "ambar",
+      "w": 260,
+      "tam": 110,
+      "k": "col"
+     },
+     {
+      "t": "23",
+      "x": 1440,
+      "y": 880,
+      "alto": 414,
+      "pie": "Galicia",
+      "color": "verde",
+      "w": 260,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Es nuestra cuenta, con supuestos",
+      "x": 960,
+      "y": 1000,
+      "ancla": "c",
+      "tam": 38,
+      "color": "humo",
+      "k": "chip",
+      "dt": 20
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 3799,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 3799,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "profesor de marketing de Texas, sobre tiendas de EE. UU.",
+   "pasos": [
+    4,
+    103
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_empleados",
+      "x": 460,
+      "y": 1080,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un profesor *de Texas* preguntó",
+      "x": 1340,
+      "y": 220,
+      "ancla": "c",
+      "tam": 68,
+      "k": "tit"
+     },
+     {
+      "cifra": "12–20",
+      "pie": "colchones al mes para cubrir gastos",
+      "x": 1380,
+      "y": 520,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 3992,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_capitulo",
+   "f0": 3992,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "¿Por qué *parece vacía?*",
+    "sub": "Porque lo está",
+    "el": "g_tendero",
+    "ew": 250,
+    "ex": 1760,
+    "ey": 1090,
+    "nx": 1220
+   },
+   "f1": 4038,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 4038,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Bed's, vía Interempresas, 18-6-2025 (división propia)",
+   "pasos": [
+    4,
+    33,
+    86,
+    174
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 480,
+      "y": 1060,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Porque lo está",
+      "x": 1390,
+      "y": 170,
+      "tam": 72,
+      "k": "sello"
+     },
+     {
+      "cifra": "+1 millón",
+      "pie": "de personas en un año, 240 tiendas",
+      "x": 1380,
+      "y": 420,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "≈ 14",
+      "pie": "al día en cada una",
+      "x": 1380,
+      "y": 780,
+      "ancla": "c",
+      "tam": 170,
+      "color": "cian",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 4285,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 4285,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    38,
+    97
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tendero",
+      "x": 420,
+      "y": 1100,
+      "w": 285,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "< 2",
+      "pie": "clientes por hora",
+      "x": 1280,
+      "y": 300,
+      "ancla": "c",
+      "tam": 260,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "Más de media hora entre uno y otro",
+      "x": 1300,
+      "y": 640,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Y tú pasas en esa media hora",
+      "x": 1300,
+      "y": 830,
+      "tam": 56,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 4473,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 4473,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "fabricantes y encuesta de 2017",
+   "pasos": [
+    4,
+    22,
+    89,
+    174,
+    191
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_colchon",
+      "x": 520,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Queda *una duda*",
+      "x": 1400,
+      "y": 160,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "10 años",
+      "pie": "lo que aconsejan",
+      "x": 1400,
+      "y": 360,
+      "ancla": "c",
+      "tam": 140,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "14 años",
+      "pie": "lo que tardamos",
+      "x": 1400,
+      "y": 620,
+      "ancla": "c",
+      "tam": 140,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "¿De dónde salen los clientes?",
+      "x": 1400,
+      "y": 900,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 4705,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 4705,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "presidente de Pikolin, Expansión, 5-2-2025",
+   "pasos": [
+    4,
+    63,
+    108,
+    135
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 480,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "50 %",
+      "pie": "no son cambios: es la primera compra",
+      "x": 1380,
+      "y": 250,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Pisos nuevos",
+      "x": 1010,
+      "y": 520,
+      "tam": 52,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Parejas que se juntan",
+      "x": 1010,
+      "y": 630,
+      "tam": 52,
+      "k": "linea",
+      "p": 3,
+      "dt": 14
+     },
+     {
+      "t": "Hijos que se van",
+      "x": 1010,
+      "y": 740,
+      "tam": 52,
+      "k": "linea",
+      "p": 3,
+      "dt": 28
+     },
+     {
+      "t": "Camas de invitados",
+      "x": 1010,
+      "y": 850,
+      "tam": 52,
+      "k": "linea",
+      "p": 3,
+      "dt": 42
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 4933,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 4933,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "presidente de Pikolin, Expansión, 5-2-2025 (2008-2013)",
+   "pasos": [
+    4,
+    79
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cuando se hundió *el ladrillo*",
+      "x": 520,
+      "y": 160,
+      "ancla": "c",
+      "tam": 66,
+      "k": "tit"
+     },
+     {
+      "src": "g_colchon",
+      "x": 520,
+      "y": 1040,
+      "w": 860,
+      "de": "aba",
+      "gris": 0.7,
+      "k": "im"
+     },
+     {
+      "cifra": "−50 %",
+      "pie": "el sector del colchón",
+      "x": 1370,
+      "y": 480,
+      "ancla": "c",
+      "tam": 280,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 5040,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_capitulo",
+   "f0": 5040,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "La tienda *sin almacén*",
+    "sub": "Vende lo que todavía no tiene",
+    "el": "g_rollo",
+    "ew": 270,
+    "ex": 1770,
+    "ey": 1070,
+    "nx": 1230
+   },
+   "f1": 5136,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 5136,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Bed's, web, 24-11-2026",
+   "pasos": [
+    4,
+    47,
+    70,
+    158
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 480,
+      "y": 1060,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No guarda colchones",
+      "x": 1400,
+      "y": 170,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Guarda muestras",
+      "x": 1400,
+      "y": 330,
+      "tam": 76,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Te tumbas, eliges, pagas… *y llega a casa después*",
+      "x": 1030,
+      "y": 460,
+      "w": 780,
+      "tam": 56,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "cifra": "8–15 días",
+      "x": 1400,
+      "y": 830,
+      "ancla": "c",
+      "tam": 130,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 5353,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 5353,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Grupo Pikolin",
+   "pasos": [
+    4,
+    57,
+    92,
+    149
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camion",
+      "x": 480,
+      "y": 1050,
+      "w": 800,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "La fábrica de *Pikolin*, en Zaragoza",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "1 millón",
+      "pie": "de colchones al año",
+      "x": 1380,
+      "y": 380,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Preparada para servirlos de uno en uno",
+      "x": 1380,
+      "y": 640,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "30",
+      "pie": "camiones al día en temporada alta",
+      "x": 1380,
+      "y": 820,
+      "ancla": "c",
+      "tam": 120,
+      "color": "cian",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 5566,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.775,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 5566,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    87
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pale",
+      "x": 420,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "gris": 1,
+      "luz": 0.7,
+      "k": "im"
+     },
+     {
+      "t": "No paga esto",
+      "x": 420,
+      "y": 420,
+      "tam": 70,
+      "k": "sello"
+     },
+     {
+      "src": "g_cama",
+      "x": 1380,
+      "y": 1050,
+      "w": 900,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Paga un suelo *con quince camas*",
+      "x": 1380,
+      "y": 260,
+      "ancla": "c",
+      "tam": 62,
+      "k": "tit",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 5697,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 5697,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Dormitienda, información para franquiciados",
+   "pasos": [
+    4,
+    29,
+    177
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y a veces, *ni eso*: Dormitienda",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "x": 960,
+      "y": 220,
+      "w": 2,
+      "h": 720,
+      "k": "div"
+     },
+     {
+      "t": "Pone la marca",
+      "x": 480,
+      "y": 290,
+      "ancla": "c",
+      "tam": 64,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Las camas *expuestas*",
+      "x": 180,
+      "y": 400,
+      "tam": 54,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "El *almacén*",
+      "x": 180,
+      "y": 520,
+      "tam": 54,
+      "k": "linea",
+      "p": 1,
+      "dt": 12
+     },
+     {
+      "t": "Pone el tendero",
+      "x": 1440,
+      "y": 290,
+      "ancla": "c",
+      "tam": 64,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "El *alquiler*",
+      "x": 1120,
+      "y": 400,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Los *suministros*",
+      "x": 1120,
+      "y": 520,
+      "tam": 54,
+      "k": "linea",
+      "p": 2,
+      "dt": 12
+     },
+     {
+      "t": "Su *trabajo*, a comisión",
+      "x": 1120,
+      "y": 640,
+      "tam": 54,
+      "k": "linea",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "src": "g_colchon",
+      "x": 480,
+      "y": 1050,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_tienda",
+      "x": 1440,
+      "y": 1050,
+      "w": 420,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     }
+    ],
+    "luz": 0.4
+   },
+   "f1": 5987,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 5987,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "L'Express Franchise, 22-10-2026",
+   "pasos": [
+    4,
+    83,
+    172
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cama",
+      "x": 480,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No es igual *en todas*",
+      "x": 1400,
+      "y": 180,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "30–60.000 €",
+      "pie": "montar la exposición, en otras",
+      "x": 1380,
+      "y": 420,
+      "ancla": "c",
+      "tam": 130,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Se vende lo que aún no se tiene",
+      "x": 1380,
+      "y": 800,
+      "tam": 54,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 6247,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 6247,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "sector del descanso; Cajamar Consumo",
+   "pasos": [
+    4,
+    63,
+    132
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajo",
+      "x": 440,
+      "y": 1030,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El otro socio: *el banco*",
+      "x": 1340,
+      "y": 180,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "1 de cada 10",
+      "pie": "compra a plazos",
+      "x": 1360,
+      "y": 420,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "La tienda cobra ya",
+      "x": 1360,
+      "y": 690,
+      "ancla": "c",
+      "tam": 50,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "El cliente debe a la financiera",
+      "x": 1360,
+      "y": 810,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 20
+     }
+    ]
+   },
+   "f1": 6478,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 6478,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Ley 7/2012, modificada por la Ley 11/2021",
+   "pasos": [
+    4,
+    64,
+    166
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moneda",
+      "x": 380,
+      "y": 1000,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Aquí se cae *la teoría*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "1.000 €",
+      "pie": "o más, prohibido en efectivo a una empresa",
+      "x": 1200,
+      "y": 400,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "maxPie": 1100,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "25 %",
+      "pie": "de multa",
+      "x": 1200,
+      "y": 780,
+      "ancla": "c",
+      "tam": 170,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6715,
+   "fondoClip": [
+    {
+     "src": "euro_50_banknotes_fan_348.mp4",
+     "desde": 0.0,
+     "rate": 0.936,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 6715,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    41,
+    64,
+    94,
+    142
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 420,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Pocas ventas",
+      "x": 860,
+      "y": 230,
+      "tam": 56,
+      "k": "linea"
+     },
+     {
+      "t": "Muchas *a plazos*",
+      "x": 860,
+      "y": 350,
+      "tam": 56,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Con *un banco* por medio",
+      "x": 860,
+      "y": 470,
+      "tam": 56,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Y *un pedido* por cada una",
+      "x": 860,
+      "y": 590,
+      "tam": 56,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Deja rastro de todo",
+      "x": 1300,
+      "y": 820,
+      "tam": 78,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 6888,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 6888,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 1060,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No hemos encontrado *ningún dato* de blanqueo",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 6976,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_capitulo",
+   "f0": 6976,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "El precio *que nadie compara*",
+    "sub": "Los nombres y el número tachado",
+    "el": "g_colchon",
+    "ew": 640,
+    "ex": 1560,
+    "ey": 1040,
+    "nx": 1300
+   },
+   "f1": 7071,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 7071,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    26,
+    88
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_movil",
+      "x": 1540,
+      "y": 1090,
+      "w": 520,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "Intenta *una cosa*",
+      "x": 120,
+      "y": 150,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Elige un colchón en una cadena",
+      "x": 140,
+      "y": 380,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Apunta *el nombre*",
+      "x": 140,
+      "y": 510,
+      "tam": 58,
+      "k": "linea",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "Búscalo en *otra*",
+      "x": 140,
+      "y": 640,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7188,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 7188,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "consulta propia de las dos webs, 24-11-2026",
+   "pasos": [
+    4,
+    45,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Nosotros lo hicimos con *Pikolin*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_colchon",
+      "x": 480,
+      "y": 1040,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "En las tiendas Bed's",
+      "x": 1370,
+      "y": 270,
+      "ancla": "c",
+      "tam": 62,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Mozart",
+      "x": 1110,
+      "y": 400,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Wagner",
+      "x": 1370,
+      "y": 400,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 10
+     },
+     {
+      "t": "Strauss",
+      "x": 1640,
+      "y": 400,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "En la web de la marca",
+      "x": 1370,
+      "y": 600,
+      "ancla": "c",
+      "tam": 62,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "No salen",
+      "x": 1370,
+      "y": 760,
+      "tam": 80,
+      "k": "sello",
+      "p": 2,
+      "dt": 16
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 7413,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 7413,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "web de fabricante de EE. UU. y analista del mueble en radio",
+   "pasos": [
+    4,
+    42,
+    211
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_colchon",
+      "x": 500,
+      "y": 1040,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Eso no prueba nada por sí solo",
+      "x": 1380,
+      "y": 170,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "Hay fabricantes en EE. UU. que dejan que cada tienda *le ponga el nombre que quiera*",
+      "x": 1000,
+      "y": 280,
+      "w": 820,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Comparar, casi imposible",
+      "x": 1380,
+      "y": 800,
+      "tam": 58,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7759,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 7759,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "dormitienda.com, 24-11-2026",
+   "pasos": [
+    4,
+    86,
+    173,
+    203
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_colchon",
+      "x": 500,
+      "y": 1040,
+      "w": 860,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y el número *tachado*",
+      "x": 1380,
+      "y": 140,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "1.349 €",
+      "x": 1380,
+      "y": 330,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x": 1120,
+      "y": 330,
+      "w": 520,
+      "color": "rojo",
+      "h": 14,
+      "k": "barra",
+      "p": 2
+     },
+     {
+      "cifra": "405 €",
+      "x": 1380,
+      "y": 590,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "−70 %",
+      "x": 1380,
+      "y": 850,
+      "tam": 96,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7996,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 7996,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "beds.es, 24-11-2026 · Ley 7/1996, art. 20",
+   "pasos": [
+    4,
+    63
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "cifra": "hasta −60 %",
+      "pie": "en Bed's",
+      "x": 520,
+      "y": 300,
+      "ancla": "c",
+      "tam": 130,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "src": "g_mazo",
+      "x": 480,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La ley: el precio de antes es *el más bajo de los 30 días anteriores*",
+      "x": 980,
+      "y": 300,
+      "w": 820,
+      "tam": 68,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 8182,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 8182,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "OCU, 19-9-2024",
+   "pasos": [
+    4,
+    138,
+    241
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_portatil",
+      "x": 460,
+      "y": 1060,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La OCU siguió *12 colchones* un mes",
+      "x": 1330,
+      "y": 150,
+      "ancla": "c",
+      "tam": 62,
+      "max": 1050,
+      "k": "tit"
+     },
+     {
+      "t": "La mayoría de esos descuentos *no suelen ser reales*",
+      "x": 960,
+      "y": 280,
+      "w": 860,
+      "tam": 68,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Una oferta «de 48 horas» duró una semana",
+      "x": 1370,
+      "y": 800,
+      "ancla": "c",
+      "tam": 40,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 8499,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.0,
+     "rate": 0.878,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 8499,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CMA, 28-5-2026 · Gowling WLG, 2026",
+   "pasos": [
+    4,
+    100,
+    185,
+    248
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Reino Unido: *Emma* lo admitió",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_caja",
+      "x": 360,
+      "y": 1060,
+      "w": 300,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Cuentas atrás *engañosas*",
+      "x": 720,
+      "y": 300,
+      "tam": 56,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Algunos precios tachados *que no debía*",
+      "x": 720,
+      "y": 420,
+      "tam": 56,
+      "k": "linea",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "cifra": "1 de cada 50.000",
+      "pie": "ventas de un producto, al precio tachado",
+      "x": 1230,
+      "y": 720,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "maxPie": 1000,
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 8808,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.901,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 8808,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CMA, 30-7-2026",
+   "pasos": [
+    4,
+    84
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mazo",
+      "x": 480,
+      "y": 1060,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Con *un matiz*",
+      "x": 1370,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "El juez no aceptó *la regla fija* del regulador",
+      "x": 1000,
+      "y": 310,
+      "w": 820,
+      "tam": 58,
+      "k": "par"
+     },
+     {
+      "t": "Y no halló más faltas que *las admitidas*",
+      "x": 1000,
+      "y": 560,
+      "w": 820,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 8964,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 8964,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "OCU, 13-4-2026",
+   "pasos": [
+    4,
+    93,
+    175
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_colchon",
+      "x": 520,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ni siquiera *la firmeza*",
+      "x": 1400,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "No hay escala obligatoria",
+      "x": 1400,
+      "y": 300,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "cifra": "4 de cada 10",
+      "pie": "más blandos de lo que decían",
+      "x": 1400,
+      "y": 560,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "1.357 colchones medidos por la OCU",
+      "x": 1400,
+      "y": 850,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 9231,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 9231,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "OCU, 10-1-2025",
+   "pasos": [
+    4,
+    60
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_colchon",
+      "x": 520,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "51 colchones analizados",
+      "x": 1400,
+      "y": 220,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "cifra": "≤ 200 €",
+      "pie": "basta para una cama de 90",
+      "x": 1400,
+      "y": 520,
+      "ancla": "c",
+      "tam": 220,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 9397,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 9397,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    68,
+    122,
+    151
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 520,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "De qué vive",
+      "x": 1400,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Compras *cada 10 o 14 años*",
+      "x": 1010,
+      "y": 360,
+      "tam": 54,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "No sabes *lo que cuesta*",
+      "x": 1010,
+      "y": 490,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Ni con qué *compararlo*",
+      "x": 1010,
+      "y": 620,
+      "tam": 54,
+      "k": "linea",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 9594,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_capitulo",
+   "f0": 9594,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "6",
+    "titulo": "Cuando *no entra nadie*",
+    "sub": "La cadena del bulo",
+    "el": "g_persiana",
+    "ew": 420,
+    "ex": 1660,
+    "ey": 1070,
+    "nx": 1290
+   },
+   "f1": 9701,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 9701,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Mattress Firm, informes 10-K (SEC)",
+   "pasos": [
+    4,
+    35,
+    111,
+    169
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Mattress Firm",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "729",
+      "x": 420,
+      "y": 900,
+      "alto": 120,
+      "pie": "2011",
+      "color": "blanco",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "2.300",
+      "x": 900,
+      "y": 900,
+      "alto": 378,
+      "pie": "2015",
+      "color": "ambar",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "≈ 3.500",
+      "x": 1400,
+      "y": 900,
+      "alto": 560,
+      "pie": "con el rival comprado",
+      "color": "rojo",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 9932,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 9932,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "prensa de EE. UU. e informe anual de Starbucks",
+   "pasos": [
+    4,
+    89
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "En *Estados Unidos*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "+9.000",
+      "x": 620,
+      "y": 900,
+      "alto": 396,
+      "pie": "Tiendas de colchones",
+      "color": "rojo",
+      "w": 340,
+      "tam": 100,
+      "k": "col"
+     },
+     {
+      "t": "12.700",
+      "x": 1280,
+      "y": 900,
+      "alto": 560,
+      "pie": "Cafeterías Starbucks",
+      "color": "verde",
+      "w": 340,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 10093,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 10093,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    95
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Cinco* en la misma calle",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 230,
+      "y": 900,
+      "w": 330,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_tienda",
+      "x": 595,
+      "y": 640,
+      "w": 330,
+      "de": "aba",
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 900,
+      "w": 330,
+      "de": "aba",
+      "k": "im",
+      "dt": 12
+     },
+     {
+      "src": "g_tienda",
+      "x": 1325,
+      "y": 640,
+      "w": 330,
+      "de": "aba",
+      "k": "im",
+      "dt": 18
+     },
+     {
+      "src": "g_tienda",
+      "x": 1690,
+      "y": 900,
+      "w": 330,
+      "de": "aba",
+      "k": "im",
+      "dt": 24
+     },
+     {
+      "t": "¿Cómo van a vivir todas?",
+      "x": 960,
+      "y": 330,
+      "tam": 72,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 10258,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 10258,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "CNBC, 5-10-2018",
+   "pasos": [
+    4,
+    44,
+    133,
+    242
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2018",
+      "x": 190,
+      "y": 160,
+      "k": "hoja",
+      "p": 1
+     },
+     {
+      "t": "No podían",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "src": "g_persiana",
+      "x": 1500,
+      "y": 1090,
+      "w": 640,
+      "de": "arr",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Quiebra",
+      "x": 640,
+      "y": 390,
+      "tam": 120,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Demasiadas tiendas, *demasiado juntas*",
+      "x": 180,
+      "y": 580,
+      "w": 900,
+      "tam": 62,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "t": "Cerraría hasta 700",
+      "x": 460,
+      "y": 860,
+      "ancla": "c",
+      "tam": 54,
+      "color": "rojo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10551,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 10551,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Mattress Firm y Sleep Number, 10-K 2015",
+   "pasos": [
+    4,
+    29,
+    55,
+    197
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No era dinero negro: *una mala cuenta*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajo",
+      "x": 420,
+      "y": 1030,
+      "w": 540,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "6 %",
+      "pie": "de margen, igual que su competidor",
+      "x": 1300,
+      "y": 350,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Y vendía menos por tienda",
+      "x": 1300,
+      "y": 660,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 30
+     },
+     {
+      "t": "Lavando billetes, sería al revés",
+      "x": 1300,
+      "y": 850,
+      "tam": 54,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10822,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.23,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 10822,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Mattress Firm, 10-K 2015 (dólares pasados a euros)",
+   "pasos": [
+    4,
+    72
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 440,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "2.700 €",
+      "pie": "vendía al día cada tienda",
+      "x": 1340,
+      "y": 270,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "cifra": "25 de cada 100",
+      "pie": "se iban en ventas y publicidad",
+      "x": 1340,
+      "y": 690,
+      "ancla": "c",
+      "tam": 130,
+      "color": "rojo",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 10995,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 10995,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    61,
+    112
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_rollo",
+      "x": 420,
+      "y": 1070,
+      "w": 360,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_caja",
+      "x": 800,
+      "y": 1070,
+      "w": 330,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Los colchones *por internet*",
+      "x": 1420,
+      "y": 200,
+      "ancla": "c",
+      "tam": 62,
+      "max": 860,
+      "k": "tit"
+     },
+     {
+      "t": "100 noches de prueba",
+      "x": 1420,
+      "y": 420,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "Iban a matar a las tiendas",
+      "x": 1420,
+      "y": 700,
+      "tam": 58,
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 11150,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 11150,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Casper, folleto de salida a bolsa (dólares pasados a euros)",
+   "pasos": [
+    4,
+    31,
+    97,
+    180
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_caja",
+      "x": 400,
+      "y": 1060,
+      "w": 340,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Casper, la más famosa",
+      "x": 1300,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "−78 M€",
+      "pie": "en un solo año",
+      "x": 1300,
+      "y": 340,
+      "ancla": "c",
+      "tam": 190,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+270 €",
+      "pie": "por conseguir cada cliente",
+      "x": 1300,
+      "y": 680,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "El devuelto casi no se puede revender",
+      "x": 1300,
+      "y": 930,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11405,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 11405,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Casper (SEC) · Emma España",
+   "pasos": [
+    4,
+    56,
+    143
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 480,
+      "y": 1060,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "60",
+      "pie": "tiendas acabó abriendo Casper",
+      "x": 1390,
+      "y": 260,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato"
+     },
+     {
+      "t": "Y *Emma* busca en España",
+      "x": 1390,
+      "y": 630,
+      "ancla": "c",
+      "tam": 60,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "20–30",
+      "pie": "locales",
+      "x": 1390,
+      "y": 810,
+      "ancla": "c",
+      "tam": 130,
+      "color": "cian",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 11597,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 11597,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Pikolin, Expansión, 5-2-2025",
+   "pasos": [
+    4,
+    65,
+    101,
+    186
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_movil",
+      "x": 1600,
+      "y": 1090,
+      "w": 440,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "src": "g_cama",
+      "x": 420,
+      "y": 1060,
+      "w": 660,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Mira en la pantalla, *se tumba antes de pagar*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "cifra": "9 de cada 10",
+      "pie": "se informan por internet",
+      "x": 860,
+      "y": 330,
+      "ancla": "c",
+      "tam": 130,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "15 %",
+      "pie": "de las ventas, por internet",
+      "x": 1080,
+      "y": 680,
+      "ancla": "c",
+      "tam": 170,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 11859,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_anim",
+   "f0": 11859,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Autónomos y Emprendedores, 8-1-2026",
+   "pasos": [
+    4,
+    42,
+    164
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_furgo",
+      "x": 480,
+      "y": 1040,
+      "w": 820,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "A algunos les va *muy bien*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "El fundador de Dormitorum empezó *vendiendo enciclopedias*",
+      "x": 980,
+      "y": 260,
+      "w": 840,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "+52 M€",
+      "pie": "facturaba el año pasado, según él",
+      "x": 1390,
+      "y": 720,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 12128,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e65_anim",
+   "f0": 12128,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "cuentas de Pikolin, sociedad española",
+   "pasos": [
+    4,
+    136,
+    180,
+    217
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Pero el negocio *se mueve*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "+70 %",
+      "x": 560,
+      "y": 900,
+      "alto": 540,
+      "pie": "Tiendas y muebles, antes",
+      "color": "blanco",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "40 %",
+      "x": 1120,
+      "y": 900,
+      "alto": 309,
+      "pie": "Tres años después",
+      "color": "rojo",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Menos motivos para abrir otra",
+      "x": 1500,
+      "y": 300,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Ventas de la sociedad española de Pikolin",
+      "x": 840,
+      "y": 1010,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti"
+     }
+    ]
+   },
+   "f1": 12397,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e66_anim",
+   "f0": 12397,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La próxima vez, *mira bien*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 12466,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e67_anim",
+   "f0": 12466,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    61,
+    102
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tendero",
+      "x": 420,
+      "y": 1100,
+      "w": 285,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "*Un sueldo*, entre quince camas",
+      "x": 820,
+      "y": 330,
+      "tam": 62,
+      "k": "linea"
+     },
+     {
+      "t": "El alquiler: *seis ventas*",
+      "x": 820,
+      "y": 490,
+      "tam": 62,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "El de esta mañana *ni lo tiene*",
+      "x": 820,
+      "y": 650,
+      "tam": 62,
+      "k": "linea",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 12636,
+   "fondoClip": [
+    {
+     "src": "f_camas.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e68_anim",
+   "f0": 12636,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    23,
+    54
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 960,
+      "y": 1075,
+      "w": 920,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No está vacía",
+      "x": 960,
+      "y": 90,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Está *esperando*",
+      "x": 960,
+      "y": 220,
+      "ancla": "c",
+      "tam": 124,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Y le basta con uno",
+      "x": 960,
+      "y": 440,
+      "tam": 60,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 12781,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_paseo.jpg": "vox/media/colchones/f_paseo.jpg",
+  "f_camas.jpg": "vox/media/colchones/f_camas.jpg",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "packaging_conveyor_rollers_cardboard_113.mp4": "parallax2/proyecto/stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+  "f_almacen.jpg": "vox/media/colchones/f_almacen.jpg",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "euro_50_banknotes_fan_348.mp4": "parallax2/proyecto/stock_mercadona/euro_50_banknotes_fan_348.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/colchones/g_balanza.webp",
+  "g_bolsa.webp": "vox/media/colchones/g_bolsa.webp",
+  "g_caja.webp": "vox/media/colchones/g_caja.webp",
+  "g_cama.webp": "vox/media/colchones/g_cama.webp",
+  "g_camion.webp": "vox/media/colchones/g_camion.webp",
+  "g_clientes.webp": "vox/media/colchones/g_clientes.webp",
+  "g_colchon.webp": "vox/media/colchones/g_colchon.webp",
+  "g_compradora.webp": "vox/media/colchones/g_compradora.webp",
+  "g_empleados.webp": "vox/media/colchones/g_empleados.webp",
+  "g_escritura.webp": "vox/media/colchones/g_escritura.webp",
+  "g_fajo.webp": "vox/media/colchones/g_fajo.webp",
+  "g_fajos.webp": "vox/media/colchones/g_fajos.webp",
+  "g_furgo.webp": "vox/media/colchones/g_furgo.webp",
+  "g_globo.webp": "vox/media/colchones/g_globo.webp",
+  "g_inversor.webp": "vox/media/colchones/g_inversor.webp",
+  "g_mazo.webp": "vox/media/colchones/g_mazo.webp",
+  "g_moneda.webp": "vox/media/colchones/g_moneda.webp",
+  "g_monedas.webp": "vox/media/colchones/g_monedas.webp",
+  "g_movil.webp": "vox/media/colchones/g_movil.webp",
+  "g_nave.webp": "vox/media/colchones/g_nave.webp",
+  "g_pale.webp": "vox/media/colchones/g_pale.webp",
+  "g_paquete.webp": "vox/media/colchones/g_paquete.webp",
+  "g_periodico.webp": "vox/media/colchones/g_periodico.webp",
+  "g_persiana.webp": "vox/media/colchones/g_persiana.webp",
+  "g_portatil.webp": "vox/media/colchones/g_portatil.webp",
+  "g_rollo.webp": "vox/media/colchones/g_rollo.webp",
+  "g_tendero.webp": "vox/media/colchones/g_tendero.webp",
+  "g_tienda.webp": "vox/media/colchones/g_tienda.webp"
+ },
+ "tema": "colchones",
+ "piel": "anim"
+}

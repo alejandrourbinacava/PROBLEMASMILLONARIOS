@@ -1,0 +1,4495 @@
+{
+ "fps": 25,
+ "total": 12762,
+ "marca": {
+  "nombre": "EL CORTE INGLES",
+  "color": "#14683E",
+  "claro": "#EAF3E4",
+  "oscuro": "#0C2B1C",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "ZDF, 2-10-2026",
+   "pasos": [
+    0,
+    49,
+    180,
+    227
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2 oct.",
+      "x": 190,
+      "y": 160,
+      "tam": 34,
+      "k": "hoja"
+     },
+     {
+      "t": "Alemania, *2026*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_galeria",
+      "x": 500,
+      "y": 1040,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Insolvente",
+      "x": 1500,
+      "y": 330,
+      "tam": 90,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Cuarta vez en seis años",
+      "x": 1500,
+      "y": 480,
+      "ancla": "c",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "83 tiendas",
+      "pie": "12.000 empleados",
+      "x": 1530,
+      "y": 640,
+      "ancla": "c",
+      "tam": 110,
+      "color": "blanco",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 292,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 292,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "CoStar, 2016-2021",
+   "pasos": [
+    4,
+    84
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Grandes almacenes *en Reino Unido*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "467",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "Antes",
+      "color": "blanco",
+      "w": 320,
+      "tam": 110,
+      "k": "col"
+     },
+     {
+      "t": "79",
+      "x": 1200,
+      "y": 900,
+      "alto": 95,
+      "pie": "Cinco años después",
+      "color": "rojo",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 434,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 434,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "prensa de EE. UU., 2025-2026",
+   "pasos": [
+    4,
+    92
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_sears",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "*Sears*, Estados Unidos",
+      "x": 1400,
+      "y": 170,
+      "ancla": "c",
+      "tam": 72,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "cifra": "+2.700",
+      "pie": "tiendas llegó a tener",
+      "x": 1450,
+      "y": 390,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "5",
+      "pie": "el invierno pasado",
+      "x": 1450,
+      "y": 730,
+      "ancla": "c",
+      "tam": 220,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 579,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 579,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    72
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_edificio",
+      "x": 960,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "El *gran almacén* se muere",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "En medio mundo",
+      "x": 960,
+      "y": 300,
+      "tam": 80,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 695,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 695,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "El Corte Inglés, ejercicio 2025 · Fitch y S&P, junio de 2026",
+   "pasos": [
+    4,
+    21,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "En España hay *uno*…",
+      "x": 1430,
+      "y": 170,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "628 M€",
+      "pie": "ganó en un año",
+      "x": 1480,
+      "y": 400,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Y le han subido la nota",
+      "x": 1480,
+      "y": 720,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 899,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 899,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    72,
+    114,
+    145
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "«No puede quebrar»",
+      "x": 1400,
+      "y": 200,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Poder, puede",
+      "x": 1400,
+      "y": 420,
+      "tam": 90,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Y estuvo *más cerca de un disgusto* de lo que parece",
+      "x": 1010,
+      "y": 600,
+      "w": 820,
+      "tam": 60,
+      "k": "par",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 1123,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 1123,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    54,
+    128
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 960,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Por qué es *tan difícil*?",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Es el edificio",
+      "x": 960,
+      "y": 310,
+      "tam": 90,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 1276,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_capitulo",
+   "f0": 1276,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    12
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "Dos parientes, *una calle*",
+    "sub": "Preciados, 1935-1995",
+    "el": "g_sastreria",
+    "ew": 620,
+    "ex": 1570,
+    "ey": 1060,
+    "nx": 1280
+   },
+   "f1": 1310,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1310,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "El Independiente",
+   "pasos": [
+    4,
+    127,
+    148,
+    179
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_globo",
+      "x": 1600,
+      "y": 1085,
+      "w": 440,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "*El Encanto*, La Habana",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "*César Rodríguez*",
+      "x": 140,
+      "y": 380,
+      "tam": 64,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Su primo, *Pepín Fernández*",
+      "x": 140,
+      "y": 530,
+      "tam": 64,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Su sobrino, *Ramón Areces*",
+      "x": 140,
+      "y": 680,
+      "tam": 64,
+      "k": "linea",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1530,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1530,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "El Independiente · fachada recreada",
+   "pasos": [
+    4,
+    76,
+    146,
+    187
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1935",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Entre Preciados y Carmen",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "src": "g_sastreria",
+      "x": 640,
+      "y": 1060,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Una sastrería",
+      "x": 1480,
+      "y": 420,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "El dinero, del tío César",
+      "x": 1480,
+      "y": 560,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Ya tenía nombre",
+      "x": 1480,
+      "y": 740,
+      "tam": 66,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 1794,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1794,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Ara · fachadas recreadas",
+   "pasos": [
+    4,
+    73
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1943",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_sastreria",
+      "x": 480,
+      "y": 1050,
+      "w": 740,
+      "de": "aba",
+      "luz": 0.8,
+      "k": "im"
+     },
+     {
+      "src": "g_galpre",
+      "x": 1440,
+      "y": 1050,
+      "w": 740,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "En la misma calle: *Galerías Preciados*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 76,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 1909,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1909,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "FundingUniverse (mercancía movida)",
+   "pasos": [
+    4,
+    40,
+    90
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y ganaba *el otro*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "×1",
+      "x": 560,
+      "y": 900,
+      "alto": 30,
+      "pie": "El Corte Inglés, 1960",
+      "color": "verde",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "×20",
+      "x": 1240,
+      "y": 900,
+      "alto": 560,
+      "pie": "Galerías Preciados, 1960",
+      "color": "rojo",
+      "w": 320,
+      "tam": 120,
+      "k": "col",
+      "p": 2,
+      "dt": 12
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 2104,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 2104,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Ara · El Independiente",
+   "pasos": [
+    4,
+    46,
+    125
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_galerias",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Creció *a base de deuda*",
+      "x": 1380,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "1979 · un banco",
+      "x": 1430,
+      "y": 320,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Rumasa",
+      "x": 1430,
+      "y": 430,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "El Estado",
+      "x": 1430,
+      "y": 540,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 12
+     },
+     {
+      "t": "Un grupo venezolano",
+      "x": 1430,
+      "y": 650,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "t": "Uno británico",
+      "x": 1430,
+      "y": 760,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 36
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2340,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2340,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "El Independiente, diciembre de 1994",
+   "pasos": [
+    4,
+    77
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1994",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Suspende pagos",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_galerias",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "cifra": "380 M€",
+      "pie": "debía (63.000 millones de pesetas)",
+      "x": 1480,
+      "y": 480,
+      "ancla": "c",
+      "tam": 170,
+      "color": "rojo",
+      "maxPie": 700,
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2524,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2524,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "El Independiente, 1995",
+   "pasos": [
+    4,
+    61,
+    85
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1995",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_galerias",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im",
+      "sale": 2
+     },
+     {
+      "src": "g_persiana",
+      "x": 600,
+      "y": 1090,
+      "w": 660,
+      "de": "arr",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "cifra": "180 M€",
+      "pie": "y se la queda El Corte Inglés",
+      "x": 1430,
+      "y": 350,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "maxPie": 760,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "3 de julio, a las nueve de la noche",
+      "x": 1400,
+      "y": 700,
+      "ancla": "c",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2753,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 2753,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "El Independiente",
+   "pasos": [
+    4,
+    57,
+    182,
+    208
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_galerias",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un detalle *para guardar*",
+      "x": 1400,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "≈ 600 M€",
+      "pie": "valían sus edificios, según un medio",
+      "x": 1400,
+      "y": 370,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Más de lo que debía",
+      "x": 1400,
+      "y": 660,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Y se hundió igual",
+      "x": 1400,
+      "y": 830,
+      "tam": 76,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2991,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2991,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    43
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_edificio",
+      "x": 960,
+      "y": 1060,
+      "w": 1200,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Tener edificios *no basta*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Depende de lo que hagas con ellos",
+      "x": 960,
+      "y": 270,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 3079,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_capitulo",
+   "f0": 3079,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "Los que *vendieron la casa*",
+    "sub": "Debenams, Karstadt, Sears",
+    "el": "g_escritura",
+    "ew": 640,
+    "ex": 1570,
+    "ey": 1040,
+    "nx": 1280
+   },
+   "f1": 3119,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 3119,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "prensa británica, 2005 (libras pasadas a euros)",
+   "pasos": [
+    4,
+    22,
+    153,
+    216
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2005",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Reino Unido",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_debenams",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "23 edificios",
+      "pie": "vendidos",
+      "x": 1470,
+      "y": 330,
+      "ancla": "c",
+      "tam": 130,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "720 M€",
+      "x": 1470,
+      "y": 600,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Y a pagar alquiler",
+      "x": 1470,
+      "y": 830,
+      "tam": 62,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 3406,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 3406,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "prensa alemana, 2009",
+   "pasos": [
+    4,
+    22,
+    70
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2006",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Alemania",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_karstadt",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "grisEn": 2,
+      "k": "im"
+     },
+     {
+      "t": "Vende los suyos",
+      "x": 1470,
+      "y": 380,
+      "tam": 70,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Tres años después *deja de pagar* el alquiler, y su matriz cae",
+      "x": 1170,
+      "y": 520,
+      "w": 690,
+      "tam": 56,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 3589,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3589,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Sears Holdings y Seritage (SEC)",
+   "pasos": [
+    4,
+    24,
+    137
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2015",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Estados Unidos",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_sears",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "grisEn": 2,
+      "k": "im"
+     },
+     {
+      "cifra": "235",
+      "pie": "tiendas, a otra empresa, y a pagarle renta",
+      "x": 1470,
+      "y": 380,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "maxPie": 720,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "2018: concurso",
+      "x": 1470,
+      "y": 800,
+      "tam": 76,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 3788,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3788,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    42,
+    113,
+    148
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La jugada es *siempre la misma*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_edificio",
+      "x": 360,
+      "y": 900,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "x0": 680,
+      "y0": 700,
+      "x1": 860,
+      "y1": 700,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "src": "g_fajos",
+      "x": 1080,
+      "y": 900,
+      "w": 380,
+      "de": "pop",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "x0": 1320,
+      "y0": 700,
+      "x1": 1480,
+      "y1": 700,
+      "k": "flecha",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "∞",
+      "x": 1650,
+      "y": 700,
+      "s": 1.8,
+      "tam": 70,
+      "k": "hoja",
+      "p": 1,
+      "dt": 30
+     },
+     {
+      "t": "Vendes la casa",
+      "x": 360,
+      "y": 980,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "Cobras hoy",
+      "x": 1080,
+      "y": 980,
+      "ancla": "c",
+      "tam": 44,
+      "color": "verde",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Alquiler para siempre",
+      "x": 1620,
+      "y": 980,
+      "ancla": "c",
+      "tam": 42,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1,
+      "dt": 30
+     },
+     {
+      "t": "Los años malos se paga igual",
+      "x": 960,
+      "y": 290,
+      "tam": 56,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 3989,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 3989,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "prensa británica, 2015-2016",
+   "pasos": [
+    4,
+    92,
+    112
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_bhs",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "grisEn": 2,
+      "k": "im"
+     },
+     {
+      "t": "*British Home Stores*",
+      "x": 1430,
+      "y": 160,
+      "ancla": "c",
+      "tam": 62,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "cifra": "< 1,50 €",
+      "pie": "una libra: ese fue el precio",
+      "x": 1470,
+      "y": 400,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 740,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "11.000",
+      "pie": "personas, a la calle",
+      "x": 1470,
+      "y": 790,
+      "ancla": "c",
+      "tam": 130,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 4238,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 4238,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "periodista británico, 2020 (frase resumida)",
+   "pasos": [
+    4,
+    120
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_debenams",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "gris": 1,
+      "k": "im"
+     },
+     {
+      "t": "El epitafio",
+      "x": 1430,
+      "y": 220,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "La prioridad era *pagar el alquiler*",
+      "x": 1130,
+      "y": 380,
+      "w": 730,
+      "tam": 80,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 4411,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 4411,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Modaes · FashionUnited",
+   "pasos": [
+    4,
+    45,
+    146
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No vendió la casa",
+      "x": 1430,
+      "y": 220,
+      "tam": 76,
+      "color": "#2BE38A",
+      "k": "sello"
+     },
+     {
+      "t": "No del todo: algunos, sí",
+      "x": 1460,
+      "y": 420,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Y en dos quedó de inquilino",
+      "x": 1460,
+      "y": 530,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "Pero conservó *casi todas sus tiendas*",
+      "x": 1180,
+      "y": 660,
+      "w": 680,
+      "tam": 60,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 4609,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_capitulo",
+   "f0": 4609,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "El día que le pidieron *venderla*",
+    "sub": "2007-2014",
+    "el": "g_corte",
+    "ew": 720,
+    "ex": 1510,
+    "ey": 1040,
+    "nx": 1290
+   },
+   "f1": 4673,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 4673,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "El Corte Inglés, ejercicio 2007 · El Independiente",
+   "pasos": [
+    4,
+    44,
+    143,
+    220
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2007",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Su mejor año",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_corte",
+      "x": 480,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "17.900 M€",
+      "pie": "vendió",
+      "x": 1340,
+      "y": 300,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 750 M€",
+      "pie": "ganó",
+      "x": 1340,
+      "y": 570,
+      "ancla": "c",
+      "tam": 120,
+      "color": "verde",
+      "k": "dato",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "cifra": "−3.300 M€",
+      "pie": "de ventas, cinco años después",
+      "x": 1340,
+      "y": 830,
+      "ancla": "c",
+      "tam": 130,
+      "color": "rojo",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 4979,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 4979,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Reuters, 21-5-2013",
+   "pasos": [
+    4,
+    22,
+    83
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La deuda, *no bajó*",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_empleados",
+      "x": 460,
+      "y": 1085,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 5.000 M€",
+      "pie": "debía en 2013",
+      "x": 1350,
+      "y": 340,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "1.000 M€",
+      "pie": "eran bonos de sus empleados",
+      "x": 1350,
+      "y": 720,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 5187,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 5187,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "presentación a la junta de 2015 (deuda bancaria)",
+   "pasos": [
+    4,
+    61
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No era cuánto. *Era cuándo*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 380,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Vence en menos de un año: 57 %",
+        "v": 57,
+        "color": "rojo"
+       },
+       {
+        "t": "El resto",
+        "v": 43,
+        "color": "humo"
+       }
+      ],
+      "h": 120,
+      "k": "reparto",
+      "p": 1
+     },
+     {
+      "src": "g_fajo",
+      "x": 960,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     }
+    ]
+   },
+   "f1": 5342,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 5342,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Idealista, 18-7-2013 (tasación de Tinsa)",
+   "pasos": [
+    4,
+    81,
+    131,
+    158
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Querían que *vendiera edificios*",
+      "x": 1380,
+      "y": 150,
+      "ancla": "c",
+      "tam": 62,
+      "max": 1000,
+      "k": "tit"
+     },
+     {
+      "t": "Los enseñó",
+      "x": 1470,
+      "y": 350,
+      "tam": 84,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Encargó una tasación",
+      "x": 1470,
+      "y": 510,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "18.000 M€",
+      "x": 1460,
+      "y": 720,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 5548,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 5548,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Alimarket, 14-11-2013",
+   "pasos": [
+    4,
+    83,
+    127,
+    193
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2013",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Noviembre",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "27",
+      "pie": "bancos",
+      "x": 1380,
+      "y": 250,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "4.900 M€",
+      "pie": "de nueva deuda",
+      "x": 1380,
+      "y": 560,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "maxPie": 700,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "8 años",
+      "pie": "de plazo",
+      "x": 1380,
+      "y": 850,
+      "ancla": "c",
+      "tam": 150,
+      "color": "verde",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 5764,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 5764,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    21
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No los vendió",
+      "x": 1430,
+      "y": 280,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Le compraron tiempo",
+      "x": 1440,
+      "y": 560,
+      "tam": 66,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 5839,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 5839,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Público · informe financiero 2018",
+   "pasos": [
+    4,
+    47,
+    102,
+    131,
+    183
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Fue soltando *otras cosas*",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajos",
+      "x": 1540,
+      "y": 1070,
+      "w": 560,
+      "de": "der",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "t": "Media *financiera*, al Santander",
+      "x": 140,
+      "y": 320,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "La *informática*",
+      "x": 140,
+      "y": 440,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "2015: un *jeque de Catar*",
+      "x": 140,
+      "y": 560,
+      "tam": 58,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "cifra": "1.000 M€",
+      "pie": "devueltos en acciones: un 10 %",
+      "x": 520,
+      "y": 790,
+      "ancla": "c",
+      "tam": 140,
+      "color": "ambar",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 6131,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.95,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 6131,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Reason Why, 31-8-2015 (división propia)",
+   "pasos": [
+    4,
+    76,
+    141
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "El techo de la deuda",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajos",
+      "x": 460,
+      "y": 1075,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "×6",
+      "pie": "lo que generaba el negocio en un año",
+      "x": 1330,
+      "y": 420,
+      "ancla": "c",
+      "tam": 320,
+      "color": "rojo",
+      "maxPie": 920,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Vive de que nada se tuerza",
+      "x": 1330,
+      "y": 850,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6332,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_capitulo",
+   "f0": 6332,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Se torció *todo*",
+    "sub": "2020 y lo que vino después",
+    "el": "g_persiana",
+    "ew": 400,
+    "ex": 1680,
+    "ey": 1070,
+    "nx": 1300
+   },
+   "f1": 6355,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 6355,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "El Independiente · ejercicio 2020",
+   "pasos": [
+    4,
+    24,
+    142
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_persiana",
+      "x": 480,
+      "y": 1090,
+      "w": 640,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "cifra": "−2.945 M€",
+      "pie": "con las tiendas cerradas",
+      "x": 1330,
+      "y": 340,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "25.900 personas en ERTE",
+      "x": 1330,
+      "y": 700,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "El primer ERE de su historia",
+      "x": 1330,
+      "y": 830,
+      "ancla": "c",
+      "tam": 50,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2,
+      "dt": 30
+     }
+    ]
+   },
+   "f1": 6612,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 6612,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Forbes, 1-6-2022",
+   "pasos": [
+    4,
+    28,
+    73
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No hubo concurso",
+      "x": 1430,
+      "y": 190,
+      "tam": 72,
+      "color": "#2BE38A",
+      "k": "sello"
+     },
+     {
+      "t": "Los bancos dieron más crédito",
+      "x": 1430,
+      "y": 350,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "1.100 M€",
+      "pie": "puso Mutua, dos años después",
+      "x": 1430,
+      "y": 560,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "maxPie": 780,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Media aseguradora y un 8 %",
+      "x": 1430,
+      "y": 850,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 30
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 6863,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 6863,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "El Independiente, 17-7-2025",
+   "pasos": [
+    4,
+    92,
+    201
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajo",
+      "x": 460,
+      "y": 1040,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El año pasado pidió prestado",
+      "x": 1330,
+      "y": 160,
+      "ancla": "c",
+      "tam": 64,
+      "k": "tit"
+     },
+     {
+      "cifra": "500 M€",
+      "pie": "hasta 2033",
+      "x": 1330,
+      "y": 370,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "×9",
+      "pie": "le ofrecieron los inversores",
+      "x": 1330,
+      "y": 740,
+      "ancla": "c",
+      "tam": 200,
+      "color": "verde",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 7091,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 7091,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "El Corte Inglés, ejercicios 2014 y 2025 (perímetros no idénticos)",
+   "pasos": [
+    4,
+    71,
+    130
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De aquel techo *a hoy*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "4.954 M€",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "Deuda en 2014 · 6 veces",
+      "color": "rojo",
+      "w": 320,
+      "tam": 90,
+      "k": "col",
+      "dt": 10
+     },
+     {
+      "t": "1.650 M€",
+      "x": 1240,
+      "y": 900,
+      "alto": 187,
+      "pie": "Deuda hoy · 1,3 veces",
+      "color": "verde",
+      "w": 320,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 7282,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 7282,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "folleto de bonos, vía TFG UCM (2026)",
+   "pasos": [
+    4,
+    72,
+    140,
+    180
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "15.700 M€",
+      "pie": "valen los edificios (fin de 2024)",
+      "x": 1400,
+      "y": 280,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Debes 105 €",
+      "x": 1300,
+      "y": 640,
+      "ancla": "c",
+      "tam": 60,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Tu casa vale 1.000 €",
+      "x": 1430,
+      "y": 790,
+      "ancla": "c",
+      "tam": 60,
+      "color": "verde",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7508,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 7508,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    82
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 960,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El edificio hace *algo más*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Un regalo al mes",
+      "x": 960,
+      "y": 290,
+      "tam": 86,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7645,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 7645,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Hugo Cavero, TFG, UCM, julio de 2026 (estimación)",
+   "pasos": [
+    4,
+    96,
+    138,
+    215
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_periodico",
+      "x": 460,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un *trabajo de fin de grado*",
+      "x": 1360,
+      "y": 150,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "t": "Universidad Complutense, 2026",
+      "x": 1360,
+      "y": 280,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "Si tuviera que *alquilar* sus propias tiendas…",
+      "x": 960,
+      "y": 370,
+      "w": 860,
+      "tam": 56,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "cifra": "700 M€",
+      "pie": "al año",
+      "x": 1380,
+      "y": 700,
+      "ancla": "c",
+      "tam": 220,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 7905,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 7905,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "TFG UCM, 2026 · El Corte Inglés, ejercicio 2024",
+   "pasos": [
+    4,
+    76,
+    130,
+    216
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Más* de lo que ganó en 2024",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "700",
+      "x": 500,
+      "y": 900,
+      "alto": 560,
+      "pie": "Alquiler que se ahorra (M€)",
+      "color": "ambar",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "dt": 6
+     },
+     {
+      "t": "682",
+      "x": 1000,
+      "y": 900,
+      "alto": 545,
+      "pie": "Beneficio antes de impuestos",
+      "color": "blanco",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "dt": 20
+     },
+     {
+      "t": "Sin el regalo, vender *apenas valdría nada*",
+      "x": 1270,
+      "y": 420,
+      "w": 580,
+      "tam": 52,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "t": "O menos que nada",
+      "x": 1550,
+      "y": 760,
+      "tam": 52,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 8150,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 8150,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "TFG UCM, 2026",
+   "pasos": [
+    4,
+    92,
+    120,
+    184,
+    265
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La segunda pieza: *el tiempo*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "12 días",
+      "pie": "tarda en cobrar",
+      "x": 480,
+      "y": 430,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "129 días",
+      "pie": "tarda en pagar a proveedores",
+      "x": 1330,
+      "y": 430,
+      "ancla": "c",
+      "tam": 170,
+      "color": "rojo",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Cuatro meses con dinero de otros",
+      "x": 960,
+      "y": 720,
+      "tam": 58,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     },
+     {
+      "t": "Privilegio del que es grande",
+      "x": 960,
+      "y": 880,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 4
+     },
+     {
+      "src": "g_monedas",
+      "x": 210,
+      "y": 1080,
+      "w": 150,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_monedas",
+      "x": 1720,
+      "y": 1080,
+      "w": 220,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 8547,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.709,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 8547,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "El Corte Inglés, ejercicio 2025",
+   "pasos": [
+    4,
+    55,
+    125,
+    290
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La tercera: *lo que no es la tienda*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_globo",
+      "x": 1640,
+      "y": 1085,
+      "w": 400,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "cifra": "3.500 M€",
+      "pie": "ingresan los viajes",
+      "x": 560,
+      "y": 340,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 130 M€",
+      "pie": "ganan financiera y seguros (compartidas)",
+      "x": 560,
+      "y": 620,
+      "ancla": "c",
+      "tam": 120,
+      "color": "cian",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "11,7 millones",
+      "pie": "de tarjetas",
+      "x": 560,
+      "y": 860,
+      "ancla": "c",
+      "tam": 110,
+      "color": "blanco",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 8907,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.0,
+     "rate": 0.778,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 8907,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "El Corte Inglés, ejercicio 2025",
+   "pasos": [
+    4,
+    68,
+    103
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Hasta sus *pasillos* trabajan",
+      "x": 1410,
+      "y": 170,
+      "ancla": "c",
+      "tam": 64,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "cifra": "95 M€",
+      "pie": "por alquilar espacio",
+      "x": 1460,
+      "y": 410,
+      "ancla": "c",
+      "tam": 200,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Y prepara otro centro de datos",
+      "x": 1450,
+      "y": 780,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.75
+   },
+   "f1": 9063,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 9063,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Alimarket · CNMC, 2023",
+   "pasos": [
+    4,
+    87,
+    145,
+    203
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2023",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "El súper *también*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_caja",
+      "x": 480,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "47",
+      "pie": "Supercor, a Carrefour",
+      "x": 1340,
+      "y": 330,
+      "ancla": "c",
+      "tam": 220,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Se quedó con los locales propios",
+      "x": 1360,
+      "y": 660,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Ahora es su casero",
+      "x": 1360,
+      "y": 830,
+      "tam": 72,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.7
+   },
+   "f1": 9298,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 9298,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "FashionUnited, 11-6-2026",
+   "pasos": [
+    4,
+    36,
+    144,
+    202
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Además, *se quedó sola*",
+      "x": 1420,
+      "y": 170,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "No hay otro gran almacén enfrente",
+      "x": 1430,
+      "y": 330,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "No cotiza en bolsa",
+      "x": 1430,
+      "y": 560,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "40 %",
+      "pie": "es de la Fundación Ramón Areces",
+      "x": 1430,
+      "y": 740,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 9616,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 9616,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Forbes, 17-6-2026 · Fitch y S&P",
+   "pasos": [
+    4,
+    108,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Por todo eso, *un notable*",
+      "x": 1420,
+      "y": 180,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "BBB",
+      "pie": "dos agencias, junio de 2026",
+      "x": 1430,
+      "y": 430,
+      "ancla": "c",
+      "tam": 260,
+      "color": "verde",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "En 2018, «bono basura» para una de ellas",
+      "x": 1430,
+      "y": 800,
+      "ancla": "c",
+      "tam": 38,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 9834,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_capitulo",
+   "f0": 9834,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "¿Puede *quebrar?*",
+    "sub": "El otro lado",
+    "el": "g_paraguas",
+    "ew": 620,
+    "ex": 1570,
+    "ey": 1060,
+    "nx": 1280
+   },
+   "f1": 9875,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 9875,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "El Corte Inglés, cifra de negocios",
+   "pasos": [
+    4,
+    30,
+    92,
+    194,
+    265
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Vende *menos que en 2007*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "17.900",
+      "x": 480,
+      "y": 900,
+      "alto": 560,
+      "pie": "2007 (M€)",
+      "color": "blanco",
+      "w": 300,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "14.988",
+      "x": 1000,
+      "y": 900,
+      "alto": 469,
+      "pie": "2025 (M€)",
+      "color": "rojo",
+      "w": 300,
+      "tam": 90,
+      "k": "col",
+      "p": 2,
+      "dt": 10
+     },
+     {
+      "t": "Sin descontar los precios",
+      "x": 1560,
+      "y": 400,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "«17.000»: otra forma de contar",
+      "x": 1550,
+      "y": 520,
+      "ancla": "c",
+      "tam": 38,
+      "color": "humo",
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 10285,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 10285,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Fitch, junio de 2026",
+   "pasos": [
+    4,
+    50
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_caja",
+      "x": 480,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Mercadona la *adelantó*",
+      "x": 1370,
+      "y": 200,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "cifra": "2010",
+      "x": 1370,
+      "y": 410,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "t": "Fitch: rentabilidad *por debajo de la media* de su sector",
+      "x": 980,
+      "y": 620,
+      "w": 840,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 10480,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 10480,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "folleto de bonos, vía TFG UCM",
+   "pasos": [
+    4,
+    49,
+    162,
+    241
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Los edificios *tienen truco*",
+      "x": 1420,
+      "y": 160,
+      "ancla": "c",
+      "tam": 68,
+      "k": "tit"
+     },
+     {
+      "cifra": "9 de cada 10 €",
+      "pie": "son sus propias tiendas",
+      "x": 1420,
+      "y": 350,
+      "ancla": "c",
+      "tam": 120,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Valen si dentro hay un inquilino",
+      "x": 1420,
+      "y": 640,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "El inquilino es ella",
+      "x": 1420,
+      "y": 820,
+      "tam": 76,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 10757,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.999,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 10757,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Tinsa, 2013 · JLL y Savills, 2024",
+   "pasos": [
+    4,
+    37,
+    93
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y valen *menos que antes*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "18.000",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "2013 (M€)",
+      "color": "blanco",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "15.700",
+      "x": 1200,
+      "y": 900,
+      "alto": 488,
+      "pie": "2024 (M€)",
+      "color": "rojo",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 10899,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 10899,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    68
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Se pagó *vendiendo trozos*",
+      "x": 1370,
+      "y": 260,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "t": "Solo se venden una vez",
+      "x": 1370,
+      "y": 560,
+      "tam": 66,
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 11046,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 11046,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Forbes, 17-6-2026 · CPP-Luxury, 21-11-2025 (valor según el dueño)",
+   "pasos": [
+    4,
+    23,
+    128,
+    198
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 400,
+      "y": 1070,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y queda *el jeque*",
+      "x": 1250,
+      "y": 150,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Le recompró la mitad en 2022",
+      "x": 1250,
+      "y": 300,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "5,5 %",
+      "pie": "todavía es suyo",
+      "x": 1250,
+      "y": 500,
+      "ancla": "c",
+      "tam": 160,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Desde 2028 puede pedir que se lo compren",
+      "x": 1250,
+      "y": 740,
+      "ancla": "c",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "775 M€",
+      "x": 1250,
+      "y": 900,
+      "ancla": "c",
+      "tam": 110,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11313,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.39,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 11313,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Público y El Debate, 2026",
+   "pasos": [
+    4,
+    138,
+    185
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "luz": 0.8,
+      "k": "im"
+     },
+     {
+      "t": "En los despachos",
+      "x": 1420,
+      "y": 180,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Guerra familiar… y pacto",
+      "x": 1420,
+      "y": 340,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "Enero: presidenta nueva",
+      "x": 1420,
+      "y": 540,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Junio: consejero delegado",
+      "x": 1420,
+      "y": 660,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 11547,
+   "fondoClip": [
+    {
+     "src": "elderly_people_meeting_table_documents_132.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 11547,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    76,
+    151
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 480,
+      "y": 1090,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Le pasó *lo peor*",
+      "x": 1360,
+      "y": 260,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Estar *cerrada*",
+      "x": 1140,
+      "y": 400,
+      "w": 660,
+      "tam": 80,
+      "serif": true,
+      "k": "par",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Y siguió en pie",
+      "x": 1360,
+      "y": 720,
+      "tam": 86,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 11736,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 11736,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Otra cosa, *más lenta*",
+      "x": 1420,
+      "y": 240,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "Encoger",
+      "x": 1440,
+      "y": 540,
+      "tam": 130,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 11819,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 11819,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "El Corte Inglés, memorias · FashionUnited",
+   "pasos": [
+    4,
+    69,
+    126
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Grandes almacenes",
+      "x": 480,
+      "y": 130,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "86",
+      "x": 300,
+      "y": 880,
+      "alto": 520,
+      "pie": "2013",
+      "color": "blanco",
+      "w": 230,
+      "tam": 100,
+      "k": "col"
+     },
+     {
+      "t": "72",
+      "x": 660,
+      "y": 880,
+      "alto": 435,
+      "pie": "2024",
+      "color": "rojo",
+      "w": 230,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 800,
+      "k": "div"
+     },
+     {
+      "t": "Empleados",
+      "x": 1440,
+      "y": 130,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "96.000",
+      "x": 1240,
+      "y": 880,
+      "alto": 520,
+      "pie": "2013",
+      "color": "blanco",
+      "w": 230,
+      "tam": 76,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "72.000",
+      "x": 1620,
+      "y": 880,
+      "alto": 390,
+      "pie": "2024, media",
+      "color": "rojo",
+      "w": 230,
+      "tam": 76,
+      "k": "col",
+      "p": 2,
+      "dt": 16
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 12053,
+   "fondoClip": [
+    {
+     "src": "f_planta.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 12053,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    33,
+    81
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_corte",
+      "x": 500,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "grisEn": 2,
+      "k": "im"
+     },
+     {
+      "t": "Nadie lo llama *quiebra*",
+      "x": 1410,
+      "y": 200,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "t": "Cerrar *una planta*",
+      "x": 1180,
+      "y": 400,
+      "tam": 56,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Luego *otra*",
+      "x": 1180,
+      "y": 520,
+      "tam": 56,
+      "k": "linea",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "Un día, *la esquina entera*",
+      "x": 1180,
+      "y": 640,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 12183,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 12183,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Merca2 · ESdiario, 1-12-2023",
+   "pasos": [
+    4,
+    49,
+    146
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Pero en *Sol*…",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 420,
+      "y": 1060,
+      "w": 520,
+      "de": "aba",
+      "gris": 0.3,
+      "k": "im"
+     },
+     {
+      "src": "g_tienda",
+      "x": 1480,
+      "y": 1060,
+      "w": 520,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Lo quiso vender y lo retiró",
+      "x": 420,
+      "y": 420,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Compró el de al lado",
+      "x": 1440,
+      "y": 360,
+      "tam": 64,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 12385,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 12385,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    78
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_alquilado",
+      "x": 420,
+      "y": 1080,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_debenams",
+      "x": 1380,
+      "y": 1050,
+      "w": 900,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im"
+     },
+     {
+      "t": "Llegaron a la tormenta…",
+      "x": 1240,
+      "y": 130,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "con el paraguas *alquilado*",
+      "x": 1240,
+      "y": 280,
+      "ancla": "c",
+      "tam": 96,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 12542,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 12542,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    43
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_paraguas",
+      "x": 460,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_corte",
+      "x": 1420,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El suyo es *viejo*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Caro de mantener",
+      "x": 640,
+      "y": 280,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Y cada año, más pequeño",
+      "x": 1290,
+      "y": 280,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1,
+      "dt": 40
+     }
+    ],
+    "luz": 1.1,
+    "blur": 8
+   },
+   "f1": 12674,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_anim",
+   "f0": 12674,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_paraguas",
+      "x": 960,
+      "y": 1075,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Pero *es suyo*",
+      "x": 960,
+      "y": 150,
+      "ancla": "c",
+      "tam": 150,
+      "k": "tit"
+     }
+    ],
+    "luz": 1.15,
+    "blur": 8
+   },
+   "f1": 12762,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_paseo.jpg": "vox/media/corte_ingles/f_paseo.jpg",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "f_calle.jpg": "vox/media/corte_ingles/f_calle.jpg",
+  "f_planta.jpg": "vox/media/corte_ingles/f_planta.jpg",
+  "container_port_reach_stacker_logistics_223.mp4": "parallax2/proyecto/stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "empty_shopping_arcade_corridor_84.mp4": "parallax2/proyecto/stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "elderly_people_meeting_table_documents_132.mp4": "parallax2/proyecto/stock_mercadona/elderly_people_meeting_table_documents_132.mp4",
+  "truck_highway_bridge_delivery_119.mp4": "parallax2/proyecto/stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_alquilado.webp": "vox/media/corte_ingles/g_alquilado.webp",
+  "g_balanza.webp": "vox/media/corte_ingles/g_balanza.webp",
+  "g_bhs.webp": "vox/media/corte_ingles/g_bhs.webp",
+  "g_bolsa.webp": "vox/media/corte_ingles/g_bolsa.webp",
+  "g_caja.webp": "vox/media/corte_ingles/g_caja.webp",
+  "g_camion.webp": "vox/media/corte_ingles/g_camion.webp",
+  "g_clientes.webp": "vox/media/corte_ingles/g_clientes.webp",
+  "g_compradora.webp": "vox/media/corte_ingles/g_compradora.webp",
+  "g_corte.webp": "vox/media/corte_ingles/g_corte.webp",
+  "g_debenams.webp": "vox/media/corte_ingles/g_debenams.webp",
+  "g_edificio.webp": "vox/media/corte_ingles/g_edificio.webp",
+  "g_empleados.webp": "vox/media/corte_ingles/g_empleados.webp",
+  "g_escritura.webp": "vox/media/corte_ingles/g_escritura.webp",
+  "g_fajo.webp": "vox/media/corte_ingles/g_fajo.webp",
+  "g_fajos.webp": "vox/media/corte_ingles/g_fajos.webp",
+  "g_furgo.webp": "vox/media/corte_ingles/g_furgo.webp",
+  "g_galeria.webp": "vox/media/corte_ingles/g_galeria.webp",
+  "g_galerias.webp": "vox/media/corte_ingles/g_galerias.webp",
+  "g_galpre.webp": "vox/media/corte_ingles/g_galpre.webp",
+  "g_globo.webp": "vox/media/corte_ingles/g_globo.webp",
+  "g_inversor.webp": "vox/media/corte_ingles/g_inversor.webp",
+  "g_karstadt.webp": "vox/media/corte_ingles/g_karstadt.webp",
+  "g_mazo.webp": "vox/media/corte_ingles/g_mazo.webp",
+  "g_moneda.webp": "vox/media/corte_ingles/g_moneda.webp",
+  "g_monedas.webp": "vox/media/corte_ingles/g_monedas.webp",
+  "g_movil.webp": "vox/media/corte_ingles/g_movil.webp",
+  "g_nave.webp": "vox/media/corte_ingles/g_nave.webp",
+  "g_pale.webp": "vox/media/corte_ingles/g_pale.webp",
+  "g_paquete.webp": "vox/media/corte_ingles/g_paquete.webp",
+  "g_paraguas.webp": "vox/media/corte_ingles/g_paraguas.webp",
+  "g_periodico.webp": "vox/media/corte_ingles/g_periodico.webp",
+  "g_persiana.webp": "vox/media/corte_ingles/g_persiana.webp",
+  "g_portatil.webp": "vox/media/corte_ingles/g_portatil.webp",
+  "g_sastreria.webp": "vox/media/corte_ingles/g_sastreria.webp",
+  "g_sears.webp": "vox/media/corte_ingles/g_sears.webp",
+  "g_tienda.webp": "vox/media/corte_ingles/g_tienda.webp"
+ },
+ "tema": "corte_ingles",
+ "piel": "anim"
+}

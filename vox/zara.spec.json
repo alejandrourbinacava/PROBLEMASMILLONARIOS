@@ -1,0 +1,4944 @@
+{
+ "fps": 25,
+ "total": 12747,
+ "marca": {
+  "nombre": "ZARA",
+  "color": "#8C6A3F",
+  "claro": "#F6E7C8",
+  "oscuro": "#33261A",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    0,
+    30,
+    44,
+    69
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 520,
+      "y": 1070,
+      "w": 620,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "t": "Te gusta",
+      "x": 1350,
+      "y": 260,
+      "ancla": "c",
+      "tam": 120,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "S",
+      "x": 1120,
+      "y": 520,
+      "ancla": "c",
+      "tam": 64,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "M",
+      "x": 1275,
+      "y": 520,
+      "ancla": "c",
+      "tam": 64,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 5,
+      "sale": 3
+     },
+     {
+      "t": "M",
+      "x": 1275,
+      "y": 520,
+      "ancla": "c",
+      "tam": 64,
+      "color": "rojo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "L",
+      "x": 1430,
+      "y": 520,
+      "ancla": "c",
+      "tam": 64,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 10
+     },
+     {
+      "t": "XL",
+      "x": 1585,
+      "y": 520,
+      "ancla": "c",
+      "tam": 64,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 15
+     },
+     {
+      "t": "Tu talla no está",
+      "x": 1350,
+      "y": 760,
+      "tam": 84,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 89,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 89,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    41
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Una semana *después*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_perchero",
+      "x": 620,
+      "y": 1080,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La camisa tampoco",
+      "x": 1430,
+      "y": 520,
+      "tam": 80,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 177,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 177,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    27
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_zara1",
+      "x": 560,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No es mala suerte",
+      "x": 1390,
+      "y": 300,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Ni un despiste de *la mayor empresa de moda de España*",
+      "x": 1020,
+      "y": 420,
+      "w": 780,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 311,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 311,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Inditex, resultados del ejercicio 2025",
+   "pasos": [
+    4,
+    68,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 450,
+      "y": 1070,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+6.000 M€",
+      "pie": "de beneficio al año",
+      "x": 1330,
+      "y": 300,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "src": "g_monton",
+      "x": 1330,
+      "y": 1075,
+      "w": 560,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Prefiere no llenarlas",
+      "x": 1330,
+      "y": 580,
+      "tam": 64,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 464,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 464,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    62,
+    126
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 400,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "*«A propósito»*, ¿qué significa?",
+      "x": 1270,
+      "y": 190,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "No que escondan tu talla",
+      "x": 820,
+      "y": 430,
+      "tam": 60,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Nadie ha demostrado eso",
+      "x": 1200,
+      "y": 640,
+      "ancla": "c",
+      "tam": 54,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 625,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 625,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Inditex, memorias y conferencias con analistas",
+   "pasos": [
+    4,
+    73,
+    132
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_perchero",
+      "x": 480,
+      "y": 1080,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo que sí está escrito",
+      "x": 1380,
+      "y": 190,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Trabajar con *muy poca ropa*",
+      "x": 980,
+      "y": 330,
+      "w": 860,
+      "tam": 80,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Que se acabe es el precio",
+      "x": 1380,
+      "y": 720,
+      "tam": 66,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 800,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 800,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    76
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿Por qué quedarse *sin lo que vendes*?",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_lenceria",
+      "x": 960,
+      "y": 1060,
+      "w": 1150,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 934,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_capitulo",
+   "f0": 934,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "El almacén *lleno*",
+    "sub": "1975 · el pedido que se canceló",
+    "el": "g_lenceria",
+    "ew": 760,
+    "ex": 1490,
+    "ey": 1060,
+    "nx": 1280
+   },
+   "f1": 972,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 972,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Harvard Business Review, noviembre de 2004",
+   "pasos": [
+    4,
+    58,
+    127
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1975",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Según la revista de Harvard",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "src": "g_lenceria",
+      "x": 600,
+      "y": 1050,
+      "w": 900,
+      "de": "aba",
+      "gris": 0.2,
+      "k": "im"
+     },
+     {
+      "t": "Pedido enorme",
+      "x": 1470,
+      "y": 400,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Cancelado",
+      "x": 1470,
+      "y": 570,
+      "tam": 92,
+      "k": "sello",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "A un fabricante de A Coruña",
+      "x": 1470,
+      "y": 730,
+      "ancla": "c",
+      "tam": 32,
+      "k": "eti",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 1141,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1141,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    55,
+    110
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lenceria",
+      "x": 1400,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "gris": 0.3,
+      "k": "im"
+     },
+     {
+      "t": "Amancio Ortega",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "t": "El fabricante",
+      "x": 114,
+      "y": 235.8,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "t": "*Todo su dinero*, en ese pedido",
+      "x": 130,
+      "y": 420,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Y *ningún otro* comprador",
+      "x": 130,
+      "y": 540,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 1290,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1290,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    75
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_zara1",
+      "x": 960,
+      "y": 1070,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Abre una tienda para *venderlo él*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Fachada recreada",
+      "x": 960,
+      "y": 230,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 1388,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1388,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    72,
+    165
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lenceria",
+      "x": 560,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La historia oficial no lo cuenta",
+      "x": 1400,
+      "y": 200,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "El mayor miedo de quien fabrica ropa:",
+      "x": 1030,
+      "y": 330,
+      "w": 800,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "que *sobre*",
+      "x": 1420,
+      "y": 720,
+      "ancla": "c",
+      "tam": 180,
+      "k": "tit",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 1584,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 1584,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "tesis de José M. García, MIT, 2014",
+   "pasos": [
+    4,
+    42,
+    112,
+    162
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La ropa es *como la fruta*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_cajon",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_camiseta",
+      "x": 1460,
+      "y": 1040,
+      "w": 560,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "x0": 890,
+      "y0": 760,
+      "x1": 1120,
+      "y1": 760,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "t": "Cada semana vale un poco menos",
+      "x": 960,
+      "y": 260,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Se vende en sus primeras semanas",
+      "x": 1440,
+      "y": 500,
+      "tam": 46,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1836,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 1836,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    77,
+    162,
+    194
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cómo apuesta *casi todo el mundo*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_monton",
+      "x": 1400,
+      "y": 1070,
+      "w": 860,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Eligen *meses antes*",
+      "x": 120,
+      "y": 320,
+      "tam": 56,
+      "k": "linea"
+     },
+     {
+      "t": "Fabrican *mucho* y cruzan los dedos",
+      "x": 120,
+      "y": 450,
+      "tam": 56,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Si aciertan, ganan mucho",
+      "x": 440,
+      "y": 680,
+      "ancla": "c",
+      "tam": 48,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Si fallan, se llenan de perchas",
+      "x": 480,
+      "y": 820,
+      "ancla": "c",
+      "tam": 48,
+      "color": "rojo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2079,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2079,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "The Irish Times / Bloomberg, 27-3-2018",
+   "pasos": [
+    4,
+    67,
+    164
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2018",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "A H&M le pasó",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_monton",
+      "x": 480,
+      "y": 1080,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+3.000 M€",
+      "pie": "en ropa almacenada, en marzo",
+      "x": 1380,
+      "y": 380,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "−62 %",
+      "pie": "de beneficio operativo ese trimestre",
+      "x": 1380,
+      "y": 760,
+      "ancla": "c",
+      "tam": 180,
+      "color": "blanco",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 2328,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_capitulo",
+   "f0": 2328,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "La apuesta *al revés*",
+    "sub": "Comprar poco y decidir sobre la marcha",
+    "el": "g_perchero",
+    "ew": 440,
+    "ex": 1640,
+    "ey": 1070,
+    "nx": 1190
+   },
+   "f1": 2371,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2371,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Inditex, memorias anuales",
+   "pasos": [
+    4,
+    49,
+    73
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_perchero",
+      "x": 480,
+      "y": 1080,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Compra *poco* al empezar",
+      "x": 1380,
+      "y": 220,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Lo dice ella misma",
+      "x": 1380,
+      "y": 370,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "El resto, *mirando qué se vende*",
+      "x": 1020,
+      "y": 500,
+      "w": 760,
+      "tam": 72,
+      "serif": true,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 2523,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 2523,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "tesis de José M. García, MIT, 2014 · Forbes España, 2025",
+   "pasos": [
+    4,
+    33,
+    95,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_monton",
+      "x": 1500,
+      "y": 1080,
+      "w": 640,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "cifra": "5 millones",
+      "pie": "de prendas a la semana",
+      "x": 760,
+      "y": 330,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 10.000",
+      "pie": "diseños nuevos al año",
+      "x": 760,
+      "y": 600,
+      "ancla": "c",
+      "tam": 120,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "+700",
+      "pie": "diseñadores en el grupo",
+      "x": 760,
+      "y": 840,
+      "ancla": "c",
+      "tam": 110,
+      "color": "cian",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2718,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.841,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 2718,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Forbes España, 2025",
+   "pasos": [
+    4,
+    4,
+    81,
+    184
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 420,
+      "y": 1075,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 200",
+      "pie": "costureras hacen la primera versión",
+      "x": 1300,
+      "y": 230,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 3 semanas",
+      "pie": "para volver a la tienda",
+      "x": 1300,
+      "y": 570,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "La misma prenda, o una parecida",
+      "x": 1300,
+      "y": 850,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2969,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.665,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 2969,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Forbes España, 2025",
+   "pasos": [
+    4,
+    73,
+    127,
+    183
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Las series son *cortas*",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "≤ 12.000",
+      "pie": "unidades de algunos modelos",
+      "x": 600,
+      "y": 370,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_globo",
+      "x": 1600,
+      "y": 1080,
+      "w": 400,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_camion",
+      "x": 560,
+      "y": 1060,
+      "w": 720,
+      "de": "izq",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "t": "Dos envíos por semana",
+      "x": 1150,
+      "y": 860,
+      "ancla": "c",
+      "tam": 44,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 3223,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3223,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "manual de J. Gallaugher, Saylor (frase resumida)",
+   "pasos": [
+    4,
+    68,
+    172,
+    202,
+    226
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_inversor",
+      "x": 330,
+      "y": 1100,
+      "w": 290,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Las tiradas limitadas *reducen al mínimo el riesgo*",
+      "x": 640,
+      "y": 150,
+      "w": 1160,
+      "tam": 70,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Su consejero delegado de entonces",
+      "x": 644,
+      "y": 400,
+      "ancla": "i",
+      "tam": 26,
+      "k": "eti",
+      "p": 1
+     },
+     {
+      "t": "Escasez",
+      "x": 1150,
+      "y": 700,
+      "ancla": "c",
+      "tam": 150,
+      "k": "tit",
+      "p": 3,
+      "sale": 4
+     },
+     {
+      "t": "*Riesgo*",
+      "x": 1150,
+      "y": 700,
+      "ancla": "c",
+      "tam": 210,
+      "k": "tit",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 3475,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3475,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 470,
+      "y": 860,
+      "w": 420,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "12.000 camisas",
+      "x": 470,
+      "y": 150,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Un mal día",
+      "x": 470,
+      "y": 970,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip"
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "src": "g_monton",
+      "x": 1440,
+      "y": 860,
+      "w": 760,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Una temporada *entera*",
+      "x": 1440,
+      "y": 150,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Un mal año",
+      "x": 1440,
+      "y": 970,
+      "ancla": "c",
+      "tam": 56,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 3613,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_capitulo",
+   "f0": 3613,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    8
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "La camisa *se esfuma*",
+    "sub": "La regla de las tallas clave",
+    "el": "g_camisa",
+    "ew": 440,
+    "ex": 1600,
+    "ey": 1060,
+    "nx": 1270
+   },
+   "f1": 3660,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 3660,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    49
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_perchero",
+      "x": 540,
+      "y": 1080,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Falta ropa porque hay *poca*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "¿Y la camisa entera?",
+      "x": 1400,
+      "y": 560,
+      "tam": 76,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 3761,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 3761,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, Operations Research, 2010",
+   "pasos": [
+    4,
+    67,
+    104
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Dos profesores, *por dentro*",
+      "x": 1330,
+      "y": 190,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Felipe Caro",
+      "x": 1000,
+      "y": 380,
+      "tam": 64,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Jérémie Gallien",
+      "x": 1000,
+      "y": 510,
+      "tam": 64,
+      "k": "linea",
+      "p": 1,
+      "dt": 10
+     },
+     {
+      "t": "Publicado en 2010",
+      "x": 1330,
+      "y": 760,
+      "ancla": "c",
+      "tam": 50,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3910,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 3910,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, 2010",
+   "pasos": [
+    4,
+    58,
+    98
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 440,
+      "y": 1070,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "S",
+      "x": 1060,
+      "y": 280,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "M",
+      "x": 1240,
+      "y": 280,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 5
+     },
+     {
+      "t": "L",
+      "x": 1420,
+      "y": 280,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 10
+     },
+     {
+      "t": "XL",
+      "x": 1600,
+      "y": 280,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 15
+     },
+     {
+      "t": "Algunas se venden *más que otras*",
+      "x": 980,
+      "y": 400,
+      "w": 840,
+      "tam": 60,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Tallas clave",
+      "x": 1330,
+      "y": 760,
+      "tam": 100,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4051,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 4051,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, 2010",
+   "pasos": [
+    4,
+    63,
+    105,
+    157
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 440,
+      "y": 1070,
+      "w": 560,
+      "de": "aba",
+      "grisEn": 2,
+      "k": "im"
+     },
+     {
+      "t": "Y la tienda seguía *una regla*",
+      "x": 1330,
+      "y": 170,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "t": "S",
+      "x": 1060,
+      "y": 380,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 12
+     },
+     {
+      "t": "M",
+      "x": 1240,
+      "y": 380,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 17,
+      "sale": 1
+     },
+     {
+      "t": "M",
+      "x": 1240,
+      "y": 380,
+      "ancla": "c",
+      "tam": 70,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "L",
+      "x": 1420,
+      "y": 380,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 22
+     },
+     {
+      "t": "XL",
+      "x": 1600,
+      "y": 380,
+      "ancla": "c",
+      "tam": 70,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 27
+     },
+     {
+      "t": "Fuera del expositor",
+      "x": 1330,
+      "y": 620,
+      "tam": 76,
+      "k": "sello",
+      "p": 2
+     },
+     {
+      "t": "Aunque quedaran las demás",
+      "x": 1330,
+      "y": 830,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4248,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 4248,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    65,
+    79,
+    113
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_perchero",
+      "x": 470,
+      "y": 1080,
+      "w": 720,
+      "de": "aba",
+      "gris": 0.5,
+      "k": "im"
+     },
+     {
+      "t": "Un perchero *sin un diente*",
+      "x": 1370,
+      "y": 180,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Ocupa sitio",
+      "x": 980,
+      "y": 400,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Decepciona a quien la coge",
+      "x": 980,
+      "y": 530,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Parece *un resto de rebajas*",
+      "x": 980,
+      "y": 660,
+      "tam": 58,
+      "k": "linea",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4433,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 4433,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    33,
+    49
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 560,
+      "y": 1070,
+      "w": 560,
+      "de": "nada",
+      "k": "im",
+      "sale": 1
+     },
+     {
+      "t": "Desaparece",
+      "x": 560,
+      "y": 560,
+      "tam": 96,
+      "k": "sello",
+      "p": 1,
+      "sale": 2
+     },
+     {
+      "src": "g_maniqui",
+      "x": 560,
+      "y": 1140,
+      "w": 380,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "No se enseña",
+      "x": 1380,
+      "y": 260,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Y entra otra cosa *que sí está completa*",
+      "x": 1040,
+      "y": 420,
+      "w": 760,
+      "tam": 66,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4557,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 4557,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    51
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No siempre ves que falta *tu talla*",
+      "x": 960,
+      "y": 200,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "A veces *no ves nada*",
+      "x": 960,
+      "y": 560,
+      "ancla": "c",
+      "tam": 150,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4638,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 4638,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, 2010 y 2012",
+   "pasos": [
+    4,
+    75
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 520,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "2007–2013",
+      "pie": "lo que documentaron",
+      "x": 1370,
+      "y": 340,
+      "ancla": "c",
+      "tam": 140,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "t": "No consta si hoy es exactamente igual",
+      "x": 1370,
+      "y": 680,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 4777,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 4777,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, 2010",
+   "pasos": [
+    4,
+    88,
+    126,
+    200,
+    259
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "El otro problema: *el reparto*",
+      "x": 960,
+      "y": 100,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 400,
+      "y": 1060,
+      "w": 480,
+      "de": "aba",
+      "gris": 0.2,
+      "k": "im"
+     },
+     {
+      "src": "g_tienda",
+      "x": 1520,
+      "y": 1060,
+      "w": 480,
+      "de": "aba",
+      "gris": 0.5,
+      "k": "im"
+     },
+     {
+      "t": "Los encargados *pedían de más*",
+      "x": 640,
+      "y": 260,
+      "tam": 52,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Su sueldo dependía *de las ventas*",
+      "x": 640,
+      "y": 360,
+      "tam": 52,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "src": "g_monton",
+      "x": 400,
+      "y": 1075,
+      "w": 440,
+      "de": "arr",
+      "k": "im",
+      "p": 4
+     },
+     {
+      "t": "Aquí sobran",
+      "x": 800,
+      "y": 960,
+      "ancla": "c",
+      "tam": 46,
+      "color": "rojo",
+      "k": "chip",
+      "p": 4
+     },
+     {
+      "t": "Aquí faltan",
+      "x": 1160,
+      "y": 960,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 4,
+      "dt": 14
+     }
+    ]
+   },
+   "f1": 5143,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 5143,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, 2010",
+   "pasos": [
+    4,
+    114,
+    162
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_portatil",
+      "x": 480,
+      "y": 1060,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un programa *lo decide*",
+      "x": 1400,
+      "y": 150,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "S",
+      "x": 255,
+      "y": 740,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 20
+     },
+     {
+      "t": "M",
+      "x": 405,
+      "y": 740,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 25
+     },
+     {
+      "t": "L",
+      "x": 555,
+      "y": 740,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 30
+     },
+     {
+      "t": "XL",
+      "x": 705,
+      "y": 740,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 35
+     },
+     {
+      "cifra": "950",
+      "pie": "tiendas a la vez",
+      "x": 1400,
+      "y": 460,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Probado con un experimento",
+      "x": 1400,
+      "y": 840,
+      "ancla": "c",
+      "tam": 48,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5347,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 5347,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Caro y Gallien, 2010 (dólares pasados a euros)",
+   "pasos": [
+    4,
+    26,
+    78,
+    101
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajo",
+      "x": 420,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+3–4 %",
+      "pie": "de ventas",
+      "x": 1330,
+      "y": 330,
+      "ancla": "c",
+      "tam": 210,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 200 M€",
+      "pie": "solo en 2007",
+      "x": 1330,
+      "y": 730,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 5500,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 5500,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 960,
+      "y": 1070,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Solo por *repartir mejor* la misma ropa",
+      "x": 960,
+      "y": 160,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 5583,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_capitulo",
+   "f0": 5583,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    8
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Les duele, *y les sale a cuenta*",
+    "sub": "Por qué no guardan unas cuantas más",
+    "el": "g_balanza",
+    "ew": 600,
+    "ex": 1570,
+    "ey": 1070,
+    "nx": 1240
+   },
+   "f1": 5613,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 5613,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "tesis de José M. García, MIT, 2014",
+   "pasos": [
+    4,
+    66,
+    108,
+    185
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 400,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Todo, para que tu talla *esté*",
+      "x": 1280,
+      "y": 150,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "Cuando falta, les duele",
+      "x": 1280,
+      "y": 310,
+      "ancla": "c",
+      "tam": 54,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "−24 %",
+      "pie": "de ventas perdidas, previendo mejor",
+      "x": 1280,
+      "y": 600,
+      "ancla": "c",
+      "tam": 220,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 5862,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 5862,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    103
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_nave",
+      "x": 960,
+      "y": 1060,
+      "w": 1300,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Por qué no guardar *unas cuantas más*?",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Por si acaso",
+      "x": 960,
+      "y": 300,
+      "tam": 74,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 5990,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 5990,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "tesis hecha dentro de la empresa",
+   "pasos": [
+    4,
+    26,
+    58,
+    183
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Dos motivos",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 1520,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "1",
+      "x": 240,
+      "y": 400,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "El *espacio*: tiendas con muy poco sitio para guardar",
+      "x": 400,
+      "y": 300,
+      "w": 700,
+      "tam": 56,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "2",
+      "x": 240,
+      "y": 780,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "Les sale *a cuenta*",
+      "x": 400,
+      "y": 730,
+      "w": 640,
+      "tam": 64,
+      "k": "par",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 6212,
+   "fondoClip": [
+    {
+     "src": "f_trastienda.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 6212,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Knowledge at Wharton, 24-4-2003 (traducida)",
+   "pasos": [
+    4,
+    106,
+    185
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "José Luis Nueno",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 92,
+      "k": "tit"
+     },
+     {
+      "t": "Profesor del IESE",
+      "x": 114,
+      "y": 221.76,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "src": "g_bolsa",
+      "x": 1600,
+      "y": 1070,
+      "w": 440,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "«Lo que el cliente no compra hoy *puede que no esté mañana*»",
+      "x": 110,
+      "y": 350,
+      "w": 1160,
+      "tam": 76,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Un gran incentivo",
+      "x": 560,
+      "y": 850,
+      "tam": 70,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 6483,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 6483,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Harvard Business Review, 2004",
+   "pasos": [
+    4,
+    92
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cuando una *falta*…",
+      "x": 480,
+      "y": 150,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_camisa",
+      "x": 480,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "gris": 1,
+      "luz": 0.6,
+      "k": "im"
+     },
+     {
+      "t": "…vende *la de al lado*",
+      "x": 1440,
+      "y": 150,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_maniqui",
+      "x": 1440,
+      "y": 1150,
+      "w": 360,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "x0": 820,
+      "y0": 620,
+      "x1": 1080,
+      "y1": 620,
+      "k": "flecha",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 6645,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 6645,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "BusinessWeek, 4-9-2006 (traducida)",
+   "pasos": [
+    4,
+    100
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_compradora",
+      "x": 420,
+      "y": 1090,
+      "w": 480,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Barcelona, 2006 · clienta de 23 años",
+      "x": 800,
+      "y": 220,
+      "ancla": "i",
+      "tam": 28,
+      "k": "eti"
+     },
+     {
+      "t": "Si te gusta y no lo compras, *olvídate de volver a por ello*",
+      "x": 800,
+      "y": 280,
+      "w": 1000,
+      "tam": 80,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 6852,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 6852,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "tesis de Shipra Gupta, Universidad de Nebraska, 2013",
+   "pasos": [
+    4,
+    133,
+    141,
+    167
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_clientes",
+      "x": 440,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo que eso hace *en la cabeza*",
+      "x": 1330,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "Prisa",
+      "x": 1030,
+      "y": 360,
+      "ancla": "c",
+      "tam": 56,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Miedo a arrepentirse",
+      "x": 1510,
+      "y": 360,
+      "ancla": "c",
+      "tam": 56,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Y gente que *esconde prendas* en la propia tienda",
+      "x": 960,
+      "y": 520,
+      "w": 840,
+      "tam": 62,
+      "k": "par",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 7118,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 7118,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    34
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La última razón",
+      "x": 1390,
+      "y": 170,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_compradora",
+      "x": 560,
+      "y": 1090,
+      "w": 500,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Si la ropa *cambia todo el tiempo*…",
+      "x": 980,
+      "y": 300,
+      "w": 820,
+      "tam": 64,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Una excusa para volver",
+      "x": 1390,
+      "y": 700,
+      "tam": 76,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1,
+      "dt": 30
+     }
+    ]
+   },
+   "f1": 7239,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 7239,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Knowledge at Wharton, 24-4-2003",
+   "pasos": [
+    4,
+    131,
+    162,
+    214,
+    287
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2003",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Visitas al año",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "17",
+      "x": 560,
+      "y": 900,
+      "alto": 480,
+      "pie": "Zara",
+      "color": "ambar",
+      "w": 300,
+      "tam": 120,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "4",
+      "x": 1080,
+      "y": 900,
+      "alto": 113,
+      "pie": "La competencia",
+      "color": "blanco",
+      "w": 300,
+      "tam": 120,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Dato viejo, sin método claro",
+      "x": 1550,
+      "y": 400,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Pero señala la idea",
+      "x": 1550,
+      "y": 520,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 7562,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 7562,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    79
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_zara1",
+      "x": 560,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Casi no necesita anuncios",
+      "x": 1440,
+      "y": 300,
+      "ancla": "c",
+      "tam": 62,
+      "max": 760,
+      "k": "tit"
+     },
+     {
+      "t": "Su escaparate *es el anuncio*",
+      "x": 1060,
+      "y": 430,
+      "w": 760,
+      "tam": 84,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 7685,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 7685,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Ghemawat y Nueno, Harvard, 2003, vía Cachon y Swinney",
+   "pasos": [
+    4,
+    53,
+    177
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cuánto se vendía *rebajado*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Zara",
+      "x": 160,
+      "y": 330,
+      "ancla": "i",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "x": 620,
+      "y": 288,
+      "w": 455,
+      "t": "15–20 %",
+      "color": "ambar",
+      "total": 1140,
+      "h": 90,
+      "k": "barra",
+      "p": 1
+     },
+     {
+      "t": "Rivales europeos",
+      "x": 160,
+      "y": 510,
+      "ancla": "i",
+      "tam": 44,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "x": 620,
+      "y": 468,
+      "w": 910,
+      "t": "30–40 %",
+      "color": "rojo",
+      "total": 1140,
+      "h": 90,
+      "k": "barra",
+      "p": 2
+     },
+     {
+      "src": "g_monton",
+      "x": 960,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 7928,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 7928,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Inditex, información corporativa",
+   "pasos": [
+    4,
+    117,
+    169,
+    226
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_perchero",
+      "x": 440,
+      "y": 1080,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "< 1 %",
+      "pie": "se queda sin vender, dice Inditex",
+      "x": 1380,
+      "y": 270,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "maxPie": 800,
+      "k": "dato"
+     },
+     {
+      "t": "No está auditado",
+      "x": 1380,
+      "y": 540,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "No cuenta las rebajas",
+      "x": 1380,
+      "y": 660,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Zara también rebaja",
+      "x": 1380,
+      "y": 850,
+      "tam": 64,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 8231,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 8231,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Inditex, margen bruto del ejercicio 2025",
+   "pasos": [
+    4,
+    50,
+    140
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *100 €* en caja",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 330,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Le quedan 58 €",
+        "v": 58,
+        "color": "verde"
+       },
+       {
+        "t": "La ropa, 42 €",
+        "v": 42,
+        "color": "humo"
+       }
+      ],
+      "k": "reparto",
+      "p": 1
+     },
+     {
+      "src": "g_monedas",
+      "x": 960,
+      "y": 1080,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 8399,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 8399,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Inditex, ejercicio 2025",
+   "pasos": [
+    4,
+    52
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_bolsa",
+      "x": 420,
+      "y": 1060,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 40.000 M€",
+      "pie": "vende al año",
+      "x": 1270,
+      "y": 330,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "cifra": "≈ 3.000 M€",
+      "pie": "tiene en ropa al cierre",
+      "x": 1270,
+      "y": 730,
+      "ancla": "c",
+      "tam": 140,
+      "color": "cian",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 8522,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 8522,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Inditex y H&M, informes trimestrales de 2025",
+   "pasos": [
+    4,
+    67,
+    125
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Ropa guardada, *sobre lo que vende en un año*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "t": "11 %",
+      "x": 640,
+      "y": 900,
+      "alto": 400,
+      "pie": "Inditex · octubre de 2025",
+      "color": "verde",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "15,5 %",
+      "x": 1280,
+      "y": 900,
+      "alto": 564,
+      "pie": "H&M · noviembre de 2025",
+      "color": "rojo",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8717,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 8717,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cálculo propio sobre las ventas de Inditex",
+   "pasos": [
+    4,
+    34,
+    160
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 440,
+      "y": 1070,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Cuatro puntos parecen poco",
+      "x": 1370,
+      "y": 150,
+      "ancla": "c",
+      "tam": 64,
+      "k": "tit"
+     },
+     {
+      "cifra": "+1.500 M€",
+      "pie": "en ropa esperando comprador",
+      "x": 1370,
+      "y": 410,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Tu talla es la otra cara",
+      "x": 1370,
+      "y": 800,
+      "tam": 62,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8920,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_capitulo",
+   "f0": 8920,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "Cada vez *menos*",
+    "sub": "Menos tiendas, menos ropa, más ventas",
+    "el": "g_zara1",
+    "ew": 540,
+    "ex": 1610,
+    "ey": 1055,
+    "nx": 1300
+   },
+   "f1": 8990,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 8990,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Inditex, memorias de 2017 y 2025",
+   "pasos": [
+    4,
+    50,
+    130
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Tiendas de Zara *en España*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "306",
+      "x": 480,
+      "y": 900,
+      "alto": 560,
+      "pie": "Principios de 2018",
+      "color": "blanco",
+      "w": 280,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "158",
+      "x": 960,
+      "y": 900,
+      "alto": 289,
+      "pie": "Enero de 2026",
+      "color": "rojo",
+      "w": 280,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "src": "g_zara1",
+      "x": 1530,
+      "y": 930,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Sin contar Zara Kids",
+      "x": 1530,
+      "y": 1000,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti"
+     }
+    ]
+   },
+   "f1": 9190,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 9190,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Inditex, ejercicios 2017 y 2025",
+   "pasos": [
+    4,
+    39
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_bolsa",
+      "x": 440,
+      "y": 1060,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+57 %",
+      "pie": "de ventas del grupo en ese tiempo",
+      "x": 1300,
+      "y": 460,
+      "ancla": "c",
+      "tam": 280,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 9279,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 9279,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Fortune / Bloomberg, 11-12-2019",
+   "pasos": [
+    4,
+    66,
+    118,
+    155
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Bilbao: *una por cuatro*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 190,
+      "y": 820,
+      "w": 190,
+      "de": "aba",
+      "gris": 0.4,
+      "k": "im"
+     },
+     {
+      "src": "g_tienda",
+      "x": 390,
+      "y": 820,
+      "w": 190,
+      "de": "aba",
+      "gris": 0.4,
+      "k": "im",
+      "dt": 4
+     },
+     {
+      "src": "g_tienda",
+      "x": 590,
+      "y": 820,
+      "w": 190,
+      "de": "aba",
+      "gris": 0.4,
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "src": "g_tienda",
+      "x": 790,
+      "y": 820,
+      "w": 190,
+      "de": "aba",
+      "gris": 0.4,
+      "k": "im",
+      "dt": 12
+     },
+     {
+      "x0": 920,
+      "y0": 640,
+      "x1": 1090,
+      "y1": 640,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "src": "g_tienda",
+      "x": 1460,
+      "y": 1060,
+      "w": 620,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Vende más que las cuatro",
+      "x": 490,
+      "y": 885,
+      "ancla": "c",
+      "tam": 42,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "−20 % de ropa dentro",
+      "x": 490,
+      "y": 970,
+      "ancla": "c",
+      "tam": 42,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 9494,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 9494,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    28
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_chip",
+      "x": 960,
+      "y": 1020,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Cómo? Con *una etiqueta*",
+      "x": 960,
+      "y": 100,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 9552,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 9552,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "The Wall Street Journal, 2014, vía RFID Journal",
+   "pasos": [
+    4,
+    125,
+    227
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_chip",
+      "x": 1640,
+      "y": 560,
+      "w": 360,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "Contar una tienda grande",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 66,
+      "k": "tit"
+     },
+     {
+      "t": "Antes",
+      "x": 430,
+      "y": 400,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "*40* personas",
+      "x": 220,
+      "y": 510,
+      "tam": 56,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "*5* horas",
+      "x": 220,
+      "y": 620,
+      "tam": 56,
+      "k": "linea",
+      "p": 1,
+      "dt": 8
+     },
+     {
+      "t": "Cada *6 meses*",
+      "x": 220,
+      "y": 730,
+      "tam": 56,
+      "k": "linea",
+      "p": 1,
+      "dt": 16
+     },
+     {
+      "x": 800,
+      "y": 380,
+      "w": 2,
+      "h": 480,
+      "k": "div"
+     },
+     {
+      "t": "Con el *chip*",
+      "x": 1180,
+      "y": 400,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "*10* personas",
+      "x": 940,
+      "y": 510,
+      "tam": 56,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "La *mitad* de tiempo",
+      "x": 940,
+      "y": 620,
+      "tam": 56,
+      "k": "linea",
+      "p": 2,
+      "dt": 8
+     },
+     {
+      "t": "Cada *6 semanas*",
+      "x": 940,
+      "y": 730,
+      "tam": 56,
+      "k": "linea",
+      "p": 2,
+      "dt": 16
+     }
+    ]
+   },
+   "f1": 9903,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 9903,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Inditex, inventario integrado",
+   "pasos": [
+    4,
+    102,
+    134,
+    164
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Un solo montón*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 360,
+      "y": 760,
+      "w": 360,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_nave",
+      "x": 960,
+      "y": 700,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_portatil",
+      "x": 1560,
+      "y": 720,
+      "w": 440,
+      "de": "aba",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "t": "Tiendas",
+      "x": 360,
+      "y": 840,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Almacenes",
+      "x": 960,
+      "y": 840,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Internet",
+      "x": 1560,
+      "y": 840,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10095,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 10095,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Inditex, conferencia con analistas, 2019",
+   "pasos": [
+    4,
+    95,
+    177
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Pablo Isla",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Presidente de Inditex · 2019",
+      "x": 114,
+      "y": 228.0,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "src": "g_perchero",
+      "x": 1560,
+      "y": 1080,
+      "w": 560,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "«Nuestro modelo siempre se ha basado en *un inventario muy bajo*»",
+      "x": 110,
+      "y": 320,
+      "w": 1100,
+      "tam": 72,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Y con el chip, con menos todavía",
+      "x": 560,
+      "y": 850,
+      "ancla": "c",
+      "tam": 48,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 10355,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 10355,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Vogue España, septiembre de 2026, vía FashionUnited",
+   "pasos": [
+    4,
+    101
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Marta Ortega",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Presidenta de Inditex · Vogue España, 2026",
+      "x": 114,
+      "y": 228.0,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "src": "g_perchero",
+      "x": 1560,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "gris": 0.3,
+      "k": "im"
+     },
+     {
+      "t": "«*ajustadísimo*»",
+      "x": 640,
+      "y": 620,
+      "ancla": "c",
+      "tam": 150,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 10521,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 10521,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Zara, aplicación (modo tienda)",
+   "pasos": [
+    4,
+    57,
+    115
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_movil",
+      "x": 1520,
+      "y": 1090,
+      "w": 520,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "M",
+      "x": 1452,
+      "y": 400,
+      "ancla": "c",
+      "tam": 70,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Disponible",
+      "x": 1452,
+      "y": 510,
+      "ancla": "c",
+      "tam": 24,
+      "color": "#14161B",
+      "k": "eti",
+      "p": 2
+     },
+     {
+      "t": "Quizá no está *en la percha*",
+      "x": 120,
+      "y": 150,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "En *otra tienda*",
+      "x": 140,
+      "y": 380,
+      "tam": 62,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "O *en el camino*",
+      "x": 140,
+      "y": 510,
+      "tam": 62,
+      "k": "linea",
+      "p": 1,
+      "dt": 12
+     },
+     {
+      "t": "Recogida en 2 horas",
+      "x": 460,
+      "y": 760,
+      "ancla": "c",
+      "tam": 56,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 10730,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 10730,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Inditex, primer semestre de 2026",
+   "pasos": [
+    4,
+    49,
+    151,
+    193
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No todo son *flores*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "julio",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "+9 %",
+      "x": 640,
+      "y": 900,
+      "alto": 520,
+      "pie": "Ropa guardada",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "< 8 %",
+      "x": 1140,
+      "y": 900,
+      "alto": 450,
+      "pie": "Ventas",
+      "color": "verde",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "La primera grieta",
+      "x": 1600,
+      "y": 330,
+      "tam": 54,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10998,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 10998,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Retail TouchPoints, 9-5-2023 (lo dice Shein)",
+   "pasos": [
+    4,
+    88,
+    151,
+    183
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_paquete",
+      "x": 440,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Le ha salido *un alumno*: Shein",
+      "x": 1290,
+      "y": 140,
+      "ancla": "c",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "cifra": "100–200",
+      "pie": "unidades de cada modelo nuevo",
+      "x": 1340,
+      "y": 400,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Si se venden, pide más",
+      "x": 1340,
+      "y": 690,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "La misma idea, hasta el final",
+      "x": 1340,
+      "y": 870,
+      "tam": 50,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11245,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.675,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_anim",
+   "f0": 11245,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "H&M, informes de 2025 y 2026",
+   "pasos": [
+    4,
+    46
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_perchero",
+      "x": 480,
+      "y": 1080,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Hasta *H&M*",
+      "x": 1360,
+      "y": 250,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "t": "Compra más *durante la temporada* para tener menos en el almacén",
+      "x": 980,
+      "y": 420,
+      "w": 840,
+      "tam": 60,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 11372,
+   "fondoClip": [
+    {
+     "src": "f_almacen.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e65_anim",
+   "f0": 11372,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Inditex, resultados del primer semestre de 2026",
+   "pasos": [
+    4,
+    117,
+    164,
+    223,
+    273
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Su secreto: *fabricar cerca*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_globo",
+      "x": 1620,
+      "y": 1080,
+      "w": 400,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "España",
+      "x": 130,
+      "y": 290,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Portugal",
+      "x": 400,
+      "y": 290,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 8
+     },
+     {
+      "t": "Marruecos",
+      "x": 710,
+      "y": 290,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 16
+     },
+     {
+      "t": "Turquía",
+      "x": 1060,
+      "y": 290,
+      "ancla": "i",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 24
+     },
+     {
+      "t": "Sigue siendo una parte importante",
+      "x": 134,
+      "y": 410,
+      "ancla": "i",
+      "tam": 28,
+      "k": "eti",
+      "p": 2
+     },
+     {
+      "t": "Septiembre de 2026: la proximidad es *una forma de trabajar*, más que un lugar",
+      "x": 130,
+      "y": 500,
+      "w": 1180,
+      "tam": 62,
+      "serif": true,
+      "k": "par",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 11735,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.0,
+     "rate": 0.772,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e66_anim",
+   "f0": 11735,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 960,
+      "y": 1075,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Es *a propósito*?",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 130,
+      "k": "tit"
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 11784,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e67_anim",
+   "f0": 11784,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "conclusión propia",
+   "pasos": [
+    4,
+    39,
+    119,
+    142,
+    239,
+    368
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 380,
+      "y": 1070,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Que falte justo la tuya",
+      "x": 1060,
+      "y": 170,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "No",
+      "x": 1690,
+      "y": 170,
+      "tam": 76,
+      "k": "sello",
+      "dt": 14
+     },
+     {
+      "t": "Que haya poca",
+      "x": 1060,
+      "y": 350,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Sí",
+      "x": 1690,
+      "y": 350,
+      "tam": 76,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2,
+      "dt": 14
+     },
+     {
+      "t": "Que la prenda coja desaparezca",
+      "x": 1060,
+      "y": 530,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "También",
+      "x": 1690,
+      "y": 530,
+      "tam": 58,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 3,
+      "dt": 14
+     },
+     {
+      "t": "Que te falte a ti, *antes que les sobre a ellos*: nuestra conclusión",
+      "x": 780,
+      "y": 660,
+      "w": 1020,
+      "tam": 56,
+      "k": "par",
+      "p": 4
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 12189,
+   "fondoClip": [
+    {
+     "src": "f_interior.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e68_anim",
+   "f0": 12189,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    54,
+    88,
+    134
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Si quieres *tu talla*",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_movil",
+      "x": 1540,
+      "y": 1090,
+      "w": 500,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "M",
+      "x": 1474,
+      "y": 430,
+      "ancla": "c",
+      "tam": 66,
+      "color": "verde",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Mira primero *la aplicación*",
+      "x": 140,
+      "y": 360,
+      "tam": 60,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Entra cuando llega *el camión*",
+      "x": 140,
+      "y": 500,
+      "tam": 60,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Si la ves, *no esperes*",
+      "x": 140,
+      "y": 640,
+      "tam": 60,
+      "k": "linea",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 12380,
+   "fondoClip": [
+    {
+     "src": "f_calle.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e69_anim",
+   "f0": 12380,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    103
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_lenceria",
+      "x": 960,
+      "y": 1060,
+      "w": 1100,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Arteixo, *50 años después*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 12563,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e70_anim",
+   "f0": 12563,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    34
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camisa",
+      "x": 480,
+      "y": 1070,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Que te falte *a ti*",
+      "x": 480,
+      "y": 130,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "src": "g_lenceria",
+      "x": 1380,
+      "y": 1050,
+      "w": 900,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Antes que *volver a esto*",
+      "x": 1380,
+      "y": 130,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 12747,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_interior.jpg": "vox/media/zara/f_interior.jpg",
+  "f_calle.jpg": "vox/media/zara/f_calle.jpg",
+  "f_almacen.jpg": "vox/media/zara/f_almacen.jpg",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "packaging_conveyor_rollers_cardboard_113.mp4": "parallax2/proyecto/stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+  "trucks_highway_aerial_parking_logistics_122.mp4": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "f_trastienda.jpg": "vox/media/zara/f_trastienda.jpg",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/zara/g_balanza.webp",
+  "g_bolsa.webp": "vox/media/zara/g_bolsa.webp",
+  "g_caja.webp": "vox/media/zara/g_caja.webp",
+  "g_cajon.webp": "vox/media/zara/g_cajon.webp",
+  "g_camion.webp": "vox/media/zara/g_camion.webp",
+  "g_camisa.webp": "vox/media/zara/g_camisa.webp",
+  "g_camiseta.webp": "vox/media/zara/g_camiseta.webp",
+  "g_chip.webp": "vox/media/zara/g_chip.webp",
+  "g_clientes.webp": "vox/media/zara/g_clientes.webp",
+  "g_compradora.webp": "vox/media/zara/g_compradora.webp",
+  "g_empleados.webp": "vox/media/zara/g_empleados.webp",
+  "g_escritura.webp": "vox/media/zara/g_escritura.webp",
+  "g_fajo.webp": "vox/media/zara/g_fajo.webp",
+  "g_fajos.webp": "vox/media/zara/g_fajos.webp",
+  "g_furgo.webp": "vox/media/zara/g_furgo.webp",
+  "g_globo.webp": "vox/media/zara/g_globo.webp",
+  "g_inversor.webp": "vox/media/zara/g_inversor.webp",
+  "g_jersey.webp": "vox/media/zara/g_jersey.webp",
+  "g_lenceria.webp": "vox/media/zara/g_lenceria.webp",
+  "g_maniqui.webp": "vox/media/zara/g_maniqui.webp",
+  "g_moneda.webp": "vox/media/zara/g_moneda.webp",
+  "g_monedas.webp": "vox/media/zara/g_monedas.webp",
+  "g_monton.webp": "vox/media/zara/g_monton.webp",
+  "g_movil.webp": "vox/media/zara/g_movil.webp",
+  "g_nave.webp": "vox/media/zara/g_nave.webp",
+  "g_paquete.webp": "vox/media/zara/g_paquete.webp",
+  "g_perchero.webp": "vox/media/zara/g_perchero.webp",
+  "g_periodico.webp": "vox/media/zara/g_periodico.webp",
+  "g_persiana.webp": "vox/media/zara/g_persiana.webp",
+  "g_portatil.webp": "vox/media/zara/g_portatil.webp",
+  "g_tienda.webp": "vox/media/zara/g_tienda.webp",
+  "g_zara1.webp": "vox/media/zara/g_zara1.webp"
+ },
+ "tema": "zara",
+ "piel": "anim"
+}

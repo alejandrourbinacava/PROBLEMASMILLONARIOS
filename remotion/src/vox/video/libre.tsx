@@ -158,8 +158,9 @@ const Pieza: React.FC<{it: Item; ep: EP; cam: any}> = ({it, ep, cam}) => {
     case 'sello':
       return (
         <div style={{position: 'absolute', inset: 0, opacity: op}}>
-          <Sello x={x} y={y} t={t} tam={it.tam ?? 72} rot={it.rot ?? -5} color={it.color ?? '#FF6A5C'}>
-            <Cabe max={max * 0.86} ancla="c"><V n={'sello:' + it.t} op={t > 8 ? op : 0}>{it.t}</V></Cabe>
+          {/* el cuerpo se ajusta antes de pintar: si solo se encoge el texto, el marco se sale del cuadro */}
+          <Sello x={x} y={y} t={t} tam={Math.min(it.tam ?? 72, max / (String(it.t).length * 0.7 + 1))} rot={it.rot ?? -5} color={it.color ?? '#FF6A5C'}>
+            <Cabe max={max * 0.94} ancla="c"><V n={'sello:' + it.t} op={t > 8 ? op : 0}>{it.t}</V></Cabe>
           </Sello>
         </div>
       );

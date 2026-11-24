@@ -1,0 +1,4360 @@
+{
+ "fps": 25,
+ "total": 13203,
+ "marca": {
+  "nombre": "TELEPIZZA",
+  "color": "#C9252B",
+  "claro": "#FFE8C9",
+  "oscuro": "#3D0D10",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Food Delivery Brands, hecho relevante, 17-7-2023",
+   "pasos": [
+    0,
+    34,
+    100
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2023",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_local",
+      "x": 560,
+      "y": 1060,
+      "w": 940,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Entregan *la empresa*",
+      "x": 1410,
+      "y": 240,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Entera",
+      "x": 1420,
+      "y": 420,
+      "tam": 100,
+      "k": "sello",
+      "p": 1,
+      "dt": 18
+     },
+     {
+      "t": "A quien *debían dinero*",
+      "x": 1090,
+      "y": 600,
+      "w": 740,
+      "tam": 72,
+      "serif": true,
+      "k": "par",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 195,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 195,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Vozpópuli, 9-2-2024 (dato de la empresa)",
+   "pasos": [
+    4,
+    47
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pizza",
+      "x": 560,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ese mismo año, en España",
+      "x": 1400,
+      "y": 220,
+      "ancla": "c",
+      "tam": 66,
+      "max": 880,
+      "k": "tit"
+     },
+     {
+      "cifra": "33,5 millones",
+      "pie": "de sus pizzas",
+      "x": 1420,
+      "y": 480,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 302,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 302,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    60,
+    86,
+    109
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_moto",
+      "x": 1480,
+      "y": 1060,
+      "w": 560,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "cifra": "+700",
+      "pie": "locales abiertos",
+      "x": 480,
+      "y": 330,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "El teléfono sonaba",
+      "x": 1400,
+      "y": 200,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Lo habían perdido todo",
+      "x": 1380,
+      "y": 420,
+      "tam": 66,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 466,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 466,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moto",
+      "x": 960,
+      "y": 1060,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Cómo se arruina una marca *que no para de vender*?",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     }
+    ],
+    "luz": 0.65
+   },
+   "f1": 520,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 520,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    65,
+    110,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pizza",
+      "x": 440,
+      "y": 1040,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_movil",
+      "x": 1620,
+      "y": 1090,
+      "w": 460,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "¿La pizza empeoró?",
+      "x": 440,
+      "y": 300,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "¿Las aplicaciones?",
+      "x": 1080,
+      "y": 300,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Otra historia",
+      "x": 1030,
+      "y": 560,
+      "tam": 80,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 727,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 727,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    73,
+    193
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moto",
+      "x": 480,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La pizza *nunca* fue el problema",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajos",
+      "x": 1420,
+      "y": 1060,
+      "w": 620,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Dinero prestado",
+      "x": 1420,
+      "y": 400,
+      "ancla": "c",
+      "tam": 54,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Muchas veces",
+      "x": 960,
+      "y": 300,
+      "tam": 70,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 961,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_capitulo",
+   "f0": 961,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "El marine *que amasaba*",
+    "sub": "Barrio del Pilar, 1987",
+    "el": "g_pizza",
+    "ew": 600,
+    "ex": 1590,
+    "ey": 1050,
+    "nx": 1230
+   },
+   "f1": 993,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_anim",
+   "f0": 993,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Vozpópuli, 17-12-2023",
+   "pasos": [
+    4,
+    56,
+    78,
+    149,
+    192
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Leopoldo Fernández Pujals",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 92,
+      "k": "tit"
+     },
+     {
+      "t": "El fundador",
+      "x": 114,
+      "y": 221.76,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "src": "g_globo",
+      "x": 1620,
+      "y": 1085,
+      "w": 430,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "Nace en *La Habana*",
+      "x": 130,
+      "y": 360,
+      "tam": 58,
+      "k": "linea"
+     },
+     {
+      "t": "Se exilia en *Miami*",
+      "x": 130,
+      "y": 480,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Capitán en *Vietnam*",
+      "x": 130,
+      "y": 600,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Vendedor en *Johnson & Johnson*",
+      "x": 130,
+      "y": 720,
+      "tam": 58,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Madrid, 1981",
+      "x": 1180,
+      "y": 420,
+      "ancla": "c",
+      "tam": 52,
+      "color": "ambar",
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 1251,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1251,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Vozpópuli, 17-12-2023 · fachada recreada",
+   "pasos": [
+    4,
+    87,
+    137
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1987",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_pizzaphone",
+      "x": 560,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Una pizzería en *el Barrio del Pilar*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 72,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Pizzaphone",
+      "x": 1440,
+      "y": 560,
+      "tam": 92,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 1420,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1420,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Vozpópuli y Buscabiografías",
+   "pasos": [
+    4,
+    50,
+    168
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pizza",
+      "x": 560,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Daba a probar la pizza *a los niños del barrio*",
+      "x": 1080,
+      "y": 200,
+      "w": 760,
+      "tam": 70,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "La segunda tienda ya es Telepizza",
+      "x": 1430,
+      "y": 800,
+      "ancla": "c",
+      "tam": 42,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 1639,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1639,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    63,
+    85
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moto",
+      "x": 520,
+      "y": 1050,
+      "w": 860,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "No consta que lo inventara",
+      "x": 1410,
+      "y": 200,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "Pionera",
+      "x": 1410,
+      "y": 400,
+      "tam": 96,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Enseñó a España a *pedir la cena por teléfono*",
+      "x": 1060,
+      "y": 560,
+      "w": 780,
+      "tam": 66,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.65
+   },
+   "f1": 1796,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1796,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Food Delivery Brands, EINF 2025",
+   "pasos": [
+    4,
+    78,
+    174,
+    197
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1992",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Su primera *fábrica*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_pizza",
+      "x": 300,
+      "y": 720,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_pizza",
+      "x": 560,
+      "y": 880,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 7
+     },
+     {
+      "src": "g_pizza",
+      "x": 820,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 14
+     },
+     {
+      "t": "Cada *pizza* igual",
+      "x": 1120,
+      "y": 380,
+      "tam": 60,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Cada *tienda* igual",
+      "x": 1120,
+      "y": 510,
+      "tam": 60,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Muchas, en *franquicia*",
+      "x": 1120,
+      "y": 640,
+      "tam": 60,
+      "k": "linea",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 2063,
+   "fondoClip": [
+    {
+     "src": "packaging_conveyor_rollers_cardboard_113.mp4",
+     "desde": 0.0,
+     "rate": 0.627,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 2063,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Vozpópuli, 17-12-2023 (precios ajustados)",
+   "pasos": [
+    4,
+    67,
+    179,
+    252
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1996",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Sale *a bolsa*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "0,93 €",
+      "x": 480,
+      "y": 900,
+      "alto": 52,
+      "pie": "Noviembre de 1996",
+      "color": "blanco",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "9,99 €",
+      "x": 980,
+      "y": 900,
+      "alto": 560,
+      "pie": "Junio de 1998",
+      "color": "verde",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "×10",
+      "x": 1500,
+      "y": 520,
+      "tam": 150,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 2371,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.904,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2371,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "cálculo propio sobre los precios ajustados",
+   "pasos": [
+    4,
+    56,
+    149
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajo",
+      "x": 420,
+      "y": 900,
+      "w": 420,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "6.000 €",
+      "pie": "un millón de pesetas",
+      "x": 420,
+      "y": 420,
+      "ancla": "c",
+      "tam": 120,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "x0": 700,
+      "y0": 640,
+      "x1": 900,
+      "y1": 640,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "src": "g_fajos",
+      "x": 1340,
+      "y": 1060,
+      "w": 700,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 65.000 €",
+      "pie": "en año y medio",
+      "x": 1340,
+      "y": 260,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Con pizzas",
+      "x": 1340,
+      "y": 510,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 2544,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2544,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Vozpópuli y elDiario.es",
+   "pasos": [
+    4,
+    98
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1999",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Pujals vende *lo último*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajos",
+      "x": 500,
+      "y": 1070,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 300 M€",
+      "x": 1380,
+      "y": 520,
+      "ancla": "c",
+      "tam": 220,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 2689,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 2689,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    96,
+    148,
+    205
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Él compró *harina, hornos y motos*",
+      "x": 480,
+      "y": 150,
+      "ancla": "c",
+      "tam": 60,
+      "max": 860,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_pizza",
+      "x": 300,
+      "y": 900,
+      "w": 420,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_moto",
+      "x": 720,
+      "y": 900,
+      "w": 400,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 8
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "t": "Los demás compraron *Telepizza*",
+      "x": 1440,
+      "y": 150,
+      "ancla": "c",
+      "tam": 60,
+      "max": 860,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "src": "g_local",
+      "x": 1440,
+      "y": 900,
+      "w": 760,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 2928,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_capitulo",
+   "f0": 2928,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "La casa, *a crédito*",
+    "sub": "2006-2017",
+    "el": "g_escritura",
+    "ew": 640,
+    "ex": 1570,
+    "ey": 1040,
+    "nx": 1280
+   },
+   "f1": 2944,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 2944,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "elDiario.es, 28-12-2015",
+   "pasos": [
+    4,
+    86,
+    139
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2006",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Permira y la familia Ballvé",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "src": "g_local",
+      "x": 520,
+      "y": 1060,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 850 M€",
+      "pie": "valora la oferta toda la empresa",
+      "x": 1410,
+      "y": 480,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3147,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 3147,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    58,
+    97,
+    210
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cómo se compra *con dinero prestado*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 280,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Lo pone el comprador",
+        "v": 40,
+        "color": "cian"
+       },
+       {
+        "t": "Se pide prestado",
+        "v": 60,
+        "color": "rojo"
+       }
+      ],
+      "h": 110,
+      "k": "reparto",
+      "p": 1
+     },
+     {
+      "src": "g_local",
+      "x": 960,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo devuelve el negocio comprado",
+      "x": 1480,
+      "y": 560,
+      "ancla": "c",
+      "tam": 40,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Esquema: no sabemos cuánta deuda se cargó en 2006",
+      "x": 960,
+      "y": 460,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 3466,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.874,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 3466,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Restauración News, 2009-2013",
+   "pasos": [
+    4,
+    48,
+    114,
+    228
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2009",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Pizzas *a un euro*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 96,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_pizza",
+      "x": 560,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_moneda",
+      "x": 1420,
+      "y": 820,
+      "w": 460,
+      "de": "pop",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Otra vez en 2012 y en 2013",
+      "x": 1420,
+      "y": 930,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 3721,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3721,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Restauración News, febrero de 2013 y septiembre de 2011",
+   "pasos": [
+    4,
+    84,
+    107,
+    169
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pizza",
+      "x": 460,
+      "y": 1030,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+2 millones",
+      "pie": "de pizzas en dos días, esperaba",
+      "x": 1330,
+      "y": 260,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "maxPie": 900,
+      "k": "dato"
+     },
+     {
+      "cifra": "−14,5 M€",
+      "pie": "perdió en 2010",
+      "x": 1330,
+      "y": 630,
+      "ancla": "c",
+      "tam": 170,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Por el peso de la deuda",
+      "x": 1330,
+      "y": 900,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 3959,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3959,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    17,
+    82
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moto",
+      "x": 480,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Si debes mucho, vender barato *no es una estrategia*",
+      "x": 1000,
+      "y": 240,
+      "w": 840,
+      "tam": 66,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Es una necesidad",
+      "x": 1390,
+      "y": 720,
+      "tam": 76,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 4129,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 4129,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Restauración News, 22-10-2014",
+   "pasos": [
+    4,
+    97
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_fajos",
+      "x": 460,
+      "y": 1075,
+      "w": 720,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im"
+     },
+     {
+      "cifra": "485 M€",
+      "pie": "debía",
+      "x": 1350,
+      "y": 350,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "cifra": "×7",
+      "pie": "lo que generaba el negocio en un año",
+      "x": 1350,
+      "y": 770,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 4293,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 4293,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Restauración News, 22-10-2014 · OKdiario, 5-4-2016",
+   "pasos": [
+    4,
+    27,
+    163,
+    222
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Cambio de *papeles*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "485",
+      "x": 420,
+      "y": 900,
+      "alto": 540,
+      "pie": "Deuda antes (M€)",
+      "color": "rojo",
+      "w": 260,
+      "tam": 100,
+      "k": "col"
+     },
+     {
+      "t": "285",
+      "x": 860,
+      "y": 900,
+      "alto": 317,
+      "pie": "Deuda después (M€)",
+      "color": "verde",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "src": "g_local",
+      "x": 1500,
+      "y": 1050,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "49 %",
+      "pie": "para KKR y otros fondos",
+      "x": 1500,
+      "y": 400,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "maxPie": 700,
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 4641,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.804,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 4641,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    85
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 520,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Los que prestaban, *dueños*",
+      "x": 1390,
+      "y": 280,
+      "ancla": "c",
+      "tam": 70,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "t": "Primera vez",
+      "x": 1400,
+      "y": 540,
+      "tam": 90,
+      "k": "sello",
+      "dt": 20
+     },
+     {
+      "t": "Recuérdalo",
+      "x": 1400,
+      "y": 760,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 4779,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 4779,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "OKdiario, 25-4-2016",
+   "pasos": [
+    4,
+    29,
+    63,
+    219,
+    284
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2016",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Vuelve a bolsa: *550 M€*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajo",
+      "x": 480,
+      "y": 900,
+      "w": 360,
+      "de": "aba",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "cifra": "118,5 M€",
+      "pie": "para la empresa",
+      "x": 480,
+      "y": 400,
+      "ancla": "c",
+      "tam": 130,
+      "color": "verde",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "src": "g_fajos",
+      "x": 1360,
+      "y": 1060,
+      "w": 720,
+      "de": "der",
+      "k": "im",
+      "p": 4
+     },
+     {
+      "cifra": "431 M€",
+      "pie": "para los que vendían",
+      "x": 1360,
+      "y": 340,
+      "ancla": "c",
+      "tam": 160,
+      "color": "rojo",
+      "k": "dato",
+      "p": 4
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 5162,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.734,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 5162,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "OKdiario, 27-4-2016",
+   "pasos": [
+    4,
+    74,
+    152
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "El primer día",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "7,75 €",
+      "x": 420,
+      "y": 900,
+      "alto": 560,
+      "pie": "Precio de salida",
+      "color": "blanco",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "6,25 €",
+      "x": 860,
+      "y": 900,
+      "alto": 452,
+      "pie": "Al cerrar",
+      "color": "rojo",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "cifra": "−19 %",
+      "x": 1470,
+      "y": 400,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "t": "«No son lo mismo unos inversores que otros»",
+      "x": 1430,
+      "y": 720,
+      "ancla": "c",
+      "tam": 34,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 5394,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 5394,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "OKdiario, 22-5-2017",
+   "pasos": [
+    4,
+    101,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2017",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Permira y los Ballvé",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_persiana",
+      "x": 480,
+      "y": 1090,
+      "w": 600,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "cifra": "4,60 €",
+      "pie": "venden lo que les queda",
+      "x": 1380,
+      "y": 420,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Y se fueron",
+      "x": 1380,
+      "y": 800,
+      "tam": 88,
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5553,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_capitulo",
+   "f0": 5553,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "La moto ya *no era suya*",
+    "sub": "Mientras tanto, en la calle",
+    "el": "g_moto",
+    "ew": 660,
+    "ex": 1550,
+    "ey": 1050,
+    "nx": 1270
+   },
+   "f1": 5660,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 5660,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    122,
+    146
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moto",
+      "x": 560,
+      "y": 1050,
+      "w": 900,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Durante veinte años",
+      "x": 1400,
+      "y": 190,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "t": "La moto era suya",
+      "x": 1410,
+      "y": 420,
+      "tam": 66,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "El teléfono era suyo",
+      "x": 1410,
+      "y": 640,
+      "tam": 58,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.65
+   },
+   "f1": 5843,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 5843,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Restauración News, 14-11-2014",
+   "pasos": [
+    4,
+    95,
+    142,
+    188
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Un botón *en la nevera*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_pizza",
+      "x": 1400,
+      "y": 1040,
+      "w": 820,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "cifra": "10",
+      "pie": "casas lo probaron",
+      "x": 420,
+      "y": 480,
+      "ancla": "c",
+      "tam": 300,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 6070,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 6070,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    48,
+    104,
+    191
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2015",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Nace *Glovo*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_movil",
+      "x": 1640,
+      "y": 1090,
+      "w": 460,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_moto",
+      "x": 360,
+      "y": 1050,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El bar *de la esquina*",
+      "x": 640,
+      "y": 340,
+      "tam": 52,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "El japonés *del centro*",
+      "x": 640,
+      "y": 450,
+      "tam": 52,
+      "k": "linea",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "t": "La hamburguesería *de moda*",
+      "x": 640,
+      "y": 560,
+      "tam": 52,
+      "k": "linea",
+      "p": 2,
+      "dt": 48
+     },
+     {
+      "t": "Basta con estar en una aplicación",
+      "x": 1040,
+      "y": 780,
+      "ancla": "c",
+      "tam": 42,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 6359,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.0,
+     "rate": 0.96,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 6359,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "GfK DAM, vía Vozpópuli, 23-12-2024",
+   "pasos": [
+    4,
+    62,
+    140,
+    185,
+    293
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Usuarios al mes, 2024 *(millones)*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "3,6",
+      "x": 420,
+      "y": 900,
+      "alto": 540,
+      "pie": "Just Eat",
+      "color": "ambar",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "3,4",
+      "x": 900,
+      "y": 900,
+      "alto": 510,
+      "pie": "Glovo",
+      "color": "ambar",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "1,65",
+      "x": 1380,
+      "y": 900,
+      "alto": 247,
+      "pie": "Telepizza",
+      "color": "rojo",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "Ya no es la puerta",
+      "x": 1660,
+      "y": 420,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 6725,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.0,
+     "rate": 0.766,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 6725,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Merca2, 21-7-2024",
+   "pasos": [
+    4,
+    38
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 520,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y otro vecino: *Domino's*",
+      "x": 1400,
+      "y": 240,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "400",
+      "pie": "tiendas en España",
+      "x": 1400,
+      "y": 500,
+      "ancla": "c",
+      "tam": 270,
+      "color": "cian",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 6854,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 6854,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "OCU, vía Vozpópuli, 5-11-2019",
+   "pasos": [
+    4,
+    24,
+    75,
+    178,
+    212
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿Y la *calidad*?",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Ninguna prueba de que empeorara",
+      "x": 960,
+      "y": 250,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "75",
+      "x": 480,
+      "y": 900,
+      "alto": 480,
+      "pie": "Telepizza",
+      "color": "rojo",
+      "w": 280,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "78",
+      "x": 1000,
+      "y": 900,
+      "alto": 499,
+      "pie": "Domino's",
+      "color": "cian",
+      "w": 280,
+      "tam": 110,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "src": "g_pizza",
+      "x": 1560,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Tres puntos",
+      "x": 1560,
+      "y": 480,
+      "tam": 64,
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7109,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 7109,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Food Delivery Brands y OKdiario",
+   "pasos": [
+    4,
+    59,
+    109,
+    246,
+    321,
+    333
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿Se quedó *sin clientes*?",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "335",
+      "x": 420,
+      "y": 900,
+      "alto": 420,
+      "pie": "2016",
+      "color": "blanco",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "355",
+      "x": 860,
+      "y": 900,
+      "alto": 445,
+      "pie": "2017",
+      "color": "blanco",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "369",
+      "x": 1300,
+      "y": 900,
+      "alto": 463,
+      "pie": "2018",
+      "color": "verde",
+      "w": 260,
+      "tam": 100,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "Ventas de sus tiendas en España (M€)",
+      "x": 860,
+      "y": 1015,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti"
+     },
+     {
+      "t": "Subían",
+      "x": 1640,
+      "y": 360,
+      "tam": 80,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7511,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_capitulo",
+   "f0": 7511,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Doble *o nada*",
+    "sub": "2018-2023",
+    "el": "g_fajos",
+    "ew": 500,
+    "ex": 1650,
+    "ey": 1060,
+    "nx": 1260
+   },
+   "f1": 7622,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 7622,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Restauración News, 16-5-2018",
+   "pasos": [
+    4,
+    39,
+    163
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2018",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Alianza con *Pizza Hut*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_globo",
+      "x": 1600,
+      "y": 1085,
+      "w": 460,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_local",
+      "x": 480,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "España",
+      "x": 1080,
+      "y": 440,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Portugal",
+      "x": 1080,
+      "y": 560,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 12
+     },
+     {
+      "t": "Casi toda Latinoamérica",
+      "x": 1080,
+      "y": 680,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 24
+     }
+    ]
+   },
+   "f1": 7885,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 7885,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, EINF 2018",
+   "pasos": [
+    4,
+    28,
+    83
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_globo",
+      "x": 380,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El plan",
+      "x": 1270,
+      "y": 150,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "1.300",
+      "pie": "locales nuevos en diez años",
+      "x": 1270,
+      "y": 370,
+      "ancla": "c",
+      "tam": 220,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "100 M€",
+      "pie": "al año tenía que generar en 2021",
+      "x": 1270,
+      "y": 760,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8060,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 8060,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "OKdiario, 26-6 y 31-10-2018",
+   "pasos": [
+    4,
+    57,
+    109,
+    150,
+    260
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "A cambio, *un canon*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_local",
+      "x": 420,
+      "y": 1050,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Por las de Pizza Hut",
+      "x": 420,
+      "y": 360,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Y por las suyas",
+      "x": 420,
+      "y": 480,
+      "ancla": "c",
+      "tam": 50,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "«Entregarse a su *principal competidor*»",
+      "x": 900,
+      "y": 300,
+      "w": 920,
+      "tam": 62,
+      "serif": true,
+      "k": "par",
+      "p": 3
+     },
+     {
+      "t": "Abogado de una asociación de franquiciados",
+      "x": 904,
+      "y": 500,
+      "ancla": "i",
+      "tam": 24,
+      "k": "eti",
+      "p": 3
+     },
+     {
+      "t": "«Valiente *y sensata*»",
+      "x": 900,
+      "y": 620,
+      "w": 920,
+      "tam": 62,
+      "serif": true,
+      "k": "par",
+      "p": 4
+     },
+     {
+      "t": "El presidente",
+      "x": 904,
+      "y": 740,
+      "ancla": "i",
+      "tam": 24,
+      "k": "eti",
+      "p": 4
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 8388,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 8388,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, informe a bonistas 2019",
+   "pasos": [
+    4,
+    94,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_inversor",
+      "x": 340,
+      "y": 1100,
+      "w": 290,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "KKR quiere *todo*",
+      "x": 1200,
+      "y": 160,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "6 €",
+      "pie": "por acción",
+      "x": 1200,
+      "y": 400,
+      "ancla": "c",
+      "tam": 280,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Mayo de 2019: controla la empresa",
+      "x": 1200,
+      "y": 800,
+      "ancla": "c",
+      "tam": 50,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8588,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 8588,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, informe a bonistas 2019",
+   "pasos": [
+    4,
+    71,
+    161,
+    251
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Al mes siguiente, *dos cosas*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Primera",
+      "x": 1380,
+      "y": 250,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "335 M€",
+      "pie": "de deuda nueva",
+      "x": 1380,
+      "y": 420,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1,
+      "dt": 10
+     },
+     {
+      "t": "Al 6,25 %",
+      "x": 1180,
+      "y": 720,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Cancela 200 M€ anteriores",
+      "x": 1390,
+      "y": 840,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 8900,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.893,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 8900,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, informe a bonistas 2019 (junta del 17-6-2019)",
+   "pasos": [
+    4,
+    55,
+    118
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 480,
+      "y": 1070,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y segunda",
+      "x": 1360,
+      "y": 200,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "Un *dividendo extraordinario*",
+      "x": 1350,
+      "y": 350,
+      "ancla": "c",
+      "tam": 62,
+      "max": 1000,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "130,9 M€",
+      "pie": "para todos los socios",
+      "x": 1360,
+      "y": 600,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 9082,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 9082,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuentas de 2018 y presentación de 2020",
+   "pasos": [
+    4,
+    87,
+    155,
+    266,
+    329
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La foto de *antes y después*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "142 M€",
+      "x": 520,
+      "y": 900,
+      "alto": 275,
+      "pie": "Deuda neta, 2018",
+      "color": "blanco",
+      "w": 300,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "290 M€",
+      "x": 1080,
+      "y": 900,
+      "alto": 560,
+      "pie": "Deuda neta, 2019",
+      "color": "rojo",
+      "w": 300,
+      "tam": 90,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "El doble",
+      "x": 1600,
+      "y": 420,
+      "tam": 90,
+      "k": "sello",
+      "p": 4
+     },
+     {
+      "t": "Con las mismas pizzas",
+      "x": 1600,
+      "y": 590,
+      "ancla": "c",
+      "tam": 38,
+      "color": "humo",
+      "k": "chip",
+      "p": 4,
+      "dt": 20
+     },
+     {
+      "t": "No podemos decir que una cosa pagara la otra",
+      "x": 820,
+      "y": 1015,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 9492,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.687,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 9492,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    44,
+    116,
+    154
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Y llega *la pandemia*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_moto",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_globo",
+      "x": 1560,
+      "y": 1085,
+      "w": 440,
+      "de": "der",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Se forraría, ¿no?",
+      "x": 1020,
+      "y": 380,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "El grupo ya no era solo España",
+      "x": 1020,
+      "y": 560,
+      "ancla": "c",
+      "tam": 42,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 9708,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 9708,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, presentación FY2020",
+   "pasos": [
+    4,
+    88
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 440,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "−12 %",
+      "pie": "España y Portugal, más o menos",
+      "x": 1340,
+      "y": 290,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato"
+     },
+     {
+      "cifra": "−20 %",
+      "pie": "toda la cadena",
+      "x": 1340,
+      "y": 710,
+      "ancla": "c",
+      "tam": 240,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 9885,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 9885,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, presentaciones FY2018 y FY2020",
+   "pasos": [
+    4,
+    90
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Deuda, en *años de negocio*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "2,2",
+      "x": 560,
+      "y": 900,
+      "alto": 105,
+      "pie": "2018",
+      "color": "verde",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "11,7",
+      "x": 1200,
+      "y": 900,
+      "alto": 560,
+      "pie": "2020",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col"
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 10023,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 10023,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, presentación FY2021",
+   "pasos": [
+    4,
+    82
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2021",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_fajo",
+      "x": 420,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "100 M€",
+      "pie": "prometidos",
+      "x": 1280,
+      "y": 350,
+      "ancla": "c",
+      "tam": 190,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "51,7 M€",
+      "pie": "conseguidos",
+      "x": 1280,
+      "y": 740,
+      "ancla": "c",
+      "tam": 220,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 10153,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 10153,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, cuentas 2022, nota 1 (nuda propiedad y usufructo)",
+   "pasos": [
+    4,
+    68,
+    135,
+    264,
+    359
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 520,
+      "y": 1060,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La marca *cambia de dueño*",
+      "x": 1410,
+      "y": 160,
+      "ancla": "c",
+      "tam": 66,
+      "max": 880,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "El nombre, en propiedad, *de Pizza Hut*",
+      "x": 1080,
+      "y": 280,
+      "w": 760,
+      "tam": 58,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "cifra": "30 años",
+      "pie": "de derecho a usarlo",
+      "x": 1430,
+      "y": 640,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "Vender tu casa y seguir dentro",
+      "x": 1400,
+      "y": 910,
+      "tam": 42,
+      "k": "sello",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 10569,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 10569,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, cuentas 2022",
+   "pasos": [
+    4,
+    76,
+    160
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2022",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_pizza",
+      "x": 500,
+      "y": 1040,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Harina",
+      "x": 1130,
+      "y": 250,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "Queso",
+      "x": 1400,
+      "y": 250,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 14
+     },
+     {
+      "t": "Luz",
+      "x": 1640,
+      "y": 250,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 28
+     },
+     {
+      "t": "No podía pasarlo *todo al precio*",
+      "x": 1040,
+      "y": 350,
+      "w": 800,
+      "tam": 60,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "−278 M€",
+      "pie": "casi todo, por valer menos lo comprado",
+      "x": 1400,
+      "y": 720,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "maxPie": 840,
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 10861,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 10861,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, enero de 2023",
+   "pasos": [
+    4,
+    73
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2023",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_escritura",
+      "x": 520,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Tocaba pagar *los intereses*",
+      "x": 1390,
+      "y": 300,
+      "ancla": "c",
+      "tam": 70,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "t": "No los pagó",
+      "x": 1400,
+      "y": 560,
+      "tam": 100,
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 10956,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 10956,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Food Delivery Brands, hecho relevante, 17-7-2023",
+   "pasos": [
+    4,
+    40,
+    111,
+    220
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2023",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_local",
+      "x": 520,
+      "y": 1060,
+      "w": 820,
+      "de": "aba",
+      "grisEn": 2,
+      "k": "im"
+     },
+     {
+      "cifra": "−250 M€",
+      "pie": "perdonan, más o menos",
+      "x": 1390,
+      "y": 290,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "100 %",
+      "pie": "del capital, para ellos",
+      "x": 1390,
+      "y": 660,
+      "ancla": "c",
+      "tam": 220,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Segunda vez",
+      "x": 1390,
+      "y": 930,
+      "tam": 60,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11284,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.851,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 11284,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    61,
+    93
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No se arruina *la pizzería*",
+      "x": 480,
+      "y": 170,
+      "ancla": "c",
+      "tam": 66,
+      "max": 860,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "src": "g_fajos",
+      "x": 1440,
+      "y": 1050,
+      "w": 640,
+      "de": "der",
+      "gris": 0.9,
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Se arruina *quien la compró a crédito*",
+      "x": 1440,
+      "y": 170,
+      "ancla": "c",
+      "tam": 56,
+      "max": 860,
+      "k": "tit",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 11431,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_capitulo",
+   "f0": 11431,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "¿Se *recupera?*",
+    "sub": "2024-2026",
+    "el": "g_local",
+    "ew": 640,
+    "ex": 1560,
+    "ey": 1040,
+    "nx": 1290
+   },
+   "f1": 11473,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 11473,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "prensa · Food Delivery Brands, 2025",
+   "pasos": [
+    4,
+    17,
+    89,
+    183
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_globo",
+      "x": 1600,
+      "y": 1085,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "*A medias*",
+      "x": 120,
+      "y": 150,
+      "ancla": "i",
+      "tam": 120,
+      "k": "tit"
+     },
+     {
+      "t": "Suelta *peso*",
+      "x": 140,
+      "y": 360,
+      "tam": 60,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Unos *560* locales de Pizza Hut, fuera",
+      "x": 140,
+      "y": 490,
+      "tam": 56,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "*Chile*, cerrado",
+      "x": 140,
+      "y": 620,
+      "tam": 60,
+      "k": "linea",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11676,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 11676,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Food Delivery Brands, EINF 2023 y 2025",
+   "pasos": [
+    4,
+    68
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Tiendas *en el mundo*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "2.421",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "2023",
+      "color": "blanco",
+      "w": 320,
+      "tam": 110,
+      "k": "col"
+     },
+     {
+      "t": "1.568",
+      "x": 1200,
+      "y": 900,
+      "alto": 363,
+      "pie": "2025",
+      "color": "rojo",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 11825,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 11825,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Food Delivery Brands, EINF 2025",
+   "pasos": [
+    4,
+    51,
+    111
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Las *pérdidas*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "44,9",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "2024 (M€)",
+      "color": "rojo",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "22,5",
+      "x": 1200,
+      "y": 900,
+      "alto": 280,
+      "pie": "2025 (M€)",
+      "color": "ambar",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 11995,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 11995,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Food Delivery Brands, EINF 2025",
+   "pasos": [
+    4,
+    41,
+    132,
+    175,
+    275
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 440,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Una cifra *incómoda*",
+      "x": 1330,
+      "y": 150,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "−27,5 M€",
+      "pie": "España, en 2025",
+      "x": 1350,
+      "y": 370,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Más que el año anterior",
+      "x": 1350,
+      "y": 640,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "No es lo que pierden *las pizzerías*: ahí están la sede y, previsiblemente, los intereses",
+      "x": 900,
+      "y": 740,
+      "w": 920,
+      "tam": 46,
+      "k": "par",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 12398,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 12398,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Food Delivery Brands, EINF 2025",
+   "pasos": [
+    4,
+    34,
+    46,
+    79
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_globo",
+      "x": 420,
+      "y": 1085,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Quién *gana*?",
+      "x": 1240,
+      "y": 150,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "Irlanda",
+      "pie": "+7,3 M€",
+      "x": 1240,
+      "y": 350,
+      "ancla": "c",
+      "tam": 190,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "México: de −6,8 a +0,8",
+      "x": 1240,
+      "y": 720,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Chile: −14,1 y cerrado",
+      "x": 1240,
+      "y": 840,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3,
+      "dt": 24
+     }
+    ]
+   },
+   "f1": 12672,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.11,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 12672,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Telepizza, 9-3-2026",
+   "pasos": [
+    4,
+    97
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2026",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_pizza",
+      "x": 560,
+      "y": 1040,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Masa madre *propia*",
+      "x": 1400,
+      "y": 260,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "≈ 700",
+      "pie": "locales en España",
+      "x": 1400,
+      "y": 520,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 12845,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 12845,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    126
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_local",
+      "x": 960,
+      "y": 1060,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Casi *cuarenta años* después",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Esa parte nunca se rompió",
+      "x": 960,
+      "y": 270,
+      "ancla": "c",
+      "tam": 52,
+      "color": "verde",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 13010,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 13010,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    61
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_pizza",
+      "x": 960,
+      "y": 1050,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El secreto estaba *en la masa*",
+      "x": 960,
+      "y": 140,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 13095,
+   "fondoClip": [
+    {
+     "src": "f_obrador.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 13095,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 960,
+      "y": 1070,
+      "w": 900,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im"
+     },
+     {
+      "t": "El problema, *en la deuda*",
+      "x": 960,
+      "y": 150,
+      "ancla": "c",
+      "tam": 120,
+      "k": "tit"
+     }
+    ]
+   },
+   "f1": 13203,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_paseo.jpg": "vox/media/telepizza/f_paseo.jpg",
+  "f_obrador.jpg": "vox/media/telepizza/f_obrador.jpg",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "container_port_reach_stacker_logistics_223.mp4": "parallax2/proyecto/stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "packaging_conveyor_rollers_cardboard_113.mp4": "parallax2/proyecto/stock_mercadona/packaging_conveyor_rollers_cardboard_113.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "empty_shopping_arcade_corridor_84.mp4": "parallax2/proyecto/stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/telepizza/g_balanza.webp",
+  "g_bolsa.webp": "vox/media/telepizza/g_bolsa.webp",
+  "g_caja.webp": "vox/media/telepizza/g_caja.webp",
+  "g_camion.webp": "vox/media/telepizza/g_camion.webp",
+  "g_clientes.webp": "vox/media/telepizza/g_clientes.webp",
+  "g_compradora.webp": "vox/media/telepizza/g_compradora.webp",
+  "g_empleados.webp": "vox/media/telepizza/g_empleados.webp",
+  "g_escritura.webp": "vox/media/telepizza/g_escritura.webp",
+  "g_fajo.webp": "vox/media/telepizza/g_fajo.webp",
+  "g_fajos.webp": "vox/media/telepizza/g_fajos.webp",
+  "g_furgo.webp": "vox/media/telepizza/g_furgo.webp",
+  "g_globo.webp": "vox/media/telepizza/g_globo.webp",
+  "g_inversor.webp": "vox/media/telepizza/g_inversor.webp",
+  "g_local.webp": "vox/media/telepizza/g_local.webp",
+  "g_mazo.webp": "vox/media/telepizza/g_mazo.webp",
+  "g_moneda.webp": "vox/media/telepizza/g_moneda.webp",
+  "g_monedas.webp": "vox/media/telepizza/g_monedas.webp",
+  "g_moto.webp": "vox/media/telepizza/g_moto.webp",
+  "g_movil.webp": "vox/media/telepizza/g_movil.webp",
+  "g_nave.webp": "vox/media/telepizza/g_nave.webp",
+  "g_pale.webp": "vox/media/telepizza/g_pale.webp",
+  "g_paquete.webp": "vox/media/telepizza/g_paquete.webp",
+  "g_periodico.webp": "vox/media/telepizza/g_periodico.webp",
+  "g_persiana.webp": "vox/media/telepizza/g_persiana.webp",
+  "g_pizza.webp": "vox/media/telepizza/g_pizza.webp",
+  "g_pizzaphone.webp": "vox/media/telepizza/g_pizzaphone.webp",
+  "g_portatil.webp": "vox/media/telepizza/g_portatil.webp",
+  "g_tienda.webp": "vox/media/telepizza/g_tienda.webp"
+ },
+ "tema": "telepizza",
+ "piel": "anim"
+}

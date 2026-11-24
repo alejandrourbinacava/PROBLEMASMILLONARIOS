@@ -1,0 +1,4526 @@
+{
+ "fps": 25,
+ "total": 12556,
+ "marca": {
+  "nombre": "GASOLINERAS",
+  "color": "#C4372C",
+  "claro": "#FFE14D",
+  "oscuro": "#3A0F12",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Gasteiz Hoy, 9-10-2019",
+   "pasos": [
+    0,
+    51
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2019",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Vitoria",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_marca",
+      "x": 360,
+      "y": 900,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_marca",
+      "x": 980,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "src": "g_auto",
+      "x": 1620,
+      "y": 900,
+      "w": 520,
+      "de": "aba",
+      "k": "im",
+      "dt": 12
+     },
+     {
+      "t": "*Tres* en unos 50 metros",
+      "x": 1330,
+      "y": 340,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 116,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 116,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Gasteiz Hoy, octubre de 2019",
+   "pasos": [
+    4,
+    93,
+    147
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 340,
+      "y": 860,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_marca",
+      "x": 960,
+      "y": 860,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 5
+     },
+     {
+      "src": "g_auto",
+      "x": 1580,
+      "y": 860,
+      "w": 500,
+      "de": "aba",
+      "k": "im",
+      "dt": 10
+     },
+     {
+      "t": "El litro de gasolina",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "1,36 €",
+      "x": 340,
+      "y": 370,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "1,35 €",
+      "x": 960,
+      "y": 370,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "1,21 €",
+      "x": 1580,
+      "y": 370,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 313,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 313,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    76
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_surtidor",
+      "x": 380,
+      "y": 1080,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "15 céntimos",
+      "pie": "sin cruzar casi la calle",
+      "x": 1200,
+      "y": 360,
+      "ancla": "c",
+      "tam": 180,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "Y las tres, abiertas",
+      "x": 1200,
+      "y": 760,
+      "tam": 84,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.72
+   },
+   "f1": 424,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 424,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    73,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1060,
+      "w": 820,
+      "de": "izq",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1060,
+      "w": 720,
+      "de": "der",
+      "k": "im",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "t": "Seguro que *cerca de tu casa*…",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "20 metros",
+      "x": 1000,
+      "y": 560,
+      "tam": 64,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1,
+      "dt": 24
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 602,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 602,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    69
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 900,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Por qué no cierra *la cara*?",
+      "x": 480,
+      "y": 180,
+      "ancla": "c",
+      "tam": 60,
+      "max": 860,
+      "k": "tit"
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 900,
+      "w": 640,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "¿Cómo vive *la barata*?",
+      "x": 1440,
+      "y": 180,
+      "ancla": "c",
+      "tam": 60,
+      "max": 860,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 745,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 745,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "CNMC, junio de 2026 · FuelsEurope",
+   "pasos": [
+    4,
+    49,
+    62,
+    121,
+    176
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿Hay demasiadas?",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "No es eso",
+      "x": 960,
+      "y": 250,
+      "tam": 70,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "src": "g_marca",
+      "x": 520,
+      "y": 1070,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 1420,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "12.562",
+      "pie": "en España",
+      "x": 520,
+      "y": 460,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "25",
+      "pie": "por 100.000 hab. aquí",
+      "x": 1200,
+      "y": 460,
+      "ancla": "c",
+      "tam": 200,
+      "color": "cian",
+      "maxPie": 520,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "cifra": "25",
+      "pie": "media de la UE",
+      "x": 1640,
+      "y": 460,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "maxPie": 440,
+      "k": "dato",
+      "p": 4
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 982,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 982,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    49,
+    85
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 600,
+      "y": 1060,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La respuesta es *otra pregunta*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "No cuánto cobra cada una",
+      "x": 1450,
+      "y": 450,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Quién paga la que tú ves",
+      "x": 1400,
+      "y": 640,
+      "tam": 58,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 1117,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_capitulo",
+   "f0": 1117,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "Por qué se *ponen juntas*",
+    "sub": "La regla de los dos tenderetes",
+    "el": "g_auto",
+    "ew": 600,
+    "ex": 1560,
+    "ey": 1040,
+    "nx": 1270
+   },
+   "f1": 1183,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1183,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "H. Hotelling, «Stability in Competition», 1929",
+   "pasos": [
+    4,
+    117,
+    197,
+    212
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1929",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Harold Hotelling, *economista*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "x0": 160,
+      "y0": 905,
+      "x1": 1760,
+      "y1": 905,
+      "grosor": 8,
+      "color": "#8A93A3",
+      "k": "flecha",
+      "dt": 10
+     },
+     {
+      "src": "g_auto",
+      "x": 960,
+      "y": 900,
+      "w": 360,
+      "de": "pop",
+      "k": "im",
+      "dt": 20
+     },
+     {
+      "src": "g_marca",
+      "x": 1330,
+      "y": 900,
+      "w": 420,
+      "de": "pop",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "t": "Si uno va al centro…",
+      "x": 560,
+      "y": 400,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "dt": 20
+     },
+     {
+      "t": "…el otro, al lado",
+      "x": 1330,
+      "y": 400,
+      "ancla": "c",
+      "tam": 48,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Si se aleja, le regala clientes",
+      "x": 960,
+      "y": 560,
+      "tam": 56,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 1462,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.0,
+     "rate": 0.992,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1462,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Autoridad Vasca de la Competencia, 15-11-2018",
+   "pasos": [
+    4,
+    70,
+    120,
+    260
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_coche",
+      "x": 420,
+      "y": 1040,
+      "w": 620,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Con *coches*, lo mismo",
+      "x": 1330,
+      "y": 150,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Los litros están *donde está el tráfico*",
+      "x": 960,
+      "y": 270,
+      "w": 860,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Los sitios buenos, ocupados",
+      "x": 1370,
+      "y": 620,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Queda ponerse enfrente",
+      "x": 1370,
+      "y": 820,
+      "tam": 60,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1766,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.0,
+     "rate": 0.915,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1766,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Ley 11/2013, artículo 40",
+   "pasos": [
+    4,
+    69,
+    114,
+    136,
+    150
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2013",
+      "x": 190,
+      "y": 160,
+      "k": "hoja",
+      "p": 1
+     },
+     {
+      "t": "Cambió *la ley*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_auto",
+      "x": 480,
+      "y": 1050,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Centro comercial",
+      "x": 1400,
+      "y": 330,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Polígono",
+      "x": 1400,
+      "y": 460,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Estación de ITV",
+      "x": 1400,
+      "y": 590,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     },
+     {
+      "t": "Sin permiso urbanístico especial",
+      "x": 1370,
+      "y": 800,
+      "tam": 48,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 4,
+      "dt": 20
+     }
+    ]
+   },
+   "f1": 2037,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.23,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 2037,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "CNMC, boletín de junio de 2026",
+   "pasos": [
+    4,
+    32,
+    92
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y empezaron a *aparecer*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "10.015",
+      "x": 620,
+      "y": 900,
+      "alto": 440,
+      "pie": "2011",
+      "color": "blanco",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "12.562",
+      "x": 1260,
+      "y": 900,
+      "alto": 552,
+      "pie": "Junio de 2026",
+      "color": "ambar",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 2175,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_capitulo",
+   "f0": 2175,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "Echas *cincuenta euros*",
+    "sub": "Adónde va cada uno",
+    "el": "g_surtidor",
+    "ew": 330,
+    "ex": 1735,
+    "ey": 1075,
+    "nx": 1230
+   },
+   "f1": 2200,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2200,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, boletín de agosto de 2026 (15-10-2026)",
+   "pasos": [
+    4,
+    45
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_surtidor",
+      "x": 420,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "50 €",
+      "pie": "de gasolina",
+      "x": 1250,
+      "y": 420,
+      "ancla": "c",
+      "tam": 340,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "Números de agosto de 2026 · CNMC",
+      "x": 1250,
+      "y": 800,
+      "ancla": "c",
+      "tam": 32,
+      "k": "eti",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 2355,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2355,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, agosto de 2026 (proporciones sobre 50 €)",
+   "pasos": [
+    4,
+    39,
+    130,
+    152,
+    182
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *50 €*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "19,5 €",
+      "x": 430,
+      "y": 900,
+      "alto": 440,
+      "pie": "Impuestos",
+      "color": "rojo",
+      "w": 270,
+      "tam": 90,
+      "k": "col"
+     },
+     {
+      "t": "21,5 €",
+      "x": 960,
+      "y": 900,
+      "alto": 485,
+      "pie": "Lo que cuesta en el mercado",
+      "color": "blanco",
+      "w": 270,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "≈ 9 €",
+      "x": 1490,
+      "y": 900,
+      "alto": 200,
+      "pie": "Margen bruto",
+      "color": "ambar",
+      "w": 270,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "¿Se lo queda el gasolinero?",
+      "x": 1490,
+      "y": 470,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 2611,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 2611,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    42,
+    157,
+    187,
+    208
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No se lo queda",
+      "x": 520,
+      "y": 170,
+      "tam": 90,
+      "k": "sello"
+     },
+     {
+      "src": "g_cisterna",
+      "x": 560,
+      "y": 1040,
+      "w": 980,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Transporte, punto de venta, *petrolera*",
+      "x": 1060,
+      "y": 220,
+      "tam": 46,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "*Reservas* de emergencia",
+      "x": 1060,
+      "y": 340,
+      "tam": 50,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "*Biocarburantes*",
+      "x": 1060,
+      "y": 450,
+      "tam": 50,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "*Eficiencia* energética",
+      "x": 1060,
+      "y": 560,
+      "tam": 50,
+      "k": "linea",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 2855,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2855,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, INF/DE/087/26 (marca tradicional, gasóleo, 2025, modelo teórico)",
+   "pasos": [
+    4,
+    98,
+    148,
+    189
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *10 céntimos* de margen",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 260,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Obligaciones: 6",
+        "v": 6.1,
+        "color": "rojo"
+       },
+       {
+        "t": "La estación: menos de 3",
+        "v": 2.7,
+        "color": "ambar"
+       },
+       {
+        "t": "Otros",
+        "v": 0.8,
+        "color": "humo"
+       },
+       {
+        "t": "",
+        "v": 0.4,
+        "color": "verde"
+       }
+      ],
+      "h": 110,
+      "k": "reparto",
+      "p": 1
+     },
+     {
+      "src": "g_marca",
+      "x": 520,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "< 3",
+      "pie": "la estación en sí",
+      "x": 1180,
+      "y": 620,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "< 0,5",
+      "pie": "estructura y beneficio",
+      "x": 1600,
+      "y": 620,
+      "ancla": "c",
+      "tam": 160,
+      "color": "verde",
+      "maxPie": 440,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 3119,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 3119,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, INF/DE/088/26 (datos de 2024; mediana)",
+   "pasos": [
+    4,
+    65,
+    170,
+    234
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_monedas",
+      "x": 340,
+      "y": 1080,
+      "w": 300,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La empresa *que está en la mitad*",
+      "x": 1240,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "2,4 %",
+      "pie": "gana, antes de impuestos, sobre lo que vende",
+      "x": 1240,
+      "y": 400,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 1000,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "≈ 1 €",
+      "pie": "de tus cincuenta",
+      "x": 1240,
+      "y": 790,
+      "ancla": "c",
+      "tam": 170,
+      "color": "verde",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 3417,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.932,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 3417,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    55,
+    96
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_surtidor",
+      "x": 440,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Nadie vive *de un litro*",
+      "x": 1300,
+      "y": 320,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Se vive de cuántos litros",
+      "x": 1300,
+      "y": 620,
+      "tam": 70,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3551,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 3551,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, ventas de 2025 (multiplicación propia)",
+   "pasos": [
+    4,
+    52,
+    105,
+    142
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cisterna",
+      "x": 520,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "2,6 millones",
+      "pie": "de litros al año, de media",
+      "x": 1330,
+      "y": 250,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Un céntimo menos por litro",
+      "x": 1400,
+      "y": 560,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "26.000 €",
+      "x": 1430,
+      "y": 760,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 3732,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_capitulo",
+   "f0": 3732,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "Quién está *detrás*",
+    "sub": "Tres puertas",
+    "el": "g_marca",
+    "ew": 700,
+    "ex": 1530,
+    "ey": 1030,
+    "nx": 1270
+   },
+   "f1": 3842,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3842,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, INF/DE/087/26",
+   "pasos": [
+    4,
+    26,
+    117
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Tres puertas: *la primera*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_marca",
+      "x": 560,
+      "y": 1050,
+      "w": 860,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La petrolera es *la dueña* o la lleva ella",
+      "x": 1080,
+      "y": 280,
+      "w": 760,
+      "tam": 60,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "45 %",
+      "pie": "de las de marca",
+      "x": 1440,
+      "y": 660,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4030,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 4030,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, INF/DE/087/26",
+   "pasos": [
+    4,
+    87,
+    131,
+    157
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*La segunda*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El suelo es *de la petrolera*",
+      "x": 940,
+      "y": 270,
+      "tam": 52,
+      "k": "linea"
+     },
+     {
+      "t": "La lleva otro, *obligado a comprarle*",
+      "x": 940,
+      "y": 380,
+      "tam": 52,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "cifra": "1 de cada 4",
+      "x": 1400,
+      "y": 600,
+      "ancla": "c",
+      "tam": 140,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Si baja el precio, sale de su bolsillo",
+      "x": 1390,
+      "y": 840,
+      "ancla": "c",
+      "tam": 40,
+      "color": "rojo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 4300,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 4300,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, INF/DE/087/26",
+   "pasos": [
+    4,
+    102,
+    151
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y *la tercera*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "De *un empresario* con una marca",
+      "x": 940,
+      "y": 270,
+      "tam": 52,
+      "k": "linea"
+     },
+     {
+      "t": "Compra su carburante, *pone su bandera*",
+      "x": 940,
+      "y": 380,
+      "tam": 48,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "cifra": "3 de cada 10",
+      "x": 1400,
+      "y": 640,
+      "ancla": "c",
+      "tam": 140,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4477,
+   "fondoClip": [
+    {
+     "src": "aerial_roundabout_city_traffic_152.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 4477,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Ley 11/2013",
+   "pasos": [
+    4,
+    74,
+    117
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1060,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Contratos más cortos",
+      "x": 1360,
+      "y": 170,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "5 años",
+      "pie": "antes",
+      "x": 1360,
+      "y": 380,
+      "ancla": "c",
+      "tam": 160,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "1 año",
+      "pie": "con dos prórrogas",
+      "x": 1360,
+      "y": 700,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 4645,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 4645,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, INF/DE/087/26, 26-5-2026",
+   "pasos": [
+    4,
+    118,
+    165
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "37 %",
+      "pie": "de la Península y Baleares",
+      "x": 1360,
+      "y": 330,
+      "ancla": "c",
+      "tam": 260,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "El precio no lo decide *el de la caja*",
+      "x": 1000,
+      "y": 600,
+      "w": 820,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Lo decide el mayorista",
+      "x": 1390,
+      "y": 870,
+      "tam": 62,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 4858,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 4858,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Exolum · CNMC",
+   "pasos": [
+    4,
+    69,
+    158,
+    245
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cisterna",
+      "x": 560,
+      "y": 1050,
+      "w": 940,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Sale *de los mismos sitios*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "≈ 4.000 km",
+      "pie": "de oleoductos y depósitos comunes",
+      "x": 1400,
+      "y": 320,
+      "ancla": "c",
+      "tam": 140,
+      "color": "ambar",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "No carga «su» gasolina: una cantidad igual",
+      "x": 1400,
+      "y": 620,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Cada marca añade sus aditivos",
+      "x": 1400,
+      "y": 760,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 5160,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.0,
+     "rate": 0.92,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 5160,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, INF/DE/088/26 (resultado bruto de explotación, 2024)",
+   "pasos": [
+    4,
+    96,
+    204
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Puede permitirse una *que gana poco*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "O que pierde",
+      "x": 1390,
+      "y": 300,
+      "ancla": "c",
+      "tam": 56,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "La sociedad que más vendió en 2024, la de *Moeve*…",
+      "x": 1000,
+      "y": 390,
+      "w": 820,
+      "tam": 54,
+      "k": "par",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Resultado bruto negativo",
+      "x": 1390,
+      "y": 800,
+      "tam": 60,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 5427,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.39,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 5427,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Repsol y Moeve, condiciones de 2026 (clientes más vinculados)",
+   "pasos": [
+    4,
+    33,
+    53,
+    149
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_movil",
+      "x": 1560,
+      "y": 1090,
+      "w": 500,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "t": "Forma parte *de una red*",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "*Una tarjeta*",
+      "x": 140,
+      "y": 330,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "*Una aplicación*, con la luz incluida",
+      "x": 140,
+      "y": 450,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "cifra": "hasta 40",
+      "pie": "cénts. en Repsol",
+      "x": 320,
+      "y": 680,
+      "ancla": "c",
+      "tam": 110,
+      "color": "cian",
+      "maxPie": 460,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "cifra": "hasta 60",
+      "pie": "cénts. en Moeve",
+      "x": 860,
+      "y": 680,
+      "ancla": "c",
+      "tam": 110,
+      "color": "cian",
+      "maxPie": 460,
+      "k": "dato",
+      "p": 3,
+      "dt": 24
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 5673,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 5673,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    35
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1050,
+      "w": 680,
+      "de": "aba",
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "t": "Y otra cosa",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Competir consigo misma",
+      "x": 960,
+      "y": 360,
+      "tam": 88,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 5745,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 5745,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, precio medio de agosto de 2026 (gasolina 95)",
+   "pasos": [
+    4,
+    140,
+    256
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2023",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Cepsa, hoy *Moeve*, compra *Ballenoil*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1060,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Moeve",
+      "x": 480,
+      "y": 360,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "1,79 €",
+      "x": 480,
+      "y": 530,
+      "ancla": "c",
+      "tam": 160,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1060,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ballenoil",
+      "x": 1440,
+      "y": 360,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "1,64 €",
+      "x": 1440,
+      "y": 530,
+      "ancla": "c",
+      "tam": 160,
+      "color": "verde",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 6057,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.0,
+     "rate": 0.893,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 6057,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    49,
+    98
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_coche",
+      "x": 440,
+      "y": 1040,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "7,70 €",
+      "pie": "de diferencia en un depósito de 50 litros",
+      "x": 1320,
+      "y": 380,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 960,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Al mismo dueño",
+      "x": 1320,
+      "y": 800,
+      "tam": 90,
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6202,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 6202,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, C/1463/24, 21-5-2024",
+   "pasos": [
+    4,
+    121,
+    148,
+    234
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Barbate*, Cádiz",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_marca",
+      "x": 250,
+      "y": 560,
+      "w": 380,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 720,
+      "y": 560,
+      "w": 380,
+      "de": "aba",
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "src": "g_marca",
+      "x": 1190,
+      "y": 560,
+      "w": 380,
+      "de": "aba",
+      "k": "im",
+      "dt": 12
+     },
+     {
+      "src": "g_auto",
+      "x": 1660,
+      "y": 560,
+      "w": 380,
+      "de": "aba",
+      "k": "im",
+      "dt": 18
+     },
+     {
+      "cifra": "2 de 4",
+      "pie": "serían suyas",
+      "x": 420,
+      "y": 730,
+      "ancla": "c",
+      "tam": 130,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+60 %",
+      "pie": "del gasóleo de la zona",
+      "x": 940,
+      "y": 730,
+      "ancla": "c",
+      "tam": 130,
+      "color": "rojo",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Tuvo que vender esa y otras tres",
+      "x": 1500,
+      "y": 770,
+      "ancla": "c",
+      "tam": 36,
+      "color": "verde",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 6540,
+   "fondoClip": [
+    {
+     "src": "aerial_town_street_rooftops_224.mp4",
+     "desde": 0.0,
+     "rate": 0.827,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_capitulo",
+   "f0": 6540,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Sin nadie *en la caja*",
+    "sub": "La otra mitad del misterio",
+    "el": "g_auto",
+    "ew": 600,
+    "ex": 1560,
+    "ey": 1040,
+    "nx": 1270
+   },
+   "f1": 6623,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 6623,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, junio de 2026",
+   "pasos": [
+    4,
+    100,
+    151
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Gasolineras *sin personal*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "159",
+      "x": 560,
+      "y": 900,
+      "alto": 60,
+      "pie": "2011",
+      "color": "blanco",
+      "w": 300,
+      "tam": 100,
+      "k": "col"
+     },
+     {
+      "t": "2.122",
+      "x": 1080,
+      "y": 900,
+      "alto": 540,
+      "pie": "Junio de 2026",
+      "color": "ambar",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "Una de cada seis",
+      "x": 1560,
+      "y": 420,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 6805,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 6805,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, expediente C/1719/26",
+   "pasos": [
+    4,
+    36,
+    50,
+    60
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_auto",
+      "x": 560,
+      "y": 1050,
+      "w": 860,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Sin tienda",
+      "x": 1400,
+      "y": 240,
+      "ancla": "c",
+      "tam": 52,
+      "color": "rojo",
+      "k": "chip"
+     },
+     {
+      "t": "Sin lavado",
+      "x": 1400,
+      "y": 370,
+      "ancla": "c",
+      "tam": 52,
+      "color": "rojo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Sin bar",
+      "x": 1400,
+      "y": 500,
+      "ancla": "c",
+      "tam": 52,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Petroprix: *sin atención al público* y sin servicios añadidos",
+      "x": 1060,
+      "y": 620,
+      "w": 780,
+      "tam": 54,
+      "k": "par",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 7019,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 7019,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuentas de Plenoil 2023 (cuenta propia)",
+   "pasos": [
+    4,
+    26,
+    160,
+    238
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_auto",
+      "x": 480,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y aun así, *ganan*: Plenoil",
+      "x": 1330,
+      "y": 140,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "Hoy, Plenergy",
+      "x": 1370,
+      "y": 270,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "950 millones",
+      "pie": "de litros en 2023",
+      "x": 1350,
+      "y": 480,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "+200",
+      "pie": "estaciones",
+      "x": 1350,
+      "y": 790,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 7308,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 7308,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuenta propia con datos de Plenoil y de la CNMC",
+   "pasos": [
+    4,
+    70
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cisterna",
+      "x": 520,
+      "y": 1050,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "4–5 millones",
+      "pie": "de litros por estación",
+      "x": 1330,
+      "y": 320,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "t": "Casi el doble de la media",
+      "x": 1380,
+      "y": 760,
+      "tam": 60,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 7416,
+   "fondoClip": [
+    {
+     "src": "truck_highway_bridge_delivery_119.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 7416,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuenta propia con las cuentas de Plenoil, 2023",
+   "pasos": [
+    4,
+    100,
+    134
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_auto",
+      "x": 560,
+      "y": 1060,
+      "w": 660,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "3,8 cénts.",
+      "pie": "por litro, antes de impuestos",
+      "x": 560,
+      "y": 300,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "cifra": "≈ 190.000 €",
+      "pie": "por estación",
+      "x": 1400,
+      "y": 480,
+      "ancla": "c",
+      "tam": 150,
+      "color": "verde",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 7662,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 7662,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, INF/DE/087/26 (modelo teórico)",
+   "pasos": [
+    4,
+    102,
+    152
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 520,
+      "y": 1050,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "En la de marca",
+      "x": 1400,
+      "y": 170,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "9,5 cénts.",
+      "pie": "por litro, solo el punto de venta",
+      "x": 1390,
+      "y": 390,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "maxPie": 840,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Personal",
+      "x": 1390,
+      "y": 690,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Mantenimiento",
+      "x": 1390,
+      "y": 790,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 10
+     },
+     {
+      "t": "Bandera",
+      "x": 1390,
+      "y": 890,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2,
+      "dt": 20
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 7863,
+   "fondoClip": [
+    {
+     "src": "aerial_roundabout_city_traffic_152.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 7863,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    50,
+    94,
+    139
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1060,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La acera *de Vitoria*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Vende más y gasta menos",
+      "x": 1440,
+      "y": 420,
+      "ancla": "c",
+      "tam": 50,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "No vive solo de ese cartel",
+      "x": 480,
+      "y": 420,
+      "ancla": "c",
+      "tam": 50,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 8055,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 8055,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, E/CNMC/005/19, julio de 2019",
+   "pasos": [
+    4,
+    69,
+    122,
+    207,
+    285
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_coche",
+      "x": 440,
+      "y": 1040,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Y qué gana *el conductor*?",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Menos de lo que parece",
+      "x": 960,
+      "y": 250,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "−0,3",
+      "pie": "cénts. el gasóleo",
+      "x": 1180,
+      "y": 500,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "maxPie": 440,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "cifra": "−1",
+      "pie": "cént. la gasolina",
+      "x": 1620,
+      "y": 500,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "maxPie": 440,
+      "k": "dato",
+      "p": 4
+     },
+     {
+      "t": "Al abrir una automática cerca · Madrid",
+      "x": 1400,
+      "y": 760,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8382,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.0,
+     "rate": 0.853,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 8382,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, E/CNMC/005/19",
+   "pasos": [
+    4,
+    49,
+    122
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Depende *de la vecina*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_auto",
+      "x": 480,
+      "y": 860,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "cifra": "−2 %",
+      "pie": "las independientes",
+      "x": 480,
+      "y": 350,
+      "ancla": "c",
+      "tam": 180,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_marca",
+      "x": 1440,
+      "y": 880,
+      "w": 640,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "cifra": "≈ 0",
+      "pie": "las de las grandes",
+      "x": 1440,
+      "y": 350,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 8550,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 8550,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "OCU",
+   "pasos": [
+    4,
+    64,
+    89
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_coche",
+      "x": 460,
+      "y": 1040,
+      "w": 660,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El ahorro es *cruzar la calle*",
+      "x": 1330,
+      "y": 260,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "300 €",
+      "pie": "al año, como mucho, según la OCU",
+      "x": 1330,
+      "y": 520,
+      "ancla": "c",
+      "tam": 240,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8716,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 8716,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, agosto de 2026 (Península y Baleares)",
+   "pasos": [
+    4,
+    106,
+    154,
+    196
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_surtidor",
+      "x": 400,
+      "y": 1080,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "72 cénts.",
+      "pie": "entre la más barata y la más cara",
+      "x": 1270,
+      "y": 350,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "maxPie": 1000,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Un pueblo de Lleida",
+      "x": 1010,
+      "y": 760,
+      "ancla": "c",
+      "tam": 50,
+      "color": "verde",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Mahón",
+      "x": 1560,
+      "y": 760,
+      "ancla": "c",
+      "tam": 50,
+      "color": "rojo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 8942,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_capitulo",
+   "f0": 8942,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    11
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "La sombra *y las multas*",
+    "sub": "Lo que también hay que contar",
+    "el": "g_mazo",
+    "ew": 520,
+    "ex": 1600,
+    "ey": 1060,
+    "nx": 1280
+   },
+   "f1": 8985,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 8985,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Agencia Tributaria",
+   "pasos": [
+    4,
+    131,
+    210,
+    288
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2023 y 2024: *el IVA*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_cisterna",
+      "x": 520,
+      "y": 1050,
+      "w": 860,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Mayoristas que lo cobraban *y no lo ingresaban*",
+      "x": 1000,
+      "y": 270,
+      "w": 820,
+      "tam": 58,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "2 × 300 M€",
+      "pie": "dos tramas, según Hacienda",
+      "x": 1390,
+      "y": 620,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Sin sentencia todavía",
+      "x": 1390,
+      "y": 900,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 9306,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.869,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 9306,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Ley 7/2024",
+   "pasos": [
+    4,
+    79
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_auto",
+      "x": 520,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No lo vinculan con ninguna cadena",
+      "x": 1360,
+      "y": 250,
+      "ancla": "c",
+      "tam": 48,
+      "color": "verde",
+      "k": "chip"
+     },
+     {
+      "cifra": "110 %",
+      "pie": "del IVA, garantizado antes de sacar el litro",
+      "x": 1380,
+      "y": 530,
+      "ancla": "c",
+      "tam": 220,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 9521,
+   "fondoClip": [
+    {
+     "src": "container_port_reach_stacker_logistics_223.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 9521,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 960,
+      "y": 1060,
+      "w": 1100,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Las grandes también *han dado que hablar*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 9568,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 9568,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CNE / CNMC, 31-7-2013",
+   "pasos": [
+    4,
+    42,
+    81,
+    140
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "lunes",
+      "x": 190,
+      "y": 160,
+      "tam": 34,
+      "k": "hoja"
+     },
+     {
+      "t": "2012: *el efecto lunes*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "L",
+      "x": 330,
+      "y": 900,
+      "alto": 250,
+      "pie": "se comunica a Bruselas",
+      "color": "verde",
+      "w": 170,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "M",
+      "x": 620,
+      "y": 900,
+      "alto": 400,
+      "pie": "",
+      "color": "rojo",
+      "w": 170,
+      "tam": 90,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "X",
+      "x": 910,
+      "y": 900,
+      "alto": 430,
+      "pie": "",
+      "color": "rojo",
+      "w": 170,
+      "tam": 90,
+      "k": "col",
+      "p": 3,
+      "dt": 5
+     },
+     {
+      "t": "J",
+      "x": 1200,
+      "y": 900,
+      "alto": 440,
+      "pie": "",
+      "color": "rojo",
+      "w": 170,
+      "tam": 90,
+      "k": "col",
+      "p": 3,
+      "dt": 10
+     },
+     {
+      "t": "V",
+      "x": 1490,
+      "y": 900,
+      "alto": 450,
+      "pie": "",
+      "color": "rojo",
+      "w": 170,
+      "tam": 90,
+      "k": "col",
+      "p": 3,
+      "dt": 15
+     },
+     {
+      "t": "Esquema, sin escala",
+      "x": 1700,
+      "y": 1010,
+      "ancla": "d",
+      "tam": 22,
+      "k": "eti"
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 9744,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 9744,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CNE / CNMC, informe del 31-7-2013",
+   "pasos": [
+    4,
+    58
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1060,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La Comisión lo escribió",
+      "x": 1360,
+      "y": 220,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "«Revela la ausencia de *competencia efectiva*»",
+      "x": 1000,
+      "y": 360,
+      "w": 820,
+      "tam": 76,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 9868,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 9868,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Tribunal Supremo, STS 915/2022",
+   "pasos": [
+    4,
+    86,
+    158,
+    198,
+    265
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mazo",
+      "x": 430,
+      "y": 1060,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Repsol: *20 M€* de multa",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "24 feb.",
+      "x": 1000,
+      "y": 420,
+      "s": 1.7,
+      "tam": 32,
+      "k": "hoja",
+      "p": 1
+     },
+     {
+      "t": "Acababa el plazo",
+      "x": 1000,
+      "y": 635,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 1
+     },
+     {
+      "t": "25 feb.",
+      "x": 1480,
+      "y": 420,
+      "s": 1.7,
+      "tam": 32,
+      "k": "hoja",
+      "p": 2
+     },
+     {
+      "t": "Se notificó",
+      "x": 1480,
+      "y": 635,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 2
+     },
+     {
+      "t": "Anulada",
+      "x": 1240,
+      "y": 800,
+      "tam": 86,
+      "k": "sello",
+      "p": 3
+     },
+     {
+      "t": "Por un día",
+      "x": 1240,
+      "y": 965,
+      "ancla": "c",
+      "tam": 54,
+      "color": "ambar",
+      "k": "chip",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 10157,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.96,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 10157,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CNMC, 3-2-2026 y 21-4-2026",
+   "pasos": [
+    4,
+    72,
+    152,
+    279
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mazo",
+      "x": 430,
+      "y": 1060,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Este año",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Enero: *20,5 M€* a Repsol",
+      "x": 820,
+      "y": 320,
+      "tam": 58,
+      "k": "linea"
+     },
+     {
+      "t": "Dice que recurrirá · no nos consta firme",
+      "x": 1300,
+      "y": 450,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Abril: *archivado* Repsol, Moeve y BP",
+      "x": 820,
+      "y": 640,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Sin indicios de acuerdo de precios",
+      "x": 1300,
+      "y": 770,
+      "ancla": "c",
+      "tam": 42,
+      "color": "verde",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10479,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.866,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 10479,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1050,
+      "w": 700,
+      "de": "aba",
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "t": "Entonces, *¿quién la paga?*",
+      "x": 960,
+      "y": 160,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit"
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 10567,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 10567,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    29,
+    93
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_coche",
+      "x": 440,
+      "y": 1040,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La paga el volumen",
+      "x": 1300,
+      "y": 210,
+      "tam": 90,
+      "color": "#FFD95A",
+      "k": "sello"
+     },
+     {
+      "t": "Un dinero *pequeñísimo* por litro",
+      "x": 940,
+      "y": 400,
+      "w": 860,
+      "tam": 64,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Mientras pasen *coches para las dos*",
+      "x": 940,
+      "y": 620,
+      "w": 860,
+      "tam": 64,
+      "k": "par",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 10740,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 10740,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    50,
+    76,
+    92,
+    143
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "*La red*",
+      "x": 480,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "El suelo",
+      "x": 230,
+      "y": 330,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "La tarjeta",
+      "x": 500,
+      "y": 330,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "La tienda",
+      "x": 790,
+      "y": 330,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 840,
+      "k": "div"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1060,
+      "w": 620,
+      "de": "der",
+      "k": "im",
+      "p": 4
+     },
+     {
+      "t": "*Lo que no gasta*",
+      "x": 1440,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 4
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 10935,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 10935,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CNMC (ventas entre estaciones)",
+   "pasos": [
+    4,
+    85,
+    152,
+    200
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Millones de litros *por estación*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "≈ 3",
+      "x": 520,
+      "y": 900,
+      "alto": 560,
+      "pie": "Hace unos años",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "≈ 2,5",
+      "x": 1060,
+      "y": 900,
+      "alto": 467,
+      "pie": "Ahora",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Los mismos coches, más estaciones",
+      "x": 1540,
+      "y": 620,
+      "ancla": "c",
+      "tam": 36,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 11199,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 11199,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CNMC, junio de 2026",
+   "pasos": [
+    4,
+    42,
+    77
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 480,
+      "y": 1090,
+      "w": 620,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "t": "Primera mitad de 2026",
+      "x": 1360,
+      "y": 180,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "−195",
+      "pie": "baja el censo por primera vez",
+      "x": 1360,
+      "y": 420,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "maxPie": 840,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Muchas llevaban tiempo sin vender",
+      "x": 1360,
+      "y": 800,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 11390,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 11390,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "CNMC, fin de 2025",
+   "pasos": [
+    4,
+    46
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_coche",
+      "x": 460,
+      "y": 1040,
+      "w": 660,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y *el enchufe*",
+      "x": 1340,
+      "y": 200,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "cifra": "≈ 2.000",
+      "pie": "gasolineras con punto de recarga",
+      "x": 1340,
+      "y": 490,
+      "ancla": "c",
+      "tam": 230,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 11546,
+   "fondoClip": [
+    {
+     "src": "traffic_sunset_city_street_155.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 11546,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Plenergy y Ballenoil · CNMC, C/1719/26",
+   "pasos": [
+    4,
+    63,
+    189
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_auto",
+      "x": 520,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Los que más saben, *se mueven*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Plenergy y Ballenoil: *una cada cuatro días*",
+      "x": 1020,
+      "y": 270,
+      "w": 800,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "cifra": "40",
+      "pie": "de Eroski, para Petroprix",
+      "x": 1400,
+      "y": 660,
+      "ancla": "c",
+      "tam": 200,
+      "color": "cian",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 11826,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 11826,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Expansión, mediados de noviembre de 2026",
+   "pasos": [
+    4,
+    64,
+    153,
+    233
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 520,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Y *Moeve*…",
+      "x": 1400,
+      "y": 160,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "+1.700",
+      "pie": "gasolineras, quizá en venta",
+      "x": 1400,
+      "y": 360,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Lo adelantó Expansión",
+      "x": 1400,
+      "y": 690,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "La empresa no lo ha anunciado",
+      "x": 1400,
+      "y": 820,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 12099,
+   "fondoClip": [
+    {
+     "src": "aerial_roundabout_city_traffic_152.mp4",
+     "desde": 0.15,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 12099,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    69
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1050,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La misma acera",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "15 céntimos",
+      "x": 960,
+      "y": 340,
+      "tam": 100,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 12217,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 12217,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    87
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_monedas",
+      "x": 400,
+      "y": 1080,
+      "w": 340,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Dos maneras distintas de ganar…",
+      "x": 820,
+      "y": 290,
+      "w": 980,
+      "tam": 66,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "*1 €* de cada *50*",
+      "x": 1280,
+      "y": 600,
+      "ancla": "c",
+      "tam": 150,
+      "k": "tit",
+      "p": 1,
+      "dt": 24
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 12384,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 12384,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    55
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_marca",
+      "x": 480,
+      "y": 1050,
+      "w": 780,
+      "de": "aba",
+      "gris": 0.6,
+      "k": "im"
+     },
+     {
+      "src": "g_auto",
+      "x": 1440,
+      "y": 1050,
+      "w": 680,
+      "de": "aba",
+      "gris": 0.6,
+      "k": "im"
+     },
+     {
+      "t": "El que más se lo juega…",
+      "x": 960,
+      "y": 140,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "no está en *ninguna de las dos cajas*",
+      "x": 960,
+      "y": 320,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 12556,
+   "fondoClip": [
+    {
+     "src": "f_dos.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_dos.jpg": "vox/media/gasolineras/f_dos.jpg",
+  "traffic_sunset_city_street_155.mp4": "parallax2/proyecto/stock_mercadona/traffic_sunset_city_street_155.mp4",
+  "aerial_town_street_rooftops_224.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_street_rooftops_224.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "aerial_highway_lanes_trucks_325.mp4": "parallax2/proyecto/stock_mercadona/aerial_highway_lanes_trucks_325.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "truck_highway_bridge_delivery_119.mp4": "parallax2/proyecto/stock_mercadona/truck_highway_bridge_delivery_119.mp4",
+  "aerial_roundabout_city_traffic_152.mp4": "parallax2/proyecto/stock_mercadona/aerial_roundabout_city_traffic_152.mp4",
+  "container_port_reach_stacker_logistics_223.mp4": "parallax2/proyecto/stock_mercadona/container_port_reach_stacker_logistics_223.mp4",
+  "trucks_highway_aerial_parking_logistics_122.mp4": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_auto.webp": "vox/media/gasolineras/g_auto.webp",
+  "g_balanza.webp": "vox/media/gasolineras/g_balanza.webp",
+  "g_bolsa.webp": "vox/media/gasolineras/g_bolsa.webp",
+  "g_caja.webp": "vox/media/gasolineras/g_caja.webp",
+  "g_camion.webp": "vox/media/gasolineras/g_camion.webp",
+  "g_cisterna.webp": "vox/media/gasolineras/g_cisterna.webp",
+  "g_clientes.webp": "vox/media/gasolineras/g_clientes.webp",
+  "g_coche.webp": "vox/media/gasolineras/g_coche.webp",
+  "g_compradora.webp": "vox/media/gasolineras/g_compradora.webp",
+  "g_empleados.webp": "vox/media/gasolineras/g_empleados.webp",
+  "g_escritura.webp": "vox/media/gasolineras/g_escritura.webp",
+  "g_fajo.webp": "vox/media/gasolineras/g_fajo.webp",
+  "g_fajos.webp": "vox/media/gasolineras/g_fajos.webp",
+  "g_furgo.webp": "vox/media/gasolineras/g_furgo.webp",
+  "g_globo.webp": "vox/media/gasolineras/g_globo.webp",
+  "g_inversor.webp": "vox/media/gasolineras/g_inversor.webp",
+  "g_marca.webp": "vox/media/gasolineras/g_marca.webp",
+  "g_mazo.webp": "vox/media/gasolineras/g_mazo.webp",
+  "g_moneda.webp": "vox/media/gasolineras/g_moneda.webp",
+  "g_monedas.webp": "vox/media/gasolineras/g_monedas.webp",
+  "g_movil.webp": "vox/media/gasolineras/g_movil.webp",
+  "g_nave.webp": "vox/media/gasolineras/g_nave.webp",
+  "g_pale.webp": "vox/media/gasolineras/g_pale.webp",
+  "g_paquete.webp": "vox/media/gasolineras/g_paquete.webp",
+  "g_periodico.webp": "vox/media/gasolineras/g_periodico.webp",
+  "g_persiana.webp": "vox/media/gasolineras/g_persiana.webp",
+  "g_portatil.webp": "vox/media/gasolineras/g_portatil.webp",
+  "g_surtidor.webp": "vox/media/gasolineras/g_surtidor.webp",
+  "g_tienda.webp": "vox/media/gasolineras/g_tienda.webp"
+ },
+ "tema": "gasolineras",
+ "piel": "anim"
+}

@@ -1,0 +1,4795 @@
+{
+ "fps": 25,
+ "total": 13030,
+ "marca": {
+  "nombre": "KIOSCOS",
+  "color": "#1F6B4C",
+  "claro": "#F3EBD8",
+  "oscuro": "#10281F",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "ANDP, vía AMI (puntos de venta de prensa)",
+   "pasos": [
+    0,
+    35
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2010",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Sitios donde comprar *un periódico*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 26.000",
+      "x": 1290,
+      "y": 560,
+      "ancla": "c",
+      "tam": 270,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 107,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 107,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Comisionado para el Mercado de Tabacos, memorias",
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Estancos",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_estanco",
+      "x": 480,
+      "y": 1080,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 12.800",
+      "x": 1330,
+      "y": 560,
+      "ancla": "c",
+      "tam": 230,
+      "color": "cian",
+      "k": "dato"
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 188,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 188,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "CNMC, 2026 · Comisionado para el Mercado de Tabacos, 2025",
+   "pasos": [
+    4,
+    83
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Hoy*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 440,
+      "y": 1070,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "12.500",
+      "pie": "puntos de prensa",
+      "x": 440,
+      "y": 330,
+      "ancla": "c",
+      "tam": 160,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "x": 960,
+      "y": 200,
+      "w": 2,
+      "h": 780,
+      "k": "div"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1440,
+      "y": 1070,
+      "w": 560,
+      "de": "der",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "cifra": "12.586",
+      "pie": "estancos",
+      "x": 1440,
+      "y": 330,
+      "ancla": "c",
+      "tam": 160,
+      "color": "cian",
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 335,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 335,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "CNMC, AMI y Comisionado para el Mercado de Tabacos",
+   "pasos": [
+    4,
+    44,
+    82
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "26.000",
+      "x": 360,
+      "y": 900,
+      "alto": 560,
+      "pie": "Prensa, 2010",
+      "color": "blanco",
+      "w": 220,
+      "tam": 80,
+      "k": "col"
+     },
+     {
+      "t": "12.500",
+      "x": 680,
+      "y": 900,
+      "alto": 269,
+      "pie": "Prensa, hoy",
+      "color": "rojo",
+      "w": 220,
+      "tam": 80,
+      "k": "col",
+      "dt": 14
+     },
+     {
+      "t": "12.832",
+      "x": 1180,
+      "y": 900,
+      "alto": 276,
+      "pie": "Estancos, 2020",
+      "color": "blanco",
+      "w": 220,
+      "tam": 80,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "12.586",
+      "x": 1500,
+      "y": 900,
+      "alto": 271,
+      "pie": "Estancos, 2025",
+      "color": "cian",
+      "w": 220,
+      "tam": 80,
+      "k": "col",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "t": "86 de diferencia",
+      "x": 1340,
+      "y": 360,
+      "tam": 66,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 504,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 504,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    29
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 460,
+      "y": 1080,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1460,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo raro es *lo que cobraba cada uno*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 589,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 589,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Orden de 22-4-1972, BOE 13-5-1972 · Ley 13/1998, art. 4",
+   "pasos": [
+    4,
+    66,
+    114,
+    195
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *euro* del mostrador",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_moneda",
+      "x": 960,
+      "y": 360,
+      "w": 190,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 300,
+      "y": 1080,
+      "w": 380,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "20 cénts.",
+      "pie": "el kiosquero",
+      "x": 560,
+      "y": 480,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_estanco",
+      "x": 1640,
+      "y": 1080,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "8,5 cénts.",
+      "pie": "el estanquero",
+      "x": 1380,
+      "y": 480,
+      "ancla": "c",
+      "tam": 150,
+      "color": "cian",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Cerró el del 20",
+      "x": 960,
+      "y": 900,
+      "tam": 80,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 839,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 839,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    92,
+    186
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Fumar es malo para la salud",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 400,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_estanco",
+      "x": 1440,
+      "y": 1080,
+      "w": 470,
+      "de": "aba",
+      "k": "im",
+      "p": 1,
+      "dt": 8
+     },
+     {
+      "t": "La misma *acera*",
+      "x": 960,
+      "y": 300,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Solo uno tenía la llave",
+      "x": 960,
+      "y": 470,
+      "tam": 58,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 1079,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_capitulo",
+   "f0": 1079,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "El *veinte* por ciento",
+    "sub": "1972 · lo decía el BOE",
+    "el": "g_kiosco",
+    "ew": 380,
+    "ex": 1680,
+    "ey": 1075,
+    "nx": 1270
+   },
+   "f1": 1141,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1141,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Orden de 22-4-1972, BOE 13-5-1972",
+   "pasos": [
+    4,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1972",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Las normas de *los vendedores de prensa*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 70,
+      "k": "tit"
+     },
+     {
+      "src": "g_escritura",
+      "x": 520,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Dos páginas del BOE",
+      "x": 1380,
+      "y": 540,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 1289,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1289,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Orden de 22-4-1972, BOE 13-5-1972",
+   "pasos": [
+    4,
+    22,
+    112
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_prensa",
+      "x": 440,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Artículo 13",
+      "x": 1330,
+      "y": 150,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "20 %",
+      "pie": "del precio de los diarios",
+      "x": 1330,
+      "y": 400,
+      "ancla": "c",
+      "tam": 270,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "25 %",
+      "pie": "los días con suplemento",
+      "x": 1330,
+      "y": 800,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 1465,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1465,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Orden de 22-4-1972, BOE 13-5-1972",
+   "pasos": [
+    4,
+    26,
+    113
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_furgo",
+      "x": 520,
+      "y": 1040,
+      "w": 880,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Artículo 8",
+      "x": 1400,
+      "y": 180,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "El transporte lo paga *el editor o el distribuidor*",
+      "x": 1060,
+      "y": 300,
+      "w": 780,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Gratis",
+      "x": 1430,
+      "y": 760,
+      "tam": 110,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 1640,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1640,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Orden de 22-4-1972, BOE 13-5-1972",
+   "pasos": [
+    4,
+    63,
+    182,
+    253
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_prensa",
+      "x": 440,
+      "y": 1070,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Artículo 15: *la Lotería de Navidad*",
+      "x": 1320,
+      "y": 150,
+      "ancla": "c",
+      "tam": 66,
+      "max": 1050,
+      "k": "tit"
+     },
+     {
+      "cifra": "×2",
+      "pie": "la comisión, ese día",
+      "x": 1330,
+      "y": 460,
+      "ancla": "c",
+      "tam": 340,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Lo decía el Estado",
+      "x": 1330,
+      "y": 880,
+      "ancla": "c",
+      "tam": 52,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1924,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.976,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 1924,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "CNMC UM/026/24 · ordenanza de Madrid de 2009",
+   "pasos": [
+    4,
+    53,
+    84,
+    137,
+    181
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 380,
+      "y": 1080,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1600,
+      "y": 1080,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Se parecía mucho *a un estanco*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Permiso personal",
+      "x": 960,
+      "y": 320,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Barcelona: uno por cabeza",
+      "x": 960,
+      "y": 450,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Madrid: atendido por ti",
+      "x": 960,
+      "y": 580,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Precio fijado desde fuera",
+      "x": 960,
+      "y": 710,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 2183,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2183,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "elkiosco.info, 2008 · CNMC, 2026",
+   "pasos": [
+    4,
+    107,
+    154
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 500,
+      "y": 1050,
+      "w": 780,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Según los vendedores, con la Constitución *dejó de obligar*",
+      "x": 1000,
+      "y": 240,
+      "w": 840,
+      "tam": 62,
+      "k": "par"
+     },
+     {
+      "t": "La costumbre se quedó",
+      "x": 1390,
+      "y": 700,
+      "tam": 62,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 2378,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2378,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    74,
+    146
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Dos permisos. *No para lo mismo*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 460,
+      "y": 1080,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Para ocupar un trozo de acera",
+      "x": 480,
+      "y": 300,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "x": 960,
+      "y": 220,
+      "w": 2,
+      "h": 760,
+      "k": "div"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1440,
+      "y": 1080,
+      "w": 540,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Para ser el único que vende algo",
+      "x": 1440,
+      "y": 300,
+      "ancla": "c",
+      "tam": 44,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 2596,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_capitulo",
+   "f0": 2596,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "Copiar *gratis*",
+    "sub": "El periódico sin kiosco",
+    "el": "g_movil",
+    "ew": 360,
+    "ex": 1760,
+    "ey": 1090,
+    "nx": 1210
+   },
+   "f1": 2717,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 2717,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "AIMC, Marco General de los Medios 2026",
+   "pasos": [
+    4,
+    27,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Leen cada día un periódico *en papel*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "42,1 %",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "2008",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "11,5 %",
+      "x": 1160,
+      "y": 900,
+      "alto": 153,
+      "pie": "2025",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "src": "g_prensa",
+      "x": 1640,
+      "y": 1060,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 2898,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 2898,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "AIMC, Marco General de los Medios 2026",
+   "pasos": [
+    4,
+    73,
+    95,
+    213
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿Ya nadie *lee*?",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Pues no",
+      "x": 1180,
+      "y": 140,
+      "tam": 76,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "45,5 %",
+      "x": 560,
+      "y": 900,
+      "alto": 480,
+      "pie": "Papel y pantalla, 2008",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "39,6 %",
+      "x": 1160,
+      "y": 900,
+      "alto": 418,
+      "pie": "Papel y pantalla, 2025",
+      "color": "cian",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "src": "g_movil",
+      "x": 1660,
+      "y": 1090,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 3157,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 3157,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    28
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 520,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im"
+     },
+     {
+      "t": "No se dejó de *leer*",
+      "x": 1330,
+      "y": 320,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Se dejó de pasar",
+      "x": 1330,
+      "y": 600,
+      "tam": 86,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 3242,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 3242,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    70
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_periodico",
+      "x": 420,
+      "y": 1040,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_periodico",
+      "x": 510,
+      "y": 920,
+      "w": 640,
+      "de": "aba",
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "src": "g_periodico",
+      "x": 600,
+      "y": 800,
+      "w": 640,
+      "de": "aba",
+      "k": "im",
+      "dt": 16
+     },
+     {
+      "src": "g_periodico",
+      "x": 690,
+      "y": 680,
+      "w": 640,
+      "de": "aba",
+      "k": "im",
+      "dt": 24
+     },
+     {
+      "t": "Copiar *mil veces* no cuesta nada",
+      "x": 1330,
+      "y": 200,
+      "ancla": "c",
+      "tam": 64,
+      "max": 1000,
+      "k": "tit"
+     },
+     {
+      "t": "El que tiene *la acera* no tiene nada",
+      "x": 1200,
+      "y": 620,
+      "w": 660,
+      "tam": 60,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 3390,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 3390,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, C/1648/26",
+   "pasos": [
+    4,
+    70,
+    144
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_caja",
+      "x": 500,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ni para el *papel*",
+      "x": 1390,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Supermercados",
+      "x": 1390,
+      "y": 330,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Gasolineras",
+      "x": 1390,
+      "y": 450,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 16
+     },
+     {
+      "cifra": "≈ 20 %",
+      "pie": "del mercado, en 2024",
+      "x": 1390,
+      "y": 680,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3622,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 3622,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    30
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_monedas",
+      "x": 400,
+      "y": 1080,
+      "w": 340,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Hagamos *la cuenta*",
+      "x": 1260,
+      "y": 320,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "t": "Es nuestra y mezcla años",
+      "x": 1260,
+      "y": 520,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 3769,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 3769,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "KPMG para AMI, vía AMI · CNMC, 2026 (división propia)",
+   "pasos": [
+    4,
+    104,
+    150
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_prensa",
+      "x": 420,
+      "y": 1070,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "≈ 630.000",
+      "pie": "diarios al día, en 2024",
+      "x": 1290,
+      "y": 300,
+      "ancla": "c",
+      "tam": 180,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "t": "Entre 12.500 sitios",
+      "x": 1290,
+      "y": 570,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 50",
+      "pie": "en cada uno",
+      "x": 1290,
+      "y": 760,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3957,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 3957,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    94,
+    144
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_monedas",
+      "x": 340,
+      "y": 1080,
+      "w": 300,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "0,40 €",
+      "pie": "por diario, como mucho",
+      "x": 1200,
+      "y": 240,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "cifra": "20 €",
+      "pie": "al día",
+      "x": 900,
+      "y": 620,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x0": 1120,
+      "y0": 620,
+      "x1": 1280,
+      "y1": 620,
+      "k": "flecha",
+      "p": 2
+     },
+     {
+      "cifra": "600 €",
+      "pie": "al mes",
+      "x": 1520,
+      "y": 620,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 4140,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 4140,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "AVEPRENCO, vía AMI, 26-12-2023",
+   "pasos": [
+    4,
+    104,
+    193,
+    316
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Gastos fijos, *Córdoba*",
+      "x": 1290,
+      "y": 150,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "650–750 €",
+      "pie": "al mes",
+      "x": 1290,
+      "y": 370,
+      "ancla": "c",
+      "tam": 190,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Debes dinero",
+      "x": 1290,
+      "y": 720,
+      "tam": 90,
+      "k": "sello",
+      "p": 2
+     },
+     {
+      "t": "Antes de cobrar un sueldo",
+      "x": 1290,
+      "y": 910,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 4499,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.781,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 4499,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    54,
+    68,
+    85,
+    101
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 460,
+      "y": 1080,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Revistas",
+      "x": 1180,
+      "y": 240,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Colecciones",
+      "x": 1580,
+      "y": 240,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Chucherías",
+      "x": 1380,
+      "y": 380,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Otra trampa: cómo se pagan",
+      "x": 1360,
+      "y": 660,
+      "tam": 52,
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 4686,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 4686,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "elkiosco.info, 15-9-2025 (ejemplo de los vendedores)",
+   "pasos": [
+    4,
+    71,
+    114
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Te facturan *cien*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 330,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Vendes 40",
+        "v": 40,
+        "color": "verde"
+       },
+       {
+        "t": "Devuelves 60",
+        "v": 60,
+        "color": "rojo"
+       }
+      ],
+      "h": 120,
+      "k": "reparto",
+      "p": 1
+     },
+     {
+      "src": "g_periodico",
+      "x": 480,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Te abonan las 60… semanas después",
+      "x": 1340,
+      "y": 680,
+      "ancla": "c",
+      "tam": 50,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 4867,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 4867,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "elkiosco.info",
+   "pasos": [
+    4,
+    112,
+    164
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camion",
+      "x": 520,
+      "y": 1050,
+      "w": 900,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "Cada distribuidora, *lo suyo*",
+      "x": 1380,
+      "y": 200,
+      "ancla": "c",
+      "tam": 66,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "t": "Títulos en exclusiva",
+      "x": 1400,
+      "y": 400,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Y su propio aval",
+      "x": 1400,
+      "y": 530,
+      "ancla": "c",
+      "tam": 52,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5063,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 5063,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CNMC, C/1648/26",
+   "pasos": [
+    4,
+    120
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_furgo",
+      "x": 520,
+      "y": 1040,
+      "w": 880,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El transporte *gratis*…",
+      "x": 1390,
+      "y": 260,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Portes",
+      "x": 1400,
+      "y": 520,
+      "tam": 130,
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 5222,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 5222,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Luis Mariano César, ABC, vía AMI, 26-12-2023 (frase resumida)",
+   "pasos": [
+    4,
+    65
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un presidente de los vendedores",
+      "x": 840,
+      "y": 240,
+      "ancla": "i",
+      "tam": 28,
+      "k": "eti"
+     },
+     {
+      "t": "No somos una empresa normal: *no podemos elegir proveedor*",
+      "x": 840,
+      "y": 300,
+      "w": 980,
+      "tam": 76,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 5376,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 5376,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    107,
+    147
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Quedaba *una cosa*",
+      "x": 1330,
+      "y": 260,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "En el mismo mostrador",
+      "x": 1330,
+      "y": 420,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "src": "g_cajetilla",
+      "x": 1330,
+      "y": 1030,
+      "w": 260,
+      "de": "pop",
+      "k": "im",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 5545,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_capitulo",
+   "f0": 5545,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "El 1 de enero *de 2006*",
+    "sub": "El día que salió el tabaco",
+    "el": "g_cajetilla",
+    "ew": 260,
+    "ex": 1720,
+    "ey": 1050,
+    "nx": 1270
+   },
+   "f1": 5582,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 5582,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Ley 28/2005",
+   "pasos": [
+    4,
+    45
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2006",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "La ley *antitabaco*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_cajetilla",
+      "x": 960,
+      "y": 1050,
+      "w": 220,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "Fuera de los kioscos",
+      "x": 1430,
+      "y": 560,
+      "tam": 64,
+      "k": "sello",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 5725,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 5725,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "RDL 2/2006 · Ley 25/2009",
+   "pasos": [
+    4,
+    34,
+    134
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 460,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Protestaron",
+      "x": 1290,
+      "y": 150,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Al mes: vuelve a los de la calle",
+      "x": 1290,
+      "y": 370,
+      "ancla": "c",
+      "tam": 48,
+      "color": "verde",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "En un local: casi cuatro años más",
+      "x": 1290,
+      "y": 540,
+      "ancla": "c",
+      "tam": 48,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 5932,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 5932,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Ley 13/1998, art. 4.Cinco · Ley 28/2005, art. 4",
+   "pasos": [
+    4,
+    35,
+    83,
+    133,
+    159
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cajetilla",
+      "x": 330,
+      "y": 1050,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Pero en *una máquina*",
+      "x": 1180,
+      "y": 140,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_estanco",
+      "x": 1560,
+      "y": 1080,
+      "w": 520,
+      "de": "der",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "t": "No la llena el fabricante",
+      "x": 900,
+      "y": 330,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "La llena un estanco",
+      "x": 900,
+      "y": 500,
+      "tam": 64,
+      "k": "sello",
+      "p": 3
+     },
+     {
+      "t": "Uno de *los tres más cercanos*, al mismo precio que cualquiera",
+      "x": 600,
+      "y": 640,
+      "w": 640,
+      "tam": 50,
+      "k": "par",
+      "p": 4
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 6233,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 6233,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CNMC, IPN/CNMC/029/22",
+   "pasos": [
+    4,
+    46,
+    63
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_moneda",
+      "x": 400,
+      "y": 960,
+      "w": 420,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Qué gana *el kiosco*?",
+      "x": 1260,
+      "y": 200,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "0,15 €",
+      "pie": "de recargo por paquete (2022)",
+      "x": 1260,
+      "y": 500,
+      "ancla": "c",
+      "tam": 260,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 6379,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 6379,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Levante-TV, 7-1-2010, vía elkiosco.info",
+   "pasos": [
+    4,
+    89,
+    183,
+    197,
+    211
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Ana Valle",
+      "x": 110,
+      "y": 150,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Vendedores de prensa de Valencia · 2010",
+      "x": 114,
+      "y": 228.0,
+      "ancla": "i",
+      "tam": 27,
+      "k": "eti",
+      "dt": 5
+     },
+     {
+      "src": "g_cajetilla",
+      "x": 1640,
+      "y": 1050,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "«El tabaco de los quioscos es *el mismo tabaco* que el de los estancos»",
+      "x": 110,
+      "y": 320,
+      "w": 1200,
+      "tam": 76,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Es el mismo",
+      "x": 320,
+      "y": 860,
+      "ancla": "c",
+      "tam": 50,
+      "color": "verde",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Cambia la llave",
+      "x": 900,
+      "y": 860,
+      "tam": 62,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 6638,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 6638,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Comisionado para el Mercado de Tabacos, memoria 2025 (división propia)",
+   "pasos": [
+    4,
+    80,
+    110,
+    258
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 340,
+      "y": 1080,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "x0": 600,
+      "y0": 760,
+      "x1": 860,
+      "y1": 760,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "src": "g_estanco",
+      "x": 1120,
+      "y": 1080,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "De rival a cliente",
+      "x": 560,
+      "y": 250,
+      "tam": 66,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "cifra": "+100.000",
+      "pie": "sitios que le compran",
+      "x": 1480,
+      "y": 300,
+      "ancla": "c",
+      "tam": 140,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "8 o 9 por estanco",
+      "x": 1560,
+      "y": 560,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 6956,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_capitulo",
+   "f0": 6956,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Vender menos *y cobrar más*",
+    "sub": "El mostrador que no se copia",
+    "el": "g_estanco",
+    "ew": 380,
+    "ex": 1710,
+    "ey": 1070,
+    "nx": 1270
+   },
+   "f1": 7025,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 7025,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Ley 13/1998 · RD 1199/1999",
+   "pasos": [
+    4,
+    69,
+    96,
+    122
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 460,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo dice *el Estado*",
+      "x": 1350,
+      "y": 160,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Solo uno por persona",
+      "x": 1350,
+      "y": 350,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "25 años",
+      "pie": "dura",
+      "x": 1120,
+      "y": 570,
+      "ancla": "c",
+      "tam": 130,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "150 m",
+      "pie": "de distancia, en general",
+      "x": 1600,
+      "y": 570,
+      "ancla": "c",
+      "tam": 130,
+      "color": "cian",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 7249,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 7249,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Ley 13/1998",
+   "pasos": [
+    4,
+    45,
+    81,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 460,
+      "y": 1080,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El precio, *en el BOE*",
+      "x": 940,
+      "y": 250,
+      "tam": 60,
+      "k": "linea"
+     },
+     {
+      "t": "Prohibido *hacer descuentos*",
+      "x": 940,
+      "y": 390,
+      "tam": 60,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Nadie *más barato* que tú",
+      "x": 940,
+      "y": 530,
+      "tam": 60,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Lo de fuera es *contrabando*",
+      "x": 940,
+      "y": 670,
+      "tam": 60,
+      "k": "linea",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 7437,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 7437,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Ley 13/1998, art. 4.Siete",
+   "pasos": [
+    4,
+    36,
+    92,
+    128
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 460,
+      "y": 1080,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El margen lo pone *la ley*",
+      "x": 1340,
+      "y": 160,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "cifra": "8,5 %",
+      "pie": "en los cigarrillos",
+      "x": 1340,
+      "y": 400,
+      "ancla": "c",
+      "tam": 220,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "9 %",
+      "pie": "en los puros",
+      "x": 1340,
+      "y": 760,
+      "ancla": "c",
+      "tam": 130,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 7630,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 7630,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisionado para el Mercado de Tabacos, septiembre de 2026",
+   "pasos": [
+    4,
+    72,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2014-2025, *cigarrillos*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "−10,5 %",
+      "pie": "cajetillas",
+      "x": 520,
+      "y": 470,
+      "ancla": "c",
+      "tam": 220,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x": 960,
+      "y": 260,
+      "w": 2,
+      "h": 520,
+      "k": "div"
+     },
+     {
+      "cifra": "+10,1 %",
+      "pie": "euros",
+      "x": 1400,
+      "y": 470,
+      "ancla": "c",
+      "tam": 220,
+      "color": "verde",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "src": "g_cajetilla",
+      "x": 520,
+      "y": 1060,
+      "w": 160,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_monedas",
+      "x": 1400,
+      "y": 1080,
+      "w": 200,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 7826,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 7826,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisionado para el Mercado de Tabacos",
+   "pasos": [
+    4,
+    34,
+    113
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "El precio *del paquete*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "4,37 €",
+      "x": 560,
+      "y": 900,
+      "alto": 420,
+      "pie": "2014",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "5,50 €",
+      "x": 1200,
+      "y": 900,
+      "alto": 529,
+      "pie": "Septiembre de 2026",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 7986,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 7986,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuenta propia: 8,5 % del precio medio",
+   "pasos": [
+    4,
+    59
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y tu parte *sube con él*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_moneda",
+      "x": 300,
+      "y": 980,
+      "w": 320,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "37",
+      "pie": "céntimos en 2014",
+      "x": 760,
+      "y": 500,
+      "ancla": "c",
+      "tam": 260,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x0": 1000,
+      "y0": 500,
+      "x1": 1180,
+      "y1": 500,
+      "k": "flecha",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "cifra": "47",
+      "pie": "céntimos hoy",
+      "x": 1440,
+      "y": 500,
+      "ancla": "c",
+      "tam": 300,
+      "color": "verde",
+      "k": "dato",
+      "p": 1,
+      "dt": 20
+     }
+    ]
+   },
+   "f1": 8123,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 8123,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    30,
+    95,
+    134
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Fíjate *qué curioso*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_prensa",
+      "x": 440,
+      "y": 1060,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "0,40 €",
+      "pie": "un periódico",
+      "x": 440,
+      "y": 330,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x": 960,
+      "y": 220,
+      "w": 2,
+      "h": 740,
+      "k": "div"
+     },
+     {
+      "src": "g_cajetilla",
+      "x": 1440,
+      "y": 1050,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "0,47 €",
+      "pie": "un paquete",
+      "x": 1440,
+      "y": 330,
+      "ancla": "c",
+      "tam": 160,
+      "color": "cian",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Casi lo mismo",
+      "x": 960,
+      "y": 600,
+      "tam": 64,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 8284,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 8284,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    55,
+    107
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 440,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "50",
+      "pie": "al día",
+      "x": 420,
+      "y": 330,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x": 960,
+      "y": 160,
+      "w": 2,
+      "h": 820,
+      "k": "div"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1460,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "Todos",
+      "pie": "no hay otro sitio",
+      "x": 1460,
+      "y": 320,
+      "ancla": "c",
+      "tam": 170,
+      "color": "cian",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 8462,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 8462,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuenta propia con la memoria 2025 del Comisionado para el Mercado de Tabacos",
+   "pasos": [
+    4,
+    106,
+    167
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 460,
+      "y": 1080,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El estanco *medio*",
+      "x": 1340,
+      "y": 140,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "+1 M€",
+      "pie": "vendió el año pasado",
+      "x": 1340,
+      "y": 330,
+      "ancla": "c",
+      "tam": 190,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "≈ 92.000 €",
+      "pie": "brutos para él",
+      "x": 1340,
+      "y": 680,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Antes de local, empleados, impuestos y licencia",
+      "x": 1330,
+      "y": 930,
+      "ancla": "c",
+      "tam": 36,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8740,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.996,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 8740,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Ministerio de Hacienda, subasta de 2022",
+   "pasos": [
+    4,
+    66,
+    139
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 440,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La media la inflan *las fronteras*",
+      "x": 1330,
+      "y": 180,
+      "ancla": "c",
+      "tam": 64,
+      "max": 1050,
+      "k": "tit"
+     },
+     {
+      "cifra": "27",
+      "pie": "zonas",
+      "x": 1340,
+      "y": 350,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+500.000 €",
+      "pie": "de comisión media al año",
+      "x": 1340,
+      "y": 700,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 8919,
+   "fondoClip": [
+    {
+     "src": "aerial_highway_lanes_trucks_325.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 8919,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "BOE-B-2022-23886",
+   "pasos": [
+    4,
+    94,
+    140
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mazo",
+      "x": 480,
+      "y": 1060,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "2022",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "La llave *se subasta*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "203",
+      "pie": "estancos",
+      "x": 1360,
+      "y": 440,
+      "ancla": "c",
+      "tam": 270,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Gana quien más paga",
+      "x": 1360,
+      "y": 820,
+      "tam": 66,
+      "k": "sello",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 9120,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 9120,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Comisionado para el Mercado de Tabacos, memorias (división propia)",
+   "pasos": [
+    4,
+    68
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 460,
+      "y": 1070,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "74,7 M€",
+      "pie": "ingresó el Estado en 2023",
+      "x": 1340,
+      "y": 300,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato"
+     },
+     {
+      "cifra": "≈ 360.000 €",
+      "pie": "cada uno, de media, como poco",
+      "x": 1340,
+      "y": 700,
+      "ancla": "c",
+      "tam": 140,
+      "color": "cian",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 9282,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 9282,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "APVPBP, tablón de anuncios, 2022-2026",
+   "pasos": [
+    4,
+    22,
+    142,
+    257,
+    358
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 500,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "¿Y *un kiosco*?",
+      "x": 1290,
+      "y": 140,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "15–30.000 €",
+      "pie": "traspasos anunciados en Barcelona",
+      "x": 1290,
+      "y": 310,
+      "ancla": "c",
+      "tam": 140,
+      "color": "ambar",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "12.000 €",
+      "pie": "al año de publicidad, en el de 25.000",
+      "x": 1290,
+      "y": 650,
+      "ancla": "c",
+      "tam": 140,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "Y dos taquillas de paquetes",
+      "x": 1290,
+      "y": 920,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 9689,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 9689,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "anuncio de mayo de 2026 y cuenta propia",
+   "pasos": [
+    4,
+    44
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 460,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Por *no hacer nada*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "1.000 €",
+      "x": 960,
+      "y": 900,
+      "alto": 560,
+      "pie": "Publicidad, al mes",
+      "color": "verde",
+      "w": 300,
+      "tam": 90,
+      "k": "col"
+     },
+     {
+      "t": "600 €",
+      "x": 1500,
+      "y": 900,
+      "alto": 336,
+      "pie": "Diarios (nuestra cuenta)",
+      "color": "rojo",
+      "w": 300,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 9805,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 9805,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "cuenta propia sobre un paquete de 5,44 €",
+   "pasos": [
+    4,
+    37,
+    79,
+    153
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 440,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La llave es *prestada*",
+      "x": 1340,
+      "y": 200,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 8 de cada 10 €",
+      "pie": "del paquete son impuestos",
+      "x": 1340,
+      "y": 500,
+      "ancla": "c",
+      "tam": 120,
+      "color": "rojo",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10031,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 10031,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "CNMC, IPN 112/13 e IPN/CNMC/029/22",
+   "pasos": [
+    4,
+    127,
+    173
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 440,
+      "y": 1050,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Replantear *el monopolio*",
+      "x": 1340,
+      "y": 170,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "CNMC, 2013",
+      "x": 1140,
+      "y": 340,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "CNMC, 2022",
+      "x": 1560,
+      "y": 340,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "España",
+      "x": 1080,
+      "y": 560,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Francia",
+      "x": 1340,
+      "y": 560,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 8
+     },
+     {
+      "t": "Italia",
+      "x": 1590,
+      "y": 560,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 16
+     },
+     {
+      "t": "Austria",
+      "x": 1210,
+      "y": 690,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 24
+     },
+     {
+      "t": "Hungría",
+      "x": 1480,
+      "y": 690,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2,
+      "dt": 32
+     }
+    ]
+   },
+   "f1": 10372,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.82,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 10372,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "La Moncloa, 21-7-2026",
+   "pasos": [
+    4,
+    95,
+    129,
+    199
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 440,
+      "y": 1080,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un proyecto de *ley nueva*",
+      "x": 1340,
+      "y": 170,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "t": "Sin humo en *terrazas y playas*",
+      "x": 900,
+      "y": 350,
+      "tam": 54,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Sin *carteles* a la calle",
+      "x": 900,
+      "y": 480,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "«Exclusivo»",
+      "x": 1330,
+      "y": 760,
+      "tam": 96,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 10678,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.909,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_capitulo",
+   "f0": 10678,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "Una *sola* caja",
+    "sub": "El camión que lo repartía todo",
+    "el": "g_camion",
+    "ew": 720,
+    "ex": 1520,
+    "ey": 1040,
+    "nx": 1270
+   },
+   "f1": 10744,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 10744,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Logista · CNMC",
+   "pasos": [
+    4,
+    69,
+    89,
+    165
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camion",
+      "x": 960,
+      "y": 780,
+      "w": 900,
+      "de": "izq",
+      "k": "im"
+     },
+     {
+      "t": "*Logista*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_estanco",
+      "x": 360,
+      "y": 1080,
+      "w": 380,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_kiosco",
+      "x": 1560,
+      "y": 1080,
+      "w": 300,
+      "de": "aba",
+      "k": "im",
+      "p": 3
+     },
+     {
+      "x0": 640,
+      "y0": 830,
+      "x1": 520,
+      "y1": 900,
+      "k": "flecha",
+      "p": 2
+     },
+     {
+      "x0": 1280,
+      "y0": 830,
+      "x1": 1400,
+      "y1": 900,
+      "k": "flecha",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 10980,
+   "fondoClip": [
+    {
+     "src": "trucks_highway_aerial_parking_logistics_122.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e58_anim",
+   "f0": 10980,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    29
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_paquete",
+      "x": 560,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_paquete",
+      "x": 1360,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "t": "El mismo reparto",
+      "x": 960,
+      "y": 140,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Prensa",
+      "x": 560,
+      "y": 420,
+      "ancla": "c",
+      "tam": 60,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Tabaco",
+      "x": 1360,
+      "y": 420,
+      "ancla": "c",
+      "tam": 60,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1,
+      "dt": 10
+     }
+    ]
+   },
+   "f1": 11032,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e59_anim",
+   "f0": 11032,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Logista, FY2026 · CNMC, C/1648/26",
+   "pasos": [
+    4,
+    75,
+    120,
+    268
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2026",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Vende *la de la prensa*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_paquete",
+      "x": 480,
+      "y": 1040,
+      "w": 560,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "Se la queda Boyacá",
+      "x": 1360,
+      "y": 330,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "−77 %",
+      "pie": "los diarios que repartían, en 15 años",
+      "x": 1360,
+      "y": 570,
+      "ancla": "c",
+      "tam": 210,
+      "color": "rojo",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Una sola caja",
+      "x": 1360,
+      "y": 910,
+      "tam": 64,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 11361,
+   "fondoClip": [
+    {
+     "src": "warehouse_racks_aisle_logistics_117.mp4",
+     "desde": 0.0,
+     "rate": 0.848,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e60_anim",
+   "f0": 11361,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "ANDP y AMI (incluye locales de prensa)",
+   "pasos": [
+    4,
+    27,
+    162,
+    231,
+    289
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Kioscos *tradicionales*",
+      "x": 480,
+      "y": 130,
+      "ancla": "c",
+      "tam": 66,
+      "max": 880,
+      "k": "tit"
+     },
+     {
+      "t": "7.639",
+      "x": 300,
+      "y": 880,
+      "alto": 500,
+      "pie": "2010",
+      "color": "blanco",
+      "w": 230,
+      "tam": 80,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "3.897",
+      "x": 660,
+      "y": 880,
+      "alto": 255,
+      "pie": "2022",
+      "color": "rojo",
+      "w": 230,
+      "tam": 80,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "x": 960,
+      "y": 140,
+      "w": 2,
+      "h": 800,
+      "k": "div"
+     },
+     {
+      "t": "En las calles de *Madrid*",
+      "x": 1440,
+      "y": 130,
+      "ancla": "c",
+      "tam": 66,
+      "max": 880,
+      "k": "tit",
+      "p": 3
+     },
+     {
+      "t": "≈ 800",
+      "x": 1260,
+      "y": 880,
+      "alto": 500,
+      "pie": "Hace años",
+      "color": "blanco",
+      "w": 230,
+      "tam": 80,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "≈ 300",
+      "x": 1620,
+      "y": 880,
+      "alto": 188,
+      "pie": "Ahora",
+      "color": "rojo",
+      "w": 230,
+      "tam": 80,
+      "k": "col",
+      "p": 4
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 11687,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.856,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e61_anim",
+   "f0": 11687,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    69
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 540,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Les queda *una cosa*",
+      "x": 1340,
+      "y": 330,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "La acera",
+      "x": 1340,
+      "y": 620,
+      "tam": 120,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 11773,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e62_anim",
+   "f0": 11773,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Ajuntament de Barcelona, 16-10-2024 y 22-10-2025",
+   "pasos": [
+    4,
+    70,
+    152,
+    187,
+    270
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2024",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*Barcelona* cambia la norma",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "80 %",
+      "pie": "del espacio, prensa",
+      "x": 420,
+      "y": 420,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x0": 690,
+      "y0": 420,
+      "x1": 850,
+      "y1": 420,
+      "k": "flecha",
+      "p": 2
+     },
+     {
+      "cifra": "51 %",
+      "pie": "desde entonces",
+      "x": 1120,
+      "y": 420,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Café",
+      "x": 250,
+      "y": 720,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Agua",
+      "x": 470,
+      "y": 720,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3,
+      "dt": 8
+     },
+     {
+      "t": "Cajero",
+      "x": 720,
+      "y": 720,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3,
+      "dt": 16
+     },
+     {
+      "t": "Taquillas",
+      "x": 1020,
+      "y": 720,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3,
+      "dt": 24
+     },
+     {
+      "src": "g_kiosco",
+      "x": 1600,
+      "y": 1080,
+      "w": 420,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "3,7 M€",
+      "pie": "al año, la publicidad",
+      "x": 620,
+      "y": 890,
+      "ancla": "c",
+      "tam": 110,
+      "color": "verde",
+      "maxPie": 800,
+      "k": "dato",
+      "p": 4
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 12167,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e63_anim",
+   "f0": 12167,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "elkiosco.info, 22-10-2026",
+   "pasos": [
+    4,
+    83,
+    117,
+    184
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2026",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*Valencia*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_kiosco",
+      "x": 420,
+      "y": 1080,
+      "w": 460,
+      "de": "aba",
+      "gris": 1,
+      "k": "im"
+     },
+     {
+      "cifra": "30",
+      "pie": "kioscos cerrados",
+      "x": 1080,
+      "y": 430,
+      "ancla": "c",
+      "tam": 220,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "La mayoría, más de diez años",
+      "x": 1080,
+      "y": 720,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "53",
+      "pie": "solicitudes",
+      "x": 1600,
+      "y": 430,
+      "ancla": "c",
+      "tam": 280,
+      "color": "verde",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 12405,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e64_anim",
+   "f0": 12405,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    80
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 480,
+      "y": 1080,
+      "w": 540,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La esquina *sigue valiendo*",
+      "x": 1340,
+      "y": 320,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "Lo que ya no vale es *lo que había dentro*",
+      "x": 1000,
+      "y": 480,
+      "w": 820,
+      "tam": 64,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 12538,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e65_anim",
+   "f0": 12538,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    92,
+    139,
+    202
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 320,
+      "y": 1080,
+      "w": 400,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1660,
+      "y": 1080,
+      "w": 420,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ganaban más por periódico",
+      "x": 960,
+      "y": 180,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Su permiso protegía *el sitio*",
+      "x": 960,
+      "y": 380,
+      "ancla": "c",
+      "tam": 66,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "Y cambió *el producto*",
+      "x": 960,
+      "y": 520,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 3
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 12787,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e66_anim",
+   "f0": 12787,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    52
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_kiosco",
+      "x": 460,
+      "y": 1080,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un trozo de acera",
+      "x": 460,
+      "y": 300,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "x": 960,
+      "y": 160,
+      "w": 2,
+      "h": 820,
+      "k": "div"
+     },
+     {
+      "src": "g_estanco",
+      "x": 1460,
+      "y": 1080,
+      "w": 580,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "«Exclusivo»",
+      "x": 1460,
+      "y": 300,
+      "tam": 86,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 12890,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e67_anim",
+   "f0": 12890,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    46
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_estanco",
+      "x": 960,
+      "y": 1080,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Se puede copiar todo",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Menos *esa palabra*",
+      "x": 960,
+      "y": 270,
+      "ancla": "c",
+      "tam": 110,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.68
+   },
+   "f1": 13030,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_paseo.jpg": "vox/media/kioscos/f_paseo.jpg",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "trucks_highway_aerial_parking_logistics_122.mp4": "parallax2/proyecto/stock_mercadona/trucks_highway_aerial_parking_logistics_122.mp4",
+  "aerial_highway_lanes_trucks_325.mp4": "parallax2/proyecto/stock_mercadona/aerial_highway_lanes_trucks_325.mp4",
+  "warehouse_racks_aisle_logistics_117.mp4": "parallax2/proyecto/stock_mercadona/warehouse_racks_aisle_logistics_117.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/kioscos/g_balanza.webp",
+  "g_bolsa.webp": "vox/media/kioscos/g_bolsa.webp",
+  "g_caja.webp": "vox/media/kioscos/g_caja.webp",
+  "g_cajetilla.webp": "vox/media/kioscos/g_cajetilla.webp",
+  "g_camion.webp": "vox/media/kioscos/g_camion.webp",
+  "g_clientes.webp": "vox/media/kioscos/g_clientes.webp",
+  "g_compradora.webp": "vox/media/kioscos/g_compradora.webp",
+  "g_empleados.webp": "vox/media/kioscos/g_empleados.webp",
+  "g_escritura.webp": "vox/media/kioscos/g_escritura.webp",
+  "g_estanco.webp": "vox/media/kioscos/g_estanco.webp",
+  "g_fajo.webp": "vox/media/kioscos/g_fajo.webp",
+  "g_fajos.webp": "vox/media/kioscos/g_fajos.webp",
+  "g_furgo.webp": "vox/media/kioscos/g_furgo.webp",
+  "g_globo.webp": "vox/media/kioscos/g_globo.webp",
+  "g_inversor.webp": "vox/media/kioscos/g_inversor.webp",
+  "g_kiosco.webp": "vox/media/kioscos/g_kiosco.webp",
+  "g_mazo.webp": "vox/media/kioscos/g_mazo.webp",
+  "g_moneda.webp": "vox/media/kioscos/g_moneda.webp",
+  "g_monedas.webp": "vox/media/kioscos/g_monedas.webp",
+  "g_monton.webp": "vox/media/kioscos/g_monton.webp",
+  "g_movil.webp": "vox/media/kioscos/g_movil.webp",
+  "g_nave.webp": "vox/media/kioscos/g_nave.webp",
+  "g_pale.webp": "vox/media/kioscos/g_pale.webp",
+  "g_paquete.webp": "vox/media/kioscos/g_paquete.webp",
+  "g_periodico.webp": "vox/media/kioscos/g_periodico.webp",
+  "g_persiana.webp": "vox/media/kioscos/g_persiana.webp",
+  "g_portatil.webp": "vox/media/kioscos/g_portatil.webp",
+  "g_prensa.webp": "vox/media/kioscos/g_prensa.webp",
+  "g_tienda.webp": "vox/media/kioscos/g_tienda.webp"
+ },
+ "tema": "kioscos",
+ "piel": "anim"
+}

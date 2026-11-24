@@ -1,0 +1,4041 @@
+{
+ "fps": 25,
+ "total": 12813,
+ "marca": {
+  "nombre": "BANCO",
+  "color": "#1C4E8F",
+  "claro": "#E6EEF9",
+  "oscuro": "#0B1D38",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    0,
+    56,
+    84,
+    147
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cerrada",
+      "x": 960,
+      "y": 1075,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Una oficina *cerrada*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Han arrancado el rótulo",
+      "x": 600,
+      "y": 250,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "El cajero, encendido",
+      "x": 1420,
+      "y": 250,
+      "tam": 52,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 192,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 192,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    25,
+    41
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cerrada",
+      "x": 560,
+      "y": 1070,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Meses. *Igual años*",
+      "x": 1420,
+      "y": 260,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Si ya no la usan, ¿por qué *no la venden*?",
+      "x": 1080,
+      "y": 420,
+      "w": 760,
+      "tam": 72,
+      "serif": true,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 329,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 329,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Brains Real Estate, 20-5-2024",
+   "pasos": [
+    4,
+    57,
+    89
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_bbva",
+      "x": 520,
+      "y": 1070,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Venderlas, las venden",
+      "x": 1390,
+      "y": 180,
+      "tam": 56,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "cifra": "300",
+      "pie": "de una vez, el BBVA, en mayo de 2024",
+      "x": 1390,
+      "y": 400,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "100 M€",
+      "pie": "según la prensa",
+      "x": 1390,
+      "y": 800,
+      "ancla": "c",
+      "tam": 140,
+      "color": "cian",
+      "k": "dato",
+      "p": 2,
+      "dt": 40
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 596,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.39,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 596,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    35,
+    96,
+    141
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cerrada",
+      "x": 560,
+      "y": 1070,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo curioso son *las otras*",
+      "x": 1400,
+      "y": 200,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "t": "Las que no podía vender",
+      "x": 1410,
+      "y": 380,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "No eran suyas",
+      "x": 1420,
+      "y": 640,
+      "tam": 84,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 763,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 763,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "BBVA, informe anual 2022",
+   "pasos": [
+    4,
+    24,
+    84
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1050,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo habían *sido*",
+      "x": 940,
+      "y": 270,
+      "tam": 64,
+      "k": "linea"
+     },
+     {
+      "t": "Y volvieron *a serlo*",
+      "x": 940,
+      "y": 410,
+      "tam": 64,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 2.000 M€",
+      "pie": "costó la vuelta",
+      "x": 1370,
+      "y": 680,
+      "ancla": "c",
+      "tam": 190,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 921,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_capitulo",
+   "f0": 921,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "La *persiana*",
+    "sub": "De 45.707 a 16.831",
+    "el": "g_persiana",
+    "ew": 440,
+    "ex": 1660,
+    "ey": 1070,
+    "nx": 1290
+   },
+   "f1": 969,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 969,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Banco de España e Ivie",
+   "pasos": [
+    4,
+    137,
+    224
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Oficinas bancarias *en España*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "45.707",
+      "x": 560,
+      "y": 900,
+      "alto": 560,
+      "pie": "Septiembre de 2008",
+      "color": "blanco",
+      "w": 320,
+      "tam": 100,
+      "k": "col"
+     },
+     {
+      "t": "16.831",
+      "x": 1180,
+      "y": 900,
+      "alto": 206,
+      "pie": "Junio de 2026",
+      "color": "rojo",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "63 de cada 100",
+      "x": 1570,
+      "y": 480,
+      "tam": 58,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 1249,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_anim",
+   "f0": 1249,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Ivie, julio de 2026",
+   "pasos": [
+    4,
+    26,
+    138,
+    154
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y no *donde crees*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_oficina",
+      "x": 440,
+      "y": 1060,
+      "w": 660,
+      "de": "aba",
+      "gris": 0.7,
+      "k": "im"
+     },
+     {
+      "cifra": "8 de cada 10",
+      "pie": "cierres, en municipios de más de 10.000",
+      "x": 1340,
+      "y": 340,
+      "ancla": "c",
+      "tam": 150,
+      "color": "ambar",
+      "maxPie": 1000,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "En ciudades",
+      "x": 1340,
+      "y": 640,
+      "ancla": "c",
+      "tam": 56,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Los pueblos pequeños ya no tenían en 2008",
+      "x": 1330,
+      "y": 800,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 1495,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1495,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Banco de España · Ivie con datos del BCE",
+   "pasos": [
+    4,
+    29,
+    121
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 460,
+      "y": 1090,
+      "w": 600,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "cifra": "−209",
+      "pie": "solo entre abril y junio",
+      "x": 1330,
+      "y": 300,
+      "ancla": "c",
+      "tam": 240,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Y somos el tercero con más",
+      "x": 1330,
+      "y": 640,
+      "ancla": "c",
+      "tam": 50,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Oficinas por habitante, Unión Europea, 2024",
+      "x": 1330,
+      "y": 750,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 1730,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1730,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    98
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_cerrada",
+      "x": 330,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_cerrada",
+      "x": 960,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 7
+     },
+     {
+      "src": "g_cerrada",
+      "x": 1590,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 14
+     },
+     {
+      "t": "Miles de locales *que ya no hacían falta*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "¿Qué pasó con ellos?",
+      "x": 960,
+      "y": 330,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 1922,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_capitulo",
+   "f0": 1922,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    10
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "El día que *vendieron la casa*",
+    "sub": "2007-2012",
+    "el": "g_escritura",
+    "ew": 640,
+    "ex": 1570,
+    "ey": 1040,
+    "nx": 1290
+   },
+   "f1": 1939,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 1939,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Santander, informe 20-F de 2007",
+   "pasos": [
+    4,
+    123,
+    178
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2007",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*Santander*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_santander",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "1.152",
+      "pie": "inmuebles",
+      "x": 1360,
+      "y": 260,
+      "ancla": "c",
+      "tam": 190,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "2.040 M€",
+      "x": 1360,
+      "y": 580,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Y los alquila",
+      "x": 1360,
+      "y": 830,
+      "tam": 76,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2183,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 2183,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "BBVA, informe 20-F de 2010",
+   "pasos": [
+    4,
+    45,
+    121
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2009",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*BBVA*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_bbva",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "1.135",
+      "pie": "inmuebles",
+      "x": 1360,
+      "y": 320,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "1.667 M€",
+      "x": 1360,
+      "y": 720,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2370,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2370,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CaixaBank, cuentas de 2012",
+   "pasos": [
+    4,
+    19,
+    139
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2012",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*CaixaBank*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_caixa",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "439",
+      "pie": "a una filial de Inmobiliaria Carso",
+      "x": 1360,
+      "y": 290,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "428 M€",
+      "x": 1360,
+      "y": 700,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2556,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 2556,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Banco Sabadell, cuentas de 2025",
+   "pasos": [
+    4,
+    38,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Sabadell*, en varias tandas",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_sabadell",
+      "x": 480,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "478",
+      "pie": "le quedaban así a fin de 2025",
+      "x": 1360,
+      "y": 330,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "583 M€",
+      "pie": "de alquileres por delante",
+      "x": 1360,
+      "y": 720,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 2765,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 2765,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "BBVA, informe 20-F de 2010",
+   "pasos": [
+    4,
+    17,
+    134,
+    222,
+    310
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿Por qué? *Hacía falta dinero*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "426",
+      "x": 520,
+      "y": 900,
+      "alto": 143,
+      "pie": "En los libros del BBVA (M€)",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "1.667",
+      "x": 1100,
+      "y": 900,
+      "alto": 560,
+      "pie": "Lo que cobró (M€)",
+      "color": "verde",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 4
+     },
+     {
+      "t": "Inmediata",
+      "x": 1590,
+      "y": 420,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 4,
+      "dt": 20
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 3171,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.694,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_anim",
+   "f0": 3171,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "BBVA, informe 20-F de 2010 (España)",
+   "pasos": [
+    4,
+    49,
+    176,
+    238
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Oficinas del BBVA *en alquiler*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "47 %",
+      "x": 520,
+      "y": 900,
+      "alto": 317,
+      "pie": "2008",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "83 %",
+      "x": 1100,
+      "y": 900,
+      "alto": 560,
+      "pie": "2010",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Inquilinos",
+      "x": 1570,
+      "y": 460,
+      "tam": 76,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 3478,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 3478,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    32,
+    121
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Piénsalo *con una casa*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_tienda",
+      "x": 360,
+      "y": 900,
+      "w": 360,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "x0": 600,
+      "y0": 660,
+      "x1": 780,
+      "y1": 660,
+      "k": "flecha",
+      "p": 1
+     },
+     {
+      "src": "g_fajos",
+      "x": 1000,
+      "y": 900,
+      "w": 380,
+      "de": "pop",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "x0": 1240,
+      "y0": 660,
+      "x1": 1400,
+      "y1": 660,
+      "k": "flecha",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "src": "g_escritura",
+      "x": 1640,
+      "y": 900,
+      "w": 430,
+      "de": "pop",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "Vendes",
+      "x": 360,
+      "y": 980,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "Cobras",
+      "x": 1000,
+      "y": 980,
+      "ancla": "c",
+      "tam": 48,
+      "color": "verde",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Letra pequeña",
+      "x": 1640,
+      "y": 980,
+      "ancla": "c",
+      "tam": 48,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3660,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 3660,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CaixaBank, cuentas de 2012",
+   "pasos": [
+    4,
+    52,
+    101,
+    117,
+    136
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 460,
+      "y": 1050,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La de *CaixaBank*",
+      "x": 1340,
+      "y": 150,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "25 años",
+      "pie": "obligatorios",
+      "x": 1340,
+      "y": 340,
+      "ancla": "c",
+      "tam": 190,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Seguros",
+      "x": 1080,
+      "y": 680,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Impuestos",
+      "x": 1380,
+      "y": 680,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Mantenimiento",
+      "x": 1300,
+      "y": 800,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     },
+     {
+      "t": "A cargo del inquilino: el banco",
+      "x": 1330,
+      "y": 910,
+      "ancla": "c",
+      "tam": 28,
+      "k": "eti",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3879,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 3879,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "CaixaBank, cuentas de 2012 · idealista, 16-6-2022",
+   "pasos": [
+    4,
+    35,
+    66,
+    138,
+    237
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Y la renta *sube cada año*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Inflación multiplicada por…",
+      "x": 960,
+      "y": 250,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "× 1,4",
+      "pie": "CaixaBank",
+      "x": 520,
+      "y": 450,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "× 1,5",
+      "pie": "BBVA, en una cartera, hasta 2039",
+      "x": 1400,
+      "y": 450,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "src": "g_caixa",
+      "x": 520,
+      "y": 1070,
+      "w": 480,
+      "de": "aba",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "src": "g_bbva",
+      "x": 1400,
+      "y": 1070,
+      "w": 480,
+      "de": "aba",
+      "k": "im",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 4163,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.976,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 4163,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "ejemplo con la fórmula × 1,5",
+   "pasos": [
+    4,
+    48,
+    81,
+    104
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Todos los años",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "+2 %",
+      "x": 560,
+      "y": 900,
+      "alto": 340,
+      "pie": "Los precios",
+      "color": "blanco",
+      "w": 300,
+      "tam": 110,
+      "k": "col"
+     },
+     {
+      "t": "+3 %",
+      "x": 1160,
+      "y": 900,
+      "alto": 510,
+      "pie": "Tu alquiler",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "Durante décadas",
+      "x": 1580,
+      "y": 420,
+      "tam": 56,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4300,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 4300,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    51,
+    106
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 330,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_oficina",
+      "x": 960,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 7
+     },
+     {
+      "src": "g_oficina",
+      "x": 1590,
+      "y": 1060,
+      "w": 560,
+      "de": "aba",
+      "k": "im",
+      "dt": 14
+     },
+     {
+      "t": "Un siglo *abriendo oficinas*",
+      "x": 960,
+      "y": 130,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "¿Quién iba a pensarlo?",
+      "x": 960,
+      "y": 330,
+      "ancla": "c",
+      "tam": 56,
+      "color": "ambar",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 4469,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_capitulo",
+   "f0": 4469,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "Llegó *el móvil*",
+    "sub": "Lo que no se cierra es el contrato",
+    "el": "g_movil",
+    "ew": 360,
+    "ex": 1740,
+    "ey": 1090,
+    "nx": 1250
+   },
+   "f1": 4525,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 4525,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    58,
+    112,
+    155,
+    207
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2007",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_movil",
+      "x": 1640,
+      "y": 1090,
+      "w": 460,
+      "de": "der",
+      "k": "im"
+     },
+     {
+      "src": "g_persiana",
+      "x": 380,
+      "y": 1090,
+      "w": 520,
+      "de": "arr",
+      "k": "im",
+      "p": 2
+     },
+     {
+      "t": "El mismo año que firmaba",
+      "x": 640,
+      "y": 160,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "La gente dejó de ir",
+      "x": 960,
+      "y": 380,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Cerrarlas es fácil",
+      "x": 960,
+      "y": 520,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "El contrato no se cierra",
+      "x": 1010,
+      "y": 740,
+      "tam": 54,
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 4786,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 4786,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    41,
+    62,
+    96
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 460,
+      "y": 1050,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Puede *subarrendar*",
+      "x": 940,
+      "y": 240,
+      "tam": 60,
+      "k": "linea"
+     },
+     {
+      "t": "Puede *negociar*",
+      "x": 940,
+      "y": 370,
+      "tam": 60,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Puede *cambiar*",
+      "x": 940,
+      "y": 500,
+      "tam": 60,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Si no, sigue pagando",
+      "x": 1360,
+      "y": 760,
+      "tam": 64,
+      "k": "sello",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 4925,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 4925,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Merlin Properties, cuentas de 2015",
+   "pasos": [
+    4,
+    76,
+    193,
+    210,
+    250
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2015",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Como *cromos*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "src": "g_bbva",
+      "x": 480,
+      "y": 900,
+      "w": 580,
+      "de": "aba",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "cifra": "42",
+      "x": 480,
+      "y": 330,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "x0": 820,
+      "y0": 640,
+      "x1": 1080,
+      "y1": 640,
+      "k": "flecha",
+      "p": 1,
+      "dt": 10
+     },
+     {
+      "src": "g_bbva",
+      "x": 1440,
+      "y": 900,
+      "w": 580,
+      "de": "der",
+      "k": "im",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "cifra": "45",
+      "x": 1440,
+      "y": 330,
+      "ancla": "c",
+      "tam": 150,
+      "color": "verde",
+      "k": "dato",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "t": "«Estas no las quiero, dame aquellas»",
+      "x": 960,
+      "y": 990,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 5235,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 5235,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "BBVA, informe anual 2021",
+   "pasos": [
+    4,
+    56
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2021",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_persiana",
+      "x": 460,
+      "y": 1090,
+      "w": 600,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "t": "No es *una suposición*",
+      "x": 1350,
+      "y": 260,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "BBVA apunta una pérdida por el alquiler *de oficinas cerradas*",
+      "x": 1000,
+      "y": 430,
+      "w": 820,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 5433,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 5433,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "cuenta propia con el contrato y la inflación del BCE",
+   "pasos": [
+    4,
+    83,
+    100
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_monedas",
+      "x": 360,
+      "y": 1080,
+      "w": 320,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Hicimos *la cuenta*",
+      "x": 1230,
+      "y": 240,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "CaixaBank, el caso más claro",
+      "x": 1230,
+      "y": 410,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "dt": 20
+     },
+     {
+      "t": "Es nuestra",
+      "x": 1230,
+      "y": 530,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Supone que no se ha renegociado",
+      "x": 1230,
+      "y": 650,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 5694,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 5694,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    84,
+    158,
+    195
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_caixa",
+      "x": 440,
+      "y": 1060,
+      "w": 660,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Por *cada oficina*",
+      "x": 1320,
+      "y": 140,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "cifra": "975.000 €",
+      "pie": "cobró",
+      "x": 1320,
+      "y": 300,
+      "ancla": "c",
+      "tam": 160,
+      "color": "verde",
+      "k": "dato"
+     },
+     {
+      "cifra": "79.000 €",
+      "pie": "el primer alquiler",
+      "x": 1060,
+      "y": 640,
+      "ancla": "c",
+      "tam": 96,
+      "color": "blanco",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "115.000 €",
+      "pie": "hoy, con la fórmula",
+      "x": 1590,
+      "y": 640,
+      "ancla": "c",
+      "tam": 96,
+      "color": "rojo",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 5922,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 5922,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "cuenta propia con la fórmula del contrato",
+   "pasos": [
+    4,
+    59,
+    97,
+    151
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "En *trece años*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "428",
+      "x": 520,
+      "y": 900,
+      "alto": 471,
+      "pie": "Cobró por venderlas (M€)",
+      "color": "verde",
+      "w": 300,
+      "tam": 110,
+      "k": "col"
+     },
+     {
+      "t": "509",
+      "x": 1100,
+      "y": 900,
+      "alto": 560,
+      "pie": "Habría pagado (M€)",
+      "color": "rojo",
+      "w": 300,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "Y quedarían doce",
+      "x": 1590,
+      "y": 420,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 6111,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_anim",
+   "f0": 6111,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "CaixaBank, cuentas de 2012",
+   "pasos": [
+    4,
+    39,
+    166
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 460,
+      "y": 1070,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "También *lo otro*",
+      "x": 1330,
+      "y": 180,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "204 M€",
+      "pie": "de ganancia, en plena crisis",
+      "x": 1330,
+      "y": 390,
+      "ancla": "c",
+      "tam": 190,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "El dinero *en mitad de un incendio* vale más",
+      "x": 960,
+      "y": 680,
+      "w": 860,
+      "tam": 58,
+      "serif": true,
+      "k": "par",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 6353,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 6353,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "idealista, 11-11-2013",
+   "pasos": [
+    4,
+    52,
+    167,
+    206
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2013",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_oficina",
+      "x": 480,
+      "y": 1060,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "500.000 €",
+      "pie": "cada una, a ahorradores",
+      "x": 1370,
+      "y": 310,
+      "ancla": "c",
+      "tam": 160,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Casero de su propio banco",
+      "x": 1370,
+      "y": 700,
+      "tam": 52,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 6634,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_capitulo",
+   "f0": 6634,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    7
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "El viaje *de vuelta*",
+    "sub": "2020-2022",
+    "el": "g_fajos",
+    "ew": 520,
+    "ex": 1640,
+    "ey": 1060,
+    "nx": 1280
+   },
+   "f1": 6745,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 6745,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Brains Real Estate, 24-7-2020 (versión del banco)",
+   "pasos": [
+    4,
+    23,
+    134,
+    232
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*Santander* vuelve a comprar",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 78,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_santander",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "680",
+      "pie": "oficinas",
+      "x": 1360,
+      "y": 380,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Comprar era más barato que seguir pagando",
+      "x": 1340,
+      "y": 700,
+      "ancla": "c",
+      "tam": 38,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Los alquileres, apuntados como deuda",
+      "x": 1340,
+      "y": 820,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7112,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.764,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 7112,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Brains Real Estate, 19-10-2022",
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2022",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_santander",
+      "x": 480,
+      "y": 1060,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+381",
+      "pie": "oficinas más",
+      "x": 1360,
+      "y": 520,
+      "ancla": "c",
+      "tam": 280,
+      "color": "ambar",
+      "k": "dato"
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7187,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 7187,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "BBVA, informe anual 2022",
+   "pasos": [
+    4,
+    56,
+    157
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2022",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "*BBVA*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "src": "g_bbva",
+      "x": 480,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "662",
+      "pie": "de sus antiguos locales",
+      "x": 1360,
+      "y": 330,
+      "ancla": "c",
+      "tam": 230,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "1.988 M€",
+      "x": 1360,
+      "y": 740,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7414,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 7414,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "BBVA, 2010 y 2022",
+   "pasos": [
+    4,
+    37,
+    151,
+    249,
+    449
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Fíjate en *las dos cifras*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "1.667",
+      "x": 520,
+      "y": 900,
+      "alto": 440,
+      "pie": "Cobró por 1.135 (M€)",
+      "color": "verde",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "1.988",
+      "x": 1120,
+      "y": 900,
+      "alto": 525,
+      "pie": "Pagó por 662 (M€)",
+      "color": "rojo",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "No son los mismos locales, uno a uno",
+      "x": 1580,
+      "y": 440,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti",
+      "p": 3
+     },
+     {
+      "t": "Más por menos",
+      "x": 1590,
+      "y": 600,
+      "tam": 56,
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 7934,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 7934,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "BBVA, informe anual 2022 · BCE, noviembre de 2022",
+   "pasos": [
+    4,
+    86,
+    195
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 440,
+      "y": 1070,
+      "w": 640,
+      "de": "aba",
+      "gris": 0.9,
+      "k": "im"
+     },
+     {
+      "cifra": "−201 M€",
+      "pie": "apuntó ese día",
+      "x": 1330,
+      "y": 250,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "cifra": "10 %",
+      "pie": "inflación, cinco meses después",
+      "x": 1080,
+      "y": 620,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+15 %",
+      "pie": "habría subido el alquiler",
+      "x": 1580,
+      "y": 620,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8210,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.03,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_capitulo",
+   "f0": 8210,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "5",
+    "titulo": "El local que *nadie quiere*",
+    "sub": "Ya es suyo. ¿Y ahora?",
+    "el": "g_camara",
+    "ew": 440,
+    "ex": 1680,
+    "ey": 1060,
+    "nx": 1280
+   },
+   "f1": 8298,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 8298,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "cuenta propia con datos de Merlin",
+   "pasos": [
+    4,
+    39,
+    65,
+    143
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_bbva",
+      "x": 480,
+      "y": 1060,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Primero, *el tamaño*",
+      "x": 1370,
+      "y": 170,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "430 m²",
+      "pie": "de media, los del BBVA",
+      "x": 1370,
+      "y": 400,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Mucho para una peluquería",
+      "x": 1370,
+      "y": 720,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Poco para un supermercado",
+      "x": 1370,
+      "y": 840,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "k": "chip",
+      "p": 3,
+      "dt": 24
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 8524,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 8524,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    26,
+    91
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Segundo, *el sitio*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_persiana",
+      "x": 360,
+      "y": 1080,
+      "w": 460,
+      "de": "arr",
+      "k": "im",
+      "p": 1
+     },
+     {
+      "src": "g_persiana",
+      "x": 960,
+      "y": 1080,
+      "w": 460,
+      "de": "arr",
+      "k": "im",
+      "p": 1,
+      "dt": 10
+     },
+     {
+      "src": "g_persiana",
+      "x": 1560,
+      "y": 1080,
+      "w": 460,
+      "de": "arr",
+      "k": "im",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Tres persianas iguales",
+      "x": 960,
+      "y": 330,
+      "tam": 64,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 8721,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 8721,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Real Decreto 2364/1994, arts. 121-122",
+   "pasos": [
+    4,
+    40,
+    175,
+    235
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camara",
+      "x": 500,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Tercero, *lo que hay dentro*",
+      "x": 1400,
+      "y": 180,
+      "ancla": "c",
+      "tam": 62,
+      "max": 900,
+      "k": "tit"
+     },
+     {
+      "t": "Caja fuerte *anclada en hormigón*",
+      "x": 1060,
+      "y": 320,
+      "w": 780,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "No hemos encontrado cuánto cuesta quitarla",
+      "x": 1400,
+      "y": 620,
+      "ancla": "c",
+      "tam": 36,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "No cabe en una furgoneta",
+      "x": 1400,
+      "y": 820,
+      "tam": 48,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 8998,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 8998,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "BBVA, informe anual 2025",
+   "pasos": [
+    4,
+    46,
+    220,
+    306
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Esperando *comprador*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 300,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Perdido: 285 M€",
+        "v": 285,
+        "color": "rojo"
+       },
+       {
+        "t": "130 M€",
+        "v": 130,
+        "color": "humo"
+       }
+      ],
+      "h": 130,
+      "k": "reparto",
+      "p": 2
+     },
+     {
+      "src": "g_bbva",
+      "x": 440,
+      "y": 1060,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "415 M€",
+      "pie": "le habían costado",
+      "x": 1050,
+      "y": 560,
+      "ancla": "c",
+      "tam": 110,
+      "color": "blanco",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "69 de 100",
+      "pie": "ya los da por perdidos",
+      "x": 1580,
+      "y": 560,
+      "ancla": "c",
+      "tam": 110,
+      "color": "rojo",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 9347,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.802,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 9347,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": null,
+   "pasos": [
+    4,
+    88,
+    110
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_bbva",
+      "x": 520,
+      "y": 1060,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Puede vender por debajo",
+      "x": 1390,
+      "y": 300,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "t": "Y lo hace",
+      "x": 1390,
+      "y": 500,
+      "tam": 90,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "Por eso la pérdida *ya está apuntada*",
+      "x": 1050,
+      "y": 680,
+      "w": 760,
+      "tam": 58,
+      "k": "par",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 9512,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_anim",
+   "f0": 9512,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "idealista, 14-3-2023",
+   "pasos": [
+    4,
+    104,
+    159,
+    222
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2021",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Santander crea *RetailCo*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "src": "g_santander",
+      "x": 460,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "+800",
+      "pie": "locales",
+      "x": 1350,
+      "y": 350,
+      "ancla": "c",
+      "tam": 210,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "≈ 20",
+      "pie": "servían para viviendas",
+      "x": 1350,
+      "y": 750,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 9758,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 9758,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "idealista, 2021-2023",
+   "pasos": [
+    4,
+    56,
+    132,
+    229
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 400,
+      "y": 1060,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Cosas *curiosas*",
+      "x": 1300,
+      "y": 140,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "8 → 18",
+      "pie": "oficinas de Madrid, en pisos",
+      "x": 1300,
+      "y": 320,
+      "ancla": "c",
+      "tam": 170,
+      "color": "cian",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Un punto de Ikea en Tetuán",
+      "x": 1300,
+      "y": 620,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Panaderías y cafeterías",
+      "x": 1300,
+      "y": 730,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "Y hasta otros bancos",
+      "x": 1300,
+      "y": 840,
+      "ancla": "c",
+      "tam": 46,
+      "color": "ambar",
+      "k": "chip",
+      "p": 3,
+      "dt": 30
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 10141,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.734,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 10141,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "Deutsche Bank y Targobank, inquilinos de RetailCo (idealista, 2021)",
+   "pasos": [
+    4,
+    49
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mazo",
+      "x": 480,
+      "y": 1050,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Otra leyenda *menos*",
+      "x": 1360,
+      "y": 280,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "No los dejan vacíos *para que no entre la competencia*",
+      "x": 1000,
+      "y": 440,
+      "w": 820,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 10278,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 10278,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "5",
+   "fuente": "BBVA, informe anual 2021 (división propia)",
+   "pasos": [
+    4,
+    38,
+    191,
+    262
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2021",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Y cerrar *cuesta*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_persiana",
+      "x": 420,
+      "y": 1090,
+      "w": 560,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "cifra": "240 M€",
+      "pie": "por 480 oficinas, BBVA",
+      "x": 1330,
+      "y": 320,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "500.000 €",
+      "pie": "cada una, sin despidos",
+      "x": 1330,
+      "y": 660,
+      "ancla": "c",
+      "tam": 160,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "En parte, un apunte contable",
+      "x": 1330,
+      "y": 930,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 10648,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_capitulo",
+   "f0": 10648,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "6",
+    "titulo": "¿Y *el cajero?*",
+    "sub": "La máquina que se queda",
+    "el": "g_oficina",
+    "ew": 600,
+    "ex": 1580,
+    "ey": 1050,
+    "nx": 1290
+   },
+   "f1": 10715,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 10715,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Ivie y Banco de España",
+   "pasos": [
+    4,
+    35,
+    105,
+    138
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "No es *lo mismo*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "−63 %",
+      "x": 520,
+      "y": 900,
+      "alto": 540,
+      "pie": "Oficinas",
+      "color": "rojo",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "−30 %",
+      "x": 1060,
+      "y": 900,
+      "alto": 257,
+      "pie": "Cajeros",
+      "color": "ambar",
+      "w": 300,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Cajeros desplazados",
+      "x": 1540,
+      "y": 430,
+      "tam": 46,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 10981,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 10981,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "RDL 11/2015",
+   "pasos": [
+    4,
+    62,
+    105,
+    235,
+    296
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 520,
+      "y": 1060,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ninguna ley obliga a dejarlo, que sepamos",
+      "x": 1390,
+      "y": 180,
+      "ancla": "c",
+      "tam": 36,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "t": "2015",
+      "x": 1100,
+      "y": 360,
+      "k": "hoja",
+      "p": 2
+     },
+     {
+      "t": "El dueño del cajero *cobra a tu banco*",
+      "x": 1200,
+      "y": 290,
+      "w": 640,
+      "tam": 56,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "t": "No solo da billetes",
+      "x": 1400,
+      "y": 620,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "También los trae",
+      "x": 1410,
+      "y": 800,
+      "tam": 66,
+      "color": "#2BE38A",
+      "k": "sello",
+      "p": 4
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 11304,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 11304,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Ivie, julio de 2026 (encargado por la banca)",
+   "pasos": [
+    4,
+    43
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 480,
+      "y": 1060,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Para algunos, *lo único*",
+      "x": 1370,
+      "y": 220,
+      "ancla": "c",
+      "tam": 74,
+      "k": "tit"
+     },
+     {
+      "cifra": "+400.000",
+      "pie": "personas: su acceso es ese cajero",
+      "x": 1370,
+      "y": 480,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "maxPie": 860,
+      "k": "dato",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 11538,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 11538,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Ivie, julio de 2026",
+   "pasos": [
+    4,
+    75,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 420,
+      "y": 1090,
+      "w": 560,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "295.558",
+      "pie": "personas, sin nada",
+      "x": 1300,
+      "y": 280,
+      "ancla": "c",
+      "tam": 210,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "t": "Ni oficina, ni cajero, ni autobús",
+      "x": 1300,
+      "y": 600,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "2.072",
+      "pie": "pueblos",
+      "x": 1300,
+      "y": 780,
+      "ancla": "c",
+      "tam": 150,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 11724,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 11724,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": "Which?, 19-11-2026 · Cash Access UK",
+   "pasos": [
+    4,
+    57,
+    135,
+    207,
+    285
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Reino Unido*",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "cifra": "−71 %",
+      "pie": "cerradas desde 2015",
+      "x": 560,
+      "y": 380,
+      "ancla": "c",
+      "tam": 210,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "src": "g_oficina",
+      "x": 1440,
+      "y": 1060,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un local compartido",
+      "x": 1440,
+      "y": 250,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Cada día, un banco",
+      "x": 1440,
+      "y": 360,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "cifra": "+250",
+      "pie": "ya abiertos",
+      "x": 560,
+      "y": 800,
+      "ancla": "c",
+      "tam": 180,
+      "color": "verde",
+      "k": "dato",
+      "p": 4
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 12054,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.0,
+     "rate": 0.846,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 12054,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    41
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 960,
+      "y": 1090,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La persiana",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Tres respuestas",
+      "x": 960,
+      "y": 240,
+      "ancla": "c",
+      "tam": 54,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 12178,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 12178,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    50,
+    134,
+    167,
+    239,
+    281
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 420,
+      "y": 1070,
+      "w": 680,
+      "de": "aba",
+      "gris": 0.6,
+      "k": "im"
+     },
+     {
+      "t": "1",
+      "x": 900,
+      "y": 240,
+      "ancla": "i",
+      "tam": 110,
+      "k": "tit"
+     },
+     {
+      "t": "No es suyo, y *todavía lo paga*",
+      "x": 1010,
+      "y": 190,
+      "w": 820,
+      "tam": 60,
+      "k": "par"
+     },
+     {
+      "t": "2",
+      "x": 900,
+      "y": 500,
+      "ancla": "i",
+      "tam": 110,
+      "k": "tit",
+      "p": 2
+     },
+     {
+      "t": "Es suyo *otra vez*, y costó una fortuna",
+      "x": 1010,
+      "y": 440,
+      "w": 820,
+      "tam": 60,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "t": "3",
+      "x": 900,
+      "y": 770,
+      "ancla": "i",
+      "tam": 110,
+      "k": "tit",
+      "p": 4
+     },
+     {
+      "t": "Quiere vender y nadie da *lo que pone el papel*",
+      "x": 1010,
+      "y": 710,
+      "w": 820,
+      "tam": 60,
+      "k": "par",
+      "p": 4
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 12505,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 12505,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    92
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 520,
+      "y": 1060,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Te sentaban *aquí*",
+      "x": 1400,
+      "y": 260,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "Y te explicaban por qué convenía *comprar la casa*",
+      "x": 1060,
+      "y": 420,
+      "w": 780,
+      "tam": 70,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     }
+    ],
+    "luz": 0.62
+   },
+   "f1": 12673,
+   "fondoClip": [
+    {
+     "src": "f_oficina.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e57_anim",
+   "f0": 12673,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "6",
+   "fuente": null,
+   "pasos": [
+    4,
+    34
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_oficina",
+      "x": 960,
+      "y": 1070,
+      "w": 960,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Luego vendieron *la suya*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Y se quedaron de alquiler",
+      "x": 960,
+      "y": 290,
+      "tam": 66,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 12813,
+   "fondoClip": [
+    {
+     "src": "aerial_town_avenue_buildings_153.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_paseo.jpg": "vox/media/banco/f_paseo.jpg",
+  "aerial_town_avenue_buildings_153.mp4": "parallax2/proyecto/stock_mercadona/aerial_town_avenue_buildings_153.mp4",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "f_oficina.jpg": "vox/media/banco/f_oficina.jpg",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/banco/g_balanza.webp",
+  "g_bbva.webp": "vox/media/banco/g_bbva.webp",
+  "g_bolsa.webp": "vox/media/banco/g_bolsa.webp",
+  "g_caixa.webp": "vox/media/banco/g_caixa.webp",
+  "g_caja.webp": "vox/media/banco/g_caja.webp",
+  "g_camara.webp": "vox/media/banco/g_camara.webp",
+  "g_camion.webp": "vox/media/banco/g_camion.webp",
+  "g_cerrada.webp": "vox/media/banco/g_cerrada.webp",
+  "g_clientes.webp": "vox/media/banco/g_clientes.webp",
+  "g_compradora.webp": "vox/media/banco/g_compradora.webp",
+  "g_empleados.webp": "vox/media/banco/g_empleados.webp",
+  "g_escritura.webp": "vox/media/banco/g_escritura.webp",
+  "g_fajo.webp": "vox/media/banco/g_fajo.webp",
+  "g_fajos.webp": "vox/media/banco/g_fajos.webp",
+  "g_furgo.webp": "vox/media/banco/g_furgo.webp",
+  "g_globo.webp": "vox/media/banco/g_globo.webp",
+  "g_inversor.webp": "vox/media/banco/g_inversor.webp",
+  "g_mazo.webp": "vox/media/banco/g_mazo.webp",
+  "g_moneda.webp": "vox/media/banco/g_moneda.webp",
+  "g_monedas.webp": "vox/media/banco/g_monedas.webp",
+  "g_movil.webp": "vox/media/banco/g_movil.webp",
+  "g_nave.webp": "vox/media/banco/g_nave.webp",
+  "g_oficina.webp": "vox/media/banco/g_oficina.webp",
+  "g_pale.webp": "vox/media/banco/g_pale.webp",
+  "g_paquete.webp": "vox/media/banco/g_paquete.webp",
+  "g_periodico.webp": "vox/media/banco/g_periodico.webp",
+  "g_persiana.webp": "vox/media/banco/g_persiana.webp",
+  "g_portatil.webp": "vox/media/banco/g_portatil.webp",
+  "g_sabadell.webp": "vox/media/banco/g_sabadell.webp",
+  "g_santander.webp": "vox/media/banco/g_santander.webp",
+  "g_tienda.webp": "vox/media/banco/g_tienda.webp",
+  "g_vacia.webp": "vox/media/banco/g_vacia.webp"
+ },
+ "tema": "banco",
+ "piel": "anim"
+}

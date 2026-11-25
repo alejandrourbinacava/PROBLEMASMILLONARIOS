@@ -14,6 +14,8 @@ import sys
 
 import numpy as np
 
+import cama as cama_mod
+
 AQUI = os.path.dirname(os.path.abspath(__file__))
 ACT = os.path.join(os.path.dirname(AQUI), "assets")
 SR = 48000
@@ -42,7 +44,7 @@ def pon(mezcla, clip, seg, ganancia):
 
 def main():
     voz_wav, spec_json, salida = sys.argv[1:4]
-    musica = sys.argv[sys.argv.index("--musica") + 1] if "--musica" in sys.argv else os.path.join(ACT, "music", "space_bar_ambient.mp3")
+    musica = sys.argv[sys.argv.index("--musica") + 1] if "--musica" in sys.argv else None
     spec = json.load(open(spec_json, encoding="utf-8"))
     fps = spec["fps"]
     n = int(spec["total"] / float(fps) * SR)
@@ -52,7 +54,8 @@ def main():
     pon(mezcla, voz, 0.0, 1.0)
 
     # musica: en bucle, muy por debajo de la voz, con fundido al entrar y al salir
-    m = lee(musica)
+    # sin --musica: cama relajante (cama.py); la pista aguda de antes molestaba (queja en comentarios, 25-11-2026)
+    m = lee(musica) if musica else cama_mod.cama(os.path.basename(spec_json).split(".")[0], n / float(SR))[0]
     rep = int(np.ceil(n / float(len(m))))
     cama = np.tile(m, (rep, 1))[:n]
     env = np.ones(n, dtype=np.float32)
@@ -60,7 +63,7 @@ def main():
     env[:f] = np.linspace(0, 1, f)
     env[-int(3.0 * SR):] = np.linspace(1, 0, int(3.0 * SR))
     # -27 dB casi no se oia debajo de la voz (media de -45 dB en las pausas); -19 se nota sin taparla
-    nivel = float(sys.argv[sys.argv.index("--nivel-musica") + 1]) if "--nivel-musica" in sys.argv else -19.0
+    nivel = float(sys.argv[sys.argv.index("--nivel-musica") + 1]) if "--nivel-musica" in sys.argv else -20.5
     mezcla += cama * env[:, None] * db(nivel)
 
     soplos = [lee(os.path.join(ACT, "sfx", "whoosh", x)) for x in ("01_woosh.wav", "02_transici_n_futuristica.wav")]

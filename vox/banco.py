@@ -2,7 +2,7 @@
 
     python banco.py            -> vox/banco.spec.json
 
-Los numeros de fragmento son los de la locucion (81). Fuentes: config/guion_banco.md.
+Los numeros de fragmento son los de la locucion (81). Fuentes: config/guion_banco_local.md.
 """
 from planos import *
 

@@ -1,0 +1,3878 @@
+{
+ "fps": 25,
+ "total": 12678,
+ "marca": {
+  "nombre": "RESTAURANTE",
+  "color": "#8A3B22",
+  "claro": "#FBEBD3",
+  "oscuro": "#2E1410",
+  "acento": "#FFD95A"
+ },
+ "escenas": [
+  {
+   "id": "e00_anim",
+   "f0": 0,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    0,
+    32,
+    80,
+    163
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "MAR.",
+      "x": 190,
+      "y": 160,
+      "tam": 44,
+      "k": "hoja"
+     },
+     {
+      "t": "Las *siete* de la tarde",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_mesa",
+      "x": 760,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "t": "No hay nadie",
+      "x": 1560,
+      "y": 420,
+      "tam": 76,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 191,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e01_anim",
+   "f0": 191,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    38
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 960,
+      "y": 1070,
+      "w": 1100,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Ayer *tampoco*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "t": "Y mañana seguirá igual",
+      "x": 960,
+      "y": 250,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "k": "chip",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 280,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e02_anim",
+   "f0": 280,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    53
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 520,
+      "y": 1070,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Alguien dirá *la frase*",
+      "x": 1400,
+      "y": 260,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "«Es una tapadera»",
+      "x": 1400,
+      "y": 520,
+      "tam": 70,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 368,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e03_anim",
+   "f0": 368,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Sepblac, memoria de 2025",
+   "pasos": [
+    4,
+    110,
+    265,
+    294
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 480,
+      "y": 1050,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Vamos a *quitarnos eso* de encima",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "Mucho efectivo: el riesgo *existe*",
+      "x": 1000,
+      "y": 270,
+      "w": 840,
+      "tam": 62,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Ninguna estadística señala al vacío",
+      "x": 1390,
+      "y": 720,
+      "ancla": "c",
+      "tam": 44,
+      "color": "verde",
+      "k": "chip",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 806,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.645,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e04_anim",
+   "f0": 806,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "Europol, 2024",
+   "pasos": [
+    4,
+    116
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_tienda",
+      "x": 420,
+      "y": 1060,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Dónde lo meten *las redes peligrosas*",
+      "x": 1310,
+      "y": 150,
+      "ancla": "c",
+      "tam": 62,
+      "max": 1080,
+      "k": "tit"
+     },
+     {
+      "cifra": "41 %",
+      "pie": "inmuebles",
+      "x": 1080,
+      "y": 420,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "20 %",
+      "pie": "negocios de efectivo",
+      "x": 1590,
+      "y": 420,
+      "ancla": "c",
+      "tam": 200,
+      "color": "blanco",
+      "maxPie": 560,
+      "k": "dato",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "De las redes con información",
+      "x": 1330,
+      "y": 720,
+      "ancla": "c",
+      "tam": 26,
+      "k": "eti",
+      "p": 1
+     }
+    ]
+   },
+   "f1": 964,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e05_anim",
+   "f0": 964,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": null,
+   "pasos": [
+    4,
+    58,
+    87
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camarero",
+      "x": 420,
+      "y": 1100,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La normal es *más aburrida*",
+      "x": 1260,
+      "y": 250,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "Y más dura",
+      "x": 1260,
+      "y": 420,
+      "tam": 76,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "¿Cuántas comidas para *no perder dinero*?",
+      "x": 840,
+      "y": 600,
+      "w": 960,
+      "tam": 66,
+      "serif": true,
+      "k": "par",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 1160,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e06_anim",
+   "f0": 1160,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": null,
+   "fuente": "cuenta propia",
+   "pasos": [
+    4,
+    35,
+    58,
+    99
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_menu",
+      "x": 480,
+      "y": 1050,
+      "w": 800,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "9",
+      "x": 1130,
+      "y": 420,
+      "ancla": "c",
+      "tam": 330,
+      "color": "verde",
+      "k": "dato"
+     },
+     {
+      "t": "o",
+      "x": 1370,
+      "y": 420,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "cifra": "52",
+      "x": 1640,
+      "y": 420,
+      "ancla": "c",
+      "tam": 330,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "El mismo plato, el mismo precio",
+      "x": 1380,
+      "y": 760,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Y no está en la sala",
+      "x": 1380,
+      "y": 880,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 1311,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e07_capitulo",
+   "f0": 1311,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    6
+   ],
+   "d": {
+    "num": "1",
+    "titulo": "La hora *equivocada*",
+    "sub": "Cuándo se come fuera",
+    "el": "g_mesa",
+    "ew": 740,
+    "ex": 1500,
+    "ey": 1050,
+    "nx": 1290
+   },
+   "f1": 1411,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e08_anim",
+   "f0": 1411,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "MAPA, consumo extradoméstico 2025",
+   "pasos": [
+    4,
+    119,
+    189
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *cien* veces que se come fuera",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "t": "67",
+      "x": 520,
+      "y": 900,
+      "alto": 540,
+      "pie": "Comida o cena",
+      "color": "ambar",
+      "w": 320,
+      "tam": 120,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "8,6",
+      "x": 1120,
+      "y": 900,
+      "alto": 70,
+      "pie": "Merienda",
+      "color": "rojo",
+      "w": 320,
+      "tam": 120,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "src": "g_mesa",
+      "x": 1600,
+      "y": 1040,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 1640,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e09_anim",
+   "f0": 1640,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": null,
+   "pasos": [
+    4,
+    21,
+    78
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 480,
+      "y": 1070,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Son *dos ratos*",
+      "x": 1380,
+      "y": 220,
+      "ancla": "c",
+      "tam": 100,
+      "k": "tit"
+     },
+     {
+      "cifra": "4 o 5 h",
+      "pie": "de un día de doce",
+      "x": 1380,
+      "y": 480,
+      "ancla": "c",
+      "tam": 190,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "El resto, vacío",
+      "x": 1380,
+      "y": 830,
+      "tam": 72,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 1821,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e10_anim",
+   "f0": 1821,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "El Español, 17-11-2026 (dice el dueño)",
+   "pasos": [
+    4,
+    109,
+    234
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*El Labriego*, Madrid, desde 1973",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 78,
+      "k": "tit"
+     },
+     {
+      "src": "g_menu",
+      "x": 960,
+      "y": 1060,
+      "w": 620,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "30",
+      "pie": "cocidos un día corriente",
+      "x": 400,
+      "y": 430,
+      "ancla": "c",
+      "tam": 280,
+      "color": "blanco",
+      "maxPie": 620,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+120",
+      "pie": "los fines de semana",
+      "x": 1520,
+      "y": 430,
+      "ancla": "c",
+      "tam": 280,
+      "color": "verde",
+      "maxPie": 620,
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 2120,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e11_anim",
+   "f0": 2120,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "dueño de El Labriego, El Español, 17-11-2026",
+   "pasos": [
+    4,
+    51,
+    136,
+    179
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_menu",
+      "x": 440,
+      "y": 1050,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "«Si vendes diez o veinte, con la rentabilidad *estás pringado*»",
+      "x": 880,
+      "y": 200,
+      "w": 960,
+      "tam": 70,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Tú ves el 30",
+      "x": 1080,
+      "y": 780,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Las facturas, el 120",
+      "x": 1540,
+      "y": 780,
+      "ancla": "c",
+      "tam": 48,
+      "color": "verde",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 2364,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e12_anim",
+   "f0": 2364,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "ejemplo propio; cubierto de 50 a 200 €, El Español, 28-4-2026",
+   "pasos": [
+    4,
+    36,
+    147,
+    225,
+    269
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 440,
+      "y": 1050,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Lo que *no ves*: una comunión",
+      "x": 1300,
+      "y": 140,
+      "ancla": "c",
+      "tam": 66,
+      "max": 1100,
+      "k": "tit"
+     },
+     {
+      "t": "40 invitados × 60 €",
+      "x": 1300,
+      "y": 300,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "2.400 €",
+      "x": 1300,
+      "y": 480,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "cifra": "163",
+      "pie": "menús del día",
+      "x": 1300,
+      "y": 790,
+      "ancla": "c",
+      "tam": 170,
+      "color": "cian",
+      "k": "dato",
+      "p": 4
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 2707,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e13_anim",
+   "f0": 2707,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "MAPA, 2025 · Makro y Hostelería de España, septiembre de 2026",
+   "pasos": [
+    4,
+    38,
+    145,
+    241
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La puerta *de atrás*",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_bolsa",
+      "x": 420,
+      "y": 1070,
+      "w": 420,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "23 de 100",
+      "pie": "se comen en una casa",
+      "x": 1250,
+      "y": 270,
+      "ancla": "c",
+      "tam": 170,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "No es el salvavidas que parece",
+      "x": 1250,
+      "y": 560,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "1,6 %",
+      "pie": "lo ve como su mejor momento",
+      "x": 1250,
+      "y": 740,
+      "ancla": "c",
+      "tam": 160,
+      "color": "rojo",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 3058,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e14_anim",
+   "f0": 3058,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "Uber Eats, tarifas para restaurantes, 24-11-2026",
+   "pasos": [
+    4,
+    70,
+    126
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_movil",
+      "x": 420,
+      "y": 1090,
+      "w": 480,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "*Uber Eats*, con sus repartidores",
+      "x": 1270,
+      "y": 160,
+      "ancla": "c",
+      "tam": 62,
+      "max": 1100,
+      "k": "tit"
+     },
+     {
+      "cifra": "30 %",
+      "pie": "se queda del pedido",
+      "x": 1270,
+      "y": 420,
+      "ancla": "c",
+      "tam": 280,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "De 10 €, 3",
+      "x": 1270,
+      "y": 830,
+      "ancla": "c",
+      "tam": 60,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3224,
+   "fondoClip": [
+    {
+     "src": "card_terminal_payment_counter_105.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e15_anim",
+   "f0": 3224,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "1",
+   "fuente": "MAPA, 2025",
+   "pasos": [
+    4,
+    38,
+    83,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 560,
+      "y": 1050,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "0,26 %",
+      "pie": "comidas de empresa",
+      "x": 1420,
+      "y": 250,
+      "ancla": "c",
+      "tam": 180,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "t": "También vacíos a las dos y media",
+      "x": 1400,
+      "y": 600,
+      "ancla": "c",
+      "tam": 42,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Y siguen ahí",
+      "x": 1420,
+      "y": 800,
+      "tam": 80,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 3447,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e16_capitulo",
+   "f0": 3447,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    9
+   ],
+   "d": {
+    "num": "2",
+    "titulo": "La *escalera*",
+    "sub": "De nueve a cincuenta y dos",
+    "el": "g_menu",
+    "ew": 640,
+    "ex": 1560,
+    "ey": 1050,
+    "nx": 1290
+   },
+   "f1": 3474,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e17_anim",
+   "f0": 3474,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Hostelería de España, vía El Español, 25-10-2026 · INE (cuenta propia)",
+   "pasos": [
+    4,
+    147,
+    286,
+    317
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_menu",
+      "x": 460,
+      "y": 1050,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Restaurante imaginario · cuenta nuestra",
+      "x": 1340,
+      "y": 140,
+      "ancla": "c",
+      "tam": 40,
+      "color": "humo",
+      "k": "chip"
+     },
+     {
+      "cifra": "14,70 €",
+      "pie": "el menú del día, de media",
+      "x": 1340,
+      "y": 340,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "8 €",
+      "pie": "quedan, sin IVA ni comida",
+      "x": 1340,
+      "y": 720,
+      "ancla": "c",
+      "tam": 240,
+      "color": "ambar",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 3841,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.0,
+     "rate": 0.764,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e18_anim",
+   "f0": 3841,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia con medias del INE",
+   "pasos": [
+    4,
+    25,
+    49,
+    89,
+    170,
+    200
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Primer* escalón",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_fachada",
+      "x": 1440,
+      "y": 1070,
+      "w": 760,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El local es *tuyo*",
+      "x": 140,
+      "y": 320,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Cocinas tú, sirve *tu pareja*",
+      "x": 140,
+      "y": 440,
+      "tam": 58,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Nadie cobra *un sueldo*",
+      "x": 140,
+      "y": 560,
+      "tam": 58,
+      "k": "linea",
+      "p": 3,
+      "dt": 24
+     },
+     {
+      "cifra": "21.500 €",
+      "pie": "al año: luz, seguro, gestoría, cuotas",
+      "x": 480,
+      "y": 790,
+      "ancla": "c",
+      "tam": 150,
+      "color": "rojo",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 5
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 4175,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e19_anim",
+   "f0": 4175,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia, 300 días al año",
+   "pasos": [
+    4,
+    39,
+    72,
+    82
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 560,
+      "y": 1050,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "9",
+      "pie": "menús al día",
+      "x": 1430,
+      "y": 380,
+      "ancla": "c",
+      "tam": 440,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Tres mesas",
+      "x": 1430,
+      "y": 830,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 4364,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e20_anim",
+   "f0": 4364,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    40
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_camarero",
+      "x": 420,
+      "y": 1100,
+      "w": 260,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Nueve *no es ganar* dinero",
+      "x": 1260,
+      "y": 330,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Trabajar gratis",
+      "x": 1260,
+      "y": 600,
+      "tam": 96,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 4457,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e21_anim",
+   "f0": 4457,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia, restaurante imaginario (alquiler de 1.440 €)",
+   "pasos": [
+    4,
+    32,
+    157,
+    199,
+    340,
+    364,
+    374
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Menús *al día* para no perder",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "9",
+      "x": 330,
+      "y": 900,
+      "alto": 97,
+      "pie": "Local y familia",
+      "color": "verde",
+      "w": 220,
+      "tam": 90,
+      "k": "col"
+     },
+     {
+      "t": "23",
+      "x": 740,
+      "y": 900,
+      "alto": 248,
+      "pie": "Dos sueldos mínimos",
+      "color": "ambar",
+      "w": 220,
+      "tam": 90,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "30",
+      "x": 1150,
+      "y": 900,
+      "alto": 323,
+      "pie": "Con alquiler",
+      "color": "ambar",
+      "w": 220,
+      "tam": 90,
+      "k": "col",
+      "p": 4
+     },
+     {
+      "t": "40",
+      "x": 1560,
+      "y": 900,
+      "alto": 431,
+      "pie": "Con un empleado",
+      "color": "rojo",
+      "w": 220,
+      "tam": 90,
+      "k": "col",
+      "p": 6
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 4882,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e22_anim",
+   "f0": 4882,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "cuenta propia con datos del INE (2 a 9 ocupados)",
+   "pasos": [
+    4,
+    95,
+    118
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_empleados",
+      "x": 460,
+      "y": 1085,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "El *pequeño medio* de España",
+      "x": 1320,
+      "y": 170,
+      "ancla": "c",
+      "tam": 66,
+      "max": 1050,
+      "k": "tit"
+     },
+     {
+      "cifra": "52",
+      "pie": "menús al día",
+      "x": 1320,
+      "y": 440,
+      "ancla": "c",
+      "tam": 360,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Sin lo que gana el dueño",
+      "x": 1320,
+      "y": 860,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 5063,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e23_anim",
+   "f0": 5063,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": null,
+   "pasos": [
+    4,
+    42,
+    128,
+    169
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 960,
+      "y": 1060,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La misma mesa",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "9",
+      "x": 300,
+      "y": 480,
+      "ancla": "c",
+      "tam": 260,
+      "color": "verde",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "52",
+      "x": 1640,
+      "y": 480,
+      "ancla": "c",
+      "tam": 260,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Vive de lo que ya no paga",
+      "x": 960,
+      "y": 300,
+      "tam": 62,
+      "color": "#FFD95A",
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 5277,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e24_anim",
+   "f0": 5277,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Ley de Arrendamientos Urbanos, disp. trans. 3.ª",
+   "pasos": [
+    4,
+    98,
+    166,
+    258,
+    343
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 440,
+      "y": 1050,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La *renta antigua*",
+      "x": 1320,
+      "y": 150,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Antes de mayo de 1985",
+      "x": 1320,
+      "y": 310,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "¿Se acabaron todos en 2014?",
+      "x": 1320,
+      "y": 470,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     },
+     {
+      "t": "No todos",
+      "x": 1320,
+      "y": 640,
+      "tam": 80,
+      "k": "sello",
+      "p": 4
+     },
+     {
+      "t": "Hasta *jubilarse*, si estaba a su nombre",
+      "x": 920,
+      "y": 760,
+      "w": 900,
+      "tam": 54,
+      "k": "par",
+      "p": 4,
+      "dt": 20
+     }
+    ]
+   },
+   "f1": 5714,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.646,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e25_anim",
+   "f0": 5714,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Eurostat, 2025",
+   "pasos": [
+    4,
+    42,
+    147
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Lo que pone *la familia*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "54 h",
+      "x": 620,
+      "y": 900,
+      "alto": 560,
+      "pie": "El que manda",
+      "color": "rojo",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "t": "34 h",
+      "x": 1260,
+      "y": 900,
+      "alto": 354,
+      "pie": "El asalariado",
+      "color": "cian",
+      "w": 320,
+      "tam": 110,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "Horas a la semana, hostelería",
+      "x": 940,
+      "y": 1015,
+      "ancla": "c",
+      "tam": 24,
+      "k": "eti"
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 5907,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e26_anim",
+   "f0": 5907,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "INE, 2024 (materia prima, todo el sector)",
+   "pasos": [
+    4,
+    30,
+    128
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "De cada *100 €*…",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "x": 160,
+      "y": 300,
+      "w": 1600,
+      "partes": [
+       {
+        "t": "Comida y bebida: 39",
+        "v": 39,
+        "color": "ambar"
+       },
+       {
+        "t": "Personal: 32",
+        "v": 32,
+        "color": "rojo"
+       },
+       {
+        "t": "Todo lo demás",
+        "v": 29,
+        "color": "humo"
+       }
+      ],
+      "h": 130,
+      "k": "reparto",
+      "p": 1
+     },
+     {
+      "src": "g_menu",
+      "x": 960,
+      "y": 1060,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     }
+    ]
+   },
+   "f1": 6076,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e27_anim",
+   "f0": 6076,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "INE, Estadística Estructural de Empresas 2024 (2 a 9 ocupados)",
+   "pasos": [
+    4,
+    141,
+    196,
+    302
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 440,
+      "y": 1070,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "237.000 €",
+      "pie": "vende al año, de media",
+      "x": 1330,
+      "y": 220,
+      "ancla": "c",
+      "tam": 160,
+      "color": "blanco",
+      "k": "dato"
+     },
+     {
+      "cifra": "20.000 €",
+      "pie": "le quedan",
+      "x": 1330,
+      "y": 530,
+      "ancla": "c",
+      "tam": 200,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "Antes de impuestos, intereses y nevera",
+      "x": 1330,
+      "y": 790,
+      "ancla": "c",
+      "tam": 42,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Es su sueldo",
+      "x": 1330,
+      "y": 930,
+      "tam": 66,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 6478,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e28_anim",
+   "f0": 6478,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Orden HAC/1161/2026 (módulos de 2027)",
+   "pasos": [
+    4,
+    41,
+    53,
+    131,
+    272
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 520,
+      "y": 1050,
+      "w": 840,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "*Hacienda* cuenta mesas",
+      "x": 1400,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "t": "Autónomos en módulos",
+      "x": 1400,
+      "y": 290,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "cifra": "585 €",
+      "pie": "de rendimiento por mesa (dos tenedores)",
+      "x": 1400,
+      "y": 480,
+      "ancla": "c",
+      "tam": 210,
+      "color": "ambar",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "Se siente alguien o no",
+      "x": 1400,
+      "y": 850,
+      "tam": 56,
+      "k": "sello",
+      "p": 4
+     }
+    ]
+   },
+   "f1": 6783,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.0,
+     "rate": 0.912,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e29_anim",
+   "f0": 6783,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "2",
+   "fuente": "Orden HAC/1161/2026 (cuenta propia)",
+   "pasos": [
+    4,
+    44,
+    103,
+    184
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 330,
+      "y": 720,
+      "w": 520,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "src": "g_mesa",
+      "x": 950,
+      "y": 720,
+      "w": 520,
+      "de": "aba",
+      "k": "im",
+      "dt": 4
+     },
+     {
+      "src": "g_mesa",
+      "x": 1570,
+      "y": 720,
+      "w": 520,
+      "de": "aba",
+      "k": "im",
+      "dt": 8
+     },
+     {
+      "src": "g_mesa",
+      "x": 330,
+      "y": 1040,
+      "w": 520,
+      "de": "aba",
+      "k": "im",
+      "dt": 12
+     },
+     {
+      "src": "g_mesa",
+      "x": 950,
+      "y": 1040,
+      "w": 520,
+      "de": "aba",
+      "k": "im",
+      "dt": 16
+     },
+     {
+      "src": "g_mesa",
+      "x": 1570,
+      "y": 1040,
+      "w": 520,
+      "de": "aba",
+      "k": "im",
+      "dt": 20
+     },
+     {
+      "cifra": "12 mesas = 7.000 €",
+      "pie": "no es lo que pagas: es sobre lo que se calcula",
+      "x": 960,
+      "y": 200,
+      "ancla": "c",
+      "tam": 130,
+      "color": "ambar",
+      "maxPie": 1300,
+      "k": "dato"
+     },
+     {
+      "t": "Al vacío le cobra igual",
+      "x": 960,
+      "y": 560,
+      "tam": 62,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 6994,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e30_capitulo",
+   "f0": 6994,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "3",
+    "titulo": "¿Por qué *no cierra?*",
+    "sub": "Cerrar también hay que pagarlo",
+    "el": "g_persiana",
+    "ew": 440,
+    "ex": 1650,
+    "ey": 1070,
+    "nx": 1290
+   },
+   "f1": 7036,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e31_anim",
+   "f0": 7036,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 480,
+      "y": 1090,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Cerrar también *hay que pagarlo*",
+      "x": 1330,
+      "y": 420,
+      "ancla": "c",
+      "tam": 64,
+      "max": 1060,
+      "k": "tit"
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7090,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e32_anim",
+   "f0": 7090,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "anuncio en Fotocasa, 24-11-2026 (precio pedido)",
+   "pasos": [
+    4,
+    101,
+    158,
+    259
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 440,
+      "y": 1070,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Un *traspaso*, en Madrid",
+      "x": 1330,
+      "y": 150,
+      "ancla": "c",
+      "tam": 72,
+      "k": "tit"
+     },
+     {
+      "cifra": "155.000 €",
+      "pie": "con los empleados",
+      "x": 1330,
+      "y": 350,
+      "ancla": "c",
+      "tam": 170,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "175.000 €",
+      "pie": "si los quiere cambiar",
+      "x": 1330,
+      "y": 720,
+      "ancla": "c",
+      "tam": 190,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 7418,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e33_anim",
+   "f0": 7418,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Fotocasa, 24-11-2026 (muestra propia)",
+   "pasos": [
+    4,
+    42,
+    161,
+    229,
+    336
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_periodico",
+      "x": 440,
+      "y": 1050,
+      "w": 680,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "20.000 €",
+      "pie": "lo que cuesta despedir, en un anuncio",
+      "x": 1330,
+      "y": 220,
+      "ancla": "c",
+      "tam": 170,
+      "color": "rojo",
+      "maxPie": 980,
+      "k": "dato"
+     },
+     {
+      "cifra": "≈ 490",
+      "pie": "traspasos en Madrid",
+      "x": 1330,
+      "y": 500,
+      "ancla": "c",
+      "tam": 120,
+      "color": "blanco",
+      "maxPie": 760,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "cifra": "34–286.000 €",
+      "pie": "piden los de hostelería",
+      "x": 1330,
+      "y": 720,
+      "ancla": "c",
+      "tam": 120,
+      "color": "ambar",
+      "maxPie": 760,
+      "k": "dato",
+      "p": 3
+     },
+     {
+      "t": "El más caro, por jubilación",
+      "x": 1330,
+      "y": 930,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.6
+   },
+   "f1": 7807,
+   "fondoClip": [
+    {
+     "src": "hands_laptop_papers_calculator_charts_144.mp4",
+     "desde": 0.0,
+     "rate": 0.722,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e34_anim",
+   "f0": 7807,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Estatuto de los Trabajadores, art. 53, y sueldo medio del INE",
+   "pasos": [
+    4,
+    46,
+    123
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_empleados",
+      "x": 460,
+      "y": 1085,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Nuestra *cuenta*",
+      "x": 1330,
+      "y": 180,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "3 empleados, 6 años",
+      "x": 1330,
+      "y": 340,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "cifra": "17.770 €",
+      "pie": "de indemnización",
+      "x": 1330,
+      "y": 580,
+      "ancla": "c",
+      "tam": 210,
+      "color": "rojo",
+      "k": "dato",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8008,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e35_anim",
+   "f0": 8008,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    85,
+    120,
+    139,
+    168,
+    270
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 460,
+      "y": 1070,
+      "w": 740,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Abierto, *se traspasa*",
+      "x": 1370,
+      "y": 150,
+      "ancla": "c",
+      "tam": 76,
+      "k": "tit"
+     },
+     {
+      "t": "Una cocina que *funciona*",
+      "x": 1000,
+      "y": 310,
+      "tam": 54,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Una *licencia*",
+      "x": 1000,
+      "y": 420,
+      "tam": 54,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "Una salida *de humos*",
+      "x": 1000,
+      "y": 530,
+      "tam": 54,
+      "k": "linea",
+      "p": 3
+     },
+     {
+      "t": "Cerrado: un local con freidora",
+      "x": 1370,
+      "y": 780,
+      "tam": 46,
+      "k": "sello",
+      "p": 5
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 8325,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e36_anim",
+   "f0": 8325,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "OpenStax, Principles of Microeconomics 3e, 8.2",
+   "pasos": [
+    4,
+    65,
+    169
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_escritura",
+      "x": 460,
+      "y": 1050,
+      "w": 700,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Los *manuales*",
+      "x": 1350,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Si cubre lo que *te ahorrarías* cerrando, te conviene seguir",
+      "x": 960,
+      "y": 300,
+      "w": 880,
+      "tam": 62,
+      "serif": true,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "El alquiler firmado se paga igual",
+      "x": 1370,
+      "y": 800,
+      "ancla": "c",
+      "tam": 46,
+      "color": "rojo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 8550,
+   "fondoClip": [
+    {
+     "src": "calculator_papers_desk_142.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e37_anim",
+   "f0": 8550,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Gimeno, Folta, Cooper y Woo, ASQ, 1997",
+   "pasos": [
+    4,
+    42,
+    161,
+    210,
+    299
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1997",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "+1.500 *emprendedores*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 80,
+      "k": "tit",
+      "p": 1
+     },
+     {
+      "src": "g_camarero",
+      "x": 400,
+      "y": 1100,
+      "w": 205,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No cierra *el que peor va*",
+      "x": 860,
+      "y": 300,
+      "w": 900,
+      "tam": 70,
+      "k": "par",
+      "p": 2
+     },
+     {
+      "t": "Cada uno tiene *su límite*",
+      "x": 860,
+      "y": 470,
+      "w": 900,
+      "tam": 70,
+      "k": "par",
+      "p": 3
+     },
+     {
+      "t": "58 años, 30 en una cocina",
+      "x": 1200,
+      "y": 740,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 4
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 8965,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e38_anim",
+   "f0": 8965,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    38
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 330,
+      "y": 1070,
+      "w": 580,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im"
+     },
+     {
+      "src": "g_fachada",
+      "x": 960,
+      "y": 1070,
+      "w": 580,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im",
+      "dt": 6
+     },
+     {
+      "src": "g_fachada",
+      "x": 1590,
+      "y": 1070,
+      "w": 580,
+      "de": "aba",
+      "gris": 0.8,
+      "k": "im",
+      "dt": 12
+     },
+     {
+      "t": "Un año en que *todos* estuvieron vacíos",
+      "x": 960,
+      "y": 140,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 9100,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e39_anim",
+   "f0": 9100,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "INE, CNAE 561",
+   "pasos": [
+    4,
+    24,
+    86
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2020",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_persiana",
+      "x": 460,
+      "y": 1090,
+      "w": 620,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "cifra": "−41 %",
+      "pie": "de ventas",
+      "x": 1330,
+      "y": 400,
+      "ancla": "c",
+      "tam": 320,
+      "color": "rojo",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "t": "El sector, en pérdidas",
+      "x": 1330,
+      "y": 830,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     }
+    ]
+   },
+   "f1": 9240,
+   "fondoClip": [
+    {
+     "src": "empty_shopping_arcade_corridor_84.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e40_anim",
+   "f0": 9240,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "INE, CNAE 561",
+   "pasos": [
+    4,
+    64,
+    121,
+    205,
+    237
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Empresas *de restaurantes*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "75.598",
+      "x": 520,
+      "y": 900,
+      "alto": 560,
+      "pie": "2019",
+      "color": "blanco",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "75.469",
+      "x": 1080,
+      "y": 900,
+      "alto": 559,
+      "pie": "2020",
+      "color": "ambar",
+      "w": 320,
+      "tam": 100,
+      "k": "col",
+      "p": 1
+     },
+     {
+      "cifra": "−129",
+      "pie": "en todo el país",
+      "x": 1590,
+      "y": 440,
+      "ancla": "c",
+      "tam": 200,
+      "color": "rojo",
+      "k": "dato",
+      "p": 3
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 9505,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e41_anim",
+   "f0": 9505,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "RDL 8/2020 · Eurostat",
+   "pasos": [
+    4,
+    50,
+    95,
+    128
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fajos",
+      "x": 440,
+      "y": 1070,
+      "w": 640,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Con *un matiz*",
+      "x": 1330,
+      "y": 170,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "ERTE",
+      "x": 1090,
+      "y": 340,
+      "ancla": "c",
+      "tam": 52,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Avales del Estado",
+      "x": 1500,
+      "y": 340,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 14
+     },
+     {
+      "t": "Alguien pagaba por ellos",
+      "x": 1330,
+      "y": 500,
+      "ancla": "c",
+      "tam": 48,
+      "color": "humo",
+      "k": "chip",
+      "p": 2
+     },
+     {
+      "t": "Cerraron muchos: faltaron *los que abrían*",
+      "x": 960,
+      "y": 640,
+      "w": 880,
+      "tam": 58,
+      "k": "par",
+      "p": 3
+     }
+    ]
+   },
+   "f1": 9735,
+   "fondoClip": [
+    {
+     "src": "government_building_facade_arches_145.mp4",
+     "desde": 0.4,
+     "rate": 1.0,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e42_anim",
+   "f0": 9735,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": null,
+   "pasos": [
+    4,
+    41,
+    100
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 560,
+      "y": 1050,
+      "w": 900,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "No cierra cuando *se vacía*",
+      "x": 1090,
+      "y": 240,
+      "w": 760,
+      "tam": 70,
+      "k": "par",
+      "p": 1
+     },
+     {
+      "t": "Cuando le toca pagar",
+      "x": 1420,
+      "y": 640,
+      "tam": 64,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 9895,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e43_anim",
+   "f0": 9895,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "3",
+   "fuente": "Eurostat, CNAE 56",
+   "pasos": [
+    4,
+    113
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "2022",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "src": "g_persiana",
+      "x": 460,
+      "y": 1090,
+      "w": 620,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "t": "Sin casi *ayudas*",
+      "x": 1330,
+      "y": 200,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "cifra": "11,4 %",
+      "pie": "cerró ese año (bares incluidos)",
+      "x": 1330,
+      "y": 480,
+      "ancla": "c",
+      "tam": 250,
+      "color": "rojo",
+      "maxPie": 980,
+      "k": "dato",
+      "p": 1
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 10061,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e44_capitulo",
+   "f0": 10061,
+   "tipo": "capitulo",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    5
+   ],
+   "d": {
+    "num": "4",
+    "titulo": "Lo que sí *los mata*",
+    "sub": "Porque se mueren, y mucho",
+    "el": "g_fachada",
+    "ew": 600,
+    "ex": 1570,
+    "ey": 1050,
+    "nx": 1290
+   },
+   "f1": 10113,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e45_anim",
+   "f0": 10113,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Parsa, Ohio State, 2003 · Luo y Stark, 2014",
+   "pasos": [
+    4,
+    83,
+    97,
+    189
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "¿El *90 %* el primer año?",
+      "x": 120,
+      "y": 130,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Es un mito",
+      "x": 1480,
+      "y": 140,
+      "tam": 76,
+      "k": "sello",
+      "p": 1
+     },
+     {
+      "t": "90 %",
+      "x": 400,
+      "y": 900,
+      "alto": 560,
+      "pie": "El mito",
+      "color": "humo",
+      "w": 240,
+      "tam": 90,
+      "k": "col"
+     },
+     {
+      "t": "26 %",
+      "x": 860,
+      "y": 900,
+      "alto": 162,
+      "pie": "Ohio, 2003",
+      "color": "ambar",
+      "w": 240,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "17 %",
+      "x": 1320,
+      "y": 900,
+      "alto": 106,
+      "pie": "Berkeley, 2014",
+      "color": "verde",
+      "w": 240,
+      "tam": 90,
+      "k": "col",
+      "p": 3
+     }
+    ],
+    "luz": 0.45
+   },
+   "f1": 10388,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e46_anim",
+   "f0": 10388,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Eurostat, CNAE 56 (2015-2024)",
+   "pasos": [
+    4,
+    88,
+    152
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "En *España*, contando bares",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "cifra": "23 %",
+      "pie": "cierra el primer año",
+      "x": 400,
+      "y": 470,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "k": "dato"
+     },
+     {
+      "cifra": "36 %",
+      "pie": "queda a los cinco",
+      "x": 960,
+      "y": 470,
+      "ancla": "c",
+      "tam": 230,
+      "color": "ambar",
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "+70",
+      "pie": "bajas al día",
+      "x": 1540,
+      "y": 470,
+      "ancla": "c",
+      "tam": 230,
+      "color": "blanco",
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "src": "g_persiana",
+      "x": 960,
+      "y": 1085,
+      "w": 420,
+      "de": "arr",
+      "k": "im"
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 10586,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e47_anim",
+   "f0": 10586,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    23
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_persiana",
+      "x": 460,
+      "y": 1090,
+      "w": 600,
+      "de": "arr",
+      "k": "im"
+     },
+     {
+      "t": "¿Qué los mata?",
+      "x": 1330,
+      "y": 260,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "No siempre la falta de clientes",
+      "x": 1330,
+      "y": 520,
+      "tam": 48,
+      "k": "sello",
+      "p": 1
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 10653,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e48_anim",
+   "f0": 10653,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "su dueño, en laSexta, vía El Español, 17-4-2026",
+   "pasos": [
+    4,
+    79,
+    106,
+    185,
+    226,
+    292
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*Grangeta del Raval*, Barcelona",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 80,
+      "k": "tit"
+     },
+     {
+      "t": "800 €",
+      "x": 400,
+      "y": 900,
+      "alto": 187,
+      "pie": "Alquiler",
+      "color": "verde",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 2
+     },
+     {
+      "t": "1.400 €",
+      "x": 860,
+      "y": 900,
+      "alto": 327,
+      "pie": "Después",
+      "color": "ambar",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 3
+     },
+     {
+      "t": "+2.400 €",
+      "x": 1320,
+      "y": 900,
+      "alto": 560,
+      "pie": "Al renovar",
+      "color": "rojo",
+      "w": 260,
+      "tam": 90,
+      "k": "col",
+      "p": 4
+     },
+     {
+      "t": "Cerró",
+      "x": 1650,
+      "y": 420,
+      "tam": 86,
+      "k": "sello",
+      "p": 5
+     }
+    ],
+    "luz": 0.5
+   },
+   "f1": 10961,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e49_anim",
+   "f0": 10961,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "elDiario.es, 20-11-2026",
+   "pasos": [
+    4,
+    88
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "1911",
+      "x": 190,
+      "y": 160,
+      "k": "hoja"
+     },
+     {
+      "t": "Una taberna *de Madrid*",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fachada",
+      "x": 480,
+      "y": 1070,
+      "w": 760,
+      "de": "aba",
+      "grisEn": 1,
+      "k": "im"
+     },
+     {
+      "t": "Con clientes",
+      "x": 1380,
+      "y": 450,
+      "ancla": "c",
+      "tam": 56,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "Y ganando dinero",
+      "x": 1380,
+      "y": 590,
+      "ancla": "c",
+      "tam": 56,
+      "color": "verde",
+      "k": "chip",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Cerrada este mes",
+      "x": 1380,
+      "y": 800,
+      "tam": 66,
+      "k": "sello",
+      "p": 1,
+      "dt": 34
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 11136,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e50_anim",
+   "f0": 11136,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "Vicente Nicolau, El Español, 15-11-2026",
+   "pasos": [
+    4,
+    19,
+    59,
+    217
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "Lleno *no es rico*",
+      "x": 120,
+      "y": 140,
+      "ancla": "i",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "src": "g_camarero",
+      "x": 420,
+      "y": 1100,
+      "w": 235,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "1.500 €",
+      "pie": "al día, abrir 150 plazas en Mallorca",
+      "x": 1300,
+      "y": 390,
+      "ancla": "c",
+      "tam": 230,
+      "color": "rojo",
+      "maxPie": 980,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Entre quien entre",
+      "x": 1300,
+      "y": 800,
+      "tam": 66,
+      "k": "sello",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 11384,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e51_anim",
+   "f0": 11384,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "prensa de 2010 (The New York Times), vía Wikipedia",
+   "pasos": [
+    4,
+    76,
+    116,
+    254
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "*elBulli*",
+      "x": 120,
+      "y": 150,
+      "ancla": "i",
+      "tam": 120,
+      "k": "tit"
+     },
+     {
+      "src": "g_mesa",
+      "x": 520,
+      "y": 1050,
+      "w": 820,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "5 veces el mejor del mundo",
+      "x": 1400,
+      "y": 200,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "claro": true,
+      "k": "chip"
+     },
+     {
+      "cifra": "−500.000 €",
+      "pie": "al año, según la prensa, en 2010",
+      "x": 1400,
+      "y": 420,
+      "ancla": "c",
+      "tam": 160,
+      "color": "rojo",
+      "maxPie": 820,
+      "k": "dato",
+      "p": 2
+     },
+     {
+      "t": "Vivía de libros y conferencias",
+      "x": 1400,
+      "y": 780,
+      "ancla": "c",
+      "tam": 46,
+      "color": "humo",
+      "k": "chip",
+      "p": 3
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 11708,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e52_anim",
+   "f0": 11708,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": "AmRest, vía Restauración News, 13-11-2026",
+   "pasos": [
+    4,
+    81,
+    150,
+    180
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "La dueña de *La Tagliatella*",
+      "x": 960,
+      "y": 110,
+      "ancla": "c",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "src": "g_fajos",
+      "x": 420,
+      "y": 1070,
+      "w": 600,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "cifra": "1.900 M€",
+      "pie": "en nueve meses, todo el grupo",
+      "x": 1300,
+      "y": 310,
+      "ancla": "c",
+      "tam": 200,
+      "color": "verde",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 1
+     },
+     {
+      "cifra": "−15 M€",
+      "pie": "de pérdidas, 8 por un apunte",
+      "x": 1300,
+      "y": 690,
+      "ancla": "c",
+      "tam": 180,
+      "color": "rojo",
+      "maxPie": 900,
+      "k": "dato",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 11970,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e53_anim",
+   "f0": 11970,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    73,
+    124
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "t": "MAR.",
+      "x": 190,
+      "y": 160,
+      "tam": 44,
+      "k": "hoja"
+     },
+     {
+      "src": "g_mesa",
+      "x": 760,
+      "y": 1060,
+      "w": 1180,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Las *siete* de la tarde",
+      "x": 320,
+      "y": 160,
+      "ancla": "i",
+      "tam": 84,
+      "k": "tit"
+     },
+     {
+      "t": "Por sí solo, no significa nada",
+      "x": 1450,
+      "y": 330,
+      "ancla": "c",
+      "tam": 44,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 12184,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e54_anim",
+   "f0": 12184,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    38,
+    82,
+    133
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_fachada",
+      "x": 440,
+      "y": 1070,
+      "w": 720,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Se llena *el domingo*",
+      "x": 920,
+      "y": 260,
+      "tam": 58,
+      "k": "linea"
+     },
+     {
+      "t": "Lo pagó *un abuelo*",
+      "x": 920,
+      "y": 390,
+      "tam": 58,
+      "k": "linea",
+      "p": 1
+     },
+     {
+      "t": "Espera *a jubilarse*",
+      "x": 920,
+      "y": 520,
+      "tam": 58,
+      "k": "linea",
+      "p": 2
+     },
+     {
+      "t": "O *a que llamen* por el anuncio",
+      "x": 920,
+      "y": 650,
+      "tam": 58,
+      "k": "linea",
+      "p": 3
+     }
+    ],
+    "luz": 0.66
+   },
+   "f1": 12366,
+   "fondoClip": [
+    {
+     "src": "f_paseo.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e55_anim",
+   "f0": 12366,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    44,
+    103
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 620,
+      "y": 1060,
+      "w": 1000,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "La luz, encendida",
+      "x": 1480,
+      "y": 300,
+      "ancla": "c",
+      "tam": 50,
+      "color": "ambar",
+      "k": "chip",
+      "p": 1
+     },
+     {
+      "t": "El mantel, limpio",
+      "x": 1480,
+      "y": 430,
+      "ancla": "c",
+      "tam": 50,
+      "color": "humo",
+      "claro": true,
+      "k": "chip",
+      "p": 1,
+      "dt": 20
+     },
+     {
+      "t": "Cuesta dinero cada día",
+      "x": 1440,
+      "y": 650,
+      "tam": 48,
+      "k": "sello",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 12519,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  },
+  {
+   "id": "e56_anim",
+   "f0": 12519,
+   "tipo": "anim",
+   "fondo": "marca",
+   "capitulo": "4",
+   "fuente": null,
+   "pasos": [
+    4,
+    48,
+    66
+   ],
+   "d": {
+    "comp": "libre",
+    "items": [
+     {
+      "src": "g_mesa",
+      "x": 960,
+      "y": 1070,
+      "w": 1100,
+      "de": "aba",
+      "k": "im"
+     },
+     {
+      "t": "Esa mesa *la está pagando alguien*",
+      "x": 960,
+      "y": 120,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit"
+     },
+     {
+      "t": "Casi siempre, *con su sueldo*",
+      "x": 960,
+      "y": 270,
+      "ancla": "c",
+      "tam": 90,
+      "k": "tit",
+      "p": 2
+     }
+    ],
+    "luz": 0.55
+   },
+   "f1": 12678,
+   "fondoClip": [
+    {
+     "src": "f_comedor.jpg",
+     "foto": true,
+     "en": 0
+    }
+   ],
+   "velo": "plano"
+  }
+ ],
+ "tiempos_reales": true,
+ "medios": {
+  "f_comedor.jpg": "vox/media/restaurante/f_comedor.jpg",
+  "f_paseo.jpg": "vox/media/restaurante/f_paseo.jpg",
+  "government_building_facade_arches_145.mp4": "parallax2/proyecto/stock_mercadona/government_building_facade_arches_145.mp4",
+  "card_terminal_payment_counter_105.mp4": "parallax2/proyecto/stock_mercadona/card_terminal_payment_counter_105.mp4",
+  "calculator_papers_desk_142.mp4": "parallax2/proyecto/stock_mercadona/calculator_papers_desk_142.mp4",
+  "hands_laptop_papers_calculator_charts_144.mp4": "parallax2/proyecto/stock_mercadona/hands_laptop_papers_calculator_charts_144.mp4",
+  "empty_shopping_arcade_corridor_84.mp4": "parallax2/proyecto/stock_mercadona/empty_shopping_arcade_corridor_84.mp4",
+  "grano.jpg": "vox/media/comun/grano.jpg",
+  "plato_0.jpg": "vox/media/comun/plato_0.jpg",
+  "plato_1.jpg": "vox/media/comun/plato_1.jpg",
+  "plato_2.jpg": "vox/media/comun/plato_2.jpg",
+  "plato_3.jpg": "vox/media/comun/plato_3.jpg",
+  "plato_4.jpg": "vox/media/comun/plato_4.jpg",
+  "plato_5.jpg": "vox/media/comun/plato_5.jpg",
+  "g_balanza.webp": "vox/media/restaurante/g_balanza.webp",
+  "g_bolsa.webp": "vox/media/restaurante/g_bolsa.webp",
+  "g_caja.webp": "vox/media/restaurante/g_caja.webp",
+  "g_camarero.webp": "vox/media/restaurante/g_camarero.webp",
+  "g_camion.webp": "vox/media/restaurante/g_camion.webp",
+  "g_clientes.webp": "vox/media/restaurante/g_clientes.webp",
+  "g_compradora.webp": "vox/media/restaurante/g_compradora.webp",
+  "g_empleados.webp": "vox/media/restaurante/g_empleados.webp",
+  "g_escritura.webp": "vox/media/restaurante/g_escritura.webp",
+  "g_fachada.webp": "vox/media/restaurante/g_fachada.webp",
+  "g_fajo.webp": "vox/media/restaurante/g_fajo.webp",
+  "g_fajos.webp": "vox/media/restaurante/g_fajos.webp",
+  "g_furgo.webp": "vox/media/restaurante/g_furgo.webp",
+  "g_globo.webp": "vox/media/restaurante/g_globo.webp",
+  "g_inversor.webp": "vox/media/restaurante/g_inversor.webp",
+  "g_mazo.webp": "vox/media/restaurante/g_mazo.webp",
+  "g_menu.webp": "vox/media/restaurante/g_menu.webp",
+  "g_mesa.webp": "vox/media/restaurante/g_mesa.webp",
+  "g_moneda.webp": "vox/media/restaurante/g_moneda.webp",
+  "g_monedas.webp": "vox/media/restaurante/g_monedas.webp",
+  "g_movil.webp": "vox/media/restaurante/g_movil.webp",
+  "g_nave.webp": "vox/media/restaurante/g_nave.webp",
+  "g_pale.webp": "vox/media/restaurante/g_pale.webp",
+  "g_paquete.webp": "vox/media/restaurante/g_paquete.webp",
+  "g_periodico.webp": "vox/media/restaurante/g_periodico.webp",
+  "g_persiana.webp": "vox/media/restaurante/g_persiana.webp",
+  "g_portatil.webp": "vox/media/restaurante/g_portatil.webp",
+  "g_tienda.webp": "vox/media/restaurante/g_tienda.webp"
+ },
+ "tema": "restaurante",
+ "piel": "anim"
+}

@@ -1939,8 +1939,8 @@
      {
       "src": "g_maniqui",
       "x": 560,
-      "y": 1140,
-      "w": 380,
+      "y": 1100,
+      "w": 330,
       "de": "der",
       "k": "im",
       "p": 2
@@ -2497,10 +2497,10 @@
     "comp": "libre",
     "items": [
      {
-      "src": "g_nave",
+      "src": "g_pale",
       "x": 960,
-      "y": 1060,
-      "w": 1300,
+      "y": 1070,
+      "w": 620,
       "de": "aba",
       "k": "im"
      },
@@ -2732,8 +2732,8 @@
      {
       "src": "g_maniqui",
       "x": 1440,
-      "y": 1150,
-      "w": 360,
+      "y": 1090,
+      "w": 290,
       "de": "der",
       "k": "im",
       "p": 1
@@ -3956,10 +3956,10 @@
       "p": 1
      },
      {
-      "src": "g_nave",
+      "src": "g_pale",
       "x": 960,
-      "y": 700,
-      "w": 560,
+      "y": 760,
+      "w": 360,
       "de": "aba",
       "k": "im",
       "p": 2
@@ -4931,6 +4931,7 @@
   "g_monton.webp": "vox/media/zara/g_monton.webp",
   "g_movil.webp": "vox/media/zara/g_movil.webp",
   "g_nave.webp": "vox/media/zara/g_nave.webp",
+  "g_pale.webp": "vox/media/zara/g_pale.webp",
   "g_paquete.webp": "vox/media/zara/g_paquete.webp",
   "g_perchero.webp": "vox/media/zara/g_perchero.webp",
   "g_periodico.webp": "vox/media/zara/g_periodico.webp",
